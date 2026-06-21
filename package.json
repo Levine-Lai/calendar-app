@@ -1,0 +1,22 @@
+{
+  "name": "sports-calendar",
+  "version": "1.0.0",
+  "description": "一个本地静态页面版的个人体育赛程日历。内置 NBA、MLB、英超 26-27，以及中超、中甲、中乙、中冠等足球赛程导入。",
+  "private": true,
+  "scripts": {
+    "build:web": "node scripts/build-web.js",
+    "sync:android": "npm run build:web && npx cap sync android",
+    "build:android": "npm run sync:android && node scripts/build-android.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@capacitor/android": "8.4.0",
+    "@capacitor/core": "8.4.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "8.4.0"
+  }
+}

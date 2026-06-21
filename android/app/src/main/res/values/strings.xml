@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">观赛日记</string>
+    <string name="title_activity_main">观赛日记</string>
+    <string name="widget_mlb_today_name">观赛日记</string>
+    <string name="widget_mlb_today_desc">显示今日关注比赛。</string>
+    <string name="widget_refresh">&#21047;&#26032;</string>
+    <string name="widget_scroll_up">&#19978;&#32763;&#19968;&#22330;</string>
+    <string name="widget_scroll_down">&#19979;&#32763;&#19968;&#22330;</string>
+    <string name="package_name">com.local.sportscalendar</string>
+    <string name="custom_url_scheme">com.local.sportscalendar</string>
+</resources>
