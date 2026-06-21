@@ -507,15 +507,6 @@ h2 {
   box-shadow: 3px 3px 0 var(--ink);
 }
 
-.event-chip.more {
-  display: grid;
-  min-height: 30px;
-  place-items: center;
-  background: #fff;
-  font-size: 13px;
-  font-weight: 950;
-}
-
 .event-chip strong {
   overflow: hidden;
   font-size: 12px;

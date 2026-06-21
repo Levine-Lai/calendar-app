@@ -153,6 +153,8 @@ const leagues = [
     sport: "soccer",
     source: "thesportsdb",
     providerLeagueId: "4628",
+    providerSeason: "2026",
+    roundCount: 30,
     color: "#b9dff2",
     logo: "https://r2.thesportsdb.com/images/media/league/badge/hl1oz41729975140.png"
   },
@@ -162,6 +164,8 @@ const leagues = [
     sport: "soccer",
     source: "thesportsdb",
     providerLeagueId: "5310",
+    providerSeason: "2026",
+    roundCount: 30,
     color: "#f3d997",
     logo: "https://r2.thesportsdb.com/images/media/league/badge/e7vhw41680388986.png"
   },
@@ -205,8 +209,6 @@ const elements = {
   teamGrid: document.querySelector("#teamGrid"),
   teamStatus: document.querySelector("#teamStatus"),
   teamSearchInput: document.querySelector("#teamSearchInput"),
-  startDate: document.querySelector("#startDate"),
-  endDate: document.querySelector("#endDate"),
   importLeagueBtn: document.querySelector("#importLeagueBtn"),
   refreshBtn: document.querySelector("#refreshBtn"),
   teamFilterInput: document.querySelector("#teamFilterInput"),
@@ -242,7 +244,6 @@ init();
 
 function init() {
   load();
-  setDefaultDates();
   bindEvents();
   render();
   syncWidgetEvents();
@@ -252,8 +253,6 @@ function init() {
 function bindEvents() {
   elements.importLeagueBtn.addEventListener("click", importSelectedLeague);
   elements.refreshBtn.addEventListener("click", importSelectedLeague);
-  elements.startDate.addEventListener("change", loadTeamsForSelectedLeague);
-  elements.endDate.addEventListener("change", loadTeamsForSelectedLeague);
   elements.teamSearchInput.addEventListener("input", () => {
     state.teamSearch = elements.teamSearchInput.value;
     renderTeamButtons();
@@ -327,21 +326,12 @@ function bindEvents() {
   });
 }
 
-function setDefaultDates() {
-  const start = startOfDay(new Date());
-  const end = addDays(start, 30);
-  elements.startDate.value = toInputDate(start);
-  elements.endDate.value = toInputDate(end);
-}
-
 async function importSelectedLeague() {
   const leagueConfig = leagues.find((league) => league.id === state.selectedLeague);
   const selectedTeams = getSelectedTeams();
   const selectedTeam = selectedTeams[0];
-  const start = elements.startDate.value;
-  const end = elements.endDate.value;
-  if (!leagueConfig || !start || !end) {
-    setStatus("请选择联赛和日期。", true);
+  if (!leagueConfig) {
+    setStatus("请先选择联赛。", true);
     return;
   }
   if (!selectedTeam) {
@@ -349,27 +339,21 @@ async function importSelectedLeague() {
     return;
   }
 
-  const startDate = parseInputDate(start);
-  const endDate = parseInputDate(end);
-  const diff = Math.round((endDate - startDate) / dayMs);
-  const maxRangeDays = getMaxRangeDays(leagueConfig);
-  if (diff < 0 || diff > maxRangeDays) {
-    setStatus(`日期范围需要在 0 到 ${maxRangeDays} 天内。`, true);
-    return;
-  }
-
   setBusy(true);
   const teamNames = selectedTeam.abbreviation || selectedTeam.shortName || selectedTeam.name;
-  setStatus(`正在导入 ${leagueConfig.name}：${teamNames}...`);
+  setStatus(`正在导入 ${leagueConfig.name}：${teamNames} 的全部已确定赛程...`);
   try {
-    const payload = await fetchLeagueSchedule(leagueConfig, startDate, endDate);
+    const payload = await fetchFullTeamSchedule(leagueConfig, selectedTeam);
     const filteredEvents = payload.events
-      .filter((event) => matchesSelectedTeams(event, [selectedTeam]))
       .map((event) => tagImportedEvent(event, selectedTeam));
+    const teamKey = `${leagueConfig.id}:${selectedTeam.id}`;
+    state.events = state.events.filter((event) =>
+      `${event.league}:${String(event.importedTeamId || "")}` !== teamKey
+    );
     mergeEvents(filteredEvents);
-    state.cursor = new Date(startDate.getFullYear(), startDate.getMonth(), 1);
-    const warning = payload.errors.length ? `，${payload.errors.length} 天请求失败` : "";
-    setStatus(`已导入 ${filteredEvents.length} 场 ${leagueConfig.name} 球队赛事${warning}。`);
+    state.cursor = new Date(new Date().getFullYear(), new Date().getMonth(), 1);
+    const warning = payload.errors.length ? `，${payload.errors.length} 个请求失败` : "";
+    setStatus(`已导入 ${filteredEvents.length} 场 ${leagueConfig.name} 全部已确定赛程${warning}。`);
   } catch (error) {
     setStatus(error.message, true);
   } finally {
@@ -385,6 +369,53 @@ async function fetchLeagueSchedule(leagueConfig, start, end, options = {}) {
     return fetchCfaSchedule(leagueConfig, start, end, options);
   }
   return fetchEspnSchedule(leagueConfig, start, end, options);
+}
+
+async function fetchFullTeamSchedule(leagueConfig, team, options = {}) {
+  if (!leagueConfig.source && ["basketball", "baseball"].includes(leagueConfig.sport)) {
+    return fetchEspnTeamSchedule(leagueConfig, team, options);
+  }
+  const { start, end } = getFullScheduleRange(leagueConfig);
+  const payload = await fetchLeagueSchedule(leagueConfig, start, end, options);
+  return {
+    events: payload.events.filter((event) => matchesSelectedTeams(event, [team])),
+    errors: payload.errors
+  };
+}
+
+async function fetchEspnTeamSchedule(leagueConfig, team, options = {}) {
+  const season = getEspnSeasonYear(leagueConfig);
+  const seasonTypes = leagueConfig.id === "nba" ? [1, 2, 3] : [2];
+  const settled = await mapLimit(seasonTypes, 3, async (seasonType) => {
+    try {
+      const cacheKey = `${leagueConfig.id}:team:${team.id}:season:${season}:type:${seasonType}`;
+      const cached = cache.get(cacheKey);
+      if (!options.force && cached && Date.now() - cached.time < 5 * 60 * 1000) {
+        return { status: "fulfilled", value: cached.data };
+      }
+      const endpoint = new URL(
+        `https://site.api.espn.com/apis/site/v2/sports/${leagueConfig.sport}/${leagueConfig.league}/teams/${team.id}/schedule`
+      );
+      endpoint.searchParams.set("season", String(season));
+      endpoint.searchParams.set("seasontype", String(seasonType));
+      const response = await fetch(endpoint.toString(), { headers: { accept: "application/json" } });
+      if (!response.ok) throw new Error(`${leagueConfig.name} 球队赛程返回 ${response.status}`);
+      const payload = await response.json();
+      const events = (payload.events || []).map((event) => normalizeEspnEvent(event, leagueConfig));
+      cache.set(cacheKey, { time: Date.now(), data: events });
+      return { status: "fulfilled", value: events };
+    } catch (reason) {
+      return { status: "rejected", reason };
+    }
+  });
+  return collectScheduleResults(settled);
+}
+
+function getEspnSeasonYear(leagueConfig, now = new Date()) {
+  if (leagueConfig.id === "nba") {
+    return now.getMonth() >= 8 ? now.getFullYear() + 1 : now.getFullYear();
+  }
+  return now.getFullYear();
 }
 
 async function fetchEspnSchedule(leagueConfig, start, end, options = {}) {
@@ -414,6 +445,22 @@ async function fetchEspnSchedule(leagueConfig, start, end, options = {}) {
 }
 
 async function fetchSportsDbSchedule(leagueConfig, start, end, options = {}) {
+  if (options.dayOnly) {
+    return fetchSportsDbDays(leagueConfig, start, end, options);
+  }
+
+  const rounds = Array.from({ length: leagueConfig.roundCount || 30 }, (_, index) => index + 1);
+  const settled = await mapLimit(rounds, 4, async (round) => {
+    try {
+      return { status: "fulfilled", value: await fetchSportsDbRound(leagueConfig, round, options) };
+    } catch (reason) {
+      return { status: "rejected", reason };
+    }
+  });
+  return collectScheduleResults(settled);
+}
+
+async function fetchSportsDbDays(leagueConfig, start, end, options = {}) {
   const days = dateRange(start, end);
   const settled = await mapLimit(days, 8, async (day) => {
     try {
@@ -422,9 +469,27 @@ async function fetchSportsDbSchedule(leagueConfig, start, end, options = {}) {
       return { status: "rejected", reason };
     }
   });
+  return collectScheduleResults(settled);
+}
+
+async function fetchSportsDbRound(leagueConfig, round, options = {}) {
+  const cacheKey = `${leagueConfig.id}:season:${leagueConfig.providerSeason}:round:${round}`;
+  const cached = cache.get(cacheKey);
+  if (!options.force && cached && Date.now() - cached.time < 5 * 60 * 1000) return cached.data;
+
+  const endpoint = new URL("https://www.thesportsdb.com/api/v1/json/123/eventsround.php");
+  endpoint.searchParams.set("id", leagueConfig.providerLeagueId);
+  endpoint.searchParams.set("r", String(round));
+  endpoint.searchParams.set("s", leagueConfig.providerSeason);
+  const payload = await fetchJsonWithRetry(endpoint.toString(), `${leagueConfig.name} 第 ${round} 轮`);
+  const events = (payload.events || []).map((event) => normalizeSportsDbEvent(event, leagueConfig));
+  cache.set(cacheKey, { time: Date.now(), data: events });
+  return events;
+}
+
+function collectScheduleResults(settled) {
   const eventsById = new Map();
   const errors = [];
-
   settled.forEach((item) => {
     if (item.status === "rejected") {
       errors.push(item.reason?.message || "请求失败");
@@ -432,11 +497,7 @@ async function fetchSportsDbSchedule(leagueConfig, start, end, options = {}) {
     }
     item.value.forEach((event) => eventsById.set(event.id, event));
   });
-
-  return {
-    events: [...eventsById.values()].sort(sortByStart),
-    errors
-  };
+  return { events: [...eventsById.values()].sort(sortByStart), errors };
 }
 
 async function fetchSportsDbDay(leagueConfig, date, options = {}) {
@@ -448,15 +509,25 @@ async function fetchSportsDbDay(leagueConfig, date, options = {}) {
   const endpoint = new URL("https://www.thesportsdb.com/api/v1/json/123/eventsday.php");
   endpoint.searchParams.set("d", dateKey);
   endpoint.searchParams.set("l", leagueConfig.providerLeagueId);
-  const response = await fetch(endpoint.toString(), {
-    headers: { accept: "application/json" }
-  });
-  if (!response.ok) throw new Error(`${leagueConfig.name} ${dateKey} 返回 ${response.status}`);
-
-  const payload = await response.json();
+  const payload = await fetchJsonWithRetry(endpoint.toString(), `${leagueConfig.name} ${dateKey}`);
   const events = (payload.events || []).map((event) => normalizeSportsDbEvent(event, leagueConfig));
   cache.set(cacheKey, { time: Date.now(), data: events });
   return events;
+}
+
+async function fetchJsonWithRetry(url, label, attempts = 3) {
+  let lastStatus = "";
+  for (let attempt = 0; attempt < attempts; attempt += 1) {
+    const response = await fetch(url, { headers: { accept: "application/json" } });
+    if (response.ok) return response.json();
+    lastStatus = response.status;
+    if (attempt < attempts - 1 && (response.status === 429 || response.status >= 500)) {
+      await wait(350 * (attempt + 1));
+      continue;
+    }
+    break;
+  }
+  throw new Error(`${label} 返回 ${lastStatus || "请求失败"}`);
 }
 
 async function fetchCfaSchedule(leagueConfig, start, end, options = {}) {
@@ -669,19 +740,31 @@ function cleanCfaTeamName(name) {
     .trim();
 }
 
-function getMaxRangeDays(leagueConfig) {
-  return leagueConfig?.maxRangeDays || 120;
-}
-
-function applyLeaguePresetDates(leagueConfig) {
+function getFullScheduleRange(leagueConfig, now = new Date()) {
   if (leagueConfig?.seasonPreset) {
-    elements.startDate.value = leagueConfig.seasonPreset.start;
-    elements.endDate.value = leagueConfig.seasonPreset.end;
-    return;
+    return {
+      start: parseInputDate(leagueConfig.seasonPreset.start),
+      end: parseInputDate(leagueConfig.seasonPreset.end)
+    };
   }
-  const start = startOfDay(new Date());
-  elements.startDate.value = toInputDate(start);
-  elements.endDate.value = toInputDate(addDays(start, 30));
+
+  const year = now.getFullYear();
+  if (leagueConfig.id === "worldcup") {
+    return { start: new Date(2026, 5, 1), end: new Date(2026, 6, 31) };
+  }
+  if (leagueConfig.id === "mlb") {
+    return { start: new Date(year, 1, 1), end: new Date(year, 10, 30) };
+  }
+  if (leagueConfig.id === "csl" || leagueConfig.source === "thesportsdb") {
+    return { start: new Date(year, 0, 1), end: new Date(year, 11, 31) };
+  }
+  if (leagueConfig.id === "nba") {
+    const startYear = now.getMonth() >= 8 ? year : year - 1;
+    return { start: new Date(startYear, 9, 1), end: new Date(startYear + 1, 5, 30) };
+  }
+
+  const startYear = now.getMonth() >= 4 ? year : year - 1;
+  return { start: new Date(startYear, 6, 1), end: new Date(startYear + 1, 5, 30) };
 }
 
 function mergeEvents(events) {
@@ -773,41 +856,74 @@ async function updateImportedTeams() {
     return;
   }
 
-  const start = startOfDay(new Date());
-  const end = addDays(start, 30);
   const beforeIds = new Set(state.events.map((event) => event.id));
   const updatedEvents = [];
   const errors = [];
+  const updatedTeamKeys = new Set();
+  const teamsByLeague = new Map();
+  teams.forEach((team) => {
+    if (!teamsByLeague.has(team.league)) teamsByLeague.set(team.league, []);
+    teamsByLeague.get(team.league).push(team);
+  });
 
   setBusy(true);
-  setStatus(`正在更新 ${teams.length} 支球队未来 30 天赛程...`);
+  setStatus(`正在更新 ${teams.length} 支球队的全部已确定赛程...`);
   try {
-    for (const team of teams) {
-      const leagueConfig = leagues.find((league) => league.id === team.league);
+    for (const [leagueId, leagueTeams] of teamsByLeague) {
+      const leagueConfig = leagues.find((league) => league.id === leagueId);
       if (!leagueConfig) {
-        errors.push(`${team.leagueName} 配置缺失`);
+        errors.push(`${leagueTeams[0].leagueName} 配置缺失`);
         continue;
       }
-      try {
-        const payload = await fetchLeagueSchedule(leagueConfig, start, end, { force: true });
-        errors.push(...payload.errors);
-        updatedEvents.push(
-          ...payload.events
-            .filter((event) => matchesSelectedTeams(event, [team]))
-            .map((event) => tagImportedEvent(event, team))
-        );
-      } catch (error) {
-        errors.push(`${team.leagueName} ${team.abbreviation || team.name}：${error.message}`);
+
+      const sharesLeagueSchedule = leagueConfig.source || leagueConfig.sport === "soccer";
+      if (sharesLeagueSchedule) {
+        try {
+          const { start, end } = getFullScheduleRange(leagueConfig);
+          const payload = await fetchLeagueSchedule(leagueConfig, start, end, { force: true });
+          errors.push(...payload.errors);
+          leagueTeams.forEach((team) => {
+            updatedEvents.push(
+              ...payload.events
+                .filter((event) => matchesSelectedTeams(event, [team]))
+                .map((event) => tagImportedEvent(event, team))
+            );
+            if (!payload.errors.length) updatedTeamKeys.add(team.key);
+          });
+        } catch (error) {
+          errors.push(`${leagueConfig.name}：${error.message}`);
+        }
+        continue;
+      }
+
+      for (const team of leagueTeams) {
+        try {
+          const payload = await fetchFullTeamSchedule(leagueConfig, team, { force: true });
+          errors.push(...payload.errors);
+          updatedEvents.push(...payload.events.map((event) => tagImportedEvent(event, team)));
+          if (!payload.errors.length) updatedTeamKeys.add(team.key);
+        } catch (error) {
+          errors.push(`${team.leagueName} ${team.abbreviation || team.name}：${error.message}`);
+        }
       }
     }
 
-    state.cursor = new Date(start.getFullYear(), start.getMonth(), 1);
-    if (updatedEvents.length) {
-      mergeEvents(updatedEvents);
-    }
+    state.events = state.events.filter((event) =>
+      !updatedTeamKeys.has(`${event.league}:${String(event.importedTeamId || "")}`)
+    );
+    const byId = new Map(state.events.map((event) => [event.id, event]));
+    updatedEvents.forEach((event) => byId.set(event.id, { ...byId.get(event.id), ...event }));
+    state.events = [...byId.values()].sort(sortByStart);
+    state.cursor = new Date(new Date().getFullYear(), new Date().getMonth(), 1);
+    persist();
+    render();
     const newCount = updatedEvents.filter((event) => !beforeIds.has(event.id)).length;
-    const warning = errors.length ? `，${errors.length} 个请求失败` : "";
-    setStatus(`更新完成：新增 ${newCount} 场，确认/刷新 ${updatedEvents.length} 场${warning}。`, Boolean(!updatedEvents.length && errors.length));
+    const uniqueErrors = [...new Set(errors)];
+    const warning = uniqueErrors.length ? `，${uniqueErrors.length} 个请求失败` : "";
+    setStatus(
+      `更新完成：${updatedTeamKeys.size} 支球队共 ${updatedEvents.length} 场已确定赛程，新增 ${newCount} 场${warning}。`,
+      Boolean(!updatedTeamKeys.size && uniqueErrors.length)
+    );
   } finally {
     setBusy(false);
   }
@@ -960,7 +1076,6 @@ function renderLeagueButtons() {
     button.addEventListener("click", () => {
       state.selectedLeague = league.id;
       state.teamSearch = "";
-      applyLeaguePresetDates(league);
       persist();
       renderLeagueButtons();
       loadTeamsForSelectedLeague();
@@ -973,11 +1088,6 @@ async function loadTeamsForSelectedLeague() {
   const leagueConfig = leagues.find((league) => league.id === state.selectedLeague);
   if (!leagueConfig) return;
   const cacheKey = getTeamCacheKey();
-  if (!cacheKey) {
-    elements.teamStatus.textContent = "请选择日期范围";
-    elements.teamGrid.innerHTML = "";
-    return;
-  }
   if (teamsCache.has(cacheKey)) {
     renderTeamButtons();
     return;
@@ -985,7 +1095,7 @@ async function loadTeamsForSelectedLeague() {
 
   elements.teamStatus.textContent = leagueConfig.teamSource === "static"
     ? "正在加载世界杯 48 支参赛队..."
-    : "正在扫描该日期范围内有比赛的球队...";
+    : "正在加载本赛季全部已确定赛程中的球队...";
   elements.teamGrid.innerHTML = "";
 
   try {
@@ -996,20 +1106,18 @@ async function loadTeamsForSelectedLeague() {
       return;
     }
 
-    const startDate = parseInputDate(elements.startDate.value);
-    const endDate = parseInputDate(elements.endDate.value);
-    const diff = Math.round((endDate - startDate) / dayMs);
-    const maxRangeDays = getMaxRangeDays(leagueConfig);
-    if (diff < 0 || diff > maxRangeDays) {
-      throw new Error(`日期范围需要在 0 到 ${maxRangeDays} 天内`);
+    let teams = [];
+    if (!leagueConfig.source) {
+      teams = await fetchLeagueTeams(leagueConfig);
+    } else {
+      const { start, end } = getFullScheduleRange(leagueConfig);
+      const payload = await fetchLeagueSchedule(leagueConfig, start, end);
+      const teamsById = new Map();
+      payload.events.forEach((event) => {
+        (event.teamMeta || []).forEach((team) => teamsById.set(team.id, team));
+      });
+      teams = [...teamsById.values()].sort((a, b) => a.name.localeCompare(b.name));
     }
-    const payload = await fetchLeagueSchedule(leagueConfig, startDate, endDate);
-    const teamsById = new Map();
-    payload.events.forEach((event) => {
-      (event.teamMeta || []).forEach((team) => teamsById.set(team.id, team));
-    });
-    const teams = [...teamsById.values()]
-      .sort((a, b) => a.name.localeCompare(b.name));
     teamsCache.set(cacheKey, teams);
     renderTeamButtons();
   } catch (error) {
@@ -1023,26 +1131,28 @@ async function fetchLeagueTeams(leagueConfig) {
   const cached = cache.get(cacheKey);
   if (cached && Date.now() - cached.time < 30 * 60 * 1000) return cached.data;
 
-  const endpoint = new URL(`https://site.api.espn.com/apis/site/v2/sports/${leagueConfig.sport}/${leagueConfig.league}/teams`);
+  const season = getEspnSeasonYear(leagueConfig);
+  const endpoint = new URL(
+    `https://sports.core.api.espn.com/v2/sports/${leagueConfig.sport}/leagues/${leagueConfig.league}/seasons/${season}/teams`
+  );
+  endpoint.searchParams.set("limit", "100");
   const response = await fetch(endpoint.toString(), {
-    headers: {
-      accept: "application/json"
-    }
+    headers: { accept: "application/json" }
   });
   if (!response.ok) throw new Error(`${leagueConfig.name} 球队列表返回 ${response.status}`);
 
   const data = await response.json();
-  const teamsById = new Map();
-  (data.sports || []).forEach((sport) => {
-    (sport.leagues || []).forEach((league) => {
-      (league.teams || []).forEach((item) => {
-        const team = normalizeEventTeam(item.team, leagueConfig);
-        if (team?.id) teamsById.set(team.id, team);
-      });
+  const refs = (data.items || []).map((item) => item.$ref).filter(Boolean);
+  const rows = await mapLimit(refs, 8, async (ref) => {
+    const teamResponse = await fetch(ref.replace("http://", "https://"), {
+      headers: { accept: "application/json" }
     });
+    if (!teamResponse.ok) throw new Error(`${leagueConfig.name} 球队详情返回 ${teamResponse.status}`);
+    return teamResponse.json();
   });
-
-  const teams = [...teamsById.values()]
+  const teams = rows
+    .map((team) => normalizeEventTeam(team, leagueConfig))
+    .filter((team) => team?.id)
     .sort((a, b) => a.name.localeCompare(b.name))
     .slice(0, leagueConfig.teamLimit || 48);
 
@@ -1084,12 +1194,13 @@ function renderTeamButtons() {
   }
 
   if (!teams.length) {
-    elements.teamStatus.textContent = "这个日期范围没有可选球队。";
+    elements.teamStatus.textContent = "当前还没有已确定赛程的球队。";
     return;
   }
 
-  elements.teamStatus.textContent = selected.size
-    ? `已选择 ${selected.size} 支球队`
+  const selectedTeam = teams.find((team) => selected.has(team.id));
+  elements.teamStatus.textContent = selectedTeam
+    ? `已选择 ${selectedTeam.abbreviation || selectedTeam.shortName}（单选）`
     : "请选择要关注的球队";
 
   visibleTeams.forEach((team) => {
@@ -1126,10 +1237,9 @@ function getSelectedTeams() {
 }
 
 function getTeamCacheKey() {
-  if (!elements.startDate?.value || !elements.endDate?.value) return "";
   const leagueConfig = leagues.find((league) => league.id === state.selectedLeague);
   if (leagueConfig?.teamSource === "static") return `${state.selectedLeague}:teams`;
-  return `${state.selectedLeague}:${elements.startDate.value}:${elements.endDate.value}`;
+  return `${state.selectedLeague}:full-season`;
 }
 
 function tagImportedEvent(event, team) {
@@ -1141,50 +1251,6 @@ function tagImportedEvent(event, team) {
     importedTeamColor: team.color,
     importedTeamLogo: team.logo
   };
-}
-
-function renderTeamButtons() {
-  if (!elements.teamGrid) return;
-  const cacheKey = getTeamCacheKey();
-  const teams = cacheKey ? teamsCache.get(cacheKey) || [] : [];
-  const selected = getSelectedTeamIds();
-  const search = state.teamSearch.trim().toLowerCase();
-  const visibleTeams = teams.filter((team) => {
-    if (!search) return true;
-    return [team.name, team.shortName, team.abbreviation].join(" ").toLowerCase().includes(search);
-  });
-
-  elements.teamSearchInput.value = state.teamSearch;
-  elements.teamGrid.innerHTML = "";
-
-  if (!cacheKey || !teamsCache.has(cacheKey)) {
-    elements.teamStatus.textContent = "球队列表加载中...";
-    return;
-  }
-
-  if (!teams.length) {
-    elements.teamStatus.textContent = "这个日期范围没有可选球队。";
-    return;
-  }
-
-  const selectedTeam = teams.find((team) => selected.has(team.id));
-  elements.teamStatus.textContent = selectedTeam
-    ? `已选择 ${selectedTeam.abbreviation || selectedTeam.shortName}（单选）`
-    : "请选择要关注的球队";
-
-  visibleTeams.forEach((team) => {
-    const button = document.createElement("button");
-    button.type = "button";
-    button.className = `team-button${selected.has(team.id) ? " active" : ""}`;
-    button.style.setProperty("--team-color", team.color || "#c7e6eb");
-    button.innerHTML = `
-      <span class="team-button-logo">${team.logo ? `<img src="${escapeAttr(team.logo)}" alt="${escapeAttr(team.name)}">` : ""}</span>
-      <span>${escapeHtml(team.abbreviation || team.shortName)}</span>
-    `;
-    button.title = team.name;
-    button.addEventListener("click", () => toggleTeam(team.id));
-    elements.teamGrid.append(button);
-  });
 }
 
 function getTeamLogo(team) {
@@ -1278,12 +1344,7 @@ function renderMonth(events) {
       isSameDay(day, new Date()) ? "is-today" : "",
       dayEvents.length ? "has-events" : ""
     ].filter(Boolean).join(" ");
-    const previewEvents = dayEvents.slice(0, 2);
-    const moreCount = dayEvents.length - previewEvents.length;
-    const eventHtml = [
-      ...previewEvents.map(renderChip),
-      moreCount > 0 ? `<div class="event-chip more">+${moreCount}</div>` : ""
-    ].join("");
+    const eventHtml = dayEvents.map(renderChip).join("");
     const label = `${formatDate(day, { month: "long", day: "numeric", weekday: "long" })}，${dayEvents.length ? `${dayEvents.length} 场比赛` : "无比赛"}`;
     cells.push(`
       <div class="${classes}" data-date="${key}" role="button" tabindex="0" aria-label="${escapeAttr(label)}">
@@ -1352,7 +1413,7 @@ async function refreshDayModalScores(dateKey) {
   const refreshed = [];
   await Promise.all(leagueConfigs.map(async (leagueConfig) => {
     try {
-      const payload = await fetchLeagueSchedule(leagueConfig, start, date, { force: true });
+      const payload = await fetchLeagueSchedule(leagueConfig, start, date, { force: true, dayOnly: true });
       refreshed.push(...payload.events.filter((event) => trackedIds.has(event.id)));
     } catch (error) {
       console.warn(`Score refresh failed for ${leagueConfig.id}`, error);
@@ -1650,6 +1711,10 @@ async function mapLimit(items, limit, mapper) {
   return results;
 }
 
+function wait(milliseconds) {
+  return new Promise((resolve) => window.setTimeout(resolve, milliseconds));
+}
+
 function parseInputDate(value) {
   return new Date(`${value}T00:00:00`);
 }
@@ -1680,7 +1745,11 @@ function formatTime(date) {
 }
 
 function formatEspnDate(date) {
-  return date.toISOString().slice(0, 10).replaceAll("-", "");
+  return [
+    date.getFullYear(),
+    String(date.getMonth() + 1).padStart(2, "0"),
+    String(date.getDate()).padStart(2, "0")
+  ].join("");
 }
 
 function parseIcsDate(value) {
