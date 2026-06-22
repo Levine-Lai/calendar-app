@@ -4,6 +4,7 @@ const weekLabels = ["周日", "周一", "周二", "周三", "周四", "周五", 
 const cache = new Map();
 const teamsCache = new Map();
 const CalendarCore = window.CalendarCore;
+const imageFallbackUrl = "public/assets/icon-fallback.png";
 let teamLoadRequestId = 0;
 const providerSeasonOverrides = {
   cmcl: {
@@ -76,7 +77,7 @@ const leagues = [
     sport: "basketball",
     league: "nba",
     color: "#f2b0aa",
-    logo: "https://a.espncdn.com/i/teamlogos/leagues/500/nba.png"
+    logo: "public/assets/leagues/nba.png"
   },
   {
     id: "epl",
@@ -84,7 +85,7 @@ const leagues = [
     sport: "soccer",
     league: "eng.1",
     color: "#c8b8ef",
-    logo: "https://a.espncdn.com/i/leaguelogos/soccer/500/23.png"
+    logo: "public/assets/leagues/epl.png"
   },
   {
     id: "laliga",
@@ -92,7 +93,7 @@ const leagues = [
     sport: "soccer",
     league: "esp.1",
     color: "#f2dc86",
-    logo: "https://a.espncdn.com/i/leaguelogos/soccer/500/15.png"
+    logo: "public/assets/leagues/laliga.png"
   },
   {
     id: "seriea",
@@ -100,7 +101,7 @@ const leagues = [
     sport: "soccer",
     league: "ita.1",
     color: "#b9d0f5",
-    logo: "https://a.espncdn.com/i/leaguelogos/soccer/500/12.png"
+    logo: "public/assets/leagues/seriea.png"
   },
   {
     id: "bundesliga",
@@ -108,7 +109,7 @@ const leagues = [
     sport: "soccer",
     league: "ger.1",
     color: "#f0be9d",
-    logo: "https://a.espncdn.com/i/leaguelogos/soccer/500/10.png"
+    logo: "public/assets/leagues/bundesliga.png"
   },
   {
     id: "ligue1",
@@ -116,7 +117,7 @@ const leagues = [
     sport: "soccer",
     league: "fra.1",
     color: "#bce4c8",
-    logo: "https://a.espncdn.com/i/leaguelogos/soccer/500/9.png"
+    logo: "public/assets/leagues/ligue1.png"
   },
   {
     id: "ucl",
@@ -124,7 +125,7 @@ const leagues = [
     sport: "soccer",
     league: "uefa.champions",
     color: "#bde5f1",
-    logo: "https://a.espncdn.com/i/leaguelogos/soccer/500/2.png"
+    logo: "public/assets/leagues/ucl.png"
   },
   {
     id: "worldcup",
@@ -134,7 +135,7 @@ const leagues = [
     teamSource: "static",
     teams: worldCupTeams,
     color: "#c8e8b8",
-    logo: "https://a.espncdn.com/i/leaguelogos/soccer/500/4.png"
+    logo: "public/assets/leagues/worldcup.png"
   },
   {
     id: "championship",
@@ -142,7 +143,7 @@ const leagues = [
     sport: "soccer",
     league: "eng.2",
     color: "#efbdd6",
-    logo: "https://a.espncdn.com/i/leaguelogos/soccer/500/24.png"
+    logo: "public/assets/leagues/championship.png"
   },
   {
     id: "csl",
@@ -150,7 +151,7 @@ const leagues = [
     sport: "soccer",
     league: "chn.1",
     color: "#f3b7aa",
-    logo: "https://r2.thesportsdb.com/images/media/league/badge/3s59ux1760652414.png"
+    logo: "public/assets/leagues/csl.png"
   },
   {
     id: "china-league-one",
@@ -160,7 +161,7 @@ const leagues = [
     providerLeagueId: "4628",
     roundCount: 30,
     color: "#b9dff2",
-    logo: "https://r2.thesportsdb.com/images/media/league/badge/hl1oz41729975140.png"
+    logo: "public/assets/leagues/china-league-one.png"
   },
   {
     id: "china-league-two",
@@ -170,7 +171,7 @@ const leagues = [
     providerLeagueId: "5310",
     roundCount: 30,
     color: "#f3d997",
-    logo: "https://r2.thesportsdb.com/images/media/league/badge/e7vhw41680388986.png"
+    logo: "public/assets/leagues/china-league-two.png"
   },
   {
     id: "cmcl",
@@ -178,7 +179,7 @@ const leagues = [
     sport: "soccer",
     source: "cfa",
     color: "#c5dfb4",
-    logo: "https://a.espncdn.com/i/teamlogos/countries/500/chn.png"
+    logo: "public/assets/leagues/cmcl.png"
   },
   {
     id: "mlb",
@@ -186,7 +187,7 @@ const leagues = [
     sport: "baseball",
     league: "mlb",
     color: "#b4c7f5",
-    logo: "https://a.espncdn.com/i/teamlogos/leagues/500/mlb.png"
+    logo: "public/assets/leagues/mlb.png"
   }
 ];
 
@@ -243,10 +244,20 @@ init();
 
 function init() {
   load();
+  bindImageFallbacks();
   bindEvents();
   render();
   syncWidgetEvents();
   loadTeamsForSelectedLeague();
+}
+
+function bindImageFallbacks() {
+  document.addEventListener("error", (event) => {
+    const image = event.target;
+    if (!(image instanceof HTMLImageElement) || image.dataset.fallbackApplied) return;
+    image.dataset.fallbackApplied = "true";
+    image.src = imageFallbackUrl;
+  }, true);
 }
 
 function bindEvents() {
@@ -737,7 +748,7 @@ function normalizeProviderTeam(team, leagueConfig) {
     name: team.name || "球队",
     shortName: team.name || "球队",
     abbreviation: team.abbreviation || "",
-    logo: team.logo || "",
+    logo: CalendarCore.normalizeImageUrl(team.logo, ""),
     color: leagueConfig.color
   };
 }
@@ -861,7 +872,7 @@ function closeDeleteModal() {
 }
 
 function renderImportedTeamDelete(team) {
-  const logo = team.logo ? `<img src="${escapeAttr(team.logo)}" alt="${escapeAttr(team.name)}">` : "";
+  const logo = renderImage(team.logo, team.name);
   const name = team.abbreviation || team.shortName || team.name;
   return `
     <button class="imported-team-delete" type="button" data-key="${escapeAttr(team.key)}" style="--team-color:${escapeHtml(team.color)}">
@@ -1127,7 +1138,7 @@ function renderLeagueButtons() {
     button.type = "button";
     button.className = `league-button${league.id === state.selectedLeague ? " active" : ""}`;
     button.style.setProperty("--league-color", league.color);
-    button.innerHTML = `<img src="${league.logo}" alt=""><span>${league.name}</span>`;
+    button.innerHTML = `${renderImage(league.logo, league.name)}<span>${league.name}</span>`;
     button.addEventListener("click", () => {
       state.selectedLeague = league.id;
       state.teamSearch = "";
@@ -1275,7 +1286,7 @@ function renderTeamButtons() {
     button.className = `team-button${selected.has(team.id) ? " active" : ""}`;
     button.style.setProperty("--team-color", team.color || "#c7e6eb");
     button.innerHTML = `
-      <span class="team-button-logo">${team.logo ? `<img src="${escapeAttr(team.logo)}" alt="${escapeAttr(team.name)}">` : ""}</span>
+      <span class="team-button-logo">${renderImage(team.logo, team.name)}</span>
       <span>${escapeHtml(team.abbreviation || team.shortName)}</span>
     `;
     button.title = team.name;
@@ -1322,7 +1333,8 @@ function tagImportedEvent(event, team) {
 
 function getTeamLogo(team) {
   if (!team) return "";
-  return team.logo || team.logos?.find((logo) => logo.rel?.includes("default"))?.href || team.logos?.[0]?.href || "";
+  const logo = team.logo || team.logos?.find((item) => item.rel?.includes("default"))?.href || team.logos?.[0]?.href || "";
+  return CalendarCore.normalizeImageUrl(logo, "");
 }
 
 function getTeamColor(team, fallback = "#c7e6eb") {
@@ -1426,8 +1438,8 @@ function renderMonth(events) {
 
 function renderChip(event) {
   const color = eventColor(event, "#00c2ff");
-  const awayLogo = event.awayLogo ? `<img src="${escapeAttr(event.awayLogo)}" alt="${escapeAttr(event.awayTeam || "Away")}">` : "";
-  const homeLogo = event.homeLogo ? `<img src="${escapeAttr(event.homeLogo)}" alt="${escapeAttr(event.homeTeam || "Home")}">` : "";
+  const awayLogo = renderImage(event.awayLogo, event.awayTeam || "Away");
+  const homeLogo = renderImage(event.homeLogo, event.homeTeam || "Home");
   return `
     <div class="event-chip" style="--event-color:${escapeHtml(color)}">
       <div class="matchup-row">
@@ -1512,8 +1524,8 @@ function closeDayModal() {
 
 function renderDayModalEvent(event) {
   const color = eventColor(event, "#c8e8b8");
-  const awayLogo = event.awayLogo ? `<img src="${escapeAttr(event.awayLogo)}" alt="${escapeAttr(event.awayTeam || "Away")}">` : "";
-  const homeLogo = event.homeLogo ? `<img src="${escapeAttr(event.homeLogo)}" alt="${escapeAttr(event.homeTeam || "Home")}">` : "";
+  const awayLogo = renderImage(event.awayLogo, event.awayTeam || "Away");
+  const homeLogo = renderImage(event.homeLogo, event.homeTeam || "Home");
   const details = [
     event.shortTitle || event.title,
     [event.venue, event.city].filter(Boolean).join(" · "),
@@ -1747,8 +1759,8 @@ function toWidgetEvent(event) {
     completed: Boolean(event.completed),
     awayScore: event.awayScore == null ? "" : String(event.awayScore),
     homeScore: event.homeScore == null ? "" : String(event.homeScore),
-    awayLogo: event.awayLogo || "",
-    homeLogo: event.homeLogo || "",
+    awayLogo: CalendarCore.normalizeImageUrl(event.awayLogo, ""),
+    homeLogo: CalendarCore.normalizeImageUrl(event.homeLogo, ""),
     awayTeam: event.awayTeam || "",
     homeTeam: event.homeTeam || "",
     importedTeamId: event.importedTeamId || "",
@@ -1862,6 +1874,11 @@ function escapeHtml(value = "") {
 
 function escapeAttr(value = "") {
   return escapeHtml(value).replaceAll("`", "&#096;");
+}
+
+function renderImage(value, alt = "") {
+  const source = CalendarCore.normalizeImageUrl(value, imageFallbackUrl);
+  return `<img src="${escapeAttr(source)}" alt="${escapeAttr(alt)}" referrerpolicy="no-referrer">`;
 }
 
 function sanitizeExternalUrl(value) {

@@ -9,5 +9,7 @@ public class MainActivity extends BridgeActivity {
     protected void onCreate(Bundle savedInstanceState) {
         registerPlugin(SportsWidgetPlugin.class);
         super.onCreate(savedInstanceState);
+        getBridge().getWebView().getSettings().setLoadsImagesAutomatically(true);
+        getBridge().getWebView().getSettings().setBlockNetworkImage(false);
     }
 }

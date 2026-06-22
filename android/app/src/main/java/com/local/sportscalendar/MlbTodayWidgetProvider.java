@@ -281,8 +281,8 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
         Game game = new Game();
         game.id = event.optString("id", "");
         game.start = start;
-        game.awayLogo = event.optString("awayLogo", "");
-        game.homeLogo = event.optString("homeLogo", "");
+        game.awayLogo = secureImageUrl(event.optString("awayLogo", ""));
+        game.homeLogo = secureImageUrl(event.optString("homeLogo", ""));
         game.leagueLabel = event.optString("leagueName", event.optString("league", "比赛"));
         game.sourceId = event.optString("sourceId", "");
         game.sport = event.optString("sport", "");
@@ -355,8 +355,8 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
         game.status = cached.optString("status", game.status);
         game.statusState = cached.optString("statusState", game.statusState);
         game.completed = cached.optBoolean("completed", game.completed);
-        game.awayLogo = cached.optString("awayLogo", game.awayLogo);
-        game.homeLogo = cached.optString("homeLogo", game.homeLogo);
+        game.awayLogo = secureImageUrl(cached.optString("awayLogo", game.awayLogo));
+        game.homeLogo = secureImageUrl(cached.optString("homeLogo", game.homeLogo));
     }
 
     private static void cacheLiveSnapshot(Context context, List<Game> games) {
@@ -497,8 +497,8 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
                     );
                     String awayLogo = event.optString("strAwayTeamBadge", "");
                     String homeLogo = event.optString("strHomeTeamBadge", "");
-                    if (!awayLogo.isEmpty()) game.awayLogo = awayLogo;
-                    if (!homeLogo.isEmpty()) game.homeLogo = homeLogo;
+                    if (!awayLogo.isEmpty()) game.awayLogo = secureImageUrl(awayLogo);
+                    if (!homeLogo.isEmpty()) game.homeLogo = secureImageUrl(homeLogo);
                 }
             } catch (Exception ignored) {
                 // Keep the imported snapshot if this provider is unavailable.
@@ -649,11 +649,19 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
         }
         String logo = team.optString("logo", "");
         if (!logo.isEmpty()) {
-            return logo;
+            return secureImageUrl(logo);
         }
         JSONArray logos = team.optJSONArray("logos");
         JSONObject firstLogo = firstObject(logos);
-        return firstLogo == null ? "" : firstLogo.optString("href", "");
+        return firstLogo == null ? "" : secureImageUrl(firstLogo.optString("href", ""));
+    }
+
+    private static String secureImageUrl(String value) {
+        if (value == null) return "";
+        String source = value.trim();
+        if (source.startsWith("//")) return "https:" + source;
+        if (source.startsWith("http://")) return "https://" + source.substring(7);
+        return source.startsWith("https://") ? source : "";
     }
 
     private static String espnDate(Date date) {

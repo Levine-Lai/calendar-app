@@ -1,6 +1,6 @@
 {
   "name": "sports-calendar",
-  "version": "2.0.0",
+  "version": "2.1.1",
   "description": "一个本地静态页面版的个人体育赛程日历。内置 NBA、MLB、英超 26-27，以及中超、中甲、中乙、中冠等足球赛程导入。",
   "private": true,
   "scripts": {

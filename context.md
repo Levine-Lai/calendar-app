@@ -116,3 +116,88 @@
 - 中冠每年赛事 ID 由足协生成，进入新赛季后仍需要在集中映射中补一条 ID。
 - 正式应用内升级仍需要稳定下载地址、签名 release APK 和版本清单服务，本批次未加入发布服务器。
 - lint 剩余警告主要来自 Capacitor 模板未使用资源和历史 splash 密度资源，不影响当前功能。
+
+## 2026-06-22
+
+### 发布批次：2.1.0 Debug APK
+
+#### 用户目标
+
+- 将 2026-06-21 完成的全项目整改版本打包为可安装 APK。
+
+#### 发布调整
+
+- npm 项目版本从 `2.0.0` 提升到 `2.1.0`。
+- Android `versionName` 提升到 `2.1.0`。
+- Android `versionCode` 从 `11` 提升到 `12`，确保手机可以将其识别为新版本更新安装。
+
+#### 打包流程
+
+- 运行 Web 核心测试和 JavaScript 静态检查。
+- 重新生成 `www/` 并同步 Capacitor Android 资源。
+- 使用项目构建脚本执行 Android `assembleDebug`。
+- 验证 APK 文件、大小和 SHA-256。
+
+#### 输出
+
+- APK：`android/app/build/outputs/apk/debug/app-debug.apk`
+- 本批次为 Debug 签名包，可使用 `adb install -r` 覆盖安装旧版。
+
+#### 验证结果
+
+- Web 核心测试：5/5 通过。
+- Android `assembleDebug`：`BUILD SUCCESSFUL`。
+- 包名：`com.local.sportscalendar`。
+- APK 内部版本：`versionCode 12`、`versionName 2.1.0`。
+- APK 大小：`4,753,016` 字节（约 `4.53 MiB`）。
+- SHA-256：`38D73D8FAE67CB98DCD90D4333EC5098A3EAE45BC0C37410B298278F590FC733`。
+- APK Signature Scheme v2：验证通过，签名者数量为 1。
+
+### 修复及发布批次：2.1.1 图标显示
+
+#### 用户反馈
+
+- 安装 2.1.0 后打开 App，界面图标无法正常显示。
+
+#### 原因与兼容性判断
+
+- APK 内 Web 资源和 `INTERNET` 权限完整，远程 HTTPS 图片源也可访问。
+- 电脑页面运行在 `http://127.0.0.1`，Android Capacitor WebView 使用安全本地域；旧数据中的 HTTP 队徽可能被 vivo WebView 作为混合内容拦截。
+- 2.1.0 新增的 adaptive icon `monochrome` 直接引用彩色位图，部分 vivo 主题图标实现可能将其渲染为透明或不可见。
+- 联赛图标此前全部依赖远程 CDN，任何 WebView、DNS、省电或网络策略异常都会造成整组图标空白。
+
+#### 修复方案
+
+1. 将 14 个联赛图标下载到 `public/assets/leagues/`，随 APK 本地打包，不再依赖启动时联网。
+2. 增加本地 `public/assets/icon-fallback.png`，球队或赛程队徽加载失败时自动回退，不再留下空白。
+3. Web 图片地址统一规范化：`http://` 和协议相对地址升级到 HTTPS，拒绝非图片安全协议。
+4. 所有动态图片增加 `referrerpolicy="no-referrer"`，减少 CDN 对 WebView 本地域来源的兼容问题。
+5. 原生组件读取旧赛程时同样将 HTTP 队徽升级为 HTTPS。
+6. MainActivity 显式启用 WebView 自动加载图片和网络图片。
+7. 撤回 adaptive icon 中不兼容的 `monochrome` 位图配置，恢复普通和圆形启动图标。
+8. 增加图片 URL 规范化测试。
+9. 版本提升为 `2.1.1`，Android `versionCode` 提升为 `13`。
+
+#### 主要文件
+
+- `public/assets/leagues/*`
+- `public/assets/icon-fallback.png`
+- `public/calendar-core.js`
+- `public/app.js`
+- `android/app/src/main/java/com/local/sportscalendar/MainActivity.java`
+- `android/app/src/main/java/com/local/sportscalendar/MlbTodayWidgetProvider.java`
+- `android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml`
+- `android/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml`
+
+#### 发布验证
+
+- Web 图片检查：120 张全部加载成功，0 失败；14 个联赛图标均使用本地资源；控制台无 error/warn。
+- Web 核心测试：6/6 通过；JavaScript 静态检查通过。
+- Android 单元测试、lint 和 `assembleDebug`：`BUILD SUCCESSFUL`，lint 0 error。
+- APK 内包含 15 个新增本地图标资源。
+- 包名：`com.local.sportscalendar`。
+- APK 内部版本：`versionCode 13`、`versionName 2.1.1`。
+- APK 大小：`5,323,250` 字节（约 `5.08 MiB`）。
+- SHA-256：`BAAF0E711066BD1B5F9902AA02DBCE0FD42C1C8176F89D1346A96E9CDAF237CA`。
+- APK Signature Scheme v2：验证通过，签名者数量为 1。
+- APK：`android/app/build/outputs/apk/debug/app-debug.apk`。

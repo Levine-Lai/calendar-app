@@ -25,7 +25,7 @@
       shortName: team.shortName || team.name || team.importedTeamName || "",
       abbreviation: team.abbreviation || team.importedTeamAbbreviation || "",
       color: team.color || team.importedTeamColor || "#c7e6eb",
-      logo: team.logo || team.importedTeamLogo || ""
+      logo: normalizeImageUrl(team.logo || team.importedTeamLogo || "", "")
     };
   }
 
@@ -132,6 +132,20 @@
     return fallback;
   }
 
+  function normalizeImageUrl(value, fallback = "") {
+    const source = String(value || "").trim();
+    if (!source) return fallback;
+    if (source.startsWith("//")) return `https:${source}`;
+    if (!/^[a-z][a-z0-9+.-]*:/i.test(source)) return source;
+    try {
+      const url = new URL(source);
+      if (url.protocol === "http:") url.protocol = "https:";
+      return url.protocol === "https:" ? url.href : fallback;
+    } catch {
+      return fallback;
+    }
+  }
+
   function getMonthGridRange(cursor) {
     const monthStart = new Date(cursor.getFullYear(), cursor.getMonth(), 1);
     const start = new Date(monthStart);
@@ -221,6 +235,7 @@
     mergeEventRecords,
     mergeImportedTeams,
     normalizeImportedTeam,
+    normalizeImageUrl,
     parseBoolean,
     parseIcsDate,
     teamKey

@@ -59,3 +59,10 @@ test("ICS TZID values convert to UTC", () => {
     "2026-06-22T00:00:00.000Z"
   );
 });
+
+test("image URLs are safe for the Android HTTPS WebView", () => {
+  assert.equal(core.normalizeImageUrl("http://cdn.example.com/logo.png"), "https://cdn.example.com/logo.png");
+  assert.equal(core.normalizeImageUrl("//cdn.example.com/logo.png"), "https://cdn.example.com/logo.png");
+  assert.equal(core.normalizeImageUrl("public/assets/leagues/nba.png"), "public/assets/leagues/nba.png");
+  assert.equal(core.normalizeImageUrl("javascript:alert(1)", "fallback.png"), "fallback.png");
+});
