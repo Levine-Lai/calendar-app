@@ -32,9 +32,19 @@ adb devices -l
 adb install -r android\app\build\outputs\apk\debug\app-debug.apk
 ```
 
+## 开发验证
+
+```powershell
+npm test
+npm run build:web
+npm run sync:android
+```
+
+每次修复的背景、结构变化、兼容方式和验证结果记录在 [`context.md`](context.md)。后续修改必须按日期追加记录。
+
 ## 桌面小组件
 
-Android 版内置一个 4x4 桌面小组件。小组件读取你在 App 里已经导入的关注赛程，并按北京时间筛选“今天”的比赛。画面固定显示三行；当天超过三场时可上下滑动，也可用箭头每次精确翻动一场。
+Android 版内置一个 4x4 桌面小组件。小组件读取你在 App 里已经导入的关注赛程，并按北京时间筛选“今天”的比赛。画面固定显示三行；当天超过三场时可上下滑动，也可用箭头每次精确翻动一场。组件先显示本地赛程，再在联网时后台补充实时比分和队徽缓存；系统大约每 15 分钟尝试刷新一次，实际时间可能受 vivo 省电策略影响。
 
 使用流程：
 

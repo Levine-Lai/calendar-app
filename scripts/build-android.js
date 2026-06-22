@@ -7,6 +7,14 @@ const root = path.resolve(__dirname, "..");
 const androidDir = path.join(root, "android");
 
 function findCachedGradle() {
+  const wrapperProperties = fs.readFileSync(
+    path.join(androidDir, "gradle", "wrapper", "gradle-wrapper.properties"),
+    "utf8"
+  );
+  const version = wrapperProperties.match(/gradle-([\d.]+)-bin\.zip/)?.[1];
+  if (!version) {
+    return null;
+  }
   const distsDir = path.join(os.homedir(), ".gradle", "wrapper", "dists");
   if (!fs.existsSync(distsDir)) {
     return null;
@@ -14,7 +22,7 @@ function findCachedGradle() {
 
   const candidates = [];
   for (const distName of fs.readdirSync(distsDir)) {
-    if (!distName.startsWith("gradle-8.14.3-bin")) {
+    if (!distName.startsWith(`gradle-${version}-bin`)) {
       continue;
     }
 
@@ -23,7 +31,7 @@ function findCachedGradle() {
       const gradleBat = path.join(
         distPath,
         hashDir,
-        "gradle-8.14.3",
+        `gradle-${version}`,
         "bin",
         "gradle.bat"
       );

@@ -3,6 +3,13 @@ const dayMs = 24 * 60 * 60 * 1000;
 const weekLabels = ["周日", "周一", "周二", "周三", "周四", "周五", "周六"];
 const cache = new Map();
 const teamsCache = new Map();
+const CalendarCore = window.CalendarCore;
+let teamLoadRequestId = 0;
+const providerSeasonOverrides = {
+  cmcl: {
+    2026: { providerLeagueId: "20260410" }
+  }
+};
 
 const worldCupTeams = [
   ["624", "ALG", "Algeria"],
@@ -76,8 +83,6 @@ const leagues = [
     name: "英超",
     sport: "soccer",
     league: "eng.1",
-    seasonPreset: { start: "2026-08-21", end: "2027-05-23" },
-    maxRangeDays: 370,
     color: "#c8b8ef",
     logo: "https://a.espncdn.com/i/leaguelogos/soccer/500/23.png"
   },
@@ -153,7 +158,6 @@ const leagues = [
     sport: "soccer",
     source: "thesportsdb",
     providerLeagueId: "4628",
-    providerSeason: "2026",
     roundCount: 30,
     color: "#b9dff2",
     logo: "https://r2.thesportsdb.com/images/media/league/badge/hl1oz41729975140.png"
@@ -164,7 +168,6 @@ const leagues = [
     sport: "soccer",
     source: "thesportsdb",
     providerLeagueId: "5310",
-    providerSeason: "2026",
     roundCount: 30,
     color: "#f3d997",
     logo: "https://r2.thesportsdb.com/images/media/league/badge/e7vhw41680388986.png"
@@ -174,10 +177,6 @@ const leagues = [
     name: "中冠",
     sport: "soccer",
     source: "cfa",
-    providerLeagueId: "20260410",
-    providerYear: "2026",
-    seasonPreset: { start: "2026-04-06", end: "2026-12-31" },
-    maxRangeDays: 370,
     color: "#c5dfb4",
     logo: "https://a.espncdn.com/i/teamlogos/countries/500/chn.png"
   },
@@ -196,6 +195,7 @@ const state = {
   selectedTeamsByLeague: {},
   teamSearch: "",
   events: [],
+  followedTeams: [],
   cursor: startOfDay(new Date()),
   filters: {
     terms: "",
@@ -220,7 +220,6 @@ const elements = {
   nextBtn: document.querySelector("#nextBtn"),
   updateImportedBtn: document.querySelector("#updateImportedBtn"),
   deleteImportedBtn: document.querySelector("#deleteImportedBtn"),
-  clearBtn: document.querySelector("#clearBtn"),
   todayLabel: document.querySelector("#todayLabel"),
   rangeTitle: document.querySelector("#rangeTitle"),
   totalCount: document.querySelector("#totalCount"),
@@ -281,12 +280,6 @@ function bindEvents() {
   elements.nextBtn.addEventListener("click", () => moveCursor(1));
   elements.updateImportedBtn.addEventListener("click", updateImportedTeams);
   elements.deleteImportedBtn.addEventListener("click", openDeleteModal);
-  elements.clearBtn.addEventListener("click", () => {
-    if (!confirm("确定清空所有已导入赛程？")) return;
-    state.events = [];
-    persist();
-    render();
-  });
   elements.calendarView.addEventListener("click", (event) => {
     const dayCell = event.target.closest(".day-cell");
     if (dayCell?.dataset.date) {
@@ -344,16 +337,20 @@ async function importSelectedLeague() {
   setStatus(`正在导入 ${leagueConfig.name}：${teamNames} 的全部已确定赛程...`);
   try {
     const payload = await fetchFullTeamSchedule(leagueConfig, selectedTeam);
-    const filteredEvents = payload.events
-      .map((event) => tagImportedEvent(event, selectedTeam));
-    const teamKey = `${leagueConfig.id}:${selectedTeam.id}`;
-    state.events = state.events.filter((event) =>
-      `${event.league}:${String(event.importedTeamId || "")}` !== teamKey
-    );
-    mergeEvents(filteredEvents);
+    const filteredEvents = payload.events.map((event) => tagImportedEvent(event, selectedTeam));
+    const importedTeam = toImportedTeam(selectedTeam, leagueConfig);
     state.cursor = new Date(new Date().getFullYear(), new Date().getMonth(), 1);
+    if (payload.errors.length) {
+      state.followedTeams = CalendarCore.mergeImportedTeams(state.followedTeams, [importedTeam]);
+      mergeEvents(filteredEvents, { persistChanges: false });
+      persist({ syncWidget: true });
+      render();
+    } else {
+      replaceImportedTeamSchedule(importedTeam, filteredEvents);
+    }
     const warning = payload.errors.length ? `，${payload.errors.length} 个请求失败` : "";
-    setStatus(`已导入 ${filteredEvents.length} 场 ${leagueConfig.name} 全部已确定赛程${warning}。`);
+    const retained = payload.errors.length ? "，原有赛程已保留" : "";
+    setStatus(`已导入 ${filteredEvents.length} 场 ${leagueConfig.name} 全部已确定赛程${warning}${retained}。`);
   } catch (error) {
     setStatus(error.message, true);
   } finally {
@@ -398,9 +395,10 @@ async function fetchEspnTeamSchedule(leagueConfig, team, options = {}) {
       );
       endpoint.searchParams.set("season", String(season));
       endpoint.searchParams.set("seasontype", String(seasonType));
-      const response = await fetch(endpoint.toString(), { headers: { accept: "application/json" } });
-      if (!response.ok) throw new Error(`${leagueConfig.name} 球队赛程返回 ${response.status}`);
-      const payload = await response.json();
+      const payload = await fetchJsonWithRetry(
+        endpoint.toString(),
+        `${leagueConfig.name} 球队赛程`
+      );
       const events = (payload.events || []).map((event) => normalizeEspnEvent(event, leagueConfig));
       cache.set(cacheKey, { time: Date.now(), data: events });
       return { status: "fulfilled", value: events };
@@ -414,6 +412,9 @@ async function fetchEspnTeamSchedule(leagueConfig, team, options = {}) {
 function getEspnSeasonYear(leagueConfig, now = new Date()) {
   if (leagueConfig.id === "nba") {
     return now.getMonth() >= 8 ? now.getFullYear() + 1 : now.getFullYear();
+  }
+  if (leagueConfig.sport === "soccer" && !["csl", "worldcup"].includes(leagueConfig.id)) {
+    return now.getMonth() >= 5 ? now.getFullYear() : now.getFullYear() - 1;
   }
   return now.getFullYear();
 }
@@ -431,12 +432,7 @@ async function fetchEspnSchedule(leagueConfig, start, end, options = {}) {
   const endpoint = new URL(`https://site.api.espn.com/apis/site/v2/sports/${leagueConfig.sport}/${leagueConfig.league}/scoreboard`);
   endpoint.searchParams.set("dates", dateQuery);
   endpoint.searchParams.set("limit", "1000");
-  const response = await fetch(endpoint.toString(), {
-    headers: { accept: "application/json" }
-  });
-  if (!response.ok) throw new Error(`${leagueConfig.name} 赛程返回 ${response.status}`);
-
-  const payload = await response.json();
+  const payload = await fetchJsonWithRetry(endpoint.toString(), `${leagueConfig.name} 赛程`);
   const events = (payload.events || [])
     .map((event) => normalizeEspnEvent(event, leagueConfig))
     .sort(sortByStart);
@@ -473,14 +469,15 @@ async function fetchSportsDbDays(leagueConfig, start, end, options = {}) {
 }
 
 async function fetchSportsDbRound(leagueConfig, round, options = {}) {
-  const cacheKey = `${leagueConfig.id}:season:${leagueConfig.providerSeason}:round:${round}`;
+  const providerSeason = getProviderSeason(leagueConfig);
+  const cacheKey = `${leagueConfig.id}:season:${providerSeason}:round:${round}`;
   const cached = cache.get(cacheKey);
   if (!options.force && cached && Date.now() - cached.time < 5 * 60 * 1000) return cached.data;
 
   const endpoint = new URL("https://www.thesportsdb.com/api/v1/json/123/eventsround.php");
   endpoint.searchParams.set("id", leagueConfig.providerLeagueId);
   endpoint.searchParams.set("r", String(round));
-  endpoint.searchParams.set("s", leagueConfig.providerSeason);
+  endpoint.searchParams.set("s", providerSeason);
   const payload = await fetchJsonWithRetry(endpoint.toString(), `${leagueConfig.name} 第 ${round} 轮`);
   const events = (payload.events || []).map((event) => normalizeSportsDbEvent(event, leagueConfig));
   cache.set(cacheKey, { time: Date.now(), data: events });
@@ -515,31 +512,42 @@ async function fetchSportsDbDay(leagueConfig, date, options = {}) {
   return events;
 }
 
-async function fetchJsonWithRetry(url, label, attempts = 3) {
-  let lastStatus = "";
+async function fetchJsonWithRetry(url, label, attempts = 3, timeoutMs = 15000) {
+  let lastError = null;
   for (let attempt = 0; attempt < attempts; attempt += 1) {
-    const response = await fetch(url, { headers: { accept: "application/json" } });
-    if (response.ok) return response.json();
-    lastStatus = response.status;
-    if (attempt < attempts - 1 && (response.status === 429 || response.status >= 500)) {
-      await wait(350 * (attempt + 1));
-      continue;
+    const controller = new AbortController();
+    const timeout = window.setTimeout(() => controller.abort(), timeoutMs);
+    try {
+      const response = await fetch(url, {
+        headers: { accept: "application/json" },
+        signal: controller.signal
+      });
+      if (response.ok) return await response.json();
+      lastError = new Error(`${label} 返回 ${response.status}`);
+      if (response.status !== 429 && response.status < 500) break;
+    } catch (error) {
+      lastError = error.name === "AbortError"
+        ? new Error(`${label} 请求超时`)
+        : new Error(`${label} 网络失败：${error.message}`);
+    } finally {
+      window.clearTimeout(timeout);
     }
-    break;
+    if (attempt < attempts - 1) await wait(400 * (2 ** attempt));
   }
-  throw new Error(`${label} 返回 ${lastStatus || "请求失败"}`);
+  throw lastError || new Error(`${label} 请求失败`);
 }
 
 async function fetchCfaSchedule(leagueConfig, start, end, options = {}) {
-  const cacheKey = `${leagueConfig.id}:season:${leagueConfig.providerYear}`;
+  const runtimeConfig = getProviderRuntimeConfig(leagueConfig);
+  const cacheKey = `${leagueConfig.id}:season:${runtimeConfig.providerYear}`;
   const cached = cache.get(cacheKey);
   let seasonEvents = cached?.data;
   if (options.force || !cached || Date.now() - cached.time >= 5 * 60 * 1000) {
     const endpoint = new URL("https://data.thecfa.cn/gameplans.do");
-    endpoint.searchParams.set("lid", leagueConfig.providerLeagueId);
-    endpoint.searchParams.set("year", leagueConfig.providerYear);
+    endpoint.searchParams.set("lid", runtimeConfig.providerLeagueId);
+    endpoint.searchParams.set("year", runtimeConfig.providerYear);
     const rows = await fetchJsonp(endpoint.toString());
-    seasonEvents = (rows || []).map((event) => normalizeCfaEvent(event, leagueConfig));
+    seasonEvents = (rows || []).map((event) => normalizeCfaEvent(event, runtimeConfig));
     cache.set(cacheKey, { time: Date.now(), data: seasonEvents });
   }
 
@@ -755,7 +763,7 @@ function getFullScheduleRange(leagueConfig, now = new Date()) {
   if (leagueConfig.id === "mlb") {
     return { start: new Date(year, 1, 1), end: new Date(year, 10, 30) };
   }
-  if (leagueConfig.id === "csl" || leagueConfig.source === "thesportsdb") {
+  if (leagueConfig.id === "csl" || ["thesportsdb", "cfa"].includes(leagueConfig.source)) {
     return { start: new Date(year, 0, 1), end: new Date(year, 11, 31) };
   }
   if (leagueConfig.id === "nba") {
@@ -763,41 +771,71 @@ function getFullScheduleRange(leagueConfig, now = new Date()) {
     return { start: new Date(startYear, 9, 1), end: new Date(startYear + 1, 5, 30) };
   }
 
-  const startYear = now.getMonth() >= 4 ? year : year - 1;
+  const startYear = now.getMonth() >= 5 ? year : year - 1;
   return { start: new Date(startYear, 6, 1), end: new Date(startYear + 1, 5, 30) };
 }
 
-function mergeEvents(events) {
+function getProviderSeason(leagueConfig, now = new Date()) {
+  return String(leagueConfig.providerSeason || now.getFullYear());
+}
+
+function getProviderRuntimeConfig(leagueConfig, now = new Date()) {
+  const year = now.getFullYear();
+  const override = providerSeasonOverrides[leagueConfig.id]?.[year] || {};
+  const providerLeagueId = override.providerLeagueId || leagueConfig.providerLeagueId;
+  if (!providerLeagueId) {
+    throw new Error(`${leagueConfig.name} ${year} 赛季数据源尚未配置`);
+  }
+  return {
+    ...leagueConfig,
+    ...override,
+    providerLeagueId,
+    providerYear: String(year)
+  };
+}
+
+function mergeEvents(events, options = {}) {
+  const { persistChanges = true } = options;
   const byId = new Map(state.events.map((event) => [event.id, event]));
-  events.forEach((event) => byId.set(event.id, { ...byId.get(event.id), ...event }));
+  events.forEach((event) => byId.set(event.id, CalendarCore.mergeEventRecords(byId.get(event.id), event)));
   state.events = [...byId.values()].sort(sortByStart);
-  persist();
+  if (persistChanges) {
+    persist({ syncWidget: true });
+    render();
+  }
+}
+
+function toImportedTeam(team, leagueConfig) {
+  return CalendarCore.normalizeImportedTeam({
+    ...team,
+    league: leagueConfig?.id || team.league,
+    leagueName: leagueConfig?.name || team.leagueName || team.league
+  });
+}
+
+function replaceImportedTeamSchedule(team, events) {
+  state.events = state.events
+    .map((event) => CalendarCore.detachTeamFromEvent(event, team.key))
+    .filter(Boolean);
+  state.followedTeams = CalendarCore.mergeImportedTeams(
+    state.followedTeams.filter((item) => item.key !== team.key),
+    [team]
+  );
+  mergeEvents(events, { persistChanges: false });
+  persist({ syncWidget: true });
   render();
 }
 
 function getImportedTeams() {
-  const teams = new Map();
+  const teams = new Map(
+    CalendarCore.deriveFollowedTeams(state.events, state.followedTeams)
+      .map((team) => [team.key, { ...team, count: 0 }])
+  );
   state.events.forEach((event) => {
-    const teamId = String(event.importedTeamId || "");
-    if (!event.league || !teamId) return;
-    const leagueConfig = leagues.find((league) => league.id === event.league);
-    const key = `${event.league}:${teamId}`;
-    if (!teams.has(key)) {
-      const teamMeta = (event.teamMeta || []).find((team) => String(team.id) === teamId) || {};
-      teams.set(key, {
-        key,
-        id: teamId,
-        league: event.league,
-        leagueName: event.leagueName || leagueConfig?.name || event.league,
-        name: event.importedTeamName || teamMeta.name || event.importedTeamAbbreviation || teamId,
-        shortName: teamMeta.shortName || event.importedTeamName || "",
-        abbreviation: event.importedTeamAbbreviation || teamMeta.abbreviation || "",
-        color: event.importedTeamColor || teamMeta.color || leagueConfig?.color || "#c7e6eb",
-        logo: event.importedTeamLogo || teamMeta.logo || "",
-        count: 0
-      });
-    }
-    teams.get(key).count += 1;
+    CalendarCore.getEventImportedTeams(event).forEach((team) => {
+      if (!teams.has(team.key)) teams.set(team.key, { ...team, count: 0 });
+      teams.get(team.key).count += 1;
+    });
   });
   return [...teams.values()].sort((left, right) =>
     `${left.leagueName} ${left.name}`.localeCompare(`${right.leagueName} ${right.name}`, "zh-CN")
@@ -840,10 +878,12 @@ function renderImportedTeamDelete(team) {
 function deleteImportedTeam(key) {
   const team = getImportedTeams().find((item) => item.key === key);
   if (!team) return;
-  const before = state.events.length;
-  state.events = state.events.filter((event) => `${event.league}:${String(event.importedTeamId || "")}` !== key);
-  const removed = before - state.events.length;
-  persist();
+  const removed = team.count;
+  state.events = state.events
+    .map((event) => CalendarCore.detachTeamFromEvent(event, key))
+    .filter(Boolean);
+  state.followedTeams = state.followedTeams.filter((item) => item.key !== key);
+  persist({ syncWidget: true });
   render();
   openDeleteModal();
   setStatus(`已删除 ${team.leagueName}：${team.abbreviation || team.name} 的 ${removed} 场赛程。`);
@@ -908,14 +948,22 @@ async function updateImportedTeams() {
       }
     }
 
-    state.events = state.events.filter((event) =>
-      !updatedTeamKeys.has(`${event.league}:${String(event.importedTeamId || "")}`)
-    );
+    state.events = state.events
+      .map((event) => {
+        let next = event;
+        updatedTeamKeys.forEach((key) => {
+          if (next) next = CalendarCore.detachTeamFromEvent(next, key);
+        });
+        return next;
+      })
+      .filter(Boolean);
     const byId = new Map(state.events.map((event) => [event.id, event]));
-    updatedEvents.forEach((event) => byId.set(event.id, { ...byId.get(event.id), ...event }));
+    updatedEvents.forEach((event) => {
+      byId.set(event.id, CalendarCore.mergeEventRecords(byId.get(event.id), event));
+    });
     state.events = [...byId.values()].sort(sortByStart);
     state.cursor = new Date(new Date().getFullYear(), new Date().getMonth(), 1);
-    persist();
+    persist({ syncWidget: true });
     render();
     const newCount = updatedEvents.filter((event) => !beforeIds.has(event.id)).length;
     const uniqueErrors = [...new Set(errors)];
@@ -958,7 +1006,7 @@ function parseJson(text) {
 
 function parseCsv(text) {
   const rows = parseCsvRows(text);
-  const headers = rows.shift()?.map((header) => header.trim()) || [];
+  const headers = rows.shift()?.map((header) => header.trim().replace(/^\uFEFF/, "")) || [];
   return rows
     .filter((row) => row.some(Boolean))
     .map((row, index) => {
@@ -1008,20 +1056,27 @@ function parseIcs(text) {
         .map((line) => {
           const splitAt = line.indexOf(":");
           if (splitAt === -1) return null;
-          const key = line.slice(0, splitAt).split(";")[0];
+          const [key, ...rawParams] = line.slice(0, splitAt).split(";");
+          const params = Object.fromEntries(rawParams.map((param) => {
+            const equalsAt = param.indexOf("=");
+            return equalsAt === -1
+              ? [param.toUpperCase(), ""]
+              : [param.slice(0, equalsAt).toUpperCase(), param.slice(equalsAt + 1)];
+          }));
           const value = line.slice(splitAt + 1);
-          return [key, value];
+          return [key, { value, params }];
         })
         .filter(Boolean)
     );
+    const valueOf = (name, fallback = "") => fields[name]?.value || fallback;
     return normalizeImportedEvent({
-      id: fields.UID,
-      title: unescapeIcs(fields.SUMMARY || "未命名赛事"),
-      start: parseIcsDate(fields.DTSTART),
-      venue: unescapeIcs(fields.LOCATION || ""),
+      id: valueOf("UID"),
+      title: unescapeIcs(valueOf("SUMMARY", "未命名赛事")),
+      start: CalendarCore.parseIcsDate(valueOf("DTSTART"), fields.DTSTART?.params?.TZID || ""),
+      venue: unescapeIcs(valueOf("LOCATION")),
       league: "imported",
       leagueName: "导入",
-      url: fields.URL || ""
+      url: valueOf("URL")
     }, `ics-${index}`);
   });
 }
@@ -1044,7 +1099,7 @@ function normalizeImportedEvent(row, fallbackId) {
     city: row.city || "",
     status: row.status || "Scheduled",
     statusState: row.statusState || "",
-    completed: Boolean(row.completed),
+      completed: CalendarCore.parseBoolean(row.completed),
     homeScore: row.homeScore == null ? "" : String(row.homeScore),
     awayScore: row.awayScore == null ? "" : String(row.awayScore),
     homeTeam: row.homeTeam || "",
@@ -1087,6 +1142,8 @@ function renderLeagueButtons() {
 async function loadTeamsForSelectedLeague() {
   const leagueConfig = leagues.find((league) => league.id === state.selectedLeague);
   if (!leagueConfig) return;
+  const requestId = ++teamLoadRequestId;
+  const selectedLeagueId = leagueConfig.id;
   const cacheKey = getTeamCacheKey();
   if (teamsCache.has(cacheKey)) {
     renderTeamButtons();
@@ -1102,7 +1159,9 @@ async function loadTeamsForSelectedLeague() {
     if (leagueConfig.teamSource === "static") {
       const teams = (leagueConfig.teams || []).slice(0, 48);
       teamsCache.set(cacheKey, teams);
-      renderTeamButtons();
+      if (requestId === teamLoadRequestId && state.selectedLeague === selectedLeagueId) {
+        renderTeamButtons();
+      }
       return;
     }
 
@@ -1119,15 +1178,18 @@ async function loadTeamsForSelectedLeague() {
       teams = [...teamsById.values()].sort((a, b) => a.name.localeCompare(b.name));
     }
     teamsCache.set(cacheKey, teams);
-    renderTeamButtons();
+    if (requestId === teamLoadRequestId && state.selectedLeague === selectedLeagueId) {
+      renderTeamButtons();
+    }
   } catch (error) {
-    teamsCache.set(cacheKey, []);
-    elements.teamStatus.textContent = `球队加载失败：${error.message}`;
+    if (requestId === teamLoadRequestId && state.selectedLeague === selectedLeagueId) {
+      elements.teamStatus.textContent = `球队加载失败：${error.message}，可重新点击联赛重试`;
+    }
   }
 }
 
 async function fetchLeagueTeams(leagueConfig) {
-  const cacheKey = `${leagueConfig.id}:teams`;
+  const cacheKey = `${leagueConfig.id}:teams:${getLeagueSeasonKey(leagueConfig)}`;
   const cached = cache.get(cacheKey);
   if (cached && Date.now() - cached.time < 30 * 60 * 1000) return cached.data;
 
@@ -1136,25 +1198,29 @@ async function fetchLeagueTeams(leagueConfig) {
     `https://sports.core.api.espn.com/v2/sports/${leagueConfig.sport}/leagues/${leagueConfig.league}/seasons/${season}/teams`
   );
   endpoint.searchParams.set("limit", "100");
-  const response = await fetch(endpoint.toString(), {
-    headers: { accept: "application/json" }
-  });
-  if (!response.ok) throw new Error(`${leagueConfig.name} 球队列表返回 ${response.status}`);
-
-  const data = await response.json();
+  const data = await fetchJsonWithRetry(endpoint.toString(), `${leagueConfig.name} 球队列表`);
   const refs = (data.items || []).map((item) => item.$ref).filter(Boolean);
   const rows = await mapLimit(refs, 8, async (ref) => {
-    const teamResponse = await fetch(ref.replace("http://", "https://"), {
-      headers: { accept: "application/json" }
-    });
-    if (!teamResponse.ok) throw new Error(`${leagueConfig.name} 球队详情返回 ${teamResponse.status}`);
-    return teamResponse.json();
+    try {
+      return await fetchJsonWithRetry(
+        ref.replace("http://", "https://"),
+        `${leagueConfig.name} 球队详情`,
+        2
+      );
+    } catch (error) {
+      console.warn(error.message);
+      return null;
+    }
   });
   const teams = rows
     .map((team) => normalizeEventTeam(team, leagueConfig))
     .filter((team) => team?.id)
     .sort((a, b) => a.name.localeCompare(b.name))
     .slice(0, leagueConfig.teamLimit || 48);
+
+  if (!teams.length && refs.length) {
+    throw new Error("球队详情请求全部失败");
+  }
 
   cache.set(cacheKey, { time: Date.now(), data: teams });
   return teams;
@@ -1239,18 +1305,19 @@ function getSelectedTeams() {
 function getTeamCacheKey() {
   const leagueConfig = leagues.find((league) => league.id === state.selectedLeague);
   if (leagueConfig?.teamSource === "static") return `${state.selectedLeague}:teams`;
-  return `${state.selectedLeague}:full-season`;
+  return `${state.selectedLeague}:full-season:${getLeagueSeasonKey(leagueConfig)}`;
+}
+
+function getLeagueSeasonKey(leagueConfig, now = new Date()) {
+  if (!leagueConfig) return "unknown";
+  if (leagueConfig.source === "thesportsdb") return getProviderSeason(leagueConfig, now);
+  if (leagueConfig.source === "cfa") return String(now.getFullYear());
+  return String(getEspnSeasonYear(leagueConfig, now));
 }
 
 function tagImportedEvent(event, team) {
-  return {
-    ...event,
-    importedTeamId: team.id,
-    importedTeamName: team.name,
-    importedTeamAbbreviation: team.abbreviation,
-    importedTeamColor: team.color,
-    importedTeamLogo: team.logo
-  };
+  const leagueConfig = leagues.find((league) => league.id === event.league);
+  return CalendarCore.attachTeamToEvent(event, toImportedTeam(team, leagueConfig));
 }
 
 function getTeamLogo(team) {
@@ -1318,7 +1385,7 @@ function renderView() {
   const range = getVisibleRange();
   const visibleEvents = getFilteredEvents().filter((event) => {
     const date = new Date(event.start);
-    return date >= range.start && date <= addDays(range.end, 1);
+    return date >= range.start && date < addDays(range.end, 1);
   });
 
   renderMonth(visibleEvents);
@@ -1358,7 +1425,7 @@ function renderMonth(events) {
 }
 
 function renderChip(event) {
-  const color = event.importedTeamColor || event.leagueColor || "#00c2ff";
+  const color = eventColor(event, "#00c2ff");
   const awayLogo = event.awayLogo ? `<img src="${escapeAttr(event.awayLogo)}" alt="${escapeAttr(event.awayTeam || "Away")}">` : "";
   const homeLogo = event.homeLogo ? `<img src="${escapeAttr(event.homeLogo)}" alt="${escapeAttr(event.homeTeam || "Home")}">` : "";
   return `
@@ -1423,9 +1490,11 @@ async function refreshDayModalScores(dateKey) {
   if (refreshed.length) {
     const updates = new Map(refreshed.map((event) => [event.id, event]));
     state.events = state.events
-      .map((event) => updates.has(event.id) ? { ...event, ...updates.get(event.id) } : event)
+      .map((event) => updates.has(event.id)
+        ? CalendarCore.mergeEventRecords(event, updates.get(event.id))
+        : event)
       .sort(sortByStart);
-    persist();
+    persist({ syncWidget: true });
     render();
   }
   if (activeDayModalDate === dateKey && !elements.dayModal.hidden) {
@@ -1442,7 +1511,7 @@ function closeDayModal() {
 }
 
 function renderDayModalEvent(event) {
-  const color = event.importedTeamColor || event.leagueColor || "#c8e8b8";
+  const color = eventColor(event, "#c8e8b8");
   const awayLogo = event.awayLogo ? `<img src="${escapeAttr(event.awayLogo)}" alt="${escapeAttr(event.awayTeam || "Away")}">` : "";
   const homeLogo = event.homeLogo ? `<img src="${escapeAttr(event.homeLogo)}" alt="${escapeAttr(event.homeTeam || "Home")}">` : "";
   const details = [
@@ -1472,7 +1541,7 @@ function eventScoreLabel(event) {
   }
   if (isEventLive(event)) return "进行中";
   if (isEventFinished(event)) return "已结束";
-  return "未开始";
+  return "0 - 0";
 }
 
 function eventStatusLabel(event) {
@@ -1536,8 +1605,9 @@ function renderEventCard(event) {
     event.broadcast ? `转播：${event.broadcast}` : "",
     event.status && event.status !== "Scheduled" ? event.status : ""
   ].filter(Boolean);
-  const title = event.url
-    ? `<a href="${escapeAttr(event.url)}" target="_blank" rel="noreferrer">${escapeHtml(event.title)}</a>`
+  const eventUrl = sanitizeExternalUrl(event.url);
+  const title = eventUrl
+    ? `<a href="${escapeAttr(eventUrl)}" target="_blank" rel="noreferrer">${escapeHtml(event.title)}</a>`
     : escapeHtml(event.title);
   return `
     <article class="event-card" style="--event-color:${escapeHtml(event.leagueColor || "#00c2ff")}">
@@ -1554,10 +1624,11 @@ function renderEventCard(event) {
 }
 
 function getVisibleRange() {
-  return {
-    start: new Date(state.cursor.getFullYear(), state.cursor.getMonth(), 1),
-    end: new Date(state.cursor.getFullYear(), state.cursor.getMonth() + 1, 0)
-  };
+  return CalendarCore.getMonthGridRange(state.cursor);
+}
+
+function eventColor(event, fallback) {
+  return CalendarCore.getEventImportedTeams(event)[0]?.color || event.leagueColor || fallback;
 }
 
 function getFilteredEvents() {
@@ -1603,14 +1674,20 @@ function groupByDay(events) {
   return new Map([...map.entries()].sort(([a], [b]) => a.localeCompare(b)));
 }
 
-function persist() {
-  localStorage.setItem(storageKey, JSON.stringify({
-    selectedLeague: state.selectedLeague,
-    selectedTeamsByLeague: state.selectedTeamsByLeague,
-    events: state.events,
-    filters: state.filters
-  }));
-  syncWidgetEvents();
+function persist(options = {}) {
+  try {
+    localStorage.setItem(storageKey, JSON.stringify({
+      selectedLeague: state.selectedLeague,
+      selectedTeamsByLeague: state.selectedTeamsByLeague,
+      events: state.events,
+      followedTeams: state.followedTeams,
+      filters: state.filters
+    }));
+  } catch (error) {
+    setStatus(`本地数据保存失败：${error.message}`, true);
+    return;
+  }
+  if (options.syncWidget) scheduleWidgetSync();
 }
 
 function load() {
@@ -1618,21 +1695,35 @@ function load() {
     const saved = JSON.parse(localStorage.getItem(storageKey) || "{}");
     state.selectedLeague = saved.selectedLeague || state.selectedLeague;
     state.selectedTeamsByLeague = saved.selectedTeamsByLeague || state.selectedTeamsByLeague;
-    state.events = Array.isArray(saved.events) ? saved.events : [];
+    state.events = Array.isArray(saved.events)
+      ? saved.events.map((event) => CalendarCore.mergeEventRecords(null, event))
+      : [];
+    state.followedTeams = CalendarCore.deriveFollowedTeams(state.events, saved.followedTeams || []);
     state.filters = { ...state.filters, ...(saved.filters || {}) };
   } catch {
     localStorage.removeItem(storageKey);
   }
 }
 
+let widgetSyncTimer = 0;
+let lastWidgetSignature = "";
+
+function scheduleWidgetSync() {
+  window.clearTimeout(widgetSyncTimer);
+  widgetSyncTimer = window.setTimeout(syncWidgetEvents, 250);
+}
+
 async function syncWidgetEvents() {
   const plugin = window.Capacitor?.Plugins?.SportsWidget;
   if (!plugin?.saveEvents) return;
+  const events = state.events.map(toWidgetEvent);
+  const signature = JSON.stringify(events);
+  if (signature === lastWidgetSignature) return;
+  lastWidgetSignature = signature;
   try {
-    await plugin.saveEvents({
-      events: state.events.map(toWidgetEvent)
-    });
+    await plugin.saveEvents({ events });
   } catch (error) {
+    lastWidgetSignature = "";
     console.warn("Widget sync failed", error);
   }
 }
@@ -1752,20 +1843,6 @@ function formatEspnDate(date) {
   ].join("");
 }
 
-function parseIcsDate(value) {
-  if (!value) return "";
-  if (/^\d{8}T\d{6}Z$/.test(value)) {
-    return `${value.slice(0, 4)}-${value.slice(4, 6)}-${value.slice(6, 8)}T${value.slice(9, 11)}:${value.slice(11, 13)}:${value.slice(13, 15)}Z`;
-  }
-  if (/^\d{8}T\d{6}$/.test(value)) {
-    return `${value.slice(0, 4)}-${value.slice(4, 6)}-${value.slice(6, 8)}T${value.slice(9, 11)}:${value.slice(11, 13)}:${value.slice(13, 15)}`;
-  }
-  if (/^\d{8}$/.test(value)) {
-    return `${value.slice(0, 4)}-${value.slice(4, 6)}-${value.slice(6, 8)}T00:00:00`;
-  }
-  return value;
-}
-
 function unescapeIcs(value = "") {
   return value
     .replaceAll("\\n", "\n")
@@ -1785,6 +1862,16 @@ function escapeHtml(value = "") {
 
 function escapeAttr(value = "") {
   return escapeHtml(value).replaceAll("`", "&#096;");
+}
+
+function sanitizeExternalUrl(value) {
+  if (!value) return "";
+  try {
+    const url = new URL(value, window.location.href);
+    return ["http:", "https:"].includes(url.protocol) ? url.href : "";
+  } catch {
+    return "";
+  }
 }
 
 function hash(value) {

@@ -12,43 +12,62 @@ import android.net.Uri;
 import android.view.View;
 import android.widget.RemoteViews;
 
+import androidx.work.Constraints;
+import androidx.work.ExistingPeriodicWorkPolicy;
+import androidx.work.NetworkType;
+import androidx.work.PeriodicWorkRequest;
+import androidx.work.WorkManager;
+
 import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
+import java.security.MessageDigest;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Collections;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
+import java.util.Set;
 import java.util.TimeZone;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
 
 public class MlbTodayWidgetProvider extends AppWidgetProvider {
     public static final String PREFS_NAME = "sports_widget";
     public static final String PREFS_EVENTS = "events_json";
+    private static final String PREFS_LIVE_SNAPSHOT = "live_snapshot_json";
 
     private static final String ACTION_REFRESH = "com.local.sportscalendar.action.REFRESH_WIDGET";
     private static final String ACTION_SCROLL_UP = "com.local.sportscalendar.action.SCROLL_WIDGET_UP";
     private static final String ACTION_SCROLL_DOWN = "com.local.sportscalendar.action.SCROLL_WIDGET_DOWN";
+    private static final String PERIODIC_WORK_NAME = "sports-widget-live-refresh";
     private static final int SCORE_DEFAULT_COLOR = 0xFF16120F;
     private static final int SCORE_LIVE_COLOR = 0xFFD83A34;
     private static final TimeZone BEIJING_TIME = TimeZone.getTimeZone("Asia/Shanghai");
     private static final ExecutorService EXECUTOR = Executors.newSingleThreadExecutor();
+    private static final Object DISPLAY_GAMES_LOCK = new Object();
+    private static List<Game> displayGames = new ArrayList<>();
+    private static String displayDayKey = "";
 
     @Override
     public void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds) {
+        schedulePeriodicRefresh(context.getApplicationContext());
         updateWidgetsAsync(context.getApplicationContext(), appWidgetManager, appWidgetIds);
     }
 
@@ -69,7 +88,14 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
 
     @Override
     public void onEnabled(Context context) {
+        schedulePeriodicRefresh(context.getApplicationContext());
         refreshAll(context.getApplicationContext());
+    }
+
+    @Override
+    public void onDisabled(Context context) {
+        WorkManager.getInstance(context.getApplicationContext())
+            .cancelUniqueWork(PERIODIC_WORK_NAME);
     }
 
     public static void refreshAll(Context context) {
@@ -83,14 +109,60 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
         AppWidgetManager manager,
         int[] widgetIds
     ) {
-        EXECUTOR.execute(() -> {
-            boolean hasPaging = readTodayGames(context).size() > 3;
-            for (int appWidgetId : widgetIds) {
-                RemoteViews views = baseViews(context, appWidgetId, hasPaging);
-                manager.updateAppWidget(appWidgetId, views);
-                manager.notifyAppWidgetViewDataChanged(appWidgetId, R.id.game_list);
-            }
-        });
+        EXECUTOR.execute(() -> updateWidgetsNow(context, manager, widgetIds));
+    }
+
+    static void refreshAllBlocking(Context context) {
+        AppWidgetManager manager = AppWidgetManager.getInstance(context);
+        int[] ids = manager.getAppWidgetIds(new ComponentName(context, MlbTodayWidgetProvider.class));
+        updateWidgetsNow(context.getApplicationContext(), manager, ids);
+    }
+
+    private static synchronized void updateWidgetsNow(Context context, AppWidgetManager manager, int[] widgetIds) {
+        List<Game> localGames = readTodayGames(context);
+        cacheDisplayGames(localGames);
+        updateWidgetViews(context, manager, widgetIds, localGames.size() > 3);
+
+        if (localGames.isEmpty()) return;
+
+        List<Game> liveGames = readTodayGames(context);
+        hydrateLiveScores(liveGames);
+        cacheLiveSnapshot(context, liveGames);
+        cacheDisplayGames(liveGames);
+        updateWidgetViews(context, manager, widgetIds, liveGames.size() > 3);
+
+        if (prefetchLogos(context, liveGames)) {
+            updateWidgetViews(context, manager, widgetIds, liveGames.size() > 3);
+        }
+    }
+
+    private static void schedulePeriodicRefresh(Context context) {
+        Constraints constraints = new Constraints.Builder()
+            .setRequiredNetworkType(NetworkType.CONNECTED)
+            .build();
+        PeriodicWorkRequest request = new PeriodicWorkRequest.Builder(
+            WidgetRefreshWorker.class,
+            15,
+            TimeUnit.MINUTES
+        ).setConstraints(constraints).build();
+        WorkManager.getInstance(context).enqueueUniquePeriodicWork(
+            PERIODIC_WORK_NAME,
+            ExistingPeriodicWorkPolicy.KEEP,
+            request
+        );
+    }
+
+    private static void updateWidgetViews(
+        Context context,
+        AppWidgetManager manager,
+        int[] widgetIds,
+        boolean hasPaging
+    ) {
+        for (int appWidgetId : widgetIds) {
+            RemoteViews views = baseViews(context, appWidgetId, hasPaging);
+            manager.updateAppWidget(appWidgetId, views);
+            manager.notifyAppWidgetViewDataChanged(appWidgetId, R.id.game_list);
+        }
     }
 
     private static void scrollAll(Context context, int offset) {
@@ -157,11 +229,13 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
             .getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
             .getString(PREFS_EVENTS, "[]");
         List<Game> games = new ArrayList<>();
+        Map<String, JSONObject> liveSnapshot = readLiveSnapshot(context);
         try {
             JSONArray events = new JSONArray(raw);
             for (int index = 0; index < events.length(); index += 1) {
                 Game game = parseStoredGame(events.optJSONObject(index));
                 if (game != null && isBeijingToday(game.start)) {
+                    applyCachedGame(game, liveSnapshot.get(game.key()));
                     games.add(game);
                 }
             }
@@ -171,6 +245,28 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
 
         Collections.sort(games, (left, right) -> left.start.compareTo(right.start));
         return games;
+    }
+
+    static List<Game> getDisplayGames(Context context) {
+        synchronized (DISPLAY_GAMES_LOCK) {
+            if (todayKey().equals(displayDayKey)) {
+                return new ArrayList<>(displayGames);
+            }
+        }
+        return readTodayGames(context);
+    }
+
+    private static void cacheDisplayGames(List<Game> games) {
+        synchronized (DISPLAY_GAMES_LOCK) {
+            displayDayKey = todayKey();
+            displayGames = new ArrayList<>(games);
+        }
+    }
+
+    private static String todayKey() {
+        SimpleDateFormat format = new SimpleDateFormat("yyyyMMdd", Locale.CHINA);
+        format.setTimeZone(BEIJING_TIME);
+        return format.format(new Date());
     }
 
     private static Game parseStoredGame(JSONObject event) {
@@ -183,6 +279,7 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
         }
 
         Game game = new Game();
+        game.id = event.optString("id", "");
         game.start = start;
         game.awayLogo = event.optString("awayLogo", "");
         game.homeLogo = event.optString("homeLogo", "");
@@ -221,12 +318,108 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
     }
 
     private static void setLogo(Context context, RemoteViews views, int viewId, String logoUrl) {
-        Bitmap bitmap = downloadBitmap(context, logoUrl);
+        Bitmap bitmap = loadCachedBitmap(context, logoUrl);
         if (bitmap == null) {
             views.setImageViewResource(viewId, R.drawable.ic_team_placeholder);
         } else {
             views.setImageViewBitmap(viewId, bitmap);
         }
+    }
+
+    private static Map<String, JSONObject> readLiveSnapshot(Context context) {
+        Map<String, JSONObject> byKey = new HashMap<>();
+        try {
+            String raw = context
+                .getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
+                .getString(PREFS_LIVE_SNAPSHOT, "{}");
+            JSONObject root = new JSONObject(raw);
+            if (!todayKey().equals(root.optString("day", ""))) {
+                return byKey;
+            }
+            JSONArray games = root.optJSONArray("games");
+            if (games == null) return byKey;
+            for (int index = 0; index < games.length(); index += 1) {
+                JSONObject game = games.optJSONObject(index);
+                if (game != null) byKey.put(game.optString("key", ""), game);
+            }
+        } catch (Exception ignored) {
+            // Ignore a damaged snapshot and use the imported schedule.
+        }
+        return byKey;
+    }
+
+    private static void applyCachedGame(Game game, JSONObject cached) {
+        if (cached == null) return;
+        game.awayScore = cached.optString("awayScore", game.awayScore);
+        game.homeScore = cached.optString("homeScore", game.homeScore);
+        game.status = cached.optString("status", game.status);
+        game.statusState = cached.optString("statusState", game.statusState);
+        game.completed = cached.optBoolean("completed", game.completed);
+        game.awayLogo = cached.optString("awayLogo", game.awayLogo);
+        game.homeLogo = cached.optString("homeLogo", game.homeLogo);
+    }
+
+    private static void cacheLiveSnapshot(Context context, List<Game> games) {
+        try {
+            JSONArray rows = new JSONArray();
+            for (Game game : games) {
+                JSONObject row = new JSONObject();
+                row.put("key", game.key());
+                row.put("awayScore", game.awayScore);
+                row.put("homeScore", game.homeScore);
+                row.put("status", game.status);
+                row.put("statusState", game.statusState);
+                row.put("completed", game.completed);
+                row.put("awayLogo", game.awayLogo);
+                row.put("homeLogo", game.homeLogo);
+                rows.put(row);
+            }
+            JSONObject root = new JSONObject();
+            root.put("day", todayKey());
+            root.put("fetchedAt", System.currentTimeMillis());
+            root.put("games", rows);
+            context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
+                .edit()
+                .putString(PREFS_LIVE_SNAPSHOT, root.toString())
+                .apply();
+        } catch (Exception ignored) {
+            // The in-memory result remains usable when persistence fails.
+        }
+    }
+
+    private static boolean prefetchLogos(Context context, List<Game> games) {
+        pruneLogoCache(context);
+        Set<String> urls = new HashSet<>();
+        for (Game game : games) {
+            if (game.awayLogo != null && !game.awayLogo.isEmpty()) urls.add(game.awayLogo);
+            if (game.homeLogo != null && !game.homeLogo.isEmpty()) urls.add(game.homeLogo);
+        }
+        boolean changed = false;
+        for (String url : urls) {
+            File file = logoCacheFile(context, url);
+            if (file.exists()) continue;
+            Bitmap bitmap = downloadBitmap(context, url);
+            if (bitmap == null) continue;
+            File temporary = new File(file.getAbsolutePath() + ".tmp");
+            try (FileOutputStream output = new FileOutputStream(temporary)) {
+                if (bitmap.compress(Bitmap.CompressFormat.PNG, 100, output)) {
+                    changed |= temporary.renameTo(file);
+                }
+            } catch (Exception ignored) {
+                // A placeholder remains visible until a later refresh succeeds.
+            } finally {
+                if (temporary.exists()) temporary.delete();
+            }
+        }
+        return changed;
+    }
+
+    private static void pruneLogoCache(Context context) {
+        File directory = new File(context.getCacheDir(), "widget_logos");
+        File[] files = directory.listFiles((dir, name) -> name.endsWith(".png"));
+        if (files == null || files.length <= 256) return;
+        Arrays.sort(files, (left, right) -> Long.compare(left.lastModified(), right.lastModified()));
+        for (int index = 0; index < files.length - 256; index += 1) files[index].delete();
     }
 
     static void hydrateLiveScores(List<Game> games) {
@@ -544,7 +737,7 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
         return format.format(game.start);
     }
 
-    private static boolean isLive(Game game) {
+    static boolean isLive(Game game) {
         String state = game.statusState == null ? "" : game.statusState.toLowerCase(Locale.US);
         String status = game.status == null ? "" : game.status.toLowerCase(Locale.US);
         if (isFinished(game)) {
@@ -562,7 +755,7 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
             || status.contains("'");
     }
 
-    private static boolean isFinished(Game game) {
+    static boolean isFinished(Game game) {
         String state = game.statusState == null ? "" : game.statusState.toLowerCase(Locale.US);
         String status = game.status == null ? "" : game.status.toLowerCase(Locale.US);
         return game.completed
@@ -584,7 +777,10 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
         String[] patterns = {
             "yyyy-MM-dd'T'HH:mm'Z'",
             "yyyy-MM-dd'T'HH:mm:ss'Z'",
-            "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+            "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'",
+            "yyyy-MM-dd'T'HH:mmXXX",
+            "yyyy-MM-dd'T'HH:mm:ssXXX",
+            "yyyy-MM-dd'T'HH:mm:ss.SSSXXX"
         };
         for (String pattern : patterns) {
             try {
@@ -595,10 +791,32 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
                 // Try the next timestamp shape.
             }
         }
+        return null;
+    }
+
+    private static Bitmap loadCachedBitmap(Context context, String imageUrl) {
+        if (imageUrl == null || imageUrl.isEmpty()) return null;
+        File file = logoCacheFile(context, imageUrl);
+        if (!file.exists()) return null;
+        file.setLastModified(System.currentTimeMillis());
+        return BitmapFactory.decodeFile(file.getAbsolutePath());
+    }
+
+    private static File logoCacheFile(Context context, String imageUrl) {
+        File directory = new File(context.getCacheDir(), "widget_logos");
+        if (!directory.exists()) directory.mkdirs();
+        return new File(directory, sha256(imageUrl) + ".png");
+    }
+
+    private static String sha256(String value) {
         try {
-            return new Date(Date.parse(value));
+            byte[] digest = MessageDigest.getInstance("SHA-256")
+                .digest(value.getBytes(StandardCharsets.UTF_8));
+            StringBuilder result = new StringBuilder();
+            for (byte part : digest) result.append(String.format(Locale.US, "%02x", part));
+            return result.toString();
         } catch (Exception ignored) {
-            return null;
+            return Integer.toHexString(value.hashCode());
         }
     }
 
@@ -611,6 +829,9 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
             connection = (HttpURLConnection) new URL(imageUrl).openConnection();
             connection.setConnectTimeout(5000);
             connection.setReadTimeout(5000);
+            connection.setRequestProperty("User-Agent", "GuansaiRijiWidget/2.0");
+            long contentLength = connection.getContentLengthLong();
+            if (contentLength > 2 * 1024 * 1024) return null;
             try (InputStream input = new BufferedInputStream(connection.getInputStream())) {
                 Bitmap bitmap = BitmapFactory.decodeStream(input);
                 if (bitmap == null) {
@@ -629,6 +850,7 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
     }
 
     static class Game {
+        String id;
         Date start;
         String sourceId;
         String sport;
@@ -645,5 +867,14 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
         String status;
         String statusState;
         boolean completed;
+
+        String key() {
+            if (id != null && !id.isEmpty()) return id;
+            return (sourceId == null ? "" : sourceId) + "|" + start.getTime();
+        }
+
+        long stableId() {
+            return key().hashCode();
+        }
     }
 }

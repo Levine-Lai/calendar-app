@@ -28,8 +28,7 @@ public class SportsWidgetService extends RemoteViewsService {
 
         @Override
         public void onDataSetChanged() {
-            games = MlbTodayWidgetProvider.readTodayGames(context);
-            MlbTodayWidgetProvider.hydrateLiveScores(games);
+            games = MlbTodayWidgetProvider.getDisplayGames(context);
         }
 
         @Override
@@ -66,7 +65,7 @@ public class SportsWidgetService extends RemoteViewsService {
 
         @Override
         public long getItemId(int position) {
-            return position;
+            return games.isEmpty() ? 0L : games.get(position).stableId();
         }
 
         @Override
