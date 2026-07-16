@@ -193,4 +193,18 @@ public class WidgetGameStatusTest {
         assertEquals("", TeamNewsPushManager.safeMlbUrl("https://mlb.com.example.org/fake"));
         assertEquals("", TeamNewsPushManager.safeMlbUrl("javascript:alert(1)"));
     }
+
+    @Test
+    public void teamNewsBuildsOnlyOfficialAmpArticleUrls() {
+        assertEquals(
+            "https://www.mlb.com/amp/news/jays-add-reliever.html",
+            TeamNewsPushManager.toMlbAmpUrl("https://www.mlb.com/bluejays/news/jays-add-reliever")
+        );
+        assertEquals(
+            "https://www.mlb.com/amp/news/jays-add-reliever.html",
+            TeamNewsPushManager.toMlbAmpUrl("https://www.mlb.com/amp/news/jays-add-reliever.html")
+        );
+        assertEquals("", TeamNewsPushManager.toMlbAmpUrl("https://example.com/news/jays-add-reliever"));
+        assertEquals("", TeamNewsPushManager.toMlbAmpUrl("https://www.mlb.com/news/../../secret"));
+    }
 }

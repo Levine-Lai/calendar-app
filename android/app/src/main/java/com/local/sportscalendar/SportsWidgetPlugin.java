@@ -31,6 +31,7 @@ import java.util.concurrent.Executors;
 )
 public class SportsWidgetPlugin extends Plugin {
     private static final ExecutorService STORAGE_EXECUTOR = Executors.newSingleThreadExecutor();
+    private static final ExecutorService NETWORK_EXECUTOR = Executors.newFixedThreadPool(2);
 
     @PluginMethod
     public void saveEvents(PluginCall call) {
@@ -143,6 +144,26 @@ public class SportsWidgetPlugin extends Plugin {
         JSObject result = new JSObject();
         result.put("url", TeamNewsPushManager.safeMlbUrl(rawUrl));
         call.resolve(result);
+    }
+
+    @PluginMethod
+    public void fetchMlbArticle(PluginCall call) {
+        String ampUrl = TeamNewsPushManager.toMlbAmpUrl(call.getString("url", ""));
+        if (ampUrl.isEmpty()) {
+            call.reject("MLB 原文地址无效");
+            return;
+        }
+        NETWORK_EXECUTOR.execute(() -> {
+            try {
+                String html = WidgetNetworkClient.getMlbArticleHtml(ampUrl);
+                JSObject result = new JSObject();
+                result.put("html", html);
+                result.put("sourceUrl", ampUrl);
+                call.resolve(result);
+            } catch (Exception error) {
+                call.reject("MLB 原文读取失败", error);
+            }
+        });
     }
 
     private boolean hasNotificationPermission() {

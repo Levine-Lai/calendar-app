@@ -57,6 +57,27 @@ final class TeamNewsPushManager {
         }
     }
 
+    static String toMlbAmpUrl(String rawUrl) {
+        String safeUrl = safeMlbUrl(rawUrl);
+        if (safeUrl.isEmpty()) return "";
+        try {
+            String path = new URI(safeUrl).getPath();
+            if (path == null || path.contains("..")) return "";
+            String[] parts = path.split("/");
+            String slug = "";
+            for (int index = parts.length - 1; index >= 0; index--) {
+                if (!parts[index].isBlank()) {
+                    slug = parts[index].replaceFirst("\\.html$", "");
+                    break;
+                }
+            }
+            if (!slug.matches("[A-Za-z0-9-]{1,180}")) return "";
+            return "https://www.mlb.com/amp/news/" + slug + ".html";
+        } catch (URISyntaxException error) {
+            return "";
+        }
+    }
+
     private static SharedPreferences preferences(Context context) {
         return context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
     }

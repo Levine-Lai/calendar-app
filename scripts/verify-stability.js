@@ -12,6 +12,8 @@ const core = read("public/calendar-core.js");
 const gradle = read("android/app/build.gradle");
 const packageJson = require(path.join(root, "package.json"));
 const versionManifest = JSON.parse(read("public/version.json"));
+const updateConfig = read("public/update-config.js");
+const currentVersionCode = Number(updateConfig.match(/currentVersionCode:\s*(\d+)/)?.[1]);
 
 const tracked = (folder) => execFileSync("git", ["ls-files", folder], { cwd: root, encoding: "utf8" }).trim();
 const checks = [
@@ -36,9 +38,11 @@ const checks = [
   ["19 仓库生成物清理", fs.existsSync(path.join(root, ".gitignore")) && !tracked("node_modules") && !tracked("www")],
   [
     "20 版本配置一致",
-    packageJson.version === versionManifest.versionName
-      && gradle.includes(`versionCode ${versionManifest.versionCode}`)
-      && gradle.includes(`versionName "${versionManifest.versionName}"`)
+    gradle.includes(`versionName "${packageJson.version}"`)
+      && updateConfig.includes(`currentVersionName: "${packageJson.version}"`)
+      && Number.isInteger(currentVersionCode)
+      && gradle.includes(`versionCode ${currentVersionCode}`)
+      && Number(versionManifest.versionCode) > 0
   ]
 ];
 

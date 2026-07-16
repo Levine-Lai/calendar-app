@@ -16,6 +16,7 @@ final class WidgetNetworkClient {
     private static final int MAX_JSON_BYTES = 5 * 1024 * 1024;
     private static final int MAX_IMAGE_BYTES = 2 * 1024 * 1024;
     private static final int MAX_IMAGE_PIXELS = 16_000_000;
+    private static final int MAX_ARTICLE_BYTES = 768 * 1024;
 
     private WidgetNetworkClient() {}
 
@@ -33,6 +34,25 @@ final class WidgetNetworkClient {
                 throw new IllegalStateException("Unexpected content type: " + contentType);
             }
             return new String(readLimited(connection.getInputStream(), MAX_JSON_BYTES), StandardCharsets.UTF_8);
+        } finally {
+            connection.disconnect();
+        }
+    }
+
+    static String getMlbArticleHtml(String endpoint) throws Exception {
+        HttpURLConnection connection = open(endpoint, 10_000, 15_000);
+        connection.setRequestProperty("Accept", "text/html,application/xhtml+xml");
+        try {
+            int code = connection.getResponseCode();
+            if (TeamNewsPushManager.safeMlbUrl(connection.getURL().toString()).isEmpty()) {
+                throw new IllegalStateException("MLB HTTPS redirect required");
+            }
+            if (code < 200 || code >= 300) throw new IllegalStateException("HTTP " + code);
+            String contentType = connection.getContentType();
+            if (contentType != null && !contentType.toLowerCase().contains("html")) {
+                throw new IllegalStateException("Unexpected content type: " + contentType);
+            }
+            return new String(readLimited(connection.getInputStream(), MAX_ARTICLE_BYTES), StandardCharsets.UTF_8);
         } finally {
             connection.disconnect();
         }
@@ -78,7 +98,7 @@ final class WidgetNetworkClient {
         connection.setConnectTimeout(connectTimeout);
         connection.setReadTimeout(readTimeout);
         connection.setInstanceFollowRedirects(true);
-        connection.setRequestProperty("User-Agent", "GuansaiRijiWidget/2.1.8");
+        connection.setRequestProperty("User-Agent", "GuansaiRiji/2.2.2");
         return connection;
     }
 

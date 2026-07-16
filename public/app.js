@@ -250,7 +250,9 @@ const teamNewsState = {
   items: [],
   updatedAt: "",
   loading: false,
-  pendingUrl: ""
+  pendingUrl: "",
+  articleBodies: new Map(),
+  loadingBodies: new Set()
 };
 
 const elements = {
@@ -383,8 +385,8 @@ function bindEvents() {
     if (event.target === elements.teamNewsModal) closeTeamNewsModal();
   });
   elements.teamNewsList.addEventListener("click", (event) => {
-    const button = event.target.closest(".team-news-original");
-    if (button?.dataset.url) openTeamNewsArticle(button.dataset.url);
+    const disclosure = event.target.closest(".team-news-disclosure");
+    if (disclosure) toggleTeamNewsArticle(disclosure);
   });
   window.addEventListener("sports-news-open", (event) => {
     handleTeamNewsOpen(event.detail?.url || "");
@@ -617,8 +619,18 @@ function renderTeamNews() {
   teamNewsState.items.forEach((item) => {
     const article = document.createElement("article");
     article.className = "team-news-item";
+    article.dataset.newsId = item.id;
     article.dataset.url = item.url;
 
+    const disclosure = document.createElement("button");
+    disclosure.className = "team-news-disclosure";
+    disclosure.type = "button";
+    disclosure.dataset.newsId = item.id;
+    disclosure.dataset.url = item.url;
+    disclosure.setAttribute("aria-expanded", "false");
+
+    const heading = document.createElement("div");
+    heading.className = "team-news-disclosure-copy";
     const title = document.createElement("h4");
     title.textContent = item.titleEn;
 
@@ -630,20 +642,27 @@ function renderTeamNews() {
     source.textContent = item.author ? `${item.source} · ${item.author}` : item.source;
     meta.append(published, source);
 
-    article.append(title, meta);
+    heading.append(title, meta);
     if (item.summaryEn) {
       const summary = document.createElement("p");
       summary.className = "team-news-summary";
       summary.textContent = item.summaryEn;
-      article.append(summary);
+      heading.append(summary);
     }
 
-    const button = document.createElement("button");
-    button.className = "secondary-button team-news-original";
-    button.type = "button";
-    button.dataset.url = item.url;
-    button.textContent = "查看 MLB 原文";
-    article.append(button);
+    const chevron = document.createElement("span");
+    chevron.className = "team-news-chevron";
+    chevron.setAttribute("aria-hidden", "true");
+    disclosure.append(heading, chevron);
+
+    const body = document.createElement("div");
+    body.className = "team-news-article-body";
+    body.hidden = true;
+    body.setAttribute("aria-live", "polite");
+    const cached = teamNewsState.articleBodies.get(item.id);
+    if (cached) renderTeamNewsArticleBody(body, cached);
+
+    article.append(disclosure, body);
     fragment.append(article);
   });
   elements.teamNewsList.replaceChildren(fragment);
@@ -754,29 +773,91 @@ function scrollToPendingTeamNews() {
   if (!teamNewsState.pendingUrl || elements.teamNewsModal.hidden) return;
   const target = Array.from(elements.teamNewsList.querySelectorAll(".team-news-item"))
     .find((item) => item.dataset.url === teamNewsState.pendingUrl);
-  target?.scrollIntoView?.({ block: "center", behavior: "smooth" });
+  if (!target) return;
+  target.scrollIntoView?.({ block: "start", behavior: "smooth" });
+  const disclosure = target.querySelector(".team-news-disclosure");
+  if (disclosure?.getAttribute("aria-expanded") !== "true") toggleTeamNewsArticle(disclosure);
+  teamNewsState.pendingUrl = "";
 }
 
-async function openTeamNewsArticle(rawUrl) {
-  const url = TeamNews?.normalizeMlbUrl?.(rawUrl);
-  if (!url) {
-    setTeamNewsStatus("MLB 原文地址无效", true);
+async function toggleTeamNewsArticle(disclosure) {
+  const article = disclosure.closest(".team-news-item");
+  const body = article?.querySelector(".team-news-article-body");
+  const newsId = disclosure.dataset.newsId || "";
+  const url = TeamNews?.normalizeMlbUrl?.(disclosure.dataset.url);
+  if (!article || !body || !newsId || !url) return;
+
+  const expanded = disclosure.getAttribute("aria-expanded") === "true";
+  disclosure.setAttribute("aria-expanded", String(!expanded));
+  body.hidden = expanded;
+  if (expanded) return;
+
+  const cached = teamNewsState.articleBodies.get(newsId);
+  if (cached) {
+    renderTeamNewsArticleBody(body, cached);
     return;
   }
+
+  if (teamNewsState.loadingBodies.has(newsId)) return;
+  teamNewsState.loadingBodies.add(newsId);
+  disclosure.disabled = true;
+  renderTeamNewsArticleMessage(body, "正在读取 MLB 原文...");
   try {
     const plugin = window.Capacitor?.Plugins?.SportsWidget;
-    if (plugin?.openExternalUrl) {
-      await plugin.openExternalUrl({ url });
+    if (!plugin?.fetchMlbArticle) {
+      renderTeamNewsArticleMessage(body, "正文下拉阅读仅支持 Android 安装版。", true);
       return;
     }
-    const link = document.createElement("a");
-    link.href = url;
-    link.target = "_blank";
-    link.rel = "noopener noreferrer";
-    link.click();
+    const result = await plugin.fetchMlbArticle({ url });
+    const paragraphs = extractMlbArticleParagraphs(result?.html || "");
+    if (!paragraphs.length) throw new Error("MLB 页面暂未提供可读取正文");
+    teamNewsState.articleBodies.set(newsId, paragraphs);
+    if (body.isConnected) renderTeamNewsArticleBody(body, paragraphs);
   } catch (error) {
-    setTeamNewsStatus(`无法打开 MLB 原文：${error.message || "请稍后重试"}`, true);
+    if (body.isConnected) renderTeamNewsArticleMessage(body, `正文读取失败：${error.message || "请稍后重试"}`, true);
+  } finally {
+    teamNewsState.loadingBodies.delete(newsId);
+    if (disclosure.isConnected) disclosure.disabled = false;
   }
+}
+
+function extractMlbArticleParagraphs(html) {
+  if (!html || html.length > 768 * 1024 || typeof DOMParser !== "function") return [];
+  const documentNode = new DOMParser().parseFromString(html, "text/html");
+  const article = documentNode.querySelector("article");
+  if (!article) return [];
+  const nodes = article.querySelectorAll(":scope > p, :scope > h2, :scope > h3, :scope > blockquote, :scope > ul > li, :scope > ol > li");
+  const paragraphs = [];
+  let totalLength = 0;
+  for (const node of nodes) {
+    const text = String(node.textContent || "").replace(/\s+/g, " ").trim();
+    if (!text || text === "This browser does not support the video element.") continue;
+    totalLength += text.length;
+    if (totalLength > 40_000 || paragraphs.length >= 120) break;
+    paragraphs.push(text);
+  }
+  if (paragraphs.length) return paragraphs;
+  const description = documentNode.querySelector('meta[name="description"]')?.content?.trim();
+  return description ? [description.slice(0, 1200)] : [];
+}
+
+function renderTeamNewsArticleBody(container, paragraphs) {
+  const fragment = document.createDocumentFragment();
+  paragraphs.forEach((paragraph) => {
+    const element = document.createElement("p");
+    element.textContent = paragraph;
+    fragment.append(element);
+  });
+  container.replaceChildren(fragment);
+  container.classList.remove("is-error");
+}
+
+function renderTeamNewsArticleMessage(container, message, isError = false) {
+  const paragraph = document.createElement("p");
+  paragraph.className = "team-news-article-message";
+  paragraph.textContent = message;
+  container.replaceChildren(paragraph);
+  container.classList.toggle("is-error", isError);
 }
 
 function openSidebar() {
