@@ -19,3 +19,8 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
+-keepattributes RuntimeVisibleAnnotations,AnnotationDefault
+-keep @com.getcapacitor.annotation.CapacitorPlugin class * { *; }
+-keep public class com.local.sportscalendar.*WidgetProvider { public <init>(); }
+-keep public class com.local.sportscalendar.WidgetActionReceiver { public <init>(); }

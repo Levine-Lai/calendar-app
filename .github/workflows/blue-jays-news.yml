@@ -1,0 +1,49 @@
+name: Update Blue Jays news
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "7,22,37,52 * * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: blue-jays-news
+  cancel-in-progress: false
+
+jobs:
+  update-news:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: firebase/functions/package-lock.json
+
+      - name: Install news worker
+        run: npm ci --prefix firebase/functions
+
+      - name: Fetch MLB news and send new-item notifications
+        env:
+          FIREBASE_SERVICE_ACCOUNT_JSON: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_JSON }}
+        run: npm run update:news --prefix firebase/functions
+
+      - name: Commit changed news data
+        shell: bash
+        run: |
+          if git diff --quiet -- public/news/blue-jays.json; then
+            echo "No news changes to commit."
+            exit 0
+          fi
+          git config user.name "sports-calendar-news-bot"
+          git config user.email "sports-calendar-news-bot@users.noreply.github.com"
+          git add public/news/blue-jays.json
+          git commit -m "chore: update Blue Jays news"
+          git push

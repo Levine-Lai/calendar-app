@@ -5,6 +5,25 @@ const { spawnSync } = require("node:child_process");
 
 const root = path.resolve(__dirname, "..");
 const androidDir = path.join(root, "android");
+const releaseBuild = process.argv.includes("--release");
+
+if (releaseBuild) {
+  const required = [
+    "SPORTS_CALENDAR_KEYSTORE",
+    "SPORTS_CALENDAR_STORE_PASSWORD",
+    "SPORTS_CALENDAR_KEY_ALIAS",
+    "SPORTS_CALENDAR_KEY_PASSWORD"
+  ];
+  const missing = required.filter((name) => !process.env[name]);
+  if (missing.length) {
+    process.stderr.write(`正式发布缺少环境变量：${missing.join(", ")}\n`);
+    process.exit(1);
+  }
+  if (!fs.existsSync(process.env.SPORTS_CALENDAR_KEYSTORE)) {
+    process.stderr.write("SPORTS_CALENDAR_KEYSTORE 指向的签名文件不存在\n");
+    process.exit(1);
+  }
+}
 
 function findCachedGradle() {
   const wrapperProperties = fs.readFileSync(
@@ -47,7 +66,7 @@ function findCachedGradle() {
 const gradleCommand = findCachedGradle() || path.join(androidDir, "gradlew.bat");
 const result = spawnSync(
   gradleCommand,
-  ["assembleDebug", "--no-daemon", "--console=plain"],
+  [releaseBuild ? "assembleRelease" : "assembleDebug", "--no-daemon", "--console=plain"],
   {
   cwd: androidDir,
   stdio: "inherit",

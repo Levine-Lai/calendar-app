@@ -66,3 +66,62 @@ test("image URLs are safe for the Android HTTPS WebView", () => {
   assert.equal(core.normalizeImageUrl("public/assets/leagues/nba.png"), "public/assets/leagues/nba.png");
   assert.equal(core.normalizeImageUrl("javascript:alert(1)", "fallback.png"), "fallback.png");
 });
+
+test("future games are not treated as live", () => {
+  const now = new Date("2026-07-09T03:00:00.000Z");
+  const futureGame = {
+    start: "2026-07-12T23:10:00.000Z",
+    status: "7:10 PM",
+    statusState: "in",
+    completed: false
+  };
+
+  assert.equal(core.isLiveStatusText("07:10"), false);
+  assert.equal(core.isLiveStatusText("7:10 PM"), false);
+  assert.equal(core.isEventLive(futureGame, { now }), false);
+});
+
+test("postponed and canceled games are not finished or live", () => {
+  const postponed = { status: "Postponed", statusState: "post", completed: false, start: new Date(Date.now() - 3600000).toISOString() };
+  const canceled = { status: "比赛取消", statusState: "post", completed: false, start: new Date(Date.now() - 3600000).toISOString() };
+  assert.equal(core.classifyEventStatus(postponed), "postponed");
+  assert.equal(core.classifyEventStatus(canceled), "canceled");
+  assert.equal(core.isEventFinished(postponed), false);
+  assert.equal(core.isEventLive(canceled), false);
+});
+
+test("ambiguous status fragments are not treated as live", () => {
+  assert.equal(core.isLiveStatusText("half postponed"), false);
+  assert.equal(core.isLiveStatusText("coach's review"), false);
+  assert.equal(core.isLiveStatusText("45'"), true);
+});
+
+test("event merge preserves useful fields when provider sends blanks", () => {
+  const merged = core.mergeEventRecords(
+    { id: "game-1", start: "2026-07-12T10:00:00Z", homeLogo: "https://example.com/home.png", homeScore: "2" },
+    { id: "game-1", start: "2026-07-12T10:00:00Z", homeLogo: "", homeScore: "" }
+  );
+  assert.equal(merged.homeLogo, "https://example.com/home.png");
+  assert.equal(merged.homeScore, "2");
+});
+
+test("score objects are normalized without rendering object text", () => {
+  assert.equal(core.normalizeScoreValue({ displayValue: "5", value: 5 }), "5");
+  assert.equal(core.normalizeScoreValue({ value: { total: 3 } }), "3");
+  assert.equal(core.normalizeScoreValue({ unexpected: true }), "");
+  assert.equal(core.normalizeScoreValue("[object Object]"), "");
+  assert.equal(core.isInvalidScoreValue({ unexpected: true }), true);
+
+  const normalized = core.mergeEventRecords(null, {
+    id: "mlb-object-score",
+    homeScore: { displayValue: "4" },
+    awayScore: { value: 2 }
+  });
+  assert.equal(normalized.homeScore, "4");
+  assert.equal(normalized.awayScore, "2");
+});
+
+test("imported colors are restricted to hex values", () => {
+  assert.equal(core.sanitizeColor("#ABCDEF"), "#abcdef");
+  assert.equal(core.sanitizeColor("red;background:url(https://example.com)"), "#c7e6eb");
+});

@@ -42,6 +42,30 @@ npm run sync:android
 
 每次修复的背景、结构变化、兼容方式和验证结果记录在 [`context.md`](context.md)。后续修改必须按日期追加记录。
 
+## 应用内检查更新
+
+左拉菜单底部提供“检查更新”。App 只在用户点击时读取 `public/update-config.js` 配置的远程 `version.json`，不会在启动时自动联网检查。
+
+发布新版本时需要同步修改：
+
+1. `package.json` 的版本号。
+2. `android/app/build.gradle` 的 `versionCode` 和 `versionName`。
+3. `public/update-config.js` 中 App 自身的版本号。
+4. `public/version.json` 中最新版本、HTTPS 下载地址和更新说明。
+5. 将 `public/version.json` 上传到配置的远程地址后，旧版 App 才能发现新版本。
+
+远程清单示例：
+
+```json
+{
+  "versionCode": 22,
+  "versionName": "2.2.0",
+  "apkUrl": "https://example.com/sports-calendar-2.2.0.apk",
+  "notes": ["修复比分刷新", "优化组件显示"],
+  "force": false
+}
+```
+
 ## 桌面小组件
 
 Android 版内置一个 4x4 桌面小组件。小组件读取你在 App 里已经导入的关注赛程，并按北京时间筛选“今天”的比赛。画面固定显示三行；当天超过三场时可上下滑动，也可用箭头每次精确翻动一场。组件先显示本地赛程，再在联网时后台补充实时比分和队徽缓存；系统大约每 15 分钟尝试刷新一次，实际时间可能受 vivo 省电策略影响。
@@ -89,6 +113,8 @@ JSON 示例：
 ## 数据说明
 
 NBA、MLB、英超和中超等联赛读取 ESPN；中甲、中乙读取 TheSportsDB；中冠读取中国足协官网 2026 赛程。所有内置联赛均按当前赛季读取全部已确定比赛，不需要手动选择日期范围。
+
+多伦多蓝鸟新闻由 GitHub Actions 每 15 分钟读取 MLB 官方 RSS，并更新 `public/news/blue-jays.json`。App 直接读取英文原文；Firebase 仅用于可选的 FCM 通知，不需要 Blaze 或 Firestore。
 
 ## 导入流程
 

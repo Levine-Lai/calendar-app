@@ -14,7 +14,21 @@ public class WidgetRefreshWorker extends Worker {
     @NonNull
     @Override
     public Result doWork() {
-        MlbTodayWidgetProvider.refreshAllBlocking(getApplicationContext());
-        return Result.success();
+        boolean success = MlbTodayWidgetProvider.refreshAllBlocking(getApplicationContext());
+        android.content.SharedPreferences preferences = getApplicationContext()
+            .getSharedPreferences(MlbTodayWidgetProvider.PREFS_NAME, Context.MODE_PRIVATE);
+        if (success) {
+            preferences.edit()
+                .putLong(MlbTodayWidgetProvider.PREFS_LAST_REFRESH_AT, System.currentTimeMillis())
+                .remove(MlbTodayWidgetProvider.PREFS_LAST_REFRESH_ERROR)
+                .apply();
+            MlbTodayWidgetProvider.refreshAllViewsOnly(getApplicationContext());
+            return Result.success();
+        }
+        preferences.edit()
+            .putString(MlbTodayWidgetProvider.PREFS_LAST_REFRESH_ERROR, "比分数据源暂时不可用")
+            .apply();
+        MlbTodayWidgetProvider.refreshAllViewsOnly(getApplicationContext());
+        return getRunAttemptCount() < 3 ? Result.retry() : Result.failure();
     }
 }

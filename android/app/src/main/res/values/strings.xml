@@ -2,11 +2,15 @@
 <resources>
     <string name="app_name">观赛日记</string>
     <string name="title_activity_main">观赛日记</string>
-    <string name="widget_mlb_today_name">观赛日记</string>
-    <string name="widget_mlb_today_desc">显示今日关注比赛。</string>
+    <string name="widget_mlb_today_name">观赛日记 组件1</string>
+    <string name="widget_mlb_today_desc">组件1：按日期查看关注比赛列表。</string>
+    <string name="widget_match_detail_name">观赛日记 组件2</string>
+    <string name="widget_match_detail_desc">组件2：2x2 单场详细比赛卡片。</string>
     <string name="widget_refresh">&#21047;&#26032;</string>
-    <string name="widget_scroll_up">&#19978;&#32763;&#19968;&#22330;</string>
-    <string name="widget_scroll_down">&#19979;&#32763;&#19968;&#22330;</string>
+    <string name="widget_prev_day">前一天</string>
+    <string name="widget_next_day">后一天</string>
+    <string name="team_news_channel_name">主队新闻</string>
+    <string name="team_news_channel_description">多伦多蓝鸟英文新闻推送</string>
     <string name="package_name">com.local.sportscalendar</string>
     <string name="custom_url_scheme">com.local.sportscalendar</string>
 </resources>

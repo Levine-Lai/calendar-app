@@ -1,0 +1,17 @@
+{
+  "name": "sports-calendar-news-worker",
+  "version": "2.2.1",
+  "private": true,
+  "main": "update-static-news.js",
+  "engines": {
+    "node": "22"
+  },
+  "scripts": {
+    "check": "node --check update-static-news.js && node --check news-core.js",
+    "test": "node --test test/*.test.js",
+    "update:news": "node update-static-news.js"
+  },
+  "dependencies": {
+    "fast-xml-parser": "5.10.0"
+  }
+}

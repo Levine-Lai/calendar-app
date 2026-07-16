@@ -24,7 +24,7 @@
       name: team.name || team.importedTeamName || team.abbreviation || id,
       shortName: team.shortName || team.name || team.importedTeamName || "",
       abbreviation: team.abbreviation || team.importedTeamAbbreviation || "",
-      color: team.color || team.importedTeamColor || "#c7e6eb",
+      color: sanitizeColor(team.color || team.importedTeamColor, "#c7e6eb"),
       logo: normalizeImageUrl(team.logo || team.importedTeamLogo || "", "")
     };
   }
@@ -91,20 +91,81 @@
   }
 
   function mergeEventRecords(existing, incoming) {
+    const normalizedIncoming = normalizeEventScores(incoming);
     if (!existing) {
-      const importedTeams = getEventImportedTeams(incoming);
+      const importedTeams = getEventImportedTeams(normalizedIncoming);
       return importedTeams.length
-        ? applyCompatibilityTeamFields({ ...incoming }, importedTeams)
-        : { ...incoming };
+        ? applyCompatibilityTeamFields({ ...normalizedIncoming }, importedTeams)
+        : { ...normalizedIncoming };
     }
+    const normalizedExisting = normalizeEventScores(existing);
     const importedTeams = mergeImportedTeams(
-      getEventImportedTeams(existing),
-      getEventImportedTeams(incoming)
+      getEventImportedTeams(normalizedExisting),
+      getEventImportedTeams(normalizedIncoming)
     );
-    const merged = { ...existing, ...incoming };
+    const merged = { ...normalizedExisting };
+    Object.entries(normalizedIncoming || {}).forEach(([key, value]) => {
+      if (value === undefined || value === null) return;
+      if (typeof value === "string" && !value.trim() && hasMeaningfulValue(normalizedExisting[key])) return;
+      if (Array.isArray(value) && !value.length && Array.isArray(normalizedExisting[key]) && normalizedExisting[key].length) return;
+      merged[key] = value;
+    });
     return importedTeams.length
       ? applyCompatibilityTeamFields(merged, importedTeams)
       : merged;
+  }
+
+  function normalizeEventScores(event) {
+    if (!event || typeof event !== "object") return event || {};
+    return {
+      ...event,
+      homeScore: normalizeScoreValue(event.homeScore),
+      awayScore: normalizeScoreValue(event.awayScore)
+    };
+  }
+
+  function normalizeScoreValue(value, depth = 0) {
+    if (value == null || depth > 3) return "";
+    if (typeof value === "number") return Number.isFinite(value) ? String(value) : "";
+    if (typeof value === "object") {
+      if (Array.isArray(value)) return "";
+      for (const key of ["displayValue", "value", "score", "total", "points"]) {
+        if (!(key in value)) continue;
+        const normalized = normalizeScoreValue(value[key], depth + 1);
+        if (normalized) return normalized;
+      }
+      return "";
+    }
+    if (typeof value !== "string") return "";
+    const text = value.trim();
+    if (!text || /^(null|undefined|nan|\[object object\])$/i.test(text)) return "";
+    if (text.startsWith("{") && text.endsWith("}")) {
+      try {
+        return normalizeScoreValue(JSON.parse(text), depth + 1);
+      } catch {
+        return "";
+      }
+    }
+    return text;
+  }
+
+  function isInvalidScoreValue(value) {
+    if (value == null || value === "") return false;
+    return !normalizeScoreValue(value) && (typeof value === "object" || /\[object object\]/i.test(String(value)));
+  }
+
+  function hasMeaningfulValue(value) {
+    if (value === undefined || value === null) return false;
+    if (typeof value === "string") return Boolean(value.trim());
+    if (Array.isArray(value)) return value.length > 0;
+    return true;
+  }
+
+  function sanitizeColor(value, fallback = "#c7e6eb") {
+    const color = String(value || "").trim();
+    return /^#[0-9a-f]{6}$/i.test(color) || /^#[0-9a-f]{3}$/i.test(color)
+      ? color.toLowerCase()
+      : fallback;
   }
 
   function detachTeamFromEvent(event, key) {
@@ -153,6 +214,100 @@
     const end = new Date(start);
     end.setDate(end.getDate() + 41);
     return { start, end };
+  }
+
+  function isEventLive(event, options = {}) {
+    if (isEventFuture(event, options)) return false;
+    return classifyEventStatus(event) === "live";
+  }
+
+  function isEventFinished(event) {
+    return classifyEventStatus(event) === "finished";
+  }
+
+  function isEventFuture(event, options = {}) {
+    const startTime = Date.parse(event?.start || "");
+    if (!Number.isFinite(startTime)) return false;
+    const nowValue = options.now instanceof Date ? options.now.getTime() : Number(options.now ?? Date.now());
+    const graceMs = Number(options.graceMs ?? 5 * 60 * 1000);
+    return startTime > nowValue + graceMs;
+  }
+
+  function isLiveStatusText(value) {
+    const status = String(value || "").trim().toLowerCase();
+    if (!status || isTerminalExceptionStatusText(status) || isFinishedStatusText(status)) return false;
+    return /\bin progress\b/.test(status)
+      || status === "live"
+      || status === "playing"
+      || /^(top|bot|bottom|mid|middle)\s+\d+(st|nd|rd|th)?$/.test(status)
+      || status === "halftime"
+      || status === "half time"
+      || status === "break time"
+      || status === "overtime"
+      || status === "extra time"
+      || status === "ht"
+      || status === "1h"
+      || status === "2h"
+      || status === "et"
+      || status === "bt"
+      || status === "p"
+      || status === "ot"
+      || /^q[1-4]$/.test(status)
+      || /^in\d+$/.test(status)
+      || /^\d{1,3}\s*['’]$/.test(status)
+      || status.includes("进行")
+      || status.includes("上半场")
+      || status.includes("下半场")
+      || status === "中场";
+  }
+
+  function isFinishedStatusText(value) {
+    const status = String(value || "").trim().toLowerCase();
+    if (isTerminalExceptionStatusText(status)) return false;
+    return status.includes("final")
+      || status.includes("full time")
+      || status.includes("match finished")
+      || status.includes("已结束")
+      || status.includes("完场")
+      || status === "played"
+      || status === "ft"
+      || status === "aet"
+      || status === "aot"
+      || status === "pen";
+  }
+
+  function isPostponedStatusText(value) {
+    const status = String(value || "").trim().toLowerCase();
+    return status.includes("postponed")
+      || status.includes("delayed")
+      || status.includes("延期")
+      || status.includes("推迟");
+  }
+
+  function isCanceledStatusText(value) {
+    const status = String(value || "").trim().toLowerCase();
+    return status.includes("canceled")
+      || status.includes("cancelled")
+      || status.includes("abandoned")
+      || status.includes("suspended")
+      || status.includes("取消")
+      || status.includes("中止")
+      || status.includes("腰斩");
+  }
+
+  function isTerminalExceptionStatusText(value) {
+    return isPostponedStatusText(value) || isCanceledStatusText(value);
+  }
+
+  function classifyEventStatus(event) {
+    const status = String(event?.status || "").trim();
+    const stateValue = String(event?.statusState || "").trim().toLowerCase();
+    if (isCanceledStatusText(status)) return "canceled";
+    if (isPostponedStatusText(status)) return "postponed";
+    if (parseBoolean(event?.completed, false) || isFinishedStatusText(status)) return "finished";
+    if (stateValue === "in" || isLiveStatusText(status)) return "live";
+    if (stateValue === "post") return "finished";
+    return "scheduled";
   }
 
   function timeZoneOffsetAt(timestamp, timeZone) {
@@ -228,16 +383,25 @@
 
   return {
     attachTeamToEvent,
+    classifyEventStatus,
     deriveFollowedTeams,
     detachTeamFromEvent,
     getEventImportedTeams,
     getMonthGridRange,
+    isEventFinished,
+    isEventFuture,
+    isEventLive,
+    isFinishedStatusText,
+    isLiveStatusText,
     mergeEventRecords,
+    normalizeScoreValue,
+    isInvalidScoreValue,
     mergeImportedTeams,
     normalizeImportedTeam,
     normalizeImageUrl,
     parseBoolean,
     parseIcsDate,
+    sanitizeColor,
     teamKey
   };
 }));
