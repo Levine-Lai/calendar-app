@@ -1552,3 +1552,21 @@
 - Android JVM 单元测试与 `lintDebug` 全部通过，原生正文请求方法可以正常编译。
 - 使用 MLB 官方 AMP 原文实测提取到 25 个正文段落，并成功过滤视频回退文字、广告和页面导航。
 - `390x844` 手机视口实测：新闻页严格占满整个屏幕，无横向溢出，展开正文正常，侧边栏不会从边缘漏出。
+
+### 发布批次：2.2.2 Debug APK
+
+#### 构建结果
+
+- 构建命令：`npm run build:android`，Gradle `assembleDebug` 执行成功。
+- APK：`releases/sports-calendar-2.2.2-debug.apk`。
+- 文件大小：`9,268,722` 字节。
+- 包名：`com.local.sportscalendar`。
+- 版本：`versionCode 24`、`versionName 2.2.2`。
+- 应用名：`观赛日记`，包含 Android 联网权限。
+- APK Signature Scheme v2 验证通过，签名证书 SHA-256 为 `7ef83e3ec40b7bf1e9aaf551589ee73c378fc26f29202255f0466bcab759bed0`。
+- APK 文件 SHA-256：`D7F1F2AEBF4C2741B4CBBDA0F7DB35D049D1413C80500FDB40FC2A3C1AB33A9A`。
+
+#### 发布边界
+
+- 当前已生成本地可安装 APK，但尚未上传公开下载地址。
+- `public/version.json` 暂时保持远程已发布版本 `2.2.1`，避免旧版 App 检测到无法下载的更新；上传 APK 后再更新远程清单。
