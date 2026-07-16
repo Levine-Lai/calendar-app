@@ -1497,3 +1497,28 @@
 - Firebase Admin SDK 服务账号私钥已生成，并保存为 GitHub Actions Secret `FIREBASE_SERVICE_ACCOUNT_JSON`。
 - 私钥内容未进入工作区；提交前扫描未发现 `private_key` 或 PEM 私钥材料。
 - 下一步：将 2.2.1 源码和工作流发布到 GitHub `main`，再手动运行第一次任务。
+
+### 发布批次：2.2.1 GitHub 工作流与 APK
+
+#### 部署结果
+
+- 源码和免费新闻工作流已提交并推送到 GitHub `main`，提交为 `82b8459`。
+- GitHub Actions 手动运行 `29481436975` 成功，分支和提交均匹配；公网英文新闻 JSON 可正常访问。
+- Android 构建已读取 `google-services.json`，`processDebugGoogleServices` 成功执行。
+
+#### APK 验收
+
+- 产物：`releases/sports-calendar-2.2.1-debug.apk`。
+- 文件大小：`9,267,070` 字节。
+- 包名：`com.local.sportscalendar`。
+- 内部版本：`versionCode 23`、`versionName 2.2.1`。
+- 权限包含网络、Android 13+ 通知和 FCM 接收；包内确认存在英文新闻 JSON 与新闻配置。
+- 包内新闻数据共 20 条：北京时间 7 月 14 日 4 条、15 日 7 条、16 日 4 条，最近三天合计 15 条；另保留 7 月 13 日 5 条作为历史缓冲。
+- APK v2 签名验证通过，使用与本机历史 Debug 构建相同用途的 Android Debug 签名。
+- SHA-256：`CC5E13AFC8719EDAA249711F34768B85D0A679476EA0C72FC4CA5B36B0107276`。
+
+#### 当前版本
+
+- 手机端最新发布版本：`2.2.1`。
+- 当前源码版本：`2.2.1 / versionCode 23`。
+- 下一版本建议使用 `2.2.2 / versionCode 24`。

@@ -4,11 +4,11 @@
 
 ## 当前版本状态
 
-- 手机端最新已发布 APK：`2.1.9`
-- 当前源码准备版本：`2.2.1`（尚未打包）
-- APK 文件：`android/app/build/outputs/apk/debug/app-debug.apk`
+- 手机端最新已发布 APK：`2.2.1`
+- 当前源码版本：`2.2.1`
+- APK 文件：`releases/sports-calendar-2.2.1-debug.apk`
 
-## 2.2.1（开发中）
+## 2.2.1（已发布）
 
 - 新增“多伦多蓝鸟新闻”，可在 App 内查看英文标题、摘要、发布时间和 MLB 原文。
 - GitHub Actions 每 15 分钟检查一次蓝鸟官网 RSS，直接生成英文新闻 JSON，不调用翻译 API。
@@ -17,7 +17,9 @@
 - 第一次运行只建立新闻基线，不批量推送已有旧新闻。
 - 新闻后端不再要求 Firebase Blaze、Cloud Functions 或 Firestore，公开仓库可零成本运行。
 - 增加来源链接、响应大小和字段长度校验；本阶段不需要 DeepSeek Key。
-- 当前只完成源码与测试，尚未生成 `2.2.1` APK；部署 Firebase 后还需填写新闻 API 地址。
+- GitHub 免费新闻任务首次手动运行成功，英文新闻 JSON 已可从公网读取。
+- 首个 APK 内置最近 20 条蓝鸟英文新闻，其中最近三个北京时间自然日共 15 条，首次打开即可浏览。
+- 已生成包含 Firebase FCM 配置的 `2.2.1` Debug APK。
 
 ## 2.1.10（未单独发布）
 
