@@ -1617,6 +1617,7 @@
 5. 提交 `007ec6f` 触发的 Actions 运行 `29551318960` 成功完成；精确诊断确认 GitHub Secret 当前放入的是 Android 客户端 `google-services.json`，不是 Firebase Admin 服务账号 JSON。
 6. 本机 Downloads、Desktop、Documents、OneDrive 与 `D:\Downloads` 只找到 `C:\Users\Administrator\Downloads\google-services.json`，未找到包含 `type=service_account`、`client_email` 和 `private_key` 的管理员文件，因此不能在不重新生成私钥的情况下替用户修正 GitHub Secret。
 7. 新闻抓取、正文发布和 App 自动同步不受该 Secret 问题影响；只有新文章 FCM 系统通知暂时不可用。
+8. 用户已于 2026-07-17 替换 GitHub Secret；通过工作流文件的无行为变更注释触发一次新的 `validate_only` 线上复验。
 
 ## 2026-07-17
 

@@ -39,6 +39,7 @@ jobs:
       - name: Fetch MLB news and send new-item notifications
         env:
           FIREBASE_SERVICE_ACCOUNT_JSON: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_JSON }}
+          # Push-triggered runs validate credentials and payload without delivering a test notification.
           VALIDATE_FCM: ${{ github.event_name == 'push' && 'true' || 'false' }}
         run: npm run update:news --prefix firebase/functions
 
