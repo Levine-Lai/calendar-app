@@ -141,14 +141,43 @@ async function sendNotifications(items) {
 function readServiceAccount() {
   const rawCredentials = process.env.FIREBASE_SERVICE_ACCOUNT_JSON;
   if (!rawCredentials) return null;
-  let serviceAccount;
-  try {
-    serviceAccount = JSON.parse(rawCredentials);
-  } catch {
-    throw new Error("FIREBASE_SERVICE_ACCOUNT_JSON is not valid JSON");
+  return parseServiceAccount(rawCredentials);
+}
+
+function parseServiceAccount(rawCredentials) {
+  let candidate = String(rawCredentials || "").trim();
+  let serviceAccount = null;
+
+  for (let attempt = 0; attempt < 3 && candidate; attempt += 1) {
+    try {
+      const parsed = JSON.parse(candidate);
+      if (typeof parsed === "string") {
+        candidate = parsed.trim();
+        continue;
+      }
+      serviceAccount = parsed;
+      break;
+    } catch {
+      if (attempt > 0 || !/^[A-Za-z0-9+/=_-]+$/.test(candidate)) break;
+      try {
+        candidate = Buffer.from(candidate, "base64").toString("utf8").trim();
+      } catch {
+        break;
+      }
+    }
   }
-  if (!serviceAccount.project_id || !serviceAccount.client_email || !serviceAccount.private_key) {
-    throw new Error("Firebase service account JSON is incomplete");
+
+  if (!serviceAccount || typeof serviceAccount !== "object" || Array.isArray(serviceAccount)) {
+    throw new Error("FIREBASE_SERVICE_ACCOUNT_JSON is not valid service account JSON or Base64 JSON");
+  }
+  if (serviceAccount.project_info && serviceAccount.client) {
+    throw new Error("FIREBASE_SERVICE_ACCOUNT_JSON contains google-services.json; replace it with a Firebase Admin service-account JSON");
+  }
+
+  const requiredFields = ["project_id", "client_email", "private_key"];
+  const missingFields = requiredFields.filter((field) => !serviceAccount[field]);
+  if (missingFields.length) {
+    throw new Error(`Firebase service account JSON is incomplete; missing ${missingFields.join(", ")}`);
   }
   return serviceAccount;
 }
@@ -308,5 +337,6 @@ module.exports = {
   enrichArticleBodies,
   sendNotificationsBestEffort,
   buildFcmRequest,
-  validateFcmBestEffort
+  validateFcmBestEffort,
+  parseServiceAccount
 };

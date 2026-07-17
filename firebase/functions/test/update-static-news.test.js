@@ -3,8 +3,15 @@ const assert = require("node:assert/strict");
 const {
   sendNotificationsBestEffort,
   buildFcmRequest,
-  validateFcmBestEffort
+  validateFcmBestEffort,
+  parseServiceAccount
 } = require("../update-static-news");
+
+const validServiceAccount = {
+  project_id: "sports-calendar-test",
+  client_email: "firebase-adminsdk@example.iam.gserviceaccount.com",
+  private_key: "-----BEGIN PRIVATE KEY-----\ntest\n-----END PRIVATE KEY-----\n"
+};
 
 test("FCM failure does not fail the news data update", async () => {
   const succeeded = await sendNotificationsBestEffort(
@@ -36,4 +43,18 @@ test("FCM validation failure is reported without failing the workflow", async ()
     throw new Error("simulated validation failure");
   });
   assert.equal(succeeded, false);
+});
+
+test("service account secret accepts JSON, quoted JSON and Base64 JSON", () => {
+  const json = JSON.stringify(validServiceAccount);
+  assert.deepEqual(parseServiceAccount(json), validServiceAccount);
+  assert.deepEqual(parseServiceAccount(JSON.stringify(json)), validServiceAccount);
+  assert.deepEqual(parseServiceAccount(Buffer.from(json).toString("base64")), validServiceAccount);
+});
+
+test("service account secret identifies google-services.json", () => {
+  assert.throws(
+    () => parseServiceAccount(JSON.stringify({ project_info: {}, client: [] })),
+    /google-services\.json/
+  );
 });

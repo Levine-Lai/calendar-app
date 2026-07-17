@@ -16,6 +16,7 @@
 - 自动同步失败时继续显示本地新闻，不用反复手动刷新；手动刷新仍会明确显示错误。
 - 修正 FCM HTTP v1 的 `channel_id` 与 `click_action` 字段，解决新文章推送请求被服务器拒绝的问题。
 - 新闻工作流在代码发布时使用 `validate_only` 验证 Firebase 凭据和消息格式，不向手机发送测试通知。
+- Firebase Secret 兼容原始 JSON、二次引号包裹的 JSON 和 Base64 JSON；误放 `google-services.json` 或缺少服务账号字段时会在 Actions 中给出明确诊断且不泄露密钥。
 - 当前只完成源码与测试，尚未生成 `2.2.4` APK。
 
 ## 2.2.3（已生成 APK）
