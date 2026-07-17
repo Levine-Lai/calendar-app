@@ -1617,3 +1617,26 @@
 - GitHub Raw 远程数据复验为 20 篇、20 篇均有正文；第一篇包含 8 个正文段落。
 - 在全新浏览器存储与 `390x844` 手机视口中，App 一次同步 20 篇新闻，点击第一篇立即展开 8 段正文，没有调用 Android 原生 MLB 后备请求。
 - 修复后的 GitHub Actions 推送验证运行 `29547405912` 已完成，事件为 `push`，结论为 `success`，运行约 15 秒。
+
+### 发布批次：2.2.3 Debug APK
+
+#### 构建结果
+
+- 构建命令：`npm run build:android`，Gradle `assembleDebug` 执行成功。
+- APK：`releases/sports-calendar-2.2.3-debug.apk`。
+- 文件大小：`9,330,762` 字节。
+- 包名：`com.local.sportscalendar`。
+- 版本：`versionCode 25`、`versionName 2.2.3`。
+- APK Signature Scheme v2 验证通过，签名证书 SHA-256 为 `7ef83e3ec40b7bf1e9aaf551589ee73c378fc26f29202255f0466bcab759bed0`。
+- APK 文件 SHA-256：`5CC8A5CC909ABBC6D69E246371429394F456BDFC7A2C65A9E3D2596495D3968F`。
+
+#### 包内验收
+
+- 包内新闻 JSON 共 20 篇，20 篇均带有 `bodyEn` 正文。
+- 包内 `index.html` 已引用 `team-news-core.js?v=2.2.3`，不会继续命中旧新闻模块缓存。
+- Android 联网权限和应用名“观赛日记”均存在。
+
+#### 发布边界
+
+- 当前已生成本地可安装 APK，但尚未上传公开下载地址。
+- `public/version.json` 暂时保持远程已发布版本 `2.2.1`，避免旧版 App 检测到无法下载的更新；上传 APK 后再更新远程清单。
