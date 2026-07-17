@@ -1577,6 +1577,34 @@
 
 ## 2026-07-17
 
+### 发布批次：2.2.5 Debug APK
+
+#### 构建结果
+
+- 执行 `npm run build:android`，Capacitor Web 资源同步与 Gradle `assembleDebug` 均成功。
+- APK：`releases/sports-calendar-2.2.5-debug.apk`。
+- 文件大小：`9,338,570` 字节。
+- 包名：`com.local.sportscalendar`。
+- 版本：`versionCode 27`、`versionName 2.2.5`。
+- APK Signature Scheme v2 验证通过，签名证书 SHA-256 为 `7ef83e3ec40b7bf1e9aaf551589ee73c378fc26f29202255f0466bcab759bed0`。
+- APK 文件 SHA-256：`ABF0A426B831DA9F62E60638ECB905A1AEAA4E44D521B4D78A8FC7A9DE6B3604`。
+
+#### 包内验收
+
+- 应用名“观赛日记”、联网、通知、网络状态、开机恢复和 FCM 接收权限均存在。
+- `NewsMessagingService` 与 Firebase Messaging Service 已合并到 Manifest。
+- APK 内 Web 资源为 `2.2.5`，包含“测试通知”入口及新的新闻源选择逻辑。
+- 内置蓝鸟新闻共 20 篇，20 篇均包含英文正文。
+- 新闻后台更新采用 FCM 高优先级数据消息与 Android WorkManager 直接检查 MLB RSS 两条通道，并按文章 ID 去重。
+
+#### 发布边界
+
+- 本次生成的是使用历史相同 Debug 证书签名的可覆盖安装 APK，可保留现有 App 数据。
+- 未连接 vivo 真机，因此通知展示、系统电池限制和后台调度仍需安装后用“测试通知”与最近检查时间进行最终真机验收。
+- `public/version.json` 继续保留 `2.2.1` 和空下载地址；在 APK 上传到稳定的公开 HTTPS 地址前，不向旧版 App 发布不可下载的更新提示。
+
+## 2026-07-17
+
 ### 修改批次：2.2.5 新闻实时性与通知双通道修复
 
 #### 用户反馈
