@@ -79,6 +79,9 @@ public class SportsWidgetPlugin extends Plugin {
         result.put("enabled", configured && TeamNewsPushManager.isEnabled(context));
         result.put("permission", hasNotificationPermission() ? "granted" : "prompt");
         result.put("topic", TeamNewsPushManager.TOPIC);
+        result.put("lastCheckAt", TeamNewsPushManager.lastCheckAt(context));
+        result.put("lastNotificationAt", TeamNewsPushManager.lastNotificationAt(context));
+        result.put("lastError", TeamNewsPushManager.lastError(context));
         call.resolve(result);
     }
 
@@ -115,22 +118,50 @@ public class SportsWidgetPlugin extends Plugin {
 
     private void completeTeamNewsPush(PluginCall call, boolean enabled) {
         Context context = getContext().getApplicationContext();
-        if (enabled) NewsMessagingService.createNotificationChannel(context);
-        com.google.android.gms.tasks.Task<Void> task = enabled
-            ? FirebaseMessaging.getInstance().subscribeToTopic(TeamNewsPushManager.TOPIC)
-            : FirebaseMessaging.getInstance().unsubscribeFromTopic(TeamNewsPushManager.TOPIC);
-        task.addOnCompleteListener(result -> {
-            if (!result.isSuccessful()) {
-                call.reject(enabled ? "订阅蓝鸟新闻失败" : "取消蓝鸟新闻订阅失败", result.getException());
-                return;
-            }
-            TeamNewsPushManager.rememberEnabled(context, enabled);
-            JSObject response = new JSObject();
-            response.put("configured", true);
-            response.put("enabled", enabled);
-            response.put("topic", TeamNewsPushManager.TOPIC);
-            call.resolve(response);
-        });
+        TeamNewsPushManager.rememberEnabled(context, enabled);
+        if (enabled) {
+            NewsMessagingService.createNotificationChannel(context);
+            TeamNewsPushManager.scheduleBackgroundChecks(context);
+            TeamNewsPushManager.enqueueImmediateCheck(context);
+        } else {
+            TeamNewsPushManager.cancelBackgroundChecks(context);
+        }
+
+        try {
+            com.google.android.gms.tasks.Task<Void> task = enabled
+                ? FirebaseMessaging.getInstance().subscribeToTopic(TeamNewsPushManager.TOPIC)
+                : FirebaseMessaging.getInstance().unsubscribeFromTopic(TeamNewsPushManager.TOPIC);
+            task.addOnCompleteListener(result -> resolvePushChange(call, enabled, result.isSuccessful()));
+        } catch (RuntimeException error) {
+            resolvePushChange(call, enabled, false);
+        }
+    }
+
+    private void resolvePushChange(PluginCall call, boolean enabled, boolean fcmEnabled) {
+        JSObject response = new JSObject();
+        response.put("configured", true);
+        response.put("enabled", enabled);
+        response.put("fcmEnabled", fcmEnabled);
+        response.put("localFallbackEnabled", enabled);
+        response.put("topic", TeamNewsPushManager.TOPIC);
+        call.resolve(response);
+    }
+
+    @PluginMethod
+    public void sendTeamNewsTestNotification(PluginCall call) {
+        Context context = getContext().getApplicationContext();
+        if (!hasNotificationPermission()) {
+            call.reject("通知权限未开启");
+            return;
+        }
+        NewsMessagingService.showNewsNotification(
+            context,
+            "观赛日记测试通知",
+            "通知权限和主队新闻频道工作正常。",
+            "",
+            "test-" + System.currentTimeMillis()
+        );
+        call.resolve();
     }
 
     @PluginMethod
@@ -162,6 +193,22 @@ public class SportsWidgetPlugin extends Plugin {
                 call.resolve(result);
             } catch (Exception error) {
                 call.reject("MLB 原文读取失败", error);
+            }
+        });
+    }
+
+    @PluginMethod
+    public void fetchMlbNewsFeed(PluginCall call) {
+        NETWORK_EXECUTOR.execute(() -> {
+            try {
+                String xml = WidgetNetworkClient.getMlbNewsFeedXml();
+                String json = TeamNewsFeed.toJson(TeamNewsFeed.parse(xml));
+                JSObject result = new JSObject();
+                result.put("json", json);
+                result.put("sourceUrl", TeamNewsFeed.RSS_URL);
+                call.resolve(result);
+            } catch (Exception error) {
+                call.reject("MLB 新闻源读取失败", error);
             }
         });
     }

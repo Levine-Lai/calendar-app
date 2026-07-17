@@ -191,23 +191,16 @@ function buildFcmRequest(item, validateOnly = false) {
     validate_only: validateOnly,
     message: {
       topic: NEWS_TOPIC,
-      notification: {
-        title: item.titleEn,
-        body: item.summaryEn || "The Toronto Blue Jays published a new story."
-      },
       data: {
         type: "team_news",
         teamId: TEAM_ID,
         newsId: item.id,
-        newsUrl: item.url
+        newsUrl: item.url,
+        title: item.titleEn,
+        body: item.summaryEn || "The Toronto Blue Jays published a new story."
       },
       android: {
-        priority: "high",
-        notification: {
-          channel_id: "team_news",
-          tag: `team-news-${item.id}`,
-          click_action: "OPEN_TEAM_NEWS"
-        }
+        priority: "high"
       }
     }
   };

@@ -22,6 +22,7 @@ public class MainActivity extends BridgeActivity {
         settings.setBlockNetworkImage(false);
         settings.setMixedContentMode(WebSettings.MIXED_CONTENT_NEVER_ALLOW);
         settings.setOffscreenPreRaster(true);
+        TeamNewsPushManager.restoreSubscription(getApplicationContext());
     }
 
     @Override

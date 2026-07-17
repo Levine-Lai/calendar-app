@@ -5,6 +5,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import java.util.Date;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.junit.Test;
@@ -226,5 +227,31 @@ public class WidgetGameStatusTest {
         assertEquals("", TeamNewsPushManager.safeNewsEndpoint(
             "https://raw.githubusercontent.com/Levine-Lai/calendar-app/main/private/secret.json"
         ));
+    }
+
+    @Test
+    public void mlbRssParserKeepsNewestOfficialStoriesOnly() throws Exception {
+        String xml = "<?xml version=\"1.0\"?><rss><channel>"
+            + "<item><title>Older story</title><link>https://www.mlb.com/bluejays/news/older</link>"
+            + "<description><![CDATA[<p>Older summary</p>]]></description>"
+            + "<pubDate>Thu, 16 Jul 2026 19:00:00 GMT</pubDate></item>"
+            + "<item><title>Fresh story</title><link>https://www.mlb.com/bluejays/news/fresh</link>"
+            + "<description><![CDATA[<p>Fresh &amp; useful</p>]]></description>"
+            + "<pubDate>Fri, 17 Jul 2026 13:00:00 GMT</pubDate></item>"
+            + "<item><title>Unsafe story</title><link>https://example.com/news/unsafe</link>"
+            + "<pubDate>Fri, 17 Jul 2026 14:00:00 GMT</pubDate></item>"
+            + "</channel></rss>";
+        List<TeamNewsFeed.Item> items = TeamNewsFeed.parse(xml);
+
+        assertEquals(2, items.size());
+        assertEquals("Fresh story", items.get(0).title);
+        assertEquals("Fresh & useful", items.get(0).summary);
+        assertEquals(64, items.get(0).id.length());
+        assertEquals("https://www.mlb.com/bluejays/news/fresh", items.get(0).url);
+    }
+
+    @Test(expected = Exception.class)
+    public void mlbRssParserRejectsDoctypeDocuments() throws Exception {
+        TeamNewsFeed.parse("<!DOCTYPE rss [<!ENTITY xxe SYSTEM 'file:///etc/passwd'>]><rss><channel/></rss>");
     }
 }

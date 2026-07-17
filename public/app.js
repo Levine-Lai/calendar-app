@@ -284,6 +284,7 @@ const elements = {
   checkAppUpdateBtn: document.querySelector("#checkAppUpdateBtn"),
   downloadAppUpdateBtn: document.querySelector("#downloadAppUpdateBtn"),
   openTeamNewsBtn: document.querySelector("#openTeamNewsBtn"),
+  testTeamNewsPushBtn: document.querySelector("#testTeamNewsPushBtn"),
   teamNewsPushToggle: document.querySelector("#teamNewsPushToggle"),
   teamNewsPreview: document.querySelector("#teamNewsPreview"),
   teamNewsPanelStatus: document.querySelector("#teamNewsPanelStatus"),
@@ -381,6 +382,7 @@ function bindEvents() {
   elements.checkAppUpdateBtn.addEventListener("click", checkForAppUpdate);
   elements.downloadAppUpdateBtn.addEventListener("click", openAppUpdateDownload);
   elements.openTeamNewsBtn.addEventListener("click", openTeamNewsModal);
+  elements.testTeamNewsPushBtn.addEventListener("click", sendTeamNewsTestNotification);
   elements.teamNewsPushToggle.addEventListener("change", updateTeamNewsPush);
   elements.refreshTeamNewsBtn.addEventListener("click", () => refreshTeamNews());
   elements.teamNewsModalClose.addEventListener("click", closeTeamNewsModal);
@@ -559,21 +561,30 @@ function getTeamNewsApiUrls() {
 async function fetchTeamNewsPayload() {
   const apiUrls = getTeamNewsApiUrls();
   if (!apiUrls.length) throw new Error("新闻 API 尚未部署");
-  const attempts = apiUrls.map((url) => TeamNews.fetchNews(url, { timeoutMs: 25000 }));
   const plugin = window.Capacitor?.Plugins?.SportsWidget;
-  if (plugin?.fetchTeamNews) {
-    attempts.unshift(
-      plugin.fetchTeamNews({ urls: apiUrls }).then((result) => {
-        if (!result?.json) throw new Error("原生新闻数据为空");
+  const staticAttempts = apiUrls.map((url) => TeamNews.fetchNews(url, { timeoutMs: 25000 }));
+  const directAttempt = plugin?.fetchMlbNewsFeed
+    ? plugin.fetchMlbNewsFeed().then((result) => {
+        if (!result?.json) throw new Error("MLB 新闻源数据为空");
         return TeamNews.normalizeNewsPayload(JSON.parse(result.json));
       })
-    );
+    : null;
+  const attempts = directAttempt ? [directAttempt, ...staticAttempts] : staticAttempts;
+  const settled = await Promise.allSettled(attempts);
+  const payloads = settled.filter((result) => result.status === "fulfilled").map((result) => result.value);
+  if (!payloads.length && plugin?.fetchTeamNews) {
+    try {
+      const result = await plugin.fetchTeamNews({ urls: apiUrls });
+      if (result?.json) payloads.push(TeamNews.normalizeNewsPayload(JSON.parse(result.json)));
+    } catch {
+      // All native and browser routes are unavailable.
+    }
   }
-  try {
-    return await Promise.any(attempts);
-  } catch {
-    throw new Error("新闻同步超时或网络不可用");
+  if (!payloads.length) throw new Error("新闻同步超时或网络不可用");
+  if (directAttempt && settled[0]?.status === "fulfilled") {
+    return TeamNews.mergeNewsPayloads(settled[0].value, payloads.slice(1));
   }
+  return TeamNews.selectFreshestNewsPayload(payloads);
 }
 
 function restoreTeamNewsCache() {
@@ -760,7 +771,15 @@ async function syncTeamNewsPushStatus() {
     const status = await plugin.getTeamNewsPushStatus();
     elements.teamNewsPushToggle.checked = status.enabled === true;
     elements.teamNewsPushToggle.disabled = status.configured !== true;
-    if (status.configured !== true) setTeamNewsPanelStatus("需要加入 Firebase 配置后才能启用推送");
+    if (status.configured !== true) {
+      setTeamNewsPanelStatus("需要加入 Firebase 配置后才能启用推送");
+    } else if (status.enabled === true) {
+      const checkedAt = Number(status.lastCheckAt) > 0
+        ? formatTeamNewsTime(Number(status.lastCheckAt))
+        : "等待首次检查";
+      const suffix = status.lastError ? "；上次后台检查失败" : "";
+      setTeamNewsPanelStatus(`推送已开启；后台检查 ${checkedAt}${suffix}`);
+    }
   } catch (error) {
     elements.teamNewsPushToggle.disabled = true;
     setTeamNewsPanelStatus(`推送状态读取失败：${error.message || "未知错误"}`, true);
@@ -784,12 +803,32 @@ async function updateTeamNewsPush() {
       topic: TeamNewsConfig.topic
     });
     elements.teamNewsPushToggle.checked = result.enabled === true;
-    setTeamNewsPanelStatus(result.enabled ? "蓝鸟队英文新闻推送已开启" : "蓝鸟队新闻推送已关闭");
+    const enabledMessage = result.fcmEnabled === false
+      ? "新闻通知已开启；FCM 不可用时由手机后台检查补偿"
+      : "蓝鸟队英文新闻推送和手机后台检查已开启";
+    setTeamNewsPanelStatus(result.enabled ? enabledMessage : "蓝鸟队新闻推送已关闭");
   } catch (error) {
     elements.teamNewsPushToggle.checked = !requested;
     setTeamNewsPanelStatus(`推送设置失败：${error.message || "请检查通知权限"}`, true);
   } finally {
     elements.teamNewsPushToggle.disabled = false;
+  }
+}
+
+async function sendTeamNewsTestNotification() {
+  const plugin = window.Capacitor?.Plugins?.SportsWidget;
+  if (!plugin?.sendTeamNewsTestNotification) {
+    setTeamNewsPanelStatus("测试通知仅支持 Android 安装版", true);
+    return;
+  }
+  elements.testTeamNewsPushBtn.disabled = true;
+  try {
+    await plugin.sendTeamNewsTestNotification();
+    setTeamNewsPanelStatus("测试通知已发送；如果没有弹出，请检查 vivo 通知权限");
+  } catch (error) {
+    setTeamNewsPanelStatus(`测试通知失败：${error.message || "请检查通知权限"}`, true);
+  } finally {
+    elements.testTeamNewsPushBtn.disabled = false;
   }
 }
 

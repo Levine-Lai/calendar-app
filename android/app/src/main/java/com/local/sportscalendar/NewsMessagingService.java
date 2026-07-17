@@ -41,22 +41,37 @@ public class NewsMessagingService extends FirebaseMessagingService {
 
         String newsUrl = message.getData().get(TeamNewsPushManager.EXTRA_NEWS_URL);
         String newsId = message.getData().get(TeamNewsPushManager.EXTRA_NEWS_ID);
-        Intent intent = new Intent(this, MainActivity.class);
+        if (!TeamNewsPushManager.rememberNotification(this, newsId)) return;
+        showNewsNotification(this, title, body, newsUrl, newsId);
+    }
+
+    static void showNewsNotification(
+        Context context,
+        String title,
+        String body,
+        String newsUrl,
+        String newsId
+    ) {
+        createNotificationChannel(context);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU
+            && ContextCompat.checkSelfPermission(context, android.Manifest.permission.POST_NOTIFICATIONS)
+                != android.content.pm.PackageManager.PERMISSION_GRANTED) return;
+        Intent intent = new Intent(context, MainActivity.class);
         intent.setAction("OPEN_TEAM_NEWS");
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
         intent.putExtra(TeamNewsPushManager.EXTRA_NEWS_URL, newsUrl == null ? "" : newsUrl);
         intent.putExtra(TeamNewsPushManager.EXTRA_NEWS_ID, newsId == null ? "" : newsId);
         int requestCode = newsId == null ? 0 : newsId.hashCode();
         PendingIntent pendingIntent = PendingIntent.getActivity(
-            this,
+            context,
             requestCode,
             intent,
             PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE
         );
 
-        NotificationCompat.Builder notification = new NotificationCompat.Builder(this, TeamNewsPushManager.CHANNEL_ID)
+        NotificationCompat.Builder notification = new NotificationCompat.Builder(context, TeamNewsPushManager.CHANNEL_ID)
             .setSmallIcon(R.drawable.ic_notification_news)
-            .setColor(ContextCompat.getColor(this, R.color.team_news_accent))
+            .setColor(ContextCompat.getColor(context, R.color.team_news_accent))
             .setContentTitle(title)
             .setContentText(body)
             .setStyle(new NotificationCompat.BigTextStyle().bigText(body))
@@ -66,7 +81,7 @@ public class NewsMessagingService extends FirebaseMessagingService {
             .setCategory(NotificationCompat.CATEGORY_SOCIAL);
 
         try {
-            NotificationManagerCompat.from(this).notify(requestCode, notification.build());
+            NotificationManagerCompat.from(context).notify(requestCode, notification.build());
         } catch (SecurityException ignored) {
             // Android 13+ can revoke notification permission at any time.
         }

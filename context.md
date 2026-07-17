@@ -19,6 +19,7 @@
   - 合并、解绑比赛关联。
   - 解析布尔值、月份 42 天范围和带 `TZID` 的 ICS 时间。
 - `public/app.js`：页面状态、各数据源适配、导入更新、筛选、日历和组件同步。
+- `public/team-news-core.js`：新闻数据校验、静态源新鲜度比较，以及 MLB 实时列表与静态正文合并。
 - `public/calendar-storage.js`：IndexedDB 主存储、双快照备份、旧 v5 迁移和 localStorage 应急恢复。
 - `public/calendar-image-cache.js`：远程队徽缓存、容量回收和并发任务合并。
 - `public/styles.css`：桌面和移动端新粗野派布局。
@@ -50,6 +51,9 @@
 - `WidgetActionReceiver`：不导出的组件内部刷新与切日入口。
 - `SportsWidgetService`：只读取已经准备好的比赛和队徽缓存，不在列表回调中联网。
 - `WidgetRefreshWorker`：联网时约每 15 分钟请求一次组件更新；手动刷新也进入一次性 Worker，失败最多重试 3 次。
+- `TeamNewsFeed`：受限读取并解析 MLB 蓝鸟 RSS，生成与服务端一致的文章 ID。
+- `TeamNewsRefreshWorker`：推送开启后每 15 分钟后台检查新闻，作为 GitHub Actions/FCM 延迟时的本地通知补偿。
+- `NewsMessagingService` + `TeamNewsPushManager`：统一处理 FCM 数据消息、本地通知、文章 ID 去重、主题订阅恢复和最近检查状态。
 - 实时比分保存在当日原生快照中，进程回收后仍可恢复。
 - 队徽缓存在 `cacheDir/widget_logos`，最多保留 256 个；列表缓存未命中时先显示占位图，后台下载完成后再刷新。
 - 桌面组件手动刷新仍是获取最新比分最直接的方式。
@@ -1570,6 +1574,67 @@
 
 - 当前已生成本地可安装 APK，但尚未上传公开下载地址。
 - `public/version.json` 暂时保持远程已发布版本 `2.2.1`，避免旧版 App 检测到无法下载的更新；上传 APK 后再更新远程清单。
+
+## 2026-07-17
+
+### 修改批次：2.2.5 新闻实时性与通知双通道修复
+
+#### 用户反馈
+
+- 安装 2.2.4 并完成 Firebase 配置后，没有收到新新闻通知，App 内新闻也没有实时更新。
+
+#### 现场证据与根因
+
+1. GitHub Actions 工作流虽然配置为每 15 分钟，但 2026-07-17 实际计划运行约每 1.5 至 2 小时一次；免费计划调度出现明显延迟和漏跑，不能作为唯一实时源。
+2. GitHub Raw 新闻已更新到 `2026-07-17T13:53:55.290Z`，最新文章发布时间为 `2026-07-17T01:04:02.000Z`；jsDelivr 仍停留在 `2026-07-17T01:12:34.174Z` 和更旧文章。
+3. 旧版使用 `Promise.any` 选择最快响应，6 秒返回的陈旧 jsDelivr 会早于约 18 秒返回的新 GitHub Raw，因此 App 会主动采用旧数据。
+4. 最新 Actions 运行 `29585738863` 成功且提交了新 JSON，但公开 GitHub API 不允许读取完整作业日志，无法证明真实 FCM 发送结果；此前只证明 `validate_only` 接受消息。
+5. 当前电脑未连接 vivo 手机，`adb devices -l` 为空，无法读取手机的 FCM 主题订阅、通知权限和 WorkManager 状态。
+
+#### 修复结构
+
+1. Android 新增受 512 KB 上限和严格 MLB HTTPS 地址限制的 RSS 读取器，使用禁用 DOCTYPE/外部实体的 XML 解析器读取最近 20 条新闻。
+2. App 启动及前台刷新直接请求 MLB RSS；静态 GitHub Raw/jsDelivr 只用于补充已集中抓取的正文。
+3. 静态源不再“最快响应优先”，改为比较最新文章发布时间和数据更新时间，陈旧 CDN 不会覆盖新数据。
+4. 新增 `TeamNewsRefreshWorker`，推送开启时以 WorkManager 每 15 分钟直连 MLB RSS；首次运行建立基线，此后发现新文章时创建本地系统通知。
+5. FCM 改为高优先级 data-only 消息，前后台均进入 `NewsMessagingService`；本地 Worker 与 FCM 共享最多 50 个文章 ID 的去重记录。
+6. App 启动自动恢复 FCM 主题订阅、周期任务和一次立即检查；关闭推送时同时取消周期与立即任务。
+7. 即使 Google 服务订阅失败，本地 WorkManager 通知仍保持开启，新闻同步不再只有单点通道。
+8. 新闻面板新增“测试通知”，并显示后台最近检查时间或失败状态，方便区分手机权限、后台网络与远程 FCM 问题。
+9. 服务端 FCM 数据包含标题、摘要、文章 ID 和 MLB URL，由 App 统一构造通知和点击行为。
+
+#### 数据兼容与安全
+
+- 沿用原有 `enabled` 推送偏好，覆盖安装后会自动为已开启用户安排后台任务，不要求重新选择球队或导入数据。
+- 后台首次读取只建立最近文章基线，不会把已有 20 篇旧新闻一次性推送。
+- XML 禁止 DOCTYPE、外部实体和 XInclude；RSS 限制为 MLB 固定 HTTPS 地址和 512 KB。
+- 新闻 ID 使用与服务端一致的文章 URL SHA-256，FCM 与本地 Worker 可以跨通道去重。
+
+#### 涉及文件
+
+- 新增：`TeamNewsFeed.java`、`TeamNewsRefreshWorker.java`。
+- Android：`TeamNewsPushManager.java`、`NewsMessagingService.java`、`SportsWidgetPlugin.java`、`WidgetNetworkClient.java`、`MainActivity.java`。
+- Web：`app.js`、`team-news-core.js`、`team-news-config.js`、`styles.css`、`index.html`。
+- 服务端：`firebase/functions/update-static-news.js` 及测试。
+
+#### 验证
+
+- Web 自动化测试由 22 项增加到 24 项，新增“陈旧 CDN 不得胜出”和“RSS 标题合并静态正文”回归测试，全部通过。
+- 新闻任务测试 12 项通过，FCM `validate_only` 用例已改为高优先级数据消息。
+- Android JVM 测试与 `lintDebug` 成功，新增 MLB RSS 排序/过滤和 XXE 拒绝测试。
+- 390x844 手机视口中侧栏无横向溢出，新增按钮和推送开关完整显示；页面展示 GitHub Raw 最新文章，控制台无错误。
+- MLB RSS 现场返回 RFC 822 时间格式，与 Android 解析器测试格式一致。
+
+#### 未解决限制
+
+- Android WorkManager 的 15 分钟是最短请求周期，不保证精确准点；vivo 省电策略仍可能延迟后台执行。
+- FCM 与本地后台检查都依赖手机联网。强制停止 App 后，Android 会暂停后台任务，直到用户再次打开 App。
+- 本轮没有连接真机，真实通知显示需要安装下一版后使用“测试通知”验收。
+
+#### 版本状态
+
+- 手机端最新已生成 APK：`2.2.4 / versionCode 26`。
+- 当前源码准备版本：`2.2.5 / versionCode 27`，本轮按约定不自动打包。
 
 ### 修改批次：2.2.4 自动新闻同步与 FCM 推送修复
 

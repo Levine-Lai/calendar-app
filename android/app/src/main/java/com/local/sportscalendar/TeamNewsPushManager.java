@@ -3,12 +3,27 @@ package com.local.sportscalendar;
 import android.content.Context;
 import android.content.SharedPreferences;
 
+import androidx.work.Constraints;
+import androidx.work.ExistingPeriodicWorkPolicy;
+import androidx.work.ExistingWorkPolicy;
+import androidx.work.NetworkType;
+import androidx.work.OneTimeWorkRequest;
+import androidx.work.PeriodicWorkRequest;
+import androidx.work.WorkManager;
+
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.messaging.FirebaseMessaging;
 
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.LinkedHashSet;
+import java.util.List;
 import java.util.Locale;
+import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 final class TeamNewsPushManager {
     static final String TOPIC = "toronto_blue_jays_news_en";
@@ -17,6 +32,13 @@ final class TeamNewsPushManager {
     static final String EXTRA_NEWS_ID = "newsId";
     private static final String PREFS_NAME = "team_news_push";
     private static final String KEY_ENABLED = "enabled";
+    private static final String KEY_FEED_IDS = "feed_ids";
+    private static final String KEY_NOTIFIED_IDS = "notified_ids";
+    private static final String KEY_LAST_CHECK_AT = "last_check_at";
+    private static final String KEY_LAST_NOTIFICATION_AT = "last_notification_at";
+    private static final String KEY_LAST_ERROR = "last_error";
+    private static final String WORK_NAME = "team-news-background-check";
+    private static final String IMMEDIATE_WORK_NAME = "team-news-immediate-check";
 
     private TeamNewsPushManager() {
     }
@@ -38,8 +60,117 @@ final class TeamNewsPushManager {
     }
 
     static void restoreSubscription(Context context) {
-        if (!isConfigured(context) || !isEnabled(context)) return;
-        FirebaseMessaging.getInstance().subscribeToTopic(TOPIC);
+        if (!isEnabled(context)) return;
+        scheduleBackgroundChecks(context);
+        enqueueImmediateCheck(context);
+        if (isConfigured(context)) {
+            try {
+                FirebaseMessaging.getInstance().subscribeToTopic(TOPIC);
+            } catch (RuntimeException ignored) {
+                // The local WorkManager fallback remains active without Google services.
+            }
+        }
+    }
+
+    static void scheduleBackgroundChecks(Context context) {
+        Constraints constraints = new Constraints.Builder()
+            .setRequiredNetworkType(NetworkType.CONNECTED)
+            .build();
+        PeriodicWorkRequest request = new PeriodicWorkRequest.Builder(
+            TeamNewsRefreshWorker.class,
+            15,
+            TimeUnit.MINUTES
+        ).setConstraints(constraints).build();
+        WorkManager.getInstance(context).enqueueUniquePeriodicWork(
+            WORK_NAME,
+            ExistingPeriodicWorkPolicy.KEEP,
+            request
+        );
+    }
+
+    static void cancelBackgroundChecks(Context context) {
+        WorkManager.getInstance(context).cancelUniqueWork(WORK_NAME);
+        WorkManager.getInstance(context).cancelUniqueWork(IMMEDIATE_WORK_NAME);
+    }
+
+    static void enqueueImmediateCheck(Context context) {
+        Constraints constraints = new Constraints.Builder()
+            .setRequiredNetworkType(NetworkType.CONNECTED)
+            .build();
+        OneTimeWorkRequest request = new OneTimeWorkRequest.Builder(TeamNewsRefreshWorker.class)
+            .setConstraints(constraints)
+            .build();
+        WorkManager.getInstance(context).enqueueUniqueWork(
+            IMMEDIATE_WORK_NAME,
+            ExistingWorkPolicy.KEEP,
+            request
+        );
+    }
+
+    static boolean pollAndNotify(Context context) {
+        try {
+            List<TeamNewsFeed.Item> items = TeamNewsFeed.parse(WidgetNetworkClient.getMlbNewsFeedXml());
+            if (items.isEmpty()) throw new IllegalStateException("MLB RSS did not contain news");
+            SharedPreferences prefs = preferences(context);
+            String previousFeedIds = prefs.getString(KEY_FEED_IDS, "");
+            prefs.edit()
+                .putLong(KEY_LAST_CHECK_AT, System.currentTimeMillis())
+                .putString(KEY_FEED_IDS, joinIds(TeamNewsFeed.ids(items)))
+                .remove(KEY_LAST_ERROR)
+                .apply();
+            if (previousFeedIds.isEmpty()) return true;
+
+            Set<String> previous = splitIds(previousFeedIds);
+            List<TeamNewsFeed.Item> newItems = new ArrayList<>();
+            for (TeamNewsFeed.Item item : items) {
+                if (!previous.contains(item.id)) newItems.add(item);
+            }
+            Collections.reverse(newItems);
+            int start = Math.max(0, newItems.size() - 3);
+            for (TeamNewsFeed.Item item : newItems.subList(start, newItems.size())) {
+                if (!rememberNotification(context, item.id)) continue;
+                NewsMessagingService.showNewsNotification(
+                    context,
+                    item.title,
+                    item.summary,
+                    item.url,
+                    item.id
+                );
+            }
+            return true;
+        } catch (Exception error) {
+            preferences(context).edit()
+                .putLong(KEY_LAST_CHECK_AT, System.currentTimeMillis())
+                .putString(KEY_LAST_ERROR, boundedError(error))
+                .apply();
+            return false;
+        }
+    }
+
+    static synchronized boolean rememberNotification(Context context, String newsId) {
+        if (newsId == null || !newsId.matches("[A-Za-z0-9_-]{1,160}")) return true;
+        SharedPreferences prefs = preferences(context);
+        List<String> ids = new ArrayList<>(splitIds(prefs.getString(KEY_NOTIFIED_IDS, "")));
+        if (ids.contains(newsId)) return false;
+        ids.add(0, newsId);
+        if (ids.size() > 50) ids = new ArrayList<>(ids.subList(0, 50));
+        prefs.edit()
+            .putString(KEY_NOTIFIED_IDS, joinIds(ids))
+            .putLong(KEY_LAST_NOTIFICATION_AT, System.currentTimeMillis())
+            .apply();
+        return true;
+    }
+
+    static long lastCheckAt(Context context) {
+        return preferences(context).getLong(KEY_LAST_CHECK_AT, 0L);
+    }
+
+    static long lastNotificationAt(Context context) {
+        return preferences(context).getLong(KEY_LAST_NOTIFICATION_AT, 0L);
+    }
+
+    static String lastError(Context context) {
+        return preferences(context).getString(KEY_LAST_ERROR, "");
     }
 
     static String safeMlbUrl(String rawUrl) {
@@ -98,5 +229,22 @@ final class TeamNewsPushManager {
 
     private static SharedPreferences preferences(Context context) {
         return context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
+    }
+
+    private static Set<String> splitIds(String value) {
+        Set<String> result = new LinkedHashSet<>();
+        if (value == null || value.isEmpty()) return result;
+        result.addAll(Arrays.asList(value.split(",")));
+        result.remove("");
+        return result;
+    }
+
+    private static String joinIds(List<String> ids) {
+        return String.join(",", ids);
+    }
+
+    private static String boundedError(Exception error) {
+        String message = error == null || error.getMessage() == null ? "新闻源暂时不可用" : error.getMessage();
+        return message.substring(0, Math.min(message.length(), 120));
     }
 }

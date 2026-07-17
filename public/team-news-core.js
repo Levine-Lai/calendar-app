@@ -89,6 +89,61 @@
     };
   }
 
+  function payloadFreshness(payload) {
+    const normalized = normalizeNewsPayload(payload);
+    const latestPublishedAt = normalized.items.length ? Date.parse(normalized.items[0].publishedAt) : 0;
+    return [latestPublishedAt || 0, Date.parse(normalized.updatedAt) || 0];
+  }
+
+  function selectFreshestNewsPayload(payloads) {
+    const normalized = (Array.isArray(payloads) ? payloads : [])
+      .map((payload) => {
+        try {
+          return normalizeNewsPayload(payload);
+        } catch {
+          return null;
+        }
+      })
+      .filter(Boolean);
+    normalized.sort((left, right) => {
+      const leftFreshness = payloadFreshness(left);
+      const rightFreshness = payloadFreshness(right);
+      return rightFreshness[0] - leftFreshness[0] || rightFreshness[1] - leftFreshness[1];
+    });
+    return normalized[0] || null;
+  }
+
+  function mergeNewsPayloads(primaryPayload, supplementPayloads = []) {
+    const primary = normalizeNewsPayload(primaryPayload);
+    const supplements = (Array.isArray(supplementPayloads) ? supplementPayloads : [])
+      .map((payload) => {
+        try {
+          return normalizeNewsPayload(payload);
+        } catch {
+          return null;
+        }
+      })
+      .filter(Boolean);
+    const supplementItems = new Map();
+    supplements.forEach((payload) => payload.items.forEach((item) => {
+      const existing = supplementItems.get(item.id);
+      if (!existing || (!existing.bodyEn.length && item.bodyEn.length)) supplementItems.set(item.id, item);
+    }));
+    return {
+      ...primary,
+      items: primary.items.map((item) => {
+        const supplement = supplementItems.get(item.id);
+        if (!supplement) return item;
+        return {
+          ...item,
+          summaryEn: item.summaryEn || supplement.summaryEn,
+          bodyEn: item.bodyEn.length ? item.bodyEn : supplement.bodyEn,
+          author: item.author || supplement.author
+        };
+      })
+    };
+  }
+
   async function fetchNews(endpoint, options = {}) {
     const safeEndpoint = normalizeHttpsUrl(endpoint);
     if (!safeEndpoint) throw new Error("新闻服务尚未部署");
@@ -128,6 +183,8 @@
     normalizeArticleParagraphs,
     normalizeNewsItem,
     normalizeNewsPayload,
+    selectFreshestNewsPayload,
+    mergeNewsPayloads,
     fetchNews
   };
 });

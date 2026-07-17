@@ -78,3 +78,48 @@ test("team news API request uses a bounded Toronto query", async () => {
   assert.equal(url.searchParams.get("limit"), "30");
   assert.equal(payload.items.length, 1);
 });
+
+test("freshest news payload wins even when a stale CDN responds first", () => {
+  const stale = {
+    updatedAt: "2026-07-17T01:00:00Z",
+    items: [{
+      id: "old",
+      titleEn: "Old story",
+      publishedAt: "2026-07-16T19:00:00Z",
+      url: "https://www.mlb.com/bluejays/news/old"
+    }]
+  };
+  const fresh = {
+    updatedAt: "2026-07-17T14:00:00Z",
+    items: [{
+      id: "fresh",
+      titleEn: "Fresh story",
+      publishedAt: "2026-07-17T13:00:00Z",
+      url: "https://www.mlb.com/bluejays/news/fresh"
+    }]
+  };
+  assert.equal(TeamNews.selectFreshestNewsPayload([stale, fresh]).items[0].id, "fresh");
+});
+
+test("live MLB feed keeps static article bodies when payloads are merged", () => {
+  const live = {
+    updatedAt: "2026-07-17T14:00:00Z",
+    items: [{
+      id: "article",
+      titleEn: "Live title",
+      publishedAt: "2026-07-17T13:00:00Z",
+      url: "https://www.mlb.com/bluejays/news/article"
+    }]
+  };
+  const staticPayload = {
+    updatedAt: "2026-07-17T13:30:00Z",
+    items: [{
+      id: "article",
+      titleEn: "Live title",
+      bodyEn: ["Full article paragraph."],
+      publishedAt: "2026-07-17T13:00:00Z",
+      url: "https://www.mlb.com/bluejays/news/article"
+    }]
+  };
+  assert.deepEqual(TeamNews.mergeNewsPayloads(live, [staticPayload]).items[0].bodyEn, ["Full article paragraph."]);
+});

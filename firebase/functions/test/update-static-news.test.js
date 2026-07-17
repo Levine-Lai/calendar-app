@@ -24,7 +24,7 @@ test("FCM failure does not fail the news data update", async () => {
   assert.equal(succeeded, false);
 });
 
-test("FCM HTTP v1 request uses REST field names and validate_only", () => {
+test("FCM HTTP v1 request uses a high-priority data message and validate_only", () => {
   const request = buildFcmRequest({
     id: "article-1",
     titleEn: "Blue Jays story",
@@ -32,10 +32,11 @@ test("FCM HTTP v1 request uses REST field names and validate_only", () => {
     url: "https://www.mlb.com/bluejays/news/article-1"
   }, true);
   assert.equal(request.validate_only, true);
-  assert.equal(request.message.android.notification.channel_id, "team_news");
-  assert.equal(request.message.android.notification.click_action, "OPEN_TEAM_NEWS");
-  assert.equal("channelId" in request.message.android.notification, false);
-  assert.equal("clickAction" in request.message.android.notification, false);
+  assert.equal(request.message.notification, undefined);
+  assert.equal(request.message.android.priority, "high");
+  assert.equal(request.message.data.title, "Blue Jays story");
+  assert.equal(request.message.data.body, "Story summary");
+  assert.equal(request.message.data.newsId, "article-1");
 });
 
 test("FCM validation failure is reported without failing the workflow", async () => {

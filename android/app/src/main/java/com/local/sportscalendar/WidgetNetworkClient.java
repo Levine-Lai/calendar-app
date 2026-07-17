@@ -11,6 +11,7 @@ import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
+import java.util.Locale;
 
 final class WidgetNetworkClient {
     private static final int MAX_JSON_BYTES = 5 * 1024 * 1024;
@@ -18,6 +19,7 @@ final class WidgetNetworkClient {
     private static final int MAX_IMAGE_PIXELS = 16_000_000;
     private static final int MAX_ARTICLE_BYTES = 768 * 1024;
     private static final int MAX_NEWS_BYTES = 1024 * 1024;
+    private static final int MAX_NEWS_FEED_BYTES = 512 * 1024;
 
     private WidgetNetworkClient() {}
 
@@ -50,7 +52,7 @@ final class WidgetNetworkClient {
             }
             if (code < 200 || code >= 300) throw new IllegalStateException("HTTP " + code);
             String contentType = connection.getContentType();
-            if (contentType != null && !contentType.toLowerCase().contains("html")) {
+            if (contentType != null && !contentType.toLowerCase(Locale.ROOT).contains("html")) {
                 throw new IllegalStateException("Unexpected content type: " + contentType);
             }
             return new String(readLimited(connection.getInputStream(), MAX_ARTICLE_BYTES), StandardCharsets.UTF_8);
@@ -76,6 +78,26 @@ final class WidgetNetworkClient {
                 throw new IllegalStateException("Unexpected content type: " + contentType);
             }
             return new String(readLimited(connection.getInputStream(), MAX_NEWS_BYTES), StandardCharsets.UTF_8);
+        } finally {
+            connection.disconnect();
+        }
+    }
+
+    static String getMlbNewsFeedXml() throws Exception {
+        HttpURLConnection connection = open(TeamNewsFeed.RSS_URL, 12_000, 25_000);
+        connection.setRequestProperty("Accept", "application/rss+xml,application/xml,text/xml");
+        connection.setRequestProperty("Cache-Control", "no-cache");
+        try {
+            int code = connection.getResponseCode();
+            if (!TeamNewsFeed.RSS_URL.equals(connection.getURL().toString())) {
+                throw new IllegalStateException("MLB RSS HTTPS redirect is not allowed");
+            }
+            if (code < 200 || code >= 300) throw new IllegalStateException("HTTP " + code);
+            String contentType = connection.getContentType();
+            if (contentType != null && !contentType.contains("xml") && !contentType.contains("text")) {
+                throw new IllegalStateException("Unexpected content type: " + contentType);
+            }
+            return new String(readLimited(connection.getInputStream(), MAX_NEWS_FEED_BYTES), StandardCharsets.UTF_8);
         } finally {
             connection.disconnect();
         }
@@ -121,7 +143,7 @@ final class WidgetNetworkClient {
         connection.setConnectTimeout(connectTimeout);
         connection.setReadTimeout(readTimeout);
         connection.setInstanceFollowRedirects(true);
-        connection.setRequestProperty("User-Agent", "GuansaiRiji/2.2.4");
+        connection.setRequestProperty("User-Agent", "GuansaiRiji/2.2.5");
         return connection;
     }
 
