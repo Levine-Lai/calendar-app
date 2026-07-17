@@ -1621,6 +1621,32 @@
 9. GitHub Actions 运行 `29552048767` 于 2026-07-17 成功完成，作业 `87796506022` 无任何 warning/error 注释；由于验证失败路径一定会创建 warning，这证明新服务账号的 OAuth、FCM 权限和消息格式均已通过校验。
 10. 本次校验使用 `validate_only`，不会产生测试通知；下一篇新文章出现时才会向已订阅 `toronto_blue_jays_news_en` 主题的设备发送真实通知。
 
+### 发布批次：2.2.4 Debug APK
+
+#### 构建结果
+
+- 构建命令：`npm run build:android`，Gradle `assembleDebug` 成功。
+- APK：`releases/sports-calendar-2.2.4-debug.apk`。
+- 文件大小：`9,331,282` 字节。
+- 包名：`com.local.sportscalendar`。
+- 版本：`versionCode 26`、`versionName 2.2.4`。
+- APK Signature Scheme v2 验证通过，签名证书 SHA-256 为 `7ef83e3ec40b7bf1e9aaf551589ee73c378fc26f29202255f0466bcab759bed0`。
+- APK 文件 SHA-256：`91BDE81F9FB6C6FA211ED7AC0232FBB90F54A784F33EF85098C6ACF1EE36B0A1`。
+
+#### 验收
+
+1. Web 自动化测试 22 项、稳定性检查 20 项和新闻任务测试 12 项全部通过；新闻任务生产依赖审计为 0 个漏洞。
+2. Android `testDebugUnitTest` 与 `lintDebug` 成功，Gradle 没有新增 Lint 问题。
+3. APK 清单确认应用名“观赛日记”、联网、通知和开机恢复权限存在，Firebase Messaging Service 已合并。
+4. APK 内版本资源为 `2.2.4`，包含 5 分钟前台自动同步逻辑；20 篇蓝鸟新闻全部带英文正文。
+5. Firebase Admin Secret 已通过 GitHub Actions 运行 `29552048767` 的 OAuth、FCM 权限和 `validate_only` 消息校验。
+
+#### 发布边界
+
+- 当前为与历史安装包使用同一 Android Debug 证书的本地可安装 APK，可覆盖安装并保留 App 数据。
+- 尚未配置 APK 的公开 HTTPS 下载地址，因此 `public/version.json` 暂时保持远程已发布版本 `2.2.1`，避免旧版 App 检测到无法下载的更新。
+- 完整运行与发布配置记录在 `docs/2.2.4-release-configuration.md`。
+
 ## 2026-07-17
 
 ### 修改批次：2.2.3 新闻正文集中同步与 Actions 失败隔离

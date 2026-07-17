@@ -4,11 +4,11 @@
 
 ## 当前版本状态
 
-- 手机端最新已生成 APK：`2.2.3`
-- 当前源码准备版本：`2.2.4`（尚未打包）
-- APK 文件：`releases/sports-calendar-2.2.3-debug.apk`
+- 手机端最新已生成 APK：`2.2.4`
+- 当前源码版本：`2.2.4`
+- APK 文件：`releases/sports-calendar-2.2.4-debug.apk`
 
-## 2.2.4（开发中）
+## 2.2.4（已生成 APK）
 
 - 新闻同步同时尝试 jsDelivr、GitHub Raw 和 Android 原生网络，单条线路变慢时由最快的可用线路完成。
 - Android 原生新闻请求读取超时延长到 25 秒，响应仍限制为 1 MB，并严格限制到项目的两个新闻地址。
@@ -18,7 +18,7 @@
 - 新闻工作流在代码发布时使用 `validate_only` 验证 Firebase 凭据和消息格式，不向手机发送测试通知。
 - Firebase Secret 兼容原始 JSON、二次引号包裹的 JSON 和 Base64 JSON；误放 `google-services.json` 或缺少服务账号字段时会在 Actions 中给出明确诊断且不泄露密钥。
 - 更新后的 Firebase Admin 服务账号已通过线上 OAuth、FCM 权限和 `validate_only` 消息校验，服务端推送链路已准备就绪。
-- 当前只完成源码与测试，尚未生成 `2.2.4` APK。
+- 已生成可覆盖安装的 `2.2.4` Debug APK；远程更新下载地址将在 APK 上传到公开 HTTPS 地址后单独发布。
 
 ## 2.2.3（已生成 APK）
 

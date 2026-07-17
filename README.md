@@ -116,6 +116,8 @@ NBA、MLB、英超和中超等联赛读取 ESPN；中甲、中乙读取 TheSport
 
 多伦多蓝鸟新闻由 GitHub Actions 每 15 分钟读取 MLB 官方 RSS，并集中抓取最近 20 篇文章的英文正文后更新 `public/news/blue-jays.json`。App 启动、回到前台、网络恢复及保持打开期间都会自动同步，并同时尝试 jsDelivr、GitHub Raw 和 Android 原生网络。Firebase 仅用于可选的 FCM 主题通知，不需要 Blaze 或 Firestore；FCM 失败不会阻断新闻文件更新。
 
+2.2.4 的完整安装、GitHub、Firebase、vivo 后台权限、应用内更新和正式签名配置见 `docs/2.2.4-release-configuration.md`。
+
 ## 导入流程
 
 1. 选择联赛。
