@@ -78,6 +78,24 @@ final class TeamNewsPushManager {
         }
     }
 
+    static String safeNewsEndpoint(String rawUrl) {
+        if (rawUrl == null || rawUrl.isBlank()) return "";
+        try {
+            URI uri = new URI(rawUrl);
+            String host = uri.getHost();
+            if (!"https".equalsIgnoreCase(uri.getScheme()) || host == null) return "";
+            String normalizedHost = host.toLowerCase(Locale.ROOT);
+            String path = uri.getPath() == null ? "" : uri.getPath();
+            boolean rawGithub = normalizedHost.equals("raw.githubusercontent.com")
+                && path.equals("/Levine-Lai/calendar-app/main/public/news/blue-jays.json");
+            boolean jsDelivr = normalizedHost.equals("cdn.jsdelivr.net")
+                && path.equals("/gh/Levine-Lai/calendar-app@main/public/news/blue-jays.json");
+            return rawGithub || jsDelivr ? uri.toASCIIString() : "";
+        } catch (URISyntaxException error) {
+            return "";
+        }
+    }
+
     private static SharedPreferences preferences(Context context) {
         return context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
     }

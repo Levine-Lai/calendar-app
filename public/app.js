@@ -19,6 +19,8 @@ const dayScoreRefreshTimes = new Map();
 const scoreRefreshTtlMs = 60 * 1000;
 const teamNewsCacheKey = "sports-fan-calendar:team-news:v1";
 const teamNewsCacheTtlMs = 10 * 60 * 1000;
+const teamNewsAutoRefreshMs = 5 * 60 * 1000;
+const teamNewsResumeRefreshMs = 2 * 60 * 1000;
 let teamLoadRequestId = 0;
 const providerSeasonOverrides = {};
 
@@ -250,6 +252,7 @@ const teamNewsState = {
   items: [],
   updatedAt: "",
   loading: false,
+  lastAttemptAt: 0,
   pendingUrl: "",
   articleBodies: new Map(),
   loadingBodies: new Set()
@@ -524,17 +527,52 @@ function initializeTeamNews() {
   syncTeamNewsPushStatus();
   consumePendingTeamNewsOpen();
 
-  const apiUrl = TeamNews?.normalizeHttpsUrl?.(TeamNewsConfig?.apiUrl);
-  if (!apiUrl) {
+  if (!getTeamNewsApiUrls().length) {
     setTeamNewsPanelStatus("新闻 API 尚未部署");
     return;
   }
 
   const age = Date.now() - Date.parse(teamNewsState.updatedAt || "");
-  if (!teamNewsState.items.length || !Number.isFinite(age) || age > teamNewsCacheTtlMs) {
-    window.setTimeout(() => refreshTeamNews({ silent: true }), 400);
-  } else {
+  if (teamNewsState.items.length && Number.isFinite(age) && age <= teamNewsCacheTtlMs) {
     setTeamNewsPanelStatus(`已缓存 ${teamNewsState.items.length} 条英文新闻`);
+  }
+  window.setTimeout(() => refreshTeamNews({ silent: true }), 400);
+  window.setInterval(() => {
+    if (!document.hidden) refreshTeamNews({ silent: true });
+  }, teamNewsAutoRefreshMs);
+  document.addEventListener("visibilitychange", () => {
+    if (!document.hidden && Date.now() - teamNewsState.lastAttemptAt >= teamNewsResumeRefreshMs) {
+      refreshTeamNews({ silent: true });
+    }
+  });
+  window.addEventListener("online", () => refreshTeamNews({ silent: true }));
+}
+
+function getTeamNewsApiUrls() {
+  if (!TeamNews || !TeamNewsConfig) return [];
+  const configured = Array.isArray(TeamNewsConfig.apiUrls)
+    ? TeamNewsConfig.apiUrls
+    : [TeamNewsConfig.apiUrl];
+  return Array.from(new Set(configured.map((url) => TeamNews.normalizeHttpsUrl(url)).filter(Boolean)));
+}
+
+async function fetchTeamNewsPayload() {
+  const apiUrls = getTeamNewsApiUrls();
+  if (!apiUrls.length) throw new Error("新闻 API 尚未部署");
+  const attempts = apiUrls.map((url) => TeamNews.fetchNews(url, { timeoutMs: 25000 }));
+  const plugin = window.Capacitor?.Plugins?.SportsWidget;
+  if (plugin?.fetchTeamNews) {
+    attempts.unshift(
+      plugin.fetchTeamNews({ urls: apiUrls }).then((result) => {
+        if (!result?.json) throw new Error("原生新闻数据为空");
+        return TeamNews.normalizeNewsPayload(JSON.parse(result.json));
+      })
+    );
+  }
+  try {
+    return await Promise.any(attempts);
+  } catch {
+    throw new Error("新闻同步超时或网络不可用");
   }
 }
 
@@ -566,33 +604,35 @@ async function refreshTeamNews(options = {}) {
     return;
   }
 
-  const apiUrl = TeamNews.normalizeHttpsUrl(TeamNewsConfig.apiUrl);
-  if (!apiUrl) {
+  if (!getTeamNewsApiUrls().length) {
     setTeamNewsStatus("新闻 API 尚未部署", true);
     renderTeamNews();
     return;
   }
 
   teamNewsState.loading = true;
+  teamNewsState.lastAttemptAt = Date.now();
   elements.refreshTeamNewsBtn.disabled = true;
   elements.refreshTeamNewsBtn.setAttribute("aria-busy", "true");
   if (!options.silent) setTeamNewsStatus("正在同步蓝鸟队英文新闻...");
   try {
-    const payload = await TeamNews.fetchNews(apiUrl);
+    const payload = await fetchTeamNewsPayload();
     teamNewsState.items = payload.items;
     teamNewsState.updatedAt = payload.updatedAt;
     cacheTeamNews(payload);
     renderTeamNews();
     const message = payload.items.length
-      ? `已同步 ${payload.items.length} 条英文新闻`
+      ? `${options.silent ? "已自动同步" : "已同步"} ${payload.items.length} 条英文新闻`
       : "暂时没有可显示的蓝鸟队新闻";
     setTeamNewsStatus(message);
     setTeamNewsPanelStatus(message);
     scrollToPendingTeamNews();
   } catch (error) {
     const message = `同步失败：${error.message || "网络不可用"}`;
-    setTeamNewsStatus(message, true);
-    setTeamNewsPanelStatus(teamNewsState.items.length ? "当前显示上次同步内容" : message, !teamNewsState.items.length);
+    if (!options.silent || !teamNewsState.items.length) {
+      setTeamNewsStatus(message, true);
+      setTeamNewsPanelStatus(teamNewsState.items.length ? "当前显示上次同步内容" : message, !teamNewsState.items.length);
+    }
   } finally {
     teamNewsState.loading = false;
     elements.refreshTeamNewsBtn.disabled = false;
@@ -688,7 +728,7 @@ function openTeamNewsModal() {
   document.body.classList.add("modal-open");
   renderTeamNews();
   elements.teamNewsModalClose.focus();
-  if (!teamNewsState.items.length && TeamNewsConfig?.apiUrl) refreshTeamNews();
+  if (!teamNewsState.items.length && getTeamNewsApiUrls().length) refreshTeamNews();
   scrollToPendingTeamNews();
 }
 
@@ -768,7 +808,7 @@ function handleTeamNewsOpen(url) {
   const safeUrl = TeamNews?.normalizeMlbUrl?.(url);
   teamNewsState.pendingUrl = safeUrl || "";
   openTeamNewsModal();
-  if (TeamNewsConfig?.apiUrl) refreshTeamNews({ silent: true });
+  if (getTeamNewsApiUrls().length) refreshTeamNews({ silent: true });
 }
 
 function scrollToPendingTeamNews() {

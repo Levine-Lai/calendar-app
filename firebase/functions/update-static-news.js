@@ -113,12 +113,34 @@ function writePayload(payload) {
 
 async function sendNotifications(items) {
   if (!items.length) return;
-  const rawCredentials = process.env.FIREBASE_SERVICE_ACCOUNT_JSON;
-  if (!rawCredentials) {
+  const serviceAccount = readServiceAccount();
+  if (!serviceAccount) {
     process.stdout.write(`Saved ${items.length} new article(s); FCM secret is not configured yet.\n`);
     return;
   }
 
+  const accessToken = await createGoogleAccessToken(serviceAccount);
+  const endpoint = fcmEndpoint(serviceAccount);
+  for (const item of items.slice(0, 5).reverse()) {
+    const response = await fetchWithTimeout(endpoint, {
+      method: "POST",
+      headers: {
+        authorization: `Bearer ${accessToken}`,
+        "content-type": "application/json"
+      },
+      body: JSON.stringify(buildFcmRequest(item))
+    }, 15000);
+    if (!response.ok) {
+      const details = (await response.text()).slice(0, 500);
+      throw new Error(`FCM returned ${response.status}: ${details}`);
+    }
+  }
+  process.stdout.write(`Sent ${Math.min(items.length, 5)} FCM notification(s) for ${TEAM_NAME}.\n`);
+}
+
+function readServiceAccount() {
+  const rawCredentials = process.env.FIREBASE_SERVICE_ACCOUNT_JSON;
+  if (!rawCredentials) return null;
   let serviceAccount;
   try {
     serviceAccount = JSON.parse(rawCredentials);
@@ -128,46 +150,82 @@ async function sendNotifications(items) {
   if (!serviceAccount.project_id || !serviceAccount.client_email || !serviceAccount.private_key) {
     throw new Error("Firebase service account JSON is incomplete");
   }
+  return serviceAccount;
+}
 
-  const accessToken = await createGoogleAccessToken(serviceAccount);
-  const endpoint = `https://fcm.googleapis.com/v1/projects/${encodeURIComponent(serviceAccount.project_id)}/messages:send`;
-  for (const item of items.slice(0, 5).reverse()) {
-    const response = await fetchWithTimeout(endpoint, {
-      method: "POST",
-      headers: {
-        authorization: `Bearer ${accessToken}`,
-        "content-type": "application/json"
+function fcmEndpoint(serviceAccount) {
+  return `https://fcm.googleapis.com/v1/projects/${encodeURIComponent(serviceAccount.project_id)}/messages:send`;
+}
+
+function buildFcmRequest(item, validateOnly = false) {
+  return {
+    validate_only: validateOnly,
+    message: {
+      topic: NEWS_TOPIC,
+      notification: {
+        title: item.titleEn,
+        body: item.summaryEn || "The Toronto Blue Jays published a new story."
       },
-      body: JSON.stringify({
-        message: {
-          topic: NEWS_TOPIC,
-          notification: {
-            title: item.titleEn,
-            body: item.summaryEn || "The Toronto Blue Jays published a new story."
-          },
-          data: {
-            type: "team_news",
-            teamId: TEAM_ID,
-            newsId: item.id,
-            newsUrl: item.url
-          },
-          android: {
-            priority: "high",
-            notification: {
-              channelId: "team_news",
-              tag: `team-news-${item.id}`,
-              clickAction: "OPEN_TEAM_NEWS"
-            }
-          }
+      data: {
+        type: "team_news",
+        teamId: TEAM_ID,
+        newsId: item.id,
+        newsUrl: item.url
+      },
+      android: {
+        priority: "high",
+        notification: {
+          channel_id: "team_news",
+          tag: `team-news-${item.id}`,
+          click_action: "OPEN_TEAM_NEWS"
         }
-      })
-    }, 15000);
-    if (!response.ok) {
-      const details = (await response.text()).slice(0, 500);
-      throw new Error(`FCM returned ${response.status}: ${details}`);
+      }
     }
+  };
+}
+
+async function validateFcmConfiguration() {
+  const serviceAccount = readServiceAccount();
+  if (!serviceAccount) throw new Error("FCM secret is not configured");
+  const accessToken = await createGoogleAccessToken(serviceAccount);
+  const response = await fetchWithTimeout(fcmEndpoint(serviceAccount), {
+    method: "POST",
+    headers: {
+      authorization: `Bearer ${accessToken}`,
+      "content-type": "application/json"
+    },
+    body: JSON.stringify(buildFcmRequest({
+      id: "validation",
+      titleEn: "Sports Calendar FCM validation",
+      summaryEn: "Validation only; this message is not delivered.",
+      url: "https://www.mlb.com/bluejays/news/fcm-validation"
+    }, true))
+  }, 15000);
+  if (!response.ok) {
+    const details = (await response.text()).slice(0, 500);
+    throw new Error(`FCM validation returned ${response.status}: ${details}`);
   }
-  process.stdout.write(`Sent ${Math.min(items.length, 5)} FCM notification(s) for ${TEAM_NAME}.\n`);
+  process.stdout.write("FCM validate_only request accepted.\n");
+}
+
+function reportWorkflowWarning(title, message) {
+  const cleanTitle = String(title || "Warning").replace(/[\r\n]+/g, " ").slice(0, 80);
+  const cleanMessage = String(message || "Unknown error").replace(/%/g, "%25").replace(/\r/g, "%0D").replace(/\n/g, "%0A");
+  if (process.env.GITHUB_ACTIONS === "true") {
+    process.stderr.write(`::warning title=${cleanTitle}::${cleanMessage}\n`);
+  } else {
+    process.stderr.write(`${cleanTitle}: ${message}\n`);
+  }
+}
+
+async function validateFcmBestEffort(validator = validateFcmConfiguration) {
+  try {
+    await validator();
+    return true;
+  } catch (error) {
+    reportWorkflowWarning("FCM validation failed", error.message);
+    return false;
+  }
 }
 
 async function sendNotificationsBestEffort(
@@ -228,6 +286,7 @@ async function main() {
   const previousPayload = readPreviousPayload();
   const feedItems = await enrichArticleBodies(await fetchFeed(), previousPayload);
   const update = buildStaticNewsUpdate(previousPayload, feedItems);
+  if (process.env.VALIDATE_FCM === "true") await validateFcmBestEffort();
   if (!update.changed) {
     process.stdout.write("Blue Jays news is already current.\n");
     return;
@@ -247,5 +306,7 @@ if (require.main === module) {
 module.exports = {
   fetchArticleBody,
   enrichArticleBodies,
-  sendNotificationsBestEffort
+  sendNotificationsBestEffort,
+  buildFcmRequest,
+  validateFcmBestEffort
 };

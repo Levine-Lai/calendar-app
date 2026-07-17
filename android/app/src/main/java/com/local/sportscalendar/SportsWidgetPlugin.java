@@ -166,6 +166,34 @@ public class SportsWidgetPlugin extends Plugin {
         });
     }
 
+    @PluginMethod
+    public void fetchTeamNews(PluginCall call) {
+        JSArray urls = call.getArray("urls", new JSArray());
+        if (urls.length() == 0) {
+            call.reject("新闻地址尚未配置");
+            return;
+        }
+        NETWORK_EXECUTOR.execute(() -> {
+            Exception lastError = null;
+            int count = Math.min(urls.length(), 3);
+            for (int index = 0; index < count; index++) {
+                try {
+                    String endpoint = TeamNewsPushManager.safeNewsEndpoint(urls.getString(index));
+                    if (endpoint.isEmpty()) continue;
+                    String json = WidgetNetworkClient.getTeamNewsJson(endpoint);
+                    JSObject result = new JSObject();
+                    result.put("json", json);
+                    result.put("sourceUrl", endpoint);
+                    call.resolve(result);
+                    return;
+                } catch (Exception error) {
+                    lastError = error;
+                }
+            }
+            call.reject("新闻同步失败，请检查网络后重试", lastError);
+        });
+    }
+
     private boolean hasNotificationPermission() {
         return Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU
             || ContextCompat.checkSelfPermission(getContext(), Manifest.permission.POST_NOTIFICATIONS) == PackageManager.PERMISSION_GRANTED;

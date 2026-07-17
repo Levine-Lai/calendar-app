@@ -39,6 +39,7 @@ jobs:
       - name: Fetch MLB news and send new-item notifications
         env:
           FIREBASE_SERVICE_ACCOUNT_JSON: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_JSON }}
+          VALIDATE_FCM: ${{ github.event_name == 'push' && 'true' || 'false' }}
         run: npm run update:news --prefix firebase/functions
 
       - name: Commit changed news data

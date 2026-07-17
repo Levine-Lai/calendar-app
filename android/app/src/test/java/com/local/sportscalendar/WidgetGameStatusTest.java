@@ -207,4 +207,24 @@ public class WidgetGameStatusTest {
         assertEquals("", TeamNewsPushManager.toMlbAmpUrl("https://example.com/news/jays-add-reliever"));
         assertEquals("", TeamNewsPushManager.toMlbAmpUrl("https://www.mlb.com/news/../../secret"));
     }
+
+    @Test
+    public void teamNewsSyncAllowsOnlyConfiguredStaticEndpoints() {
+        assertEquals(
+            "https://raw.githubusercontent.com/Levine-Lai/calendar-app/main/public/news/blue-jays.json?_=1",
+            TeamNewsPushManager.safeNewsEndpoint(
+                "https://raw.githubusercontent.com/Levine-Lai/calendar-app/main/public/news/blue-jays.json?_=1"
+            )
+        );
+        assertEquals(
+            "https://cdn.jsdelivr.net/gh/Levine-Lai/calendar-app@main/public/news/blue-jays.json",
+            TeamNewsPushManager.safeNewsEndpoint(
+                "https://cdn.jsdelivr.net/gh/Levine-Lai/calendar-app@main/public/news/blue-jays.json"
+            )
+        );
+        assertEquals("", TeamNewsPushManager.safeNewsEndpoint("https://example.com/blue-jays.json"));
+        assertEquals("", TeamNewsPushManager.safeNewsEndpoint(
+            "https://raw.githubusercontent.com/Levine-Lai/calendar-app/main/private/secret.json"
+        ));
+    }
 }
