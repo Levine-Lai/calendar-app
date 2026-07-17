@@ -1624,6 +1624,7 @@
 - Android JVM 测试与 `lintDebug` 成功，新增 MLB RSS 排序/过滤和 XXE 拒绝测试。
 - 390x844 手机视口中侧栏无横向溢出，新增按钮和推送开关完整显示；页面展示 GitHub Raw 最新文章，控制台无错误。
 - MLB RSS 现场返回 RFC 822 时间格式，与 Android 解析器测试格式一致。
+- 提交 `fd60f94` 触发的 GitHub Actions 运行 `29589382377` 成功完成，FCM 高优先级数据消息 `validate_only` 无 warning/error 注释。
 
 #### 未解决限制
 
