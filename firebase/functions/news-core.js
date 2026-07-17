@@ -1,5 +1,6 @@
 const crypto = require("node:crypto");
 const { XMLParser } = require("fast-xml-parser");
+const { load } = require("cheerio");
 
 const TEAM_ID = "toronto-blue-jays";
 const TEAM_NAME = "多伦多蓝鸟";
@@ -35,6 +36,53 @@ function normalizeMlbUrl(value) {
   } catch {
     return "";
   }
+}
+
+function toMlbAmpUrl(value) {
+  const normalized = normalizeMlbUrl(value);
+  if (!normalized) return "";
+  const pathname = new URL(normalized).pathname;
+  const rawSlug = pathname.split("/").filter(Boolean).at(-1) || "";
+  const slug = rawSlug.replace(/\.html$/i, "");
+  if (!/^[a-z0-9-]{1,180}$/i.test(slug)) return "";
+  return `https://www.mlb.com/amp/news/${slug}.html`;
+}
+
+function normalizeArticleParagraphs(value) {
+  const rawParagraphs = Array.isArray(value) ? value : [];
+  const paragraphs = [];
+  let totalLength = 0;
+  for (const raw of rawParagraphs) {
+    const paragraph = boundedText(raw, 5000);
+    if (!paragraph || paragraph === "This browser does not support the video element.") continue;
+    if (totalLength + paragraph.length > 40_000 || paragraphs.length >= 120) break;
+    totalLength += paragraph.length;
+    paragraphs.push(paragraph);
+  }
+  return paragraphs;
+}
+
+function extractMlbArticleParagraphs(html) {
+  const source = String(html || "");
+  if (!source || Buffer.byteLength(source, "utf8") > 768 * 1024) return [];
+  const $ = load(source);
+  const article = $("article").first();
+  if (!article.length) return [];
+  const paragraphs = [];
+  article.children().each((_, element) => {
+    const tagName = String(element.tagName || "").toLowerCase();
+    if (["p", "h2", "h3", "blockquote"].includes(tagName)) {
+      paragraphs.push($(element).text());
+      return;
+    }
+    if (tagName === "ul" || tagName === "ol") {
+      $(element).children("li").each((__, item) => paragraphs.push($(item).text()));
+    }
+  });
+  const normalized = normalizeArticleParagraphs(paragraphs);
+  if (normalized.length) return normalized;
+  const description = boundedText($("meta[name='description']").attr("content"), 1200);
+  return description ? [description] : [];
 }
 
 function stableNewsId(url) {
@@ -82,6 +130,7 @@ function publicNewsItem(data) {
     teamName: TEAM_NAME,
     titleEn: boundedText(data.titleEn, 240),
     summaryEn: boundedText(data.summaryEn, 900),
+    bodyEn: normalizeArticleParagraphs(data.bodyEn),
     author: boundedText(data.author, 80),
     publishedAt: new Date(publishedAt).toISOString(),
     url: normalizeMlbUrl(data.url),
@@ -120,6 +169,9 @@ module.exports = {
   NEWS_TOPIC,
   RSS_URL,
   normalizeMlbUrl,
+  toMlbAmpUrl,
+  normalizeArticleParagraphs,
+  extractMlbArticleParagraphs,
   stableNewsId,
   parseBlueJaysFeed,
   publicNewsItem,

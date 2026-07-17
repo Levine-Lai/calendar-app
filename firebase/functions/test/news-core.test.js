@@ -4,6 +4,8 @@ const {
   TEAM_ID,
   NEWS_TOPIC,
   normalizeMlbUrl,
+  toMlbAmpUrl,
+  extractMlbArticleParagraphs,
   parseBlueJaysFeed,
   publicNewsItem,
   buildStaticNewsUpdate
@@ -35,16 +37,36 @@ test("only HTTPS MLB article links are accepted", () => {
   assert.equal(normalizeMlbUrl("https://www.mlb.com/bluejays/news/test"), "https://www.mlb.com/bluejays/news/test");
 });
 
+test("official MLB links map to readable AMP article URLs", () => {
+  assert.equal(
+    toMlbAmpUrl("https://www.mlb.com/bluejays/news/jays-add-reliever"),
+    "https://www.mlb.com/amp/news/jays-add-reliever.html"
+  );
+  assert.equal(toMlbAmpUrl("https://example.com/news/jays-add-reliever"), "");
+});
+
+test("AMP article parser keeps bounded direct paragraphs", () => {
+  const paragraphs = extractMlbArticleParagraphs(`
+    <html><head><meta name="description" content="Fallback"></head><body>
+      <article><p>First paragraph.</p><div><p>Nested advertisement.</p></div><h2>Section</h2>
+      <ul><li>Item one</li></ul><p>This browser does not support the video element.</p></article>
+    </body></html>
+  `);
+  assert.deepEqual(paragraphs, ["First paragraph.", "Section", "Item one"]);
+});
+
 test("public news keeps the original English title and summary", () => {
   const item = publicNewsItem({
     id: "article-1",
     titleEn: "Jays add a reliever",
     summaryEn: "Toronto strengthened its bullpen.",
+    bodyEn: ["Full article paragraph."],
     publishedAt: new Date("2026-07-16T04:30:00Z"),
     url: "https://www.mlb.com/bluejays/news/jays-add-reliever"
   });
   assert.equal(item.titleEn, "Jays add a reliever");
   assert.equal(item.summaryEn, "Toronto strengthened its bullpen.");
+  assert.deepEqual(item.bodyEn, ["Full article paragraph."]);
   assert.equal(NEWS_TOPIC, "toronto_blue_jays_news_en");
 });
 

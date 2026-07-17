@@ -3,7 +3,7 @@
   if (typeof module === "object" && module.exports) module.exports = api;
   else root.TeamNews = api;
 })(typeof globalThis !== "undefined" ? globalThis : this, function createTeamNews() {
-  const maxResponseBytes = 256 * 1024;
+  const maxResponseBytes = 1024 * 1024;
   const maxItems = 30;
 
   function normalizeHttpsUrl(value) {
@@ -32,6 +32,20 @@
     return Number.isFinite(timestamp) ? new Date(timestamp).toISOString() : "";
   }
 
+  function normalizeArticleParagraphs(value) {
+    const rawParagraphs = Array.isArray(value) ? value : [];
+    const paragraphs = [];
+    let totalLength = 0;
+    for (const raw of rawParagraphs) {
+      const paragraph = boundedText(raw, 5000);
+      if (!paragraph || paragraph === "This browser does not support the video element.") continue;
+      if (totalLength + paragraph.length > 40_000 || paragraphs.length >= 120) break;
+      totalLength += paragraph.length;
+      paragraphs.push(paragraph);
+    }
+    return paragraphs;
+  }
+
   function normalizeNewsItem(item) {
     if (!item || typeof item !== "object" || Array.isArray(item)) return null;
     const id = boundedText(item.id, 160);
@@ -45,6 +59,7 @@
       teamName: "多伦多蓝鸟",
       titleEn,
       summaryEn: boundedText(item.summaryEn, 900),
+      bodyEn: normalizeArticleParagraphs(item.bodyEn),
       author: boundedText(item.author, 80),
       publishedAt,
       url,
@@ -110,6 +125,7 @@
   return {
     normalizeHttpsUrl,
     normalizeMlbUrl,
+    normalizeArticleParagraphs,
     normalizeNewsItem,
     normalizeNewsPayload,
     fetchNews

@@ -7,7 +7,11 @@ const {
   NEWS_TOPIC,
   RSS_URL,
   parseBlueJaysFeed,
-  buildStaticNewsUpdate
+  buildStaticNewsUpdate,
+  normalizeArticleParagraphs,
+  normalizeMlbUrl,
+  toMlbAmpUrl,
+  extractMlbArticleParagraphs
 } = require("./news-core");
 
 const root = path.resolve(__dirname, "..", "..");
@@ -33,6 +37,62 @@ async function fetchFeed() {
   } finally {
     clearTimeout(timeout);
   }
+}
+
+async function fetchArticleBody(item) {
+  const articleUrl = toMlbAmpUrl(item.url);
+  if (!articleUrl) return [];
+  const response = await fetchWithTimeout(articleUrl, {
+    headers: {
+      accept: "text/html, application/xhtml+xml",
+      "user-agent": "SportsCalendar/2.2.3 GitHub news updater"
+    },
+    redirect: "follow"
+  }, 15000);
+  if (!response.ok) throw new Error(`MLB article returned ${response.status}`);
+  if (!normalizeMlbUrl(response.url)) throw new Error("MLB article redirected outside mlb.com");
+  const contentType = String(response.headers.get("content-type") || "").toLowerCase();
+  if (!contentType.includes("text/html")) throw new Error("MLB article did not return HTML");
+  const declaredLength = Number(response.headers.get("content-length") || 0);
+  if (declaredLength > 768 * 1024) throw new Error("MLB article response exceeded 768 KB");
+  const bytes = Buffer.from(await response.arrayBuffer());
+  if (bytes.length > 768 * 1024) throw new Error("MLB article response exceeded 768 KB");
+  const paragraphs = extractMlbArticleParagraphs(bytes.toString("utf8"));
+  if (!paragraphs.length) throw new Error("MLB article did not contain readable paragraphs");
+  return paragraphs;
+}
+
+async function mapWithConcurrency(items, limit, mapper) {
+  const results = new Array(items.length);
+  let nextIndex = 0;
+  async function worker() {
+    while (nextIndex < items.length) {
+      const index = nextIndex++;
+      results[index] = await mapper(items[index], index);
+    }
+  }
+  await Promise.all(Array.from({ length: Math.min(limit, items.length) }, () => worker()));
+  return results;
+}
+
+async function enrichArticleBodies(items, previousPayload) {
+  const previousItems = new Map(
+    (Array.isArray(previousPayload?.items) ? previousPayload.items : [])
+      .map((item) => [item?.id, item])
+      .filter(([id]) => id)
+  );
+  return mapWithConcurrency(items, 4, async (item) => {
+    const previousBody = normalizeArticleParagraphs(previousItems.get(item.id)?.bodyEn);
+    if (previousBody.length) return { ...item, bodyEn: previousBody };
+    try {
+      const bodyEn = await fetchArticleBody(item);
+      process.stdout.write(`Fetched article body: ${item.titleEn}\n`);
+      return { ...item, bodyEn };
+    } catch (error) {
+      process.stderr.write(`Article body skipped for ${item.titleEn}: ${error.message}\n`);
+      return { ...item, bodyEn: [] };
+    }
+  });
 }
 
 function readPreviousPayload() {
@@ -110,6 +170,20 @@ async function sendNotifications(items) {
   process.stdout.write(`Sent ${Math.min(items.length, 5)} FCM notification(s) for ${TEAM_NAME}.\n`);
 }
 
+async function sendNotificationsBestEffort(
+  items,
+  sender = sendNotifications,
+  reportError = (message) => process.stderr.write(message)
+) {
+  try {
+    await sender(items);
+    return true;
+  } catch (error) {
+    reportError(`FCM notification skipped without blocking news update: ${error.message}\n`);
+    return false;
+  }
+}
+
 function base64Url(value) {
   return Buffer.from(value).toString("base64url");
 }
@@ -152,18 +226,26 @@ async function fetchWithTimeout(url, options, timeoutMs) {
 
 async function main() {
   const previousPayload = readPreviousPayload();
-  const feedItems = await fetchFeed();
+  const feedItems = await enrichArticleBodies(await fetchFeed(), previousPayload);
   const update = buildStaticNewsUpdate(previousPayload, feedItems);
   if (!update.changed) {
     process.stdout.write("Blue Jays news is already current.\n");
     return;
   }
   writePayload(update.payload);
-  await sendNotifications(update.newItems);
+  await sendNotificationsBestEffort(update.newItems);
   process.stdout.write(`Updated ${path.relative(root, outputFile)} with ${update.payload.items.length} article(s).\n`);
 }
 
-main().catch((error) => {
-  process.stderr.write(`Blue Jays news update failed: ${error.message}\n`);
-  process.exitCode = 1;
-});
+if (require.main === module) {
+  main().catch((error) => {
+    process.stderr.write(`Blue Jays news update failed: ${error.message}\n`);
+    process.exitCode = 1;
+  });
+}
+
+module.exports = {
+  fetchArticleBody,
+  enrichArticleBodies,
+  sendNotificationsBestEffort
+};

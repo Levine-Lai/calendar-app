@@ -114,7 +114,7 @@ JSON 示例：
 
 NBA、MLB、英超和中超等联赛读取 ESPN；中甲、中乙读取 TheSportsDB；中冠读取中国足协官网 2026 赛程。所有内置联赛均按当前赛季读取全部已确定比赛，不需要手动选择日期范围。
 
-多伦多蓝鸟新闻由 GitHub Actions 每 15 分钟读取 MLB 官方 RSS，并更新 `public/news/blue-jays.json`。App 直接读取英文原文；Firebase 仅用于可选的 FCM 通知，不需要 Blaze 或 Firestore。
+多伦多蓝鸟新闻由 GitHub Actions 每 15 分钟读取 MLB 官方 RSS，并集中抓取最近 20 篇文章的英文正文后更新 `public/news/blue-jays.json`。App 一次同步标题与正文，展开文章时不需要手机再次连接 MLB；Firebase 仅用于可选的 FCM 通知，不需要 Blaze 或 Firestore。FCM 失败不会阻断新闻文件更新。
 
 ## 导入流程
 

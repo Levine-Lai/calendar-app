@@ -659,6 +659,8 @@ function renderTeamNews() {
     body.className = "team-news-article-body";
     body.hidden = true;
     body.setAttribute("aria-live", "polite");
+    const bundledBody = TeamNews?.normalizeArticleParagraphs?.(item.bodyEn) || [];
+    if (bundledBody.length) teamNewsState.articleBodies.set(item.id, bundledBody);
     const cached = teamNewsState.articleBodies.get(item.id);
     if (cached) renderTeamNewsArticleBody(body, cached);
 
@@ -795,6 +797,15 @@ async function toggleTeamNewsArticle(disclosure) {
   const cached = teamNewsState.articleBodies.get(newsId);
   if (cached) {
     renderTeamNewsArticleBody(body, cached);
+    return;
+  }
+
+  const bundledBody = TeamNews?.normalizeArticleParagraphs?.(
+    teamNewsState.items.find((item) => item.id === newsId)?.bodyEn
+  ) || [];
+  if (bundledBody.length) {
+    teamNewsState.articleBodies.set(newsId, bundledBody);
+    renderTeamNewsArticleBody(body, bundledBody);
     return;
   }
 

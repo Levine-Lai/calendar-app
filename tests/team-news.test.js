@@ -42,6 +42,17 @@ test("team news payload is sorted and deduplicated", () => {
   assert.equal(payload.items[0].teamName, "多伦多蓝鸟");
 });
 
+test("team news keeps bounded preloaded article paragraphs", () => {
+  const item = TeamNews.normalizeNewsItem({
+    id: "body-test",
+    titleEn: "Blue Jays story",
+    publishedAt: "2026-07-17T00:00:00Z",
+    url: "https://www.mlb.com/bluejays/news/body-test",
+    bodyEn: [" First paragraph. ", "This browser does not support the video element.", "Second paragraph."]
+  });
+  assert.deepEqual(item.bodyEn, ["First paragraph.", "Second paragraph."]);
+});
+
 test("team news API request uses a bounded Toronto query", async () => {
   let requestedUrl = "";
   const fetchImpl = async (url) => {
