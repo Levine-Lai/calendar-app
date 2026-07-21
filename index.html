@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>体育迷日历</title>
     <style>html,body{margin:0;min-height:100%;background:#fbf4ea;color:#16120f}</style>
-    <link rel="stylesheet" href="public/styles.css?v=2.2.6">
+    <link rel="stylesheet" href="public/styles.css?v=2.2.7">
   </head>
   <body>
     <main class="app-shell">
@@ -112,7 +112,7 @@
         <section class="panel app-update-panel" aria-labelledby="appUpdateTitle">
           <div class="section-title">
             <span id="appUpdateTitle">应用更新</span>
-            <strong class="app-version" id="currentAppVersion">v2.2.6</strong>
+            <strong class="app-version" id="currentAppVersion">v2.2.7</strong>
           </div>
           <p class="app-update-status" id="appUpdateStatus" role="status" aria-live="polite">点击按钮检查是否有新版本</p>
           <ul class="app-update-notes" id="appUpdateNotes" hidden></ul>
@@ -205,18 +205,22 @@
             </button>
           </div>
         </header>
+        <div class="team-news-language-tabs" role="tablist" aria-label="新闻语言">
+          <button class="team-news-language-tab is-active" id="teamNewsZhTab" type="button" role="tab" aria-selected="true" aria-controls="teamNewsList" data-language="zh">中文</button>
+          <button class="team-news-language-tab" id="teamNewsEnTab" type="button" role="tab" aria-selected="false" aria-controls="teamNewsList" data-language="en">English</button>
+        </div>
         <div class="team-news-modal-status" id="teamNewsModalStatus" role="status" aria-live="polite"></div>
-        <div class="day-modal-body team-news-list" id="teamNewsList"></div>
+        <div class="day-modal-body team-news-list" id="teamNewsList" role="tabpanel" aria-labelledby="teamNewsZhTab"></div>
       </section>
     </div>
 
-    <script src="public/calendar-core.js?v=2.2.6"></script>
-    <script src="public/calendar-storage.js?v=2.2.6"></script>
-    <script src="public/calendar-image-cache.js?v=2.2.6"></script>
-    <script src="public/update-config.js?v=2.2.6"></script>
-    <script src="public/app-update.js?v=2.2.6"></script>
-    <script src="public/team-news-config.js?v=2.2.6"></script>
-    <script src="public/team-news-core.js?v=2.2.6"></script>
-    <script src="public/app.js?v=2.2.6"></script>
+    <script src="public/calendar-core.js?v=2.2.7"></script>
+    <script src="public/calendar-storage.js?v=2.2.7"></script>
+    <script src="public/calendar-image-cache.js?v=2.2.7"></script>
+    <script src="public/update-config.js?v=2.2.7"></script>
+    <script src="public/app-update.js?v=2.2.7"></script>
+    <script src="public/team-news-config.js?v=2.2.7"></script>
+    <script src="public/team-news-core.js?v=2.2.7"></script>
+    <script src="public/app.js?v=2.2.7"></script>
   </body>
 </html>

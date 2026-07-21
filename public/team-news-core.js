@@ -95,6 +95,28 @@
     };
   }
 
+  function localizeNewsItem(item, language = "zh") {
+    const normalizedLanguage = language === "en" ? "en" : "zh";
+    if (!item || typeof item !== "object") {
+      return { language: normalizedLanguage, title: "", summary: "", body: [] };
+    }
+    if (normalizedLanguage === "en") {
+      return {
+        language: "en",
+        title: boundedText(item.titleEn, 240),
+        summary: boundedText(item.summaryEn, 900),
+        body: normalizeArticleParagraphs(item.bodyEn)
+      };
+    }
+    const bodyZh = normalizeArticleParagraphs(item.bodyZh);
+    return {
+      language: "zh",
+      title: boundedText(item.titleZh, 240) || boundedText(item.titleEn, 240),
+      summary: boundedText(item.summaryZh, 900) || boundedText(item.summaryEn, 900),
+      body: bodyZh.length ? bodyZh : normalizeArticleParagraphs(item.bodyEn)
+    };
+  }
+
   function payloadFreshness(payload) {
     const normalized = normalizeNewsPayload(payload);
     const latestPublishedAt = normalized.items.length ? Date.parse(normalized.items[0].publishedAt) : 0;
@@ -197,6 +219,7 @@
     normalizeArticleParagraphs,
     normalizeNewsItem,
     normalizeNewsPayload,
+    localizeNewsItem,
     selectFreshestNewsPayload,
     mergeNewsPayloads,
     fetchNews

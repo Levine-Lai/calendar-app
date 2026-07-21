@@ -1577,6 +1577,48 @@
 
 ## 2026-07-21
 
+### 修改批次：2.2.7 新闻中英文双页
+
+#### 用户目标
+
+- 推送已经显示中文，但 App 新闻窗口仍显示英文；希望新闻界面顶部可以在“中文”和“English”两个页面之间切换。
+
+#### 实现结构
+
+1. 新闻窗口顶部新增符合 `tablist/tab/tabpanel` 语义的“中文 / English”分段页签，支持触摸点击和键盘左右方向键。
+2. `team-news-core.js` 新增统一的本地化内容选择函数：English 页严格使用英文，中文页优先使用中文并对尚未翻译的文章回退英文。
+3. 标题、摘要、展开正文、窗口标题、更新时间和空状态随当前语言切换。
+4. 正文缓存键增加语言前缀，避免在两个页面间切换时复用错误语言的段落。
+5. 语言偏好使用独立的小型 `localStorage` 键保存；写入失败只影响跨会话记忆，不影响当前页面切换。
+6. 页签使用浅蓝选中态和低饱和背景，移动端减小边框与高度，不挤占正文阅读空间。
+7. 源码版本更新为 `2.2.7 / versionCode 29`，并同步更新网页缓存版本、更新检查配置和 Android 网络 User-Agent。
+
+#### 涉及文件
+
+- `index.html`
+- `public/app.js`
+- `public/team-news-core.js`
+- `public/styles.css`
+- `public/update-config.js`
+- `tests/team-news.test.js`
+- `package.json`、`package-lock.json`
+- `firebase/functions/package.json`、`firebase/functions/package-lock.json`
+- `android/app/build.gradle`
+- `android/app/src/main/java/com/local/sportscalendar/WidgetNetworkClient.java`
+- `CHANGELOG.md`
+- `context.md`
+
+#### 验证与限制
+
+- Web 自动化测试 26 项全部通过，新增中英文对应字段选择和中文缺失时英文回退测试。
+- 稳定性检查 20 项全部通过；测试发现并修正了更新检查 `versionCode` 未同步到 29 的问题。
+- 新闻任务测试 20 项全部通过。
+- Android `testDebugUnitTest` 与 `lintDebug` 成功完成。
+- 浏览器安全策略禁止直接打开本地 `file://` 页面，因此本轮未生成自动化页面截图；HTML 结构、移动端 CSS、脚本语法和 Android 编译均已验证。
+- 手机端最新已生成 APK 仍为 `2.2.6 / versionCode 28`；当前源码为 `2.2.7 / versionCode 29`，本轮按约定不自动打包。
+
+## 2026-07-21
+
 ### 修复批次：新闻通知正文兜底
 
 #### 用户目标

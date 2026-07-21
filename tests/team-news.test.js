@@ -58,6 +58,40 @@ test("team news keeps bounded preloaded article paragraphs", () => {
   assert.deepEqual(item.bodyZh, ["第一段。", "第二段。"]);
 });
 
+test("team news language pages select matching titles, summaries and bodies", () => {
+  const item = {
+    titleEn: "Blue Jays update",
+    summaryEn: "English summary.",
+    bodyEn: ["English body."],
+    titleZh: "蓝鸟动态",
+    summaryZh: "中文摘要。",
+    bodyZh: ["中文正文。"]
+  };
+  assert.deepEqual(TeamNews.localizeNewsItem(item, "zh"), {
+    language: "zh",
+    title: "蓝鸟动态",
+    summary: "中文摘要。",
+    body: ["中文正文。"]
+  });
+  assert.deepEqual(TeamNews.localizeNewsItem(item, "en"), {
+    language: "en",
+    title: "Blue Jays update",
+    summary: "English summary.",
+    body: ["English body."]
+  });
+});
+
+test("Chinese news page falls back to English for untranslated articles", () => {
+  const localized = TeamNews.localizeNewsItem({
+    titleEn: "Untranslated story",
+    summaryEn: "English only.",
+    bodyEn: ["Original paragraph."]
+  }, "zh");
+  assert.equal(localized.title, "Untranslated story");
+  assert.equal(localized.summary, "English only.");
+  assert.deepEqual(localized.body, ["Original paragraph."]);
+});
+
 test("team news API request uses a bounded Toronto query", async () => {
   let requestedUrl = "";
   const fetchImpl = async (url) => {
