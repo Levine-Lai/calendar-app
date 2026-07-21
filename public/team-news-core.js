@@ -60,6 +60,12 @@
       titleEn,
       summaryEn: boundedText(item.summaryEn, 900),
       bodyEn: normalizeArticleParagraphs(item.bodyEn),
+      titleZh: boundedText(item.titleZh, 240),
+      summaryZh: boundedText(item.summaryZh, 900),
+      bodyZh: normalizeArticleParagraphs(item.bodyZh),
+      translationSourceHash: boundedText(item.translationSourceHash, 64),
+      translationModel: boundedText(item.translationModel, 80),
+      translatedAt: normalizeDate(item.translatedAt),
       author: boundedText(item.author, 80),
       publishedAt,
       url,
@@ -127,7 +133,9 @@
     const supplementItems = new Map();
     supplements.forEach((payload) => payload.items.forEach((item) => {
       const existing = supplementItems.get(item.id);
-      if (!existing || (!existing.bodyEn.length && item.bodyEn.length)) supplementItems.set(item.id, item);
+      if (!existing || (!existing.bodyEn.length && item.bodyEn.length) || (!existing.titleZh && item.titleZh)) {
+        supplementItems.set(item.id, item);
+      }
     }));
     return {
       ...primary,
@@ -138,6 +146,12 @@
           ...item,
           summaryEn: item.summaryEn || supplement.summaryEn,
           bodyEn: item.bodyEn.length ? item.bodyEn : supplement.bodyEn,
+          titleZh: item.titleZh || supplement.titleZh,
+          summaryZh: item.summaryZh || supplement.summaryZh,
+          bodyZh: item.bodyZh.length ? item.bodyZh : supplement.bodyZh,
+          translationSourceHash: item.translationSourceHash || supplement.translationSourceHash,
+          translationModel: item.translationModel || supplement.translationModel,
+          translatedAt: item.translatedAt || supplement.translatedAt,
           author: item.author || supplement.author
         };
       })

@@ -1,6 +1,6 @@
 {
   "name": "sports-calendar",
-  "version": "2.2.5",
+  "version": "2.2.6",
   "description": "观赛日记：支持多联赛赛程、桌面组件和多伦多蓝鸟中文新闻推送的个人体育日历。",
   "private": true,
   "scripts": {

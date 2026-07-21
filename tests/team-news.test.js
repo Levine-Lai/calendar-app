@@ -48,9 +48,14 @@ test("team news keeps bounded preloaded article paragraphs", () => {
     titleEn: "Blue Jays story",
     publishedAt: "2026-07-17T00:00:00Z",
     url: "https://www.mlb.com/bluejays/news/body-test",
-    bodyEn: [" First paragraph. ", "This browser does not support the video element.", "Second paragraph."]
+    bodyEn: [" First paragraph. ", "This browser does not support the video element.", "Second paragraph."],
+    titleZh: "蓝鸟新闻",
+    summaryZh: "中文摘要",
+    bodyZh: [" 第一段。 ", "第二段。"]
   });
   assert.deepEqual(item.bodyEn, ["First paragraph.", "Second paragraph."]);
+  assert.equal(item.titleZh, "蓝鸟新闻");
+  assert.deepEqual(item.bodyZh, ["第一段。", "第二段。"]);
 });
 
 test("team news API request uses a bounded Toronto query", async () => {
@@ -101,7 +106,7 @@ test("freshest news payload wins even when a stale CDN responds first", () => {
   assert.equal(TeamNews.selectFreshestNewsPayload([stale, fresh]).items[0].id, "fresh");
 });
 
-test("live MLB feed keeps static article bodies when payloads are merged", () => {
+test("live MLB feed keeps static bilingual content when payloads are merged", () => {
   const live = {
     updatedAt: "2026-07-17T14:00:00Z",
     items: [{
@@ -117,9 +122,15 @@ test("live MLB feed keeps static article bodies when payloads are merged", () =>
       id: "article",
       titleEn: "Live title",
       bodyEn: ["Full article paragraph."],
+      titleZh: "蓝鸟最新消息",
+      summaryZh: "中文摘要",
+      bodyZh: ["完整文章段落。"],
       publishedAt: "2026-07-17T13:00:00Z",
       url: "https://www.mlb.com/bluejays/news/article"
     }]
   };
-  assert.deepEqual(TeamNews.mergeNewsPayloads(live, [staticPayload]).items[0].bodyEn, ["Full article paragraph."]);
+  const merged = TeamNews.mergeNewsPayloads(live, [staticPayload]).items[0];
+  assert.deepEqual(merged.bodyEn, ["Full article paragraph."]);
+  assert.equal(merged.titleZh, "蓝鸟最新消息");
+  assert.deepEqual(merged.bodyZh, ["完整文章段落。"]);
 });

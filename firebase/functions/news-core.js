@@ -89,6 +89,11 @@ function stableNewsId(url) {
   return crypto.createHash("sha256").update(url).digest("hex");
 }
 
+function normalizeIsoDate(value) {
+  const timestamp = Date.parse(String(value || ""));
+  return Number.isFinite(timestamp) ? new Date(timestamp).toISOString() : "";
+}
+
 function parseBlueJaysFeed(xml) {
   const parser = new XMLParser({
     ignoreAttributes: false,
@@ -131,6 +136,12 @@ function publicNewsItem(data) {
     titleEn: boundedText(data.titleEn, 240),
     summaryEn: boundedText(data.summaryEn, 900),
     bodyEn: normalizeArticleParagraphs(data.bodyEn),
+    titleZh: boundedText(data.titleZh, 240),
+    summaryZh: boundedText(data.summaryZh, 900),
+    bodyZh: normalizeArticleParagraphs(data.bodyZh),
+    translationSourceHash: boundedText(data.translationSourceHash, 64),
+    translationModel: boundedText(data.translationModel, 80),
+    translatedAt: normalizeIsoDate(data.translatedAt),
     author: boundedText(data.author, 80),
     publishedAt: new Date(publishedAt).toISOString(),
     url: normalizeMlbUrl(data.url),

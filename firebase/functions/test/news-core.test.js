@@ -55,18 +55,23 @@ test("AMP article parser keeps bounded direct paragraphs", () => {
   assert.deepEqual(paragraphs, ["First paragraph.", "Section", "Item one"]);
 });
 
-test("public news keeps the original English title and summary", () => {
+test("public news keeps bilingual content", () => {
   const item = publicNewsItem({
     id: "article-1",
     titleEn: "Jays add a reliever",
     summaryEn: "Toronto strengthened its bullpen.",
     bodyEn: ["Full article paragraph."],
+    titleZh: "蓝鸟补强牛棚",
+    summaryZh: "多伦多新增一名后援投手。",
+    bodyZh: ["完整文章段落。"],
     publishedAt: new Date("2026-07-16T04:30:00Z"),
     url: "https://www.mlb.com/bluejays/news/jays-add-reliever"
   });
   assert.equal(item.titleEn, "Jays add a reliever");
   assert.equal(item.summaryEn, "Toronto strengthened its bullpen.");
   assert.deepEqual(item.bodyEn, ["Full article paragraph."]);
+  assert.equal(item.titleZh, "蓝鸟补强牛棚");
+  assert.deepEqual(item.bodyZh, ["完整文章段落。"]);
   assert.equal(NEWS_TOPIC, "toronto_blue_jays_news_en");
 });
 

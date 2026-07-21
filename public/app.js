@@ -536,7 +536,7 @@ function initializeTeamNews() {
 
   const age = Date.now() - Date.parse(teamNewsState.updatedAt || "");
   if (teamNewsState.items.length && Number.isFinite(age) && age <= teamNewsCacheTtlMs) {
-    setTeamNewsPanelStatus(`已缓存 ${teamNewsState.items.length} 条英文新闻`);
+    setTeamNewsPanelStatus(`已缓存 ${teamNewsState.items.length} 条蓝鸟新闻`);
   }
   window.setTimeout(() => refreshTeamNews({ silent: true }), 400);
   window.setInterval(() => {
@@ -625,7 +625,7 @@ async function refreshTeamNews(options = {}) {
   teamNewsState.lastAttemptAt = Date.now();
   elements.refreshTeamNewsBtn.disabled = true;
   elements.refreshTeamNewsBtn.setAttribute("aria-busy", "true");
-  if (!options.silent) setTeamNewsStatus("正在同步蓝鸟队英文新闻...");
+  if (!options.silent) setTeamNewsStatus("正在同步蓝鸟队新闻...");
   try {
     const payload = await fetchTeamNewsPayload();
     teamNewsState.items = payload.items;
@@ -653,7 +653,7 @@ async function refreshTeamNews(options = {}) {
 
 function renderTeamNews() {
   const latest = teamNewsState.items[0];
-  elements.teamNewsPreview.textContent = latest?.titleEn || "部署新闻服务后，将在这里显示 MLB 官方英文新闻。";
+  elements.teamNewsPreview.textContent = latest?.titleZh || latest?.titleEn || "部署新闻服务后，将在这里显示 MLB 官方新闻。";
   elements.teamNewsUpdatedAt.textContent = teamNewsState.updatedAt
     ? `更新于 ${formatTeamNewsTime(teamNewsState.updatedAt)}`
     : "等待同步";
@@ -683,7 +683,7 @@ function renderTeamNews() {
     const heading = document.createElement("div");
     heading.className = "team-news-disclosure-copy";
     const title = document.createElement("h4");
-    title.textContent = item.titleEn;
+    title.textContent = item.titleZh || item.titleEn;
 
     const meta = document.createElement("div");
     meta.className = "team-news-meta";
@@ -694,10 +694,11 @@ function renderTeamNews() {
     meta.append(published, source);
 
     heading.append(title, meta);
-    if (item.summaryEn) {
+    const summaryText = item.summaryZh || item.summaryEn;
+    if (summaryText) {
       const summary = document.createElement("p");
       summary.className = "team-news-summary";
-      summary.textContent = item.summaryEn;
+      summary.textContent = summaryText;
       heading.append(summary);
     }
 
@@ -710,7 +711,9 @@ function renderTeamNews() {
     body.className = "team-news-article-body";
     body.hidden = true;
     body.setAttribute("aria-live", "polite");
-    const bundledBody = TeamNews?.normalizeArticleParagraphs?.(item.bodyEn) || [];
+    const bundledBody = TeamNews?.normalizeArticleParagraphs?.(
+      item.bodyZh?.length ? item.bodyZh : item.bodyEn
+    ) || [];
     if (bundledBody.length) teamNewsState.articleBodies.set(item.id, bundledBody);
     const cached = teamNewsState.articleBodies.get(item.id);
     if (cached) renderTeamNewsArticleBody(body, cached);
@@ -805,7 +808,7 @@ async function updateTeamNewsPush() {
     elements.teamNewsPushToggle.checked = result.enabled === true;
     const enabledMessage = result.fcmEnabled === false
       ? "新闻通知已开启；FCM 不可用时由手机后台检查补偿"
-      : "蓝鸟队英文新闻推送和手机后台检查已开启";
+      : "蓝鸟队中文新闻推送和手机后台检查已开启";
     setTeamNewsPanelStatus(result.enabled ? enabledMessage : "蓝鸟队新闻推送已关闭");
   } catch (error) {
     elements.teamNewsPushToggle.checked = !requested;
@@ -880,7 +883,10 @@ async function toggleTeamNewsArticle(disclosure) {
   }
 
   const bundledBody = TeamNews?.normalizeArticleParagraphs?.(
-    teamNewsState.items.find((item) => item.id === newsId)?.bodyEn
+    (() => {
+      const item = teamNewsState.items.find((candidate) => candidate.id === newsId);
+      return item?.bodyZh?.length ? item.bodyZh : item?.bodyEn;
+    })()
   ) || [];
   if (bundledBody.length) {
     teamNewsState.articleBodies.set(newsId, bundledBody);

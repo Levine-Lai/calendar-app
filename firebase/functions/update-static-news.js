@@ -13,6 +13,13 @@ const {
   toMlbAmpUrl,
   extractMlbArticleParagraphs
 } = require("./news-core");
+const {
+  DEEPSEEK_ENDPOINT,
+  DEFAULT_MODEL,
+  reusableTranslation,
+  buildTranslationRequest,
+  parseTranslationResponse
+} = require("./translation-core");
 
 const root = path.resolve(__dirname, "..", "..");
 const outputFile = path.join(root, "public", "news", "blue-jays.json");
@@ -93,6 +100,88 @@ async function enrichArticleBodies(items, previousPayload) {
       return { ...item, bodyEn: [] };
     }
   });
+}
+
+function deepSeekModel() {
+  const configured = String(process.env.DEEPSEEK_MODEL || "").trim();
+  return /^deepseek-[a-z0-9-]{1,64}$/i.test(configured) ? configured : DEFAULT_MODEL;
+}
+
+async function translateArticle(item, options = {}) {
+  const apiKey = String(options.apiKey || process.env.DEEPSEEK_API_KEY || "").trim();
+  if (!apiKey) throw new Error("DEEPSEEK_API_KEY is not configured");
+  const fetchImpl = options.fetchImpl || fetch;
+  const model = options.model || deepSeekModel();
+  let lastError = null;
+  for (let attempt = 0; attempt < 3; attempt += 1) {
+    try {
+      const response = await fetchWithTimeout(DEEPSEEK_ENDPOINT, {
+        method: "POST",
+        headers: {
+          authorization: `Bearer ${apiKey}`,
+          "content-type": "application/json"
+        },
+        body: JSON.stringify(buildTranslationRequest(item, model))
+      }, 120000, fetchImpl);
+      if (!response.ok) {
+        const details = (await response.text()).slice(0, 300);
+        const error = new Error(`DeepSeek returned ${response.status}: ${details}`);
+        error.retryable = response.status === 429 || response.status >= 500;
+        throw error;
+      }
+      const translation = parseTranslationResponse(await response.json(), item);
+      return {
+        ...translation,
+        translationModel: model,
+        translatedAt: new Date().toISOString()
+      };
+    } catch (error) {
+      lastError = error;
+      if (attempt >= 2 || error.retryable === false) break;
+      await new Promise((resolve) => setTimeout(resolve, 1000 * (2 ** attempt)));
+    }
+  }
+  throw lastError || new Error("DeepSeek translation failed");
+}
+
+async function enrichTranslations(items, previousPayload, options = {}) {
+  const previousItems = new Map(
+    (Array.isArray(previousPayload?.items) ? previousPayload.items : [])
+      .map((item) => [item?.id, item])
+      .filter(([id]) => id)
+  );
+  const apiKey = String(options.apiKey ?? process.env.DEEPSEEK_API_KEY ?? "").trim();
+  const translator = options.translator || (apiKey
+    ? (item) => translateArticle(item, { apiKey, model: options.model, fetchImpl: options.fetchImpl })
+    : null);
+  let translatedCount = 0;
+  let failedCount = 0;
+  const enriched = await mapWithConcurrency(items, 2, async (item) => {
+    const previous = previousItems.get(item.id);
+    const reusable = reusableTranslation(previous, item);
+    if (reusable) {
+      return {
+        ...item,
+        ...reusable,
+        translationModel: previous.translationModel || DEFAULT_MODEL,
+        translatedAt: previous.translatedAt || ""
+      };
+    }
+    if (!translator) return item;
+    try {
+      const translation = await translator(item);
+      translatedCount += 1;
+      process.stdout.write(`Translated article: ${item.titleEn}\n`);
+      return { ...item, ...translation };
+    } catch (error) {
+      failedCount += 1;
+      process.stderr.write(`Article translation skipped for ${item.titleEn}: ${error.message}\n`);
+      return item;
+    }
+  });
+  if (!translator) process.stdout.write("DeepSeek key is not configured; keeping English news.\n");
+  if (translator) process.stdout.write(`DeepSeek translation result: ${translatedCount} translated, ${failedCount} failed.\n`);
+  return enriched;
 }
 
 function readPreviousPayload() {
@@ -196,8 +285,8 @@ function buildFcmRequest(item, validateOnly = false) {
         teamId: TEAM_ID,
         newsId: item.id,
         newsUrl: item.url,
-        title: item.titleEn,
-        body: item.summaryEn || "The Toronto Blue Jays published a new story."
+        title: item.titleZh || item.titleEn,
+        body: item.summaryZh || item.summaryEn || "多伦多蓝鸟发布了一篇新文章。"
       },
       android: {
         priority: "high"
@@ -294,11 +383,11 @@ async function createGoogleAccessToken(serviceAccount) {
   return payload.access_token;
 }
 
-async function fetchWithTimeout(url, options, timeoutMs) {
+async function fetchWithTimeout(url, options, timeoutMs, fetchImpl = fetch) {
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), timeoutMs);
   try {
-    return await fetch(url, { ...options, signal: controller.signal });
+    return await fetchImpl(url, { ...options, signal: controller.signal });
   } finally {
     clearTimeout(timeout);
   }
@@ -306,7 +395,8 @@ async function fetchWithTimeout(url, options, timeoutMs) {
 
 async function main() {
   const previousPayload = readPreviousPayload();
-  const feedItems = await enrichArticleBodies(await fetchFeed(), previousPayload);
+  const articlesWithBodies = await enrichArticleBodies(await fetchFeed(), previousPayload);
+  const feedItems = await enrichTranslations(articlesWithBodies, previousPayload);
   const update = buildStaticNewsUpdate(previousPayload, feedItems);
   if (process.env.VALIDATE_FCM === "true") await validateFcmBestEffort();
   if (!update.changed) {
@@ -328,6 +418,8 @@ if (require.main === module) {
 module.exports = {
   fetchArticleBody,
   enrichArticleBodies,
+  translateArticle,
+  enrichTranslations,
   sendNotificationsBestEffort,
   buildFcmRequest,
   validateFcmBestEffort,

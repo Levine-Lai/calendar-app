@@ -114,7 +114,14 @@ JSON 示例：
 
 NBA、MLB、英超和中超等联赛读取 ESPN；中甲、中乙读取 TheSportsDB；中冠读取中国足协官网 2026 赛程。所有内置联赛均按当前赛季读取全部已确定比赛，不需要手动选择日期范围。
 
-多伦多蓝鸟新闻由 Android 直接读取 MLB 官方 RSS，并从 GitHub Raw/jsDelivr 静态数据补充最近 20 篇文章的英文正文。App 启动、回到前台、网络恢复及保持打开期间都会自动同步；多个静态地址按文章发布时间选择最新数据。开启推送后，Android WorkManager 每 15 分钟后台检查 RSS，GitHub Actions 与 Firebase FCM 作为远程更新和推送通道。Firebase 不需要 Blaze 或 Firestore；任一通道失败不会阻断其他通道。
+多伦多蓝鸟新闻由 Android 直接读取 MLB 官方 RSS，并从 GitHub Raw/jsDelivr 静态数据补充最近 20 篇文章的中英文正文。GitHub Actions 使用 DeepSeek 和项目内 MLB 中文术语表翻译新文章，API Key 只从仓库 Secret `DEEPSEEK_API_KEY` 读取，不进入网页、APK、新闻 JSON 或日志。App 启动、回到前台、网络恢复及保持打开期间都会自动同步；多个静态地址按文章发布时间选择最新数据。开启推送后，Android WorkManager 每 15 分钟后台检查 RSS，GitHub Actions 与 Firebase FCM 作为远程更新和推送通道。翻译失败时保留英文数据，任一通道失败不会阻断其他通道。
+
+新闻工作流需要以下 GitHub Actions Repository Secrets：
+
+- `FIREBASE_SERVICE_ACCOUNT_JSON`：Firebase Admin 服务账号 JSON，用于发送 FCM。
+- `DEEPSEEK_API_KEY`：DeepSeek 开放平台 API Key，用于生成 `titleZh`、`summaryZh` 和 `bodyZh`。
+
+翻译参考位于 `firebase/functions/translation-reference.json`。修改球队名称、棒球术语或翻译风格后，下一次英文内容变化时会采用新规则；已成功翻译且英文来源未变化的文章会直接复用，避免重复计费。
 
 2.2.4 的完整安装、GitHub、Firebase、vivo 后台权限、应用内更新和正式签名配置见 `docs/2.2.4-release-configuration.md`。
 

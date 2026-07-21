@@ -21,7 +21,7 @@ concurrency:
 jobs:
   update-news:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 20
     steps:
       - name: Check out repository
         uses: actions/checkout@v5
@@ -39,6 +39,7 @@ jobs:
       - name: Fetch MLB news and send new-item notifications
         env:
           FIREBASE_SERVICE_ACCOUNT_JSON: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_JSON }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           # Push-triggered runs validate credentials and payload without delivering a test notification.
           VALIDATE_FCM: ${{ github.event_name == 'push' && 'true' || 'false' }}
         run: npm run update:news --prefix firebase/functions

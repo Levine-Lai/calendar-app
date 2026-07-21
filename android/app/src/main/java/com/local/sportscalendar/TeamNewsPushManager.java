@@ -14,6 +14,9 @@ import androidx.work.WorkManager;
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.messaging.FirebaseMessaging;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
+
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.ArrayList;
@@ -22,6 +25,8 @@ import java.util.Collections;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Locale;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
@@ -39,6 +44,18 @@ final class TeamNewsPushManager {
     private static final String KEY_LAST_ERROR = "last_error";
     private static final String WORK_NAME = "team-news-background-check";
     private static final String IMMEDIATE_WORK_NAME = "team-news-immediate-check";
+    private static final String PRIMARY_NEWS_ENDPOINT = "https://raw.githubusercontent.com/Levine-Lai/calendar-app/main/public/news/blue-jays.json";
+    private static final long ENGLISH_FALLBACK_DELAY_MS = TimeUnit.HOURS.toMillis(1);
+
+    private static final class NotificationCopy {
+        final String title;
+        final String summary;
+
+        NotificationCopy(String title, String summary) {
+            this.title = title;
+            this.summary = summary;
+        }
+    }
 
     private TeamNewsPushManager() {
     }
@@ -113,26 +130,43 @@ final class TeamNewsPushManager {
             if (items.isEmpty()) throw new IllegalStateException("MLB RSS did not contain news");
             SharedPreferences prefs = preferences(context);
             String previousFeedIds = prefs.getString(KEY_FEED_IDS, "");
-            prefs.edit()
-                .putLong(KEY_LAST_CHECK_AT, System.currentTimeMillis())
-                .putString(KEY_FEED_IDS, joinIds(TeamNewsFeed.ids(items)))
-                .remove(KEY_LAST_ERROR)
-                .apply();
-            if (previousFeedIds.isEmpty()) return true;
+            if (previousFeedIds.isEmpty()) {
+                prefs.edit()
+                    .putLong(KEY_LAST_CHECK_AT, System.currentTimeMillis())
+                    .putString(KEY_FEED_IDS, joinIds(TeamNewsFeed.ids(items)))
+                    .remove(KEY_LAST_ERROR)
+                    .apply();
+                return true;
+            }
 
             Set<String> previous = splitIds(previousFeedIds);
             List<TeamNewsFeed.Item> newItems = new ArrayList<>();
             for (TeamNewsFeed.Item item : items) {
                 if (!previous.contains(item.id)) newItems.add(item);
             }
+            Map<String, NotificationCopy> localizedCopies = newItems.isEmpty()
+                ? Collections.emptyMap()
+                : fetchNotificationCopies();
+            long now = System.currentTimeMillis();
+            for (TeamNewsFeed.Item item : newItems) {
+                if (!localizedCopies.containsKey(item.id) && now - item.publishedAt < ENGLISH_FALLBACK_DELAY_MS) {
+                    throw new IllegalStateException("等待中文新闻同步");
+                }
+            }
+            prefs.edit()
+                .putLong(KEY_LAST_CHECK_AT, now)
+                .putString(KEY_FEED_IDS, joinIds(TeamNewsFeed.ids(items)))
+                .remove(KEY_LAST_ERROR)
+                .apply();
             Collections.reverse(newItems);
             int start = Math.max(0, newItems.size() - 3);
             for (TeamNewsFeed.Item item : newItems.subList(start, newItems.size())) {
                 if (!rememberNotification(context, item.id)) continue;
+                NotificationCopy copy = localizedCopies.get(item.id);
                 NewsMessagingService.showNewsNotification(
                     context,
-                    item.title,
-                    item.summary,
+                    copy == null ? item.title : copy.title,
+                    copy == null ? item.summary : copy.summary,
                     item.url,
                     item.id
                 );
@@ -145,6 +179,25 @@ final class TeamNewsPushManager {
                 .apply();
             return false;
         }
+    }
+
+    private static Map<String, NotificationCopy> fetchNotificationCopies() throws Exception {
+        JSONObject payload = new JSONObject(WidgetNetworkClient.getTeamNewsJson(PRIMARY_NEWS_ENDPOINT));
+        JSONArray items = payload.optJSONArray("items");
+        Map<String, NotificationCopy> copies = new HashMap<>();
+        if (items == null) return copies;
+        for (int index = 0; index < items.length(); index++) {
+            JSONObject item = items.optJSONObject(index);
+            if (item == null) continue;
+            String id = item.optString("id", "");
+            if (!id.matches("[A-Za-z0-9_-]{1,160}")) continue;
+            String title = boundedText(item.optString("titleZh", ""), 240);
+            if (title.isEmpty()) title = boundedText(item.optString("titleEn", ""), 240);
+            String summary = boundedText(item.optString("summaryZh", ""), 900);
+            if (summary.isEmpty()) summary = boundedText(item.optString("summaryEn", ""), 900);
+            if (!title.isEmpty()) copies.put(id, new NotificationCopy(title, summary));
+        }
+        return copies;
     }
 
     static synchronized boolean rememberNotification(Context context, String newsId) {
@@ -246,5 +299,10 @@ final class TeamNewsPushManager {
     private static String boundedError(Exception error) {
         String message = error == null || error.getMessage() == null ? "新闻源暂时不可用" : error.getMessage();
         return message.substring(0, Math.min(message.length(), 120));
+    }
+
+    private static String boundedText(String value, int maxLength) {
+        String normalized = String.valueOf(value == null ? "" : value).replaceAll("\\s+", " ").trim();
+        return normalized.substring(0, Math.min(normalized.length(), maxLength));
     }
 }
