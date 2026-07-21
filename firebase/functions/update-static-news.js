@@ -276,6 +276,11 @@ function fcmEndpoint(serviceAccount) {
 }
 
 function buildFcmRequest(item, validateOnly = false) {
+  const notificationBody = item.summaryZh
+    || item.bodyZh?.[0]
+    || item.summaryEn
+    || item.bodyEn?.[0]
+    || "多伦多蓝鸟发布了一篇新文章，点击查看详情。";
   return {
     validate_only: validateOnly,
     message: {
@@ -286,7 +291,7 @@ function buildFcmRequest(item, validateOnly = false) {
         newsId: item.id,
         newsUrl: item.url,
         title: item.titleZh || item.titleEn,
-        body: item.summaryZh || item.summaryEn || "多伦多蓝鸟发布了一篇新文章。"
+        body: String(notificationBody).replace(/\s+/g, " ").trim().slice(0, 500)
       },
       android: {
         priority: "high"

@@ -43,6 +43,26 @@ test("FCM HTTP v1 request uses a high-priority data message and validate_only", 
   assert.equal(request.message.data.newsId, "article-1");
 });
 
+test("FCM body falls back to translated article text when the source has no summary", () => {
+  const request = buildFcmRequest({
+    id: "article-no-summary",
+    titleEn: "Blue Jays update",
+    titleZh: "蓝鸟最新动态",
+    bodyZh: ["这是文章正文的第一段。", "这是第二段。"],
+    url: "https://www.mlb.com/bluejays/news/article-no-summary"
+  });
+  assert.equal(request.message.data.body, "这是文章正文的第一段。");
+});
+
+test("FCM body is never empty even when the feed contains only a title", () => {
+  const request = buildFcmRequest({
+    id: "article-title-only",
+    titleEn: "Blue Jays update",
+    url: "https://www.mlb.com/bluejays/news/article-title-only"
+  });
+  assert.equal(request.message.data.body, "多伦多蓝鸟发布了一篇新文章，点击查看详情。");
+});
+
 test("DeepSeek translation uses the server-side key without writing it into content", async () => {
   let authorization = "";
   const translation = await translateArticle({

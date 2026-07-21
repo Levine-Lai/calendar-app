@@ -1577,6 +1577,41 @@
 
 ## 2026-07-21
 
+### 修复批次：新闻通知正文兜底
+
+#### 用户目标
+
+- 修复新新闻推送只显示标题、没有正文的问题。
+
+#### 问题原因
+
+- MLB RSS 的部分文章没有 `summary`；当前 20 篇数据中有 4 篇属于这种情况。
+- `2.2.5` 的 Android 本地 RSS 检查直接把摘要作为通知正文，空摘要会生成只有标题的系统通知。
+- 云端 FCM 原本只在中英文摘要之间回退，没有使用已经抓取并翻译好的正文段落。
+
+#### 实现方案与兼容性
+
+1. 云端 FCM 和 Android 本地通知统一采用正文选择顺序：中文摘要、中文正文首段、英文摘要、英文正文首段、固定中文提示。
+2. 通知正文压缩连续空白并限制为 500 个字符，避免异常长段落影响系统通知布局。
+3. Android 通知同时设置折叠正文、展开大文本标题与正文、锁屏可见内容，保证常规通知和展开通知都有文字。
+4. 不修改新闻 JSON 数据结构；旧新闻、英文兜底和未翻译文章继续兼容。
+
+#### 涉及文件
+
+- `firebase/functions/update-static-news.js`
+- `firebase/functions/test/update-static-news.test.js`
+- `android/app/src/main/java/com/local/sportscalendar/TeamNewsPushManager.java`
+- `android/app/src/main/java/com/local/sportscalendar/NewsMessagingService.java`
+- `CHANGELOG.md`
+- `context.md`
+
+#### 验证结果与发布状态
+
+- 新闻任务测试 20 项全部通过，新增“摘要为空时使用正文首段”和“任何情况下正文不为空”回归测试。
+- Web 自动化测试 24 项全部通过。
+- Android `testDebugUnitTest` 与 `lintDebug` 成功完成。
+- 当前源码仍为 `2.2.6 / versionCode 28`，本轮未自动打包；手机端最新已生成 APK 仍为 `2.2.5 / versionCode 27`。
+
 ### 修改批次：2.2.6 DeepSeek 中文新闻与推送
 
 #### 用户目标

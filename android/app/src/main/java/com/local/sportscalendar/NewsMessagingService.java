@@ -56,6 +56,12 @@ public class NewsMessagingService extends FirebaseMessagingService {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU
             && ContextCompat.checkSelfPermission(context, android.Manifest.permission.POST_NOTIFICATIONS)
                 != android.content.pm.PackageManager.PERMISSION_GRANTED) return;
+        String safeTitle = String.valueOf(title == null ? "" : title).trim();
+        if (safeTitle.isEmpty()) safeTitle = "多伦多蓝鸟新闻";
+        String safeBody = String.valueOf(body == null ? "" : body).replaceAll("\\s+", " ").trim();
+        if (safeBody.isEmpty()) safeBody = "多伦多蓝鸟发布了一篇新文章，点击查看详情。";
+        safeBody = safeBody.substring(0, Math.min(safeBody.length(), 500));
+
         Intent intent = new Intent(context, MainActivity.class);
         intent.setAction("OPEN_TEAM_NEWS");
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
@@ -72,9 +78,13 @@ public class NewsMessagingService extends FirebaseMessagingService {
         NotificationCompat.Builder notification = new NotificationCompat.Builder(context, TeamNewsPushManager.CHANNEL_ID)
             .setSmallIcon(R.drawable.ic_notification_news)
             .setColor(ContextCompat.getColor(context, R.color.team_news_accent))
-            .setContentTitle(title)
-            .setContentText(body)
-            .setStyle(new NotificationCompat.BigTextStyle().bigText(body))
+            .setContentTitle(safeTitle)
+            .setContentText(safeBody)
+            .setStyle(new NotificationCompat.BigTextStyle()
+                .setBigContentTitle(safeTitle)
+                .bigText(safeBody))
+            .setTicker(safeBody)
+            .setVisibility(NotificationCompat.VISIBILITY_PUBLIC)
             .setContentIntent(pendingIntent)
             .setAutoCancel(true)
             .setPriority(NotificationCompat.PRIORITY_HIGH)

@@ -194,7 +194,10 @@ final class TeamNewsPushManager {
             String title = boundedText(item.optString("titleZh", ""), 240);
             if (title.isEmpty()) title = boundedText(item.optString("titleEn", ""), 240);
             String summary = boundedText(item.optString("summaryZh", ""), 900);
+            if (summary.isEmpty()) summary = firstParagraph(item.optJSONArray("bodyZh"));
             if (summary.isEmpty()) summary = boundedText(item.optString("summaryEn", ""), 900);
+            if (summary.isEmpty()) summary = firstParagraph(item.optJSONArray("bodyEn"));
+            if (summary.isEmpty()) summary = "多伦多蓝鸟发布了一篇新文章，点击查看详情。";
             if (!title.isEmpty()) copies.put(id, new NotificationCopy(title, summary));
         }
         return copies;
@@ -304,5 +307,10 @@ final class TeamNewsPushManager {
     private static String boundedText(String value, int maxLength) {
         String normalized = String.valueOf(value == null ? "" : value).replaceAll("\\s+", " ").trim();
         return normalized.substring(0, Math.min(normalized.length(), maxLength));
+    }
+
+    private static String firstParagraph(JSONArray paragraphs) {
+        if (paragraphs == null || paragraphs.length() == 0) return "";
+        return boundedText(paragraphs.optString(0, ""), 500);
     }
 }
