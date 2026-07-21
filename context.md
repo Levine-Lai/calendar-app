@@ -1612,6 +1612,23 @@
 - Android `testDebugUnitTest` 与 `lintDebug` 成功完成。
 - 当前源码仍为 `2.2.6 / versionCode 28`，本轮未自动打包；手机端最新已生成 APK 仍为 `2.2.5 / versionCode 27`。
 
+### 发布批次：2.2.6 Debug APK
+
+#### 构建与验收
+
+- 执行 `npm run build:android`，Capacitor Web 资源同步和 Gradle `assembleDebug` 均成功。
+- APK：`releases/sports-calendar-2.2.6-debug.apk`。
+- 文件大小：`9,415,162` 字节。
+- 包名：`com.local.sportscalendar`。
+- 版本：`versionCode 28`、`versionName 2.2.6`。
+- APK Signature Scheme v2 验证通过；签名证书 SHA-256 为 `7ef83e3ec40b7bf1e9aaf551589ee73c378fc26f29202255f0466bcab759bed0`，与此前 Debug APK 一致，可覆盖安装并保留本地数据。
+- APK 文件 SHA-256：`F704EC96438FB26C332D6F9E65966045DDB7B0D50B6AE0726048CB513CF74184`。
+
+#### 发布状态
+
+- 手机端最新已生成 APK 与当前源码均为 `2.2.6 / versionCode 28`。
+- `public/version.json` 仍保持已有远程版本配置；本次发布为本地 APK 文件，尚未配置公开 HTTPS 下载地址。
+
 ### 修改批次：2.2.6 DeepSeek 中文新闻与推送
 
 #### 用户目标
