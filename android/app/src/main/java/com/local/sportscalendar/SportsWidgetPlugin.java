@@ -77,7 +77,8 @@ public class SportsWidgetPlugin extends Plugin {
         JSObject result = new JSObject();
         result.put("configured", configured);
         result.put("enabled", configured && TeamNewsPushManager.isEnabled(context));
-        result.put("permission", hasNotificationPermission() ? "granted" : "prompt");
+        result.put("permission", NewsMessagingService.canShowNotifications(context) ? "granted" : "blocked");
+        result.put("fcmSubscribed", TeamNewsPushManager.isFcmSubscribed(context));
         result.put("topic", TeamNewsPushManager.TOPIC);
         result.put("lastCheckAt", TeamNewsPushManager.lastCheckAt(context));
         result.put("lastNotificationAt", TeamNewsPushManager.lastNotificationAt(context));
@@ -125,6 +126,7 @@ public class SportsWidgetPlugin extends Plugin {
             TeamNewsPushManager.enqueueImmediateCheck(context);
         } else {
             TeamNewsPushManager.cancelBackgroundChecks(context);
+            TeamNewsPushManager.rememberFcmSubscribed(context, false);
         }
 
         try {
@@ -138,6 +140,7 @@ public class SportsWidgetPlugin extends Plugin {
     }
 
     private void resolvePushChange(PluginCall call, boolean enabled, boolean fcmEnabled) {
+        TeamNewsPushManager.rememberFcmSubscribed(getContext().getApplicationContext(), enabled && fcmEnabled);
         JSObject response = new JSObject();
         response.put("configured", true);
         response.put("enabled", enabled);
@@ -154,14 +157,15 @@ public class SportsWidgetPlugin extends Plugin {
             call.reject("通知权限未开启");
             return;
         }
-        NewsMessagingService.showNewsNotification(
+        boolean displayed = NewsMessagingService.showNewsNotification(
             context,
             "观赛日记测试通知",
             "通知权限和主队新闻频道工作正常。",
             "",
             "test-" + System.currentTimeMillis()
         );
-        call.resolve();
+        if (displayed) call.resolve();
+        else call.reject("系统通知权限或新闻通知频道已关闭");
     }
 
     @PluginMethod

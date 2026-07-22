@@ -13,6 +13,9 @@ const gradle = read("android/app/build.gradle");
 const packageJson = require(path.join(root, "package.json"));
 const versionManifest = JSON.parse(read("public/version.json"));
 const updateConfig = read("public/update-config.js");
+const newsWorker = read("android/app/src/main/java/com/local/sportscalendar/TeamNewsRefreshWorker.java");
+const newsPushManager = read("android/app/src/main/java/com/local/sportscalendar/TeamNewsPushManager.java");
+const newsUpdater = read("firebase/functions/update-static-news.js");
 const currentVersionCode = Number(updateConfig.match(/currentVersionCode:\s*(\d+)/)?.[1]);
 
 const tracked = (folder) => execFileSync("git", ["ls-files", folder], { cwd: root, encoding: "utf8" }).trim();
@@ -43,6 +46,18 @@ const checks = [
       && Number.isInteger(currentVersionCode)
       && gradle.includes(`versionCode ${currentVersionCode}`)
       && Number(versionManifest.versionCode) > 0
+  ],
+  [
+    "21 新闻后台任务持续运行",
+    newsWorker.includes("Result.retry()")
+      && !newsWorker.includes("Result.failure()")
+      && newsPushManager.includes("wasNotificationRemembered")
+  ],
+  [
+    "22 FCM失败通知持久重试",
+    newsUpdater.includes("pendingNotificationIds")
+      && newsUpdater.includes("collectPendingNotificationItems")
+      && newsUpdater.includes("failedIds")
   ]
 ];
 

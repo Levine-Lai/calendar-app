@@ -37,6 +37,7 @@ final class TeamNewsPushManager {
     static final String EXTRA_NEWS_ID = "newsId";
     private static final String PREFS_NAME = "team_news_push";
     private static final String KEY_ENABLED = "enabled";
+    private static final String KEY_FCM_SUBSCRIBED = "fcm_subscribed";
     private static final String KEY_FEED_IDS = "feed_ids";
     private static final String KEY_NOTIFIED_IDS = "notified_ids";
     private static final String KEY_LAST_CHECK_AT = "last_check_at";
@@ -80,13 +81,7 @@ final class TeamNewsPushManager {
         if (!isEnabled(context)) return;
         scheduleBackgroundChecks(context);
         enqueueImmediateCheck(context);
-        if (isConfigured(context)) {
-            try {
-                FirebaseMessaging.getInstance().subscribeToTopic(TOPIC);
-            } catch (RuntimeException ignored) {
-                // The local WorkManager fallback remains active without Google services.
-            }
-        }
+        refreshFcmSubscription(context);
     }
 
     static void scheduleBackgroundChecks(Context context) {
@@ -126,6 +121,7 @@ final class TeamNewsPushManager {
 
     static boolean pollAndNotify(Context context) {
         try {
+            refreshFcmSubscription(context);
             List<TeamNewsFeed.Item> items = TeamNewsFeed.parse(WidgetNetworkClient.getMlbNewsFeedXml());
             if (items.isEmpty()) throw new IllegalStateException("MLB RSS did not contain news");
             SharedPreferences prefs = preferences(context);
@@ -153,24 +149,26 @@ final class TeamNewsPushManager {
                     throw new IllegalStateException("等待中文新闻同步");
                 }
             }
-            prefs.edit()
-                .putLong(KEY_LAST_CHECK_AT, now)
-                .putString(KEY_FEED_IDS, joinIds(TeamNewsFeed.ids(items)))
-                .remove(KEY_LAST_ERROR)
-                .apply();
-            Collections.reverse(newItems);
-            int start = Math.max(0, newItems.size() - 3);
-            for (TeamNewsFeed.Item item : newItems.subList(start, newItems.size())) {
-                if (!rememberNotification(context, item.id)) continue;
+            List<TeamNewsFeed.Item> selectedItems = new ArrayList<>(newItems.subList(0, Math.min(5, newItems.size())));
+            Collections.reverse(selectedItems);
+            for (TeamNewsFeed.Item item : selectedItems) {
+                if (wasNotificationRemembered(context, item.id)) continue;
                 NotificationCopy copy = localizedCopies.get(item.id);
-                NewsMessagingService.showNewsNotification(
+                boolean displayed = NewsMessagingService.showNewsNotification(
                     context,
                     copy == null ? item.title : copy.title,
                     copy == null ? item.summary : copy.summary,
                     item.url,
                     item.id
                 );
+                if (!displayed) throw new IllegalStateException("系统通知权限或通知频道不可用");
+                rememberNotification(context, item.id);
             }
+            prefs.edit()
+                .putLong(KEY_LAST_CHECK_AT, now)
+                .putString(KEY_FEED_IDS, joinIds(TeamNewsFeed.ids(items)))
+                .remove(KEY_LAST_ERROR)
+                .apply();
             return true;
         } catch (Exception error) {
             preferences(context).edit()
@@ -203,18 +201,22 @@ final class TeamNewsPushManager {
         return copies;
     }
 
-    static synchronized boolean rememberNotification(Context context, String newsId) {
-        if (newsId == null || !newsId.matches("[A-Za-z0-9_-]{1,160}")) return true;
+    static synchronized boolean wasNotificationRemembered(Context context, String newsId) {
+        if (newsId == null || !newsId.matches("[A-Za-z0-9_-]{1,160}")) return false;
+        return splitIds(preferences(context).getString(KEY_NOTIFIED_IDS, "")).contains(newsId);
+    }
+
+    static synchronized void rememberNotification(Context context, String newsId) {
+        if (newsId == null || !newsId.matches("[A-Za-z0-9_-]{1,160}")) return;
         SharedPreferences prefs = preferences(context);
         List<String> ids = new ArrayList<>(splitIds(prefs.getString(KEY_NOTIFIED_IDS, "")));
-        if (ids.contains(newsId)) return false;
+        if (ids.contains(newsId)) return;
         ids.add(0, newsId);
         if (ids.size() > 50) ids = new ArrayList<>(ids.subList(0, 50));
         prefs.edit()
             .putString(KEY_NOTIFIED_IDS, joinIds(ids))
             .putLong(KEY_LAST_NOTIFICATION_AT, System.currentTimeMillis())
             .apply();
-        return true;
     }
 
     static long lastCheckAt(Context context) {
@@ -307,6 +309,24 @@ final class TeamNewsPushManager {
     private static String boundedText(String value, int maxLength) {
         String normalized = String.valueOf(value == null ? "" : value).replaceAll("\\s+", " ").trim();
         return normalized.substring(0, Math.min(normalized.length(), maxLength));
+    }
+
+    static boolean isFcmSubscribed(Context context) {
+        return preferences(context).getBoolean(KEY_FCM_SUBSCRIBED, false);
+    }
+
+    static void rememberFcmSubscribed(Context context, boolean subscribed) {
+        preferences(context).edit().putBoolean(KEY_FCM_SUBSCRIBED, subscribed).apply();
+    }
+
+    static void refreshFcmSubscription(Context context) {
+        if (!isEnabled(context) || !isConfigured(context) || isFcmSubscribed(context)) return;
+        try {
+            FirebaseMessaging.getInstance().subscribeToTopic(TOPIC)
+                .addOnCompleteListener(task -> rememberFcmSubscribed(context, task.isSuccessful()));
+        } catch (RuntimeException ignored) {
+            rememberFcmSubscribed(context, false);
+        }
     }
 
     private static String firstParagraph(JSONArray paragraphs) {

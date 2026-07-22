@@ -826,8 +826,15 @@ async function syncTeamNewsPushStatus() {
       const checkedAt = Number(status.lastCheckAt) > 0
         ? formatTeamNewsTime(Number(status.lastCheckAt))
         : "等待首次检查";
-      const suffix = status.lastError ? "；上次后台检查失败" : "";
-      setTeamNewsPanelStatus(`推送已开启；后台检查 ${checkedAt}${suffix}`);
+      const notifiedAt = Number(status.lastNotificationAt) > 0
+        ? formatTeamNewsTime(Number(status.lastNotificationAt))
+        : "尚未发送";
+      const details = [];
+      if (status.permission !== "granted") details.push("系统通知或新闻频道已关闭");
+      if (status.fcmSubscribed === false) details.push("FCM 订阅恢复中，由手机后台检查补偿");
+      if (status.lastError) details.push(`后台异常：${status.lastError}`);
+      const suffix = details.length ? `；${details.join("；")}` : "";
+      setTeamNewsPanelStatus(`推送已开启；后台检查 ${checkedAt}；最近通知 ${notifiedAt}${suffix}`, details.length > 0);
     }
   } catch (error) {
     elements.teamNewsPushToggle.disabled = true;
@@ -1012,6 +1019,7 @@ function openSidebar() {
   elements.sidebarOverlay.hidden = false;
   elements.menuToggle.setAttribute("aria-expanded", "true");
   elements.sidebarClose.focus();
+  syncTeamNewsPushStatus();
   loadTeamsForSelectedLeague();
 }
 

@@ -16,6 +16,8 @@ public class TeamNewsRefreshWorker extends Worker {
     public Result doWork() {
         if (!TeamNewsPushManager.isEnabled(getApplicationContext())) return Result.success();
         if (TeamNewsPushManager.pollAndNotify(getApplicationContext())) return Result.success();
-        return getRunAttemptCount() < 3 ? Result.retry() : Result.failure();
+        // A failed periodic worker stops running permanently. Retry briefly, then finish this
+        // cycle successfully so WorkManager still schedules the next periodic check.
+        return getRunAttemptCount() < 3 ? Result.retry() : Result.success();
     }
 }

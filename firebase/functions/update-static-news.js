@@ -23,6 +23,7 @@ const {
 
 const root = path.resolve(__dirname, "..", "..");
 const outputFile = path.join(root, "public", "news", "blue-jays.json");
+const wait = (milliseconds) => new Promise((resolve) => setTimeout(resolve, milliseconds));
 
 async function fetchFeed() {
   const controller = new AbortController();
@@ -201,30 +202,51 @@ function writePayload(payload) {
 }
 
 async function sendNotifications(items) {
-  if (!items.length) return;
+  if (!items.length) return { sentIds: [], failedIds: [] };
   const serviceAccount = readServiceAccount();
   if (!serviceAccount) {
-    process.stdout.write(`Saved ${items.length} new article(s); FCM secret is not configured yet.\n`);
-    return;
+    process.stdout.write(`Queued ${items.length} notification(s); FCM secret is not configured yet.\n`);
+    return { sentIds: [], failedIds: items.map((item) => item.id) };
   }
 
   const accessToken = await createGoogleAccessToken(serviceAccount);
   const endpoint = fcmEndpoint(serviceAccount);
-  for (const item of items.slice(0, 5).reverse()) {
-    const response = await fetchWithTimeout(endpoint, {
-      method: "POST",
-      headers: {
-        authorization: `Bearer ${accessToken}`,
-        "content-type": "application/json"
-      },
-      body: JSON.stringify(buildFcmRequest(item))
-    }, 15000);
-    if (!response.ok) {
-      const details = (await response.text()).slice(0, 500);
-      throw new Error(`FCM returned ${response.status}: ${details}`);
+  const selectedItems = items.slice(0, 5);
+  const sentIds = [];
+  const failedIds = items.slice(5).map((item) => item.id);
+  for (const item of [...selectedItems].reverse()) {
+    let delivered = false;
+    let lastError = "unknown FCM error";
+    for (let attempt = 0; attempt < 3 && !delivered; attempt += 1) {
+      try {
+        const response = await fetchWithTimeout(endpoint, {
+          method: "POST",
+          headers: {
+            authorization: `Bearer ${accessToken}`,
+            "content-type": "application/json"
+          },
+          body: JSON.stringify(buildFcmRequest(item))
+        }, 15000);
+        if (response.ok) {
+          delivered = true;
+          break;
+        }
+        const details = (await response.text()).slice(0, 500);
+        lastError = `FCM returned ${response.status}: ${details}`;
+        if (response.status < 500 && response.status !== 429) break;
+      } catch (error) {
+        lastError = error.message || String(error);
+      }
+      if (attempt < 2) await wait(1000 * (2 ** attempt));
+    }
+    if (delivered) sentIds.push(item.id);
+    else {
+      failedIds.push(item.id);
+      reportWorkflowWarning("FCM notification queued for retry", `${item.id}: ${lastError}`);
     }
   }
-  process.stdout.write(`Sent ${Math.min(items.length, 5)} FCM notification(s) for ${TEAM_NAME}.\n`);
+  process.stdout.write(`FCM delivery result for ${TEAM_NAME}: ${sentIds.length} sent, ${failedIds.length} queued.\n`);
+  return { sentIds, failedIds };
 }
 
 function readServiceAccount() {
@@ -350,12 +372,36 @@ async function sendNotificationsBestEffort(
   reportError = (message) => process.stderr.write(message)
 ) {
   try {
-    await sender(items);
-    return true;
+    const result = await sender(items);
+    if (result && Array.isArray(result.sentIds) && Array.isArray(result.failedIds)) return result;
+    return { sentIds: items.map((item) => item.id), failedIds: [] };
   } catch (error) {
     reportError(`FCM notification skipped without blocking news update: ${error.message}\n`);
-    return false;
+    return { sentIds: [], failedIds: items.map((item) => item.id) };
   }
+}
+
+function collectPendingNotificationItems(previousPayload, update) {
+  const currentItems = Array.isArray(update?.payload?.items) ? update.payload.items : [];
+  const itemsById = new Map(currentItems.map((item) => [item.id, item]));
+  const previousPending = Array.isArray(previousPayload?.pendingNotificationIds)
+    ? previousPayload.pendingNotificationIds
+    : [];
+  const newIds = Array.isArray(update?.newItems) ? update.newItems.map((item) => item.id) : [];
+  return Array.from(new Set([...previousPending, ...newIds]))
+    .map((id) => itemsById.get(id))
+    .filter(Boolean)
+    .slice(0, 20);
+}
+
+function withPendingNotificationIds(payload, failedIds) {
+  const currentIds = new Set((payload?.items || []).map((item) => item.id));
+  return {
+    ...payload,
+    pendingNotificationIds: Array.from(new Set(failedIds || []))
+      .filter((id) => currentIds.has(id))
+      .slice(0, 20)
+  };
 }
 
 function base64Url(value) {
@@ -404,12 +450,13 @@ async function main() {
   const feedItems = await enrichTranslations(articlesWithBodies, previousPayload);
   const update = buildStaticNewsUpdate(previousPayload, feedItems);
   if (process.env.VALIDATE_FCM === "true") await validateFcmBestEffort();
-  if (!update.changed) {
+  const pendingItems = collectPendingNotificationItems(previousPayload, update);
+  if (!update.changed && !pendingItems.length) {
     process.stdout.write("Blue Jays news is already current.\n");
     return;
   }
-  writePayload(update.payload);
-  await sendNotificationsBestEffort(update.newItems);
+  const delivery = await sendNotificationsBestEffort(pendingItems);
+  writePayload(withPendingNotificationIds(update.payload, delivery.failedIds));
   process.stdout.write(`Updated ${path.relative(root, outputFile)} with ${update.payload.items.length} article(s).\n`);
 }
 
@@ -426,6 +473,8 @@ module.exports = {
   translateArticle,
   enrichTranslations,
   sendNotificationsBestEffort,
+  collectPendingNotificationItems,
+  withPendingNotificationIds,
   buildFcmRequest,
   validateFcmBestEffort,
   parseServiceAccount

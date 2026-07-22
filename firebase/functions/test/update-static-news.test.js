@@ -2,6 +2,8 @@ const test = require("node:test");
 const assert = require("node:assert/strict");
 const {
   sendNotificationsBestEffort,
+  collectPendingNotificationItems,
+  withPendingNotificationIds,
   buildFcmRequest,
   validateFcmBestEffort,
   parseServiceAccount,
@@ -15,15 +17,43 @@ const validServiceAccount = {
   private_key: "-----BEGIN PRIVATE KEY-----\ntest\n-----END PRIVATE KEY-----\n"
 };
 
-test("FCM failure does not fail the news data update", async () => {
-  const succeeded = await sendNotificationsBestEffort(
+test("FCM failure queues every article without failing the news data update", async () => {
+  const outcome = await sendNotificationsBestEffort(
     [{ id: "article-1" }],
     async () => {
       throw new Error("simulated FCM failure");
     },
     () => {}
   );
-  assert.equal(succeeded, false);
+  assert.deepEqual(outcome.sentIds, []);
+  assert.deepEqual(outcome.failedIds, ["article-1"]);
+});
+
+test("pending FCM articles survive later feed runs until delivery succeeds", () => {
+  const article = { id: "article-1", titleEn: "Blue Jays story" };
+  const previous = {
+    pendingNotificationIds: ["article-1", "removed-article"],
+    items: [article]
+  };
+  const update = { payload: { items: [article] }, newItems: [] };
+  assert.deepEqual(
+    collectPendingNotificationItems(previous, update).map((item) => item.id),
+    ["article-1"]
+  );
+  assert.deepEqual(withPendingNotificationIds(update.payload, ["article-1", "removed-article"]), {
+    items: [article],
+    pendingNotificationIds: ["article-1"]
+  });
+});
+
+test("new articles join an existing FCM retry queue without duplicates", () => {
+  const first = { id: "article-1" };
+  const second = { id: "article-2" };
+  const pending = collectPendingNotificationItems(
+    { pendingNotificationIds: ["article-1"], items: [first] },
+    { payload: { items: [second, first] }, newItems: [second, first] }
+  );
+  assert.deepEqual(pending.map((item) => item.id), ["article-1", "article-2"]);
 });
 
 test("FCM HTTP v1 request uses a high-priority data message and validate_only", () => {

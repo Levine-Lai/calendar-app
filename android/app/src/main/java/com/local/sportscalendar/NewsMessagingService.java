@@ -24,6 +24,7 @@ public class NewsMessagingService extends FirebaseMessagingService {
     @Override
     public void onNewToken(String token) {
         super.onNewToken(token);
+        TeamNewsPushManager.rememberFcmSubscribed(this, false);
         TeamNewsPushManager.restoreSubscription(this);
     }
 
@@ -41,11 +42,13 @@ public class NewsMessagingService extends FirebaseMessagingService {
 
         String newsUrl = message.getData().get(TeamNewsPushManager.EXTRA_NEWS_URL);
         String newsId = message.getData().get(TeamNewsPushManager.EXTRA_NEWS_ID);
-        if (!TeamNewsPushManager.rememberNotification(this, newsId)) return;
-        showNewsNotification(this, title, body, newsUrl, newsId);
+        if (TeamNewsPushManager.wasNotificationRemembered(this, newsId)) return;
+        if (showNewsNotification(this, title, body, newsUrl, newsId)) {
+            TeamNewsPushManager.rememberNotification(this, newsId);
+        }
     }
 
-    static void showNewsNotification(
+    static boolean showNewsNotification(
         Context context,
         String title,
         String body,
@@ -53,9 +56,8 @@ public class NewsMessagingService extends FirebaseMessagingService {
         String newsId
     ) {
         createNotificationChannel(context);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU
-            && ContextCompat.checkSelfPermission(context, android.Manifest.permission.POST_NOTIFICATIONS)
-                != android.content.pm.PackageManager.PERMISSION_GRANTED) return;
+        if (!canShowNotifications(context)) return false;
+        NotificationManagerCompat notificationManager = NotificationManagerCompat.from(context);
         String safeTitle = String.valueOf(title == null ? "" : title).trim();
         if (safeTitle.isEmpty()) safeTitle = "多伦多蓝鸟新闻";
         String safeBody = String.valueOf(body == null ? "" : body).replaceAll("\\s+", " ").trim();
@@ -91,9 +93,11 @@ public class NewsMessagingService extends FirebaseMessagingService {
             .setCategory(NotificationCompat.CATEGORY_SOCIAL);
 
         try {
-            NotificationManagerCompat.from(context).notify(requestCode, notification.build());
+            notificationManager.notify(requestCode, notification.build());
+            return true;
         } catch (SecurityException ignored) {
             // Android 13+ can revoke notification permission at any time.
+            return false;
         }
     }
 
@@ -107,5 +111,16 @@ public class NewsMessagingService extends FirebaseMessagingService {
         channel.setDescription(context.getString(R.string.team_news_channel_description));
         NotificationManager manager = context.getSystemService(NotificationManager.class);
         if (manager != null) manager.createNotificationChannel(channel);
+    }
+
+    static boolean canShowNotifications(Context context) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU
+            && ContextCompat.checkSelfPermission(context, android.Manifest.permission.POST_NOTIFICATIONS)
+                != android.content.pm.PackageManager.PERMISSION_GRANTED) return false;
+        if (!NotificationManagerCompat.from(context).areNotificationsEnabled()) return false;
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.O) return true;
+        NotificationManager manager = context.getSystemService(NotificationManager.class);
+        NotificationChannel channel = manager == null ? null : manager.getNotificationChannel(TeamNewsPushManager.CHANNEL_ID);
+        return channel == null || channel.getImportance() != NotificationManager.IMPORTANCE_NONE;
     }
 }
