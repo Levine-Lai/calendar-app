@@ -403,6 +403,11 @@ function bindEvents() {
     if (event.target === elements.teamNewsModal) closeTeamNewsModal();
   });
   elements.teamNewsList.addEventListener("click", (event) => {
+    const collapseButton = event.target.closest(".team-news-collapse");
+    if (collapseButton) {
+      collapseTeamNewsArticle(collapseButton);
+      return;
+    }
     const disclosure = event.target.closest(".team-news-disclosure");
     if (disclosure) toggleTeamNewsArticle(disclosure);
   });
@@ -1001,8 +1006,31 @@ function renderTeamNewsArticleBody(container, paragraphs) {
     element.textContent = paragraph;
     fragment.append(element);
   });
+  const collapseButton = document.createElement("button");
+  collapseButton.className = "team-news-collapse";
+  collapseButton.type = "button";
+  collapseButton.setAttribute("aria-label", teamNewsState.language === "en" ? "Collapse article" : "收起文章");
+  const icon = document.createElement("span");
+  icon.className = "team-news-collapse-icon";
+  icon.setAttribute("aria-hidden", "true");
+  const label = document.createElement("span");
+  label.textContent = teamNewsState.language === "en" ? "Collapse article" : "收起文章";
+  collapseButton.append(icon, label);
+  fragment.append(collapseButton);
   container.replaceChildren(fragment);
   container.classList.remove("is-error");
+}
+
+function collapseTeamNewsArticle(button) {
+  const article = button.closest(".team-news-item");
+  const disclosure = article?.querySelector(".team-news-disclosure");
+  const body = article?.querySelector(".team-news-article-body");
+  if (!article || !disclosure || !body) return;
+  disclosure.setAttribute("aria-expanded", "false");
+  body.hidden = true;
+  const reduceMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches === true;
+  article.scrollIntoView?.({ block: "start", behavior: reduceMotion ? "auto" : "smooth" });
+  disclosure.focus({ preventScroll: true });
 }
 
 function renderTeamNewsArticleMessage(container, message, isError = false) {

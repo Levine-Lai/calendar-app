@@ -8,6 +8,7 @@ const provider = read("android/app/src/main/java/com/local/sportscalendar/MlbTod
 const worker = read("android/app/src/main/java/com/local/sportscalendar/WidgetRefreshWorker.java");
 const manifest = read("android/app/src/main/AndroidManifest.xml");
 const app = read("public/app.js");
+const styles = read("public/styles.css");
 const core = read("public/calendar-core.js");
 const gradle = read("android/app/build.gradle");
 const packageJson = require(path.join(root, "package.json"));
@@ -58,6 +59,12 @@ const checks = [
     newsUpdater.includes("pendingNotificationIds")
       && newsUpdater.includes("collectPendingNotificationItems")
       && newsUpdater.includes("failedIds")
+  ],
+  [
+    "23 新闻正文底部收起",
+    app.includes("collapseTeamNewsArticle")
+      && app.includes("team-news-collapse")
+      && styles.includes(".team-news-collapse")
   ]
 ];
 
