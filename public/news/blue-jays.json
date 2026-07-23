@@ -1,13 +1,13 @@
 {
   "teamId": "toronto-blue-jays",
   "teamName": "多伦多蓝鸟",
-  "updatedAt": "2026-07-23T16:41:05.615Z",
+  "updatedAt": "2026-07-23T18:02:17.570Z",
   "items": [
     {
       "id": "f4474186891c150c8050e0c6e9498fb06b660f204b42d32a5f1c2b2336560ee7",
       "teamId": "toronto-blue-jays",
       "teamName": "多伦多蓝鸟",
-      "titleEn": "Amid flurry of moves, Schneider back with Blue Jays, with Corbin heading to IL",
+      "titleEn": "Amid flurry of moves, Schneider back with Blue Jays, Corbin heading to IL",
       "summaryEn": "",
       "bodyEn": [
         "Before Thursday's game against the Rays, the Blue Jays recalled both INF/OF Davis Schneider and LHP Adam Macko from Triple-A Buffalo, optioned INF Sean Keys to Buffalo and placed LHP Patrick Corbin on the 15-day IL with a left teres major strain, retroactive to Wednesday.",
@@ -16,20 +16,20 @@
         "Corbin, in his first season with the Blue Jays, is 3-4 with a 5.51 ERA in 19 games.",
         "Keys has hit .167 with one homer and five RBIs in 12 games with Toronto."
       ],
-      "titleZh": "在一系列人员变动中，Schneider回归蓝鸟，Corbin进入伤病名单",
-      "summaryZh": "蓝鸟队进行多项调整，Schneider被召回，Corbin因伤进入伤病名单。",
+      "titleZh": "蓝鸟调整阵容：Schneider回归，Corbin进伤病名单",
+      "summaryZh": "蓝鸟召回Schneider和Macko，下放Keys，Corbin因伤进15日伤病名单。",
       "bodyZh": [
-        "在周四对阵光芒队的比赛前，蓝鸟队从三A布法罗召回了内/外野手Davis Schneider和左投手Adam Macko，将内野手Sean Keys下放至布法罗，并将左投手Patrick Corbin放入15天伤病名单，原因是左侧背阔肌拉伤，生效日期回溯至周三。",
-        "Schneider在去年美国联盟冠军球队中击出11支本垒打，但本赛季在多伦多出战的49场比赛中仅击出.153的打击率，3支本垒打和12分打点。他在布法罗的表现好得多，30场比赛打击率.253，OPS.986，5支本垒打。",
-        "Macko本赛季为多伦多出战19场比赛，战绩2胜0负，自责分率5.03。他在布法罗的18次出场中自责分率为4.18。",
-        "Corbin在蓝鸟队的第一个赛季，19场比赛战绩3胜4负，自责分率5.51。",
-        "Keys在多伦多出战的12场比赛中打击率.167，1支本垒打和5分打点。"
+        "在周四对阵光芒的比赛前，蓝鸟从三A水牛城召回了内/外野手Davis Schneider和左投Adam Macko，将内野手Sean Keys下放到水牛城，并将左投Patrick Corbin放入15日伤病名单，原因是左侧大圆肌拉伤，追溯至周三。",
+        "Schneider去年为美联盟冠军轰出11支本垒打，本赛季在多伦多49场比赛中仅击出.153打击率、3支本垒打和12分打点。他在水牛城表现更好，30场比赛打击率.253，OPS .986，有5支本垒打。",
+        "Macko本赛季为多伦多出战19场，战绩2胜0败，自责分率5.03。他在水牛城18次出场自责分率为4.18。",
+        "Corbin在蓝鸟的第一个赛季，19场比赛战绩3胜4败，自责分率5.51。",
+        "Keys在多伦多12场比赛中击出.167打击率，1支本垒打和5分打点。"
       ],
-      "translationSourceHash": "29c0304c59a2aba9d22f50effb0e842f8687d6b2419d9f7642a32cb48dd12ba0",
+      "translationSourceHash": "44304e7c93618c428fd2724df0ed80335b91bdf975dd68c778a95cdfdcaa3de4",
       "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-07-23T16:40:37.005Z",
-      "author": "",
-      "publishedAt": "2026-07-23T16:26:38.000Z",
+      "translatedAt": "2026-07-23T18:02:17.570Z",
+      "author": "Zach Worden",
+      "publishedAt": "2026-07-23T17:51:00.000Z",
       "url": "https://www.mlb.com/bluejays/news/davis-schneider-recalled-by-blue-jays-patrick-corbin-to-injured-list",
       "source": "MLB.com"
     },
