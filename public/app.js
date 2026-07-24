@@ -18,7 +18,6 @@ const dayScoreRefreshes = new Map();
 const dayScoreRefreshTimes = new Map();
 const scoreRefreshTtlMs = 60 * 1000;
 const teamNewsCacheKey = "sports-fan-calendar:team-news:v1";
-const teamNewsLanguageKey = "sports-fan-calendar:team-news:language";
 const teamNewsCacheTtlMs = 10 * 60 * 1000;
 const teamNewsAutoRefreshMs = 5 * 60 * 1000;
 const teamNewsResumeRefreshMs = 2 * 60 * 1000;
@@ -255,7 +254,8 @@ const teamNewsState = {
   loading: false,
   lastAttemptAt: 0,
   pendingUrl: "",
-  language: "zh",
+  language: "en",
+  activeArticleId: "",
   articleBodies: new Map(),
   loadingBodies: new Set()
 };
@@ -286,9 +286,8 @@ const elements = {
   checkAppUpdateBtn: document.querySelector("#checkAppUpdateBtn"),
   downloadAppUpdateBtn: document.querySelector("#downloadAppUpdateBtn"),
   openTeamNewsBtn: document.querySelector("#openTeamNewsBtn"),
-  testTeamNewsPushBtn: document.querySelector("#testTeamNewsPushBtn"),
   teamNewsPushToggle: document.querySelector("#teamNewsPushToggle"),
-  teamNewsPreview: document.querySelector("#teamNewsPreview"),
+  homeNewsList: document.querySelector("#homeNewsList"),
   teamNewsPanelStatus: document.querySelector("#teamNewsPanelStatus"),
   teamNewsModal: document.querySelector("#teamNewsModal"),
   teamNewsModalTitle: document.querySelector("#teamNewsModalTitle"),
@@ -297,6 +296,10 @@ const elements = {
   teamNewsUpdatedAt: document.querySelector("#teamNewsUpdatedAt"),
   teamNewsModalStatus: document.querySelector("#teamNewsModalStatus"),
   teamNewsList: document.querySelector("#teamNewsList"),
+  teamNewsArticleModal: document.querySelector("#teamNewsArticleModal"),
+  teamNewsArticleBack: document.querySelector("#teamNewsArticleBack"),
+  teamNewsArticleContent: document.querySelector("#teamNewsArticleContent"),
+  teamNewsArticleTitle: document.querySelector("#teamNewsArticleTitle"),
   teamNewsLanguageTabs: Array.from(document.querySelectorAll(".team-news-language-tab")),
   todayLabel: document.querySelector("#todayLabel"),
   rangeTitle: document.querySelector("#rangeTitle"),
@@ -386,7 +389,6 @@ function bindEvents() {
   elements.checkAppUpdateBtn.addEventListener("click", checkForAppUpdate);
   elements.downloadAppUpdateBtn.addEventListener("click", openAppUpdateDownload);
   elements.openTeamNewsBtn.addEventListener("click", openTeamNewsModal);
-  elements.testTeamNewsPushBtn.addEventListener("click", sendTeamNewsTestNotification);
   elements.teamNewsPushToggle.addEventListener("change", updateTeamNewsPush);
   elements.refreshTeamNewsBtn.addEventListener("click", () => refreshTeamNews());
   elements.teamNewsLanguageTabs.forEach((tab) => tab.addEventListener("click", () => setTeamNewsLanguage(tab.dataset.language)));
@@ -403,13 +405,16 @@ function bindEvents() {
     if (event.target === elements.teamNewsModal) closeTeamNewsModal();
   });
   elements.teamNewsList.addEventListener("click", (event) => {
-    const collapseButton = event.target.closest(".team-news-collapse");
-    if (collapseButton) {
-      collapseTeamNewsArticle(collapseButton);
-      return;
-    }
-    const disclosure = event.target.closest(".team-news-disclosure");
-    if (disclosure) toggleTeamNewsArticle(disclosure);
+    const articleButton = event.target.closest(".team-news-card-button");
+    if (articleButton?.dataset.newsId) openTeamNewsArticle(articleButton.dataset.newsId);
+  });
+  elements.homeNewsList.addEventListener("click", (event) => {
+    const articleButton = event.target.closest(".team-news-card-button");
+    if (articleButton?.dataset.newsId) openTeamNewsArticle(articleButton.dataset.newsId);
+  });
+  elements.teamNewsArticleBack.addEventListener("click", closeTeamNewsArticle);
+  elements.teamNewsArticleModal.addEventListener("click", (event) => {
+    if (event.target === elements.teamNewsArticleModal) closeTeamNewsArticle();
   });
   window.addEventListener("sports-news-open", (event) => {
     handleTeamNewsOpen(event.detail?.url || "");
@@ -447,6 +452,8 @@ function bindEvents() {
   document.addEventListener("keydown", (event) => {
     if (event.key === "Escape" && document.body.classList.contains("sidebar-open")) {
       closeSidebar();
+    } else if (event.key === "Escape" && !elements.teamNewsArticleModal.hidden) {
+      closeTeamNewsArticle();
     } else if (event.key === "Escape" && !elements.teamNewsModal.hidden) {
       closeTeamNewsModal();
     } else if (event.key === "Escape" && !elements.deleteModal.hidden) {
@@ -542,11 +549,7 @@ async function openAppUpdateDownload() {
 }
 
 function initializeTeamNews() {
-  try {
-    teamNewsState.language = localStorage.getItem(teamNewsLanguageKey) === "en" ? "en" : "zh";
-  } catch {
-    teamNewsState.language = "zh";
-  }
+  teamNewsState.language = "en";
   restoreTeamNewsCache();
   renderTeamNews();
   syncTeamNewsPushStatus();
@@ -675,104 +678,94 @@ async function refreshTeamNews(options = {}) {
 }
 
 function renderTeamNews() {
-  const latest = teamNewsState.items[0];
-  const language = teamNewsState.language;
-  const latestCopy = TeamNews?.localizeNewsItem?.(latest, language);
-  elements.teamNewsPreview.textContent = latestCopy?.title || "部署新闻服务后，将在这里显示 MLB 官方新闻。";
-  elements.teamNewsLanguageTabs.forEach((tab) => {
-    const selected = tab.dataset.language === language;
-    tab.classList.toggle("is-active", selected);
-    tab.setAttribute("aria-selected", String(selected));
-    tab.tabIndex = selected ? 0 : -1;
+  renderHomeTeamNews();
+  renderTeamNewsList();
+  if (teamNewsState.activeArticleId) renderTeamNewsArticle();
+}
+
+function renderHomeTeamNews() {
+  if (!teamNewsState.items.length) {
+    const empty = document.createElement("p");
+    empty.className = "home-news-empty";
+    empty.textContent = "暂时没有可显示的蓝鸟队新闻。";
+    elements.homeNewsList.replaceChildren(empty);
+    return;
+  }
+  const fragment = document.createDocumentFragment();
+  teamNewsState.items.slice(0, 3).forEach((item) => {
+    fragment.append(createTeamNewsCard(item, { compact: true }));
   });
-  const activeTab = language === "en" ? elements.teamNewsLanguageTabs[1] : elements.teamNewsLanguageTabs[0];
-  elements.teamNewsList.setAttribute("aria-labelledby", activeTab?.id || "teamNewsZhTab");
-  elements.teamNewsList.lang = language === "en" ? "en" : "zh-CN";
-  elements.teamNewsModalTitle.textContent = language === "en" ? "Toronto Blue Jays News" : "多伦多蓝鸟新闻";
+  elements.homeNewsList.replaceChildren(fragment);
+}
+
+function renderTeamNewsList() {
+  elements.teamNewsModalTitle.textContent = "Toronto Blue Jays News";
   elements.teamNewsUpdatedAt.textContent = teamNewsState.updatedAt
-    ? language === "en" ? `Updated ${formatTeamNewsTime(teamNewsState.updatedAt, "en")}` : `更新于 ${formatTeamNewsTime(teamNewsState.updatedAt, "zh")}`
-    : language === "en" ? "Waiting to sync" : "等待同步";
+    ? `Updated ${formatTeamNewsTime(teamNewsState.updatedAt, "en")}`
+    : "Waiting to sync";
 
   if (!teamNewsState.items.length) {
     const empty = document.createElement("div");
     empty.className = "day-modal-empty";
-    if (language === "en") {
-      empty.textContent = TeamNewsConfig?.apiUrl ? "No Blue Jays news is available yet." : "The news API is not configured.";
-    } else {
-      empty.textContent = TeamNewsConfig?.apiUrl ? "暂时没有蓝鸟队新闻。" : "新闻 API 尚未部署。";
-    }
+    empty.textContent = TeamNewsConfig?.apiUrl
+      ? "No Blue Jays news is available yet."
+      : "The news API is not configured.";
     elements.teamNewsList.replaceChildren(empty);
     return;
   }
 
   const fragment = document.createDocumentFragment();
-  teamNewsState.items.forEach((item) => {
-    const localized = TeamNews.localizeNewsItem(item, language);
-    const article = document.createElement("article");
-    article.className = "team-news-item";
-    article.dataset.newsId = item.id;
-    article.dataset.url = item.url;
-
-    const disclosure = document.createElement("button");
-    disclosure.className = "team-news-disclosure";
-    disclosure.type = "button";
-    disclosure.dataset.newsId = item.id;
-    disclosure.dataset.url = item.url;
-    disclosure.setAttribute("aria-expanded", "false");
-
-    const heading = document.createElement("div");
-    heading.className = "team-news-disclosure-copy";
-    const title = document.createElement("h4");
-    title.textContent = localized.title;
-
-    const meta = document.createElement("div");
-    meta.className = "team-news-meta";
-    const published = document.createElement("span");
-    published.textContent = formatTeamNewsTime(item.publishedAt, language);
-    const source = document.createElement("span");
-    source.textContent = item.author ? `${item.source} · ${item.author}` : item.source;
-    meta.append(published, source);
-
-    heading.append(title, meta);
-    const summaryText = localized.summary;
-    if (summaryText) {
-      const summary = document.createElement("p");
-      summary.className = "team-news-summary";
-      summary.textContent = summaryText;
-      heading.append(summary);
-    }
-
-    const chevron = document.createElement("span");
-    chevron.className = "team-news-chevron";
-    chevron.setAttribute("aria-hidden", "true");
-    disclosure.append(heading, chevron);
-
-    const body = document.createElement("div");
-    body.className = "team-news-article-body";
-    body.hidden = true;
-    body.setAttribute("aria-live", "polite");
-    const bodyKey = `${language}:${item.id}`;
-    const bundledBody = localized.body;
-    if (bundledBody.length) teamNewsState.articleBodies.set(bodyKey, bundledBody);
-    const cached = teamNewsState.articleBodies.get(bodyKey);
-    if (cached) renderTeamNewsArticleBody(body, cached);
-
-    article.append(disclosure, body);
-    fragment.append(article);
-  });
+  teamNewsState.items.forEach((item) => fragment.append(createTeamNewsCard(item)));
   elements.teamNewsList.replaceChildren(fragment);
 }
 
-function setTeamNewsLanguage(language) {
-  const nextLanguage = language === "en" ? "en" : "zh";
-  if (teamNewsState.language === nextLanguage) return;
-  teamNewsState.language = nextLanguage;
-  try {
-    localStorage.setItem(teamNewsLanguageKey, nextLanguage);
-  } catch {
-    // The language still applies for the current session when storage is unavailable.
+function createTeamNewsCard(item, options = {}) {
+  const localized = TeamNews.localizeNewsItem(item, "en");
+  const article = document.createElement("article");
+  article.className = `team-news-item${options.compact ? " is-compact" : ""}`;
+  article.dataset.newsId = item.id;
+  article.dataset.url = item.url;
+
+  const button = document.createElement("button");
+  button.className = "team-news-card-button";
+  button.type = "button";
+  button.dataset.newsId = item.id;
+  button.setAttribute("aria-label", `Read ${localized.title}`);
+
+  const imageUrl = TeamNews.normalizeMlbImageUrl(item.imageUrl);
+  if (imageUrl) {
+    const media = document.createElement("span");
+    media.className = "team-news-card-media";
+    media.innerHTML = renderImage(imageUrl, "", { fallback: false });
+    button.append(media);
   }
-  renderTeamNews();
+
+  const copy = document.createElement("span");
+  copy.className = "team-news-card-copy";
+  const title = document.createElement("h4");
+  title.textContent = localized.title;
+  const summary = document.createElement("p");
+  summary.className = "team-news-summary";
+  summary.textContent = localized.summary || localized.body[0] || "Read the full story from MLB.com.";
+  const meta = document.createElement("span");
+  meta.className = "team-news-meta";
+  meta.textContent = `${formatTeamNewsTime(item.publishedAt, "en")} · ${item.author ? `${item.source} · ${item.author}` : item.source}`;
+  copy.append(title, summary, meta);
+  button.append(copy);
+  article.append(button);
+  return article;
+}
+
+function setTeamNewsLanguage(language) {
+  const nextLanguage = language === "zh" ? "zh" : "en";
+  teamNewsState.language = nextLanguage;
+  elements.teamNewsLanguageTabs.forEach((tab) => {
+    const selected = tab.dataset.language === nextLanguage;
+    tab.classList.toggle("is-active", selected);
+    tab.setAttribute("aria-selected", String(selected));
+    tab.tabIndex = selected ? 0 : -1;
+  });
+  renderTeamNewsArticle();
 }
 
 function formatTeamNewsTime(value, language = teamNewsState.language) {
@@ -791,13 +784,14 @@ function openTeamNewsModal() {
   if (document.body.classList.contains("sidebar-open")) closeSidebar();
   elements.teamNewsModal.hidden = false;
   document.body.classList.add("modal-open");
-  renderTeamNews();
+  renderTeamNewsList();
   elements.teamNewsModalClose.focus();
   if (!teamNewsState.items.length && getTeamNewsApiUrls().length) refreshTeamNews();
   scrollToPendingTeamNews();
 }
 
 function closeTeamNewsModal() {
+  if (!elements.teamNewsArticleModal.hidden) closeTeamNewsArticle();
   elements.teamNewsModal.hidden = true;
   document.body.classList.remove("modal-open");
   teamNewsState.pendingUrl = "";
@@ -876,23 +870,6 @@ async function updateTeamNewsPush() {
   }
 }
 
-async function sendTeamNewsTestNotification() {
-  const plugin = window.Capacitor?.Plugins?.SportsWidget;
-  if (!plugin?.sendTeamNewsTestNotification) {
-    setTeamNewsPanelStatus("测试通知仅支持 Android 安装版", true);
-    return;
-  }
-  elements.testTeamNewsPushBtn.disabled = true;
-  try {
-    await plugin.sendTeamNewsTestNotification();
-    setTeamNewsPanelStatus("测试通知已发送；如果没有弹出，请检查 vivo 通知权限");
-  } catch (error) {
-    setTeamNewsPanelStatus(`测试通知失败：${error.message || "请检查通知权限"}`, true);
-  } finally {
-    elements.testTeamNewsPushBtn.disabled = false;
-  }
-}
-
 async function consumePendingTeamNewsOpen() {
   const plugin = window.Capacitor?.Plugins?.SportsWidget;
   if (!plugin?.consumePendingNewsOpen) return;
@@ -913,69 +890,108 @@ function handleTeamNewsOpen(url) {
 
 function scrollToPendingTeamNews() {
   if (!teamNewsState.pendingUrl || elements.teamNewsModal.hidden) return;
-  const target = Array.from(elements.teamNewsList.querySelectorAll(".team-news-item"))
-    .find((item) => item.dataset.url === teamNewsState.pendingUrl);
+  const target = teamNewsState.items.find((item) => item.url === teamNewsState.pendingUrl);
   if (!target) return;
-  target.scrollIntoView?.({ block: "start", behavior: "smooth" });
-  const disclosure = target.querySelector(".team-news-disclosure");
-  if (disclosure?.getAttribute("aria-expanded") !== "true") toggleTeamNewsArticle(disclosure);
   teamNewsState.pendingUrl = "";
+  openTeamNewsArticle(target.id);
 }
 
-async function toggleTeamNewsArticle(disclosure) {
-  const article = disclosure.closest(".team-news-item");
-  const body = article?.querySelector(".team-news-article-body");
-  const newsId = disclosure.dataset.newsId || "";
+function openTeamNewsArticle(newsId) {
+  const item = teamNewsState.items.find((candidate) => candidate.id === newsId);
+  if (!item) return;
+  teamNewsState.activeArticleId = newsId;
+  teamNewsState.language = "en";
+  elements.teamNewsArticleModal.hidden = false;
+  document.body.classList.add("modal-open");
+  setTeamNewsLanguage("en");
+  elements.teamNewsArticleBack.focus();
+  ensureTeamNewsArticleBody(item);
+}
+
+function closeTeamNewsArticle() {
+  elements.teamNewsArticleModal.hidden = true;
+  teamNewsState.activeArticleId = "";
+  teamNewsState.language = "en";
+  if (elements.teamNewsModal.hidden) document.body.classList.remove("modal-open");
+}
+
+function renderTeamNewsArticle() {
+  const item = teamNewsState.items.find((candidate) => candidate.id === teamNewsState.activeArticleId);
+  if (!item) return;
   const language = teamNewsState.language;
-  const bodyKey = `${language}:${newsId}`;
-  const url = TeamNews?.normalizeMlbUrl?.(disclosure.dataset.url);
-  if (!article || !body || !newsId || !url) return;
+  const localized = TeamNews.localizeNewsItem(item, language);
+  const bodyKey = `${language}:${item.id}`;
+  if (localized.body.length) teamNewsState.articleBodies.set(bodyKey, localized.body);
+  const paragraphs = teamNewsState.articleBodies.get(bodyKey) || [];
+  const fragment = document.createDocumentFragment();
 
-  const expanded = disclosure.getAttribute("aria-expanded") === "true";
-  disclosure.setAttribute("aria-expanded", String(!expanded));
-  body.hidden = expanded;
-  if (expanded) return;
-
-  const cached = teamNewsState.articleBodies.get(bodyKey);
-  if (cached) {
-    renderTeamNewsArticleBody(body, cached);
-    return;
+  const imageUrl = TeamNews.normalizeMlbImageUrl(item.imageUrl);
+  if (imageUrl) {
+    const hero = document.createElement("div");
+    hero.className = "team-news-article-hero";
+    hero.innerHTML = renderImage(imageUrl, "");
+    fragment.append(hero);
   }
+  const title = document.createElement("h3");
+  title.id = "teamNewsArticleTitle";
+  title.textContent = localized.title;
+  elements.teamNewsArticleTitle = title;
+  const meta = document.createElement("p");
+  meta.className = "team-news-article-meta";
+  meta.textContent = `${formatTeamNewsTime(item.publishedAt, language)} · ${item.author ? `${item.source} · ${item.author}` : item.source}`;
+  fragment.append(title, meta);
+  if (localized.summary) {
+    const summary = document.createElement("p");
+    summary.className = "team-news-article-summary";
+    summary.textContent = localized.summary;
+    fragment.append(summary);
+  }
+  const body = document.createElement("div");
+  body.className = "team-news-article-body";
+  if (paragraphs.length) {
+    paragraphs.forEach((paragraph) => {
+      const element = document.createElement("p");
+      element.textContent = paragraph;
+      body.append(element);
+    });
+  } else {
+    renderTeamNewsArticleMessage(
+      body,
+      language === "en" ? "Loading the MLB article..." : "正在准备中文正文..."
+    );
+  }
+  fragment.append(body);
+  elements.teamNewsArticleContent.lang = language === "en" ? "en" : "zh-CN";
+  elements.teamNewsArticleContent.replaceChildren(fragment);
+}
 
-  const bundledBody = TeamNews?.normalizeArticleParagraphs?.(
-    (() => {
-      const item = teamNewsState.items.find((candidate) => candidate.id === newsId);
-      return TeamNews?.localizeNewsItem?.(item, language)?.body;
-    })()
-  ) || [];
+async function ensureTeamNewsArticleBody(item) {
+  const englishKey = `en:${item.id}`;
+  const bundledBody = TeamNews.normalizeArticleParagraphs(item.bodyEn);
   if (bundledBody.length) {
-    teamNewsState.articleBodies.set(bodyKey, bundledBody);
-    renderTeamNewsArticleBody(body, bundledBody);
+    teamNewsState.articleBodies.set(englishKey, bundledBody);
+    renderTeamNewsArticle();
     return;
   }
-
-  if (teamNewsState.loadingBodies.has(newsId)) return;
-  teamNewsState.loadingBodies.add(newsId);
-  disclosure.disabled = true;
-  renderTeamNewsArticleMessage(body, language === "en" ? "Loading the MLB article..." : "正在读取 MLB 原文...");
+  if (teamNewsState.loadingBodies.has(item.id)) return;
+  teamNewsState.loadingBodies.add(item.id);
   try {
     const plugin = window.Capacitor?.Plugins?.SportsWidget;
     if (!plugin?.fetchMlbArticle) {
-      renderTeamNewsArticleMessage(body, language === "en" ? "Full article loading is available in the Android app." : "正文下拉阅读仅支持 Android 安装版。", true);
+      renderActiveTeamNewsArticleError("Full article loading is available in the Android app.");
       return;
     }
-    const result = await plugin.fetchMlbArticle({ url });
+    const result = await plugin.fetchMlbArticle({ url: item.url });
     const paragraphs = extractMlbArticleParagraphs(result?.html || "");
-    if (!paragraphs.length) throw new Error(language === "en" ? "The MLB article is not readable yet" : "MLB 页面暂未提供可读取正文");
-    teamNewsState.articleBodies.set(bodyKey, paragraphs);
-    if (body.isConnected) renderTeamNewsArticleBody(body, paragraphs);
+    if (!paragraphs.length) throw new Error("The MLB article is not readable yet");
+    teamNewsState.articleBodies.set(englishKey, paragraphs);
+    if (teamNewsState.activeArticleId === item.id) renderTeamNewsArticle();
   } catch (error) {
-    if (body.isConnected) renderTeamNewsArticleMessage(body, language === "en"
-      ? `Could not load the article: ${error.message || "Please try again later"}`
-      : `正文读取失败：${error.message || "请稍后重试"}`, true);
+    if (teamNewsState.activeArticleId === item.id) {
+      renderActiveTeamNewsArticleError(`Could not load the article: ${error.message || "Please try again later"}`);
+    }
   } finally {
-    teamNewsState.loadingBodies.delete(newsId);
-    if (disclosure.isConnected) disclosure.disabled = false;
+    teamNewsState.loadingBodies.delete(item.id);
   }
 }
 
@@ -999,38 +1015,9 @@ function extractMlbArticleParagraphs(html) {
   return description ? [description.slice(0, 1200)] : [];
 }
 
-function renderTeamNewsArticleBody(container, paragraphs) {
-  const fragment = document.createDocumentFragment();
-  paragraphs.forEach((paragraph) => {
-    const element = document.createElement("p");
-    element.textContent = paragraph;
-    fragment.append(element);
-  });
-  const collapseButton = document.createElement("button");
-  collapseButton.className = "team-news-collapse";
-  collapseButton.type = "button";
-  collapseButton.setAttribute("aria-label", teamNewsState.language === "en" ? "Collapse article" : "收起文章");
-  const icon = document.createElement("span");
-  icon.className = "team-news-collapse-icon";
-  icon.setAttribute("aria-hidden", "true");
-  const label = document.createElement("span");
-  label.textContent = teamNewsState.language === "en" ? "Collapse article" : "收起文章";
-  collapseButton.append(icon, label);
-  fragment.append(collapseButton);
-  container.replaceChildren(fragment);
-  container.classList.remove("is-error");
-}
-
-function collapseTeamNewsArticle(button) {
-  const article = button.closest(".team-news-item");
-  const disclosure = article?.querySelector(".team-news-disclosure");
-  const body = article?.querySelector(".team-news-article-body");
-  if (!article || !disclosure || !body) return;
-  disclosure.setAttribute("aria-expanded", "false");
-  body.hidden = true;
-  const reduceMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches === true;
-  article.scrollIntoView?.({ block: "start", behavior: reduceMotion ? "auto" : "smooth" });
-  disclosure.focus({ preventScroll: true });
+function renderActiveTeamNewsArticleError(message) {
+  const container = elements.teamNewsArticleContent.querySelector(".team-news-article-body");
+  if (container) renderTeamNewsArticleMessage(container, message, true);
 }
 
 function renderTeamNewsArticleMessage(container, message, isError = false) {

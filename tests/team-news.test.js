@@ -12,6 +12,18 @@ test("team news accepts only HTTPS MLB article links", () => {
   );
 });
 
+test("team news accepts only official MLB article images", () => {
+  assert.equal(TeamNews.normalizeMlbImageUrl("https://example.com/image.jpg"), "");
+  assert.equal(
+    TeamNews.normalizeMlbImageUrl("https://img.mlbstatic.com/mlb-images/image/upload/mlb/story.jpg"),
+    "https://img.mlbstatic.com/mlb-images/image/upload/mlb/story.jpg"
+  );
+  assert.match(
+    TeamNews.normalizeMlbImageUrl("https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w1536/mlb/story"),
+    /\/t_w640\//
+  );
+});
+
 test("team news payload is sorted and deduplicated", () => {
   const payload = TeamNews.normalizeNewsPayload({
     updatedAt: "2026-07-16T08:00:00Z",
@@ -159,6 +171,7 @@ test("live MLB feed keeps static bilingual content when payloads are merged", ()
       titleZh: "蓝鸟最新消息",
       summaryZh: "中文摘要",
       bodyZh: ["完整文章段落。"],
+      imageUrl: "https://img.mlbstatic.com/mlb-images/image/upload/mlb/story.jpg",
       publishedAt: "2026-07-17T13:00:00Z",
       url: "https://www.mlb.com/bluejays/news/article"
     }]
@@ -167,4 +180,5 @@ test("live MLB feed keeps static bilingual content when payloads are merged", ()
   assert.deepEqual(merged.bodyEn, ["Full article paragraph."]);
   assert.equal(merged.titleZh, "蓝鸟最新消息");
   assert.deepEqual(merged.bodyZh, ["完整文章段落。"]);
+  assert.match(merged.imageUrl, /^https:\/\/img\.mlbstatic\.com\//);
 });

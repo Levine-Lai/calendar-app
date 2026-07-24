@@ -30,26 +30,6 @@
           <div class="status-line" id="statusLine" role="status"></div>
         </section>
 
-        <section class="panel team-news-panel" aria-labelledby="teamNewsPanelTitle">
-          <div class="team-news-heading">
-            <img src="public/assets/teams/toronto-blue-jays.png" alt="" width="48" height="48">
-            <div>
-              <p class="eyebrow">MLB 主队</p>
-              <h2 id="teamNewsPanelTitle">多伦多蓝鸟新闻</h2>
-            </div>
-          </div>
-          <p class="team-news-preview" id="teamNewsPreview">部署新闻服务后，将在这里显示 MLB 官方英文新闻。</p>
-          <div class="team-news-actions">
-            <button class="primary-button" id="openTeamNewsBtn" type="button">查看新闻</button>
-            <button class="secondary-button" id="testTeamNewsPushBtn" type="button">测试通知</button>
-            <label class="toggle-row team-news-toggle">
-              <input id="teamNewsPushToggle" type="checkbox">
-              <span>准实时推送</span>
-            </label>
-          </div>
-          <p class="team-news-status" id="teamNewsPanelStatus" role="status" aria-live="polite"></p>
-        </section>
-
         <section class="panel import-panel">
           <div class="section-title">
             <span>联赛导入</span>
@@ -153,6 +133,24 @@
           </div>
         </header>
         <section id="calendarView" class="calendar-view"></section>
+        <section class="home-news-section" aria-labelledby="homeNewsTitle">
+          <header class="home-news-header">
+            <div class="team-news-heading">
+              <img src="public/assets/teams/toronto-blue-jays.png" alt="" width="48" height="48">
+              <div>
+                <p class="eyebrow">MLB · Toronto Blue Jays</p>
+                <h2 id="homeNewsTitle">Latest News</h2>
+              </div>
+            </div>
+            <label class="toggle-row team-news-toggle">
+              <input id="teamNewsPushToggle" type="checkbox">
+              <span>新闻推送</span>
+            </label>
+          </header>
+          <div class="home-news-list" id="homeNewsList"></div>
+          <p class="team-news-status" id="teamNewsPanelStatus" role="status" aria-live="polite"></p>
+          <button class="secondary-button home-news-more" id="openTeamNewsBtn" type="button">查看更多</button>
+        </section>
       </section>
     </main>
 
@@ -205,12 +203,26 @@
             </button>
           </div>
         </header>
-        <div class="team-news-language-tabs" role="tablist" aria-label="新闻语言">
-          <button class="team-news-language-tab is-active" id="teamNewsZhTab" type="button" role="tab" aria-selected="true" aria-controls="teamNewsList" data-language="zh">中文</button>
-          <button class="team-news-language-tab" id="teamNewsEnTab" type="button" role="tab" aria-selected="false" aria-controls="teamNewsList" data-language="en">English</button>
-        </div>
         <div class="team-news-modal-status" id="teamNewsModalStatus" role="status" aria-live="polite"></div>
-        <div class="day-modal-body team-news-list" id="teamNewsList" role="tabpanel" aria-labelledby="teamNewsZhTab"></div>
+        <div class="day-modal-body team-news-list" id="teamNewsList" lang="en"></div>
+      </section>
+    </div>
+
+    <div class="day-modal-overlay team-news-overlay team-news-article-overlay" id="teamNewsArticleModal" hidden>
+      <section class="day-modal team-news-modal team-news-article-page" role="dialog" aria-modal="true" aria-labelledby="teamNewsArticleTitle">
+        <header class="day-modal-header team-news-article-header">
+          <button class="icon-button" id="teamNewsArticleBack" title="返回新闻列表" aria-label="返回新闻列表">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+          </button>
+          <p class="eyebrow">MLB.com</p>
+          <div class="team-news-language-tabs" role="tablist" aria-label="文章语言">
+            <button class="team-news-language-tab is-active" id="teamNewsArticleEnTab" type="button" role="tab" aria-selected="true" data-language="en">English</button>
+            <button class="team-news-language-tab" id="teamNewsArticleZhTab" type="button" role="tab" aria-selected="false" data-language="zh">中文</button>
+          </div>
+        </header>
+        <article class="team-news-article-content" id="teamNewsArticleContent" lang="en">
+          <h3 id="teamNewsArticleTitle">News article</h3>
+        </article>
       </section>
     </div>
 

@@ -151,24 +151,6 @@ public class SportsWidgetPlugin extends Plugin {
     }
 
     @PluginMethod
-    public void sendTeamNewsTestNotification(PluginCall call) {
-        Context context = getContext().getApplicationContext();
-        if (!hasNotificationPermission()) {
-            call.reject("通知权限未开启");
-            return;
-        }
-        boolean displayed = NewsMessagingService.showNewsNotification(
-            context,
-            "观赛日记测试通知",
-            "通知权限和主队新闻频道工作正常。",
-            "",
-            "test-" + System.currentTimeMillis()
-        );
-        if (displayed) call.resolve();
-        else call.reject("系统通知权限或新闻通知频道已关闭");
-    }
-
-    @PluginMethod
     public void consumePendingNewsOpen(PluginCall call) {
         Intent intent = getActivity().getIntent();
         String rawUrl = intent == null ? "" : intent.getStringExtra(TeamNewsPushManager.EXTRA_NEWS_URL);

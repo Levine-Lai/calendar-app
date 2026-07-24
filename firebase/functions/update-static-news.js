@@ -9,9 +9,11 @@ const {
   parseBlueJaysFeed,
   buildStaticNewsUpdate,
   normalizeArticleParagraphs,
+  normalizeMlbImageUrl,
   normalizeMlbUrl,
   toMlbAmpUrl,
-  extractMlbArticleParagraphs
+  extractMlbArticleParagraphs,
+  extractMlbArticleImage
 } = require("./news-core");
 const {
   DEEPSEEK_ENDPOINT,
@@ -47,9 +49,9 @@ async function fetchFeed() {
   }
 }
 
-async function fetchArticleBody(item) {
+async function fetchArticleContent(item) {
   const articleUrl = toMlbAmpUrl(item.url);
-  if (!articleUrl) return [];
+  if (!articleUrl) return { bodyEn: [], imageUrl: "" };
   const response = await fetchWithTimeout(articleUrl, {
     headers: {
       accept: "text/html, application/xhtml+xml",
@@ -65,9 +67,13 @@ async function fetchArticleBody(item) {
   if (declaredLength > 768 * 1024) throw new Error("MLB article response exceeded 768 KB");
   const bytes = Buffer.from(await response.arrayBuffer());
   if (bytes.length > 768 * 1024) throw new Error("MLB article response exceeded 768 KB");
-  const paragraphs = extractMlbArticleParagraphs(bytes.toString("utf8"));
+  const html = bytes.toString("utf8");
+  const paragraphs = extractMlbArticleParagraphs(html);
   if (!paragraphs.length) throw new Error("MLB article did not contain readable paragraphs");
-  return paragraphs;
+  return {
+    bodyEn: paragraphs,
+    imageUrl: extractMlbArticleImage(html)
+  };
 }
 
 async function mapWithConcurrency(items, limit, mapper) {
@@ -90,15 +96,23 @@ async function enrichArticleBodies(items, previousPayload) {
       .filter(([id]) => id)
   );
   return mapWithConcurrency(items, 4, async (item) => {
-    const previousBody = normalizeArticleParagraphs(previousItems.get(item.id)?.bodyEn);
-    if (previousBody.length) return { ...item, bodyEn: previousBody };
+    const previous = previousItems.get(item.id);
+    const previousBody = normalizeArticleParagraphs(previous?.bodyEn);
+    const previousImage = normalizeMlbImageUrl(previous?.imageUrl);
+    if (previousBody.length && previousImage) {
+      return { ...item, bodyEn: previousBody, imageUrl: previousImage };
+    }
     try {
-      const bodyEn = await fetchArticleBody(item);
-      process.stdout.write(`Fetched article body: ${item.titleEn}\n`);
-      return { ...item, bodyEn };
+      const content = await fetchArticleContent(item);
+      process.stdout.write(`Fetched article content: ${item.titleEn}\n`);
+      return {
+        ...item,
+        bodyEn: previousBody.length ? previousBody : content.bodyEn,
+        imageUrl: previousImage || content.imageUrl
+      };
     } catch (error) {
-      process.stderr.write(`Article body skipped for ${item.titleEn}: ${error.message}\n`);
-      return { ...item, bodyEn: [] };
+      process.stderr.write(`Article content skipped for ${item.titleEn}: ${error.message}\n`);
+      return { ...item, bodyEn: previousBody, imageUrl: previousImage };
     }
   });
 }
@@ -468,7 +482,7 @@ if (require.main === module) {
 }
 
 module.exports = {
-  fetchArticleBody,
+  fetchArticleContent,
   enrichArticleBodies,
   translateArticle,
   enrichTranslations,

@@ -61,10 +61,12 @@ const checks = [
       && newsUpdater.includes("failedIds")
   ],
   [
-    "23 新闻正文底部收起",
-    app.includes("collapseTeamNewsArticle")
-      && app.includes("team-news-collapse")
-      && styles.includes(".team-news-collapse")
+    "23 新闻三级阅读与官方图片",
+    app.includes("renderHomeTeamNews")
+      && app.includes("openTeamNewsArticle")
+      && app.includes("normalizeMlbImageUrl")
+      && styles.includes(".team-news-article-page")
+      && newsUpdater.includes("extractMlbArticleImage")
   ]
 ];
 

@@ -38,6 +38,23 @@ function normalizeMlbUrl(value) {
   }
 }
 
+function normalizeMlbImageUrl(value) {
+  try {
+    const url = new URL(String(value || ""));
+    const hostname = url.hostname.toLowerCase();
+    const trustedHost = hostname === "mlbstatic.com"
+      || hostname.endsWith(".mlbstatic.com")
+      || hostname === "mlb.com"
+      || hostname.endsWith(".mlb.com");
+    if (url.protocol !== "https:" || !trustedHost) return "";
+    url.pathname = url.pathname.replace(/\/t_w\d{2,4}\//i, "/t_w640/");
+    url.hash = "";
+    return url.href;
+  } catch {
+    return "";
+  }
+}
+
 function toMlbAmpUrl(value) {
   const normalized = normalizeMlbUrl(value);
   if (!normalized) return "";
@@ -83,6 +100,18 @@ function extractMlbArticleParagraphs(html) {
   if (normalized.length) return normalized;
   const description = boundedText($("meta[name='description']").attr("content"), 1200);
   return description ? [description] : [];
+}
+
+function extractMlbArticleImage(html) {
+  const source = String(html || "");
+  if (!source || Buffer.byteLength(source, "utf8") > 768 * 1024) return "";
+  const $ = load(source);
+  return normalizeMlbImageUrl(
+    $("meta[property='og:image']").attr("content")
+      || $("meta[name='twitter:image']").attr("content")
+      || $("amp-img[src*='img.mlbstatic.com/mlb-images']").first().attr("src")
+      || $("article img").first().attr("src")
+  );
 }
 
 function stableNewsId(url) {
@@ -139,6 +168,7 @@ function publicNewsItem(data) {
     titleZh: boundedText(data.titleZh, 240),
     summaryZh: boundedText(data.summaryZh, 900),
     bodyZh: normalizeArticleParagraphs(data.bodyZh),
+    imageUrl: normalizeMlbImageUrl(data.imageUrl),
     translationSourceHash: boundedText(data.translationSourceHash, 64),
     translationModel: boundedText(data.translationModel, 80),
     translatedAt: normalizeIsoDate(data.translatedAt),
@@ -180,9 +210,11 @@ module.exports = {
   NEWS_TOPIC,
   RSS_URL,
   normalizeMlbUrl,
+  normalizeMlbImageUrl,
   toMlbAmpUrl,
   normalizeArticleParagraphs,
   extractMlbArticleParagraphs,
+  extractMlbArticleImage,
   stableNewsId,
   parseBlueJaysFeed,
   publicNewsItem,

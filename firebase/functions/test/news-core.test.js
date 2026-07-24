@@ -4,8 +4,10 @@ const {
   TEAM_ID,
   NEWS_TOPIC,
   normalizeMlbUrl,
+  normalizeMlbImageUrl,
   toMlbAmpUrl,
   extractMlbArticleParagraphs,
+  extractMlbArticleImage,
   parseBlueJaysFeed,
   publicNewsItem,
   buildStaticNewsUpdate
@@ -55,6 +57,17 @@ test("AMP article parser keeps bounded direct paragraphs", () => {
   assert.deepEqual(paragraphs, ["First paragraph.", "Section", "Item one"]);
 });
 
+test("MLB article parser accepts only official cover images", () => {
+  const imageUrl = "https://img.mlbstatic.com/mlb-images/image/upload/t_2x1/mlb/article.jpg";
+  assert.equal(extractMlbArticleImage(`<meta property="og:image" content="${imageUrl}">`), imageUrl);
+  assert.equal(extractMlbArticleImage(`<amp-img src="${imageUrl}" width="1024" height="576"></amp-img>`), imageUrl);
+  assert.match(
+    normalizeMlbImageUrl("https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w1536/mlb/article"),
+    /\/t_w640\//
+  );
+  assert.equal(normalizeMlbImageUrl("https://example.com/tracker.jpg"), "");
+});
+
 test("public news keeps bilingual content", () => {
   const item = publicNewsItem({
     id: "article-1",
@@ -64,6 +77,7 @@ test("public news keeps bilingual content", () => {
     titleZh: "蓝鸟补强牛棚",
     summaryZh: "多伦多新增一名后援投手。",
     bodyZh: ["完整文章段落。"],
+    imageUrl: "https://img.mlbstatic.com/mlb-images/image/upload/mlb/article.jpg",
     publishedAt: new Date("2026-07-16T04:30:00Z"),
     url: "https://www.mlb.com/bluejays/news/jays-add-reliever"
   });
@@ -72,6 +86,7 @@ test("public news keeps bilingual content", () => {
   assert.deepEqual(item.bodyEn, ["Full article paragraph."]);
   assert.equal(item.titleZh, "蓝鸟补强牛棚");
   assert.deepEqual(item.bodyZh, ["完整文章段落。"]);
+  assert.match(item.imageUrl, /^https:\/\/img\.mlbstatic\.com\//);
   assert.equal(NEWS_TOPIC, "toronto_blue_jays_news_en");
 });
 

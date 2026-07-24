@@ -23,6 +23,20 @@
     return hostname === "mlb.com" || hostname.endsWith(".mlb.com") ? normalized : "";
   }
 
+  function normalizeMlbImageUrl(value) {
+    const normalized = normalizeHttpsUrl(value);
+    if (!normalized) return "";
+    const hostname = new URL(normalized).hostname.toLowerCase();
+    const trustedHost = hostname === "mlbstatic.com"
+      || hostname.endsWith(".mlbstatic.com")
+      || hostname === "mlb.com"
+      || hostname.endsWith(".mlb.com");
+    if (!trustedHost) return "";
+    const url = new URL(normalized);
+    url.pathname = url.pathname.replace(/\/t_w\d{2,4}\//i, "/t_w640/");
+    return url.href;
+  }
+
   function boundedText(value, maxLength) {
     return String(value || "").replace(/\s+/g, " ").trim().slice(0, maxLength);
   }
@@ -63,6 +77,7 @@
       titleZh: boundedText(item.titleZh, 240),
       summaryZh: boundedText(item.summaryZh, 900),
       bodyZh: normalizeArticleParagraphs(item.bodyZh),
+      imageUrl: normalizeMlbImageUrl(item.imageUrl),
       translationSourceHash: boundedText(item.translationSourceHash, 64),
       translationModel: boundedText(item.translationModel, 80),
       translatedAt: normalizeDate(item.translatedAt),
@@ -171,6 +186,7 @@
           titleZh: item.titleZh || supplement.titleZh,
           summaryZh: item.summaryZh || supplement.summaryZh,
           bodyZh: item.bodyZh.length ? item.bodyZh : supplement.bodyZh,
+          imageUrl: item.imageUrl || supplement.imageUrl,
           translationSourceHash: item.translationSourceHash || supplement.translationSourceHash,
           translationModel: item.translationModel || supplement.translationModel,
           translatedAt: item.translatedAt || supplement.translatedAt,
@@ -216,6 +232,7 @@
   return {
     normalizeHttpsUrl,
     normalizeMlbUrl,
+    normalizeMlbImageUrl,
     normalizeArticleParagraphs,
     normalizeNewsItem,
     normalizeNewsPayload,
