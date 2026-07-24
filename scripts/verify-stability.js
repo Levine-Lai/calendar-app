@@ -17,6 +17,7 @@ const updateConfig = read("public/update-config.js");
 const newsWorker = read("android/app/src/main/java/com/local/sportscalendar/TeamNewsRefreshWorker.java");
 const newsPushManager = read("android/app/src/main/java/com/local/sportscalendar/TeamNewsPushManager.java");
 const newsUpdater = read("firebase/functions/update-static-news.js");
+const mainActivity = read("android/app/src/main/java/com/local/sportscalendar/MainActivity.java");
 const currentVersionCode = Number(updateConfig.match(/currentVersionCode:\s*(\d+)/)?.[1]);
 
 const tracked = (folder) => execFileSync("git", ["ls-files", folder], { cwd: root, encoding: "utf8" }).trim();
@@ -67,6 +68,15 @@ const checks = [
       && app.includes("normalizeMlbImageUrl")
       && styles.includes(".team-news-article-page")
       && newsUpdater.includes("extractMlbArticleImage")
+  ],
+  [
+    "24 手机新闻排版与返回",
+    styles.includes(".home-news-list .team-news-card-media")
+      && styles.includes("aspect-ratio: 16 / 9")
+      && app.includes("bindTeamNewsBackGestures")
+      && app.includes("SportsCalendarHandleBack")
+      && !app.includes("已自动同步")
+      && mainActivity.includes("window.SportsCalendarHandleBack")
   ]
 ];
 

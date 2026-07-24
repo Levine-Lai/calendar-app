@@ -18,7 +18,6 @@ const dayScoreRefreshes = new Map();
 const dayScoreRefreshTimes = new Map();
 const scoreRefreshTtlMs = 60 * 1000;
 const teamNewsCacheKey = "sports-fan-calendar:team-news:v1";
-const teamNewsCacheTtlMs = 10 * 60 * 1000;
 const teamNewsAutoRefreshMs = 5 * 60 * 1000;
 const teamNewsResumeRefreshMs = 2 * 60 * 1000;
 let teamLoadRequestId = 0;
@@ -416,6 +415,8 @@ function bindEvents() {
   elements.teamNewsArticleModal.addEventListener("click", (event) => {
     if (event.target === elements.teamNewsArticleModal) closeTeamNewsArticle();
   });
+  bindTeamNewsBackGestures();
+  window.SportsCalendarHandleBack = handleAppBack;
   window.addEventListener("sports-news-open", (event) => {
     handleTeamNewsOpen(event.detail?.url || "");
   });
@@ -560,10 +561,6 @@ function initializeTeamNews() {
     return;
   }
 
-  const age = Date.now() - Date.parse(teamNewsState.updatedAt || "");
-  if (teamNewsState.items.length && Number.isFinite(age) && age <= teamNewsCacheTtlMs) {
-    setTeamNewsPanelStatus(`已缓存 ${teamNewsState.items.length} 条蓝鸟新闻`);
-  }
   window.setTimeout(() => refreshTeamNews({ silent: true }), 400);
   window.setInterval(() => {
     if (!document.hidden) refreshTeamNews({ silent: true });
@@ -651,24 +648,18 @@ async function refreshTeamNews(options = {}) {
   teamNewsState.lastAttemptAt = Date.now();
   elements.refreshTeamNewsBtn.disabled = true;
   elements.refreshTeamNewsBtn.setAttribute("aria-busy", "true");
-  if (!options.silent) setTeamNewsStatus("正在同步蓝鸟队新闻...");
   try {
     const payload = await fetchTeamNewsPayload();
     teamNewsState.items = payload.items;
     teamNewsState.updatedAt = payload.updatedAt;
     cacheTeamNews(payload);
     renderTeamNews();
-    const message = payload.items.length
-      ? `${options.silent ? "已自动同步" : "已同步"} ${payload.items.length} 条中英双语新闻`
-      : "暂时没有可显示的蓝鸟队新闻";
-    setTeamNewsStatus(message);
-    setTeamNewsPanelStatus(message);
+    setTeamNewsStatus("");
     scrollToPendingTeamNews();
   } catch (error) {
     const message = `同步失败：${error.message || "网络不可用"}`;
     if (!options.silent || !teamNewsState.items.length) {
       setTeamNewsStatus(message, true);
-      setTeamNewsPanelStatus(teamNewsState.items.length ? "当前显示上次同步内容" : message, !teamNewsState.items.length);
     }
   } finally {
     teamNewsState.loading = false;
@@ -1051,6 +1042,10 @@ function bindSidebarGestures() {
   let startY = 0;
   let canOpen = false;
   document.addEventListener("touchstart", (event) => {
+    if (document.body.classList.contains("modal-open")) {
+      canOpen = false;
+      return;
+    }
     const touch = event.changedTouches[0];
     startX = touch.clientX;
     startY = touch.clientY;
@@ -1067,6 +1062,63 @@ function bindSidebarGestures() {
       closeSidebar();
     }
   }, { passive: true });
+}
+
+function bindTeamNewsBackGestures() {
+  const edgeWidth = 32;
+  const minDistance = 64;
+  let startX = 0;
+  let startY = 0;
+  let fromEdge = false;
+
+  document.addEventListener("touchstart", (event) => {
+    const newsOpen = !elements.teamNewsArticleModal.hidden || !elements.teamNewsModal.hidden;
+    if (!newsOpen) {
+      fromEdge = false;
+      return;
+    }
+    const touch = event.changedTouches[0];
+    startX = touch.clientX;
+    startY = touch.clientY;
+    fromEdge = startX <= edgeWidth || startX >= window.innerWidth - edgeWidth;
+  }, { passive: true });
+
+  document.addEventListener("touchend", (event) => {
+    if (!fromEdge) return;
+    fromEdge = false;
+    const touch = event.changedTouches[0];
+    const deltaX = touch.clientX - startX;
+    const deltaY = touch.clientY - startY;
+    const inwardSwipe = (startX <= edgeWidth && deltaX >= minDistance)
+      || (startX >= window.innerWidth - edgeWidth && deltaX <= -minDistance);
+    if (!inwardSwipe || Math.abs(deltaY) > Math.abs(deltaX) * 0.8) return;
+    if (!elements.teamNewsArticleModal.hidden) closeTeamNewsArticle();
+    else if (!elements.teamNewsModal.hidden) closeTeamNewsModal();
+  }, { passive: true });
+}
+
+function handleAppBack() {
+  if (!elements.teamNewsArticleModal.hidden) {
+    closeTeamNewsArticle();
+    return true;
+  }
+  if (!elements.teamNewsModal.hidden) {
+    closeTeamNewsModal();
+    return true;
+  }
+  if (!elements.deleteModal.hidden) {
+    closeDeleteModal();
+    return true;
+  }
+  if (!elements.dayModal.hidden) {
+    closeDayModal();
+    return true;
+  }
+  if (document.body.classList.contains("sidebar-open")) {
+    closeSidebar();
+    return true;
+  }
+  return false;
 }
 
 async function importSelectedLeague() {

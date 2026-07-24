@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.webkit.WebSettings;
 
+import androidx.activity.OnBackPressedCallback;
+
 import com.getcapacitor.BridgeActivity;
 
 import org.json.JSONObject;
@@ -22,6 +24,19 @@ public class MainActivity extends BridgeActivity {
         settings.setBlockNetworkImage(false);
         settings.setMixedContentMode(WebSettings.MIXED_CONTENT_NEVER_ALLOW);
         settings.setOffscreenPreRaster(true);
+        getOnBackPressedDispatcher().addCallback(this, new OnBackPressedCallback(true) {
+            @Override
+            public void handleOnBackPressed() {
+                if (getBridge() == null || getBridge().getWebView() == null) {
+                    runDefaultBack(this);
+                    return;
+                }
+                String script = "Boolean(window.SportsCalendarHandleBack && window.SportsCalendarHandleBack())";
+                getBridge().getWebView().evaluateJavascript(script, handled -> {
+                    if (!"true".equals(handled)) runDefaultBack(this);
+                });
+            }
+        });
         TeamNewsPushManager.restoreSubscription(getApplicationContext());
     }
 
@@ -30,6 +45,12 @@ public class MainActivity extends BridgeActivity {
         super.onNewIntent(intent);
         setIntent(intent);
         dispatchTeamNewsOpen(intent);
+    }
+
+    private void runDefaultBack(OnBackPressedCallback callback) {
+        callback.setEnabled(false);
+        getOnBackPressedDispatcher().onBackPressed();
+        callback.setEnabled(true);
     }
 
     private void dispatchTeamNewsOpen(Intent intent) {
