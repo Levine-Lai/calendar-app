@@ -1606,7 +1606,33 @@
 3. Web 测试 27 项、新闻任务测试 23 项、稳定性检查 23 项全部通过。
 4. Web 资源已同步到 Android 工程；Android JVM 测试与 `lintDebug` 成功。
 5. 推送提交 `f6376f8` 后，GitHub Actions 运行 `30065284292` 成功完成；机器人提交 `ee7bb0b` 已为远端 20 篇文章全部补齐官方封面。
-6. 本轮未打包 APK；手机端最新 APK 仍为 `2.2.6 / versionCode 28`，当前源码为 `2.2.7 / versionCode 29`。
+6. 修改完成时尚未打包；随后用户明确要求发布新版本，进入下方发布批次。
+
+### 发布批次：2.2.7 Debug APK
+
+#### 构建结果
+
+- 构建命令：`npm run build:android`，Gradle `assembleDebug` 成功。
+- APK：`releases/sports-calendar-2.2.7-debug.apk`。
+- 文件大小：`9,373,930` 字节。
+- 包名：`com.local.sportscalendar`。
+- 版本：`versionCode 29`、`versionName 2.2.7`。
+- APK Signature Scheme v2 验证通过，签名证书 SHA-256 为 `7ef83e3ec40b7bf1e9aaf551589ee73c378fc26f29202255f0466bcab759bed0`。
+- APK 文件 SHA-256：`6EED7E914774218DCB0D13548852CFB08B84215A6F3C9E09239ED4B66BD3B5D3`。
+
+#### 包内验收
+
+1. APK 内版本资源和前端缓存参数均为 `2.2.7`。
+2. APK 内置新闻 JSON 共 20 篇，20 篇全部包含 MLB 官方封面。
+3. 包含主页三篇新闻、英文摘要列表、独立全文页和中英文切换。
+4. “测试通知”入口与 Android 原生测试接口均已移除，真实 FCM 推送和后台检查保留。
+5. Web 测试、新闻任务测试、稳定性检查、Android JVM 测试与 Lint 均通过。
+
+#### 发布边界
+
+- 本地 APK 已生成，可覆盖安装并保留现有 App 数据。
+- `public/version.json` 仍保持 `2.2.1`，因为 `2.2.7` APK 尚无公开 HTTPS 下载地址；因此旧版 App 不会自动发现本次本地发布。
+- 手机端最新已生成 APK 与当前源码均为 `2.2.7 / versionCode 29`。
 
 ## 2026-07-22
 
