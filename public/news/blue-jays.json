@@ -1,8 +1,47 @@
 {
   "teamId": "toronto-blue-jays",
   "teamName": "多伦多蓝鸟",
-  "updatedAt": "2026-07-29T17:58:01.383Z",
+  "updatedAt": "2026-07-29T20:32:44.497Z",
   "items": [
+    {
+      "id": "a6790e7a4efd79cfd2928025332bc2bd658db109bd351be43597a5fc50e8050b",
+      "teamId": "toronto-blue-jays",
+      "teamName": "多伦多蓝鸟",
+      "titleEn": "One day after turning 23, Yesavage flashes ace potential vs. Nats",
+      "summaryEn": "",
+      "bodyEn": [
+        "WASHINGTON -- Rookie Trey Yesavage continues to pitch like the Blue Jays’ future ace. And on Wednesday afternoon, he was also their present-day stopper.",
+        "A day after his 23rd birthday, the right-hander allowed one run and three hits over 6 2/3 innings to help the Blue Jays secure their first series victory in three weeks with a 5-2 win over the Nationals in the rubber game.",
+        "After Ernie Clement’s game-tying double in the sixth, Daulton Varsho knocked in the go-ahead run with a seventh-inning infield single off Orlando Ribalto to secure Toronto's first series triumph since taking two of three against the Giants from July 6-8.",
+        "Varsho also helped Yesavage with two out-of-the-ordinary grabs in center field to deny Brady House, including a leaping warning-track catch in the first that may have prevented a home run.",
+        "Kazuma Okamoto added a two-run double in the eighth for his third hit, then scored on George Springer’s single to provide some welcome insurance.",
+        "Yesavage entered Wednesday receiving only 3.4 runs of support per nine innings, the eighth-lowest mark among the 112 pitchers with 15 or more starts across MLB.",
+        "But even when it was tight, Yesavage (5-5, 3.73 ERA) rarely encountered trouble, striking out four, walking three and facing only four batters with runners in scoring position. Three of those at-bats came in the fourth, when Jacob Young somehow reached a splitter well off the inside corner to loop a go-ahead two-out double to left before Jorbit Vivas grounded out to second.",
+        "The last came in the seventh when Yesavage struck out Vivas on a 2-2 slider that dove out of the zone before Tyler Rogers came on to retire Nasim Nuñez. Rogers got the one out before allowing a run when three straight batters reached in the eighth.",
+        "Louis Varland came on and cleaned up Rogers’ jam while preventing two inherited runners from scoring, then completed the ninth for his 23rd save. It was Varland’s second of the series, accomplishing that feat for the first time since consecutive saves against the Red Sox on June 16-17."
+      ],
+      "titleZh": "刚满23岁，Yesavage对阵国民展露王牌潜力",
+      "summaryZh": "Yesavage先发6.2局仅失1分，蓝鸟5-2击败国民赢得系列赛。",
+      "bodyZh": [
+        "华盛顿——新秀Trey Yesavage持续展现出蓝鸟未来王牌的风采。而在周三下午，他也充当了球队当下的止败者。",
+        "刚过完23岁生日的第二天，这位右投手在6又2/3局中仅失1分、被击出3支安打，帮助蓝鸟在系列赛决胜战中以5-2击败国民，取得三周来的首个系列赛胜利。",
+        "在Ernie Clement于第六局击出扳平比分的二垒安打后，Daulton Varsho在第七局从Orlando Ribalto手中敲出一支内野安打送回超前分，确保了多伦多自7月6日至8日对阵巨人队取得三战两胜以来的首个系列赛胜利。",
+        "Varsho还在中外野完成了两次非常规接杀，阻止了Brady House，包括在第一局一次在警告区前的飞身接球，可能阻挡了一记本垒打。",
+        "Kazuma Okamoto在第八局击出一支两分二垒安打，这是他本场第三支安打，随后靠George Springer的一垒安打跑回本垒，提供了额外的保险分。",
+        "在周三赛前，Yesavage每九局仅获得3.4分火力支援，在大联盟112名至少有15次先发的投手中排名倒数第八。",
+        "但即使局面紧张，Yesavage（5胜5败，自责分率3.73）也很少遇到麻烦，他三振4人、保送3人，仅面对4名在得点圈有跑者的打者。其中三次打席出现在第四局，当时Jacob Young竟然碰到了一颗偏离内角的指叉球，在两人出局后击出一支超前分的左外野二垒安打，随后Jorbit Vivas击出二垒方向滚地球出局。",
+        "最后一次是在第七局，Yesavage用一颗掉出好球带的2-2滑球三振了Vivas，随后Tyler Rogers上场解决了Nasim Nuñez。Rogers拿下这一出局后，在第八局连续让三名打者上垒，失掉一分。",
+        "Louis Varland上场清理了Rogers留下的残垒，阻止了两名接手跑者得分，随后完成第九局，拿下第23次救援成功。这是Varland在该系列赛中的第二次救援，也是自6月16日至17日连续对红袜取得救援以来的首次。"
+      ],
+      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/xut2cbuuaj4e2hozqglj",
+      "translationSourceHash": "869158ba94c88e97e0e67803a3c4e3b8c89863f884681c99339f47d67dd47ed2",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-07-29T20:32:44.496Z",
+      "author": "Ian Quillen",
+      "publishedAt": "2026-07-29T20:20:00.000Z",
+      "url": "https://www.mlb.com/bluejays/news/trey-yesavage-leads-blue-jays-to-series-win-over-nationals",
+      "source": "MLB.com"
+    },
     {
       "id": "61d9a57de0d1ed9ebfa48d24cbec3f66bb74c0cf326d56c477f74b735c92a940",
       "teamId": "toronto-blue-jays",
@@ -1056,47 +1095,6 @@
       "author": "Sam Dykstra, Jim Callis and Jonathan Mayo",
       "publishedAt": "2026-07-23T23:45:00.000Z",
       "url": "https://www.mlb.com/bluejays/news/biggest-movers-on-club-top-30-lists-2026",
-      "source": "MLB.com"
-    },
-    {
-      "id": "2d8fdcb271c4b986ba25c0bee19dc6b6487fb0a4cdb91a2724d49a66691b4905",
-      "teamId": "toronto-blue-jays",
-      "teamName": "多伦多蓝鸟",
-      "titleEn": "Bieber finding vintage form again with season-best 7-inning gem",
-      "summaryEn": "",
-      "bodyEn": [
-        "TORONTO -- Despite getting off to a slow start when he initially returned from the injured list in June, Shane Bieber looks to have found his groove for the Blue Jays.",
-        "That continued on Thursday, as Bieber silenced the American League-leading Rays bats over seven innings of one-run ball at Rogers Centre while surrendering just three hits in Toronto’s 3-1 victory.",
-        "The win snapped the Blue Jays’ four-game losing streak and ensured Toronto wasn’t swept by its division rival at home.",
-        "Bieber needed just 86 pitches (57 strikes) to get through his season-high in innings pitched, striking out three during an outing where he relied heavily upon his fastball. The 31-year-old threw his heater 33 times -- averaging 92.5 mph with the offering -- while mixing in a variety of changeups, cutters, knuckle curves, sinkers and sliders.",
-        "The only run Tampa Bay managed came after a two-out rally in the third inning, when Hunter Feduccia doubled off the right-field wall before Yandy Díaz brought him home with a single on a 1-0 breaking ball.",
-        "After allowing 12 combined runs through his first three starts off the injured list, Bieber has now rattled off three consecutive positive outings as he continues to take steps in the right direction now that he’s settled back into the Major Leagues.",
-        "Bieber seemingly began his turnaround in a July 10 start against the Padres, where he settled in after two first-inning runs before shutting down San Diego for the next 3 2/3 frames. He then came out of the break with six scoreless frames against the White Sox on Saturday, striking out a season-best six batters.",
-        "“I think that he's kind of been trending up from his outing in San Diego to his last one,” Blue Jays manager John Schneider said of Bieber pregame. “I think that he's kind of kicked the rust off a little bit from the layoff, and he's in a better spot delivery-wise.”",
-        "Toronto delivered enough offense to back its starter on Thursday, thanks to some heads-up baserunning from Ernie Clement in the first inning and RBI singles from George Springer and Vladimir Guerrero Jr. in the third and seventh innings.",
-        "Clement opened the scoring when he raced around from second after an Alejandro Kirk infield hit got away from Rays third baseman Junior Caminero, allowing the Blue Jays to steal a run right out of the gate."
-      ],
-      "titleZh": "比伯重现巅峰，赛季最佳7局精彩表现",
-      "summaryZh": "比伯7局失1分，助蓝鸟3-1胜光芒，终结4连败。",
-      "bodyZh": [
-        "多伦多——尽管6月从伤病名单回归后开局缓慢，但Shane Bieber似乎已为蓝鸟找到了节奏。",
-        "周四，比伯在罗杰斯中心主投7局仅失1分，只被敲出3支安打，压制了美国联盟领先的光芒打线，帮助多伦多3-1获胜。",
-        "这场胜利终结了蓝鸟的四连败，并确保多伦多未在主场被分区对手横扫。",
-        "比伯仅用86球（57好球）就完成了赛季最高的投球局数，他大量依赖速球，三振了3名打者。这位31岁投手投了33颗速球，平均球速92.5英里/小时，同时混合了各种变速球、卡特球、指叉曲球、伸卡球和滑球。",
-        "坦帕湾的唯一得分来自第三局两出局后的反攻，Hunter Feduccia击出右外野墙上的二垒安打，随后Yandy Díaz在1-0的变速球上击出一垒安打将他送回本垒。",
-        "在从伤病名单回归后的前三场先发中共失12分后，比伯现已连续三场表现出色，随着他重新适应大联盟，正在朝正确方向不断迈进。",
-        "比伯似乎从7月10日对教士的先发开始反弹，当时他在首局失2分后稳住阵脚，随后3又2/3局封锁了圣迭戈。全明星赛后，他在周六对白袜的比赛中投了6局无失分，三振了赛季最高的6名打者。",
-        "“我认为他从圣地亚哥那场到最近一场一直在上升，”蓝鸟总教练John Schneider赛前谈到比伯时说。“我认为他因休战而生疏的状态已有所恢复，投球机制也更好了。”",
-        "多伦多周四也为先发投手提供了足够的火力支持，这得益于Ernie Clement在第一局机智的跑垒，以及George Springer和Vladimir Guerrero Jr.分别在第三局和第七局击出的打点一垒安打。",
-        "Clement率先得分，他乘Alejandro Kirk的内野安打被光芒三垒手Junior Caminero漏接之机，从二垒跑回本垒，让蓝鸟一开场就偷到一分。"
-      ],
-      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/xwvrk5zt2voub0oon9xp",
-      "translationSourceHash": "0673cf90ca4881340d37dcd7deed597f3c3760fd126a8a16c09d5d83002165c8",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-07-23T21:46:05.228Z",
-      "author": "Zach Worden",
-      "publishedAt": "2026-07-23T22:52:00.000Z",
-      "url": "https://www.mlb.com/bluejays/news/shane-bieber-tosses-seven-innings-in-blue-jays-win-vs-rays",
       "source": "MLB.com"
     }
   ],
