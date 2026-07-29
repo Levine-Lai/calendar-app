@@ -1,13 +1,46 @@
 {
   "teamId": "toronto-blue-jays",
   "teamName": "多伦多蓝鸟",
-  "updatedAt": "2026-07-29T20:32:44.497Z",
+  "updatedAt": "2026-07-29T22:31:09.255Z",
   "items": [
+    {
+      "id": "61d9a57de0d1ed9ebfa48d24cbec3f66bb74c0cf326d56c477f74b735c92a940",
+      "teamId": "toronto-blue-jays",
+      "teamName": "多伦多蓝鸟",
+      "titleEn": "Vladdy (hamstring) day to day after missing Wednesday's game",
+      "summaryEn": "",
+      "bodyEn": [
+        "WASHINGTON -- Vladimir Guerrero Jr. exited in the middle of the fourth inning of the Blue Jays’ game at the Nationals on Tuesday night with right hamstring tightness after running out an infield single in the top of the third.",
+        "Kazuma Okamoto entered at first base and then homered in the top of the fifth to close Toronto’s deficit to 7-3.",
+        "In his second at-bat of a game delayed more than an hour by torrential storms passing through the region before first pitch, Guerrero pulled Cade Cavalli’s first-pitch offering down the third-base line and raced to the bag to beat the errant throw of the charging Jorbit Vivas.",
+        "As Vivas’ throw bounded away from Luis García Jr., Guerrero turned and hustled toward second as the Jays’ first run of the game scored, but showed slight signs of discomfort.",
+        "Guerrero has played in 103 of Toronto’s 108 games this season, but has lacked the power stroke fans have come to expect of the six-time All-Star.",
+        "He’s slashing .265/.345/.357 with six home runs. The slugging percentage is nearly 100 points off his previous low for a single season, and his homer total is three below the nine he hit during the pandemic-shorted 2020 campaign."
+      ],
+      "titleZh": "小弗拉迪（腿筋）周三缺阵后每日观察",
+      "summaryZh": "",
+      "bodyZh": [
+        "华盛顿——周二晚蓝鸟对阵国民的比赛中，弗拉迪米尔·格雷罗 Jr. 在第四局中因右腿筋紧绷退场，此前他在第三局上半击出内野安打后跑垒时受伤。",
+        "冈本和真进入一垒防守，并在第五局上半轰出本垒打，将多伦多的分差缩小至7-3。",
+        "在首球前因暴雨延迟超过一小时的比赛中的第二次打席，格雷罗将卡德·卡瓦利的第一个球拉向三垒线，并快速冲上一垒，躲过了冲上前来的乔比特·维瓦斯的传球失误。",
+        "当维瓦斯的传球从路易斯·加西亚 Jr. 身边弹开时，格雷罗转身冲向二垒，为蓝鸟队拿下本场比赛的第一分，但表现出轻微的不适迹象。",
+        "格雷罗本赛季在多伦多108场比赛中出场103次，但缺乏球迷对这位六届全明星球员期待的长打火力。",
+        "他本赛季打击率为.265/.345/.357，有6支本垒打。长打率比他个人单赛季最低值低了近100点，本垒打总数比因疫情缩短的2020赛季的9支还少3支。"
+      ],
+      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/kc4iibhpbb1gmfsvjtxu",
+      "translationSourceHash": "e60bf0d5afbcd8ccdedd62ea0563f398986eee645879f77885948cf0f5330623",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-07-29T22:31:01.861Z",
+      "author": "Ian Quillen",
+      "publishedAt": "2026-07-29T21:54:00.000Z",
+      "url": "https://www.mlb.com/bluejays/news/vladimir-guerrero-jr-exits-with-right-leg-injury",
+      "source": "MLB.com"
+    },
     {
       "id": "a6790e7a4efd79cfd2928025332bc2bd658db109bd351be43597a5fc50e8050b",
       "teamId": "toronto-blue-jays",
       "teamName": "多伦多蓝鸟",
-      "titleEn": "One day after turning 23, Yesavage flashes ace potential vs. Nats",
+      "titleEn": "One day after turning 23, Yesavage flashes ace stuff vs. Nats",
       "summaryEn": "",
       "bodyEn": [
         "WASHINGTON -- Rookie Trey Yesavage continues to pitch like the Blue Jays’ future ace. And on Wednesday afternoon, he was also their present-day stopper.",
@@ -20,59 +53,26 @@
         "The last came in the seventh when Yesavage struck out Vivas on a 2-2 slider that dove out of the zone before Tyler Rogers came on to retire Nasim Nuñez. Rogers got the one out before allowing a run when three straight batters reached in the eighth.",
         "Louis Varland came on and cleaned up Rogers’ jam while preventing two inherited runners from scoring, then completed the ninth for his 23rd save. It was Varland’s second of the series, accomplishing that feat for the first time since consecutive saves against the Red Sox on June 16-17."
       ],
-      "titleZh": "刚满23岁，Yesavage对阵国民展露王牌潜力",
-      "summaryZh": "Yesavage先发6.2局仅失1分，蓝鸟5-2击败国民赢得系列赛。",
+      "titleZh": "迈入23岁后首战，Yesavage对国民展现王牌身手",
+      "summaryZh": "蓝鸟新秀Yesavage生日后一天投出6.2局失1分，5-2赢国民夺系列赛。",
       "bodyZh": [
-        "华盛顿——新秀Trey Yesavage持续展现出蓝鸟未来王牌的风采。而在周三下午，他也充当了球队当下的止败者。",
-        "刚过完23岁生日的第二天，这位右投手在6又2/3局中仅失1分、被击出3支安打，帮助蓝鸟在系列赛决胜战中以5-2击败国民，取得三周来的首个系列赛胜利。",
-        "在Ernie Clement于第六局击出扳平比分的二垒安打后，Daulton Varsho在第七局从Orlando Ribalto手中敲出一支内野安打送回超前分，确保了多伦多自7月6日至8日对阵巨人队取得三战两胜以来的首个系列赛胜利。",
-        "Varsho还在中外野完成了两次非常规接杀，阻止了Brady House，包括在第一局一次在警告区前的飞身接球，可能阻挡了一记本垒打。",
-        "Kazuma Okamoto在第八局击出一支两分二垒安打，这是他本场第三支安打，随后靠George Springer的一垒安打跑回本垒，提供了额外的保险分。",
-        "在周三赛前，Yesavage每九局仅获得3.4分火力支援，在大联盟112名至少有15次先发的投手中排名倒数第八。",
-        "但即使局面紧张，Yesavage（5胜5败，自责分率3.73）也很少遇到麻烦，他三振4人、保送3人，仅面对4名在得点圈有跑者的打者。其中三次打席出现在第四局，当时Jacob Young竟然碰到了一颗偏离内角的指叉球，在两人出局后击出一支超前分的左外野二垒安打，随后Jorbit Vivas击出二垒方向滚地球出局。",
-        "最后一次是在第七局，Yesavage用一颗掉出好球带的2-2滑球三振了Vivas，随后Tyler Rogers上场解决了Nasim Nuñez。Rogers拿下这一出局后，在第八局连续让三名打者上垒，失掉一分。",
-        "Louis Varland上场清理了Rogers留下的残垒，阻止了两名接手跑者得分，随后完成第九局，拿下第23次救援成功。这是Varland在该系列赛中的第二次救援，也是自6月16日至17日连续对红袜取得救援以来的首次。"
+        "WASHINGTON -- 新秀 Trey Yesavage 继续像蓝鸟未来的王牌那样投球。而在周三下午，他也是当下球队的止败者。",
+        "在他23岁生日后一天，这位右投手投了6 2/3局，失1分，仅被击出3支安打，帮助蓝鸟在决胜战中以5-2击败国民，赢得三周以来的首个系列赛胜利。",
+        "在Ernie Clement于第六局击出追平二垒安打后，Daulton Varsho在第七局从Orlando Ribalto手中击出内野安打打回超前分，确保蓝鸟自7月6日至8日对阵巨人赢得三场中的两场以来首次系列赛胜利。",
+        "Varsho在中外野两次非同寻常的接杀也帮助了Yesavage，阻挡了Brady House，包括第一局在警告线附近的一次跳跃接杀，可能阻止了一发本垒打。",
+        "Kazuma Okamoto在第八局击出两分二垒安打，这是他本场第三支安打，随后在George Springer的安打中得分，提供了一些受欢迎的保险分。",
+        "进入周三比赛时，Yesavage每九局仅获得3.4分的支援，这在全MLB中至少15次先发的112名投手中排名倒数第八。",
+        "但即使比分胶着，Yesavage（5胜5败，自责分率3.73）也很少陷入麻烦，他三振四人，保送三人，仅面对四名打者时跑者在得点圈。其中三次打席出现在第四局，当时Jacob Young不知何故碰到了一个内角偏外的指叉球，击出超前两分二垒安打至左外野，随后Jorbit Vivas滚地球出局至二垒。",
+        "最后一次在第七局，Yesavage用一记2-2的滑球三振Vivas，球掉出好球带，随后Tyler Rogers上场解决Nasim Nuñez。Rogers只投一人次出局，但在第八局连续三名打者上垒，失掉一分。",
+        "Louis Varland上场清理Rogers留下的残局，阻止了两名继承跑者得分，随后完成第九局，拿下第23次救援。这是Varland系列赛的第二次救援，自6月16-17日连续救援成功对阵红袜以来首次达成这一成就。"
       ],
       "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/xut2cbuuaj4e2hozqglj",
-      "translationSourceHash": "869158ba94c88e97e0e67803a3c4e3b8c89863f884681c99339f47d67dd47ed2",
+      "translationSourceHash": "3d6f18e02ac0c63b6eec77c6a34ce2dc5a488f5809fdf40a121675ee0dcf1579",
       "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-07-29T20:32:44.496Z",
+      "translatedAt": "2026-07-29T22:31:09.255Z",
       "author": "Ian Quillen",
-      "publishedAt": "2026-07-29T20:20:00.000Z",
+      "publishedAt": "2026-07-29T21:27:00.000Z",
       "url": "https://www.mlb.com/bluejays/news/trey-yesavage-leads-blue-jays-to-series-win-over-nationals",
-      "source": "MLB.com"
-    },
-    {
-      "id": "61d9a57de0d1ed9ebfa48d24cbec3f66bb74c0cf326d56c477f74b735c92a940",
-      "teamId": "toronto-blue-jays",
-      "teamName": "多伦多蓝鸟",
-      "titleEn": "Vladdy (hamstring) not in Wednesday's lineup; potentially available off bench",
-      "summaryEn": "",
-      "bodyEn": [
-        "WASHINGTON -- Vladimir Guerrero Jr. exited in the middle of the fourth inning of the Blue Jays’ game at the Nationals on Tuesday night with right hamstring tightness after running out an infield single in the top of the third.",
-        "Kazuma Okamoto entered at first base and then homered in the top of the fifth to close Toronto’s deficit to 7-3.",
-        "In his second at-bat of a game delayed more than an hour by torrential storms passing through the region before first pitch, Guerrero pulled Cade Cavalli’s first-pitch offering down the third-base line and raced to the bag to beat the errant throw of the charging Jorbit Vivas.",
-        "As Vivas’ throw bounded away from Luis García Jr., Guerrero turned and hustled toward second as the Jays’ first run of the game scored, but showed slight signs of discomfort.",
-        "Guerrero has played in 103 of Toronto’s 108 games this season, but has lacked the power stroke fans have come to expect of the six-time All-Star.",
-        "He’s slashing .265/.345/.357 with six home runs. The slugging percentage is nearly 100 points off his previous low for a single season, and his homer total is three below the nine he hit during the pandemic-shorted 2020 campaign."
-      ],
-      "titleZh": "小葛（腿筋）未进周三先发阵容；可能替补上场",
-      "summaryZh": "小葛因腿筋伤势未进入周三先发，可能替补上场。",
-      "bodyZh": [
-        "华盛顿讯——小弗拉基米尔·格雷罗（Vladimir Guerrero Jr.）在周二晚间蓝鸟对阵国民的比赛中，于第四局中途因右腿筋紧绷退场，此前他在第三局上半击出内场一垒安打后跑垒时受伤。",
-        "冈本和真（Kazuma Okamoto）替补上场守一垒，随后在第五局上半击出本垒打，将蓝鸟的分差缩小至7-3。",
-        "在因开赛前该地区遭遇暴雨导致比赛推迟一个多小时后的第二次打席中，格雷罗将Cade Cavalli的第一球拉打至三垒边线，并快速冲上一垒，避开了Jorbit Vivas冲上来后的暴传。",
-        "当Vivas的传球偏离Luis García Jr.时，格雷罗转身冲向二垒，蓝鸟本场第一分跑回本垒，但他显示出轻微的不适。",
-        "格雷罗本赛季在蓝鸟的108场比赛中出战了103场，但缺乏球迷对这位六届全明星球员所期望的重炮表现。",
-        "他目前的打击三围是.265/.345/.357，有六支本垒打。长打率几乎比其此前单赛季最低值低了近100点，本垒打总数比2020年因疫情缩短的赛季中的9支少了3支。"
-      ],
-      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/kc4iibhpbb1gmfsvjtxu",
-      "translationSourceHash": "18a4fe03d8f8cc2dbf0fd70993ce7769fdd2a619cc1c7083c3898bb5820d3c98",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-07-29T17:58:01.382Z",
-      "author": "Ian Quillen",
-      "publishedAt": "2026-07-29T16:43:00.000Z",
-      "url": "https://www.mlb.com/bluejays/news/vladimir-guerrero-jr-exits-with-right-leg-injury",
       "source": "MLB.com"
     },
     {
