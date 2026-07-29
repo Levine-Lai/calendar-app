@@ -1,8 +1,41 @@
 {
   "teamId": "toronto-blue-jays",
   "teamName": "多伦多蓝鸟",
-  "updatedAt": "2026-07-29T16:40:55.342Z",
+  "updatedAt": "2026-07-29T17:58:01.383Z",
   "items": [
+    {
+      "id": "61d9a57de0d1ed9ebfa48d24cbec3f66bb74c0cf326d56c477f74b735c92a940",
+      "teamId": "toronto-blue-jays",
+      "teamName": "多伦多蓝鸟",
+      "titleEn": "Vladdy (hamstring) not in Wednesday's lineup; potentially available off bench",
+      "summaryEn": "",
+      "bodyEn": [
+        "WASHINGTON -- Vladimir Guerrero Jr. exited in the middle of the fourth inning of the Blue Jays’ game at the Nationals on Tuesday night with right hamstring tightness after running out an infield single in the top of the third.",
+        "Kazuma Okamoto entered at first base and then homered in the top of the fifth to close Toronto’s deficit to 7-3.",
+        "In his second at-bat of a game delayed more than an hour by torrential storms passing through the region before first pitch, Guerrero pulled Cade Cavalli’s first-pitch offering down the third-base line and raced to the bag to beat the errant throw of the charging Jorbit Vivas.",
+        "As Vivas’ throw bounded away from Luis García Jr., Guerrero turned and hustled toward second as the Jays’ first run of the game scored, but showed slight signs of discomfort.",
+        "Guerrero has played in 103 of Toronto’s 108 games this season, but has lacked the power stroke fans have come to expect of the six-time All-Star.",
+        "He’s slashing .265/.345/.357 with six home runs. The slugging percentage is nearly 100 points off his previous low for a single season, and his homer total is three below the nine he hit during the pandemic-shorted 2020 campaign."
+      ],
+      "titleZh": "小葛（腿筋）未进周三先发阵容；可能替补上场",
+      "summaryZh": "小葛因腿筋伤势未进入周三先发，可能替补上场。",
+      "bodyZh": [
+        "华盛顿讯——小弗拉基米尔·格雷罗（Vladimir Guerrero Jr.）在周二晚间蓝鸟对阵国民的比赛中，于第四局中途因右腿筋紧绷退场，此前他在第三局上半击出内场一垒安打后跑垒时受伤。",
+        "冈本和真（Kazuma Okamoto）替补上场守一垒，随后在第五局上半击出本垒打，将蓝鸟的分差缩小至7-3。",
+        "在因开赛前该地区遭遇暴雨导致比赛推迟一个多小时后的第二次打席中，格雷罗将Cade Cavalli的第一球拉打至三垒边线，并快速冲上一垒，避开了Jorbit Vivas冲上来后的暴传。",
+        "当Vivas的传球偏离Luis García Jr.时，格雷罗转身冲向二垒，蓝鸟本场第一分跑回本垒，但他显示出轻微的不适。",
+        "格雷罗本赛季在蓝鸟的108场比赛中出战了103场，但缺乏球迷对这位六届全明星球员所期望的重炮表现。",
+        "他目前的打击三围是.265/.345/.357，有六支本垒打。长打率几乎比其此前单赛季最低值低了近100点，本垒打总数比2020年因疫情缩短的赛季中的9支少了3支。"
+      ],
+      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/kc4iibhpbb1gmfsvjtxu",
+      "translationSourceHash": "18a4fe03d8f8cc2dbf0fd70993ce7769fdd2a619cc1c7083c3898bb5820d3c98",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-07-29T17:58:01.382Z",
+      "author": "Ian Quillen",
+      "publishedAt": "2026-07-29T16:43:00.000Z",
+      "url": "https://www.mlb.com/bluejays/news/vladimir-guerrero-jr-exits-with-right-leg-injury",
+      "source": "MLB.com"
+    },
     {
       "id": "7e9000313c47368fe2a76d65ae126941f1bfce63ec0dcd7280563bdd4d1caec1",
       "teamId": "toronto-blue-jays",
@@ -119,39 +152,6 @@
       "author": "Ian Quillen",
       "publishedAt": "2026-07-29T06:01:00.000Z",
       "url": "https://www.mlb.com/bluejays/news/shane-bieber-six-walks-two-thirds-innings-blue-jays-lose-to-nationals",
-      "source": "MLB.com"
-    },
-    {
-      "id": "61d9a57de0d1ed9ebfa48d24cbec3f66bb74c0cf326d56c477f74b735c92a940",
-      "teamId": "toronto-blue-jays",
-      "teamName": "多伦多蓝鸟",
-      "titleEn": "Vladdy likely to sit Wednesday due to right hamstring tightness",
-      "summaryEn": "",
-      "bodyEn": [
-        "WASHINGTON -- Vladimir Guerrero Jr. exited in the middle of the fourth inning of the Blue Jays’ game at the Nationals on Tuesday night with right hamstring tightness after running out an infield single in the top of the third.",
-        "Kazuma Okamoto entered at first base and then homered in the top of the fifth to close Toronto’s deficit to 7-3.",
-        "In his second at-bat of a game delayed more than an hour by torrential storms passing through the region before first pitch, Guerrero pulled Cade Cavalli’s first-pitch offering down the third-base line and raced to the bag to beat the errant throw of the charging Jorbit Vivas.",
-        "As Vivas’ throw bounded away from Luis García Jr., Guerrero turned and hustled toward second as the Jays’ first run of the game scored, but showed slight signs of discomfort.",
-        "Guerrero has played in 103 of Toronto’s 108 games this season, but has lacked the power stroke fans have come to expect of the six-time All-Star.",
-        "He’s slashing .265/.345/.357 with six home runs. The slugging percentage is nearly 100 points off his previous low for a single season, and his homer total is three below the nine he hit during the pandemic-shorted 2020 campaign."
-      ],
-      "titleZh": "Vladdy因右腿筋紧张可能周三缺阵",
-      "summaryZh": "小格雷罗因右腿筋紧张提前退场，可能缺席周三比赛。",
-      "bodyZh": [
-        "华盛顿——小弗拉迪米尔·格雷罗在周二晚上蓝鸟对阵国民的比赛中，于第三局上半击出内野安打后因右腿筋紧张，在第四局中途退场。",
-        "冈本和马进入一垒防守，并在第五局上半击出本垒打，将蓝鸟的落后分差缩小至7-3。",
-        "在比赛因暴雨延迟一个多小时后，格雷罗的第二次打席中，他将Cade Cavalli的第一球拉向三垒线，并快速冲上一垒，避开了Jorbit Vivas的传球失误。",
-        "当Vivas的传球从Luis García Jr.身边弹开时，格雷罗转身冲向二垒，为蓝鸟拿下本场比赛的第一分，但显示出轻微的不适迹象。",
-        "格雷罗本赛季在蓝鸟的108场比赛中出战了103场，但缺乏球迷对这位六届全明星球员所期待的长打火力。",
-        "他的打击三围为.265/.345/.357，有6支本垒打。长打率比其单赛季最低纪录低了近100点，本垒打总数比因疫情缩短的2020赛季的9支还少3支。"
-      ],
-      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/kc4iibhpbb1gmfsvjtxu",
-      "translationSourceHash": "993dccde31c41f6ed94ff3fb171f3671611697b339bacd36eef663a6cecc0238",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-07-29T06:20:19.580Z",
-      "author": "Ian Quillen",
-      "publishedAt": "2026-07-29T05:12:00.000Z",
-      "url": "https://www.mlb.com/bluejays/news/vladimir-guerrero-jr-exits-with-right-leg-injury",
       "source": "MLB.com"
     },
     {
