@@ -1,12 +1,13 @@
 {
-  "versionCode": 23,
-  "versionName": "2.2.1",
-  "apkUrl": "",
+  "versionCode": 33,
+  "versionName": "2.2.11",
+  "apkUrl": "https://github.com/Levine-Lai/calendar-app/releases/download/v2.2.11/sports-calendar-2.2.11-debug.apk",
   "notes": [
-    "新增多伦多蓝鸟英文新闻页面，支持手动刷新和本地缓存",
-    "通过 GitHub Actions 定时读取 MLB 官方 RSS，直接展示英文标题和摘要",
-    "支持准实时英文新闻推送，点击通知可打开对应的 MLB 原文",
-    "应用图标改为单独的像素跑步小人，没有比赛时组件区域保持空白"
+    "新闻桌面组件调整为 4×3，可左右滑动查看最近三条新闻",
+    "开屏动画缩短为 1.5 秒",
+    "优化新闻图片、标题与日期、来源、作者信息布局",
+    "修复新闻组件跨日期刷新时图片偶发缺失",
+    "首页仅保留最新一条新闻并精简推送区域"
   ],
   "force": false
 }
