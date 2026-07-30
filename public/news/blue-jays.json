@@ -1,43 +1,8 @@
 {
   "teamId": "toronto-blue-jays",
   "teamName": "多伦多蓝鸟",
-  "updatedAt": "2026-07-30T06:43:23.641Z",
+  "updatedAt": "2026-07-30T18:24:53.805Z",
   "items": [
-    {
-      "id": "2eacdc23976493aeaa05e75c9fd80dee91faca8bc69185284f5eb1c6d2ebcfb4",
-      "teamId": "toronto-blue-jays",
-      "teamName": "多伦多蓝鸟",
-      "titleEn": "Sánchez (ankle) nearing return to Blue Jays",
-      "summaryEn": "No. 10 prospect Tiedemann resumes rehab with Single-A Dunedin",
-      "bodyEn": [
-        "Blue Jays outfielder Jesús Sánchez went 2-for-3 with a pair of singles and was hit by a pitch during Triple-A Buffalo’s 5-4 win over Lehigh Valley on Wednesday as he nears activation off the injured list, where he’s been since late June due to a right ankle sprain. He played seven innings in left field before being replaced by a pinch-hitter in the eighth.",
-        "Wednesday’s rehab game was Sánchez’s first with Buffalo after he played one game for Toronto’s Florida Complex League club and two with Single-A Dunedin. Over those three contests, the 28-year-old was 1-for-7 (.143) with a pair of walks.",
-        "The Jays’ targeted return for Sánchez has been the end of this month, and as we approach August, he seems to be in line for an imminent return after Wednesday’s performance.",
-        "Prior to his injury, Sánchez had a .274/.316/.437 slash line with seven home runs in 234 plate appearances for Toronto after the Blue Jays acquired him in an offseason trade with the Astros.",
-        "Also on a rehab assignment is the Blue Jays’ No. 10 prospect per MLB Pipeline, left-hander Ricky Tiedemann. Tiedemann experienced left elbow soreness as he continued his recovery from 2024 Tommy John surgery, but he made his first appearance in a professional game in 706 days on June 16, pitching for the FCL club.",
-        "Following that start, he was scratched from his next appearance due to a neck issue. He returned to the mound earlier this month, making another start for the FCL team before pitching in a game for Dunedin.",
-        "On Wednesday, Tiedemann was back on the mound for Dunedin, throwing a scoreless sixth inning with a strikeout in a 14-9 win over St. Lucie. The Jays hope to build Tiedemann up to the point where he’s pitching regularly out of the bullpen in Triple-A."
-      ],
-      "titleZh": "桑切斯（脚踝）接近复出蓝鸟",
-      "summaryZh": "10号潜力新秀Tiedemann在1A Dunedin恢复康复",
-      "bodyZh": [
-        "蓝鸟外野手Jesús Sánchez周三在3A Buffalo对阵Lehigh Valley的比赛中5打数2安打，两支一垒安打，并被一次触身球击中，球队5-4获胜。他自6月下旬因右脚踝扭伤进入伤病名单，即将被激活。他在左外野防守了7局，第八局被代打替换。",
-        "周三的康复赛是Sánchez在Buffalo的第一场，此前他为多伦多的佛罗里达综合联盟球队打了一场比赛，并在1A Dunedin打了两场。在这三场比赛中，这位28岁的球员7打数1安打（.143），有两次保送。",
-        "蓝鸟队的目标是让Sánchez在本月底复出，随着我们接近八月，他在周三的表现之后似乎很快就能回归。",
-        "受伤之前，Sánchez在为多伦多出战的234个打席中，打击三围为.274/.316/.437，有7支本垒打。蓝鸟队在休赛期通过交易从太空人队得到了他。",
-        "同样在康复训练中的还有蓝鸟队MLB Pipeline排名第10的潜力新秀、左投手Ricky Tiedemann。Tiedemann在2024年接受汤米·约翰手术后恢复过程中出现左肘酸痛，但他于6月16日为FCL球队投球，这是他在职业比赛中的首次出场，距离上次已有706天。",
-        "在那次先发之后，他因颈部问题被从下一次出场中撤下。本月初他重返投手丘，再次为FCL球队先发，之后为Dunedin投了一场比赛。",
-        "周三，Tiedemann重返Dunedin的投手丘，在球队14-9战胜St. Lucie的比赛中投出一局无失分，并有一次三振。蓝鸟希望将Tiedemann培养到能够在3A稳定从牛棚出赛的水平。"
-      ],
-      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/ymnkv6rdajd2xemncqgh",
-      "translationSourceHash": "25f426b739966faa234385c06e4f3f074dd6f4d695df32679e7bf433aee9afe9",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-07-30T06:43:23.641Z",
-      "author": "Manny Randhawa",
-      "publishedAt": "2026-07-30T05:42:44.000Z",
-      "url": "https://www.mlb.com/bluejays/news/jesus-sanchez-has-two-hits-in-rehab-start",
-      "source": "MLB.com"
-    },
     {
       "id": "aa0feca743797cf69c41d81df043c86669b5ac08e9726460b6fd3dd8e6ccb48f",
       "teamId": "toronto-blue-jays",
@@ -137,8 +102,43 @@
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-07-30T00:57:02.421Z",
       "author": "Jim Callis, Jonathan Mayo and Sam Dykstra",
-      "publishedAt": "2026-07-29T22:45:00.000Z",
+      "publishedAt": "2026-07-30T17:30:00.000Z",
       "url": "https://www.mlb.com/bluejays/news/prospects-who-could-be-traded-at-2026-trade-deadline",
+      "source": "MLB.com"
+    },
+    {
+      "id": "2eacdc23976493aeaa05e75c9fd80dee91faca8bc69185284f5eb1c6d2ebcfb4",
+      "teamId": "toronto-blue-jays",
+      "teamName": "多伦多蓝鸟",
+      "titleEn": "Sánchez (ankle) nearing return to Blue Jays",
+      "summaryEn": "No. 10 prospect Tiedemann resumes rehab with Single-A Dunedin",
+      "bodyEn": [
+        "Blue Jays outfielder Jesús Sánchez went 2-for-3 with a pair of singles and was hit by a pitch during Triple-A Buffalo’s 5-4 win over Lehigh Valley on Wednesday as he nears activation off the injured list, where he’s been since late June due to a right ankle sprain. He played seven innings in left field before being replaced by a pinch-hitter in the eighth.",
+        "Wednesday’s rehab game was Sánchez’s first with Buffalo after he played one game for Toronto’s Florida Complex League club and two with Single-A Dunedin. Over those three contests, the 28-year-old was 1-for-7 (.143) with a pair of walks.",
+        "The Jays’ targeted return for Sánchez has been the end of this month, and as we approach August, he seems to be in line for an imminent return after Wednesday’s performance.",
+        "Prior to his injury, Sánchez had a .274/.316/.437 slash line with seven home runs in 234 plate appearances for Toronto after the Blue Jays acquired him in an offseason trade with the Astros.",
+        "Also on a rehab assignment is the Blue Jays’ No. 10 prospect per MLB Pipeline, left-hander Ricky Tiedemann. Tiedemann experienced left elbow soreness as he continued his recovery from 2024 Tommy John surgery, but he made his first appearance in a professional game in 706 days on June 16, pitching for the FCL club.",
+        "Following that start, he was scratched from his next appearance due to a neck issue. He returned to the mound earlier this month, making another start for the FCL team before pitching in a game for Dunedin.",
+        "On Wednesday, Tiedemann was back on the mound for Dunedin, throwing a scoreless sixth inning with a strikeout in a 14-9 win over St. Lucie. The Jays hope to build Tiedemann up to the point where he’s pitching regularly out of the bullpen in Triple-A."
+      ],
+      "titleZh": "桑切斯（脚踝）接近复出蓝鸟",
+      "summaryZh": "10号潜力新秀Tiedemann在1A Dunedin恢复康复",
+      "bodyZh": [
+        "蓝鸟外野手Jesús Sánchez周三在3A Buffalo对阵Lehigh Valley的比赛中5打数2安打，两支一垒安打，并被一次触身球击中，球队5-4获胜。他自6月下旬因右脚踝扭伤进入伤病名单，即将被激活。他在左外野防守了7局，第八局被代打替换。",
+        "周三的康复赛是Sánchez在Buffalo的第一场，此前他为多伦多的佛罗里达综合联盟球队打了一场比赛，并在1A Dunedin打了两场。在这三场比赛中，这位28岁的球员7打数1安打（.143），有两次保送。",
+        "蓝鸟队的目标是让Sánchez在本月底复出，随着我们接近八月，他在周三的表现之后似乎很快就能回归。",
+        "受伤之前，Sánchez在为多伦多出战的234个打席中，打击三围为.274/.316/.437，有7支本垒打。蓝鸟队在休赛期通过交易从太空人队得到了他。",
+        "同样在康复训练中的还有蓝鸟队MLB Pipeline排名第10的潜力新秀、左投手Ricky Tiedemann。Tiedemann在2024年接受汤米·约翰手术后恢复过程中出现左肘酸痛，但他于6月16日为FCL球队投球，这是他在职业比赛中的首次出场，距离上次已有706天。",
+        "在那次先发之后，他因颈部问题被从下一次出场中撤下。本月初他重返投手丘，再次为FCL球队先发，之后为Dunedin投了一场比赛。",
+        "周三，Tiedemann重返Dunedin的投手丘，在球队14-9战胜St. Lucie的比赛中投出一局无失分，并有一次三振。蓝鸟希望将Tiedemann培养到能够在3A稳定从牛棚出赛的水平。"
+      ],
+      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/ymnkv6rdajd2xemncqgh",
+      "translationSourceHash": "25f426b739966faa234385c06e4f3f074dd6f4d695df32679e7bf433aee9afe9",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-07-30T06:43:23.641Z",
+      "author": "Manny Randhawa",
+      "publishedAt": "2026-07-30T05:42:44.000Z",
+      "url": "https://www.mlb.com/bluejays/news/jesus-sanchez-has-two-hits-in-rehab-start",
       "source": "MLB.com"
     },
     {
