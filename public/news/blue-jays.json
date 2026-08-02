@@ -1,7 +1,7 @@
 {
   "teamId": "toronto-blue-jays",
   "teamName": "多伦多蓝鸟",
-  "updatedAt": "2026-08-02T21:29:53.657Z",
+  "updatedAt": "2026-08-02T22:29:38.123Z",
   "items": [
     {
       "id": "f23f5f41e27e9278ed456288c6bdf7586830cec22ce67a8eaa0f9b57d420d12d",
@@ -44,7 +44,7 @@
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-02T21:29:53.656Z",
       "author": "Keegan Matheson",
-      "publishedAt": "2026-08-02T21:05:00.000Z",
+      "publishedAt": "2026-08-02T21:57:00.000Z",
       "url": "https://www.mlb.com/bluejays/news/max-scherzer-strong-in-final-start-before-trade-deadline",
       "source": "MLB.com"
     },
@@ -52,7 +52,7 @@
       "id": "6d4252deb86c9cb7695876f2d0dcf30ec63f1dfc4cd5b7833e4a7a330fc095b5",
       "teamId": "toronto-blue-jays",
       "teamName": "多伦多蓝鸟",
-      "titleEn": "Blue Jays acquire veteran righty Taillon from Cubs",
+      "titleEn": "Blue Jays acquire Taillon from Cubs in possible precursor to bigger moves",
       "summaryEn": "",
       "bodyEn": [
         "TORONTO -- The Blue Jays have made their first trade ahead of Monday’s 6 p.m. ET Deadline, acquiring starter Jameson Taillon from the Cubs.",
@@ -62,22 +62,22 @@
         "This represents an addition for the Blue Jays, who could soon be subtracting from their rotation with Kevin Gausman, Shane Bieber and even Max Scherzer all potential trade candidates.",
         "In any of those scenarios, Taillon would immediately step in and handle their innings while he works with the Blue Jays to get back to his form from 2025 and prior."
       ],
-      "titleZh": "蓝鸟从小熊换来老将右投 Taillon",
-      "summaryZh": "蓝鸟在交易截止日前从小熊换来先发投手 Jameson Taillon。",
+      "titleZh": "蓝鸟从小熊交易得到泰隆，或为更大动作前奏",
+      "summaryZh": "蓝鸟在交易截止日前从小熊得到先发投手泰隆。",
       "bodyZh": [
-        "多伦多——蓝鸟在美东时间周一下午6点交易截止日前完成了第一笔交易，从小熊得到先发投手 Jameson Taillon。",
-        "Taillon 在美国出生并长大，但他的父母是加拿大人，他曾两次代表加拿大国家队参加世界棒球经典赛，包括今年。",
-        "交易详情 多伦多得到：右投手 Jameson Taillon、现金 芝加哥得到：待指定球员或现金",
-        "现年34岁的 Taillon 在本赛季表现挣扎，近期被小熊指定让渡，他在76局中自责分率为5.92。不过，Taillon 上赛季表现高效，自责分率为3.68，并且在大联盟有着长期的成功记录。他目前正处于四年6800万美元合同的最后一年，但目前尚不清楚蓝鸟将承担 Taillon 剩余薪资中的多少。",
-        "这对蓝鸟来说是一笔补强，而蓝鸟的先发轮值可能很快就有变动，Kevin Gausman、Shane Bieber 甚至 Max Scherzer 都是潜在交易候选人。",
-        "在以上任何一种情况下，Taillon 都将立即顶上并承担局数，同时他与蓝鸟合作，力求恢复到2025年及之前的状态。"
+        "多伦多 -- 蓝鸟在美东时间周一下午6点交易截止日前完成了首笔交易，从小熊队得到了先发投手Jameson Taillon。",
+        "Taillon出生于美国并在那里长大，但他的父母是加拿大人，他曾两次代表加拿大参加世界棒球经典赛，包括今年。",
+        "交易详情：多伦多得到：右投手Jameson Taillon、现金补偿；芝加哥得到：待指名球员或现金补偿。",
+        "34岁的Taillon最近被小熊指定让渡，本赛季表现不佳，76局投球自责分率为5.92。不过，Taillon上赛季表现高效，自责分率3.68，在大联盟有着悠久的成功记录。他目前处于四年6800万美元合同的最后一年，但尚不清楚蓝鸟将承担Taillon剩余薪水的多少。",
+        "这对蓝鸟来说是一次补强，但他们可能很快会从先发轮值中削减人员，Kevin Gausman、Shane Bieber甚至Max Scherzer都是潜在交易候选人。",
+        "在任一情况下，Taillon都将立即顶上并承担局数，同时与蓝鸟合作恢复至2025年及以往的状态。"
       ],
       "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/uyqsbjt7qllx2z4cszq3",
-      "translationSourceHash": "3025483bfb5c93199fc4d49d821668e8eaa8fe5da9696f352554ba46f2d7e059",
+      "translationSourceHash": "732f96e6f2600f30c9e4b4d4d6ad3c1fe883e149b38ef48bdbdc89537b32445e",
       "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-02T19:46:24.197Z",
+      "translatedAt": "2026-08-02T22:29:38.122Z",
       "author": "Keegan Matheson",
-      "publishedAt": "2026-08-02T19:22:00.000Z",
+      "publishedAt": "2026-08-02T21:24:00.000Z",
       "url": "https://www.mlb.com/bluejays/news/jameson-taillon-traded-to-blue-jays",
       "source": "MLB.com"
     },
