@@ -105,6 +105,61 @@ test("event merge preserves useful fields when provider sends blanks", () => {
   assert.equal(merged.homeScore, "2");
 });
 
+test("rescheduled games move to the new date without leaving an old copy", () => {
+  const followedTeam = { ...lakers, id: "tor", league: "mlb" };
+  const oldGame = core.attachTeamToEvent({
+    id: "mlb-old-id",
+    sourceId: "provider-game-7",
+    dataSource: "espn",
+    league: "mlb",
+    start: "2026-08-08T23:00:00Z",
+    homeTeam: "Toronto Blue Jays",
+    awayTeam: "Boston Red Sox",
+    homeLogo: "https://example.com/tor.png",
+    awayLogo: "https://example.com/bos.png"
+  }, followedTeam);
+  const movedGame = core.attachTeamToEvent({
+    id: "mlb-new-id",
+    sourceId: "provider-game-7",
+    dataSource: "espn",
+    league: "mlb",
+    start: "2026-08-09T23:00:00Z",
+    homeTeam: "Toronto Blue Jays",
+    awayTeam: "Boston Red Sox",
+    homeLogo: "",
+    awayLogo: ""
+  }, followedTeam);
+
+  const result = core.reconcileScheduleUpdates([oldGame], [movedGame], { referenceEvents: [oldGame] });
+  assert.equal(result.events.length, 1);
+  assert.equal(result.events[0].id, "mlb-new-id");
+  assert.equal(result.events[0].start, "2026-08-09T23:00:00Z");
+  assert.equal(result.events[0].homeLogo, "https://example.com/tor.png");
+  assert.equal(result.rescheduledCount, 1);
+});
+
+test("a changed provider id uses a unique matchup but does not collapse a series", () => {
+  const oldGame = {
+    id: "old-unique",
+    league: "mlb",
+    start: "2026-08-08T23:00:00Z",
+    homeTeam: "Toronto Blue Jays",
+    awayTeam: "Boston Red Sox"
+  };
+  const movedGame = {
+    ...oldGame,
+    id: "new-unique",
+    start: "2026-08-10T23:00:00Z"
+  };
+  const moved = core.reconcileScheduleUpdates([oldGame], [movedGame], { referenceEvents: [oldGame] });
+  assert.deepEqual(moved.events.map((event) => event.id), ["new-unique"]);
+
+  const seriesOld = [oldGame, { ...oldGame, id: "old-series-2", start: "2026-08-09T23:00:00Z" }];
+  const seriesNew = [movedGame, { ...movedGame, id: "new-series-2", start: "2026-08-11T23:00:00Z" }];
+  const ambiguous = core.reconcileScheduleUpdates(seriesOld, seriesNew, { referenceEvents: seriesOld });
+  assert.equal(ambiguous.events.length, 4);
+});
+
 test("score objects are normalized without rendering object text", () => {
   assert.equal(core.normalizeScoreValue({ displayValue: "5", value: 5 }), "5");
   assert.equal(core.normalizeScoreValue({ value: { total: 3 } }), "3");

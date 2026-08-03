@@ -43,6 +43,7 @@ final class TeamNewsPushManager {
     private static final String KEY_LAST_CHECK_AT = "last_check_at";
     private static final String KEY_LAST_NOTIFICATION_AT = "last_notification_at";
     private static final String KEY_LAST_ERROR = "last_error";
+    private static final String KEY_PERMISSION_PROMPTED = "permission_prompted";
     private static final String WORK_NAME = "team-news-background-check";
     private static final String IMMEDIATE_WORK_NAME = "team-news-immediate-check";
     private static final String PRIMARY_NEWS_ENDPOINT = "https://raw.githubusercontent.com/Levine-Lai/calendar-app/main/public/news/blue-jays.json";
@@ -70,7 +71,7 @@ final class TeamNewsPushManager {
     }
 
     static boolean isEnabled(Context context) {
-        return preferences(context).getBoolean(KEY_ENABLED, false);
+        return preferences(context).getBoolean(KEY_ENABLED, true);
     }
 
     static void rememberEnabled(Context context, boolean enabled) {
@@ -79,9 +80,18 @@ final class TeamNewsPushManager {
 
     static void restoreSubscription(Context context) {
         if (!isEnabled(context)) return;
+        NewsMessagingService.createNotificationChannel(context);
         scheduleBackgroundChecks(context);
         enqueueImmediateCheck(context);
         refreshFcmSubscription(context);
+    }
+
+    static boolean shouldPromptForNotificationPermission(Context context) {
+        return !preferences(context).getBoolean(KEY_PERMISSION_PROMPTED, false);
+    }
+
+    static void rememberNotificationPermissionPrompted(Context context) {
+        preferences(context).edit().putBoolean(KEY_PERMISSION_PROMPTED, true).apply();
     }
 
     static void scheduleBackgroundChecks(Context context) {

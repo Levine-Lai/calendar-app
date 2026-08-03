@@ -7,8 +7,8 @@ android {
         applicationId "com.local.sportscalendar"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 30
-        versionName "2.2.8"
+        versionCode 36
+        versionName "2.2.14"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         aaptOptions {
              // Files and dirs to omit from the packaged assets dir, modified to accommodate modern web apps.
@@ -28,6 +28,9 @@ android {
         }
     }
     buildTypes {
+        debug {
+            if (System.getenv("SPORTS_CALENDAR_KEYSTORE")) signingConfig signingConfigs.release
+        }
         release {
             minifyEnabled true
             shrinkResources true

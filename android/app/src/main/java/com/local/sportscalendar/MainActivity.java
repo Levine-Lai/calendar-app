@@ -1,6 +1,9 @@
 package com.local.sportscalendar;
 
+import android.Manifest;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.os.Build;
 import android.content.Intent;
 import android.graphics.Color;
 import android.webkit.WebSettings;
@@ -12,6 +15,8 @@ import com.getcapacitor.BridgeActivity;
 import org.json.JSONObject;
 
 public class MainActivity extends BridgeActivity {
+    private static final int NEWS_NOTIFICATION_PERMISSION_REQUEST = 1201;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         registerPlugin(SportsWidgetPlugin.class);
@@ -38,6 +43,22 @@ public class MainActivity extends BridgeActivity {
             }
         });
         TeamNewsPushManager.restoreSubscription(getApplicationContext());
+        requestDefaultNewsNotificationPermission();
+    }
+
+    private void requestDefaultNewsNotificationPermission() {
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU
+            || !TeamNewsPushManager.isConfigured(getApplicationContext())
+            || !TeamNewsPushManager.isEnabled(getApplicationContext())
+            || checkSelfPermission(Manifest.permission.POST_NOTIFICATIONS) == PackageManager.PERMISSION_GRANTED
+            || !TeamNewsPushManager.shouldPromptForNotificationPermission(getApplicationContext())) {
+            return;
+        }
+        TeamNewsPushManager.rememberNotificationPermissionPrompted(getApplicationContext());
+        requestPermissions(
+            new String[] { Manifest.permission.POST_NOTIFICATIONS },
+            NEWS_NOTIFICATION_PERMISSION_REQUEST
+        );
     }
 
     @Override

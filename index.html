@@ -4,10 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>体育迷日历</title>
-    <style>html,body{margin:0;min-height:100%;background:#fbf4ea;color:#16120f}</style>
-    <link rel="stylesheet" href="public/styles.css?v=2.2.8">
+    <style>html,body{margin:0;min-height:100%;background:#fbf4ea;color:#16120f}.launch-animation{position:fixed;inset:0;z-index:9999;display:grid;place-items:center;background:#c5e5f8}.launch-animation img{display:block;width:min(82vw,512px);height:auto;max-height:76vh;object-fit:contain;image-rendering:pixelated}</style>
+    <link rel="stylesheet" href="public/styles.css?v=2.2.14">
+    <script src="public/launch-animation.js?v=2.2.14" defer></script>
   </head>
-  <body>
+  <body class="launch-active">
+    <div class="launch-animation" id="launchAnimation" role="status" aria-label="应用正在启动">
+      <img src="public/assets/branding/launch-runner.gif" alt="" width="512" height="512">
+    </div>
+
     <main class="app-shell">
       <aside class="sidebar" id="sidebar" aria-label="赛程设置" aria-hidden="true">
         <section class="masthead" aria-label="应用标题">
@@ -49,50 +54,10 @@
           <button class="primary-button" id="importLeagueBtn">导入该球队全部赛程</button>
         </section>
 
-        <section class="stats-row" aria-label="统计">
-          <div>
-            <span id="totalCount">0</span>
-            <small>全部比赛</small>
-          </div>
-          <div>
-            <span id="watchCount">0</span>
-            <small>命中偏好</small>
-          </div>
-          <div>
-            <span id="nextGameLabel">暂无</span>
-            <small>下一场</small>
-          </div>
-        </section>
-
-        <section class="panel">
-          <div class="section-title">
-            <span>我的偏好</span>
-          </div>
-          <label class="field">
-            <span>关注球队 / 关键词</span>
-            <input id="teamFilterInput" type="text" placeholder="Lakers, Arsenal, Dodgers">
-          </label>
-          <label class="toggle-row">
-            <input id="favoritesOnly" type="checkbox">
-            <span>只看命中的比赛</span>
-          </label>
-          <label class="toggle-row">
-            <input id="hideFinished" type="checkbox">
-            <span>隐藏已结束比赛</span>
-          </label>
-        </section>
-
-        <section class="panel">
-          <div class="section-title">
-            <span>文件导入</span>
-          </div>
-          <input id="fileImport" type="file" accept=".ics,.csv,.json,text/calendar,application/json,text/csv">
-        </section>
-
         <section class="panel app-update-panel" aria-labelledby="appUpdateTitle">
           <div class="section-title">
             <span id="appUpdateTitle">应用更新</span>
-            <strong class="app-version" id="currentAppVersion">v2.2.8</strong>
+            <strong class="app-version" id="currentAppVersion">v2.2.14</strong>
           </div>
           <p class="app-update-status" id="appUpdateStatus" role="status" aria-live="polite">点击按钮检查是否有新版本</p>
           <ul class="app-update-notes" id="appUpdateNotes" hidden></ul>
@@ -142,13 +107,8 @@
                 <h2 id="homeNewsTitle">Latest News</h2>
               </div>
             </div>
-            <label class="toggle-row team-news-toggle">
-              <input id="teamNewsPushToggle" type="checkbox">
-              <span>新闻推送</span>
-            </label>
           </header>
           <div class="home-news-list" id="homeNewsList"></div>
-          <p class="team-news-status" id="teamNewsPanelStatus" role="status" aria-live="polite"></p>
           <button class="secondary-button home-news-more" id="openTeamNewsBtn" type="button">查看更多</button>
         </section>
       </section>
@@ -215,7 +175,7 @@
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
           </button>
           <p class="eyebrow">MLB.com</p>
-          <div class="team-news-language-tabs" role="tablist" aria-label="文章语言">
+          <div class="team-news-language-tabs" role="tablist" aria-label="文章语言" data-active-language="en">
             <button class="team-news-language-tab is-active" id="teamNewsArticleEnTab" type="button" role="tab" aria-selected="true" data-language="en">English</button>
             <button class="team-news-language-tab" id="teamNewsArticleZhTab" type="button" role="tab" aria-selected="false" data-language="zh">中文</button>
           </div>
@@ -226,13 +186,13 @@
       </section>
     </div>
 
-    <script src="public/calendar-core.js?v=2.2.8"></script>
-    <script src="public/calendar-storage.js?v=2.2.8"></script>
-    <script src="public/calendar-image-cache.js?v=2.2.8"></script>
-    <script src="public/update-config.js?v=2.2.8"></script>
-    <script src="public/app-update.js?v=2.2.8"></script>
-    <script src="public/team-news-config.js?v=2.2.8"></script>
-    <script src="public/team-news-core.js?v=2.2.8"></script>
-    <script src="public/app.js?v=2.2.8"></script>
+    <script src="public/calendar-core.js?v=2.2.14"></script>
+    <script src="public/calendar-storage.js?v=2.2.14"></script>
+    <script src="public/calendar-image-cache.js?v=2.2.14"></script>
+    <script src="public/update-config.js?v=2.2.14"></script>
+    <script src="public/app-update.js?v=2.2.14"></script>
+    <script src="public/team-news-config.js?v=2.2.14"></script>
+    <script src="public/team-news-core.js?v=2.2.14"></script>
+    <script src="public/app.js?v=2.2.14"></script>
   </body>
 </html>

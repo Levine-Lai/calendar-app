@@ -1,135 +1,124 @@
-# 体育迷日历
+# 观赛日记
 
-一个本地静态页面版的个人体育赛程日历。内置 NBA、MLB、英超 26-27，以及中超、中甲、中乙、中冠等足球赛程导入，支持上传 `.ics`、`.csv`、`.json`。
+“观赛日记”是一款本地优先的个人体育赛程 Android App，也可以作为静态网页运行。它支持多联赛球队赛程导入、比赛状态与比分刷新、月历浏览、多伦多蓝鸟中英文新闻，以及两个 Android 桌面组件。
 
-## 打开
+当前源码和本机最新 APK：`2.2.14 / versionCode 36`；GitHub 最新已发布版在本轮上传完成前仍为 `2.2.11 / versionCode 33`。
 
-直接双击 `index.html`，或在浏览器中打开这个文件：
+## 主要功能
 
-```text
-D:\l\78\calendar\index.html
-```
+- 选择联赛和球队，一次导入该球队当前可确定的全部赛程。
+- 月历按北京时间展示比赛；点击日期查看详情并刷新当天比分。
+- 支持 NBA、NFL、MLB、英超、西甲、意甲、德甲、法甲、欧冠、英冠、中超、中甲、中乙、中冠和世界杯。
+- 未开始、进行中、已结束、延期、取消使用统一状态规则；进行中比分显示为红色。
+- 主界面只展示最新一篇多伦多蓝鸟新闻；新闻列表和详情支持 English/中文切换。
+- 新闻通过 MLB RSS、GitHub 静态数据、Android WorkManager 和 Firebase FCM 多通道更新。
+- 本地数据保存在 IndexedDB，并保留限量应急备份；无需账号。
+- App 启动时显示 1.5 秒蓝色背景奔跑动画。
 
-## Android App 打包
+已删除旧版“我的偏好”、统计框、文件导入和隐藏已结束比赛筛选。升级后旧偏好不会继续暗中筛选赛程。
 
-这个项目已经接入 Capacitor，可以把静态页面打包成 Android App，应用名为“观赛日记”。
+## 桌面组件
+
+Android 版提供两个组件：
+
+1. “观赛日记 组件1”：约 4×4，按日期显示关注比赛，支持前一天、后一天、手动刷新和列表滚动。每个组件实例独立保存日期，队徽和实时比分按日期缓存。
+2. “观赛日记 组件2”：4×3，只显示最新一篇蓝鸟新闻的大图和标题。图片铺满上半部分并带圆角，点击打开对应文章；组件每 15 分钟独立检查更新，失败时保留已有缓存。
+
+vivo 可能延迟系统组件刷新。需要允许后台联网，并将电池策略设置为“不限制”。
+
+## 本地运行
+
+直接打开项目根目录的 `index.html`，或运行任意静态文件服务器。Web 构建命令：
 
 ```powershell
 npm install
-npm run build:android
+npm run build:web
 ```
 
-Debug APK 输出位置：
-
-```text
-D:\l\78\calendar\android\app\build\outputs\apk\debug\app-debug.apk
-```
-
-连接 vivo 手机并开启 USB 调试后，可以用 adb 安装：
-
-```powershell
-adb devices -l
-adb install -r android\app\build\outputs\apk\debug\app-debug.apk
-```
+构建结果位于 `www/`。
 
 ## 开发验证
 
 ```powershell
 npm test
+npm run verify:stability
 npm run build:web
 npm run sync:android
 ```
 
-每次修复的背景、结构变化、兼容方式和验证结果记录在 [`context.md`](context.md)。后续修改必须按日期追加记录。
+新闻后台测试：
 
-## 应用内检查更新
-
-左拉菜单底部提供“检查更新”。App 只在用户点击时读取 `public/update-config.js` 配置的远程 `version.json`，不会在启动时自动联网检查。
-
-发布新版本时需要同步修改：
-
-1. `package.json` 的版本号。
-2. `android/app/build.gradle` 的 `versionCode` 和 `versionName`。
-3. `public/update-config.js` 中 App 自身的版本号。
-4. `public/version.json` 中最新版本、HTTPS 下载地址和更新说明。
-5. 将 `public/version.json` 上传到配置的远程地址后，旧版 App 才能发现新版本。
-
-远程清单示例：
-
-```json
-{
-  "versionCode": 22,
-  "versionName": "2.2.0",
-  "apkUrl": "https://example.com/sports-calendar-2.2.0.apk",
-  "notes": ["修复比分刷新", "优化组件显示"],
-  "force": false
-}
+```powershell
+cd firebase\functions
+npm install
+npm test
 ```
 
-## 桌面小组件
+Android JVM 测试和 Lint 应在 Web 资源同步完成后串行执行，避免 Windows 文件争用：
 
-Android 版内置一个 4x4 桌面小组件。小组件读取你在 App 里已经导入的关注赛程，并按北京时间筛选“今天”的比赛。画面固定显示三行；当天超过三场时可上下滑动，也可用箭头每次精确翻动一场。组件先显示本地赛程，再在联网时后台补充实时比分和队徽缓存；系统大约每 15 分钟尝试刷新一次，实际时间可能受 vivo 省电策略影响。
-
-使用流程：
-
-1. 安装新版 APK。
-2. 打开“观赛日记”。
-3. 选择联赛和球队，导入这支球队的赛程。
-4. 回到桌面添加“观赛日记”小组件。
-5. 如果小组件已经在桌面上，重新打开 App 或再次导入/刷新赛程会同步更新小组件。
-
-## 功能
-
-- 从联赛预设导入球队赛程，英超支持 26-27 整季范围，并加入中超、中甲、中乙、中冠。
-- 导入前先选择具体球队，一次只能选择并导入一支球队，不再默认导入整个联赛。
-- 通过关键词关注球队，例如 `Lakers, Arsenal, Dodgers`。
-- 按月份翻页的日历视图。
-- 隐藏已结束比赛。
-- 本地浏览器保存，不需要账号。
-- 新粗野派界面：粗边框、硬阴影、高对比色块。
-
-## 文件导入格式
-
-CSV 表头示例：
-
-```csv
-title,start,league,venue,broadcast,url
-Lakers at Warriors,2026-01-01T03:00:00Z,NBA,Chase Center,ESPN,https://example.com
+```powershell
+cd android
+.\gradlew.bat testDebugUnitTest lintDebug
 ```
 
-JSON 示例：
+## Android 打包
 
-```json
-[
-  {
-    "title": "Arsenal at Liverpool",
-    "start": "2026-01-01T20:00:00Z",
-    "league": "英超",
-    "venue": "Anfield"
-  }
-]
+项目禁止自动生成新的 Debug 签名。Debug 和 Release 构建都必须显式提供固定签名环境变量：
+
+- `SPORTS_CALENDAR_KEYSTORE`
+- `SPORTS_CALENDAR_STORE_PASSWORD`
+- `SPORTS_CALENDAR_KEY_ALIAS`
+- `SPORTS_CALENDAR_KEY_PASSWORD`
+
+生成 Debug APK：
+
+```powershell
+npm run build:android
 ```
 
-## 数据说明
+原始输出位于 `android/app/build/outputs/apk/debug/app-debug.apk`，发布副本保存到 `releases/`。每次发布都必须核对包名、`versionCode`、`versionName`、签名证书和 APK SHA-256。
 
-NBA、MLB、英超和中超等联赛读取 ESPN；中甲、中乙读取 TheSportsDB；中冠读取中国足协官网 2026 赛程。所有内置联赛均按当前赛季读取全部已确定比赛，不需要手动选择日期范围。
+只有用户明确说“打包”或要求生成 APK/AAB 时才执行打包。
 
-多伦多蓝鸟新闻由 Android 直接读取 MLB 官方 RSS，并从 GitHub Raw/jsDelivr 静态数据补充最近 20 篇文章的中英文正文。GitHub Actions 使用 DeepSeek 和项目内 MLB 中文术语表翻译新文章，API Key 只从仓库 Secret `DEEPSEEK_API_KEY` 读取，不进入网页、APK、新闻 JSON 或日志。App 启动、回到前台、网络恢复及保持打开期间都会自动同步；多个静态地址按文章发布时间选择最新数据。开启推送后，Android WorkManager 每 15 分钟后台检查 RSS，GitHub Actions 与 Firebase FCM 作为远程更新和推送通道。翻译失败时保留英文数据，任一通道失败不会阻断其他通道。
+## 新闻服务配置
 
-新闻工作流需要以下 GitHub Actions Repository Secrets：
+GitHub Actions 需要以下 Repository Secrets：
 
-- `FIREBASE_SERVICE_ACCOUNT_JSON`：Firebase Admin 服务账号 JSON，用于发送 FCM。
-- `DEEPSEEK_API_KEY`：DeepSeek 开放平台 API Key，用于生成 `titleZh`、`summaryZh` 和 `bodyZh`。
+- `FIREBASE_SERVICE_ACCOUNT_JSON`：Firebase Admin 服务账号，用于发送 FCM。
+- `DEEPSEEK_API_KEY`：用于生成 `titleZh`、`summaryZh` 和 `bodyZh`。
 
-翻译参考位于 `firebase/functions/translation-reference.json`。修改球队名称、棒球术语或翻译风格后，下一次英文内容变化时会采用新规则；已成功翻译且英文来源未变化的文章会直接复用，避免重复计费。
+Secrets 不得进入网页、APK、新闻 JSON、日志或 Git。`android/app/google-services.json` 仅用于 Android FCM 客户端注册，不是 Admin 私钥。
 
-2.2.4 的完整安装、GitHub、Firebase、vivo 后台权限、应用内更新和正式签名配置见 `docs/2.2.4-release-configuration.md`。
+新闻翻译参考位于 `firebase/functions/translation-reference.json`。
 
-## 导入流程
+## 应用内更新
 
-1. 选择联赛。
-2. 等球队区加载该赛季参赛球队。
-3. 选择一支球队。
-4. 点击“导入该球队全部赛程”。
-5. 顶部“更新”会一次刷新所有已关注球队的完整已确定赛程。
-6. 右侧月份日历会显示这些球队的比赛。
+左侧菜单底部提供“检查更新”，只在用户点击时读取远程 `version.json`。发布顺序必须是先上传 GitHub Release APK，再把远程清单切到新版本，避免用户看到无法下载的更新。
+
+发布新版本时需要同步：
+
+1. `package.json` 和根 lockfile。
+2. `firebase/functions/package.json` 和 lockfile。
+3. `android/app/build.gradle`。
+4. `public/update-config.js`。
+5. `index.html` 的静态资源缓存版本。
+6. Android 网络 User-Agent。
+7. `CHANGELOG.md` 和 `context.md`。
+
+## 数据源
+
+- NBA、NFL、MLB 和多数欧洲足球赛事：ESPN。
+- 中超、中甲、中乙：CFL 官方接口。
+- 中冠：中国足协数据接口。
+- 蓝鸟新闻：MLB 官方 RSS/AMP，以及 GitHub Raw/jsDelivr 静态新闻数据。
+
+外部数据源没有正式 SLA。字段发生变化时，应优先修复数据归一层，不把供应商字段直接扩散到 UI。
+
+## 项目记录
+
+- `AGENTS.md`：协作规则和打包边界。
+- `context.md`：完整开发上下文、验证结果和兼容说明。
+- `CHANGELOG.md`：面向用户的版本变化。
+- `AGENT_HANDOFF.md`：当前工程交接状态。
+
+每次修改都应更新 `context.md`；版本变化同步维护 `CHANGELOG.md`。

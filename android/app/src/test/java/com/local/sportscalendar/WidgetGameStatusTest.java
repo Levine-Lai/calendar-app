@@ -172,7 +172,6 @@ public class WidgetGameStatusTest {
     @Test
     public void widgetsHaveNoRowsWhenThereAreNoGames() {
         assertEquals(0, SportsWidgetService.rowCount(0));
-        assertEquals(0, SportsDetailWidgetService.rowCount(0));
     }
 
     @Test
@@ -180,8 +179,42 @@ public class WidgetGameStatusTest {
         assertEquals(3, SportsWidgetService.rowCount(1));
         assertEquals(3, SportsWidgetService.rowCount(3));
         assertEquals(4, SportsWidgetService.rowCount(4));
-        assertEquals(1, SportsDetailWidgetService.rowCount(1));
-        assertEquals(4, SportsDetailWidgetService.rowCount(4));
+    }
+
+    @Test
+    public void newsWidgetOnlyAcceptsOfficialMlbImages() {
+        assertEquals(
+            "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/mlb/example",
+            TeamNewsWidgetData.safeImageUrl(
+                "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/mlb/example"
+            )
+        );
+        assertEquals("", TeamNewsWidgetData.safeImageUrl("http://img.mlbstatic.com/mlb/example"));
+        assertEquals("", TeamNewsWidgetData.safeImageUrl("https://img.mlbstatic.com.example.org/fake"));
+    }
+
+    @Test
+    public void newsWidgetKeepsOnlyTheLatestArticle() {
+        java.util.List<TeamNewsWidgetData.Item> candidates = new java.util.ArrayList<>();
+        candidates.add(new TeamNewsWidgetData.Item(
+            "older",
+            "Older",
+            "https://www.mlb.com/bluejays/news/older",
+            "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/mlb/older",
+            1_000L
+        ));
+        candidates.add(new TeamNewsWidgetData.Item(
+            "latest",
+            "Latest",
+            "https://www.mlb.com/bluejays/news/latest",
+            "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/mlb/latest",
+            2_000L
+        ));
+
+        java.util.List<TeamNewsWidgetData.Item> items = TeamNewsWidgetData.limitToLatest(candidates);
+
+        assertEquals(1, items.size());
+        assertEquals("latest", items.get(0).id);
     }
 
     @Test

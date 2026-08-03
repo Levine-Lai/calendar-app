@@ -14,10 +14,22 @@ const gradle = read("android/app/build.gradle");
 const packageJson = require(path.join(root, "package.json"));
 const versionManifest = JSON.parse(read("public/version.json"));
 const updateConfig = read("public/update-config.js");
+const androidBuild = read("scripts/build-android.js");
 const newsWorker = read("android/app/src/main/java/com/local/sportscalendar/TeamNewsRefreshWorker.java");
 const newsPushManager = read("android/app/src/main/java/com/local/sportscalendar/TeamNewsPushManager.java");
 const newsUpdater = read("firebase/functions/update-static-news.js");
 const mainActivity = read("android/app/src/main/java/com/local/sportscalendar/MainActivity.java");
+const index = read("index.html");
+const launchAnimation = read("public/launch-animation.js");
+const androidColors = read("android/app/src/main/res/values/colors.xml");
+const webBuild = read("scripts/build-web.js");
+const newsWidgetProvider = read("android/app/src/main/java/com/local/sportscalendar/MatchDetailWidgetProvider.java");
+const newsWidgetWorker = read("android/app/src/main/java/com/local/sportscalendar/NewsWidgetRefreshWorker.java");
+const newsWidgetData = read("android/app/src/main/java/com/local/sportscalendar/TeamNewsWidgetData.java");
+const newsWidgetInfo = read("android/app/src/main/res/xml-v31/match_detail_widget_info.xml");
+const newsWidgetLayout = read("android/app/src/main/res/layout/widget_match_detail.xml");
+const newsWidgetItemLayout = read("android/app/src/main/res/layout/widget_news_item.xml");
+const newsWidgetService = read("android/app/src/main/java/com/local/sportscalendar/NewsWidgetService.java");
 const currentVersionCode = Number(updateConfig.match(/currentVersionCode:\s*(\d+)/)?.[1]);
 
 const tracked = (folder) => execFileSync("git", ["ls-files", folder], { cwd: root, encoding: "utf8" }).trim();
@@ -72,11 +84,65 @@ const checks = [
   [
     "24 手机新闻排版与返回",
     styles.includes(".home-news-list .team-news-card-media")
-      && styles.includes("aspect-ratio: 16 / 9")
+      && styles.includes("aspect-ratio: 4 / 3")
+      && styles.includes("grid-auto-rows: max-content")
       && app.includes("bindTeamNewsBackGestures")
       && app.includes("SportsCalendarHandleBack")
       && !app.includes("已自动同步")
       && mainActivity.includes("window.SportsCalendarHandleBack")
+  ],
+  [
+    "25 多日期组件图标与首页精简",
+    provider.includes("root.put(dayKey, snapshot)")
+      && !provider.includes("cacheDetailWidgetGames(context);\n        MatchDetailWidgetProvider.refreshAllViews")
+      && !read("index.html").includes("我的偏好")
+      && !read("index.html").includes("文件导入")
+      && !read("index.html").includes('id="teamNewsPanelStatus"')
+  ],
+  [
+    "26 固定签名身份守卫",
+    androidBuild.includes("expectedSignerSha256")
+      && androidBuild.includes("7ef83e3ec40b7bf1e9aaf551589ee73c378fc26f29202255f0466bcab759bed0")
+      && androidBuild.includes("签名证书不匹配，已停止打包")
+      && androidBuild.includes("fs.rmSync(outputApk)")
+      && gradle.includes("debug {")
+      && gradle.includes("signingConfig signingConfigs.release")
+  ],
+  [
+    "27 launch animation duration and background",
+    index.includes('id="launchAnimation"')
+      && index.includes("public/assets/branding/launch-runner.gif")
+      && launchAnimation.includes("const splashDurationMs = 1500")
+      && styles.includes(".launch-animation.is-closing")
+      && androidColors.includes("#C5E5F8")
+      && fs.existsSync(path.join(root, "public/assets/branding/launch-runner.gif"))
+      && webBuild.includes("prototypeBrandingPattern")
+  ],
+  [
+    "28 组件2新闻大图与独立刷新",
+    newsWidgetInfo.includes('android:targetCellWidth="4"')
+      && newsWidgetInfo.includes('android:targetCellHeight="3"')
+      && newsWidgetLayout.includes('android:id="@+id/news_widget_stack"')
+      && newsWidgetItemLayout.includes('android:id="@+id/news_widget_image"')
+      && newsWidgetItemLayout.includes('android:scaleType="centerCrop"')
+      && newsWidgetItemLayout.includes('android:textSize="19sp"')
+      && newsWidgetService.includes("RemoteViewsService")
+      && newsWidgetService.includes("setOnClickFillInIntent")
+      && newsWidgetProvider.includes("NewsWidgetRefreshWorker.class")
+      && newsWidgetProvider.includes("setRemoteAdapter")
+      && newsWidgetProvider.includes("setPendingIntentTemplate")
+      && newsWidgetProvider.includes("15,")
+      && newsWidgetWorker.includes("TeamNewsWidgetData.fetchRecent()")
+      && newsWidgetData.includes("MAX_ITEMS = 1")
+      && newsWidgetLayout.includes('android:loopViews="false"')
+      && newsWidgetData.includes("img.mlbstatic.com")
+      && newsWidgetData.includes('open("public/public/news/blue-jays.json")')
+      && manifest.includes('android:name=".NewsWidgetService"')
+      && !manifest.includes("SportsDetailWidgetService")
+      && !fs.existsSync(path.join(
+        root,
+        "android/app/src/main/java/com/local/sportscalendar/SportsDetailWidgetService.java"
+      ))
   ]
 ];
 

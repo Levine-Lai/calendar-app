@@ -115,6 +115,121 @@
       : merged;
   }
 
+  function reconcileScheduleUpdates(existingEvents, incomingEvents, options = {}) {
+    const referenceEvents = Array.isArray(options.referenceEvents)
+      ? options.referenceEvents
+      : existingEvents;
+    const isLikelySameMatch = typeof options.isLikelySameMatch === "function"
+      ? options.isLikelySameMatch
+      : eventsLikelySameFixture;
+    const incomingById = new Map();
+    (incomingEvents || []).forEach((event) => {
+      if (!event?.id) return;
+      incomingById.set(event.id, mergeEventRecords(incomingById.get(event.id), event));
+    });
+    const incoming = [...incomingById.values()];
+    const assignments = new Map();
+    const claimedReferenceIds = new Set();
+
+    incoming.forEach((event) => {
+      const exact = referenceEvents.find((candidate) => candidate?.id === event.id)
+        || referenceEvents.find((candidate) => sameProviderEvent(candidate, event));
+      if (!exact || claimedReferenceIds.has(exact.id)) return;
+      assignments.set(event.id, exact);
+      claimedReferenceIds.add(exact.id);
+    });
+
+    incoming.forEach((event) => {
+      if (assignments.has(event.id)) return;
+      const candidates = referenceEvents.filter((candidate) => (
+        candidate?.id
+        && !claimedReferenceIds.has(candidate.id)
+        && isLikelySameMatch(candidate, event)
+      ));
+      if (candidates.length !== 1) return;
+      const candidate = candidates[0];
+      const competingIncoming = incoming.filter((other) => (
+        !assignments.has(other.id)
+        && isLikelySameMatch(candidate, other)
+      ));
+      if (competingIncoming.length !== 1) return;
+      assignments.set(event.id, candidate);
+      claimedReferenceIds.add(candidate.id);
+    });
+
+    const byId = new Map((existingEvents || [])
+      .filter((event) => event?.id)
+      .map((event) => [event.id, event]));
+    const rescheduledReferenceIds = new Set();
+    incoming.forEach((event) => {
+      const previous = assignments.get(event.id);
+      let retainedRecord = byId.get(event.id);
+      if (previous && previous.id !== event.id) {
+        retainedRecord = mergeEventRecords(byId.get(previous.id), retainedRecord);
+        byId.delete(previous.id);
+      }
+      const prepared = previous
+        ? {
+            ...event,
+            homeLogo: event.homeLogo || previous.homeLogo,
+            awayLogo: event.awayLogo || previous.awayLogo
+          }
+        : event;
+      byId.set(event.id, mergeEventRecords(retainedRecord, prepared));
+      if (previous && scheduleTimeChanged(previous.start, event.start)) {
+        rescheduledReferenceIds.add(previous.id);
+      }
+    });
+
+    return {
+      events: [...byId.values()],
+      rescheduledCount: rescheduledReferenceIds.size,
+      replacedEventIds: [...claimedReferenceIds].filter((id) => !incomingById.has(id))
+    };
+  }
+
+  function sameProviderEvent(left, right) {
+    if (!left || !right || left.league !== right.league) return false;
+    const leftSourceId = String(left.sourceId || "").trim();
+    const rightSourceId = String(right.sourceId || "").trim();
+    if (!leftSourceId || !rightSourceId || leftSourceId !== rightSourceId) return false;
+    const leftSource = String(left.dataSource || "").trim();
+    const rightSource = String(right.dataSource || "").trim();
+    return !leftSource || !rightSource || leftSource === rightSource;
+  }
+
+  function eventsLikelySameFixture(left, right) {
+    if (!left || !right || left.league !== right.league) return false;
+    const leftTime = Date.parse(left.start || "");
+    const rightTime = Date.parse(right.start || "");
+    if (!Number.isFinite(leftTime) || !Number.isFinite(rightTime)) return false;
+    if (Math.abs(leftTime - rightTime) > 8 * 24 * 60 * 60 * 1000) return false;
+    const leftHome = normalizeFixtureTeam(left.homeTeam);
+    const leftAway = normalizeFixtureTeam(left.awayTeam);
+    const rightHome = normalizeFixtureTeam(right.homeTeam);
+    const rightAway = normalizeFixtureTeam(right.awayTeam);
+    if (!leftHome || !leftAway || !rightHome || !rightAway) return false;
+    return (leftHome === rightHome && leftAway === rightAway)
+      || (leftHome === rightAway && leftAway === rightHome);
+  }
+
+  function normalizeFixtureTeam(value) {
+    return String(value || "")
+      .normalize("NFKD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .toLowerCase()
+      .replace(/[^a-z0-9\u3400-\u9fff]+/g, "")
+      .trim();
+  }
+
+  function scheduleTimeChanged(left, right) {
+    const leftTime = Date.parse(left || "");
+    const rightTime = Date.parse(right || "");
+    return Number.isFinite(leftTime)
+      && Number.isFinite(rightTime)
+      && Math.abs(leftTime - rightTime) >= 60 * 1000;
+  }
+
   function normalizeEventScores(event) {
     if (!event || typeof event !== "object") return event || {};
     return {
@@ -401,6 +516,7 @@
     normalizeImageUrl,
     parseBoolean,
     parseIcsDate,
+    reconcileScheduleUpdates,
     sanitizeColor,
     teamKey
   };

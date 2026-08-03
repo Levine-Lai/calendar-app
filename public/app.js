@@ -235,11 +235,6 @@ const state = {
   events: [],
   followedTeams: [],
   cursor: startOfDay(new Date()),
-  filters: {
-    terms: "",
-    favoritesOnly: false,
-    hideFinished: false
-  },
   refreshMeta: {
     lastSuccessAt: "",
     lastAttemptAt: "",
@@ -266,10 +261,6 @@ const elements = {
   teamSearchInput: document.querySelector("#teamSearchInput"),
   importLeagueBtn: document.querySelector("#importLeagueBtn"),
   refreshBtn: document.querySelector("#refreshBtn"),
-  teamFilterInput: document.querySelector("#teamFilterInput"),
-  favoritesOnly: document.querySelector("#favoritesOnly"),
-  hideFinished: document.querySelector("#hideFinished"),
-  fileImport: document.querySelector("#fileImport"),
   menuToggle: document.querySelector("#menuToggle"),
   sidebar: document.querySelector("#sidebar"),
   sidebarClose: document.querySelector("#sidebarClose"),
@@ -285,9 +276,7 @@ const elements = {
   checkAppUpdateBtn: document.querySelector("#checkAppUpdateBtn"),
   downloadAppUpdateBtn: document.querySelector("#downloadAppUpdateBtn"),
   openTeamNewsBtn: document.querySelector("#openTeamNewsBtn"),
-  teamNewsPushToggle: document.querySelector("#teamNewsPushToggle"),
   homeNewsList: document.querySelector("#homeNewsList"),
-  teamNewsPanelStatus: document.querySelector("#teamNewsPanelStatus"),
   teamNewsModal: document.querySelector("#teamNewsModal"),
   teamNewsModalTitle: document.querySelector("#teamNewsModalTitle"),
   teamNewsModalClose: document.querySelector("#teamNewsModalClose"),
@@ -302,9 +291,6 @@ const elements = {
   teamNewsLanguageTabs: Array.from(document.querySelectorAll(".team-news-language-tab")),
   todayLabel: document.querySelector("#todayLabel"),
   rangeTitle: document.querySelector("#rangeTitle"),
-  totalCount: document.querySelector("#totalCount"),
-  watchCount: document.querySelector("#watchCount"),
-  nextGameLabel: document.querySelector("#nextGameLabel"),
   statusLine: document.querySelector("#statusLine"),
   calendarView: document.querySelector("#calendarView"),
   dayModal: document.querySelector("#dayModal"),
@@ -361,22 +347,6 @@ function bindEvents() {
     state.teamSearch = elements.teamSearchInput.value;
     renderTeamButtons();
   });
-  elements.teamFilterInput.addEventListener("input", () => {
-    state.filters.terms = elements.teamFilterInput.value;
-    persist();
-    render();
-  });
-  elements.favoritesOnly.addEventListener("change", () => {
-    state.filters.favoritesOnly = elements.favoritesOnly.checked;
-    persist();
-    render();
-  });
-  elements.hideFinished.addEventListener("change", () => {
-    state.filters.hideFinished = elements.hideFinished.checked;
-    persist();
-    render();
-  });
-  elements.fileImport.addEventListener("change", importFile);
   elements.prevBtn.addEventListener("click", () => moveCursor(-1));
   elements.todayBtn.addEventListener("click", () => {
     state.cursor = startOfDay(new Date());
@@ -388,7 +358,6 @@ function bindEvents() {
   elements.checkAppUpdateBtn.addEventListener("click", checkForAppUpdate);
   elements.downloadAppUpdateBtn.addEventListener("click", openAppUpdateDownload);
   elements.openTeamNewsBtn.addEventListener("click", openTeamNewsModal);
-  elements.teamNewsPushToggle.addEventListener("change", updateTeamNewsPush);
   elements.refreshTeamNewsBtn.addEventListener("click", () => refreshTeamNews());
   elements.teamNewsLanguageTabs.forEach((tab) => tab.addEventListener("click", () => setTeamNewsLanguage(tab.dataset.language)));
   elements.teamNewsLanguageTabs.forEach((tab, index) => tab.addEventListener("keydown", (event) => {
@@ -553,11 +522,9 @@ function initializeTeamNews() {
   teamNewsState.language = "en";
   restoreTeamNewsCache();
   renderTeamNews();
-  syncTeamNewsPushStatus();
   consumePendingTeamNewsOpen();
 
   if (!getTeamNewsApiUrls().length) {
-    setTeamNewsPanelStatus("新闻 API 尚未部署");
     return;
   }
 
@@ -683,7 +650,7 @@ function renderHomeTeamNews() {
     return;
   }
   const fragment = document.createDocumentFragment();
-  teamNewsState.items.slice(0, 3).forEach((item) => {
+  teamNewsState.items.slice(0, 1).forEach((item) => {
     fragment.append(createTeamNewsCard(item, { compact: true }));
   });
   elements.homeNewsList.replaceChildren(fragment);
@@ -735,22 +702,35 @@ function createTeamNewsCard(item, options = {}) {
   copy.className = "team-news-card-copy";
   const title = document.createElement("h4");
   title.textContent = localized.title;
-  const summary = document.createElement("p");
-  summary.className = "team-news-summary";
-  summary.textContent = localized.summary || localized.body[0] || "Read the full story from MLB.com.";
-  const meta = document.createElement("span");
-  meta.className = "team-news-meta";
-  meta.textContent = `${formatTeamNewsTime(item.publishedAt, "en")} · ${item.author ? `${item.source} · ${item.author}` : item.source}`;
-  copy.append(title, summary, meta);
+  const meta = createTeamNewsMeta(item, "en", "team-news-meta", "span");
+  copy.append(title, meta);
   button.append(copy);
   article.append(button);
   return article;
+}
+
+function createTeamNewsMeta(item, language, className, tagName = "span") {
+  const meta = document.createElement(tagName);
+  meta.className = className;
+  const values = [
+    ["is-date", formatTeamNewsTime(item.publishedAt, language)],
+    ["is-source", item.source || "MLB.com"],
+    ["is-author", item.author || (language === "zh" ? "MLB 编辑部" : "MLB Editorial")]
+  ];
+  values.forEach(([modifier, value]) => {
+    const badge = document.createElement("span");
+    badge.className = `team-news-meta-badge ${modifier}`;
+    badge.textContent = value;
+    meta.append(badge);
+  });
+  return meta;
 }
 
 function setTeamNewsLanguage(language) {
   const nextLanguage = language === "zh" ? "zh" : "en";
   teamNewsState.language = nextLanguage;
   elements.teamNewsLanguageTabs.forEach((tab) => {
+    tab.parentElement.dataset.activeLanguage = nextLanguage;
     const selected = tab.dataset.language === nextLanguage;
     tab.classList.toggle("is-active", selected);
     tab.setAttribute("aria-selected", String(selected));
@@ -791,74 +771,6 @@ function closeTeamNewsModal() {
 function setTeamNewsStatus(message, isError = false) {
   elements.teamNewsModalStatus.textContent = message;
   elements.teamNewsModalStatus.classList.toggle("is-error", isError);
-}
-
-function setTeamNewsPanelStatus(message, isError = false) {
-  elements.teamNewsPanelStatus.textContent = message;
-  elements.teamNewsPanelStatus.classList.toggle("is-error", isError);
-}
-
-async function syncTeamNewsPushStatus() {
-  const plugin = window.Capacitor?.Plugins?.SportsWidget;
-  if (!plugin?.getTeamNewsPushStatus) {
-    elements.teamNewsPushToggle.disabled = true;
-    setTeamNewsPanelStatus("推送仅支持 Android 安装版");
-    return;
-  }
-
-  try {
-    const status = await plugin.getTeamNewsPushStatus();
-    elements.teamNewsPushToggle.checked = status.enabled === true;
-    elements.teamNewsPushToggle.disabled = status.configured !== true;
-    if (status.configured !== true) {
-      setTeamNewsPanelStatus("需要加入 Firebase 配置后才能启用推送");
-    } else if (status.enabled === true) {
-      const checkedAt = Number(status.lastCheckAt) > 0
-        ? formatTeamNewsTime(Number(status.lastCheckAt))
-        : "等待首次检查";
-      const notifiedAt = Number(status.lastNotificationAt) > 0
-        ? formatTeamNewsTime(Number(status.lastNotificationAt))
-        : "尚未发送";
-      const details = [];
-      if (status.permission !== "granted") details.push("系统通知或新闻频道已关闭");
-      if (status.fcmSubscribed === false) details.push("FCM 订阅恢复中，由手机后台检查补偿");
-      if (status.lastError) details.push(`后台异常：${status.lastError}`);
-      const suffix = details.length ? `；${details.join("；")}` : "";
-      setTeamNewsPanelStatus(`推送已开启；后台检查 ${checkedAt}；最近通知 ${notifiedAt}${suffix}`, details.length > 0);
-    }
-  } catch (error) {
-    elements.teamNewsPushToggle.disabled = true;
-    setTeamNewsPanelStatus(`推送状态读取失败：${error.message || "未知错误"}`, true);
-  }
-}
-
-async function updateTeamNewsPush() {
-  const requested = elements.teamNewsPushToggle.checked;
-  const plugin = window.Capacitor?.Plugins?.SportsWidget;
-  if (!plugin?.setTeamNewsPush) {
-    elements.teamNewsPushToggle.checked = false;
-    setTeamNewsPanelStatus("当前版本不支持新闻推送", true);
-    return;
-  }
-
-  elements.teamNewsPushToggle.disabled = true;
-  setTeamNewsPanelStatus(requested ? "正在开启蓝鸟队新闻推送..." : "正在关闭新闻推送...");
-  try {
-    const result = await plugin.setTeamNewsPush({
-      enabled: requested,
-      topic: TeamNewsConfig.topic
-    });
-    elements.teamNewsPushToggle.checked = result.enabled === true;
-    const enabledMessage = result.fcmEnabled === false
-      ? "新闻通知已开启；FCM 不可用时由手机后台检查补偿"
-      : "蓝鸟队中文新闻推送和手机后台检查已开启";
-    setTeamNewsPanelStatus(result.enabled ? enabledMessage : "蓝鸟队新闻推送已关闭");
-  } catch (error) {
-    elements.teamNewsPushToggle.checked = !requested;
-    setTeamNewsPanelStatus(`推送设置失败：${error.message || "请检查通知权限"}`, true);
-  } finally {
-    elements.teamNewsPushToggle.disabled = false;
-  }
 }
 
 async function consumePendingTeamNewsOpen() {
@@ -916,27 +828,21 @@ function renderTeamNewsArticle() {
   const paragraphs = teamNewsState.articleBodies.get(bodyKey) || [];
   const fragment = document.createDocumentFragment();
 
-  const imageUrl = TeamNews.normalizeMlbImageUrl(item.imageUrl);
-  if (imageUrl) {
-    const hero = document.createElement("div");
-    hero.className = "team-news-article-hero";
-    hero.innerHTML = renderImage(imageUrl, "");
-    fragment.append(hero);
-  }
   const title = document.createElement("h3");
   title.id = "teamNewsArticleTitle";
   title.textContent = localized.title;
   elements.teamNewsArticleTitle = title;
-  const meta = document.createElement("p");
-  meta.className = "team-news-article-meta";
-  meta.textContent = `${formatTeamNewsTime(item.publishedAt, language)} · ${item.author ? `${item.source} · ${item.author}` : item.source}`;
+  const meta = createTeamNewsMeta(item, language, "team-news-article-meta", "p");
   fragment.append(title, meta);
-  if (localized.summary) {
-    const summary = document.createElement("p");
-    summary.className = "team-news-article-summary";
-    summary.textContent = localized.summary;
-    fragment.append(summary);
+
+  const imageUrl = TeamNews.normalizeMlbImageUrl(item.imageUrl);
+  if (imageUrl) {
+    const hero = document.createElement("div");
+    hero.className = "team-news-article-hero";
+    hero.innerHTML = renderImage(imageUrl, localized.title, { eager: true });
+    fragment.append(hero);
   }
+
   const body = document.createElement("div");
   body.className = "team-news-article-body";
   if (paragraphs.length) {
@@ -1025,7 +931,6 @@ function openSidebar() {
   elements.sidebarOverlay.hidden = false;
   elements.menuToggle.setAttribute("aria-expanded", "true");
   elements.sidebarClose.focus();
-  syncTeamNewsPushStatus();
   loadTeamsForSelectedLeague();
 }
 
@@ -1978,8 +1883,7 @@ async function updateImportedTeams() {
     });
 
     const previousEvents = state.events;
-    const preparedUpdatedEvents = updatedEvents.map((event) => preserveExistingEventAssets(event, previousEvents));
-    state.events = state.events
+    const retainedEvents = state.events
       .map((event) => {
         let next = event;
         updatedTeamKeys.forEach((key) => {
@@ -1988,11 +1892,11 @@ async function updateImportedTeams() {
         return next;
       })
       .filter(Boolean);
-    const byId = new Map(state.events.map((event) => [event.id, event]));
-    preparedUpdatedEvents.forEach((event) => {
-      byId.set(event.id, CalendarCore.mergeEventRecords(byId.get(event.id), event));
+    const reconciliation = CalendarCore.reconcileScheduleUpdates(retainedEvents, updatedEvents, {
+      referenceEvents: previousEvents,
+      isLikelySameMatch: (left, right) => eventsLikelySameMatch(left, right, 8 * dayMs)
     });
-    state.events = [...byId.values()].sort(sortByStart);
+    state.events = reconciliation.events.sort(sortByStart);
     state.cursor = new Date(new Date().getFullYear(), new Date().getMonth(), 1);
     persist({ syncWidget: true });
     render();
@@ -2000,8 +1904,9 @@ async function updateImportedTeams() {
     const uniqueErrors = [...new Set(errors)];
     const warning = uniqueErrors.length ? `，${uniqueErrors.length} 个请求失败` : "";
     const retained = teams.length > updatedTeamKeys.size ? `，${teams.length - updatedTeamKeys.size} 支球队未拉到新赛程并保留原内容` : "";
+    const rescheduled = reconciliation.rescheduledCount ? `，已迁移 ${reconciliation.rescheduledCount} 场改期比赛` : "";
     setStatus(
-      `更新完成：${updatedTeamKeys.size} 支球队共 ${updatedEvents.length} 场已确定赛程，新增 ${newCount} 场${warning}${retained}。`,
+      `更新完成：${updatedTeamKeys.size} 支球队共 ${updatedEvents.length} 场已确定赛程，新增 ${newCount} 场${rescheduled}${warning}${retained}。`,
       Boolean(!updatedTeamKeys.size && uniqueErrors.length)
     );
     state.refreshMeta = {
@@ -2021,17 +1926,6 @@ async function updateImportedTeams() {
   } finally {
     setBusy(false);
   }
-}
-
-function preserveExistingEventAssets(event, previousEvents) {
-  const previous = previousEvents.find((candidate) => candidate.id === event.id)
-    || previousEvents.find((candidate) => eventsLikelySameMatch(candidate, event));
-  if (!previous) return event;
-  return {
-    ...event,
-    homeLogo: event.homeLogo || previous.homeLogo,
-    awayLogo: event.awayLogo || previous.awayLogo
-  };
 }
 
 async function importFile(event) {
@@ -2186,9 +2080,7 @@ function normalizeImportedEvent(row, fallbackId) {
 function render() {
   renderLeagueButtons();
   renderTeamButtons();
-  syncInputs();
   renderHeader();
-  renderStats();
   renderView();
 }
 
@@ -2475,26 +2367,10 @@ function normalizeMatchText(value) {
     .trim();
 }
 
-function syncInputs() {
-  elements.teamFilterInput.value = state.filters.terms;
-  elements.favoritesOnly.checked = state.filters.favoritesOnly;
-  elements.hideFinished.checked = state.filters.hideFinished;
-}
-
 function renderHeader() {
   const now = new Date();
   elements.todayLabel.textContent = `今天 ${formatDate(now, { month: "long", day: "numeric", weekday: "long" })}`;
   elements.rangeTitle.textContent = formatDate(state.cursor, { year: "numeric", month: "long" });
-}
-
-function renderStats() {
-  const visible = getFilteredEvents();
-  const terms = getTerms();
-  const watchCount = state.events.filter((event) => matchesTerms(event, terms)).length;
-  const next = visible.find((event) => new Date(event.start) >= new Date());
-  elements.totalCount.textContent = state.events.length;
-  elements.watchCount.textContent = watchCount;
-  elements.nextGameLabel.textContent = next ? `${formatTime(new Date(next.start))} ${next.shortTitle}` : "暂无";
 }
 
 function renderView() {
@@ -2671,7 +2547,6 @@ async function performDayScoreRefresh(dateKey) {
 
   if (updateCount) {
     persist({ syncWidget: true });
-    renderStats();
   }
   state.refreshMeta = {
     lastAttemptAt: new Date().toISOString(),
@@ -2695,10 +2570,10 @@ function findRefreshedEvent(event, candidates) {
     || candidates.find((candidate) => eventsLikelySameMatch(event, candidate));
 }
 
-function eventsLikelySameMatch(left, right) {
+function eventsLikelySameMatch(left, right, maxGapMs = 18 * 60 * 60 * 1000) {
   if (!left || !right || left.league !== right.league) return false;
   const timeGap = Math.abs(new Date(left.start).getTime() - new Date(right.start).getTime());
-  if (!Number.isFinite(timeGap) || timeGap > 18 * 60 * 60 * 1000) return false;
+  if (!Number.isFinite(timeGap) || timeGap > maxGapMs) return false;
   const sameDirection = teamNamesOverlap(left.homeTeam, right.homeTeam, left.league)
     && teamNamesOverlap(left.awayTeam, right.awayTeam, left.league);
   const swapped = teamNamesOverlap(left.homeTeam, right.awayTeam, left.league)
@@ -2916,31 +2791,7 @@ function eventColor(event, fallback) {
 }
 
 function getFilteredEvents() {
-  const terms = getTerms();
-  return state.events
-    .filter((event) => !state.filters.hideFinished || !event.completed)
-    .filter((event) => !state.filters.favoritesOnly || matchesTerms(event, terms))
-    .sort(sortByStart);
-}
-
-function getTerms() {
-  return state.filters.terms
-    .split(",")
-    .map((term) => term.trim().toLowerCase())
-    .filter(Boolean);
-}
-
-function matchesTerms(event, terms) {
-  if (!terms.length) return false;
-  const haystack = [
-    event.title,
-    event.shortTitle,
-    event.homeTeam,
-    event.awayTeam,
-    event.leagueName,
-    ...(event.teams || [])
-  ].join(" ").toLowerCase();
-  return terms.some((term) => haystack.includes(term));
+  return state.events.slice().sort(sortByStart);
 }
 
 function moveCursor(direction) {
@@ -2986,7 +2837,6 @@ function createStorageSnapshot() {
     selectedTeamsByLeague: state.selectedTeamsByLeague,
     events: state.events,
     followedTeams: state.followedTeams,
-    filters: state.filters,
     refreshMeta: state.refreshMeta
   };
 }
@@ -3005,7 +2855,6 @@ async function load() {
     })
     : [];
   state.followedTeams = CalendarCore.deriveFollowedTeams(state.events, saved.followedTeams || []);
-  state.filters = { ...state.filters, ...(saved.filters || {}) };
   state.refreshMeta = { ...state.refreshMeta, ...(saved.refreshMeta || {}) };
 }
 

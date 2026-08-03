@@ -136,6 +136,57 @@ final class WidgetNetworkClient {
         }
     }
 
+    static Bitmap downloadNewsImage(String imageUrl) {
+        String safeUrl = TeamNewsWidgetData.safeImageUrl(imageUrl);
+        if (safeUrl.isEmpty()) return null;
+        HttpURLConnection connection = null;
+        try {
+            connection = open(safeUrl, 10_000, 15_000);
+            connection.setRequestProperty("Accept", "image/*");
+            int code = connection.getResponseCode();
+            if (TeamNewsWidgetData.safeImageUrl(connection.getURL().toString()).isEmpty()) return null;
+            if (code < 200 || code >= 300) return null;
+            String contentType = connection.getContentType();
+            if (contentType != null && !contentType.toLowerCase(Locale.ROOT).startsWith("image/")) return null;
+            byte[] bytes = readLimited(connection.getInputStream(), MAX_IMAGE_BYTES);
+
+            BitmapFactory.Options bounds = new BitmapFactory.Options();
+            bounds.inJustDecodeBounds = true;
+            BitmapFactory.decodeStream(new ByteArrayInputStream(bytes), null, bounds);
+            if (bounds.outWidth <= 0 || bounds.outHeight <= 0
+                || (long) bounds.outWidth * bounds.outHeight > MAX_IMAGE_PIXELS) return null;
+
+            final int targetWidth = 480;
+            final int targetHeight = 270;
+            BitmapFactory.Options options = new BitmapFactory.Options();
+            options.inSampleSize = 1;
+            while (bounds.outWidth / (options.inSampleSize * 2) >= targetWidth
+                && bounds.outHeight / (options.inSampleSize * 2) >= targetHeight) {
+                options.inSampleSize *= 2;
+            }
+            Bitmap decoded = BitmapFactory.decodeStream(new ByteArrayInputStream(bytes), null, options);
+            if (decoded == null) return null;
+
+            float scale = Math.max(
+                (float) targetWidth / decoded.getWidth(),
+                (float) targetHeight / decoded.getHeight()
+            );
+            int scaledWidth = Math.max(targetWidth, Math.round(decoded.getWidth() * scale));
+            int scaledHeight = Math.max(targetHeight, Math.round(decoded.getHeight() * scale));
+            Bitmap scaled = Bitmap.createScaledBitmap(decoded, scaledWidth, scaledHeight, true);
+            if (scaled != decoded) decoded.recycle();
+            int left = Math.max(0, (scaledWidth - targetWidth) / 2);
+            int top = Math.max(0, (scaledHeight - targetHeight) / 2);
+            Bitmap cropped = Bitmap.createBitmap(scaled, left, top, targetWidth, targetHeight);
+            if (cropped != scaled) scaled.recycle();
+            return cropped;
+        } catch (Exception ignored) {
+            return null;
+        } finally {
+            if (connection != null) connection.disconnect();
+        }
+    }
+
     private static HttpURLConnection open(String endpoint, int connectTimeout, int readTimeout) throws Exception {
         URL url = new URL(endpoint);
         if (!"https".equalsIgnoreCase(url.getProtocol())) throw new IllegalArgumentException("HTTPS required");
@@ -143,7 +194,7 @@ final class WidgetNetworkClient {
         connection.setConnectTimeout(connectTimeout);
         connection.setReadTimeout(readTimeout);
         connection.setInstanceFollowRedirects(true);
-        connection.setRequestProperty("User-Agent", "GuansaiRiji/2.2.7");
+        connection.setRequestProperty("User-Agent", "GuansaiRiji/2.2.14");
         return connection;
     }
 

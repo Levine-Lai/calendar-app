@@ -35,6 +35,7 @@ import java.util.Collections;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
@@ -87,7 +88,6 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
         AppWidgetManager manager = AppWidgetManager.getInstance(context);
         int[] ids = manager.getAppWidgetIds(new ComponentName(context, MlbTodayWidgetProvider.class));
         renderLocalWidgets(context.getApplicationContext(), manager, ids);
-        MatchDetailWidgetProvider.refreshAllViews(context.getApplicationContext());
         enqueueImmediateRefresh(context.getApplicationContext());
     }
 
@@ -117,7 +117,6 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
         AppWidgetManager manager = AppWidgetManager.getInstance(context);
         int[] ids = manager.getAppWidgetIds(new ComponentName(context, MlbTodayWidgetProvider.class));
         renderLocalWidgets(context.getApplicationContext(), manager, ids);
-        MatchDetailWidgetProvider.refreshAllViews(context.getApplicationContext());
     }
 
     private static boolean updateWidgetsNow(Context context, AppWidgetManager manager, int[] widgetIds) {
@@ -130,15 +129,7 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
                 gamesByDay.put(requestedDayKey, readSelectedDayGames(context, requestedDay, requestedDayKey));
             }
         }
-        int[] detailWidgetIds = manager.getAppWidgetIds(new ComponentName(context, MatchDetailWidgetProvider.class));
-        for (int appWidgetId : detailWidgetIds) {
-            Date requestedDay = selectedDay(context, appWidgetId);
-            String requestedDayKey = dayKey(requestedDay);
-            if (!gamesByDay.containsKey(requestedDayKey)) {
-                gamesByDay.put(requestedDayKey, readSelectedDayGames(context, requestedDay, requestedDayKey));
-            }
-        }
-        if (widgetIds.length == 0 && detailWidgetIds.length == 0) {
+        if (widgetIds.length == 0) {
             Date today = selectedDay(context, AppWidgetManager.INVALID_APPWIDGET_ID);
             gamesByDay.put(dayKey(today), readSelectedDayGames(context, today, dayKey(today)));
         }
@@ -155,13 +146,7 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
             String requestedDayKey = selectedDayKey(context, appWidgetId);
             cacheDisplayGames(appWidgetId, requestedDayKey, gamesByDay.get(requestedDayKey));
         }
-        for (int appWidgetId : detailWidgetIds) {
-            String requestedDayKey = selectedDayKey(context, appWidgetId);
-            cacheDisplayGames(appWidgetId, requestedDayKey, gamesByDay.get(requestedDayKey));
-        }
         updateWidgetViews(context, manager, widgetIds);
-        cacheDetailWidgetGames(context);
-        MatchDetailWidgetProvider.refreshAllViews(context);
         return success;
     }
 
@@ -172,17 +157,6 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
             cacheDisplayGames(appWidgetId, key, readSelectedDayGames(context, date, key));
         }
         updateWidgetViews(context, manager, widgetIds);
-        cacheDetailWidgetGames(context);
-    }
-
-    private static void cacheDetailWidgetGames(Context context) {
-        AppWidgetManager manager = AppWidgetManager.getInstance(context);
-        int[] detailIds = manager.getAppWidgetIds(new ComponentName(context, MatchDetailWidgetProvider.class));
-        for (int appWidgetId : detailIds) {
-            Date date = selectedDay(context, appWidgetId);
-            String key = dayKey(date);
-            cacheDisplayGames(appWidgetId, key, readSelectedDayGames(context, date, key));
-        }
     }
 
     private static String refreshStatusLabel(Context context) {
@@ -217,10 +191,7 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
         int componentOneCount = manager
             .getAppWidgetIds(new ComponentName(context, MlbTodayWidgetProvider.class))
             .length;
-        int componentTwoCount = manager
-            .getAppWidgetIds(new ComponentName(context, MatchDetailWidgetProvider.class))
-            .length;
-        if (componentOneCount == 0 && componentTwoCount == 0) {
+        if (componentOneCount == 0) {
             WorkManager.getInstance(context)
                 .cancelUniqueWork(PERIODIC_WORK_NAME);
         }
@@ -455,60 +426,6 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
         views.setViewVisibility(R.id.home_logo, View.VISIBLE);
     }
 
-    static void renderDetailGame(Context context, RemoteViews views, Game game) {
-        Matchup matchup = matchup(game);
-        views.setTextViewText(R.id.detail_start, startTimeLabel(game));
-        views.setTextViewText(R.id.detail_score, primaryLabel(game));
-        views.setTextColor(R.id.detail_score, isLive(game) ? SCORE_LIVE_COLOR : SCORE_DEFAULT_COLOR);
-        views.setTextViewText(R.id.detail_status, statusLabel(game));
-        views.setTextViewText(R.id.detail_league, game.leagueLabel == null ? "比赛" : game.leagueLabel);
-        views.setTextViewText(R.id.detail_left_team, teamLabel(matchup.leftName, matchup.leftSlot));
-        views.setTextViewText(R.id.detail_right_team, teamLabel(matchup.rightName, matchup.rightSlot));
-        String venue = detailVenueLabel(game);
-        views.setTextViewText(R.id.detail_venue, venue);
-        views.setViewVisibility(R.id.detail_venue, venue.isEmpty() ? View.GONE : View.VISIBLE);
-        setLogo(context, views, R.id.detail_left_logo, matchup.leftLogo);
-        setLogo(context, views, R.id.detail_right_logo, matchup.rightLogo);
-    }
-
-    private static Matchup matchup(Game game) {
-        if (isHomeFirst(game)) {
-            return new Matchup(
-                game.homeLogo,
-                game.awayLogo,
-                game.homeTeam,
-                game.awayTeam,
-                "主队",
-                "客队"
-            );
-        }
-        return new Matchup(
-            game.awayLogo,
-            game.homeLogo,
-            game.awayTeam,
-            game.homeTeam,
-            "客队",
-            "主队"
-        );
-    }
-
-    private static String teamLabel(String value, String fallback) {
-        String cleaned = cleanJsonValue(value);
-        return cleaned.isEmpty() ? fallback : cleaned;
-    }
-
-    private static String detailVenueLabel(Game game) {
-        String venue = cleanJsonValue(game.venue);
-        String city = cleanJsonValue(game.city);
-        if (venue.isEmpty()) {
-            return city;
-        }
-        if (city.isEmpty() || venue.contains(city)) {
-            return venue;
-        }
-        return city + " · " + venue;
-    }
-
     private static void setLogo(Context context, RemoteViews views, int viewId, String logoUrl) {
         views.setViewVisibility(viewId, View.VISIBLE);
         Bitmap bitmap = loadCachedBitmap(context, logoUrl);
@@ -526,10 +443,14 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
                 .getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
                 .getString(PREFS_LIVE_SNAPSHOT, "{}");
             JSONObject root = new JSONObject(raw);
-            if (!dayKey.equals(root.optString("day", ""))) {
-                return byKey;
+            JSONObject snapshot;
+            if (root.has("day")) {
+                snapshot = dayKey.equals(root.optString("day", "")) ? root : null;
+            } else {
+                snapshot = root.optJSONObject(dayKey);
             }
-            JSONArray games = root.optJSONArray("games");
+            if (snapshot == null) return byKey;
+            JSONArray games = snapshot.optJSONArray("games");
             if (games == null) return byKey;
             for (int index = 0; index < games.length(); index += 1) {
                 JSONObject game = games.optJSONObject(index);
@@ -567,10 +488,25 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
                 row.put("homeLogo", game.homeLogo);
                 rows.put(row);
             }
-            JSONObject root = new JSONObject();
-            root.put("day", dayKey);
-            root.put("fetchedAt", System.currentTimeMillis());
-            root.put("games", rows);
+            JSONObject snapshot = new JSONObject();
+            snapshot.put("fetchedAt", System.currentTimeMillis());
+            snapshot.put("games", rows);
+            String existing = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
+                .getString(PREFS_LIVE_SNAPSHOT, "{}");
+            JSONObject root = new JSONObject(existing);
+            if (root.has("day")) root = new JSONObject();
+            root.put(dayKey, snapshot);
+            long oldestAllowed = System.currentTimeMillis() - TimeUnit.DAYS.toMillis(14);
+            Iterator<String> keys = root.keys();
+            List<String> staleKeys = new ArrayList<>();
+            while (keys.hasNext()) {
+                String key = keys.next();
+                JSONObject value = root.optJSONObject(key);
+                if (value == null || value.optLong("fetchedAt", 0L) < oldestAllowed) {
+                    staleKeys.add(key);
+                }
+            }
+            for (String staleKey : staleKeys) root.remove(staleKey);
             context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
                 .edit()
                 .putString(PREFS_LIVE_SNAPSHOT, root.toString())
@@ -1340,28 +1276,4 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
         }
     }
 
-    private static class Matchup {
-        final String leftLogo;
-        final String rightLogo;
-        final String leftName;
-        final String rightName;
-        final String leftSlot;
-        final String rightSlot;
-
-        Matchup(
-            String leftLogo,
-            String rightLogo,
-            String leftName,
-            String rightName,
-            String leftSlot,
-            String rightSlot
-        ) {
-            this.leftLogo = leftLogo;
-            this.rightLogo = rightLogo;
-            this.leftName = leftName;
-            this.rightName = rightName;
-            this.leftSlot = leftSlot;
-            this.rightSlot = rightSlot;
-        }
-    }
 }

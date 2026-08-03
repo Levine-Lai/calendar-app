@@ -1575,6 +1575,57 @@
 - 当前已生成本地可安装 APK，但尚未上传公开下载地址。
 - `public/version.json` 暂时保持远程已发布版本 `2.2.1`，避免旧版 App 检测到无法下载的更新；上传 APK 后再更新远程清单。
 
+### 修改批次：2.2.9 新闻大图、首页精简与跨日期组件修复
+
+#### 用户目标
+
+1. 手机首页新闻卡片使用更大的 4:3 图片，图片贴住卡片顶部、加入圆角，并放大下方标题。
+2. 首页新闻区域不再显示“推送已开启”、后台检查时间和最近通知等长状态文字。
+3. 删除侧栏中的三个统计框、“我的偏好”和“文件导入”。
+4. 修复桌面组件切换到明日、后日后队徽偶发缺失的问题。
+
+#### 实现
+
+1. 首页新闻卡片改为 4:3 媒体区域，图片使用 `object-fit: cover` 填满上半部；卡片与图片顶部增加圆角，手机标题提升到 21px。
+2. 删除首页推送状态文本节点；推送是否开启由开关自身表示，底层推送订阅和错误处理逻辑保持不变。
+3. 删除侧栏统计、偏好和文件导入入口，同时移除对应 DOM 绑定和隐藏过滤逻辑；升级后旧偏好数据不会继续暗中筛选赛程。
+4. Android 实时快照由单个日期改为按日期键分别保存，兼容旧版单日快照，并自动清理超过 14 天的数据。
+5. 联网刷新后不再调用本地详情组件缓存覆盖函数，保留已补齐的实时比分和队徽 URL。
+6. 版本提升为 `2.2.9 / versionCode 31`，Web 本地资源查询参数同步更新为 `v=2.2.9`。
+
+#### 验证
+
+- JavaScript 语法检查通过。
+- Web 自动化测试 27 项全部通过。
+- 稳定性检查扩展为 25 项并全部通过。
+- Web 静态构建成功。
+- Android JVM 测试与 Debug 构建成功。
+- APK：`releases/sports-calendar-2.2.9-debug.apk`，大小 `9,370,226` 字节。
+- APK 包名 `com.local.sportscalendar`，版本 `2.2.9 / versionCode 31`，v2 签名验证通过。
+- APK SHA-256：`23CC56AE2366EFD03E8419ACE0DDF92DAB9D108636AAC3BCF7C65AD63889356B`。
+
+### 修改批次：2.2.10 固定签名身份
+
+#### 问题
+
+- vivo 安装器提示“软件包与现有软件包存在冲突”“开发者签名有异常”。
+- 手机已有版本的签名证书 SHA-256 为 `7EF83E3EC40B7BF1E9AAF551589EE73C378FC26F29202255F0466BCAB759BED0`。
+- 新电脑首次构建生成的 Debug 证书 SHA-256 为 `6599D6ACAB38C397D90904BD14D9F61751E0B162D5CCAD595BA9BEEDC7A914AD`。
+- 原始签名私钥不在 Git 历史、本机 `.android`、Documents、Downloads 或旧项目路径中，无法从 APK/证书反推出私钥。
+
+#### 修复
+
+1. Debug 和 Release 构建均要求四个 `SPORTS_CALENDAR_*` 签名环境变量。
+2. 构建前使用 `keytool` 读取实际证书指纹，只有与历史证书完全一致时才继续。
+3. Android Debug 构建在提供固定签名时改用同一 signingConfig，不再使用机器自动生成的 Debug keystore。
+4. 版本提升为 `2.2.10 / versionCode 32`。
+
+#### 状态
+
+- 源码修复完成，按项目规则未打包。
+- 要覆盖安装并保留数据，仍必须从原电脑或备份找回历史 keystore。
+- 如果无法找回，需先连接手机通过 adb 备份可读取的数据，再卸载旧签名版本并安装使用新固定签名的版本。
+
 ## 2026-07-24
 
 ### 修改批次：2.2.7 新闻主页入口、摘要列表与独立全文页
@@ -2100,3 +2151,149 @@
 
 - 当前已生成本地可安装 APK，但尚未上传公开下载地址。
 - `public/version.json` 暂时保持远程已发布版本 `2.2.1`，避免旧版 App 检测到无法下载的更新；上传 APK 后再更新远程清单。
+
+## 2026-07-27
+
+### 修改批次：2.2.10 三秒奔跑开屏动画
+
+- 使用 `Running- Raynaud.gif` 制作 App 开屏动画，保持透明人物叠加在原有纯蓝背景上。
+- 新增 `scripts/prepare-launch-gif.py`，可复用地把后续 GIF 素材按指定时长裁剪并保留逐帧时序。
+- 输出 `public/assets/branding/launch-runner.gif`：512×512、38 帧、总时长 3000ms、循环播放，文件大小 845,504 字节。
+- Web 开屏层固定显示 3 秒，随后以 220ms 淡出；Android 原生启动背景统一为 `#C5E5F8`。
+- 本轮只完成源码与 Web 构建验证，按项目规则未生成 APK；下一个版本仍为 `2.2.10`。
+
+### 交接完成与发布批次：2.2.10
+
+#### 交接缺口
+
+1. 下载目录中的旧交接文档基于 `2.2.9` 和已不存在的旧工作目录；当前项目已经是 `2.2.10`。
+2. 当前目录仍保留旧 2×2 比赛详情组件2，缺少交接文档所述的新闻组件数据、Worker、缓存和占位布局。
+3. README 仍描述已删除的文件导入、偏好筛选、隐藏已结束比赛和单一桌面组件。
+4. 新闻后台首次安装依赖后发现 `fast-xml-parser 5.10.0` 存在高危实体扩展漏洞。
+5. 跑步动画试验素材会被全部复制到 APK；旧 APK 的重复增量签名还产生了约 21 MB 签名块空洞。
+
+#### 完成内容
+
+1. 组件2改为 4×3 最近新闻卡片：图片贴住顶部、16:9 居中裁切、顶部圆角，标题为 19sp 两行。
+2. 新增 `TeamNewsWidgetData` 和 `NewsWidgetRefreshWorker`，从 GitHub Raw/jsDelivr 选择最新新闻，限制为 MLB 官方文章和图片域名，缓存图片及标题，失败时保留旧内容。
+3. 组件2使用独立 15 分钟 WorkManager 周期任务；组件1不再加载或刷新组件2比赛缓存。
+4. 删除 `SportsDetailWidgetService`、旧比赛详情 item 和旧详情卡片背景，Manifest 同步移除旧 RemoteViews Service。
+5. 修复首次离线兜底使用的 Capacitor 包内新闻路径；点击组件通过 `OPEN_TEAM_NEWS` 打开对应文章。
+6. README 更新为当前双组件、新闻、固定签名和发布流程，并在项目根目录建立新的 `AGENT_HANDOFF.md`。
+7. `fast-xml-parser` 升级为 `5.10.1`，生产依赖审计恢复为 0。
+8. `build-web.js` 排除未被 App 使用的跑步试验素材；`build-android.js` 每次构建前清除精确的旧 APK 输出，避免签名块反复膨胀。
+
+#### 验证
+
+- Web 自动化测试 27 项全部通过。
+- 新闻后台测试 23 项全部通过，`npm audit --omit=dev` 为 0 个漏洞。
+- 稳定性检查 28 项全部通过。
+- Android `testDebugUnitTest` 与 `lintDebug` 成功。
+- 固定签名 Debug 构建成功；包名 `com.local.sportscalendar`，版本 `2.2.10 / versionCode 32`。
+- APK Signature Scheme v2 验证通过；证书 SHA-256 为 `7EF83E3EC40B7BF1E9AAF551589EE73C378FC26F29202255F0466BCAB759BED0`。
+- 最终 APK：`releases/sports-calendar-2.2.10-debug.apk`，大小 `8,026,027` 字节。
+- APK SHA-256：`776C4290B0D4266AD886C6EB8A2EFF239A4B14A82410C6CAB1DB74285F7D0C53`。
+- 包内 branding 目录只包含正式的 `launch-runner.gif`，未包含跑步试验 GIF/精灵表。
+
+#### 发布边界
+
+- App 内远程更新清单仍为 `2.2.1` 且没有 APK HTTPS 地址，因此 `2.2.10` 目前通过本地 APK 分发，不能在旧版 App 内自动更新。
+
+### 修改批次：2.2.11 新闻组件与手机新闻紧凑版
+
+#### 用户目标
+
+1. 组件2保持 4×3、放大图片，并可滑动查看最近三条新闻。
+2. 开屏 GIF 改为 1.5 秒。
+3. 日期、网站、作者分别使用高亮颜色框。
+4. 手机新闻列表和详情收窄比例；详情只保留标题、三项信息和图片。
+5. 去掉点击新闻后的蓝色焦点框。
+6. 首页新闻只保留最新一条、上下收窄，删除推送框并默认开启推送。
+
+#### 完成内容
+
+- 新增 `NewsWidgetService` 和 `widget_news_item.xml`，组件2使用原生 `StackView` 展示最近三条新闻。
+- `TeamNewsWidgetData` 改为最多缓存三条文章及各自图片；网络失败继续使用已有缓存。
+- 开屏计时改为 1500ms；新闻卡片统一为紧凑 16:9 图片比例。
+- 日期、网站、作者改为蓝、黄、绿三种标签；详情页移除摘要和正文，只保留标题、标签和图片。
+- 首页只渲染最新一条新闻，删除新闻推送开关和状态框；原生推送默认开启并在 Android 13+ 首次请求通知权限。
+- 源码版本提升为 `2.2.11 / versionCode 33`。
+
+#### 验证与发布边界
+
+- Web 自动化测试 27 项、稳定性检查 28 项全部通过。
+- Android `testDebugUnitTest` 和 `lintDebug` 通过。
+- 浏览器实测首页仅 1 条、无推送框和摘要；三种标签颜色生效；详情仅有标题、3 个标签和 1 张图片，焦点边框为 `none`。
+- 本轮未执行 APK 打包或签名验证；最新已生成 APK 仍为 `2.2.10`，下一次打包目标为 `2.2.11 / versionCode 33`。
+
+### 本机打包批次：2.2.11
+
+- 用户明确要求先跳过 GitHub Release 和应用内更新发布，只交付本机安装包。
+- 使用历史固定签名生成 `releases/sports-calendar-2.2.11-debug.apk`，大小 `8,043,576` 字节。
+- `aapt dump badging`：包名 `com.local.sportscalendar`，`versionCode 33`，`versionName 2.2.11`，应用名“观赛日记”。
+- APK Signature Scheme v2 验证通过；证书 SHA-256 为 `7EF83E3EC40B7BF1E9AAF551589EE73C378FC26F29202255F0466BCAB759BED0`。
+- APK 文件 SHA-256 为 `02D4F04C88DF9985BF746A5ED4A367344824CD2306FD6AAF75A2C214346743FD`。
+- `public/version.json` 继续保持旧状态，本轮没有推送 GitHub，也没有启用手机应用内更新。
+
+### 修改批次：2.2.12 新闻正文与统一白色卡片
+
+- 用户反馈点进新闻后没有正文，并要求 English/中文按钮圆角化、新闻列表卡片统一白色背景。
+- 恢复 `openTeamNewsArticle` 对 `ensureTeamNewsArticleBody` 的调用，并重新渲染正文段落；优先使用随新闻数据下发的双语正文，缺少英文正文时由 Android 原生插件读取 MLB 原文。
+- English/中文切换按钮及容器改为胶囊圆角。
+- 移除新闻卡片交替底色，统一使用白色背景、10px 圆角、1px 浅色边框和轻阴影。
+- 手机正文使用 16px 字号、1.72 行高，并缩小图片与正文之间的空隙。
+- 源码版本提升为 `2.2.12 / versionCode 34`；最新已生成 APK 仍为 `2.2.11 / versionCode 33`，本轮未打包。
+- Web 自动化测试 27 项、稳定性检查 28 项通过；浏览器实测英文/中文正文各 41 段，前三张列表卡片均为白底、10px 圆角和 1px 边框。
+
+### GitHub 发布补全：2.2.11 Release 与应用内更新
+
+- 用户要求补齐此前因 GitHub CLI 设备授权和网络中断而跳过的发布工作。
+- GitHub CLI 已使用账号 `Levine-Lai` 完成设备授权；为绕过本机到 GitHub OAuth 接口的 HTTP/2 连接中断，登录进程临时使用 `GODEBUG=http2client=0`。
+- 创建正式 GitHub Release `v2.2.11`，上传 `sports-calendar-2.2.11-debug.apk`；远程资源大小为 `8,043,576` 字节。
+- Release 地址：`https://github.com/Levine-Lai/calendar-app/releases/tag/v2.2.11`。
+- APK 固定下载地址：`https://github.com/Levine-Lai/calendar-app/releases/download/v2.2.11/sports-calendar-2.2.11-debug.apk`。
+- APK SHA-256 保持为 `02D4F04C88DF9985BF746A5ED4A367344824CD2306FD6AAF75A2C214346743FD`。
+- 将本地和 GitHub `main` 分支的 `public/version.json` 更新为 `2.2.11 / versionCode 33`，`force` 保持 `false`；远程清单提交为 `034cd41c68c40fe1fda02ee9cb3dba629ffbfcc9`。
+- 未打包、未发布 `2.2.12`；当前源码仍为 `2.2.12 / versionCode 34`，等待用户明确打包指令。
+
+### 本机打包批次：2.2.12
+
+- 用户明确要求生成 `2.2.12` 安装包。
+- 打包前确认 `package.json`、Android Gradle 与 App 更新配置均为 `2.2.12 / versionCode 34`。
+- 固定 keystore 证书 SHA-256 为 `7EF83E3EC40B7BF1E9AAF551589EE73C378FC26F29202255F0466BCAB759BED0`，与历史安装包一致。
+- `npm.cmd test` 27 项、`npm.cmd run verify:stability` 28 项、Android `testDebugUnitTest` 和 `lintDebug` 均通过。
+- 固定签名 Debug 构建成功；`aapt dump badging` 确认包名 `com.local.sportscalendar`、`versionCode 34`、`versionName 2.2.12`。
+- APK Signature Scheme v2 验证通过；证书指纹与打包前核对值一致。
+- 最终 APK：`releases/sports-calendar-2.2.12-debug.apk`，大小 `8,043,916` 字节，SHA-256 为 `AA81B3EDC0F4D684BDF17FABC95954EBFB014E4E7C08D78EEC153C314B9CC8E8`。
+- 本轮只生成本机安装包，没有创建 `v2.2.12` GitHub Release；App 内更新清单仍发布 `2.2.11`。
+
+### 修复批次：2.2.13 手机新闻卡片高度塌陷
+
+- 用户提供 vivo 手机截图：全屏新闻列表中的 20 张新闻卡片被压缩成细横条，图片、标题和日期/来源/作者标签均被裁切。
+- 在 390×844 手机视口复现同一问题：卡片外层高度仅约 26px，但内部按钮、图片和正文实际高度为 115–144px；卡片的 `overflow: hidden` 随后裁掉全部超出内容。
+- 根因是 `.team-news-list` 位于全屏弹窗受限高度 Grid 行中，自身包含大量自动 Grid 行时，浏览器将自动行压缩到可用高度。
+- 为 `.team-news-list` 增加 `grid-auto-rows: max-content`，强制每张新闻卡片按内容高度参与轨道计算；列表继续通过 `overflow-y: auto` 独立滚动。
+- 稳定性检查的“手机新闻排版与返回”项目加入 `grid-auto-rows: max-content` 回归断言。
+- 源码版本提升为 `2.2.13 / versionCode 35`，静态资源缓存版本和 Android User-Agent 同步更新。
+- 修复后同一视口中，前三张卡片外层高度分别为 146px、117px、137px，与内部内容高度一致；20 张卡片的列表滚动高度为 2884px，图片、标题和三个标签完整显示。
+- 本轮未生成 APK；最新本机安装包仍为 `2.2.12 / versionCode 34`，等待用户明确打包指令。
+
+### 2.2.14 改期迁移、语言切换与打包
+
+- 赛程刷新新增改期迁移：同一数据源赛事 ID 即使日期和本地 ID 改变也会替换旧记录，不再同时保留周六旧赛程与周日新赛程。
+- 数据源更换赛事 ID 时，仅在八天窗口内的旧、新对阵都唯一时执行兜底迁移；同队连续多场的棒球系列赛保持独立，避免误合并。
+- 迁移后的新比赛继承旧记录中有效的主客队队徽；共享比赛在部分球队刷新失败时也会把保留关联迁移到新记录，避免空图标。
+- English/中文改为两个等宽满框按钮，使用独立滑块和 240ms 缓动；390×844 视口实测按钮宽度约 89.6px 对 89.6px，无相互遮挡和横向溢出。
+- Web 自动化测试 29 项、稳定性检查 28 项、Android `testDebugUnitTest` 与 `lintDebug` 全部通过。
+- 按用户明确指令使用历史固定签名生成 `releases/sports-calendar-2.2.14-debug.apk`。
+- APK 包名 `com.local.sportscalendar`，`versionCode 36`，`versionName 2.2.14`，APK Signature Scheme v2 验证通过。
+- APK 大小 `8,045,540` 字节，SHA-256 为 `E87511485A17F0A53EC1CE6C1727EF320632DE26F83F86F4B5EBF5FB63AFF4F6`。
+
+### 修复批次：2.2.14 组件2只显示最新新闻
+
+- 用户反馈桌面组件2中出现多个新闻卡片窗口，要求只显示最新一条。
+- 数据层 `TeamNewsWidgetData.MAX_ITEMS` 从 3 改为 1；网络新闻、内置新闻和旧缓存均统一只返回发布时间最新的一条。
+- `widget_match_detail.xml` 的 `StackView` 关闭 `loopViews`，避免单条数据循环重复显示。
+- Android 单元测试新增“多条新闻只保留最新一条”回归用例；稳定性检查同步验证 `MAX_ITEMS = 1` 与关闭循环。
+- 源码版本提升为 `2.2.14 / versionCode 36`，静态资源缓存版本和 Android User-Agent 同步更新。
+- 本轮未生成 APK；最新本机安装包仍为 `2.2.12 / versionCode 34`，等待用户明确打包指令。
