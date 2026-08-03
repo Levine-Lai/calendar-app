@@ -2291,6 +2291,8 @@
 - GitHub Release `v2.2.14` 已发布，资产大小 `8,045,540` 字节，GitHub 记录的 SHA-256 与本机完全一致。
 - 固定下载地址：`https://github.com/Levine-Lai/calendar-app/releases/download/v2.2.14/sports-calendar-2.2.14-debug.apk`。
 - `public/version.json` 已切换到 `2.2.14 / versionCode 36`，`force` 保持 `false`，供旧版 App 手动检查更新。
+- 使用 App 同一更新模块联网读取远程清单：versionCode 33 和 34 均判定存在新版，versionCode 36 判定为最新版；APK HEAD 请求返回 200、正确 Android 包类型和 `8,045,540` 字节。
+- 在 390×844 实际页面打开菜单并点击“检查更新”，状态显示“当前 v2.2.14 已是最新版本”，浏览器控制台无错误，证明远程清单、版本比较和页面状态链路已跑通。
 
 ### 修复批次：2.2.14 组件2只显示最新新闻
 

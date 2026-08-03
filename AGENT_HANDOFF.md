@@ -16,6 +16,7 @@
 - 签名证书 SHA-256：`7EF83E3EC40B7BF1E9AAF551589EE73C378FC26F29202255F0466BCAB759BED0`。
 - GitHub Release：`https://github.com/Levine-Lai/calendar-app/releases/tag/v2.2.14`。
 - App 内远程更新已启用：`public/version.json` 发布 `2.2.14 / versionCode 36`，下载地址为 GitHub Release 固定 HTTPS 资源。
+- 联网实测：2.2.11/2.2.12 的 versionCode 会识别 2.2.14 为新版；2.2.14 页面点击“检查更新”显示“已是最新版本”，无控制台错误。
 
 ## 必须遵守
 
