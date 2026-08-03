@@ -2288,6 +2288,9 @@
 - 按用户明确指令使用历史固定签名生成 `releases/sports-calendar-2.2.14-debug.apk`。
 - APK 包名 `com.local.sportscalendar`，`versionCode 36`，`versionName 2.2.14`，APK Signature Scheme v2 验证通过。
 - APK 大小 `8,045,540` 字节，SHA-256 为 `E87511485A17F0A53EC1CE6C1727EF320632DE26F83F86F4B5EBF5FB63AFF4F6`。
+- GitHub Release `v2.2.14` 已发布，资产大小 `8,045,540` 字节，GitHub 记录的 SHA-256 与本机完全一致。
+- 固定下载地址：`https://github.com/Levine-Lai/calendar-app/releases/download/v2.2.14/sports-calendar-2.2.14-debug.apk`。
+- `public/version.json` 已切换到 `2.2.14 / versionCode 36`，`force` 保持 `false`，供旧版 App 手动检查更新。
 
 ### 修复批次：2.2.14 组件2只显示最新新闻
 

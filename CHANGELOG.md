@@ -7,10 +7,10 @@
 - 本机最新已生成 APK：`2.2.14 / versionCode 36`
 - 当前源码版本：`2.2.14 / versionCode 36`
 - APK 文件：`releases/sports-calendar-2.2.14-debug.apk`
-- GitHub Release：`https://github.com/Levine-Lai/calendar-app/releases/tag/v2.2.11`
-- App 内检查更新清单已指向 `2.2.11` 的固定 GitHub Release 下载地址。
+- GitHub Release：`https://github.com/Levine-Lai/calendar-app/releases/tag/v2.2.14`
+- App 内检查更新清单已指向 `2.2.14` 的固定 GitHub Release 下载地址。
 
-## 2.2.14（已生成 APK，待 GitHub 发布）
+## 2.2.14（已发布）
 
 - 修复组件2同时显示多个新闻卡片窗口的问题，改为只显示最新一篇新闻。
 - 新闻组件数据上限从 3 改为 1，已存在的三条旧缓存升级后也只读取最新一条。
@@ -21,6 +21,7 @@
 - English/中文切换改为各占完整半框的圆角滑块，切换动画更平滑且不会相互遮挡。
 - 固定签名 APK 大小 `8,045,540` 字节，SHA-256：`E87511485A17F0A53EC1CE6C1727EF320632DE26F83F86F4B5EBF5FB63AFF4F6`。
 - 包名 `com.local.sportscalendar`、`versionCode 36`、`versionName 2.2.14` 与历史签名证书均已校验。
+- GitHub Release 已发布，Release 资产大小和 SHA-256 与本机 APK 完全一致；远程检查更新清单已切换到本版本。
 
 ## 2.2.13（源码完成，未打包）
 

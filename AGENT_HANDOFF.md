@@ -8,14 +8,14 @@
 ## 当前可交付状态
 
 - 当前源码和本机最新 APK：`2.2.14 / versionCode 36`。
-- GitHub 最新已发布 APK 在本轮上传完成前仍为 `2.2.11 / versionCode 33`。
+- GitHub 最新已发布 APK：`2.2.14 / versionCode 36`。
 - APK：`releases/sports-calendar-2.2.14-debug.apk`。
 - APK 大小：`8,045,540` 字节。
 - APK SHA-256：`E87511485A17F0A53EC1CE6C1727EF320632DE26F83F86F4B5EBF5FB63AFF4F6`。
 - 签名：APK Signature Scheme v2。
 - 签名证书 SHA-256：`7EF83E3EC40B7BF1E9AAF551589EE73C378FC26F29202255F0466BCAB759BED0`。
-- GitHub Release：`https://github.com/Levine-Lai/calendar-app/releases/tag/v2.2.11`。
-- App 内远程更新已启用：`public/version.json` 发布 `2.2.11 / versionCode 33`，下载地址为 GitHub Release 固定 HTTPS 资源。
+- GitHub Release：`https://github.com/Levine-Lai/calendar-app/releases/tag/v2.2.14`。
+- App 内远程更新已启用：`public/version.json` 发布 `2.2.14 / versionCode 36`，下载地址为 GitHub Release 固定 HTTPS 资源。
 
 ## 必须遵守
 
@@ -132,7 +132,6 @@ npm.cmd run build:android
 
 ## 仍未完成的外部发布事项
 
-- `2.2.11` 已有稳定公开 HTTPS APK 地址，远程 `public/version.json` 与 App 内检查更新已启用。
-- `2.2.14 / versionCode 36` 已按用户指令生成固定签名 APK，等待本轮 GitHub Release 和更新清单发布完成。
+- `2.2.14` 已有稳定公开 HTTPS APK 地址，远程 `public/version.json` 与 App 内检查更新已启用。
 - 未执行真实 vivo 设备的覆盖安装、启动动画、两个组件和通知手工验收。
 - 当前工作区包含多轮未提交改动；如需提交，必须整体审查后统一提交，不能只选少量文件。
