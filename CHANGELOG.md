@@ -7,10 +7,10 @@
 - 本机最新已生成 APK：`2.2.16 / versionCode 38`
 - 当前源码版本：`2.2.16 / versionCode 38`
 - APK 文件：`releases/sports-calendar-2.2.16-debug.apk`
-- GitHub Release：`https://github.com/Levine-Lai/calendar-app/releases/tag/v2.2.14`
-- App 内检查更新清单已指向 `2.2.14` 的固定 GitHub Release 下载地址。
+- GitHub Release：`https://github.com/Levine-Lai/calendar-app/releases/tag/v2.2.16`
+- App 内检查更新清单已指向 `2.2.16` 的固定 GitHub Release 下载地址。
 
-## 2.2.16（已生成 APK，发布中）
+## 2.2.16（已发布）
 
 - 新闻组件2移除会产生内缩卡片效果的 `StackView`，改为直接渲染最新一条新闻；4×3 布局中图片完整铺满上半区并保持顶部圆角，标题固定在下半区。
 - 修复深圳新鹏城赛程中重庆铜梁龙、辽宁铁人等对手缺少队徽的问题：当 ESPN 不提供队徽时，按球队 ID/名称使用 CFL 中超官方队徽，并保留已知球队的内置官方地址兜底。
@@ -22,6 +22,7 @@
 - 发布前依赖审计发现 `undici 7.28.0` 新增高危安全公告，已升级至 `7.29.0`；新闻后台测试重新通过，生产依赖审计恢复为 0 个漏洞。
 - 使用历史固定证书生成 `releases/sports-calendar-2.2.16-debug.apk`，大小 `8,036,906` 字节，SHA-256：`43CF17D1FB9732D0F67607434C8FC7027C02E4C7D2A799556BADC2C75B8DDD7B`。
 - `aapt` 已确认包名 `com.local.sportscalendar`、`versionCode 38`、`versionName 2.2.16`；APK Signature Scheme v2 和历史证书 SHA-256 均验证通过。
+- GitHub Release `v2.2.16` 已发布；远程资产大小 `8,036,906` 字节，GitHub 记录的 SHA-256 与本机 APK 完全一致，应用内更新清单已切换到本版本。
 
 ## 2.2.15（源码完成，未打包）
 

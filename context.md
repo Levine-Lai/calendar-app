@@ -2338,3 +2338,11 @@
 - 使用历史固定 keystore 生成 `releases/sports-calendar-2.2.16-debug.apk`，大小 `8,036,906` 字节，SHA-256 为 `43CF17D1FB9732D0F67607434C8FC7027C02E4C7D2A799556BADC2C75B8DDD7B`。
 - `aapt dump badging` 确认包名 `com.local.sportscalendar`、`versionCode 38`、`versionName 2.2.16`；APK Signature Scheme v2 验证通过，证书 SHA-256 仍为 `7EF83E3EC40B7BF1E9AAF551589EE73C378FC26F29202255F0466BCAB759BED0`。
 - GitHub Release 和远程 `public/version.json` 将在远程 APK 可下载验证后依次启用，避免应用内出现不可下载更新。
+
+### GitHub 发布批次：2.2.16
+
+- 源码发布提交推送前发现远程 `main` 已被蓝鸟新闻自动任务推进；先抓取并无冲突变基远程新闻提交，再把 2.2.16 发布提交推送到 `main`，没有覆盖远程新闻数据。
+- 创建正式 GitHub Release `v2.2.16`：`https://github.com/Levine-Lai/calendar-app/releases/tag/v2.2.16`。
+- 上传 `sports-calendar-2.2.16-debug.apk`；GitHub 记录的资源大小为 `8,036,906` 字节，digest 为 `sha256:43cf17d1fb9732d0f67607434c8fc7027c02e4c7d2a799556badc2c75b8ddd7b`，与本机完全一致。
+- 固定下载地址：`https://github.com/Levine-Lai/calendar-app/releases/download/v2.2.16/sports-calendar-2.2.16-debug.apk`。
+- `public/version.json` 已切换为 `2.2.16 / versionCode 38`，`force` 保持 `false`；只在远程 Release 资产验证成功后才启用应用内更新。
