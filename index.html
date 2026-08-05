@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>体育迷日历</title>
     <style>html,body{margin:0;min-height:100%;background:#fbf4ea;color:#16120f}body.launch-active{background:#c5e5f8}.launch-animation{position:fixed;inset:0;z-index:9999;display:grid;place-items:center;background:#c5e5f8}.launch-animation img{display:block;width:min(82vw,512px);height:auto;max-height:76vh;object-fit:contain;image-rendering:pixelated}</style>
-    <link rel="stylesheet" href="public/styles.css?v=2.2.16">
-    <script src="public/launch-animation.js?v=2.2.16" defer></script>
+    <link rel="stylesheet" href="public/styles.css?v=2.2.17">
+    <script src="public/launch-animation.js?v=2.2.17" defer></script>
   </head>
   <body class="launch-active">
     <div class="launch-animation" id="launchAnimation" role="status" aria-live="polite" aria-label="应用正在启动">
@@ -57,7 +57,7 @@
         <section class="panel app-update-panel" aria-labelledby="appUpdateTitle">
           <div class="section-title">
             <span id="appUpdateTitle">应用更新</span>
-            <strong class="app-version" id="currentAppVersion">v2.2.16</strong>
+            <strong class="app-version" id="currentAppVersion">v2.2.17</strong>
           </div>
           <p class="app-update-status" id="appUpdateStatus" role="status" aria-live="polite">点击按钮检查是否有新版本</p>
           <ul class="app-update-notes" id="appUpdateNotes" hidden></ul>
@@ -97,14 +97,7 @@
             </button>
           </div>
         </header>
-        <section class="home-today-games" aria-labelledby="todayGamesTitle">
-          <header class="home-today-games-header">
-            <div>
-              <p class="eyebrow">TODAY</p>
-              <h2 id="todayGamesTitle">今日比赛</h2>
-            </div>
-            <span id="todayGamesCount" class="home-today-games-count">0 场</span>
-          </header>
+        <section class="home-today-games" aria-label="今日比赛">
           <div id="todayGamesList" class="home-today-games-list"></div>
         </section>
         <section id="calendarView" class="calendar-view"></section>
@@ -196,13 +189,13 @@
       </section>
     </div>
 
-    <script src="public/calendar-core.js?v=2.2.16"></script>
-    <script src="public/calendar-storage.js?v=2.2.16"></script>
-    <script src="public/calendar-image-cache.js?v=2.2.16"></script>
-    <script src="public/update-config.js?v=2.2.16"></script>
-    <script src="public/app-update.js?v=2.2.16"></script>
-    <script src="public/team-news-config.js?v=2.2.16"></script>
-    <script src="public/team-news-core.js?v=2.2.16"></script>
-    <script src="public/app.js?v=2.2.16"></script>
+    <script src="public/calendar-core.js?v=2.2.17"></script>
+    <script src="public/calendar-storage.js?v=2.2.17"></script>
+    <script src="public/calendar-image-cache.js?v=2.2.17"></script>
+    <script src="public/update-config.js?v=2.2.17"></script>
+    <script src="public/app-update.js?v=2.2.17"></script>
+    <script src="public/team-news-config.js?v=2.2.17"></script>
+    <script src="public/team-news-core.js?v=2.2.17"></script>
+    <script src="public/app.js?v=2.2.17"></script>
   </body>
 </html>

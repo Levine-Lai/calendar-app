@@ -47,10 +47,11 @@ test("string false is not treated as completed", () => {
 test("month grid covers all 42 visible days", () => {
   const range = core.getMonthGridRange(new Date(2026, 5, 21));
   assert.equal(range.start.getFullYear(), 2026);
-  assert.equal(range.start.getMonth(), 4);
-  assert.equal(range.start.getDate(), 31);
+  assert.equal(range.start.getMonth(), 5);
+  assert.equal(range.start.getDate(), 1);
+  assert.equal(range.start.getDay(), 1);
   assert.equal(range.end.getMonth(), 6);
-  assert.equal(range.end.getDate(), 11);
+  assert.equal(range.end.getDate(), 12);
 });
 
 test("ICS TZID values convert to UTC", () => {

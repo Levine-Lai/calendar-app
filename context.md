@@ -2347,3 +2347,10 @@
 - 固定下载地址：`https://github.com/Levine-Lai/calendar-app/releases/download/v2.2.16/sports-calendar-2.2.16-debug.apk`。
 - `public/version.json` 已切换为 `2.2.16 / versionCode 38`，`force` 保持 `false`；只在远程 Release 资产验证成功后才启用应用内更新。
 - 发布后从 GitHub Raw 重新读取远程清单，确认已返回 `2.2.16 / versionCode 38` 和正确固定下载地址；APK 下载地址经 302 重定向后返回 HTTP 200、`application/vnd.android.package-archive` 与 `8,036,906` 字节，应用内检查更新链路已具备可用的远程清单和安装包。
+
+### 开发批次：2.2.17 玻璃今日比赛、周一日历与新闻阅读位置
+
+- 首页“今日比赛”移除总框、TODAY/今日比赛标题和右上角场次数量。每场比赛独立成为半透明磨砂玻璃卡片，只显示左右无容器队徽与中央比分；未开始比赛沿用中央位置显示开赛时间。
+- 日历表头固定为周一、周二、周三、周四、周五、周六、周日；`CalendarCore.getMonthGridRange` 与页面网格起始日期都同步采用周一首列，因此数据筛选与视觉布局保持一致。
+- 新闻详情新增按 `articleId:language` 保存的滚动位置。切换或关闭文章前保存当前位置；新文章先清零再渲染，已读文章和语言切换则在渲染后恢复各自位置，避免上一篇读到底部时带到下一篇。
+- Web 自动化测试29项、稳定性检查31项通过。源码版本提升为 `2.2.17 / versionCode 39`，`public/version.json` 继续发布 `2.2.16 / versionCode 38`；本轮未打包、未签名验证、未发布 GitHub。

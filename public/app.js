@@ -1,5 +1,5 @@
 const dayMs = 24 * 60 * 60 * 1000;
-const weekLabels = ["周日", "周一", "周二", "周三", "周四", "周五", "周六"];
+const weekLabels = ["周一", "周二", "周三", "周四", "周五", "周六", "周日"];
 const cache = new Map();
 const teamsCache = new Map();
 const CalendarCore = window.CalendarCore;
@@ -264,7 +264,8 @@ const teamNewsState = {
   language: "en",
   activeArticleId: "",
   articleBodies: new Map(),
-  loadingBodies: new Set()
+  loadingBodies: new Set(),
+  articleScrollPositions: new Map()
 };
 
 const elements = {
@@ -307,7 +308,6 @@ const elements = {
   statusLine: document.querySelector("#statusLine"),
   calendarView: document.querySelector("#calendarView"),
   todayGamesList: document.querySelector("#todayGamesList"),
-  todayGamesCount: document.querySelector("#todayGamesCount"),
   dayModal: document.querySelector("#dayModal"),
   dayModalTitle: document.querySelector("#dayModalTitle"),
   dayModalCount: document.querySelector("#dayModalCount"),
@@ -656,7 +656,10 @@ async function refreshTeamNews(options = {}) {
 function renderTeamNews() {
   renderHomeTeamNews();
   renderTeamNewsList();
-  if (teamNewsState.activeArticleId) renderTeamNewsArticle();
+  if (teamNewsState.activeArticleId) {
+    rememberActiveTeamNewsScrollPosition();
+    renderTeamNewsArticle();
+  }
 }
 
 function renderHomeTeamNews() {
@@ -744,7 +747,8 @@ function createTeamNewsMeta(item, language, className, tagName = "span") {
   return meta;
 }
 
-function setTeamNewsLanguage(language) {
+function setTeamNewsLanguage(language, options = {}) {
+  if (options.rememberScroll !== false) rememberActiveTeamNewsScrollPosition();
   const nextLanguage = language === "zh" ? "zh" : "en";
   teamNewsState.language = nextLanguage;
   elements.teamNewsLanguageTabs.forEach((tab) => {
@@ -820,20 +824,49 @@ function scrollToPendingTeamNews() {
 function openTeamNewsArticle(newsId) {
   const item = teamNewsState.items.find((candidate) => candidate.id === newsId);
   if (!item) return;
+  rememberActiveTeamNewsScrollPosition();
   teamNewsState.activeArticleId = newsId;
   teamNewsState.language = "en";
   elements.teamNewsArticleModal.hidden = false;
   document.body.classList.add("modal-open");
-  setTeamNewsLanguage("en");
+  // Set the target's remembered position before rendering. This both opens a
+  // new article at the top and prevents its saved position being overwritten
+  // by the initial DOM rebuild.
+  elements.teamNewsArticleContent.scrollTop = teamNewsState.articleScrollPositions.get(
+    activeTeamNewsScrollKey(newsId, "en")
+  ) || 0;
+  setTeamNewsLanguage("en", { rememberScroll: false });
   elements.teamNewsArticleBack.focus();
   ensureTeamNewsArticleBody(item);
 }
 
 function closeTeamNewsArticle() {
+  rememberActiveTeamNewsScrollPosition();
   elements.teamNewsArticleModal.hidden = true;
   teamNewsState.activeArticleId = "";
   teamNewsState.language = "en";
   if (elements.teamNewsModal.hidden) document.body.classList.remove("modal-open");
+}
+
+function activeTeamNewsScrollKey(articleId = teamNewsState.activeArticleId, language = teamNewsState.language) {
+  return articleId ? `${articleId}:${language === "zh" ? "zh" : "en"}` : "";
+}
+
+function rememberActiveTeamNewsScrollPosition() {
+  const key = activeTeamNewsScrollKey();
+  if (!key || !elements.teamNewsArticleContent) return;
+  teamNewsState.articleScrollPositions.set(key, Math.max(0, elements.teamNewsArticleContent.scrollTop));
+}
+
+function restoreActiveTeamNewsScrollPosition() {
+  const articleId = teamNewsState.activeArticleId;
+  const language = teamNewsState.language;
+  const key = activeTeamNewsScrollKey(articleId, language);
+  const position = teamNewsState.articleScrollPositions.get(key) || 0;
+  window.requestAnimationFrame(() => {
+    if (teamNewsState.activeArticleId !== articleId || teamNewsState.language !== language) return;
+    elements.teamNewsArticleContent.scrollTop = position;
+  });
 }
 
 function renderTeamNewsArticle() {
@@ -878,6 +911,7 @@ function renderTeamNewsArticle() {
   fragment.append(body);
   elements.teamNewsArticleContent.lang = language === "en" ? "en" : "zh-CN";
   elements.teamNewsArticleContent.replaceChildren(fragment);
+  restoreActiveTeamNewsScrollPosition();
 }
 
 async function ensureTeamNewsArticleBody(item) {
@@ -2559,27 +2593,21 @@ function renderHeader() {
 }
 
 function renderTodayGames() {
-  if (!elements.todayGamesList || !elements.todayGamesCount) return;
+  if (!elements.todayGamesList) return;
   const todayKey = toInputDate(new Date());
   const games = getFilteredEvents().filter((event) => toInputDate(new Date(event.start)) === todayKey);
-  elements.todayGamesCount.textContent = `${games.length} 场`;
-  elements.todayGamesList.innerHTML = games.length
-    ? games.map(renderHomeTodayGame).join("")
-    : `<p class="home-today-games-empty">今天暂无已导入的比赛</p>`;
+  elements.todayGamesList.parentElement.hidden = !games.length;
+  elements.todayGamesList.innerHTML = games.map(renderHomeTodayGame).join("");
 }
 
 function renderHomeTodayGame(event) {
   const matchup = getMatchupPresentation(event);
-  const status = eventStatusLabel(event);
   const liveOrFinished = isEventLive(event) || isEventFinished(event);
   const primary = liveOrFinished ? eventScoreLabel(event) : formatTime(new Date(event.start));
   return `
     <button class="home-today-game" type="button" aria-label="查看${escapeAttr(matchup.left.team)}对${escapeAttr(matchup.right.team)}比赛详情">
       <span class="home-today-game-logo">${renderImage(matchup.left.logo, matchup.left.team || "Team", { eager: true })}</span>
-      <span class="home-today-game-copy">
-        <strong>${escapeHtml(matchup.left.team || "待定")} <span>vs</span> ${escapeHtml(matchup.right.team || "待定")}</strong>
-        <span>${escapeHtml(primary)} · ${escapeHtml(event.leagueName || event.league)} · ${escapeHtml(status)}</span>
-      </span>
+      <strong class="home-today-game-score">${escapeHtml(primary)}</strong>
       <span class="home-today-game-logo">${renderImage(matchup.right.logo, matchup.right.team || "Team", { eager: true })}</span>
     </button>
   `;
@@ -2597,7 +2625,7 @@ function renderView() {
 
 function renderMonth(events) {
   const monthStart = new Date(state.cursor.getFullYear(), state.cursor.getMonth(), 1);
-  const gridStart = addDays(monthStart, -monthStart.getDay());
+  const gridStart = addDays(monthStart, -((monthStart.getDay() + 6) % 7));
   const byDay = groupByDay(events);
   const cells = [];
 

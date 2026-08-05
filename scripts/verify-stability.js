@@ -166,19 +166,30 @@ const checks = [
       && fs.existsSync(path.join(root, "scripts/check-sports-apis.js"))
   ],
   [
-    "30 首页今日比赛、组件明日默认与中超队徽兜底",
+    "30 首页玻璃今日比赛、周一日历、组件明日默认与中超队徽兜底",
     index.includes('id="todayGamesList"')
-      && index.includes('id="todayGamesCount"')
+      && !index.includes('id="todayGamesCount"')
       && app.includes("function renderTodayGames()")
       && app.includes("function renderHomeTodayGame(event)")
+      && app.includes('const weekLabels = ["周一", "周二", "周三", "周四", "周五", "周六", "周日"]')
       && styles.includes(".home-today-games")
-      && styles.includes("background: #cce9f6")
+      && styles.includes("backdrop-filter: blur(18px)")
+      && !styles.includes(".home-today-games-header")
+      && core.includes("((start.getDay() + 6) % 7)")
       && provider.includes("DEFAULT_SELECTED_DAY_OFFSET = 1")
       && provider.includes("defaultSelectedDayOffset()")
       && app.includes("fetchCslOfficialLogoLookup")
       && app.includes('cflCompetitionCode: "CSL"')
       && app.includes("cslKnownLogoFallbacksById")
       && read("scripts/check-sports-apis.js").includes('["中超队徽兜底", "CSL"]')
+  ],
+  [
+    "31 新闻文章独立滚动位置记忆",
+    app.includes("articleScrollPositions: new Map()")
+      && app.includes("function rememberActiveTeamNewsScrollPosition()")
+      && app.includes("function restoreActiveTeamNewsScrollPosition()")
+      && app.includes('activeTeamNewsScrollKey(newsId, "en")')
+      && app.includes("restoreActiveTeamNewsScrollPosition()")
   ]
 ];
 

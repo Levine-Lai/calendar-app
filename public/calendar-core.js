@@ -325,7 +325,7 @@
   function getMonthGridRange(cursor) {
     const monthStart = new Date(cursor.getFullYear(), cursor.getMonth(), 1);
     const start = new Date(monthStart);
-    start.setDate(start.getDate() - start.getDay());
+    start.setDate(start.getDate() - ((start.getDay() + 6) % 7));
     const end = new Date(start);
     end.setDate(end.getDate() + 41);
     return { start, end };
