@@ -18,6 +18,7 @@
 - GitHub Release：`https://github.com/Levine-Lai/calendar-app/releases/tag/v2.2.16`。
 - App 内远程更新已启用：`public/version.json` 发布 `2.2.16 / versionCode 38`，下载地址为 GitHub Release 固定 HTTPS 资源。
 - GitHub 远程资产记录：`8,036,906` 字节，SHA-256 与本机 APK 完全一致。
+- 2026-08-05 联网复核：GitHub Raw 已返回 `2.2.16 / versionCode 38`；APK 固定地址经重定向后返回 HTTP 200、Android APK 类型和 `8,036,906` 字节。
 
 ## 必须遵守
 

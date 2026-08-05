@@ -2346,3 +2346,4 @@
 - 上传 `sports-calendar-2.2.16-debug.apk`；GitHub 记录的资源大小为 `8,036,906` 字节，digest 为 `sha256:43cf17d1fb9732d0f67607434c8fc7027c02e4c7d2a799556badc2c75b8ddd7b`，与本机完全一致。
 - 固定下载地址：`https://github.com/Levine-Lai/calendar-app/releases/download/v2.2.16/sports-calendar-2.2.16-debug.apk`。
 - `public/version.json` 已切换为 `2.2.16 / versionCode 38`，`force` 保持 `false`；只在远程 Release 资产验证成功后才启用应用内更新。
+- 发布后从 GitHub Raw 重新读取远程清单，确认已返回 `2.2.16 / versionCode 38` 和正确固定下载地址；APK 下载地址经 302 重定向后返回 HTTP 200、`application/vnd.android.package-archive` 与 `8,036,906` 字节，应用内检查更新链路已具备可用的远程清单和安装包。
