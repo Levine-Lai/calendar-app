@@ -10,12 +10,16 @@
   --pink: #efc0d4;
   --orange: #efc98f;
   --danger: #e69a91;
-  --shadow: 7px 7px 0 var(--ink);
-  --shadow-small: 4px 4px 0 var(--ink);
+  --shadow: none;
+  --shadow-small: none;
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
+  box-shadow: none !important;
+  text-shadow: none !important;
 }
 
 body {
@@ -33,6 +37,10 @@ body.launch-active {
 .launch-animation {
   opacity: 1;
   transition: opacity 220ms ease;
+}
+
+.launch-animation[hidden] {
+  display: none;
 }
 
 .launch-animation.is-closing {
@@ -1734,6 +1742,159 @@ body.modal-open {
   .imported-team-action {
     border-width: 1px;
     padding: 5px 7px;
+  }
+}
+
+/* 2.2.16: today's imported games, shown as compact widget-style rows above the calendar. */
+.home-today-games {
+  display: grid;
+  gap: 10px;
+  padding: 12px;
+  border: 3px solid var(--line);
+  background: #dff2fa;
+}
+
+.home-today-games-header {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.home-today-games-header .eyebrow {
+  margin-bottom: 4px;
+}
+
+.home-today-games-header h2 {
+  font-size: clamp(22px, 3vw, 34px);
+}
+
+.home-today-games-count {
+  flex: 0 0 auto;
+  padding: 5px 9px;
+  border: 2px solid var(--line);
+  border-radius: 999px;
+  background: #fff;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.home-today-games-list {
+  display: grid;
+  gap: 7px;
+}
+
+.home-today-game {
+  display: grid;
+  width: 100%;
+  min-height: 64px;
+  grid-template-columns: 48px minmax(0, 1fr) 48px;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 10px;
+  border: 2px solid var(--line);
+  border-radius: 10px;
+  background: #cce9f6;
+  color: var(--ink);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.home-today-game:hover {
+  transform: none;
+  background: #bee3f2;
+}
+
+.home-today-game:focus-visible {
+  outline: 3px solid #2264a7;
+  outline-offset: 2px;
+}
+
+.home-today-game-logo {
+  display: grid;
+  width: 44px;
+  height: 44px;
+  place-items: center;
+  border: 1px solid color-mix(in srgb, var(--line) 42%, transparent);
+  border-radius: 999px;
+  background: #fff;
+}
+
+.home-today-game-logo img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+.home-today-game-copy {
+  display: grid;
+  min-width: 0;
+  gap: 4px;
+  text-align: center;
+}
+
+.home-today-game-copy strong {
+  overflow: hidden;
+  font-size: 15px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.home-today-game-copy strong span,
+.home-today-game-copy > span {
+  color: #395d70;
+  font-size: 12px;
+  font-weight: 850;
+}
+
+.home-today-games-empty {
+  margin: 0;
+  padding: 14px;
+  border: 1px dashed #6f9bad;
+  border-radius: 10px;
+  color: #486b7b;
+  font-size: 13px;
+  font-weight: 850;
+  text-align: center;
+}
+
+@media (max-width: 720px) {
+  .home-today-games {
+    gap: 8px;
+    padding: 8px;
+    border-width: 2px;
+  }
+
+  .home-today-games-header h2 {
+    font-size: 20px;
+  }
+
+  .home-today-game {
+    min-height: 58px;
+    grid-template-columns: 40px minmax(0, 1fr) 40px;
+    gap: 7px;
+    padding: 6px 8px;
+    border-width: 1px;
+    border-radius: 9px;
+  }
+
+  .home-today-game-logo {
+    width: 38px;
+    height: 38px;
+  }
+
+  .home-today-game-logo img {
+    width: 31px;
+    height: 31px;
+  }
+
+  .home-today-game-copy strong {
+    font-size: 13px;
+  }
+
+  .home-today-game-copy > span {
+    font-size: 11px;
   }
 }
 

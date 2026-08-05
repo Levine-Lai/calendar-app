@@ -164,6 +164,11 @@ public class WidgetGameStatusTest {
     }
 
     @Test
+    public void newScheduleWidgetsDefaultToTomorrow() {
+        assertEquals(1, MlbTodayWidgetProvider.defaultSelectedDayOffset());
+    }
+
+    @Test
     public void malformedScoresNeverRenderObjectText() {
         assertEquals("5", MlbTodayWidgetProvider.scoreJsonValue(5));
         assertEquals("", MlbTodayWidgetProvider.scoreJsonValue("[object Object]"));

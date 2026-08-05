@@ -2302,3 +2302,39 @@
 - Android 单元测试新增“多条新闻只保留最新一条”回归用例；稳定性检查同步验证 `MAX_ITEMS = 1` 与关闭循环。
 - 源码版本提升为 `2.2.14 / versionCode 36`，静态资源缓存版本和 Android User-Agent 同步更新。
 - 本轮未生成 APK；最新本机安装包仍为 `2.2.12 / versionCode 34`，等待用户明确打包指令。
+
+### 开发批次：2.2.15 无阴影、统一开屏与比赛 API 韧性
+
+- 用户要求移除所有组件阴影、保证从任何入口打开 App 的开屏效果一致，并检查现有比赛 API 是否不稳定。
+- `public/styles.css` 对所有元素及伪元素统一设置 `box-shadow: none !important` 与 `text-shadow: none !important`；Android 桌面组件资源未使用 `elevation` 或 `translationZ`。
+- `public/launch-animation.js` 改为可重复调用的统一控制器。每次播放会克隆 GIF 图片以从第一帧重新开始；动画运行中再次收到请求时复用同一轮 Promise，不创建重叠遮罩或重复计时器。
+- `MainActivity.onNewIntent` 对桌面图标、组件和通知统一播放开屏；`onStop/onResume` 补齐不产生新 Intent 的系统最近任务恢复。新闻通知的目标页面在动画完成后再打开，避免开屏与新闻页同时切换。
+- Android 原生启动页去掉可见 App 图标，保留纯蓝 `#C5E5F8`；WebView 首帧也改为同色。冷启动和热启动都由同一 1.5 秒 GIF 加 220ms 淡出收尾。
+- 新增 `scripts/check-sports-apis.js` 与 `npm run check:apis`，覆盖 ESPN 日赛程、球队目录、代表性球队赛程、足球分段赛程、CFL 中超/中甲/中乙及中国足协中冠，并校验关键响应结构。
+- 初始联网检查中，英超整季 ESPN 单次请求 3 次有 1 次超过 15 秒，说明大响应存在真实超时风险；其他已启用接口当轮均成功。
+- `fetchEspnSchedule` 对超过 45 天的足球范围自动分段，最多 3 段并发且每段保留原有两次尝试；CFA JSONP 增加两次尝试；球队目录为空时从赛程中的 `teamMeta` 反推球队。
+- 改进后以 `--attempts=3 --timeout=15000` 检查 38 项，全部 3/3 成功。CFL CL1/CL2 返回 240/264 场，中冠返回 175 条；欧冠 API 连接和结构正常，但当前赛季日程与球队目录仍为 0 条，属于上游尚未开放确认数据。
+- 390×844 手机视口检查：开屏加载约 659ms 时仍是纯蓝背景和可见遮罩，约 1.5 秒后遮罩隐藏、页面恢复米色；页面 535 个元素计算样式中的阴影数量为 0，浏览器控制台无警告和错误。
+- 根目录 Web 测试 29 项、后台新闻服务测试 23 项、稳定性检查 29 项通过；`build:web`、`sync:android`、Android `testDebugUnitTest` 和 `lintDebug` 全部成功。
+- 源码版本提升为 `2.2.15 / versionCode 37`，但 `public/version.json` 继续发布 `2.2.14 / versionCode 36`。本轮未打包、未做签名验证、未发布 GitHub；最新现有 APK 仍为 `releases/sports-calendar-2.2.14-debug.apk`。
+
+### 开发批次：2.2.16 新闻组件铺满、今日比赛与明日桌面赛程
+
+- 用户要求新闻组件2的图片真正填满4×3组件上半区、修复深圳新鹏城部分中超对手空队徽、在首页日历上方显示今天全部比赛，并让桌面组件1默认查看明天。
+- 新闻组件2移除原生 `StackView`，避免其卡片层叠机制自带的内缩和偏移。`MatchDetailWidgetProvider` 直接读取最新新闻及缓存图片；`widget_match_detail.xml` 以等权重上下两区固定布局，上半区 `centerCrop` 铺满图片并保留顶部圆角，下半区显示19sp两行标题。
+- 调查 ESPN 2026 中超数据后确认，重庆铜梁龙（ESPN 131704）和辽宁铁人（ESPN 131705）原始接口未提供 `logos`。App 现在按球队 ID/中英文名称先使用已知 CFL 官方 HTTPS 队徽，再动态读取 CFL 中超完整赛程补齐其他 ESPN 空队徽；已保存赛程在加载时也会执行修复。
+- 首页新增“今日比赛”区：按本地日期筛选全部已导入比赛，每场使用一条淡蓝色卡片显示双方队徽、名称、时间/比分、联赛和状态；点击一行继续打开当天详情。没有比赛时显示明确空状态。
+- `MlbTodayWidgetProvider` 的未保存日期偏移默认值从 0 改为 1，因此新建或未选择过日期的组件1显示明天；已经保存过日期的现有组件保留用户选择。新增 JVM 回归测试锁定默认偏移。
+- `scripts/check-sports-apis.js` 新增 CFL `CSL` 中超队徽兜底探测，检查项由38增至39。以3次尝试、15秒超时实测39项全部3/3成功，其中中超240场、中甲240场、中乙264场、中冠175条；欧冠当前仍为连接正常但数据0条。
+- 390×844 手机浏览器实测：首页今日比赛区宽363px，单行高58px且无横向溢出；导入深圳新鹏城30场赛程后，重庆铜梁龙和辽宁铁人队徽均从 CFL 官方地址以200×200正常加载，页面无警告或错误。
+- 根目录 Web 测试29项、后台新闻服务测试23项、稳定性检查30项全部通过；`build:web`、`sync:android`、Android `testDebugUnitTest` 与 `lintDebug` 成功。
+- 源码版本提升为 `2.2.16 / versionCode 38`；`public/version.json` 继续发布 `2.2.14 / versionCode 36`。本轮未打包、未做签名验证、未发布 GitHub；下一安装包目标为 `2.2.16`。
+
+### 本机打包批次：2.2.16
+
+- 用户于 2026-08-05 明确要求“打包发布”，因此按固定签名流程生成 Debug 安装包并准备 GitHub Release。
+- 发布前完整检查：Web 测试29项、稳定性检查30项、比赛 API 39项连续3轮、新闻后台测试23项、Android `testDebugUnitTest` 与 `lintDebug` 全部通过。
+- 当天 `npm audit --omit=dev` 新识别出 `undici 7.28.0` 的高危公告；执行安全补丁升级至 `7.29.0` 后重新运行新闻后台测试，23项继续通过，生产依赖审计恢复为0个漏洞。
+- 使用历史固定 keystore 生成 `releases/sports-calendar-2.2.16-debug.apk`，大小 `8,036,906` 字节，SHA-256 为 `43CF17D1FB9732D0F67607434C8FC7027C02E4C7D2A799556BADC2C75B8DDD7B`。
+- `aapt dump badging` 确认包名 `com.local.sportscalendar`、`versionCode 38`、`versionName 2.2.16`；APK Signature Scheme v2 验证通过，证书 SHA-256 仍为 `7EF83E3EC40B7BF1E9AAF551589EE73C378FC26F29202255F0466BCAB759BED0`。
+- GitHub Release 和远程 `public/version.json` 将在远程 APK 可下载验证后依次启用，避免应用内出现不可下载更新。

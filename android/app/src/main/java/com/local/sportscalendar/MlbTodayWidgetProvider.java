@@ -49,6 +49,7 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
     public static final String PREFS_NAME = "sports_widget";
     public static final String PREFS_EVENTS = "events_json";
     private static final String PREFS_SELECTED_DAY_OFFSET = "selected_day_offset";
+    private static final int DEFAULT_SELECTED_DAY_OFFSET = 1;
     private static final String PREFS_LIVE_SNAPSHOT = "live_snapshot_json";
     static final String PREFS_LAST_REFRESH_AT = "last_refresh_at";
     static final String PREFS_LAST_REFRESH_ERROR = "last_refresh_error";
@@ -328,7 +329,11 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
     private static int getSelectedDayOffset(Context context, int appWidgetId) {
         return context
             .getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
-            .getInt(selectedDayOffsetKey(appWidgetId), 0);
+            .getInt(selectedDayOffsetKey(appWidgetId), defaultSelectedDayOffset());
+    }
+
+    static int defaultSelectedDayOffset() {
+        return DEFAULT_SELECTED_DAY_OFFSET;
     }
 
     static String selectedDayOffsetKey(int appWidgetId) {

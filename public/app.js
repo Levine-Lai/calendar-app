@@ -17,6 +17,7 @@ const imagePreloadPending = new Map();
 const dayScoreRefreshes = new Map();
 const dayScoreRefreshTimes = new Map();
 const scoreRefreshTtlMs = 60 * 1000;
+const maxEspnScheduleRangeDays = 45;
 const teamNewsCacheKey = "sports-fan-calendar:team-news:v1";
 const teamNewsAutoRefreshMs = 5 * 60 * 1000;
 const teamNewsResumeRefreshMs = 2 * 60 * 1000;
@@ -41,6 +42,18 @@ const cslTeamAliases = [
   ["22536", "云南玉昆", "Yunnan Yukun", "YUN"],
   ["18203", "浙江", "浙江队", "Zhejiang Professional FC", "Zhejiang", "ZHE"]
 ].map(([id, name, ...aliases]) => ({ id, name, aliases: [name, ...aliases] }));
+
+const cslKnownLogoFallbacksById = new Map([
+  ["131704", "https://pic.cfl-china.cn/cfluat/club/history-cso/3g9h0i1j-b2c3-4o4p-5e6f-7g8h9i0j1k2l.png"],
+  ["131705", "https://pic.cfl-china.cn/cfluat/club/history-cso/8y9z0a1b-b2c3-4e4f-5u6v-7w8x9y0z1a2b.png"]
+]);
+const cslKnownLogoFallbacksByName = new Map([
+  ["重庆铜梁龙", cslKnownLogoFallbacksById.get("131704")],
+  ["Chongqing Tonglianglong", cslKnownLogoFallbacksById.get("131704")],
+  ["辽宁铁人", cslKnownLogoFallbacksById.get("131705")],
+  ["辽宁铁人楠波湾", cslKnownLogoFallbacksById.get("131705")],
+  ["Liaoning Tieren", cslKnownLogoFallbacksById.get("131705")]
+].map(([name, logo]) => [normalizeMatchText(name), logo]));
 
 const worldCupTeams = [
   ["624", "ALG", "Algeria"],
@@ -293,6 +306,8 @@ const elements = {
   rangeTitle: document.querySelector("#rangeTitle"),
   statusLine: document.querySelector("#statusLine"),
   calendarView: document.querySelector("#calendarView"),
+  todayGamesList: document.querySelector("#todayGamesList"),
+  todayGamesCount: document.querySelector("#todayGamesCount"),
   dayModal: document.querySelector("#dayModal"),
   dayModalTitle: document.querySelector("#dayModalTitle"),
   dayModalCount: document.querySelector("#dayModalCount"),
@@ -400,6 +415,9 @@ function bindEvents() {
     if (!dayCell?.dataset.date || !["Enter", " "].includes(event.key)) return;
     event.preventDefault();
     openDayModal(dayCell.dataset.date);
+  });
+  elements.todayGamesList.addEventListener("click", (event) => {
+    if (event.target.closest(".home-today-game")) openDayModal(toInputDate(new Date()));
   });
   elements.dayModalClose.addEventListener("click", closeDayModal);
   elements.dayModal.addEventListener("click", (event) => {
@@ -1156,6 +1174,10 @@ function getEspnSeasonTypes(leagueConfig) {
 }
 
 async function fetchEspnSchedule(leagueConfig, start, end, options = {}) {
+  const rangeDays = Math.floor((startOfDay(end).getTime() - startOfDay(start).getTime()) / dayMs) + 1;
+  if (!options.singleRange && rangeDays > maxEspnScheduleRangeDays) {
+    return fetchEspnScheduleChunks(leagueConfig, start, end, options);
+  }
   const firstDate = formatEspnDate(start);
   const lastDate = formatEspnDate(end);
   const dateQuery = firstDate === lastDate ? firstDate : `${firstDate}-${lastDate}`;
@@ -1170,11 +1192,39 @@ async function fetchEspnSchedule(leagueConfig, start, end, options = {}) {
   endpoint.searchParams.set("limit", "1000");
   const payload = await fetchJsonWithRetry(endpoint.toString(), `${leagueConfig.name} 赛程`);
   const providerEvents = requireArray(payload.events, `${leagueConfig.name} 赛程 events`);
-  const events = providerEvents
+  let events = providerEvents
     .map((event) => normalizeEspnEvent(event, leagueConfig))
     .sort(sortByStart);
+  if (leagueConfig.id === "csl") events = await enrichCslEventsWithOfficialLogos(events);
   cache.set(cacheKey, { time: Date.now(), data: events });
   return { events, errors: [] };
+}
+
+async function fetchEspnScheduleChunks(leagueConfig, start, end, options = {}) {
+  const chunks = [];
+  let cursor = startOfDay(start);
+  const finalDay = startOfDay(end);
+  while (cursor <= finalDay) {
+    const chunkEnd = new Date(Math.min(
+      addDays(cursor, maxEspnScheduleRangeDays - 1).getTime(),
+      finalDay.getTime()
+    ));
+    chunks.push({ start: cursor, end: chunkEnd });
+    cursor = addDays(chunkEnd, 1);
+  }
+
+  const settled = await mapLimit(chunks, 3, async (chunk) => {
+    try {
+      const payload = await fetchEspnSchedule(leagueConfig, chunk.start, chunk.end, {
+        ...options,
+        singleRange: true
+      });
+      return { status: "fulfilled", value: payload.events };
+    } catch (reason) {
+      return { status: "rejected", reason };
+    }
+  });
+  return collectScheduleResults(settled);
 }
 
 async function fetchSportsDbSchedule(leagueConfig, start, end, options = {}) {
@@ -1387,7 +1437,20 @@ async function fetchCfaSchedule(leagueConfig, start, end, options = {}) {
   };
 }
 
-function fetchJsonp(url) {
+async function fetchJsonp(url, attempts = 2) {
+  let lastError = null;
+  for (let attempt = 0; attempt < attempts; attempt += 1) {
+    try {
+      return await fetchJsonpOnce(url);
+    } catch (error) {
+      lastError = error;
+      if (attempt < attempts - 1) await wait(400 * (2 ** attempt) + Math.round(Math.random() * 150));
+    }
+  }
+  throw lastError || new Error("中国足协赛程请求失败");
+}
+
+function fetchJsonpOnce(url) {
   return new Promise((resolve, reject) => {
     const callbackName = `sportsCalendarJsonp${Date.now()}${Math.random().toString(16).slice(2)}`;
     const script = document.createElement("script");
@@ -2081,6 +2144,7 @@ function render() {
   renderLeagueButtons();
   renderTeamButtons();
   renderHeader();
+  renderTodayGames();
   renderView();
 }
 
@@ -2132,14 +2196,15 @@ async function loadTeamsForSelectedLeague() {
     let teams = [];
     if (!leagueConfig.source) {
       teams = await fetchLeagueTeams(leagueConfig);
+      if (!teams.length && leagueConfig.sport === "soccer") {
+        const { start, end } = getFullScheduleRange(leagueConfig);
+        const payload = await fetchLeagueSchedule(leagueConfig, start, end);
+        teams = deriveTeamsFromEvents(payload.events);
+      }
     } else {
       const { start, end } = getFullScheduleRange(leagueConfig);
       const payload = await fetchLeagueSchedule(leagueConfig, start, end);
-      const teamsById = new Map();
-      payload.events.forEach((event) => {
-        (event.teamMeta || []).forEach((team) => teamsById.set(team.id, team));
-      });
-      teams = [...teamsById.values()].sort((a, b) => a.name.localeCompare(b.name));
+      teams = deriveTeamsFromEvents(payload.events);
     }
     teamsCache.set(cacheKey, teams);
     if (requestId === teamLoadRequestId && state.selectedLeague === selectedLeagueId) {
@@ -2150,6 +2215,16 @@ async function loadTeamsForSelectedLeague() {
       elements.teamStatus.textContent = `球队加载失败：${error.message}，可重新点击联赛重试`;
     }
   }
+}
+
+function deriveTeamsFromEvents(events) {
+  const teamsById = new Map();
+  (events || []).forEach((event) => {
+    (event.teamMeta || []).forEach((team) => {
+      if (team?.id) teamsById.set(team.id, team);
+    });
+  });
+  return [...teamsById.values()].sort((a, b) => a.name.localeCompare(b.name));
 }
 
 async function fetchLeagueTeams(leagueConfig) {
@@ -2176,11 +2251,13 @@ async function fetchLeagueTeams(leagueConfig) {
       return null;
     }
   });
-  const teams = rows
+  let teams = rows
     .map((team) => normalizeEventTeam(team, leagueConfig))
     .filter((team) => team?.id)
     .sort((a, b) => a.name.localeCompare(b.name))
     .slice(0, leagueConfig.teamLimit || 48);
+
+  if (leagueConfig.id === "csl") teams = await enrichCslTeamsWithOfficialLogos(teams);
 
   if (!teams.length && refs.length) {
     throw new Error("球队详情请求全部失败");
@@ -2204,6 +2281,114 @@ function normalizeEventTeam(team, leagueConfig) {
     logo: getTeamLogo(team),
     color: getTeamColor(team, leagueConfig.color)
   };
+}
+
+function knownCslLogoLookup() {
+  return {
+    byId: cslKnownLogoFallbacksById,
+    byName: cslKnownLogoFallbacksByName
+  };
+}
+
+function findCslFallbackLogo(team, lookup = knownCslLogoLookup()) {
+  const id = String(team?.id || "");
+  if (id && lookup.byId?.has(id)) return lookup.byId.get(id);
+  const candidates = getTeamAliases({ ...team, league: "csl" }, "csl")
+    .map(normalizeMatchText)
+    .filter(Boolean);
+  for (const candidate of candidates) {
+    if (lookup.byName?.has(candidate)) return lookup.byName.get(candidate);
+  }
+  for (const [name, logo] of lookup.byName || []) {
+    if (candidates.some((candidate) =>
+      candidate.length >= 4
+      && name.length >= 4
+      && (candidate.startsWith(name) || name.startsWith(candidate))
+    )) return logo;
+  }
+  return "";
+}
+
+function applyCslEventLogoFallbacks(event, lookup = knownCslLogoLookup()) {
+  if (event?.league !== "csl") return event;
+  const teamMeta = Array.isArray(event.teamMeta) ? event.teamMeta : [];
+  const homeMeta = teamMeta[0] || { name: event.homeTeam };
+  const awayMeta = teamMeta[1] || { name: event.awayTeam };
+  const homeLogo = event.homeLogo || findCslFallbackLogo(homeMeta, lookup);
+  const awayLogo = event.awayLogo || findCslFallbackLogo(awayMeta, lookup);
+  return {
+    ...event,
+    homeLogo,
+    awayLogo,
+    teamMeta: teamMeta.map((team, index) => ({
+      ...team,
+      logo: team.logo || (index === 0 ? homeLogo : (index === 1 ? awayLogo : findCslFallbackLogo(team, lookup)))
+    }))
+  };
+}
+
+async function fetchCslOfficialLogoLookup() {
+  const year = new Date().getFullYear();
+  const cacheKey = `csl:official-logo-lookup:${year}`;
+  const cached = cache.get(cacheKey);
+  if (cached && Date.now() - cached.time < 30 * 60 * 1000) return cached.data;
+  const officialConfig = {
+    id: "csl-official-logos",
+    name: "中超",
+    sport: "soccer",
+    source: "cfl",
+    cflCompetitionCode: "CSL",
+    color: "#f3b7aa"
+  };
+  const payload = await fetchCflSchedule(
+    officialConfig,
+    new Date(year, 0, 1),
+    new Date(year, 11, 31)
+  );
+  const lookup = {
+    byId: new Map(cslKnownLogoFallbacksById),
+    byName: new Map(cslKnownLogoFallbacksByName)
+  };
+  payload.events.forEach((event) => {
+    (event.teamMeta || []).forEach((team) => {
+      if (!team?.logo) return;
+      if (team.id) lookup.byId.set(String(team.id), team.logo);
+      getTeamAliases(team, "csl").map(normalizeMatchText).filter(Boolean)
+        .forEach((name) => lookup.byName.set(name, team.logo));
+    });
+  });
+  cache.set(cacheKey, { time: Date.now(), data: lookup });
+  return lookup;
+}
+
+async function enrichCslTeamsWithOfficialLogos(teams) {
+  let enriched = (teams || []).map((team) => ({
+    ...team,
+    logo: team.logo || findCslFallbackLogo(team)
+  }));
+  if (enriched.every((team) => team.logo)) return enriched;
+  try {
+    const lookup = await fetchCslOfficialLogoLookup();
+    enriched = enriched.map((team) => ({
+      ...team,
+      logo: team.logo || findCslFallbackLogo(team, lookup)
+    }));
+  } catch (error) {
+    console.warn(`中超官方队徽兜底失败：${error.message}`);
+  }
+  return enriched;
+}
+
+async function enrichCslEventsWithOfficialLogos(events) {
+  let enriched = (events || []).map((event) => applyCslEventLogoFallbacks(event));
+  if (enriched.every((event) => event.homeLogo && event.awayLogo)) return enriched;
+  try {
+    const lookup = await fetchCslOfficialLogoLookup();
+    enriched = enriched.map((event) => applyCslEventLogoFallbacks(event, lookup));
+  } catch (error) {
+    console.warn(`中超官方队徽兜底失败：${error.message}`);
+  }
+  return enriched;
 }
 
 function renderTeamButtons() {
@@ -2371,6 +2556,33 @@ function renderHeader() {
   const now = new Date();
   elements.todayLabel.textContent = `今天 ${formatDate(now, { month: "long", day: "numeric", weekday: "long" })}`;
   elements.rangeTitle.textContent = formatDate(state.cursor, { year: "numeric", month: "long" });
+}
+
+function renderTodayGames() {
+  if (!elements.todayGamesList || !elements.todayGamesCount) return;
+  const todayKey = toInputDate(new Date());
+  const games = getFilteredEvents().filter((event) => toInputDate(new Date(event.start)) === todayKey);
+  elements.todayGamesCount.textContent = `${games.length} 场`;
+  elements.todayGamesList.innerHTML = games.length
+    ? games.map(renderHomeTodayGame).join("")
+    : `<p class="home-today-games-empty">今天暂无已导入的比赛</p>`;
+}
+
+function renderHomeTodayGame(event) {
+  const matchup = getMatchupPresentation(event);
+  const status = eventStatusLabel(event);
+  const liveOrFinished = isEventLive(event) || isEventFinished(event);
+  const primary = liveOrFinished ? eventScoreLabel(event) : formatTime(new Date(event.start));
+  return `
+    <button class="home-today-game" type="button" aria-label="查看${escapeAttr(matchup.left.team)}对${escapeAttr(matchup.right.team)}比赛详情">
+      <span class="home-today-game-logo">${renderImage(matchup.left.logo, matchup.left.team || "Team", { eager: true })}</span>
+      <span class="home-today-game-copy">
+        <strong>${escapeHtml(matchup.left.team || "待定")} <span>vs</span> ${escapeHtml(matchup.right.team || "待定")}</strong>
+        <span>${escapeHtml(primary)} · ${escapeHtml(event.leagueName || event.league)} · ${escapeHtml(status)}</span>
+      </span>
+      <span class="home-today-game-logo">${renderImage(matchup.right.logo, matchup.right.team || "Team", { eager: true })}</span>
+    </button>
+  `;
 }
 
 function renderView() {
@@ -2558,6 +2770,7 @@ async function performDayScoreRefresh(dateKey) {
   if (activeDayModalDate === dateKey && !elements.dayModal.hidden) {
     patchDayModalContents(dateKey);
   }
+  if (dateKey === toInputDate(new Date())) renderTodayGames();
 }
 
 function findRefreshedEvent(event, candidates) {
@@ -2852,7 +3065,7 @@ async function load() {
       const normalized = CalendarCore.mergeEventRecords(null, event);
       if (invalidScore) normalized.scoreUpdatedAt = "";
       return normalized;
-    })
+    }).map((event) => applyCslEventLogoFallbacks(event))
     : [];
   state.followedTeams = CalendarCore.deriveFollowedTeams(state.events, saved.followedTeams || []);
   state.refreshMeta = { ...state.refreshMeta, ...(saved.refreshMeta || {}) };

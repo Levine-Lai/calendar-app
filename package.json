@@ -1,11 +1,12 @@
 {
   "name": "sports-calendar",
-  "version": "2.2.14",
+  "version": "2.2.16",
   "description": "观赛日记：支持多联赛赛程、桌面组件和多伦多蓝鸟中文新闻推送的个人体育日历。",
   "private": true,
   "scripts": {
     "build:web": "node scripts/build-web.js",
     "test": "node --test tests/*.test.js",
+    "check:apis": "node scripts/check-sports-apis.js",
     "verify:stability": "node scripts/verify-stability.js",
     "sync:android": "npm run build:web && npx cap sync android",
     "build:android": "npm run sync:android && node scripts/build-android.js",

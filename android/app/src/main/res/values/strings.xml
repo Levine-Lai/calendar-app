@@ -3,9 +3,9 @@
     <string name="app_name">观赛日记</string>
     <string name="title_activity_main">观赛日记</string>
     <string name="widget_mlb_today_name">观赛日记 组件1</string>
-    <string name="widget_mlb_today_desc">组件1：按日期查看关注比赛列表。</string>
+    <string name="widget_mlb_today_desc">组件1：默认查看明日的关注比赛列表。</string>
     <string name="widget_match_detail_name">观赛日记 组件2</string>
-    <string name="widget_match_detail_desc">组件2：4x3 最近三条蓝鸟新闻大图卡片，可滑动切换。</string>
+    <string name="widget_match_detail_desc">组件2：4x3 最新蓝鸟新闻，上半区铺满图片，下半区显示标题。</string>
     <string name="widget_news_loading">正在获取最新新闻…</string>
     <string name="widget_refresh">刷新</string>
     <string name="widget_prev_day">前一天</string>

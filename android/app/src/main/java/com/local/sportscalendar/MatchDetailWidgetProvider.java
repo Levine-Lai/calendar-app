@@ -6,7 +6,8 @@ import android.appwidget.AppWidgetProvider;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
-import android.net.Uri;
+import android.graphics.Bitmap;
+import android.view.View;
 import android.widget.RemoteViews;
 
 import androidx.work.Constraints;
@@ -17,6 +18,7 @@ import androidx.work.OneTimeWorkRequest;
 import androidx.work.PeriodicWorkRequest;
 import androidx.work.WorkManager;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class MatchDetailWidgetProvider extends AppWidgetProvider {
@@ -53,37 +55,44 @@ public class MatchDetailWidgetProvider extends AppWidgetProvider {
     }
 
     private static void updateWidgetViews(Context context, AppWidgetManager manager, int[] widgetIds) {
+        List<TeamNewsWidgetData.Item> items = TeamNewsWidgetData.load(context);
+        TeamNewsWidgetData.Item latest = items.isEmpty() ? null : items.get(0);
         for (int appWidgetId : widgetIds) {
             RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.widget_match_detail);
-
-            Intent serviceIntent = new Intent(context, NewsWidgetService.class);
-            serviceIntent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, appWidgetId);
-            serviceIntent.setData(Uri.parse("sportscalendar://news-widget/" + appWidgetId));
-            views.setRemoteAdapter(R.id.news_widget_stack, serviceIntent);
-            views.setEmptyView(R.id.news_widget_stack, R.id.news_widget_empty);
-            views.setPendingIntentTemplate(
-                R.id.news_widget_stack,
-                openArticleTemplate(context, appWidgetId)
-            );
-            views.setOnClickPendingIntent(
-                R.id.news_widget_empty,
-                openAppPendingIntent(context, appWidgetId)
-            );
-
+            if (latest == null) {
+                views.setViewVisibility(R.id.news_widget_content, View.GONE);
+                views.setViewVisibility(R.id.news_widget_empty, View.VISIBLE);
+                views.setOnClickPendingIntent(R.id.news_widget_empty, openAppPendingIntent(context, appWidgetId));
+            } else {
+                views.setViewVisibility(R.id.news_widget_content, View.VISIBLE);
+                views.setViewVisibility(R.id.news_widget_empty, View.GONE);
+                Bitmap image = TeamNewsWidgetData.loadImage(context, latest);
+                if (image != null) views.setImageViewBitmap(R.id.news_widget_image, image);
+                views.setTextViewText(R.id.news_widget_title, latest.title);
+                views.setOnClickPendingIntent(
+                    R.id.news_widget_content,
+                    openArticlePendingIntent(context, appWidgetId, latest)
+                );
+            }
             manager.updateAppWidget(appWidgetId, views);
-            manager.notifyAppWidgetViewDataChanged(appWidgetId, R.id.news_widget_stack);
         }
     }
 
-    private static PendingIntent openArticleTemplate(Context context, int appWidgetId) {
+    private static PendingIntent openArticlePendingIntent(
+        Context context,
+        int appWidgetId,
+        TeamNewsWidgetData.Item item
+    ) {
         Intent intent = new Intent(context, MainActivity.class);
         intent.setAction("OPEN_TEAM_NEWS");
+        intent.putExtra(TeamNewsPushManager.EXTRA_NEWS_URL, item.url);
+        intent.putExtra(TeamNewsPushManager.EXTRA_NEWS_ID, item.id);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
         return PendingIntent.getActivity(
             context,
             20_000 + appWidgetId,
             intent,
-            PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_MUTABLE
+            PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE
         );
     }
 

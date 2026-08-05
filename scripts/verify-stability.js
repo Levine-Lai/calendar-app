@@ -21,6 +21,8 @@ const newsUpdater = read("firebase/functions/update-static-news.js");
 const mainActivity = read("android/app/src/main/java/com/local/sportscalendar/MainActivity.java");
 const index = read("index.html");
 const launchAnimation = read("public/launch-animation.js");
+const launchScreen = read("android/app/src/main/res/drawable/launch_screen.xml");
+const androidStyles = read("android/app/src/main/res/values/styles.xml");
 const androidColors = read("android/app/src/main/res/values/colors.xml");
 const webBuild = read("scripts/build-web.js");
 const newsWidgetProvider = read("android/app/src/main/java/com/local/sportscalendar/MatchDetailWidgetProvider.java");
@@ -113,8 +115,16 @@ const checks = [
     index.includes('id="launchAnimation"')
       && index.includes("public/assets/branding/launch-runner.gif")
       && launchAnimation.includes("const splashDurationMs = 1500")
+      && launchAnimation.includes("window.SportsCalendarLaunch")
+      && launchAnimation.includes("if (running) return completion")
       && styles.includes(".launch-animation.is-closing")
       && androidColors.includes("#C5E5F8")
+      && !launchScreen.includes("@mipmap/ic_launcher")
+      && androidStyles.includes("@drawable/splash_transparent_icon")
+      && mainActivity.includes("playLaunchThenHandleIntent")
+      && mainActivity.includes("launch.play().then(done,done)")
+      && mainActivity.includes("public void onResume()")
+      && mainActivity.includes("playLaunchOnResume = true")
       && fs.existsSync(path.join(root, "public/assets/branding/launch-runner.gif"))
       && webBuild.includes("prototypeBrandingPattern")
   ],
@@ -122,19 +132,18 @@ const checks = [
     "28 组件2新闻大图与独立刷新",
     newsWidgetInfo.includes('android:targetCellWidth="4"')
       && newsWidgetInfo.includes('android:targetCellHeight="3"')
-      && newsWidgetLayout.includes('android:id="@+id/news_widget_stack"')
-      && newsWidgetItemLayout.includes('android:id="@+id/news_widget_image"')
-      && newsWidgetItemLayout.includes('android:scaleType="centerCrop"')
-      && newsWidgetItemLayout.includes('android:textSize="19sp"')
-      && newsWidgetService.includes("RemoteViewsService")
-      && newsWidgetService.includes("setOnClickFillInIntent")
+      && newsWidgetLayout.includes('android:id="@+id/news_widget_image"')
+      && newsWidgetLayout.includes('android:scaleType="centerCrop"')
+      && newsWidgetLayout.includes('android:layout_height="0dp"')
+      && newsWidgetLayout.includes('android:layout_weight="1"')
+      && newsWidgetLayout.includes('android:textSize="19sp"')
       && newsWidgetProvider.includes("NewsWidgetRefreshWorker.class")
-      && newsWidgetProvider.includes("setRemoteAdapter")
-      && newsWidgetProvider.includes("setPendingIntentTemplate")
+      && newsWidgetProvider.includes("TeamNewsWidgetData.loadImage")
+      && newsWidgetProvider.includes("openArticlePendingIntent")
+      && !newsWidgetProvider.includes("setRemoteAdapter")
       && newsWidgetProvider.includes("15,")
       && newsWidgetWorker.includes("TeamNewsWidgetData.fetchRecent()")
       && newsWidgetData.includes("MAX_ITEMS = 1")
-      && newsWidgetLayout.includes('android:loopViews="false"')
       && newsWidgetData.includes("img.mlbstatic.com")
       && newsWidgetData.includes('open("public/public/news/blue-jays.json")')
       && manifest.includes('android:name=".NewsWidgetService"')
@@ -143,6 +152,33 @@ const checks = [
         root,
         "android/app/src/main/java/com/local/sportscalendar/SportsDetailWidgetService.java"
       ))
+  ],
+  [
+    "29 无阴影与比赛 API 韧性",
+    styles.includes("box-shadow: none !important")
+      && styles.includes("text-shadow: none !important")
+      && app.includes("maxEspnScheduleRangeDays = 45")
+      && app.includes("fetchEspnScheduleChunks")
+      && app.includes("mapLimit(chunks, 3")
+      && app.includes("deriveTeamsFromEvents")
+      && app.includes("fetchJsonpOnce")
+      && packageJson.scripts?.["check:apis"] === "node scripts/check-sports-apis.js"
+      && fs.existsSync(path.join(root, "scripts/check-sports-apis.js"))
+  ],
+  [
+    "30 首页今日比赛、组件明日默认与中超队徽兜底",
+    index.includes('id="todayGamesList"')
+      && index.includes('id="todayGamesCount"')
+      && app.includes("function renderTodayGames()")
+      && app.includes("function renderHomeTodayGame(event)")
+      && styles.includes(".home-today-games")
+      && styles.includes("background: #cce9f6")
+      && provider.includes("DEFAULT_SELECTED_DAY_OFFSET = 1")
+      && provider.includes("defaultSelectedDayOffset()")
+      && app.includes("fetchCslOfficialLogoLookup")
+      && app.includes('cflCompetitionCode: "CSL"')
+      && app.includes("cslKnownLogoFallbacksById")
+      && read("scripts/check-sports-apis.js").includes('["中超队徽兜底", "CSL"]')
   ]
 ];
 
