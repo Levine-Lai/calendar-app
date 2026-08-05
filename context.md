@@ -2354,3 +2354,9 @@
 - 日历表头固定为周一、周二、周三、周四、周五、周六、周日；`CalendarCore.getMonthGridRange` 与页面网格起始日期都同步采用周一首列，因此数据筛选与视觉布局保持一致。
 - 新闻详情新增按 `articleId:language` 保存的滚动位置。切换或关闭文章前保存当前位置；新文章先清零再渲染，已读文章和语言切换则在渲染后恢复各自位置，避免上一篇读到底部时带到下一篇。
 - Web 自动化测试29项、稳定性检查31项通过。源码版本提升为 `2.2.17 / versionCode 39`，`public/version.json` 继续发布 `2.2.16 / versionCode 38`；本轮未打包、未签名验证、未发布 GitHub。
+
+### 发布批次：2.2.17
+
+- 已使用项目历史固定 Android debug keystore 生成 `releases/sports-calendar-2.2.17-debug.apk`。`aapt` 确认包名 `com.local.sportscalendar`、`versionCode 39`、`versionName 2.2.17`；APK Signature Scheme v2 与证书 SHA-256 `7EF83E3EC40B7BF1E9AAF551589EE73C378FC26F29202255F0466BCAB759BED0` 均验证通过。
+- APK 大小为 `8,028,810` 字节，SHA-256 为 `55A36631651B3F37845BA79AED44C37CABBCE2AE765169ADD5F08F6C3454FA8E`；原始构建输出与发布副本哈希一致。
+- GitHub Release `v2.2.17` 已发布，固定下载地址为 `https://github.com/Levine-Lai/calendar-app/releases/download/v2.2.17/sports-calendar-2.2.17-debug.apk`。仅在确认资产上传成功后，才将 `public/version.json` 切换到 `2.2.17 / versionCode 39`。

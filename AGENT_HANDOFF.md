@@ -7,18 +7,17 @@
 
 ## 当前可交付状态
 
-- 当前源码：`2.2.17 / versionCode 39`，源码完成但尚未打包。
-- 本机最新 APK：`2.2.16 / versionCode 38`。
-- GitHub 最新已发布 APK：`2.2.16 / versionCode 38`。
-- APK：`releases/sports-calendar-2.2.16-debug.apk`。
-- APK 大小：`8,036,906` 字节。
-- APK SHA-256：`43CF17D1FB9732D0F67607434C8FC7027C02E4C7D2A799556BADC2C75B8DDD7B`。
+- 当前源码：`2.2.17 / versionCode 39`，已打包并发布。
+- 本机最新 APK：`2.2.17 / versionCode 39`。
+- GitHub 最新已发布 APK：`2.2.17 / versionCode 39`。
+- APK：`releases/sports-calendar-2.2.17-debug.apk`。
+- APK 大小：`8,028,810` 字节。
+- APK SHA-256：`55A36631651B3F37845BA79AED44C37CABBCE2AE765169ADD5F08F6C3454FA8E`。
 - 签名：APK Signature Scheme v2。
 - 签名证书 SHA-256：`7EF83E3EC40B7BF1E9AAF551589EE73C378FC26F29202255F0466BCAB759BED0`。
-- GitHub Release：`https://github.com/Levine-Lai/calendar-app/releases/tag/v2.2.16`。
-- App 内远程更新已启用：`public/version.json` 发布 `2.2.16 / versionCode 38`，下载地址为 GitHub Release 固定 HTTPS 资源。
-- GitHub 远程资产记录：`8,036,906` 字节，SHA-256 与本机 APK 完全一致。
-- 2026-08-05 联网复核：GitHub Raw 已返回 `2.2.16 / versionCode 38`；APK 固定地址经重定向后返回 HTTP 200、Android APK 类型和 `8,036,906` 字节。
+- GitHub Release：`https://github.com/Levine-Lai/calendar-app/releases/tag/v2.2.17`。
+- App 内远程更新已启用：`public/version.json` 发布 `2.2.17 / versionCode 39`，下载地址为 GitHub Release 固定 HTTPS 资源。
+- GitHub 远程资产记录：`8,028,810` 字节，SHA-256 与本机 APK 完全一致。
 
 ## 必须遵守
 

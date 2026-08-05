@@ -1,13 +1,11 @@
 {
-  "versionCode": 38,
-  "versionName": "2.2.16",
-  "apkUrl": "https://github.com/Levine-Lai/calendar-app/releases/download/v2.2.16/sports-calendar-2.2.16-debug.apk",
+  "versionCode": 39,
+  "versionName": "2.2.17",
+  "apkUrl": "https://github.com/Levine-Lai/calendar-app/releases/download/v2.2.17/sports-calendar-2.2.17-debug.apk",
   "notes": [
-    "新闻桌面组件图片铺满上半区，标题固定在下半区",
-    "修复深圳新鹏城赛程部分对手队徽缺失",
-    "首页新增淡蓝色今日比赛列表",
-    "桌面赛程组件默认显示明天的比赛",
-    "统一开屏动画、移除阴影并增强比赛接口稳定性"
+    "首页今日比赛改为独立玻璃卡片，只展示队徽和比分或开赛时间",
+    "日历改为周一到周日排列",
+    "新闻文章分别记忆阅读位置，切换新文章会从顶部打开"
   ],
   "force": false
 }
