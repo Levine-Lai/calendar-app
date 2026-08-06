@@ -249,6 +249,7 @@ const state = {
   teamSearch: "",
   events: [],
   followedTeams: [],
+  dismissedEventIds: [],
   cursor: startOfDay(new Date()),
   refreshMeta: {
     lastSuccessAt: "",
@@ -273,6 +274,10 @@ const teamNewsState = {
 const customScheduleState = {
   draft: null,
   recognizing: false
+};
+
+const dayEventDeleteState = {
+  eventId: ""
 };
 
 const elements = {
@@ -325,6 +330,11 @@ const elements = {
   deleteModalCount: document.querySelector("#deleteModalCount"),
   deleteModalBody: document.querySelector("#deleteModalBody"),
   deleteModalClose: document.querySelector("#deleteModalClose"),
+  deleteEventModal: document.querySelector("#deleteEventModal"),
+  deleteEventModalClose: document.querySelector("#deleteEventModalClose"),
+  deleteEventSummary: document.querySelector("#deleteEventSummary"),
+  deleteEventCancel: document.querySelector("#deleteEventCancel"),
+  deleteEventConfirm: document.querySelector("#deleteEventConfirm"),
   customScheduleInput: document.querySelector("#customScheduleInput"),
   customScheduleVoiceBtn: document.querySelector("#customScheduleVoiceBtn"),
   customScheduleParseBtn: document.querySelector("#customScheduleParseBtn"),
@@ -443,6 +453,10 @@ function bindEvents() {
       closeDayModal();
     }
   });
+  elements.dayModalBody.addEventListener("click", (event) => {
+    const button = event.target.closest(".day-modal-event-delete");
+    if (button?.dataset.eventId) openDayEventDeleteModal(button.dataset.eventId);
+  });
   elements.deleteModalClose.addEventListener("click", closeDeleteModal);
   elements.deleteModal.addEventListener("click", (event) => {
     if (event.target === elements.deleteModal) {
@@ -454,6 +468,12 @@ function bindEvents() {
     if (button?.dataset.key) {
       deleteImportedTeam(button.dataset.key);
     }
+  });
+  elements.deleteEventModalClose.addEventListener("click", closeDayEventDeleteModal);
+  elements.deleteEventCancel.addEventListener("click", closeDayEventDeleteModal);
+  elements.deleteEventConfirm.addEventListener("click", confirmDayEventDelete);
+  elements.deleteEventModal.addEventListener("click", (event) => {
+    if (event.target === elements.deleteEventModal) closeDayEventDeleteModal();
   });
   elements.customScheduleParseBtn.addEventListener("click", previewCustomSchedule);
   elements.customScheduleVoiceBtn.addEventListener("click", startCustomScheduleVoiceInput);
@@ -470,6 +490,8 @@ function bindEvents() {
       closeTeamNewsArticle();
     } else if (event.key === "Escape" && !elements.teamNewsModal.hidden) {
       closeTeamNewsModal();
+    } else if (event.key === "Escape" && !elements.deleteEventModal.hidden) {
+      closeDayEventDeleteModal();
     } else if (event.key === "Escape" && !elements.deleteModal.hidden) {
       closeDeleteModal();
     } else if (event.key === "Escape" && !elements.customScheduleModal.hidden) {
@@ -1285,6 +1307,10 @@ function handleAppBack() {
     closeTeamNewsModal();
     return true;
   }
+  if (!elements.deleteEventModal.hidden) {
+    closeDayEventDeleteModal();
+    return true;
+  }
   if (!elements.deleteModal.hidden) {
     closeDeleteModal();
     return true;
@@ -2051,12 +2077,18 @@ function getWorldCupYear(now = new Date()) {
 function mergeEvents(events, options = {}) {
   const { persistChanges = true } = options;
   const byId = new Map(state.events.map((event) => [event.id, event]));
-  events.forEach((event) => byId.set(event.id, CalendarCore.mergeEventRecords(byId.get(event.id), event)));
+  excludeDismissedEvents(events)
+    .forEach((event) => byId.set(event.id, CalendarCore.mergeEventRecords(byId.get(event.id), event)));
   state.events = [...byId.values()].sort(sortByStart);
   if (persistChanges) {
     persist({ syncWidget: true });
     render();
   }
+}
+
+function excludeDismissedEvents(events) {
+  const dismissed = new Set(state.dismissedEventIds);
+  return (events || []).filter((event) => event?.id && !dismissed.has(event.id));
 }
 
 function toImportedTeam(team, leagueConfig) {
@@ -2215,7 +2247,8 @@ async function updateImportedTeams() {
         return next;
       })
       .filter(Boolean);
-    const reconciliation = CalendarCore.reconcileScheduleUpdates(retainedEvents, updatedEvents, {
+    const importedEvents = excludeDismissedEvents(updatedEvents);
+    const reconciliation = CalendarCore.reconcileScheduleUpdates(retainedEvents, importedEvents, {
       referenceEvents: previousEvents,
       isLikelySameMatch: (left, right) => eventsLikelySameMatch(left, right, 8 * dayMs)
     });
@@ -2223,13 +2256,13 @@ async function updateImportedTeams() {
     state.cursor = new Date(new Date().getFullYear(), new Date().getMonth(), 1);
     persist({ syncWidget: true });
     render();
-    const newCount = updatedEvents.filter((event) => !beforeIds.has(event.id)).length;
+    const newCount = importedEvents.filter((event) => !beforeIds.has(event.id)).length;
     const uniqueErrors = [...new Set(errors)];
     const warning = uniqueErrors.length ? `，${uniqueErrors.length} 个请求失败` : "";
     const retained = teams.length > updatedTeamKeys.size ? `，${teams.length - updatedTeamKeys.size} 支球队未拉到新赛程并保留原内容` : "";
     const rescheduled = reconciliation.rescheduledCount ? `，已迁移 ${reconciliation.rescheduledCount} 场改期比赛` : "";
     setStatus(
-      `更新完成：${updatedTeamKeys.size} 支球队共 ${updatedEvents.length} 场已确定赛程，新增 ${newCount} 场${rescheduled}${warning}${retained}。`,
+      `更新完成：${updatedTeamKeys.size} 支球队共 ${importedEvents.length} 场已确定赛程，新增 ${newCount} 场${rescheduled}${warning}${retained}。`,
       Boolean(!updatedTeamKeys.size && uniqueErrors.length)
     );
     state.refreshMeta = {
@@ -3088,9 +3121,48 @@ function refreshStartupScores() {
 function closeDayModal() {
   activeDayModalDate = "";
   elements.dayModal.hidden = true;
-  if (elements.deleteModal.hidden) {
+  if (elements.deleteModal.hidden && elements.deleteEventModal.hidden) {
     document.body.classList.remove("modal-open");
   }
+}
+
+function openDayEventDeleteModal(eventId) {
+  const event = state.events.find((item) => item.id === eventId);
+  if (!event) return;
+  const matchup = getMatchupPresentation(event);
+  dayEventDeleteState.eventId = event.id;
+  elements.deleteEventSummary.textContent = `${formatDate(new Date(event.start), { month: "long", day: "numeric" })} ${formatTime(new Date(event.start))} · ${matchup.left.team} vs ${matchup.right.team}`;
+  elements.deleteEventModal.hidden = false;
+  document.body.classList.add("modal-open");
+  elements.deleteEventConfirm.focus();
+}
+
+function closeDayEventDeleteModal() {
+  dayEventDeleteState.eventId = "";
+  elements.deleteEventModal.hidden = true;
+  if (elements.dayModal.hidden && elements.deleteModal.hidden) {
+    document.body.classList.remove("modal-open");
+  } else if (!elements.dayModal.hidden) {
+    elements.dayModalClose.focus();
+  }
+}
+
+function confirmDayEventDelete() {
+  const eventId = dayEventDeleteState.eventId;
+  const event = state.events.find((item) => item.id === eventId);
+  if (!event) {
+    closeDayEventDeleteModal();
+    return;
+  }
+  state.events = state.events.filter((item) => item.id !== eventId);
+  state.dismissedEventIds = [...new Set([...state.dismissedEventIds, eventId])];
+  closeDayEventDeleteModal();
+  persist({ syncWidget: true });
+  render();
+  if (activeDayModalDate && !elements.dayModal.hidden) {
+    renderDayModalContents(activeDayModalDate);
+  }
+  setStatus(`已删除 ${event.shortTitle || event.title || "这场比赛"}。`);
 }
 
 function renderDayModalEvent(event, options = {}) {
@@ -3109,6 +3181,9 @@ function renderDayModalEvent(event, options = {}) {
         <span class="day-modal-title">${escapeHtml(display.details)}</span>
       </div>
       <span class="day-modal-logo">${rightLogo}</span>
+      <button class="day-modal-event-delete" type="button" data-event-id="${escapeAttr(event.id)}" title="删除这场比赛" aria-label="删除这场比赛">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg>
+      </button>
     </article>
   `;
 }
@@ -3304,6 +3379,7 @@ function createStorageSnapshot() {
     selectedTeamsByLeague: state.selectedTeamsByLeague,
     events: state.events,
     followedTeams: state.followedTeams,
+    dismissedEventIds: state.dismissedEventIds,
     refreshMeta: state.refreshMeta
   };
 }
@@ -3312,6 +3388,7 @@ async function load() {
   const saved = await CalendarStorage.load();
   state.selectedLeague = saved.selectedLeague || state.selectedLeague;
   state.selectedTeamsByLeague = saved.selectedTeamsByLeague || state.selectedTeamsByLeague;
+  state.dismissedEventIds = Array.isArray(saved.dismissedEventIds) ? saved.dismissedEventIds : [];
   state.events = Array.isArray(saved.events)
     ? saved.events.map((event) => {
       const invalidScore = CalendarCore.isInvalidScoreValue(event.homeScore)
@@ -3321,6 +3398,7 @@ async function load() {
       return normalized;
     }).map((event) => applyCslEventLogoFallbacks(event))
     : [];
+  state.events = excludeDismissedEvents(state.events);
   state.followedTeams = CalendarCore.deriveFollowedTeams(state.events, saved.followedTeams || []);
   state.refreshMeta = { ...state.refreshMeta, ...(saved.refreshMeta || {}) };
 }

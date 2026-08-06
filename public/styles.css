@@ -963,7 +963,7 @@ body.modal-open {
 
 .day-modal-game {
   display: grid;
-  grid-template-columns: 58px minmax(0, 1fr) 58px;
+  grid-template-columns: 58px minmax(0, 1fr) 58px 36px;
   align-items: center;
   gap: 12px;
   min-height: 110px;
@@ -971,6 +971,65 @@ body.modal-open {
   border: 2px solid var(--line);
   background: color-mix(in srgb, var(--event-color) 28%, white);
   box-shadow: 3px 3px 0 var(--ink);
+}
+
+.day-modal-event-delete {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  align-self: start;
+  padding: 7px;
+  border: 1px solid rgba(22, 18, 15, 0.28);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
+  color: #a6312a;
+}
+
+.day-modal-event-delete svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+}
+
+.day-modal-event-delete:hover,
+.day-modal-event-delete:focus-visible {
+  border-color: #a6312a;
+  background: #fff;
+}
+
+.delete-event-overlay {
+  z-index: 60;
+}
+
+.delete-event-modal {
+  width: min(500px, 100%);
+}
+
+.delete-event-modal-body {
+  align-content: start;
+}
+
+.delete-event-summary,
+.delete-event-warning {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.delete-event-summary {
+  color: var(--ink);
+  font-size: 17px;
+  font-weight: 900;
+}
+
+.delete-event-warning {
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 750;
 }
 
 .day-modal-logo {
@@ -1641,12 +1700,23 @@ body.modal-open {
   }
 
   .day-modal-game {
-    grid-template-columns: 42px minmax(0, 1fr) 42px;
+    grid-template-columns: 42px minmax(0, 1fr) 42px 30px;
     min-height: 94px;
     gap: 8px;
     padding: 10px;
     border-width: 1px;
     box-shadow: 1px 1px 0 var(--ink);
+  }
+
+  .day-modal-event-delete {
+    width: 28px;
+    height: 28px;
+    padding: 6px;
+  }
+
+  .day-modal-event-delete svg {
+    width: 16px;
+    height: 16px;
   }
 
   .day-modal-logo {

@@ -168,6 +168,9 @@
       selectedTeamsByLeague: value.selectedTeamsByLeague || {},
       events: Array.isArray(value.events) ? value.events.filter((event) => event?.id && event?.start) : [],
       followedTeams: Array.isArray(value.followedTeams) ? value.followedTeams : [],
+      dismissedEventIds: Array.isArray(value.dismissedEventIds)
+        ? [...new Set(value.dismissedEventIds.filter((id) => typeof id === "string" && id.trim()))]
+        : [],
       filters: value.filters || {},
       refreshMeta: value.refreshMeta || {}
     };

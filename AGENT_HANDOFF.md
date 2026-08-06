@@ -1,13 +1,13 @@
 # 观赛日记 Agent 工程交接
 
-最后核对：2026-08-04
+最后核对：2026-08-06
 项目目录：`D:\Codex\calendar-app`  
 仓库：`Levine-Lai/calendar-app`  
 包名：`com.local.sportscalendar`
 
 ## 当前可交付状态
 
-- 当前源码：`2.2.18 / versionCode 40`，源码完成但尚未打包；Cloudflare Worker 已部署，客户端 endpoint 已指向 Worker，待真实请求验证后即可使用。
+- 当前源码：`2.3.0 / versionCode 42`，正在发布；Cloudflare Worker 已部署，客户端 endpoint 已指向 Worker 且已通过真实请求验证。
 - 本机最新 APK：`2.2.17 / versionCode 39`。
 - GitHub 最新已发布 APK：`2.2.17 / versionCode 39`。
 - APK：`releases/sports-calendar-2.2.17-debug.apk`。
@@ -30,6 +30,8 @@
 完整规则以根目录 `AGENTS.md` 为准。
 
 ## 本次交接已补齐
+
+- 日历每日详情中的每场比赛都可单独删除；点击后必须二次确认。删除记录会保存在 `dismissedEventIds`，并在以后刷新已导入赛程时持续过滤同一赛事 ID，同时同步桌面组件。
 
 - 旧交接文档基于 `2.2.9` 和已不存在的 `D:\l\78\calendar`；本文件以当前目录为准。
 - 组件2已从旧 2×2 比赛详情卡片改为 4×3 最近蓝鸟新闻卡片。

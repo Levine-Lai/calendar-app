@@ -9,6 +9,7 @@ const worker = read("android/app/src/main/java/com/local/sportscalendar/WidgetRe
 const manifest = read("android/app/src/main/AndroidManifest.xml");
 const app = read("public/app.js");
 const styles = read("public/styles.css");
+const storage = read("public/calendar-storage.js");
 const core = read("public/calendar-core.js");
 const gradle = read("android/app/build.gradle");
 const packageJson = require(path.join(root, "package.json"));
@@ -221,6 +222,16 @@ const checks = [
       && newsPushManager.includes("TimeZone.getTimeZone(\"Asia/Shanghai\")")
       && newsPushManager.includes("if (isBeijingQuietHours())")
       && newsMessagingService.includes("TeamNewsPushManager.isBeijingQuietHours()")
+  ],
+  [
+    "35 日历单场删除与二次确认",
+    index.includes('id="deleteEventModal"')
+      && index.includes('id="deleteEventConfirm"')
+      && app.includes("function openDayEventDeleteModal(eventId)")
+      && app.includes("function confirmDayEventDelete()")
+      && app.includes("dismissedEventIds")
+      && storage.includes("dismissedEventIds")
+      && styles.includes(".day-modal-event-delete")
   ]
 ];
 

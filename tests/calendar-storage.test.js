@@ -68,3 +68,12 @@ test("oversized fallback failures do not expose browser quota details", async ()
     (error) => error.message === "本地数据暂时无法保存" && !error.message.includes("quota")
   );
 });
+
+test("storage preserves dismissed event ids for individually deleted matches", () => {
+  const CalendarStorage = require("../public/calendar-storage.js");
+  const snapshot = CalendarStorage.normalizeSnapshot({
+    dismissedEventIds: ["game-1", "game-1", "", 42, "game-2"]
+  });
+
+  assert.deepEqual(snapshot.dismissedEventIds, ["game-1", "game-2"]);
+});
