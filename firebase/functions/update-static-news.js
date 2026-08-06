@@ -215,8 +215,18 @@ function writePayload(payload) {
   fs.renameSync(temporaryFile, outputFile);
 }
 
+function isBeijingQuietHours(now = new Date()) {
+  // China Standard Time is fixed at UTC+8 and does not observe daylight saving time.
+  const beijingHour = (now.getUTCHours() + 8) % 24;
+  return beijingHour >= 0 && beijingHour < 9;
+}
+
 async function sendNotifications(items) {
   if (!items.length) return { sentIds: [], failedIds: [] };
+  if (isBeijingQuietHours()) {
+    process.stdout.write(`Queued ${items.length} notification(s); Beijing quiet hours are active (00:00–08:59).\n`);
+    return { sentIds: [], failedIds: items.map((item) => item.id) };
+  }
   const serviceAccount = readServiceAccount();
   if (!serviceAccount) {
     process.stdout.write(`Queued ${items.length} notification(s); FCM secret is not configured yet.\n`);
@@ -491,5 +501,6 @@ module.exports = {
   withPendingNotificationIds,
   buildFcmRequest,
   validateFcmBestEffort,
-  parseServiceAccount
+  parseServiceAccount,
+  isBeijingQuietHours
 };

@@ -6,6 +6,10 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Build;
+import android.os.Bundle;
+import android.speech.RecognitionListener;
+import android.speech.RecognizerIntent;
+import android.speech.SpeechRecognizer;
 
 import androidx.core.content.ContextCompat;
 
@@ -22,16 +26,123 @@ import com.google.firebase.messaging.FirebaseMessaging;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.ArrayList;
 
 @CapacitorPlugin(
     name = "SportsWidget",
     permissions = {
-        @Permission(alias = "notifications", strings = { Manifest.permission.POST_NOTIFICATIONS })
+        @Permission(alias = "notifications", strings = { Manifest.permission.POST_NOTIFICATIONS }),
+        @Permission(alias = "microphone", strings = { Manifest.permission.RECORD_AUDIO })
     }
 )
 public class SportsWidgetPlugin extends Plugin {
     private static final ExecutorService STORAGE_EXECUTOR = Executors.newSingleThreadExecutor();
     private static final ExecutorService NETWORK_EXECUTOR = Executors.newFixedThreadPool(2);
+    private SpeechRecognizer speechRecognizer;
+    private PluginCall activeSpeechCall;
+
+    @PluginMethod
+    public void startSpeechRecognition(PluginCall call) {
+        if (!SpeechRecognizer.isRecognitionAvailable(getContext())) {
+            call.reject("当前设备不支持语音输入");
+            return;
+        }
+        if (getPermissionState("microphone") != PermissionState.GRANTED) {
+            requestPermissionForAlias("microphone", call, "customScheduleSpeechPermissionCallback");
+            return;
+        }
+        beginSpeechRecognition(call);
+    }
+
+    @PermissionCallback
+    private void customScheduleSpeechPermissionCallback(PluginCall call) {
+        if (getPermissionState("microphone") != PermissionState.GRANTED) {
+            call.reject("麦克风权限未开启");
+            return;
+        }
+        beginSpeechRecognition(call);
+    }
+
+    private void beginSpeechRecognition(PluginCall call) {
+        if (activeSpeechCall != null) {
+            call.reject("已有语音输入正在进行");
+            return;
+        }
+        activeSpeechCall = call;
+        call.setKeepAlive(true);
+        getActivity().runOnUiThread(() -> {
+            try {
+                destroySpeechRecognizer();
+                speechRecognizer = SpeechRecognizer.createSpeechRecognizer(getContext());
+                speechRecognizer.setRecognitionListener(new RecognitionListener() {
+                    @Override public void onReadyForSpeech(Bundle params) { }
+                    @Override public void onBeginningOfSpeech() { }
+                    @Override public void onRmsChanged(float rmsdB) { }
+                    @Override public void onBufferReceived(byte[] buffer) { }
+                    @Override public void onEndOfSpeech() { }
+                    @Override public void onPartialResults(Bundle partialResults) { }
+                    @Override public void onEvent(int eventType, Bundle params) { }
+
+                    @Override
+                    public void onResults(Bundle results) {
+                        ArrayList<String> candidates = results.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION);
+                        String transcript = candidates == null || candidates.isEmpty() ? "" : candidates.get(0).trim();
+                        if (transcript.isEmpty()) {
+                            rejectSpeechCall("没有识别到内容，请再说一次");
+                        } else {
+                            resolveSpeechCall(transcript);
+                        }
+                    }
+
+                    @Override
+                    public void onError(int error) {
+                        rejectSpeechCall(error == SpeechRecognizer.ERROR_NO_MATCH
+                            ? "没有听清，请再说一次"
+                            : "语音识别失败，请确认网络和麦克风权限后重试");
+                    }
+                });
+                Intent intent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
+                intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
+                intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, call.getString("locale", "zh-CN"));
+                intent.putExtra(RecognizerIntent.EXTRA_MAX_RESULTS, 1);
+                intent.putExtra(RecognizerIntent.EXTRA_PARTIAL_RESULTS, false);
+                speechRecognizer.startListening(intent);
+            } catch (RuntimeException error) {
+                rejectSpeechCall("语音输入无法启动");
+            }
+        });
+    }
+
+    private void resolveSpeechCall(String transcript) {
+        PluginCall call = activeSpeechCall;
+        activeSpeechCall = null;
+        destroySpeechRecognizer();
+        if (call == null) return;
+        call.setKeepAlive(false);
+        JSObject result = new JSObject();
+        result.put("transcript", transcript);
+        call.resolve(result);
+    }
+
+    private void rejectSpeechCall(String message) {
+        PluginCall call = activeSpeechCall;
+        activeSpeechCall = null;
+        destroySpeechRecognizer();
+        if (call == null) return;
+        call.setKeepAlive(false);
+        call.reject(message);
+    }
+
+    private void destroySpeechRecognizer() {
+        if (speechRecognizer == null) return;
+        try {
+            speechRecognizer.cancel();
+            speechRecognizer.destroy();
+        } catch (RuntimeException ignored) {
+            // The Android recognizer can already be released after an error.
+        }
+        speechRecognizer = null;
+    }
 
     @PluginMethod
     public void saveEvents(PluginCall call) {

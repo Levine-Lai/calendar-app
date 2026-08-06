@@ -177,6 +177,37 @@ body.sidebar-open {
   background: var(--surface);
 }
 
+.custom-schedule-panel {
+  background: #dff2fa;
+}
+
+.custom-schedule-hint,
+.custom-schedule-status,
+.custom-schedule-modal-status {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.45;
+}
+
+.custom-schedule-status.is-error,
+.custom-schedule-modal-status.is-error {
+  color: #a6312a;
+}
+
+.custom-schedule-field textarea {
+  min-height: 92px;
+  resize: vertical;
+}
+
+.custom-schedule-actions,
+.custom-schedule-confirm-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
 .team-news-heading {
   display: flex;
   align-items: center;
@@ -430,7 +461,8 @@ body.sidebar-open {
 
 input[type="date"],
 input[type="text"],
-input[type="file"] {
+input[type="file"],
+textarea {
   width: 100%;
   min-height: 44px;
   border: 3px solid var(--line);
@@ -862,6 +894,71 @@ body.modal-open {
   gap: 12px;
   overflow-y: auto;
   padding: 14px;
+}
+
+.custom-schedule-modal {
+  width: min(560px, 100%);
+}
+
+.custom-schedule-modal-body {
+  align-content: start;
+}
+
+.custom-schedule-quoted {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.45;
+}
+
+.custom-schedule-preview {
+  display: grid;
+  gap: 0;
+  overflow: hidden;
+  border: 2px solid var(--line);
+  border-radius: 16px;
+  background: rgba(223, 242, 250, 0.72);
+}
+
+.custom-schedule-preview-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 12px 14px;
+  border-bottom: 1px solid rgba(22, 18, 15, 0.2);
+  font-size: 14px;
+}
+
+.custom-schedule-preview-row span {
+  color: var(--muted);
+  font-weight: 800;
+}
+
+.custom-schedule-preview-row strong {
+  text-align: right;
+}
+
+.custom-schedule-preview-match {
+  display: grid;
+  min-height: 110px;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: center;
+  gap: 10px;
+  padding: 16px 14px;
+  text-align: center;
+}
+
+.custom-schedule-preview-match strong {
+  overflow-wrap: anywhere;
+  font-size: 18px;
+}
+
+.custom-schedule-preview-match span {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 900;
+  white-space: nowrap;
 }
 
 .day-modal-game {

@@ -7,7 +7,7 @@
 
 ## 当前可交付状态
 
-- 当前源码：`2.2.17 / versionCode 39`，已打包并发布。
+- 当前源码：`2.2.18 / versionCode 40`，源码完成但尚未打包；Cloudflare Worker 与部署工作流已就绪，仍待 Cloudflare 凭据部署并写入客户端 endpoint。
 - 本机最新 APK：`2.2.17 / versionCode 39`。
 - GitHub 最新已发布 APK：`2.2.17 / versionCode 39`。
 - APK：`releases/sports-calendar-2.2.17-debug.apk`。

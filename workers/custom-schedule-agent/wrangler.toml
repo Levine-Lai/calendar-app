@@ -1,0 +1,19 @@
+name = "sports-calendar-schedule-agent"
+main = "src/index.js"
+compatibility_date = "2026-08-06"
+workers_dev = true
+
+[vars]
+DEEPSEEK_MODEL = "deepseek-v4-pro"
+APP_ORIGINS = "capacitor://localhost,http://localhost,https://localhost,https://levine-lai.github.io"
+
+[secrets]
+required = ["CUSTOM_SCHEDULE_AI_API_KEY"]
+
+[[ratelimits]]
+name = "CUSTOM_SCHEDULE_LIMITER"
+namespace_id = "20260806"
+
+  [ratelimits.simple]
+  limit = 10
+  period = 60

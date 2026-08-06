@@ -194,7 +194,7 @@ final class WidgetNetworkClient {
         connection.setConnectTimeout(connectTimeout);
         connection.setReadTimeout(readTimeout);
         connection.setInstanceFollowRedirects(true);
-        connection.setRequestProperty("User-Agent", "GuansaiRiji/2.2.17");
+        connection.setRequestProperty("User-Agent", "GuansaiRiji/2.2.18");
         return connection;
     }
 

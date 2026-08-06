@@ -2360,3 +2360,21 @@
 - 已使用项目历史固定 Android debug keystore 生成 `releases/sports-calendar-2.2.17-debug.apk`。`aapt` 确认包名 `com.local.sportscalendar`、`versionCode 39`、`versionName 2.2.17`；APK Signature Scheme v2 与证书 SHA-256 `7EF83E3EC40B7BF1E9AAF551589EE73C378FC26F29202255F0466BCAB759BED0` 均验证通过。
 - APK 大小为 `8,028,810` 字节，SHA-256 为 `55A36631651B3F37845BA79AED44C37CABBCE2AE765169ADD5F08F6C3454FA8E`；原始构建输出与发布副本哈希一致。
 - GitHub Release `v2.2.17` 已发布，固定下载地址为 `https://github.com/Levine-Lai/calendar-app/releases/download/v2.2.17/sports-calendar-2.2.17-debug.apk`。仅在确认资产上传成功后，才将 `public/version.json` 切换到 `2.2.17 / versionCode 39`。
+
+### 开发批次：2.2.18 智能添加自定义赛程
+
+- 侧边菜单新增自然语言添加入口：用户可以输入或说出完整口语描述，应用先提取日期、时间、主队和客队，再显示确认卡片；确认后以 `custom-agent` 非托管赛程保存到 IndexedDB 并同步桌面组件。
+- 本地解析器覆盖日期、上午/下午/晚上时间、主场、客场及默认对阵表达；缺少信息时明确要求补充，不编造比赛内容。
+- Android `SportsWidget` 新增系统语音识别桥接和按需麦克风权限；网页环境保留 Web Speech 兼容兜底。智能 API 采用 HTTPS 服务端端点，密钥不进入 APK；完整请求/响应契约记录在 `docs/custom-schedule-agent-api.md`。
+- 源码版本提升到 `2.2.18 / versionCode 40`；`public/version.json` 继续发布 `2.2.17 / versionCode 39`，尚未打包。
+
+### 开发补充：2.2.18 北京时间推送静默
+
+- 新闻推送在北京时间 00:00–08:59 进入静默：GitHub FCM 发送端保留待推送队列，本机新闻后台检查不会把夜间文章标记为已读，FCM 接收端也会阻止任何意外到达的通知展示；09:00 后恢复正常尝试，避免剧透。
+- 用户已在 GitHub Actions Secret 配置 `CUSTOM_SCHEDULE_AI_API_KEY`。当前仍没有已部署的实时 HTTPS 智能赛程服务端点，客户端配置保持空值，密钥不会进入 APK。
+
+### 开发补充：2.2.18 Cloudflare DeepSeek V4 智能赛程
+
+- 新增 `workers/custom-schedule-agent/`：Cloudflare Worker 对外仅提供 `POST /v1/parse`，允许 Capacitor 与指定网页来源，限制请求大小、模型输出、10 秒上游超时和每客户端每分钟 10 次请求，再调用 `https://api.deepseek.com/chat/completions` 的 `deepseek-v4-pro`。
+- `CUSTOM_SCHEDULE_AI_API_KEY` 被声明为 Cloudflare Secret，绝不写入 Worker 源码或 APK；新增手动 GitHub Actions 工作流 `deploy-custom-schedule-agent.yml`，使用 `CLOUDFLARE_API_TOKEN`、`CLOUDFLARE_ACCOUNT_ID` 与现有 AI Key 部署。
+- 仍需用户配置上述两项 Cloudflare GitHub Secrets 并运行部署工作流；得到 workers.dev URL 后，将 `/v1/parse` 写入 `public/custom-schedule-agent-config.js`，再做端到端验证。尚未打包。

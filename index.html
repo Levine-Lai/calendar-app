@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>体育迷日历</title>
     <style>html,body{margin:0;min-height:100%;background:#fbf4ea;color:#16120f}body.launch-active{background:#c5e5f8}.launch-animation{position:fixed;inset:0;z-index:9999;display:grid;place-items:center;background:#c5e5f8}.launch-animation img{display:block;width:min(82vw,512px);height:auto;max-height:76vh;object-fit:contain;image-rendering:pixelated}</style>
-    <link rel="stylesheet" href="public/styles.css?v=2.2.17">
-    <script src="public/launch-animation.js?v=2.2.17" defer></script>
+    <link rel="stylesheet" href="public/styles.css?v=2.2.18">
+    <script src="public/launch-animation.js?v=2.2.18" defer></script>
   </head>
   <body class="launch-active">
     <div class="launch-animation" id="launchAnimation" role="status" aria-live="polite" aria-label="应用正在启动">
@@ -35,6 +35,22 @@
           <div class="status-line" id="statusLine" role="status"></div>
         </section>
 
+        <section class="panel custom-schedule-panel" aria-labelledby="customScheduleHeading">
+          <div class="section-title">
+            <span id="customScheduleHeading">智能添加赛程</span>
+          </div>
+          <p class="custom-schedule-hint">直接说一句，例如：阿森纳在 8 月 26 日晚上 8 点主场打赫罗纳。</p>
+          <label class="field custom-schedule-field">
+            <span>比赛描述</span>
+            <textarea id="customScheduleInput" rows="4" maxlength="300" placeholder="说出或输入一场比赛…"></textarea>
+          </label>
+          <div class="custom-schedule-actions">
+            <button class="secondary-button" id="customScheduleVoiceBtn" type="button">语音输入</button>
+            <button class="primary-button" id="customScheduleParseBtn" type="button">理解并预览</button>
+          </div>
+          <p class="custom-schedule-status" id="customScheduleStatus" role="status" aria-live="polite"></p>
+        </section>
+
         <section class="panel import-panel">
           <div class="section-title">
             <span>联赛导入</span>
@@ -57,7 +73,7 @@
         <section class="panel app-update-panel" aria-labelledby="appUpdateTitle">
           <div class="section-title">
             <span id="appUpdateTitle">应用更新</span>
-            <strong class="app-version" id="currentAppVersion">v2.2.17</strong>
+            <strong class="app-version" id="currentAppVersion">v2.2.18</strong>
           </div>
           <p class="app-update-status" id="appUpdateStatus" role="status" aria-live="polite">点击按钮检查是否有新版本</p>
           <ul class="app-update-notes" id="appUpdateNotes" hidden></ul>
@@ -147,6 +163,29 @@
       </section>
     </div>
 
+    <div class="day-modal-overlay custom-schedule-overlay" id="customScheduleModal" hidden>
+      <section class="day-modal custom-schedule-modal" role="dialog" aria-modal="true" aria-labelledby="customScheduleModalTitle">
+        <header class="day-modal-header">
+          <div>
+            <p class="eyebrow">AI SCHEDULE</p>
+            <h3 id="customScheduleModalTitle">确认添加赛程</h3>
+          </div>
+          <button class="icon-button day-modal-close" id="customScheduleModalClose" title="关闭" aria-label="关闭">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+          </button>
+        </header>
+        <div class="day-modal-body custom-schedule-modal-body">
+          <p class="custom-schedule-quoted" id="customScheduleOriginal"></p>
+          <div class="custom-schedule-preview" id="customSchedulePreview"></div>
+          <p class="custom-schedule-modal-status" id="customScheduleModalStatus" role="status" aria-live="polite"></p>
+          <div class="custom-schedule-confirm-actions">
+            <button class="secondary-button" id="customScheduleModalCancel" type="button">返回修改</button>
+            <button class="primary-button" id="customScheduleConfirmBtn" type="button">确认加入日历</button>
+          </div>
+        </div>
+      </section>
+    </div>
+
     <div class="day-modal-overlay team-news-overlay" id="teamNewsModal" hidden>
       <section class="day-modal team-news-modal" role="dialog" aria-modal="true" aria-labelledby="teamNewsModalTitle">
         <header class="day-modal-header team-news-modal-header">
@@ -189,13 +228,15 @@
       </section>
     </div>
 
-    <script src="public/calendar-core.js?v=2.2.17"></script>
-    <script src="public/calendar-storage.js?v=2.2.17"></script>
-    <script src="public/calendar-image-cache.js?v=2.2.17"></script>
-    <script src="public/update-config.js?v=2.2.17"></script>
-    <script src="public/app-update.js?v=2.2.17"></script>
-    <script src="public/team-news-config.js?v=2.2.17"></script>
-    <script src="public/team-news-core.js?v=2.2.17"></script>
-    <script src="public/app.js?v=2.2.17"></script>
+    <script src="public/calendar-core.js?v=2.2.18"></script>
+    <script src="public/calendar-storage.js?v=2.2.18"></script>
+    <script src="public/calendar-image-cache.js?v=2.2.18"></script>
+    <script src="public/custom-schedule-core.js?v=2.2.18"></script>
+    <script src="public/custom-schedule-agent-config.js?v=2.2.18"></script>
+    <script src="public/update-config.js?v=2.2.18"></script>
+    <script src="public/app-update.js?v=2.2.18"></script>
+    <script src="public/team-news-config.js?v=2.2.18"></script>
+    <script src="public/team-news-core.js?v=2.2.18"></script>
+    <script src="public/app.js?v=2.2.18"></script>
   </body>
 </html>

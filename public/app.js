@@ -9,6 +9,8 @@ const AppUpdate = window.AppUpdate;
 const AppUpdateConfig = window.AppUpdateConfig;
 const TeamNews = window.TeamNews;
 const TeamNewsConfig = window.TeamNewsConfig;
+const CustomScheduleCore = window.CustomScheduleCore;
+const CustomScheduleAgentConfig = window.CustomScheduleAgentConfig;
 const maxImportBytes = 5 * 1024 * 1024;
 const maxImportEvents = 10000;
 const maxWidgetEvents = 5000;
@@ -268,6 +270,11 @@ const teamNewsState = {
   articleScrollPositions: new Map()
 };
 
+const customScheduleState = {
+  draft: null,
+  recognizing: false
+};
+
 const elements = {
   leagueGrid: document.querySelector("#leagueGrid"),
   teamGrid: document.querySelector("#teamGrid"),
@@ -317,7 +324,18 @@ const elements = {
   deleteModalTitle: document.querySelector("#deleteModalTitle"),
   deleteModalCount: document.querySelector("#deleteModalCount"),
   deleteModalBody: document.querySelector("#deleteModalBody"),
-  deleteModalClose: document.querySelector("#deleteModalClose")
+  deleteModalClose: document.querySelector("#deleteModalClose"),
+  customScheduleInput: document.querySelector("#customScheduleInput"),
+  customScheduleVoiceBtn: document.querySelector("#customScheduleVoiceBtn"),
+  customScheduleParseBtn: document.querySelector("#customScheduleParseBtn"),
+  customScheduleStatus: document.querySelector("#customScheduleStatus"),
+  customScheduleModal: document.querySelector("#customScheduleModal"),
+  customScheduleModalClose: document.querySelector("#customScheduleModalClose"),
+  customScheduleModalCancel: document.querySelector("#customScheduleModalCancel"),
+  customScheduleConfirmBtn: document.querySelector("#customScheduleConfirmBtn"),
+  customScheduleOriginal: document.querySelector("#customScheduleOriginal"),
+  customSchedulePreview: document.querySelector("#customSchedulePreview"),
+  customScheduleModalStatus: document.querySelector("#customScheduleModalStatus")
 };
 
 init().catch((error) => setStatus(`启动失败：${error.message}`, true));
@@ -437,6 +455,14 @@ function bindEvents() {
       deleteImportedTeam(button.dataset.key);
     }
   });
+  elements.customScheduleParseBtn.addEventListener("click", previewCustomSchedule);
+  elements.customScheduleVoiceBtn.addEventListener("click", startCustomScheduleVoiceInput);
+  elements.customScheduleModalClose.addEventListener("click", closeCustomScheduleModal);
+  elements.customScheduleModalCancel.addEventListener("click", closeCustomScheduleModal);
+  elements.customScheduleConfirmBtn.addEventListener("click", confirmCustomSchedule);
+  elements.customScheduleModal.addEventListener("click", (event) => {
+    if (event.target === elements.customScheduleModal) closeCustomScheduleModal();
+  });
   document.addEventListener("keydown", (event) => {
     if (event.key === "Escape" && document.body.classList.contains("sidebar-open")) {
       closeSidebar();
@@ -446,6 +472,8 @@ function bindEvents() {
       closeTeamNewsModal();
     } else if (event.key === "Escape" && !elements.deleteModal.hidden) {
       closeDeleteModal();
+    } else if (event.key === "Escape" && !elements.customScheduleModal.hidden) {
+      closeCustomScheduleModal();
     } else if (event.key === "Escape" && !elements.dayModal.hidden) {
       closeDayModal();
     }
@@ -994,6 +1022,200 @@ function closeSidebar() {
   elements.menuToggle.focus();
 }
 
+function setCustomScheduleStatus(message, isError = false) {
+  elements.customScheduleStatus.textContent = message;
+  elements.customScheduleStatus.classList.toggle("is-error", isError);
+}
+
+function setCustomScheduleBusy(isBusy) {
+  elements.customScheduleParseBtn.disabled = isBusy;
+  elements.customScheduleVoiceBtn.disabled = isBusy;
+  elements.customScheduleParseBtn.setAttribute("aria-busy", String(isBusy));
+}
+
+function cleanCustomScheduleText(value, maxLength = 120) {
+  return String(value || "").replace(/\s+/g, " ").trim().slice(0, maxLength);
+}
+
+function normalizeCustomScheduleDraft(value, rawText, parser = "agent") {
+  const date = /^\d{4}-\d{2}-\d{2}$/.test(String(value?.date || "")) ? value.date : "";
+  const time = /^\d{2}:\d{2}$/.test(String(value?.time || "")) ? value.time : "";
+  const homeTeam = cleanCustomScheduleText(value?.homeTeam);
+  const awayTeam = cleanCustomScheduleText(value?.awayTeam);
+  const missing = [];
+  if (!date) missing.push("日期");
+  if (!time) missing.push("开赛时间");
+  if (!homeTeam || !awayTeam) missing.push("双方球队");
+  return {
+    rawText: cleanCustomScheduleText(rawText, 300),
+    date,
+    time,
+    homeTeam,
+    awayTeam,
+    orientation: cleanCustomScheduleText(value?.orientation, 30) || "agent",
+    missing,
+    parser
+  };
+}
+
+async function requestCustomScheduleAgent(rawText) {
+  const endpoint = String(CustomScheduleAgentConfig?.endpoint || "").trim();
+  if (!endpoint) return null;
+  const url = new URL(endpoint);
+  if (url.protocol !== "https:") throw new Error("智能赛程服务必须使用 HTTPS 地址");
+  const controller = new AbortController();
+  const timeout = window.setTimeout(() => controller.abort(), Number(CustomScheduleAgentConfig?.timeoutMs) || 12000);
+  try {
+    const response = await fetch(url.toString(), {
+      method: "POST",
+      headers: { "content-type": "application/json", accept: "application/json" },
+      body: JSON.stringify({
+        input: rawText,
+        referenceDate: new Date().toISOString(),
+        locale: "zh-CN"
+      }),
+      signal: controller.signal
+    });
+    if (!response.ok) throw new Error(`智能赛程服务返回 ${response.status}`);
+    const length = Number(response.headers.get("content-length") || 0);
+    if (length > 32 * 1024) throw new Error("智能赛程服务响应过大");
+    const payload = await response.json();
+    return normalizeCustomScheduleDraft(payload?.schedule || payload, rawText, "agent");
+  } finally {
+    window.clearTimeout(timeout);
+  }
+}
+
+async function understandCustomSchedule(rawText) {
+  if (!CustomScheduleCore?.parseScheduleDescription) throw new Error("智能赛程模块尚未加载");
+  const localDraft = CustomScheduleCore.parseScheduleDescription(rawText);
+  try {
+    const agentDraft = await requestCustomScheduleAgent(rawText);
+    return agentDraft || localDraft;
+  } catch (error) {
+    setCustomScheduleStatus(`智能服务暂不可用，已使用本地理解：${error.message}`, true);
+    return localDraft;
+  }
+}
+
+async function previewCustomSchedule() {
+  const rawText = cleanCustomScheduleText(elements.customScheduleInput.value, 300);
+  if (!rawText) {
+    setCustomScheduleStatus("先说一句比赛安排，例如：阿森纳在 8 月 26 日晚上 8 点主场打赫罗纳。", true);
+    elements.customScheduleInput.focus();
+    return;
+  }
+  setCustomScheduleBusy(true);
+  setCustomScheduleStatus("正在理解这场比赛…");
+  try {
+    const draft = await understandCustomSchedule(rawText);
+    customScheduleState.draft = draft;
+    renderCustomSchedulePreview(draft);
+    closeSidebar();
+    elements.customScheduleModal.hidden = false;
+    document.body.classList.add("modal-open");
+    elements.customScheduleConfirmBtn.focus();
+    setCustomScheduleStatus("");
+  } catch (error) {
+    setCustomScheduleStatus(`暂时无法理解：${error.message || "请换一种说法"}`, true);
+  } finally {
+    setCustomScheduleBusy(false);
+  }
+}
+
+function renderCustomSchedulePreview(draft) {
+  const complete = CustomScheduleCore?.isCompleteScheduleDraft?.(draft);
+  elements.customScheduleOriginal.textContent = `“${draft.rawText}”`;
+  const dateLabel = draft.date ? formatDate(parseInputDate(draft.date), { year: "numeric", month: "long", day: "numeric", weekday: "long" }) : "未识别";
+  const timeLabel = draft.time || "未识别";
+  const relation = draft.orientation === "explicit-away" ? "客场" : "主场";
+  elements.customSchedulePreview.innerHTML = `
+    <div class="custom-schedule-preview-row"><span>日期</span><strong>${escapeHtml(dateLabel)}</strong></div>
+    <div class="custom-schedule-preview-row"><span>时间</span><strong>${escapeHtml(timeLabel)}</strong></div>
+    <div class="custom-schedule-preview-match"><strong>${escapeHtml(draft.homeTeam || "主队未识别")}</strong><span>${escapeHtml(relation)} · VS</span><strong>${escapeHtml(draft.awayTeam || "客队未识别")}</strong></div>
+  `;
+  elements.customScheduleConfirmBtn.disabled = !complete;
+  elements.customScheduleModalStatus.textContent = complete
+    ? "确认后会保存到本机日历，也会同步到桌面赛程组件。"
+    : `还缺少${draft.missing.join("、")}。返回后补充一句即可，例如“8 月 26 日晚上 8 点”。`;
+  elements.customScheduleModalStatus.classList.toggle("is-error", !complete);
+}
+
+function closeCustomScheduleModal() {
+  elements.customScheduleModal.hidden = true;
+  customScheduleState.draft = null;
+  if (elements.dayModal.hidden && elements.deleteModal.hidden && elements.teamNewsModal.hidden && elements.teamNewsArticleModal.hidden) {
+    document.body.classList.remove("modal-open");
+  }
+  elements.customScheduleInput.focus();
+}
+
+function customScheduleAlreadyExists(event) {
+  return state.events.some((candidate) => candidate.custom
+    && candidate.start === event.start
+    && normalizeMatchText(candidate.homeTeam) === normalizeMatchText(event.homeTeam)
+    && normalizeMatchText(candidate.awayTeam) === normalizeMatchText(event.awayTeam));
+}
+
+function confirmCustomSchedule() {
+  const draft = customScheduleState.draft;
+  if (!CustomScheduleCore?.isCompleteScheduleDraft?.(draft)) return;
+  const event = CustomScheduleCore.createCustomEvent(draft);
+  if (customScheduleAlreadyExists(event)) {
+    elements.customScheduleModalStatus.textContent = "这场自定义比赛已经在日历中了。";
+    elements.customScheduleModalStatus.classList.add("is-error");
+    return;
+  }
+  state.events = [...state.events, event].sort(sortByStart);
+  state.cursor = parseInputDate(draft.date);
+  elements.customScheduleInput.value = "";
+  persist({ syncWidget: true });
+  render();
+  closeCustomScheduleModal();
+  setStatus(`已添加：${event.homeTeam} vs ${event.awayTeam}`);
+}
+
+async function startCustomScheduleVoiceInput() {
+  if (customScheduleState.recognizing) return;
+  const nativeSpeech = window.Capacitor?.Plugins?.SportsWidget?.startSpeechRecognition;
+  const BrowserRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+  customScheduleState.recognizing = true;
+  setCustomScheduleBusy(true);
+  setCustomScheduleStatus("正在听，请说出比赛安排…");
+  try {
+    let transcript = "";
+    if (typeof nativeSpeech === "function") {
+      const result = await nativeSpeech({ locale: "zh-CN" });
+      transcript = cleanCustomScheduleText(result?.transcript, 300);
+    } else if (BrowserRecognition) {
+      transcript = await recognizeCustomScheduleInBrowser(BrowserRecognition);
+    } else {
+      throw new Error("当前设备不支持语音输入，请直接打字");
+    }
+    if (!transcript) throw new Error("没有听清，请再说一次");
+    elements.customScheduleInput.value = transcript;
+    setCustomScheduleStatus("已转成文字，请点击“理解并预览”。");
+  } catch (error) {
+    setCustomScheduleStatus(error.message || "语音输入失败，请改用文字", true);
+  } finally {
+    customScheduleState.recognizing = false;
+    setCustomScheduleBusy(false);
+  }
+}
+
+function recognizeCustomScheduleInBrowser(Recognition) {
+  return new Promise((resolve, reject) => {
+    const recognition = new Recognition();
+    recognition.lang = "zh-CN";
+    recognition.interimResults = false;
+    recognition.maxAlternatives = 1;
+    recognition.onresult = (event) => resolve(event.results?.[0]?.[0]?.transcript || "");
+    recognition.onerror = () => reject(new Error("语音识别失败，请确认麦克风权限后重试"));
+    recognition.onnomatch = () => reject(new Error("没有识别到内容，请再说一次"));
+    recognition.start();
+  });
+}
+
 function bindSidebarGestures() {
   let startX = 0;
   let startY = 0;
@@ -1065,6 +1287,10 @@ function handleAppBack() {
   }
   if (!elements.deleteModal.hidden) {
     closeDeleteModal();
+    return true;
+  }
+  if (!elements.customScheduleModal.hidden) {
+    closeCustomScheduleModal();
     return true;
   }
   if (!elements.dayModal.hidden) {

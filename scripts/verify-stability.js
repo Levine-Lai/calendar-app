@@ -17,10 +17,15 @@ const updateConfig = read("public/update-config.js");
 const androidBuild = read("scripts/build-android.js");
 const newsWorker = read("android/app/src/main/java/com/local/sportscalendar/TeamNewsRefreshWorker.java");
 const newsPushManager = read("android/app/src/main/java/com/local/sportscalendar/TeamNewsPushManager.java");
+const newsMessagingService = read("android/app/src/main/java/com/local/sportscalendar/NewsMessagingService.java");
 const newsUpdater = read("firebase/functions/update-static-news.js");
 const mainActivity = read("android/app/src/main/java/com/local/sportscalendar/MainActivity.java");
 const index = read("index.html");
 const launchAnimation = read("public/launch-animation.js");
+const customScheduleCore = read("public/custom-schedule-core.js");
+const customScheduleConfig = read("public/custom-schedule-agent-config.js");
+const customScheduleWorker = read("workers/custom-schedule-agent/src/index.js");
+const customScheduleWorkerConfig = read("workers/custom-schedule-agent/wrangler.toml");
 const launchScreen = read("android/app/src/main/res/drawable/launch_screen.xml");
 const androidStyles = read("android/app/src/main/res/values/styles.xml");
 const androidColors = read("android/app/src/main/res/values/colors.xml");
@@ -190,6 +195,32 @@ const checks = [
       && app.includes("function restoreActiveTeamNewsScrollPosition()")
       && app.includes('activeTeamNewsScrollKey(newsId, "en")')
       && app.includes("restoreActiveTeamNewsScrollPosition()")
+  ],
+  [
+    "32 智能自定义赛程与安全语音入口",
+    index.includes('id="customScheduleInput"')
+      && app.includes("function previewCustomSchedule()")
+      && app.includes("function confirmCustomSchedule()")
+      && app.includes("startSpeechRecognition")
+      && customScheduleCore.includes("function parseScheduleDescription")
+      && customScheduleConfig.includes('endpoint: ""')
+      && manifest.includes("android.permission.RECORD_AUDIO")
+      && read("android/app/src/main/java/com/local/sportscalendar/SportsWidgetPlugin.java").includes("SpeechRecognizer")
+  ],
+  [
+    "33 Cloudflare DeepSeek 智能赛程代理",
+    customScheduleWorker.includes("https://api.deepseek.com/chat/completions")
+      && customScheduleWorker.includes("CUSTOM_SCHEDULE_AI_API_KEY")
+      && customScheduleWorker.includes("CUSTOM_SCHEDULE_LIMITER.limit")
+      && customScheduleWorkerConfig.includes('required = ["CUSTOM_SCHEDULE_AI_API_KEY"]')
+  ],
+  [
+    "34 北京时间新闻推送静默时段",
+    newsUpdater.includes("function isBeijingQuietHours")
+      && newsUpdater.includes("Beijing quiet hours are active")
+      && newsPushManager.includes("TimeZone.getTimeZone(\"Asia/Shanghai\")")
+      && newsPushManager.includes("if (isBeijingQuietHours())")
+      && newsMessagingService.includes("TeamNewsPushManager.isBeijingQuietHours()")
   ]
 ];
 

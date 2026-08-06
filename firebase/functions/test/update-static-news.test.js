@@ -7,9 +7,16 @@ const {
   buildFcmRequest,
   validateFcmBestEffort,
   parseServiceAccount,
+  isBeijingQuietHours,
   translateArticle,
   enrichTranslations
 } = require("../update-static-news");
+
+test("Beijing quiet hours cover 00:00 through 08:59 only", () => {
+  assert.equal(isBeijingQuietHours(new Date("2026-08-05T16:00:00.000Z")), true);
+  assert.equal(isBeijingQuietHours(new Date("2026-08-06T00:59:59.000Z")), true);
+  assert.equal(isBeijingQuietHours(new Date("2026-08-06T01:00:00.000Z")), false);
+});
 
 const validServiceAccount = {
   project_id: "sports-calendar-test",

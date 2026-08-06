@@ -15,6 +15,8 @@ firebase-debug.log
 *.keystore
 .env
 .env.*
+workers/custom-schedule-agent/.dev.vars
+workers/custom-schedule-agent/.env
 
 .idea/
 .vscode/
