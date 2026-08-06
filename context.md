@@ -2377,4 +2377,4 @@
 
 - 新增 `workers/custom-schedule-agent/`：Cloudflare Worker 对外仅提供 `POST /v1/parse`，允许 Capacitor 与指定网页来源，限制请求大小、模型输出、10 秒上游超时和每客户端每分钟 10 次请求，再调用 `https://api.deepseek.com/chat/completions` 的 `deepseek-v4-pro`。
 - `CUSTOM_SCHEDULE_AI_API_KEY` 被声明为 Cloudflare Secret，绝不写入 Worker 源码或 APK；新增手动 GitHub Actions 工作流 `deploy-custom-schedule-agent.yml`，使用 `CLOUDFLARE_API_TOKEN`、`CLOUDFLARE_ACCOUNT_ID` 与现有 AI Key 部署。
-- 仍需用户配置上述两项 Cloudflare GitHub Secrets 并运行部署工作流；得到 workers.dev URL 后，将 `/v1/parse` 写入 `public/custom-schedule-agent-config.js`，再做端到端验证。尚未打包。
+- 用户已配置 Cloudflare GitHub Secrets，部署工作流 `31065198654` 成功创建 `https://sports-calendar-schedule-agent.nbafantasy.workers.dev`（Worker version `45281f8f-3bf3-401a-a464-b68a8cd82ea2`）。客户端 endpoint 已更新为该地址的 `/v1/parse`，尚未打包，待真实请求验证。

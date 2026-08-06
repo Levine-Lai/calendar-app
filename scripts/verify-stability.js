@@ -203,7 +203,7 @@ const checks = [
       && app.includes("function confirmCustomSchedule()")
       && app.includes("startSpeechRecognition")
       && customScheduleCore.includes("function parseScheduleDescription")
-      && customScheduleConfig.includes('endpoint: ""')
+      && customScheduleConfig.includes('endpoint: "https://sports-calendar-schedule-agent.nbafantasy.workers.dev/v1/parse"')
       && manifest.includes("android.permission.RECORD_AUDIO")
       && read("android/app/src/main/java/com/local/sportscalendar/SportsWidgetPlugin.java").includes("SpeechRecognizer")
   ],
