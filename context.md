@@ -2385,3 +2385,10 @@
 - 删除只影响当前这一条赛事，随后立即重绘日历和首页比赛列表，并向桌面组件同步；同日其他比赛保持不变。
 - 新增持久化 `dismissedEventIds`：手动删除的赛事不会在后续“更新赛程”时按相同赛事 ID 自动恢复；本地存储加载时也会再次过滤，避免旧缓存回流。
 - 源码版本提升为 `2.2.19 / versionCode 41`；`public/version.json` 仍发布 `2.2.17 / versionCode 39`，本轮未打包。
+
+### 发布批次：2.3.0 智能添加赛程
+
+- 重大版本将智能添加自定义赛程、Cloudflare DeepSeek 解析代理和原生/网页语音输入正式纳入发布；同时包含日历单场删除二次确认和已删除赛事的刷新过滤。
+- 使用历史固定 keystore 生成 `releases/sports-calendar-2.3.0-debug.apk`，`aapt` 确认包名 `com.local.sportscalendar`、`versionCode 42`、`versionName 2.3.0`；APK v2 签名及证书 SHA-256 `7EF83E3EC40B7BF1E9AAF551589EE73C378FC26F29202255F0466BCAB759BED0` 已通过验证。
+- APK 大小 `8,028,202` 字节，SHA-256 为 `12808539B84433C1480C53C68A41CA8E93E9008630435E16CA989CF04BA98C57`；GitHub Release `v2.3.0` 已上传同名资产。
+- `public/version.json` 已切换为 `2.3.0 / versionCode 42` 与固定 HTTPS 下载地址，供旧版本 App 的“检查更新”发现并下载该版本。

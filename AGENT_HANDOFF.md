@@ -7,17 +7,17 @@
 
 ## 当前可交付状态
 
-- 当前源码：`2.3.0 / versionCode 42`，正在发布；Cloudflare Worker 已部署，客户端 endpoint 已指向 Worker 且已通过真实请求验证。
-- 本机最新 APK：`2.2.17 / versionCode 39`。
-- GitHub 最新已发布 APK：`2.2.17 / versionCode 39`。
-- APK：`releases/sports-calendar-2.2.17-debug.apk`。
-- APK 大小：`8,028,810` 字节。
-- APK SHA-256：`55A36631651B3F37845BA79AED44C37CABBCE2AE765169ADD5F08F6C3454FA8E`。
+- 当前源码：`2.3.0 / versionCode 42`，已发布；Cloudflare Worker 已部署，客户端 endpoint 已指向 Worker 且已通过真实请求验证。
+- 本机最新 APK：`2.3.0 / versionCode 42`。
+- GitHub 最新已发布 APK：`2.3.0 / versionCode 42`。
+- APK：`releases/sports-calendar-2.3.0-debug.apk`。
+- APK 大小：`8,028,202` 字节。
+- APK SHA-256：`12808539B84433C1480C53C68A41CA8E93E9008630435E16CA989CF04BA98C57`。
 - 签名：APK Signature Scheme v2。
 - 签名证书 SHA-256：`7EF83E3EC40B7BF1E9AAF551589EE73C378FC26F29202255F0466BCAB759BED0`。
-- GitHub Release：`https://github.com/Levine-Lai/calendar-app/releases/tag/v2.2.17`。
-- App 内远程更新已启用：`public/version.json` 发布 `2.2.17 / versionCode 39`，下载地址为 GitHub Release 固定 HTTPS 资源。
-- GitHub 远程资产记录：`8,028,810` 字节，SHA-256 与本机 APK 完全一致。
+- GitHub Release：`https://github.com/Levine-Lai/calendar-app/releases/tag/v2.3.0`。
+- App 内远程更新已启用：`public/version.json` 发布 `2.3.0 / versionCode 42`，下载地址为 GitHub Release 固定 HTTPS 资源。
+- GitHub 远程资产记录：`8,028,202` 字节，SHA-256 与本机 APK 完全一致。
 
 ## 必须遵守
 

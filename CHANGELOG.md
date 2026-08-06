@@ -4,18 +4,19 @@
 
 ## 当前版本状态
 
-- 本机最新已生成 APK：`2.2.17 / versionCode 39`
-- 当前源码版本：`2.3.0 / versionCode 42`（正在发布）
-- APK 文件：`releases/sports-calendar-2.2.17-debug.apk`
-- GitHub Release：`https://github.com/Levine-Lai/calendar-app/releases/tag/v2.2.17`
-- App 内检查更新清单已指向 `2.2.17` 的固定 GitHub Release 下载地址。
+- 本机最新已生成 APK：`2.3.0 / versionCode 42`
+- 当前源码版本：`2.3.0 / versionCode 42`（已发布）
+- APK 文件：`releases/sports-calendar-2.3.0-debug.apk`
+- GitHub Release：`https://github.com/Levine-Lai/calendar-app/releases/tag/v2.3.0`
+- App 内检查更新清单已指向 `2.3.0` 的固定 GitHub Release 下载地址。
 
-## 2.3.0（重大更新，发布中）
+## 2.3.0（重大更新，已发布）
 
 - 新增“智能添加赛程”：可直接输入或语音描述比赛安排，由本地规则与 Cloudflare DeepSeek 智能代理提取日期、时间、主客队，预览确认后写入日历并同步桌面组件。
 - 智能解析服务的 API 密钥只保存在 Cloudflare Worker Secret 中；客户端仅请求受限 HTTPS 接口，并有来源、请求大小、超时和频率限制。
 - 日历每日详情支持单独删除任意一场比赛，并在二次确认后持久保留删除结果，刷新赛程不会重复添加同一赛事。
 - 包含近期的桌面组件新闻展示、比赛改期处理、新闻阅读和推送静默等改进。
+- 固定签名 APK 已发布：`8,028,202` 字节，SHA-256 `12808539B84433C1480C53C68A41CA8E93E9008630435E16CA989CF04BA98C57`；包名 `com.local.sportscalendar`、`versionCode 42`、v2 签名和历史证书均已验证。
 
 ## 2.2.19（源码完成，未打包）
 

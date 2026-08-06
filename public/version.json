@@ -1,11 +1,11 @@
 {
-  "versionCode": 39,
-  "versionName": "2.2.17",
-  "apkUrl": "https://github.com/Levine-Lai/calendar-app/releases/download/v2.2.17/sports-calendar-2.2.17-debug.apk",
+  "versionCode": 42,
+  "versionName": "2.3.0",
+  "apkUrl": "https://github.com/Levine-Lai/calendar-app/releases/download/v2.3.0/sports-calendar-2.3.0-debug.apk",
   "notes": [
-    "首页今日比赛改为独立玻璃卡片，只展示队徽和比分或开赛时间",
-    "日历改为周一到周日排列",
-    "新闻文章分别记忆阅读位置，切换新文章会从顶部打开"
+    "重大更新：支持文字和语音描述，智能添加自定义赛程",
+    "赛程详情支持单场删除与二次确认，刷新不会自动恢复已删除赛事",
+    "包含桌面组件、比赛改期、新闻阅读和夜间推送优化"
   ],
   "force": false
 }
