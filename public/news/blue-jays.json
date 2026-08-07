@@ -1,34 +1,34 @@
 {
   "teamId": "toronto-blue-jays",
   "teamName": "多伦多蓝鸟",
-  "updatedAt": "2026-08-07T19:32:31.617Z",
+  "updatedAt": "2026-08-07T23:39:40.792Z",
   "items": [
     {
       "id": "fd5d2c075bea9aaad6770776ef41e5388d502b66c18e1e79b2fb3735f6ffbf70",
       "teamId": "toronto-blue-jays",
       "teamName": "多伦多蓝鸟",
-      "titleEn": "Blue Jays calling up outfield prospect Bateman",
-      "summaryEn": "Urías on the 10-day injured list with a right quad strain",
+      "titleEn": "Blue Jays call up CF prospect Bateman for debut vs. Wheeler, Phillies",
+      "summaryEn": "",
       "bodyEn": [
         "The Blue Jays added outfielder Brett Bateman to their active roster Friday, just five days after acquiring him from the Cubs as part of Monday’s Kevin Gasuman trade.",
         "Bateman, the Blue Jays’ No. 20 prospect, played just two games in Toronto’s organization before getting his first callup to the big leagues. He went 2-for-8 with two singles and two walks for Triple-A Buffalo. On the year, the left-handed hitter is batting .311 with a .429 on-base percentage.",
         "Bateman hasn't shown much power (six home runs in 317 pro games), but he has fantastic speed and contact ability; he has stolen 20 bases this year while recording nearly as many walks (62) as strikeouts (67). The 24-year-old also provides plus defense in the outfield. He has primarily played center field, but he has experience at all three spots.",
         "In other roster moves, the Blue Jays placed infielder Luis Urías on the 10-day injured list with a right quad strain. They also designated outfielder Rudy Martin Jr. for assignment."
       ],
-      "titleZh": "蓝鸟升上外野新秀Bateman",
-      "summaryZh": "Urías因右股四头肌拉伤进入10天伤病名单",
+      "titleZh": "蓝鸟升上中外野新秀 Bateman，首秀对阵 Wheeler 和费城人",
+      "summaryZh": "蓝鸟升上外野新秀 Bateman，并将 Urías 放入伤病名单。",
       "bodyZh": [
-        "蓝鸟周五将外野手Brett Bateman加入大联盟名单，这是他们在周一Kevin Gasuman交易中从芝加哥小熊队得到他仅仅五天之后。",
-        "Bateman是蓝鸟排名第20位的潜力新秀，在获得首次大联盟征召前，他只代表多伦多球队出战了两场比赛。他在3A水牛城队时8个打数击出2支安打，都是单打，并选到两次保送。今年，这位左打者的打击率为.311，上垒率为.429。",
-        "Bateman并没有展现出太多长打能力（职业赛317场仅6支本垒打），但他拥有出色的速度和击球能力；他今年已盗垒20次，同时保送（62次）几乎与三振（67次）一样多。这位24岁球员还能在外野提供优质防守。他主要担任中外野，但三个外野位置都有经验。",
-        "在其他名单变动中，蓝鸟因右股四头肌拉伤将内野手Luis Urías放入10天伤病名单。他们还将外野手Rudy Martin Jr.指定让渡。"
+        "蓝鸟队于周五将外野手 Brett Bateman 加入现役名单，这距离他们周一在 Kevin Gasuman 交易中从小熊队得到他仅过去五天。",
+        "Bateman 是蓝鸟队排名第20位的潜力新秀，在获得首次大联盟征召前，仅在多伦多体系内打了2场比赛。他在3A水牛城队8打数2安打，包括2支一垒安打和2次保送。本赛季，这位左打者打击率为.311，上垒率为.429。",
+        "Bateman 并未展现出太多长打火力（317场职业比赛6支本垒打），但他拥有极佳的速度和击球能力；他今年盗垒20次，同时保送（62次）几乎与三振（67次）一样多。这位24岁的球员还能在外场提供优异的防守。他主要担任中外野，但三个位置都有经验。",
+        "在其他阵容调整中，蓝鸟队将内野手 Luis Urías 放入10天伤病名单，原因是右腿四头肌拉伤。他们还指定让外野手 Rudy Martin Jr. 接受指派。"
       ],
       "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/ftged4cxeosfjeeifcie",
-      "translationSourceHash": "b5799ee0166bf6c1fb99adb323fce01e00d3c3fee70a3d79c2e2b41994012378",
+      "translationSourceHash": "857a294a8c3db91000a81905704f40032575d3a2654a4e2c0166a53350d38197",
       "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-07T19:32:31.617Z",
-      "author": "Brian Murphy",
-      "publishedAt": "2026-08-07T19:27:49.000Z",
+      "translatedAt": "2026-08-07T23:39:40.792Z",
+      "author": "Mark Feinsand",
+      "publishedAt": "2026-08-07T23:18:00.000Z",
       "url": "https://www.mlb.com/bluejays/news/brett-bateman-callup-to-blue-jays",
       "source": "MLB.com"
     },
@@ -87,7 +87,7 @@
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-07-21T02:11:41.474Z",
       "author": "",
-      "publishedAt": "2026-08-07T19:15:00.000Z",
+      "publishedAt": "2026-08-07T23:10:00.000Z",
       "url": "https://www.mlb.com/bluejays/news/blue-jays-injuries-and-roster-moves",
       "source": "MLB.com"
     },
