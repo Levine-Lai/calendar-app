@@ -1,8 +1,51 @@
 {
   "teamId": "toronto-blue-jays",
   "teamName": "多伦多蓝鸟",
-  "updatedAt": "2026-08-07T00:18:32.851Z",
+  "updatedAt": "2026-08-07T03:27:44.528Z",
   "items": [
+    {
+      "id": "6400ce494caba273da1efdf929408ee7a61fc6d7b7c7ab0a5bdb1d71b9428157",
+      "teamId": "toronto-blue-jays",
+      "teamName": "多伦多蓝鸟",
+      "titleEn": "18 days after taking liner off head, Jays' top pitching prospect dominates at Double-A",
+      "summaryEn": "",
+      "bodyEn": [
+        "Nolan Perry went 18 days between starts for Double-A New Hampshire. The last time he stood on a Minor League mound was July 19, when a line drive hit him flush on the side of the head. Toronto originally stated he would be week-to-week in his concussion recovery, but after just two and a half weeks away and having cleared all protocols, he was right back on the bump.",
+        "Making his home debut at Delta Dental Stadium on Thursday night, Perry showed no signs of being worse for wear. He pumped his first two pitches right down the middle for strikes and struck out the first two batters swinging on wicked breaking balls. By the time he was done, the Blue Jays’ No. 2 prospect had tossed three no-hit frames and racked up four punchouts in New Hampshire’s 5-2 win over Portland.",
+        "Get tickets to a Minor League game near you »",
+        "At the start of 2026, Perry was a relative unknown outside of the Florida State League circuit and the Blue Jays’ complex in Dunedin. Not ranked on the club’s preseason Top 30 Prospects list, he has enjoyed a meteoric rise over the past few months, now Toronto's top-ranked pitching prospect and No. 92 overall in baseball.",
+        "All four of Perry’s punchouts Thursday came on breaking balls, benders so nasty that even catcher Aaron Parker was unable to corral the first one as it went to the backstop before he completed the out. The 22-year-old threw first-pitch strikes to nine of the 10 batters he faced and didn’t allow a ball to leave the infield, yielding a baserunner only on a hit by pitch.",
+        "By virtue of his relatively speedy recovery, the Fisher Cats were able to pencil Perry into the rotation and utilize right-hander Gage Stanifer (TOR No. 7) as a piggyback. As nasty of a one-two punch as you’ll find in the Eastern League, Stanifer struck out five (while walking five) across four one-hit, one-run frames.",
+        "Perry has been a major development success story for the Blue Jays, who nabbed him with their 12th-round selection in the 2022 Draft out of the New Mexico high school prep ranks. He was an over-slot signing but not a major one, landing a $200,000 signing bonus. After getting clobbered in his first taste of pro ball in ‘23 (7.28 ERA across nine outings in the Florida Complex League), he broke out with an impressive Single-A debut in ‘24 before his elbow gave out after 14 starts.",
+        "What a pitcher looks like post-Tommy John surgery is always up in the air, but after missing all of 2025, Perry dominated the lower levels earlier this season. He allowed one earned run or fewer in all five of his Dunedin starts before getting the bump to High-A Vancouver in May. He won Northwest League Pitcher of the Month honors in June, and by the end of that month was ready for the challenge of the upper Minors.",
+        "While Toronto has largely kept Perry’s pitch count in check as he works his way back from the torn UCL, he’s been electric when on the mound. Across 59 innings, he's allowed just 38 hits and struck out 89 batters. He ranks fourth in the system in punchouts despite that capped workload and would lead in average-against, WHIP and several other categories if he had the requisite number of innings to qualify.",
+        "There’s plenty of good news elsewhere on mounds across the farm as well: Ricky Tiedemann (TOR No. 10) -- once the club’s top pitching prospect in his own right -- returned to Triple-A Buffalo on Wednesday night and tossed a scoreless inning of relief. He averaged 96.7 mph with his fastball and has given up just one run on three hits across five innings as he returns to action after dealing with left elbow soreness earlier this year.",
+        "Toronto also welcomed aboard a pair of new faces to its deepening pitching crop earlier this week. Dasan Hill (TOR No. 6) and John Klein (No. 25) both slotted in among the organization’s Top 30 prospects after arriving in the Jeff Hoffman trade with Minnesota. Hill's first start in his new system is set for Sunday with Vancouver, where he will join fellow fast-rising southpaw Johnny King (No. 3) in the rotation."
+      ],
+      "titleZh": "头部被平飞球击中18天后，蓝鸟顶级投手新秀在双A联赛中展现统治力",
+      "summaryZh": "蓝鸟投手新秀Perry在头部被平飞球击中18天后复出，3局无安打并送出4次三振。",
+      "bodyZh": [
+        "Nolan Perry在双A新罕布什尔队的两次先发之间相隔了18天。他上一次站上小联盟投手丘是在7月19日，当时一颗平飞球正中他的头部侧面。多伦多最初表示他的脑震荡恢复情况将按周观察，但仅仅缺席了两个半星期并通过了所有协议后，他就重新站上了投手丘。",
+        "周四晚在Delta Dental Stadium的主场首秀中，Perry丝毫没有表现出不适。他的前两球直接投进好球带正中央，并依靠犀利的变化球让前两名打者挥空三振。退场时，这位蓝鸟2号新秀已经投出三局无安打，并送出四次三振，帮助新罕布什尔队以5-2击败波特兰。",
+        "获取您附近小联盟比赛的门票 »",
+        "在2026年年初，Perry在佛罗里达州联赛和达尼丁蓝鸟基地之外还算相对无名。他未进入球队季前30大新秀名单，但在过去几个月里迅速崛起，如今已是多伦多排名第一的投手新秀，在棒球总排名中位列第92位。",
+        "周四，Perry的全部四次三振都来自变化球，这些变化球犀利无比，第一个球甚至让捕手Aaron Parker未能接住，球滚到挡网后才完成出局。这位22岁小将面对10名打者，有9人首球好球，且没有让球飞出内场，仅因触身球让对手上垒一次。",
+        "凭借相对快速的恢复，Fisher Cats得以将Perry列入先发轮值，并使用右投手Gage Stanifer（蓝鸟第7号新秀）作为接力，这对组合是东区联盟最犀利的组合拳。Stanifer在四局中送出五次三振（也有五次保送），仅被敲一安打失一分。",
+        "Perry是蓝鸟发展体系中的一个重要成功案例。蓝鸟在2022年选秀第12轮选中了他，他当时来自新墨西哥州的高中球员行列。他是一笔溢价签约，但并非大手笔，只拿到了20万美元签约金。在2023年首次体验职业棒球时他遭到重创（在佛罗里达综合联盟的9场出赛中自责分率高达7.28），随后在2024年的1A首秀中表现出色，但他在14次先发后肘部受伤。",
+        "投手在Tommy John手术后的状态总是充满变数，但在缺席整个2025赛季后，Perry在本赛季早些时候统治了低级别联赛。他在达尼丁的5场先发中每场失分不超过1分，之后于5月升至高阶1A的温哥华。他赢得了6月份西北联盟月度最佳投手奖，并在6月底做好了迎接更高级别小联盟挑战的准备。",
+        "多伦多严格限制着Perry的用球数，因为他在从尺侧副韧带撕裂中恢复，但只要登上投手丘，他依然生猛。在59局中，他只被敲出38支安打，并三振了89名打者。尽管工作量受限，他的三振数在球队体系中排名第四，而如果他的局数达到参评标准，他将在被打击率、WHIP等多项数据中领先。",
+        "农场体系中其他投手也有不少好消息。Ricky Tiedemann（蓝鸟第10号新秀）——曾凭自身实力成为球队头号投手新秀——周三晚回到3A水牛城，后援一局无失分。他的速球平均时速96.7英里。在复出后的5局中，仅被敲3支安打失1分。他今年早些时候因左肘酸痛缺阵，如今已重返赛场。",
+        "本周早些时候，多伦多也迎来了两位新面孔，为日益深厚的投手阵容增添力量。Dasan Hill（蓝鸟第6号新秀）和John Klein（第25号新秀）在涉及Jeff Hoffman与明尼苏达的交易中加盟后，双双进入球队30大新秀名单。Hill在新体系中的首场先发定于周日随温哥华出战，届时他将与另一位迅速崛起的左投Johnny King（第3号新秀）一同进入先发轮值。"
+      ],
+      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/y8xaac5pblb0zadgvuxb",
+      "translationSourceHash": "8c763114e8c8956d993f9b4339dbdd6c3cc578f6321fedee8c23cbf2bf1eb9f4",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-07T03:27:44.528Z",
+      "author": "Jesse Borek",
+      "publishedAt": "2026-08-07T01:00:00.000Z",
+      "url": "https://www.mlb.com/bluejays/news/blue-jays-prospect-nolan-perry-3-no-hit-innings-return",
+      "source": "MLB.com"
+    },
     {
       "id": "d3885e9f3b70bd3aeccb0d0e72b54f4e9df7fd5df60a2fdba9978a6b9f904f15",
       "teamId": "toronto-blue-jays",
@@ -949,61 +992,7 @@
       "publishedAt": "2026-08-03T15:11:23.000Z",
       "url": "https://www.mlb.com/bluejays/news/mlb-monthly-awards-for-july-2026",
       "source": "MLB.com"
-    },
-    {
-      "id": "020581f76cf3d303ab85b344b3ed605d4d17b2ae666e50a41120deaa99088aaa",
-      "teamId": "toronto-blue-jays",
-      "teamName": "多伦多蓝鸟",
-      "titleEn": "Blue Jays officially look to the future, acquire pair of prospects for Gausman",
-      "summaryEn": "",
-      "bodyEn": [
-        "TORONTO -- It begins. The Blue Jays have agreed to terms on a trade that will send Kevin Gausman to the Cubs for prospects Ty Southisene (Cubs' No. 13 prospect) and Brett Bateman (No. 21).",
-        "The deal, first reported by Mitch Bannon and Ken Rosenthal of The Athletic, has not yet been confirmed by the clubs.",
-        "Chicago gets: RHP Kevin GausmanToronto gets: INF Ty Southisene, OF Brett Bateman",
-        "This officially declares the Blue Jays as sellers, a label they’ve tried to shake for weeks but never been able to outrun. At 52-60, the Blue Jays could now continue to sell off pieces of a roster that entered 2026 with massive expectations coming off their World Series run against the Dodgers, but has only disappointed.",
-        "This has been hanging over Gausman, too, one of the most beloved Blue Jays players of this generation. Gausman’s openness is part of what’s appealed him to Blue Jays fans over the past five seasons, and in recent weeks, he’s been trying to soak in all in, knowing what could be coming. He exited his final start with the Blue Jays on Saturday to a standing ovation, the last of many he’s received in this city.",
-        "“This has been the best decision I ever made,” Gausman said, “to come here.”",
-        "Gausman was one of the most reliable pitchers we’ve seen in Toronto, also capable of peaks that put him into the conversation as a true ace. Now that he’s gone, the Blue Jays will be trying to capture that magic again, but he’s set such a high bar with what he accomplished over his five-year, $110 million deal.",
-        "“I think Kev will go down as one of the best free-agent signings this organization has made, especially from a pitching standpoint,” John Schneider said. “He’s remarkably consistent, a professional, a good teammate, low maintenance, everything that you want in a front-line dude. He pitched in big games, the postseason, the World Series and Opening Day. He’s exactly what you’re hoping for.”",
-        "This is a trade where fans will understandably struggle to be excited about the return, no matter what the Blue Jays were able to bring back. This is part of the game when teams with great expectations fall short, though, and the Blue Jays felt they needed to find the best possible package for Gausman.",
-        "Southisene hasn’t homered in 156 Minor League games with the Cubs since being drafted in the fourth round in 2024, but fits the Blue Jays’ style of hitting prospects with a high-end contact and on-base approach. This season between Single-A and High-A, he’s batting .311 with a .431 on-base percentage and has stolen 31 bags on 37 attempts. Still just 21, he’ll immediately become one of the Blue Jays’ most unique prospects.",
-        "Bateman, 24, brings a similar profile, rarely hitting for any sort of power, but constantly making contact. In Triple-A this season, he’s hitting .312 with a .431 on-base percentage and 20 steals. Depending on which moves are coming between now and Monday’s 6 p.m. ET Deadline, Bateman could even be a candidate to join the Blue Jays soon for his MLB debut.",
-        "So, what’s next?",
-        "The Blue Jays clearly aren’t done. They acquired Jameson Taillon earlier in the day in their first deal with the Cubs. Taillon, who had recently been designated for assignment, will slide right into a rotation spot to help keep that group afloat down the stretch.",
-        "The Blue Jays also have Shane Bieber available, and while he’s shown some encouraging flashes since returning from the IL mid-season, his last outing was messy, walking six batters in just two-thirds of an inning of work. His market is likely below Gausman’s in terms of value, which the Blue Jays will need to consider against the value of holding him, but there is a market nonetheless.",
-        "George Springer is another of the Blue Jays’ most obvious trade chips and has fueled his appeal to contenders recently with an excellent stretch of play, recapturing his 2025 form. Daulton Varsho, Luis Urías and potentially even Jeff Hoffman are also expected to be options for the Blue Jays to trade ahead of the Deadline."
-      ],
-      "titleZh": "蓝鸟正式着眼未来，交易Gausman换来两名新秀",
-      "summaryZh": "蓝鸟正式成为卖家，将Kevin Gausman送至小熊，换来两名新秀，预计还会有后续动作。",
-      "bodyZh": [
-        "多伦多——开始了。蓝鸟队已就一笔交易达成协议，将把Kevin Gausman送至小熊队，换来新秀Ty Southisene（小熊队第13号新秀）和Brett Bateman（第21号）。",
-        "这笔交易最初由The Athletic的Mitch Bannon和Ken Rosenthal报道，尚未得到球队确认。",
-        "芝加哥得到：右投手Kevin Gausman；多伦多得到：内野手Ty Southisene、外野手Brett Bateman",
-        "这正式宣告蓝鸟队成为卖家，这个标签他们几周来一直试图摆脱，但从未能躲开。目前战绩52胜60负，蓝鸟队现在可能会继续出售阵容中的球员，这支球队在经历了对阵道奇队的世界大赛后带着巨大期望进入2026赛季，但结果令人失望。",
-        "这件事也一直笼罩着Gausman，他是这一代最受爱戴的蓝鸟球员之一。过去五个赛季，Gausman的坦诚正是吸引蓝鸟球迷的原因之一，最近几周，他一直在努力感受这一切，因为他知道可能会发生什么。周六，他在蓝鸟队的最后一次先发中退场，全场起立鼓掌，这是他在这个城市收获的众多掌声中的最后一次。",
-        "“这是我有史以来做过最好的决定，”Gausman说，“就是来到这里。”",
-        "Gausman是多伦多见过的最可靠的投手之一，他还能达到巅峰状态，让他进入真正王牌投手的讨论。现在他离开了，蓝鸟队将尝试再次捕捉那种魔力，但他在五年1.1亿美元的合同中所取得的成就，设定了很高的标准。",
-        "“我认为Kev将成为球队历史上最好的自由球员签约之一，尤其是从投球角度来看，”John Schneider说。“他非常稳定，职业素养高，是好队友，不需要太多操心，是你想要的一切顶尖人物。他参加过重要比赛、季后赛、世界大赛和揭幕战。他正是你所期望的。”",
-        "这是一笔球迷们难以对回报感到兴奋的交易，无论蓝鸟队换回什么都可以理解。不过，当一支备受期望的球队未达预期时，这也是比赛的一部分，蓝鸟队认为他们需要为Gausman找到最好的交易方案。",
-        "Southisene自2024年第四轮选秀加入小熊队以来，在小联盟的156场比赛中没有击出本垒打，但他符合蓝鸟队对击球新秀的风格，具有顶级的接触和上垒能力。本赛季在1A和高级1A之间，他打击率为.311，上垒率为.431，37次偷垒尝试中成功31次。年仅21岁，他将立即成为蓝鸟队最具特色的新秀之一。",
-        "24岁的Bateman也带来类似的特点，很少击出长打，但总能持续击到球。本赛季在3A，他打击率为.312，上垒率为.431，有20次偷垒。根据从现在到美国东部时间周一下午6点交易截止日之前的运作情况，Bateman甚至可能成为很快加入蓝鸟队完成MLB首秀的候选人。",
-        "那么，接下来呢？",
-        "蓝鸟队显然还没有结束。当天早些时候，他们在与小熊队的第一笔交易中得到了Jameson Taillon。最近被指定让渡的Taillon将直接进入先发轮值，帮助球队在赛季末段保持竞争力。",
-        "蓝鸟队还有Shane Bieber可供交易，尽管他自从季中从伤病名单回归以来展现出一些令人鼓舞的闪光点，但他最近一次出赛表现糟糕，在仅投三分之二局中就保送了六名打者。他的交易价值可能低于Gausman，蓝鸟队需要权衡交易他与留住他的价值，但即便如此，他仍有交易市场。",
-        "George Springer是蓝鸟队最明显的交易筹码之一，最近凭借一段出色的表现吸引了竞争球队的兴趣，重现了他2025年的状态。Daulton Varsho、Luis Urías，甚至可能还有Jeff Hoffman，预计都将成为蓝鸟队在交易截止日前可供交易的选项。"
-      ],
-      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/lxfxs950zayibyq0fz6b",
-      "translationSourceHash": "b9fa662f8db8298e598c7578d6ae99506256eda676552c56e3c91fbbcaf0768a",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-03T04:50:37.248Z",
-      "author": "Keegan Matheson",
-      "publishedAt": "2026-08-03T03:34:00.000Z",
-      "url": "https://www.mlb.com/bluejays/news/blue-jays-trade-kevin-gausman-to-cubs",
-      "source": "MLB.com"
     }
   ],
-  "pendingNotificationIds": [
-    "d3885e9f3b70bd3aeccb0d0e72b54f4e9df7fd5df60a2fdba9978a6b9f904f15",
-    "9b196c1894cce58dfc5ee7d8c73b398239050bcc796ec8a1a471e18b23c72b11"
-  ]
+  "pendingNotificationIds": []
 }
