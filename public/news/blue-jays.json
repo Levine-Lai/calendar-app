@@ -1,25 +1,57 @@
 {
   "teamId": "toronto-blue-jays",
   "teamName": "多伦多蓝鸟",
-  "updatedAt": "2026-08-09T21:39:14.371Z",
+  "updatedAt": "2026-08-09T23:48:39.464Z",
   "items": [
     {
-      "id": "97a26a577b1edfd5f76565ded08dd8eb051a6615f2357418ab137f004c8223df",
+      "id": "ffcd5edea16c745aa77590e28978ffc5a1a75c94fa7807af36d97effd5b1c62b",
       "teamId": "toronto-blue-jays",
       "teamName": "多伦多蓝鸟",
-      "titleEn": "Blue Jays-Phillies highlights",
+      "titleEn": "Pivotal stretch looming, Blue Jays ready to prove themselves",
       "summaryEn": "",
-      "bodyEn": [],
-      "titleZh": "蓝鸟-费城人比赛集锦",
-      "summaryZh": "",
-      "bodyZh": [],
-      "imageUrl": "",
-      "translationSourceHash": "dd8f6728da3b7952ed5debbca0eccb0447dd837ae810429045d64b97d50123b4",
+      "bodyEn": [
+        "PHILADELPHIA -- As they prepared for their flight back to Toronto on Sunday evening, it was difficult to tell whether the Blue Jays had just won or lost.",
+        "Loud music echoed through a room filled with players both mentally and physically drained from yet another extra-innings affair, a sound typically reserved for a winning clubhouse. But even after falling to the Phillies in 12 innings Sunday, the Blue Jays were heading home with another series win and a winning record on their seven-game, three-city road trip, eager to continue their unlikely quest for a return to the postseason.",
+        "“There's nothing better than that, when you're getting into the dog days of August and down the stretch, there's nothing better than meaningful baseball,” manager John Schneider said after his team’s 7-6 loss to the Phillies at Citizens Bank Park. “If we can have the mentality, the intensity and the cohesiveness, everyone doing their part, I'll take my chances with these guys. You never know when a team kind of finds itself and turns the corner a little bit.”",
+        "On July 24, the Blue Jays sat at 47-57, 10 games under .500 and 6 1/2 games out of a postseason spot -- with five other teams standing between them and the Guardians, who held that third and final Wild Card position.",
+        "Over the next 10 days, general manager Ross Atkins threaded the buy/sell needle leading up to the Trade Deadline, shipping off Kevin Gausman, Daulton Varsho (both impending free agents) and Jeff Hoffman (under control through 2027) while acquiring José Soriano, Josh Smith, Spencer Arrighetti and Jameson Taillon, the first three of whom are under club control for at least two more years.",
+        "“We purposely kept guys here that we thought could help us win and purposely acquired guys that we thought could help us win this year and going forward,” Schneider said. “It wasn't a straight sell at the Deadline. It's not like, ‘Hey, let's look forward to 2027.’ We’ve got some games to play here.”",
+        "“Everybody still believes, from our front office all the way to our locker room,” George Springer said. “We're one good stretch away from being right where we want to be.”",
+        "That stretch begins Monday, when the Blue Jays open a four-game set at Rogers Centre against the red-hot Red Sox, winners of 27 of their last 32 games. After that, it’s a three-game set against the Yankees, followed by a six-game road trip to St. Petersburg and the Bronx.",
+        "“This could be our season,” Ernie Clement said. “If we play really, really well, it's going to put us in a great position. We're just going to show up every day and try to take care of business.”",
+        "The Blue Jays are 7-4 in their last 11 games after taking two of three in Philly, cutting their Wild Card deficit down to 3 1/2 games. Yes, there are still five teams in between Toronto and that third spot, but the Blue Jays have at least three games remaining against every team in front of them other than the Twins, giving them an opportunity to take care of their own business.",
+        "“We're playing with a lot of energy and playing like we’ve got nothing to lose at this point,” Clement said. “That's a dangerous team, the one that plays with nothing to lose. We feel really good about how we've been playing. We can't really look at the standings -- just go out there and take it day by day.”",
+        "Following this upcoming two-week AL East gauntlet, the Blue Jays have three games left against the Mariners, Guardians, Tigers and Rangers, with six remaining against the Orioles. Throw in six against the Royals and three each against the Athletics and Reds, and that’s what the Blue Jays have standing between themselves and a potential playoff spot.",
+        "“Those are obviously some really good teams who are playing extremely well,” Springer said. “I think everybody understands the task at hand and everybody understands that it's going to take all of us to get to where we want to go. It’s not an easy road, but I like the way that we've been playing.”",
+        "Schneider believes some of his players who have battled inconsistency this season “are starting to be a little bit more like themselves,” giving him the belief that the Blue Jays are capable of putting together the seven-week run necessary to get to the playoffs.",
+        "“It's kind of what we envisioned from the get-go,” Schneider said. “We’ve got to keep this rolling the rest of the way.”"
+      ],
+      "titleZh": "关键阶段来临，蓝鸟蓄势待发迎来自我证明",
+      "summaryZh": "蓝鸟队迎来关键赛程，全队上下信心满满。",
+      "bodyZh": [
+        "费城——周日晚，当多伦多蓝鸟队准备搭乘航班返回多伦多时，很难分辨他们刚刚是赢了还是输了。",
+        "喧闹的音乐回荡在房间里，球员们因又一场加时大战而身心俱疲，这种声音通常是胜利方更衣室才有的。然而，即便在周日以12局不敌费城人，蓝鸟队仍带着又一个系列赛胜利和七场三城客场之旅的胜多负少战绩回家，渴望继续他们重返季后赛的不寻常征程。",
+        "“没有什么比这更好了，当你进入八月最艰难的阶段和赛季冲刺期，没有什么比有意义的比赛更好了，”主教练John Schneider在球队于公民银行球场以7-6不敌费城人后表示。“如果我们能保持这种心态、强度和凝聚力，每个人都尽自己的一份力，我愿意和这些家伙一起赌一把。你永远不知道一支球队何时会找到自我并有所转折。”",
+        "7月24日，蓝鸟队战绩为47胜57负，低于五成胜率10场，距离季后赛席位差6个半胜场——在他们与守住第三个也是最后一个外卡席位的守护者队之间，还隔着五支球队。",
+        "接下来的10天里，总经理Ross Atkins在交易截止日前巧妙平衡了买卖操作，送走了Kevin Gausman、Daulton Varsho（两人均为即将成为自由球员）以及Jeff Hoffman（合同控制至2027年），同时引进了José Soriano、Josh Smith、Spencer Arrighetti和Jameson Taillon，其中前三人的俱乐部控制权至少还有两年。",
+        "“我们特意留下了那些我们认为能帮助我们赢球的球员，也特意引进了那些我们认为能在今年及未来帮助我们赢球的球员，”Schneider说。“这并非截止日时的彻底甩卖。不是说，‘嘿，让我们展望2027年吧。’我们还有比赛要打。”",
+        "“每个人都仍然相信，从管理层到我们的更衣室，”George Springer说。“我们距离理想状态只差一段出色的表现。”",
+        "这段表现从周一开始，届时蓝鸟队将在罗杰斯中心与状态火热的红袜队展开四连战，后者在过去32场比赛中赢下27场。之后是对阵洋基队的三连战，再之后是前往圣彼得堡和布朗克斯的六场客场之旅。",
+        "“这可能是我们的赛季关键期，”Ernie Clement说。“如果我们打得非常好，那将让我们处于绝佳位置。我们只需每天上场，努力完成任务。”",
+        "在客场对费城人取得三战两胜后，蓝鸟队最近11场战绩为7胜4负，将外卡差距缩小到3个半胜场。是的，多伦多与那个第三名之间仍有五支球队，但除了双城队之外，蓝鸟队对阵身前每支球队都至少还剩三场比赛，这给了他们自己掌控命运的机会。",
+        "“我们充满能量地打球，感觉就像到了这个阶段我们已经没有什么可失去的，”Clement说。“一支无所畏惧的球队是危险的。我们对自己的表现感觉非常好。我们不能太过关注排名——只要上场，一天天来。”",
+        "在即将到来的两周美联东区内战之后，蓝鸟队还将与水手队、守护者队、老虎队和游骑兵队各打三场，与金莺队还剩六场。再加上与皇家队的六场以及与运动家队和红人队各三场，这就是蓝鸟队通往潜在季后赛席位之路上的对手。",
+        "“这些显然都是打得非常好的强队，”Springer说。“我想每个人都理解眼前的任务，也都明白需要所有人共同努力才能到达我们想去的地方。这条路并不容易，但我喜欢我们一直以来的打球方式。”",
+        "Schneider认为，一些本赛季状态起伏的球员“开始更像他们自己了”，这让他相信蓝鸟队有能力打出晋级季后赛所需的七周好球。",
+        "“这是我们从一开始就设想的，”Schneider说。“我们必须在剩余比赛中保持这种势头。”"
+      ],
+      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/erb2gewdsvwyacw2esew",
+      "translationSourceHash": "afc4f7e6d01161e084c6a3508fb23013fb7d810fb9d8989b7ff545ebd74be6ea",
       "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-09T21:39:14.370Z",
-      "author": "",
-      "publishedAt": "2026-08-09T21:21:59.000Z",
-      "url": "https://www.mlb.com/stories/game/823425",
+      "translatedAt": "2026-08-09T23:48:39.464Z",
+      "author": "Mark Feinsand",
+      "publishedAt": "2026-08-09T23:23:49.000Z",
+      "url": "https://www.mlb.com/bluejays/news/blue-jays-lose-to-phillies-ahead-of-key-stretch",
       "source": "MLB.com"
     },
     {
@@ -901,6 +933,6 @@
     }
   ],
   "pendingNotificationIds": [
-    "97a26a577b1edfd5f76565ded08dd8eb051a6615f2357418ab137f004c8223df"
+    "ffcd5edea16c745aa77590e28978ffc5a1a75c94fa7807af36d97effd5b1c62b"
   ]
 }
