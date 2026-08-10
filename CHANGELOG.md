@@ -4,13 +4,13 @@
 
 ## 当前版本状态
 
-- 本机最新已生成 APK：`2.3.0 / versionCode 42`
-- 当前源码版本：`2.3.1 / versionCode 43`（源码完成，未打包）
-- APK 文件：`releases/sports-calendar-2.3.0-debug.apk`
-- GitHub Release：`https://github.com/Levine-Lai/calendar-app/releases/tag/v2.3.0`
-- App 内检查更新清单已指向 `2.3.0` 的固定 GitHub Release 下载地址。
+- 本机最新已生成 APK：`2.3.1 / versionCode 43`
+- 当前源码版本：`2.3.1 / versionCode 43`（已发布）
+- APK 文件：`releases/sports-calendar-2.3.1-debug.apk`
+- GitHub Release：`https://github.com/Levine-Lai/calendar-app/releases/tag/v2.3.1`
+- App 内检查更新清单已指向 `2.3.1` 的固定 GitHub Release 下载地址。
 
-## 2.3.1（源码完成，未打包）
+## 2.3.1（已发布）
 
 - 修复 App 内检查更新点击下载后部分手机无法打开 GitHub 下载页的问题：改由 Android 前台 Activity 通过系统浏览器选择器打开 HTTPS 下载链接，不再依赖受限的 WebView/后台 Context 跳转。
 - 日历每日详情去除单场删除图标；改为连续点击同一场比赛两下，再显示原有删除确认弹窗，避免误触。
@@ -20,7 +20,8 @@
 - 组件2保持 4×3，只显示最新一条新闻；图片区域扩大并改为完整缩放，避免裁掉人物或画面边缘。远端新闻改为并行获取，手动刷新使用加急 Worker，减少等待时间。
 - 新闻详情的 English/中文切换不再继承全局按钮位移、阴影或蓝色点击高亮，切换时文字位置保持不变。
 - 去除新闻文章标题上方的多余内边距，标题紧接页头开始排版。
-- Web 自动化测试 39 项、新闻后台测试 30 项、稳定性检查 37 项全部通过；Android Java 编译、JVM 测试和 Lint 均成功，新闻后台生产依赖审计为 0。本轮未打包。
+- Web 自动化测试 39 项、新闻后台测试 30 项、稳定性检查 37 项全部通过；Android Java 编译、JVM 测试和 Lint 均成功，新闻后台生产依赖审计为 0。
+- 已使用历史固定证书生成并发布 `releases/sports-calendar-2.3.1-debug.apk`：`8,081,225` 字节，SHA-256 `E47E9642144AD320D2422981094BB71ED9F55D2AECD24AB8BC6BD74A87DF8BBB`；包名、`versionCode 43`、v2 签名及证书指纹均通过验证，App 更新清单已切换到 `2.3.1`。
 
 ## 2.3.0（重大更新，已发布）
 

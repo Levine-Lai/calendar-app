@@ -2416,3 +2416,10 @@
 - 阿森纳官方队徽已保存为 `public/assets/teams/arsenal.png` 透明 PNG，并由 Web 构建同步进 APK，不再依赖第三方远程队徽。
 - 桌面组件2维持 4×3 和最新一条新闻：图片/标题高度调整为 2:1，图片改为 `fitCenter` 完整展示；Raw 与 CDN 并行获取，网络超时缩短，手动刷新使用 expedited WorkManager。
 - Web 测试 39 项、新闻后台测试 30 项、稳定性检查 37 项和生产依赖审计全部通过；Android Java 编译、JVM 测试与 Lint 成功。本轮未打包，目标安装包仍为 `2.3.1`。
+
+### 打包批次：2.3.1 阿森纳双源新闻与组件优化
+
+- GitHub `Update Arsenal news` 首次真实运行成功，耗时 7 分 27 秒；从 Arsenal.com 与 The Guardian 合并 20 条新闻（官网 12 条、Guardian 8 条），DeepSeek 新翻译 11 条且无失败，并由机器人提交到 `main`。
+- 打包前已快进同步机器人生成的 `public/news/arsenal.json`，所以 APK 离线缓存也包含完整 20 条双源新闻、本地阿森纳透明队徽和 4×3 组件2的新布局。
+- 使用历史固定 keystore 生成 `releases/sports-calendar-2.3.1-debug.apk`；`aapt` 确认包名 `com.local.sportscalendar`、`versionCode 43`、`versionName 2.3.1`，APK v2 签名及历史证书 SHA-256 `7EF83E3EC40B7BF1E9AAF551589EE73C378FC26F29202255F0466BCAB759BED0` 通过验证。
+- 发布前再次同步定时新闻缓存并重建 APK；最终文件大小 `8,081,225` 字节，SHA-256 为 `E47E9642144AD320D2422981094BB71ED9F55D2AECD24AB8BC6BD74A87DF8BBB`。GitHub Release 为 `v2.3.1`，`public/version.json` 已发布 `2.3.1 / versionCode 43` 与固定 HTTPS 下载地址。
