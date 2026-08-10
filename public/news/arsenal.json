@@ -1,12 +1,37 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-10T14:44:44.242Z",
+  "updatedAt": "2026-08-10T16:08:42.431Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "09f3fc8ac175affbfe0a32b33dc440c47302457622abf04e99b80e445670bcd1",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Jenna Nighswonger leaves Arsenal",
+      "summaryEn": "Jenna Nighswonger has completed a permanent move to Bay FC in the National Women’s Soccer League in the United States.",
+      "bodyEn": [
+        "Jenna Nighswonger has completed a permanent move to Bay FC in the National Women’s Soccer League in the United States.",
+        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/27ca979e4ddd-gettyimages-2246973757.webp",
+      "author": "Arsenal Media",
+      "publishedAt": "2026-08-10T16:00:02.325Z",
+      "url": "https://www.arsenal.com/news/jenna-nighswonger-leaves-arsenal-aCx090l0lNCw",
+      "source": "Arsenal.com",
+      "titleZh": "Jenna Nighswonger离开阿森纳",
+      "summaryZh": "Jenna Nighswonger已完成永久转会至美国国家女子足球联赛的湾FC。",
+      "bodyZh": [
+        "Jenna Nighswonger已完成永久转会至美国国家女子足球联赛的湾FC。",
+        "这是阿森纳官网免费文章的简要总结。请打开原始来源查看完整报道。"
+      ],
+      "translationSourceHash": "daa7d8ff474560c3a480985c71375377318c25f3a9d0570acb88e353dc32d418",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-10T16:08:33.702Z"
+    },
     {
       "id": "ffd27c9e7c8c72fd80223ce0dbde6dd60da0667c125331ee30f7ef00d5e47439",
       "teamId": "arsenal",
@@ -279,6 +304,31 @@
       "translatedAt": "2026-08-10T10:46:43.469Z"
     },
     {
+      "id": "8ed93f3a6c72119f69bb611e47b3550fa124ca3cfd04508fdb5cd0fbc1d24b37",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Enjoy every minute of our Emirates Cup homecoming",
+      "summaryEn": "Our Gunners returned to N5 for a pre-season test against Borussia Dortmund",
+      "bodyEn": [
+        "Our Gunners returned to N5 for a pre-season test against Borussia Dortmund",
+        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/84781e45d4a3-gettyimages-2289728481.webp",
+      "author": "Tom Keens",
+      "publishedAt": "2026-08-10T07:00:00.000Z",
+      "url": "https://www.arsenal.com/news/enjoy-every-minute-of-our-emirates-cup-homecoming-aHdpf8N6Qh98",
+      "source": "Arsenal.com",
+      "titleZh": "享受我们酋长杯回归的每一分钟",
+      "summaryZh": "我们的枪手回到N5，与多特蒙德进行季前测试。",
+      "bodyZh": [
+        "我们的枪手回到N5，与多特蒙德进行季前测试。",
+        "这是一篇免费的Arsenal.com文章的简明摘要。打开原始来源以查看完整故事。"
+      ],
+      "translationSourceHash": "e85fbb9062fd8d6effe03a57f49c5ff6b801b1a39af7cb2fb469c5aa63ec03d0",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-10T16:08:42.431Z"
+    },
+    {
       "id": "d94036ab20a571f89bc2e4e739dae272c9bb6edf75c545b5536bda9bd993aae1",
       "teamId": "arsenal",
       "teamName": "阿森纳",
@@ -304,31 +354,6 @@
       "translatedAt": "2026-08-10T09:34:25.366Z"
     },
     {
-      "id": "c374ae3f367506fa04485da47e0fabb62bf7d04488d7d9a532e516153e2b2910",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Gallery: 35 edits from the Emirates Cup",
-      "summaryEn": "The best images from our pre-season clash with Borussia Dortmund",
-      "bodyEn": [
-        "The best images from our pre-season clash with Borussia Dortmund",
-        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/b95ae337706e-gettyimages-2289724215.webp",
-      "author": "Tom Keens",
-      "publishedAt": "2026-08-09T23:00:00.000Z",
-      "url": "https://www.arsenal.com/news/gallery-35-edits-from-the-emirates-cup-abYOp3f1mZGf",
-      "source": "Arsenal.com",
-      "titleZh": "图集：酋长杯35张精选图片",
-      "summaryZh": "我们与多特蒙德季前赛的最佳图片",
-      "bodyZh": [
-        "我们与多特蒙德季前赛的最佳图片",
-        "这是Arsenal.com免费文章的简要摘要。请打开原始来源查看完整内容。"
-      ],
-      "translationSourceHash": "b54453e478a19933f14d89ae64817f6ebb39823c5764f50c9b0e6f477424d233",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-10T07:44:27.431Z"
-    },
-    {
       "id": "959981fda54d03509042bfe53cbb4efac3acd03694fe395c72679a5e1b1f2cae",
       "teamId": "arsenal",
       "teamName": "阿森纳",
@@ -352,31 +377,6 @@
       "translationSourceHash": "e9ff49863922f4ba39537e2246b37dd780be31f106e85b7d84d5a1f1c5347b7d",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-10T09:35:02.723Z"
-    },
-    {
-      "id": "14cc49e4566a5e3c349785268c619aab1c7e13e24ef4f21dfb142a31f82b43e8",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Gyokeres: \"It was amazing to be back\"",
-      "summaryEn": "See what Viktor had to say after the Emirates Cup Final, in which he scored our second goal from the penalty spot",
-      "bodyEn": [
-        "See what Viktor had to say after the Emirates Cup Final, in which he scored our second goal from the penalty spot",
-        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/36702b0a85c1-gettyimages-2289724961.webp",
-      "author": "Stephen Wright",
-      "publishedAt": "2026-08-09T15:56:34.009Z",
-      "url": "https://www.arsenal.com/news/gyokeres-it-was-amazing-to-be-back-a1f8M1r8rpdG",
-      "source": "Arsenal.com",
-      "titleZh": "约克雷斯：“回归的感觉太棒了”",
-      "summaryZh": "约克雷斯谈酋长杯决赛点球破门，称回归感觉太棒。",
-      "bodyZh": [
-        "听听维克托在酋长杯决赛后的发言，他在比赛中点球攻入我们的第二球。",
-        "这是Arsenal.com免费文章的简要摘要。请打开原始来源获取完整内容。"
-      ],
-      "translationSourceHash": "987cb902c12bb2662153ccc5260957588f0463cf6b89d5a662f143ea7c832d08",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-10T07:44:33.896Z"
     },
     {
       "id": "e0b1fc8fc85524a8f438ab50f2c6c42f52d633560b541e08383a0d18cb4f5f1b",
