@@ -1,8 +1,27 @@
 {
   "teamId": "toronto-blue-jays",
   "teamName": "多伦多蓝鸟",
-  "updatedAt": "2026-08-09T23:48:39.464Z",
+  "updatedAt": "2026-08-10T04:44:41.298Z",
   "items": [
+    {
+      "id": "c4d7a73836461116a84d6d6659149e1cf26c8278639e4cf0e08b9c123be21ccc",
+      "teamId": "toronto-blue-jays",
+      "teamName": "多伦多蓝鸟",
+      "titleEn": "Podcast: A history-making moment for Scherzer",
+      "summaryEn": "Miz reaches 200 Ks at historic pace | Morning Lineup",
+      "bodyEn": [],
+      "titleZh": "播客：Scherzer的历史性时刻",
+      "summaryZh": "Miz以历史性速度达到200次三振 | Morning Lineup",
+      "bodyZh": [],
+      "imageUrl": "",
+      "translationSourceHash": "9e4deff372d1913c99e3c5f99571cf720cce00b5b92f48fb926912c8e8110fb0",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-10T04:44:41.298Z",
+      "author": "",
+      "publishedAt": "2026-08-10T03:39:32.000Z",
+      "url": "https://mlb-cuts-diamond.mlb.com/FORGE/2026/2026-08/10/77a76b22-8ef21591-82cfe6a2-csvm-diamondgcp-asset_1280x720_59_4000K.mp4",
+      "source": "MLB.com"
+    },
     {
       "id": "ffcd5edea16c745aa77590e28978ffc5a1a75c94fa7807af36d97effd5b1c62b",
       "teamId": "toronto-blue-jays",
@@ -890,45 +909,6 @@
       "author": "Keegan Matheson",
       "publishedAt": "2026-08-05T03:12:00.000Z",
       "url": "https://www.mlb.com/bluejays/news/blue-jays-can-t-bounce-back-vs-astros-after-trey-yesavage-injury",
-      "source": "MLB.com"
-    },
-    {
-      "id": "4c87a004a6d20748811426a1c099acbb5e64bf968d462aee1db1ba4a1d690793",
-      "teamId": "toronto-blue-jays",
-      "teamName": "多伦多蓝鸟",
-      "titleEn": "Yesavage exits with left knee discomfort, will get MRI Wednesday",
-      "summaryEn": "",
-      "bodyEn": [
-        "HOUSTON -- Trey Yesavage left Tuesday’s game in Houston with left knee discomfort, another blow to a Blue Jays team in need of some better breaks.",
-        "He is scheduled to undergo an MRI Wednesday, and the Blue Jays will reevaluate then.",
-        "Yesavage was throwing warmup pitches prior to the bottom of the third inning when suddenly, manager John Schneider and the Blue Jays’ trainer came jogging out of the dugout.",
-        "Schneider watched on as Yesavage threw one more warmup pitch, but Yesavage quickly shook his head and walked off the mound toward the dugout. Yesavage’s left knee, which is his landing leg, appeared to buckle underneath him when he was throwing his early warmup pitches. Chad Dallas entered the game in Yesavage’s place to begin the bottom of the third inning.",
-        "Following the 7-2 loss to the Astros, Schneider shared that Yesavage had felt a “pinch” in his left knee, and while Yesavage didn’t seem overly concerned, they weren’t about to take any chances with their young star.",
-        "“It was weird. It was kind of a pinching sensation where he couldn’t really stabilize perfectly,” Schneider said. “There was nothing beforehand. It kind of caught us off guard.”",
-        "Yesavage hadn’t allowed a hit over the first two frames and owns a 3.65 ERA over 93 2/3 innings, a young cornerstone in this rotation which has undergone significant changes in recent days. Just hours before Yesavage’s injury, Schneider shared the Blue Jays’ plans to move to a six-man rotation following the additions of Jameson Taillon from the Cubs and José Soriano from the Angels after Kevin Gausman was dealt.",
-        "Depth is not an immediate issue, especially with Spencer Arrighetti -- another Trade Deadline acquisition from Houston -- nearing his own return from a foot injury and scheduled to make a Triple-A rehab start Thursday. Anything involving Yesavage is cause for concern, though, and even if the Blue Jays’ postseason odds are very small, they haven’t reached zero yet, and this team remains intent on competing down the stretch.",
-        "The Blue Jays expect to have further updates on Yesavage either Wednesday in Houston or Thursday by the time they reach Chicago for a single makeup game."
-      ],
-      "titleZh": "Yesavage 左膝不适退场，周三将接受 MRI",
-      "summaryZh": "Yesavage 左膝不适离场，将接受核磁共振检查。",
-      "bodyZh": [
-        "休斯敦——Trey Yesavage 当地时间周二在休斯敦的比赛中因左膝不适离场，这对急需一些好运的蓝鸟队来说又是一次打击。",
-        "他计划于周三接受核磁共振检查，蓝鸟队届时将重新评估。",
-        "Yesavage 在第三局下半开始前投热身球时，主教练 John Schneider 和蓝鸟队的训练师突然从休息区跑了出来。",
-        "Schneider 在一旁看着 Yesavage 又投了一个热身球，但 Yesavage 很快摇了摇头，走下投手丘朝休息区走去。Yesavage 的左膝（他的落地腿）在早期投热身球时似乎打软了。Chad Dallas 顶替 Yesavage 上场，开始第三局下半局。",
-        "在以 7-2 输给太空人之后，Schneider 透露 Yesavage 的左膝感到一阵“刺痛”，虽然 Yesavage 本人似乎并不太担心，但他们不会拿这位年轻球星冒险。",
-        "“这很奇怪。这是一种刺痛感，他无法完全稳定下来，”Schneider 说，“之前没有任何预兆，这让我们有点措手不及。”",
-        "Yesavage 在前两局没有让对手击出安打，本赛季在 93 2/3 局中自责分率为 3.65，是这支近期经历重大变化的先发轮值中的年轻基石。就在 Yesavage 受伤的几个小时前，Schneider 透露了蓝鸟队的计划：在 Kevin Gausman 被交易后，随着 Jameson Taillon 从芝加哥小熊和 José Soriano 从洛杉矶天使加盟，他们将采用六人轮值。",
-        "深度目前并不是紧迫的问题，尤其是 Spencer Arrighetti——另一笔从休斯敦得到的交易截止日引援——即将从脚伤中复出，并计划于周四在 3A 联赛进行康复先发。不过，任何涉及 Yesavage 的事情都会引起担忧，而且即使蓝鸟队进入季后赛的几率非常小，但尚未归零，球队仍然决心在赛季末段竞争。",
-        "蓝鸟队预计将在周三于休斯敦或周四抵达芝加哥进行一场补赛时，带来关于 Yesavage 的进一步更新。"
-      ],
-      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/j5vnrff8o13c2e2ahiwj",
-      "translationSourceHash": "d5d63626235666a85acfa2858098ec311544924371966cd073d89628c1962439",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-05T04:17:20.735Z",
-      "author": "Keegan Matheson",
-      "publishedAt": "2026-08-05T03:11:00.000Z",
-      "url": "https://www.mlb.com/bluejays/news/trey-yesavage-exits-start-vs-astros-with-injury",
       "source": "MLB.com"
     }
   ],
