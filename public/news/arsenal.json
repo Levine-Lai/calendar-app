@@ -1,7 +1,7 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-10T16:08:42.431Z",
+  "updatedAt": "2026-08-10T18:01:59.762Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
@@ -185,9 +185,9 @@
       "teamId": "arsenal",
       "teamName": "阿森纳",
       "titleEn": "Arsenal step up push for defensive cover with Timber and Saliba sidelined",
-      "summaryEn": "Fresh bid expected for Villa’s KonsaArteta says existing players need to improveArsenal are stepping up their efforts to sign defensive cover for William Saliba after Mikel Arteta revealed Jurriën Timber is well away from returning to competitive action. Saliba will be sidelined for an extended period after breaking down during the World Cup with a back injury.After Arsenal lost a second successive friendly when Borussia Dortmund won 3-2 on Sunday to lift the Emirates Cup in a performance that featured several defensive mistakes, Arteta would not be drawn on when the France defender is expected to return, but said it would take “some time to heal”. Continue reading...",
+      "summaryEn": "Fresh bid expected for Villa’s KonsaArteta says existing players need to improveArsenal are stepping up their efforts to sign defensive cover for William Saliba after Mikel Arteta revealed that Jurriën Timber is well away from returning to competitive action. Saliba will be out for an extended period after breaking down during the World Cup with a back injury.After Arsenal lost a second successive friendly when Borussia Dortmund won 3-2 on Sunday to lift the Emirates Cup in a performance that featured several defensive mistakes, Arteta would not be drawn on when the France defender is expected to return, but said it would take “some time to heal”. Continue reading...",
       "bodyEn": [
-        "Fresh bid expected for Villa’s KonsaArteta says existing players need to improveArsenal are stepping up their efforts to sign defensive cover for William Saliba after Mikel Arteta revealed Jurriën Timber is well away from returning to competitive action. Saliba will be sidelined for an extended period after breaking down during the World Cup with a back injury.After Arsenal lost a second successive friendly when Borussia Dortmund won 3-2 on Sunday to lift the Emirates Cup in a performance that featured several defensive mistakes, Arteta would not be drawn on when the France defender is expected to return, but said it would take “some time to heal”. Continue reading...",
+        "Fresh bid expected for Villa’s KonsaArteta says existing players need to improveArsenal are stepping up their efforts to sign defensive cover for William Saliba after Mikel Arteta revealed that Jurriën Timber is well away from returning to competitive action. Saliba will be out for an extended period after breaking down during the World Cup with a back injury.After Arsenal lost a second successive friendly when Borussia Dortmund won 3-2 on Sunday to lift the Emirates Cup in a performance that featured several defensive mistakes, Arteta would not be drawn on when the France defender is expected to return, but said it would take “some time to heal”. Continue reading...",
         "Open the original Guardian article for the complete free report and author context."
       ],
       "imageUrl": "https://i.guim.co.uk/img/media/a37a86e13217b2740e890042e7d2e8e4740ed73a/0_0_6880_5504/master/6880.jpg?width=140&quality=85&auto=format&fit=max&s=099b426a6865303dd31fbe6720d4a543",
@@ -195,15 +195,15 @@
       "publishedAt": "2026-08-10T09:48:53.000Z",
       "url": "https://www.theguardian.com/football/2026/aug/10/arsenal-defensive-backup-jurrien-timber-william-saliba-sidelined-transfer-window",
       "source": "The Guardian",
-      "titleZh": "阿森纳在廷贝尔和萨利巴缺阵下加强防线引援",
-      "summaryZh": "阿森纳加强后防引援，萨利巴受伤，廷贝尔短期内难复出。",
+      "titleZh": "阿森纳在廷贝尔和萨利巴缺阵的情况下加速推进防守引援",
+      "summaryZh": "预计再次报价维拉后卫孔萨，阿尔特塔称现有球员需提高。",
       "bodyZh": [
-        "预计将向维拉的孔萨提出新的报价，阿尔特塔表示现有球员需要提高。在米克尔·阿尔特塔透露尤里安·廷贝尔距离重返比赛还很遥远之后，阿森纳正在加紧引进威廉·萨利巴的防守替补。萨利巴在世界杯期间背部受伤，将缺阵较长时间。周日，阿森纳在酋长杯上以2-3负于多特蒙德，遭遇连续第二场友谊赛失利，比赛中出现多次防守失误，阿尔特塔不愿透露这位法国后卫何时复出，但表示需要“一段时间来恢复”。继续阅读……",
-        "打开原始卫报文章，获取完整免费报道和作者背景。"
+        "预计对维拉的孔萨提出新报价，阿尔特塔表示现有球员需要提升。在米克尔·阿尔特塔透露尤里安·廷贝尔距离复出还很遥远后，阿森纳正加紧努力为威廉·萨利巴签下防守替补。萨利巴在世界杯期间背部受伤，将缺阵一段时间。周日阿森纳在酋长杯中1-2不敌多特蒙德，遭遇第二场热身赛失利，比赛中出现多次防守失误。阿尔特塔拒绝透露这位法国后卫预计何时复出，但表示“需要一些时间愈合”。继续阅读...",
+        "打开卫报原文查看完整免费报道和作者背景。"
       ],
-      "translationSourceHash": "39b99de56ee1617c34df1401f77306c201790099e2318a03bee1cc51a815fa0a",
+      "translationSourceHash": "5afee29d5ad3a229179da761ce8b1eaf0b99b4a93988ae19cdaca2ad181796f7",
       "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-10T10:47:01.826Z"
+      "translatedAt": "2026-08-10T18:01:59.761Z"
     },
     {
       "id": "82ba0d3587a6ffe11465faf18334132ddfc2c3278d24ff3e37d305f945132517",
@@ -279,29 +279,6 @@
       "translationSourceHash": "00d13f5fa9df4cd4538d400cd4796c35ef4550adb7ca1a9f2bfb76e32e21f9e7",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-10T09:34:16.023Z"
-    },
-    {
-      "id": "ec46248cf79e75091020c3143e898a3fd56abaabd3e8335cbca96bc37d8597ec",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Disabled Supporters Information | Borussia Dortmund (H)",
-      "summaryEn": "",
-      "bodyEn": [
-        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/0b7e6ec824c7-tickets-2627-dortmund-h.webp",
-      "author": "Arsenal FC",
-      "publishedAt": "2026-08-10T08:00:44.293Z",
-      "url": "https://www.arsenal.com/news/disabled-supporters-information-borussia-dortmund-h-arDPa7T83ndZ",
-      "source": "Arsenal.com",
-      "titleZh": "残障支持者信息 | 多特蒙德（主）",
-      "summaryZh": "阿森纳发布残障支持者信息通知。",
-      "bodyZh": [
-        "这是Arsenal.com免费文章的简要摘要。请打开原始来源查看完整内容。"
-      ],
-      "translationSourceHash": "922eb3389b400739254aec84e59bcc211023080179022e43658066beeff85c62",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-10T10:46:43.469Z"
     },
     {
       "id": "8ed93f3a6c72119f69bb611e47b3550fa124ca3cfd04508fdb5cd0fbc1d24b37",
@@ -452,6 +429,31 @@
       "translationSourceHash": "1a8f07fb4cbdd637e6b247febd5b1134ed61d0ea78f1889f9cd262b511802c37",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-10T09:35:48.118Z"
+    },
+    {
+      "id": "17909e9b2b2d53d642bb20563636f7497eb5c9878f5806f6ffd7408110354c9a",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Report: Arsenal Women 2-1 Crystal Palace",
+      "summaryEn": "Our Gunners begin pre-season with a comeback win over the Eagles",
+      "bodyEn": [
+        "Our Gunners begin pre-season with a comeback win over the Eagles",
+        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/5b6dc70405a0-london-colney-england-chloe-kelly-of-arsenal-during-the-arsenal-women-pre-season.webp",
+      "author": "Tom Keens",
+      "publishedAt": "2026-08-08T10:59:00.000Z",
+      "url": "https://www.arsenal.com/news/report-arsenal-women-2-1-crystal-palace-awy7f9h8zf43",
+      "source": "Arsenal.com",
+      "titleZh": "战报：阿森纳女足 2-1 水晶宫",
+      "summaryZh": "枪手以逆转胜利开启季前赛。",
+      "bodyZh": [
+        "我们的枪手以逆转战胜老鹰，开启季前赛。",
+        "这是Arsenal.com免费文章的简要摘要。请打开原始来源查看完整报道。"
+      ],
+      "translationSourceHash": "dbe570c3771cef707a079bc2eaa17c4769302f67a64b3b0faf9ae0fa81a4b00b",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-10T18:01:54.950Z"
     },
     {
       "id": "0f1d85514c7f7a07e7149104e710d62ba3caac6b702653570072a171cf5ec9af",
