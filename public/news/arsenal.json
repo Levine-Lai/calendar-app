@@ -1,12 +1,110 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-10T10:47:01.826Z",
+  "updatedAt": "2026-08-10T13:41:03.158Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "ded10147c6fc9465a63f7cbf704f88b84fc1f1cfffffd86c53cb4aaae5b44e2d",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "AWFC pre-season matches on general sale",
+      "summaryEn": "Tickets are now on general sale for Arsenal Women’s pre-season matches at Mangata Developments Stadium.",
+      "bodyEn": [
+        "Tickets are now on general sale for Arsenal Women’s pre-season matches at Mangata Developments Stadium.",
+        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/2475b2e95fab-gettyimages-2289366837.webp",
+      "author": "Arsenal Media",
+      "publishedAt": "2026-08-10T13:02:52.183Z",
+      "url": "https://www.arsenal.com/news/awfc-pre-season-matches-on-general-sale-aJCld3a7rtz7",
+      "source": "Arsenal.com",
+      "titleZh": "阿森纳女足季前赛门票公开销售",
+      "summaryZh": "阿森纳女足在Mangata Developments球场的季前赛门票现已公开销售。",
+      "bodyZh": [
+        "阿森纳女足在Mangata Developments球场的季前赛门票现已公开销售。",
+        "这是Arsenal.com免费文章的简要摘要。请打开原始来源获取完整报道。"
+      ],
+      "translationSourceHash": "c011ab70fcc55e18132af37183ad66c480673142b731e4ca6ba7cf3101866c39",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-10T13:40:59.455Z"
+    },
+    {
+      "id": "b458ce4893ef8f0ebb0861396b904131980d7b945f81f012285d3cbbcd04528d",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Go behind the scenes for Bruno's first day",
+      "summaryEn": "See what our new no.39 got up to on his first day as a Gunner",
+      "bodyEn": [
+        "See what our new no.39 got up to on his first day as a Gunner",
+        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/7e8c9f0a841f-260808-bruno-guimaraes-bts-16x9-pro-res001.webp",
+      "author": "Connor Booth",
+      "publishedAt": "2026-08-10T13:00:00.000Z",
+      "url": "https://www.arsenal.com/news/go-behind-the-scenes-for-brunos-first-day-ax7W24H8VhD3",
+      "source": "Arsenal.com",
+      "titleZh": "布鲁诺首日幕后花絮",
+      "summaryZh": "看看新39号加盟阿森纳第一天做了什么。",
+      "bodyZh": [
+        "看看我们的新39号在成为枪手的第一天做了些什么。",
+        "这是Arsenal.com免费文章的简要摘要，完整故事请阅读原始来源。"
+      ],
+      "translationSourceHash": "777e2e0277990fd16ed1592ec87846d7a9826e098759993e8fa7b503f254caef",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-10T13:40:59.890Z"
+    },
+    {
+      "id": "1b827495b8fff0f5cd50f603a336da8493203a17e506645e17625f7f8b827d1e",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Disabled Supporters' Information | Brighton & Hove Albion (A)",
+      "summaryEn": "",
+      "bodyEn": [
+        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/c299749d0c36-tickets-2526-brighton-a.webp",
+      "author": "Arsenal FC",
+      "publishedAt": "2026-08-10T12:47:52.850Z",
+      "url": "https://www.arsenal.com/news/disabled-supporters-information-brighton-hove-albion-a-adSpU6C772Kj",
+      "source": "Arsenal.com",
+      "titleZh": "残疾人支持者信息 | 布莱顿与霍夫阿尔比恩（客场）",
+      "summaryZh": "",
+      "bodyZh": [
+        "这是一篇Arsenal.com免费文章的简要摘要。请打开原始来源以查看完整报道。"
+      ],
+      "translationSourceHash": "f68f6b33b16eb52d3a51a428529f4c7883e035cd68dbf716f8e8a6ddeb2fa14e",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-10T13:41:01.332Z"
+    },
+    {
+      "id": "dba1bd4c7353de11d42fe345e032ced7823c60a229d506953d6604a57e994830",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Watch part 1 of our Viktor Gyokeres documentary",
+      "summaryEn": "Watch our first episode of our special Viktor Gyokeres documentary",
+      "bodyEn": [
+        "Watch our first episode of our special Viktor Gyokeres documentary",
+        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/221a868f4d57-singapore-singapore-new-signing-viktor-gyokeres-waves-to-the-arsenal-fans-before.webp",
+      "author": "Charlie Peat",
+      "publishedAt": "2026-08-10T12:09:58.449Z",
+      "url": "https://www.arsenal.com/news/watch-part-1-of-our-viktor-gyokeres-documentary-afeO42O0Z5TY",
+      "source": "Arsenal.com",
+      "titleZh": "观看我们的维克托·久凯雷斯纪录片第1部分",
+      "summaryZh": "观看维克托·久凯雷斯纪录片第一集",
+      "bodyZh": [
+        "观看我们特别制作的维克托·久凯雷斯纪录片的第一集",
+        "这是阿森纳官网文章的简明摘要，完整故事请阅读原始来源。"
+      ],
+      "translationSourceHash": "81efd961af110e12fde789aedc0afc26bcf739efa88911ae559bcf7401560ba0",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-10T13:41:03.157Z"
+    },
     {
       "id": "ea9e432eb75d9052714f0b82cffe3b01103d653cb3aa2e7c7cd0a9c360ee699e",
       "teamId": "arsenal",
@@ -231,31 +329,6 @@
       "translatedAt": "2026-08-10T07:44:22.307Z"
     },
     {
-      "id": "630c6be084fc238456ab6b2647f19d3512e6ee93d90edf716b391b9ef30d64d5",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Highlights: Arsenal 2-3 Borussia Dortmund",
-      "summaryEn": "We continue our pre-season with a narrow defeat in the Emirates Cup",
-      "bodyEn": [
-        "We continue our pre-season with a narrow defeat in the Emirates Cup",
-        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/597cee745ff6-gettyimages-2289728040.webp",
-      "author": "Tom Keens",
-      "publishedAt": "2026-08-09T16:21:50.992Z",
-      "url": "https://www.arsenal.com/news/highlights-arsenal-2-3-borussia-dortmund-a1SmH9J1sDPr",
-      "source": "Arsenal.com",
-      "titleZh": "集锦：阿森纳 2-3 多特蒙德",
-      "summaryZh": "我们继续季前赛，在酋长杯上惜败。",
-      "bodyZh": [
-        "我们继续季前赛，在酋长杯上惜败。",
-        "这是阿森纳官网免费文章的简要摘要。请打开原始来源查看完整故事。"
-      ],
-      "translationSourceHash": "e35482e246f3f3aa47f751f5958b259310beb3ba2051cb6faa1f646eb5401276",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-10T07:44:29.095Z"
-    },
-    {
       "id": "4266f3f8d2f50e40ba3f2c987e3d593345d9038dab2b10d7a7d77ebb6930a1ef",
       "teamId": "arsenal",
       "teamName": "阿森纳",
@@ -304,81 +377,6 @@
       "translationSourceHash": "987cb902c12bb2662153ccc5260957588f0463cf6b89d5a662f143ea7c832d08",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-10T07:44:33.896Z"
-    },
-    {
-      "id": "559314d7b12b154d0bbb039c54a4f5fa922511b7d8a1dcd4ff6cfab126ca295d",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Report: Arsenal 2-3 Borussia Dortmund",
-      "summaryEn": "We were beaten 3-2 by Borussia Dortmund in the Emirates Cup final on Sunday afternoon.",
-      "bodyEn": [
-        "We were beaten 3-2 by Borussia Dortmund in the Emirates Cup final on Sunday afternoon.",
-        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/e0fd3bc4c2df-gettyimages-2289715341.webp",
-      "author": "Stephen Wright",
-      "publishedAt": "2026-08-09T15:03:53.179Z",
-      "url": "https://www.arsenal.com/news/report-arsenal-2-3-borussia-dortmund-a15Rq4R6Grdt",
-      "source": "Arsenal.com",
-      "titleZh": "战报：阿森纳 2-3 多特蒙德",
-      "summaryZh": "周日下午，我们在酋长杯决赛中2-3不敌多特蒙德。",
-      "bodyZh": [
-        "周日下午，我们在酋长杯决赛中2-3不敌多特蒙德。",
-        "本文为阿森纳官网免费文章的简要摘要。欲阅完整报道，请打开原始来源。"
-      ],
-      "translationSourceHash": "b96b8c0b5db894eae00c8aab36bd886c79f8fc687ab38d0522a20baa7f712c0a",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-10T07:44:40.640Z"
-    },
-    {
-      "id": "55ea6f12118554c8d9d8f90bb8849a4acb1f9cb9f43776f9b5718f12daa294e8",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Emirates turns A380 and Boeing 777 parts into iconic club emblem",
-      "summaryEn": "Emirates and Arsenal today unveiled The Aircrafted Arsenal Crest, a striking 2.4-metre-high sculpture handcrafted from upcycled components sourced from the airline’s Airbus A380 and Boeing 777 aircraft",
-      "bodyEn": [
-        "Emirates and Arsenal today unveiled The Aircrafted Arsenal Crest, a striking 2.4-metre-high sculpture handcrafted from upcycled components sourced from the airline’s Airbus A380 and Boeing 777 aircraft",
-        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/4203365ac6b1-the-aircrafted-arsenal-shield.webp",
-      "author": "Arsenal Media",
-      "publishedAt": "2026-08-09T13:13:09.205Z",
-      "url": "https://www.arsenal.com/news/emirates-turns-a380-and-boeing-777-parts-into-iconic-club-emblem-aWdD79m97vhk",
-      "source": "Arsenal.com",
-      "titleZh": "阿联酋航空将A380和波音777部件打造成标志性俱乐部徽章",
-      "summaryZh": "阿联酋航空与阿森纳今日推出“飞机版阿森纳徽章”，这座2.4米高雕塑由A380和波音777的回收部件手工制成。",
-      "bodyZh": [
-        "阿联酋航空与阿森纳今日推出“飞机版阿森纳徽章”，这座2.4米高的雕塑由该航空公司的空客A380和波音777飞机上回收再利用的部件手工制成。",
-        "这是Arsenal.com免费文章的简要摘要。请打开原始来源查看完整报道。"
-      ],
-      "translationSourceHash": "68b4f76afbfd5113dfed71c772f1775afe90f35860f442f789d64551945dc14c",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-10T07:44:42.027Z"
-    },
-    {
-      "id": "b493d5d60aa051574f5c34ed001f5ed59e2096e584262f8f2cd90bc81c3e1d09",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Team news: Two changes for Emirates Cup Final",
-      "summaryEn": "Mikel Arteta has made two changes to his starting XI for today’s Emirates Cup Final against Borussia Dortmund.",
-      "bodyEn": [
-        "Mikel Arteta has made two changes to his starting XI for today’s Emirates Cup Final against Borussia Dortmund.",
-        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/0d8d1bc6b292-gettyimages-2289611033.webp",
-      "author": "Stephen Wright",
-      "publishedAt": "2026-08-09T11:45:00.000Z",
-      "url": "https://www.arsenal.com/news/team-news-two-changes-for-emirates-cup-final-apSjp1s0LSV8",
-      "source": "Arsenal.com",
-      "titleZh": "球队消息：酋长杯决赛两处调整",
-      "summaryZh": "阿尔特塔对首发做出两处调整，迎战多特蒙德。",
-      "bodyZh": [
-        "米克尔·阿尔特塔对今天对阵多特蒙德的酋长杯决赛首发阵容做出了两处调整。",
-        "这是Arsenal.com免费文章的简明摘要。请打开原始来源以阅读完整报道。"
-      ],
-      "translationSourceHash": "a385e2bd3f7c0933c6fbda42ea70d3bc8e9132c52f99ca3e6f7ac76f350bea66",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-10T07:44:42.639Z"
     },
     {
       "id": "e0b1fc8fc85524a8f438ab50f2c6c42f52d633560b541e08383a0d18cb4f5f1b",
