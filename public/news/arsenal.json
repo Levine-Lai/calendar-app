@@ -1,12 +1,37 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-10T09:41:14.536Z",
+  "updatedAt": "2026-08-10T10:47:01.826Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "ea9e432eb75d9052714f0b82cffe3b01103d653cb3aa2e7c7cd0a9c360ee699e",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Arsenal step up push for defensive cover with Timber and Saliba sidelined",
+      "summaryEn": "Fresh bid expected for Villa’s KonsaArteta says existing players need to improveArsenal are stepping up their efforts to sign defensive cover for William Saliba after Mikel Arteta revealed Jurriën Timber is well away from returning to competitive action. Saliba will be sidelined for an extended period after breaking down during the World Cup with a back injury.After Arsenal lost a second successive friendly when Borussia Dortmund won 3-2 on Sunday to lift the Emirates Cup in a performance that featured several defensive mistakes, Arteta would not be drawn on when the France defender is expected to return, but said it would take “some time to heal”. Continue reading...",
+      "bodyEn": [
+        "Fresh bid expected for Villa’s KonsaArteta says existing players need to improveArsenal are stepping up their efforts to sign defensive cover for William Saliba after Mikel Arteta revealed Jurriën Timber is well away from returning to competitive action. Saliba will be sidelined for an extended period after breaking down during the World Cup with a back injury.After Arsenal lost a second successive friendly when Borussia Dortmund won 3-2 on Sunday to lift the Emirates Cup in a performance that featured several defensive mistakes, Arteta would not be drawn on when the France defender is expected to return, but said it would take “some time to heal”. Continue reading...",
+        "Open the original Guardian article for the complete free report and author context."
+      ],
+      "imageUrl": "https://i.guim.co.uk/img/media/a37a86e13217b2740e890042e7d2e8e4740ed73a/0_0_6880_5504/master/6880.jpg?width=140&quality=85&auto=format&fit=max&s=099b426a6865303dd31fbe6720d4a543",
+      "author": "Ed Aarons",
+      "publishedAt": "2026-08-10T09:48:53.000Z",
+      "url": "https://www.theguardian.com/football/2026/aug/10/arsenal-defensive-backup-jurrien-timber-william-saliba-sidelined-transfer-window",
+      "source": "The Guardian",
+      "titleZh": "阿森纳在廷贝尔和萨利巴缺阵下加强防线引援",
+      "summaryZh": "阿森纳加强后防引援，萨利巴受伤，廷贝尔短期内难复出。",
+      "bodyZh": [
+        "预计将向维拉的孔萨提出新的报价，阿尔特塔表示现有球员需要提高。在米克尔·阿尔特塔透露尤里安·廷贝尔距离重返比赛还很遥远之后，阿森纳正在加紧引进威廉·萨利巴的防守替补。萨利巴在世界杯期间背部受伤，将缺阵较长时间。周日，阿森纳在酋长杯上以2-3负于多特蒙德，遭遇连续第二场友谊赛失利，比赛中出现多次防守失误，阿尔特塔不愿透露这位法国后卫何时复出，但表示需要“一段时间来恢复”。继续阅读……",
+        "打开原始卫报文章，获取完整免费报道和作者背景。"
+      ],
+      "translationSourceHash": "39b99de56ee1617c34df1401f77306c201790099e2318a03bee1cc51a815fa0a",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-10T10:47:01.826Z"
+    },
     {
       "id": "82ba0d3587a6ffe11465faf18334132ddfc2c3278d24ff3e37d305f945132517",
       "teamId": "arsenal",
@@ -81,6 +106,29 @@
       "translationSourceHash": "00d13f5fa9df4cd4538d400cd4796c35ef4550adb7ca1a9f2bfb76e32e21f9e7",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-10T09:34:16.023Z"
+    },
+    {
+      "id": "ec46248cf79e75091020c3143e898a3fd56abaabd3e8335cbca96bc37d8597ec",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Disabled Supporters Information | Borussia Dortmund (H)",
+      "summaryEn": "",
+      "bodyEn": [
+        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/0b7e6ec824c7-tickets-2627-dortmund-h.webp",
+      "author": "Arsenal FC",
+      "publishedAt": "2026-08-10T08:00:44.293Z",
+      "url": "https://www.arsenal.com/news/disabled-supporters-information-borussia-dortmund-h-arDPa7T83ndZ",
+      "source": "Arsenal.com",
+      "titleZh": "残障支持者信息 | 多特蒙德（主）",
+      "summaryZh": "阿森纳发布残障支持者信息通知。",
+      "bodyZh": [
+        "这是Arsenal.com免费文章的简要摘要。请打开原始来源查看完整内容。"
+      ],
+      "translationSourceHash": "922eb3389b400739254aec84e59bcc211023080179022e43658066beeff85c62",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-10T10:46:43.469Z"
     },
     {
       "id": "d94036ab20a571f89bc2e4e739dae272c9bb6edf75c545b5536bda9bd993aae1",
@@ -358,31 +406,6 @@
       "translatedAt": "2026-08-10T09:34:54.421Z"
     },
     {
-      "id": "00a2476784f26922711cf3ed6f7ff54a78ce10d84c3976c7453e0a9b6d409623",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Breaking down Bruno: What will he bring to our midfield?",
-      "summaryEn": "We analyse everything Bruno Guimaraes is going to bring to our engine room",
-      "bodyEn": [
-        "We analyse everything Bruno Guimaraes is going to bring to our engine room",
-        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/224b854ce328-arsenalbgsusana-033.webp",
-      "author": "Charlie Peat",
-      "publishedAt": "2026-08-08T12:04:31.515Z",
-      "url": "https://www.arsenal.com/news/breaking-down-bruno-what-will-he-bring-to-our-midfield-aZQYE0y56UzB",
-      "source": "Arsenal.com",
-      "titleZh": "解析布鲁诺：他将为我们的中场带来什么？",
-      "summaryZh": "我们分析布鲁诺·吉马良斯将为球队中场带来的全部贡献。",
-      "bodyZh": [
-        "我们分析布鲁诺·吉马良斯将为球队中场带来的全部贡献。",
-        "这是Arsenal.com免费文章的简要摘要。请打开原始来源查看完整报道。"
-      ],
-      "translationSourceHash": "d14a08892a90ea4feba13fe7fb00d71c606591f76237a916645d979acdf86bbc",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-10T07:44:47.396Z"
-    },
-    {
       "id": "2957e2acddf3326f47a3aa28422d54ab58d3d285cf0f695bfc630d80b4af8594",
       "teamId": "arsenal",
       "teamName": "阿森纳",
@@ -481,31 +504,6 @@
       "translationSourceHash": "5df8393bf4db13edd0d4882da91a5f8402791ddc475f3db2d7ca873233846dbe",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-10T09:41:10.778Z"
-    },
-    {
-      "id": "dd4ec60d2a2fb89dc77f4073f31d0a930c8154d0a4feca4180cbd7d937326a93",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Arsenal hopes dashed after Vinícius Júnior extends Real Madrid contract to 2032",
-      "summaryEn": "Brazil international has agreed a new six-year deal‘Eight years at the Bernabéu are too few,’ says ViníciusVinícius Júnior has ended summer speculation over his future by agreeing a new six-year contract with Real Madrid. Arsenal had been heavily linked with a move for the Brazil international, who had entered the final 12 months of his deal at the Bernabéu.A tumultuous 2025-26 campaign in which Real failed to win a trophy and initial uncertainty after the arrival of José Mourinho in Madrid alerted the Premier League champions, but Vinícius has now committed his long-term future to the Spanish club. Continue reading...",
-      "bodyEn": [
-        "Brazil international has agreed a new six-year deal‘Eight years at the Bernabéu are too few,’ says ViníciusVinícius Júnior has ended summer speculation over his future by agreeing a new six-year contract with Real Madrid. Arsenal had been heavily linked with a move for the Brazil international, who had entered the final 12 months of his deal at the Bernabéu.A tumultuous 2025-26 campaign in which Real failed to win a trophy and initial uncertainty after the arrival of José Mourinho in Madrid alerted the Premier League champions, but Vinícius has now committed his long-term future to the Spanish club. Continue reading...",
-        "Open the original Guardian article for the complete free report and author context."
-      ],
-      "imageUrl": "https://i.guim.co.uk/img/media/d822aacac0eea8dabc179b04764d6096794d25b7/162_103_2688_2150/master/2688.jpg?width=140&quality=85&auto=format&fit=max&s=97e427cccc1fb4bccec67a9933c271d9",
-      "author": "Agencies",
-      "publishedAt": "2026-08-06T22:29:10.000Z",
-      "url": "https://www.theguardian.com/football/2026/aug/06/arsenal-hopes-dashed-after-vinicius-junior-extends-real-madrid-contract-to-2032",
-      "source": "The Guardian",
-      "titleZh": "维尼修斯与皇马续约至2032年，阿森纳希望落空",
-      "summaryZh": "维尼修斯与皇马签下六年新约至2032年，阿森纳引进希望破灭。",
-      "bodyZh": [
-        "巴西国脚已同意一份为期六年的新合同。维尼修斯表示：“在伯纳乌八年太短了。”维尼修斯·儒尼奥尔与皇家马德里签下六年新约，终结了关于他未来的夏季猜测。阿森纳曾与这位巴西国脚密切联系，他的合同已进入在伯纳乌的最后12个月。2025-26赛季皇马未能赢得任何奖杯，加上何塞·穆里尼奥抵达马德里后的初期不确定性，这引起了英超冠军的注意，但维尼修斯现在已将长期未来托付给这家西班牙俱乐部。继续阅读...",
-        "打开《卫报》原文，获取完整的免费报道和作者背景。"
-      ],
-      "translationSourceHash": "558e6779218c3c631b3b8808d27c7499071ef70a8ba2e228881973d0a615b686",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-10T09:41:14.535Z"
     }
   ]
 }
