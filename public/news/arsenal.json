@@ -1,12 +1,62 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-10T13:41:03.158Z",
+  "updatedAt": "2026-08-10T14:44:44.242Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "ffd27c9e7c8c72fd80223ce0dbde6dd60da0667c125331ee30f7ef00d5e47439",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Go Inside Training for Bruno's first session",
+      "summaryEn": "The Brazilian midfielder got to work at the Sobha Realty Training Centre for the first time",
+      "bodyEn": [
+        "The Brazilian midfielder got to work at the Sobha Realty Training Centre for the first time",
+        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/83e97628deb6-260807-bruno-guimaraes-training-session-16x9-clean001.webp",
+      "author": "Connor Booth",
+      "publishedAt": "2026-08-10T14:00:00.000Z",
+      "url": "https://www.arsenal.com/news/go-inside-training-for-brunos-first-session-au6eM1f0d3dz",
+      "source": "Arsenal.com",
+      "titleZh": "布鲁诺首次训练课内幕",
+      "summaryZh": "巴西中场首次在训练中心投入工作。",
+      "bodyZh": [
+        "这位巴西中场首次在索巴房地产训练中心投入训练。",
+        "这是Arsenal.com免费文章的简明摘要。请打开原始来源以获取完整内容。"
+      ],
+      "translationSourceHash": "4c7b52b3c813c3b1ef39979f17a323734be46fc32ae792d3867d8487811b1eb8",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-10T14:44:32.120Z"
+    },
+    {
+      "id": "e75d2414dc564de092f04dcf48341453e7a5e722239d7f1b983082fd755f6b5f",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Gallery: Women get to work in La Manga",
+      "summaryEn": "Not long after touching down in Spain, our women’s team have got to work in their new surroundings - check out the latest pics",
+      "bodyEn": [
+        "Not long after touching down in Spain, our women’s team have got to work in their new surroundings - check out the latest pics",
+        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/0910221dfaf6-ab923088d1hnxe8.webp",
+      "author": "Stephen Wright",
+      "publishedAt": "2026-08-10T14:00:00.000Z",
+      "url": "https://www.arsenal.com/news/gallery-women-get-to-work-in-la-manga-aC8lK7Z5DmX3",
+      "source": "Arsenal.com",
+      "titleZh": "图集：阿森纳女队在拉曼加开始备战",
+      "summaryZh": "阿森纳女队抵达西班牙后迅速开始训练，来看看最新照片吧。",
+      "bodyZh": [
+        "抵达西班牙后不久，我们的女队就在新环境中开始了训练——查看最新照片。",
+        "这是阿森纳官网免费文章的简要摘要，请打开原始来源阅读完整内容。"
+      ],
+      "translationSourceHash": "1fc881b44aeab8215e93fe3c179b48a3e26c5199e0f6946821218b20be4d8fc2",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-10T14:44:44.242Z"
+    },
     {
       "id": "ded10147c6fc9465a63f7cbf704f88b84fc1f1cfffffd86c53cb4aaae5b44e2d",
       "teamId": "arsenal",
@@ -302,56 +352,6 @@
       "translationSourceHash": "e9ff49863922f4ba39537e2246b37dd780be31f106e85b7d84d5a1f1c5347b7d",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-10T09:35:02.723Z"
-    },
-    {
-      "id": "31c1436aa425aef2b93214beeb8fe2f24095b44e7df1dc8e097f5df6f9252d87",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Every word of Mikel's post-Dortmund press conference",
-      "summaryEn": "Mikel Arteta was back in front of the media at Emirates Stadium for his post-Borussia Dortmund press conference.",
-      "bodyEn": [
-        "Mikel Arteta was back in front of the media at Emirates Stadium for his post-Borussia Dortmund press conference.",
-        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/ce4ac66e8e04-gettyimages-2289035598.webp",
-      "author": "Stephen Wright",
-      "publishedAt": "2026-08-09T16:23:40.281Z",
-      "url": "https://www.arsenal.com/news/every-word-of-mikels-post-dortmund-press-conference-a7NvX2S1ME7k",
-      "source": "Arsenal.com",
-      "titleZh": "米克尔多特蒙德赛后新闻发布会的全部内容",
-      "summaryZh": "阿尔特塔在酋长球场出席战多特蒙德后的发布会。",
-      "bodyZh": [
-        "米克尔·阿尔特塔回到酋长球场，出席他战后多特蒙德的新闻发布会。",
-        "这是阿森纳官网文章的简要总结，完整故事请查看原始来源。"
-      ],
-      "translationSourceHash": "3296b59ce4511a7738c83d7de55d4d79adab958e31cec8b16a56d29d6cfce825",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-10T07:44:22.307Z"
-    },
-    {
-      "id": "4266f3f8d2f50e40ba3f2c987e3d593345d9038dab2b10d7a7d77ebb6930a1ef",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Arteta on Emirates Cup, Tzolis and Guimaraes",
-      "summaryEn": "Mikel Arteta has shared his initial reaction to our Emirates Cup Final defeat to Borussia Dortmund - see what he had to say",
-      "bodyEn": [
-        "Mikel Arteta has shared his initial reaction to our Emirates Cup Final defeat to Borussia Dortmund - see what he had to say",
-        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/7a2dee4f1102-gettyimages-2289731928.webp",
-      "author": "Stephen Wright",
-      "publishedAt": "2026-08-09T16:09:31.340Z",
-      "url": "https://www.arsenal.com/news/arteta-on-emirates-cup-tzolis-and-guimaraes-attr97X1nH82",
-      "source": "Arsenal.com",
-      "titleZh": "阿尔特塔谈酋长杯、措利斯和吉马良斯",
-      "summaryZh": "阿尔特塔分享酋长杯决赛不敌多特蒙德的初步反应。",
-      "bodyZh": [
-        "米克尔·阿尔特塔分享了对阿森纳在酋长杯决赛输给多特蒙德的初步反应，来看看他说了什么。",
-        "这是Arsenal.com免费文章的简明摘要。请打开原文查看完整故事。"
-      ],
-      "translationSourceHash": "4f6c031d66acb0b21d2fbc459b45381007712316e5d4064036d1e96b26143460",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-10T07:44:36.137Z"
     },
     {
       "id": "14cc49e4566a5e3c349785268c619aab1c7e13e24ef4f21dfb142a31f82b43e8",
