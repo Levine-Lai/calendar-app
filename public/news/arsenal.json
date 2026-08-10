@@ -1,12 +1,112 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-10T07:44:50.955Z",
+  "updatedAt": "2026-08-10T09:41:14.536Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "82ba0d3587a6ffe11465faf18334132ddfc2c3278d24ff3e37d305f945132517",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "adidas unveils ‘Chaos vs Control’ pack with Arsenal starts set to shine",
+      "summaryEn": "adidas has unveiled the ‘Chaos vs Control’ football boot pack, reigniting the on-pitch rivalry between the speed-driven F50 and the precision-engineered Predator.",
+      "bodyEn": [
+        "adidas has unveiled the ‘Chaos vs Control’ football boot pack, reigniting the on-pitch rivalry between the speed-driven F50 and the precision-engineered Predator.",
+        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/01aba3d1840c-04.webp",
+      "author": "Arsenal Media",
+      "publishedAt": "2026-08-10T08:41:40.140Z",
+      "url": "https://www.arsenal.com/news/adidas-unveils-chaos-vs-control-pack-with-arsenal-starts-set-to-shine-aH6CB2Z9uDb8",
+      "source": "Arsenal.com",
+      "titleZh": "阿迪达斯发布‘混沌与掌控’系列，阿森纳球星蓄势待发",
+      "summaryZh": "阿迪达斯推出‘混沌与掌控’足球鞋系列，F50与Predator再燃战火。",
+      "bodyZh": [
+        "阿迪达斯发布了‘混沌与掌控’足球鞋系列，重新点燃了速度型F50与精准型Predator之间的场上对决。",
+        "这是Arsenal.com免费文章的简要摘要，请打开原始来源获取完整故事。"
+      ],
+      "translationSourceHash": "ded220e1ec41c9e21766e35bd9d77ae82c7d29e4b2627daad75e2f167a98140f",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-10T09:34:11.774Z"
+    },
+    {
+      "id": "8f332af51ed88b253a14d6de23bacf85b31675b8bcdf3fe046a2c79bda077aaa",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "U18 Premier League fixtures announced for 2026/27",
+      "summaryEn": "Take a look at our under-18s fixtures for the forthcoming campaign",
+      "bodyEn": [
+        "Take a look at our under-18s fixtures for the forthcoming campaign",
+        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/6532f9d28988-gettyimages-2288873022.webp",
+      "author": "Charlie Peat",
+      "publishedAt": "2026-08-10T08:31:52.910Z",
+      "url": "https://www.arsenal.com/news/u18-premier-league-fixtures-announced-for-202627-aNeVP3O46Lh2",
+      "source": "Arsenal.com",
+      "titleZh": "2026/27赛季U18英超赛程公布",
+      "summaryZh": "查看我们U18青年队新赛季的赛程安排。",
+      "bodyZh": [
+        "查看我们U18青年队新赛季的赛程安排。",
+        "本文为Arsenal.com免费文章的简要摘要，完整内容请查阅原始来源。"
+      ],
+      "translationSourceHash": "ffafa97e6351188536d676f02fcf6bd79fe8ccbeeb3cf147079874a41b07719d",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-10T09:34:11.346Z"
+    },
+    {
+      "id": "06758604f43a54b6960119e0c276dd11f2fa0eb8831cd1ba0fc0f147a0ecba7e",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Premier League 2 fixtures confirmed for 2026/27",
+      "summaryEn": "Here are all the Premier League 2 fixtures for the season ahead!",
+      "bodyEn": [
+        "Here are all the Premier League 2 fixtures for the season ahead!",
+        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/7681cf93e430-gettyimages-2286565911.webp",
+      "author": "Charlie Peat",
+      "publishedAt": "2026-08-10T08:05:10.762Z",
+      "url": "https://www.arsenal.com/news/premier-league-2-fixtures-confirmed-for-202627-aSd5p9b3T0xW",
+      "source": "Arsenal.com",
+      "titleZh": "2026/27赛季英超2赛程确认",
+      "summaryZh": "以下是本赛季英超2的所有赛程！",
+      "bodyZh": [
+        "以下是本赛季英超2的所有赛程！",
+        "这是Arsenal.com一篇免费文章的简要摘要。请打开原始来源以获取完整报道。"
+      ],
+      "translationSourceHash": "00d13f5fa9df4cd4538d400cd4796c35ef4550adb7ca1a9f2bfb76e32e21f9e7",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-10T09:34:16.023Z"
+    },
+    {
+      "id": "d94036ab20a571f89bc2e4e739dae272c9bb6edf75c545b5536bda9bd993aae1",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Premier League 2026-27 preview No 1: Arsenal",
+      "summaryEn": "With most of their rivals changing managers, can the champions go back-to-back for the first time in more than 90 years?Guardian writers’ predicted position: 1st (NB: this is not necessarily Ed Aarons’ prediction but the average of our writers’ tips)Last season’s position: 1st Continue reading...",
+      "bodyEn": [
+        "With most of their rivals changing managers, can the champions go back-to-back for the first time in more than 90 years?Guardian writers’ predicted position: 1st (NB: this is not necessarily Ed Aarons’ prediction but the average of our writers’ tips)Last season’s position: 1st Continue reading...",
+        "Open the original Guardian article for the complete free report and author context."
+      ],
+      "imageUrl": "https://i.guim.co.uk/img/media/6bcfaa97aeba9f4da605b4f49fc9880d4ef039f5/615_3_2442_1953/master/2442.jpg?width=140&quality=85&auto=format&fit=max&s=d0473ec9348555389596861b86afd87c",
+      "author": "Ed Aarons",
+      "publishedAt": "2026-08-09T23:01:27.000Z",
+      "url": "https://www.theguardian.com/football/2026/aug/10/premier-league-2026-27-preview-no-1-arsenal",
+      "source": "The Guardian",
+      "titleZh": "英超2026-27赛季前瞻第一：阿森纳",
+      "summaryZh": "多数对手换帅，阿森纳能否90多年来首次卫冕？卫报预测第一，上赛季第一。",
+      "bodyZh": [
+        "由于大多数竞争对手都在换帅，冠军球队能否90多年来首次成功卫冕？卫报撰稿人的预测位置：第1名（注意：这不一定是Ed Aarons的预测，而是我们撰稿人提示的平均值）；上赛季第1名。继续阅读……",
+        "打开《卫报》原文，获取完整免费报道及作者背景。"
+      ],
+      "translationSourceHash": "d982aba43954aae3474b21389e8ec61d4a9ba98ac27c801c7b686baf4b494442",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-10T09:34:25.366Z"
+    },
     {
       "id": "c374ae3f367506fa04485da47e0fabb62bf7d04488d7d9a532e516153e2b2910",
       "teamId": "arsenal",
@@ -31,6 +131,31 @@
       "translationSourceHash": "b54453e478a19933f14d89ae64817f6ebb39823c5764f50c9b0e6f477424d233",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-10T07:44:27.431Z"
+    },
+    {
+      "id": "959981fda54d03509042bfe53cbb4efac3acd03694fe395c72679a5e1b1f2cae",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Arteta expects Guimarães to ‘ignite’ Arsenal and help take team to new level",
+      "summaryEn": "Arsenal lose 3-2 to Borussia Dortmund in Emirates CupMan City’s wide players shine in 3-2 win against AtléticoThe Arsenal manager, Mikel Arteta, has backed “warrior” Bruno Guimarães to “ignite something different” in the Premier League champions. The Brazil midfielder was introduced to fans ahead of Sunday’s 3-2 defeat by Borussia Dortmund in the Emirates Cup after completing his £75m move from Newcastle.The 28-year-old, who has signed a four-year deal, bolsters a midfield which already includes Declan Rice, Martin Ødegaard, Mikel Merino, Martín Zubimendi and Eberechi Eze. Continue reading...",
+      "bodyEn": [
+        "Arsenal lose 3-2 to Borussia Dortmund in Emirates CupMan City’s wide players shine in 3-2 win against AtléticoThe Arsenal manager, Mikel Arteta, has backed “warrior” Bruno Guimarães to “ignite something different” in the Premier League champions. The Brazil midfielder was introduced to fans ahead of Sunday’s 3-2 defeat by Borussia Dortmund in the Emirates Cup after completing his £75m move from Newcastle.The 28-year-old, who has signed a four-year deal, bolsters a midfield which already includes Declan Rice, Martin Ødegaard, Mikel Merino, Martín Zubimendi and Eberechi Eze. Continue reading...",
+        "Open the original Guardian article for the complete free report and author context."
+      ],
+      "imageUrl": "https://i.guim.co.uk/img/media/1fc181320e0e7ba1bc33ea5636a9752781ac7d4e/414_0_3163_2530/master/3163.jpg?width=140&quality=85&auto=format&fit=max&s=0a2e5cad0d0bb76ab50f0235b8993a7d",
+      "author": "PA Media",
+      "publishedAt": "2026-08-09T18:46:58.000Z",
+      "url": "https://www.theguardian.com/football/2026/aug/09/arteta-guimaraes-ignite-arsenal-maresca-manchester-city",
+      "source": "The Guardian",
+      "titleZh": "阿尔特塔期待吉马良斯‘点燃’阿森纳并帮助球队达到新水平",
+      "summaryZh": "阿尔特塔看好新援吉马良斯，称其能点燃阿森纳。",
+      "bodyZh": [
+        "阿森纳在酋长杯上以2-3负于多特蒙德；曼城边锋在3-2击败马竞的比赛中光芒四射。阿森纳主帅米克尔·阿尔特塔支持“战士”布鲁诺·吉马良斯，认为他能在英超冠军球队中“点燃不同的火花”。这位巴西中场在周日酋长杯赛前向球迷亮相，此前他完成了从纽卡斯尔的7500万英镑转会。这位28岁球员签下四年合同，增强了原本已有德克兰·赖斯、马丁·厄德高、米克尔·梅里诺、马丁·祖比门迪和埃贝雷奇·埃泽的中场。继续阅读……",
+        "打开原文《卫报》文章，获取完整的免费报道和作者背景信息。"
+      ],
+      "translationSourceHash": "e9ff49863922f4ba39537e2246b37dd780be31f106e85b7d84d5a1f1c5347b7d",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-10T09:35:02.723Z"
     },
     {
       "id": "31c1436aa425aef2b93214beeb8fe2f24095b44e7df1dc8e097f5df6f9252d87",
@@ -208,54 +333,29 @@
       "translatedAt": "2026-08-10T07:44:42.639Z"
     },
     {
-      "id": "4afaec4948062328e60c4ae65e8fff76d3a510d84bb009c2922cdd5b0abf0842",
+      "id": "e0b1fc8fc85524a8f438ab50f2c6c42f52d633560b541e08383a0d18cb4f5f1b",
       "teamId": "arsenal",
       "teamName": "阿森纳",
-      "titleEn": "Gallery: Final preparations for Emirates Cup",
-      "summaryEn": "Get ready for Emirates Cup action with our training gallery",
+      "titleEn": "Versatile Bruno Guimarães gives Mikel Arteta options to shuffle midfield pack | Ed Aarons",
+      "summaryEn": "While able to play deeper, the onus will also be on Arsenal’s £75m signing to provide creativity in an attack that has struggled to break down the low blockData shows deal could be another set-piece masterstrokeIf there was one of his many assets Newcastle supporters grew to love above all about Bruno Guimarães then it was best summed up by the man himself after being unveiled as Arsenal’s new £75m signing. “That’s a tough one,” said the Brazil midfielder when asked what fans in north London can expect from him. “I would say I can pass the ball, run a lot and play like a warrior. I’ll never give up.”After more than four years on Tyneside and having seen Alexander Isak, Anthony Gordon and Sandro Tonali precede Eddie Howe’s departure, Guimarães – who was devastated after missing a penalty for the Seleção in their defeat against Norway in the last 16 of the World Cup – was determined to sei",
       "bodyEn": [
-        "Get ready for Emirates Cup action with our training gallery",
-        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
+        "While able to play deeper, the onus will also be on Arsenal’s £75m signing to provide creativity in an attack that has struggled to break down the low blockData shows deal could be another set-piece masterstrokeIf there was one of his many assets Newcastle supporters grew to love above all about Bruno Guimarães then it was best summed up by the man himself after being unveiled as Arsenal’s new £75m signing. “That’s a tough one,” said the Brazil midfielder when asked what fans in north London can expect from him. “I would say I can pass the ball, run a lot and play like a warrior. I’ll never give up.”After more than four years on Tyneside and having seen Alexander Isak, Anthony Gordon and Sandro Tonali precede Eddie Howe’s departure, Guimarães – who was devastated after missing a penalty for the Seleção in their defeat against Norway in the last 16 of the World Cup – was determined to sei",
+        "Open the original Guardian article for the complete free report and author context."
       ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/7a2a87ea67d7-dsc39639oioqusz.webp",
-      "author": "Charlie Peat",
-      "publishedAt": "2026-08-08T15:00:00.000Z",
-      "url": "https://www.arsenal.com/news/gallery-final-preparations-for-emirates-cup-aNzUv8s4xGbb",
-      "source": "Arsenal.com",
-      "titleZh": "图集：酋长杯赛前最后备战",
-      "summaryZh": "通过我们的训练图集，为酋长杯做好准备。",
+      "imageUrl": "https://i.guim.co.uk/img/media/1fdfc60a03b78e56469ec838b6b0a2446f6bf50b/388_0_5772_4617/master/5772.jpg?width=140&quality=85&auto=format&fit=max&s=d44d81286da02cc50c955f2d9787e01b",
+      "author": "Ed Aarons",
+      "publishedAt": "2026-08-08T19:00:05.000Z",
+      "url": "https://www.theguardian.com/football/2026/aug/08/bruno-guimaraes-mikel-arteta-arsenal-options-midfield",
+      "source": "The Guardian",
+      "titleZh": "多面手布鲁诺·吉马良斯给阿尔特塔提供重组中场的选择｜埃德·阿伦斯",
+      "summaryZh": "阿森纳新援吉马良斯可踢更深位置，也需为进攻提供创造力，数据显示这笔交易或又是定位球妙招。",
       "bodyZh": [
-        "通过我们的训练图集，为酋长杯做好准备。",
-        "这是一篇阿森纳官网免费文章的简要摘要。请打开原始来源查看完整报道。"
+        "虽然能够踢得更深，但阿森纳这笔7500万英镑的签约也被寄望于为进攻提供创造力，因为球队在攻破低位防守时一直遇到困难。数据表明，这笔交易可能又是一次定位球妙招。如果说纽卡斯尔球迷对布鲁诺·吉马良斯的众多特质中有一项最为喜爱，那么这一点在他作为阿森纳新援亮相后由他本人总结得最为贴切。“这个问题很难回答，”这位巴西中场在被问及北伦敦球迷可以期待他带来什么时说道。“我想说，我能传球、跑动很多，并且像战士一样踢球。我永远不会放弃。”在泰恩赛德度过四年多，目睹亚历山大·伊萨克、安东尼·戈登和桑德罗·托纳利在埃迪·豪离任前相继离开后，吉马良斯——他在巴西国家队世界杯16强对阵挪威的比赛中罚失点球后非常沮丧——决心要……",
+        "打开《卫报》原文，获取完整免费报道和作者背景。"
       ],
-      "translationSourceHash": "31a2609052138e3382d545ad11552c8aa07f736e097ff9cb109ac7305ddc9581",
+      "translationSourceHash": "ed47e7a882c6d8232b0222b226fd96b566ba2faa316907db69f8678569d9e845",
       "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-10T07:44:44.026Z"
-    },
-    {
-      "id": "f1218f7adc4a53a7e6e98cb9c48f71b101247bb289e915c6e308be539493f476",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Bruno behind the scenes: Photo special",
-      "summaryEn": "Take an inside look at Bruno Guimaraes' first day as a Gunner",
-      "bodyEn": [
-        "Take an inside look at Bruno Guimaraes' first day as a Gunner",
-        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/f21f88ee0bdd-dscf5989.webp",
-      "author": "Charlie Peat",
-      "publishedAt": "2026-08-08T13:56:47.342Z",
-      "url": "https://www.arsenal.com/news/bruno-behind-the-scenes-photo-special-aSwsS0f81UuQ",
-      "source": "Arsenal.com",
-      "titleZh": "布鲁诺幕后：特别照片",
-      "summaryZh": "深入了解布鲁诺·吉马良斯作为枪手的第一天。",
-      "bodyZh": [
-        "深入了解布鲁诺·吉马良斯作为枪手的第一天。",
-        "这是Arsenal.com免费文章的简明摘要。请打开原始来源阅读完整故事。"
-      ],
-      "translationSourceHash": "b738d9ca64ceb0330d09afeaff1f754fda3c62b4cf3a5642daca2c291f112491",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-10T07:44:45.469Z"
+      "translatedAt": "2026-08-10T09:34:54.421Z"
     },
     {
       "id": "00a2476784f26922711cf3ed6f7ff54a78ce10d84c3976c7453e0a9b6d409623",
@@ -283,79 +383,129 @@
       "translatedAt": "2026-08-10T07:44:47.396Z"
     },
     {
-      "id": "413802c05eca76ce8e6359635343c10f17563a6ebae268d84ee0376f85220f02",
+      "id": "2957e2acddf3326f47a3aa28422d54ab58d3d285cf0f695bfc630d80b4af8594",
       "teamId": "arsenal",
       "teamName": "阿森纳",
-      "titleEn": "13 things you need to know about Bruno Guimaraes",
-      "summaryEn": "Everything you need to know about Bruno!",
+      "titleEn": "Data shows Bruno Guimarães deal could be another Arsenal set-piece masterstroke",
+      "summaryEn": "Brazilian excels at winning free-kicks and conjuring results from them, hence why the champions were willing to spend £75mBruno Guimarães has broken a very niche record. His £75m move to Arsenal is the most expensive transfer for a midfielder aged at least 28. This should not be taken too seriously given the previous record holder, Zinedine Zidane, moved 25 years ago from Juventus to Real Madrid, and would have cost far more in 2026 money. But it shows how highly the Gunners rate the Brazilian to have spent so much on a player who will be in his 30s before the end of next year. It is a transfer for today, not tomorrow.The question is why. One reason is that Guimarães rarely misses matches. Another is that he can play anywhere across midfield in the 4-3-3 formation Mikel Arteta often deploys. These attributes could be priceless with Declan Rice managing long-term nerve pain in his hamstri",
       "bodyEn": [
-        "Everything you need to know about Bruno!",
-        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
+        "Brazilian excels at winning free-kicks and conjuring results from them, hence why the champions were willing to spend £75mBruno Guimarães has broken a very niche record. His £75m move to Arsenal is the most expensive transfer for a midfielder aged at least 28. This should not be taken too seriously given the previous record holder, Zinedine Zidane, moved 25 years ago from Juventus to Real Madrid, and would have cost far more in 2026 money. But it shows how highly the Gunners rate the Brazilian to have spent so much on a player who will be in his 30s before the end of next year. It is a transfer for today, not tomorrow.The question is why. One reason is that Guimarães rarely misses matches. Another is that he can play anywhere across midfield in the 4-3-3 formation Mikel Arteta often deploys. These attributes could be priceless with Declan Rice managing long-term nerve pain in his hamstri",
+        "Open the original Guardian article for the complete free report and author context."
       ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/78275db5485f-z936602gopsmn2y.webp",
-      "author": "Charlie Peat",
-      "publishedAt": "2026-08-08T11:09:08.651Z",
-      "url": "https://www.arsenal.com/news/13-things-you-need-to-know-about-bruno-guimaraes-aucsR1Y2y6Hv",
-      "source": "Arsenal.com",
-      "titleZh": "关于布鲁诺·吉马良斯你需要知道的13件事",
-      "summaryZh": "关于布鲁诺你需要知道的一切！",
+      "imageUrl": "https://i.guim.co.uk/img/media/a41b0e3e39e5cdf351ae1b0ef83dd7943bdfecb4/431_87_4210_3369/master/4210.jpg?width=140&quality=85&auto=format&fit=max&s=1122b37a0cc72ce05c3d5feebcb8c319",
+      "author": "Andrew Beasley",
+      "publishedAt": "2026-08-08T11:22:32.000Z",
+      "url": "https://www.theguardian.com/football/2026/aug/08/why-the-data-shows-guimaraes-deal-could-be-another-arsenal-set-piece-masterstroke",
+      "source": "The Guardian",
+      "titleZh": "数据显示吉马良斯交易或成阿森纳定位球又一妙招",
+      "summaryZh": "吉马良斯7500万镑转会阿森纳，创28岁以上中场转会费纪录，他擅长利用任意球改变比赛。",
       "bodyZh": [
-        "关于布鲁诺你需要知道的一切！",
-        "这是Arsenal.com免费文章的简要摘要。请打开原始来源查看完整报道。"
+        "巴西人擅长赢得任意球并从中创造机会，因此这家冠军俱乐部愿意花费7500万英镑。布鲁诺·吉马良斯打破了一项非常小众的纪录。他以7500万英镑转会阿森纳，成为28岁以上中场球员中身价最高的转会。鉴于之前的纪录保持者齐内丁·齐达内25年前从尤文图斯转会皇家马德里时，以2026年的货币价值计算会贵得多，因此这一纪录不必太当真。但这表明枪手对这位巴西人的评价有多高，竟愿意为一位明年年底前就将年过三十的球员花费如此巨资。这是一笔为当下而非为未来的转会。问题在于为什么。原因之一是吉马良斯很少缺席比赛。另一个原因是，他可以在米克尔·阿尔特塔经常使用的4-3-3阵型中胜任中场任何位置。在德克兰·赖斯正应对腿筋长期神经痛的情况下，这些特质可能价值连城。",
+        "打开《卫报》原文，获取完整免费报道和作者背景。"
       ],
-      "translationSourceHash": "70f11ddfdfdeb15271d59dfdce8cb41987e4ae3e1d1a55a85d2809242f80dc76",
+      "translationSourceHash": "c8486c5cd1a51702f42b99323532397ce673bf07180779eff7ec6c3f0c7f3f32",
       "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-10T07:44:48.942Z"
+      "translatedAt": "2026-08-10T09:35:21.057Z"
     },
     {
-      "id": "65f4d82fe6e033dcea944ffca63bc5b3f897f6dc3d252a4d92eb05a51b21cc7d",
+      "id": "dad31d9ab1b36a04d2ec83ebf3ba99ee51dc04277782c1f56fa30e1be5695052",
       "teamId": "arsenal",
       "teamName": "阿森纳",
-      "titleEn": "Under-17s reach Shanghai Future Star Cup final",
-      "summaryEn": "Our young Gunners prevail on penalties to set up a showdown with China",
+      "titleEn": "Bruno Guimarães completes £75m Arsenal move: ‘I needed a new challenge’",
+      "summaryEn": "Four-year deal signed after Newcastle’s reluctant sale‘I want to win trophies and I’m in the right place to do it’Bruno Guimarães says he “needed a new challenge in my life” after joining Arsenal from Newcastle for £75m and has targeted winning trophies. Guimarães is understood to have signed a four-year contract that contains a further one-year option after Newcastle reluctantly agreed to sell their captain.The 28-year-old, who captained Newcastle to their first trophy since 1955 when they won the Carabao Cup last year, had made it clear that he wanted to join the Premier League champions after meeting the club’s new manager, Matthias Jaissle, this week. Continue reading...",
       "bodyEn": [
-        "Our young Gunners prevail on penalties to set up a showdown with China",
-        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
+        "Four-year deal signed after Newcastle’s reluctant sale‘I want to win trophies and I’m in the right place to do it’Bruno Guimarães says he “needed a new challenge in my life” after joining Arsenal from Newcastle for £75m and has targeted winning trophies. Guimarães is understood to have signed a four-year contract that contains a further one-year option after Newcastle reluctantly agreed to sell their captain.The 28-year-old, who captained Newcastle to their first trophy since 1955 when they won the Carabao Cup last year, had made it clear that he wanted to join the Premier League champions after meeting the club’s new manager, Matthias Jaissle, this week. Continue reading...",
+        "Open the original Guardian article for the complete free report and author context."
       ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/5581a029e272-team.webp",
-      "author": "Tom Keens",
-      "publishedAt": "2026-08-08T10:59:00.000Z",
-      "url": "https://www.arsenal.com/news/under-17s-reach-shanghai-future-star-cup-final-ad96J9p53vcQ",
-      "source": "Arsenal.com",
-      "titleZh": "U17队晋级上海未来之星杯决赛",
-      "summaryZh": "小枪手点球获胜，将与中国队争冠。",
+      "imageUrl": "https://i.guim.co.uk/img/media/fa40be3ea3d1484aa696d71849024567dee05be6/94_723_5090_4069/master/5090.jpg?width=140&quality=85&auto=format&fit=max&s=c5d99e2effd5d85a4d87c646747348f9",
+      "author": "Ed Aarons",
+      "publishedAt": "2026-08-08T11:00:48.000Z",
+      "url": "https://www.theguardian.com/football/2026/aug/08/arsenal-transfer-bruno-guimaraes-newcastle-football",
+      "source": "The Guardian",
+      "titleZh": "布鲁诺·吉马良斯7500万英镑转会阿森纳：‘我需要新的挑战’",
+      "summaryZh": "布鲁诺·吉马良斯以七千五百万英镑从纽卡斯尔加盟阿森纳，签下四年合同，称需要新挑战并渴望赢得奖杯。",
       "bodyZh": [
-        "我们的小枪手点球获胜，将与东道主中国争夺冠军。",
-        "这是Arsenal.com免费文章的简要摘要，请打开原始来源查看完整报道。"
+        "纽卡斯尔不情愿出售后，签下四年合同 ‘我想要赢得奖杯，我正处在合适的地方’ 布鲁诺·吉马良斯表示，在以七千五百万英镑从纽卡斯尔加盟阿森纳后，他“在生活中需要新的挑战”，并瞄准了赢得奖杯。据了解，在纽卡斯尔勉强同意出售队长后，吉马良斯签下了一份四年合同，其中包含一年的续约选项。这位28岁的球员，去年作为队长带领纽卡斯尔赢得卡拉宝杯，那是该队自1955年以来的首个奖杯，他在本周会见了俱乐部新主帅马蒂亚斯·雅伊斯勒后，明确表示他想要加盟这支英超冠军球队。继续阅读……",
+        "打开《卫报》原文，获取完整免费报道和作者背景。"
       ],
-      "translationSourceHash": "e23aab1a3ca97f9bdfc2f75662ff021955df8943aaa469bf3d28d15f1d1a2f17",
+      "translationSourceHash": "1a8f07fb4cbdd637e6b247febd5b1134ed61d0ea78f1889f9cd262b511802c37",
       "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-10T07:44:49.652Z"
+      "translatedAt": "2026-08-10T09:35:48.118Z"
     },
     {
-      "id": "fe746c8027e56de8069379f94470a714e12ca406b5a0832dfda477d63b42f455",
+      "id": "0f1d85514c7f7a07e7149104e710d62ba3caac6b702653570072a171cf5ec9af",
       "teamId": "arsenal",
       "teamName": "阿森纳",
-      "titleEn": "Report: Arsenal 2-1 Crystal Palace",
-      "summaryEn": "Our Gunners begin pre-season with a comeback win over the Eagles",
+      "titleEn": "Jay-Z’s Roc Nation Sports making waves in European football transfer market",
+      "summaryEn": "Vinícius Júnior and Yan Diomande are among more than 100 players at an agency owned by the hip-hop legendIn the end there was a clear winner. And Jay-Z’s latest victory came only 24 hours after the first record featuring him actually rapping for four years had been released by his wife, Beyoncé, on an extended remix pack of Morning Dew (Donk).These days, the man who remains one of the most influential artists in hip-hop has his fingers in many pies, from the streaming service Tidal and his own streetwear brand, to champagne and cognac. But it is Roc Nation Sports – an offshoot of his entertainment company of the same name founded in 2008 – making headlines in the summer transfer window. Continue reading...",
       "bodyEn": [
-        "Our Gunners begin pre-season with a comeback win over the Eagles",
-        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
+        "Vinícius Júnior and Yan Diomande are among more than 100 players at an agency owned by the hip-hop legendIn the end there was a clear winner. And Jay-Z’s latest victory came only 24 hours after the first record featuring him actually rapping for four years had been released by his wife, Beyoncé, on an extended remix pack of Morning Dew (Donk).These days, the man who remains one of the most influential artists in hip-hop has his fingers in many pies, from the streaming service Tidal and his own streetwear brand, to champagne and cognac. But it is Roc Nation Sports – an offshoot of his entertainment company of the same name founded in 2008 – making headlines in the summer transfer window. Continue reading...",
+        "Open the original Guardian article for the complete free report and author context."
       ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/5b6dc70405a0-london-colney-england-chloe-kelly-of-arsenal-during-the-arsenal-women-pre-season.webp",
-      "author": "Tom Keens",
-      "publishedAt": "2026-08-08T10:59:00.000Z",
-      "url": "https://www.arsenal.com/news/report-arsenal-2-1-crystal-palace-awy7f9h8zf43",
-      "source": "Arsenal.com",
-      "titleZh": "报道：阿森纳 2-1 水晶宫",
-      "summaryZh": "我们的枪手以逆转战胜老鹰开启季前赛。",
+      "imageUrl": "https://i.guim.co.uk/img/media/241eae4079055f5c13928e3c6b5ce72cf82cdb3b/311_0_5899_4719/master/5899.jpg?width=140&quality=85&auto=format&fit=max&s=9bb9984e9c5288fd249c63325a0820c5",
+      "author": "Ed Aarons",
+      "publishedAt": "2026-08-07T19:00:24.000Z",
+      "url": "https://www.theguardian.com/football/2026/aug/07/jay-z-roc-nation-sports-european-football-transfer-market-vinicius-junior-yan-diomande",
+      "source": "The Guardian",
+      "titleZh": "Jay-Z的Roc Nation Sports在欧洲足球转会市场掀起波澜",
+      "summaryZh": "Jay-Z旗下经纪公司Roc Nation Sports在夏窗引发关注，旗下拥有超100名球员。",
       "bodyZh": [
-        "我们的枪手以逆转战胜老鹰开启季前赛。",
-        "这是一篇阿森纳官网免费文章的简明摘要。请打开原始来源查看完整报道。"
+        "维尼修斯·儒尼奥尔和扬·迪奥曼德是这家嘻哈传奇人物拥有的经纪公司旗下超过100名球员中的两位。最终有一个明确的赢家。而Jay-Z的最新胜利，距离他妻子碧昂丝发布他在四年来首次真正说唱的单曲《Morning Dew (Donk)》的扩展混音包仅24小时。如今，这位仍是嘻哈界最具影响力艺术家之一的人物涉足众多领域，从流媒体服务Tidal、自有街头服饰品牌，到香槟和干邑。但正是Roc Nation Sports——他在2008年创立的同名娱乐公司的子公司——在夏季转会窗口成为头条新闻。继续阅读...",
+        "打开原始卫报文章以获取完整的免费报道和作者背景。"
       ],
-      "translationSourceHash": "4b34abaf9d247b76f59aeacfbb11865591dcecd668c008f9063102aab424db7c",
+      "translationSourceHash": "d7a18f15fe6b098559c3f58a57208dcf59097290cb4021e50a94fa9d14983fc5",
       "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-10T07:44:50.954Z"
+      "translatedAt": "2026-08-10T09:35:39.973Z"
+    },
+    {
+      "id": "09804fc6f1082d32e4c647a72c97f92e137b9a382ea427a157c83025466a1035",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "I love football, so I support lots of clubs | Letters",
+      "summaryEn": "Millwall remain my main club, but others have turned my head, writes Michael Opitz. Also letters from Neil Bage and Ariel J FriedlanderI read Luke McLaughlin’s article with a great deal of empathy, yet still with some uneasiness about the taboo of having more than one club (Have you ever switched allegiance as a football fan? You are not alone, 1 August). A world I inhabit.I too was at the Millwall v Forest game marred by crowd trouble. It was my first! My family are mostly Millwall, who remain my club, but having seen them drop down the divisions and play in the third tier, my head was turned by better technique and Tottenham- and Arsenal-supporting friends. They will never understand my soft spot for both clubs. Continue reading...",
+      "bodyEn": [
+        "Millwall remain my main club, but others have turned my head, writes Michael Opitz. Also letters from Neil Bage and Ariel J FriedlanderI read Luke McLaughlin’s article with a great deal of empathy, yet still with some uneasiness about the taboo of having more than one club (Have you ever switched allegiance as a football fan? You are not alone, 1 August). A world I inhabit.I too was at the Millwall v Forest game marred by crowd trouble. It was my first! My family are mostly Millwall, who remain my club, but having seen them drop down the divisions and play in the third tier, my head was turned by better technique and Tottenham- and Arsenal-supporting friends. They will never understand my soft spot for both clubs. Continue reading...",
+        "Open the original Guardian article for the complete free report and author context."
+      ],
+      "imageUrl": "https://i.guim.co.uk/img/media/9393e51aa7da55fed9092564f6dbd6428e3d2e81/289_0_2840_2272/master/2840.jpg?width=140&quality=85&auto=format&fit=max&s=cdffe6679d72709a2fac3a0dc3d24156",
+      "author": "Guardian Staff",
+      "publishedAt": "2026-08-07T16:56:45.000Z",
+      "url": "https://www.theguardian.com/football/2026/aug/07/i-love-football-so-i-support-lots-of-clubs",
+      "source": "The Guardian",
+      "titleZh": "我爱足球，所以我支持很多俱乐部 | 读者来信",
+      "summaryZh": "迈克尔·奥皮茨称米尔沃尔仍是主队，但其他球队也让他心动。另有尼尔·贝奇等人的来信。",
+      "bodyZh": [
+        "迈克尔·奥皮茨写道：米尔沃尔仍是我的主队，但其他球队也让我心动。另有尼尔·贝奇和阿里尔·J·弗里德兰德的来信。我怀着极大的同理心阅读了卢克·麦克劳克林的文章，但对拥有多支支持球队的禁忌仍感到些许不安（作为足球迷，你是否曾改变过忠诚？你并不孤单，8月1日）。这正是我所处的世界。我也曾身处米尔沃尔对阵诺丁汉森林的比赛中，那场比赛因球迷骚乱而蒙上阴影。那是我的第一次！我的家人大多支持米尔沃尔，他们仍是我的主队，但在看到球队降级并征战第三级别联赛后，我的注意力被更好的技术和支持托特纳姆热刺和阿森纳的朋友们所吸引。他们永远不会理解我对这两支球队的偏爱。继续阅读……",
+        "打开《卫报》原文，获取完整免费报道和作者背景。"
+      ],
+      "translationSourceHash": "5df8393bf4db13edd0d4882da91a5f8402791ddc475f3db2d7ca873233846dbe",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-10T09:41:10.778Z"
+    },
+    {
+      "id": "dd4ec60d2a2fb89dc77f4073f31d0a930c8154d0a4feca4180cbd7d937326a93",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Arsenal hopes dashed after Vinícius Júnior extends Real Madrid contract to 2032",
+      "summaryEn": "Brazil international has agreed a new six-year deal‘Eight years at the Bernabéu are too few,’ says ViníciusVinícius Júnior has ended summer speculation over his future by agreeing a new six-year contract with Real Madrid. Arsenal had been heavily linked with a move for the Brazil international, who had entered the final 12 months of his deal at the Bernabéu.A tumultuous 2025-26 campaign in which Real failed to win a trophy and initial uncertainty after the arrival of José Mourinho in Madrid alerted the Premier League champions, but Vinícius has now committed his long-term future to the Spanish club. Continue reading...",
+      "bodyEn": [
+        "Brazil international has agreed a new six-year deal‘Eight years at the Bernabéu are too few,’ says ViníciusVinícius Júnior has ended summer speculation over his future by agreeing a new six-year contract with Real Madrid. Arsenal had been heavily linked with a move for the Brazil international, who had entered the final 12 months of his deal at the Bernabéu.A tumultuous 2025-26 campaign in which Real failed to win a trophy and initial uncertainty after the arrival of José Mourinho in Madrid alerted the Premier League champions, but Vinícius has now committed his long-term future to the Spanish club. Continue reading...",
+        "Open the original Guardian article for the complete free report and author context."
+      ],
+      "imageUrl": "https://i.guim.co.uk/img/media/d822aacac0eea8dabc179b04764d6096794d25b7/162_103_2688_2150/master/2688.jpg?width=140&quality=85&auto=format&fit=max&s=97e427cccc1fb4bccec67a9933c271d9",
+      "author": "Agencies",
+      "publishedAt": "2026-08-06T22:29:10.000Z",
+      "url": "https://www.theguardian.com/football/2026/aug/06/arsenal-hopes-dashed-after-vinicius-junior-extends-real-madrid-contract-to-2032",
+      "source": "The Guardian",
+      "titleZh": "维尼修斯与皇马续约至2032年，阿森纳希望落空",
+      "summaryZh": "维尼修斯与皇马签下六年新约至2032年，阿森纳引进希望破灭。",
+      "bodyZh": [
+        "巴西国脚已同意一份为期六年的新合同。维尼修斯表示：“在伯纳乌八年太短了。”维尼修斯·儒尼奥尔与皇家马德里签下六年新约，终结了关于他未来的夏季猜测。阿森纳曾与这位巴西国脚密切联系，他的合同已进入在伯纳乌的最后12个月。2025-26赛季皇马未能赢得任何奖杯，加上何塞·穆里尼奥抵达马德里后的初期不确定性，这引起了英超冠军的注意，但维尼修斯现在已将长期未来托付给这家西班牙俱乐部。继续阅读...",
+        "打开《卫报》原文，获取完整的免费报道和作者背景。"
+      ],
+      "translationSourceHash": "558e6779218c3c631b3b8808d27c7499071ef70a8ba2e228881973d0a615b686",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-10T09:41:14.535Z"
     }
   ]
 }
