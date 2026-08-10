@@ -1,0 +1,7 @@
+{
+  "id": "runner",
+  "displayName": "Runner",
+  "description": "A pixel runner made from your transparent running animation.",
+  "spriteVersionNumber": 2,
+  "spritesheetPath": "spritesheet.png"
+}

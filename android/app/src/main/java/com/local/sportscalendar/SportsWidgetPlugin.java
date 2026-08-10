@@ -169,16 +169,17 @@ public class SportsWidgetPlugin extends Plugin {
             call.reject("仅允许打开 HTTPS 下载地址");
             return;
         }
-
-        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-        if (intent.resolveActivity(getContext().getPackageManager()) == null) {
-            call.reject("手机上没有可用的浏览器");
-            return;
-        }
-
-        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        getContext().startActivity(intent);
-        call.resolve();
+        getActivity().runOnUiThread(() -> {
+            try {
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, uri);
+                browserIntent.addCategory(Intent.CATEGORY_BROWSABLE);
+                Intent chooser = Intent.createChooser(browserIntent, "使用浏览器下载更新");
+                getActivity().startActivity(chooser);
+                call.resolve();
+            } catch (RuntimeException error) {
+                call.reject("无法启动下载浏览器，请确认手机已安装浏览器", error);
+            }
+        });
     }
 
     @PluginMethod

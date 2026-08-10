@@ -1,0 +1,60 @@
+name: Update Arsenal news
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/arsenal-news.yml"
+      - "firebase/functions/arsenal-news-core.js"
+      - "firebase/functions/update-arsenal-news.js"
+      - "firebase/functions/translation-core.js"
+      - "firebase/functions/package.json"
+      - "firebase/functions/package-lock.json"
+  schedule:
+    - cron: "12,42 * * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: team-news-updates
+  cancel-in-progress: false
+
+jobs:
+  update-news:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v5
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: firebase/functions/package-lock.json
+
+      - name: Install news worker
+        run: npm ci --prefix firebase/functions
+
+      - name: Fetch Arsenal.com sitemap and Guardian RSS
+        env:
+          # Optional: without this secret the English feed still updates normally.
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+        run: npm run update:arsenal --prefix firebase/functions
+
+      - name: Commit changed Arsenal news data
+        shell: bash
+        run: |
+          if git diff --quiet -- public/news/arsenal.json; then
+            echo "No Arsenal news changes to commit."
+            exit 0
+          fi
+          git config user.name "sports-calendar-news-bot"
+          git config user.email "sports-calendar-news-bot@users.noreply.github.com"
+          git add public/news/arsenal.json
+          git commit -m "chore: update Arsenal news"
+          git push

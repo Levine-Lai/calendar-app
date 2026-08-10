@@ -22,6 +22,11 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Set;
 import java.util.TimeZone;
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
+import java.util.concurrent.TimeUnit;
 
 final class TeamNewsWidgetData {
     private static final String PREFS_NAME = "team_news_widget";
@@ -80,9 +85,24 @@ final class TeamNewsWidgetData {
     static List<Item> fetchRecent() throws Exception {
         List<Item> freshest = new ArrayList<>();
         Exception lastError = null;
+        ExecutorService executor = Executors.newFixedThreadPool(ENDPOINTS.length);
+        List<Callable<List<Item>>> tasks = new ArrayList<>();
         for (String endpoint : ENDPOINTS) {
+            tasks.add(() -> parseRecent(WidgetNetworkClient.getTeamNewsJson(endpoint)));
+        }
+        List<Future<List<Item>>> results;
+        try {
+            results = executor.invokeAll(tasks, 12, TimeUnit.SECONDS);
+        } finally {
+            executor.shutdownNow();
+        }
+        for (Future<List<Item>> result : results) {
             try {
-                List<Item> candidates = parseRecent(WidgetNetworkClient.getTeamNewsJson(endpoint));
+                if (result.isCancelled()) {
+                    lastError = new IllegalStateException("新闻缓存请求超时");
+                    continue;
+                }
+                List<Item> candidates = result.get();
                 if (!candidates.isEmpty()
                     && (freshest.isEmpty() || candidates.get(0).publishedAt > freshest.get(0).publishedAt)) {
                     freshest = candidates;

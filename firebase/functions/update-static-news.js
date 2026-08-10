@@ -136,7 +136,7 @@ async function translateArticle(item, options = {}) {
           authorization: `Bearer ${apiKey}`,
           "content-type": "application/json"
         },
-        body: JSON.stringify(buildTranslationRequest(item, model))
+        body: JSON.stringify(buildTranslationRequest(item, model, options.context))
       }, 120000, fetchImpl);
       if (!response.ok) {
         const details = (await response.text()).slice(0, 300);
@@ -144,7 +144,7 @@ async function translateArticle(item, options = {}) {
         error.retryable = response.status === 429 || response.status >= 500;
         throw error;
       }
-      const translation = parseTranslationResponse(await response.json(), item);
+      const translation = parseTranslationResponse(await response.json(), item, options.context);
       return {
         ...translation,
         translationModel: model,
@@ -167,13 +167,18 @@ async function enrichTranslations(items, previousPayload, options = {}) {
   );
   const apiKey = String(options.apiKey ?? process.env.DEEPSEEK_API_KEY ?? "").trim();
   const translator = options.translator || (apiKey
-    ? (item) => translateArticle(item, { apiKey, model: options.model, fetchImpl: options.fetchImpl })
+    ? (item) => translateArticle(item, {
+        apiKey,
+        model: options.model,
+        fetchImpl: options.fetchImpl,
+        context: options.context
+      })
     : null);
   let translatedCount = 0;
   let failedCount = 0;
   const enriched = await mapWithConcurrency(items, 2, async (item) => {
     const previous = previousItems.get(item.id);
-    const reusable = reusableTranslation(previous, item);
+    const reusable = reusableTranslation(previous, item, options.context);
     if (reusable) {
       return {
         ...item,

@@ -20,7 +20,7 @@ const dayScoreRefreshes = new Map();
 const dayScoreRefreshTimes = new Map();
 const scoreRefreshTtlMs = 60 * 1000;
 const maxEspnScheduleRangeDays = 45;
-const teamNewsCacheKey = "sports-fan-calendar:team-news:v1";
+const teamNewsCacheKeyPrefix = "sports-fan-calendar:team-news:v2:";
 const teamNewsAutoRefreshMs = 5 * 60 * 1000;
 const teamNewsResumeRefreshMs = 2 * 60 * 1000;
 let teamLoadRequestId = 0;
@@ -259,10 +259,8 @@ const state = {
 };
 
 const teamNewsState = {
-  items: [],
-  updatedAt: "",
-  loading: false,
-  lastAttemptAt: 0,
+  activeTeamId: "toronto-blue-jays",
+  feeds: new Map(),
   pendingUrl: "",
   language: "en",
   activeArticleId: "",
@@ -277,8 +275,12 @@ const customScheduleState = {
 };
 
 const dayEventDeleteState = {
-  eventId: ""
+  eventId: "",
+  lastTappedEventId: "",
+  lastTappedAt: 0
 };
+
+const dayEventDeleteDoubleTapWindowMs = 420;
 
 const elements = {
   leagueGrid: document.querySelector("#leagueGrid"),
@@ -303,7 +305,10 @@ const elements = {
   downloadAppUpdateBtn: document.querySelector("#downloadAppUpdateBtn"),
   openTeamNewsBtn: document.querySelector("#openTeamNewsBtn"),
   homeNewsList: document.querySelector("#homeNewsList"),
+  openArsenalNewsBtn: document.querySelector("#openArsenalNewsBtn"),
+  homeArsenalNewsList: document.querySelector("#homeArsenalNewsList"),
   teamNewsModal: document.querySelector("#teamNewsModal"),
+  teamNewsModalLogo: document.querySelector("#teamNewsModalLogo"),
   teamNewsModalTitle: document.querySelector("#teamNewsModalTitle"),
   teamNewsModalClose: document.querySelector("#teamNewsModalClose"),
   refreshTeamNewsBtn: document.querySelector("#refreshTeamNewsBtn"),
@@ -314,12 +319,12 @@ const elements = {
   teamNewsArticleBack: document.querySelector("#teamNewsArticleBack"),
   teamNewsArticleContent: document.querySelector("#teamNewsArticleContent"),
   teamNewsArticleTitle: document.querySelector("#teamNewsArticleTitle"),
+  teamNewsArticleSource: document.querySelector("#teamNewsArticleSource"),
   teamNewsLanguageTabs: Array.from(document.querySelectorAll(".team-news-language-tab")),
   todayLabel: document.querySelector("#todayLabel"),
   rangeTitle: document.querySelector("#rangeTitle"),
   statusLine: document.querySelector("#statusLine"),
   calendarView: document.querySelector("#calendarView"),
-  todayGamesList: document.querySelector("#todayGamesList"),
   dayModal: document.querySelector("#dayModal"),
   dayModalTitle: document.querySelector("#dayModalTitle"),
   dayModalCount: document.querySelector("#dayModalCount"),
@@ -400,8 +405,9 @@ function bindEvents() {
   elements.deleteImportedBtn.addEventListener("click", openDeleteModal);
   elements.checkAppUpdateBtn.addEventListener("click", checkForAppUpdate);
   elements.downloadAppUpdateBtn.addEventListener("click", openAppUpdateDownload);
-  elements.openTeamNewsBtn.addEventListener("click", openTeamNewsModal);
-  elements.refreshTeamNewsBtn.addEventListener("click", () => refreshTeamNews());
+  elements.openTeamNewsBtn.addEventListener("click", () => openTeamNewsModal("toronto-blue-jays"));
+  elements.openArsenalNewsBtn.addEventListener("click", () => openTeamNewsModal("arsenal"));
+  elements.refreshTeamNewsBtn.addEventListener("click", () => refreshTeamNews({ teamId: teamNewsState.activeTeamId }));
   elements.teamNewsLanguageTabs.forEach((tab) => tab.addEventListener("click", () => setTeamNewsLanguage(tab.dataset.language)));
   elements.teamNewsLanguageTabs.forEach((tab, index) => tab.addEventListener("keydown", (event) => {
     if (!["ArrowLeft", "ArrowRight"].includes(event.key)) return;
@@ -421,7 +427,15 @@ function bindEvents() {
   });
   elements.homeNewsList.addEventListener("click", (event) => {
     const articleButton = event.target.closest(".team-news-card-button");
-    if (articleButton?.dataset.newsId) openTeamNewsArticle(articleButton.dataset.newsId);
+    if (articleButton?.dataset.newsId) openTeamNewsArticleForTeam("toronto-blue-jays", articleButton.dataset.newsId);
+  });
+  elements.homeArsenalNewsList.addEventListener("click", (event) => {
+    const articleButton = event.target.closest(".team-news-card-button");
+    if (articleButton?.dataset.newsId) openTeamNewsArticleForTeam("arsenal", articleButton.dataset.newsId);
+  });
+  elements.teamNewsArticleContent.addEventListener("click", (event) => {
+    const button = event.target.closest(".team-news-original-link");
+    if (button?.dataset.url) openExternalNewsUrl(button.dataset.url);
   });
   elements.teamNewsArticleBack.addEventListener("click", closeTeamNewsArticle);
   elements.teamNewsArticleModal.addEventListener("click", (event) => {
@@ -444,19 +458,13 @@ function bindEvents() {
     event.preventDefault();
     openDayModal(dayCell.dataset.date);
   });
-  elements.todayGamesList.addEventListener("click", (event) => {
-    if (event.target.closest(".home-today-game")) openDayModal(toInputDate(new Date()));
-  });
   elements.dayModalClose.addEventListener("click", closeDayModal);
   elements.dayModal.addEventListener("click", (event) => {
     if (event.target === elements.dayModal) {
       closeDayModal();
     }
   });
-  elements.dayModalBody.addEventListener("click", (event) => {
-    const button = event.target.closest(".day-modal-event-delete");
-    if (button?.dataset.eventId) openDayEventDeleteModal(button.dataset.eventId);
-  });
+  elements.dayModalBody.addEventListener("click", handleDayEventDeleteTap);
   elements.deleteModalClose.addEventListener("click", closeDeleteModal);
   elements.deleteModal.addEventListener("click", (event) => {
     if (event.target === elements.deleteModal) {
@@ -587,124 +595,185 @@ async function openAppUpdateDownload() {
 }
 
 function initializeTeamNews() {
+  teamNewsState.activeTeamId = TeamNewsConfig?.defaultTeamId || "toronto-blue-jays";
   teamNewsState.language = "en";
-  restoreTeamNewsCache();
+  getTeamNewsIds().forEach(restoreTeamNewsCache);
   renderTeamNews();
   consumePendingTeamNewsOpen();
 
-  if (!getTeamNewsApiUrls().length) {
-    return;
-  }
-
-  window.setTimeout(() => refreshTeamNews({ silent: true }), 400);
+  if (!getTeamNewsIds().some((teamId) => getTeamNewsApiUrls(teamId).length)) return;
+  window.setTimeout(() => refreshAllTeamNews({ silent: true }), 400);
   window.setInterval(() => {
-    if (!document.hidden) refreshTeamNews({ silent: true });
+    if (!document.hidden) refreshAllTeamNews({ silent: true });
   }, teamNewsAutoRefreshMs);
   document.addEventListener("visibilitychange", () => {
-    if (!document.hidden && Date.now() - teamNewsState.lastAttemptAt >= teamNewsResumeRefreshMs) {
-      refreshTeamNews({ silent: true });
+    const shouldRefresh = getTeamNewsIds().some((teamId) => (
+      Date.now() - getTeamNewsFeedState(teamId).lastAttemptAt >= teamNewsResumeRefreshMs
+    ));
+    if (!document.hidden && shouldRefresh) {
+      refreshAllTeamNews({ silent: true });
     }
   });
-  window.addEventListener("online", () => refreshTeamNews({ silent: true }));
+  window.addEventListener("online", () => refreshAllTeamNews({ silent: true }));
 }
 
-function getTeamNewsApiUrls() {
+function getTeamNewsIds() {
+  return Object.keys(TeamNewsConfig?.teams || {});
+}
+
+function getTeamNewsConfig(teamId = teamNewsState.activeTeamId) {
+  return TeamNewsConfig?.teams?.[teamId]
+    || TeamNewsConfig?.teams?.[TeamNewsConfig?.defaultTeamId]
+    || null;
+}
+
+function getTeamNewsFeedState(teamId = teamNewsState.activeTeamId) {
+  const normalizedTeamId = getTeamNewsConfig(teamId)?.teamId || "toronto-blue-jays";
+  if (!teamNewsState.feeds.has(normalizedTeamId)) {
+    teamNewsState.feeds.set(normalizedTeamId, {
+      items: [],
+      updatedAt: "",
+      loading: false,
+      lastAttemptAt: 0
+    });
+  }
+  return teamNewsState.feeds.get(normalizedTeamId);
+}
+
+function getTeamNewsApiUrls(teamId = teamNewsState.activeTeamId) {
   if (!TeamNews || !TeamNewsConfig) return [];
-  const configured = Array.isArray(TeamNewsConfig.apiUrls)
-    ? TeamNewsConfig.apiUrls
-    : [TeamNewsConfig.apiUrl];
+  const config = getTeamNewsConfig(teamId);
+  const configured = Array.isArray(config?.apiUrls) ? config.apiUrls : [config?.apiUrl];
   return Array.from(new Set(configured.map((url) => TeamNews.normalizeHttpsUrl(url)).filter(Boolean)));
 }
 
-async function fetchTeamNewsPayload() {
-  const apiUrls = getTeamNewsApiUrls();
+async function fetchTeamNewsPayload(teamId = teamNewsState.activeTeamId) {
+  const config = getTeamNewsConfig(teamId);
+  const apiUrls = getTeamNewsApiUrls(teamId);
   if (!apiUrls.length) throw new Error("新闻 API 尚未部署");
   const plugin = window.Capacitor?.Plugins?.SportsWidget;
-  const staticAttempts = apiUrls.map((url) => TeamNews.fetchNews(url, { timeoutMs: 25000 }));
-  const directAttempt = plugin?.fetchMlbNewsFeed
+  const staticAttempts = apiUrls.map((url) => TeamNews.fetchNews(url, { timeoutMs: 12000, teamId }));
+  if (config?.bundledUrl) {
+    staticAttempts.push(fetch(config.bundledUrl, { cache: "no-store", headers: { accept: "application/json" } })
+      .then(async (response) => {
+        if (!response.ok) throw new Error(`内置新闻返回 ${response.status}`);
+        const text = await response.text();
+        if (text.length > 1024 * 1024) throw new Error("内置新闻数据过大");
+        return TeamNews.normalizeNewsPayload(JSON.parse(text), { teamId });
+      }));
+  }
+  const directAttempt = config?.supportsNativeMlbFeed && plugin?.fetchMlbNewsFeed
     ? plugin.fetchMlbNewsFeed().then((result) => {
         if (!result?.json) throw new Error("MLB 新闻源数据为空");
-        return TeamNews.normalizeNewsPayload(JSON.parse(result.json));
+        return TeamNews.normalizeNewsPayload(JSON.parse(result.json), { teamId });
       })
     : null;
   const attempts = directAttempt ? [directAttempt, ...staticAttempts] : staticAttempts;
-  const settled = await Promise.allSettled(attempts);
-  const payloads = settled.filter((result) => result.status === "fulfilled").map((result) => result.value);
+  let fastResults = [];
+  try {
+    fastResults = await TeamNews.collectFastNewsResults(attempts, 1200);
+  } catch {
+    // The native bridge below is the last fallback when browser routes all fail.
+  }
+  const payloads = fastResults.map((result) => result.value);
   if (!payloads.length && plugin?.fetchTeamNews) {
     try {
       const result = await plugin.fetchTeamNews({ urls: apiUrls });
-      if (result?.json) payloads.push(TeamNews.normalizeNewsPayload(JSON.parse(result.json)));
+      if (result?.json) payloads.push(TeamNews.normalizeNewsPayload(JSON.parse(result.json), { teamId }));
     } catch {
       // All native and browser routes are unavailable.
     }
   }
   if (!payloads.length) throw new Error("新闻同步超时或网络不可用");
-  if (directAttempt && settled[0]?.status === "fulfilled") {
-    return TeamNews.mergeNewsPayloads(settled[0].value, payloads.slice(1));
+  const directResult = directAttempt ? fastResults.find((result) => result.index === 0) : null;
+  if (directResult) {
+    return TeamNews.mergeNewsPayloads(
+      directResult.value,
+      fastResults.filter((result) => result !== directResult).map((result) => result.value)
+    );
   }
   return TeamNews.selectFreshestNewsPayload(payloads);
 }
 
-function restoreTeamNewsCache() {
+function teamNewsCacheKey(teamId) {
+  return `${teamNewsCacheKeyPrefix}${teamId}`;
+}
+
+function restoreTeamNewsCache(teamId) {
   if (!TeamNews) return;
   try {
-    const raw = localStorage.getItem(teamNewsCacheKey);
+    const raw = localStorage.getItem(teamNewsCacheKey(teamId));
     if (!raw) return;
-    const cached = TeamNews.normalizeNewsPayload(JSON.parse(raw));
-    teamNewsState.items = cached.items;
-    teamNewsState.updatedAt = cached.updatedAt;
+    const cached = TeamNews.normalizeNewsPayload(JSON.parse(raw), { teamId });
+    const feed = getTeamNewsFeedState(teamId);
+    feed.items = cached.items;
+    feed.updatedAt = cached.updatedAt;
   } catch {
-    localStorage.removeItem(teamNewsCacheKey);
+    localStorage.removeItem(teamNewsCacheKey(teamId));
   }
 }
 
-function cacheTeamNews(payload) {
+function cacheTeamNews(teamId, payload) {
   try {
-    localStorage.setItem(teamNewsCacheKey, JSON.stringify(payload));
+    localStorage.setItem(teamNewsCacheKey(teamId), JSON.stringify(payload));
   } catch {
     // News remains available for the current session when storage is full.
   }
 }
 
+function refreshAllTeamNews(options = {}) {
+  return Promise.allSettled(getTeamNewsIds().map((teamId) => refreshTeamNews({ ...options, teamId })));
+}
+
 async function refreshTeamNews(options = {}) {
-  if (teamNewsState.loading) return;
+  const teamId = options.teamId || teamNewsState.activeTeamId;
+  const feed = getTeamNewsFeedState(teamId);
+  if (feed.loading) return;
   if (!TeamNews || !TeamNewsConfig) {
     setTeamNewsStatus("新闻组件初始化失败", true);
     return;
   }
 
-  if (!getTeamNewsApiUrls().length) {
+  if (!getTeamNewsApiUrls(teamId).length) {
     setTeamNewsStatus("新闻 API 尚未部署", true);
     renderTeamNews();
     return;
   }
 
-  teamNewsState.loading = true;
-  teamNewsState.lastAttemptAt = Date.now();
-  elements.refreshTeamNewsBtn.disabled = true;
-  elements.refreshTeamNewsBtn.setAttribute("aria-busy", "true");
+  feed.loading = true;
+  feed.lastAttemptAt = Date.now();
+  const isActiveFeed = teamNewsState.activeTeamId === teamId;
+  if (isActiveFeed) {
+    elements.refreshTeamNewsBtn.disabled = true;
+    elements.refreshTeamNewsBtn.setAttribute("aria-busy", "true");
+  }
   try {
-    const payload = await fetchTeamNewsPayload();
-    teamNewsState.items = payload.items;
-    teamNewsState.updatedAt = payload.updatedAt;
-    cacheTeamNews(payload);
+    const payload = await fetchTeamNewsPayload(teamId);
+    feed.items = payload.items;
+    feed.updatedAt = payload.updatedAt;
+    cacheTeamNews(teamId, payload);
     renderTeamNews();
-    setTeamNewsStatus("");
-    scrollToPendingTeamNews();
+    if (isActiveFeed) {
+      setTeamNewsStatus("");
+      scrollToPendingTeamNews();
+    }
   } catch (error) {
     const message = `同步失败：${error.message || "网络不可用"}`;
-    if (!options.silent || !teamNewsState.items.length) {
+    if (isActiveFeed && (!options.silent || !feed.items.length)) {
       setTeamNewsStatus(message, true);
     }
   } finally {
-    teamNewsState.loading = false;
-    elements.refreshTeamNewsBtn.disabled = false;
-    elements.refreshTeamNewsBtn.removeAttribute("aria-busy");
+    feed.loading = false;
+    if (isActiveFeed) {
+      elements.refreshTeamNewsBtn.disabled = false;
+      elements.refreshTeamNewsBtn.removeAttribute("aria-busy");
+    }
   }
 }
 
 function renderTeamNews() {
-  renderHomeTeamNews();
+  renderHomeTeamNews("toronto-blue-jays", elements.homeNewsList);
+  renderHomeTeamNews("arsenal", elements.homeArsenalNewsList);
   renderTeamNewsList();
   if (teamNewsState.activeArticleId) {
     rememberActiveTeamNewsScrollPosition();
@@ -712,39 +781,47 @@ function renderTeamNews() {
   }
 }
 
-function renderHomeTeamNews() {
-  if (!teamNewsState.items.length) {
+function renderHomeTeamNews(teamId, container) {
+  const feed = getTeamNewsFeedState(teamId);
+  const config = getTeamNewsConfig(teamId);
+  if (!container) return;
+  if (!feed.items.length) {
     const empty = document.createElement("p");
     empty.className = "home-news-empty";
-    empty.textContent = "暂时没有可显示的蓝鸟队新闻。";
-    elements.homeNewsList.replaceChildren(empty);
+    empty.textContent = config?.emptyMessage || "暂时没有可显示的球队新闻。";
+    container.replaceChildren(empty);
     return;
   }
   const fragment = document.createDocumentFragment();
-  teamNewsState.items.slice(0, 1).forEach((item) => {
+  feed.items.slice(0, 1).forEach((item) => {
     fragment.append(createTeamNewsCard(item, { compact: true }));
   });
-  elements.homeNewsList.replaceChildren(fragment);
+  container.replaceChildren(fragment);
 }
 
 function renderTeamNewsList() {
-  elements.teamNewsModalTitle.textContent = "Toronto Blue Jays News";
-  elements.teamNewsUpdatedAt.textContent = teamNewsState.updatedAt
-    ? `Updated ${formatTeamNewsTime(teamNewsState.updatedAt, "en")}`
+  const feed = getTeamNewsFeedState();
+  const config = getTeamNewsConfig();
+  elements.teamNewsModalTitle.textContent = `${config?.teamNameEn || "Team"} News`;
+  elements.teamNewsModalLogo.src = config?.logoUrl || "";
+  elements.teamNewsModalLogo.alt = config?.teamNameEn || "";
+  elements.teamNewsArticleSource.textContent = config?.sourceLabel || "News";
+  elements.teamNewsUpdatedAt.textContent = feed.updatedAt
+    ? `Updated ${formatTeamNewsTime(feed.updatedAt, "en")}`
     : "Waiting to sync";
 
-  if (!teamNewsState.items.length) {
+  if (!feed.items.length) {
     const empty = document.createElement("div");
     empty.className = "day-modal-empty";
-    empty.textContent = TeamNewsConfig?.apiUrl
-      ? "No Blue Jays news is available yet."
+    empty.textContent = config?.apiUrl
+      ? `No ${config?.teamNameEn || "team"} news is available yet.`
       : "The news API is not configured.";
     elements.teamNewsList.replaceChildren(empty);
     return;
   }
 
   const fragment = document.createDocumentFragment();
-  teamNewsState.items.forEach((item) => fragment.append(createTeamNewsCard(item)));
+  feed.items.forEach((item) => fragment.append(createTeamNewsCard(item)));
   elements.teamNewsList.replaceChildren(fragment);
 }
 
@@ -761,7 +838,7 @@ function createTeamNewsCard(item, options = {}) {
   button.dataset.newsId = item.id;
   button.setAttribute("aria-label", `Read ${localized.title}`);
 
-  const imageUrl = TeamNews.normalizeMlbImageUrl(item.imageUrl);
+  const imageUrl = TeamNews.normalizeNewsImageUrl(item.imageUrl, item.teamId);
   if (imageUrl) {
     const media = document.createElement("span");
     media.className = "team-news-card-media";
@@ -783,10 +860,11 @@ function createTeamNewsCard(item, options = {}) {
 function createTeamNewsMeta(item, language, className, tagName = "span") {
   const meta = document.createElement(tagName);
   meta.className = className;
+  const config = getTeamNewsConfig(item.teamId);
   const values = [
     ["is-date", formatTeamNewsTime(item.publishedAt, language)],
-    ["is-source", item.source || "MLB.com"],
-    ["is-author", item.author || (language === "zh" ? "MLB 编辑部" : "MLB Editorial")]
+    ["is-source", item.source || config?.sourceLabel || "News"],
+    ["is-author", item.author || (language === "zh" ? "编辑部" : "Editorial")]
   ];
   values.forEach(([modifier, value]) => {
     const badge = document.createElement("span");
@@ -823,13 +901,28 @@ function formatTeamNewsTime(value, language = teamNewsState.language) {
   }).format(date);
 }
 
-function openTeamNewsModal() {
+function activateTeamNews(teamId) {
+  const config = getTeamNewsConfig(teamId);
+  if (!config || teamNewsState.activeTeamId === config.teamId) return;
+  rememberActiveTeamNewsScrollPosition();
+  teamNewsState.activeTeamId = config.teamId;
+  teamNewsState.activeArticleId = "";
+  teamNewsState.pendingUrl = "";
+  teamNewsState.language = "en";
+  elements.teamNewsArticleModal.hidden = true;
+  renderTeamNews();
+}
+
+function openTeamNewsModal(teamId = teamNewsState.activeTeamId) {
+  activateTeamNews(teamId);
   if (document.body.classList.contains("sidebar-open")) closeSidebar();
   elements.teamNewsModal.hidden = false;
   document.body.classList.add("modal-open");
   renderTeamNewsList();
   elements.teamNewsModalClose.focus();
-  if (!teamNewsState.items.length && getTeamNewsApiUrls().length) refreshTeamNews();
+  if (!getTeamNewsFeedState().items.length && getTeamNewsApiUrls().length) {
+    refreshTeamNews({ teamId: teamNewsState.activeTeamId });
+  }
   scrollToPendingTeamNews();
 }
 
@@ -857,22 +950,31 @@ async function consumePendingTeamNewsOpen() {
 }
 
 function handleTeamNewsOpen(url) {
-  const safeUrl = TeamNews?.normalizeMlbUrl?.(url);
+  const teamId = TeamNews?.normalizeMlbUrl?.(url)
+    ? "toronto-blue-jays"
+    : (TeamNews?.normalizeNewsUrl?.(url, "arsenal") ? "arsenal" : teamNewsState.activeTeamId);
+  const safeUrl = TeamNews?.normalizeNewsUrl?.(url, teamId);
+  activateTeamNews(teamId);
   teamNewsState.pendingUrl = safeUrl || "";
-  openTeamNewsModal();
-  if (getTeamNewsApiUrls().length) refreshTeamNews({ silent: true });
+  openTeamNewsModal(teamId);
+  if (getTeamNewsApiUrls(teamId).length) refreshTeamNews({ silent: true, teamId });
 }
 
 function scrollToPendingTeamNews() {
   if (!teamNewsState.pendingUrl || elements.teamNewsModal.hidden) return;
-  const target = teamNewsState.items.find((item) => item.url === teamNewsState.pendingUrl);
+  const target = getTeamNewsFeedState().items.find((item) => item.url === teamNewsState.pendingUrl);
   if (!target) return;
   teamNewsState.pendingUrl = "";
   openTeamNewsArticle(target.id);
 }
 
+function openTeamNewsArticleForTeam(teamId, newsId) {
+  openTeamNewsModal(teamId);
+  openTeamNewsArticle(newsId);
+}
+
 function openTeamNewsArticle(newsId) {
-  const item = teamNewsState.items.find((candidate) => candidate.id === newsId);
+  const item = getTeamNewsFeedState().items.find((candidate) => candidate.id === newsId);
   if (!item) return;
   rememberActiveTeamNewsScrollPosition();
   teamNewsState.activeArticleId = newsId;
@@ -899,7 +1001,9 @@ function closeTeamNewsArticle() {
 }
 
 function activeTeamNewsScrollKey(articleId = teamNewsState.activeArticleId, language = teamNewsState.language) {
-  return articleId ? `${articleId}:${language === "zh" ? "zh" : "en"}` : "";
+  return articleId
+    ? `${teamNewsState.activeTeamId}:${articleId}:${language === "zh" ? "zh" : "en"}`
+    : "";
 }
 
 function rememberActiveTeamNewsScrollPosition() {
@@ -920,11 +1024,11 @@ function restoreActiveTeamNewsScrollPosition() {
 }
 
 function renderTeamNewsArticle() {
-  const item = teamNewsState.items.find((candidate) => candidate.id === teamNewsState.activeArticleId);
+  const item = getTeamNewsFeedState().items.find((candidate) => candidate.id === teamNewsState.activeArticleId);
   if (!item) return;
   const language = teamNewsState.language;
   const localized = TeamNews.localizeNewsItem(item, language);
-  const bodyKey = `${language}:${item.id}`;
+  const bodyKey = `${item.teamId}:${language}:${item.id}`;
   if (localized.body.length) teamNewsState.articleBodies.set(bodyKey, localized.body);
   const paragraphs = teamNewsState.articleBodies.get(bodyKey) || [];
   const fragment = document.createDocumentFragment();
@@ -936,7 +1040,7 @@ function renderTeamNewsArticle() {
   const meta = createTeamNewsMeta(item, language, "team-news-article-meta", "p");
   fragment.append(title, meta);
 
-  const imageUrl = TeamNews.normalizeMlbImageUrl(item.imageUrl);
+  const imageUrl = TeamNews.normalizeNewsImageUrl(item.imageUrl, item.teamId);
   if (imageUrl) {
     const hero = document.createElement("div");
     hero.className = "team-news-article-hero";
@@ -953,31 +1057,42 @@ function renderTeamNewsArticle() {
       body.append(element);
     });
   } else {
+    const config = getTeamNewsConfig(item.teamId);
     renderTeamNewsArticleMessage(
       body,
-      language === "en" ? "Loading the MLB article..." : "正在准备中文正文..."
+      language === "en"
+        ? `Loading the ${config?.teamNameEn || "team"} article...`
+        : "正在准备中文正文..."
     );
   }
   fragment.append(body);
+  const originalLink = document.createElement("button");
+  originalLink.className = "secondary-button team-news-original-link";
+  originalLink.type = "button";
+  originalLink.dataset.url = item.url;
+  originalLink.textContent = language === "zh" ? "打开原文" : "Read original article";
+  fragment.append(originalLink);
   elements.teamNewsArticleContent.lang = language === "en" ? "en" : "zh-CN";
   elements.teamNewsArticleContent.replaceChildren(fragment);
   restoreActiveTeamNewsScrollPosition();
 }
 
 async function ensureTeamNewsArticleBody(item) {
-  const englishKey = `en:${item.id}`;
+  const englishKey = `${item.teamId}:en:${item.id}`;
+  const loadingKey = `${item.teamId}:${item.id}`;
   const bundledBody = TeamNews.normalizeArticleParagraphs(item.bodyEn);
   if (bundledBody.length) {
     teamNewsState.articleBodies.set(englishKey, bundledBody);
     renderTeamNewsArticle();
     return;
   }
-  if (teamNewsState.loadingBodies.has(item.id)) return;
-  teamNewsState.loadingBodies.add(item.id);
+  if (teamNewsState.loadingBodies.has(loadingKey)) return;
+  teamNewsState.loadingBodies.add(loadingKey);
   try {
     const plugin = window.Capacitor?.Plugins?.SportsWidget;
-    if (!plugin?.fetchMlbArticle) {
-      renderActiveTeamNewsArticleError("Full article loading is available in the Android app.");
+    const config = getTeamNewsConfig(item.teamId);
+    if (!config?.supportsNativeArticle || !plugin?.fetchMlbArticle) {
+      renderActiveTeamNewsArticleError("The complete article is available through the original source link below.");
       return;
     }
     const result = await plugin.fetchMlbArticle({ url: item.url });
@@ -990,7 +1105,7 @@ async function ensureTeamNewsArticleBody(item) {
       renderActiveTeamNewsArticleError(`Could not load the article: ${error.message || "Please try again later"}`);
     }
   } finally {
-    teamNewsState.loadingBodies.delete(item.id);
+    teamNewsState.loadingBodies.delete(loadingKey);
   }
 }
 
@@ -2086,6 +2201,25 @@ function mergeEvents(events, options = {}) {
   }
 }
 
+async function openExternalNewsUrl(rawUrl) {
+  const url = TeamNews?.normalizeNewsUrl?.(rawUrl, teamNewsState.activeTeamId);
+  if (!url) return;
+  try {
+    const plugin = window.Capacitor?.Plugins?.SportsWidget;
+    if (plugin?.openExternalUrl) {
+      await plugin.openExternalUrl({ url });
+      return;
+    }
+    const link = document.createElement("a");
+    link.href = url;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    link.click();
+  } catch (error) {
+    renderActiveTeamNewsArticleError(`Could not open the source: ${error.message || "Please try again"}`);
+  }
+}
+
 function excludeDismissedEvents(events) {
   const dismissed = new Set(state.dismissedEventIds);
   return (events || []).filter((event) => event?.id && !dismissed.has(event.id));
@@ -3120,10 +3254,24 @@ function refreshStartupScores() {
 
 function closeDayModal() {
   activeDayModalDate = "";
+  dayEventDeleteState.lastTappedEventId = "";
+  dayEventDeleteState.lastTappedAt = 0;
   elements.dayModal.hidden = true;
   if (elements.deleteModal.hidden && elements.deleteEventModal.hidden) {
     document.body.classList.remove("modal-open");
   }
+}
+
+function handleDayEventDeleteTap(event) {
+  const card = event.target.closest(".day-modal-game");
+  const eventId = card?.dataset.eventId;
+  if (!eventId) return;
+  const now = Date.now();
+  const isDoubleTap = dayEventDeleteState.lastTappedEventId === eventId
+    && now - dayEventDeleteState.lastTappedAt <= dayEventDeleteDoubleTapWindowMs;
+  dayEventDeleteState.lastTappedEventId = isDoubleTap ? "" : eventId;
+  dayEventDeleteState.lastTappedAt = isDoubleTap ? 0 : now;
+  if (isDoubleTap) openDayEventDeleteModal(eventId);
 }
 
 function openDayEventDeleteModal(eventId) {
@@ -3131,6 +3279,8 @@ function openDayEventDeleteModal(eventId) {
   if (!event) return;
   const matchup = getMatchupPresentation(event);
   dayEventDeleteState.eventId = event.id;
+  dayEventDeleteState.lastTappedEventId = "";
+  dayEventDeleteState.lastTappedAt = 0;
   elements.deleteEventSummary.textContent = `${formatDate(new Date(event.start), { month: "long", day: "numeric" })} ${formatTime(new Date(event.start))} · ${matchup.left.team} vs ${matchup.right.team}`;
   elements.deleteEventModal.hidden = false;
   document.body.classList.add("modal-open");
@@ -3181,9 +3331,6 @@ function renderDayModalEvent(event, options = {}) {
         <span class="day-modal-title">${escapeHtml(display.details)}</span>
       </div>
       <span class="day-modal-logo">${rightLogo}</span>
-      <button class="day-modal-event-delete" type="button" data-event-id="${escapeAttr(event.id)}" title="删除这场比赛" aria-label="删除这场比赛">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg>
-      </button>
     </article>
   `;
 }

@@ -64,7 +64,7 @@ final class WidgetNetworkClient {
     static String getTeamNewsJson(String endpoint) throws Exception {
         String safeEndpoint = TeamNewsPushManager.safeNewsEndpoint(endpoint);
         if (safeEndpoint.isEmpty()) throw new IllegalArgumentException("News endpoint is not allowed");
-        HttpURLConnection connection = open(safeEndpoint, 12_000, 25_000);
+        HttpURLConnection connection = open(safeEndpoint, 6_000, 10_000);
         connection.setRequestProperty("Accept", "application/json,text/plain");
         connection.setRequestProperty("Cache-Control", "no-cache");
         try {
@@ -167,19 +167,16 @@ final class WidgetNetworkClient {
             Bitmap decoded = BitmapFactory.decodeStream(new ByteArrayInputStream(bytes), null, options);
             if (decoded == null) return null;
 
-            float scale = Math.max(
+            float scale = Math.min(
                 (float) targetWidth / decoded.getWidth(),
                 (float) targetHeight / decoded.getHeight()
             );
-            int scaledWidth = Math.max(targetWidth, Math.round(decoded.getWidth() * scale));
-            int scaledHeight = Math.max(targetHeight, Math.round(decoded.getHeight() * scale));
+            scale = Math.min(1f, scale);
+            int scaledWidth = Math.max(1, Math.round(decoded.getWidth() * scale));
+            int scaledHeight = Math.max(1, Math.round(decoded.getHeight() * scale));
             Bitmap scaled = Bitmap.createScaledBitmap(decoded, scaledWidth, scaledHeight, true);
             if (scaled != decoded) decoded.recycle();
-            int left = Math.max(0, (scaledWidth - targetWidth) / 2);
-            int top = Math.max(0, (scaledHeight - targetHeight) / 2);
-            Bitmap cropped = Bitmap.createBitmap(scaled, left, top, targetWidth, targetHeight);
-            if (cropped != scaled) scaled.recycle();
-            return cropped;
+            return scaled;
         } catch (Exception ignored) {
             return null;
         } finally {
@@ -194,7 +191,7 @@ final class WidgetNetworkClient {
         connection.setConnectTimeout(connectTimeout);
         connection.setReadTimeout(readTimeout);
         connection.setInstanceFollowRedirects(true);
-        connection.setRequestProperty("User-Agent", "GuansaiRiji/2.3.0");
+        connection.setRequestProperty("User-Agent", "GuansaiRiji/2.3.1");
         return connection;
     }
 

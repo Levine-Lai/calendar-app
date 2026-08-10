@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>体育迷日历</title>
     <style>html,body{margin:0;min-height:100%;background:#fbf4ea;color:#16120f}body.launch-active{background:#c5e5f8}.launch-animation{position:fixed;inset:0;z-index:9999;display:grid;place-items:center;background:#c5e5f8}.launch-animation img{display:block;width:min(82vw,512px);height:auto;max-height:76vh;object-fit:contain;image-rendering:pixelated}</style>
-    <link rel="stylesheet" href="public/styles.css?v=2.3.0">
-    <script src="public/launch-animation.js?v=2.3.0" defer></script>
+    <link rel="stylesheet" href="public/styles.css?v=2.3.1">
+    <script src="public/launch-animation.js?v=2.3.1" defer></script>
   </head>
   <body class="launch-active">
     <div class="launch-animation" id="launchAnimation" role="status" aria-live="polite" aria-label="应用正在启动">
@@ -73,7 +73,7 @@
         <section class="panel app-update-panel" aria-labelledby="appUpdateTitle">
           <div class="section-title">
             <span id="appUpdateTitle">应用更新</span>
-            <strong class="app-version" id="currentAppVersion">v2.3.0</strong>
+            <strong class="app-version" id="currentAppVersion">v2.3.1</strong>
           </div>
           <p class="app-update-status" id="appUpdateStatus" role="status" aria-live="polite">点击按钮检查是否有新版本</p>
           <ul class="app-update-notes" id="appUpdateNotes" hidden></ul>
@@ -113,9 +113,6 @@
             </button>
           </div>
         </header>
-        <section class="home-today-games" aria-label="今日比赛">
-          <div id="todayGamesList" class="home-today-games-list"></div>
-        </section>
         <section id="calendarView" class="calendar-view"></section>
         <section class="home-news-section" aria-labelledby="homeNewsTitle">
           <header class="home-news-header">
@@ -129,6 +126,19 @@
           </header>
           <div class="home-news-list" id="homeNewsList"></div>
           <button class="secondary-button home-news-more" id="openTeamNewsBtn" type="button">查看更多</button>
+        </section>
+        <section class="home-news-section home-arsenal-news-section" aria-labelledby="homeArsenalNewsTitle">
+          <header class="home-news-header">
+            <div class="team-news-heading">
+              <img src="https://a.espncdn.com/i/teamlogos/soccer/500/359.png" alt="" width="48" height="48">
+              <div>
+                <p class="eyebrow">PREMIER LEAGUE · Arsenal</p>
+                <h2 id="homeArsenalNewsTitle">Latest News</h2>
+              </div>
+            </div>
+          </header>
+          <div class="home-news-list" id="homeArsenalNewsList"></div>
+          <button class="secondary-button home-news-more" id="openArsenalNewsBtn" type="button">查看更多</button>
         </section>
       </section>
     </main>
@@ -212,7 +222,7 @@
       <section class="day-modal team-news-modal" role="dialog" aria-modal="true" aria-labelledby="teamNewsModalTitle">
         <header class="day-modal-header team-news-modal-header">
           <div class="team-news-heading">
-            <img src="public/assets/teams/toronto-blue-jays.png" alt="" width="48" height="48">
+            <img id="teamNewsModalLogo" src="public/assets/teams/toronto-blue-jays.png" alt="" width="48" height="48">
             <div>
               <p class="eyebrow" id="teamNewsUpdatedAt">等待同步</p>
               <h3 id="teamNewsModalTitle">多伦多蓝鸟新闻</h3>
@@ -238,7 +248,7 @@
           <button class="icon-button" id="teamNewsArticleBack" title="返回新闻列表" aria-label="返回新闻列表">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
           </button>
-          <p class="eyebrow">MLB.com</p>
+          <p class="eyebrow" id="teamNewsArticleSource">MLB.com</p>
           <div class="team-news-language-tabs" role="tablist" aria-label="文章语言" data-active-language="en">
             <button class="team-news-language-tab is-active" id="teamNewsArticleEnTab" type="button" role="tab" aria-selected="true" data-language="en">English</button>
             <button class="team-news-language-tab" id="teamNewsArticleZhTab" type="button" role="tab" aria-selected="false" data-language="zh">中文</button>
@@ -250,15 +260,15 @@
       </section>
     </div>
 
-    <script src="public/calendar-core.js?v=2.3.0"></script>
-    <script src="public/calendar-storage.js?v=2.3.0"></script>
-    <script src="public/calendar-image-cache.js?v=2.3.0"></script>
-    <script src="public/custom-schedule-core.js?v=2.3.0"></script>
-    <script src="public/custom-schedule-agent-config.js?v=2.3.0"></script>
-    <script src="public/update-config.js?v=2.3.0"></script>
-    <script src="public/app-update.js?v=2.3.0"></script>
-    <script src="public/team-news-config.js?v=2.3.0"></script>
-    <script src="public/team-news-core.js?v=2.3.0"></script>
-    <script src="public/app.js?v=2.3.0"></script>
+    <script src="public/calendar-core.js?v=2.3.1"></script>
+    <script src="public/calendar-storage.js?v=2.3.1"></script>
+    <script src="public/calendar-image-cache.js?v=2.3.1"></script>
+    <script src="public/custom-schedule-core.js?v=2.3.1"></script>
+    <script src="public/custom-schedule-agent-config.js?v=2.3.1"></script>
+    <script src="public/update-config.js?v=2.3.1"></script>
+    <script src="public/app-update.js?v=2.3.1"></script>
+    <script src="public/team-news-config.js?v=2.3.1"></script>
+    <script src="public/team-news-core.js?v=2.3.1"></script>
+    <script src="public/app.js?v=2.3.1"></script>
   </body>
 </html>

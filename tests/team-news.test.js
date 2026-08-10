@@ -1,5 +1,7 @@
 const test = require("node:test");
 const assert = require("node:assert/strict");
+const fs = require("node:fs");
+const path = require("node:path");
 
 const TeamNews = require("../public/team-news-core");
 
@@ -22,6 +24,32 @@ test("team news accepts only official MLB article images", () => {
     TeamNews.normalizeMlbImageUrl("https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w1536/mlb/story"),
     /\/t_w640\//
   );
+});
+
+test("Arsenal news accepts only approved free-source domains", () => {
+  assert.equal(
+    TeamNews.normalizeNewsUrl("https://www.arsenal.com/news/example", "arsenal"),
+    "https://www.arsenal.com/news/example"
+  );
+  assert.equal(
+    TeamNews.normalizeNewsUrl("https://www.theguardian.com/football/arsenal/example", "arsenal"),
+    "https://www.theguardian.com/football/arsenal/example"
+  );
+  assert.equal(TeamNews.normalizeNewsUrl("https://theathletic.com/paywalled", "arsenal"), "");
+  assert.equal(
+    TeamNews.normalizeNewsImageUrl("https://assets.arsenal.com/prod/images/story.webp", "arsenal"),
+    "https://assets.arsenal.com/prod/images/story.webp"
+  );
+});
+
+test("bundled Arsenal framework contains readable official stories", () => {
+  const raw = fs.readFileSync(path.join(__dirname, "../public/news/arsenal.json"), "utf8");
+  const payload = TeamNews.normalizeNewsPayload(JSON.parse(raw), { teamId: "arsenal" });
+  assert.equal(payload.teamId, "arsenal");
+  assert.ok(payload.items.length >= 3);
+  assert.ok(payload.items.some((item) => item.source === "Arsenal.com"));
+  assert.ok(payload.items.every((item) => ["Arsenal.com", "The Guardian"].includes(item.source)));
+  assert.ok(payload.items.every((item) => item.bodyEn.length && item.bodyZh.length));
 });
 
 test("team news payload is sorted and deduplicated", () => {
@@ -130,6 +158,32 @@ test("team news API request uses a bounded Toronto query", async () => {
   assert.equal(payload.items.length, 1);
 });
 
+test("team news API can request the Arsenal feed", async () => {
+  let requestedUrl = "";
+  const fetchImpl = async (url) => {
+    requestedUrl = url;
+    return {
+      ok: true,
+      headers: { get: () => null },
+      text: async () => JSON.stringify({
+        teamId: "arsenal",
+        updatedAt: "2026-08-08T08:00:00Z",
+        items: [{
+          id: "arsenal-article",
+          teamId: "arsenal",
+          titleEn: "Arsenal update",
+          publishedAt: "2026-08-08T07:00:00Z",
+          url: "https://www.arsenal.com/news/arsenal-article"
+        }]
+      })
+    };
+  };
+
+  const payload = await TeamNews.fetchNews("https://example.com/arsenal.json", { fetchImpl, teamId: "arsenal" });
+  assert.equal(new URL(requestedUrl).searchParams.get("team"), "arsenal");
+  assert.equal(payload.teamId, "arsenal");
+});
+
 test("freshest news payload wins even when a stale CDN responds first", () => {
   const stale = {
     updatedAt: "2026-07-17T01:00:00Z",
@@ -150,6 +204,24 @@ test("freshest news payload wins even when a stale CDN responds first", () => {
     }]
   };
   assert.equal(TeamNews.selectFreshestNewsPayload([stale, fresh]).items[0].id, "fresh");
+});
+
+test("news refresh returns quickly after a bundled cache succeeds", async () => {
+  const startedAt = Date.now();
+  const results = await TeamNews.collectFastNewsResults([
+    new Promise((resolve) => setTimeout(() => resolve("slow-network"), 120)),
+    Promise.resolve("bundled-cache")
+  ], 15);
+  assert.deepEqual(results, [{ index: 1, value: "bundled-cache" }]);
+  assert.ok(Date.now() - startedAt < 100);
+});
+
+test("news refresh still waits for a later success when the first endpoint fails", async () => {
+  const results = await TeamNews.collectFastNewsResults([
+    Promise.reject(new Error("raw GitHub unavailable")),
+    new Promise((resolve) => setTimeout(() => resolve("cdn-cache"), 10))
+  ], 10);
+  assert.deepEqual(results, [{ index: 1, value: "cdn-cache" }]);
 });
 
 test("live MLB feed keeps static bilingual content when payloads are merged", () => {

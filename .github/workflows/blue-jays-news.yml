@@ -15,7 +15,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: blue-jays-news
+  group: team-news-updates
   cancel-in-progress: false
 
 jobs:

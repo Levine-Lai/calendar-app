@@ -27,6 +27,8 @@ const customScheduleCore = read("public/custom-schedule-core.js");
 const customScheduleConfig = read("public/custom-schedule-agent-config.js");
 const customScheduleWorker = read("workers/custom-schedule-agent/src/index.js");
 const customScheduleWorkerConfig = read("workers/custom-schedule-agent/wrangler.toml");
+const teamNewsConfig = read("public/team-news-config.js");
+const arsenalNews = JSON.parse(read("public/news/arsenal.json"));
 const launchScreen = read("android/app/src/main/res/drawable/launch_screen.xml");
 const androidStyles = read("android/app/src/main/res/values/styles.xml");
 const androidColors = read("android/app/src/main/res/values/colors.xml");
@@ -34,10 +36,15 @@ const webBuild = read("scripts/build-web.js");
 const newsWidgetProvider = read("android/app/src/main/java/com/local/sportscalendar/MatchDetailWidgetProvider.java");
 const newsWidgetWorker = read("android/app/src/main/java/com/local/sportscalendar/NewsWidgetRefreshWorker.java");
 const newsWidgetData = read("android/app/src/main/java/com/local/sportscalendar/TeamNewsWidgetData.java");
+const widgetNetworkClient = read("android/app/src/main/java/com/local/sportscalendar/WidgetNetworkClient.java");
+const newsWidgetInfoLegacy = read("android/app/src/main/res/xml/match_detail_widget_info.xml");
 const newsWidgetInfo = read("android/app/src/main/res/xml-v31/match_detail_widget_info.xml");
 const newsWidgetLayout = read("android/app/src/main/res/layout/widget_match_detail.xml");
 const newsWidgetItemLayout = read("android/app/src/main/res/layout/widget_news_item.xml");
 const newsWidgetService = read("android/app/src/main/java/com/local/sportscalendar/NewsWidgetService.java");
+const arsenalNewsUpdater = read("firebase/functions/update-arsenal-news.js");
+const arsenalNewsCore = read("firebase/functions/arsenal-news-core.js");
+const arsenalNewsWorkflow = read(".github/workflows/arsenal-news.yml");
 const currentVersionCode = Number(updateConfig.match(/currentVersionCode:\s*(\d+)/)?.[1]);
 
 const tracked = (folder) => execFileSync("git", ["ls-files", folder], { cwd: root, encoding: "utf8" }).trim();
@@ -85,7 +92,7 @@ const checks = [
     "23 新闻三级阅读与官方图片",
     app.includes("renderHomeTeamNews")
       && app.includes("openTeamNewsArticle")
-      && app.includes("normalizeMlbImageUrl")
+      && app.includes("normalizeNewsImageUrl")
       && styles.includes(".team-news-article-page")
       && newsUpdater.includes("extractMlbArticleImage")
   ],
@@ -138,20 +145,27 @@ const checks = [
     "28 组件2新闻大图与独立刷新",
     newsWidgetInfo.includes('android:targetCellWidth="4"')
       && newsWidgetInfo.includes('android:targetCellHeight="3"')
+      && newsWidgetInfo.includes('android:minHeight="188dp"')
+      && newsWidgetInfoLegacy.includes('android:minHeight="188dp"')
       && newsWidgetLayout.includes('android:id="@+id/news_widget_image"')
-      && newsWidgetLayout.includes('android:scaleType="centerCrop"')
+      && newsWidgetLayout.includes('android:scaleType="fitCenter"')
       && newsWidgetLayout.includes('android:layout_height="0dp"')
-      && newsWidgetLayout.includes('android:layout_weight="1"')
+      && newsWidgetLayout.includes('android:layout_weight="2"')
       && newsWidgetLayout.includes('android:textSize="19sp"')
       && newsWidgetProvider.includes("NewsWidgetRefreshWorker.class")
+      && newsWidgetProvider.includes("setExpedited(OutOfQuotaPolicy.RUN_AS_NON_EXPEDITED_WORK_REQUEST)")
       && newsWidgetProvider.includes("TeamNewsWidgetData.loadImage")
       && newsWidgetProvider.includes("openArticlePendingIntent")
       && !newsWidgetProvider.includes("setRemoteAdapter")
       && newsWidgetProvider.includes("15,")
       && newsWidgetWorker.includes("TeamNewsWidgetData.fetchRecent()")
       && newsWidgetData.includes("MAX_ITEMS = 1")
+      && newsWidgetData.includes("Executors.newFixedThreadPool")
+      && newsWidgetData.includes("executor.invokeAll(tasks, 12, TimeUnit.SECONDS)")
       && newsWidgetData.includes("img.mlbstatic.com")
       && newsWidgetData.includes('open("public/public/news/blue-jays.json")')
+      && widgetNetworkClient.includes("float scale = Math.min(")
+      && !widgetNetworkClient.includes("Bitmap.createBitmap(scaled")
       && manifest.includes('android:name=".NewsWidgetService"')
       && !manifest.includes("SportsDetailWidgetService")
       && !fs.existsSync(path.join(
@@ -172,15 +186,12 @@ const checks = [
       && fs.existsSync(path.join(root, "scripts/check-sports-apis.js"))
   ],
   [
-    "30 首页玻璃今日比赛、周一日历、组件明日默认与中超队徽兜底",
-    index.includes('id="todayGamesList"')
+    "30 首页隐藏今日比赛、周一日历、组件明日默认与中超队徽兜底",
+    !index.includes('id="todayGamesList"')
       && !index.includes('id="todayGamesCount"')
       && app.includes("function renderTodayGames()")
       && app.includes("function renderHomeTodayGame(event)")
       && app.includes('const weekLabels = ["周一", "周二", "周三", "周四", "周五", "周六", "周日"]')
-      && styles.includes(".home-today-games")
-      && styles.includes("backdrop-filter: blur(18px)")
-      && !styles.includes(".home-today-games-header")
       && core.includes("((start.getDay() + 6) % 7)")
       && provider.includes("DEFAULT_SELECTED_DAY_OFFSET = 1")
       && provider.includes("defaultSelectedDayOffset()")
@@ -194,7 +205,7 @@ const checks = [
     app.includes("articleScrollPositions: new Map()")
       && app.includes("function rememberActiveTeamNewsScrollPosition()")
       && app.includes("function restoreActiveTeamNewsScrollPosition()")
-      && app.includes('activeTeamNewsScrollKey(newsId, "en")')
+      && app.includes("teamNewsState.activeTeamId")
       && app.includes("restoreActiveTeamNewsScrollPosition()")
   ],
   [
@@ -224,14 +235,44 @@ const checks = [
       && newsMessagingService.includes("TeamNewsPushManager.isBeijingQuietHours()")
   ],
   [
-    "35 日历单场删除与二次确认",
+    "35 日历双击删除与系统下载浏览器",
     index.includes('id="deleteEventModal"')
       && index.includes('id="deleteEventConfirm"')
-      && app.includes("function openDayEventDeleteModal(eventId)")
+      && app.includes("function handleDayEventDeleteTap(event)")
       && app.includes("function confirmDayEventDelete()")
       && app.includes("dismissedEventIds")
       && storage.includes("dismissedEventIds")
-      && styles.includes(".day-modal-event-delete")
+      && !app.includes("day-modal-event-delete")
+      && read("android/app/src/main/java/com/local/sportscalendar/SportsWidgetPlugin.java").includes("Intent.createChooser")
+      && read("android/app/src/main/java/com/local/sportscalendar/SportsWidgetPlugin.java").includes("getActivity().startActivity(chooser)")
+  ],
+  [
+    "36 阿森纳双语新闻框架与无点击高亮切换",
+    index.includes('id="homeArsenalNewsList"')
+      && index.includes('id="openArsenalNewsBtn"')
+      && teamNewsConfig.includes('teamId: "arsenal"')
+      && teamNewsConfig.includes('bundledUrl: "public/news/arsenal.json"')
+      && arsenalNews.teamId === "arsenal"
+      && arsenalNews.items.length >= 3
+      && app.includes('renderHomeTeamNews("arsenal"')
+      && app.includes("function openExternalNewsUrl")
+      && styles.includes("-webkit-tap-highlight-color: transparent")
+      && styles.includes(".team-news-language-tab:hover")
+      && styles.includes("transform: none")
+      && styles.includes(".team-news-original-link")
+  ],
+  [
+    "37 阿森纳双源自动更新、本地队徽与快速缓存",
+    teamNewsConfig.includes('logoUrl: "public/assets/teams/arsenal.png"')
+      && fs.existsSync(path.join(root, "public/assets/teams/arsenal.png"))
+      && arsenalNewsUpdater.includes("Promise.allSettled")
+      && arsenalNewsUpdater.includes('teamId: "arsenal"')
+      && arsenalNewsCore.includes("https://www.arsenal.com/sitemaps/articles/1/sitemap.xml")
+      && arsenalNewsCore.includes("https://www.theguardian.com/football/arsenal/rss")
+      && arsenalNewsWorkflow.includes("schedule:")
+      && arsenalNewsWorkflow.includes("npm run update:arsenal --prefix firebase/functions")
+      && arsenalNewsWorkflow.includes("team-news-updates")
+      && app.includes("collectFastNewsResults")
   ]
 ];
 

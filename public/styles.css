@@ -963,7 +963,7 @@ body.modal-open {
 
 .day-modal-game {
   display: grid;
-  grid-template-columns: 58px minmax(0, 1fr) 58px 36px;
+  grid-template-columns: 58px minmax(0, 1fr) 58px;
   align-items: center;
   gap: 12px;
   min-height: 110px;
@@ -971,35 +971,6 @@ body.modal-open {
   border: 2px solid var(--line);
   background: color-mix(in srgb, var(--event-color) 28%, white);
   box-shadow: 3px 3px 0 var(--ink);
-}
-
-.day-modal-event-delete {
-  display: grid;
-  width: 34px;
-  height: 34px;
-  place-items: center;
-  align-self: start;
-  padding: 7px;
-  border: 1px solid rgba(22, 18, 15, 0.28);
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.72);
-  color: #a6312a;
-}
-
-.day-modal-event-delete svg {
-  width: 18px;
-  height: 18px;
-  fill: none;
-  stroke: currentColor;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 2;
-}
-
-.day-modal-event-delete:hover,
-.day-modal-event-delete:focus-visible {
-  border-color: #a6312a;
-  background: #fff;
 }
 
 .delete-event-overlay {
@@ -1167,20 +1138,22 @@ body.modal-open {
   line-height: 1;
   white-space: nowrap;
   cursor: pointer;
-  transition: color 180ms ease, transform 180ms ease;
+  -webkit-tap-highlight-color: transparent;
+  transition: color 180ms ease;
 }
 
 .team-news-language-tab.is-active {
   color: var(--ink);
 }
 
+.team-news-language-tab:hover,
 .team-news-language-tab:active {
-  transform: scale(.98);
+  transform: none;
+  box-shadow: none;
 }
 
 .team-news-language-tab:focus-visible {
-  outline: 3px solid #2264a7;
-  outline-offset: -3px;
+  outline: none;
 }
 
 .team-news-modal-header {
@@ -1700,23 +1673,12 @@ body.modal-open {
   }
 
   .day-modal-game {
-    grid-template-columns: 42px minmax(0, 1fr) 42px 30px;
+    grid-template-columns: 42px minmax(0, 1fr) 42px;
     min-height: 94px;
     gap: 8px;
     padding: 10px;
     border-width: 1px;
     box-shadow: 1px 1px 0 var(--ink);
-  }
-
-  .day-modal-event-delete {
-    width: 28px;
-    height: 28px;
-    padding: 6px;
-  }
-
-  .day-modal-event-delete svg {
-    width: 16px;
-    height: 16px;
   }
 
   .day-modal-logo {
@@ -2286,12 +2248,12 @@ body.modal-open {
 .team-news-article-content {
   width: min(900px, 100%);
   margin: 0 auto;
-  padding: 26px max(18px, env(safe-area-inset-left)) calc(48px + env(safe-area-inset-bottom));
+  padding: 0 max(18px, env(safe-area-inset-left)) calc(48px + env(safe-area-inset-bottom));
   overflow-y: auto;
 }
 
 .team-news-article-content > h3 {
-  margin: 22px 0 10px;
+  margin: 0 0 10px;
   font-size: clamp(28px, 5vw, 46px);
   line-height: 1.1;
 }
@@ -2331,6 +2293,12 @@ body.modal-open {
   padding: 18px 2px 0;
   font-size: 17px;
   line-height: 1.8;
+}
+
+.team-news-original-link {
+  justify-self: start;
+  margin-top: 18px;
+  -webkit-tap-highlight-color: transparent;
 }
 
 @media (max-width: 720px) {

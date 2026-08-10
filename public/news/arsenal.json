@@ -1,0 +1,361 @@
+{
+  "teamId": "arsenal",
+  "teamName": "阿森纳",
+  "updatedAt": "2026-08-10T07:44:50.955Z",
+  "sources": [
+    "Arsenal.com",
+    "The Guardian"
+  ],
+  "items": [
+    {
+      "id": "c374ae3f367506fa04485da47e0fabb62bf7d04488d7d9a532e516153e2b2910",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Gallery: 35 edits from the Emirates Cup",
+      "summaryEn": "The best images from our pre-season clash with Borussia Dortmund",
+      "bodyEn": [
+        "The best images from our pre-season clash with Borussia Dortmund",
+        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/b95ae337706e-gettyimages-2289724215.webp",
+      "author": "Tom Keens",
+      "publishedAt": "2026-08-09T23:00:00.000Z",
+      "url": "https://www.arsenal.com/news/gallery-35-edits-from-the-emirates-cup-abYOp3f1mZGf",
+      "source": "Arsenal.com",
+      "titleZh": "图集：酋长杯35张精选图片",
+      "summaryZh": "我们与多特蒙德季前赛的最佳图片",
+      "bodyZh": [
+        "我们与多特蒙德季前赛的最佳图片",
+        "这是Arsenal.com免费文章的简要摘要。请打开原始来源查看完整内容。"
+      ],
+      "translationSourceHash": "b54453e478a19933f14d89ae64817f6ebb39823c5764f50c9b0e6f477424d233",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-10T07:44:27.431Z"
+    },
+    {
+      "id": "31c1436aa425aef2b93214beeb8fe2f24095b44e7df1dc8e097f5df6f9252d87",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Every word of Mikel's post-Dortmund press conference",
+      "summaryEn": "Mikel Arteta was back in front of the media at Emirates Stadium for his post-Borussia Dortmund press conference.",
+      "bodyEn": [
+        "Mikel Arteta was back in front of the media at Emirates Stadium for his post-Borussia Dortmund press conference.",
+        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/ce4ac66e8e04-gettyimages-2289035598.webp",
+      "author": "Stephen Wright",
+      "publishedAt": "2026-08-09T16:23:40.281Z",
+      "url": "https://www.arsenal.com/news/every-word-of-mikels-post-dortmund-press-conference-a7NvX2S1ME7k",
+      "source": "Arsenal.com",
+      "titleZh": "米克尔多特蒙德赛后新闻发布会的全部内容",
+      "summaryZh": "阿尔特塔在酋长球场出席战多特蒙德后的发布会。",
+      "bodyZh": [
+        "米克尔·阿尔特塔回到酋长球场，出席他战后多特蒙德的新闻发布会。",
+        "这是阿森纳官网文章的简要总结，完整故事请查看原始来源。"
+      ],
+      "translationSourceHash": "3296b59ce4511a7738c83d7de55d4d79adab958e31cec8b16a56d29d6cfce825",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-10T07:44:22.307Z"
+    },
+    {
+      "id": "630c6be084fc238456ab6b2647f19d3512e6ee93d90edf716b391b9ef30d64d5",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Highlights: Arsenal 2-3 Borussia Dortmund",
+      "summaryEn": "We continue our pre-season with a narrow defeat in the Emirates Cup",
+      "bodyEn": [
+        "We continue our pre-season with a narrow defeat in the Emirates Cup",
+        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/597cee745ff6-gettyimages-2289728040.webp",
+      "author": "Tom Keens",
+      "publishedAt": "2026-08-09T16:21:50.992Z",
+      "url": "https://www.arsenal.com/news/highlights-arsenal-2-3-borussia-dortmund-a1SmH9J1sDPr",
+      "source": "Arsenal.com",
+      "titleZh": "集锦：阿森纳 2-3 多特蒙德",
+      "summaryZh": "我们继续季前赛，在酋长杯上惜败。",
+      "bodyZh": [
+        "我们继续季前赛，在酋长杯上惜败。",
+        "这是阿森纳官网免费文章的简要摘要。请打开原始来源查看完整故事。"
+      ],
+      "translationSourceHash": "e35482e246f3f3aa47f751f5958b259310beb3ba2051cb6faa1f646eb5401276",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-10T07:44:29.095Z"
+    },
+    {
+      "id": "4266f3f8d2f50e40ba3f2c987e3d593345d9038dab2b10d7a7d77ebb6930a1ef",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Arteta on Emirates Cup, Tzolis and Guimaraes",
+      "summaryEn": "Mikel Arteta has shared his initial reaction to our Emirates Cup Final defeat to Borussia Dortmund - see what he had to say",
+      "bodyEn": [
+        "Mikel Arteta has shared his initial reaction to our Emirates Cup Final defeat to Borussia Dortmund - see what he had to say",
+        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/7a2dee4f1102-gettyimages-2289731928.webp",
+      "author": "Stephen Wright",
+      "publishedAt": "2026-08-09T16:09:31.340Z",
+      "url": "https://www.arsenal.com/news/arteta-on-emirates-cup-tzolis-and-guimaraes-attr97X1nH82",
+      "source": "Arsenal.com",
+      "titleZh": "阿尔特塔谈酋长杯、措利斯和吉马良斯",
+      "summaryZh": "阿尔特塔分享酋长杯决赛不敌多特蒙德的初步反应。",
+      "bodyZh": [
+        "米克尔·阿尔特塔分享了对阿森纳在酋长杯决赛输给多特蒙德的初步反应，来看看他说了什么。",
+        "这是Arsenal.com免费文章的简明摘要。请打开原文查看完整故事。"
+      ],
+      "translationSourceHash": "4f6c031d66acb0b21d2fbc459b45381007712316e5d4064036d1e96b26143460",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-10T07:44:36.137Z"
+    },
+    {
+      "id": "14cc49e4566a5e3c349785268c619aab1c7e13e24ef4f21dfb142a31f82b43e8",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Gyokeres: \"It was amazing to be back\"",
+      "summaryEn": "See what Viktor had to say after the Emirates Cup Final, in which he scored our second goal from the penalty spot",
+      "bodyEn": [
+        "See what Viktor had to say after the Emirates Cup Final, in which he scored our second goal from the penalty spot",
+        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/36702b0a85c1-gettyimages-2289724961.webp",
+      "author": "Stephen Wright",
+      "publishedAt": "2026-08-09T15:56:34.009Z",
+      "url": "https://www.arsenal.com/news/gyokeres-it-was-amazing-to-be-back-a1f8M1r8rpdG",
+      "source": "Arsenal.com",
+      "titleZh": "约克雷斯：“回归的感觉太棒了”",
+      "summaryZh": "约克雷斯谈酋长杯决赛点球破门，称回归感觉太棒。",
+      "bodyZh": [
+        "听听维克托在酋长杯决赛后的发言，他在比赛中点球攻入我们的第二球。",
+        "这是Arsenal.com免费文章的简要摘要。请打开原始来源获取完整内容。"
+      ],
+      "translationSourceHash": "987cb902c12bb2662153ccc5260957588f0463cf6b89d5a662f143ea7c832d08",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-10T07:44:33.896Z"
+    },
+    {
+      "id": "559314d7b12b154d0bbb039c54a4f5fa922511b7d8a1dcd4ff6cfab126ca295d",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Report: Arsenal 2-3 Borussia Dortmund",
+      "summaryEn": "We were beaten 3-2 by Borussia Dortmund in the Emirates Cup final on Sunday afternoon.",
+      "bodyEn": [
+        "We were beaten 3-2 by Borussia Dortmund in the Emirates Cup final on Sunday afternoon.",
+        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/e0fd3bc4c2df-gettyimages-2289715341.webp",
+      "author": "Stephen Wright",
+      "publishedAt": "2026-08-09T15:03:53.179Z",
+      "url": "https://www.arsenal.com/news/report-arsenal-2-3-borussia-dortmund-a15Rq4R6Grdt",
+      "source": "Arsenal.com",
+      "titleZh": "战报：阿森纳 2-3 多特蒙德",
+      "summaryZh": "周日下午，我们在酋长杯决赛中2-3不敌多特蒙德。",
+      "bodyZh": [
+        "周日下午，我们在酋长杯决赛中2-3不敌多特蒙德。",
+        "本文为阿森纳官网免费文章的简要摘要。欲阅完整报道，请打开原始来源。"
+      ],
+      "translationSourceHash": "b96b8c0b5db894eae00c8aab36bd886c79f8fc687ab38d0522a20baa7f712c0a",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-10T07:44:40.640Z"
+    },
+    {
+      "id": "55ea6f12118554c8d9d8f90bb8849a4acb1f9cb9f43776f9b5718f12daa294e8",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Emirates turns A380 and Boeing 777 parts into iconic club emblem",
+      "summaryEn": "Emirates and Arsenal today unveiled The Aircrafted Arsenal Crest, a striking 2.4-metre-high sculpture handcrafted from upcycled components sourced from the airline’s Airbus A380 and Boeing 777 aircraft",
+      "bodyEn": [
+        "Emirates and Arsenal today unveiled The Aircrafted Arsenal Crest, a striking 2.4-metre-high sculpture handcrafted from upcycled components sourced from the airline’s Airbus A380 and Boeing 777 aircraft",
+        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/4203365ac6b1-the-aircrafted-arsenal-shield.webp",
+      "author": "Arsenal Media",
+      "publishedAt": "2026-08-09T13:13:09.205Z",
+      "url": "https://www.arsenal.com/news/emirates-turns-a380-and-boeing-777-parts-into-iconic-club-emblem-aWdD79m97vhk",
+      "source": "Arsenal.com",
+      "titleZh": "阿联酋航空将A380和波音777部件打造成标志性俱乐部徽章",
+      "summaryZh": "阿联酋航空与阿森纳今日推出“飞机版阿森纳徽章”，这座2.4米高雕塑由A380和波音777的回收部件手工制成。",
+      "bodyZh": [
+        "阿联酋航空与阿森纳今日推出“飞机版阿森纳徽章”，这座2.4米高的雕塑由该航空公司的空客A380和波音777飞机上回收再利用的部件手工制成。",
+        "这是Arsenal.com免费文章的简要摘要。请打开原始来源查看完整报道。"
+      ],
+      "translationSourceHash": "68b4f76afbfd5113dfed71c772f1775afe90f35860f442f789d64551945dc14c",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-10T07:44:42.027Z"
+    },
+    {
+      "id": "b493d5d60aa051574f5c34ed001f5ed59e2096e584262f8f2cd90bc81c3e1d09",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Team news: Two changes for Emirates Cup Final",
+      "summaryEn": "Mikel Arteta has made two changes to his starting XI for today’s Emirates Cup Final against Borussia Dortmund.",
+      "bodyEn": [
+        "Mikel Arteta has made two changes to his starting XI for today’s Emirates Cup Final against Borussia Dortmund.",
+        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/0d8d1bc6b292-gettyimages-2289611033.webp",
+      "author": "Stephen Wright",
+      "publishedAt": "2026-08-09T11:45:00.000Z",
+      "url": "https://www.arsenal.com/news/team-news-two-changes-for-emirates-cup-final-apSjp1s0LSV8",
+      "source": "Arsenal.com",
+      "titleZh": "球队消息：酋长杯决赛两处调整",
+      "summaryZh": "阿尔特塔对首发做出两处调整，迎战多特蒙德。",
+      "bodyZh": [
+        "米克尔·阿尔特塔对今天对阵多特蒙德的酋长杯决赛首发阵容做出了两处调整。",
+        "这是Arsenal.com免费文章的简明摘要。请打开原始来源以阅读完整报道。"
+      ],
+      "translationSourceHash": "a385e2bd3f7c0933c6fbda42ea70d3bc8e9132c52f99ca3e6f7ac76f350bea66",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-10T07:44:42.639Z"
+    },
+    {
+      "id": "4afaec4948062328e60c4ae65e8fff76d3a510d84bb009c2922cdd5b0abf0842",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Gallery: Final preparations for Emirates Cup",
+      "summaryEn": "Get ready for Emirates Cup action with our training gallery",
+      "bodyEn": [
+        "Get ready for Emirates Cup action with our training gallery",
+        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/7a2a87ea67d7-dsc39639oioqusz.webp",
+      "author": "Charlie Peat",
+      "publishedAt": "2026-08-08T15:00:00.000Z",
+      "url": "https://www.arsenal.com/news/gallery-final-preparations-for-emirates-cup-aNzUv8s4xGbb",
+      "source": "Arsenal.com",
+      "titleZh": "图集：酋长杯赛前最后备战",
+      "summaryZh": "通过我们的训练图集，为酋长杯做好准备。",
+      "bodyZh": [
+        "通过我们的训练图集，为酋长杯做好准备。",
+        "这是一篇阿森纳官网免费文章的简要摘要。请打开原始来源查看完整报道。"
+      ],
+      "translationSourceHash": "31a2609052138e3382d545ad11552c8aa07f736e097ff9cb109ac7305ddc9581",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-10T07:44:44.026Z"
+    },
+    {
+      "id": "f1218f7adc4a53a7e6e98cb9c48f71b101247bb289e915c6e308be539493f476",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Bruno behind the scenes: Photo special",
+      "summaryEn": "Take an inside look at Bruno Guimaraes' first day as a Gunner",
+      "bodyEn": [
+        "Take an inside look at Bruno Guimaraes' first day as a Gunner",
+        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/f21f88ee0bdd-dscf5989.webp",
+      "author": "Charlie Peat",
+      "publishedAt": "2026-08-08T13:56:47.342Z",
+      "url": "https://www.arsenal.com/news/bruno-behind-the-scenes-photo-special-aSwsS0f81UuQ",
+      "source": "Arsenal.com",
+      "titleZh": "布鲁诺幕后：特别照片",
+      "summaryZh": "深入了解布鲁诺·吉马良斯作为枪手的第一天。",
+      "bodyZh": [
+        "深入了解布鲁诺·吉马良斯作为枪手的第一天。",
+        "这是Arsenal.com免费文章的简明摘要。请打开原始来源阅读完整故事。"
+      ],
+      "translationSourceHash": "b738d9ca64ceb0330d09afeaff1f754fda3c62b4cf3a5642daca2c291f112491",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-10T07:44:45.469Z"
+    },
+    {
+      "id": "00a2476784f26922711cf3ed6f7ff54a78ce10d84c3976c7453e0a9b6d409623",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Breaking down Bruno: What will he bring to our midfield?",
+      "summaryEn": "We analyse everything Bruno Guimaraes is going to bring to our engine room",
+      "bodyEn": [
+        "We analyse everything Bruno Guimaraes is going to bring to our engine room",
+        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/224b854ce328-arsenalbgsusana-033.webp",
+      "author": "Charlie Peat",
+      "publishedAt": "2026-08-08T12:04:31.515Z",
+      "url": "https://www.arsenal.com/news/breaking-down-bruno-what-will-he-bring-to-our-midfield-aZQYE0y56UzB",
+      "source": "Arsenal.com",
+      "titleZh": "解析布鲁诺：他将为我们的中场带来什么？",
+      "summaryZh": "我们分析布鲁诺·吉马良斯将为球队中场带来的全部贡献。",
+      "bodyZh": [
+        "我们分析布鲁诺·吉马良斯将为球队中场带来的全部贡献。",
+        "这是Arsenal.com免费文章的简要摘要。请打开原始来源查看完整报道。"
+      ],
+      "translationSourceHash": "d14a08892a90ea4feba13fe7fb00d71c606591f76237a916645d979acdf86bbc",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-10T07:44:47.396Z"
+    },
+    {
+      "id": "413802c05eca76ce8e6359635343c10f17563a6ebae268d84ee0376f85220f02",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "13 things you need to know about Bruno Guimaraes",
+      "summaryEn": "Everything you need to know about Bruno!",
+      "bodyEn": [
+        "Everything you need to know about Bruno!",
+        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/78275db5485f-z936602gopsmn2y.webp",
+      "author": "Charlie Peat",
+      "publishedAt": "2026-08-08T11:09:08.651Z",
+      "url": "https://www.arsenal.com/news/13-things-you-need-to-know-about-bruno-guimaraes-aucsR1Y2y6Hv",
+      "source": "Arsenal.com",
+      "titleZh": "关于布鲁诺·吉马良斯你需要知道的13件事",
+      "summaryZh": "关于布鲁诺你需要知道的一切！",
+      "bodyZh": [
+        "关于布鲁诺你需要知道的一切！",
+        "这是Arsenal.com免费文章的简要摘要。请打开原始来源查看完整报道。"
+      ],
+      "translationSourceHash": "70f11ddfdfdeb15271d59dfdce8cb41987e4ae3e1d1a55a85d2809242f80dc76",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-10T07:44:48.942Z"
+    },
+    {
+      "id": "65f4d82fe6e033dcea944ffca63bc5b3f897f6dc3d252a4d92eb05a51b21cc7d",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Under-17s reach Shanghai Future Star Cup final",
+      "summaryEn": "Our young Gunners prevail on penalties to set up a showdown with China",
+      "bodyEn": [
+        "Our young Gunners prevail on penalties to set up a showdown with China",
+        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/5581a029e272-team.webp",
+      "author": "Tom Keens",
+      "publishedAt": "2026-08-08T10:59:00.000Z",
+      "url": "https://www.arsenal.com/news/under-17s-reach-shanghai-future-star-cup-final-ad96J9p53vcQ",
+      "source": "Arsenal.com",
+      "titleZh": "U17队晋级上海未来之星杯决赛",
+      "summaryZh": "小枪手点球获胜，将与中国队争冠。",
+      "bodyZh": [
+        "我们的小枪手点球获胜，将与东道主中国争夺冠军。",
+        "这是Arsenal.com免费文章的简要摘要，请打开原始来源查看完整报道。"
+      ],
+      "translationSourceHash": "e23aab1a3ca97f9bdfc2f75662ff021955df8943aaa469bf3d28d15f1d1a2f17",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-10T07:44:49.652Z"
+    },
+    {
+      "id": "fe746c8027e56de8069379f94470a714e12ca406b5a0832dfda477d63b42f455",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Report: Arsenal 2-1 Crystal Palace",
+      "summaryEn": "Our Gunners begin pre-season with a comeback win over the Eagles",
+      "bodyEn": [
+        "Our Gunners begin pre-season with a comeback win over the Eagles",
+        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/5b6dc70405a0-london-colney-england-chloe-kelly-of-arsenal-during-the-arsenal-women-pre-season.webp",
+      "author": "Tom Keens",
+      "publishedAt": "2026-08-08T10:59:00.000Z",
+      "url": "https://www.arsenal.com/news/report-arsenal-2-1-crystal-palace-awy7f9h8zf43",
+      "source": "Arsenal.com",
+      "titleZh": "报道：阿森纳 2-1 水晶宫",
+      "summaryZh": "我们的枪手以逆转战胜老鹰开启季前赛。",
+      "bodyZh": [
+        "我们的枪手以逆转战胜老鹰开启季前赛。",
+        "这是一篇阿森纳官网免费文章的简明摘要。请打开原始来源查看完整报道。"
+      ],
+      "translationSourceHash": "4b34abaf9d247b76f59aeacfbb11865591dcecd668c008f9063102aab424db7c",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-10T07:44:50.954Z"
+    }
+  ]
+}

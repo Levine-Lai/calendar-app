@@ -15,6 +15,7 @@ import androidx.work.ExistingPeriodicWorkPolicy;
 import androidx.work.ExistingWorkPolicy;
 import androidx.work.NetworkType;
 import androidx.work.OneTimeWorkRequest;
+import androidx.work.OutOfQuotaPolicy;
 import androidx.work.PeriodicWorkRequest;
 import androidx.work.WorkManager;
 
@@ -129,6 +130,7 @@ public class MatchDetailWidgetProvider extends AppWidgetProvider {
     private static void enqueueImmediateRefresh(Context context) {
         OneTimeWorkRequest request = new OneTimeWorkRequest.Builder(NewsWidgetRefreshWorker.class)
             .setConstraints(networkConstraints())
+            .setExpedited(OutOfQuotaPolicy.RUN_AS_NON_EXPEDITED_WORK_REQUEST)
             .build();
         WorkManager.getInstance(context).enqueueUniqueWork(
             IMMEDIATE_WORK_NAME,

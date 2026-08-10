@@ -9,7 +9,8 @@
   "scripts": {
     "check": "node --check update-static-news.js && node --check news-core.js",
     "test": "node --test test/*.test.js",
-    "update:news": "node update-static-news.js"
+    "update:news": "node update-static-news.js",
+    "update:arsenal": "node update-arsenal-news.js"
   },
   "dependencies": {
     "cheerio": "^1.1.2",

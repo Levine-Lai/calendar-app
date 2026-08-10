@@ -2392,3 +2392,27 @@
 - 使用历史固定 keystore 生成 `releases/sports-calendar-2.3.0-debug.apk`，`aapt` 确认包名 `com.local.sportscalendar`、`versionCode 42`、`versionName 2.3.0`；APK v2 签名及证书 SHA-256 `7EF83E3EC40B7BF1E9AAF551589EE73C378FC26F29202255F0466BCAB759BED0` 已通过验证。
 - APK 大小 `8,028,202` 字节，SHA-256 为 `12808539B84433C1480C53C68A41CA8E93E9008630435E16CA989CF04BA98C57`；GitHub Release `v2.3.0` 已上传同名资产。
 - `public/version.json` 已切换为 `2.3.0 / versionCode 42` 与固定 HTTPS 下载地址，供旧版本 App 的“检查更新”发现并下载该版本。
+
+### 开发批次：2.3.1 更新下载与日历删除交互
+
+- Android 的更新下载链接改为在前台 Activity 中使用 `Intent.createChooser` 打开，并添加 `CATEGORY_BROWSABLE`；不再以后台 Context 预判浏览器，避免部分机型错误显示“无法打开下载页”。
+- 每日赛程详情移除删除图标。连续点击同一场比赛两下（420ms 内）后才打开删除二次确认弹窗，避免单击误删。
+- 源码版本提升为 `2.3.1 / versionCode 43`；`public/version.json` 继续发布 `2.3.0 / versionCode 42`，本轮未打包。
+
+### 开发补充：2.3.1 阿森纳新闻框架与首页精简
+
+- 暂时移除 App 首页日历上方的“今日赛程”区；日历本身及桌面组件1的明日赛程逻辑不变。
+- 新闻数据层从单一蓝鸟队扩展为按 `teamId` 隔离的多球队缓存与渲染，新增阿森纳列表、详情和原文入口。首批内置 4 条 Arsenal.com 免费官网文章的中英文简要摘要，不复制付费或完整正文。
+- 来源策略记录在 `docs/arsenal-news-sources.md`：首选 Arsenal.com，The Guardian Arsenal RSS 可作为免费候选；Arseblog 自动抓取目前返回 403，暂不接入；The Athletic 等付费来源不接入、不绕过付费墙。
+- English/中文切换按钮覆盖全局 hover/active 效果，不再位移、加阴影或显示蓝色点击高亮；文章内容顶部内边距归零，标题紧接页头。
+- 390×844 手机视口实测：阿森纳首页卡片、4 条新闻列表、双语详情、原文入口正常；语言切换前后按钮坐标一致，文章标题顶部为 0px 内边距，浏览器控制台无错误。
+- Web 测试 37 项、稳定性检查 36 项、赛事 API 39 个通道各 2 轮全部通过；Android `compileDebugJavaWithJavac`、`testDebugUnitTest`、`lintDebug` 成功。本轮未打包，目标安装包仍为 `2.3.1`。
+
+### 开发补充：2.3.1 阿森纳双源新闻与组件2刷新
+
+- 阿森纳新闻自动更新改为双源：主源读取 Arsenal.com 官方文章 Sitemap 和公开 `NewsArticle` 元数据，第二源读取 The Guardian 阿森纳 RSS；只保存短摘要和原文入口，不复制完整正文或接入付费来源。
+- 新增 `Update Arsenal news` GitHub Actions，每小时第 12、42 分钟运行；与蓝鸟新闻工作流共用 `team-news-updates` 并发组。任一源失败时保留该源旧缓存，两个源同时失败时不覆盖已发布 JSON。
+- App 阿森纳新闻继续使用 GitHub Raw、jsDelivr、APK 内置 JSON 三级缓存；取得首个成功响应后只等待短暂合并窗口，避免被慢源拖到超时。
+- 阿森纳官方队徽已保存为 `public/assets/teams/arsenal.png` 透明 PNG，并由 Web 构建同步进 APK，不再依赖第三方远程队徽。
+- 桌面组件2维持 4×3 和最新一条新闻：图片/标题高度调整为 2:1，图片改为 `fitCenter` 完整展示；Raw 与 CDN 并行获取，网络超时缩短，手动刷新使用 expedited WorkManager。
+- Web 测试 39 项、新闻后台测试 30 项、稳定性检查 37 项和生产依赖审计全部通过；Android Java 编译、JVM 测试与 Lint 成功。本轮未打包，目标安装包仍为 `2.3.1`。

@@ -24,6 +24,17 @@ test("translation request includes stable MLB reference and JSON output", () => 
   assert.match(request.messages[1].content, /Blue Jays add a reliever/);
 });
 
+test("Arsenal translation request uses football-specific context", () => {
+  const request = buildTranslationRequest({
+    titleEn: "Arsenal update",
+    summaryEn: "The club shared an update.",
+    bodyEn: ["The full update is available."]
+  }, "deepseek-v4-flash", { teamId: "arsenal" });
+  assert.match(request.messages[0].content, /阿森纳足球俱乐部/);
+  assert.doesNotMatch(request.messages[0].content, /MLB 中文体育编辑/);
+  assert.match(request.messages[1].content, /阿森纳足球/);
+});
+
 test("translation output requires Chinese title and matching paragraphs", () => {
   const translation = normalizeTranslation({
     titleZh: "蓝鸟补强牛棚",

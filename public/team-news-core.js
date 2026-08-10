@@ -5,6 +5,21 @@
 })(typeof globalThis !== "undefined" ? globalThis : this, function createTeamNews() {
   const maxResponseBytes = 1024 * 1024;
   const maxItems = 30;
+  const defaultTeamId = "toronto-blue-jays";
+  const teamDefinitions = Object.freeze({
+    "toronto-blue-jays": Object.freeze({
+      teamName: "多伦多蓝鸟",
+      source: "MLB.com",
+      articleHosts: Object.freeze(["mlb.com"]),
+      imageHosts: Object.freeze(["mlbstatic.com", "mlb.com"])
+    }),
+    arsenal: Object.freeze({
+      teamName: "阿森纳",
+      source: "Arsenal.com",
+      articleHosts: Object.freeze(["arsenal.com", "theguardian.com", "arseblog.com", "arseblog.news"]),
+      imageHosts: Object.freeze(["assets.arsenal.com", "arsenal.com", "guim.co.uk"])
+    })
+  });
 
   function normalizeHttpsUrl(value) {
     if (!value) return "";
@@ -17,23 +32,41 @@
   }
 
   function normalizeMlbUrl(value) {
-    const normalized = normalizeHttpsUrl(value);
-    if (!normalized) return "";
-    const hostname = new URL(normalized).hostname.toLowerCase();
-    return hostname === "mlb.com" || hostname.endsWith(".mlb.com") ? normalized : "";
+    return normalizeNewsUrl(value, "toronto-blue-jays");
   }
 
   function normalizeMlbImageUrl(value) {
+    return normalizeNewsImageUrl(value, "toronto-blue-jays");
+  }
+
+  function normalizeTeamId(value) {
+    const teamId = boundedText(value, 80).toLowerCase();
+    return teamDefinitions[teamId] ? teamId : defaultTeamId;
+  }
+
+  function hostMatches(hostname, allowedHost) {
+    return hostname === allowedHost || hostname.endsWith(`.${allowedHost}`);
+  }
+
+  function normalizeNewsUrl(value, teamId = defaultTeamId) {
     const normalized = normalizeHttpsUrl(value);
     if (!normalized) return "";
     const hostname = new URL(normalized).hostname.toLowerCase();
-    const trustedHost = hostname === "mlbstatic.com"
-      || hostname.endsWith(".mlbstatic.com")
-      || hostname === "mlb.com"
-      || hostname.endsWith(".mlb.com");
-    if (!trustedHost) return "";
+    const definition = teamDefinitions[normalizeTeamId(teamId)];
+    return definition.articleHosts.some((host) => hostMatches(hostname, host)) ? normalized : "";
+  }
+
+  function normalizeNewsImageUrl(value, teamId = defaultTeamId) {
+    const normalized = normalizeHttpsUrl(value);
+    if (!normalized) return "";
+    const hostname = new URL(normalized).hostname.toLowerCase();
+    const normalizedTeamId = normalizeTeamId(teamId);
+    const definition = teamDefinitions[normalizedTeamId];
+    if (!definition.imageHosts.some((host) => hostMatches(hostname, host))) return "";
     const url = new URL(normalized);
-    url.pathname = url.pathname.replace(/\/t_w\d{2,4}\//i, "/t_w640/");
+    if (normalizedTeamId === "toronto-blue-jays") {
+      url.pathname = url.pathname.replace(/\/t_w\d{2,4}\//i, "/t_w640/");
+    }
     return url.href;
   }
 
@@ -60,51 +93,55 @@
     return paragraphs;
   }
 
-  function normalizeNewsItem(item) {
+  function normalizeNewsItem(item, options = {}) {
     if (!item || typeof item !== "object" || Array.isArray(item)) return null;
+    const teamId = normalizeTeamId(item.teamId || options.teamId);
+    const definition = teamDefinitions[teamId];
     const id = boundedText(item.id, 160);
-    const url = normalizeMlbUrl(item.url);
+    const url = normalizeNewsUrl(item.url, teamId);
     const titleEn = boundedText(item.titleEn, 240);
     const publishedAt = normalizeDate(item.publishedAt);
     if (!id || !url || !titleEn || !publishedAt) return null;
     return {
       id,
-      teamId: "toronto-blue-jays",
-      teamName: "多伦多蓝鸟",
+      teamId,
+      teamName: boundedText(item.teamName, 80) || definition.teamName,
       titleEn,
       summaryEn: boundedText(item.summaryEn, 900),
       bodyEn: normalizeArticleParagraphs(item.bodyEn),
       titleZh: boundedText(item.titleZh, 240),
       summaryZh: boundedText(item.summaryZh, 900),
       bodyZh: normalizeArticleParagraphs(item.bodyZh),
-      imageUrl: normalizeMlbImageUrl(item.imageUrl),
+      imageUrl: normalizeNewsImageUrl(item.imageUrl, teamId),
       translationSourceHash: boundedText(item.translationSourceHash, 64),
       translationModel: boundedText(item.translationModel, 80),
       translatedAt: normalizeDate(item.translatedAt),
       author: boundedText(item.author, 80),
       publishedAt,
       url,
-      source: "MLB.com"
+      source: boundedText(item.source, 80) || definition.source
     };
   }
 
-  function normalizeNewsPayload(payload) {
+  function normalizeNewsPayload(payload, options = {}) {
     if (!payload || typeof payload !== "object" || Array.isArray(payload)) {
       throw new Error("新闻数据格式不正确");
     }
+    const teamId = normalizeTeamId(payload.teamId || options.teamId);
+    const definition = teamDefinitions[teamId];
     const rawItems = Array.isArray(payload.items) ? payload.items : [];
     const seen = new Set();
     const items = [];
     rawItems.forEach((item) => {
-      const normalized = normalizeNewsItem(item);
+      const normalized = normalizeNewsItem(item, { teamId });
       if (!normalized || seen.has(normalized.id)) return;
       seen.add(normalized.id);
       items.push(normalized);
     });
     items.sort((left, right) => Date.parse(right.publishedAt) - Date.parse(left.publishedAt));
     return {
-      teamId: "toronto-blue-jays",
-      teamName: "多伦多蓝鸟",
+      teamId,
+      teamName: boundedText(payload.teamName, 80) || definition.teamName,
       updatedAt: normalizeDate(payload.updatedAt) || new Date().toISOString(),
       items: items.slice(0, maxItems)
     };
@@ -196,6 +233,37 @@
     };
   }
 
+  function collectFastNewsResults(attempts, graceMs = 1200) {
+    const sources = Array.isArray(attempts) ? attempts : [];
+    if (!sources.length) return Promise.reject(new Error("没有可用的新闻来源"));
+    const boundedGrace = Math.max(0, Math.min(5000, Number(graceMs) || 0));
+    return new Promise((resolve, reject) => {
+      const successes = [];
+      let remaining = sources.length;
+      let timer = null;
+      let finished = false;
+      const finish = () => {
+        if (finished) return;
+        finished = true;
+        if (timer) clearTimeout(timer);
+        if (successes.length) resolve(successes.sort((left, right) => left.index - right.index));
+        else reject(new Error("所有新闻来源均不可用"));
+      };
+      sources.forEach((attempt, index) => {
+        Promise.resolve(attempt).then((value) => {
+          if (finished) return;
+          successes.push({ index, value });
+          if (!timer) timer = setTimeout(finish, boundedGrace);
+        }).catch(() => {
+          // Another endpoint or the bundled cache may still succeed.
+        }).finally(() => {
+          remaining -= 1;
+          if (remaining === 0) finish();
+        });
+      });
+    });
+  }
+
   async function fetchNews(endpoint, options = {}) {
     const safeEndpoint = normalizeHttpsUrl(endpoint);
     if (!safeEndpoint) throw new Error("新闻服务尚未部署");
@@ -203,7 +271,8 @@
     if (typeof fetchImpl !== "function") throw new Error("当前环境不支持联网读取新闻");
 
     const url = new URL(safeEndpoint);
-    url.searchParams.set("team", "toronto-blue-jays");
+    const teamId = normalizeTeamId(options.teamId);
+    url.searchParams.set("team", teamId);
     url.searchParams.set("limit", "30");
     url.searchParams.set("_", String(Math.floor(Date.now() / 300000)));
     const controller = new AbortController();
@@ -219,7 +288,7 @@
       if (declaredLength > maxResponseBytes) throw new Error("新闻数据过大");
       const text = await response.text();
       if (text.length > maxResponseBytes) throw new Error("新闻数据过大");
-      return normalizeNewsPayload(JSON.parse(text));
+      return normalizeNewsPayload(JSON.parse(text), { teamId });
     } catch (error) {
       if (error?.name === "AbortError") throw new Error("新闻同步超时");
       if (error instanceof SyntaxError) throw new Error("新闻数据无法解析");
@@ -233,12 +302,16 @@
     normalizeHttpsUrl,
     normalizeMlbUrl,
     normalizeMlbImageUrl,
+    normalizeNewsUrl,
+    normalizeNewsImageUrl,
+    normalizeTeamId,
     normalizeArticleParagraphs,
     normalizeNewsItem,
     normalizeNewsPayload,
     localizeNewsItem,
     selectFreshestNewsPayload,
     mergeNewsPayloads,
+    collectFastNewsResults,
     fetchNews
   };
 });
