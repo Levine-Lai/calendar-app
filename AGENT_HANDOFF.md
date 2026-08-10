@@ -7,18 +7,18 @@
 
 ## 当前可交付状态
 
-- 当前源码：`2.3.1 / versionCode 43`，源码完成但尚未打包；Cloudflare Worker 已部署，客户端 endpoint 已指向 Worker 且已通过真实请求验证。
+- 当前源码：`2.3.1 / versionCode 43`，已打包并发布；Cloudflare Worker 已部署，客户端 endpoint 已指向 Worker 且已通过真实请求验证。
 - 2.3.1 当前还包含：首页“今日赛程”暂时移除、阿森纳双源自动新闻、APK 本地阿森纳队徽、组件2完整图片与快速刷新、新闻语言按钮无位移/无点击高亮、文章标题顶部留白清理，以及更新下载和双击删除修复。
-- 本机最新 APK：`2.3.0 / versionCode 42`。
-- GitHub 最新已发布 APK：`2.3.0 / versionCode 42`。
-- APK：`releases/sports-calendar-2.3.0-debug.apk`。
-- APK 大小：`8,028,202` 字节。
-- APK SHA-256：`12808539B84433C1480C53C68A41CA8E93E9008630435E16CA989CF04BA98C57`。
+- 本机最新 APK：`2.3.1 / versionCode 43`。
+- GitHub 最新已发布 APK：`2.3.1 / versionCode 43`。
+- APK：`releases/sports-calendar-2.3.1-debug.apk`。
+- APK 大小：`8,081,225` 字节。
+- APK SHA-256：`E47E9642144AD320D2422981094BB71ED9F55D2AECD24AB8BC6BD74A87DF8BBB`。
 - 签名：APK Signature Scheme v2。
 - 签名证书 SHA-256：`7EF83E3EC40B7BF1E9AAF551589EE73C378FC26F29202255F0466BCAB759BED0`。
-- GitHub Release：`https://github.com/Levine-Lai/calendar-app/releases/tag/v2.3.0`。
-- App 内远程更新已启用：`public/version.json` 发布 `2.3.0 / versionCode 42`，下载地址为 GitHub Release 固定 HTTPS 资源。
-- GitHub 远程资产记录：`8,028,202` 字节，SHA-256 与本机 APK 完全一致。
+- GitHub Release：`https://github.com/Levine-Lai/calendar-app/releases/tag/v2.3.1`。
+- App 内远程更新已启用：`public/version.json` 发布 `2.3.1 / versionCode 43`，下载地址为 GitHub Release 固定 HTTPS 资源。
+- GitHub 远程资产与本机 APK 大小、SHA-256 完全一致。
 
 ## 必须遵守
 

@@ -1,11 +1,11 @@
 {
-  "versionCode": 42,
-  "versionName": "2.3.0",
-  "apkUrl": "https://github.com/Levine-Lai/calendar-app/releases/download/v2.3.0/sports-calendar-2.3.0-debug.apk",
+  "versionCode": 43,
+  "versionName": "2.3.1",
+  "apkUrl": "https://github.com/Levine-Lai/calendar-app/releases/download/v2.3.1/sports-calendar-2.3.1-debug.apk",
   "notes": [
-    "重大更新：支持文字和语音描述，智能添加自定义赛程",
-    "赛程详情支持单场删除与二次确认，刷新不会自动恢复已删除赛事",
-    "包含桌面组件、比赛改期、新闻阅读和夜间推送优化"
+    "新增阿森纳双语新闻页，接入 Arsenal.com 与 The Guardian 自动更新",
+    "阿森纳队徽改为本地资源，新闻组件升级为 4×3 完整图片并加快刷新",
+    "修复新闻语言切换、文章滚动位置、更新下载与日历双击删除体验"
   ],
   "force": false
 }
