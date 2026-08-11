@@ -1,7 +1,7 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-11T16:33:06.478Z",
+  "updatedAt": "2026-08-11T19:44:14.208Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
@@ -283,31 +283,6 @@
       "translatedAt": "2026-08-10T16:08:33.702Z"
     },
     {
-      "id": "ffd27c9e7c8c72fd80223ce0dbde6dd60da0667c125331ee30f7ef00d5e47439",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Go Inside Training for Bruno's first session",
-      "summaryEn": "The Brazilian midfielder got to work at the Sobha Realty Training Centre for the first time",
-      "bodyEn": [
-        "The Brazilian midfielder got to work at the Sobha Realty Training Centre for the first time",
-        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/83e97628deb6-260807-bruno-guimaraes-training-session-16x9-clean001.webp",
-      "author": "Connor Booth",
-      "publishedAt": "2026-08-10T14:00:00.000Z",
-      "url": "https://www.arsenal.com/news/go-inside-training-for-brunos-first-session-au6eM1f0d3dz",
-      "source": "Arsenal.com",
-      "titleZh": "布鲁诺首次训练课内幕",
-      "summaryZh": "巴西中场首次在训练中心投入工作。",
-      "bodyZh": [
-        "这位巴西中场首次在索巴房地产训练中心投入训练。",
-        "这是Arsenal.com免费文章的简明摘要。请打开原始来源以获取完整内容。"
-      ],
-      "translationSourceHash": "4c7b52b3c813c3b1ef39979f17a323734be46fc32ae792d3867d8487811b1eb8",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-10T14:44:32.120Z"
-    },
-    {
       "id": "ea9e432eb75d9052714f0b82cffe3b01103d653cb3aa2e7c7cd0a9c360ee699e",
       "teamId": "arsenal",
       "teamName": "阿森纳",
@@ -506,6 +481,31 @@
       "translationSourceHash": "6093ef453dab34b43ed4221c36ae261f13446e25cff04d48cda0f10db1ac14a2",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-11T15:14:29.496Z"
+    },
+    {
+      "id": "714116619736ac0555bdf76a3851b734dac16570f7dfa520daafcda7eae3c6b8",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "How to watch all of our pre-season matches",
+      "summaryEn": "Find out how to watch our pre-season matches wherever you are around the world.",
+      "bodyEn": [
+        "Find out how to watch our pre-season matches wherever you are around the world.",
+        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/e5df8f7f0e3e-london-england-arsenal-fans-show-their-support-with-flags-prior-to-the-premier-l.webp",
+      "author": "Arsenal FC",
+      "publishedAt": "2026-08-04T00:10:00.000Z",
+      "url": "https://www.arsenal.com/news/how-to-watch-all-of-our-pre-season-matches-aAYHu8K0fsn7",
+      "source": "Arsenal.com",
+      "titleZh": "如何观看我们所有季前赛",
+      "summaryZh": "了解如何观看我们的季前赛，无论身在何处。",
+      "bodyZh": [
+        "了解如何观看我们的季前赛，无论身在何处。",
+        "本文为Arsenal.com免费文章的简要摘要，完整故事请查阅原始来源。"
+      ],
+      "translationSourceHash": "ca593d45d9fb93687290514869045302083293ca4934ea443b7cf7f09c9838f6",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-11T19:44:14.208Z"
     }
   ]
 }
