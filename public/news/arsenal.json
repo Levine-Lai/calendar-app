@@ -1,12 +1,37 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-10T18:01:59.762Z",
+  "updatedAt": "2026-08-11T09:13:02.846Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "ebfba4aa7e0df76ead12fb5b6b65eb2d0ff3f7dcbbf224d0ef65374a5c120250",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Inside Training: Watch women's team in La Manga",
+      "summaryEn": "See what our women’s team have been up to on their pre-season training camp with the latest episode of Inside Training",
+      "bodyEn": [
+        "See what our women’s team have been up to on their pre-season training camp with the latest episode of Inside Training",
+        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/1c66c82a1c02-ab85048huyotlqo.webp",
+      "author": "Stephen Wright",
+      "publishedAt": "2026-08-11T08:59:25.772Z",
+      "url": "https://www.arsenal.com/news/inside-training-watch-womens-team-in-la-manga-avZF32c12DI0",
+      "source": "Arsenal.com",
+      "titleZh": "训练内幕：在拉曼加观看女足",
+      "summaryZh": "最新一期《训练内幕》：看看女足在季前训练营的近况。",
+      "bodyZh": [
+        "通过最新一期《训练内幕》，看看我们的女足在季前训练营都做了些什么。",
+        "本文是阿森纳官网免费文章的摘要。请查看原始来源获取完整故事。"
+      ],
+      "translationSourceHash": "2badd32e686024bcef5a31007e7a7e1eb44e6d99c30a9be4ce6bbed6f08b4bac",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-11T09:13:02.846Z"
+    },
     {
       "id": "09f3fc8ac175affbfe0a32b33dc440c47302457622abf04e99b80e445670bcd1",
       "teamId": "arsenal",
@@ -31,6 +56,31 @@
       "translationSourceHash": "daa7d8ff474560c3a480985c71375377318c25f3a9d0570acb88e353dc32d418",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-10T16:08:33.702Z"
+    },
+    {
+      "id": "8ed93f3a6c72119f69bb611e47b3550fa124ca3cfd04508fdb5cd0fbc1d24b37",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Enjoy every minute of our Emirates Cup homecoming",
+      "summaryEn": "Our Gunners returned to N5 for a pre-season test against Borussia Dortmund",
+      "bodyEn": [
+        "Our Gunners returned to N5 for a pre-season test against Borussia Dortmund",
+        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/84781e45d4a3-gettyimages-2289728481.webp",
+      "author": "Tom Keens",
+      "publishedAt": "2026-08-10T15:00:00.000Z",
+      "url": "https://www.arsenal.com/news/enjoy-every-minute-of-our-emirates-cup-homecoming-aHdpf8N6Qh98",
+      "source": "Arsenal.com",
+      "titleZh": "享受我们酋长杯回归的每一分钟",
+      "summaryZh": "我们的枪手回到N5，与多特蒙德进行季前测试。",
+      "bodyZh": [
+        "我们的枪手回到N5，与多特蒙德进行季前测试。",
+        "这是一篇免费的Arsenal.com文章的简明摘要。打开原始来源以查看完整故事。"
+      ],
+      "translationSourceHash": "e85fbb9062fd8d6effe03a57f49c5ff6b801b1a39af7cb2fb469c5aa63ec03d0",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-10T16:08:42.431Z"
     },
     {
       "id": "ffd27c9e7c8c72fd80223ce0dbde6dd60da0667c125331ee30f7ef00d5e47439",
@@ -254,56 +304,6 @@
       "translationSourceHash": "ffafa97e6351188536d676f02fcf6bd79fe8ccbeeb3cf147079874a41b07719d",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-10T09:34:11.346Z"
-    },
-    {
-      "id": "06758604f43a54b6960119e0c276dd11f2fa0eb8831cd1ba0fc0f147a0ecba7e",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Premier League 2 fixtures confirmed for 2026/27",
-      "summaryEn": "Here are all the Premier League 2 fixtures for the season ahead!",
-      "bodyEn": [
-        "Here are all the Premier League 2 fixtures for the season ahead!",
-        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/7681cf93e430-gettyimages-2286565911.webp",
-      "author": "Charlie Peat",
-      "publishedAt": "2026-08-10T08:05:10.762Z",
-      "url": "https://www.arsenal.com/news/premier-league-2-fixtures-confirmed-for-202627-aSd5p9b3T0xW",
-      "source": "Arsenal.com",
-      "titleZh": "2026/27赛季英超2赛程确认",
-      "summaryZh": "以下是本赛季英超2的所有赛程！",
-      "bodyZh": [
-        "以下是本赛季英超2的所有赛程！",
-        "这是Arsenal.com一篇免费文章的简要摘要。请打开原始来源以获取完整报道。"
-      ],
-      "translationSourceHash": "00d13f5fa9df4cd4538d400cd4796c35ef4550adb7ca1a9f2bfb76e32e21f9e7",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-10T09:34:16.023Z"
-    },
-    {
-      "id": "8ed93f3a6c72119f69bb611e47b3550fa124ca3cfd04508fdb5cd0fbc1d24b37",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Enjoy every minute of our Emirates Cup homecoming",
-      "summaryEn": "Our Gunners returned to N5 for a pre-season test against Borussia Dortmund",
-      "bodyEn": [
-        "Our Gunners returned to N5 for a pre-season test against Borussia Dortmund",
-        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/84781e45d4a3-gettyimages-2289728481.webp",
-      "author": "Tom Keens",
-      "publishedAt": "2026-08-10T07:00:00.000Z",
-      "url": "https://www.arsenal.com/news/enjoy-every-minute-of-our-emirates-cup-homecoming-aHdpf8N6Qh98",
-      "source": "Arsenal.com",
-      "titleZh": "享受我们酋长杯回归的每一分钟",
-      "summaryZh": "我们的枪手回到N5，与多特蒙德进行季前测试。",
-      "bodyZh": [
-        "我们的枪手回到N5，与多特蒙德进行季前测试。",
-        "这是一篇免费的Arsenal.com文章的简明摘要。打开原始来源以查看完整故事。"
-      ],
-      "translationSourceHash": "e85fbb9062fd8d6effe03a57f49c5ff6b801b1a39af7cb2fb469c5aa63ec03d0",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-10T16:08:42.431Z"
     },
     {
       "id": "d94036ab20a571f89bc2e4e739dae272c9bb6edf75c545b5536bda9bd993aae1",
