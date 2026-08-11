@@ -1,8 +1,57 @@
 {
   "teamId": "toronto-blue-jays",
   "teamName": "多伦多蓝鸟",
-  "updatedAt": "2026-08-11T07:22:28.585Z",
+  "updatedAt": "2026-08-11T19:48:17.144Z",
   "items": [
+    {
+      "id": "0dd2aaeca2f998d9404ebc5ee7e964cd02f7ca5fef6671e149a9a7bd399c2d0c",
+      "teamId": "toronto-blue-jays",
+      "teamName": "多伦多蓝鸟",
+      "titleEn": "Blue Jays place Taillon (right forearm tendinitis) on IL, recall Chase Lee",
+      "summaryEn": "",
+      "bodyEn": [
+        "TORONTO -- Jameson Taillon hit the 15-day injured list with right forearm tendinitis on Tuesday, a day after leaving his Blue Jays home debut early after just four innings. It is yet another blow to a rotation that cannot escape them.",
+        "Taillon was cruising against the Red Sox, too, which adds some salt to the wound. After a pair of walks in the first, Taillon had settled in nicely and allowed just one base hit on a chopper to third base. Following the fourth inning, though, there was a quick conversation in the dugout and Simeon Woods Richardson quickly began to warm in the bullpen.",
+        "Taillon’s velocity dipped noticeably in the fourth inning, his hardest pitch being a four-seamer that topped out at 90.1 mph.",
+        "“He said his forearm was a little tight getting some extension on cutters and sliders,” Blue Jays manager John Schneider said after the 2-1 win. “For a guy with an injury history, hopefully we can be proactive, and I don’t want to take any chances with him. He’s going to get an MRI and check it out, so we’ll know more tomorrow and we’re hoping for the best. He was throwing the ball well.”",
+        "Taillon was acquired from the Cubs at the Trade Deadline, a minor move for the veteran who’d just been designated for assignment in the middle of a difficult season. Taillon represented a very sensible candidate to fill innings down the stretch, though, and there were reasons to believe in a short-term bounce-back from Taillon, whom the Blue Jays had serious interest in four years ago before he signed in Chicago.",
+        "This unfortunately falls in line with a cruel injury trend that this rotation hasn’t been able to shake in 2026. Coming into Spring Training, it looked like the Blue Jays had too many starting pitchers. Since then, this is what’s piled up:",
+        "Cody Ponce: Torn right ACL",
+        "José Berríos: Tommy John surgery",
+        "Shane Bieber: Right elbow inflammation, missed first 78 games",
+        "Trey Yesavage: Right meniscus injury",
+        "Max Scherzer: Right forearm, left ankle and back injuries",
+        "Patrick Corbin: Left teres major strain",
+        "Bowden Francis: Tommy John surgery",
+        "The Blue Jays’ bullpen has taken the brunt of this, which has really shown in recent days. Woods Richardson was brought up to protect against spots just like this, when multiple innings may be needed, and the Blue Jays could continue to churn through their depth options as they make every effort to protect the already heavy workloads of regulars like Mason Fluharty, Braydon Fisher, Tyler Rogers and Louis Varland."
+      ],
+      "titleZh": "蓝鸟将泰隆列入伤病名单，召回蔡斯·李",
+      "summaryZh": "泰隆因右前臂肌腱炎进入15日伤病名单。",
+      "bodyZh": [
+        "多伦多 -- 詹姆斯·泰隆周二因右前臂肌腱炎进入15日伤病名单，此前一天他在蓝鸟主场首秀中仅投四局便提前离场。这对本就伤病缠身的先发轮值而言又是一次打击。",
+        "泰隆对阵红袜时表现顺风顺水，这更令人惋惜。首局两次保送后，泰隆迅速进入状态，仅因三垒方向的一记滚地球被打出一支安打。然而第四局结束后，休息区进行了简短交流，西缅·伍兹·理查德森随即开始在牛棚热身。",
+        "泰隆在第四局的球速明显下降，他最快的四缝线速球仅达90.1英里/小时。",
+        "“他说投切球和滑球时前臂有些紧绷，”蓝鸟主帅约翰·施奈德在2-1获胜后表示。“对于有伤病史的球员，希望我们能主动应对，我不想冒任何风险。他将接受核磁共振检查，明天会有更多消息，我们期待最好的结果。他之前投得不错。”",
+        "泰隆是在交易截止日从小熊队获得的，对于这位在困难赛季中刚被指定转移的老将来说，这是一笔小操作。泰隆是填补后续局数的非常合理人选，而且有理由相信他能短期反弹——蓝鸟四年前在他签约芝加哥之前就对他有浓厚兴趣。",
+        "遗憾的是，这延续了2026年轮值无法摆脱的残酷伤病趋势。春训开始时，蓝鸟似乎在先发投手方面人手过剩。此后，伤病名单不断累积：",
+        "科迪·庞斯：右膝前交叉韧带撕裂",
+        "何塞·贝里奥斯：汤米·约翰手术",
+        "肖恩·比伯：右肘炎症，缺席前78场比赛",
+        "特雷·耶萨维奇：右半月板损伤",
+        "马克斯·谢泽尔：右前臂、左踝和背部伤势",
+        "帕特里克·科尔宾：左大圆肌拉伤",
+        "鲍登·弗朗西斯：汤米·约翰手术",
+        "蓝鸟的牛棚承受了大部分压力，这在近几日尤为明显。伍兹·理查德森被升上来正是为了应对这种可能需要多局投球的情况。蓝鸟将继续轮换深度选项，竭尽全力保护梅森·弗拉哈蒂、布雷登·费舍尔、泰勒·罗杰斯和路易斯·瓦兰德等常规投手本已繁重的工作量。"
+      ],
+      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/zr4og7o7rxwwtypv1wjr",
+      "translationSourceHash": "3687d5409b0bab0d81118af2142d0009df92038b89e80d0dc70b4c817fa51e8f",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-11T19:48:17.144Z",
+      "author": "Keegan Matheson",
+      "publishedAt": "2026-08-11T19:45:30.000Z",
+      "url": "https://www.mlb.com/bluejays/news/jameson-taillon-to-injured-list-with-right-forearm-tendinitis",
+      "source": "MLB.com"
+    },
     {
       "id": "9c61c42f787962cd6c73ded6bc964e794a273044766f2b3c1a6323947bb88874",
       "teamId": "toronto-blue-jays",
@@ -56,7 +105,7 @@
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-11T04:06:29.451Z",
       "author": "Brendan Samson",
-      "publishedAt": "2026-08-11T06:06:00.000Z",
+      "publishedAt": "2026-08-11T19:01:00.000Z",
       "url": "https://www.mlb.com/bluejays/news/watch-minor-league-baseball-games-for-free-2026",
       "source": "MLB.com"
     },
@@ -101,53 +150,6 @@
       "author": "Keegan Matheson",
       "publishedAt": "2026-08-11T04:37:00.000Z",
       "url": "https://www.mlb.com/bluejays/news/blue-jays-red-sox-delayed-for-rule-check",
-      "source": "MLB.com"
-    },
-    {
-      "id": "a2a062ceb8d3bdbacd1b4050e2ad8e6c84ba113cb3bda607f6f86aacbe97426c",
-      "teamId": "toronto-blue-jays",
-      "teamName": "多伦多蓝鸟",
-      "titleEn": "Taillon exits first home start with right forearm discomfort",
-      "summaryEn": "",
-      "bodyEn": [
-        "TORONTO -- Jameson Taillon left his Blue Jays home debut early after just four innings with right forearm discomfort, yet another blow to a rotation that cannot escape them.",
-        "Taillon was cruising against the Red Sox, too, which adds some salt to the wound. After a pair of walks in the first, Taillon had settled in nicely and allowed just one base hit on a chopper to third base. Following the fourth inning, though, there was a quick conversation in the dugout and Simeon Woods Richardson quickly began to warm in the bullpen.",
-        "While nothing was immediately evident on the field, Taillon’s velocity dipped noticeably in the fourth inning, his hardest pitch being a four-seamer that topped out at 90.1 mph.",
-        "Taillon was acquired from the Cubs at the Trade Deadline, a minor move for the veteran who’d just been designated for assignment in the middle of a difficult season. Taillon represented a very sensible candidate to fill innings down the stretch, though, and there were reasons to believe in a short-term bounce-back from Taillon, whom the Blue Jays had serious interest in four years ago before he signed in Chicago.",
-        "This unfortunately falls in line with a cruel injury trend that this rotation hasn’t been able to shake in 2026. Coming into Spring Training, it looked like the Blue Jays had too many starting pitchers. Since then, this is what’s piled up:",
-        "Cody Ponce: Torn right ACL",
-        "José Berríos: Tommy John surgery",
-        "Shane Bieber: Right elbow inflammation, missed first 78 games",
-        "Trey Yesavage: Right meniscus injury",
-        "Max Scherzer: Right forearm, left ankle and back injuries",
-        "Patrick Corbin: Left teres major strain",
-        "Bowden Francis: Tommy John surgery",
-        "The Blue Jays’ bullpen has taken the brunt of this, which has really shown in recent days. Woods Richardson was brought up to protect against spots just like this, when multiple innings may be needed, and the Blue Jays could continue to churn through their depth options as they make every effort to protect the already heavy workloads of regulars like Mason Fluharty, Braydon Fisher, Tyler Rogers and Louis Varland."
-      ],
-      "titleZh": "Taillon首次主场先发因右前臂不适提前退场",
-      "summaryZh": "蓝鸟先发投手Taillon因右前臂不适提前退场，球队轮值伤病名单再添一人。",
-      "bodyZh": [
-        "多伦多——Jameson Taillon在蓝鸟主场首秀中仅投四局便因右前臂不适提前退场，这对于这个一直无法摆脱伤病的先发轮值来说又是一记重击。",
-        "他在对阵红袜时原本投得顺风顺水，这无异于在伤口上撒盐。首局投出两次保送后，Taillon逐渐进入状态，仅被一支三垒方向的地滚球击出安打。然而第四局结束后，休息区内进行了短暂交谈，Simeon Woods Richardson随即在牛棚开始热身。",
-        "尽管场上没有立即显现异常，但Taillon在第四局球速明显下滑，他最快的球是一颗四缝线快速球，最高时速仅为90.1英里。",
-        "蓝鸟在交易截止日从小熊交易来Taillon，对于这位在艰难赛季中刚被指定转让的老将来说，这是一笔小交易。不过，Taillon是填补赛季末局数的合理人选，而且有理由相信他能短期反弹——四年前他签约芝加哥之前，蓝鸟就对他有浓厚兴趣。",
-        "不幸的是，这延续了2026年这个先发轮值难以摆脱的残酷伤病趋势。春训开始时，蓝鸟看起来拥有过多的先发投手，但自那以后，伤病名单已累积如下：",
-        "Cody Ponce：右前十字韧带撕裂",
-        "José Berríos：Tommy John手术",
-        "Shane Bieber：右肘发炎，缺席前78场比赛",
-        "Trey Yesavage：右半月板受伤",
-        "Max Scherzer：右前臂、左脚踝和背部受伤",
-        "Patrick Corbin：左侧大圆肌拉伤",
-        "Bowden Francis：Tommy John手术",
-        "蓝鸟的牛棚承受了主要冲击，这在最近几天表现得尤为明显。Woods Richardson被升上大联盟正是为了应对这种情况——可能需要投多局。蓝鸟可能会继续动用他们的深度选项，同时尽力保护Mason Fluharty、Braydon Fisher、Tyler Rogers和Louis Varland等主力后援投手已经很繁重的工作量。"
-      ],
-      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/zr4og7o7rxwwtypv1wjr",
-      "translationSourceHash": "f8c488b2c7db1f09d60f5dc342c73b7be01d47a59e21575844d2759a6a48e504",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-11T02:37:32.232Z",
-      "author": "Keegan Matheson",
-      "publishedAt": "2026-08-11T03:53:00.000Z",
-      "url": "https://www.mlb.com/bluejays/news/jameson-taillon-exits-blue-jays-game-with-injury",
       "source": "MLB.com"
     },
     {
@@ -872,5 +874,7 @@
       "source": "MLB.com"
     }
   ],
-  "pendingNotificationIds": []
+  "pendingNotificationIds": [
+    "0dd2aaeca2f998d9404ebc5ee7e964cd02f7ca5fef6671e149a9a7bd399c2d0c"
+  ]
 }
