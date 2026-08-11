@@ -1,12 +1,37 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-11T10:32:24.969Z",
+  "updatedAt": "2026-08-11T12:27:59.373Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "9ee68326021d86fa07f688f8311852440f59573309e605c97a5a9bc62b88f53a",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Arsenal’s Myles Lewis-Skelly offered to Manchester United as left-back solution",
+      "summaryEn": "Chelsea also made aware of 19-year-old’s availabilityNewcastle’s Lewis Hall remains prime United targetMyles Lewis-Skelly has been offered to Manchester United as a potential left-back option, with Arsenal wishing to recoup some of the £75m paid to Newcastle for Bruno Guimarães.Chelsea, it is understood, have also been made aware of the availability of the 19-year-old, who won the Premier League under Mikel Arteta last term. Whether the west London club will make a move for Lewis-Skelly is unclear. Continue reading...",
+      "bodyEn": [
+        "Chelsea also made aware of 19-year-old’s availabilityNewcastle’s Lewis Hall remains prime United targetMyles Lewis-Skelly has been offered to Manchester United as a potential left-back option, with Arsenal wishing to recoup some of the £75m paid to Newcastle for Bruno Guimarães.Chelsea, it is understood, have also been made aware of the availability of the 19-year-old, who won the Premier League under Mikel Arteta last term. Whether the west London club will make a move for Lewis-Skelly is unclear. Continue reading...",
+        "Open the original Guardian article for the complete free report and author context."
+      ],
+      "imageUrl": "https://i.guim.co.uk/img/media/52d9ef8d34dba1ef66b4ed4bfeb044adb129bbd8/279_125_2483_1986/master/2483.jpg?width=140&quality=85&auto=format&fit=max&s=363b70f8c6ef0e1ec2479f7fdc37bb08",
+      "author": "Jamie Jackson",
+      "publishedAt": "2026-08-11T12:09:48.000Z",
+      "url": "https://www.theguardian.com/football/2026/aug/11/arsenal-myles-lewis-skelly-offered-to-manchester-united-left-back",
+      "source": "The Guardian",
+      "titleZh": "阿森纳的迈尔斯·刘易斯-斯凯利被提供给曼联作为左后卫解决方案",
+      "summaryZh": "切尔西也得知19岁小将可转会，纽卡的路易斯·霍尔仍是曼联首选。阿森纳已向曼联推荐刘易斯-斯凯利以收回部分资金。",
+      "bodyZh": [
+        "切尔西也得知这位19岁小将的可转会性，纽卡斯尔的路易斯·霍尔仍是曼联的首要目标。阿森纳已将迈尔斯·刘易斯-斯凯利提供给曼联作为左后卫的潜在选项，希望收回向纽卡斯尔支付布鲁诺·吉马良斯转会费中的一部分（7500万英镑）。据了解，切尔西也已得知这位上赛季在米克尔·阿尔特塔麾下夺得英超冠军的19岁球员的可转会性。这家西伦敦俱乐部是否会为刘易斯-斯凯利采取行动尚不清楚。继续阅读……",
+        "打开卫报原文查看完整免费报道和作者背景。"
+      ],
+      "translationSourceHash": "e883689cd568d6f2413a2fb49814629e44160f4357d95fed6ffc0547ffdf1577",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-11T12:27:59.373Z"
+    },
     {
       "id": "c32681d77ed645404a3cc1210cdecc09b582c41f74b1ac9a0029eb435c5325e3",
       "teamId": "arsenal",
@@ -479,31 +504,6 @@
       "translationSourceHash": "d7a18f15fe6b098559c3f58a57208dcf59097290cb4021e50a94fa9d14983fc5",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-10T09:35:39.973Z"
-    },
-    {
-      "id": "09804fc6f1082d32e4c647a72c97f92e137b9a382ea427a157c83025466a1035",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "I love football, so I support lots of clubs | Letters",
-      "summaryEn": "Millwall remain my main club, but others have turned my head, writes Michael Opitz. Also letters from Neil Bage and Ariel J FriedlanderI read Luke McLaughlin’s article with a great deal of empathy, yet still with some uneasiness about the taboo of having more than one club (Have you ever switched allegiance as a football fan? You are not alone, 1 August). A world I inhabit.I too was at the Millwall v Forest game marred by crowd trouble. It was my first! My family are mostly Millwall, who remain my club, but having seen them drop down the divisions and play in the third tier, my head was turned by better technique and Tottenham- and Arsenal-supporting friends. They will never understand my soft spot for both clubs. Continue reading...",
-      "bodyEn": [
-        "Millwall remain my main club, but others have turned my head, writes Michael Opitz. Also letters from Neil Bage and Ariel J FriedlanderI read Luke McLaughlin’s article with a great deal of empathy, yet still with some uneasiness about the taboo of having more than one club (Have you ever switched allegiance as a football fan? You are not alone, 1 August). A world I inhabit.I too was at the Millwall v Forest game marred by crowd trouble. It was my first! My family are mostly Millwall, who remain my club, but having seen them drop down the divisions and play in the third tier, my head was turned by better technique and Tottenham- and Arsenal-supporting friends. They will never understand my soft spot for both clubs. Continue reading...",
-        "Open the original Guardian article for the complete free report and author context."
-      ],
-      "imageUrl": "https://i.guim.co.uk/img/media/9393e51aa7da55fed9092564f6dbd6428e3d2e81/289_0_2840_2272/master/2840.jpg?width=140&quality=85&auto=format&fit=max&s=cdffe6679d72709a2fac3a0dc3d24156",
-      "author": "Guardian Staff",
-      "publishedAt": "2026-08-07T16:56:45.000Z",
-      "url": "https://www.theguardian.com/football/2026/aug/07/i-love-football-so-i-support-lots-of-clubs",
-      "source": "The Guardian",
-      "titleZh": "我爱足球，所以我支持很多俱乐部 | 读者来信",
-      "summaryZh": "迈克尔·奥皮茨称米尔沃尔仍是主队，但其他球队也让他心动。另有尼尔·贝奇等人的来信。",
-      "bodyZh": [
-        "迈克尔·奥皮茨写道：米尔沃尔仍是我的主队，但其他球队也让我心动。另有尼尔·贝奇和阿里尔·J·弗里德兰德的来信。我怀着极大的同理心阅读了卢克·麦克劳克林的文章，但对拥有多支支持球队的禁忌仍感到些许不安（作为足球迷，你是否曾改变过忠诚？你并不孤单，8月1日）。这正是我所处的世界。我也曾身处米尔沃尔对阵诺丁汉森林的比赛中，那场比赛因球迷骚乱而蒙上阴影。那是我的第一次！我的家人大多支持米尔沃尔，他们仍是我的主队，但在看到球队降级并征战第三级别联赛后，我的注意力被更好的技术和支持托特纳姆热刺和阿森纳的朋友们所吸引。他们永远不会理解我对这两支球队的偏爱。继续阅读……",
-        "打开《卫报》原文，获取完整免费报道和作者背景。"
-      ],
-      "translationSourceHash": "5df8393bf4db13edd0d4882da91a5f8402791ddc475f3db2d7ca873233846dbe",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-10T09:41:10.778Z"
     }
   ]
 }
