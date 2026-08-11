@@ -1,12 +1,87 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-11T12:27:59.373Z",
+  "updatedAt": "2026-08-11T14:05:13.688Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "664e3f6e84f32887eab20effa8e01df13a913fa4fbf29191ff344e5f695c4d8c",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Transfer window 2026: Former Gunners on the move",
+      "summaryEn": "Here are all the former Arsenal players that are on the move in the 2026 transfer window",
+      "bodyEn": [
+        "Here are all the former Arsenal players that are on the move in the 2026 transfer window",
+        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/3354115a7a1d-marseilles-gabonese-forward-pierre-emerick-aubameyang-scores-a-goal-during-the-f.webp",
+      "author": "Arsenal Media",
+      "publishedAt": "2026-08-11T13:35:13.056Z",
+      "url": "https://www.arsenal.com/news/transfer-window-2026-former-gunners-on-the-move-aEgZ27o01Z52",
+      "source": "Arsenal.com",
+      "titleZh": "2026年转会窗：前枪手转会动态",
+      "summaryZh": "以下是2026年转会窗中所有转会的前阿森纳球员。",
+      "bodyZh": [
+        "以下是2026年转会窗中所有转会的前阿森纳球员。",
+        "这是对Arsenal.com免费文章的简要总结。请打开原始来源获取完整故事。"
+      ],
+      "translationSourceHash": "9eacba19457dd93ed85ccdb6ac340ce183e89d096a4cad690a2005017a07e928",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-11T14:05:13.688Z"
+    },
+    {
+      "id": "4e1d639aea8acfc7f705ec38ed415ffc7c7dde5d69f73dd4323e7a2990400302",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Watch every Premier League goal by Cesc Fabregas",
+      "summaryEn": "A look back at Cesc Fabregas' time at Arsenal and his Premier League goals",
+      "bodyEn": [
+        "A look back at Cesc Fabregas' time at Arsenal and his Premier League goals",
+        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/7c86c523991e-gettyimages-107790061.webp",
+      "author": "Charlie Peat",
+      "publishedAt": "2026-08-11T13:04:45.006Z",
+      "url": "https://www.arsenal.com/news/watch-every-premier-league-goal-by-cesc-fabregas-aEJhu7d0wugY",
+      "source": "Arsenal.com",
+      "titleZh": "观看塞斯克·法布雷加斯在英超的每一个进球",
+      "summaryZh": "回顾法布雷加斯在阿森纳的时光及其英超进球。",
+      "bodyZh": [
+        "回顾塞斯克·法布雷加斯在阿森纳的时光及其英超进球。",
+        "这是Arsenal.com免费文章的简明摘要。打开原始来源查看完整报道。"
+      ],
+      "translationSourceHash": "caf3ce60dad8dd15f12db0588061610b0f842c05a101abbd75d4bb04fa450a4c",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-11T14:05:04.993Z"
+    },
+    {
+      "id": "0024b880391089539c19f3033156a9468e717fa9e7fb1c59bb3a483ebfe511fb",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Early bird tickets on sale for Man United in WSL",
+      "summaryEn": "Early bird tickets are now on sale for September’s Women’s Super League match against Manchester United.",
+      "bodyEn": [
+        "Early bird tickets are now on sale for September’s Women’s Super League match against Manchester United.",
+        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/87e8e168437c-gettyimages-2255646315-1.webp",
+      "author": "Arsenal Media",
+      "publishedAt": "2026-08-11T13:00:00.000Z",
+      "url": "https://www.arsenal.com/news/early-bird-tickets-on-sale-for-man-united-in-wsl-aNpTv3P8vHsT",
+      "source": "Arsenal.com",
+      "titleZh": "女子英超对阵曼联的早鸟票开售",
+      "summaryZh": "九月女子英超对阵曼联的早鸟票现已开售。",
+      "bodyZh": [
+        "九月女子英超对阵曼联的早鸟票现已开售。",
+        "这是Arsenal.com免费文章的简要摘要。请打开原始来源查看完整报道。"
+      ],
+      "translationSourceHash": "4a878f219f023a24e26a3f814802910f06843e2ad092d3152f47b358bcd85ce7",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-11T14:05:07.867Z"
+    },
     {
       "id": "9ee68326021d86fa07f688f8311852440f59573309e605c97a5a9bc62b88f53a",
       "teamId": "arsenal",
@@ -69,7 +144,7 @@
       ],
       "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/1c66c82a1c02-ab85048huyotlqo.webp",
       "author": "Stephen Wright",
-      "publishedAt": "2026-08-11T08:59:25.772Z",
+      "publishedAt": "2026-08-11T08:59:00.000Z",
       "url": "https://www.arsenal.com/news/inside-training-watch-womens-team-in-la-manga-avZF32c12DI0",
       "source": "Arsenal.com",
       "titleZh": "训练内幕：在拉曼加观看女足",
@@ -81,6 +156,31 @@
       "translationSourceHash": "2badd32e686024bcef5a31007e7a7e1eb44e6d99c30a9be4ce6bbed6f08b4bac",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-11T09:13:02.846Z"
+    },
+    {
+      "id": "01c658077d0c034788c27cc8c3b6a91970c1bdff21cdad4a6dc5b61897f1915d",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Arsenal transfers: All the ins and outs in 2026/27",
+      "summaryEn": "All the details around who has come and gone in our summer transfer window so far",
+      "bodyEn": [
+        "All the details around who has come and gone in our summer transfer window so far",
+        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/6a94ec6c490f-london-colney-england-bruno-guimaraes-signs-for-arsenal-at-sobha-realty-training.webp",
+      "author": "Arsenal Media",
+      "publishedAt": "2026-08-11T06:00:00.000Z",
+      "url": "https://www.arsenal.com/news/arsenal-transfers-all-the-ins-and-outs-in-202627-a8qx29v8B1fR",
+      "source": "Arsenal.com",
+      "titleZh": "阿森纳转会：2026/27赛季所有转入和转出",
+      "summaryZh": "截至目前夏季转会窗口所有球员进出的详细信息。",
+      "bodyZh": [
+        "关于我们迄今为止夏季转会窗口所有球员进出的详细信息。",
+        "这是Arsenal.com免费文章的简要摘要。打开原始来源查看完整报道。"
+      ],
+      "translationSourceHash": "cca5310ba354888614f40676badc7020c5dc6426cc8204b3bdd75a2dd6d89213",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-11T14:05:10.784Z"
     },
     {
       "id": "09f3fc8ac175affbfe0a32b33dc440c47302457622abf04e99b80e445670bcd1",
@@ -183,54 +283,6 @@
       "translatedAt": "2026-08-10T13:40:59.455Z"
     },
     {
-      "id": "b458ce4893ef8f0ebb0861396b904131980d7b945f81f012285d3cbbcd04528d",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Go behind the scenes for Bruno's first day",
-      "summaryEn": "See what our new no.39 got up to on his first day as a Gunner",
-      "bodyEn": [
-        "See what our new no.39 got up to on his first day as a Gunner",
-        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/7e8c9f0a841f-260808-bruno-guimaraes-bts-16x9-pro-res001.webp",
-      "author": "Connor Booth",
-      "publishedAt": "2026-08-10T13:00:00.000Z",
-      "url": "https://www.arsenal.com/news/go-behind-the-scenes-for-brunos-first-day-ax7W24H8VhD3",
-      "source": "Arsenal.com",
-      "titleZh": "布鲁诺首日幕后花絮",
-      "summaryZh": "看看新39号加盟阿森纳第一天做了什么。",
-      "bodyZh": [
-        "看看我们的新39号在成为枪手的第一天做了些什么。",
-        "这是Arsenal.com免费文章的简要摘要，完整故事请阅读原始来源。"
-      ],
-      "translationSourceHash": "777e2e0277990fd16ed1592ec87846d7a9826e098759993e8fa7b503f254caef",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-10T13:40:59.890Z"
-    },
-    {
-      "id": "1b827495b8fff0f5cd50f603a336da8493203a17e506645e17625f7f8b827d1e",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Disabled Supporters' Information | Brighton & Hove Albion (A)",
-      "summaryEn": "",
-      "bodyEn": [
-        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/c299749d0c36-tickets-2526-brighton-a.webp",
-      "author": "Arsenal FC",
-      "publishedAt": "2026-08-10T12:47:52.850Z",
-      "url": "https://www.arsenal.com/news/disabled-supporters-information-brighton-hove-albion-a-adSpU6C772Kj",
-      "source": "Arsenal.com",
-      "titleZh": "残疾人支持者信息 | 布莱顿与霍夫阿尔比恩（客场）",
-      "summaryZh": "",
-      "bodyZh": [
-        "这是一篇Arsenal.com免费文章的简要摘要。请打开原始来源以查看完整报道。"
-      ],
-      "translationSourceHash": "f68f6b33b16eb52d3a51a428529f4c7883e035cd68dbf716f8e8a6ddeb2fa14e",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-10T13:41:01.332Z"
-    },
-    {
       "id": "dba1bd4c7353de11d42fe345e032ced7823c60a229d506953d6604a57e994830",
       "teamId": "arsenal",
       "teamName": "阿森纳",
@@ -279,31 +331,6 @@
       "translationSourceHash": "5afee29d5ad3a229179da761ce8b1eaf0b99b4a93988ae19cdaca2ad181796f7",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-10T18:01:59.761Z"
-    },
-    {
-      "id": "8f332af51ed88b253a14d6de23bacf85b31675b8bcdf3fe046a2c79bda077aaa",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "U18 Premier League fixtures announced for 2026/27",
-      "summaryEn": "Take a look at our under-18s fixtures for the forthcoming campaign",
-      "bodyEn": [
-        "Take a look at our under-18s fixtures for the forthcoming campaign",
-        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/6532f9d28988-gettyimages-2288873022.webp",
-      "author": "Charlie Peat",
-      "publishedAt": "2026-08-10T08:31:52.910Z",
-      "url": "https://www.arsenal.com/news/u18-premier-league-fixtures-announced-for-202627-aNeVP3O46Lh2",
-      "source": "Arsenal.com",
-      "titleZh": "2026/27赛季U18英超赛程公布",
-      "summaryZh": "查看我们U18青年队新赛季的赛程安排。",
-      "bodyZh": [
-        "查看我们U18青年队新赛季的赛程安排。",
-        "本文为Arsenal.com免费文章的简要摘要，完整内容请查阅原始来源。"
-      ],
-      "translationSourceHash": "ffafa97e6351188536d676f02fcf6bd79fe8ccbeeb3cf147079874a41b07719d",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-10T09:34:11.346Z"
     },
     {
       "id": "8ed93f3a6c72119f69bb611e47b3550fa124ca3cfd04508fdb5cd0fbc1d24b37",
@@ -454,31 +481,6 @@
       "translationSourceHash": "1a8f07fb4cbdd637e6b247febd5b1134ed61d0ea78f1889f9cd262b511802c37",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-10T09:35:48.118Z"
-    },
-    {
-      "id": "17909e9b2b2d53d642bb20563636f7497eb5c9878f5806f6ffd7408110354c9a",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Report: Arsenal Women 2-1 Crystal Palace",
-      "summaryEn": "Our Gunners begin pre-season with a comeback win over the Eagles",
-      "bodyEn": [
-        "Our Gunners begin pre-season with a comeback win over the Eagles",
-        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/5b6dc70405a0-london-colney-england-chloe-kelly-of-arsenal-during-the-arsenal-women-pre-season.webp",
-      "author": "Tom Keens",
-      "publishedAt": "2026-08-08T10:59:00.000Z",
-      "url": "https://www.arsenal.com/news/report-arsenal-women-2-1-crystal-palace-awy7f9h8zf43",
-      "source": "Arsenal.com",
-      "titleZh": "战报：阿森纳女足 2-1 水晶宫",
-      "summaryZh": "枪手以逆转胜利开启季前赛。",
-      "bodyZh": [
-        "我们的枪手以逆转战胜老鹰，开启季前赛。",
-        "这是Arsenal.com免费文章的简要摘要。请打开原始来源查看完整报道。"
-      ],
-      "translationSourceHash": "dbe570c3771cef707a079bc2eaa17c4769302f67a64b3b0faf9ae0fa81a4b00b",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-10T18:01:54.950Z"
     },
     {
       "id": "0f1d85514c7f7a07e7149104e710d62ba3caac6b702653570072a171cf5ec9af",
