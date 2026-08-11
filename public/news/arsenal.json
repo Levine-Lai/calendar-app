@@ -1,12 +1,37 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-11T15:14:29.697Z",
+  "updatedAt": "2026-08-11T16:33:06.478Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "7c0fd95b5cbe8aedef3d47a6f38117378c27795be07903c1a2bc0a31864a6579",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Go Inside Training ahead of final pre-season clash",
+      "summaryEn": "Watch our Gunners in action before we take on Como at Emirates Stadium",
+      "bodyEn": [
+        "Watch our Gunners in action before we take on Como at Emirates Stadium",
+        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/0f083eb34bd3-dsc97578ugpaimc.webp",
+      "author": "Connor Booth",
+      "publishedAt": "2026-08-11T16:00:31.949Z",
+      "url": "https://www.arsenal.com/news/go-inside-training-ahead-of-final-pre-season-clash-amPXZ3p8fFrA",
+      "source": "Arsenal.com",
+      "titleZh": "季前赛最后一战前，走进训练现场",
+      "summaryZh": "在酋长球场迎战科莫前，观看枪手训练。",
+      "bodyZh": [
+        "在酋长球场迎战科莫前，观看我们枪手的训练表现。",
+        "这是Arsenal.com免费文章的简要摘要。如需完整故事，请打开原始来源。"
+      ],
+      "translationSourceHash": "f4fb40cd0aaa1a1a248c6bae5983743c2f1e6914bdae4b1d257939813b44c731",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-11T16:33:06.478Z"
+    },
     {
       "id": "8381752e0a9c66e8bf4bbbf2ae78f4b96c1cf826b13e9082f238f18f704ac0c6",
       "teamId": "arsenal",
@@ -306,31 +331,6 @@
       "translationSourceHash": "5afee29d5ad3a229179da761ce8b1eaf0b99b4a93988ae19cdaca2ad181796f7",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-10T18:01:59.761Z"
-    },
-    {
-      "id": "8ed93f3a6c72119f69bb611e47b3550fa124ca3cfd04508fdb5cd0fbc1d24b37",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Enjoy every minute of our Emirates Cup homecoming",
-      "summaryEn": "Our Gunners returned to N5 for a pre-season test against Borussia Dortmund",
-      "bodyEn": [
-        "Our Gunners returned to N5 for a pre-season test against Borussia Dortmund",
-        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/84781e45d4a3-gettyimages-2289728481.webp",
-      "author": "Tom Keens",
-      "publishedAt": "2026-08-10T07:00:00.000Z",
-      "url": "https://www.arsenal.com/news/enjoy-every-minute-of-our-emirates-cup-homecoming-aHdpf8N6Qh98",
-      "source": "Arsenal.com",
-      "titleZh": "享受我们酋长杯回归的每一分钟",
-      "summaryZh": "我们的枪手回到N5，与多特蒙德进行季前测试。",
-      "bodyZh": [
-        "我们的枪手回到N5，与多特蒙德进行季前测试。",
-        "这是一篇免费的Arsenal.com文章的简明摘要。打开原始来源以查看完整故事。"
-      ],
-      "translationSourceHash": "e85fbb9062fd8d6effe03a57f49c5ff6b801b1a39af7cb2fb469c5aa63ec03d0",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-10T16:08:42.431Z"
     },
     {
       "id": "d94036ab20a571f89bc2e4e739dae272c9bb6edf75c545b5536bda9bd993aae1",
