@@ -1,12 +1,37 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-12T22:58:44.533Z",
+  "updatedAt": "2026-08-12T23:56:52.759Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "a5bafe6810ea4fe569f42a7c011756c042f1193230d375aaf33a83b573121754",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Gallery: 30 shots from our Como contest in N5",
+      "summaryEn": "Pre-season preparations are wrapping up as business begins",
+      "bodyEn": [
+        "Pre-season preparations are wrapping up as business begins",
+        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/c673975eeb53-gettyimages-2290213906.webp",
+      "author": "Dan Godfrey",
+      "publishedAt": "2026-08-12T23:46:48.691Z",
+      "url": "https://www.arsenal.com/news/gallery-30-shots-from-our-como-contest-in-n5-a3fzw0v94uf8",
+      "source": "Arsenal.com",
+      "titleZh": "图集：我们在N5对阵科莫的30张照片",
+      "summaryZh": "季前备战接近尾声，新赛季即将开启。",
+      "bodyZh": [
+        "季前备战接近尾声，新赛季即将开启。",
+        "这是阿森纳官网免费文章的简洁摘要。请打开原始来源查看完整内容。"
+      ],
+      "translationSourceHash": "38a772688e83f8eb211b03a13c7841f36ab6072612940a9954c6e1efb56b8bad",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-12T23:56:52.759Z"
+    },
     {
       "id": "f5892fc38e86e78dddd35fa7055343f4fb437c5f38c0003777b816c128cfc1f1",
       "teamId": "arsenal",
@@ -206,31 +231,6 @@
       "translationSourceHash": "4074702243b0a9c53313556de7e7fb100b48182be34b360df6cebb900b0bc2ee",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-12T14:05:45.523Z"
-    },
-    {
-      "id": "fcb62cb4830b3d9ca9e03f839c89d06b0fa15d99c83d15ed4df09a13dffbd459",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "How to view the solar eclipse safely",
-      "summaryEn": "For supporters attending our pre-season match against Como, a partial solar eclipse will be visible from Emirates Stadium.",
-      "bodyEn": [
-        "For supporters attending our pre-season match against Como, a partial solar eclipse will be visible from Emirates Stadium.",
-        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/a2454bbb212f-gettyimages-1419840746.webp",
-      "author": "Arsenal Media",
-      "publishedAt": "2026-08-12T08:11:20.450Z",
-      "url": "https://www.arsenal.com/news/how-to-view-the-solar-eclipse-safely-aYdzP7d9a3HA",
-      "source": "Arsenal.com",
-      "titleZh": "如何安全观看日食",
-      "summaryZh": "前往酋长球场观看对阵科莫的季前赛时，可见日偏食。",
-      "bodyZh": [
-        "前往酋长球场观看我们对阵科莫的季前赛的球迷，将能看到日偏食。",
-        "这是Arsenal.com免费文章的简明摘要。请打开原始来源阅读完整报道。"
-      ],
-      "translationSourceHash": "5749048554692ef72658ff1574061bf71fbe832a9e96a159bce3a15c386c35e2",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-12T09:23:47.889Z"
     },
     {
       "id": "664e3f6e84f32887eab20effa8e01df13a913fa4fbf29191ff344e5f695c4d8c",
