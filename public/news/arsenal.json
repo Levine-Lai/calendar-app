@@ -1,12 +1,62 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-11T21:01:44.387Z",
+  "updatedAt": "2026-08-12T09:23:47.889Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "fcb62cb4830b3d9ca9e03f839c89d06b0fa15d99c83d15ed4df09a13dffbd459",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "How to view the solar eclipse safely",
+      "summaryEn": "For supporters attending our pre-season match against Como, a partial solar eclipse will be visible from Emirates Stadium.",
+      "bodyEn": [
+        "For supporters attending our pre-season match against Como, a partial solar eclipse will be visible from Emirates Stadium.",
+        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/a2454bbb212f-gettyimages-1419840746.webp",
+      "author": "Arsenal Media",
+      "publishedAt": "2026-08-12T08:11:20.450Z",
+      "url": "https://www.arsenal.com/news/how-to-view-the-solar-eclipse-safely-aYdzP7d9a3HA",
+      "source": "Arsenal.com",
+      "titleZh": "如何安全观看日食",
+      "summaryZh": "前往酋长球场观看对阵科莫的季前赛时，可见日偏食。",
+      "bodyZh": [
+        "前往酋长球场观看我们对阵科莫的季前赛的球迷，将能看到日偏食。",
+        "这是Arsenal.com免费文章的简明摘要。请打开原始来源阅读完整报道。"
+      ],
+      "translationSourceHash": "5749048554692ef72658ff1574061bf71fbe832a9e96a159bce3a15c386c35e2",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-12T09:23:47.889Z"
+    },
+    {
+      "id": "2633fde427dc031310b8fe8c2d920f7e4c4b3b860641c1e5f837914562ae78d6",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Relive these incredible goals v Italian opponents",
+      "summaryEn": "Take in our fantastic goals against the likes of Milan, Inter and Juventus down the years",
+      "bodyEn": [
+        "Take in our fantastic goals against the likes of Milan, Inter and Juventus down the years",
+        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/f012532a282a-rome-italy-thierry-henry-celebrates-scoring-a-goal-for-arsenal-during-the-uefa-c.webp",
+      "author": "Charlie Peat",
+      "publishedAt": "2026-08-12T08:00:00.336Z",
+      "url": "https://www.arsenal.com/news/relive-these-incredible-goals-v-italian-opponents-a3PcD9C8kWbU",
+      "source": "Arsenal.com",
+      "titleZh": "重温对阵意大利对手的精彩进球",
+      "summaryZh": "回顾我们多年来对米兰、国米和尤文的精彩进球。",
+      "bodyZh": [
+        "回顾我们多年来对米兰、国米和尤文等队的精彩进球。",
+        "这是Arsenal.com免费文章的简要摘要。请打开原始来源查看完整报道。"
+      ],
+      "translationSourceHash": "8187700298a8f83e266b584696aee11bd297d268f9d6c3f093a94c5a14a4314d",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-12T09:23:47.276Z"
+    },
     {
       "id": "7c0fd95b5cbe8aedef3d47a6f38117378c27795be07903c1a2bc0a31864a6579",
       "teamId": "arsenal",
@@ -258,31 +308,6 @@
       "translatedAt": "2026-08-11T14:05:10.784Z"
     },
     {
-      "id": "09f3fc8ac175affbfe0a32b33dc440c47302457622abf04e99b80e445670bcd1",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Jenna Nighswonger leaves Arsenal",
-      "summaryEn": "Jenna Nighswonger has completed a permanent move to Bay FC in the National Women’s Soccer League in the United States.",
-      "bodyEn": [
-        "Jenna Nighswonger has completed a permanent move to Bay FC in the National Women’s Soccer League in the United States.",
-        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/27ca979e4ddd-gettyimages-2246973757.webp",
-      "author": "Arsenal Media",
-      "publishedAt": "2026-08-10T16:00:02.325Z",
-      "url": "https://www.arsenal.com/news/jenna-nighswonger-leaves-arsenal-aCx090l0lNCw",
-      "source": "Arsenal.com",
-      "titleZh": "Jenna Nighswonger离开阿森纳",
-      "summaryZh": "Jenna Nighswonger已完成永久转会至美国国家女子足球联赛的湾FC。",
-      "bodyZh": [
-        "Jenna Nighswonger已完成永久转会至美国国家女子足球联赛的湾FC。",
-        "这是阿森纳官网免费文章的简要总结。请打开原始来源查看完整报道。"
-      ],
-      "translationSourceHash": "daa7d8ff474560c3a480985c71375377318c25f3a9d0570acb88e353dc32d418",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-10T16:08:33.702Z"
-    },
-    {
       "id": "ea9e432eb75d9052714f0b82cffe3b01103d653cb3aa2e7c7cd0a9c360ee699e",
       "teamId": "arsenal",
       "teamName": "阿森纳",
@@ -456,31 +481,6 @@
       "translationSourceHash": "d7a18f15fe6b098559c3f58a57208dcf59097290cb4021e50a94fa9d14983fc5",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-10T09:35:39.973Z"
-    },
-    {
-      "id": "784bf1761237404b072d39f8b4f8c8b8b26044bb48070e3d3fc213386dc180d2",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Remembering the time we played France in a friendly",
-      "summaryEn": "Find out the details about when we played France in a friendly on Valentine's Day",
-      "bodyEn": [
-        "Find out the details about when we played France in a friendly on Valentine's Day",
-        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/197fb4631a85-arsenal-v-france-1989.webp",
-      "author": "Jon Spurling",
-      "publishedAt": "2026-08-06T16:00:00.000Z",
-      "url": "https://www.arsenal.com/news/remembering-the-time-we-played-france-in-a-friendly-aChrn3o0xyGp",
-      "source": "Arsenal.com",
-      "titleZh": "回忆我们与法国队的友谊赛",
-      "summaryZh": "了解我们在情人节与法国队友谊赛的细节。",
-      "bodyZh": [
-        "了解我们在情人节与法国队友谊赛的细节。",
-        "这是Arsenal.com免费文章的简短摘要，请打开原始来源查看完整内容。"
-      ],
-      "translationSourceHash": "6093ef453dab34b43ed4221c36ae261f13446e25cff04d48cda0f10db1ac14a2",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-11T15:14:29.496Z"
     },
     {
       "id": "714116619736ac0555bdf76a3851b734dac16570f7dfa520daafcda7eae3c6b8",
