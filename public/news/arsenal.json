@@ -1,12 +1,37 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-12T17:39:51.932Z",
+  "updatedAt": "2026-08-12T21:01:05.293Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "6f6091b5b5531847c1373671303311f6b96e7ce09feb9be112a524a14f8592bd",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Report: Arsenal 1-1 Como (4-3 pens)",
+      "summaryEn": "Find out how we got on during our final pre-season clash of summer 2026",
+      "bodyEn": [
+        "Find out how we got on during our final pre-season clash of summer 2026",
+        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/27d83ed3c308-london-england-myles-lewis-skelly-of-arsenal-celebrates-scoring-his-teams-first.webp",
+      "author": "Charlie Peat",
+      "publishedAt": "2026-08-12T20:32:32.406Z",
+      "url": "https://www.arsenal.com/news/report-arsenal-1-1-como-4-3-pens-aMYn79P6jdJF",
+      "source": "Arsenal.com",
+      "titleZh": "战报：阿森纳1-1科莫（点球4-3）",
+      "summaryZh": "了解我们在2026年夏季最后一场季前赛中的表现。",
+      "bodyZh": [
+        "了解我们在2026年夏季最后一场季前赛中的表现。",
+        "这是Arsenal.com免费文章的简要摘要。打开原始来源以获取完整故事。"
+      ],
+      "translationSourceHash": "1946bdd5e60d928ae7c3676c6441748b8531c561424c80dede7e8df087684d2f",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-12T21:01:05.293Z"
+    },
     {
       "id": "76f701fb0bde4a561f3fa7633af86347b72d5a6b40790e55f37ec29b4d479a1a",
       "teamId": "arsenal",
@@ -156,31 +181,6 @@
       "translationSourceHash": "f4fb40cd0aaa1a1a248c6bae5983743c2f1e6914bdae4b1d257939813b44c731",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-11T16:33:06.478Z"
-    },
-    {
-      "id": "8381752e0a9c66e8bf4bbbf2ae78f4b96c1cf826b13e9082f238f18f704ac0c6",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Gallery: La Manga camp continues for AWFC",
-      "summaryEn": "With the beginning of the Women's Super League season less than a month away, Renée Slegers' team have been working hard at their La Manga pre-season training camp.",
-      "bodyEn": [
-        "With the beginning of the Women's Super League season less than a month away, Renée Slegers' team have been working hard at their La Manga pre-season training camp.",
-        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/b7d51cb62374-ab94767n7csdppe.webp",
-      "author": "Stephen Wright",
-      "publishedAt": "2026-08-11T14:58:03.012Z",
-      "url": "https://www.arsenal.com/news/gallery-la-manga-camp-continues-for-awfc-aVCVu7z6U1MO",
-      "source": "Arsenal.com",
-      "titleZh": "图片集：女足在拉曼加集训营继续进行",
-      "summaryZh": "女足赛季不足一个月开始，球队在拉曼加集训备战。",
-      "bodyZh": [
-        "距离女足超级联赛赛季开始不到一个月，雷纳·斯莱格斯率领的球队在拉曼加季前训练营中刻苦训练。",
-        "这是Arsenal.com免费文章的简要摘要。请查阅原始来源以获取完整故事。"
-      ],
-      "translationSourceHash": "fa1fdf62baa0050ef4b8bb0d9cd8de807ffad3b7814ecf2e7560889a03ba69d3",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-11T15:14:27.958Z"
     },
     {
       "id": "49ab9643bedcfcb28b6cc085f16405eebe61278bab6a6300bd1cabdfa4909c92",
