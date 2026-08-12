@@ -1,12 +1,37 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-12T14:05:47.676Z",
+  "updatedAt": "2026-08-12T15:12:42.678Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "fd9635c541dd5b57f6f897581f8a42337b4265265934739d982ef2ad406b1ab2",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Gallery: Latest training pictures from La Manga",
+      "summaryEn": "Take a look through all the photos from our most recent training session in La Manga!",
+      "bodyEn": [
+        "Take a look through all the photos from our most recent training session in La Manga!",
+        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/5fc3af1be488-ab88439ovjqsaqz.webp",
+      "author": "Stephen Wright",
+      "publishedAt": "2026-08-12T14:58:47.751Z",
+      "url": "https://www.arsenal.com/news/gallery-latest-training-pictures-from-la-manga-aPoJI2M6lKxg",
+      "source": "Arsenal.com",
+      "titleZh": "图集：拉曼加最新训练照片",
+      "summaryZh": "查看我们在拉曼加最新训练的精彩照片！",
+      "bodyZh": [
+        "查看我们在拉曼加最新训练的精彩照片！",
+        "这是Arsenal.com免费文章的简要摘要，请打开原始来源查看完整报道。"
+      ],
+      "translationSourceHash": "f84d64b44ecd1264426d7609f348538bc9e66450463c22ae823452db0297088c",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-12T15:12:42.678Z"
+    },
     {
       "id": "c6ba18ee48b7d5a866aed81df2b5f1489f910765a4c38d5df72d2fdcdd7a10c9",
       "teamId": "arsenal",
@@ -206,31 +231,6 @@
       "translationSourceHash": "caf3ce60dad8dd15f12db0588061610b0f842c05a101abbd75d4bb04fa450a4c",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-11T14:05:04.993Z"
-    },
-    {
-      "id": "0024b880391089539c19f3033156a9468e717fa9e7fb1c59bb3a483ebfe511fb",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Early bird tickets on sale for Man United in WSL",
-      "summaryEn": "Early bird tickets are now on sale for September’s Women’s Super League match against Manchester United.",
-      "bodyEn": [
-        "Early bird tickets are now on sale for September’s Women’s Super League match against Manchester United.",
-        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/87e8e168437c-gettyimages-2255646315-1.webp",
-      "author": "Arsenal Media",
-      "publishedAt": "2026-08-11T13:00:00.000Z",
-      "url": "https://www.arsenal.com/news/early-bird-tickets-on-sale-for-man-united-in-wsl-aNpTv3P8vHsT",
-      "source": "Arsenal.com",
-      "titleZh": "女子英超对阵曼联的早鸟票开售",
-      "summaryZh": "九月女子英超对阵曼联的早鸟票现已开售。",
-      "bodyZh": [
-        "九月女子英超对阵曼联的早鸟票现已开售。",
-        "这是Arsenal.com免费文章的简要摘要。请打开原始来源查看完整报道。"
-      ],
-      "translationSourceHash": "4a878f219f023a24e26a3f814802910f06843e2ad092d3152f47b358bcd85ce7",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-11T14:05:07.867Z"
     },
     {
       "id": "9ee68326021d86fa07f688f8311852440f59573309e605c97a5a9bc62b88f53a",
