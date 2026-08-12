@@ -1,12 +1,37 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-12T10:41:45.068Z",
+  "updatedAt": "2026-08-12T14:05:47.676Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "c6ba18ee48b7d5a866aed81df2b5f1489f910765a4c38d5df72d2fdcdd7a10c9",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Arteta keen to \"attack the next target\"",
+      "summaryEn": "Mikel Arteta has used his programme notes to discuss our ambitions in 2026/27, and give his thoughts on the summer so far",
+      "bodyEn": [
+        "Mikel Arteta has used his programme notes to discuss our ambitions in 2026/27, and give his thoughts on the summer so far",
+        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/07f4b2180a46-london-colney-england-arsenal-manager-mikel-arteta-during-a-training-session-at.webp",
+      "author": "Arsenal Media",
+      "publishedAt": "2026-08-12T12:49:51.731Z",
+      "url": "https://www.arsenal.com/news/arteta-keen-to-attack-the-next-target-agFjj3e0xCvF",
+      "source": "Arsenal.com",
+      "titleZh": "阿尔特塔渴望“进攻下一个目标”",
+      "summaryZh": "阿尔特塔在比赛日指南中谈及2026/27赛季雄心及对夏季工作的看法。",
+      "bodyZh": [
+        "米克尔·阿尔特塔利用他的比赛日指南阐述了我们在2026/27赛季的雄心，并分享了他对目前夏季工作的看法。",
+        "这是Arsenal.com免费文章的简要摘要。请打开原始来源获取完整内容。"
+      ],
+      "translationSourceHash": "4074702243b0a9c53313556de7e7fb100b48182be34b360df6cebb900b0bc2ee",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-12T14:05:45.523Z"
+    },
     {
       "id": "fcb62cb4830b3d9ca9e03f839c89d06b0fa15d99c83d15ed4df09a13dffbd459",
       "teamId": "arsenal",
@@ -233,31 +258,6 @@
       "translatedAt": "2026-08-11T15:14:29.697Z"
     },
     {
-      "id": "ebfba4aa7e0df76ead12fb5b6b65eb2d0ff3f7dcbbf224d0ef65374a5c120250",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Inside Training: Watch women's team in La Manga",
-      "summaryEn": "See what our women’s team have been up to on their pre-season training camp with the latest episode of Inside Training",
-      "bodyEn": [
-        "See what our women’s team have been up to on their pre-season training camp with the latest episode of Inside Training",
-        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/1c66c82a1c02-ab85048huyotlqo.webp",
-      "author": "Stephen Wright",
-      "publishedAt": "2026-08-11T08:59:00.000Z",
-      "url": "https://www.arsenal.com/news/inside-training-watch-womens-team-in-la-manga-avZF32c12DI0",
-      "source": "Arsenal.com",
-      "titleZh": "训练内幕：在拉曼加观看女足",
-      "summaryZh": "最新一期《训练内幕》：看看女足在季前训练营的近况。",
-      "bodyZh": [
-        "通过最新一期《训练内幕》，看看我们的女足在季前训练营都做了些什么。",
-        "本文是阿森纳官网免费文章的摘要。请查看原始来源获取完整故事。"
-      ],
-      "translationSourceHash": "2badd32e686024bcef5a31007e7a7e1eb44e6d99c30a9be4ce6bbed6f08b4bac",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-11T09:13:02.846Z"
-    },
-    {
       "id": "01c658077d0c034788c27cc8c3b6a91970c1bdff21cdad4a6dc5b61897f1915d",
       "teamId": "arsenal",
       "teamName": "阿森纳",
@@ -481,29 +481,29 @@
       "translatedAt": "2026-08-12T10:41:45.067Z"
     },
     {
-      "id": "714116619736ac0555bdf76a3851b734dac16570f7dfa520daafcda7eae3c6b8",
+      "id": "a5b0511fcc209fdd1b5458b46af35de54843fd3750ee4935d98557cb972ae3ed",
       "teamId": "arsenal",
       "teamName": "阿森纳",
-      "titleEn": "How to watch all of our pre-season matches",
-      "summaryEn": "Find out how to watch our pre-season matches wherever you are around the world.",
+      "titleEn": "FPL Focus: Key info for newcomers and veterans",
+      "summaryEn": "Build an invincible Fantasy squad now!",
       "bodyEn": [
-        "Find out how to watch our pre-season matches wherever you are around the world.",
+        "Build an invincible Fantasy squad now!",
         "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
       ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/e5df8f7f0e3e-london-england-arsenal-fans-show-their-support-with-flags-prior-to-the-premier-l.webp",
-      "author": "Arsenal FC",
-      "publishedAt": "2026-08-04T00:10:00.000Z",
-      "url": "https://www.arsenal.com/news/how-to-watch-all-of-our-pre-season-matches-aAYHu8K0fsn7",
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/a858f8febec0-gettyimages-2272063914.webp",
+      "author": "Dan Godfrey",
+      "publishedAt": "2026-07-27T16:10:38.767Z",
+      "url": "https://www.arsenal.com/news/fpl-focus-key-info-for-newcomers-and-veterans-alR6F2Q2RtdN",
       "source": "Arsenal.com",
-      "titleZh": "如何观看我们所有季前赛",
-      "summaryZh": "了解如何观看我们的季前赛，无论身在何处。",
+      "titleZh": "FPL焦点：新手与老手的关键信息",
+      "summaryZh": "现在就组建一支无敌的梦幻球队！",
       "bodyZh": [
-        "了解如何观看我们的季前赛，无论身在何处。",
-        "本文为Arsenal.com免费文章的简要摘要，完整故事请查阅原始来源。"
+        "现在就组建一支无敌的梦幻球队！",
+        "这是阿森纳官网免费文章的简要摘要。请打开原始来源以查看完整故事。"
       ],
-      "translationSourceHash": "ca593d45d9fb93687290514869045302083293ca4934ea443b7cf7f09c9838f6",
+      "translationSourceHash": "d66e5cc1344a58d9fda06b2f8f95519beb82af2bddd7181a17e3613a64ad3053",
       "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-11T19:44:14.208Z"
+      "translatedAt": "2026-08-12T14:05:47.676Z"
     }
   ]
 }
