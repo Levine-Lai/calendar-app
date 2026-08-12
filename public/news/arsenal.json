@@ -1,7 +1,7 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-12T09:23:47.889Z",
+  "updatedAt": "2026-08-12T10:41:45.068Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
@@ -233,31 +233,6 @@
       "translatedAt": "2026-08-11T15:14:29.697Z"
     },
     {
-      "id": "c32681d77ed645404a3cc1210cdecc09b582c41f74b1ac9a0029eb435c5325e3",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Supporters banned for abusive and discriminatory behaviour",
-      "summaryEn": "We can confirm that nine supporters received football banning orders and stadium bans during the 2025/26 season for offences including assault, racism, antisemitism, homophobia and other abusive or intimidating behaviour",
-      "bodyEn": [
-        "We can confirm that nine supporters received football banning orders and stadium bans during the 2025/26 season for offences including assault, racism, antisemitism, homophobia and other abusive or intimidating behaviour",
-        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/ad069ec6e92c-gettyimages-2289734628.webp",
-      "author": "Arsenal Media",
-      "publishedAt": "2026-08-11T10:00:00.000Z",
-      "url": "https://www.arsenal.com/news/supporters-banned-for-abusive-and-discriminatory-behaviour-aebhR9D9Ic2p",
-      "source": "Arsenal.com",
-      "titleZh": "球迷因攻击和歧视行为遭禁赛",
-      "summaryZh": "2025/26赛季九名球迷因攻击和歧视行为遭禁赛。",
-      "bodyZh": [
-        "我们确认，在2025/26赛季，有九名球迷因包括袭击、种族主义、反犹太主义、恐同以及其他辱骂或恐吓行为在内的违法行为被处以足球禁止令和球场禁令。",
-        "这是Arsenal.com免费文章的简要摘要。请打开原始来源以阅读完整故事。"
-      ],
-      "translationSourceHash": "bdf6bf70f33d4911bc96167df4445f081ca8fa9bfbf879bc139430bd3e1f9087",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-11T10:32:24.968Z"
-    },
-    {
       "id": "ebfba4aa7e0df76ead12fb5b6b65eb2d0ff3f7dcbbf224d0ef65374a5c120250",
       "teamId": "arsenal",
       "teamName": "阿森纳",
@@ -481,6 +456,29 @@
       "translationSourceHash": "d7a18f15fe6b098559c3f58a57208dcf59097290cb4021e50a94fa9d14983fc5",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-10T09:35:39.973Z"
+    },
+    {
+      "id": "538a8d66a008e67bf4db9b8a7c0c124484478236b62930140371f492db223386",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Disabled Supporters Information Sunderland (A)",
+      "summaryEn": "",
+      "bodyEn": [
+        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/dd326487c41a-tickets-2526-sunderland-a.webp",
+      "author": "Arsenal FC",
+      "publishedAt": "2026-08-04T09:46:02.246Z",
+      "url": "https://www.arsenal.com/news/disabled-supporters-information-sunderland-a-a0sNY4Y11KHq",
+      "source": "Arsenal.com",
+      "titleZh": "桑德兰（客场）残疾球迷信息",
+      "summaryZh": "阿森纳公布桑德兰客场残疾球迷信息。",
+      "bodyZh": [
+        "这是阿森纳官网免费文章的简洁摘要。请打开原始来源查看完整故事。"
+      ],
+      "translationSourceHash": "ae9d32d5394ebf18d64896f725bccd994771aa746b2678eb32a63a8743e85e91",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-12T10:41:45.067Z"
     },
     {
       "id": "714116619736ac0555bdf76a3851b734dac16570f7dfa520daafcda7eae3c6b8",
