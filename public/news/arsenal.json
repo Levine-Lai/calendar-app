@@ -1,12 +1,37 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-12T16:33:42.818Z",
+  "updatedAt": "2026-08-12T17:39:51.932Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "76f701fb0bde4a561f3fa7633af86347b72d5a6b40790e55f37ec29b4d479a1a",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Team News: Eze returns, Bruno on the bench for Como",
+      "summaryEn": "Find out our starting line-up for our final pre-season clash against Como 1907!",
+      "bodyEn": [
+        "Find out our starting line-up for our final pre-season clash against Como 1907!",
+        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/1d0cfe44fa9c-london-colney-england-eberechi-eze-of-arsenal-during-a-training-session-at-sobha.webp",
+      "author": "Charlie Peat",
+      "publishedAt": "2026-08-12T17:14:54.726Z",
+      "url": "https://www.arsenal.com/news/team-news-eze-returns-bruno-on-the-bench-for-como-ayEE33e5cr2E",
+      "source": "Arsenal.com",
+      "titleZh": "球队新闻：埃泽回归，布鲁诺在对阵科莫的比赛中替补",
+      "summaryZh": "了解我们对阵科莫1907季前赛的首发阵容！",
+      "bodyZh": [
+        "了解我们对阵科莫1907的最后一场季前赛的首发阵容！",
+        "这是Arsenal.com免费文章的简明摘要。请打开原始来源以获取完整报道。"
+      ],
+      "translationSourceHash": "1749555d2387acd4a572e528387488b06d25314faaaebd37933a1ccdffce2816",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-12T17:39:51.931Z"
+    },
     {
       "id": "fd9635c541dd5b57f6f897581f8a42337b4265265934739d982ef2ad406b1ab2",
       "teamId": "arsenal",
@@ -479,31 +504,6 @@
       "translationSourceHash": "ca593d45d9fb93687290514869045302083293ca4934ea443b7cf7f09c9838f6",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-12T16:33:42.818Z"
-    },
-    {
-      "id": "a5b0511fcc209fdd1b5458b46af35de54843fd3750ee4935d98557cb972ae3ed",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "FPL Focus: Key info for newcomers and veterans",
-      "summaryEn": "Build an invincible Fantasy squad now!",
-      "bodyEn": [
-        "Build an invincible Fantasy squad now!",
-        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/a858f8febec0-gettyimages-2272063914.webp",
-      "author": "Dan Godfrey",
-      "publishedAt": "2026-07-27T16:10:38.767Z",
-      "url": "https://www.arsenal.com/news/fpl-focus-key-info-for-newcomers-and-veterans-alR6F2Q2RtdN",
-      "source": "Arsenal.com",
-      "titleZh": "FPL焦点：新手与老手的关键信息",
-      "summaryZh": "现在就组建一支无敌的梦幻球队！",
-      "bodyZh": [
-        "现在就组建一支无敌的梦幻球队！",
-        "这是阿森纳官网免费文章的简要摘要。请打开原始来源以查看完整故事。"
-      ],
-      "translationSourceHash": "d66e5cc1344a58d9fda06b2f8f95519beb82af2bddd7181a17e3613a64ad3053",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-12T14:05:47.676Z"
     }
   ]
 }
