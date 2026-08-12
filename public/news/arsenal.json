@@ -1,12 +1,62 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-12T21:01:05.293Z",
+  "updatedAt": "2026-08-12T22:00:42.153Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "9551e1d6e66bf944d97d8d0ecf80f360cab9ed996e2ce57a4b90f87e2f2b88d9",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Tzolis on pre-season and winning penalty",
+      "summaryEn": "Christos talks through his first pre-season ahead of the Community Shield",
+      "bodyEn": [
+        "Christos talks through his first pre-season ahead of the Community Shield",
+        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/93d0bd884c57-arsenals-greek-striker-christos-tzolis-scores-the-wining-penalty-during-the-pre.webp",
+      "author": "Charlie Peat",
+      "publishedAt": "2026-08-12T21:34:33.902Z",
+      "url": "https://www.arsenal.com/news/tzolis-on-pre-season-and-winning-penalty-awXF94B4XTdq",
+      "source": "Arsenal.com",
+      "titleZh": "措利斯谈季前赛与制胜点球",
+      "summaryZh": "克里斯托斯回顾社区盾前的首次季前赛。",
+      "bodyZh": [
+        "克里斯托斯回顾社区盾前的首次季前赛。",
+        "这是一篇阿森纳官网免费文章的简要摘要，完整故事请查看原始来源。"
+      ],
+      "translationSourceHash": "ef25ad8c704bdf3ec38177a89b1301403eaf35d5a3da61f35ce1fc0fdd126f41",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-12T22:00:42.048Z"
+    },
+    {
+      "id": "82915906b3b97db50aa264f6562c8cf52fcdccec098fc8eec5fc451d08668dfe",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Highlights: Arsenal 1-1 Como (4-3 pens)",
+      "summaryEn": "Watch the best moments from our final pre-season clash with Como",
+      "bodyEn": [
+        "Watch the best moments from our final pre-season clash with Como",
+        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/e19f49fd37a6-london-england-david-raya-of-arsenal-dives-for-the-ball-in-the-penalty-shootout.webp",
+      "author": "Charlie Peat",
+      "publishedAt": "2026-08-12T21:31:09.606Z",
+      "url": "https://www.arsenal.com/news/highlights-arsenal-1-1-como-4-3-pens-aKVmL6j6VPWQ",
+      "source": "Arsenal.com",
+      "titleZh": "集锦：阿森纳1-1科莫（点球4-3）",
+      "summaryZh": "观看季前赛末战对阵科莫的最佳时刻。",
+      "bodyZh": [
+        "观看我们季前赛最后一场对阵科莫的最佳时刻。",
+        "这是阿森纳官网文章的简要摘要，完整故事请查阅原始来源。"
+      ],
+      "translationSourceHash": "d0ed16f9816051106418d6c9b58e8bbda1ef9531554a7e587725d438c17a3d39",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-12T22:00:42.153Z"
+    },
     {
       "id": "6f6091b5b5531847c1373671303311f6b96e7ce09feb9be112a524a14f8592bd",
       "teamId": "arsenal",
@@ -156,56 +206,6 @@
       "translationSourceHash": "8187700298a8f83e266b584696aee11bd297d268f9d6c3f093a94c5a14a4314d",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-12T09:23:47.276Z"
-    },
-    {
-      "id": "7c0fd95b5cbe8aedef3d47a6f38117378c27795be07903c1a2bc0a31864a6579",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Go Inside Training ahead of final pre-season clash",
-      "summaryEn": "Watch our Gunners in action before we take on Como at Emirates Stadium",
-      "bodyEn": [
-        "Watch our Gunners in action before we take on Como at Emirates Stadium",
-        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/0f083eb34bd3-dsc97578ugpaimc.webp",
-      "author": "Connor Booth",
-      "publishedAt": "2026-08-11T16:00:31.949Z",
-      "url": "https://www.arsenal.com/news/go-inside-training-ahead-of-final-pre-season-clash-amPXZ3p8fFrA",
-      "source": "Arsenal.com",
-      "titleZh": "季前赛最后一战前，走进训练现场",
-      "summaryZh": "在酋长球场迎战科莫前，观看枪手训练。",
-      "bodyZh": [
-        "在酋长球场迎战科莫前，观看我们枪手的训练表现。",
-        "这是Arsenal.com免费文章的简要摘要。如需完整故事，请打开原始来源。"
-      ],
-      "translationSourceHash": "f4fb40cd0aaa1a1a248c6bae5983743c2f1e6914bdae4b1d257939813b44c731",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-11T16:33:06.478Z"
-    },
-    {
-      "id": "49ab9643bedcfcb28b6cc085f16405eebe61278bab6a6300bd1cabdfa4909c92",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "England and Spain stars return to training",
-      "summaryEn": "We were back up to a full contingent in training ahead of our clash with Como",
-      "bodyEn": [
-        "We were back up to a full contingent in training ahead of our clash with Como",
-        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/2603e481462b-dsc9375wjcuefrq.webp",
-      "author": "Arsenal Media",
-      "publishedAt": "2026-08-11T14:00:00.000Z",
-      "url": "https://www.arsenal.com/news/england-and-spain-stars-return-to-training-akq8e3X8QqDT",
-      "source": "Arsenal.com",
-      "titleZh": "英格兰和西班牙球星回归训练",
-      "summaryZh": "对阵科莫前，我们恢复满员训练。",
-      "bodyZh": [
-        "对阵科莫前，我们恢复满员训练。",
-        "这是一篇Arsenal.com免费文章的简要摘要。请打开原始来源以查看完整报道。"
-      ],
-      "translationSourceHash": "5d43effc1f23977a91b25589a8b58c646dd2ffa897866ef9697932cf8cdaa89a",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-11T15:14:26.637Z"
     },
     {
       "id": "664e3f6e84f32887eab20effa8e01df13a913fa4fbf29191ff344e5f695c4d8c",
