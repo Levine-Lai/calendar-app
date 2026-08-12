@@ -572,7 +572,7 @@ function setAppUpdateStatus(message, isError = false) {
 }
 
 async function openAppUpdateDownload() {
-  const url = AppUpdate?.normalizeHttpsUrl(appUpdateDownloadUrl);
+  const url = AppUpdate?.toDownloadPageUrl(appUpdateDownloadUrl);
   if (!url) {
     setAppUpdateStatus("新版下载地址无效", true);
     return;

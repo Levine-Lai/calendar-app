@@ -26,6 +26,23 @@ test("natural language custom schedule swaps teams for an away fixture", () => {
   assert.equal(draft.time, "10:00");
 });
 
+test("custom schedule accepts repeated Chinese and English punctuation", () => {
+  const draft = core.parseScheduleDescription(
+    "请添加。。。‘阿森纳’...在 8 月 26 日晚上 8 点……主场打...“赫罗纳”？？？",
+    { referenceDate: new Date(2026, 7, 5) }
+  );
+  assert.deepEqual(draft.missing, []);
+  assert.equal(draft.date, "2026-08-26");
+  assert.equal(draft.time, "20:00");
+  assert.equal(draft.homeTeam, "阿森纳");
+  assert.equal(draft.awayTeam, "赫罗纳");
+});
+
+test("punctuation-only custom schedule remains incomplete", () => {
+  const draft = core.parseScheduleDescription("。。。...……？？？");
+  assert.deepEqual(draft.missing, ["日期", "开赛时间", "双方球队"]);
+});
+
 test("custom schedule asks for omitted details instead of inventing them", () => {
   const draft = core.parseScheduleDescription(
     "8 月 26 日阿森纳主场打赫罗纳",

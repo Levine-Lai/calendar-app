@@ -6,6 +6,7 @@ const {
   parseOfficialSitemap,
   parseOfficialArticle,
   parseGuardianFeed,
+  parseGuardianArticle,
   mergeArsenalSources,
   buildArsenalStaticNewsUpdate
 } = require("./arsenal-news-core");
@@ -15,7 +16,7 @@ const root = path.resolve(__dirname, "..", "..");
 const outputFile = path.join(root, "public", "news", "arsenal.json");
 const MAX_RESPONSE_BYTES = 1024 * 1024;
 
-async function fetchText(url, accept, timeoutMs = 20000, fetchImpl = fetch) {
+async function fetchText(url, accept, timeoutMs = 20000, fetchImpl = fetch, maxResponseBytes = MAX_RESPONSE_BYTES) {
   let lastError = null;
   for (let attempt = 0; attempt < 3; attempt += 1) {
     const controller = new AbortController();
@@ -31,9 +32,9 @@ async function fetchText(url, accept, timeoutMs = 20000, fetchImpl = fetch) {
       });
       if (!response.ok) throw new Error(`${new URL(url).hostname} returned ${response.status}`);
       const declaredLength = Number(response.headers?.get?.("content-length") || 0);
-      if (declaredLength > MAX_RESPONSE_BYTES) throw new Error("response exceeded 1 MB");
+      if (declaredLength > maxResponseBytes) throw new Error("response exceeded the configured size limit");
       const text = await response.text();
-      if (Buffer.byteLength(text, "utf8") > MAX_RESPONSE_BYTES) throw new Error("response exceeded 1 MB");
+      if (Buffer.byteLength(text, "utf8") > maxResponseBytes) throw new Error("response exceeded the configured size limit");
       return text;
     } catch (error) {
       lastError = error;
@@ -90,7 +91,21 @@ async function fetchGuardianNews(fetchImpl = fetch) {
   );
   const items = parseGuardianFeed(xml);
   if (!items.length) throw new Error("Guardian Arsenal RSS did not contain valid items");
-  return items;
+  return mapWithConcurrency(items.slice(0, 8), 2, async (item) => {
+    try {
+      const html = await fetchText(
+        item.url,
+        "text/html,application/xhtml+xml",
+        20000,
+        fetchImpl,
+        3 * 1024 * 1024
+      );
+      return parseGuardianArticle(html, item);
+    } catch (error) {
+      process.stderr.write(`Guardian article body unavailable: ${item.url} (${error.message})\n`);
+      return item;
+    }
+  });
 }
 
 function readPreviousPayload() {

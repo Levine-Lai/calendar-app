@@ -1,13 +1,13 @@
 # 观赛日记 Agent 工程交接
 
-最后核对：2026-08-10
+最后核对：2026-08-12
 项目目录：`D:\Codex\calendar-app`  
 仓库：`Levine-Lai/calendar-app`  
 包名：`com.local.sportscalendar`
 
 ## 当前可交付状态
 
-- 当前源码：`2.3.1 / versionCode 43`，已打包并发布；Cloudflare Worker 已部署，客户端 endpoint 已指向 Worker 且已通过真实请求验证。
+- 当前源码：`2.3.2 / versionCode 44`，尚未打包；Cloudflare Worker 已部署，客户端 endpoint 已指向 Worker 且已通过真实请求验证。
 - 2.3.1 当前还包含：首页“今日赛程”暂时移除、阿森纳双源自动新闻、APK 本地阿森纳队徽、组件2完整图片与快速刷新、新闻语言按钮无位移/无点击高亮、文章标题顶部留白清理，以及更新下载和双击删除修复。
 - 本机最新 APK：`2.3.1 / versionCode 43`。
 - GitHub 最新已发布 APK：`2.3.1 / versionCode 43`。
@@ -32,12 +32,18 @@
 
 ## 本次交接已补齐
 
+- 2.3.2 移除 Web 全屏开屏动画与 Android 热启动重播逻辑；`launch-runner.gif` 现在作为左上角菜单按钮显示。
+- 赛程管理与智能添加赛程的 DOM 入口用 `hidden` 暂时隐藏，相关本地解析、Cloudflare Worker、语音桥接和用户数据均保留。
+- Arsenal.com 正文从 `__NEXT_DATA__.props.pageProps.article.articleBody` 抽取，正文 DOM 作为兜底；Guardian RSS 会继续尝试抓取公开文章页。内置 Arsenal 缓存已更新为完整官网正文及逐段中文翻译。
+- 更新按钮把 GitHub APK 资源地址转换为 Release 页面，并通过 Android `ACTION_VIEW` 默认浏览器打开；不再使用会被部分 vivo 系统错误分流的 APK 直链/自建 chooser 组合。
+- 北京时间 00:00–08:59 静默逻辑已从服务端发送、本机轮询与 FCM 接收三处删除，新闻通知恢复全天推送。
+
 - 日历每日详情中的每场比赛都可单独删除；点击后必须二次确认。删除记录会保存在 `dismissedEventIds`，并在以后刷新已导入赛程时持续过滤同一赛事 ID，同时同步桌面组件。
 
 - 旧交接文档基于 `2.2.9` 和已不存在的 `D:\l\78\calendar`；本文件以当前目录为准。
 - 组件2已从旧 2×2 比赛详情卡片改为 4×3 最近蓝鸟新闻卡片。
 - 组件2大图贴住顶部并带圆角，标题保持 19sp 两行，只显示最新一条；图片以 `fitCenter` 完整展示，不再中心裁掉边缘。
-- 组件2已移除 `StackView`，Provider 直接装载最新一条新闻；图片和标题按 2:1 分配高度，不再出现系统卡片内缩。
+- 组件2已移除 `StackView`，Provider 直接装载最新一条新闻；图片和标题按约 5:2 分配高度，不再出现系统卡片内缩。
 - 组件2每 15 分钟独立刷新，Raw/jsDelivr 并行请求；主动刷新使用 expedited WorkManager，按发布时间缓存最新一条新闻。
 - 新闻文章只允许 MLB 官方 HTTPS 链接，图片只允许 `img.mlbstatic.com`。
 - 图片和标题缓存在 App 内部目录；更新失败保留旧缓存。
@@ -45,9 +51,9 @@
 - 已删除 `SportsDetailWidgetService` 和旧比赛详情 item；组件1与组件2的刷新任务已解耦。
 - 组件1跨日期实时快照按日期保存，切换明日/后日不会被其他日期覆盖。
 - 首页偏好、三个统计框、文件导入和冗余新闻成功状态已删除。
-- App 启动显示 1.5 秒蓝色背景奔跑 GIF，并以 220ms 淡出。
+- App 不再显示全屏奔跑 GIF；素材已改为左上角菜单按钮。
 - 所有 Web 组件和文字阴影已通过全局规则移除；Android 桌面组件没有使用 elevation 阴影。
-- 冷启动、桌面图标、系统最近任务、组件、通知和后台热启动统一调用同一个可重复播放的开屏控制器；目标新闻等动画结束后再打开。
+- 通知和组件进入 App 时直接处理目标页面，不再经过开屏动画或延迟计时。
 - Android 原生启动页和 WebView 首帧都使用 `#C5E5F8` 纯蓝背景，原生启动图标改为透明占位，避免启动阶段闪图标或闪米色。
 - ESPN 足球整季赛程最多按 45 天分段、最多 3 段并发获取；每段保留请求重试。CFA JSONP 也有重试，球队目录为空时可从赛程反推球队。
 - 首页日历上方的“今日比赛”列表当前已暂时移除；桌面组件1在没有已保存选择时默认显示明天。
@@ -58,7 +64,7 @@
 - README 已更新到当前产品形态。
 - 新闻后台 `fast-xml-parser` 已升级至 `5.10.1`，生产依赖审计为 0。
 - 新闻后台间接依赖 `undici` 已由 7.28.0 升级为 7.29.0，修复 2026-08-05 审计发现的高危公告；生产依赖审计恢复为 0。
-- Web 构建会排除跑步试验 GIF/精灵表，只把正式开屏 GIF 放入 APK。
+- Web 构建会排除跑步试验 GIF/精灵表，只把正式菜单按钮 GIF 放入 APK。
 - Android 构建会先删除精确的旧输出 APK，避免重复签名导致包体膨胀。
 
 ## 两个桌面组件
@@ -81,13 +87,13 @@
 - 每 15 分钟独立更新；网络失败保留缓存。
 - 不要恢复 `SportsDetailWidgetService`。
 
-## 开屏动画
+## 左上角奔跑菜单按钮
 
 - 原始素材：`Running- Raynaud.gif`。
 - 正式素材：`public/assets/branding/launch-runner.gif`。
-- 正式 GIF 素材：512×512、38 帧、3000ms、845,504 字节；页面只展示前 1.5 秒。
-- 页面计时：`public/launch-animation.js`。
-- Android 启动背景：`#C5E5F8`。
+- 正式 GIF 素材：512×512、38 帧、3000ms、845,504 字节；由 `#menuToggle` 内的 `.menu-runner` 循环展示。
+- `public/launch-animation.js` 已删除，不要恢复全屏计时器。
+- Android 必需的系统启动背景：`#FBF4EA`，与首页底色一致且不显示动画图标。
 - `scripts/prepare-launch-gif.py` 可复用来裁剪后续 GIF。
 
 ## 当前验证基线

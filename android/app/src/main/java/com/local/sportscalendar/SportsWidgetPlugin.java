@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
+import android.provider.Browser;
 import android.os.Build;
 import android.os.Bundle;
 import android.speech.RecognitionListener;
@@ -173,8 +174,13 @@ public class SportsWidgetPlugin extends Plugin {
             try {
                 Intent browserIntent = new Intent(Intent.ACTION_VIEW, uri);
                 browserIntent.addCategory(Intent.CATEGORY_BROWSABLE);
-                Intent chooser = Intent.createChooser(browserIntent, "使用浏览器下载更新");
-                getActivity().startActivity(chooser);
+                browserIntent.putExtra(Browser.EXTRA_APPLICATION_ID, getActivity().getPackageName());
+                browserIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                if (browserIntent.resolveActivity(getActivity().getPackageManager()) == null) {
+                    call.reject("手机中没有可打开 HTTPS 下载页的浏览器");
+                    return;
+                }
+                getActivity().startActivity(browserIntent);
                 call.resolve();
             } catch (RuntimeException error) {
                 call.reject("无法启动下载浏览器，请确认手机已安装浏览器", error);

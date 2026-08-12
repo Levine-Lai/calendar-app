@@ -50,6 +50,10 @@ test("bundled Arsenal framework contains readable official stories", () => {
   assert.ok(payload.items.some((item) => item.source === "Arsenal.com"));
   assert.ok(payload.items.every((item) => ["Arsenal.com", "The Guardian"].includes(item.source)));
   assert.ok(payload.items.every((item) => item.bodyEn.length && item.bodyZh.length));
+  assert.ok(payload.items.some((item) => item.source === "Arsenal.com" && item.bodyEn.length >= 8));
+  assert.ok(payload.items
+    .filter((item) => item.source === "Arsenal.com")
+    .every((item) => item.bodyEn.length === item.bodyZh.length));
 });
 
 test("team news payload is sorted and deduplicated", () => {

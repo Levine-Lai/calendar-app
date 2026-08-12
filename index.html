@@ -4,15 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>体育迷日历</title>
-    <style>html,body{margin:0;min-height:100%;background:#fbf4ea;color:#16120f}body.launch-active{background:#c5e5f8}.launch-animation{position:fixed;inset:0;z-index:9999;display:grid;place-items:center;background:#c5e5f8}.launch-animation img{display:block;width:min(82vw,512px);height:auto;max-height:76vh;object-fit:contain;image-rendering:pixelated}</style>
-    <link rel="stylesheet" href="public/styles.css?v=2.3.1">
-    <script src="public/launch-animation.js?v=2.3.1" defer></script>
+    <style>html,body{margin:0;min-height:100%;background:#fbf4ea;color:#16120f}</style>
+    <link rel="stylesheet" href="public/styles.css?v=2.3.2">
   </head>
-  <body class="launch-active">
-    <div class="launch-animation" id="launchAnimation" role="status" aria-live="polite" aria-label="应用正在启动">
-      <img src="public/assets/branding/launch-runner.gif" alt="" width="512" height="512">
-    </div>
-
+  <body>
     <main class="app-shell">
       <aside class="sidebar" id="sidebar" aria-label="赛程设置" aria-hidden="true">
         <section class="masthead" aria-label="应用标题">
@@ -24,7 +19,7 @@
           </button>
         </section>
 
-        <section class="panel manage-panel">
+        <section class="panel manage-panel" hidden aria-hidden="true">
           <div class="section-title">
             <span>赛程管理</span>
           </div>
@@ -32,10 +27,9 @@
             <button class="secondary-button" id="updateImportedBtn">更新</button>
             <button class="danger-button" id="deleteImportedBtn">删除</button>
           </div>
-          <div class="status-line" id="statusLine" role="status"></div>
         </section>
 
-        <section class="panel custom-schedule-panel" aria-labelledby="customScheduleHeading">
+        <section class="panel custom-schedule-panel" aria-labelledby="customScheduleHeading" hidden aria-hidden="true">
           <div class="section-title">
             <span id="customScheduleHeading">智能添加赛程</span>
           </div>
@@ -68,12 +62,13 @@
             <div class="team-grid" id="teamGrid"></div>
           </div>
           <button class="primary-button" id="importLeagueBtn">导入该球队全部赛程</button>
+          <div class="status-line" id="statusLine" role="status"></div>
         </section>
 
         <section class="panel app-update-panel" aria-labelledby="appUpdateTitle">
           <div class="section-title">
             <span id="appUpdateTitle">应用更新</span>
-            <strong class="app-version" id="currentAppVersion">v2.3.1</strong>
+            <strong class="app-version" id="currentAppVersion">v2.3.2</strong>
           </div>
           <p class="app-update-status" id="appUpdateStatus" role="status" aria-live="polite">点击按钮检查是否有新版本</p>
           <ul class="app-update-notes" id="appUpdateNotes" hidden></ul>
@@ -95,7 +90,7 @@
       <section class="workspace">
         <header class="topbar">
           <button class="icon-button menu-button" id="menuToggle" title="打开菜单" aria-label="打开菜单" aria-controls="sidebar" aria-expanded="false">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+            <img class="menu-runner" src="public/assets/branding/launch-runner.gif" alt="" width="48" height="48">
           </button>
           <div>
             <p class="eyebrow" id="todayLabel"></p>
@@ -260,15 +255,15 @@
       </section>
     </div>
 
-    <script src="public/calendar-core.js?v=2.3.1"></script>
-    <script src="public/calendar-storage.js?v=2.3.1"></script>
-    <script src="public/calendar-image-cache.js?v=2.3.1"></script>
-    <script src="public/custom-schedule-core.js?v=2.3.1"></script>
-    <script src="public/custom-schedule-agent-config.js?v=2.3.1"></script>
-    <script src="public/update-config.js?v=2.3.1"></script>
-    <script src="public/app-update.js?v=2.3.1"></script>
-    <script src="public/team-news-config.js?v=2.3.1"></script>
-    <script src="public/team-news-core.js?v=2.3.1"></script>
-    <script src="public/app.js?v=2.3.1"></script>
+    <script src="public/calendar-core.js?v=2.3.2"></script>
+    <script src="public/calendar-storage.js?v=2.3.2"></script>
+    <script src="public/calendar-image-cache.js?v=2.3.2"></script>
+    <script src="public/custom-schedule-core.js?v=2.3.2"></script>
+    <script src="public/custom-schedule-agent-config.js?v=2.3.2"></script>
+    <script src="public/update-config.js?v=2.3.2"></script>
+    <script src="public/app-update.js?v=2.3.2"></script>
+    <script src="public/team-news-config.js?v=2.3.2"></script>
+    <script src="public/team-news-core.js?v=2.3.2"></script>
+    <script src="public/app.js?v=2.3.2"></script>
   </body>
 </html>

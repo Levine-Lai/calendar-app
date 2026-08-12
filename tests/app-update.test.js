@@ -20,6 +20,15 @@ test("manifest accepts only HTTPS download links and bounded notes", () => {
   assert.deepEqual(manifest.notes, ["修复一", "修复二"]);
 });
 
+test("GitHub APK assets open their release page instead of invoking the package installer", () => {
+  assert.equal(
+    update.toDownloadPageUrl("https://github.com/Levine-Lai/calendar-app/releases/download/v2.3.1/calendar.apk"),
+    "https://github.com/Levine-Lai/calendar-app/releases/tag/v2.3.1"
+  );
+  assert.equal(update.toDownloadPageUrl("https://downloads.example.com/calendar.apk"), "https://downloads.example.com/calendar.apk");
+  assert.equal(update.toDownloadPageUrl("http://example.com/calendar.apk"), "");
+});
+
 test("update service falls back when one endpoint fails", async () => {
   const fetchImpl = async (url) => {
     if (url.includes("first.example")) return { ok: false, status: 503, headers: new Map(), text: async () => "" };

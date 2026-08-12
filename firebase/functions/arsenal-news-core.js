@@ -134,6 +134,44 @@ function schemaAuthor(schema) {
   return typeof author === "string" ? author : author?.name;
 }
 
+function parseNextData($) {
+  const source = $("#__NEXT_DATA__").text();
+  if (!source || source.length > 900_000) return null;
+  try {
+    return JSON.parse(source);
+  } catch {
+    return null;
+  }
+}
+
+function textFromHtmlFragment(value) {
+  const source = String(value || "");
+  return source ? load(`<main>${source}</main>`)("main").text() : "";
+}
+
+function extractOfficialArticleParagraphs($) {
+  const nextArticle = parseNextData($)?.props?.pageProps?.article;
+  const blocks = asArray(nextArticle?.articleBody);
+  const structuredParagraphs = blocks
+    .filter((block) => block?.type === "TEXT")
+    .map((block) => block.innerText || textFromHtmlFragment(block.html))
+    .filter(Boolean);
+  const normalizedStructured = normalizeArticleParagraphs(structuredParagraphs);
+  if (normalizedStructured.length) return normalizedStructured;
+
+  const selectors = [
+    "main [class*='Page_page_normal_content'] [class*='Text_text'] p",
+    "main [class*='Text_text'] p",
+    "main article p"
+  ];
+  for (const selector of selectors) {
+    const paragraphs = $(selector).map((_, element) => $(element).text()).get();
+    const normalized = normalizeArticleParagraphs(paragraphs);
+    if (normalized.length) return normalized;
+  }
+  return [];
+}
+
 function parseOfficialArticle(html, sitemapEntry = {}) {
   const source = String(html || "");
   if (!source || Buffer.byteLength(source, "utf8") > 1024 * 1024) return null;
@@ -151,16 +189,14 @@ function parseOfficialArticle(html, sitemapEntry = {}) {
   const publishedAt = normalizeIsoDate(schema.datePublished || sitemapEntry.modifiedAt);
   const imageUrl = normalizeArsenalImageUrl(firstSchemaImage(schema) || $("meta[property='og:image']").attr("content"));
   if (!url || !titleEn || !publishedAt || !imageUrl) return null;
+  const articleParagraphs = extractOfficialArticleParagraphs($);
   return {
     id: stableNewsId(url),
     teamId: TEAM_ID,
     teamName: TEAM_NAME,
     titleEn,
     summaryEn,
-    bodyEn: normalizeArticleParagraphs([
-      summaryEn,
-      "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
-    ]),
+    bodyEn: articleParagraphs.length ? articleParagraphs : normalizeArticleParagraphs([summaryEn]),
     imageUrl,
     author: boundedText($("meta[name='author']").attr("content") || schemaAuthor(schema) || "Arsenal FC", 80),
     publishedAt,
@@ -204,10 +240,7 @@ function parseGuardianFeed(xml) {
       teamName: TEAM_NAME,
       titleEn,
       summaryEn,
-      bodyEn: normalizeArticleParagraphs([
-        summaryEn,
-        "Open the original Guardian article for the complete free report and author context."
-      ]),
+      bodyEn: normalizeArticleParagraphs([summaryEn]),
       imageUrl,
       author: boundedText(textValue(raw?.["dc:creator"]) || textValue(raw?.author) || "The Guardian", 80),
       publishedAt,
@@ -216,6 +249,44 @@ function parseGuardianFeed(xml) {
     });
   });
   return items.sort((left, right) => Date.parse(right.publishedAt) - Date.parse(left.publishedAt)).slice(0, 20);
+}
+
+function extractGuardianArticleParagraphs($, schema = {}) {
+  const selectors = [
+    "#maincontent [data-gu-name='body'] p",
+    "#maincontent [data-component='ArticleBody'] p",
+    "#maincontent article p",
+    "article [data-gu-name='body'] p"
+  ];
+  for (const selector of selectors) {
+    const paragraphs = $(selector).map((_, element) => $(element).text()).get();
+    const normalized = normalizeArticleParagraphs(paragraphs);
+    if (normalized.length) return normalized;
+  }
+  const schemaBody = typeof schema.articleBody === "string"
+    ? schema.articleBody.split(/\n{2,}/)
+    : [];
+  return normalizeArticleParagraphs(schemaBody);
+}
+
+function parseGuardianArticle(html, feedItem = {}) {
+  const source = String(html || "");
+  if (!source || Buffer.byteLength(source, "utf8") > 3 * 1024 * 1024) return feedItem;
+  const $ = load(source);
+  const schema = findNewsArticleSchema($) || {};
+  const canonicalUrl = normalizeGuardianUrl(
+    schema?.mainEntityOfPage?.["@id"]
+      || schema?.url
+      || $("link[rel='canonical']").attr("href")
+      || feedItem.url
+  );
+  if (!canonicalUrl || (feedItem.url && canonicalUrl !== normalizeGuardianUrl(feedItem.url))) return feedItem;
+  const paragraphs = extractGuardianArticleParagraphs($, schema);
+  if (!paragraphs.length) return feedItem;
+  return {
+    ...feedItem,
+    bodyEn: paragraphs
+  };
 }
 
 function normalizeStoredItem(item) {
@@ -247,6 +318,15 @@ function normalizeStoredItem(item) {
   };
 }
 
+function hasCompleteGuardianBody(item) {
+  if (item?.source !== "The Guardian") return true;
+  const paragraphs = normalizeArticleParagraphs(item.bodyEn);
+  const containsLegacyExcerptNotice = paragraphs.some((paragraph) => (
+    paragraph === "Open the original Guardian article for the complete free report and author context."
+  ));
+  return paragraphs.length >= 2 && !containsLegacyExcerptNotice;
+}
+
 function mergeArsenalSources(officialItems, guardianItems, previousItems = [], availability = {}) {
   const officialAvailable = availability.official !== false;
   const guardianAvailable = availability.guardian !== false;
@@ -255,8 +335,8 @@ function mergeArsenalSources(officialItems, guardianItems, previousItems = [], a
     ? asArray(officialItems).map(normalizeStoredItem).filter(Boolean)
     : previous.filter((item) => item.source === "Arsenal.com");
   const guardian = guardianAvailable
-    ? asArray(guardianItems).map(normalizeStoredItem).filter(Boolean)
-    : previous.filter((item) => item.source === "The Guardian");
+    ? asArray(guardianItems).map(normalizeStoredItem).filter(Boolean).filter(hasCompleteGuardianBody)
+    : previous.filter((item) => item.source === "The Guardian").filter(hasCompleteGuardianBody);
   const deduped = new Map();
   [...official, ...guardian].forEach((item) => {
     const existing = deduped.get(item.url);
@@ -307,6 +387,7 @@ module.exports = {
   parseOfficialSitemap,
   parseOfficialArticle,
   parseGuardianFeed,
+  parseGuardianArticle,
   mergeArsenalSources,
   buildArsenalStaticNewsUpdate
 };

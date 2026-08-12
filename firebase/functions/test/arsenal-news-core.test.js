@@ -4,6 +4,7 @@ const {
   parseOfficialSitemap,
   parseOfficialArticle,
   parseGuardianFeed,
+  parseGuardianArticle,
   mergeArsenalSources,
   buildArsenalStaticNewsUpdate
 } = require("../arsenal-news-core");
@@ -28,7 +29,7 @@ const guardianItem = {
   teamName: "阿森纳",
   titleEn: "Guardian Arsenal report",
   summaryEn: "Guardian summary.",
-  bodyEn: ["Guardian summary."],
+  bodyEn: ["Guardian complete paragraph one.", "Guardian complete paragraph two."],
   imageUrl: "https://media.guim.co.uk/example/story.jpg",
   author: "Reporter",
   publishedAt: "2026-08-10T07:00:00.000Z",
@@ -60,11 +61,38 @@ test("official Arsenal article parser requires free structured metadata", () => 
       image: ["https://assets.arsenal.com/prod/images/xl_landscape/story.webp"],
       isAccessibleForFree: true
     })}</script>
+    <script id="__NEXT_DATA__" type="application/json">${JSON.stringify({
+      props: {
+        pageProps: {
+          article: {
+            articleBody: [
+              { type: "HEADER", title: "Arsenal story" },
+              { type: "TEXT", innerText: "The complete first paragraph." },
+              { type: "TEXT", html: "<p>The <strong>complete second paragraph</strong>.</p>" }
+            ]
+          }
+        }
+      }
+    })}</script>
   </head></html>`);
   assert.equal(item.titleEn, "Arsenal story");
   assert.equal(item.source, "Arsenal.com");
   assert.equal(item.author, "Stephen Wright");
-  assert.equal(item.bodyEn.length, 2);
+  assert.deepEqual(item.bodyEn, ["The complete first paragraph.", "The complete second paragraph."]);
+});
+
+test("Guardian article parser replaces the RSS excerpt with complete body paragraphs", () => {
+  const feedItem = {
+    ...guardianItem,
+    bodyEn: ["RSS excerpt."]
+  };
+  const item = parseGuardianArticle(`<!doctype html><html><head>
+    <link rel="canonical" href="${feedItem.url}">
+  </head><body><main id="maincontent"><article><div data-gu-name="body">
+    <p>Complete Guardian paragraph one.</p>
+    <p>Complete Guardian paragraph two.</p>
+  </div></article></main></body></html>`, feedItem);
+  assert.deepEqual(item.bodyEn, ["Complete Guardian paragraph one.", "Complete Guardian paragraph two."]);
 });
 
 test("Guardian Arsenal RSS produces free-source cards with images", () => {
@@ -88,6 +116,18 @@ test("dual-source merge retains cached source when one provider is unavailable",
     guardian: true
   });
   assert.deepEqual(merged.map((item) => item.source).sort(), ["Arsenal.com", "The Guardian"]);
+});
+
+test("dual-source merge hides Guardian RSS excerpts until the article body is available", () => {
+  const excerptOnly = {
+    ...guardianItem,
+    bodyEn: ["Guardian summary."]
+  };
+  const merged = mergeArsenalSources([officialItem], [excerptOnly], [], {
+    official: true,
+    guardian: true
+  });
+  assert.deepEqual(merged.map((item) => item.source), ["Arsenal.com"]);
 });
 
 test("Arsenal static payload advertises both server-cache sources", () => {

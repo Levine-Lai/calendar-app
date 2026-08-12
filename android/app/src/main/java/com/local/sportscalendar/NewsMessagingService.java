@@ -32,8 +32,6 @@ public class NewsMessagingService extends FirebaseMessagingService {
     public void onMessageReceived(RemoteMessage message) {
         super.onMessageReceived(message);
         if (!TeamNewsPushManager.isEnabled(this)) return;
-        if (TeamNewsPushManager.isBeijingQuietHours()) return;
-
         String title = message.getNotification() == null ? "" : message.getNotification().getTitle();
         String body = message.getNotification() == null ? "" : message.getNotification().getBody();
         if (title == null || title.trim().isEmpty()) title = message.getData().get("title");
@@ -57,7 +55,6 @@ public class NewsMessagingService extends FirebaseMessagingService {
         String newsId
     ) {
         createNotificationChannel(context);
-        if (TeamNewsPushManager.isBeijingQuietHours()) return false;
         if (!canShowNotifications(context)) return false;
         NotificationManagerCompat notificationManager = NotificationManagerCompat.from(context);
         String safeTitle = String.valueOf(title == null ? "" : title).trim();

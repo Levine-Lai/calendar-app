@@ -10,6 +10,14 @@
     ["零", 0], ["〇", 0], ["一", 1], ["二", 2], ["两", 2], ["三", 3], ["四", 4],
     ["五", 5], ["六", 6], ["七", 7], ["八", 8], ["九", 9], ["十", 10]
   ]);
+  const sentencePunctuationPattern = /[，,。．.、；;！!？?…⋯：:]+/gu;
+  const wrapperPunctuationPattern = /[“”‘’"'「」『』【】\[\]（）()]+/gu;
+
+  function normalizeSentencePunctuation(value) {
+    return String(value || "")
+      .replace(sentencePunctuationPattern, " ")
+      .replace(wrapperPunctuationPattern, " ");
+  }
 
   function parseChineseNumber(value) {
     const text = String(value || "").trim();
@@ -23,8 +31,7 @@
   }
 
   function cleanTeamName(value) {
-    return String(value || "")
-      .replace(/[，,。；;！!]+/g, " ")
+    return normalizeSentencePunctuation(value)
       .replace(/^(?:请|帮我|添加|安排|记录|新增|一场|有一场|比赛|赛程|在)\s*/g, "")
       .replace(/\s*(?:有一场|一场|比赛|赛程|在)$/g, "")
       .replace(/\s+/g, " ")
@@ -92,12 +99,11 @@
   }
 
   function parseTeams(text, dateMatchText, timeMatchText) {
-    const source = String(text || "")
+    const source = normalizeSentencePunctuation(String(text || "")
       .replace(dateMatchText || "", " ")
-      .replace(timeMatchText || "", " ")
+      .replace(timeMatchText || "", " "))
       .replace(/(?:请|帮我|添加|安排|记录|新增)\s*/g, "")
       .replace(/(?:有一场|一场)?(?:比赛|赛程)\s*/g, " ")
-      .replace(/[，,。；;！!]+/g, " ")
       .replace(/\s+/g, " ")
       .trim();
 

@@ -15,6 +15,16 @@
     }
   }
 
+  function toDownloadPageUrl(value) {
+    const safeUrl = normalizeHttpsUrl(value);
+    if (!safeUrl) return "";
+    const url = new URL(safeUrl);
+    if (url.hostname.toLowerCase() !== "github.com") return safeUrl;
+    const match = url.pathname.match(/^\/([^/]+)\/([^/]+)\/releases\/download\/([^/]+)\//i);
+    if (!match) return safeUrl;
+    return `https://github.com/${encodeURIComponent(match[1])}/${encodeURIComponent(match[2])}/releases/tag/${encodeURIComponent(match[3])}`;
+  }
+
   function normalizeManifest(payload) {
     if (!payload || typeof payload !== "object" || Array.isArray(payload)) {
       throw new Error("版本信息格式不正确");
@@ -96,6 +106,7 @@
 
   return {
     normalizeHttpsUrl,
+    toDownloadPageUrl,
     normalizeManifest,
     isNewerVersion,
     fetchLatestManifest

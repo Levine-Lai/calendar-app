@@ -21,7 +21,6 @@ import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Calendar;
 import java.util.Collections;
 import java.util.LinkedHashSet;
 import java.util.List;
@@ -29,7 +28,6 @@ import java.util.Locale;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
-import java.util.TimeZone;
 import java.util.concurrent.TimeUnit;
 
 final class TeamNewsPushManager {
@@ -131,12 +129,6 @@ final class TeamNewsPushManager {
         );
     }
 
-    static boolean isBeijingQuietHours() {
-        Calendar calendar = Calendar.getInstance(TimeZone.getTimeZone("Asia/Shanghai"));
-        int hour = calendar.get(Calendar.HOUR_OF_DAY);
-        return hour >= 0 && hour < 9;
-    }
-
     static boolean pollAndNotify(Context context) {
         try {
             refreshFcmSubscription(context);
@@ -148,15 +140,6 @@ final class TeamNewsPushManager {
                 prefs.edit()
                     .putLong(KEY_LAST_CHECK_AT, System.currentTimeMillis())
                     .putString(KEY_FEED_IDS, joinIds(TeamNewsFeed.ids(items)))
-                    .remove(KEY_LAST_ERROR)
-                    .apply();
-                return true;
-            }
-
-            if (isBeijingQuietHours()) {
-                // Keep previous feed ids so overnight articles can be considered after 09:00.
-                prefs.edit()
-                    .putLong(KEY_LAST_CHECK_AT, System.currentTimeMillis())
                     .remove(KEY_LAST_ERROR)
                     .apply();
                 return true;

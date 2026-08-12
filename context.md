@@ -2423,3 +2423,20 @@
 - 打包前已快进同步机器人生成的 `public/news/arsenal.json`，所以 APK 离线缓存也包含完整 20 条双源新闻、本地阿森纳透明队徽和 4×3 组件2的新布局。
 - 使用历史固定 keystore 生成 `releases/sports-calendar-2.3.1-debug.apk`；`aapt` 确认包名 `com.local.sportscalendar`、`versionCode 43`、`versionName 2.3.1`，APK v2 签名及历史证书 SHA-256 `7EF83E3EC40B7BF1E9AAF551589EE73C378FC26F29202255F0466BCAB759BED0` 通过验证。
 - 发布前再次同步定时新闻缓存并重建 APK；最终文件大小 `8,081,225` 字节，SHA-256 为 `E47E9642144AD320D2422981094BB71ED9F55D2AECD24AB8BC6BD74A87DF8BBB`。GitHub Release 为 `v2.3.1`，`public/version.json` 已发布 `2.3.1 / versionCode 43` 与固定 HTTPS 下载地址。
+
+### 开发批次：2.3.2 组件2图片标题比例
+
+- 桌面新闻组件2整体继续保持 4×3，只显示最新一条新闻；内部图片区和标题区的 LinearLayout 权重改为 5 与 2，使可用高度约按 5:2 分配。
+- 图片继续使用 `fitCenter` 完整展示，标题继续保持 19sp、最多两行，不改变点击新闻、圆角、缓存和刷新逻辑。
+- 源码版本提升为 `2.3.2 / versionCode 44`；`public/version.json` 继续发布 `2.3.1 / versionCode 43`，本轮未打包。
+- 智能赛程本地解析新增统一标点归一化：连续中文/英文句号、三点省略号、Unicode 省略号、问号、冒号及常见中英文引号会在球队关系识别前转换为空格；标点输入本身仍完整保留在原始描述中并可发送给服务端 Agent。
+
+### 开发补充：2.3.2 启动入口、完整新闻与更新下载
+
+- 删除 Web 全屏开屏层、`public/launch-animation.js` 和 Android 从后台恢复时重复播放 GIF 的流程；奔跑 GIF 改为左上角菜单按钮，通知打开新闻不再等待动画；Android 必需的系统启动底色改为与首页一致的 `#FBF4EA`。
+- “赛程管理”和“智能添加赛程”面板仅隐藏 UI，底层数据、语音、解析器与 Cloudflare Worker 均保留，后续恢复不需要重建工作流。
+- Arsenal.com 抓取器读取 Next.js `articleBody` 的所有文本段落，并保留正文 DOM 兜底；Guardian RSS 在得到卡片后继续尝试抓取公开文章页。2026-08-12 已用 DeepSeek 重建 14 篇官网文章的完整中英文正文，0 篇翻译失败；Guardian 当次网络不可用，因此不展示只有 RSS 摘要的条目，待后续成功抓取正文后自动恢复该来源。
+- 新闻详情内容容器顶部改为 12px，标题上方保留少量空间。
+- 更新下载不再直接把 APK 资源 URL 交给系统：先转换为 GitHub Release 页面，再由原生 `ACTION_VIEW` 调用可解析 HTTPS 的默认浏览器，兼容 vivo 的链接分流行为。
+- 删除服务端、本机轮询和 FCM 接收端的北京时间 00:00–08:59 静默判断，通知恢复全天发送和展示。
+- 源码仍为 `2.3.2 / versionCode 44`，`public/version.json` 继续发布 `2.3.1 / versionCode 43`；本轮未打包。

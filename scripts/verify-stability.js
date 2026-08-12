@@ -22,7 +22,6 @@ const newsMessagingService = read("android/app/src/main/java/com/local/sportscal
 const newsUpdater = read("firebase/functions/update-static-news.js");
 const mainActivity = read("android/app/src/main/java/com/local/sportscalendar/MainActivity.java");
 const index = read("index.html");
-const launchAnimation = read("public/launch-animation.js");
 const customScheduleCore = read("public/custom-schedule-core.js");
 const customScheduleConfig = read("public/custom-schedule-agent-config.js");
 const customScheduleWorker = read("workers/custom-schedule-agent/src/index.js");
@@ -124,20 +123,19 @@ const checks = [
       && gradle.includes("signingConfig signingConfigs.release")
   ],
   [
-    "27 launch animation duration and background",
-    index.includes('id="launchAnimation"')
+    "27 runner menu entry without full-screen launch animation",
+    !index.includes('id="launchAnimation"')
+      && !index.includes("public/launch-animation.js")
+      && index.includes('class="menu-runner"')
       && index.includes("public/assets/branding/launch-runner.gif")
-      && launchAnimation.includes("const splashDurationMs = 1500")
-      && launchAnimation.includes("window.SportsCalendarLaunch")
-      && launchAnimation.includes("if (running) return completion")
-      && styles.includes(".launch-animation.is-closing")
-      && androidColors.includes("#C5E5F8")
+      && styles.includes(".menu-runner")
+      && androidColors.includes("#FBF4EA")
       && !launchScreen.includes("@mipmap/ic_launcher")
       && androidStyles.includes("@drawable/splash_transparent_icon")
-      && mainActivity.includes("playLaunchThenHandleIntent")
-      && mainActivity.includes("launch.play().then(done,done)")
-      && mainActivity.includes("public void onResume()")
-      && mainActivity.includes("playLaunchOnResume = true")
+      && mainActivity.includes("handleNewsIntent")
+      && !mainActivity.includes("SportsCalendarLaunch")
+      && !mainActivity.includes("playLaunchOnResume")
+      && !fs.existsSync(path.join(root, "public/launch-animation.js"))
       && fs.existsSync(path.join(root, "public/assets/branding/launch-runner.gif"))
       && webBuild.includes("prototypeBrandingPattern")
   ],
@@ -150,6 +148,7 @@ const checks = [
       && newsWidgetLayout.includes('android:id="@+id/news_widget_image"')
       && newsWidgetLayout.includes('android:scaleType="fitCenter"')
       && newsWidgetLayout.includes('android:layout_height="0dp"')
+      && newsWidgetLayout.includes('android:layout_weight="5"')
       && newsWidgetLayout.includes('android:layout_weight="2"')
       && newsWidgetLayout.includes('android:textSize="19sp"')
       && newsWidgetProvider.includes("NewsWidgetRefreshWorker.class")
@@ -210,7 +209,9 @@ const checks = [
   ],
   [
     "32 智能自定义赛程与安全语音入口",
-    index.includes('id="customScheduleInput"')
+    index.includes('class="panel manage-panel" hidden')
+      && index.includes('class="panel custom-schedule-panel" aria-labelledby="customScheduleHeading" hidden')
+      && index.includes('id="customScheduleInput"')
       && app.includes("function previewCustomSchedule()")
       && app.includes("function confirmCustomSchedule()")
       && app.includes("startSpeechRecognition")
@@ -227,12 +228,11 @@ const checks = [
       && customScheduleWorkerConfig.includes('required = ["CUSTOM_SCHEDULE_AI_API_KEY"]')
   ],
   [
-    "34 北京时间新闻推送静默时段",
-    newsUpdater.includes("function isBeijingQuietHours")
-      && newsUpdater.includes("Beijing quiet hours are active")
-      && newsPushManager.includes("TimeZone.getTimeZone(\"Asia/Shanghai\")")
-      && newsPushManager.includes("if (isBeijingQuietHours())")
-      && newsMessagingService.includes("TeamNewsPushManager.isBeijingQuietHours()")
+    "34 新闻推送全时段可用",
+    !newsUpdater.includes("isBeijingQuietHours")
+      && !newsUpdater.includes("Beijing quiet hours are active")
+      && !newsPushManager.includes("isBeijingQuietHours")
+      && !newsMessagingService.includes("isBeijingQuietHours")
   ],
   [
     "35 日历双击删除与系统下载浏览器",
@@ -243,8 +243,10 @@ const checks = [
       && app.includes("dismissedEventIds")
       && storage.includes("dismissedEventIds")
       && !app.includes("day-modal-event-delete")
-      && read("android/app/src/main/java/com/local/sportscalendar/SportsWidgetPlugin.java").includes("Intent.createChooser")
-      && read("android/app/src/main/java/com/local/sportscalendar/SportsWidgetPlugin.java").includes("getActivity().startActivity(chooser)")
+      && app.includes("AppUpdate?.toDownloadPageUrl(appUpdateDownloadUrl)")
+      && read("public/app-update.js").includes("/releases/tag/")
+      && read("android/app/src/main/java/com/local/sportscalendar/SportsWidgetPlugin.java").includes("Browser.EXTRA_APPLICATION_ID")
+      && read("android/app/src/main/java/com/local/sportscalendar/SportsWidgetPlugin.java").includes("getActivity().startActivity(browserIntent)")
   ],
   [
     "36 阿森纳双语新闻框架与无点击高亮切换",
@@ -269,6 +271,9 @@ const checks = [
       && arsenalNewsUpdater.includes('teamId: "arsenal"')
       && arsenalNewsCore.includes("https://www.arsenal.com/sitemaps/articles/1/sitemap.xml")
       && arsenalNewsCore.includes("https://www.theguardian.com/football/arsenal/rss")
+      && arsenalNewsCore.includes("extractOfficialArticleParagraphs")
+      && arsenalNewsCore.includes("parseGuardianArticle")
+      && arsenalNews.items.some((item) => item.source === "Arsenal.com" && item.bodyEn.length >= 5)
       && arsenalNewsWorkflow.includes("schedule:")
       && arsenalNewsWorkflow.includes("npm run update:arsenal --prefix firebase/functions")
       && arsenalNewsWorkflow.includes("team-news-updates")
