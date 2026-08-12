@@ -1,12 +1,62 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-12T22:00:42.153Z",
+  "updatedAt": "2026-08-12T22:58:44.533Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "f5892fc38e86e78dddd35fa7055343f4fb437c5f38c0003777b816c128cfc1f1",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Every word from Mikel’s Como presser",
+      "summaryEn": "The boss addressed the media after our pre-season test with Como",
+      "bodyEn": [
+        "The boss addressed the media after our pre-season test with Como",
+        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/5cc4484771d7-london-england-mikel-arteta-manager-of-arsenal-gives-the-team-instructions-durin.webp",
+      "author": "Arsenal Media",
+      "publishedAt": "2026-08-12T22:02:11.009Z",
+      "url": "https://www.arsenal.com/news/every-word-from-mikels-como-presser-aIMrT5q2jfOS",
+      "source": "Arsenal.com",
+      "titleZh": "米克尔在科莫赛后发布会的完整发言",
+      "summaryZh": "主帅在球队与科莫的季前赛后接受了媒体采访。",
+      "bodyZh": [
+        "主帅在球队与科莫的季前赛后接受了媒体采访。",
+        "这是Arsenal.com免费文章的简明摘要，请打开原始来源阅读完整报道。"
+      ],
+      "translationSourceHash": "070e7c936eca747bf7a85e203b0f3e8dd5431a617c3173d518284beab3e9a5dc",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-12T22:58:31.189Z"
+    },
+    {
+      "id": "35f7d6643cb386db0ec214329f5d9ff708afb3b2f8946748a8d25477852c6704",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Arteta: Bruno reception was great",
+      "summaryEn": "Mikel Arteta looks back at pre-season as we prepare for the Community Shield",
+      "bodyEn": [
+        "Mikel Arteta looks back at pre-season as we prepare for the Community Shield",
+        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/385e529fe311-london-england-mikel-arteta-manager-of-arsenal-reacts-during-the-pre-season-frie.webp",
+      "author": "Charlie Peat",
+      "publishedAt": "2026-08-12T21:59:23.587Z",
+      "url": "https://www.arsenal.com/news/arteta-bruno-reception-was-great-adaQg5B44nAt",
+      "source": "Arsenal.com",
+      "titleZh": "阿尔特塔：布鲁诺的接待很棒",
+      "summaryZh": "米克尔·阿尔特塔回顾季前赛，我们备战社区盾。",
+      "bodyZh": [
+        "米克尔·阿尔特塔回顾季前赛，我们备战社区盾。",
+        "这是Arsenal.com免费文章的简要摘要。请打开原始来源获取完整报道。"
+      ],
+      "translationSourceHash": "d32e6c0510e0cbabe90b6d7aa23e633e861b89d9fcfec9cecec6c11d63af27ed",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-12T22:58:35.548Z"
+    },
     {
       "id": "9551e1d6e66bf944d97d8d0ecf80f360cab9ed996e2ce57a4b90f87e2f2b88d9",
       "teamId": "arsenal",
@@ -33,35 +83,35 @@
       "translatedAt": "2026-08-12T22:00:42.048Z"
     },
     {
-      "id": "82915906b3b97db50aa264f6562c8cf52fcdccec098fc8eec5fc451d08668dfe",
+      "id": "e0656befa54f7a5c5331aa08c62a317228fc56c10161f594b50159e4d4acb781",
       "teamId": "arsenal",
       "teamName": "阿森纳",
-      "titleEn": "Highlights: Arsenal 1-1 Como (4-3 pens)",
+      "titleEn": "Highlights: Arsenal 1-1 Como 1907 (4-3 pens)",
       "summaryEn": "Watch the best moments from our final pre-season clash with Como",
       "bodyEn": [
         "Watch the best moments from our final pre-season clash with Como",
         "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
       ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/e19f49fd37a6-london-england-david-raya-of-arsenal-dives-for-the-ball-in-the-penalty-shootout.webp",
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/9a08170918a5-london-england-bruno-guimaraes-of-arsenal-runs-with-the-ball-during-the-pre-seas.webp",
       "author": "Charlie Peat",
       "publishedAt": "2026-08-12T21:31:09.606Z",
-      "url": "https://www.arsenal.com/news/highlights-arsenal-1-1-como-4-3-pens-aKVmL6j6VPWQ",
+      "url": "https://www.arsenal.com/news/highlights-arsenal-1-1-como-1907-4-3-pens-aKVmL6j6VPWQ",
       "source": "Arsenal.com",
-      "titleZh": "集锦：阿森纳1-1科莫（点球4-3）",
-      "summaryZh": "观看季前赛末战对阵科莫的最佳时刻。",
+      "titleZh": "集锦：阿森纳 1-1 科莫1907（点球4-3）",
+      "summaryZh": "观看我们季前最后一场对阵科莫的最佳时刻。",
       "bodyZh": [
-        "观看我们季前赛最后一场对阵科莫的最佳时刻。",
-        "这是阿森纳官网文章的简要摘要，完整故事请查阅原始来源。"
+        "观看我们季前最后一场对阵科莫的最佳时刻。",
+        "这是一篇阿森纳官网免费文章的简要摘要。请打开原始来源查看完整故事。"
       ],
-      "translationSourceHash": "d0ed16f9816051106418d6c9b58e8bbda1ef9531554a7e587725d438c17a3d39",
+      "translationSourceHash": "0006e77ba06461fc1901bb3af85736c618cfebc23fe2d9a0adb8cf5dd0fbc56e",
       "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-12T22:00:42.153Z"
+      "translatedAt": "2026-08-12T22:58:33.839Z"
     },
     {
-      "id": "6f6091b5b5531847c1373671303311f6b96e7ce09feb9be112a524a14f8592bd",
+      "id": "cfebb1d89d922bbb6dc5166f1d1130521ac31b522b2b9bd334c97648033685c5",
       "teamId": "arsenal",
       "teamName": "阿森纳",
-      "titleEn": "Report: Arsenal 1-1 Como (4-3 pens)",
+      "titleEn": "Report: Arsenal 1-1 Como 1907 (4-3 pens)",
       "summaryEn": "Find out how we got on during our final pre-season clash of summer 2026",
       "bodyEn": [
         "Find out how we got on during our final pre-season clash of summer 2026",
@@ -70,17 +120,17 @@
       "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/27d83ed3c308-london-england-myles-lewis-skelly-of-arsenal-celebrates-scoring-his-teams-first.webp",
       "author": "Charlie Peat",
       "publishedAt": "2026-08-12T20:32:32.406Z",
-      "url": "https://www.arsenal.com/news/report-arsenal-1-1-como-4-3-pens-aMYn79P6jdJF",
+      "url": "https://www.arsenal.com/news/report-arsenal-1-1-como-1907-4-3-pens-aMYn79P6jdJF",
       "source": "Arsenal.com",
-      "titleZh": "战报：阿森纳1-1科莫（点球4-3）",
-      "summaryZh": "了解我们在2026年夏季最后一场季前赛中的表现。",
+      "titleZh": "战报：阿森纳 1-1 科莫1907（点球4-3）",
+      "summaryZh": "了解我们2026年夏季最后一场季前赛的表现。",
       "bodyZh": [
-        "了解我们在2026年夏季最后一场季前赛中的表现。",
-        "这是Arsenal.com免费文章的简要摘要。打开原始来源以获取完整故事。"
+        "了解我们2026年夏季最后一场季前赛的表现。",
+        "这是Arsenal.com免费文章的简明摘要。请打开原始来源查看完整故事。"
       ],
-      "translationSourceHash": "1946bdd5e60d928ae7c3676c6441748b8531c561424c80dede7e8df087684d2f",
+      "translationSourceHash": "dfb36b08313829a6936d24632b1eb27c02f7f8f743c10f333b70886989b28c80",
       "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-12T21:01:05.293Z"
+      "translatedAt": "2026-08-12T22:58:44.533Z"
     },
     {
       "id": "76f701fb0bde4a561f3fa7633af86347b72d5a6b40790e55f37ec29b4d479a1a",
@@ -181,31 +231,6 @@
       "translationSourceHash": "5749048554692ef72658ff1574061bf71fbe832a9e96a159bce3a15c386c35e2",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-12T09:23:47.889Z"
-    },
-    {
-      "id": "2633fde427dc031310b8fe8c2d920f7e4c4b3b860641c1e5f837914562ae78d6",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Relive these incredible goals v Italian opponents",
-      "summaryEn": "Take in our fantastic goals against the likes of Milan, Inter and Juventus down the years",
-      "bodyEn": [
-        "Take in our fantastic goals against the likes of Milan, Inter and Juventus down the years",
-        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/f012532a282a-rome-italy-thierry-henry-celebrates-scoring-a-goal-for-arsenal-during-the-uefa-c.webp",
-      "author": "Charlie Peat",
-      "publishedAt": "2026-08-12T08:00:00.336Z",
-      "url": "https://www.arsenal.com/news/relive-these-incredible-goals-v-italian-opponents-a3PcD9C8kWbU",
-      "source": "Arsenal.com",
-      "titleZh": "重温对阵意大利对手的精彩进球",
-      "summaryZh": "回顾我们多年来对米兰、国米和尤文的精彩进球。",
-      "bodyZh": [
-        "回顾我们多年来对米兰、国米和尤文等队的精彩进球。",
-        "这是Arsenal.com免费文章的简要摘要。请打开原始来源查看完整报道。"
-      ],
-      "translationSourceHash": "8187700298a8f83e266b584696aee11bd297d268f9d6c3f093a94c5a14a4314d",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-12T09:23:47.276Z"
     },
     {
       "id": "664e3f6e84f32887eab20effa8e01df13a913fa4fbf29191ff344e5f695c4d8c",
@@ -479,31 +504,6 @@
       "translationSourceHash": "ae9d32d5394ebf18d64896f725bccd994771aa746b2678eb32a63a8743e85e91",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-12T10:41:45.067Z"
-    },
-    {
-      "id": "714116619736ac0555bdf76a3851b734dac16570f7dfa520daafcda7eae3c6b8",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "How to watch all of our pre-season matches",
-      "summaryEn": "Find out how to watch our pre-season matches wherever you are around the world.",
-      "bodyEn": [
-        "Find out how to watch our pre-season matches wherever you are around the world.",
-        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/e5df8f7f0e3e-london-england-arsenal-fans-show-their-support-with-flags-prior-to-the-premier-l.webp",
-      "author": "Arsenal FC",
-      "publishedAt": "2026-08-04T00:10:00.000Z",
-      "url": "https://www.arsenal.com/news/how-to-watch-all-of-our-pre-season-matches-aAYHu8K0fsn7",
-      "source": "Arsenal.com",
-      "titleZh": "如何观看我们所有的季前赛",
-      "summaryZh": "了解在全球各地如何观看我们的季前赛。",
-      "bodyZh": [
-        "了解在全球各地如何观看我们的季前赛。",
-        "这是Arsenal.com免费文章的简要摘要。请打开原始来源查看完整报道。"
-      ],
-      "translationSourceHash": "ca593d45d9fb93687290514869045302083293ca4934ea443b7cf7f09c9838f6",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-12T16:33:42.818Z"
     }
   ]
 }
