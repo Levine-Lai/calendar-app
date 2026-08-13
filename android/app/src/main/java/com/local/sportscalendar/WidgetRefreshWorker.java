@@ -21,12 +21,14 @@ public class WidgetRefreshWorker extends Worker {
             preferences.edit()
                 .putLong(MlbTodayWidgetProvider.PREFS_LAST_REFRESH_AT, System.currentTimeMillis())
                 .remove(MlbTodayWidgetProvider.PREFS_LAST_REFRESH_ERROR)
+                .putBoolean(MlbTodayWidgetProvider.PREFS_REFRESHING, false)
                 .apply();
             MlbTodayWidgetProvider.refreshAllViewsOnly(getApplicationContext());
             return Result.success();
         }
         preferences.edit()
             .putString(MlbTodayWidgetProvider.PREFS_LAST_REFRESH_ERROR, "比分数据源暂时不可用")
+            .putBoolean(MlbTodayWidgetProvider.PREFS_REFRESHING, false)
             .apply();
         MlbTodayWidgetProvider.refreshAllViewsOnly(getApplicationContext());
         return getRunAttemptCount() < 3 ? Result.retry() : Result.failure();

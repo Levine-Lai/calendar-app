@@ -262,6 +262,8 @@ const teamNewsState = {
   activeTeamId: "toronto-blue-jays",
   feeds: new Map(),
   pendingUrl: "",
+  pendingRetryCount: 0,
+  pendingRetryTimer: 0,
   language: "en",
   activeArticleId: "",
   articleBodies: new Map(),
@@ -931,6 +933,9 @@ function closeTeamNewsModal() {
   elements.teamNewsModal.hidden = true;
   document.body.classList.remove("modal-open");
   teamNewsState.pendingUrl = "";
+  teamNewsState.pendingRetryCount = 0;
+  window.clearTimeout(teamNewsState.pendingRetryTimer);
+  teamNewsState.pendingRetryTimer = 0;
 }
 
 function setTeamNewsStatus(message, isError = false) {
@@ -956,6 +961,9 @@ function handleTeamNewsOpen(url) {
   const safeUrl = TeamNews?.normalizeNewsUrl?.(url, teamId);
   activateTeamNews(teamId);
   teamNewsState.pendingUrl = safeUrl || "";
+  teamNewsState.pendingRetryCount = 0;
+  window.clearTimeout(teamNewsState.pendingRetryTimer);
+  teamNewsState.pendingRetryTimer = 0;
   openTeamNewsModal(teamId);
   if (getTeamNewsApiUrls(teamId).length) refreshTeamNews({ silent: true, teamId });
 }
@@ -963,9 +971,32 @@ function handleTeamNewsOpen(url) {
 function scrollToPendingTeamNews() {
   if (!teamNewsState.pendingUrl || elements.teamNewsModal.hidden) return;
   const target = getTeamNewsFeedState().items.find((item) => item.url === teamNewsState.pendingUrl);
-  if (!target) return;
+  if (!target) {
+    schedulePendingTeamNewsRetry();
+    return;
+  }
+  window.clearTimeout(teamNewsState.pendingRetryTimer);
+  teamNewsState.pendingRetryTimer = 0;
+  teamNewsState.pendingRetryCount = 0;
   teamNewsState.pendingUrl = "";
   openTeamNewsArticle(target.id);
+}
+
+function schedulePendingTeamNewsRetry() {
+  if (!teamNewsState.pendingUrl || elements.teamNewsModal.hidden || teamNewsState.pendingRetryTimer) return;
+  const delays = [1500, 3000, 5000, 8000, 12000];
+  if (teamNewsState.pendingRetryCount >= delays.length) {
+    setTeamNewsStatus("新闻已通知，正文仍在同步，请稍后点刷新。", true);
+    return;
+  }
+  const delay = delays[teamNewsState.pendingRetryCount];
+  teamNewsState.pendingRetryCount += 1;
+  setTeamNewsStatus("正在同步这条新闻…");
+  teamNewsState.pendingRetryTimer = window.setTimeout(async () => {
+    teamNewsState.pendingRetryTimer = 0;
+    await refreshTeamNews({ silent: true, teamId: teamNewsState.activeTeamId });
+    scrollToPendingTeamNews();
+  }, delay);
 }
 
 function openTeamNewsArticleForTeam(teamId, newsId) {

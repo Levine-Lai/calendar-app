@@ -274,7 +274,7 @@
     const teamId = normalizeTeamId(options.teamId);
     url.searchParams.set("team", teamId);
     url.searchParams.set("limit", "30");
-    url.searchParams.set("_", String(Math.floor(Date.now() / 300000)));
+    url.searchParams.set("_", String(Date.now()));
     const controller = new AbortController();
     const timeout = setTimeout(() => controller.abort(), Number(options.timeoutMs) || 10000);
     try {

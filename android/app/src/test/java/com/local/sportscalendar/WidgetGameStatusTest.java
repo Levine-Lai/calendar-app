@@ -165,7 +165,7 @@ public class WidgetGameStatusTest {
 
     @Test
     public void newScheduleWidgetsDefaultToTomorrow() {
-        assertEquals(1, MlbTodayWidgetProvider.defaultSelectedDayOffset());
+        assertEquals(0, MlbTodayWidgetProvider.defaultSelectedDayOffset());
     }
 
     @Test

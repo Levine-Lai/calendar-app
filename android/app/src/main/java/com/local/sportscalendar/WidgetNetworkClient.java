@@ -20,10 +20,24 @@ final class WidgetNetworkClient {
     private static final int MAX_ARTICLE_BYTES = 768 * 1024;
     private static final int MAX_NEWS_BYTES = 1024 * 1024;
     private static final int MAX_NEWS_FEED_BYTES = 512 * 1024;
+    private static final int JSON_ATTEMPTS = 3;
 
     private WidgetNetworkClient() {}
 
     static String getJson(String endpoint) throws Exception {
+        Exception lastError = null;
+        for (int attempt = 0; attempt < JSON_ATTEMPTS; attempt += 1) {
+            try {
+                return getJsonOnce(endpoint);
+            } catch (Exception error) {
+                lastError = error;
+                if (attempt + 1 < JSON_ATTEMPTS) Thread.sleep(300L * (attempt + 1));
+            }
+        }
+        throw lastError == null ? new IllegalStateException("JSON request failed") : lastError;
+    }
+
+    private static String getJsonOnce(String endpoint) throws Exception {
         HttpURLConnection connection = open(endpoint, 10_000, 10_000);
         connection.setRequestProperty("Accept", "application/json");
         try {
@@ -191,7 +205,7 @@ final class WidgetNetworkClient {
         connection.setConnectTimeout(connectTimeout);
         connection.setReadTimeout(readTimeout);
         connection.setInstanceFollowRedirects(true);
-        connection.setRequestProperty("User-Agent", "GuansaiRiji/2.3.1");
+        connection.setRequestProperty("User-Agent", "GuansaiRiji/2.3.2");
         return connection;
     }
 

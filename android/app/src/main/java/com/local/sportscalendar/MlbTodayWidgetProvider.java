@@ -49,10 +49,13 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
     public static final String PREFS_NAME = "sports_widget";
     public static final String PREFS_EVENTS = "events_json";
     private static final String PREFS_SELECTED_DAY_OFFSET = "selected_day_offset";
-    private static final int DEFAULT_SELECTED_DAY_OFFSET = 1;
+    private static final int DEFAULT_SELECTED_DAY_OFFSET = 0;
+    private static final String PREFS_DAY_SELECTION_MIGRATION = "day_selection_migration";
+    private static final int DAY_SELECTION_MIGRATION_TODAY = 2;
     private static final String PREFS_LIVE_SNAPSHOT = "live_snapshot_json";
     static final String PREFS_LAST_REFRESH_AT = "last_refresh_at";
     static final String PREFS_LAST_REFRESH_ERROR = "last_refresh_error";
+    static final String PREFS_REFRESHING = "refreshing";
 
     static final String ACTION_REFRESH = "com.local.sportscalendar.action.REFRESH_WIDGET";
     static final String ACTION_PREV_DAY = "com.local.sportscalendar.action.PREV_DAY_WIDGET";
@@ -69,6 +72,7 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
     @Override
     public void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds) {
         Context appContext = context.getApplicationContext();
+        migrateDefaultDaySelection(appContext, appWidgetIds);
         schedulePeriodicRefresh(appContext);
         renderLocalWidgets(appContext, appWidgetManager, appWidgetIds);
         enqueueImmediateRefresh(appContext);
@@ -88,11 +92,20 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
     public static void refreshAll(Context context) {
         AppWidgetManager manager = AppWidgetManager.getInstance(context);
         int[] ids = manager.getAppWidgetIds(new ComponentName(context, MlbTodayWidgetProvider.class));
+        migrateDefaultDaySelection(context, ids);
+        context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE).edit()
+            .remove(PREFS_LAST_REFRESH_ERROR)
+            .putBoolean(PREFS_REFRESHING, true)
+            .apply();
         renderLocalWidgets(context.getApplicationContext(), manager, ids);
-        enqueueImmediateRefresh(context.getApplicationContext());
+        enqueueImmediateRefresh(context.getApplicationContext(), ExistingWorkPolicy.REPLACE);
     }
 
     static void enqueueImmediateRefresh(Context context) {
+        enqueueImmediateRefresh(context, ExistingWorkPolicy.KEEP);
+    }
+
+    private static void enqueueImmediateRefresh(Context context, ExistingWorkPolicy policy) {
         Constraints constraints = new Constraints.Builder()
             .setRequiredNetworkType(NetworkType.CONNECTED)
             .build();
@@ -101,9 +114,20 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
             .build();
         WorkManager.getInstance(context).enqueueUniqueWork(
             IMMEDIATE_WORK_NAME,
-            ExistingWorkPolicy.KEEP,
+            policy,
             request
         );
+    }
+
+    private static void migrateDefaultDaySelection(Context context, int[] appWidgetIds) {
+        android.content.SharedPreferences preferences = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
+        if (preferences.getInt(PREFS_DAY_SELECTION_MIGRATION, 0) >= DAY_SELECTION_MIGRATION_TODAY) return;
+        android.content.SharedPreferences.Editor editor = preferences.edit();
+        for (int appWidgetId : appWidgetIds) {
+            String key = selectedDayOffsetKey(appWidgetId);
+            if (!preferences.contains(key) || preferences.getInt(key, 1) == 1) editor.putInt(key, 0);
+        }
+        editor.putInt(PREFS_DAY_SELECTION_MIGRATION, DAY_SELECTION_MIGRATION_TODAY).apply();
     }
 
     static boolean refreshAllBlocking(Context context) {
@@ -163,6 +187,7 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
     private static String refreshStatusLabel(Context context) {
         android.content.SharedPreferences prefs = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
         String error = prefs.getString(PREFS_LAST_REFRESH_ERROR, "");
+        if (prefs.getBoolean(PREFS_REFRESHING, false)) return "刷新中";
         long updatedAt = prefs.getLong(PREFS_LAST_REFRESH_AT, 0L);
         if (!error.isEmpty()) return "失败";
         if (updatedAt <= 0L) return "";

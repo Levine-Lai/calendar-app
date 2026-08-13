@@ -37,6 +37,12 @@ public class NewsWidgetRefreshWorker extends Worker {
     }
 
     private static void refresh(Context context, List<TeamNewsWidgetData.Item> items) throws Exception {
+        List<TeamNewsWidgetData.Item> existing = TeamNewsWidgetData.load(context);
+        if (!existing.isEmpty() && !items.isEmpty()
+            && items.get(0).publishedAt <= existing.get(0).publishedAt) {
+            MatchDetailWidgetProvider.refreshAllViews(context);
+            return;
+        }
         List<TeamNewsWidgetData.Item> cachedItems = new ArrayList<>();
         List<Bitmap> images = new ArrayList<>();
         try {

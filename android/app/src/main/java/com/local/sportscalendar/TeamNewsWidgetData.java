@@ -88,7 +88,7 @@ final class TeamNewsWidgetData {
         ExecutorService executor = Executors.newFixedThreadPool(ENDPOINTS.length);
         List<Callable<List<Item>>> tasks = new ArrayList<>();
         for (String endpoint : ENDPOINTS) {
-            tasks.add(() -> parseRecent(WidgetNetworkClient.getTeamNewsJson(endpoint)));
+            tasks.add(() -> parseRecent(WidgetNetworkClient.getTeamNewsJson(cacheBusted(endpoint))));
         }
         List<Future<List<Item>>> results;
         try {
@@ -201,6 +201,11 @@ final class TeamNewsWidgetData {
         List<Item> items = source == null ? new ArrayList<>() : new ArrayList<>(source);
         items.sort((left, right) -> Long.compare(right.publishedAt, left.publishedAt));
         return new ArrayList<>(items.subList(0, Math.min(items.size(), MAX_ITEMS)));
+    }
+
+    private static String cacheBusted(String endpoint) {
+        String separator = endpoint.contains("?") ? "&" : "?";
+        return endpoint + separator + "widget_refresh=" + (System.currentTimeMillis() / 60_000L);
     }
 
     private static List<Item> parseStoredItems(String rawJson) {

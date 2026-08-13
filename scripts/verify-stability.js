@@ -44,6 +44,7 @@ const newsWidgetService = read("android/app/src/main/java/com/local/sportscalend
 const arsenalNewsUpdater = read("firebase/functions/update-arsenal-news.js");
 const arsenalNewsCore = read("firebase/functions/arsenal-news-core.js");
 const arsenalNewsWorkflow = read(".github/workflows/arsenal-news.yml");
+const blueJaysNewsWorkflow = read(".github/workflows/blue-jays-news.yml");
 const currentVersionCode = Number(updateConfig.match(/currentVersionCode:\s*(\d+)/)?.[1]);
 
 const tracked = (folder) => execFileSync("git", ["ls-files", folder], { cwd: root, encoding: "utf8" }).trim();
@@ -159,6 +160,8 @@ const checks = [
       && newsWidgetProvider.includes("15,")
       && newsWidgetWorker.includes("TeamNewsWidgetData.fetchRecent()")
       && newsWidgetData.includes("MAX_ITEMS = 1")
+      && newsWidgetData.includes("widget_refresh=")
+      && newsWidgetWorker.includes("publishedAt <= existing.get(0).publishedAt")
       && newsWidgetData.includes("Executors.newFixedThreadPool")
       && newsWidgetData.includes("executor.invokeAll(tasks, 12, TimeUnit.SECONDS)")
       && newsWidgetData.includes("img.mlbstatic.com")
@@ -185,14 +188,17 @@ const checks = [
       && fs.existsSync(path.join(root, "scripts/check-sports-apis.js"))
   ],
   [
-    "30 首页隐藏今日比赛、周一日历、组件明日默认与中超队徽兜底",
+    "30 首页隐藏今日比赛、周一日历、组件今日默认与中超队徽兜底",
     !index.includes('id="todayGamesList"')
       && !index.includes('id="todayGamesCount"')
       && app.includes("function renderTodayGames()")
       && app.includes("function renderHomeTodayGame(event)")
       && app.includes('const weekLabels = ["周一", "周二", "周三", "周四", "周五", "周六", "周日"]')
       && core.includes("((start.getDay() + 6) % 7)")
-      && provider.includes("DEFAULT_SELECTED_DAY_OFFSET = 1")
+      && provider.includes("DEFAULT_SELECTED_DAY_OFFSET = 0")
+      && provider.includes("migrateDefaultDaySelection")
+      && provider.includes("ExistingWorkPolicy.REPLACE")
+      && widgetNetworkClient.includes("JSON_ATTEMPTS = 3")
       && provider.includes("defaultSelectedDayOffset()")
       && app.includes("fetchCslOfficialLogoLookup")
       && app.includes('cflCompetitionCode: "CSL"')
@@ -278,6 +284,10 @@ const checks = [
       && arsenalNewsWorkflow.includes("npm run update:arsenal --prefix firebase/functions")
       && arsenalNewsWorkflow.includes("team-news-updates")
       && app.includes("collectFastNewsResults")
+      && app.includes("schedulePendingTeamNewsRetry")
+      && blueJaysNewsWorkflow.includes('DEFER_NEWS_NOTIFICATIONS: "true"')
+      && blueJaysNewsWorkflow.includes('NEWS_NOTIFY_ONLY: "true"')
+      && blueJaysNewsWorkflow.includes("wait:published-news")
   ]
 ];
 

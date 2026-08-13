@@ -10,6 +10,7 @@
     "check": "node --check update-static-news.js && node --check news-core.js",
     "test": "node --test test/*.test.js",
     "update:news": "node update-static-news.js",
+    "wait:published-news": "node wait-for-published-news.js",
     "update:arsenal": "node update-arsenal-news.js"
   },
   "dependencies": {

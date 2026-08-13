@@ -465,6 +465,20 @@ async function fetchWithTimeout(url, options, timeoutMs, fetchImpl = fetch) {
 
 async function main() {
   const previousPayload = readPreviousPayload();
+  if (process.env.NEWS_NOTIFY_ONLY === "true") {
+    const pendingItems = collectPendingNotificationItems(previousPayload, {
+      payload: previousPayload,
+      newItems: []
+    });
+    if (!pendingItems.length) {
+      process.stdout.write("No published Blue Jays notifications are pending.\n");
+      return;
+    }
+    const delivery = await sendNotificationsBestEffort(pendingItems);
+    writePayload(withPendingNotificationIds(previousPayload, delivery.failedIds));
+    process.stdout.write(`Published-news notification result: ${delivery.sentIds.length} sent, ${delivery.failedIds.length} queued.\n`);
+    return;
+  }
   const articlesWithBodies = await enrichArticleBodies(await fetchFeed(), previousPayload);
   const feedItems = await enrichTranslations(articlesWithBodies, previousPayload);
   const update = buildStaticNewsUpdate(previousPayload, feedItems);
@@ -474,7 +488,9 @@ async function main() {
     process.stdout.write("Blue Jays news is already current.\n");
     return;
   }
-  const delivery = await sendNotificationsBestEffort(pendingItems);
+  const delivery = process.env.DEFER_NEWS_NOTIFICATIONS === "true"
+    ? { sentIds: [], failedIds: pendingItems.map((item) => item.id) }
+    : await sendNotificationsBestEffort(pendingItems);
   writePayload(withPendingNotificationIds(update.payload, delivery.failedIds));
   process.stdout.write(`Updated ${path.relative(root, outputFile)} with ${update.payload.items.length} article(s).\n`);
 }

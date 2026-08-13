@@ -36,10 +36,11 @@ jobs:
       - name: Install news worker
         run: npm ci --prefix firebase/functions
 
-      - name: Fetch MLB news and send new-item notifications
+      - name: Fetch MLB news and prepare new-item notifications
         env:
           FIREBASE_SERVICE_ACCOUNT_JSON: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_JSON }}
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          DEFER_NEWS_NOTIFICATIONS: "true"
           # Push-triggered runs validate credentials and payload without delivering a test notification.
           VALIDATE_FCM: ${{ github.event_name == 'push' && 'true' || 'false' }}
         run: npm run update:news --prefix firebase/functions
@@ -55,4 +56,26 @@ jobs:
           git config user.email "sports-calendar-news-bot@users.noreply.github.com"
           git add public/news/blue-jays.json
           git commit -m "chore: update Blue Jays news"
+          git push
+
+      - name: Wait until the new article is readable from GitHub Raw
+        run: npm run wait:published-news --prefix firebase/functions
+
+      - name: Send notifications for the published cache
+        env:
+          FIREBASE_SERVICE_ACCOUNT_JSON: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_JSON }}
+          NEWS_NOTIFY_ONLY: "true"
+        run: npm run update:news --prefix firebase/functions
+
+      - name: Commit notification queue state
+        shell: bash
+        run: |
+          if git diff --quiet -- public/news/blue-jays.json; then
+            echo "No notification queue changes to commit."
+            exit 0
+          fi
+          git config user.name "sports-calendar-news-bot"
+          git config user.email "sports-calendar-news-bot@users.noreply.github.com"
+          git add public/news/blue-jays.json
+          git commit -m "chore: confirm Blue Jays notifications"
           git push
