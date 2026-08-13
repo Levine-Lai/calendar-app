@@ -1,36 +1,61 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-13T08:42:52.443Z",
+  "updatedAt": "2026-08-13T10:20:30.317Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
     {
-      "id": "f776980c450e6d5fb21b59c6cd680f41a33052a98ddd6af7b1000428b9c6bb91",
+      "id": "6f2df612a9510f43874799a12ef23d6d2df47f55e3549a9072a35a78fa2b911f",
       "teamId": "arsenal",
       "teamName": "阿森纳",
-      "titleEn": "Watch a full match replay v Como in N5",
+      "titleEn": "Arsenal in the Community celebrates outstanding post-16 results",
+      "summaryEn": "Arsenal in the Community celebrates post-16 results",
+      "bodyEn": [
+        "Arsenal in the Community celebrates post-16 results",
+        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/5c5772107366-img3221.webp",
+      "author": "Brian Matovu",
+      "publishedAt": "2026-08-13T09:00:00.000Z",
+      "url": "https://www.arsenal.com/news/arsenal-in-the-community-celebrates-outstanding-post-16-results-aDzbs6a4yQu0",
+      "source": "Arsenal.com",
+      "titleZh": "阿森纳社区项目庆祝16岁后优异成绩",
+      "summaryZh": "阿森纳社区项目庆祝16岁后优异成绩。",
+      "bodyZh": [
+        "阿森纳社区项目庆祝16岁后优异成绩。",
+        "这是一篇阿森纳官网免费文章的简要摘要，请打开原始来源阅读完整报道。"
+      ],
+      "translationSourceHash": "4192e77663881360374e01edb54b00c17f80f26853356a9aaecacffd059961a6",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-13T10:20:21.617Z"
+    },
+    {
+      "id": "e5ecde3bcea42033acf90e5912c132e8e0b6fe27c4b19d3af3027a5cb03ca80c",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Watch a full match replay of our Como game",
       "summaryEn": "The full 90 against Cesc Fabregas' Serie A side",
       "bodyEn": [
         "The full 90 against Cesc Fabregas' Serie A side",
         "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
       ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/c4cac1beb1c3-gettyimages-2290207114.webp",
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/cff092098e26-london-england-ethan-nwaneri-of-arsenal-is-put-under-pressure-by-lucas-da-cunha.webp",
       "author": "Arsenal Media",
       "publishedAt": "2026-08-13T08:30:00.000Z",
-      "url": "https://www.arsenal.com/news/watch-a-full-match-replay-v-como-in-n5-aplmP5n2U0Rr",
+      "url": "https://www.arsenal.com/news/watch-a-full-match-replay-of-our-como-game-aplmP5n2U0Rr",
       "source": "Arsenal.com",
-      "titleZh": "在N5观看对阵科莫的完整比赛回放",
-      "summaryZh": "对阵法布雷加斯意甲球队的完整90分钟。",
+      "titleZh": "观看我们对阵科莫的完整比赛回放",
+      "summaryZh": "法布雷加斯意甲球队的完整90分钟回放",
       "bodyZh": [
-        "对阵法布雷加斯意甲球队的完整90分钟。",
-        "这是Arsenal.com免费文章的简要摘要。请打开原始来源查看完整报道。"
+        "与法布雷加斯执教的意甲球队的完整90分钟",
+        "这是Arsenal.com免费文章的简明摘要。请打开原始来源查看完整报道。"
       ],
-      "translationSourceHash": "33bde8691a0a2e066c7c72fe194225bde43d99d3f0698b145e9f295de7287d7d",
+      "translationSourceHash": "a42cc94c8b0cf03849b08b7961f6553c6ad973e6857834a0e02ab3eb694b89a8",
       "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-13T08:42:49.925Z"
+      "translatedAt": "2026-08-13T10:20:22.794Z"
     },
     {
       "id": "e53d460a227262ec5fe56ff8c770e84e3591345f9066c23311c3878226de21cf",
@@ -258,81 +283,6 @@
       "translatedAt": "2026-08-12T17:39:51.931Z"
     },
     {
-      "id": "fd9635c541dd5b57f6f897581f8a42337b4265265934739d982ef2ad406b1ab2",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Gallery: Latest training pictures from La Manga",
-      "summaryEn": "Take a look through all the photos from our most recent training session in La Manga!",
-      "bodyEn": [
-        "Take a look through all the photos from our most recent training session in La Manga!",
-        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/5fc3af1be488-ab88439ovjqsaqz.webp",
-      "author": "Stephen Wright",
-      "publishedAt": "2026-08-12T14:58:47.751Z",
-      "url": "https://www.arsenal.com/news/gallery-latest-training-pictures-from-la-manga-aPoJI2M6lKxg",
-      "source": "Arsenal.com",
-      "titleZh": "图集：拉曼加最新训练照片",
-      "summaryZh": "查看我们在拉曼加最新训练的精彩照片！",
-      "bodyZh": [
-        "查看我们在拉曼加最新训练的精彩照片！",
-        "这是Arsenal.com免费文章的简要摘要，请打开原始来源查看完整报道。"
-      ],
-      "translationSourceHash": "f84d64b44ecd1264426d7609f348538bc9e66450463c22ae823452db0297088c",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-12T15:12:42.678Z"
-    },
-    {
-      "id": "c6ba18ee48b7d5a866aed81df2b5f1489f910765a4c38d5df72d2fdcdd7a10c9",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Arteta keen to \"attack the next target\"",
-      "summaryEn": "Mikel Arteta has used his programme notes to discuss our ambitions in 2026/27, and give his thoughts on the summer so far",
-      "bodyEn": [
-        "Mikel Arteta has used his programme notes to discuss our ambitions in 2026/27, and give his thoughts on the summer so far",
-        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/07f4b2180a46-london-colney-england-arsenal-manager-mikel-arteta-during-a-training-session-at.webp",
-      "author": "Arsenal Media",
-      "publishedAt": "2026-08-12T12:49:51.731Z",
-      "url": "https://www.arsenal.com/news/arteta-keen-to-attack-the-next-target-agFjj3e0xCvF",
-      "source": "Arsenal.com",
-      "titleZh": "阿尔特塔渴望“进攻下一个目标”",
-      "summaryZh": "阿尔特塔在比赛日指南中谈及2026/27赛季雄心及对夏季工作的看法。",
-      "bodyZh": [
-        "米克尔·阿尔特塔利用他的比赛日指南阐述了我们在2026/27赛季的雄心，并分享了他对目前夏季工作的看法。",
-        "这是Arsenal.com免费文章的简要摘要。请打开原始来源获取完整内容。"
-      ],
-      "translationSourceHash": "4074702243b0a9c53313556de7e7fb100b48182be34b360df6cebb900b0bc2ee",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-12T14:05:45.523Z"
-    },
-    {
-      "id": "664e3f6e84f32887eab20effa8e01df13a913fa4fbf29191ff344e5f695c4d8c",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Transfer window 2026: Former Gunners on the move",
-      "summaryEn": "Here are all the former Arsenal players that are on the move in the 2026 transfer window",
-      "bodyEn": [
-        "Here are all the former Arsenal players that are on the move in the 2026 transfer window",
-        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/3354115a7a1d-marseilles-gabonese-forward-pierre-emerick-aubameyang-scores-a-goal-during-the-f.webp",
-      "author": "Arsenal Media",
-      "publishedAt": "2026-08-11T13:35:13.056Z",
-      "url": "https://www.arsenal.com/news/transfer-window-2026-former-gunners-on-the-move-aEgZ27o01Z52",
-      "source": "Arsenal.com",
-      "titleZh": "2026年转会窗：前枪手转会动态",
-      "summaryZh": "以下是2026年转会窗中所有转会的前阿森纳球员。",
-      "bodyZh": [
-        "以下是2026年转会窗中所有转会的前阿森纳球员。",
-        "这是对Arsenal.com免费文章的简要总结。请打开原始来源获取完整故事。"
-      ],
-      "translationSourceHash": "9eacba19457dd93ed85ccdb6ac340ce183e89d096a4cad690a2005017a07e928",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-11T14:05:13.688Z"
-    },
-    {
       "id": "9ee68326021d86fa07f688f8311852440f59573309e605c97a5a9bc62b88f53a",
       "teamId": "arsenal",
       "teamName": "阿森纳",
@@ -356,6 +306,31 @@
       "translationSourceHash": "629041dc77fa7ed7d41152d8bc82737e45eec238062024c56369937eede6b7fb",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-11T15:14:29.697Z"
+    },
+    {
+      "id": "ebfba4aa7e0df76ead12fb5b6b65eb2d0ff3f7dcbbf224d0ef65374a5c120250",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Inside Training: Watch women's team in La Manga",
+      "summaryEn": "See what our women’s team have been up to on their pre-season training camp with the latest episode of Inside Training",
+      "bodyEn": [
+        "See what our women’s team have been up to on their pre-season training camp with the latest episode of Inside Training",
+        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/1c66c82a1c02-ab85048huyotlqo.webp",
+      "author": "Stephen Wright",
+      "publishedAt": "2026-08-11T08:59:00.000Z",
+      "url": "https://www.arsenal.com/news/inside-training-watch-womens-team-in-la-manga-avZF32c12DI0",
+      "source": "Arsenal.com",
+      "titleZh": "训练内幕：观看女队在拉曼加的训练",
+      "summaryZh": "看女队在季前训练营的最新动态。",
+      "bodyZh": [
+        "观看我们女队在季前训练营的最新动态，尽在本期《训练内幕》。",
+        "这是Arsenal.com免费文章的简明摘要。请打开原始来源查看完整内容。"
+      ],
+      "translationSourceHash": "2badd32e686024bcef5a31007e7a7e1eb44e6d99c30a9be4ce6bbed6f08b4bac",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-13T10:20:23.608Z"
     },
     {
       "id": "ea9e432eb75d9052714f0b82cffe3b01103d653cb3aa2e7c7cd0a9c360ee699e",
@@ -431,6 +406,31 @@
       "translationSourceHash": "e9ff49863922f4ba39537e2246b37dd780be31f106e85b7d84d5a1f1c5347b7d",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-10T09:35:02.723Z"
+    },
+    {
+      "id": "630c6be084fc238456ab6b2647f19d3512e6ee93d90edf716b391b9ef30d64d5",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Highlights: Arsenal 2-3 Borussia Dortmund",
+      "summaryEn": "We continue our pre-season with a narrow defeat in the Emirates Cup",
+      "bodyEn": [
+        "We continue our pre-season with a narrow defeat in the Emirates Cup",
+        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/597cee745ff6-gettyimages-2289728040.webp",
+      "author": "Tom Keens",
+      "publishedAt": "2026-08-09T16:21:50.992Z",
+      "url": "https://www.arsenal.com/news/highlights-arsenal-2-3-borussia-dortmund-a1SmH9J1sDPr",
+      "source": "Arsenal.com",
+      "titleZh": "集锦：阿森纳 2-3 多特蒙德",
+      "summaryZh": "我们在酋长杯惜败，继续季前赛征程。",
+      "bodyZh": [
+        "我们在酋长杯中以一场惜败继续季前赛征程。",
+        "这是Arsenal.com免费文章的简明摘要。请打开原始来源以获取完整报道。"
+      ],
+      "translationSourceHash": "e35482e246f3f3aa47f751f5958b259310beb3ba2051cb6faa1f646eb5401276",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-13T10:20:30.317Z"
     },
     {
       "id": "e0b1fc8fc85524a8f438ab50f2c6c42f52d633560b541e08383a0d18cb4f5f1b",
