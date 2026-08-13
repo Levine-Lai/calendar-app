@@ -4,13 +4,13 @@
 
 ## 当前版本状态
 
-- 本机当前待发布 APK：`2.3.2 / versionCode 44`
+- 本机最新已生成 APK：`2.3.2 / versionCode 44`
 - 当前源码版本：`2.3.2 / versionCode 44`
 - APK 文件：`releases/sports-calendar-2.3.2-debug.apk`
 - GitHub Release：`https://github.com/Levine-Lai/calendar-app/releases/tag/v2.3.2`
 - App 内检查更新清单指向 `2.3.2` 的 GitHub Release 页面，兼容旧版本手机浏览器打开方式。
 
-## 2.3.2（待发布）
+## 2.3.2（已发布）
 
 - 移除全屏奔跑开屏动画，将原 GIF 改为左上角菜单按钮；从桌面、组件、通知或后台恢复时不再重复播放遮罩动画。
 - 暂时隐藏“赛程管理”和“智能添加赛程”入口，但保留本地数据、解析器与 Cloudflare 接入代码，后续可以直接恢复而无需重做。
@@ -25,6 +25,7 @@
 - 桌面组件2只保留最新一期新闻，图片区固定约占整体内容的七分之五；刷新请求绕过 CDN 旧缓存，并阻止较旧响应覆盖手机中已经缓存的新一期。
 - 蓝鸟新闻工作流调整为先提交新闻 JSON、确认 GitHub Raw 已可读取，再发送 FCM 通知；App 从通知进入后也会短时自动重试，避免通知已到但正文尚未同步。
 - 以后用户说“发布这个新版本到 GitHub”等同于执行完整发布流程：生成并验证固定签名 APK、创建 GitHub Release、上传安装包并更新 App 检查更新清单。
+- 已使用历史固定证书生成并发布 `releases/sports-calendar-2.3.2-debug.apk`：`8,099,451` 字节，SHA-256 `F479E41EE4EB0B0400F1C808708BF4054CD93606DBB78312A9B314960E44A15D`；包名、`versionCode 44`、`versionName 2.3.2`、APK Signature Scheme v2 和证书指纹均已验证，GitHub 远程文件与本机完全一致。
 
 ## 2.3.1（已发布）
 

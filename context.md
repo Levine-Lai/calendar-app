@@ -2440,3 +2440,17 @@
 - 更新下载不再直接把 APK 资源 URL 交给系统：先转换为 GitHub Release 页面，再由原生 `ACTION_VIEW` 调用可解析 HTTPS 的默认浏览器，兼容 vivo 的链接分流行为。
 - 删除服务端、本机轮询和 FCM 接收端的北京时间 00:00–08:59 静默判断，通知恢复全天发送和展示。
 - 源码仍为 `2.3.2 / versionCode 44`，`public/version.json` 继续发布 `2.3.1 / versionCode 43`；本轮未打包。
+
+## 2026-08-13
+
+### 发布批次：2.3.2 组件与新闻同步稳定性
+
+- 用户目标：修复桌面组件1刷新失败并恢复默认显示北京时间今天；组件2固定显示最新一期、图片区约占七分之五；让新闻通知与 App 正文更同步，并完成 APK 和 GitHub Release 发布。
+- 原因定位：比赛 API 联网检查中 NBA、NFL 个别 ESPN 请求在两轮里偶发一次失败，而原生 JSON 请求没有内部重试；组件1手动刷新沿用 `KEEP`，旧任务未结束时新点击会被忽略。蓝鸟新闻工作流此前在提交 JSON 前发送 FCM，因此通知可能早于 GitHub Raw 正文到达手机。
+- 实现方案：组件1默认日期偏移改回 0，并对旧版默认明日状态执行一次迁移；比赛 JSON 请求最多尝试三次，手动刷新用 `REPLACE` 替换卡住的任务并显示“刷新中”。组件2继续保持 4×3 与 5:2 图文权重，只读取最新一条，Raw/CDN 请求增加缓存破坏参数，并禁止旧发布时间覆盖新缓存。
+- 推送同步：蓝鸟工作流改为先生成并提交 JSON、轮询确认 GitHub Raw 最新文章 ID 与更新时间一致，再执行通知专用阶段；App 从通知打开但未找到文章时，最多按 1.5/3/5/8/12 秒间隔自动同步。
+- 数据兼容：组件日期迁移只运行一次；没有保存选择或仍处于旧默认值 1 的实例切回今天，其他日期保持不变。新闻和图片旧缓存保留，网络失败不会清空已显示内容。
+- 主要文件：`MlbTodayWidgetProvider.java`、`WidgetNetworkClient.java`、`WidgetRefreshWorker.java`、`TeamNewsWidgetData.java`、`NewsWidgetRefreshWorker.java`、`public/app.js`、`public/team-news-core.js`、`firebase/functions/update-static-news.js`、`firebase/functions/wait-for-published-news.js`、`blue-jays-news.yml`、`public/version.json`。
+- 验证结果：Web 测试 42 项、新闻后台测试 32 项、稳定性检查 37 项全部通过；Android `assembleDebug`、JVM 测试与 Lint 成功。赛事 API 检查大部分端点为 2/2，NBA/NFL 个别 ESPN 请求为 1/2，已由客户端三次重试容错；上游若持续不可用仍只能保留本地旧数据，不能生成不存在的真实赛程或比分。
+- 发布结果：固定证书 APK `releases/sports-calendar-2.3.2-debug.apk` 大小 `8,099,451` 字节，SHA-256 `F479E41EE4EB0B0400F1C808708BF4054CD93606DBB78312A9B314960E44A15D`；包名 `com.local.sportscalendar`、`versionCode 44`、`versionName 2.3.2`、v2 签名和历史证书均验证通过。GitHub Release：`https://github.com/Levine-Lai/calendar-app/releases/tag/v2.3.2`，远端资产哈希与本机一致；远程更新清单已返回 2.3.2，并使用 Release 页面作为旧版兼容下载入口。
+- 协作约定：根目录 `AGENTS.md` 已记录，以后用户说“发布这个新版本到 GitHub”或同义表达，即执行完整的固定签名 APK、GitHub Release、上传和更新清单流程。

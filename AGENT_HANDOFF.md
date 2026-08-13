@@ -1,28 +1,27 @@
 # 观赛日记 Agent 工程交接
 
-最后核对：2026-08-12
+最后核对：2026-08-13
 项目目录：`D:\Codex\calendar-app`  
 仓库：`Levine-Lai/calendar-app`  
 包名：`com.local.sportscalendar`
 
 ## 当前可交付状态
 
-- 当前源码：`2.3.2 / versionCode 44`，尚未打包；Cloudflare Worker 已部署，客户端 endpoint 已指向 Worker 且已通过真实请求验证。
-- 2.3.1 当前还包含：首页“今日赛程”暂时移除、阿森纳双源自动新闻、APK 本地阿森纳队徽、组件2完整图片与快速刷新、新闻语言按钮无位移/无点击高亮、文章标题顶部留白清理，以及更新下载和双击删除修复。
-- 本机最新 APK：`2.3.1 / versionCode 43`。
-- GitHub 最新已发布 APK：`2.3.1 / versionCode 43`。
-- APK：`releases/sports-calendar-2.3.1-debug.apk`。
-- APK 大小：`8,081,225` 字节。
-- APK SHA-256：`E47E9642144AD320D2422981094BB71ED9F55D2AECD24AB8BC6BD74A87DF8BBB`。
+- 当前源码：`2.3.2 / versionCode 44`；Cloudflare Worker 已部署，客户端 endpoint 已指向 Worker 且已通过真实请求验证。
+- 本机最新 APK：`2.3.2 / versionCode 44`。
+- GitHub 最新已发布 APK：`2.3.2 / versionCode 44`。
+- APK：`releases/sports-calendar-2.3.2-debug.apk`。
+- APK 大小：`8,099,451` 字节。
+- APK SHA-256：`F479E41EE4EB0B0400F1C808708BF4054CD93606DBB78312A9B314960E44A15D`。
 - 签名：APK Signature Scheme v2。
 - 签名证书 SHA-256：`7EF83E3EC40B7BF1E9AAF551589EE73C378FC26F29202255F0466BCAB759BED0`。
-- GitHub Release：`https://github.com/Levine-Lai/calendar-app/releases/tag/v2.3.1`。
-- App 内远程更新已启用：`public/version.json` 发布 `2.3.1 / versionCode 43`，下载地址为 GitHub Release 固定 HTTPS 资源。
+- GitHub Release：`https://github.com/Levine-Lai/calendar-app/releases/tag/v2.3.2`。
+- App 内远程更新已启用：`public/version.json` 发布 `2.3.2 / versionCode 44`，下载地址为 GitHub Release 页面，兼容旧版 App 打开浏览器。
 - GitHub 远程资产与本机 APK 大小、SHA-256 完全一致。
 
 ## 必须遵守
 
-1. 用户没有明确说“打包”或要求 APK/AAB 时，不执行 Android 打包或签名验证。
+1. 用户没有明确说“打包”、要求 APK/AAB 或“发布新版本到 GitHub”时，不执行 Android 打包或签名验证；“发布新版本到 GitHub”表示执行完整 APK + Release + 更新清单流程。
 2. 如果源码完成但用户未要求打包，告知下一个版本号并等待指令。
 3. 不执行 `git reset --hard`、`git checkout -- .`、`git clean` 等会丢弃本地工作区的命令。
 4. 不提交 keystore、Firebase Admin JSON、DeepSeek Key 或其他私钥。
@@ -44,7 +43,8 @@
 - 组件2已从旧 2×2 比赛详情卡片改为 4×3 最近蓝鸟新闻卡片。
 - 组件2大图贴住顶部并带圆角，标题保持 19sp 两行，只显示最新一条；图片以 `fitCenter` 完整展示，不再中心裁掉边缘。
 - 组件2已移除 `StackView`，Provider 直接装载最新一条新闻；图片和标题按约 5:2 分配高度，不再出现系统卡片内缩。
-- 组件2每 15 分钟独立刷新，Raw/jsDelivr 并行请求；主动刷新使用 expedited WorkManager，按发布时间缓存最新一条新闻。
+- 组件2每 15 分钟独立刷新，Raw/jsDelivr 并行请求并附带缓存破坏参数；主动刷新使用 expedited WorkManager，只缓存最新一条，并拒绝用较旧响应覆盖已有新内容。
+- 蓝鸟新闻 GitHub Actions 先提交新闻 JSON，再等待 GitHub Raw 返回同一篇最新文章，确认可读后才发送 FCM；App 从通知进入但暂未找到文章时会按 1.5/3/5/8/12 秒自动刷新重试。
 - 新闻文章只允许 MLB 官方 HTTPS 链接，图片只允许 `img.mlbstatic.com`。
 - 图片和标题缓存在 App 内部目录；更新失败保留旧缓存。
 - 点击组件2通过 `OPEN_TEAM_NEWS` 打开对应文章。
@@ -56,7 +56,7 @@
 - 通知和组件进入 App 时直接处理目标页面，不再经过开屏动画或延迟计时。
 - Android 原生启动页和 WebView 首帧都使用 `#C5E5F8` 纯蓝背景，原生启动图标改为透明占位，避免启动阶段闪图标或闪米色。
 - ESPN 足球整季赛程最多按 45 天分段、最多 3 段并发获取；每段保留请求重试。CFA JSONP 也有重试，球队目录为空时可从赛程反推球队。
-- 首页日历上方的“今日比赛”列表当前已暂时移除；桌面组件1在没有已保存选择时默认显示明天。
+- 首页日历上方的“今日比赛”列表当前已暂时移除；桌面组件1默认显示北京时间今天，旧版默认停在明天的实例会自动迁移回今天。
 - 深圳新鹏城赛程遇到 ESPN 空队徽时，会从 CFL 中超官方赛程按球队名称补齐；重庆铜梁龙和辽宁铁人另有内置官方 HTTPS 地址作为离线规则兜底。
 - 首页“今日比赛”不再使用总容器或标题/数量标记；每场独立为无阴影的磨砂玻璃卡片，仅显示双方无边框队徽和比分（未开始时显示时间）。日历按周一至周日排列。
 - 新闻详情按 `文章 ID + 语言` 保存滚动位置；打开另一篇文章时强制从顶部开始，回到已读文章时恢复各自位置。
@@ -74,7 +74,7 @@
 - Provider：`MlbTodayWidgetProvider`。
 - Service：`SportsWidgetService`。
 - Worker：`WidgetRefreshWorker`。
-- 约 4×4；初始默认明天，支持前一天、后一天、刷新和滚动列表。
+- 约 4×4；初始默认北京时间今天，支持前一天、后一天、刷新和滚动列表；比赛 JSON 单次请求最多尝试三次，手动刷新会替换卡住的旧任务。
 - 每个实例独立保存日期；实时比分和队徽按日期缓存。
 
 ### 组件2：最近新闻
