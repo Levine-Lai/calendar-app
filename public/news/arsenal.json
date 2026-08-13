@@ -1,12 +1,62 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-13T12:32:12.273Z",
+  "updatedAt": "2026-08-13T14:07:55.856Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "89b17a2fd06d46455565e9b9ce9a223d44f53e97f584ef5a906d1612a20bf39e",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Hotels.com and Arsenal renew multi-year partnership",
+      "summaryEn": "The partnership continues as data shows a growing demand from travellers to turn sporting passions into memorable trips",
+      "bodyEn": [
+        "The partnership continues as data shows a growing demand from travellers to turn sporting passions into memorable trips",
+        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/e314bfe84437-afc-hcom1123x632safe.webp",
+      "author": "Arsenal Media",
+      "publishedAt": "2026-08-13T13:30:16.617Z",
+      "url": "https://www.arsenal.com/news/hotels.com-and-arsenal-renew-multi-year-partnership-a31HV6J4yYUz",
+      "source": "Arsenal.com",
+      "titleZh": "Hotels.com与阿森纳续签多年合作伙伴关系",
+      "summaryZh": "数据显示旅客将体育热情转化为难忘旅行的需求日益增长，合作关系继续。",
+      "bodyZh": [
+        "合作伙伴关系继续，数据显示旅客将体育热情转化为难忘旅行的需求日益增长。",
+        "这是Arsenal.com免费文章的简要摘要。请打开原始来源以查看完整故事。"
+      ],
+      "translationSourceHash": "3a5e331ab812338e0d4a52f1fb42954bf7d55cc251196d70cb05e71db5fa4939",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-13T14:07:06.494Z"
+    },
+    {
+      "id": "1a074ae1329828f8aded72c65ea65565f7df39ed655b2cadef727109d6798892",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Report: AC Milan 3-2 Arsenal Women",
+      "summaryEn": "We closed out our pre-season camp in Spain with a narrow defeat to Milan",
+      "bodyEn": [
+        "We closed out our pre-season camp in Spain with a narrow defeat to Milan",
+        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/9a153f9a231f-kim-little-milan.webp",
+      "author": "Emma Holbrook",
+      "publishedAt": "2026-08-13T13:03:40.375Z",
+      "url": "https://www.arsenal.com/news/report-ac-milan-3-2-arsenal-women-azwet5w0IeOg",
+      "source": "Arsenal.com",
+      "titleZh": "报道：AC米兰3-2阿森纳女足",
+      "summaryZh": "我们在西班牙季前训练营以微弱劣势不敌米兰。",
+      "bodyZh": [
+        "我们在西班牙的季前训练营以微弱劣势不敌米兰，结束了本次集训。",
+        "这是阿森纳官网文章的简要摘要，完整报道请查阅原始来源。"
+      ],
+      "translationSourceHash": "6ee33ca7d199eb42495e2fd62cda7c03f61bdb1e2bc6214ae0d9913f2d76a47d",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-13T14:07:06.403Z"
+    },
     {
       "id": "e4adb712abf4a8bcf0c9eba3dbb6b67f49fc50fb91d45c8d5d65b938b18ccb9c",
       "teamId": "arsenal",
@@ -87,9 +137,9 @@
       "teamId": "arsenal",
       "teamName": "阿森纳",
       "titleEn": "Football transfer rumours: Galatasaray to spend £38m on Arsenal’s Martinelli?",
-      "summaryEn": "Today’s fluff preferred Bonnie Tyler’s versionCurtis Jones’s future has been the subject of much gossipmongering this summer, especially with Inter plonking him in the middle of their radar. The Italians have sniffed around the midfielder for quite a while and may ramp up their interest very soon with a bid of £30m to test Liverpool’s resolve.Ipswich are not willing to stop their summer spending and a return for Julio Enciso looks nailed on. The Paraguay international had an injury-plagued loan spell at Portman Road in 2025 but is back to lead their battle for Premier League survival after a permanent deal was agreed with Strasbourg. Also making the move from the French club is right-back Abdoul Ouattara. Continue reading...",
+      "summaryEn": "Today’s fluff preferred Bonnie Tyler’s versionCurtis Jones’s future has been the subject of much gossipmongering this summer, especially with Inter plonking him in the middle of their radar. The Italian club have sniffed around the midfielder for quite a while and may ramp up their interest very soon with a bid of £30m to test Liverpool’s resolve.Ipswich are not willing to stop their summer spending and a return for Julio Enciso looks nailed on. The Paraguay international had an injury-plagued loan spell at Portman Road in 2025 but is back to lead their battle for Premier League survival after a permanent deal was agreed with Strasbourg. Also making the move from the French club is right-back Abdoul Ouattara. Continue reading...",
       "bodyEn": [
-        "Today’s fluff preferred Bonnie Tyler’s versionCurtis Jones’s future has been the subject of much gossipmongering this summer, especially with Inter plonking him in the middle of their radar. The Italians have sniffed around the midfielder for quite a while and may ramp up their interest very soon with a bid of £30m to test Liverpool’s resolve.Ipswich are not willing to stop their summer spending and a return for Julio Enciso looks nailed on. The Paraguay international had an injury-plagued loan spell at Portman Road in 2025 but is back to lead their battle for Premier League survival after a permanent deal was agreed with Strasbourg. Also making the move from the French club is right-back Abdoul Ouattara. Continue reading...",
+        "Today’s fluff preferred Bonnie Tyler’s versionCurtis Jones’s future has been the subject of much gossipmongering this summer, especially with Inter plonking him in the middle of their radar. The Italian club have sniffed around the midfielder for quite a while and may ramp up their interest very soon with a bid of £30m to test Liverpool’s resolve.Ipswich are not willing to stop their summer spending and a return for Julio Enciso looks nailed on. The Paraguay international had an injury-plagued loan spell at Portman Road in 2025 but is back to lead their battle for Premier League survival after a permanent deal was agreed with Strasbourg. Also making the move from the French club is right-back Abdoul Ouattara. Continue reading...",
         "Open the original Guardian article for the complete free report and author context."
       ],
       "imageUrl": "https://i.guim.co.uk/img/media/2a038bdd5a42daedccf0a89aaabb3b04a05a7694/812_25_4275_3420/master/4275.jpg?width=140&quality=85&auto=format&fit=max&s=5d5e0dde37b09dbc364a269b3af38aa2",
@@ -97,15 +147,15 @@
       "publishedAt": "2026-08-13T08:14:07.000Z",
       "url": "https://www.theguardian.com/football/2026/aug/13/football-transfer-rumour-mill-galatasaray-38m-arsenal-gabriel-martinelli",
       "source": "The Guardian",
-      "titleZh": "足球转会传闻：加拉塔萨雷将花3800万英镑买阿森纳的马丁内利？",
-      "summaryZh": "今日转会传闻：加拉塔萨雷报价3800万英镑求购马丁内利，国米、伊普斯维奇也有动作。",
+      "titleZh": "足球转会传闻：加拉塔萨雷欲以3800万英镑求购阿森纳的马丁内利？",
+      "summaryZh": "今日转会传闻：国米欲3000万镑报价柯蒂斯·琼斯，伊普斯维奇将签下恩西索和瓦塔拉。",
       "bodyZh": [
-        "今日花絮更偏爱邦妮·泰勒的版本。柯蒂斯·琼斯的未来今夏一直是流言蜚语的主题，尤其是国米将他置于雷达中央。意大利人已经对这名中场垂涎已久，可能很快就会以3000万英镑的报价试探利物浦的决心。伊普斯维奇不打算停止夏季引援，胡利奥·恩西索的回归似乎板上钉钉。这位巴拉圭国脚2025年租借至波特曼路期间伤病缠身，但在与斯特拉斯堡达成永久转会协议后，他将回归带领球队为英超保级而战。同样从这家法国俱乐部加盟的还有右后卫阿卜杜勒·乌阿塔拉。继续阅读……",
-        "打开卫报原文，获取完整免费报道和作者背景。"
+        "今日花絮偏爱邦妮·泰勒的版本。柯蒂斯·琼斯的未来成为今夏转会传闻的焦点，尤其是国际米兰将他列入引援名单。这家意大利俱乐部对这名中场已关注多时，可能很快以3000万英镑的报价试探利物浦的决心。伊普斯维奇并不打算停止夏季引援，胡利奥·恩西索的回归看似板上钉钉。这位巴拉圭国脚2025年租借至波特曼路期间伤病缠身，但在与斯特拉斯堡达成永久转会后，他将重返球队，带领球队为英超保级而战。此外，右后卫阿卜杜勒·瓦塔拉也将从这家法国俱乐部加盟。继续阅读...",
+        "打开《卫报》原文，获取完整免费报道和作者背景。"
       ],
-      "translationSourceHash": "40e45201eeefd46c824f26b4d227021e31cc434b9e2bca67eb72a1916ca0fbc8",
+      "translationSourceHash": "7391394af9231abe50ff967d8055824cde6e912b3ddbbaf68d72a82241a14610",
       "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-13T08:42:52.443Z"
+      "translatedAt": "2026-08-13T14:07:55.856Z"
     },
     {
       "id": "c6374a0ff73dc99cddb43251e573a459cc357455c3ca0a611ab612853ec3add9",
@@ -131,81 +181,6 @@
       "translationSourceHash": "07c34eceef7442d0e42199ce3cf7f2736f34653af7f614ded08d59de6470f691",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-13T08:42:52.331Z"
-    },
-    {
-      "id": "a5bafe6810ea4fe569f42a7c011756c042f1193230d375aaf33a83b573121754",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Gallery: 30 shots from our Como contest in N5",
-      "summaryEn": "Pre-season preparations are wrapping up as business begins",
-      "bodyEn": [
-        "Pre-season preparations are wrapping up as business begins",
-        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/c673975eeb53-gettyimages-2290213906.webp",
-      "author": "Dan Godfrey",
-      "publishedAt": "2026-08-12T23:46:48.691Z",
-      "url": "https://www.arsenal.com/news/gallery-30-shots-from-our-como-contest-in-n5-a3fzw0v94uf8",
-      "source": "Arsenal.com",
-      "titleZh": "图集：我们在N5对阵科莫的30张照片",
-      "summaryZh": "季前备战接近尾声，新赛季即将开启。",
-      "bodyZh": [
-        "季前备战接近尾声，新赛季即将开启。",
-        "这是阿森纳官网免费文章的简洁摘要。请打开原始来源查看完整内容。"
-      ],
-      "translationSourceHash": "38a772688e83f8eb211b03a13c7841f36ab6072612940a9954c6e1efb56b8bad",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-12T23:56:52.759Z"
-    },
-    {
-      "id": "f5892fc38e86e78dddd35fa7055343f4fb437c5f38c0003777b816c128cfc1f1",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Every word from Mikel’s Como presser",
-      "summaryEn": "The boss addressed the media after our pre-season test with Como",
-      "bodyEn": [
-        "The boss addressed the media after our pre-season test with Como",
-        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/5cc4484771d7-london-england-mikel-arteta-manager-of-arsenal-gives-the-team-instructions-durin.webp",
-      "author": "Arsenal Media",
-      "publishedAt": "2026-08-12T22:02:11.009Z",
-      "url": "https://www.arsenal.com/news/every-word-from-mikels-como-presser-aIMrT5q2jfOS",
-      "source": "Arsenal.com",
-      "titleZh": "米克尔在科莫赛后发布会的完整发言",
-      "summaryZh": "主帅在球队与科莫的季前赛后接受了媒体采访。",
-      "bodyZh": [
-        "主帅在球队与科莫的季前赛后接受了媒体采访。",
-        "这是Arsenal.com免费文章的简明摘要，请打开原始来源阅读完整报道。"
-      ],
-      "translationSourceHash": "070e7c936eca747bf7a85e203b0f3e8dd5431a617c3173d518284beab3e9a5dc",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-12T22:58:31.189Z"
-    },
-    {
-      "id": "9551e1d6e66bf944d97d8d0ecf80f360cab9ed996e2ce57a4b90f87e2f2b88d9",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Tzolis on pre-season and winning penalty",
-      "summaryEn": "Christos talks through his first pre-season ahead of the Community Shield",
-      "bodyEn": [
-        "Christos talks through his first pre-season ahead of the Community Shield",
-        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/93d0bd884c57-arsenals-greek-striker-christos-tzolis-scores-the-wining-penalty-during-the-pre.webp",
-      "author": "Charlie Peat",
-      "publishedAt": "2026-08-12T21:34:33.902Z",
-      "url": "https://www.arsenal.com/news/tzolis-on-pre-season-and-winning-penalty-awXF94B4XTdq",
-      "source": "Arsenal.com",
-      "titleZh": "措利斯谈季前赛与制胜点球",
-      "summaryZh": "克里斯托斯回顾社区盾前的首次季前赛。",
-      "bodyZh": [
-        "克里斯托斯回顾社区盾前的首次季前赛。",
-        "这是一篇阿森纳官网免费文章的简要摘要，完整故事请查看原始来源。"
-      ],
-      "translationSourceHash": "ef25ad8c704bdf3ec38177a89b1301403eaf35d5a3da61f35ce1fc0fdd126f41",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-12T22:00:42.048Z"
     },
     {
       "id": "e0656befa54f7a5c5331aa08c62a317228fc56c10161f594b50159e4d4acb781",
@@ -504,6 +479,31 @@
       "translationSourceHash": "ae9d32d5394ebf18d64896f725bccd994771aa746b2678eb32a63a8743e85e91",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-13T12:32:09.092Z"
+    },
+    {
+      "id": "f5d0364b0ed53d0aee57c90ce5346aeb16e90b53c627feb6d2dcff2d99e74001",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Highlights: Girona 1-4 Arsenal",
+      "summaryEn": "Watch all the key action from our big win in Girona",
+      "bodyEn": [
+        "Watch all the key action from our big win in Girona",
+        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/8764070fa93d-girona-spain-max-dowman-of-arsenal-fc-celebrates-scoring-his-teams-third-goal-du.webp",
+      "author": "Charlie Peat",
+      "publishedAt": "2026-08-02T08:46:09.874Z",
+      "url": "https://www.arsenal.com/news/highlights-girona-1-4-arsenal-ah4nb9g2LDPy",
+      "source": "Arsenal.com",
+      "titleZh": "集锦：赫罗纳 1-4 阿森纳",
+      "summaryZh": "观看我们在赫罗纳大胜的所有关键精彩瞬间。",
+      "bodyZh": [
+        "观看我们在赫罗纳大胜的所有关键精彩瞬间。",
+        "这是阿森纳官网文章的简明摘要，完整报道请查阅原文。"
+      ],
+      "translationSourceHash": "808a2b849ed87b61aaefe244e09d0b338a3eea4a0961335d9dda0afc94ce3311",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-13T14:07:08.946Z"
     }
   ]
 }
