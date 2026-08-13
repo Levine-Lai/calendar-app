@@ -1,12 +1,37 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-13T10:20:30.317Z",
+  "updatedAt": "2026-08-13T12:32:12.273Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "e4adb712abf4a8bcf0c9eba3dbb6b67f49fc50fb91d45c8d5d65b938b18ccb9c",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Watch part two of our Viktor Gyokeres documentary!",
+      "summaryEn": "Head to The Arsenal app to catch the second episode of our documentary",
+      "bodyEn": [
+        "Head to The Arsenal app to catch the second episode of our documentary",
+        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/b8147ce2586c-london-england-viktor-gyoekeres-of-arsenal-celebrates-with-the-arsenal-fans-afte.webp",
+      "author": "Charlie Peat",
+      "publishedAt": "2026-08-13T11:00:00.000Z",
+      "url": "https://www.arsenal.com/news/watch-part-two-of-our-viktor-gyokeres-documentary-aI9Ut2I1kimD",
+      "source": "Arsenal.com",
+      "titleZh": "观看我们的维克托·于厄克雷斯纪录片第二部！",
+      "summaryZh": "前往阿森纳应用程序观看纪录片第二集。",
+      "bodyZh": [
+        "前往阿森纳应用程序观看我们纪录片的第二集。",
+        "这是Arsenal.com免费文章的简明摘要。请打开原始来源查看完整报道。"
+      ],
+      "translationSourceHash": "463035682dbd492806f75ea72a48b0fdd214745720277ba927b62af7eb41ac9f",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-13T12:32:05.677Z"
+    },
     {
       "id": "6f2df612a9510f43874799a12ef23d6d2df47f55e3549a9072a35a78fa2b911f",
       "teamId": "arsenal",
@@ -158,31 +183,6 @@
       "translatedAt": "2026-08-12T22:58:31.189Z"
     },
     {
-      "id": "35f7d6643cb386db0ec214329f5d9ff708afb3b2f8946748a8d25477852c6704",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Arteta: Bruno reception was great",
-      "summaryEn": "Mikel Arteta looks back at pre-season as we prepare for the Community Shield",
-      "bodyEn": [
-        "Mikel Arteta looks back at pre-season as we prepare for the Community Shield",
-        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/385e529fe311-london-england-mikel-arteta-manager-of-arsenal-reacts-during-the-pre-season-frie.webp",
-      "author": "Charlie Peat",
-      "publishedAt": "2026-08-12T21:59:23.587Z",
-      "url": "https://www.arsenal.com/news/arteta-bruno-reception-was-great-adaQg5B44nAt",
-      "source": "Arsenal.com",
-      "titleZh": "阿尔特塔：布鲁诺的接待很棒",
-      "summaryZh": "米克尔·阿尔特塔回顾季前赛，我们备战社区盾。",
-      "bodyZh": [
-        "米克尔·阿尔特塔回顾季前赛，我们备战社区盾。",
-        "这是Arsenal.com免费文章的简要摘要。请打开原始来源获取完整报道。"
-      ],
-      "translationSourceHash": "d32e6c0510e0cbabe90b6d7aa23e633e861b89d9fcfec9cecec6c11d63af27ed",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-12T22:58:35.548Z"
-    },
-    {
       "id": "9551e1d6e66bf944d97d8d0ecf80f360cab9ed996e2ce57a4b90f87e2f2b88d9",
       "teamId": "arsenal",
       "teamName": "阿森纳",
@@ -231,56 +231,6 @@
       "translationSourceHash": "0006e77ba06461fc1901bb3af85736c618cfebc23fe2d9a0adb8cf5dd0fbc56e",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-12T22:58:33.839Z"
-    },
-    {
-      "id": "cfebb1d89d922bbb6dc5166f1d1130521ac31b522b2b9bd334c97648033685c5",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Report: Arsenal 1-1 Como 1907 (4-3 pens)",
-      "summaryEn": "Find out how we got on during our final pre-season clash of summer 2026",
-      "bodyEn": [
-        "Find out how we got on during our final pre-season clash of summer 2026",
-        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/27d83ed3c308-london-england-myles-lewis-skelly-of-arsenal-celebrates-scoring-his-teams-first.webp",
-      "author": "Charlie Peat",
-      "publishedAt": "2026-08-12T20:32:32.406Z",
-      "url": "https://www.arsenal.com/news/report-arsenal-1-1-como-1907-4-3-pens-aMYn79P6jdJF",
-      "source": "Arsenal.com",
-      "titleZh": "战报：阿森纳 1-1 科莫1907（点球4-3）",
-      "summaryZh": "了解我们2026年夏季最后一场季前赛的表现。",
-      "bodyZh": [
-        "了解我们2026年夏季最后一场季前赛的表现。",
-        "这是Arsenal.com免费文章的简明摘要。请打开原始来源查看完整故事。"
-      ],
-      "translationSourceHash": "dfb36b08313829a6936d24632b1eb27c02f7f8f743c10f333b70886989b28c80",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-12T22:58:44.533Z"
-    },
-    {
-      "id": "76f701fb0bde4a561f3fa7633af86347b72d5a6b40790e55f37ec29b4d479a1a",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Team News: Eze returns, Bruno on the bench for Como",
-      "summaryEn": "Find out our starting line-up for our final pre-season clash against Como 1907!",
-      "bodyEn": [
-        "Find out our starting line-up for our final pre-season clash against Como 1907!",
-        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/1d0cfe44fa9c-london-colney-england-eberechi-eze-of-arsenal-during-a-training-session-at-sobha.webp",
-      "author": "Charlie Peat",
-      "publishedAt": "2026-08-12T17:14:54.726Z",
-      "url": "https://www.arsenal.com/news/team-news-eze-returns-bruno-on-the-bench-for-como-ayEE33e5cr2E",
-      "source": "Arsenal.com",
-      "titleZh": "球队新闻：埃泽回归，布鲁诺在对阵科莫的比赛中替补",
-      "summaryZh": "了解我们对阵科莫1907季前赛的首发阵容！",
-      "bodyZh": [
-        "了解我们对阵科莫1907的最后一场季前赛的首发阵容！",
-        "这是Arsenal.com免费文章的简明摘要。请打开原始来源以获取完整报道。"
-      ],
-      "translationSourceHash": "1749555d2387acd4a572e528387488b06d25314faaaebd37933a1ccdffce2816",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-12T17:39:51.931Z"
     },
     {
       "id": "9ee68326021d86fa07f688f8311852440f59573309e605c97a5a9bc62b88f53a",
@@ -506,6 +456,54 @@
       "translationSourceHash": "1a8f07fb4cbdd637e6b247febd5b1134ed61d0ea78f1889f9cd262b511802c37",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-10T09:35:48.118Z"
+    },
+    {
+      "id": "1eff5e93617808e7796925ebf19fc78db5af5a17711172370b754d5c0f1c9b3d",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Highlights: Arsenal 1-3 Real Betis",
+      "summaryEn": "Our pre-season continues with a defeat in Dublin",
+      "bodyEn": [
+        "Our pre-season continues with a defeat in Dublin",
+        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/1fae866f382f-dublin-ireland-gabriel-martinelli-of-arsenal-fc-controls-the-ball-during-the-pre.webp",
+      "author": "Tom Keens",
+      "publishedAt": "2026-08-05T21:29:25.475Z",
+      "url": "https://www.arsenal.com/news/highlights-arsenal-1-3-real-betis-av54u4q6mjEB",
+      "source": "Arsenal.com",
+      "titleZh": "集锦：阿森纳1-3皇家贝蒂斯",
+      "summaryZh": "阿森纳季前赛在都柏林落败。",
+      "bodyZh": [
+        "我们的季前赛在都柏林以一场失利继续进行。",
+        "这是阿森纳官网一篇免费文章的简明摘要。请打开原始来源获取完整故事。"
+      ],
+      "translationSourceHash": "7bc8cc441ae5a2db680b2e664bdef5a9373db057af8f00c139e0d55b11afdddc",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-13T12:32:12.273Z"
+    },
+    {
+      "id": "538a8d66a008e67bf4db9b8a7c0c124484478236b62930140371f492db223386",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Disabled Supporters Information Sunderland (A)",
+      "summaryEn": "",
+      "bodyEn": [
+        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/dd326487c41a-tickets-2526-sunderland-a.webp",
+      "author": "Arsenal FC",
+      "publishedAt": "2026-08-04T09:46:02.246Z",
+      "url": "https://www.arsenal.com/news/disabled-supporters-information-sunderland-a-a0sNY4Y11KHq",
+      "source": "Arsenal.com",
+      "titleZh": "残障球迷信息：桑德兰（客场）",
+      "summaryZh": "阿森纳官网免费文章的简要摘要。",
+      "bodyZh": [
+        "这是阿森纳官网免费文章的简要摘要。请打开原始来源查看完整报道。"
+      ],
+      "translationSourceHash": "ae9d32d5394ebf18d64896f725bccd994771aa746b2678eb32a63a8743e85e91",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-13T12:32:09.092Z"
     }
   ]
 }
