@@ -1,12 +1,87 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-12T23:56:52.759Z",
+  "updatedAt": "2026-08-13T08:42:52.443Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "f776980c450e6d5fb21b59c6cd680f41a33052a98ddd6af7b1000428b9c6bb91",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Watch a full match replay v Como in N5",
+      "summaryEn": "The full 90 against Cesc Fabregas' Serie A side",
+      "bodyEn": [
+        "The full 90 against Cesc Fabregas' Serie A side",
+        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/c4cac1beb1c3-gettyimages-2290207114.webp",
+      "author": "Arsenal Media",
+      "publishedAt": "2026-08-13T08:30:00.000Z",
+      "url": "https://www.arsenal.com/news/watch-a-full-match-replay-v-como-in-n5-aplmP5n2U0Rr",
+      "source": "Arsenal.com",
+      "titleZh": "在N5观看对阵科莫的完整比赛回放",
+      "summaryZh": "对阵法布雷加斯意甲球队的完整90分钟。",
+      "bodyZh": [
+        "对阵法布雷加斯意甲球队的完整90分钟。",
+        "这是Arsenal.com免费文章的简要摘要。请打开原始来源查看完整报道。"
+      ],
+      "translationSourceHash": "33bde8691a0a2e066c7c72fe194225bde43d99d3f0698b145e9f295de7287d7d",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-13T08:42:49.925Z"
+    },
+    {
+      "id": "e53d460a227262ec5fe56ff8c770e84e3591345f9066c23311c3878226de21cf",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Football transfer rumours: Galatasaray to spend £38m on Arsenal’s Martinelli?",
+      "summaryEn": "Today’s fluff preferred Bonnie Tyler’s versionCurtis Jones’s future has been the subject of much gossipmongering this summer, especially with Inter plonking him in the middle of their radar. The Italians have sniffed around the midfielder for quite a while and may ramp up their interest very soon with a bid of £30m to test Liverpool’s resolve.Ipswich are not willing to stop their summer spending and a return for Julio Enciso looks nailed on. The Paraguay international had an injury-plagued loan spell at Portman Road in 2025 but is back to lead their battle for Premier League survival after a permanent deal was agreed with Strasbourg. Also making the move from the French club is right-back Abdoul Ouattara. Continue reading...",
+      "bodyEn": [
+        "Today’s fluff preferred Bonnie Tyler’s versionCurtis Jones’s future has been the subject of much gossipmongering this summer, especially with Inter plonking him in the middle of their radar. The Italians have sniffed around the midfielder for quite a while and may ramp up their interest very soon with a bid of £30m to test Liverpool’s resolve.Ipswich are not willing to stop their summer spending and a return for Julio Enciso looks nailed on. The Paraguay international had an injury-plagued loan spell at Portman Road in 2025 but is back to lead their battle for Premier League survival after a permanent deal was agreed with Strasbourg. Also making the move from the French club is right-back Abdoul Ouattara. Continue reading...",
+        "Open the original Guardian article for the complete free report and author context."
+      ],
+      "imageUrl": "https://i.guim.co.uk/img/media/2a038bdd5a42daedccf0a89aaabb3b04a05a7694/812_25_4275_3420/master/4275.jpg?width=140&quality=85&auto=format&fit=max&s=5d5e0dde37b09dbc364a269b3af38aa2",
+      "author": "Will Unwin",
+      "publishedAt": "2026-08-13T08:14:07.000Z",
+      "url": "https://www.theguardian.com/football/2026/aug/13/football-transfer-rumour-mill-galatasaray-38m-arsenal-gabriel-martinelli",
+      "source": "The Guardian",
+      "titleZh": "足球转会传闻：加拉塔萨雷将花3800万英镑买阿森纳的马丁内利？",
+      "summaryZh": "今日转会传闻：加拉塔萨雷报价3800万英镑求购马丁内利，国米、伊普斯维奇也有动作。",
+      "bodyZh": [
+        "今日花絮更偏爱邦妮·泰勒的版本。柯蒂斯·琼斯的未来今夏一直是流言蜚语的主题，尤其是国米将他置于雷达中央。意大利人已经对这名中场垂涎已久，可能很快就会以3000万英镑的报价试探利物浦的决心。伊普斯维奇不打算停止夏季引援，胡利奥·恩西索的回归似乎板上钉钉。这位巴拉圭国脚2025年租借至波特曼路期间伤病缠身，但在与斯特拉斯堡达成永久转会协议后，他将回归带领球队为英超保级而战。同样从这家法国俱乐部加盟的还有右后卫阿卜杜勒·乌阿塔拉。继续阅读……",
+        "打开卫报原文，获取完整免费报道和作者背景。"
+      ],
+      "translationSourceHash": "40e45201eeefd46c824f26b4d227021e31cc434b9e2bca67eb72a1916ca0fbc8",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-13T08:42:52.443Z"
+    },
+    {
+      "id": "c6374a0ff73dc99cddb43251e573a459cc357455c3ca0a611ab612853ec3add9",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Young Gunners set for Premier League 2 return",
+      "summaryEn": "We'll be looking to continue our streak of appearing in the PL2 play-offs",
+      "bodyEn": [
+        "We'll be looking to continue our streak of appearing in the PL2 play-offs",
+        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/c68b8fe2454e-goal.webp",
+      "author": "Connor Booth",
+      "publishedAt": "2026-08-13T08:00:00.000Z",
+      "url": "https://www.arsenal.com/news/young-gunners-set-for-premier-league-2-return-aGMCC0y89xTt",
+      "source": "Arsenal.com",
+      "titleZh": "年轻枪手准备重返英超二级联赛",
+      "summaryZh": "我们将力求延续进入附加赛的纪录。",
+      "bodyZh": [
+        "我们将力求延续进入英超二级联赛附加赛的纪录。",
+        "这是一篇Arsenal.com免费文章的简要摘要，完整故事请查阅原始来源。"
+      ],
+      "translationSourceHash": "07c34eceef7442d0e42199ce3cf7f2736f34653af7f614ded08d59de6470f691",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-13T08:42:52.331Z"
+    },
     {
       "id": "a5bafe6810ea4fe569f42a7c011756c042f1193230d375aaf33a83b573121754",
       "teamId": "arsenal",
@@ -258,31 +333,6 @@
       "translatedAt": "2026-08-11T14:05:13.688Z"
     },
     {
-      "id": "4e1d639aea8acfc7f705ec38ed415ffc7c7dde5d69f73dd4323e7a2990400302",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Watch every Premier League goal by Cesc Fabregas",
-      "summaryEn": "A look back at Cesc Fabregas' time at Arsenal and his Premier League goals",
-      "bodyEn": [
-        "A look back at Cesc Fabregas' time at Arsenal and his Premier League goals",
-        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/7c86c523991e-gettyimages-107790061.webp",
-      "author": "Charlie Peat",
-      "publishedAt": "2026-08-11T13:04:45.006Z",
-      "url": "https://www.arsenal.com/news/watch-every-premier-league-goal-by-cesc-fabregas-aEJhu7d0wugY",
-      "source": "Arsenal.com",
-      "titleZh": "观看塞斯克·法布雷加斯在英超的每一个进球",
-      "summaryZh": "回顾法布雷加斯在阿森纳的时光及其英超进球。",
-      "bodyZh": [
-        "回顾塞斯克·法布雷加斯在阿森纳的时光及其英超进球。",
-        "这是Arsenal.com免费文章的简明摘要。打开原始来源查看完整报道。"
-      ],
-      "translationSourceHash": "caf3ce60dad8dd15f12db0588061610b0f842c05a101abbd75d4bb04fa450a4c",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-11T14:05:04.993Z"
-    },
-    {
       "id": "9ee68326021d86fa07f688f8311852440f59573309e605c97a5a9bc62b88f53a",
       "teamId": "arsenal",
       "teamName": "阿森纳",
@@ -456,54 +506,6 @@
       "translationSourceHash": "1a8f07fb4cbdd637e6b247febd5b1134ed61d0ea78f1889f9cd262b511802c37",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-10T09:35:48.118Z"
-    },
-    {
-      "id": "0f1d85514c7f7a07e7149104e710d62ba3caac6b702653570072a171cf5ec9af",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Jay-Z’s Roc Nation Sports making waves in European football transfer market",
-      "summaryEn": "Vinícius Júnior and Yan Diomande are among more than 100 players at an agency owned by the hip-hop legendIn the end there was a clear winner. And Jay-Z’s latest victory came only 24 hours after the first record featuring him actually rapping for four years had been released by his wife, Beyoncé, on an extended remix pack of Morning Dew (Donk).These days, the man who remains one of the most influential artists in hip-hop has his fingers in many pies, from the streaming service Tidal and his own streetwear brand, to champagne and cognac. But it is Roc Nation Sports – an offshoot of his entertainment company of the same name founded in 2008 – making headlines in the summer transfer window. Continue reading...",
-      "bodyEn": [
-        "Vinícius Júnior and Yan Diomande are among more than 100 players at an agency owned by the hip-hop legendIn the end there was a clear winner. And Jay-Z’s latest victory came only 24 hours after the first record featuring him actually rapping for four years had been released by his wife, Beyoncé, on an extended remix pack of Morning Dew (Donk).These days, the man who remains one of the most influential artists in hip-hop has his fingers in many pies, from the streaming service Tidal and his own streetwear brand, to champagne and cognac. But it is Roc Nation Sports – an offshoot of his entertainment company of the same name founded in 2008 – making headlines in the summer transfer window. Continue reading...",
-        "Open the original Guardian article for the complete free report and author context."
-      ],
-      "imageUrl": "https://i.guim.co.uk/img/media/241eae4079055f5c13928e3c6b5ce72cf82cdb3b/311_0_5899_4719/master/5899.jpg?width=140&quality=85&auto=format&fit=max&s=9bb9984e9c5288fd249c63325a0820c5",
-      "author": "Ed Aarons",
-      "publishedAt": "2026-08-07T19:00:24.000Z",
-      "url": "https://www.theguardian.com/football/2026/aug/07/jay-z-roc-nation-sports-european-football-transfer-market-vinicius-junior-yan-diomande",
-      "source": "The Guardian",
-      "titleZh": "Jay-Z的Roc Nation Sports在欧洲足球转会市场掀起波澜",
-      "summaryZh": "Jay-Z旗下经纪公司Roc Nation Sports在夏窗引发关注，旗下拥有超100名球员。",
-      "bodyZh": [
-        "维尼修斯·儒尼奥尔和扬·迪奥曼德是这家嘻哈传奇人物拥有的经纪公司旗下超过100名球员中的两位。最终有一个明确的赢家。而Jay-Z的最新胜利，距离他妻子碧昂丝发布他在四年来首次真正说唱的单曲《Morning Dew (Donk)》的扩展混音包仅24小时。如今，这位仍是嘻哈界最具影响力艺术家之一的人物涉足众多领域，从流媒体服务Tidal、自有街头服饰品牌，到香槟和干邑。但正是Roc Nation Sports——他在2008年创立的同名娱乐公司的子公司——在夏季转会窗口成为头条新闻。继续阅读...",
-        "打开原始卫报文章以获取完整的免费报道和作者背景。"
-      ],
-      "translationSourceHash": "d7a18f15fe6b098559c3f58a57208dcf59097290cb4021e50a94fa9d14983fc5",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-10T09:35:39.973Z"
-    },
-    {
-      "id": "538a8d66a008e67bf4db9b8a7c0c124484478236b62930140371f492db223386",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Disabled Supporters Information Sunderland (A)",
-      "summaryEn": "",
-      "bodyEn": [
-        "This is a concise summary of a free Arsenal.com article. Open the original source for the complete story."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/dd326487c41a-tickets-2526-sunderland-a.webp",
-      "author": "Arsenal FC",
-      "publishedAt": "2026-08-04T09:46:02.246Z",
-      "url": "https://www.arsenal.com/news/disabled-supporters-information-sunderland-a-a0sNY4Y11KHq",
-      "source": "Arsenal.com",
-      "titleZh": "桑德兰（客场）残疾球迷信息",
-      "summaryZh": "阿森纳公布桑德兰客场残疾球迷信息。",
-      "bodyZh": [
-        "这是阿森纳官网免费文章的简洁摘要。请打开原始来源查看完整故事。"
-      ],
-      "translationSourceHash": "ae9d32d5394ebf18d64896f725bccd994771aa746b2678eb32a63a8743e85e91",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-12T10:41:45.067Z"
     }
   ]
 }
