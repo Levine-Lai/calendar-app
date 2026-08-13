@@ -2454,3 +2454,12 @@
 - 验证结果：Web 测试 42 项、新闻后台测试 32 项、稳定性检查 37 项全部通过；Android `assembleDebug`、JVM 测试与 Lint 成功。赛事 API 检查大部分端点为 2/2，NBA/NFL 个别 ESPN 请求为 1/2，已由客户端三次重试容错；上游若持续不可用仍只能保留本地旧数据，不能生成不存在的真实赛程或比分。
 - 发布结果：固定证书 APK `releases/sports-calendar-2.3.2-debug.apk` 大小 `8,099,451` 字节，SHA-256 `F479E41EE4EB0B0400F1C808708BF4054CD93606DBB78312A9B314960E44A15D`；包名 `com.local.sportscalendar`、`versionCode 44`、`versionName 2.3.2`、v2 签名和历史证书均验证通过。GitHub Release：`https://github.com/Levine-Lai/calendar-app/releases/tag/v2.3.2`，远端资产哈希与本机一致；远程更新清单已返回 2.3.2，并使用 Release 页面作为旧版兼容下载入口。
 - 协作约定：根目录 `AGENTS.md` 已记录，以后用户说“发布这个新版本到 GitHub”或同义表达，即执行完整的固定签名 APK、GitHub Release、上传和更新清单流程。
+
+### 开发批次：2.3.3 默认浏览器与今日日期强调
+
+- 用户目标：点击“打开下载页”直接跳到手机浏览器；加深日历中代表今天的颜色，并让今天的日期数字框使用不同颜色。
+- 实现方案：Android 原生插件先用普通 HTTPS 地址解析系统默认浏览器，再通过 `setPackage` 将 GitHub Release 明确交给该浏览器的 `ACTION_VIEW`；未设置默认浏览器时保留通用 HTTPS 回退。今天整格改为 `#E9AAC5`，使用 `#A83F6D` 内侧轮廓；日期数字框改为 `#BD477A`、深色边框和白字。
+- 兼容与限制：Android 7 及以上继续使用现有 BROWSABLE HTTPS 查询声明；若手机完全没有浏览器仍会显示原有错误提示。网页版本继续使用新标签页打开，不受原生包名锁定影响。
+- 涉及文件：`SportsWidgetPlugin.java`、`public/styles.css`、`index.html`、`public/update-config.js`、版本配置与稳定性检查。
+- 验证结果：Web 测试 42 项、稳定性检查 37 项通过；Web 构建、Android Java 编译、JVM 单元测试与 Lint 全部成功。
+- 版本状态：源码提升为 `2.3.3 / versionCode 45`；没有执行 APK 打包、签名验证或 GitHub 发布，`public/version.json` 仍指向已发布的 2.3.2。

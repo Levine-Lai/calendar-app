@@ -249,9 +249,13 @@ const checks = [
       && app.includes("dismissedEventIds")
       && storage.includes("dismissedEventIds")
       && !app.includes("day-modal-event-delete")
+      && styles.includes(".day-cell.is-today .day-number")
+      && styles.includes("background: #e9aac5")
       && app.includes("AppUpdate?.toDownloadPageUrl(appUpdateDownloadUrl)")
       && read("public/app-update.js").includes("/releases/tag/")
       && read("android/app/src/main/java/com/local/sportscalendar/SportsWidgetPlugin.java").includes("Browser.EXTRA_APPLICATION_ID")
+      && read("android/app/src/main/java/com/local/sportscalendar/SportsWidgetPlugin.java").includes("resolveDefaultBrowserPackage")
+      && read("android/app/src/main/java/com/local/sportscalendar/SportsWidgetPlugin.java").includes("browserIntent.setPackage(browserPackage)")
       && read("android/app/src/main/java/com/local/sportscalendar/SportsWidgetPlugin.java").includes("getActivity().startActivity(browserIntent)")
   ],
   [

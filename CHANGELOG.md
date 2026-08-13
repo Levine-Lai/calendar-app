@@ -5,10 +5,16 @@
 ## 当前版本状态
 
 - 本机最新已生成 APK：`2.3.2 / versionCode 44`
-- 当前源码版本：`2.3.2 / versionCode 44`
+- 当前源码版本：`2.3.3 / versionCode 45`（源码完成，未打包）
 - APK 文件：`releases/sports-calendar-2.3.2-debug.apk`
 - GitHub Release：`https://github.com/Levine-Lai/calendar-app/releases/tag/v2.3.2`
 - App 内检查更新清单指向 `2.3.2` 的 GitHub Release 页面，兼容旧版本手机浏览器打开方式。
+
+## 2.3.3（源码完成，未打包）
+
+- App 内“打开下载页”会先解析系统默认浏览器的应用包名，再把 GitHub Release HTTPS 地址明确交给该浏览器打开，避免被 App 内 WebView、GitHub 客户端或安装器接管；没有设置默认浏览器时仍回退到系统 HTTPS 选择流程。
+- 加深日历中“今天”整格的粉色背景，并增加深玫红内侧轮廓；今天的日期数字框改为更深的玫红底色与白字，使当前日期在有比赛和无比赛时都更容易识别。
+- `public/version.json` 继续发布 `2.3.2 / versionCode 44`，不会让已安装版本检测到尚未生成的 2.3.3 安装包。
 
 ## 2.3.2（已发布）
 

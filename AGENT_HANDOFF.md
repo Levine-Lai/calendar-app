@@ -7,7 +7,7 @@
 
 ## 当前可交付状态
 
-- 当前源码：`2.3.2 / versionCode 44`；Cloudflare Worker 已部署，客户端 endpoint 已指向 Worker 且已通过真实请求验证。
+- 当前源码：`2.3.3 / versionCode 45`，尚未打包；Cloudflare Worker 已部署，客户端 endpoint 已指向 Worker 且已通过真实请求验证。
 - 本机最新 APK：`2.3.2 / versionCode 44`。
 - GitHub 最新已发布 APK：`2.3.2 / versionCode 44`。
 - APK：`releases/sports-calendar-2.3.2-debug.apk`。
@@ -31,6 +31,7 @@
 
 ## 本次交接已补齐
 
+- 2.3.3 的更新下载入口会解析并锁定系统默认浏览器包名后打开 GitHub Release；日历今天格子和日期数字框均改用更深、更明确的两级玫红色。远程更新清单继续停留在已发布的 2.3.2。
 - 2.3.2 移除 Web 全屏开屏动画与 Android 热启动重播逻辑；`launch-runner.gif` 现在作为左上角菜单按钮显示。
 - 赛程管理与智能添加赛程的 DOM 入口用 `hidden` 暂时隐藏，相关本地解析、Cloudflare Worker、语音桥接和用户数据均保留。
 - Arsenal.com 正文从 `__NEXT_DATA__.props.pageProps.article.articleBody` 抽取，正文 DOM 作为兜底；Guardian RSS 会继续尝试抓取公开文章页。内置 Arsenal 缓存已更新为完整官网正文及逐段中文翻译。

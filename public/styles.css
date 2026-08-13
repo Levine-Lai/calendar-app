@@ -646,8 +646,15 @@ h2 {
 }
 
 .day-cell.is-today {
-  background: #fff0f8;
-  box-shadow: inset 0 0 0 4px var(--pink);
+  background: #e9aac5;
+  outline: 3px solid #a83f6d;
+  outline-offset: -4px;
+}
+
+.day-cell.is-today .day-number {
+  border-color: #7d244b;
+  background: #bd477a;
+  color: #fff;
 }
 
 .day-number {
