@@ -1,7 +1,7 @@
 {
   "teamId": "toronto-blue-jays",
   "teamName": "多伦多蓝鸟",
-  "updatedAt": "2026-08-12T23:04:56.176Z",
+  "updatedAt": "2026-08-13T02:31:22.106Z",
   "items": [
     {
       "id": "9c61c42f787962cd6c73ded6bc964e794a273044766f2b3c1a6323947bb88874",
@@ -56,7 +56,7 @@
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-11T04:06:29.451Z",
       "author": "Brendan Samson",
-      "publishedAt": "2026-08-12T22:24:00.000Z",
+      "publishedAt": "2026-08-13T02:14:00.000Z",
       "url": "https://www.mlb.com/bluejays/news/watch-minor-league-baseball-games-for-free-2026",
       "source": "MLB.com"
     },
@@ -888,8 +888,5 @@
       "source": "MLB.com"
     }
   ],
-  "pendingNotificationIds": [
-    "5e3c46030ea40ed3e44a7b72f49d8a4942112b26f50df8a1076911396603e5eb",
-    "cf30a1e94cdab762daa10f59f9e520d96d2b0a6cf6d2119f431a273490628806"
-  ]
+  "pendingNotificationIds": []
 }
