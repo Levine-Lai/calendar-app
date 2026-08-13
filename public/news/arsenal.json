@@ -1,7 +1,7 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-13T16:40:04.631Z",
+  "updatedAt": "2026-08-13T17:40:02.665Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
@@ -265,6 +265,35 @@
       "translationSourceHash": "9ae5de6c92c61042a24aaa3a9848101e57f5e8d061739bb14b9f856891198e2d",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-13T16:36:06.402Z"
+    },
+    {
+      "id": "e5ecde3bcea42033acf90e5912c132e8e0b6fe27c4b19d3af3027a5cb03ca80c",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Watch a full match replay of our Como game",
+      "summaryEn": "The full 90 against Cesc Fabregas' Serie A side",
+      "bodyEn": [
+        "We played out a 1-1 draw during a 90-minute tussle with Como on Wednesday night at Emirates Stadium, before emerging victorious 4-3 in a penalty shootout.",
+        "Myles Lewis-Skelly put the Gunners into a first-half lead in N5, before Martin Baturina equalised for Cesc Fabregas' Serie A outfit on the cusp of the interval.",
+        "Bruno Guimaraes was introduced to the action by Mikel Arteta at the halfway stage and received a hero's welcome, before converting one of four successful penalties - the decider of which was dispatched by fellow new arrival Christos Tzolis, as summer world champion David Raya beat away two Como spot-kicks.",
+        "You can now watch every kick of the action from north London in our video above, while a bitesize highlight package is available below."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/cff092098e26-london-england-ethan-nwaneri-of-arsenal-is-put-under-pressure-by-lucas-da-cunha.webp",
+      "author": "Arsenal Media",
+      "publishedAt": "2026-08-13T08:30:00.000Z",
+      "url": "https://www.arsenal.com/news/watch-a-full-match-replay-of-our-como-game-aplmP5n2U0Rr",
+      "source": "Arsenal.com",
+      "titleZh": "观看我们对阵科莫的完整比赛回放",
+      "summaryZh": "对阵法布雷加斯意甲球队的完整90分钟。",
+      "bodyZh": [
+        "周三晚上在酋长球场，我们与科莫鏖战90分钟战成1-1平，随后在点球大战中以4-3获胜。",
+        "迈尔斯·刘易斯-斯凯利在N5为枪手取得上半场领先，马丁·巴图里纳在临近中场休息时为法布雷加斯的意甲球队扳平比分。",
+        "布鲁诺·吉马良斯在下半场开始时被米克尔·阿尔特塔派上场，受到英雄般的欢迎，随后他罚入了四个成功点球之一，制胜点球由同为新援的克里斯托斯·佐利斯主罚，而夏季世界冠军大卫·拉亚扑出了科莫的两记点球。",
+        "你现在可以在上方的视频中观看来自北伦敦的每一个动作，下方还有精简的集锦。"
+      ],
+      "translationSourceHash": "1d143d8ed1e706676f1f44dbb0a2b4517c53f7e21360abe45b5a44af83e02708",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-13T17:40:02.665Z"
     },
     {
       "id": "e53d460a227262ec5fe56ff8c770e84e3591345f9066c23311c3878226de21cf",
@@ -899,59 +928,6 @@
       "translationSourceHash": "bde22935e031e1babb52c725cbcaf8edf7773270fee3a7641d43c7d5f34177b0",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-13T16:38:02.197Z"
-    },
-    {
-      "id": "c9ad48d6da1d918f48bd5a279eb48745ce150fb1f32036c148b22cdf8db2d6ab",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Arsenal on the spot: Our penalty shootout history",
-      "summaryEn": "We take an in-depth look at our history in penalty shootouts",
-      "bodyEn": [
-        "Our penalty shootout record under Mikel Arteta has been largely positive.",
-        "David Raya’s Champions League heroics against Porto made it four penalty shootout wins out of five since Mikel Arteta became manager in late 2019, after which we bowed out of the FA Cup to Manchester United on spot-kicks in 2025 but later overcame Crystal Palace in the Carabao Cup by the same method to make it five from seven.",
-        "The Porto triumph also helped banish the memory of 12 months prior, when fellow Portuguese opponents Sporting Lisbon won in the first-ever competitive penalty shootout staged at Emirates Stadium.",
-        "That defeat aside, we have been highly effective in such deciders, including winning the Community Shield at Wembley, 4-1 against Manchester City back in August.",
-        "Arteta’s other shootout successes have both been against Liverpool – to lift the Community Shield in a behind-closed-doors match at Wembley in August 2020 (winning 5-4 after a 1-1 draw) and then at Anfield – also behind closed doors – in the Carabao Cup fourth round in October 2020. That also ended 5-4, after six penalties each.",
-        "Our overall record in shootouts is also impressive. We have now been involved in 25 – the first was in the final of the European Cup Winners’ Cup final in 1980, when Valencia took the honours 5-4 after six spot-kicks each.",
-        "But since then, we have won 16 (64 per cent), scoring from 99 of our 129 attempts – a conversion rate of just under 77 per cent.",
-        "Recently though, that conversion rate has been even better. We were perfect from 12 yards on Tuesday, just as we were at Wembley in August. In fact we have been denied from just three penalties out of the last 39 we’ve taken in shootouts. That’s a conversion rate of 92 per cent over the past 10 years. That includes one taken – and scored – by Arteta in the FA Cup semi-final shootout win over Wigan in 2014.",
-        "It’s also worth noting that we have at least hit the target with each of our past 41 penalties in shootouts, since Thomas Vermaelen struck the post against Bradford City in 2012.",
-        "Martin Odegaard and Bukayo Saka have now both scored each of the three penalties they have taken in shootouts. Captain Odegaard has taken our first penalty in each of the last three – he won both coin tosses last night to ensure we kicked into the North Bank and took the first penalty.",
-        "The doomed shootout against Sporting was in front of the Clock End and we went second, while only time we were involved in the experimental ABBA system (when teams take two penalties in a row) was in the 2017 Community Shield, which we won 4-1 against Chelsea.",
-        "Patrick Vieira has the most successful penalty shootout record for us in history (scoring four out of five taken), including the goal that won the FA Cup final in 2005 – his last kick of a ball for the club. Perhaps surprisingly, Thierry Henry only ever took one in a shootout. Less surprisingly, he scored it.",
-        "We’ve now had two shootouts in the Champions League, winning both after also knocking out Roma at the same stage in 2009. Of the 25 shootouts to date, eight have come in the League Cup, six in the FA Cup and five in the Community Shield. There have also been four in other European competitions.",
-        "Raya made two saves out of the four penalties he faced on Tuesday, the first Arsenal keeper to make two stops in a shootout since Bernd Leno against Liverpool in 2020, and Raya is now the 11th different keeper to be involved in a winning shootout for us. David Seaman and Manuel Almunia (100 per cent record) won three each, Lukasz Fabianski won two.",
-        "There has already been more penalty shootouts at Emirates Stadium than there were in our 93-year history at Highbury. We had just one there, the incredible 9-8 win over Rotherham United in 2003, which remains our highest-scoring shootout.",
-        "Our full penalty shootout record is as below:"
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/3ff0535c1653-arsenel-celebrate-winning-the-penalty-shootout.webp",
-      "author": "Josh James",
-      "publishedAt": "2024-03-13T16:24:43.000Z",
-      "url": "https://www.arsenal.com/news/arsenal-on-the-spot-our-penalty-shootout-history-aW8Km5T3IcGq",
-      "source": "Arsenal.com",
-      "titleZh": "阿森纳点球大战历史回顾",
-      "summaryZh": "深入回顾阿森纳在点球大战中的历史战绩。",
-      "bodyZh": [
-        "我们在米克尔·阿尔特塔麾下的点球大战战绩总体积极。",
-        "大卫·拉亚对阵波尔图的欧冠神勇表现，使自2019年底阿尔特塔执教以来，我们在五场点球大战中赢得四场；此后2025年足总杯不敌曼联出局，但在联赛杯通过点球击败水晶宫，使得七场中赢下五场。",
-        "战胜波尔图也洗刷了十二个月前的记忆，当时同为葡萄牙球队的葡萄牙体育在酋长球场赢得队史首场正式点球大战胜利。",
-        "除那次失利外，我们在这种决胜中效率很高，包括八月份在温布利社区盾杯4-1击败曼城。",
-        "阿尔特塔的其他点球胜利均在利物浦身上取得——2020年8月温布利闭门进行的社区盾杯（1-1后点球5-4取胜），以及2020年10月同样闭门进行的联赛杯第四轮在安菲尔德，当时也是各罚六轮后5-4获胜。",
-        "我们在点球大战中的整体战绩同样出色。至今已参与25场——首场是1980年欧洲优胜者杯决赛，瓦伦西亚在六轮后5-4胜出。",
-        "但此后我们赢下16场（64%），129次主罚命中99球，命中率接近77%。",
-        "不过近期命中率更佳。周二我们十二码点全中，正如八月份在温布利那样。事实上，最近39次点球大战主罚中，仅3次被扑出。过去十年命中率高达92%。其中包括2014年足总杯半决赛点球战胜维冈竞技时阿尔特塔主罚命中。",
-        "值得注意的是，自2012年维尔马伦对布拉德福德击中门柱以来，我们最近连续41粒点球大战中的主罚都至少命中门框范围。",
-        "马丁·厄德高和布卡约·萨卡在点球大战中主罚三次全部命中。队长厄德高在最近三次点球大战中均首罚命中——他昨晚两次猜硬币获胜，确保球队在北看台前主罚并首射。",
-        "对葡萄牙体育的失利点球大战是在钟楼看台前进行的，我们主罚顺序在后；而我们唯一一次参与实验性ABBA模式（两队连续主罚两轮）是在2017年社区盾杯，当时4-1击败切尔西。",
-        "帕特里克·维埃拉是球队历史上点球大战战绩最成功之人（五次主罚命中四球），包括2005年足总杯决赛制胜一球——那是他为俱乐部踢的最后一脚球。或许令人意外的是，蒂埃里·亨利在点球大战中仅主罚过一次。更不意外的是，他罚进了。",
-        "我们已有两场欧冠点球大战，均取得胜利，2009年同一阶段也是淘汰了罗马。至今25场点球大战中，8场来自联赛杯，6场来自足总杯，5场来自社区盾杯，另有4场来自其他欧战赛事。",
-        "拉亚周二面对的四粒点球扑出两粒，成为自2020年贝恩德·莱诺对阵利物浦以来，首位在点球大战中扑出两粒点球的阿森纳门将。拉亚现已是第11位为我们赢得点球大战的不同门将。大卫·希曼和曼努埃尔·阿穆尼亚（百分百记录）各赢三场，卢卡什·法比安斯基赢两场。",
-        "酋长球场的点球大战次数已超过海布里93年历史中的总数。后者仅有一次，即2003年不可思议的9-8击败罗瑟勒姆联，那也是我们进球最多的点球大战。",
-        "我们的完整点球大战记录如下："
-      ],
-      "translationSourceHash": "2d1b7fbeabe52868c867928cdc2b4905043d1910dabb083ab03306dcc649d648",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-13T16:40:04.630Z"
     }
   ]
 }
