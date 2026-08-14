@@ -1,12 +1,74 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-14T09:20:12.608Z",
+  "updatedAt": "2026-08-14T10:39:03.035Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "14a0e8c5894bde0bb9c59956923ebd3af9fe3f2a3f989ff8c60d71256d1a7380",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Jimmy Rimmer | 1948 - 2026",
+      "summaryEn": "Everyone at the club is saddened to hear about the passing of our former goalkeeper, who played 146 games for us in the mid-1970s.",
+      "bodyEn": [
+        "Everyone at the club is saddened to hear about the passing of our former goalkeeper Jimmy Rimmer.",
+        "Jimmy played 146 games for us and was crowned our Player of the Year in 1975 after succeeding the legendary Bob Wilson as our No. 1.",
+        "An unused substitute when Manchester United won the European Cup against Benfica in 1968, Jimmy ended nine years as an understudy to United's Alex Stepney to move to Highbury after impressing during a loan spell at Swansea.",
+        "Bertie Mee snapped up the shot-stopper in April 1974 for £40,000 and gave him his first-team debut against Liverpool shortly afterwards. Wilson announced his retirement at the end of that campaign and Rimmer became first choice, missing just three matches over the next three seasons, and won our Player of the Year award in 1975 and earned an England cap a year later.",
+        "Terry Neill's arrival as manager saw Pat Jennings follow him from Tottenham and Rimmer was duly sold to Aston Villa. He fared well there too and was first choice for six seasons, earning a First Division winners' medal in 1981 and helping Villa to glory in the 1982 European Cup and Super Cup. Rimmer later featured for Swansea City, Hamrum Spartans and Luton Town before retiring in 1986.",
+        "All our thoughts are with Jimmy's family and loved ones at this difficult time."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/8ead329f2550-english-footballer-jimmy-rimmer-goalkeeper-for-league-division-one-team-arsenal.webp",
+      "author": "Arsenal Media",
+      "publishedAt": "2026-08-14T09:38:27.795Z",
+      "url": "https://www.arsenal.com/news/jimmy-rimmer-1948-2026-awHdl0l69CBG",
+      "source": "Arsenal.com",
+      "titleZh": "吉米·里默 | 1948 - 2026",
+      "summaryZh": "俱乐部全体成员对前门将吉米·里默的逝世深感悲痛，他在70年代中期为我们出战146场。",
+      "bodyZh": [
+        "俱乐部全体成员对前门将吉米·里默的逝世深感悲痛。",
+        "吉米为我们出战146场，在接替传奇人物鲍勃·威尔逊成为一号门将后，于1975年荣膺年度最佳球员。",
+        "1968年曼联击败本菲卡赢得欧洲冠军杯时，吉米是未上场的替补，在斯旺西租借期间表现出色后，结束了九年作为亚历克斯·斯特普尼替补的生涯，转会至海布里。",
+        "1974年4月，伯蒂·米以4万英镑签下这位门将，并很快让他完成了对阵利物浦的一线队首秀。威尔逊在那个赛季末宣布退役，里默成为首选门将，在接下来的三个赛季中仅缺席三场比赛，1975年赢得年度最佳球员奖，一年后获得英格兰国家队出场机会。",
+        "特里·尼尔出任主教练后，帕特·詹宁斯从热刺追随而来，里默随即被出售至阿斯顿维拉。他在那里同样表现出色，连续六个赛季担任首选门将，1981年获得顶级联赛冠军奖牌，并帮助维拉在1982年赢得欧洲冠军杯和欧洲超级杯。里默后来效力于斯旺西城、哈姆伦斯巴达和卢顿，于1986年退役。",
+        "在这个艰难的时刻，我们的心与吉米的家人和爱人同在。"
+      ],
+      "translationSourceHash": "c62593122680378c9af943c9c75f2b8f235f97cd7665624d8783f32a3cd2ff8b",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-14T10:39:02.285Z"
+    },
+    {
+      "id": "7a387cacb7674a61c0b01e0c4e9638a80b0219003a820a45a3bcc3008a9f3b23",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "How to watch Arsenal v Manchester City live on TV",
+      "summaryEn": "Check out the full list of where you can watch the Community Shield!",
+      "bodyEn": [
+        "Arsenal take on Manchester City in the Community Shield on Sunday, August 16, at 3pm at the Principality Stadium in Cardiff.",
+        "It's our first appearance in the Community Shield since 2023, when we defeated City on penalties.",
+        "In the United Kingdom, you can catch the match on TNT Sports 1, TNT Sports Ultimate, Prime Video, HBO Max and Now TV with a subscription.",
+        "If you're tuning in around the world, here's a list of how you can catch the game, courtesy of LiveSoccertv.com."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/82589dc621bc-cardiff-a-general-view-taken-during-the-brits-v-rest-of-the-world-pertemp-power.webp",
+      "author": "Arsenal Media",
+      "publishedAt": "2026-08-14T09:23:21.007Z",
+      "url": "https://www.arsenal.com/news/how-to-watch-arsenal-v-manchester-city-live-on-tv-aiqkJ2b3u278",
+      "source": "Arsenal.com",
+      "titleZh": "如何在电视上观看阿森纳对阵曼城的直播",
+      "summaryZh": "查看观看社区盾杯的完整直播渠道！",
+      "bodyZh": [
+        "阿森纳将于8月16日（周日）下午3点在卡迪夫的公国体育场与曼城进行社区盾杯比赛。",
+        "这是我们自2023年以来首次参加社区盾杯，当时我们在点球大战中击败了曼城。",
+        "在英国，您可以通过订阅TNT Sports 1、TNT Sports Ultimate、Prime Video、HBO Max和Now TV观看本场比赛。",
+        "如果您在世界各地收看，以下是观看本场比赛的渠道列表，由LiveSoccertv.com提供。"
+      ],
+      "translationSourceHash": "c76f62eb24fa38c5d9b11bd8cb551eee471f1177627302a26ea1d00db0cd4bef",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-14T10:39:03.035Z"
+    },
     {
       "id": "4b912b03cd053351d8466ce5af53258d5cecc6352783936e0e7dac918f79fe31",
       "teamId": "arsenal",
@@ -429,35 +491,6 @@
       "translatedAt": "2026-08-13T16:36:06.402Z"
     },
     {
-      "id": "e5ecde3bcea42033acf90e5912c132e8e0b6fe27c4b19d3af3027a5cb03ca80c",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Watch a full match replay of our Como game",
-      "summaryEn": "The full 90 against Cesc Fabregas' Serie A side",
-      "bodyEn": [
-        "We played out a 1-1 draw during a 90-minute tussle with Como on Wednesday night at Emirates Stadium, before emerging victorious 4-3 in a penalty shootout.",
-        "Myles Lewis-Skelly put the Gunners into a first-half lead in N5, before Martin Baturina equalised for Cesc Fabregas' Serie A outfit on the cusp of the interval.",
-        "Bruno Guimaraes was introduced to the action by Mikel Arteta at the halfway stage and received a hero's welcome, before converting one of four successful penalties - the decider of which was dispatched by fellow new arrival Christos Tzolis, as summer world champion David Raya beat away two Como spot-kicks.",
-        "You can now watch every kick of the action from north London in our video above, while a bitesize highlight package is available below."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/cff092098e26-london-england-ethan-nwaneri-of-arsenal-is-put-under-pressure-by-lucas-da-cunha.webp",
-      "author": "Arsenal Media",
-      "publishedAt": "2026-08-13T08:30:00.000Z",
-      "url": "https://www.arsenal.com/news/watch-a-full-match-replay-of-our-como-game-aplmP5n2U0Rr",
-      "source": "Arsenal.com",
-      "titleZh": "观看我们对阵科莫的完整比赛回放",
-      "summaryZh": "对阵法布雷加斯意甲球队的完整90分钟。",
-      "bodyZh": [
-        "周三晚上在酋长球场，我们与科莫鏖战90分钟战成1-1平，随后在点球大战中以4-3获胜。",
-        "迈尔斯·刘易斯-斯凯利在N5为枪手取得上半场领先，马丁·巴图里纳在临近中场休息时为法布雷加斯的意甲球队扳平比分。",
-        "布鲁诺·吉马良斯在下半场开始时被米克尔·阿尔特塔派上场，受到英雄般的欢迎，随后他罚入了四个成功点球之一，制胜点球由同为新援的克里斯托斯·佐利斯主罚，而夏季世界冠军大卫·拉亚扑出了科莫的两记点球。",
-        "你现在可以在上方的视频中观看来自北伦敦的每一个动作，下方还有精简的集锦。"
-      ],
-      "translationSourceHash": "1d143d8ed1e706676f1f44dbb0a2b4517c53f7e21360abe45b5a44af83e02708",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-13T17:40:02.665Z"
-    },
-    {
       "id": "e53d460a227262ec5fe56ff8c770e84e3591345f9066c23311c3878226de21cf",
       "teamId": "arsenal",
       "teamName": "阿森纳",
@@ -550,33 +583,6 @@
       "translationSourceHash": "609aaed78b6074365efacda61db2dd29619ec723e06e986e28822a4af998ffef",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-13T16:35:34.431Z"
-    },
-    {
-      "id": "ebfba4aa7e0df76ead12fb5b6b65eb2d0ff3f7dcbbf224d0ef65374a5c120250",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Inside Training: Watch women's team in La Manga",
-      "summaryEn": "See what our women’s team have been up to on their pre-season training camp with the latest episode of Inside Training",
-      "bodyEn": [
-        "The warm weather training continues at our pre-season base in La Manga.",
-        "Press play on the video above to get a behind-the-scenes look at what our women’s team have been up to as they get ready for the 2026/27 campaign.",
-        "Don’t forget, tickets are now on general sale for our two pre-season fixtures in Borehamwood against Paris FC and Charlton Athletic!"
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/1c66c82a1c02-ab85048huyotlqo.webp",
-      "author": "Stephen Wright",
-      "publishedAt": "2026-08-11T08:59:00.000Z",
-      "url": "https://www.arsenal.com/news/inside-training-watch-womens-team-in-la-manga-avZF32c12DI0",
-      "source": "Arsenal.com",
-      "titleZh": "内部训练：观看女队在拉曼加",
-      "summaryZh": "最新一期《内部训练》带你看女队季前训练营。",
-      "bodyZh": [
-        "温暖天气下的训练继续在拉曼加的季前基地进行。",
-        "点击上方视频，幕后了解女队备战2026/27赛季的情况。",
-        "别忘了，我们在博勒姆伍德对阵巴黎FC和查尔顿竞技的两场季前赛门票现已全面开售！"
-      ],
-      "translationSourceHash": "e358405f05a9dafe74dada9727a4768e08c23438db4ba955aef78f7afebef776",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-13T16:35:37.552Z"
     },
     {
       "id": "ea9e432eb75d9052714f0b82cffe3b01103d653cb3aa2e7c7cd0a9c360ee699e",
