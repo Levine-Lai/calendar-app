@@ -1,12 +1,47 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-14T06:41:31.949Z",
+  "updatedAt": "2026-08-14T08:02:49.558Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "6ffe6ddd74694cc64a209df11cfd90290a3016f3e4e27638fb9145bf5bcd3974",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "New U18s Premier League season set to begin",
+      "summaryEn": "Adam Birchall's under-18s get their 2026/27 campaign underway on Saturday",
+      "bodyEn": [
+        "Adam Birchall's side will be looking to improve on their tenth-place finish from last season as a new U18s Premier League season begins this weekend.",
+        "The 29 Category One academy sides are split into north and south divisions, with 14 sides competing in the northern division and 15 in the southern. Every team faces every opponent once at home and once away over the course of the season, with the usual three points for a win and one for a draw.",
+        "At the end of the season, the team at the top of each division is crowned regional champions, before an overall final takes place between the two sides to determine the winner of the U18s Premier League.",
+        "Last season, Manchester City edged city rivals United to the northern title, while Chelsea stormed to success in the south. The Blues then came out on top against the Citizens in the league final, thrashing the five-time winners 5-1 at Stamford Bridge to get their hands on the trophy for the first time since 2018.",
+        "We amassed 33 points from our 28 league games last season, finishing tenth in the southern league table. We'll be aiming to improve on that total this season, starting with a trip to the West Midlands to face West Bromwich Albion this weekend.",
+        "Our fixture list includes London derbies with West Ham, Tottenham and champions Chelsea, before we finish the league season against Reading at the Sobha Realty Training Centre on Saturday, May 9.",
+        "Should we win the division, a draw will take place to determine whether the final takes place at the home of the northern or southern champions, with a date for the contest confirmed after the draw."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/54a4974a0767-london-colney-england-maalik-hashi-of-arsenal-during-the-pre-season-friendly-mat.webp",
+      "author": "Connor Booth",
+      "publishedAt": "2026-08-14T07:00:00.000Z",
+      "url": "https://www.arsenal.com/news/new-u18s-premier-league-season-set-to-begin-awJRr4d2ksFj",
+      "source": "Arsenal.com",
+      "titleZh": "新U18英超赛季即将开始",
+      "summaryZh": "亚当·伯奇尔的U18队周六开启2026/27赛季征程。",
+      "bodyZh": [
+        "随着新赛季U18英超联赛本周末开赛，亚当·伯奇尔的球队将力争比上赛季第十名的成绩有所提高。",
+        "29支一级青训学院球队分为北部和南部赛区，其中北部赛区有14支球队，南部赛区有15支。每支球队在赛季中与每个对手主客场各赛一场，胜得3分，平得1分。",
+        "赛季结束时，每个赛区积分最高的球队加冕区域冠军，然后两个赛区的冠军进行总决赛，决出U18英超联赛的总冠军。",
+        "上赛季，曼城险胜同城对手曼联夺得北部冠军，切尔西则在南部赛区强势夺冠。随后蓝军在联赛总决赛中击败曼城，在斯坦福桥以5-1大胜五冠王，自2018年以来首次捧起奖杯。",
+        "上赛季我们在28场联赛中积33分，位列南部赛区积分榜第十。本赛季我们力求提高总分，本周末将前往西米德兰兹对阵西布朗。",
+        "我们的赛程包括与西汉姆联、托特纳姆热刺和冠军切尔西的伦敦德比，随后于5月9日（周六）在索哈房产训练中心对阵雷丁，结束联赛赛季。",
+        "如果我们赢得赛区冠军，将通过抽签决定总决赛在北部还是南部冠军主场进行，抽签后确定比赛日期。"
+      ],
+      "translationSourceHash": "6f03bda37197ec747f07aaafffba29d0a052b1c383db4951618c5448f9dcbbd7",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-14T08:02:49.551Z"
+    },
     {
       "id": "86c4823695c7eeabf17cc5d7036abdedc6d06acca4cdb0a4537869352ba9be21",
       "teamId": "arsenal",
@@ -893,31 +928,6 @@
       "translationSourceHash": "bde22935e031e1babb52c725cbcaf8edf7773270fee3a7641d43c7d5f34177b0",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-13T16:38:02.197Z"
-    },
-    {
-      "id": "587941701fefa0b6545a461491120918338b9fdee2e5a1e40fc7e785ab601735",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Match Categories",
-      "summaryEn": "Match Categories",
-      "bodyEn": [
-        "Match Categorisation for the 2026/27 Season",
-        "Please find below the list of match categories for our fixtures for the 2026/27 season. Please note any fixtures currently without a category will be updated throughout the season and will also include any home FA Cup and European fixtures. The General Admission Season Ticket composition consists of 19 Premier League and 4 UEFA Champions League group fixtures totaling 23 games. For General Admission Season Ticket composition and pricing information, please click here."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/cad9e277e630-emirates-stadium-general.webp",
-      "author": "Arsenal Media",
-      "publishedAt": "2019-05-20T13:25:27.000Z",
-      "url": "https://www.arsenal.com/news/match-categories-akM0b6z9Drrk",
-      "source": "Arsenal.com",
-      "titleZh": "比赛类别",
-      "summaryZh": "比赛类别",
-      "bodyZh": [
-        "2026/27赛季比赛分类",
-        "以下是我们2026/27赛季赛程的比赛类别列表。请注意，目前未分类的任何比赛将在整个赛季中更新，并也将包括任何主场足总杯和欧洲赛事。一般入场季票由19场英超联赛和4场欧洲冠军联赛小组赛组成，共23场比赛。有关一般入场季票的组成和定价信息，请点击此处。"
-      ],
-      "translationSourceHash": "71922fb0fc2f8e107bae604c53065c0f8e30cda97810507397cbc8ad1ad624f9",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-14T06:41:31.948Z"
     }
   ]
 }
