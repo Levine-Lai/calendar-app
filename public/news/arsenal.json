@@ -1,12 +1,139 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-14T08:02:49.558Z",
+  "updatedAt": "2026-08-14T09:20:12.608Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "4b912b03cd053351d8466ce5af53258d5cecc6352783936e0e7dac918f79fe31",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Quinn: Community Shield a chance to lay down marker",
+      "summaryEn": "We chat with former Arsenal and Man City star Niall Quinn before the Community Shield",
+      "bodyEn": [
+        "Niall Quinn cannot wait for Sunday's Community Shield in Cardiff and believes the winners will lay down a marker for the 2026/27 campaign.",
+        "Quinn spent a combined 13 years at Arsenal and Manchester City, so the former striker is the perfect candidate to give us a flavour of both sides ahead of this season's curtain-raiser.",
+        "We go into the match at the Principality Stadium as reigning Premier League champions, with City last season's FA Cup winners, and Quinn thinks this is the perfect matchup to kick off the new campaign.",
+        "\"I think it's a historic game,\" Quinn said. \"It's the first marker of the season, and it's a game that kind of sets the tone and asks the question, which champions are ready for the next year? Will it be the FA Cup champions or the Premier League champions? Who was in better shape?",
+        "\"It’s a lovely game to be involved in, and it certainly whets the appetite for what's coming.\"",
+        "Quinn, who played in our 1989 curtain-raiser against Liverpool at Wembley, is looking forward to seeing us walk out in Cardiff as the defending league champions and urged us to kick on.",
+        "\"Arsenal have managed to break through that really tough barrier of getting that title under their belt. They can kick on, take a deep breath and kick on and say, right, we can really up the game here and go further.",
+        "\"I really commend Arsenal for coming to the party and doing what they did.",
+        "\"It's been brilliant, winning the league, but it’s a new season, and it’s all about kicking on from here, and I’m sure Mikel will be saying that. I think that this lays the sort of marker down for how the season is going to go.\"",
+        "Manchester City will be under new management for the first time in a decade, as former Chelsea boss Enzo Maresca takes charge for the Cardiff showpiece after Pep Guardiola's reign came to an end.",
+        "How will Manchester City follow on from Guardiola? Quinn, who played almost 300 matches for the Manchester side, believes it's a tough act to follow.",
+        "He said: \"Pep left his mark on the game. In every kid's game played at the grassroots level, with parents watching on the sidelines, Pep has influenced how the match is played and what the tactics are.",
+        "\"He's had a huge influence, and then move it to actually the club itself and what happened under him at Manchester City. It's just a tidal wave of new thinking that really lifted Man City to a place that probably nobody could envisage it would go.",
+        "\"So a new manager is coming in now to take on that, it's always the hardest thing ever to follow greatness. This is a really difficult task. It's going to be competitive and a big task for Maresca at Man City to maintain what Pep did, and I just hope that people understand, these things take time.\"",
+        "The pair last met in the Carabao Cup final in March 2026, which went the way of Manchester City, who prevailed 2-0 at Wembley.",
+        "A lot has changed since that final, and Quinn thinks we're a different side to the one that took to the field six months ago.",
+        "He said: \"Obviously Man City will be a different team, but it's probably fair to say that Arsenal are a different team now, having got over the line and broken that barrier by winning the league.",
+        "\"They’ve every right to feel like a great team, because they became a great team in May, when they got over the line. They became a great team.",
+        "\"Now it's about where does that greatness go? We'll get the first glimpse of the joust against Man City. We'll get the first glimpse of it in Cardiff and I'm excited to see it unfold.\""
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/56c3b5a2ed46-quinnniall198687cspor-1.webp",
+      "author": "Charlie Peat",
+      "publishedAt": "2026-08-14T08:10:49.529Z",
+      "url": "https://www.arsenal.com/news/quinn-community-shield-a-chance-to-lay-down-marker-a8Ggb1v3g9fn",
+      "source": "Arsenal.com",
+      "titleZh": "奎因：社区盾是奠定基调的机会",
+      "summaryZh": "社区盾前，我们与前阿森纳和曼城球星尼尔·奎因聊了聊。",
+      "bodyZh": [
+        "尼尔·奎因迫不及待地等待周日在加的夫举行的社区盾杯，他相信获胜者将为2026/27赛季奠定基调。",
+        "奎因在阿森纳和曼城总共效力了13年，因此这位前前锋是本赛季揭幕战前为我们介绍两队情况的完美人选。",
+        "我们作为卫冕英超冠军进入公国球场的这场比赛，而曼城是上赛季的足总杯冠军，奎因认为这是开启新赛季的完美对决。",
+        "“我认为这是一场历史性的比赛，”奎因说，“这是本赛季的第一个标杆，这场比赛定下了基调，并提出了一个问题：哪支冠军球队为新赛季做好了准备？是足总杯冠军还是英超冠军？谁的状态更好？”",
+        "“参与其中是件美妙的事，它确实激发了人们对即将到来的比赛的期待。”",
+        "奎因曾参加1989年我们在温布利对阵利物浦的揭幕战，他期待看到我们作为卫冕联赛冠军在加的夫出场，并敦促我们继续前进。",
+        "“阿森纳已经成功突破了夺取联赛冠军这一艰难障碍。他们可以继续前进，深吸一口气，然后说‘没错，我们真的可以提升比赛水平，走得更远’。”",
+        "“我真心赞赏阿森纳加入争冠行列并且做到了。”",
+        "“赢得联赛冠军太棒了，但这是一个新赛季，一切都要从此刻重新开始，我相信米克尔也会这么说。我认为这场比赛为整个赛季的走势奠定了基调。”",
+        "曼城将十年来首次迎来新主帅，前切尔西主帅恩佐·马雷斯卡将在加的夫这场盛事中执教，此前佩普·瓜迪奥拉的执教时代已经结束。",
+        "曼城将如何继承瓜迪奥拉的遗产？为曼城出场近300次的奎因认为，这是难以超越的成就。",
+        "他说：“佩普在足球界留下了自己的印记。在基层的每一场孩子比赛中，父母在场边观看，佩普都影响了比赛的进行方式和战术。”",
+        "“他产生了巨大的影响，然后具体到俱乐部本身以及他在曼城所取得的成就。那是一场新思维的海啸，真正将曼城提升到了一个可能无人能预料的高度。”",
+        "“所以现在一位新教练要来接手，追随伟人永远是最困难的事情。这是一项非常艰巨的任务。对于马雷斯卡来说，要在曼城维持佩普所做到的，这将充满挑战且任务重大。我只希望人们明白，这些事情需要时间。”",
+        "两队上次交锋是在2026年3月的联赛杯决赛中，曼城在温布利2-0获胜。",
+        "自那场决赛以来，很多事情都发生了变化，奎因认为我们和六个月前出现在赛场上的那支球队已经不同了。",
+        "他说：“显然曼城会是一支不同的球队，但可以说阿森纳现在也是一支不同的球队，他们已经跨越终点线，通过赢得联赛冠军打破了那层障碍。”",
+        "“他们完全有理由觉得自己是一支伟大的球队，因为他们在五月冲过终点线时已经成为了一支伟大的球队。他们成为了一支伟大的球队。”",
+        "“现在的问题是这种伟大将走向何方？我们将在与曼城的较量中首次窥见。我们将在加的夫首次看到它，我迫不及待想看到它上演。”"
+      ],
+      "translationSourceHash": "2ac61c2fa169b7cdb0d57a133aa3986b2c212d4a0ec82ab4f4e0267be1f0534a",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-14T09:20:12.607Z"
+    },
+    {
+      "id": "afd2ae7ff5842a0c89fae52bb9fc0fb2bbac1766bd026cc91e014b0a09dcc8dd",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "In Focus: Watch Bruno's Arsenal debut",
+      "summaryEn": "Watch the best of Bruno Guimaraes during his pre-season debut v Como 1907",
+      "bodyEn": [
+        "Bruno Guimaraes made his Emirates Stadium bow in our penalty shootout victory over Como 1907.",
+        "The midfielder was given a big welcome in N5 as he emerged for the second half in our 1-1 draw.",
+        "You can watch the Brazilian's all-action display with our in-focus special by pressing play on our video now!"
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/76db0b3a3569-london-england-bruno-guimaraes-of-arsenal-during-the-pre-season-friendly-match-b.webp",
+      "author": "Charlie Peat",
+      "publishedAt": "2026-08-14T08:05:33.925Z",
+      "url": "https://www.arsenal.com/news/in-focus-watch-brunos-arsenal-debut-aMWn58u4mc4l",
+      "source": "Arsenal.com",
+      "titleZh": "聚焦：观看布鲁诺的阿森纳首秀",
+      "summaryZh": "观看布鲁诺·吉马良斯对阵科莫的季前赛首秀精彩集锦。",
+      "bodyZh": [
+        "布鲁诺·吉马良斯在点球大战战胜科莫1907的比赛中首次亮相酋长球场。",
+        "这位中场球员在N5区受到热烈欢迎，他在下半场替补登场，最终我们1-1战平。",
+        "现在点击播放我们的专属聚焦视频，即可观看这位巴西球员的全能表现！"
+      ],
+      "translationSourceHash": "9ac3a05325b7af3606d3384e787f1957f35ac1e89d74ff179133e3e83ee8a1b2",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-14T09:19:28.734Z"
+    },
+    {
+      "id": "f2931ce0419a18d6908a8b43a5e8aa1c7f3cab47674dbf69f5ec5b9edaa433c7",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "U18s preview: West Bromwich Albion v Arsenal",
+      "summaryEn": "We begin our U18 Premier League campaign in the West Midlands on Saturday",
+      "bodyEn": [
+        "Our under-18s kick-off their 2026/27 campaign with a trip to the West Midlands to face West Bromwich Albion on Saturday afternoon (12pm UK).",
+        "Adam Birchall's side finished tenth in last season's U18s Premier League South, a result we'll be looking to improve on this time around.",
+        "Our pre-season preparations have seen our young Gunners beat MK Dons in an under-18s clash, as well as earning a battling draw with Boreham Wood's first team as part of an Arsenal XI.",
+        "THE OPPOSITION",
+        "West Bromwich Albion enjoyed a successful 2025/26 season, finishing sixth with 14 wins and four draws in 28 league games.",
+        "The Baggies amassed 46 points in the U18 Premier League South, only finishing behind Crystal Palace on goal difference.",
+        "Our first meeting last season ended in a hard-fought win for West Brom, who edged a five-goal thriller 3-2 at the Sobha Realty Training Centre in October, before Maalik Hashi's free-kick secured a 1-0 win away from home in March.",
+        "HOW TO FOLLOW",
+        "We get the new season underway at 12pm (UK) in the West Midlands, with live updates available on our Academy X channel from team news all the way through to full-time.",
+        "Post-match, don't miss highlights and exclusive interviews with under-18s head coach Adam Birchall and one of our young Gunners on The Arsenal app and Arsenal.com."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/497bc5e43409-london-colney-england-abraham-owusu-gyasi-of-arsenal-during-the-arsenal-academy.webp",
+      "author": "Connor Booth",
+      "publishedAt": "2026-08-14T08:00:00.000Z",
+      "url": "https://www.arsenal.com/news/u18s-preview-west-bromwich-albion-v-arsenal-avvEQ7K70aXQ",
+      "source": "Arsenal.com",
+      "titleZh": "U18前瞻：西布罗姆维奇对阵阿森纳",
+      "summaryZh": "我们周六在西米德兰兹开启U18英超联赛征程。",
+      "bodyZh": [
+        "我们的U18青年队将于周六下午（英国时间12点）客场前往西米德兰兹，迎战西布罗姆维奇，开启2026/27赛季的征程。",
+        "亚当·伯查尔率领的球队上赛季在U18英超联赛南部赛区排名第十，这次我们希望取得更好的成绩。",
+        "季前备战中，我们年轻的枪手在U18比赛中战胜了米尔顿凯恩斯，并在阿森纳XI阵容与博勒姆伍德一线队的比赛中顽强战平。",
+        "对手",
+        "西布罗姆维奇在2025/26赛季表现出色，28场联赛取得14胜4平，最终排名第六。",
+        "灯笼裤在U18英超南部赛区积46分，仅因净胜球劣势排在水晶宫之后。",
+        "双方上赛季首次交锋，西布朗在十月于索巴房地产训练中心进行的一场五球大战中以3-2艰难获胜；随后三月，马利克·哈希的任意球帮助我们客场1-0取胜。",
+        "如何关注",
+        "我们将在西米德兰兹于英国时间中午12点开启新赛季，阿森纳青训X频道将提供从球队新闻到全场比赛结束的实时更新。",
+        "赛后，别忘了在阿森纳官方App和Arsenal.com上观看集锦以及U18主教练亚当·伯查尔和一位年轻枪手的独家专访。"
+      ],
+      "translationSourceHash": "9cd89477903b33087f1abbf27c77cd479401967bcc047299bb3acbf06db3d142",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-14T09:19:57.541Z"
+    },
     {
       "id": "6ffe6ddd74694cc64a209df11cfd90290a3016f3e4e27638fb9145bf5bcd3974",
       "teamId": "arsenal",
@@ -374,35 +501,6 @@
       "translationSourceHash": "463e6d38cdff0d0ac2e82112341d1467fdd9bd0c9fadb2898d8dc9be1c1f9469",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-13T16:34:48.613Z"
-    },
-    {
-      "id": "e0656befa54f7a5c5331aa08c62a317228fc56c10161f594b50159e4d4acb781",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Highlights: Arsenal 1-1 Como 1907 (4-3 pens)",
-      "summaryEn": "Watch the best moments from our final pre-season clash with Como",
-      "bodyEn": [
-        "We ended pre-season on a high with a dramatic penalty shootout victory over Como, and you can see the best of the action with our highlights package!",
-        "Myles Lewis-Skelly scored the opener at Emirates Stadium before Martin Baturina equalised for the Italian side.",
-        "Nothing could separate the teams as we went to spot kicks, where David Raya produced two fine saves before Christos Tzolis slammed home the winner.",
-        "Press play on the highlights from N5, with an extended cut available below and a full match replay available on The Arsenal app and on Arsenal.com."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/9a08170918a5-london-england-bruno-guimaraes-of-arsenal-runs-with-the-ball-during-the-pre-seas.webp",
-      "author": "Charlie Peat",
-      "publishedAt": "2026-08-12T21:31:09.606Z",
-      "url": "https://www.arsenal.com/news/highlights-arsenal-1-1-como-1907-4-3-pens-aKVmL6j6VPWQ",
-      "source": "Arsenal.com",
-      "titleZh": "集锦：阿森纳1-1科莫1907（点球4-3）",
-      "summaryZh": "观看我们季前赛收官战对阵科莫的最佳时刻。",
-      "bodyZh": [
-        "我们以一场惊心动魄的点球大战胜利结束了季前赛，您可以通过我们的集锦包欣赏最佳表现！",
-        "迈尔斯·刘易斯-斯凯利在酋长球场首开纪录，随后马丁·巴图里纳为意大利球队扳平比分。",
-        "双方进入点球大战，大卫·拉亚做出两次精彩扑救，随后克里斯托斯·佐利斯一锤定音。",
-        "点击播放来自N5的集锦，下方提供加长版，完整比赛回放可在阿森纳官方App和Arsenal.com上观看。"
-      ],
-      "translationSourceHash": "3b6cd511bc7876c42f2087dbbc049c6b96164f84dc1e0f700f3a503ec6c2f60f",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-13T16:34:51.999Z"
     },
     {
       "id": "9ee68326021d86fa07f688f8311852440f59573309e605c97a5a9bc62b88f53a",
@@ -779,35 +877,6 @@
       "translatedAt": "2026-08-13T16:38:12.857Z"
     },
     {
-      "id": "1eff5e93617808e7796925ebf19fc78db5af5a17711172370b754d5c0f1c9b3d",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Highlights: Arsenal 1-3 Real Betis",
-      "summaryEn": "Our pre-season continues with a defeat in Dublin",
-      "bodyEn": [
-        "We continued our pre-season in Dublin, earning more valuable minutes in the tank despite a 3-1 defeat to Real Betis. Watch the best of the action in our highlights package.",
-        "After falling two goals behind, Piero Hincapie rose highest to meet Christos Tzolis' superb inswinging corner and head home, halving the deficit.",
-        "The fightback was short-lived though, as Betis restored their two-goal advantage before the break and kept us at bay throughout the second half.",
-        "Press play on the video above to watch the two-minute package, or watch the video below for an extended cut. A full match replay is available on The Arsenal app and on Arsenal.com."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/1fae866f382f-dublin-ireland-gabriel-martinelli-of-arsenal-fc-controls-the-ball-during-the-pre.webp",
-      "author": "Tom Keens",
-      "publishedAt": "2026-08-05T21:29:25.475Z",
-      "url": "https://www.arsenal.com/news/highlights-arsenal-1-3-real-betis-av54u4q6mjEB",
-      "source": "Arsenal.com",
-      "titleZh": "集锦：阿森纳1-3皇家贝蒂斯",
-      "summaryZh": "季前赛在都柏林遭遇失利。",
-      "bodyZh": [
-        "我们在都柏林继续季前备战，尽管1-3不敌皇家贝蒂斯，但还是获得了宝贵的上场时间。请在我们的集锦中观看最佳时刻。",
-        "在落后两球后，皮耶罗·欣卡皮埃高高跃起，接住克里斯托斯·佐利斯的精彩内旋角球头球破门，将差距缩小到一球。",
-        "然而反扑势头未能持续，贝蒂斯在中场休息前重新取得两球领先，并在下半场将我们牢牢压制。",
-        "点击上方视频观看两分钟集锦，或观看下方视频获取加长版。完整比赛回放可在阿森纳官方App和Arsenal.com上观看。"
-      ],
-      "translationSourceHash": "a0d8f23fb369241888f8bf6f8f35c357511ee529518300fcedb85a8cad3c414b",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-13T16:37:23.330Z"
-    },
-    {
       "id": "538a8d66a008e67bf4db9b8a7c0c124484478236b62930140371f492db223386",
       "teamId": "arsenal",
       "teamName": "阿森纳",
@@ -899,35 +968,6 @@
       "translationSourceHash": "f36297406a1f1f0d4626814af350cb478141e1576c6e1375515326772ac66e5d",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-13T16:37:54.677Z"
-    },
-    {
-      "id": "f5d0364b0ed53d0aee57c90ce5346aeb16e90b53c627feb6d2dcff2d99e74001",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Highlights: Girona 1-4 Arsenal",
-      "summaryEn": "Watch all the key action from our big win in Girona",
-      "bodyEn": [
-        "We kicked off our pre-season in impressive fashion as we dispatched Girona 4-1 in Spain, and you can watch the best of the action with our highlights package!",
-        "Kai Havertz opened the scoring before Christos Tzolis netted his first Arsenal goal with a fine low finish.",
-        "Max Dowman then fired home our third before Gabriel Jesus rounded off the scoring as our squad got more minutes in the tank ahead of the new campaign.",
-        "Press play on the video above to watch the extended highlights, or watch our two-minute package below. A full-match replay is available to watch on The Arsenal app and on Arsenal.com."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/8764070fa93d-girona-spain-max-dowman-of-arsenal-fc-celebrates-scoring-his-teams-third-goal-du.webp",
-      "author": "Charlie Peat",
-      "publishedAt": "2026-08-02T08:46:09.874Z",
-      "url": "https://www.arsenal.com/news/highlights-girona-1-4-arsenal-ah4nb9g2LDPy",
-      "source": "Arsenal.com",
-      "titleZh": "集锦：赫罗纳 1-4 阿森纳",
-      "summaryZh": "观看我们在赫罗纳大胜的所有关键瞬间。",
-      "bodyZh": [
-        "我们在西班牙以令人印象深刻的方式开启了季前赛，4-1击败赫罗纳，你可以通过我们的集锦包观看最佳表现！",
-        "凯·哈弗茨率先破门，随后克里斯托斯·佐利斯以一记漂亮的低射打入了他加盟阿森纳的首粒进球。",
-        "随后马克斯·道曼为我们攻入第三球，加布里埃尔·热苏斯则完成了收官进球，我们的阵容在新赛季前获得了更多出场时间。",
-        "请点击上方视频播放，观看完整集锦，或观看下方两分钟版。阿森纳官方应用和Arsenal.com上可观看全场比赛回放。"
-      ],
-      "translationSourceHash": "bde22935e031e1babb52c725cbcaf8edf7773270fee3a7641d43c7d5f34177b0",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-13T16:38:02.197Z"
     }
   ]
 }
