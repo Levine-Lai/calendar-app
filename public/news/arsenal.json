@@ -1,7 +1,7 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-13T17:40:02.665Z",
+  "updatedAt": "2026-08-14T06:41:31.949Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
@@ -593,41 +593,6 @@
       "translatedAt": "2026-08-13T16:36:46.682Z"
     },
     {
-      "id": "630c6be084fc238456ab6b2647f19d3512e6ee93d90edf716b391b9ef30d64d5",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Highlights: Arsenal 2-3 Borussia Dortmund",
-      "summaryEn": "We continue our pre-season with a narrow defeat in the Emirates Cup",
-      "bodyEn": [
-        "Our pre-season campaign continued back in N5 for the Emirates Cup, which we lost 3-2 to Borussia Dortmund.",
-        "The German side were ahead by two before the break, through goals from Samuele Inacio and Konstantinos Karetsas.",
-        "Substitute Ethan Nwaneri got us back into the game after the interval with a strike high into the visitors' net, following fine footwork from Christos Tzolis, who provided the assist.",
-        "Just as it looked like we'd go on to find a deserved equaliser, the team in yellow struck on the counter and restored their margin, this time through Kouakou Gadou.",
-        "The goals did not stop there, however, as we found another response to halve the deficit from the spot. Tzolis drew the foul after a mazey run into the box, which Viktor Gyokeres expertly dispatched from 12 yards.",
-        "The last period of the game saw multiple academy prospects deployed in front of a packed Emirates Stadium crowd, but the away side held out to lift the pre-season trophy.",
-        "Press play on the video at the top of the article to watch the best of the action, or watch the video below for an extended cut. A full match replay is available on The Arsenal App and on Arsenal.com."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/597cee745ff6-gettyimages-2289728040.webp",
-      "author": "Tom Keens",
-      "publishedAt": "2026-08-09T16:21:50.992Z",
-      "url": "https://www.arsenal.com/news/highlights-arsenal-2-3-borussia-dortmund-a1SmH9J1sDPr",
-      "source": "Arsenal.com",
-      "titleZh": "集锦：阿森纳 2-3 多特蒙德",
-      "summaryZh": "季前赛酋长杯，阿森纳2-3惜败多特蒙德。",
-      "bodyZh": [
-        "我们的季前备战回到N5，在酋长杯中以2-3不敌多特蒙德。",
-        "德国球队在半场前凭借萨穆埃尔·伊纳西奥和康斯坦丁诺斯·卡雷察斯的进球领先两球。",
-        "替补登场的伊桑·恩瓦内里在中场休息后，接克里斯托斯·佐利斯的精妙助攻，将球打进球门上角，为我们扳回一城。",
-        "就在我们看似要找到应得的扳平球时，黄衣球队通过反击扩大了领先优势，这次进球的是夸库·加杜。",
-        "然而进球并未就此停止，我们通过点球再次缩小差距。佐利斯在禁区内连续突破后被犯规，维克托·哲凯赖什主罚点球一蹴而就。",
-        "比赛最后阶段，在座无虚席的酋长球场观众面前，多名青训新星登场亮相，但客队最终守住了胜果，捧起季前赛奖杯。",
-        "点击文章顶部的视频播放按钮观看最佳集锦，或观看下方视频观看加长版。完整比赛回放可在阿森纳官方App和Arsenal.com上观看。"
-      ],
-      "translationSourceHash": "2bd21ac2cc2917f3e0e384f2389597ca34d0f15007bb6db44d456b877639a7a6",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-13T16:36:51.195Z"
-    },
-    {
       "id": "e0b1fc8fc85524a8f438ab50f2c6c42f52d633560b541e08383a0d18cb4f5f1b",
       "teamId": "arsenal",
       "teamName": "阿森纳",
@@ -928,6 +893,31 @@
       "translationSourceHash": "bde22935e031e1babb52c725cbcaf8edf7773270fee3a7641d43c7d5f34177b0",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-13T16:38:02.197Z"
+    },
+    {
+      "id": "587941701fefa0b6545a461491120918338b9fdee2e5a1e40fc7e785ab601735",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Match Categories",
+      "summaryEn": "Match Categories",
+      "bodyEn": [
+        "Match Categorisation for the 2026/27 Season",
+        "Please find below the list of match categories for our fixtures for the 2026/27 season. Please note any fixtures currently without a category will be updated throughout the season and will also include any home FA Cup and European fixtures. The General Admission Season Ticket composition consists of 19 Premier League and 4 UEFA Champions League group fixtures totaling 23 games. For General Admission Season Ticket composition and pricing information, please click here."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/cad9e277e630-emirates-stadium-general.webp",
+      "author": "Arsenal Media",
+      "publishedAt": "2019-05-20T13:25:27.000Z",
+      "url": "https://www.arsenal.com/news/match-categories-akM0b6z9Drrk",
+      "source": "Arsenal.com",
+      "titleZh": "比赛类别",
+      "summaryZh": "比赛类别",
+      "bodyZh": [
+        "2026/27赛季比赛分类",
+        "以下是我们2026/27赛季赛程的比赛类别列表。请注意，目前未分类的任何比赛将在整个赛季中更新，并也将包括任何主场足总杯和欧洲赛事。一般入场季票由19场英超联赛和4场欧洲冠军联赛小组赛组成，共23场比赛。有关一般入场季票的组成和定价信息，请点击此处。"
+      ],
+      "translationSourceHash": "71922fb0fc2f8e107bae604c53065c0f8e30cda97810507397cbc8ad1ad624f9",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-14T06:41:31.948Z"
     }
   ]
 }
