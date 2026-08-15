@@ -1,8 +1,72 @@
 {
   "teamId": "toronto-blue-jays",
   "teamName": "多伦多蓝鸟",
-  "updatedAt": "2026-08-15T22:29:09.826Z",
+  "updatedAt": "2026-08-15T23:01:29.179Z",
   "items": [
+    {
+      "id": "40dff86a15e33d48285f57a0927cd677a431a79f6b215682a8a99cebe4d3951d",
+      "teamId": "toronto-blue-jays",
+      "teamName": "多伦多蓝鸟",
+      "titleEn": "After long journey through injuries in Minors, Tiedemann makes his MLB debut",
+      "summaryEn": "",
+      "bodyEn": [
+        "The Blue Jays have called up left-hander Ricky Tiedemann from Triple-A Buffalo to be available for Saturday's game against the Yankees.",
+        "The promotion represents the culmination of a long journey for Tiedemann, Toronto's No. 11 prospect, who underwent Tommy John surgery in July 2024 and missed all of the 2025 season.",
+        "Selected by the Blue Jays in the third round of the 2021 MLB Draft (and the 91st overall pick), the lefty is 0-1 with a 6.43 ERA this season in seven appearances (two starts) for Buffalo. In his Minor League career, he's recorded a 5-11 record and a 3.18 ERA in 48 games (43 starts) and 147 innings.",
+        "Before his elbow injury, Tiedemann was Toronto's No. 1 prospect and the No. 29 prospect in baseball entering the 2024 season. The team has been cautious with his workload this season, but expects him to be a contributor at the big league level.",
+        "“Hopefully, he’s a factor for us in our rotation,” GM Ross Atkins told MLB.com last year. “That’s the plan, but we would be open to him impacting the team in a bulk role or some creative way, depending on how things are going.”",
+        "In a corresponding move, the Blue Jays optioned right-hander Chase Lee to Triple-A."
+      ],
+      "titleZh": "历经小联盟伤病漫长旅程，Tiedemann迎来MLB首秀",
+      "summaryZh": "蓝鸟队左投Ricky Tiedemann历经伤病，迎来MLB首秀。",
+      "bodyZh": [
+        "蓝鸟队已将左投手Ricky Tiedemann从三A布法罗队升上大联盟，他有望在周六对阵洋基队的比赛中出场。",
+        "此次升上大联盟是Tiedemann漫长旅程的 culmination，他是多伦多排名第11的潜力新秀，于2024年7月接受了汤米·约翰手术，并缺席了整个2025赛季。",
+        "这位左投手在2021年MLB选秀第三轮（总第91顺位）被蓝鸟队选中，本赛季为布法罗队出场7次（2次先发），战绩0胜1负，自责分率6.43。在小联盟生涯中，他在48场比赛（43次先发）及147局中取得5胜11负、自责分率3.18的成绩。",
+        "在肘部受伤前，Tiedemann是蓝鸟队的头号新秀，进入2024赛季时是棒球界排名第29的新秀。球队本赛季对他的工作量一直很谨慎，但期待他能在MLB层面做出贡献。",
+        "“希望他能成为我们先发轮值的一员，”总经理Ross Atkins去年告诉MLB.com，“这是计划，但我们也愿意接受他以长局中继或其他有创意的方式影响球队，这取决于情况进展。”",
+        "在相应的人员调整中，蓝鸟队将右投手Chase Lee下放到三A。"
+      ],
+      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/kmyvcp3vbwi1p9rgkhtw",
+      "translationSourceHash": "4a956f9f6ae9d602e71f5573570b12a46c906baaa60b6b3417c7d2a9a182fbdb",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-15T23:01:29.178Z",
+      "author": "Keegan Matheson",
+      "publishedAt": "2026-08-15T22:55:00.000Z",
+      "url": "https://www.mlb.com/bluejays/news/ricky-tiedemann-call-up-blue-jays",
+      "source": "MLB.com"
+    },
+    {
+      "id": "cef8715c45e0986d515a3559979cb7441f5c5845402b6d8aec4105672694741c",
+      "teamId": "toronto-blue-jays",
+      "teamName": "多伦多蓝鸟",
+      "titleEn": "Vlad placed on injured list day after exiting with head injury",
+      "summaryEn": "",
+      "bodyEn": [
+        "Vladimir Guerrero Jr. was out of the Blue Jays’ starting lineup Saturday, one day after exiting the game and undergoing concussion protocols.",
+        "Guerrero collided with Yankees shortstop George Lombard Jr. in a chaotic play at third base during the sixth inning of Toronto's 3-1 win over New York on Friday. As an errant throw got away from Lombard and he turned to chase after the ball, his left knee hit Guerrero in the face.",
+        "“He had a headache last night. I think it’s one of those where the doctors wanted to see how he woke up today,” manager John Schneider said pregame. “He’s here, I think kind of feeling the same. They’re just finishing up testing for today and we’ll go from there.”",
+        "No roster move involving Guerrero was announced, but the Blue Jays did recall left-handed pitcher Ricky Tiedemann from Triple-A Buffalo ahead of Saturday's game, optioning righty Chase Lee in a corresponding move. Outfielder Daz Cameron has also reported to the Toronto clubhouse.",
+        "Should Guerrero land on the IL, 10-day or the 7-day concussion option, rookie Charles McAdoo would be the primary option to fill in at first base. Third baseman Kazuma Okamoto could also slide over."
+      ],
+      "titleZh": "Vladimir Guerrero Jr. 在头部受伤退场次日被列入伤病名单",
+      "summaryZh": "Vladimir Guerrero Jr. 因头部受伤被列入伤病名单，蓝鸟队召回左投手Ricky Tiedemann并调整阵容。",
+      "bodyZh": [
+        "Vladimir Guerrero Jr. 周六未进入蓝鸟队的先发阵容，前一天他退出了比赛并接受了脑震荡检查程序。",
+        "周五蓝鸟队以3比1战胜纽约洋基队的比赛中，第六局在三垒出现混乱局面，Guerrero 与洋基队游击手 George Lombard Jr. 相撞。当时 Lombard 的一次传球失误，他转身追球时，左膝撞到了 Guerrero 的脸。",
+        "主教练 John Schneider 赛前表示：“他昨晚头疼。我认为这是医生想看看他今天醒来后情况如何的那种情况。他在这里，我觉得感觉差不多。他们今天刚完成测试，我们会继续观察。”",
+        "蓝鸟队没有宣布涉及 Guerrero 的阵容调整，但在周六比赛前确实从三A布法罗队召回了左投手 Ricky Tiedemann，并将右投手 Chase Lee 下放作为相应调整。外野手 Daz Cameron 也已向多伦多俱乐部报到。",
+        "如果 Guerrero 进入伤病名单（10天或7天脑震荡选项），新秀 Charles McAdoo 将是填补一垒位置的主要选择。三垒手 Kazuma Okamoto 也有可能移防一垒。"
+      ],
+      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/czw8ntw3uh8ckjccyfi2",
+      "translationSourceHash": "617b989848e80efda3362f29c2fbc86010e40c497a6881db51af60d1b93efefb",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-15T17:37:10.963Z",
+      "author": "Keegan Matheson",
+      "publishedAt": "2026-08-15T22:47:00.000Z",
+      "url": "https://www.mlb.com/bluejays/news/vladimir-guerrero-jr-out-of-blue-jays-lineup-vs-yankees-on-august-15-2026",
+      "source": "MLB.com"
+    },
     {
       "id": "33a98aa2c0ef5aaaa9c12a7d955cb2fe21e54aadad2a4526bf20ed40132cd108",
       "teamId": "toronto-blue-jays",
@@ -48,39 +112,6 @@
       "author": "Keegan Matheson",
       "publishedAt": "2026-08-15T22:17:00.000Z",
       "url": "https://www.mlb.com/bluejays/news/charles-mcadoo-drives-in-2-as-blue-jays-beat-yankees",
-      "source": "MLB.com"
-    },
-    {
-      "id": "40dff86a15e33d48285f57a0927cd677a431a79f6b215682a8a99cebe4d3951d",
-      "teamId": "toronto-blue-jays",
-      "teamName": "多伦多蓝鸟",
-      "titleEn": "After long journey through injuries in Minors, Tiedemann called up to make MLB debut",
-      "summaryEn": "",
-      "bodyEn": [
-        "The Blue Jays have called up left-hander Ricky Tiedemann from Triple-A Buffalo to be available for Saturday's game against the Yankees.",
-        "The promotion represents the culmination of a long journey for Tiedemann, Toronto's No. 11 prospect, who underwent Tommy John surgery in July 2024 and missed all of the 2025 season.",
-        "Selected by the Blue Jays in the third round of the 2021 MLB Draft (and the 91st overall pick), the lefty is 0-1 with a 6.43 ERA this season in seven appearances (two starts) for Buffalo. In his Minor League career, he's recorded a 5-11 record and a 3.18 ERA in 48 games (43 starts) and 147 innings.",
-        "Before his elbow injury, Tiedemann was Toronto's No. 1 prospect and the No. 29 prospect in baseball entering the 2024 season. The team has been cautious with his workload this season, but expects him to be a contributor at the big league level.",
-        "“Hopefully, he’s a factor for us in our rotation,” GM Ross Atkins told MLB.com last year. “That’s the plan, but we would be open to him impacting the team in a bulk role or some creative way, depending on how things are going.”",
-        "In a corresponding move, the Blue Jays optioned right-hander Chase Lee to Triple-A."
-      ],
-      "titleZh": "历经小联盟伤病漫长旅程，Tiedemann升上大联盟完成首秀",
-      "summaryZh": "蓝鸟将左投Ricky Tiedemann升上大联盟，他历经伤病，即将迎来首秀。",
-      "bodyZh": [
-        "蓝鸟已将左投手Ricky Tiedemann从三A水牛城升上大联盟，他将在周六对阵洋基的比赛中可用。",
-        "这次升上大联盟标志着Tiedemann漫长旅程的顶点。作为多伦多排名第11的潜力新秀，他在2024年7月接受了Tommy John手术，并缺席了整个2025赛季。",
-        "这位左投手在2021年MLB选秀第三轮（第91顺位）被蓝鸟选中，本赛季为水牛城出战7场（2场先发），战绩0胜1负，自责分率6.43。在小联盟生涯中，他在48场比赛（43场先发）共147局中取得5胜11负，自责分率3.18。",
-        "在肘部受伤之前，Tiedemann进入2024赛季时是蓝鸟的头号新秀，也是全棒球第29号新秀。球队本赛季对他的工作量一直很谨慎，但期待他能在美职棒层面做出贡献。",
-        "“希望他能成为我们先发轮值的一员，”总经理Ross Atkins去年告诉MLB.com。“这是计划，但我们也会根据情况，接受他以长中继或其他创造性的方式影响球队。”",
-        "作为对应操作，蓝鸟将右投手Chase Lee下放至三A。"
-      ],
-      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/kmyvcp3vbwi1p9rgkhtw",
-      "translationSourceHash": "5ea48c15c62bda119b67ee85efba7d74f5f5525445d5d797b2a63bb831a3b521",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-15T16:52:04.995Z",
-      "author": "Keegan Matheson",
-      "publishedAt": "2026-08-15T21:06:00.000Z",
-      "url": "https://www.mlb.com/bluejays/news/ricky-tiedemann-call-up-blue-jays",
       "source": "MLB.com"
     },
     {
@@ -262,37 +293,6 @@
       "author": "Keegan Matheson",
       "publishedAt": "2026-08-15T18:04:31.000Z",
       "url": "https://www.mlb.com/bluejays/news/cam-schlittler-dylan-cease-pitch-in-yankees-blue-jays-series",
-      "source": "MLB.com"
-    },
-    {
-      "id": "cef8715c45e0986d515a3559979cb7441f5c5845402b6d8aec4105672694741c",
-      "teamId": "toronto-blue-jays",
-      "teamName": "多伦多蓝鸟",
-      "titleEn": "Vlad placed on injured list day after exiting with head injury",
-      "summaryEn": "",
-      "bodyEn": [
-        "Vladimir Guerrero Jr. was out of the Blue Jays’ starting lineup Saturday, one day after exiting the game and undergoing concussion protocols.",
-        "Guerrero collided with Yankees shortstop George Lombard Jr. in a chaotic play at third base during the sixth inning of Toronto's 3-1 win over New York on Friday. As an errant throw got away from Lombard and he turned to chase after the ball, his left knee hit Guerrero in the face.",
-        "“He had a headache last night. I think it’s one of those where the doctors wanted to see how he woke up today,” manager John Schneider said pregame. “He’s here, I think kind of feeling the same. They’re just finishing up testing for today and we’ll go from there.”",
-        "No roster move involving Guerrero was announced, but the Blue Jays did recall left-handed pitcher Ricky Tiedemann from Triple-A Buffalo ahead of Saturday's game, optioning righty Chase Lee in a corresponding move. Outfielder Daz Cameron has also reported to the Toronto clubhouse.",
-        "Should Guerrero land on the IL, 10-day or the 7-day concussion option, rookie Charles McAdoo would be the primary option to fill in at first base. Third baseman Kazuma Okamoto could also slide over."
-      ],
-      "titleZh": "Vladimir Guerrero Jr. 在头部受伤退场次日被列入伤病名单",
-      "summaryZh": "Vladimir Guerrero Jr. 因头部受伤被列入伤病名单，蓝鸟队召回左投手Ricky Tiedemann并调整阵容。",
-      "bodyZh": [
-        "Vladimir Guerrero Jr. 周六未进入蓝鸟队的先发阵容，前一天他退出了比赛并接受了脑震荡检查程序。",
-        "周五蓝鸟队以3比1战胜纽约洋基队的比赛中，第六局在三垒出现混乱局面，Guerrero 与洋基队游击手 George Lombard Jr. 相撞。当时 Lombard 的一次传球失误，他转身追球时，左膝撞到了 Guerrero 的脸。",
-        "主教练 John Schneider 赛前表示：“他昨晚头疼。我认为这是医生想看看他今天醒来后情况如何的那种情况。他在这里，我觉得感觉差不多。他们今天刚完成测试，我们会继续观察。”",
-        "蓝鸟队没有宣布涉及 Guerrero 的阵容调整，但在周六比赛前确实从三A布法罗队召回了左投手 Ricky Tiedemann，并将右投手 Chase Lee 下放作为相应调整。外野手 Daz Cameron 也已向多伦多俱乐部报到。",
-        "如果 Guerrero 进入伤病名单（10天或7天脑震荡选项），新秀 Charles McAdoo 将是填补一垒位置的主要选择。三垒手 Kazuma Okamoto 也有可能移防一垒。"
-      ],
-      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/czw8ntw3uh8ckjccyfi2",
-      "translationSourceHash": "617b989848e80efda3362f29c2fbc86010e40c497a6881db51af60d1b93efefb",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-15T17:37:10.963Z",
-      "author": "Keegan Matheson",
-      "publishedAt": "2026-08-15T17:49:00.000Z",
-      "url": "https://www.mlb.com/bluejays/news/vladimir-guerrero-jr-out-of-blue-jays-lineup-vs-yankees-on-august-15-2026",
       "source": "MLB.com"
     },
     {
