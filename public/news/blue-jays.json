@@ -1,8 +1,55 @@
 {
   "teamId": "toronto-blue-jays",
   "teamName": "多伦多蓝鸟",
-  "updatedAt": "2026-08-15T21:27:09.430Z",
+  "updatedAt": "2026-08-15T22:29:09.826Z",
   "items": [
+    {
+      "id": "33a98aa2c0ef5aaaa9c12a7d955cb2fe21e54aadad2a4526bf20ed40132cd108",
+      "teamId": "toronto-blue-jays",
+      "teamName": "多伦多蓝鸟",
+      "titleEn": "Key takeaways: Blue Jays 4, Yankees 1",
+      "summaryEn": "",
+      "bodyEn": [
+        "TORONTO -- Can you believe it? With another win Saturday, the Blue Jays grabbed their share of a crowded, messy tie for the final American League Wild Card spot.",
+        "You have the coming weeks to familiarize yourself with MLB’s tiebreaker rules, and both the Twins and Rangers still play later Saturday night, but this captures just how spectacular this recent run has been for the Blue Jays.",
+        "Saturday’s 4-1 win over the Yankees is their seventh win in their past nine games, finally making the Blue Jays (61-64) the “hot” team in a Wild Card race that has sat stagnant, waiting for a good story.",
+        "This is what mattered most:",
+        "1. McAdoo finally delivers the big blowStop me if you’ve heard this one before, but the Blue Jays were stuck in a quiet, low-scoring game waiting for someone to get a big hit. Familiar, isn’t it?",
+        "Charles McAdoo changed everything with one swing in the seventh, a rocket double off the wall in center to score the go-ahead run. Just inches shy of clearing the wall for a home run, this looked like one of those classics from Vladimir Guerrero Jr., hit so hard (107.4 mph) that it was either going to go over the wall or through it. McAdoo came right back around in his next at-bat with an RBI single, too, breaking open the Blue Jays’ rally in the eighth.",
+        "McAdoo is essentially the “next man up” in Guerrero’s place after the face of the franchise hit the seven-day concussion IL early Saturday. He’ll be in the lineup every day, and with a swing like this in a moment that big, McAdoo looks like he can be more than just a short-term fill-in.",
+        "2. Cy Young watch: Schlittler states his caseThe Blue Jays couldn’t get much going against Cam Schlittler, who held them to one run over 5 1/3 innings with seven strikeouts. Chasing Schlittler that early was a small win, though, as they drove up his pitch count with three walks and some deep at-bats despite not making much hard contact.",
+        "This outing dropped Schlittler’s ERA a couple of points to 2.19, where he still holds the advantage over Blue Jays ace Dylan Cease (2.40). Cease does hold some advantages when you look at strikeout rates and the advanced metrics, though, so this profiles as a race that will go down to the wire.",
+        "Cease will pitch the series finale Sunday against the Yankees, and both pitchers are lined up to pitch again in next weekend’s series between these two teams in The Bronx.",
+        "3. Welcome to the show, Ricky TRicky Tiedemann made his big league debut Saturday, the Blue Jays’ former No. 1 prospect finally back after missing nearly two full calendar years rehabbing from Tommy John surgery. Still just 23 years old, Tiedemann is still dripping with talent and upside, so while it’s an awfully bold move by the Blue Jays, it’s still easy to see why they’re going to him after only a handful of appearances in Triple-A.",
+        "Tiedemann allowed one run over 1 2/3 innings of work, striking out two. His fastball averaged 96.2 mph and touched 97.2, but you’ll often see him go to his slider or excellent changeup with two strikes like he did Saturday afternoon.",
+        "Tiedemann is going to get some legitimate looks over the next week against the Rays and Yankees. He’d been pitching on a stricter schedule in the Minor Leagues, given his rehab, but it’s possible the Blue Jays try to shorten those windows a bit to allow Tiedemann to pitch with just one off-day in between."
+      ],
+      "titleZh": "关键要点：蓝鸟 4-1 洋基",
+      "summaryZh": "蓝鸟再胜洋基，追平美联外卡席位，争夺进入白热化。",
+      "bodyZh": [
+        "多伦多——你相信吗？周六再胜一场后，蓝鸟在混乱的美国联盟外卡席位争夺中，与多支球队并列，占据了一席之地。",
+        "未来几周你有时间熟悉大联盟的平局决胜规则，双城和游骑兵周六晚间还有比赛，但这足以说明蓝鸟近期的表现有多么出色。",
+        "周六以 4-1 战胜洋基，是他们在过去九场比赛中的第七场胜利，终于让蓝鸟（61胜64负）成为外卡争夺战中那支“火热”的球队，此前这场争夺一直停滞不前，等待一个好故事。",
+        "以下是最重要的几点：",
+        "1. 麦卡杜终于打出关键一击如果你听过这个故事，请打断我，但蓝鸟此前一直陷入一场沉闷、低比分的比赛中，等待有人打出关键安打。很熟悉，不是吗？",
+        "查尔斯·麦卡杜（Charles McAdoo）在第七局的一次挥棒改变了一切，他打出一记击中中外场墙的火箭般二垒安打，送回制胜分。这球距离飞出场外只差几英寸，看起来像是小弗拉迪米尔·格雷罗（Vladimir Guerrero Jr.）的经典之作，击球速度高达107.4英里/小时，要么越过墙，要么穿透墙。麦卡杜在下一打席又打出一记打点一垒安打，在第八局掀开了蓝鸟的攻势。",
+        "麦卡杜基本上就是格雷罗的“下一个顶替者”，此前球队招牌球星在周六早些时候因脑震荡被放入七天伤病名单。他将每天都进入先发阵容，而凭借这样一记关键时刻的挥棒，麦卡杜看起来不仅仅是一个短期填补人选。",
+        "2. 赛扬奖观察：施利特勒表明态度蓝鸟对卡姆·施利特勒（Cam Schlittler）办法不多，后者在5又1/3局中仅失一分，送出七次三振。不过，早早将他逼退算是一个小胜利，蓝鸟通过三次保送和一些耗球数的打席抬高了他的用球数，尽管没有太多强力击球。",
+        "这场比赛让施利特勒的自责分率下降了两个百分点，来到2.19，他仍然领先于蓝鸟王牌迪伦·西斯（Dylan Cease）的2.40。不过，从三振率和进阶数据来看，西斯确实有一些优势，因此这看起来是一场会战到最后的竞争。",
+        "西斯将在周日对阵洋基的系列赛决胜战中先发，两位投手也将在下周末这两支球队在布朗克斯的系列赛中再次对垒。",
+        "3. 欢迎来到大联盟，里基·T里基·蒂德曼（Ricky Tiedemann）周六完成了大联盟首秀，这位蓝鸟前头号潜力新星在因汤姆·约翰手术（Tommy John surgery）康复缺席近两个完整日历年之后终于回来了。年仅23岁的蒂德曼依然充满天赋和潜力，因此尽管蓝鸟此举相当大胆，但也很容易理解为什么他们在蒂德曼只于三A出场几次后就启用他。",
+        "蒂德曼在1又2/3局中失一分，三振两人。他的速球平均时速96.2英里，最高达到97.2英里，但你经常会看到他在两好球时使用滑球或出色的变速球，就像周六下午那样。",
+        "接下来一周对阵光芒和洋基的比赛，蒂德曼将获得一些真正的出场机会。考虑到他的康复，他在小联盟一直按照更严格的投球计划进行，但蓝鸟可能会尝试缩短这些间隔，让蒂德曼在中间只休息一天的情况下出赛。"
+      ],
+      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/oo6yzddzms9ud8j2geuq",
+      "translationSourceHash": "211593949b79352ea5c1e20d74c7de0003de320ff1995dac63adae95deaf604c",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-15T22:29:09.826Z",
+      "author": "Keegan Matheson",
+      "publishedAt": "2026-08-15T22:17:00.000Z",
+      "url": "https://www.mlb.com/bluejays/news/charles-mcadoo-drives-in-2-as-blue-jays-beat-yankees",
+      "source": "MLB.com"
+    },
     {
       "id": "40dff86a15e33d48285f57a0927cd677a431a79f6b215682a8a99cebe4d3951d",
       "teamId": "toronto-blue-jays",
@@ -977,56 +1024,9 @@
       "publishedAt": "2026-08-11T21:03:10.000Z",
       "url": "https://www.mlb.com/bluejays/news/trey-yesavage-surgery-left-knee",
       "source": "MLB.com"
-    },
-    {
-      "id": "0dd2aaeca2f998d9404ebc5ee7e964cd02f7ca5fef6671e149a9a7bd399c2d0c",
-      "teamId": "toronto-blue-jays",
-      "teamName": "多伦多蓝鸟",
-      "titleEn": "Blue Jays place Taillon (right forearm tendinitis) on IL, recall Chase Lee",
-      "summaryEn": "",
-      "bodyEn": [
-        "TORONTO -- Jameson Taillon hit the 15-day injured list with right forearm tendinitis on Tuesday, a day after leaving his Blue Jays home debut early after just four innings. It is yet another blow to a rotation that cannot escape them.",
-        "Taillon was cruising against the Red Sox, too, which adds some salt to the wound. After a pair of walks in the first, Taillon had settled in nicely and allowed just one base hit on a chopper to third base. Following the fourth inning, though, there was a quick conversation in the dugout and Simeon Woods Richardson quickly began to warm in the bullpen.",
-        "Taillon’s velocity dipped noticeably in the fourth inning, his hardest pitch being a four-seamer that topped out at 90.1 mph.",
-        "“He said his forearm was a little tight getting some extension on cutters and sliders,” Blue Jays manager John Schneider said after the 2-1 win. “For a guy with an injury history, hopefully we can be proactive, and I don’t want to take any chances with him. He’s going to get an MRI and check it out, so we’ll know more tomorrow and we’re hoping for the best. He was throwing the ball well.”",
-        "Taillon was acquired from the Cubs at the Trade Deadline, a minor move for the veteran who’d just been designated for assignment in the middle of a difficult season. Taillon represented a very sensible candidate to fill innings down the stretch, though, and there were reasons to believe in a short-term bounce-back from Taillon, whom the Blue Jays had serious interest in four years ago before he signed in Chicago.",
-        "This unfortunately falls in line with a cruel injury trend that this rotation hasn’t been able to shake in 2026. Coming into Spring Training, it looked like the Blue Jays had too many starting pitchers. Since then, this is what’s piled up:",
-        "Cody Ponce: Torn right ACL",
-        "José Berríos: Tommy John surgery",
-        "Shane Bieber: Right elbow inflammation, missed first 78 games",
-        "Trey Yesavage: Right meniscus injury",
-        "Max Scherzer: Right forearm, left ankle and back injuries",
-        "Patrick Corbin: Left teres major strain",
-        "Bowden Francis: Tommy John surgery",
-        "The Blue Jays’ bullpen has taken the brunt of this, which has really shown in recent days. Woods Richardson was brought up to protect against spots just like this, when multiple innings may be needed, and the Blue Jays could continue to churn through their depth options as they make every effort to protect the already heavy workloads of regulars like Mason Fluharty, Braydon Fisher, Tyler Rogers and Louis Varland."
-      ],
-      "titleZh": "蓝鸟将泰隆列入伤病名单，召回蔡斯·李",
-      "summaryZh": "泰隆因右前臂肌腱炎进入15日伤病名单。",
-      "bodyZh": [
-        "多伦多 -- 詹姆斯·泰隆周二因右前臂肌腱炎进入15日伤病名单，此前一天他在蓝鸟主场首秀中仅投四局便提前离场。这对本就伤病缠身的先发轮值而言又是一次打击。",
-        "泰隆对阵红袜时表现顺风顺水，这更令人惋惜。首局两次保送后，泰隆迅速进入状态，仅因三垒方向的一记滚地球被打出一支安打。然而第四局结束后，休息区进行了简短交流，西缅·伍兹·理查德森随即开始在牛棚热身。",
-        "泰隆在第四局的球速明显下降，他最快的四缝线速球仅达90.1英里/小时。",
-        "“他说投切球和滑球时前臂有些紧绷，”蓝鸟主帅约翰·施奈德在2-1获胜后表示。“对于有伤病史的球员，希望我们能主动应对，我不想冒任何风险。他将接受核磁共振检查，明天会有更多消息，我们期待最好的结果。他之前投得不错。”",
-        "泰隆是在交易截止日从小熊队获得的，对于这位在困难赛季中刚被指定转移的老将来说，这是一笔小操作。泰隆是填补后续局数的非常合理人选，而且有理由相信他能短期反弹——蓝鸟四年前在他签约芝加哥之前就对他有浓厚兴趣。",
-        "遗憾的是，这延续了2026年轮值无法摆脱的残酷伤病趋势。春训开始时，蓝鸟似乎在先发投手方面人手过剩。此后，伤病名单不断累积：",
-        "科迪·庞斯：右膝前交叉韧带撕裂",
-        "何塞·贝里奥斯：汤米·约翰手术",
-        "肖恩·比伯：右肘炎症，缺席前78场比赛",
-        "特雷·耶萨维奇：右半月板损伤",
-        "马克斯·谢泽尔：右前臂、左踝和背部伤势",
-        "帕特里克·科尔宾：左大圆肌拉伤",
-        "鲍登·弗朗西斯：汤米·约翰手术",
-        "蓝鸟的牛棚承受了大部分压力，这在近几日尤为明显。伍兹·理查德森被升上来正是为了应对这种可能需要多局投球的情况。蓝鸟将继续轮换深度选项，竭尽全力保护梅森·弗拉哈蒂、布雷登·费舍尔、泰勒·罗杰斯和路易斯·瓦兰德等常规投手本已繁重的工作量。"
-      ],
-      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/zr4og7o7rxwwtypv1wjr",
-      "translationSourceHash": "3687d5409b0bab0d81118af2142d0009df92038b89e80d0dc70b4c817fa51e8f",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-11T19:48:17.144Z",
-      "author": "Keegan Matheson",
-      "publishedAt": "2026-08-11T19:45:30.000Z",
-      "url": "https://www.mlb.com/bluejays/news/jameson-taillon-to-injured-list-with-right-forearm-tendinitis",
-      "source": "MLB.com"
     }
   ],
-  "pendingNotificationIds": []
+  "pendingNotificationIds": [
+    "33a98aa2c0ef5aaaa9c12a7d955cb2fe21e54aadad2a4526bf20ed40132cd108"
+  ]
 }
