@@ -1,7 +1,7 @@
 {
   "teamId": "toronto-blue-jays",
   "teamName": "多伦多蓝鸟",
-  "updatedAt": "2026-08-15T20:32:44.861Z",
+  "updatedAt": "2026-08-15T21:27:09.430Z",
   "items": [
     {
       "id": "40dff86a15e33d48285f57a0927cd677a431a79f6b215682a8a99cebe4d3951d",
@@ -32,7 +32,7 @@
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-15T16:52:04.995Z",
       "author": "Keegan Matheson",
-      "publishedAt": "2026-08-15T20:04:00.000Z",
+      "publishedAt": "2026-08-15T21:06:00.000Z",
       "url": "https://www.mlb.com/bluejays/news/ricky-tiedemann-call-up-blue-jays",
       "source": "MLB.com"
     },
