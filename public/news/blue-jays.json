@@ -1,8 +1,39 @@
 {
   "teamId": "toronto-blue-jays",
   "teamName": "多伦多蓝鸟",
-  "updatedAt": "2026-08-15T05:06:05.450Z",
+  "updatedAt": "2026-08-15T16:32:23.305Z",
   "items": [
+    {
+      "id": "cef8715c45e0986d515a3559979cb7441f5c5845402b6d8aec4105672694741c",
+      "teamId": "toronto-blue-jays",
+      "teamName": "多伦多蓝鸟",
+      "titleEn": "Vlad out of Toronto lineup day after exiting with head injury",
+      "summaryEn": "",
+      "bodyEn": [
+        "Vladimir Guerrero Jr. was out of the Blue Jays’ starting lineup Saturday, one day after exiting the game and undergoing concussion protocols.",
+        "Guerrero collided with Yankees shortstop George Lombard Jr. in a chaotic play at third base during the sixth inning of Toronto's 3-1 win over New York on Friday. As an errant throw got away from Lombard and he turned to chase after the ball, his left knee hit Guerrero in the face.",
+        "“He had a headache last night. I think it’s one of those where the doctors wanted to see how he woke up today,” manager John Schneider said pregame. “He’s here, I think kind of feeling the same. They’re just finishing up testing for today and we’ll go from there.”",
+        "No roster move involving Guerrero was announced, but the Blue Jays did recall left-handed pitcher Ricky Tiedemann from Triple-A Buffalo ahead of Saturday's game, optioning righty Chase Lee in a corresponding move. Outfielder Daz Cameron has also reported to the Toronto clubhouse.",
+        "Should Guerrero land on the IL, 10-day or the 7-day concussion option, rookie Charles McAdoo would be the primary option to fill in at first base. Third baseman Kazuma Okamoto could also slide over."
+      ],
+      "titleZh": "Vlad 头部受伤次日缺席蓝鸟先发",
+      "summaryZh": "Vlad 因头部伤势缺席今日阵容，球队正在评估中。",
+      "bodyZh": [
+        "Vladimir Guerrero Jr. 在退出比赛并接受脑震荡检查程序一天后，于周六缺席了蓝鸟队的先发阵容。",
+        "在周五多伦多3-1战胜纽约的比赛中，第六局三垒发生混乱局面，Guerrero 与洋基队游击手 George Lombard Jr. 相撞。当 Lombard 的一个传球失误滚开，他转身追球时，左膝撞到了 Guerrero 的脸部。",
+        "“他昨晚头疼。我认为这是那种医生想看看他今天醒来情况如何的情况。”主教练 John Schneider 赛前表示。“他在这里，我觉得感觉差不多。他们今天刚刚完成测试，我们会根据结果决定下一步。”",
+        "蓝鸟队未宣布涉及 Guerrero 的阵容变动，但在周六比赛前，球队确实从三A级别的水牛城召回了左投手 Ricky Tiedemann，并将右投手 Chase Lee 下放作为对应操作。外野手 Daz Cameron 也已向多伦多俱乐部报到。",
+        "如果 Guerrero 进入伤病名单（10天或7天脑震荡选项），新秀 Charles McAdoo 将是填补一垒的主要选择。三垒手 Kazuma Okamoto 也可能挪到一垒。"
+      ],
+      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/czw8ntw3uh8ckjccyfi2",
+      "translationSourceHash": "a07c4974807abe1d5c099cd78c8e464edfc187810587b5d487b15d7a00978a10",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-15T16:32:23.304Z",
+      "author": "Max Ralph",
+      "publishedAt": "2026-08-15T16:11:13.000Z",
+      "url": "https://www.mlb.com/bluejays/news/vladimir-guerrero-jr-out-of-blue-jays-lineup-vs-yankees-on-august-15-2026",
+      "source": "MLB.com"
+    },
     {
       "id": "588a40727fb20fcb2b072db21a985fd4366e7e50f12771eea44175936244e05f",
       "teamId": "toronto-blue-jays",
@@ -993,26 +1024,9 @@
       "publishedAt": "2026-08-11T03:39:00.000Z",
       "url": "https://www.mlb.com/bluejays/news/charles-mcadoo-homers-in-blue-jays-win-over-red-sox",
       "source": "MLB.com"
-    },
-    {
-      "id": "c4d7a73836461116a84d6d6659149e1cf26c8278639e4cf0e08b9c123be21ccc",
-      "teamId": "toronto-blue-jays",
-      "teamName": "多伦多蓝鸟",
-      "titleEn": "Podcast: A history-making moment for Scherzer",
-      "summaryEn": "Miz reaches 200 Ks at historic pace | Morning Lineup",
-      "bodyEn": [],
-      "titleZh": "播客：Scherzer的历史性时刻",
-      "summaryZh": "Miz以历史性速度达到200次三振 | Morning Lineup",
-      "bodyZh": [],
-      "imageUrl": "",
-      "translationSourceHash": "9e4deff372d1913c99e3c5f99571cf720cce00b5b92f48fb926912c8e8110fb0",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-10T04:44:41.298Z",
-      "author": "",
-      "publishedAt": "2026-08-10T03:39:32.000Z",
-      "url": "https://mlb-cuts-diamond.mlb.com/FORGE/2026/2026-08/10/77a76b22-8ef21591-82cfe6a2-csvm-diamondgcp-asset_1280x720_59_4000K.mp4",
-      "source": "MLB.com"
     }
   ],
-  "pendingNotificationIds": []
+  "pendingNotificationIds": [
+    "cef8715c45e0986d515a3559979cb7441f5c5845402b6d8aec4105672694741c"
+  ]
 }
