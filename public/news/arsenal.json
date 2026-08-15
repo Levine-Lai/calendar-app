@@ -1,12 +1,41 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-15T07:45:57.686Z",
+  "updatedAt": "2026-08-15T10:36:26.353Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "23d19e32bb3b928320296483bea889daba04301a232576e9143662770e11bc52",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Go Inside Training ahead of the Community Shield",
+      "summaryEn": "Watch our Gunners in action at the Sobha Realty Training Centre before we face Manchester City",
+      "bodyEn": [
+        "We face Manchester City in the 2026/27 Community Shield on Sunday, and you can see how we've been gearing up for the clash with the latest edition of Inside Training.",
+        "After celebrating our first Premier League title in 20 years last season, we start this campaign against FA Cup and League Cup winners City at the Millennium Stadium in Cardiff.",
+        "Mikel Arteta will be looking to continue his fantastic record in the competition as a player, coach and manager, having won the Community Shield on all six occasions he's competed in it.",
+        "Press play on the video at the top of the article to see what we've been up to at the Sobha Realty Training Centre before the traditional curtain raiser."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/20b83fed81b3-london-colney-england-declan-rice-and-eberechi-eze-of-arsenal-during-a-training.webp",
+      "author": "Connor Booth",
+      "publishedAt": "2026-08-15T10:00:00.271Z",
+      "url": "https://www.arsenal.com/news/go-inside-training-ahead-of-the-community-shield-apxfq8J72jbH",
+      "source": "Arsenal.com",
+      "titleZh": "社区盾前探营训练",
+      "summaryZh": "观看枪手在索哈房地产训练中心的备战情况。",
+      "bodyZh": [
+        "我们将在周日于社区盾杯中迎战曼城，您可以透过最新一期《探营训练》了解球队的备战情况。",
+        "上赛季我们时隔20年首次夺得英超冠军，本周日将在卡迪夫的千禧球场对阵足总杯和联赛杯双料冠军曼城，开启新赛季征程。",
+        "米克尔·阿尔特塔希望延续他在该赛事中的出色纪录——作为球员、教练和主帅，他六次参加社区盾均成功夺冠。",
+        "点击文章顶部的视频播放键，看看我们在传统揭幕战前于索哈房地产训练中心的训练情况。"
+      ],
+      "translationSourceHash": "64c0d3a5b246a005c77d21ead4904a5b1dea7f94f718690590f5fbb59be13302",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-15T10:36:26.352Z"
+    },
     {
       "id": "98411a25af1f6bd1cd629726e4d8b71069dd7cc678c75ed8d92d577fca0bd0a8",
       "teamId": "arsenal",
@@ -671,35 +700,6 @@
       "translationSourceHash": "6f03bda37197ec747f07aaafffba29d0a052b1c383db4951618c5448f9dcbbd7",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-14T12:28:39.500Z"
-    },
-    {
-      "id": "86c4823695c7eeabf17cc5d7036abdedc6d06acca4cdb0a4537869352ba9be21",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "48 of the best snaps from our clash with Milan",
-      "summaryEn": "Check out the best images from our second game of pre-season as we took on Milan",
-      "bodyEn": [
-        "We continued our preparations for the new season with an entertaining friendly against AC Milan at the end of our pre-season training camp in La Manga.",
-        "Despite losing 3-2 to the Italian side, Renee Slegers was able to give minutes to several academy and first-team players alike, making for a positive end to our time in Spain.",
-        "Leah Williamson netted a header to get us off the mark, before Selina Cerci fired home her first goal in an Arsenal shirt from the edge of the penalty area to make it 2-2, although Milan took the spoils with a late winner.",
-        "Club photographer Alex Burstow was at La Manga capturing the best moments of the game, and you can see the best of his shots with the gallery below:"
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/5343d6bffa25-ab92509n7c2hoz5.webp",
-      "author": "Connor Booth",
-      "publishedAt": "2026-08-13T14:19:20.945Z",
-      "url": "https://www.arsenal.com/news/48-of-the-best-snaps-from-our-clash-with-milan-a6hEF3g4S4PK",
-      "source": "Arsenal.com",
-      "titleZh": "对阵米兰的48张最佳瞬间",
-      "summaryZh": "回顾季前第二场对阵米兰的最佳图片。",
-      "bodyZh": [
-        "我们在拉曼加季前训练营结束时，与AC米兰进行了一场有趣的热身赛，继续为新赛季做准备。",
-        "尽管以2-3输给了意大利球队，雷内·斯莱格斯还是让多名青训和一线队球员得到了出场时间，为我们的西班牙之行画上了积极的句号。",
-        "利亚·威廉森头球破门为我们首开纪录，随后塞琳娜·切尔奇在禁区边缘轰入她在阿森纳的处子球，将比分扳为2-2，但米兰最后时刻绝杀带走胜利。",
-        "俱乐部摄影师亚历克斯·伯斯托在拉曼加捕捉了比赛的最佳时刻，你可以在下方图集中看到他的精华作品："
-      ],
-      "translationSourceHash": "782d9defb9f26890a4c66cc9c1e67898278eba0683aa242fb9e020ec3ed18be0",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-14T12:28:42.742Z"
     },
     {
       "id": "e53d460a227262ec5fe56ff8c770e84e3591345f9066c23311c3878226de21cf",
