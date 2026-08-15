@@ -1,7 +1,7 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-15T10:36:26.353Z",
+  "updatedAt": "2026-08-15T11:32:29.452Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
@@ -550,11 +550,11 @@
       "translatedAt": "2026-08-14T10:39:02.285Z"
     },
     {
-      "id": "6c41744467c25f7bd987cbacd93527e1de731dd971ac2fbf1017ed76149d40b3",
+      "id": "7a387cacb7674a61c0b01e0c4e9638a80b0219003a820a45a3bcc3008a9f3b23",
       "teamId": "arsenal",
       "teamName": "阿森纳",
-      "titleEn": "How to watch the Community Shield live on TV",
-      "summaryEn": "Check out the full list of where you can watch our game against Manchester City, wherever you are in the world",
+      "titleEn": "How to watch Arsenal v Manchester City live on TV",
+      "summaryEn": "Check out the full list of where you can watch the Community Shield!",
       "bodyEn": [
         "Arsenal take on Manchester City in the Community Shield on Sunday, August 16, at 3pm at the Principality Stadium in Cardiff.",
         "It's our first appearance in the Community Shield since 2023, when we defeated City on penalties.",
@@ -565,20 +565,20 @@
       "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/82589dc621bc-cardiff-a-general-view-taken-during-the-brits-v-rest-of-the-world-pertemp-power.webp",
       "author": "Arsenal Media",
       "publishedAt": "2026-08-14T09:23:21.007Z",
-      "url": "https://www.arsenal.com/news/how-to-watch-the-community-shield-live-on-tv-aiqkJ2b3u278",
+      "url": "https://www.arsenal.com/news/how-to-watch-arsenal-v-manchester-city-live-on-tv-aiqkJ2b3u278",
       "source": "Arsenal.com",
-      "titleZh": "如何在电视上观看社区盾直播",
-      "summaryZh": "全球观看阿森纳对阵曼城的完整指南。",
+      "titleZh": "如何观看阿森纳对阵曼城的电视直播",
+      "summaryZh": "查看社区盾杯比赛的全部观看渠道！",
       "bodyZh": [
-        "阿森纳将于8月16日星期日下午3点在卡迪夫的公国体育场举行的社区盾杯中迎战曼城。",
-        "这是自2023年以来我们首次参加社区盾杯，当时我们通过点球大战击败了曼城。",
-        "在英国，您可以订阅TNT Sports 1、TNT Sports Ultimate和HBO Max观看比赛。",
-        "如果您在世界各地收看，这里列出了观看比赛的方式。",
-        "播放阿森纳对阵曼城的地区"
+        "阿森纳将于8月16日周日下午3点在卡迪夫的公国体育场对阵曼城，进行社区盾杯比赛。",
+        "这是我们自2023年以来首次参加社区盾杯，当时我们在点球大战中击败了曼城。",
+        "在英国，您可以通过订阅TNT Sports 1、TNT Sports Ultimate和HBO Max观看这场比赛。",
+        "如果您在世界各地收看，这里是观看比赛的渠道列表。",
+        "转播阿森纳对阵曼城的地区"
       ],
-      "translationSourceHash": "a3b0ea41885fb2067773296cad946471f63c799806c06357c81bfba964e38701",
+      "translationSourceHash": "4966bb2a978f3b773beaf4b87e2cda58fe5154829269226328c7226b45ff3a1a",
       "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-14T11:27:27.785Z"
+      "translatedAt": "2026-08-15T11:32:29.452Z"
     },
     {
       "id": "4b912b03cd053351d8466ce5af53258d5cecc6352783936e0e7dac918f79fe31",
