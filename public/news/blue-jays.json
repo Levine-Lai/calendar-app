@@ -1,8 +1,39 @@
 {
   "teamId": "toronto-blue-jays",
   "teamName": "多伦多蓝鸟",
-  "updatedAt": "2026-08-15T16:52:04.995Z",
+  "updatedAt": "2026-08-15T17:37:10.963Z",
   "items": [
+    {
+      "id": "cef8715c45e0986d515a3559979cb7441f5c5845402b6d8aec4105672694741c",
+      "teamId": "toronto-blue-jays",
+      "teamName": "多伦多蓝鸟",
+      "titleEn": "Vlad placed on injured list day after exiting with head injury",
+      "summaryEn": "",
+      "bodyEn": [
+        "Vladimir Guerrero Jr. was out of the Blue Jays’ starting lineup Saturday, one day after exiting the game and undergoing concussion protocols.",
+        "Guerrero collided with Yankees shortstop George Lombard Jr. in a chaotic play at third base during the sixth inning of Toronto's 3-1 win over New York on Friday. As an errant throw got away from Lombard and he turned to chase after the ball, his left knee hit Guerrero in the face.",
+        "“He had a headache last night. I think it’s one of those where the doctors wanted to see how he woke up today,” manager John Schneider said pregame. “He’s here, I think kind of feeling the same. They’re just finishing up testing for today and we’ll go from there.”",
+        "No roster move involving Guerrero was announced, but the Blue Jays did recall left-handed pitcher Ricky Tiedemann from Triple-A Buffalo ahead of Saturday's game, optioning righty Chase Lee in a corresponding move. Outfielder Daz Cameron has also reported to the Toronto clubhouse.",
+        "Should Guerrero land on the IL, 10-day or the 7-day concussion option, rookie Charles McAdoo would be the primary option to fill in at first base. Third baseman Kazuma Okamoto could also slide over."
+      ],
+      "titleZh": "Vladimir Guerrero Jr. 在头部受伤退场次日被列入伤病名单",
+      "summaryZh": "Vladimir Guerrero Jr. 因头部受伤被列入伤病名单，蓝鸟队召回左投手Ricky Tiedemann并调整阵容。",
+      "bodyZh": [
+        "Vladimir Guerrero Jr. 周六未进入蓝鸟队的先发阵容，前一天他退出了比赛并接受了脑震荡检查程序。",
+        "周五蓝鸟队以3比1战胜纽约洋基队的比赛中，第六局在三垒出现混乱局面，Guerrero 与洋基队游击手 George Lombard Jr. 相撞。当时 Lombard 的一次传球失误，他转身追球时，左膝撞到了 Guerrero 的脸。",
+        "主教练 John Schneider 赛前表示：“他昨晚头疼。我认为这是医生想看看他今天醒来后情况如何的那种情况。他在这里，我觉得感觉差不多。他们今天刚完成测试，我们会继续观察。”",
+        "蓝鸟队没有宣布涉及 Guerrero 的阵容调整，但在周六比赛前确实从三A布法罗队召回了左投手 Ricky Tiedemann，并将右投手 Chase Lee 下放作为相应调整。外野手 Daz Cameron 也已向多伦多俱乐部报到。",
+        "如果 Guerrero 进入伤病名单（10天或7天脑震荡选项），新秀 Charles McAdoo 将是填补一垒位置的主要选择。三垒手 Kazuma Okamoto 也有可能移防一垒。"
+      ],
+      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/czw8ntw3uh8ckjccyfi2",
+      "translationSourceHash": "617b989848e80efda3362f29c2fbc86010e40c497a6881db51af60d1b93efefb",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-15T17:37:10.963Z",
+      "author": "Max Ralph",
+      "publishedAt": "2026-08-15T17:10:00.000Z",
+      "url": "https://www.mlb.com/bluejays/news/vladimir-guerrero-jr-out-of-blue-jays-lineup-vs-yankees-on-august-15-2026",
+      "source": "MLB.com"
+    },
     {
       "id": "40dff86a15e33d48285f57a0927cd677a431a79f6b215682a8a99cebe4d3951d",
       "teamId": "toronto-blue-jays",
@@ -34,37 +65,6 @@
       "author": "Jason Foster",
       "publishedAt": "2026-08-15T16:29:51.000Z",
       "url": "https://www.mlb.com/bluejays/news/ricky-tiedemann-call-up-blue-jays",
-      "source": "MLB.com"
-    },
-    {
-      "id": "cef8715c45e0986d515a3559979cb7441f5c5845402b6d8aec4105672694741c",
-      "teamId": "toronto-blue-jays",
-      "teamName": "多伦多蓝鸟",
-      "titleEn": "Vlad out of Toronto lineup day after exiting with head injury",
-      "summaryEn": "",
-      "bodyEn": [
-        "Vladimir Guerrero Jr. was out of the Blue Jays’ starting lineup Saturday, one day after exiting the game and undergoing concussion protocols.",
-        "Guerrero collided with Yankees shortstop George Lombard Jr. in a chaotic play at third base during the sixth inning of Toronto's 3-1 win over New York on Friday. As an errant throw got away from Lombard and he turned to chase after the ball, his left knee hit Guerrero in the face.",
-        "“He had a headache last night. I think it’s one of those where the doctors wanted to see how he woke up today,” manager John Schneider said pregame. “He’s here, I think kind of feeling the same. They’re just finishing up testing for today and we’ll go from there.”",
-        "No roster move involving Guerrero was announced, but the Blue Jays did recall left-handed pitcher Ricky Tiedemann from Triple-A Buffalo ahead of Saturday's game, optioning righty Chase Lee in a corresponding move. Outfielder Daz Cameron has also reported to the Toronto clubhouse.",
-        "Should Guerrero land on the IL, 10-day or the 7-day concussion option, rookie Charles McAdoo would be the primary option to fill in at first base. Third baseman Kazuma Okamoto could also slide over."
-      ],
-      "titleZh": "Vlad 头部受伤次日缺席蓝鸟先发",
-      "summaryZh": "Vlad 因头部伤势缺席今日阵容，球队正在评估中。",
-      "bodyZh": [
-        "Vladimir Guerrero Jr. 在退出比赛并接受脑震荡检查程序一天后，于周六缺席了蓝鸟队的先发阵容。",
-        "在周五多伦多3-1战胜纽约的比赛中，第六局三垒发生混乱局面，Guerrero 与洋基队游击手 George Lombard Jr. 相撞。当 Lombard 的一个传球失误滚开，他转身追球时，左膝撞到了 Guerrero 的脸部。",
-        "“他昨晚头疼。我认为这是那种医生想看看他今天醒来情况如何的情况。”主教练 John Schneider 赛前表示。“他在这里，我觉得感觉差不多。他们今天刚刚完成测试，我们会根据结果决定下一步。”",
-        "蓝鸟队未宣布涉及 Guerrero 的阵容变动，但在周六比赛前，球队确实从三A级别的水牛城召回了左投手 Ricky Tiedemann，并将右投手 Chase Lee 下放作为对应操作。外野手 Daz Cameron 也已向多伦多俱乐部报到。",
-        "如果 Guerrero 进入伤病名单（10天或7天脑震荡选项），新秀 Charles McAdoo 将是填补一垒的主要选择。三垒手 Kazuma Okamoto 也可能挪到一垒。"
-      ],
-      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/czw8ntw3uh8ckjccyfi2",
-      "translationSourceHash": "a07c4974807abe1d5c099cd78c8e464edfc187810587b5d487b15d7a00978a10",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-15T16:32:23.304Z",
-      "author": "Max Ralph",
-      "publishedAt": "2026-08-15T16:11:13.000Z",
-      "url": "https://www.mlb.com/bluejays/news/vladimir-guerrero-jr-out-of-blue-jays-lineup-vs-yankees-on-august-15-2026",
       "source": "MLB.com"
     },
     {
