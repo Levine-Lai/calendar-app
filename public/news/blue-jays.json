@@ -1,8 +1,41 @@
 {
   "teamId": "toronto-blue-jays",
   "teamName": "多伦多蓝鸟",
-  "updatedAt": "2026-08-15T16:32:23.305Z",
+  "updatedAt": "2026-08-15T16:52:04.995Z",
   "items": [
+    {
+      "id": "40dff86a15e33d48285f57a0927cd677a431a79f6b215682a8a99cebe4d3951d",
+      "teamId": "toronto-blue-jays",
+      "teamName": "多伦多蓝鸟",
+      "titleEn": "After long journey through injuries in Minors, Tiedemann called up to make MLB debut",
+      "summaryEn": "",
+      "bodyEn": [
+        "The Blue Jays have called up left-hander Ricky Tiedemann from Triple-A Buffalo to be available for Saturday's game against the Yankees.",
+        "The promotion represents the culmination of a long journey for Tiedemann, Toronto's No. 11 prospect, who underwent Tommy John surgery in July 2024 and missed all of the 2025 season.",
+        "Selected by the Blue Jays in the third round of the 2021 MLB Draft (and the 91st overall pick), the lefty is 0-1 with a 6.43 ERA this season in seven appearances (two starts) for Buffalo. In his Minor League career, he's recorded a 5-11 record and a 3.18 ERA in 48 games (43 starts) and 147 innings.",
+        "Before his elbow injury, Tiedemann was Toronto's No. 1 prospect and the No. 29 prospect in baseball entering the 2024 season. The team has been cautious with his workload this season, but expects him to be a contributor at the big league level.",
+        "“Hopefully, he’s a factor for us in our rotation,” GM Ross Atkins told MLB.com last year. “That’s the plan, but we would be open to him impacting the team in a bulk role or some creative way, depending on how things are going.”",
+        "In a corresponding move, the Blue Jays optioned right-hander Chase Lee to Triple-A."
+      ],
+      "titleZh": "历经小联盟伤病漫长旅程，Tiedemann升上大联盟完成首秀",
+      "summaryZh": "蓝鸟将左投Ricky Tiedemann升上大联盟，他历经伤病，即将迎来首秀。",
+      "bodyZh": [
+        "蓝鸟已将左投手Ricky Tiedemann从三A水牛城升上大联盟，他将在周六对阵洋基的比赛中可用。",
+        "这次升上大联盟标志着Tiedemann漫长旅程的顶点。作为多伦多排名第11的潜力新秀，他在2024年7月接受了Tommy John手术，并缺席了整个2025赛季。",
+        "这位左投手在2021年MLB选秀第三轮（第91顺位）被蓝鸟选中，本赛季为水牛城出战7场（2场先发），战绩0胜1负，自责分率6.43。在小联盟生涯中，他在48场比赛（43场先发）共147局中取得5胜11负，自责分率3.18。",
+        "在肘部受伤之前，Tiedemann进入2024赛季时是蓝鸟的头号新秀，也是全棒球第29号新秀。球队本赛季对他的工作量一直很谨慎，但期待他能在美职棒层面做出贡献。",
+        "“希望他能成为我们先发轮值的一员，”总经理Ross Atkins去年告诉MLB.com。“这是计划，但我们也会根据情况，接受他以长中继或其他创造性的方式影响球队。”",
+        "作为对应操作，蓝鸟将右投手Chase Lee下放至三A。"
+      ],
+      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/kmyvcp3vbwi1p9rgkhtw",
+      "translationSourceHash": "5ea48c15c62bda119b67ee85efba7d74f5f5525445d5d797b2a63bb831a3b521",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-15T16:52:04.995Z",
+      "author": "Jason Foster",
+      "publishedAt": "2026-08-15T16:29:51.000Z",
+      "url": "https://www.mlb.com/bluejays/news/ricky-tiedemann-call-up-blue-jays",
+      "source": "MLB.com"
+    },
     {
       "id": "cef8715c45e0986d515a3559979cb7441f5c5845402b6d8aec4105672694741c",
       "teamId": "toronto-blue-jays",
@@ -971,62 +1004,10 @@
       "publishedAt": "2026-08-11T04:37:00.000Z",
       "url": "https://www.mlb.com/bluejays/news/blue-jays-red-sox-delayed-for-rule-check",
       "source": "MLB.com"
-    },
-    {
-      "id": "98a7626e6776b9f43f48cd97b6bf044086be00f3c654ff3a355c84d40c834889",
-      "teamId": "toronto-blue-jays",
-      "teamName": "多伦多蓝鸟",
-      "titleEn": "McAdoo's second MLB homer shows Schneider's willingness to ride hot hand",
-      "summaryEn": "",
-      "bodyEn": [
-        "TORONTO -- The Blue Jays are going to make this interesting, aren’t they?",
-        "With another win Monday night, 2-1, to open their series against the Red Sox, the Blue Jays carried over some momentum from their recent 4-3 road trip. It’s still a steep hill to climb, given all of the teams stacked up in front of them in the AL Wild Card race, but this team is finally playing some better baseball.",
-        "Monday’s game featured a long, confusing break for a ruling, too, in which the Red Sox were awarded a run in the top of the seventh inning … nearly 15 minutes after the inning had ended.",
-        "From Monday’s win, this is what mattered most:",
-        "1. You hit? You play.",
-        "Charles McAdoo’s solo home run off Sonny Gray got the Blue Jays on the board in the fifth, and at this point of the season, manager John Schneider is willing to ride the hot hand. We’ve even seen that with rookie Brett Bateman, who’s getting looks at the top of the lineup.",
-        "What the Blue Jays have done through their first 120 games on offense hasn’t worked. There seems to be an openness to trying new configurations after the Trade Deadline, and for young players like McAdoo, that’s great news.",
-        "The only shortcut the Blue Jays have back into the playoff race is power. McAdoo has 18 homers this season between Triple-A Buffalo (16) and Toronto (2), which is a fine start. He was a late addition to Monday’s lineup to replace Kazuma Okamoto (knee contusion), but that one swing earned him more at-bats.",
-        "2. Who’s up next in the rotation?",
-        "Yes, we’ve all been forced to face this question a dozen times in 2026. This rotation has felt cursed, all of that incredible depth slowly chewed away by injuries. Now, with Kevin Gausman out the door to the Cubs, Spencer Arrighetti dealing with a nerve issue in his foot and Jameson Taillon leaving Monday’s start early with right forearm tightness, it’s time to ask again … who’s next?",
-        "Simeon Woods Richardson, who threw three innings of one-run ball Monday, could be first up. He’s a natural starter and had been working between three and five innings down in Triple-A Buffalo, which is a good enough baseline. Some combination of Lazaro Estrada, Chad Dallas and CJ Van Eyk could also be used, while righty John Klein -- acquired at the Deadline from the Twins in the Jeff Hoffman deal -- is another option.",
-        "A month or two ago, Spencer Miles would have been the easy answer. He’s already up to 75 innings, though, and the Blue Jays would prefer to keep him in a shortened role to finish the season.",
-        "3. Less is more",
-        "This team is right in the middle of 17 games in 17 days, the product of that one rescheduled game in Chicago against the Cubs last Thursday eating up what was once an off-day.",
-        "These days are a grind. The chaos of the Trade Deadline has passed, but we haven’t quite reached the adrenaline of September and the race for the postseason. These players have already spent 120 games together on top of Spring Training, long days and long nights the entire way. Right around now, Schneider and the staff need to find days to ease off.",
-        "“We did that on Saturday [in Philadelphia]. We showed up later before the game and we’re adjusting the work a little bit here and there,” Schneider said. “There will be some days mixed in, probably, where we do come in a little bit later. It’s about being smart with it. You don’t have to take ground balls every day and you don’t have to hit on the field every day. Save up your energy for the game.”"
-      ],
-      "titleZh": "麦克阿杜第二轰，施奈德愿用状态火热的球员",
-      "summaryZh": "蓝鸟2-1胜红袜，麦克阿杜轰出第二支大联盟本垒打；施奈德愿用状态火热的球员，但先发轮值再遭伤病打击。",
-      "bodyZh": [
-        "多伦多——蓝鸟队要让这件事变得有趣，不是吗？",
-        "周一晚上以2-1再胜一场，开启了对阵红袜的系列赛，蓝鸟队延续了最近4胜3负客场之旅的势头。考虑到美联外卡竞争中他们面前堆积的众多球队，这仍然是一座陡峭的山峰要攀登，但这支球队终于打出了更好的棒球。",
-        "周一的比赛还出现了一次漫长且令人困惑的裁决暂停，红袜队在第七局上半局被判得一分……而此时该局已结束近15分钟。",
-        "从周一的胜利来看，以下几点最重要：",
-        "1. 能打？就能上场。",
-        "查尔斯·麦克阿杜在第五局从桑尼·格雷手中轰出阳春本垒打，帮助蓝鸟队得分。在赛季的这个阶段，主教练约翰·施奈德愿意使用手感火热的球员。我们甚至在新秀布雷特·贝特曼身上看到了这一点，他正在打线顶端获得机会。",
-        "蓝鸟队在前120场比赛中的进攻表现并未奏效。交易截止日后，球队似乎对尝试新的阵容配置持开放态度，对于像麦克阿杜这样的年轻球员来说，这是好消息。",
-        "蓝鸟队重返季后赛竞争的捷径只有火力。麦克阿杜本赛季在3A水牛城（16轰）和多伦多（2轰）合计轰出18支本垒打，这是一个不错的开始。他是周一赛前临时加入阵容的，顶替了（膝盖挫伤的）Kazuma Okamoto，但那一挥棒为他赢得了更多打席。",
-        "2. 先发轮值中下一个是谁？",
-        "是的，在2026年，我们都不得不面对这个问题十几次了。这套先发轮值像是被诅咒了，原本惊人的阵容深度被伤病慢慢吞噬。如今，凯文·高斯曼离队加盟小熊，斯宾塞·阿里盖蒂正在处理脚部神经问题，詹姆斯·泰隆周一先发因右前臂紧张提前退场，是时候再次发问……下一个是谁？",
-        "西蒙·伍兹·理查森周一投了三局失一分，可能会是第一个顶上的人选。他是一名天然先发投手，在3A水牛城已经投了三到五局，这是一个足够好的基础。拉扎罗·埃斯特拉达、查德·达拉斯和CJ·范·艾克的某种组合也可能被使用，而右投手约翰·克莱因——在交易截止日通过杰夫·霍夫曼交易从双城获得——是另一个选择。",
-        "一两个月前，斯宾塞·迈尔斯会是个简单的答案。不过他已经投了75局，蓝鸟队更希望让他在本赛季剩余时间里担任缩短的角色。",
-        "3. 少即是多",
-        "球队正处于17天17赛的密集赛程中，这是上周四在芝加哥对阵小熊队的一场改期比赛消耗了原本休息日的结果。",
-        "这些日子是煎熬。交易截止日的混乱已经过去，但我们还没有完全迎来九月和季后赛争夺的肾上腺素激增。这些球员已经一起度过了120场比赛，加上春训，一路都是漫长的白天和黑夜。现在正是这个时候，施奈德和教练组需要找到一些日子来放松。",
-        "“我们在周六（在费城）就这么做了。赛前我们晚到了一些，我们正在这里那里调整训练安排，”施奈德说。“可能会有一些日子，大概，我们会晚一点来。要聪明地处理这件事。你不需要每天都接滚地球，也不需要在场上每天打击。把能量留到比赛中。”"
-      ],
-      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/iyityxmswpg1zyd0uqel",
-      "translationSourceHash": "a85bc8c4ef23cd6b0066a6c5c61de8eae29a73f47d925d35bd52abc9c76abe6f",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-11T04:05:28.896Z",
-      "author": "Keegan Matheson",
-      "publishedAt": "2026-08-11T03:39:00.000Z",
-      "url": "https://www.mlb.com/bluejays/news/charles-mcadoo-homers-in-blue-jays-win-over-red-sox",
-      "source": "MLB.com"
     }
   ],
   "pendingNotificationIds": [
-    "cef8715c45e0986d515a3559979cb7441f5c5845402b6d8aec4105672694741c"
+    "cef8715c45e0986d515a3559979cb7441f5c5845402b6d8aec4105672694741c",
+    "40dff86a15e33d48285f57a0927cd677a431a79f6b215682a8a99cebe4d3951d"
   ]
 }
