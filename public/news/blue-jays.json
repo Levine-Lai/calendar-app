@@ -1,7 +1,7 @@
 {
   "teamId": "toronto-blue-jays",
   "teamName": "多伦多蓝鸟",
-  "updatedAt": "2026-08-14T23:27:37.419Z",
+  "updatedAt": "2026-08-15T01:42:08.998Z",
   "items": [
     {
       "id": "9c61c42f787962cd6c73ded6bc964e794a273044766f2b3c1a6323947bb88874",
@@ -56,8 +56,39 @@
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-11T04:06:29.451Z",
       "author": "Brendan Samson",
-      "publishedAt": "2026-08-14T22:51:00.000Z",
+      "publishedAt": "2026-08-15T01:32:00.000Z",
       "url": "https://www.mlb.com/bluejays/news/watch-minor-league-baseball-games-for-free-2026",
+      "source": "MLB.com"
+    },
+    {
+      "id": "4e230b0d95d7b993d51fbb6b22a46fbd047df0a47801fdae6e046159d10570cd",
+      "teamId": "toronto-blue-jays",
+      "teamName": "多伦多蓝鸟",
+      "titleEn": "Guerrero exits after collision at third on chaotic run-scoring play",
+      "summaryEn": "",
+      "bodyEn": [
+        "TORONTO -- Vladimir Guerrero Jr. was removed from Friday night’s game against the Yankees with an apparent injury after colliding with George Lombard Jr. in a chaotic play at third base.",
+        "Guerrero actually scored on the play, but it was immediately clear that he was dealing with some discomfort. Manager John Schneider and the Blue Jays’ trainer popped out of the dugout to walk back alongside Guerrero, who was soon removed from the game and replaced by rookie Charles McAdoo.",
+        "Guerrero started the play standing on first base, but after a throw across the diamond from Ryan McMahon skipped in front of Luis García Jr., who couldn’t make the scoop, Guerrero broke for third. The throw back across the diamond to third base caught the Yankees without a man on the bag, and as Lombard tried to get there for the throw, he and Guerrero collided awkwardly.",
+        "Guerrero has been dealing with back issues throughout the 2026 season. He has also had some hamstring issues flare up, but never to the point where an IL stint has been considered.",
+        "Further updates are expected following Friday’s game."
+      ],
+      "titleZh": "混乱得分进攻中三垒相撞，Guerrero离场",
+      "summaryZh": "Guerrero在周五晚对阵洋基队的比赛中于三垒碰撞后离场，本赛季他一直受背伤困扰。",
+      "bodyZh": [
+        "多伦多——周五晚对阵洋基队的比赛中，Vladimir Guerrero Jr.在三垒的混乱进攻中与George Lombard Jr.相撞，随后因明显受伤被换下场。",
+        "Guerrero实际上在该回合中得分了，但很快就能看出他感到不适。主教练John Schneider和蓝鸟队的队医走出休息区，在Guerrero身旁一同返回，随后他被换下场，由新秀Charles McAdoo替补登场。",
+        "该回合开始时，Guerrero站在一垒。Ryan McMahon的传球横穿内场，在Luis García Jr.面前弹跳，后者没能接住，Guerrero便冲向三垒。接下来，另一个横穿内场的回传球传向三垒，但洋基队三垒无人防守。当Lombard试图赶上去接球时，他与Guerrero尴尬地撞在了一起。",
+        "整个2026赛季，Guerrero一直受背伤困扰。他的腿筋问题也曾突然发作，但从未严重到需要考虑将其放入伤病名单。",
+        "预计周五的比赛结束后会有进一步更新。"
+      ],
+      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/czw8ntw3uh8ckjccyfi2",
+      "translationSourceHash": "584e5ee163f2260179c0003f72ed6a1ea580190f8154d9cbf5f5240ca7db8c32",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-15T01:42:08.997Z",
+      "author": "Keegan Matheson",
+      "publishedAt": "2026-08-15T01:24:00.000Z",
+      "url": "https://www.mlb.com/bluejays/news/vladimir-guerrero-jr-exits-game-after-collision-at-third",
       "source": "MLB.com"
     },
     {
@@ -985,50 +1016,9 @@
       "publishedAt": "2026-08-09T23:23:49.000Z",
       "url": "https://www.mlb.com/bluejays/news/blue-jays-lose-to-phillies-ahead-of-key-stretch",
       "source": "MLB.com"
-    },
-    {
-      "id": "0719b95bb59167bd232e103330e521530a6f2c88960184403a35470bb68d2910",
-      "teamId": "toronto-blue-jays",
-      "teamName": "多伦多蓝鸟",
-      "titleEn": "'The ultimate competitor': Mad Max passes Big Train with 3,516th career K",
-      "summaryEn": "",
-      "bodyEn": [
-        "PHILADELPHIA – Move over, Big Train. Mad Max just put you in his rear-view mirror.",
-        "Max Scherzer passed Walter Johnson for sole possession of 10th place on Major League Baseball’s all-time strikeout list, recording the 3,516th punchout of his career with a sixth-inning K of Kyle Schwarber on Saturday night at Citizens Bank Park.",
-        "Scherzer entered Saturday’s start needing four strikeouts to pass Johnson, who pitched for the Washington Senators from 1907-1921, earning induction into the Hall of Fame’s inaugural class in 1936. Johnson’s career strikeout total is 3,515, according to Elias Sports Bureau, which is the official statistician of Major League Baseball.",
-        "Scherzer recorded his first strikeout in the opening frame, getting former Nationals teammate Bryce Harper on a 1-2 slider. The second came in the third inning, as Scherzer struck out Garrett Stubbs on three pitches, finishing him off with a curveball. Scherzer tied Johnson in the fifth with his 3,515th strikeout, getting Bryan De La Cruz on a check swing that first-base umpire Brock Ballou ruled a swing for strike three.",
-        "Scherzer’s milestone strikeout came in the bottom of the sixth, as he caught Schwarber looking at strike three to pass Johnson for 10th place.",
-        "It was only appropriate that Scherzer moved into the top 10 in Philadelphia, where he’s enjoyed some of his greatest success. The 42-year-old now has 255 career strikeouts against the Phillies – more than any other team he’s faced – while his 116 strikeouts are the most by a visiting pitcher at Citizens Bank Park since it opened in 2004.",
-        "Things took a turn for Scherzer following his historic strikeout, as Trea Turner and Harper hit back-to-back solo home runs, tying the game 2-2 before Scherzer was pulled for reliever Spencer Miles.",
-        "Scherzer ranks second to former teammate Justin Verlander among all active pitchers in wins and strikeouts, numbers that will see him land in Cooperstown five years after his magnificent career is complete.",
-        "Every member of the 3,000-strikeout club",
-        "“Just knowing him, the person, and kind of how he can be, you forget about the stuff that comes with him: the numbers, the strikeouts, the World Series, the Cy Youngs, all the stuff that comes with him, because he's still really, really competitive,” manager John Schneider said before the game. “That would be cool when we're talking top 10 anything in baseball. You’re lucky to be part of that – a small part of that – based on what he's done.”",
-        "Next up on the list for Scherzer: Hall of Famer Gaylord Perry, who ranks No. 9 with 3,534 strikeouts. Verlander is currently in the No. 8 spot at 3,554, while Don Sutton – another Hall of Famer – is No. 7 with 3,574."
-      ],
-      "titleZh": "“终极竞争者”：麦克斯超越火车头，生涯第3516次三振",
-      "summaryZh": "谢泽尔生涯三振数超越约翰逊，升至历史第10。",
-      "bodyZh": [
-        "费城——火车头，请让一让。麦克斯刚刚把你甩在了身后。",
-        "麦克斯·谢泽尔在周六晚于市民银行球场第六局三振凯尔·施瓦伯，完成生涯第3516次三振，超越沃尔特·约翰逊，独占大联盟历史三振榜第10位。",
-        "谢泽尔在周六先发前还差4次三振就能超越约翰逊。约翰逊1907至1921年效力于华盛顿参议员队，1936年入选名人堂首届成员。据大联盟官方统计机构Elias Sports Bureau的数据，约翰逊生涯三振总数为3515次。",
-        "谢泽尔在首局就取得第一次三振，用一颗1-2滑球让前国民队友布莱斯·哈珀挥空出局。第二次三振出现在第三局，谢泽尔用三球三振加勒特·斯塔布斯，最后一球是曲线球。谢泽尔在第五局以第3515次三振追平约翰逊，让布莱恩·德拉克鲁兹挥棒过半，一垒裁判布洛克·巴卢判定挥棒，形成三振。",
-        "谢泽尔的里程碑三振出现在第六局下半，他让施瓦伯站着不动目送第三好球进垒，从而超越约翰逊升至第10位。",
-        "谢泽尔在费城跻身前10可谓是恰如其分，他曾在这里取得过一些最伟大的成就。这位42岁老将生涯面对费城人已累计255次三振——超过他面对的任何其他球队——而他在市民银行球场的116次三振也是自2004年球场开放以来客队投手在该球场的最多三振纪录。",
-        "在历史性三振之后，形势对谢泽尔急转直下，特雷·特纳和哈珀连续轰出阳春炮，将比分追成2-2平，随后谢泽尔被换下，改由后援投手斯宾塞·迈尔斯登板。",
-        "谢泽尔在现役投手中胜场数排名第二，仅次于前队友贾斯汀·维兰德，三振数同样位列第二。这些数据将让他在辉煌的职业生涯结束后五年进入库珀斯敦。",
-        "3000次三振俱乐部全体成员",
-        "“只要了解他这个人，以及他可能的样子，你就会忘记他附带的一切：数据、三振、世界大赛、赛扬奖，所有这些，因为他仍然非常非常有竞争力，”主教练约翰·施奈德赛前表示。“当我们谈论棒球史上任何一项前十排名时，那都很了不起。基于他做的一切，你能成为其中一分子——哪怕是很小的一部分——都很幸运。”",
-        "谢泽尔的下一个目标是名人堂成员盖洛德·佩里，他以3534次三振排名第9。维兰德目前以3554次三振位列第8，另一位名人堂成员唐·萨顿以3574次三振排名第7。"
-      ],
-      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/rhteejn6ob2ixbgr2ixg",
-      "translationSourceHash": "6fb021e37c62449e5775611cf919bc9af98271fbdb10bf506dcf2969c62044bb",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-09T05:12:52.103Z",
-      "author": "Mark Feinsand",
-      "publishedAt": "2026-08-09T04:37:00.000Z",
-      "url": "https://www.mlb.com/bluejays/news/max-scherzer-enters-top-10-all-time-strikeout-leaderboard",
-      "source": "MLB.com"
     }
   ],
-  "pendingNotificationIds": []
+  "pendingNotificationIds": [
+    "4e230b0d95d7b993d51fbb6b22a46fbd047df0a47801fdae6e046159d10570cd"
+  ]
 }
