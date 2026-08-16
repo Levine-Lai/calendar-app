@@ -1,12 +1,43 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-16T21:33:56.179Z",
+  "updatedAt": "2026-08-16T22:56:09.229Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "1df6febc5e910df36f8fdcde3e5e9f92091bf92b41a2b2143d880ed00a2cd0c2",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Every minute of our emphatic Community Shield win",
+      "summaryEn": "A full match replay as we beat Manchester City in Cardiff",
+      "bodyEn": [
+        "The 2026/27 campaign is off to a flying start after we swept aside Manchester City to lift the Community Shield in Cardiff.",
+        "It took just 24 seconds for Riccardo Calafiori to open the scoring, calmly slotting beyond Gianluigi Donnarumma to give us an early advantage. Kai Havertz headed home before the half-hour mark, giving us a commanding lead to take into the interval.",
+        "We were quick out of the traps in the second half, as Martin Odegaard produced a moment of magic to fool the Manchester City keeper into an early dive, only to place his shot the other way.",
+        "A statement performance from our players saw us lift the first silverware of the season and make a declaration of intent ahead of our Premier League title defence.",
+        "You can watch every moment from our Principality Stadium triumph in the video above, with our bitesize highlights package available below."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/abe2b6d58b68-gettyimages-2290728333.webp",
+      "author": "Tom Keens",
+      "publishedAt": "2026-08-16T22:30:00.000Z",
+      "url": "https://www.arsenal.com/news/every-minute-of-our-emphatic-community-shield-win-aTwbU9C0ydG5",
+      "source": "Arsenal.com",
+      "titleZh": "我们大胜社区盾的每一个瞬间",
+      "summaryZh": "我们在加的夫击败曼城的全场比赛回放。",
+      "bodyZh": [
+        "2026/27赛季开局顺利，我们在加的夫横扫曼城，捧起社区盾。",
+        "里卡多·卡拉菲奥里仅用24秒便破门得分，冷静地越过吉安路易吉·多纳鲁马，为我们取得领先。凯·哈弗茨在第半小时前头球破门，让我们带着领先优势进入中场休息。",
+        "下半场我们迅速出击，马丁·厄德高展现神奇时刻，骗过曼城门将提前扑向一侧，却将球射向另一边。",
+        "球员们的出色表现让我们捧起本赛季首座奖杯，并在英超卫冕之战前表明了决心。",
+        "你可以在上方视频观看我们在千禧球场夺冠的每一刻，下方还有我们的精简版集锦。"
+      ],
+      "translationSourceHash": "389bb5f570b039daa79b052405779ac72fafac4da371451948618f4f3b99f914",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-16T22:56:09.229Z"
+    },
     {
       "id": "935eb9fcba0941604f64a554df43fa32a7e95b51465142d47b151dad2b312f19",
       "teamId": "arsenal",
@@ -1088,39 +1119,6 @@
       "translationSourceHash": "efb1afd70e7001aaa663842a2b4f43a9d2bc9498eb9eea27f1384ad974cf4951",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-16T20:56:45.626Z"
-    },
-    {
-      "id": "974a086eaeeef886284b90adea433f137e45b53c64d7116d9f42b06076540b72",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Ismeal Kabia joins St Mirren on loan",
-      "summaryEn": "Our young attacker is heading to Scotland for the 2026/27",
-      "bodyEn": [
-        "Ismeal Kabia has joined Scottish Premiership side St Mirren on a season-long loan.",
-        "The 20-year-old joined our academy in March 2017 and signed his first professional contract with us in July 2024.",
-        "An impressive 2024/25 campaign saw Ismeal make his first-team debut for us in our 5-1 win against Bolton Wanderers in the Carabao Cup third round at Emirates Stadium.",
-        "Standout performances led to Ismeal signing a second professional contract with us in August 2025, shortly followed by a loan move to Shrewsbury Town for the 2025/26 season. A valuable spell for the Dutch-born winger, who made 43 appearances across all competitions for the League Two side.",
-        "We wish Ismeal all the best for his loan spell at St Mirren and look forward to seeing his continued development.",
-        "The loan deal is subject to the completion of regulatory processes."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/6b2bfeb3fb38-gettyimages-2288810045.webp",
-      "author": "Arsenal Media",
-      "publishedAt": "2026-08-15T15:00:00.000Z",
-      "url": "https://www.arsenal.com/news/ismeal-kabia-joins-st-mirren-on-loan-aknou2E5Gft7",
-      "source": "Arsenal.com",
-      "titleZh": "伊斯梅尔·卡比亚租借加盟圣米伦",
-      "summaryZh": "年轻攻击手卡比亚租借加盟圣米伦一个赛季。",
-      "bodyZh": [
-        "伊斯梅尔·卡比亚已租借加盟苏格兰超级联赛球队圣米伦，为期一个赛季。",
-        "这位20岁的球员于2017年3月加入我们的青训营，并于2024年7月与我们签下了他的第一份职业合同。",
-        "在2024/25赛季的出色表现中，伊斯梅尔在我们的联赛杯第三轮比赛中首次代表一线队出场，在酋长球场以5-1战胜博尔顿流浪者。",
-        "突出的表现使伊斯梅尔于2025年8月与我们签下了第二份职业合同，随后在2025/26赛季被租借至什鲁斯伯里镇。对于这位荷兰出生的边锋来说，这是一段宝贵的经历，他在各项赛事中为这支英乙球队出场43次。",
-        "我们祝愿伊斯梅尔在圣米伦的租借生涯一切顺利，并期待看到他的持续进步。",
-        "这笔租借交易需完成相关监管程序。"
-      ],
-      "translationSourceHash": "1b42c691b7e6a1769c36be4581a6f4e2f3716401c4d9f9d2ca3ebf762ccf971f",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-16T20:56:51.078Z"
     },
     {
       "id": "706cd88e90079361d3f0b6933ac048fa1dfd694c1c31f9bb3ec84d6326c15fb1",
