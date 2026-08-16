@@ -1,12 +1,49 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-16T19:33:17.282Z",
+  "updatedAt": "2026-08-16T19:53:47.770Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "935eb9fcba0941604f64a554df43fa32a7e95b51465142d47b151dad2b312f19",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "‘That’s the standard’: Mikel Arteta hails Arsenal’s desire on blue day for Maresca",
+      "summaryEn": "Champions delight manager by ‘winning the first trophy’Enzo Maresca wants new Manchester City signings soonMikel Arteta said his Arsenal players demonstrated their hunger to defend the Premier League title in their Community Shield triumph over Manchester City. Arsenal, who ended their 22-year wait last season and are seeking to win back-to-back top-flight titles for the first time since 1934-35, beat City 3-0 at the Principality Stadium in Cardiff in Enzo Maresca’s first significant match in charge.Riccardo Calafiori opened the scoring after 24 seconds, the fastest goal in the competition since Bobby Owen’s strike for City in 1968, before Kai Havertz doubled Arsenal’s lead and their captain, Martin Ødegaard, completed the scoring on 48 minutes. The 3-0 defeat represented the joint-heaviest loss for a City manager in their first game in charge, with Harry Newbould the most recent to suff",
+      "bodyEn": [
+        "Mikel Arteta said his Arsenal players demonstrated their hunger to defend the Premier League title in their Community Shield triumph over Manchester City. Arsenal, who ended their 22-year wait last season and are seeking to win back-to-back top-flight titles for the first time since 1934-35, beat City 3-0 at the Principality Stadium in Cardiff in Enzo Maresca’s first significant match in charge.",
+        "Riccardo Calafiori opened the scoring after 24 seconds, the fastest goal in the competition since Bobby Owen’s strike for City in 1968, before Kai Havertz doubled Arsenal’s lead and their captain, Martin Ødegaard, completed the scoring on 48 minutes. The 3-0 defeat represented the joint-heaviest loss for a City manager in their first game in charge, with Harry Newbould the most recent to suffer a three-goal opening defeat – 4-1, also to Arsenal, in 1906. It is also Maresca’s joint-heaviest defeat as a manager in England.",
+        "Arteta was delighted with Arsenal’s convincing display. “I am obviously extremely happy with the performance, the result and winning the first trophy,” he said. “We talked about the desire we have to start the season and to show ourselves how much we want it and I saw a lot of positive things against a top opponent. I’m very impressed in the manner that we played, in the manner that we competed. That’s the standard for us. If we drive the standards at this level, I’m sure that we’re going to be really, really competitive.”",
+        "Asked about the desire displayed by his team, he said: “Because we want to go straight again. The desire comes [because] I want to live that moment again. I want to live other moments, even bigger than them … we know what it’s going to take. We know the difficulty of the task. We’ve never done it at this club, to win it again. We know that it’s going to demand something special and we are ready for it.”",
+        "Arteta praised the performance of Christos Tzolis, who was involved in all three goals. “He is a really intelligent boy and he has a massive quality, which is when he is in the last 20-30m [of the pitch] he is so composed to pick people out in and around the box,” said the Arsenal manager. “And also to finish actions and he has shown that again two or three times. He was decisive.”",
+        "Ødegaard said the team’s performance was evidence they are capable of winning back-to-back titles. “We played some brilliant football,” said Arsenal’s captain. “[It was a] great performance and a great way to start the season. I always want to help the team as much as possible with goals and assists. I want to score more goals. We showed our level today. We’ve shown we’re ready. We’re serious and we want to do it again. We want to attack it. We want to do it again. When you get a taste of how nice it is you want to do it again. We want to win everything.”",
+        "Maresca acknowledged City, who are closing on a deal to sign Lille’s Ayyoub Bouaddi as they prepare to sell Rodri to Barcelona, would welcome new arrivals before their league opener at home to Bournemouth on Sunday. Rodri did not travel to Cardiff, where Elliot Anderson started in midfield, and Jack Grealish arrived from the substitutes’ bench for his first City appearance since May 2025. “Any new signing, the sooner they arrive the better because we are starting the Premier League in one week and if they start to work with us as soon as possible it’s better that they can also understand the way we want to play,” he said.",
+        "Maresca said he was not alarmed by the manner of the defeat. “In general I’m always concerned, even when we win games so imagine how [concerned] that we didn’t win the game,” said the Italian, who succeeded Pep Guardiola this summer. “It’s just the beginning, we have many things that we need to do better, I think the reaction was good after conceding the first goal and now try to reset and analyse the game and think from Tuesday about the next game.”"
+      ],
+      "imageUrl": "https://i.guim.co.uk/img/media/d098d8f9d83787d54b1057a2d6a426cf0da01724/526_42_2888_2310/master/2888.jpg?width=140&quality=85&auto=format&fit=max&s=1308b81771a8eafdb20241a9f15ad446",
+      "author": "Ben Fisher at the Principality Stadium",
+      "publishedAt": "2026-08-16T19:37:19.000Z",
+      "url": "https://www.theguardian.com/football/2026/aug/16/mikel-arteta-arsenal-desire-enzo-maresca-community-shield",
+      "source": "The Guardian",
+      "titleZh": "“这就是标准”：米克尔·阿尔特塔盛赞阿森纳的渴望，马雷斯卡的失意日",
+      "summaryZh": "阿森纳社区盾3-0击败曼城，阿尔特塔称球队展现卫冕渴望，马雷斯卡首秀遭遇惨败。",
+      "bodyZh": [
+        "米克尔·阿尔特塔表示，他的阿森纳球员在社区盾战胜曼城的比赛中展现出了捍卫英超冠军的渴望。阿森纳上赛季结束了22年的等待，正寻求自1934-35赛季以来首次连续赢得顶级联赛冠军，他们在加的夫公国球场以3-0击败曼城，这也是恩佐·马雷斯卡执教曼城的首场重要比赛。",
+        "里卡尔多·卡拉菲奥里在24秒时首开纪录，这是自1968年博比·欧文为曼城进球以来该项赛事的最快进球，随后凯·哈弗茨扩大领先优势，队长马丁·厄德高在第48分钟锁定胜局。这场3-0的失利是曼城主帅执教首秀中并列最惨重的失利，哈里·纽博尔德是最近一位在首秀中遭遇三球失利的曼城主帅——1906年他也是以1-4输给阿森纳。这也是马雷斯卡在英格兰执教生涯中并列最惨重的失利。",
+        "阿尔特塔对阿森纳令人信服的表现感到高兴。“我当然对表现、结果和赢得第一座奖杯感到非常高兴，”他说，“我们谈过开启新赛季的渴望，以及向自己展示我们有多想赢得冠军，在对阵顶级对手时我看到了很多积极的东西。我对我们的比赛方式和竞争方式印象非常深刻。这就是我们的标准。如果我们把标准提高到这个水平，我相信我们会非常有竞争力。”",
+        "当被问及球队展现出的渴望时，他说：“因为我们想再次出发。这种渴望来自，因为我想再次体验那一刻。我想体验更大的时刻……我们知道这需要付出什么。我们知道任务的难度。我们在这家俱乐部从未做到过再次夺冠。我们知道这需要一些特别的东西，我们准备好了。”",
+        "阿尔特塔赞扬了克里斯托斯·佐利斯的表现，他参与了全部三个进球。“他是一个非常聪明的孩子，他有一个巨大的优点，就是当他在球场最后20-30米时，他能非常冷静地在禁区内外找到队友，”阿森纳主帅说，“同时他也能完成射门，他再次展示了两三次。他是决定性的。”",
+        "厄德高表示，球队的表现证明他们有能力连续夺冠。“我们踢出了一些精彩的足球，”阿森纳队长说，“伟大的表现，开启赛季的好方式。我总是想尽可能多地用进球和助攻帮助球队。我想进更多球。我们今天展示了我们的水平。我们已经证明我们准备好了。我们是认真的，我们想再次做到。我们想主动出击。我们想再次做到。当你尝到那滋味时，你就会想再来一次。我们想赢得一切。”",
+        "马雷斯卡承认，曼城即将完成签下里尔球员阿尤布·布阿迪的交易，同时准备将罗德里出售给巴塞罗那，他们欢迎在周日联赛揭幕战主场对阵伯恩茅斯之前有新人加入。罗德里没有前往加的夫，埃利奥特·安德森在中场首发，杰克·格拉利什替补登场，这是他自2025年5月以来首次代表曼城出场。“任何新签约，越早到来越好，因为我们一周后就要开始英超比赛，如果他们尽快开始和我们一起工作，他们也能更好地理解我们想要的比赛方式，”他说。",
+        "马雷斯卡表示，他并不为失利的方式感到震惊。“总的来说，我总是很担心，即使我们赢球时也担心，所以想象一下我们没有赢球时有多担心，”这位今年夏天接替佩普·瓜迪奥拉的意大利人说，“这只是开始，我们有很多地方需要改进，我认为在丢掉第一个球后球队的反应很好，现在努力重置，分析比赛，从周二开始考虑下一场比赛。”"
+      ],
+      "translationSourceHash": "784eaa5773657d95a3160f85b88baca2138c19a90dc9454d725336cd3587dfec",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-16T19:53:47.769Z"
+    },
     {
       "id": "9cd2a6a3f9edc171645d6ce7fbf37827a335039b7e89603bc3b2acfa2c1ee9f3",
       "teamId": "arsenal",
@@ -96,11 +133,11 @@
       "teamId": "arsenal",
       "teamName": "阿森纳",
       "titleEn": "Arsenal send out early warning to City and title rivals with ominous victory | Ed Aarons",
-      "summaryEn": "Additions of Guimarães and Tzolis, plus re-emergence of Ødegaard, mean champions start clear favourites after Community Shield winIf this was a glimpse of the Premier League’s new order then the rest had better watch out. By the time Martin Ødegaard sat Gianluigi Donnarumma down to make it 3-0 to the Premier League champions, the Arsenal party was in full swing. “Can we play you every week?” their supporters gleefully taunted their counterparts in sky blue.Those in red and white who had made the journey to south Wales could barely believe what they were watching, even if winning the Community Shield is unlikely to spark the same kind of celebrations that were seen on the streets of north London in May after ending 22 years without being crowned champions. Having been forced to settle for three successive second-place finishes before finally reaching the summit, this time it was Mancheste",
+      "summaryEn": "Additions of Guimarães and Tzolis, plus re-emergence of Ødegaard, mean champions start clear favourites after Community Shield winIf this was a glimpse of the Premier League’s new order then the rest had better watch out. By the time Martin Ødegaard sat Gianluigi Donnarumma down to make it 3-0 to the champions, the Arsenal party was in full swing. “Can we play you every week?” their supporters gleefully taunted their counterparts in sky blue.Those in red and white who had made the journey to south Wales could barely believe what they were watching, even if winning the Community Shield is unlikely to spark the same kind of celebrations that were seen on the streets of north London in May after ending a 22-year wait to win the title. Having been forced to settle for three successive second-place finishes before finally reaching the summit, this time it was Manchester City’s fans who had to",
       "bodyEn": [
-        "If this was a glimpse of the Premier League’s new order then the rest had better watch out. By the time Martin Ødegaard sat Gianluigi Donnarumma down to make it 3-0 to the Premier League champions, the Arsenal party was in full swing. “Can we play you every week?” their supporters gleefully taunted their counterparts in sky blue.",
-        "Those in red and white who had made the journey to south Wales could barely believe what they were watching, even if winning the Community Shield is unlikely to spark the same kind of celebrations that were seen on the streets of north London in May after ending 22 years without being crowned champions. Having been forced to settle for three successive second-place finishes before finally reaching the summit, this time it was Manchester City’s fans who had to face the reality of being humbled by their closest rivals. As Viktor Gyökeres had put it beforehand: “Against City? In a friendly? We want to win.” That much was clear from the very first whistle at the Principality Stadium.",
-        "It was fitting that the first match of the post-Pep Guardiola era should pit two of his former assistants and pretenders to his crown against each other. On this evidence Mikel Arteta’s powerful Arsenal squad, which only looks deeper than this time last year after the additions of Bruno Guimarães and Christos Tzolis, will head into the new season as clear favourites to defend their title after blowing away Enzo Maresca’s City in the space of just 48 minutes.",
+        "If this was a glimpse of the Premier League’s new order then the rest had better watch out. By the time Martin Ødegaard sat Gianluigi Donnarumma down to make it 3-0 to the champions, the Arsenal party was in full swing. “Can we play you every week?” their supporters gleefully taunted their counterparts in sky blue.",
+        "Those in red and white who had made the journey to south Wales could barely believe what they were watching, even if winning the Community Shield is unlikely to spark the same kind of celebrations that were seen on the streets of north London in May after ending a 22-year wait to win the title. Having been forced to settle for three successive second-place finishes before finally reaching the summit, this time it was Manchester City’s fans who had to face the reality of being humbled by their closest rivals. As Viktor Gyökeres had put it beforehand: “Against City? In a friendly? We want to win.” That much was clear from the opening whistle at the Principality Stadium.",
+        "It was fitting that the first match of the post-Pep Guardiola era should pit two of his former assistants and pretenders to his crown against each other. On this evidence Mikel Arteta’s powerful Arsenal squad, which looks deeper than this time last year after the additions of Bruno Guimarães and Christos Tzolis, will head into the new season as clear favourites to defend their crown after blowing away Enzo Maresca’s City in the space of 48 minutes.",
         "The Italian had barely taken his seat in the dugout for his first meaningful match since replacing Guardiola when his new side found themselves trailing. Myles Lewis-Skelly was a major factor in Arsenal finally getting over the line in May after being brought into the midfield engine room for the run-in when Martín Zubimendi had run out of gas. The teenager needed little more than 20 seconds to remind Thomas Tuchel what England were missing this summer with his brilliant pass for Riccardo Calafiori’s opener.",
         "Lewis-Skelly doesn’t turn 20 until next month but already looks a match physically for most – including City’s £116m new signing, Elliot Anderson. Lewis-Skelly’s future has been the subject of speculation this week, with reports that he had been offered to Manchester United and Chelsea. But after dominating Anderson and the veteran Mateo Kovacic in partnership with the outstanding Guimarães, Arteta will surely not allow him to depart in the next fortnight.",
         "As for Guimarães, one typically aggressive challenge from the Brazil midfielder to dispossess Phil Foden was all it took for Arsenal’s supporters to fall in love. The chants of “Bruno, Bruno” only amplified when he sprayed a crossfield pass perfectly into the path of Noni Madueke and City will have been relieved to see the back of him at half-time.",
@@ -109,7 +146,7 @@
         "Sign up to Football Daily",
         "Kick off your evenings with the Guardian's take on the world of football",
         "after newsletter promotion",
-        "With Rodri expected to depart for Barcelona, recruiting at least one more central midfielder to partner Anderson must be a priority. Lille’s Ayyoub Bouaddi would provide youthful energy, although given Arsenal’s strength in that department more experience will be required if they are going to mount a serious title challenge. Chelsea’s Enzo Fernández may fit the bill.",
+        "With Rodri set to depart for Barcelona, recruiting at least one more central midfielder to partner Anderson must be a priority. Lille’s Ayyoub Bouaddi would provide youthful energy, although given Arsenal’s strength in that department more experience will be required if they are going to mount a serious title challenge. Chelsea’s Enzo Fernández may fit the bill.",
         "There was a brief moment last autumn when Maresca’s former side looked most capable of challenging Arsenal before his squabbles with the hierarchy brought an end to the Italian’s tenure. It will take some time to make his imprint on a squad that was so heavily devoted to Guardiola, although Arteta said this week that he believes his newest rival has “the personality, the character and, especially, the knowledge” to be successful. For the Arsenal manager, the question is now whether he can build a legacy that could one day rival Guardiola’s. This was a good way to start."
       ],
       "imageUrl": "https://i.guim.co.uk/img/media/e50b2b463f1a38c779db11f3544de56b9e706617/314_0_3138_2510/master/3138.jpg?width=140&quality=85&auto=format&fit=max&s=4edd2d2c90b35fac24a97b4fab88dad5",
@@ -117,26 +154,26 @@
       "publishedAt": "2026-08-16T18:32:08.000Z",
       "url": "https://www.theguardian.com/football/2026/aug/16/arsenal-manchester-city-community-shield-premier-league",
       "source": "The Guardian",
-      "titleZh": "阿森纳以一场令人不安的胜利向曼城和争冠对手发出警告 | Ed Aarons",
-      "summaryZh": "吉马良斯和佐利斯加盟，厄德高复苏，阿森纳社区盾夺冠后成为新赛季最大热门，其他球队需警惕。",
+      "titleZh": "阿森纳向曼城和争冠对手发出早期警告：一场不祥的胜利 | 埃德·阿伦斯",
+      "summaryZh": "吉马良斯和佐利斯的加盟，加上厄德高的复苏，使阿森纳在社区盾获胜后成为冠军热门。",
       "bodyZh": [
-        "如果这是英超新秩序的预兆，那么其他球队最好小心了。当马丁·厄德高让吉安路易吉·多纳鲁马坐下，将比分改写为3-0时，英超冠军阿森纳的狂欢正酣。他们的球迷兴高采烈地嘲弄着天蓝色的对手：“我们能每周都跟你们踢吗？”",
-        "那些身着红白球衣、前往南威尔士的球迷几乎不敢相信自己所看到的，尽管赢得社区盾不太可能像五月时那样在伦敦北部街头引发庆祝，当时阿森纳结束了22年的等待，重新加冕。在连续三次屈居亚军之后终于登顶，这一次，曼城球迷不得不面对被最亲密对手羞辱的现实。正如维克托·哲凯赖什所说：“对阵曼城？友谊赛？我们想赢。”这一点从公国体育场的第一声哨响就一目了然。",
-        "后佩普·瓜迪奥拉时代的首场比赛，让他的两位前助手和觊觎王位者针锋相对，可谓恰如其分。就本场比赛来看，米克尔·阿尔特塔强大的阿森纳阵容，在布鲁诺·吉马良斯和克里斯托斯·佐利斯加盟后，比去年此时更为深厚，他们在短短48分钟内就击溃了恩佐·马雷斯卡的曼城，将以明显的夺冠热门身份进入新赛季，力争卫冕。",
-        "这位意大利人在接替瓜迪奥拉后的首场重要比赛中刚刚在教练席落座，他的新球队就已经落后了。迈尔斯·刘易斯-斯凯利是阿森纳最终在五月突破的关键因素，他在马丁·祖比门迪耗尽体力后被调入中场引擎室，参与最后冲刺。这位少年仅用20多秒就用一记精彩的传球帮助里卡尔多·卡拉菲奥里首开纪录，提醒托马斯·图赫尔英格兰今年夏天错过了什么。",
-        "刘易斯-斯凯利要到下个月才满20岁，但他在身体对抗上已经能匹配大多数人——包括曼城1.16亿英镑的新援埃利奥特·安德森。本周，刘易斯-斯凯利的未来成为猜测的焦点，有报道称他曾被推介给曼联和切尔西。但在与出色的吉马良斯搭档，压制了安德森和老将马特奥·科瓦契奇之后，阿尔特塔肯定会在接下来的两周内阻止他离开。",
-        "至于吉马良斯，这位巴西中场一次典型的侵略性抢断，从菲尔·福登脚下断球，就足以让阿森纳球迷爱上他。当他精准地一脚横传转移给诺尼·马杜埃克时，“布鲁诺，布鲁诺”的歌声更加响亮，而曼城在中场休息时看到他下场，肯定松了一口气。",
-        "那时，凯·哈弗茨在厄德高和佐利斯的精妙配合后已经将比分改写为2-0，曼城正在拼命挣扎。下半场看到德克兰·赖斯登场，再次提醒人们阿森纳的选择之多，尽管布卡约·萨卡在英格兰世界杯征程后如此迅速回归的智慧，从长远来看仍有待观察。“他说还没结束，”阿森纳球迷唱道，指的是三月份在伊蒂哈德球场被击败后，赖斯登场时在赛后更衣室的讲话。",
-        "厄德高作为进攻核心的重新出现，是阿森纳感到乐观的又一个理由。这位队长上赛季因伤严重受限，但在世界杯上为挪威表现出色后，他成为了阿森纳最佳配合的核心，并以一记冷静的终结完成得分，为这场出色的表现画上句号。这也引发了阿森纳球迷对马雷斯卡高唱“你明早就要下课了”，在终场哨响时，他被看到与球员和工作人员深入交谈。",
-        "订阅足球日报",
-        "用《卫报》的足球视角开启你的夜晚",
-        "在简报推广之后",
-        "随着罗德里预计将转会巴塞罗那，至少再招募一名中场与安德森搭档必须成为优先事项。里尔的阿尤布·布阿迪可以提供年轻活力，但考虑到阿森纳在该位置的实力，如果他们想要认真挑战冠军，还需要更多经验。切尔西的恩佐·费尔南德斯可能符合要求。",
-        "去年秋天曾有短暂时刻，马雷斯卡的老东家看起来最有可能挑战阿森纳，随后他与管理层的争执结束了意大利人的任期。要在一支如此深受瓜迪奥拉影响的球队中留下他的印记需要时间，尽管阿尔特塔本周表示，他相信他这位最新的对手拥有“个性、品格，尤其是知识”，能够取得成功。对这位阿森纳主帅来说，现在的问题是他能否建立一份有朝一日能与瓜迪奥拉媲美的遗产。这是一个好的开始。"
+        "如果这是英超新秩序的预演，那么其他球队最好小心了。当马丁·厄德高晃倒詹路易吉·多纳鲁马，将比分改写为3-0时，阿森纳的庆祝已进入高潮。阿森纳球迷得意地向曼城球迷嘲讽道：“我们能每周都跟你们踢吗？”",
+        "那些前往南威尔士的红白球迷几乎不敢相信自己的眼睛，尽管赢得社区盾不太可能引发像五月份北伦敦街头那样的庆祝——当时阿森纳结束了22年的等待，夺得联赛冠军。在连续三次屈居亚军后终于登顶，这一次轮到曼城球迷面对被最强大对手击败的现实。正如维克托·哲凯赖什赛前所说：“对阵曼城？友谊赛？我们想赢。”这一点从威尔士亲王体育场开场哨响时就已显而易见。",
+        "后瓜迪奥拉时代的第一场比赛，恰如其分地让他的两位前助手兼王位觊觎者正面交锋。从本场比赛来看，米克尔·阿尔特塔的阿森纳阵容强大，在布鲁诺·吉马良斯和赫里斯托斯·佐利斯加盟后，阵容深度比去年同期更深，在48分钟内击溃恩佐·马雷斯卡的曼城后，他们将以卫冕冠军的明确热门身份进入新赛季。",
+        "这位意大利人在接替瓜迪奥拉后，首次正式比赛刚坐下不久，他的新球队就落后了。迈尔斯·刘易斯-斯凯利是阿森纳5月份最终夺冠的关键因素，他在最后阶段被调入中场发动机舱，当时马丁·苏维门迪已经体力不支。这位少年用了不到20秒，就用一记精彩的传球助攻里卡尔多·卡拉菲奥里首开纪录，提醒托马斯·图赫尔英格兰今年夏天错过了什么。",
+        "刘易斯-斯凯利下个月才满20岁，但他在身体对抗上已经能与大多数人匹敌——包括曼城1.16亿英镑的新援埃利奥特·安德森。刘易斯-斯凯利的未来本周一直是猜测的焦点，有报道称他已被推荐给曼联和切尔西。但在压制安德森和经验丰富的马特奥·科瓦契奇，与出色的吉马良斯搭档之后，阿尔特塔肯定不会再允许他在未来两周内离开。",
+        "至于吉马良斯，这位巴西中场一次典型的侵略性抢断从菲尔·福登脚下断球，就足以让阿森纳球迷爱上他。当他精准地将球斜传到诺尼·马杜埃凯的跑动路线上时，“布鲁诺，布鲁诺”的歌声更加响亮。曼城在半场结束时看到他下场，应该会松一口气。",
+        "那时，凯·哈弗茨已经在厄德高和佐利斯的精妙配合后攻入第二球，曼城正在拼命挣扎。下半场看到德克兰·赖斯登场，再次提醒人们阿森纳的阵容深度，尽管布卡约·萨卡在英格兰世界杯之旅后如此迅速回归的长期智慧还有待观察。“他说这还没结束，”阿森纳球迷唱道，这指的是3月份赖斯在伊蒂哈德球场赛后更衣室讲话，当时他刚被换上场。",
+        "厄德高作为进攻力量的重新崛起是阿森纳感到乐观的又一个原因。这位队长上赛季因伤严重受阻，但在世界杯上为挪威表现出色后，他成为阿森纳最精彩攻势的核心，并以一记冷静的射门锁定胜局。这也引发了针对马雷斯卡的“你明天就要被解雇”的歌声，他在终场哨响时正与球员和工作人员深入交谈。",
+        "注册《足球日报》",
+        "用《卫报》对足球世界的看法开启你的夜晚",
+        "在新闻简报推广之后",
+        "随着罗德里即将转会巴塞罗那，签下至少一名中场与安德森搭档必须成为优先事项。里尔的阿尤布·布阿迪可以提供年轻活力，但鉴于阿森纳在该位置的强度，如果他们要认真挑战冠军，可能需要更多经验。切尔西的恩佐·费尔南德斯可能符合要求。",
+        "去年秋天曾有一段时间，马雷斯卡的前东家看起来最有能力挑战阿森纳，但他与高层的不和结束了这位意大利人的任期。要让这支如此深受瓜迪奥拉影响的球队打上自己的烙印需要时间，不过阿尔特塔本周表示，他认为他最新的对手“有性格、有个性，尤其是知识”，能够取得成功。对阿森纳主帅来说，现在的问题是，他能否建立起有朝一日能与瓜迪奥拉媲美的遗产。这是一个好的开始。"
       ],
-      "translationSourceHash": "73ffee27ef87b55cd42b03c65dcc15ccf8b75e7c7ebc613f36d4e81c366f8e19",
+      "translationSourceHash": "c9d3b982f917691abeec03b312a5a1ec19732a9fa71d71ef4dcc4116c096db15",
       "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-16T19:33:17.282Z"
+      "translatedAt": "2026-08-16T19:53:18.429Z"
     },
     {
       "id": "ed3a25dd728343b3fc21d63a6eaf5a4a919129bd4ddd8c94e50e0b7645ee3d38",
@@ -1253,51 +1290,6 @@
       "translationSourceHash": "defaf22047d878f1ced1fd945412e147ca1d074a435b3e57dbe47993ff1ae800",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-14T18:06:42.219Z"
-    },
-    {
-      "id": "e53d460a227262ec5fe56ff8c770e84e3591345f9066c23311c3878226de21cf",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Football transfer rumours: Galatasaray to spend £38m on Arsenal’s Martinelli?",
-      "summaryEn": "Today’s fluff preferred Bonnie Tyler’s versionCurtis Jones’s future has been the subject of much gossipmongering this summer, especially with Inter plonking him in the middle of their radar. The Italian club have sniffed around the midfielder for quite a while and may ramp up their interest very soon with a bid of £30m to test Liverpool’s resolve.Ipswich are not willing to stop their summer spending and a return for Julio Enciso looks nailed on. The Paraguay international had an injury-plagued loan spell at Portman Road in 2025 but is back to lead their battle for Premier League survival after a permanent deal was agreed with Strasbourg. Also making the move from the French club is right-back Abdoul Ouattara. Continue reading...",
-      "bodyEn": [
-        "Curtis Jones’s future has been the subject of much gossipmongering this summer, especially with Inter plonking him in the middle of their radar. The Italian club have sniffed around the midfielder for quite a while and may ramp up their interest very soon with a bid of £30m to test Liverpool’s resolve.",
-        "Ipswich are not willing to stop their summer spending and a return for Julio Enciso looks nailed on. The Paraguay international had an injury-plagued loan spell at Portman Road in 2025 but is back to lead their battle for Premier League survival after a permanent deal was agreed with Strasbourg. Also making the move from the French club is right-back Abdoul Ouattara.",
-        "Crystal Palace have been knocked back by Monaco with a £35m bid for midfielder Lamine Camara. The Ligue 1 club are not particularly keen to sell him after getting a decent whack for Aladji Bamba, ensuring their finances are very healthy.",
-        "It may be the case that Arsenal need to sell a few players on, as is the case with Myles Lewis-Skelly. Another available player is Gabriel Martinelli who is attracting interest from Galatasaray. The Turkish giants are willing to splash a whopping £38m on the Brazilian. Gala are taking a keen look at Premier League players, with Liverpool’s Alexis Mac Allister another wanted.",
-        "After completing a deal for Lucas Herrington, Hull will bring in Joe Gelhardt from Leeds. The forward spent time on loan with the Tigers, helping them get promoted to the Premier League. Another inquiry has been made to Juventus over the availability of Teun Koopmeiners.",
-        "Aston Villa are priming themselves for a busy end to the window. João Palhinha has agreed to join on loan but Bayern Munich are eager to sell him. Jonathan David may also turn up in the West Midlands after the Villans got on the blower to Juventus.",
-        "Aaron Wan-Bissaka may not fancy a season in the second tier with West Ham. Thankfully for the DR Congo full-back Aston Villa and Fulham are both in for him at the moment, but Villa Park is the more likely destination. On the other side of the Hammers defence is El Hadji Malick Diouf. Sunderland have put a figure on him with a £40m bid but that is not enough for him to be allowed to head up to the Stadium of Light because his employers want £10m more.",
-        "Kyle Walker was a target for David Moyes a year ago and the Scot could offer him a route out of Burnley to Everton. The former England right-back has a year remaining on his contract but may fancy a season on Merseyside.",
-        "Sign up to Football Daily",
-        "Kick off your evenings with the Guardian's take on the world of football",
-        "after newsletter promotion",
-        "Michail Antonio could make a return to England with Watford. The former West Ham striker has been training with the Championship club in recent times after a spell in Qatar with Al-Sailiya. The 36-year-old is available for nothing and could prove a cunning signing for the Hornets. Elsewhere, Bolton are exploring a deal for the Millwall midfielder Luke Cundle."
-      ],
-      "imageUrl": "https://i.guim.co.uk/img/media/2a038bdd5a42daedccf0a89aaabb3b04a05a7694/812_25_4275_3420/master/4275.jpg?width=140&quality=85&auto=format&fit=max&s=5d5e0dde37b09dbc364a269b3af38aa2",
-      "author": "Will Unwin",
-      "publishedAt": "2026-08-13T08:14:07.000Z",
-      "url": "https://www.theguardian.com/football/2026/aug/13/football-transfer-rumour-mill-galatasaray-38m-arsenal-gabriel-martinelli",
-      "source": "The Guardian",
-      "titleZh": "足球转会传闻：加拉塔萨雷豪掷3800万英镑求购阿森纳的马丁内利？",
-      "summaryZh": "今日传闻偏爱邦妮·泰勒版本， Curtis Jones 的未来成焦点。",
-      "bodyZh": [
-        "柯蒂斯·琼斯的未来今夏成为众多流言的主题，尤其是国际米兰将他列入重点引援目标。这家意大利俱乐部对这位中场球员觊觎已久，可能很快就会以3000万英镑的报价试探利物浦的决心，从而加大兴趣。",
-        "伊普斯维奇不愿停止今夏的引援步伐，胡利奥·恩西索的回归看似板上钉钉。这位巴拉圭国脚2025年在波特曼路球场的租借期饱受伤病困扰，但在与斯特拉斯堡达成永久转会后，他将回归带领球队为英超保级而战。同样从这家法国俱乐部加盟的还有右后卫阿卜杜勒·瓦塔拉。",
-        "水晶宫以3500万英镑报价摩纳哥中场拉明·卡马拉，但遭到拒绝。这家法甲俱乐部在出售阿莱吉·班巴后获得可观收入，财政状况良好，因此并不特别急于将他出售。",
-        "阿森纳可能需要出售一些球员，比如迈尔斯·刘易斯-斯凯利。另一位可出售的球员是加布里埃尔·马丁内利，他引起了加拉塔萨雷的兴趣。这家土耳其豪门愿意为这位巴西人豪掷3800万英镑。加拉塔萨雷正在密切关注英超球员，利物浦的亚历克西斯·麦卡利斯特也是目标之一。",
-        "在完成卢卡斯·赫林顿的交易后，赫尔城将从利兹联引进乔·格尔哈特。这位前锋曾租借效力于老虎队，帮助球队升入英超。此外，他们还就特恩·科普梅纳斯的可用性向尤文图斯进行了询问。",
-        "阿斯顿维拉正为转会窗结束前的忙碌做准备。若昂·帕利尼亚已同意租借加盟，但拜仁慕尼黑渴望将他出售。乔纳森·戴维也可能出现在西米德兰兹，因为维拉已经联系了尤文图斯。",
-        "阿隆·万-比萨卡可能不愿随西汉姆联征战英冠赛季。对这位刚果民主共和国边后卫来说，幸运的是阿斯顿维拉和富勒姆目前都在追求他，但维拉公园是更可能的目的地。西汉姆防线另一侧的目标是埃尔·哈吉·马利克·迪乌夫。桑德兰已报价4000万英镑求购他，但这不足以让他加盟光明球场，因为其东家想要再多1000万英镑。",
-        "凯尔·沃克一年前曾是戴维·莫耶斯的目标，这位苏格兰教练可能为他提供离开伯恩利转投埃弗顿的出路。这位前英格兰右后卫的合同还剩一年，但他可能愿意在默西塞德度过一个赛季。",
-        "订阅《足球日报》",
-        "用《卫报》对足球世界的看法开启你的夜晚",
-        "在新闻通讯推广之后",
-        "米哈伊尔·安东尼奥可能随沃特福德重返英格兰。这位前西汉姆前锋在卡塔尔阿尔萨利亚队效力一段时间后，近期一直在跟随这家英冠俱乐部训练。这位36岁的球员可以自由转会，对黄蜂队来说可能是一笔精明的签约。此外，博尔顿正在探索引进米尔沃尔中场卢克·坎德尔的可能性。"
-      ],
-      "translationSourceHash": "463e6d38cdff0d0ac2e82112341d1467fdd9bd0c9fadb2898d8dc9be1c1f9469",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-13T16:34:48.613Z"
     }
   ]
 }
