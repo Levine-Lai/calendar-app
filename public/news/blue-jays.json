@@ -1,8 +1,45 @@
 {
   "teamId": "toronto-blue-jays",
   "teamName": "多伦多蓝鸟",
-  "updatedAt": "2026-08-15T23:47:37.137Z",
+  "updatedAt": "2026-08-16T05:45:07.972Z",
   "items": [
+    {
+      "id": "a2c7511e4faa15c5a684ada6cefceb8c975e7e8393c9b7de027a429f6ffd5bc8",
+      "teamId": "toronto-blue-jays",
+      "teamName": "多伦多蓝鸟",
+      "titleEn": "Electric arm Jays acquired in Hoffman trade flashes potential at High-A",
+      "summaryEn": "",
+      "bodyEn": [
+        "With the chaos of the Trade Deadline in the dust, the Blue Jays are suddenly hurtling back into the American League Wild Card chase.",
+        "Meanwhile, on the farm, trade chips are settling into their new affiliates. Dasan Hill, who joined the Blue Jays in the Jeff Hoffman trade with the Twins, made his second start for High-A Vancouver on Saturday night and flashed his tantalizing potential.",
+        "In the Canadians’ 5-3 win over Tri-City, Hill went toe-to-toe with Angels No. 21 prospect Mason McGwire, who also changed dugouts at the Deadline. A 6-foot-5 southpaw, Hill matched his second-longest outing of the season by tossing four innings, allowing just one unearned run while striking out three in his new home ballpark, Rogers Field at Nat Bailey Stadium.",
+        "Get tickets to a Minor League game near you »",
+        "Now Toronto’s No. 8 prospect, Hill was drafted in 2024 by Minnesota in Competitive Balance Round B (69th overall). Armed with an upper-90s fastball, he made relatively light work of his first pro assignment at Single-A. He posted a 2.77 ERA and .190 batting average against over 52 innings before moving up to High-A last year.",
+        "This season has proved more challenging for Hill. Back at High-A, he has still showcased swing-and-miss stuff but paired with additional control problems. At the time of the trade, he had a 5.80 ERA with 37 walks in 45 innings, counterbalancing his 77 strikeouts.",
+        "He made progress on that front Saturday, not issuing a free pass. He collected each of his punchouts on a different offering -- breaking ball, changeup, fastball -- and three of his four hits allowed were of the infield variety.",
+        "Hill opened eyes during Spring Breakout in March when he hit 100.1 mph on the radar gun, a glimpse into the electric nature of his left arm. Both the Twins and now the Jays have kept an eye on his workload, as Hill has thrown more than 75 pitches just once this season. Refining his command -- as he has through his brief Toronto tenure -- would allow his three above-average-or-better pitches to play up as he makes his way through the system."
+      ],
+      "titleZh": "蓝鸟在霍夫曼交易中获得的强力左投手在高级A级展现潜力",
+      "summaryZh": "达桑·希尔在霍夫曼交易中加盟蓝鸟，周六先发四局仅失一分非自责分。",
+      "bodyZh": [
+        "随着交易截止日的喧嚣尘埃落定，蓝鸟突然重新杀回美国联盟外卡争夺战。",
+        "与此同时，在农场系统中，交易筹码们正在适应新的附属球队。达桑·希尔在明尼苏达双城与蓝鸟的杰夫·霍夫曼交易中加入球队，周六晚上他代表高级A级温哥华加拿大人队先发出场，展现了他令人垂涎的潜力。",
+        "在加拿大人队5-3战胜三城队的比赛中，希尔与天使队排名第21的潜力新秀梅森·麦格威尔展开对决，后者也在截止日更换了球队。6英尺5英寸的左投手希尔投了四局，追平了本赛季第二长的出场记录，仅失一分非自责分，同时在新主场罗杰斯球场（纳特贝利球场）送出三次三振。",
+        "在您附近购买小联盟比赛门票 »",
+        "希尔现在位列蓝鸟潜力新秀第八名，他在2024年选秀中被明尼苏达在竞争平衡B轮（第69顺位）选中。凭借接近100英里/小时的快速球，他在单A级首个职业任务中相对轻松。在去年升上高级A级之前，他在52局中自责分率为2.77，被打击率为.190。",
+        "本赛季对希尔来说更具挑战性。回到高级A级，他仍然展示出挥空三振的能力，但伴随更多控制问题。在交易时，他在45局中自责分率为5.80，送出37次保送，同时有77次三振。",
+        "周六他在这方面取得了进步，没有送出保送。他的每次三振都使用了不同的球种——变化球、变速球、快速球——他被打出的四支安打中有三支是内野安打。",
+        "希尔在3月的春训突破赛中引起关注，当时他的雷达测速达到100.1英里/小时，让人一窥他左臂的爆发力。双城和现在的蓝鸟都在关注他的工作量，本赛季希尔只有一次投球数超过75球。正如他在短暂的多伦多时期所展现的那样，改善他的控球——将能让他的三个高于平均或更好的球种在他逐步晋升的过程中发挥出更大威力。"
+      ],
+      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/va9kmnamkixxszoglsaz",
+      "translationSourceHash": "b320329f8673dbb8e9aa623bd8210da0e2d86a0ffad844cc14a3b44f2ce1d488",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-16T05:45:07.972Z",
+      "author": "Allison Mast",
+      "publishedAt": "2026-08-16T05:26:00.000Z",
+      "url": "https://www.mlb.com/bluejays/news/dasan-hill-electric-stuff-blue-jays-trade-deadline",
+      "source": "MLB.com"
+    },
     {
       "id": "40dff86a15e33d48285f57a0927cd677a431a79f6b215682a8a99cebe4d3951d",
       "teamId": "toronto-blue-jays",
@@ -967,56 +1004,9 @@
       "publishedAt": "2026-08-11T21:03:10.000Z",
       "url": "https://www.mlb.com/bluejays/news/trey-yesavage-surgery-left-knee",
       "source": "MLB.com"
-    },
-    {
-      "id": "0dd2aaeca2f998d9404ebc5ee7e964cd02f7ca5fef6671e149a9a7bd399c2d0c",
-      "teamId": "toronto-blue-jays",
-      "teamName": "多伦多蓝鸟",
-      "titleEn": "Blue Jays place Taillon (right forearm tendinitis) on IL, recall Chase Lee",
-      "summaryEn": "",
-      "bodyEn": [
-        "TORONTO -- Jameson Taillon hit the 15-day injured list with right forearm tendinitis on Tuesday, a day after leaving his Blue Jays home debut early after just four innings. It is yet another blow to a rotation that cannot escape them.",
-        "Taillon was cruising against the Red Sox, too, which adds some salt to the wound. After a pair of walks in the first, Taillon had settled in nicely and allowed just one base hit on a chopper to third base. Following the fourth inning, though, there was a quick conversation in the dugout and Simeon Woods Richardson quickly began to warm in the bullpen.",
-        "Taillon’s velocity dipped noticeably in the fourth inning, his hardest pitch being a four-seamer that topped out at 90.1 mph.",
-        "“He said his forearm was a little tight getting some extension on cutters and sliders,” Blue Jays manager John Schneider said after the 2-1 win. “For a guy with an injury history, hopefully we can be proactive, and I don’t want to take any chances with him. He’s going to get an MRI and check it out, so we’ll know more tomorrow and we’re hoping for the best. He was throwing the ball well.”",
-        "Taillon was acquired from the Cubs at the Trade Deadline, a minor move for the veteran who’d just been designated for assignment in the middle of a difficult season. Taillon represented a very sensible candidate to fill innings down the stretch, though, and there were reasons to believe in a short-term bounce-back from Taillon, whom the Blue Jays had serious interest in four years ago before he signed in Chicago.",
-        "This unfortunately falls in line with a cruel injury trend that this rotation hasn’t been able to shake in 2026. Coming into Spring Training, it looked like the Blue Jays had too many starting pitchers. Since then, this is what’s piled up:",
-        "Cody Ponce: Torn right ACL",
-        "José Berríos: Tommy John surgery",
-        "Shane Bieber: Right elbow inflammation, missed first 78 games",
-        "Trey Yesavage: Right meniscus injury",
-        "Max Scherzer: Right forearm, left ankle and back injuries",
-        "Patrick Corbin: Left teres major strain",
-        "Bowden Francis: Tommy John surgery",
-        "The Blue Jays’ bullpen has taken the brunt of this, which has really shown in recent days. Woods Richardson was brought up to protect against spots just like this, when multiple innings may be needed, and the Blue Jays could continue to churn through their depth options as they make every effort to protect the already heavy workloads of regulars like Mason Fluharty, Braydon Fisher, Tyler Rogers and Louis Varland."
-      ],
-      "titleZh": "蓝鸟将泰伦（右前臂肌腱炎）放入伤病名单，召回蔡斯·李",
-      "summaryZh": "蓝鸟先发泰伦因右前臂肌腱炎进入伤病名单。",
-      "bodyZh": [
-        "多伦多——詹姆斯·泰伦（Jameson Taillon）周二因右前臂肌腱炎被放入15天伤病名单，此前一天他在蓝鸟主场首秀中仅投完四局便提前退场。这再次重创了本就伤病缠身的先发轮值。",
-        "泰伦此前对红袜投得游刃有余，这让情况更加糟糕。首局两次保送后，泰伦迅速进入状态，仅让对手打出一支内野滚地安打。然而第四局结束后，休息区里迅速进行了交谈，西蒙·伍兹·理查森（Simeon Woods Richardson）很快开始在牛棚热身。",
-        "泰伦的球速在第四局明显下滑，他最猛的一颗四缝线速球也只有90.1英里/小时。",
-        "“他说投卡特球和滑球时前臂有点紧，需要伸展，”蓝鸟主教练约翰·施奈德（John Schneider）在2-1获胜后表示。“考虑到他的伤病史，希望我们能主动预防，我不想在他身上冒险。他将接受核磁共振检查，明天我们会了解更多情况，期待一切顺利。他此前投得很好。”",
-        "泰伦是在交易截止日从小熊队交易来的，这名老将刚刚在困难赛季中被指定转让，这次交易看似微不足道。然而，泰伦是填补赛季末局数的合适人选，而且有理由相信他能短期反弹——四年前在他签约芝加哥之前，蓝鸟就对他有浓厚兴趣。",
-        "不幸的是，这延续了2026年先发轮值一直无法摆脱的伤病潮。进入春训时，蓝鸟看起来先发投手过剩。此后，伤病名单如下：",
-        "科迪·庞塞（Cody Ponce）：右膝前交叉韧带撕裂",
-        "何塞·贝里奥斯（José Berríos）：汤姆·约翰手术（韧带重建）",
-        "肖恩·比伯（Shane Bieber）：右肘炎症，缺席前78场比赛",
-        "特雷·耶塞维奇（Trey Yesavage）：右膝半月板损伤",
-        "马克斯·谢泽尔（Max Scherzer）：右前臂、左脚踝和背部伤病",
-        "帕特里克·科尔宾（Patrick Corbin）：左背阔肌拉伤",
-        "鲍登·弗朗西斯（Bowden Francis）：汤姆·约翰手术",
-        "蓝鸟牛棚首当其冲受到影响，近期已经显现出来。伍兹·理查森被上调以应对这种可能需要多局投球的局面。蓝鸟可能会继续翻掘深度选项，同时尽力保护常规使用过度的投手，如梅森·弗鲁哈蒂（Mason Fluharty）、布雷登·费舍尔（Braydon Fisher）、泰勒·罗杰斯（Tyler Rogers）和路易斯·瓦兰（Louis Varland）。"
-      ],
-      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/zr4og7o7rxwwtypv1wjr",
-      "translationSourceHash": "3687d5409b0bab0d81118af2142d0009df92038b89e80d0dc70b4c817fa51e8f",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-15T23:47:37.137Z",
-      "author": "Keegan Matheson",
-      "publishedAt": "2026-08-11T19:45:30.000Z",
-      "url": "https://www.mlb.com/bluejays/news/jameson-taillon-to-injured-list-with-right-forearm-tendinitis",
-      "source": "MLB.com"
     }
   ],
-  "pendingNotificationIds": []
+  "pendingNotificationIds": [
+    "a2c7511e4faa15c5a684ada6cefceb8c975e7e8393c9b7de027a429f6ffd5bc8"
+  ]
 }
