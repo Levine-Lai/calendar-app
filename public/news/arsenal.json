@@ -1,18 +1,18 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-16T09:50:40.401Z",
+  "updatedAt": "2026-08-16T10:10:18.013Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
     {
-      "id": "e18ab12dbdacdcc15b358b1030e0a2ec89d9053d19c5cd209925e864287669e4",
+      "id": "227fef9968feaef25a77ff5456d7e85c2d4a7f52e39e35ffa8d3b2f2bd0d79a5",
       "teamId": "arsenal",
       "teamName": "阿森纳",
-      "titleEn": "Watch our classic Community Shield victories!",
-      "summaryEn": "Take in every Community Shield victory since 1998",
+      "titleEn": "Action from our Community Shield wins since 1998",
+      "summaryEn": "Look back at highlights of all of our recent Shield successes",
       "bodyEn": [
         "The Community Shield is often seen as the curtain-raiser for the new season and offers a chance to get a trophy in the cabinet with the very first match.",
         "After winning the Premier League in 2025/26, we will face FA Cup winners Manchester City at the Principality Stadium, in Cardiff.",
@@ -21,20 +21,20 @@
       ],
       "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/5deb98f2aa07-london-england-martin-odegaard-of-arsenal-lifts-the-fa-community-shield-followin.webp",
       "author": "Charlie Peat",
-      "publishedAt": "2026-08-16T08:01:00.048Z",
-      "url": "https://www.arsenal.com/news/watch-our-classic-community-shield-victories-apLnt0O6KCwR",
+      "publishedAt": "2026-08-16T09:47:41.032Z",
+      "url": "https://www.arsenal.com/news/action-from-our-community-shield-wins-since-1998-apLnt0O6KCwR",
       "source": "Arsenal.com",
-      "titleZh": "回顾我们经典的社区盾杯胜利！",
-      "summaryZh": "重温自1998年以来每一场社区盾杯胜利。",
+      "titleZh": "1998年以来社区盾夺冠集锦",
+      "summaryZh": "回顾我们近期社区盾的所有精彩时刻。",
       "bodyZh": [
-        "社区盾杯通常被视为新赛季的揭幕战，并有机会在首场比赛中就将一座奖杯收入囊中。",
-        "在赢得2025/26赛季英超联赛冠军后，我们将在卡迪夫的公国体育场对阵足总杯冠军曼城。",
-        "为了纪念这一时刻，我们回顾了我们在社区盾杯中令人印象深刻的战绩——自1998年以来已九次夺冠。",
-        "现在就点击上方视频播放键，观看所有这些胜利时刻！"
+        "社区盾杯通常被视为新赛季的揭幕战，有机会在首场比赛中就将一座奖杯收入囊中。",
+        "在赢下2025/26赛季英超冠军后，我们将在加的夫的公国体育场对阵足总杯冠军曼城。",
+        "为了纪念这一时刻，我们回顾了在社区盾杯中的惊人战绩——自1998年以来已九次夺冠。",
+        "点击上方视频的播放按钮，立即观看所有夺冠时刻！"
       ],
-      "translationSourceHash": "6363a733b8ff32db095ce50e895cbaeb1fa85b8cf9f622a6b7b9fd45a81b1ce0",
+      "translationSourceHash": "f8d182dbdb062651c167d1f1102fa73d722f8b73c156df013e5d132ceb705b6a",
       "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-16T08:45:17.069Z"
+      "translatedAt": "2026-08-16T09:58:56.600Z"
     },
     {
       "id": "98411a25af1f6bd1cd629726e4d8b71069dd7cc678c75ed8d92d577fca0bd0a8",
