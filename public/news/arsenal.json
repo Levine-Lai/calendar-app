@@ -1,12 +1,43 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-16T16:41:57.489Z",
+  "updatedAt": "2026-08-16T17:32:46.569Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "5613badf353c76f793856720e42a6f8f0cda5f508a8c1eb15208c2f65dd0eb1e",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Watch us lift the Community Shield!",
+      "summaryEn": "See the moment Martin Odegaard hoisted the silverware into the Cardiff sky after we beat Manchester City 3-0",
+      "bodyEn": [
+        "We got our hands on the first piece of silverware in the 2026/27 English football season by lifting the Community Shield, after beating Manchester City in the final in Cardiff.",
+        "Goals from Riccado Calafiori and Kai Havertz got us off to a great start, and in the second half Martin Odegaard added a classy third to put the seal on the Shield.",
+        "We have seen our name engraved on the trophy for the 18th time, and have stretched our winning run in the fixture to six matches.",
+        "Meanwhile, Mikel Arteta continues his incredible record in the final, having won both of his Community Shield matches as a player (2014 and 2015), and has won all three he's contested as a manager, having previously emerged triumphant in 2020 and 2023.",
+        "Press play on the video above to see the moment Martin lifted the trophy and the subsequent celebrations from the Principality Stadium pitch."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/bb074ad94e7c-gettyimages-2290209659.webp",
+      "author": "Jonathon Rogers",
+      "publishedAt": "2026-08-16T17:12:41.451Z",
+      "url": "https://www.arsenal.com/news/watch-us-lift-the-community-shield-aMx095S0qi4f",
+      "source": "Arsenal.com",
+      "titleZh": "观看我们举起社区盾！",
+      "summaryZh": "我们3-0击败曼城，见证马丁·厄德高将奖杯举向加的夫天空的那一刻。",
+      "bodyZh": [
+        "我们在加的夫举行的决赛中击败曼城，举起社区盾，获得了2026/27赛季英格兰足球的第一座奖杯。",
+        "里卡多·卡拉菲奥里和凯·哈弗茨的进球让我们取得梦幻开局，下半场马丁·厄德高再入一球，锁定胜局。",
+        "这是我们第18次将名字刻在奖杯上，也将我们在该项赛事的连胜纪录扩大到六场。",
+        "与此同时，米克尔·阿尔特塔延续了他在决赛中的神奇纪录。作为球员，他两次参加社区盾均获胜（2014年和2015年）；作为主教练，他三次率队参赛全部夺冠，此前在2020年和2023年已经捧杯。",
+        "点击上方视频，观看马丁举起奖杯的那一刻以及随后在公国体育场的庆祝。"
+      ],
+      "translationSourceHash": "789dd9bb4c1ca2ca700e8059d70c1c81c0d84f9982ae20b97072a8a6d2cc3dcc",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-16T17:32:24.521Z"
+    },
     {
       "id": "fbc61396594a22db25c67105b0bcbb03538527842621c53a77dc54d8d879720e",
       "teamId": "arsenal",
@@ -163,12 +194,12 @@
       "teamId": "arsenal",
       "teamName": "阿森纳",
       "titleEn": "Calafiori’s fast start inspires Arsenal to big Community Shield win over Manchester City",
-      "summaryEn": "For Enzo Maresca, a miserable first competitive game in charge of Manchester City that began with Arsenal seizing the lead after 24.5 seconds ended with Mikel Arteta’s side lifting the Community Shield. Arsenal eviscerated City, Riccardo Calafiori’s smart opener after Myles Lewis-Skelly’s brilliant pass seemingly leaving their opponents with irrecoverable damage. Kai Havertz doubled Arsenal’s lead on 28 minutes and Martin Ødegaard in effect sealed the win three minutes into the second half, fooling Gianluigi Donnarumma in the City goal before finishing. On this evidence, the post-Pep era could be trickier than widely envisaged.Calafiori’s early strike in Cardiff provided the perfect tonic for Arsenal to continue the party atmosphere that electrified their Premier League title parade across north London at the end of May. The importance of this victory will be debated but by winning this",
+      "summaryEn": "For Enzo Maresca, a miserable first meaningful game in charge of Manchester City that began with Arsenal seizing the lead after 24.5 seconds ended with Mikel Arteta’s side lifting the Community Shield. Arsenal eviscerated City, Riccardo Calafiori’s smart opener after Myles Lewis-Skelly’s brilliant pass seemingly leaving their opponents with irrecoverable damage. Kai Havertz doubled Arsenal’s lead on 28 minutes and Martin Ødegaard in effect sealed the win three minutes into the second half, fooling Gianluigi Donnarumma in the City goal before finishing. On this evidence, the post-Pep era could be trickier than widely envisaged.Calafiori’s early strike in Cardiff provided the perfect tonic for Arsenal to continue the party atmosphere that electrified their Premier League title parade across north London at the end of May. The importance of this victory will be debated but by winning this c",
       "bodyEn": [
-        "For Enzo Maresca, a miserable first competitive game in charge of Manchester City that began with Arsenal seizing the lead after 24.5 seconds ended with Mikel Arteta’s side lifting the Community Shield. Arsenal eviscerated City, Riccardo Calafiori’s smart opener after Myles Lewis-Skelly’s brilliant pass seemingly leaving their opponents with irrecoverable damage. Kai Havertz doubled Arsenal’s lead on 28 minutes and Martin Ødegaard in effect sealed the win three minutes into the second half, fooling Gianluigi Donnarumma in the City goal before finishing. On this evidence, the post-Pep era could be trickier than widely envisaged.",
-        "Calafiori’s early strike in Cardiff provided the perfect tonic for Arsenal to continue the party atmosphere that electrified their Premier League title parade across north London at the end of May. The importance of this victory will be debated but by winning this competition, back at the Principality Stadium for the first time since 2006 owing to The Weeknd’s gig at Wembley, they have put down an impressive marker as they look to build on last season’s success. City, without Rodri amid doubts over his future, lacked any semblance of control. The England midfielder Elliot Anderson struggled on his competitive debut after his £116m move from Nottingham Forest.",
+        "For Enzo Maresca, a miserable first meaningful game in charge of Manchester City that began with Arsenal seizing the lead after 24.5 seconds ended with Mikel Arteta’s side lifting the Community Shield. Arsenal eviscerated City, Riccardo Calafiori’s smart opener after Myles Lewis-Skelly’s brilliant pass seemingly leaving their opponents with irrecoverable damage. Kai Havertz doubled Arsenal’s lead on 28 minutes and Martin Ødegaard in effect sealed the win three minutes into the second half, fooling Gianluigi Donnarumma in the City goal before finishing. On this evidence, the post-Pep era could be trickier than widely envisaged.",
+        "Calafiori’s early strike in Cardiff provided the perfect tonic for Arsenal to continue the party atmosphere that electrified their Premier League title parade across north London at the end of May. The importance of this victory will be debated but by winning this competition, back at the Principality Stadium for the first time since 2006 owing to The Weeknd’s gig at Wembley, they have put down an impressive marker as they look to build on last season’s success. City, without Rodri amid doubts over his future, lacked any semblance of control. The England midfielder Elliot Anderson struggled on debut following his £116m move from Nottingham Forest.",
         "City had been lightly raced in comparison to their opponents – City played the first of their three pre-season matches this month in Hong Kong, while this represented Arsenal’s sixth outing since the World Cup – and how it showed. Arsenal were crisp in possession, clever in the way they pulled an ominously open City apart. City were exposed across the pitch but Donnarumma was particularly unconvincing in goal, at fault for Arsenal’s second, making a hash of his attempt to keep out Havertz’s header, and embarrassed for the third. Ødegaard delighted in feinting to shoot, sending Donnarumma seesawing to his left, and then promptly firing in a simple finish to the goalkeeper’s right. “Can we play you every week?” came the chant from the Arsenal support.",
-        "For Arsenal, who begin their Premier League title defence at home to Coventry in Friday’s curtain-raiser, this impressive display will only heighten hopes of another blockbuster season. Arsenal look well-equipped to fight on several fronts, though remain in the market for a centre-back. Bruno Guimarães was busy in his first competitive outing and Christos Tzolis, their other debutant, shone on the left flank, involved in almost all of Arsenal’s good work.",
+        "For Arsenal, who begin their Premier League title defence at home to Coventry in Friday’s curtain-raiser, this impressive display will only heighten hopes of another blockbuster season. Arsenal look well-equipped to fight on several fronts, though remain in the market for a centre-back. Bruno Guimarães was busy in midfield and Christos Tzolis shone on the left flank, involved in almost all of Arsenal’s good work.",
         "It was Tzolis’s fine header from Ødegaard’s cross that allowed Havertz to double Arsenal’s lead. For City, who host Bournemouth next Sunday, there was little to whet the appetite. Erling Haaland’s only real chance, towards the end of the first half, ended with the striker sending a wayward shot wide of David Raya’s goal after the ball bobbled.",
         "Sign up to Football Daily",
         "Kick off your evenings with the Guardian's take on the world of football",
@@ -180,22 +211,22 @@
       "publishedAt": "2026-08-16T16:06:30.000Z",
       "url": "https://www.theguardian.com/football/2026/aug/16/arsenal-manchester-city-community-shield-match-report",
       "source": "The Guardian",
-      "titleZh": "卡拉菲奥里闪电开局助阿森纳社区盾大胜曼城",
-      "summaryZh": "阿森纳3-0大胜曼城，卡拉菲奥里快攻破门，哈弗茨厄德高建功，阿尔特塔球队捧起社区盾。",
+      "titleZh": "卡拉菲奥里快速开局助阿森纳社区盾杯大胜曼城",
+      "summaryZh": "阿森纳社区盾杯3-0大胜曼城，卡拉菲奥里、哈弗茨和厄德高进球，阿尔特塔率队捧杯。",
       "bodyZh": [
-        "对于恩佐·马雷斯卡来说，执教曼城的第一场正式比赛堪称灾难，阿森纳在24.5秒后就取得领先，最终米克尔·阿尔特塔的球队捧起社区盾。阿森纳彻底击溃了曼城，里卡尔多·卡拉菲奥里在迈尔斯·刘易斯-斯凯利的精妙传球后打入聪明的首球，似乎让对手遭受了无法弥补的打击。第28分钟，凯·哈弗茨将阿森纳的领先优势扩大一倍；下半场开始三分钟，马丁·厄德高骗过曼城门将詹路易吉·多纳鲁马后完成射门，实际上锁定了胜局。以此来看，后瓜迪奥拉时代可能比人们普遍预期的更加棘手。",
-        "卡拉菲奥里在卡迪夫的闪电进球为阿森纳提供了完美的兴奋剂，延续了五月底他们在北伦敦英超夺冠游行时如火如荼的派对气氛。这场胜利的重要性或许会引发讨论，但通过赢得这项赛事——由于威肯在温布利举办演唱会，社区盾自2006年以来首次回到公国球场——阿森纳在寻求在上赛季成功基础上更进一步时，立下了一个令人印象深刻的里程碑。缺少罗德里（其未来存疑）的曼城，完全失去了控制力。英格兰中场埃利奥特·安德森在以1.16亿英镑从诺丁汉森林转会后，在正式首秀中表现挣扎。",
-        "与对手相比，曼城的比赛量相对较少——曼城本月三场季前赛的首场是在香港进行的，而这场社区盾则是阿森纳自世界杯以来的第六场比赛——而这一点在场上显露无遗。阿森纳控球干净利落，拉扯着明显空当大开的曼城，战术聪明。曼城在场上处处暴露，但多纳鲁马在门前的表现尤其令人难以信服：他对阿森纳的第二粒丢球负有责任，扑救哈弗茨的头球时出现脱手失误，第三粒丢球也让他难堪。厄德高乐于做出射门假动作，骗得多纳鲁马向左移动，然后迅速将球打进守门员的右侧。“我们能每周都踢你们吗？”阿森纳球迷高唱道。",
-        "对于阿森纳来说，他们将在周五的英超揭幕战中主场迎战考文垂，开启卫冕之旅，这场令人印象深刻的表现只会进一步提升他们对又一个火爆赛季的期望。阿森纳看起来已经做好多线作战的准备，不过仍在寻找一名中后卫。布鲁诺·吉马良斯在首次正式出场中表现活跃，另一位新援克里斯托斯·佐利斯在左路大放异彩，几乎参与了阿森纳所有出色的进攻。",
-        "正是佐利斯接厄德高传中后的精彩头球摆渡，让哈弗茨得以将阿森纳的领先优势扩大为两球。对于下周日主场迎战伯恩茅斯的曼城来说，几乎没有让人眼前一亮的东西。埃尔林·哈兰德上半场临近结束时唯一一次真正的机会，最终以皮球弹跳后前锋漫无目的的射门偏出戴维·拉亚把守的球门而告终。",
+        "对于恩佐·马雷斯卡来说，执教曼城的第一场重要比赛是痛苦的，开场仅24.5秒阿森纳便取得领先，最终以米克尔·阿尔特塔的球队捧起社区盾杯告终。阿森纳彻底击溃了曼城，里卡多·卡拉菲奥里接迈尔斯·刘易斯-斯凯利的精妙传球后审慎地首开纪录，似乎给对手留下不可弥补的打击。第28分钟，凯·哈弗茨将阿森纳的领先优势扩大一倍；下半场开始3分钟，马丁·厄德高实际上锁定了胜局，他骗过曼城门将詹路易吉·多纳鲁马后完成破门。从这场表现来看，后瓜迪奥拉时代可能比广泛预想的更加棘手。",
+        "卡拉菲奥里在卡迪夫的早早进球为阿森纳提供了完美的强心剂，让他们得以延续五月底在北伦敦英超夺冠游行中点燃的派对氛围。这场胜利的重要性有待讨论，但通过赢得这项赛事——由于威肯在温布利开演唱会，比赛自2006年以来首次回到公国球场——他们为在去年成功基础上再接再厉树立了一个令人印象深刻的标志。曼城在罗德里因未来存疑缺阵的情况下，全场缺乏任何控制力。英格兰中场埃利奥特·安德森在以1.16亿英镑从诺丁汉森林转会之后的首秀中表现挣扎。",
+        "与对手相比，曼城的季前赛任务较轻——曼城本月在香港打了三场季前赛中的第一场，而这是阿森纳自世界杯以来的第六场——并且这种差距在比赛中显现出来。阿森纳控球干脆利落，巧妙地将防守门户大开的曼城撕开。曼城在球场上处处暴露，但多纳鲁马在门前的表现尤其难以令人信服，他对阿森纳的第二球负有责任，扑救哈弗茨的头球时出了差错，又在第三球中陷入尴尬。厄德高乐于佯装射门，让多纳鲁马扑向左侧，然后立刻轻松将球打向守门员的右侧。阿森纳球迷唱道：‘我们能每周都踢你们吗？’",
+        "对于阿森纳来说，他们将在周五的揭幕战中主场对阵考文垂，开始英超卫冕之旅，这场令人印象深刻的表现只会让他们对又一个盛大的赛季抱有更高的期望。阿森纳看起来已经具备多条战线作战的能力，不过他们仍在寻找一名中后卫。布鲁诺·吉马良斯在中场忙碌，克里斯托斯·佐利斯在左路闪耀，阿森纳几乎每次有威胁的进攻都有他的参与。",
+        "正是佐利斯接厄德高传中后的精彩头球，让哈弗茨得以将阿森纳的领先优势扩大一倍。对于下周日主场迎战伯恩茅斯的曼城来说，几乎没有让人眼前一亮的表现。埃尔林·哈兰德在上半场快结束时唯一的真正机会，因皮球弹跳，最终他的射门偏出了戴维·拉亚把守的球门。",
         "订阅《每日足球》",
-        "用《卫报》对足球世界的见解开启你的夜晚。",
-        "在新闻简报推广之后",
-        "阿森纳本不该赢得如此轻松。此前三场社区盾比赛都打满全场，最终通过点球决出胜负。而这一次，点球大战从未出现在议程中。相反，阿森纳以3-0轻松获胜，这是自2014年他们击败曼城以来的最大比分胜利，当时阿尔特塔作为队长坐镇中场。阿尔特塔在赛前表示：“我们希望在已取得的成就基础上继续前进，并继续怀有赢得重要奖杯的雄心。这一切从今天开始。”"
+        "用《卫报》的足球评论开启你的夜晚",
+        "简报推广之后",
+        "阿森纳本不该赢得如此轻松。此前三场社区盾杯比赛都打满全场，并经点球决出胜负。而这一次，这从未提上议程。相反，阿森纳轻松取得3-0的胜利，这是自2014年他们击败曼城以来本项赛事中最大分差的胜利，当时阿尔特塔作为中场球员担任队长。“我们希望在已取得的成就基础上再接再厉，并继续怀有赢得重要奖杯的雄心，”阿尔特塔赛前说道。“那从今天开始。”"
       ],
-      "translationSourceHash": "c11286fa7c77c69ca529431aa3a104f703cf20701922be9d2d40927a4adab13c",
+      "translationSourceHash": "8d0ce1a9b45abf2f4cc4f6c3232b2d9d05688b2e4b955f8108afa3d55b2a5680",
       "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-16T16:40:20.546Z"
+      "translatedAt": "2026-08-16T17:32:46.569Z"
     },
     {
       "id": "d50ff45f01b452ade34b4d50d56303e55e73b1955dabc8d8c70894641b27d8d5",
@@ -1069,47 +1100,6 @@
       "translationSourceHash": "1ea6922f3a90acb9bece72849e55279751e19d9ba55c6421fe43e9280a3f22e1",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-14T21:37:52.271Z"
-    },
-    {
-      "id": "6be78c3a7f6215bd9bcaa0652e190600f4462a33d37ca4dd0fa0a144dda4b4cf",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Arteta: Players hungry for Community Shield success",
-      "summaryEn": "Mikel Arteta has spoken about the hunger in the camp to try and win the Community Shield",
-      "bodyEn": [
-        "Mikel Arteta has seen the hunger within his team as we go all out to win the Community Shield against Manchester City.",
-        "We head to the Principality Stadium for the first trophy of the season, going up against the FA Cup winners.",
-        "Speaking at his pre-match press conference, Mikel is delighted with the way his players have returned to training and is confident the energy is high in the camp.",
-        "\"We are really excited to start the season,\" Mikel said. \"To start with the first trophy as well, I sense a really good energy around the place. All the internationals are back, and we can’t wait to start competing.",
-        "\"It’s a trophy that we can have because we managed last year to win the Premier League, and you can tell how hungry the players are, which is a good sign.",
-        "\"I said it the other day, I love the way the players have come back, most of them earlier than expected, really fit with all the testing and they all seem in great condition. The moment they start to look at each other and look at the squad that we have and what we are building, there is a lot of excitement around it.\"",
-        "It's the first time we'll go up against Manchester City without Pep Guardiola in charge since 2016.",
-        "Enzo Maresca will take charge of his first competitive match in Cardiff, and Mikel gave his thoughts on facing a new-look City.",
-        "\"I know Enzo has the character and especially the knowledge to do an unbelievable job there,\" he said.",
-        "\"That’s why he has been selected, because they can probably pick anybody, and they’ve gone for Enzo for the right reasons. He has demonstrated at every level, when he’s gone to the Champions League, what he’s done at Chelsea and now at City. I’m sure he’ll do a great job.\""
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/cc3301c44a0c-london-colney-england-arsenal-manager-mikel-arteta-during-a-training-session-at.webp",
-      "author": "Charlie Peat",
-      "publishedAt": "2026-08-14T14:34:57.891Z",
-      "url": "https://www.arsenal.com/news/arteta-players-hungry-for-community-shield-success-aubtr7D9qn67",
-      "source": "Arsenal.com",
-      "titleZh": "阿尔特塔：球员们渴望社区盾胜利",
-      "summaryZh": "阿尔特塔谈球队渴望社区盾夺冠。",
-      "bodyZh": [
-        "米克尔·阿尔特塔看到了球队内部的渴望，我们将全力以赴对阵曼城赢得社区盾。",
-        "我们将前往公国体育场争夺本赛季首个奖杯，对手是足总杯冠军。",
-        "在赛前新闻发布会上，米克尔对球员们回归训练的方式感到满意，并相信球队士气高涨。",
-        "“我们真的很期待开始新赛季，”米克尔说。“以第一个奖杯开始，我感受到周围有很好的能量。所有国际球员都回来了，我们迫不及待地想开始竞争。”",
-        "“这是一个我们可以获得的奖杯，因为我们上赛季赢得了英超冠军，你可以看出球员们有多渴望，这是一个好兆头。”",
-        "“我前几天说过，我喜欢球员们回归的方式，大多数人比预期更早，在各项测试中都非常健康，看起来状态很好。当他们开始互相审视、看待我们拥有的阵容以及正在建设的东西时，会有很多兴奋。”",
-        "这是自2016年以来，我们首次对阵没有佩普·瓜迪奥拉执教的曼城。",
-        "恩佐·马雷斯卡将在卡迪夫迎来他的首场正式比赛，米克尔谈到了对阵新面貌的曼城的看法。",
-        "“我知道恩佐有性格，尤其是有知识去那里做出不可思议的工作，”他说。",
-        "“这就是他被选中的原因，因为他们可能会挑选任何人，而他们选择恩佐是出于正确的理由。他在各个层面都展示了，当他进入欧冠时，他在切尔西所做的，现在在曼城。我相信他会做得很好。”"
-      ],
-      "translationSourceHash": "6cffa5bad3ea7e8e15821a686271ffa345f7955863c2be9cf9dce8b51828e445",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-14T15:05:36.390Z"
     },
     {
       "id": "93c92ae226688a99d1d0f5a43a3bba1cf54de60b76e9293c8393feab84664821",
