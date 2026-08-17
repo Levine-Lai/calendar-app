@@ -1,7 +1,7 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-17T11:02:10.378Z",
+  "updatedAt": "2026-08-17T11:37:24.735Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
@@ -128,11 +128,11 @@
       "translatedAt": "2026-08-17T09:22:51.094Z"
     },
     {
-      "id": "1df6febc5e910df36f8fdcde3e5e9f92091bf92b41a2b2143d880ed00a2cd0c2",
+      "id": "fa0b65e38fa92cecd274565c3820e5a74a517502b0a63fa92619d18202f462da",
       "teamId": "arsenal",
       "teamName": "阿森纳",
-      "titleEn": "Every minute of our emphatic Community Shield win",
-      "summaryEn": "A full match replay as we beat Manchester City in Cardiff",
+      "titleEn": "Watch our emphatic Community Shield win in full",
+      "summaryEn": "Enjoy all 90 minutes as we beat Manchester City in Cardiff to lift our 18th Community Shield",
       "bodyEn": [
         "The 2026/27 campaign is off to a flying start after we swept aside Manchester City to lift the Community Shield in Cardiff.",
         "It took just 24 seconds for Riccardo Calafiori to open the scoring, calmly slotting beyond Gianluigi Donnarumma to give us an early advantage. Kai Havertz headed home before the half-hour mark, giving us a commanding lead to take into the interval.",
@@ -143,20 +143,20 @@
       "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/abe2b6d58b68-gettyimages-2290728333.webp",
       "author": "Tom Keens",
       "publishedAt": "2026-08-16T22:30:00.000Z",
-      "url": "https://www.arsenal.com/news/every-minute-of-our-emphatic-community-shield-win-aTwbU9C0ydG5",
+      "url": "https://www.arsenal.com/news/watch-our-emphatic-community-shield-win-in-full-aTwbU9C0ydG5",
       "source": "Arsenal.com",
-      "titleZh": "我们大胜社区盾的每一个瞬间",
-      "summaryZh": "我们在加的夫击败曼城的全场比赛回放。",
+      "titleZh": "观看我们完胜社区盾的全程",
+      "summaryZh": "我们在加的夫击败曼城，捧起第18座社区盾。",
       "bodyZh": [
-        "2026/27赛季开局顺利，我们在加的夫横扫曼城，捧起社区盾。",
-        "里卡多·卡拉菲奥里仅用24秒便破门得分，冷静地越过吉安路易吉·多纳鲁马，为我们取得领先。凯·哈弗茨在第半小时前头球破门，让我们带着领先优势进入中场休息。",
-        "下半场我们迅速出击，马丁·厄德高展现神奇时刻，骗过曼城门将提前扑向一侧，却将球射向另一边。",
-        "球员们的出色表现让我们捧起本赛季首座奖杯，并在英超卫冕之战前表明了决心。",
-        "你可以在上方视频观看我们在千禧球场夺冠的每一刻，下方还有我们的精简版集锦。"
+        "我们横扫曼城，在加的夫捧起社区盾，2026/27赛季迎来开门红。",
+        "比赛仅24秒，里卡尔多·卡拉菲奥里便冷静推射越过詹路易吉·多纳鲁马，为我们取得领先。凯·哈弗茨在半场前头球破门，让我们带着优势进入中场休息。",
+        "下半场我们迅速出击，马丁·厄德高施展魔法，骗过曼城门将提前倒地，然后将球推向另一侧。",
+        "球员们的宣言级表现让我们举起赛季首座奖杯，也为英超卫冕之路表明了决心。",
+        "你可以在上方视频中观看我们在亲王球场的每一个精彩瞬间，下方还有精简版集锦。"
       ],
-      "translationSourceHash": "389bb5f570b039daa79b052405779ac72fafac4da371451948618f4f3b99f914",
+      "translationSourceHash": "cb9922b5544e1b0175fff0c78d4af74b35c6004adecda4d39ea52e364a00764b",
       "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-16T22:56:09.229Z"
+      "translatedAt": "2026-08-17T11:37:24.735Z"
     },
     {
       "id": "935eb9fcba0941604f64a554df43fa32a7e95b51465142d47b151dad2b312f19",
