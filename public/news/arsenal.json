@@ -1,12 +1,41 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-17T17:42:13.726Z",
+  "updatedAt": "2026-08-17T18:56:01.260Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "faddf29a81e61ef5f29d0ab1b90cc36b6c4b2945fe8e01241191f5d1af334325",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Bench Cam: Arteta's view of our emphatic victory",
+      "summaryEn": "Watch the best reactions from Mikel Arteta and his coaching staff as we thrashed Manchester City",
+      "bodyEn": [
+        "We kicked the new season off in style with a 3-0 win over Manchester City at the Principality Stadium, and you can see Mikel and his staff's best reactions from our Community Shield success with Bench Cam.",
+        "The boss had barely had time to get his bearings before he found himself celebrating the first goal of the game, with Riccardo Calafiori netting the opening goal after just 23 seconds.",
+        "We kicked on from there and secured the win with further goals from Kai Havertz and Martin Odegaard, ensuring we started the season with silverware.",
+        "Press play on the video at the top of the article to see the boss' best moments from Sunday's game."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/739b901b599e-cardiff-wales-mikel-arteta-manager-of-arsenal-poses-for-a-photo-with-the-fa-comm.webp",
+      "author": "Connor Booth",
+      "publishedAt": "2026-08-17T17:58:00.000Z",
+      "url": "https://www.arsenal.com/news/bench-cam-artetas-view-of-our-emphatic-victory-aMkdZ3y1iAVr",
+      "source": "Arsenal.com",
+      "titleZh": "替补席镜头：阿尔特塔眼中的酣畅大胜",
+      "summaryZh": "看看阿尔特塔和教练组在球队大胜曼城时的最佳反应！",
+      "bodyZh": [
+        "我们以3-0战胜曼城，在公国球场为新赛季开了个好头，您可以通过替补席镜头看到米克尔和他的教练组在社区盾杯夺冠中的最佳反应。",
+        "主帅刚站稳脚跟，就发现自己已在庆祝比赛首球，里卡多·卡拉菲奥里仅用23秒便攻入开局进球。",
+        "我们从这里继续前进，凯·哈弗茨和马丁·厄德高的进球锁定胜局，确保我们以冠军奖杯开启新赛季。",
+        "点击文章顶部的视频播放按钮，观看主帅在周日比赛中的最佳时刻。"
+      ],
+      "translationSourceHash": "09934ca36f7a0cbc1305ca796bfa73285e4aa54d48c00e6b28093a7268e1e21f",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-17T18:56:01.259Z"
+    },
     {
       "id": "a442cc4ac612e66200a8fcdd3d880fa5472e1460e7b670e4c6f0c6b2232a1df0",
       "teamId": "arsenal",
@@ -369,35 +398,6 @@
       "translationSourceHash": "9cdc3fbeeab0535aa9134263c5bae8cf3b7dac7022c83c0644be6faeaea8386c",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-17T09:22:49.879Z"
-    },
-    {
-      "id": "d9dd527a163d46577106e66e613f48c1faee69bd41d7c90f74724d83bbf47dca",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "U18s highlights: West Brom 0-0 Arsenal",
-      "summaryEn": "Our young Gunners started the U18s Premier League season with a goalless draw",
-      "bodyEn": [
-        "Our under-18s started the 2026/27 season with a goalless draw in the West Midlands against West Bromwich Albion.",
-        "Jack Talbot starred with a series of brilliant saves, including a brilliant point-blank reaction stop late in the second half.",
-        "We had our fair share of chances in the final 15 minutes, with Emerson Nwaneri and Maalik Hashi coming close to netting a late winner, but the Baggies held out to secure a point on the opening day.",
-        "Press play on the video at the top of the article to watch the best of the action from the WBA Training Ground."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/887f4c04bd1b-london-colney-england-theo-odaji-ukueku-of-arsenal-during-the-pre-season-friendl.webp",
-      "author": "Connor Booth",
-      "publishedAt": "2026-08-17T09:08:18.102Z",
-      "url": "https://www.arsenal.com/news/u18s-highlights-west-brom-0-0-arsenal-ajYrz2R0gpYz",
-      "source": "Arsenal.com",
-      "titleZh": "U18集锦：西布朗0-0阿森纳",
-      "summaryZh": "我们的年轻枪手在U18英超首轮互交白卷。",
-      "bodyZh": [
-        "我们的U18青年队在2026/27赛季首战中客场0-0战平西布朗，比赛在西米德兰兹进行。",
-        "杰克·塔尔博特表现神勇，多次做出精彩扑救，包括下半场末段一次近距离反应神扑。",
-        "最后15分钟我们创造了不少机会，埃默森·恩瓦内里和马利克·哈西险些攻入绝杀，但灯笼裤顽强防守，最终在揭幕战拿到一分。",
-        "点击文章顶部的视频播放键，观看西布朗训练基地的绝佳集锦。"
-      ],
-      "translationSourceHash": "afac4d22f594b71a4014c7519f7d6659944796cac6ecd767e683c552f6b19a3b",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-17T09:22:51.094Z"
     },
     {
       "id": "fa0b65e38fa92cecd274565c3820e5a74a517502b0a63fa92619d18202f462da",
