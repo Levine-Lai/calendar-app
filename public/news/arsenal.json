@@ -1,7 +1,7 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-17T15:03:08.649Z",
+  "updatedAt": "2026-08-17T15:58:09.526Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
@@ -90,11 +90,11 @@
       "translatedAt": "2026-08-17T13:51:52.870Z"
     },
     {
-      "id": "2a3d4269c84a21f6708d364f68beec26da6357c37c10fd6bd991bf2e4ccda2cf",
+      "id": "14cfea19939768c5748254df43135b1d531e6ef3a09052ac31bcb741bd1d3adf",
       "teamId": "arsenal",
       "teamName": "阿森纳",
-      "titleEn": "Watch our fastest goals in our recent history",
-      "summaryEn": "Riccardo Calafiori's goal against City was one of our earliest in recent years",
+      "titleEn": "Quick on the draw: Fastest goals by our Gunners",
+      "summaryEn": "Riccardo Calafiori's Community Shield strike is just one of many swift strikes we've netted - enjoy some of the fastest",
       "bodyEn": [
         "Riccardo Calafiori found the net after just 23 seconds in Sunday's Community Shield win over Manchester City, and now you can watch our best early goals from recent years.",
         "We went on to win the fixture 3-0, with Kai Havertz and Martin Odegaard adding to our early strike at the Principality Stadium.",
@@ -104,19 +104,19 @@
       "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/0012bc8ef299-arsenals-italian-defender-riccardo-calafiori-shoots-to-score-the-opening-goal-of.webp",
       "author": "Connor Booth",
       "publishedAt": "2026-08-17T12:58:57.383Z",
-      "url": "https://www.arsenal.com/news/watch-our-fastest-goals-in-our-recent-history-aCiir2a3HEIN",
+      "url": "https://www.arsenal.com/news/quick-on-the-draw-fastest-goals-by-our-gunners-aCiir2a3HEIN",
       "source": "Arsenal.com",
-      "titleZh": "观看我们近年历史上最快的进球",
-      "summaryZh": "卡拉菲奥里对曼城的进球是近年来最早的进球之一。",
+      "titleZh": "快速拔枪：枪手最快进球",
+      "summaryZh": "卡拉菲奥里社区盾闪电进球只是众多快速进球之一，一起欣赏。",
       "bodyZh": [
-        "里卡多·卡拉菲奥里在周日战胜曼城的社区盾杯中仅用23秒便取得进球，现在你可以观看我们近年来最佳的早期进球。",
-        "我们最终以3-0赢下比赛，凯·哈弗茨和马丁·厄德高在公国球场先后建功，扩大了领先优势。",
-        "我们似乎已经养成了在对阵主要对手时早早破门的习惯，包括托马斯·罗西基在白鹿巷对阵热刺时第2分钟打入的经典制胜球，以及西奥·沃尔科特在战胜曼联的比赛中早早得分。",
-        "点击文章顶部的视频播放按钮，观看我们近年来一些最佳的早期进球。"
+        "里卡多·卡拉菲奥里在周日战胜曼城的社区盾比赛中仅用23秒便破门得分，现在你可以观看我们近年来最精彩的早期进球。",
+        "我们最终以3-0获胜，凯·哈弗茨和马丁·厄德高在公国体育场为我们的早期进球锦上添花。",
+        "我们似乎已经形成了一种习惯，在对阵主要对手时早早进球：托马斯·罗西基在对阵托特纳姆热刺的白鹿巷球场第二分钟打进一粒标志性的制胜球，西奥·沃尔科特也在对阵曼联的比赛中早早破门。",
+        "播放文章顶部的视频，观看我们近年来最精彩的早期进球。"
       ],
-      "translationSourceHash": "6b8ee2fdee10eefb090774f07a68ce7fd6fd983ced5ee1e719ea9276e14f97ae",
+      "translationSourceHash": "0f8017a96c539c7075e9918fc63ebf7c6f1ac6ed82c9b605175ad5ae0dd2911a",
       "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-17T13:52:03.907Z"
+      "translatedAt": "2026-08-17T15:58:09.525Z"
     },
     {
       "id": "55b9c41965ef3be83cb05eb7c0527e58741b87b8def2f86546c75b043519fbf3",
