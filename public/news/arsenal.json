@@ -1,12 +1,41 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-18T21:00:35.706Z",
+  "updatedAt": "2026-08-18T23:34:04.031Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "e1216317d6797091d9dbe35fc9fb7189067b39933892f4d68bd18b1219a3c67a",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "U21s highlights: Barnet 5-1 Arsenal",
+      "summaryEn": "Watch the best of the action from our EFL Trophy tie at The Hive",
+      "bodyEn": [
+        "Our under-21s were beaten 5-1 by Barnet in the opening game of their EFL Trophy campaign.",
+        "In what was our first game of the 2026/27 season, the League Two sides started quickly and led 2-0 after 15 minutes.",
+        "We struck back through an own goal from Tom Knowles, but the Barnet winger then netted a hat-trick to secure a resounding victory for the home side.",
+        "Press play on the video at the top of the article to watch the key moments from the clash at The Hive."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/d78b1ad976ca-barnet-england-andre-harriman-annous-of-arsenal-is-challenged-by-aaron-liwala-of.webp",
+      "author": "Connor Booth",
+      "publishedAt": "2026-08-18T23:01:16.404Z",
+      "url": "https://www.arsenal.com/news/u21s-highlights-barnet-5-1-arsenal-aERvI2f7ABXA",
+      "source": "Arsenal.com",
+      "titleZh": "U21集锦：巴尼特5-1阿森纳",
+      "summaryZh": "观看我们在蜂巢球场的英锦赛最佳时刻。",
+      "bodyZh": [
+        "我们的U21队在英锦赛首战中以1-5负于巴尼特。",
+        "这是我们2026/27赛季的首场比赛，英乙球队开局迅速，15分钟后便以2-0领先。",
+        "我们通过汤姆·诺尔斯的乌龙球扳回一城，但巴尼特边锋随后上演帽子戏法，为主队锁定一场大胜。",
+        "点击文章顶部的视频播放键，观看这场在蜂巢球场进行的比赛关键瞬间。"
+      ],
+      "translationSourceHash": "6c95b46d2219d8dfbba33a0e2594ef0dcff713304019a5161bee3d62d923f52e",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-18T23:34:04.031Z"
+    },
     {
       "id": "201b091a4f74f97d6f0b2adcbccf4cb4f2548d41c461d0ee2c1dec095f165e52",
       "teamId": "arsenal",
@@ -412,41 +441,6 @@
       "translationSourceHash": "a0304d70936f6e225083d457aefe3bf74a337602dc183ade7401c9ffcca69ebe",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-18T05:43:45.634Z"
-    },
-    {
-      "id": "89bbbc1519c036edc99d95f07b49fe342068f80f172420703a97886f1c73557d",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "How does the EFL Trophy work?",
-      "summaryEn": "Our under-21s first competitive game of the season comes against Barnet in the EFL Trophy",
-      "bodyEn": [
-        "Our under-21s will be competing in the EFL Trophy once again in the 2026/27 season, starting with our first competitive game of the season against Barnet on Tuesday, August 18.",
-        "The competition features the 48 sides from League One and League Two, as well as the under-21s sides of 16 Premier League clubs.",
-        "Each of the 16 groups features three EFL sides and one Premier League academy sides; as well as Barnet, we'll face Leyton Orient and AFC Wimbledon in this season's group stage.",
-        "As a Premier League academy side, all three of our group fixtures are played away from home. After travelling to The Hive next week, we'll be at the BetWright Stadium to face Leyton Orient on September 15 before facing Wimbledon at the Cherry Red Records Stadium on October 27.",
-        "If there is a winner after each 90-minute group match, the usual three points for a win and none for a loss apply. If a game finishes level, the sides are awarded a point each before contesting a penalty shoot-out for a bonus second point.",
-        "At the end of the group stages, the top two sides in each group progress to the round of 32, with group winners seeded and playing at home against runners-up in the first knockout round.",
-        "From this point, the competition is a straight knockout, with regionalised draws splitting the north and south sections right up to the semi-finals. As ever, the final will take place at Wembley Stadium, with this year's edition set for Sunday, April 11."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/680c90ffeebf-exeter-england-harrison-dudziak-celebrates-scoring-arsenals-2nd-goal-with-marcel.webp",
-      "author": "Connor Booth",
-      "publishedAt": "2026-08-18T04:55:00.000Z",
-      "url": "https://www.arsenal.com/news/how-does-the-efl-trophy-work-a1W4c8O2TvY2",
-      "source": "Arsenal.com",
-      "titleZh": "EFL Trophy 赛事规则详解",
-      "summaryZh": "阿森纳U21首场正式比赛将对阵巴尼特。",
-      "bodyZh": [
-        "我们的U21青年队将在2026/27赛季再次参加EFL Trophy，首场正式比赛将于8月18日星期二对阵巴尼特。",
-        "该赛事共有48支来自英甲和英乙的球队，以及16支英超俱乐部的U21青年队参加。",
-        "16个小组每组由三支EFL球队和一支英超青训队组成；除了巴尼特，我们本赛季小组赛还将面对莱顿东方和AFC温布尔登。",
-        "作为英超青训队，我们的三场小组赛均为客场作战。在前往蜜蜂球场之后，我们将于9月15日在贝特莱特球场对阵莱顿东方，10月27日则在樱桃红唱片球场对阵温布尔登。",
-        "每场90分钟的小组赛如果分出胜负，则胜者获三分，负者不得分。如果比赛战平，双方各得一分，然后通过点球大战争夺额外的一个奖励积分。",
-        "小组赛结束后，每个小组的前两名晋级32强，小组第一作为种子队将在首轮淘汰赛主场对阵第二名。",
-        "从那时起，赛事将进行直接淘汰赛，按南北分区抽签，直至半决赛。一如既往，决赛将在温布利球场举行，今年的决赛定于4月11日星期日进行。"
-      ],
-      "translationSourceHash": "b87c561515d5e7a429d94b572df82b540d91404eae9f869df15ac25634c10d59",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-18T05:43:17.393Z"
     },
     {
       "id": "fc0c0c37ebf3522e875183a0ae3307082e908b470fca32e3983bbbaae980685e",
