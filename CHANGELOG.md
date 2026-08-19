@@ -4,13 +4,13 @@
 
 ## 当前版本状态
 
-- 本机最新已生成 APK：`2.3.2 / versionCode 44`
-- 当前源码版本：`2.3.3 / versionCode 45`（源码完成，未打包）
-- APK 文件：`releases/sports-calendar-2.3.2-debug.apk`
+- 本机最新已生成 APK：`2.3.3 / versionCode 45`
+- 当前源码版本：`2.3.3 / versionCode 45`
+- APK 文件：`releases/sports-calendar-2.3.3-debug.apk`
 - GitHub Release：`https://github.com/Levine-Lai/calendar-app/releases/tag/v2.3.2`
 - App 内检查更新清单指向 `2.3.2` 的 GitHub Release 页面，兼容旧版本手机浏览器打开方式。
 
-## 2.3.3（源码完成，未打包）
+## 2.3.3（已生成 APK，未发布 GitHub）
 
 - App 内“打开下载页”会先解析系统默认浏览器的应用包名，再把 GitHub Release HTTPS 地址明确交给该浏览器打开，避免被 App 内 WebView、GitHub 客户端或安装器接管；没有设置默认浏览器时仍回退到系统 HTTPS 选择流程。
 - 加深日历中“今天”整格的粉色背景，并增加深玫红内侧轮廓；今天的日期数字框改为更深的玫红底色与白字，使当前日期在有比赛和无比赛时都更容易识别。
@@ -18,6 +18,7 @@
 - ESPN 赛事 ID 发生调整或旧赛程缺少 ID 时，组件会按客队与主队的完整名称兜底匹配当天赛事；Web 向原生同步时也会保留赛事自身的 `sport` 和 `espnLeague` 字段，避免旧数据失去实时比分数据源。
 - 组件默认日期迁移提升到第 3 版：新组件继续默认北京时间今日，仍停在旧版默认“明日”的现有组件会一次性迁移回今日，其他手动选择日期保持不变。
 - `public/version.json` 继续发布 `2.3.2 / versionCode 44`，不会让已安装版本检测到尚未生成的 2.3.3 安装包。
+- 已使用历史固定证书生成 `releases/sports-calendar-2.3.3-debug.apk`：`8,098,851` 字节，SHA-256 `9EF0170CC514D69030AF61BF5095EA143F6CFC3DB1BFB60796A9B62ABECD18AA`；包名、`versionCode 45`、`versionName 2.3.3`、APK Signature Scheme v2 和历史证书指纹均已验证。本轮未上传 GitHub，远程更新清单仍为 2.3.2。
 
 ## 2.3.2（已发布）
 

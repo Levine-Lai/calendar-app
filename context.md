@@ -2473,3 +2473,10 @@
 - 日期兼容：默认偏移保持 0；迁移版本从 2 提升到 3，缺少选择或保存值仍为旧默认 1 的组件迁回今日，其他手动偏移不变。
 - 涉及文件：`MlbTodayWidgetProvider.java`、`WidgetNetworkClient.java`、`WidgetGameStatusTest.java`、`public/app.js`、`scripts/verify-stability.js`。
 - 验证结果：Web 测试 42 项、稳定性检查 37 项通过；Android Java 编译、27 项 JVM 测试和 Lint 全部成功。未生成 APK，需在下次打包安装后用实体 vivo 验证系统后台策略下的点击刷新时延。
+
+### 本机打包批次：2.3.3
+
+- 用户明确要求“打包”，因此使用历史固定 Android keystore 生成 `releases/sports-calendar-2.3.3-debug.apk`，没有执行 GitHub 发布。
+- `aapt` 确认包名 `com.local.sportscalendar`、`versionCode 45`、`versionName 2.3.3`；APK Signature Scheme v2 验证通过，证书 SHA-256 仍为 `7EF83E3EC40B7BF1E9AAF551589EE73C378FC26F29202255F0466BCAB759BED0`，可覆盖历史安装。
+- APK 大小 `8,098,851` 字节，SHA-256 `9EF0170CC514D69030AF61BF5095EA143F6CFC3DB1BFB60796A9B62ABECD18AA`。
+- `public/version.json` 和 GitHub Release 继续发布 2.3.2；手机不会通过“检查更新”发现本机尚未上传的 2.3.3。
