@@ -1,7 +1,7 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-19T17:37:43.268Z",
+  "updatedAt": "2026-08-19T17:57:57.192Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
@@ -138,31 +138,33 @@
       "translatedAt": "2026-08-19T15:45:32.478Z"
     },
     {
-      "id": "8ec2bcf3ac2e4c5aaaf33e21bc5b0fefc221834c02971d3d547bb1c8d78cfafe",
+      "id": "f267b3a2072a07d478df7720670ea7b0c0be485acd1eb5edace910c841a75364",
       "teamId": "arsenal",
       "teamName": "阿森纳",
-      "titleEn": "Players pose for 2026/27 photocall",
-      "summaryEn": "Members of our men’s squad posed for the 2026/27 photocall earlier this week.",
+      "titleEn": "Strike a pose: Our squad's 2026/27 headshots",
+      "summaryEn": "Check out the best pics of our men's team as they prepare for the Premier League kick-off by having new profile pictures taken",
       "bodyEn": [
-        "Members of our men’s squad posed for the 2026/27 photocall earlier this week.",
-        "Sporting our new home and away kits, they got their media shots captured for use throughout the upcoming season.",
-        "Check out the best of them in the gallery below from club photographer Stuart MacFarlane!"
+        "As is tradition in the week leading up to the new season, members of our men’s squad posed for their 2026/27 headshots, and you can see how they fared in our gallery.",
+        "Sporting our new 2026/27 adidas home, away, and third kits (get yours now on Arsenal Direct), they had their media shots taken for use throughout the upcoming season.",
+        "As usual, our long-serving club photographer Stuart MacFarlane did the honours, snapping away to get the best angles of our championship-winning squad.",
+        "See how he fared by flicking through the pictures below:"
       ],
       "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/aa84f19abcd6-gettyimages-2291056832.webp",
       "author": "Stephen Wright",
       "publishedAt": "2026-08-19T15:12:52.320Z",
-      "url": "https://www.arsenal.com/news/players-pose-for-202627-photocall-a0OEO2f7uDmv",
+      "url": "https://www.arsenal.com/news/strike-a-pose-our-squads-202627-headshots-a0OEO2f7uDmv",
       "source": "Arsenal.com",
-      "titleZh": "球员们参加2026/27赛季官方合影",
-      "summaryZh": "男队球员本周早些时候拍摄了新赛季官方合影。",
+      "titleZh": "摆个姿势：球队2026/27赛季头像照",
+      "summaryZh": "看看男队为英超开赛拍摄新头像的最佳照片。",
       "bodyZh": [
-        "男队球员本周早些时候参加了2026/27赛季的官方合影。",
-        "他们身着新款主场和客场球衣，拍摄了用于即将到来的赛季的媒体照片。",
-        "请查看下方俱乐部摄影师斯图尔特·麦克法兰拍摄的最佳照片！"
+        "按照新赛季前一周的传统，我们男队队员们为2026/27赛季头像照摆好姿势，您可以在图集中欣赏他们的表现。",
+        "身着我们全新的2026/27赛季阿迪达斯主场、客场及第三球衣（立即在Arsenal Direct购买），他们拍摄了用于即将到来的赛季的媒体照片。",
+        "与往常一样，我们任职多年的俱乐部摄影师Stuart MacFarlane负责拍摄，为这支冠军球队捕捉最佳角度。",
+        "通过浏览下方照片，看看他的成果吧："
       ],
-      "translationSourceHash": "b2d0a8106b5af64ffc4db1b62a9440548ecb4ec12e7cefaa884cf6a65c184dca",
+      "translationSourceHash": "504dc131ab0ed22a26429172e7e9ff380d6ae85774d35251800db3d4c220d95a",
       "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-19T15:44:27.764Z"
+      "translatedAt": "2026-08-19T17:57:57.192Z"
     },
     {
       "id": "4b39db835c45e451cb6aa45f85b6adf5f03e767b5f56632e3350247319343dfb",
