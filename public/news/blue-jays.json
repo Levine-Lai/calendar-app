@@ -1,37 +1,8 @@
 {
   "teamId": "toronto-blue-jays",
   "teamName": "多伦多蓝鸟",
-  "updatedAt": "2026-08-19T02:45:29.393Z",
+  "updatedAt": "2026-08-19T04:09:35.165Z",
   "items": [
-    {
-      "id": "dcebdfc589112e84b96e891035bdcacc66c9c5a23f8d77a805841a21e2d4ed0f",
-      "teamId": "toronto-blue-jays",
-      "teamName": "多伦多蓝鸟",
-      "titleEn": "With 25th homer, Okamoto breaks Blue Jays' rookie home run record",
-      "summaryEn": "",
-      "bodyEn": [
-        "ST. PETERSBURG -- Kazuma Okamoto owns the Blue Jays’ rookie home run record -- finally.",
-        "The slugging infielder snapped a 16-game homerless streak with a Statcast-projected 442-foot solo shot in the fifth inning of Tuesday’s series opener against the Rays at Tropicana Field. The dinger -- the second-longest of Okamoto’s rookie year -- was Okamoto’s 25th of the season, breaking a tie with Eric Hinske for the franchise record. Hinske was the American League Rookie of the Year in 2002, when he crushed 24 homers.",
-        "Okamoto was the AL Rookie of the Month for June and then went deep in three of his first eight games in July. But he has been slumping since then, with just two homers and a .196/.250/.304 slash line in his previous 30 games leading into Tuesday’s game against the best team in the American League.",
-        "Okamoto’s long drive to left-center was Toronto’s seventh run of the contest. After the Blue Jays put up another run in the fifth, they had scored their most runs since July 8 -- a span of 33 games."
-      ],
-      "titleZh": "冈本第25轰创蓝鸟新秀本垒打纪录",
-      "summaryZh": "冈本第25轰打破蓝鸟新秀本垒打纪录。",
-      "bodyZh": [
-        "圣彼得堡——Kazuma Okamoto终于独享蓝鸟新秀本垒打纪录。",
-        "这位重炮内野手在周二于Tropicana Field对阵光芒的系列赛首战第五局轰出一支Statcast测算为442英尺的阳春炮，终结了连续16场无本垒打的低迷。这支本垒打——冈本新秀赛季第二远的一支——是本赛季第25支，打破了与Eric Hinske并列的队史纪录。Hinske在2002年轰出24支本垒打，荣膺美国联盟年度最佳新秀。",
-        "冈本曾当选6月美联月度最佳新秀，并在7月前8场比赛中3次开轰。但此后他陷入低迷，在周二对阵美联最佳球队之前，此前30场比赛中仅有两支本垒打，打击三围为.196/.250/.304。",
-        "冈本打到左中看台的长打是蓝鸟本场第7分。在第五局再添一分后，蓝鸟单场得分创下自7月8日以来（时隔33场）新高。"
-      ],
-      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/asg9lgfqpldfbto4p0vw",
-      "translationSourceHash": "d21d9e0e21360bc668a3d7030fb6c9878e7cd03978a25e285fbe5a2ebfe4cf74",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-19T01:41:50.355Z",
-      "author": "Brian Murphy",
-      "publishedAt": "2026-08-19T01:41:00.000Z",
-      "url": "https://www.mlb.com/bluejays/news/kazuma-okamoto-all-time-blue-jays-rookie-home-run-leader",
-      "source": "MLB.com"
-    },
     {
       "id": "addf37ea031d9ac0ce67881e72a3f98cd5f49609386e241e063eeb235175136a",
       "teamId": "toronto-blue-jays",
@@ -65,8 +36,37 @@
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-19T02:45:29.392Z",
       "author": "Brian Murphy",
-      "publishedAt": "2026-08-19T01:39:11.000Z",
+      "publishedAt": "2026-08-19T03:45:00.000Z",
       "url": "https://www.mlb.com/bluejays/news/alejandro-kirk-blue-jays-offense-outburst-defeats-rays",
+      "source": "MLB.com"
+    },
+    {
+      "id": "dcebdfc589112e84b96e891035bdcacc66c9c5a23f8d77a805841a21e2d4ed0f",
+      "teamId": "toronto-blue-jays",
+      "teamName": "多伦多蓝鸟",
+      "titleEn": "With 25th homer, Okamoto breaks Blue Jays' rookie home run record",
+      "summaryEn": "",
+      "bodyEn": [
+        "ST. PETERSBURG -- Kazuma Okamoto owns the Blue Jays’ rookie home run record -- finally.",
+        "The slugging infielder snapped a 16-game homerless streak with a Statcast-projected 442-foot solo shot in the fifth inning of Tuesday’s series opener against the Rays at Tropicana Field. The dinger -- the second-longest of Okamoto’s rookie year -- was Okamoto’s 25th of the season, breaking a tie with Eric Hinske for the franchise record. Hinske was the American League Rookie of the Year in 2002, when he crushed 24 homers.",
+        "Okamoto was the AL Rookie of the Month for June and then went deep in three of his first eight games in July. But he has been slumping since then, with just two homers and a .196/.250/.304 slash line in his previous 30 games leading into Tuesday’s game against the best team in the American League.",
+        "Okamoto’s long drive to left-center was Toronto’s seventh run of the contest. After the Blue Jays put up another run in the fifth, they had scored their most runs since July 8 -- a span of 33 games."
+      ],
+      "titleZh": "冈本第25轰创蓝鸟新秀本垒打纪录",
+      "summaryZh": "冈本第25轰打破蓝鸟新秀本垒打纪录。",
+      "bodyZh": [
+        "圣彼得堡——Kazuma Okamoto终于独享蓝鸟新秀本垒打纪录。",
+        "这位重炮内野手在周二于Tropicana Field对阵光芒的系列赛首战第五局轰出一支Statcast测算为442英尺的阳春炮，终结了连续16场无本垒打的低迷。这支本垒打——冈本新秀赛季第二远的一支——是本赛季第25支，打破了与Eric Hinske并列的队史纪录。Hinske在2002年轰出24支本垒打，荣膺美国联盟年度最佳新秀。",
+        "冈本曾当选6月美联月度最佳新秀，并在7月前8场比赛中3次开轰。但此后他陷入低迷，在周二对阵美联最佳球队之前，此前30场比赛中仅有两支本垒打，打击三围为.196/.250/.304。",
+        "冈本打到左中看台的长打是蓝鸟本场第7分。在第五局再添一分后，蓝鸟单场得分创下自7月8日以来（时隔33场）新高。"
+      ],
+      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/asg9lgfqpldfbto4p0vw",
+      "translationSourceHash": "d21d9e0e21360bc668a3d7030fb6c9878e7cd03978a25e285fbe5a2ebfe4cf74",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-19T01:41:50.355Z",
+      "author": "Brian Murphy",
+      "publishedAt": "2026-08-19T03:29:00.000Z",
+      "url": "https://www.mlb.com/bluejays/news/kazuma-okamoto-all-time-blue-jays-rookie-home-run-leader",
       "source": "MLB.com"
     },
     {
