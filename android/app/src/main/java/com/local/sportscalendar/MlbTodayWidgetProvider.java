@@ -17,6 +17,7 @@ import androidx.work.ExistingWorkPolicy;
 import androidx.work.ExistingPeriodicWorkPolicy;
 import androidx.work.NetworkType;
 import androidx.work.OneTimeWorkRequest;
+import androidx.work.OutOfQuotaPolicy;
 import androidx.work.PeriodicWorkRequest;
 import androidx.work.WorkManager;
 
@@ -51,7 +52,7 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
     private static final String PREFS_SELECTED_DAY_OFFSET = "selected_day_offset";
     private static final int DEFAULT_SELECTED_DAY_OFFSET = 0;
     private static final String PREFS_DAY_SELECTION_MIGRATION = "day_selection_migration";
-    private static final int DAY_SELECTION_MIGRATION_TODAY = 2;
+    private static final int DAY_SELECTION_MIGRATION_TODAY = 3;
     private static final String PREFS_LIVE_SNAPSHOT = "live_snapshot_json";
     static final String PREFS_LAST_REFRESH_AT = "last_refresh_at";
     static final String PREFS_LAST_REFRESH_ERROR = "last_refresh_error";
@@ -111,6 +112,7 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
             .build();
         OneTimeWorkRequest request = new OneTimeWorkRequest.Builder(WidgetRefreshWorker.class)
             .setConstraints(constraints)
+            .setExpedited(OutOfQuotaPolicy.RUN_AS_NON_EXPEDITED_WORK_REQUEST)
             .build();
         WorkManager.getInstance(context).enqueueUniqueWork(
             IMMEDIATE_WORK_NAME,
@@ -163,7 +165,6 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
             List<Game> liveGames = new ArrayList<>(entry.getValue());
             if (!liveGames.isEmpty()) success &= hydrateLiveScores(liveGames);
             cacheLiveSnapshot(context, entry.getKey(), liveGames);
-            prefetchLogos(context, liveGames);
             entry.setValue(liveGames);
         }
 
@@ -172,6 +173,11 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
             cacheDisplayGames(appWidgetId, requestedDayKey, gamesByDay.get(requestedDayKey));
         }
         updateWidgetViews(context, manager, widgetIds);
+        boolean logosChanged = false;
+        for (List<Game> games : gamesByDay.values()) {
+            logosChanged |= prefetchLogos(context, games);
+        }
+        if (logosChanged) updateWidgetViews(context, manager, widgetIds);
         return success;
     }
 
@@ -207,7 +213,7 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
         ).setConstraints(constraints).build();
         WorkManager.getInstance(context).enqueueUniquePeriodicWork(
             PERIODIC_WORK_NAME,
-            ExistingPeriodicWorkPolicy.KEEP,
+            ExistingPeriodicWorkPolicy.UPDATE,
             request
         );
     }
@@ -585,8 +591,7 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
         RefreshTracker tracker = new RefreshTracker();
         Map<String, List<Game>> groups = new HashMap<>();
         for (Game game : games) {
-            if (game.sourceId == null || game.sourceId.isEmpty()
-                || game.sport == null || game.sport.isEmpty()
+            if (game.sport == null || game.sport.isEmpty()
                 || game.espnLeague == null || game.espnLeague.isEmpty()) {
                 continue;
             }
@@ -607,7 +612,7 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
                 Map<String, JSONObject> liveEvents = fetchEventsById(endpoint);
                 tracker.succeed();
                 for (Game game : entry.getValue()) {
-                    JSONObject liveEvent = liveEvents.get(game.sourceId);
+                    JSONObject liveEvent = findEspnEvent(game, liveEvents);
                     if (liveEvent != null) {
                         applyLiveEvent(game, liveEvent);
                     }
@@ -991,6 +996,40 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
             }
         }
         return byId;
+    }
+
+    static JSONObject findEspnEvent(Game game, Map<String, JSONObject> eventsById) {
+        if (game == null || eventsById == null || eventsById.isEmpty()) return null;
+        JSONObject exact = eventsById.get(cleanJsonValue(game.sourceId));
+        if (exact != null) return exact;
+        String expectedAway = matchupTeamKey(game.awayTeam);
+        String expectedHome = matchupTeamKey(game.homeTeam);
+        if (expectedAway.isEmpty() || expectedHome.isEmpty()) return null;
+        for (JSONObject event : eventsById.values()) {
+            JSONObject competition = event == null ? null : firstObject(event.optJSONArray("competitions"));
+            JSONArray competitors = competition == null ? null : competition.optJSONArray("competitors");
+            String actualAway = matchupTeamKey(competitorTeamName(findCompetitor(competitors, "away")));
+            String actualHome = matchupTeamKey(competitorTeamName(findCompetitor(competitors, "home")));
+            if (sameMatchupTeams(game.awayTeam, game.homeTeam, actualAway, actualHome)) return event;
+        }
+        return null;
+    }
+
+    static boolean sameMatchupTeams(
+        String expectedAway,
+        String expectedHome,
+        String actualAway,
+        String actualHome
+    ) {
+        String expectedAwayKey = matchupTeamKey(expectedAway);
+        String expectedHomeKey = matchupTeamKey(expectedHome);
+        return !expectedAwayKey.isEmpty() && !expectedHomeKey.isEmpty()
+            && expectedAwayKey.equals(matchupTeamKey(actualAway))
+            && expectedHomeKey.equals(matchupTeamKey(actualHome));
+    }
+
+    private static String matchupTeamKey(String value) {
+        return cleanJsonValue(value).toLowerCase(Locale.US).replaceAll("[^a-z0-9\\u4e00-\\u9fff]", "");
     }
 
     private static void applyLiveEvent(Game game, JSONObject event) {

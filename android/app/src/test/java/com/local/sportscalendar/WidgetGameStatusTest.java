@@ -164,8 +164,24 @@ public class WidgetGameStatusTest {
     }
 
     @Test
-    public void newScheduleWidgetsDefaultToTomorrow() {
+    public void newScheduleWidgetsDefaultToBeijingToday() {
         assertEquals(0, MlbTodayWidgetProvider.defaultSelectedDayOffset());
+    }
+
+    @Test
+    public void espnScoreRefreshFallsBackToMatchupWhenProviderIdChanges() {
+        assertTrue(MlbTodayWidgetProvider.sameMatchupTeams(
+            "Toronto Blue Jays",
+            "New York Yankees",
+            "Toronto Blue Jays",
+            "New York Yankees"
+        ));
+        assertFalse(MlbTodayWidgetProvider.sameMatchupTeams(
+            "Toronto Blue Jays",
+            "New York Yankees",
+            "New York Yankees",
+            "Toronto Blue Jays"
+        ));
     }
 
     @Test

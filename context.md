@@ -2463,3 +2463,13 @@
 - 涉及文件：`SportsWidgetPlugin.java`、`public/styles.css`、`index.html`、`public/update-config.js`、版本配置与稳定性检查。
 - 验证结果：Web 测试 42 项、稳定性检查 37 项通过；Web 构建、Android Java 编译、JVM 单元测试与 Lint 全部成功。
 - 版本状态：源码提升为 `2.3.3 / versionCode 45`；没有执行 APK 打包、签名验证或 GitHub 发布，`public/version.json` 仍指向已发布的 2.3.2。
+
+### 开发补充：2.3.3 组件1实时比分刷新
+
+- 用户目标：查明首页桌面组件完全无法刷新实时比分的原因，并把组件默认日期恢复为北京时间今日。
+- 检查证据：2026-08-19 对 ESPN、CFL China 和中国足协共 39 个当前接口执行两轮联网检查，全部为 2/2 成功；当天 MLB 记分牌返回 15 场、中超和西甲各返回 1 场，因此并非整体 API 中断。ADB 当前没有连接手机，无法读取 vivo 上的 WorkManager 实际任务日志。
+- 原因定位：组件1的一次性 WorkManager 没有申请加急，在 vivo 后台限制下可能长时间排队；刷新函数在实时比分已拿到后仍同步等待所有缺失队徽下载，图片超时会延迟组件重绘；ESPN 赛事 ID 调整或旧同步数据缺少 `sport`/`espnLeague` 时，成功响应也无法关联本地比赛。旧日期迁移版本已执行过的设备也不会再次修正仍保存为明日的实例。
+- 实现方案：即时刷新使用 expedited WorkManager 并保留配额不足回退；周期任务策略由 `KEEP` 改为 `UPDATE`；比分完成后先缓存并重绘，再下载队徽并按需二次重绘。ESPN 先按 ID、再按完整主客队组合匹配；Web 原生同步保留事件自身的数据源字段。
+- 日期兼容：默认偏移保持 0；迁移版本从 2 提升到 3，缺少选择或保存值仍为旧默认 1 的组件迁回今日，其他手动偏移不变。
+- 涉及文件：`MlbTodayWidgetProvider.java`、`WidgetNetworkClient.java`、`WidgetGameStatusTest.java`、`public/app.js`、`scripts/verify-stability.js`。
+- 验证结果：Web 测试 42 项、稳定性检查 37 项通过；Android Java 编译、27 项 JVM 测试和 Lint 全部成功。未生成 APK，需在下次打包安装后用实体 vivo 验证系统后台策略下的点击刷新时延。
