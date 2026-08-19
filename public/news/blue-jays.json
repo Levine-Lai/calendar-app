@@ -1,7 +1,7 @@
 {
   "teamId": "toronto-blue-jays",
   "teamName": "多伦多蓝鸟",
-  "updatedAt": "2026-08-19T01:41:50.356Z",
+  "updatedAt": "2026-08-19T02:45:29.393Z",
   "items": [
     {
       "id": "dcebdfc589112e84b96e891035bdcacc66c9c5a23f8d77a805841a21e2d4ed0f",
@@ -28,8 +28,45 @@
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-19T01:41:50.355Z",
       "author": "Brian Murphy",
-      "publishedAt": "2026-08-19T00:54:50.000Z",
+      "publishedAt": "2026-08-19T01:41:00.000Z",
       "url": "https://www.mlb.com/bluejays/news/kazuma-okamoto-all-time-blue-jays-rookie-home-run-leader",
+      "source": "MLB.com"
+    },
+    {
+      "id": "addf37ea031d9ac0ce67881e72a3f98cd5f49609386e241e063eeb235175136a",
+      "teamId": "toronto-blue-jays",
+      "teamName": "多伦多蓝鸟",
+      "titleEn": "Kirk, Blue Jays exorcise their Trop tribulations with 10-run performance",
+      "summaryEn": "",
+      "bodyEn": [
+        "ST. PETERSBURG -- The Blue Jays’ lineup has waited for a night like Tuesday for about six weeks.",
+        "The fact that it came against the team with the best record in the American League and inside a stadium that has been the site of so much disappointment for Toronto made its outburst that much more remarkable.",
+        "The Blue Jays crushed three homers in their 10-5 series-opening victory over the Rays at Tropicana Field. It was the first time the Blue Jays had scored double-digit runs since their 10-0 win over the Giants on July 8 -- 34 games ago.",
+        "That game was also the last time the Blue Jays plated multiple runs in the first inning. But they did that Tuesday thanks to an RBI single from George Springer and an RBI double by Jesús Sánchez. And the bats just didn’t stop; Toronto scored two runs in the third, fourth, fifth and seventh innings.",
+        "Catcher Alejandro Kirk, who finished a triple shy of the cycle, cracked the club’s first homer of the game -- a two-run shot to left-center in the third. Kazuma Okamoto followed with a solo dinger to the same area of the Trop, though his landed about 30 feet further into the seats. His Statcast-projected 442-foot clout was his first in 17 games and his 25th of the season, breaking a tie with Eric Hinske for the most homers by a Blue Jays rookie.",
+        "Josh Smith then lined a two-run shot out to right field in the seventh inning.",
+        "Most of the damage came against Rays starter and All-Star right-hander Nick Martinez, who had limited Toronto to two runs on two hits through two previous starts (11 innings) this season. On Tuesday, the Blue Jays tagged him for six runs in 3 2/3 frames in Martinez’s shortest outing of the year.",
+        "The 10 runs were also the most the Blue Jays have posted inside Tropicana Field since a 20-1 triumph on May 23, 2023. Toronto entered with a .393 all-time winning percentage at the Trop (92-142) and had scored a grand total of nine runs in its past six games here -- all losses."
+      ],
+      "titleZh": "Kirk和蓝鸟以10分表现摆脱Trop球场困扰",
+      "summaryZh": "蓝鸟客场10-5击败光芒，Kirk差三垒安打完成完全打击，Okamoto创队史新秀本垒打纪录。",
+      "bodyZh": [
+        "圣彼得堡——蓝鸟的打线已经等了大约六周才迎来一个像周二这样的夜晚。",
+        "这一爆发发生在面对美联战绩最佳的球队，且是在一座给多伦多带来过太多失望的球场里，这让他们的爆发更加难以置信。",
+        "蓝鸟在Tropicana Field以10-5击败光芒，取得系列赛首胜，他们轰出三支本垒打。这是蓝鸟自7月8日10-0战胜巨人以来首次单场得分达到两位数，距今已有34场比赛。",
+        "那场比赛也是蓝鸟上一次在首局攻下多分。但周二他们做到了，这要归功于George Springer的带打点一垒安打和Jesús Sánchez的带打点二垒安打。而且打线没有停歇；多伦多在第三、四、五、七局各得两分。",
+        "捕手Alejandro Kirk差一支三垒安打就能完成完全打击，他敲出球队本场第一支本垒打——第三局一支飞向左中外野的两分炮。Kazuma Okamoto紧随其后，将球轰到Trop球场的同一区域，但他的球飞入观众席的落点还要再远约30英尺。Statcast显示他的这发442英尺本垒打是他17场比赛以来的第一支，也是本赛季第25支，打破了与Eric Hinske并列的蓝鸟新秀本垒打纪录。",
+        "随后Josh Smith在第七局击出一支飞向右外野的两分本垒打。",
+        "蓝鸟的大部分得分都是在对阵光芒先发投手、全明星右投Nick Martinez时取得的，他本赛季前两次先发（共11局）面对多伦多时仅让对手得到两分、击出两支安打。但在周二，蓝鸟在Martinez今年最短的出场中，于3又2/3局内从他手中攻下六分。",
+        "这10分也是蓝鸟自2023年5月23日以20-1取胜以来在Tropicana Field获得的最高单场得分。赛前多伦多在Trop球场的历史胜率为.393（92胜142负），并且过去六次造访这里总共只得到九分——全部落败。"
+      ],
+      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/y2ja0k06sdnrvmzwu7fr",
+      "translationSourceHash": "8d2e7afe443eece93cd081c5aa479a5a03d800361b9fdee49ef5b64931f535da",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-19T02:45:29.392Z",
+      "author": "Brian Murphy",
+      "publishedAt": "2026-08-19T01:39:11.000Z",
+      "url": "https://www.mlb.com/bluejays/news/alejandro-kirk-blue-jays-offense-outburst-defeats-rays",
       "source": "MLB.com"
     },
     {
@@ -999,70 +1036,9 @@
       "publishedAt": "2026-08-14T13:54:46.000Z",
       "url": "https://www.mlb.com/bluejays/news/john-schneider-and-blue-jays-go-all-in-for-wild-card-race",
       "source": "MLB.com"
-    },
-    {
-      "id": "3025c0f886c3016c27e360add9d62d5223dabad7d9d75c4321e7613fa421ac93",
-      "teamId": "toronto-blue-jays",
-      "teamName": "多伦多蓝鸟",
-      "titleEn": "Five young Blue Jays to watch down the stretch",
-      "summaryEn": "",
-      "bodyEn": [
-        "This story was excerpted from Keegan Matheson's Blue Jays Beat newsletter. To read the full newsletter, click here. And subscribe to get it regularly in your inbox.",
-        "TORONTO -- At this point, the Blue Jays are willing to try anything.",
-        "Who predicted lineups with Brett Bateman and Charles McAdoo batting in the top two spots? All that matters is that it works, and as the Blue Jays try to climb the American League Wild Card race, they’ve shown a willingness to hand over more playing time to young players if they’re producing.",
-        "Looking ahead to the final six weeks of the regular season, whether it’s a postseason run or Toronto fades from the race, these are the players you could be seeing more of:",
-        "OF Brett BatemanRealistic 2027 role: The new Myles Straw",
-        "Manager John Schneider clearly likes what he sees in Bateman. His speed-and-contact profile fits in center -- and atop a lineup -- but Bateman isn’t a No. 1 prospect surrounded by hype. There’s a certain amount of “feel” to the decision to roll the club’s No. 20 prospect per MLB Pipeline out there, which is why this is easier to believe in.",
-        "“You never know when you’re going to find a dude,” Schneider said. “Again, it’s a handful of games, but he has the potential with both his skills and the way he thinks, the way he can adjust, to be pretty damn good.”",
-        "The archetype of a Straw or Nathan Lukes works well here, a role the Blue Jays clearly value. If Bateman can fill that role and turn it up a notch with his speed and defense, there will be some very happy people in this organization.",
-        "3B Charles McAdooRealistic 2027 role: Davis Schneider’s 2024-’25 role",
-        "McAdoo’s power potential makes him relevant, but the No. 12 prospect’s athleticism and a growing defensive profile make this truly interesting. He’s batting near the top of the lineup on a team trying to make a postseason run, which tells you all you need to know about the staff’s trust in him.",
-        "The Schneider role is useful to frame McAdoo, whose defensive profile is third base, second base and left field in a pinch. If McAdoo can become serviceable in left, which Schneider did admirably, then this only gets more interesting. Consider this one of the roles that isn’t exactly a “regular,” but leaves plenty of room to hit your way into the lineup.",
-        "LHP Ricky TiedemannRealistic 2027 role: Major League bullpen",
-        "Let’s not get too far ahead of ourselves after just three Triple-A rehab appearances, but at the very least, we’re finally back to the point of Tiedemann pitching “regularly,” even if that schedule is still being carefully managed after his long rehab from Tommy John.",
-        "Tiedemann (Toronto's No. 10 prospect), who turns only 24 on Tuesday, still feels even younger in prospect years, given how much time he’s missed. The talent is all there, though, and if the Blue Jays can wrangle it -- and keep Tiedemann healthy -- this is a lefty reliever who throws 98 mph with legitimate big-league out pitches. Those don’t grow on trees.",
-        "For now, bet on a 95% likelihood that Tiedemann just finishes out this season in Triple-A and enters camp as a must-watch story in the spring. If Toronto falls out of the race, though, he’s already on the 40-man roster and could get a late look.",
-        "1B Sean KeysRealistic 2027 role: Competing for bench bat role",
-        "Keys’ first taste of the big leagues was a learning experience, but he still has 24 home runs across 96 games this season. That will play.",
-        "Keys (Toronto's No. 5 prospect) would need an injury in front of him or the Blue Jays to fall out of contention to see more playing time, but he’ll have more opportunities to force his way into this club’s plans. If he can play a solid third base, that gets much easier, and could open up a role as a righty-mashing role player.",
-        "UTIL Jay HarryRealistic 2027 role: Competing for 26th man",
-        "One of the breakout stars of the Minor League system, Harry (Toronto's No. 21 prospect) is batting .316 with 13 home runs and a .919 OPS, while playing all over the diamond. This is the exact type of profile that would work well at the end of the big league bench, finding ways into the lineup regularly at multiple positions.",
-        "Harry made a swing change coming off a poor 2025 season, primarily in his posture at the plate. The Blue Jays challenged him to crank up his bat speed, which he nailed, and that’s been paired with a serious uptick in aggression at the plate. He’s gone from nearly being forgotten as organizational depth to being a legitimate candidate for playing time in ‘27."
-      ],
-      "titleZh": "蓝鸟值得关注的五位年轻球员",
-      "summaryZh": "蓝鸟队重点观察的五位年轻球员，或在赛季末段获得更多机会。",
-      "bodyZh": [
-        "本文摘自基根·马西森的《蓝鸟击球》通讯。点击此处阅读完整通讯，并订阅以定期在收件箱中获取。",
-        "多伦多——现阶段，蓝鸟队愿意尝试一切。",
-        "谁能预测布雷特·贝特曼和查尔斯·麦卡杜会出现在前两棒？重要的是这能奏效。在蓝鸟队试图冲击美国联盟外卡席位的过程中，他们表现出只要年轻球员有产出，就愿意给予更多上场时间。",
-        "展望常规赛最后六周，无论是冲击季后赛还是多伦多逐渐掉队，以下这些球员可能会获得更多出场机会：",
-        "外野手 布雷特·贝特曼现实2027年角色：新一代迈尔斯·斯特劳",
-        "主教练约翰·施耐德显然对贝特曼的表现很满意。他速度与接触兼备的风格适合中外野——也能担任开路先锋——但贝特曼并不是备受关注的头号新秀。让MLB Pipeline排名球队第20位的潜力新秀上场，其中有一定“感觉”成分，这正是更容易让人信服的原因。",
-        "“你永远不知道什么时候会遇到一个厉害的家伙，”施耐德说。“再说一次，这只是几场比赛，但凭借他的技术、思维方式以及调整能力，他有潜力变得非常出色。”",
-        "斯特劳或内森·卢克斯的模板在这里很合适，这也是蓝鸟队显然重视的角色。如果贝特曼能胜任这一角色，并用他的速度和防守更进一步，那么这支球队里会有人非常高兴。",
-        "三垒手 查尔斯·麦卡杜现实2027年角色：戴维斯·施耐德2024-25赛季的角色",
-        "麦卡杜的打击潜力使他备受关注，但这位排名第12位的潜力新秀的运动能力和日益提升的防守表现让这一切更加有趣。他在一支冲击季后赛的球队中担任前段棒次，这足以说明教练组对他的信任。",
-        "用施耐德的角色来定位麦卡杜很合适，他的防守位置包括三垒、二垒以及紧急情况下的左外野。如果麦卡杜能像施耐德那样在左外野表现得可靠，那么前景会更加令人期待。这算作一个并非绝对“固定先发”的角色，但有足够空间让你用打击争取进入先发阵容。",
-        "左投手 里基·蒂德曼现实2027年角色：大联盟牛棚",
-        "在仅仅三次小联盟复健出场后，我们别太着急，但至少我们终于回到了蒂德曼“规律性”投球的阶段，尽管在接受汤米·约翰手术后的长期复健中，他的赛程仍在被谨慎管理。",
-        "蒂德曼（蓝鸟队排名第10位的潜力新秀）周二才满24岁，考虑到他错过的时光，在潜力新秀的年龄里他显得更年轻。但天赋都在，如果蓝鸟队能加以利用——并保持蒂德曼健康——这将是一位能投出98英里速球、并且有真正大联盟级决胜球的左投后援。这可是稀缺资源。",
-        "目前来看，蒂德曼有95%的可能性会在本赛季余下时间在小联盟三A度过，并作为春季训练中必须关注的故事进入新赛季。不过，如果多伦多掉出竞争行列，他已经在40人名单上，可能会在赛季末获得出场机会。",
-        "一垒手 肖恩·基斯现实2027年角色：竞争替补打击角色",
-        "基斯首次体验大联盟是一次学习经历，但他本赛季在96场比赛中仍击出24支本垒打。这会派上用场。",
-        "基斯（蓝鸟队排名第5位的潜力新秀）需要身前有人受伤，或者蓝鸟队失去竞争希望，才能获得更多上场时间，但他会有更多机会争取进入球队计划。如果他能稳固防守三垒，那会容易得多，并可能开辟一个专门打击右投的角色。",
-        "多功能人 杰伊·哈里现实2027年角色：竞争第26人",
-        "作为小联盟体系中的突破之星，哈里（蓝鸟队排名第21位的潜力新秀）打击率达到.316，击出13支本垒打，OPS为.919，同时防守多个位置。这正是适合大联盟替补席末段角色的类型，能以多个位置常规进入先发阵容。",
-        "哈里在经历糟糕的2025赛季后改变了挥棒动作，主要是击球姿势。蓝鸟队挑战他提升挥棒速度，他做到了，并伴随着击球积极性的显著提升。他已从几乎被遗忘的组织深度球员，变成2027年上场时间的真正候选人。"
-      ],
-      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/xfklx2i26p5y25ytqh0a",
-      "translationSourceHash": "2364196d7da0776515d9b19874fe2e20db04fa440fd8ef091eedda6c2fdb1e0b",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-14T13:22:21.983Z",
-      "author": "Keegan Matheson",
-      "publishedAt": "2026-08-14T12:42:18.000Z",
-      "url": "https://www.mlb.com/bluejays/news/blue-jays-to-watch-in-final-weeks-of-2026-season",
-      "source": "MLB.com"
     }
   ],
-  "pendingNotificationIds": []
+  "pendingNotificationIds": [
+    "addf37ea031d9ac0ce67881e72a3f98cd5f49609386e241e063eeb235175136a"
+  ]
 }
