@@ -1,12 +1,41 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-19T16:45:02.370Z",
+  "updatedAt": "2026-08-19T17:37:43.268Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "7c8bbbd96087335e52766d4f15ae9bf16ae6f09fca4a2a589f5f0751cc5e8a58",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "A day in the life of Alessia Russo",
+      "summaryEn": "Ever wanted to know what a typical day in the life of Alessia Russo looks like? Find out with our exclusive video!",
+      "bodyEn": [
+        "Ever wanted to know what a typical day in the life of Alessia Russo looks like? You’re about to find out with our exclusive video!",
+        "Captured during our recent pre-season trip to La Manga, our cameras followed our centre-forward as she headed to training, chatted with her colleagues and recovered.",
+        "Then it’s off to carry out a club interview, enjoy dinner and even check out the solar eclipse!",
+        "As the England international prepares for another busy campaign, see how she's faring by watching the video above."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/c01470ee193f-gettyimages-2290188362.webp",
+      "author": "Stephen Wright",
+      "publishedAt": "2026-08-19T17:00:00.000Z",
+      "url": "https://www.arsenal.com/news/a-day-in-the-life-of-alessia-russo-ahYHI5e0fqYx",
+      "source": "Arsenal.com",
+      "titleZh": "阿莱西亚·鲁索的一天",
+      "summaryZh": "想知道阿莱西亚·鲁索一天的生活吗？请看我们的独家视频！",
+      "bodyZh": [
+        "想知道阿莱西亚·鲁索一天的生活是什么样的吗？您即将通过我们的独家视频了解！",
+        "在我们最近前往拉曼加季前集训期间，我们的镜头跟随这位中锋前往训练，与同事聊天并恢复体能。",
+        "然后她去接受俱乐部采访，享用晚餐，甚至观看了日食！",
+        "在这位英格兰国脚备战另一个繁忙赛季之际，请观看上方视频了解她的近况。"
+      ],
+      "translationSourceHash": "cf20ad5120eca34af21125d3270003d54d0a174a6f38927186492e3787677f05",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-19T17:37:43.267Z"
+    },
     {
       "id": "6fb699b527e412d6e9f2f4dbf26e3fb05acf4c2292f6fbd02addc84bbd6e07e0",
       "teamId": "arsenal",
@@ -375,45 +404,6 @@
       "translationSourceHash": "48f18ebe4ac444fc52e992a28a2549c2517172686ecdb3ca34705064ecbfebf6",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-19T13:55:48.837Z"
-    },
-    {
-      "id": "53c5714a7aeac284cae51f45f968ffc416c952a6fa0129f67156a8b8ca6547ee",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "How Emirates built the Aircrafted Arsenal Crest",
-      "summaryEn": "The installation is now pride of place at the Directors Box and Diamond Club entrance at Emirates Stadium",
-      "bodyEn": [
-        "Following last week's unveiling of the Aircrafted Arsenal Crest, Emirates is taking viewers behind the scenes to showcase the engineering expertise, craftsmanship and precision that went in the creation of the 2.4-metre illuminated sculpture.",
-        "Designed and built entirely in-house by Emirates engineering teams, the crest was brought to life by a team of 15 experts in just 34 days.",
-        "Once built, the sculpture began its final journey to Emirates Stadium, where it now sits in pride of place at the Directors' Box and Diamond Club entrance.",
-        "Press play on the video above to see how it was built, and its journey to N5.",
-        "Carefully packaged in a custom-built, protective crate, the Aircrafted Arsenal Crest was handed over to the experts at Emirates SkyCargo to be loaded into a freighter departing Dubai for London Stansted.",
-        "With decades of experience in handling everything from specialised technology to ancient artefacts, the airline's cargo arm ensured this one-of-a-kind installation was handled with care at every touchpoint.",
-        "Beyond transporting the crest, aircraft components from cargo operations were used in the build itself, including cargo tracks, floor panels and roller components to help structure and shape the iconic emblem - go into more detail about what was used.",
-        "The Emirates and Arsenal partnership first began in 2006, and has recently been extended through to 2033.",
-        "As the partners enter the next chapter of their partnership, Emirates will continue as Arsenal's front-of-shirt, training kit and stadium naming rights partner."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/67da00cff9b8-260819-emirates-aircrafted-crest-bts001.webp",
-      "author": "Arsenal Media",
-      "publishedAt": "2026-08-19T10:00:00.000Z",
-      "url": "https://www.arsenal.com/news/how-emirates-built-the-aircrafted-arsenal-crest-anPyd4b966Xk",
-      "source": "Arsenal.com",
-      "titleZh": "阿联酋航空如何打造“飞机版”阿森纳队徽",
-      "summaryZh": "队徽雕塑已安置于酋长球场贵宾入口。",
-      "bodyZh": [
-        "继上周揭幕“飞机版”阿森纳队徽后，阿联酋航空带观众走进幕后，展示这座2.4米发光雕塑背后的工程技艺、 craftsmanship 与精准工艺。",
-        "该队徽完全由阿联酋航空工程团队内部设计并建造，15位专家仅用34天便使其成型。",
-        "雕塑建成后，开始了前往酋长球场的最后旅程，如今它荣耀地陈列在董事包厢和钻石俱乐部入口处。",
-        "点击上方视频，了解它的建造过程及其前往N5的旅程。",
-        "“飞机版”阿森纳队徽被精心装入定制的保护木箱，交由阿联酋航空货运专家装载至货机，从迪拜飞往伦敦斯坦斯特德机场。",
-        "凭借数十年处理从专业技术到古代文物各类物品的经验，该航空公司的货运部门确保这一独一无二的装置在每个环节都得到悉心照料。",
-        "除运输队徽外，货运操作中的飞机部件也被用于建造本身，包括货运导轨、地板面板和滚轮组件，以帮助构建和塑造这一标志性徽章——详细了解所用材料。",
-        "阿联酋航空与阿森纳的合作始于2006年，最近已延长至2033年。",
-        "随着合作伙伴关系进入下一篇章，阿联酋航空将继续作为阿森纳的球衣胸前广告、训练装备和球场冠名合作伙伴。"
-      ],
-      "translationSourceHash": "6c0a955e04aa33d43dccc56db35ad0c854db8ea37555388b489c2d0b57f07290",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-19T13:07:23.659Z"
     },
     {
       "id": "ea083d076fff2e86280b65f464a9b5547f66f5db0b5766811db6634213fe3d5d",
