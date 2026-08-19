@@ -1,8 +1,41 @@
 {
   "teamId": "toronto-blue-jays",
   "teamName": "多伦多蓝鸟",
-  "updatedAt": "2026-08-19T21:31:41.779Z",
+  "updatedAt": "2026-08-19T21:52:46.527Z",
   "items": [
+    {
+      "id": "995923380cf95f51698e243abaca4ead07bfbfd8040bcd6825fa235f0adabd53",
+      "teamId": "toronto-blue-jays",
+      "teamName": "多伦多蓝鸟",
+      "titleEn": "Vladdy (concussion) continues to progress, on track to return this weekend",
+      "summaryEn": "",
+      "bodyEn": [
+        "ST. PETERSBURG -- Four days into his stint on the seven-day concussion injured list, Vladimir Guerrero Jr. is making significant strides in his recovery.",
+        "The Blue Jays’ star went through an on-field workout at Tropicana Field prior to the team’s series opener against the AL East-leading Rays on Tuesday. He went through drills, ran on the field and hit inside the batting cage. It was Guerrero’s greatest amount of baseball activity since he went on the IL on Saturday, one day after a collision at third base with the Yankees’ George Lombard Jr. left Guerrero concussed.",
+        "“Still kind of taking it day to day with him,” manager John Schneider said of Guerrero, “but good that he's doing stuff and feeling better.”",
+        "Guerrero could be activated from the injured list as early as Saturday. Schneider said he’s hoping for such an outcome, but the club will continue to monitor how the six-time All-Star is feeling over the next few days. Schneider said there’s a chance Guerrero could face live pitching while Toronto grinds through its three-game series against the Rays. That’s a possibility since the team is playing not too far from its Spring Training complex in Dunedin, Fla.",
+        "“As soon as he's ready, feeling good and cleared and he feels like he's got his timing, we're going to try to get him back in there,” Schneider said.",
+        "Guerrero is batting .263 with seven home runs and a .693 OPS in what has been a very frustrating year for him."
+      ],
+      "titleZh": "弗拉迪（脑震荡）持续恢复，有望本周末回归",
+      "summaryZh": "弗拉迪米尔·格雷罗脑震荡恢复进展顺利，最早周六复出。",
+      "bodyZh": [
+        "圣彼得堡——进入七天脑震荡伤病名单的第四天，小弗拉迪米尔·格雷罗的恢复取得了显著进展。",
+        "这位蓝鸟球星周二在球队对阵美联东区领头羊光芒的系列赛揭幕战前，于纯品康纳球场进行了场上训练。他完成了各项训练，在场上跑步并在打击笼内挥棒。这是格雷罗自周六进入伤病名单以来最大运动量的棒球活动。此前一天，他在三垒与洋基的George Lombard Jr.相撞导致脑震荡。",
+        "“对他还是只能一天天观察，”经理John Schneider谈到格雷罗时说，“但好在他现在能进行活动，感觉也好多了。”",
+        "格雷罗最早可能于周六从伤病名单中激活。Schneider表示他希望如此，但球队将在接下来几天持续监测这位六届全明星球员的感受。Schneider表示，在多伦多与光芒的三场系列赛期间，格雷罗有机会面对实战投球。这有可能实现，因为球队比赛的场地距离其位于佛罗里达州达尼丁的春训基地不远。",
+        "“一旦他准备好、感觉良好并获准参赛，而且觉得自己的打击时机找回来了，我们就会尝试让他回归，”Schneider说。",
+        "格雷罗本赛季到目前为止表现非常令人沮丧，他目前打击率为.263，有7支本垒打，OPS为.693。"
+      ],
+      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/czw8ntw3uh8ckjccyfi2",
+      "translationSourceHash": "d292e232a7517a94caafc4a8a800db49da8b54af1788d3a7f50a5f764c83754d",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-19T21:52:46.526Z",
+      "author": "Brian Murphy",
+      "publishedAt": "2026-08-19T21:36:00.000Z",
+      "url": "https://www.mlb.com/bluejays/news/vladimir-guerrero-jr-hits-from-cage-during-concussion-recovery",
+      "source": "MLB.com"
+    },
     {
       "id": "7e9000313c47368fe2a76d65ae126941f1bfce63ec0dcd7280563bdd4d1caec1",
       "teamId": "toronto-blue-jays",
@@ -185,39 +218,6 @@
       "author": "Brian Murphy",
       "publishedAt": "2026-08-19T03:29:00.000Z",
       "url": "https://www.mlb.com/bluejays/news/kazuma-okamoto-all-time-blue-jays-rookie-home-run-leader",
-      "source": "MLB.com"
-    },
-    {
-      "id": "995923380cf95f51698e243abaca4ead07bfbfd8040bcd6825fa235f0adabd53",
-      "teamId": "toronto-blue-jays",
-      "teamName": "多伦多蓝鸟",
-      "titleEn": "Vladdy participates in on-field workout, hits from cage before Rays' opener",
-      "summaryEn": "",
-      "bodyEn": [
-        "ST. PETERSBURG -- Four days into his stint on the seven-day concussion injured list, Vladimir Guerrero Jr. is making significant strides in his recovery.",
-        "The Blue Jays’ star went through an on-field workout at Tropicana Field prior to the team’s series opener against the AL East-leading Rays on Tuesday. He went through drills, ran on the field and hit inside the batting cage. It was Guerrero’s greatest amount of baseball activity since he went on the IL on Saturday, one day after a collision at third base with the Yankees’ George Lombard Jr. left Guerrero concussed.",
-        "“Still kind of taking it day to day with him,” manager John Schneider said of Guerrero, “but good that he's doing stuff and feeling better.”",
-        "Guerrero could be activated from the injured list as early as Saturday. Schneider said he’s hoping for such an outcome, but the club will continue to monitor how the six-time All-Star is feeling over the next few days. Schneider said there’s a chance Guerrero could face live pitching while Toronto grinds through its three-game series against the Rays. That’s a possibility since the team is playing not too far from its Spring Training complex in Dunedin, Fla.",
-        "“As soon as he's ready, feeling good and cleared and he feels like he's got his timing, we're going to try to get him back in there,” Schneider said.",
-        "Guerrero is batting .263 with seven home runs and a .693 OPS in what has been a very frustrating year for him."
-      ],
-      "titleZh": "小格雷罗恢复场上训练并击球",
-      "summaryZh": "格雷罗在脑震荡伤病名单上恢复良好，最早周六可能复出。",
-      "bodyZh": [
-        "圣彼得堡 -- 进入七天脑震荡伤病名单四天后，Vladimir Guerrero Jr. 的恢复取得了显著进展。",
-        "蓝鸟队的这位球星周二在球队对阵美国联盟东区领先的坦帕湾光芒的系列赛揭幕战前，于纯品康纳球场进行了场上训练。他参与训练项目，在场上跑步，并在打击笼内击球。这是 Guerrero 自周六进入伤病名单以来最大量的棒球活动；他在此前一天曾于三垒与洋基队的 George Lombard Jr. 相撞，导致脑震荡。",
-        "“目前仍是逐日观察，”总教练 John Schneider 谈到 Guerrero 时表示，“但很高兴他能进行活动，感觉也有所好转。”",
-        "Guerrero 最早可能在本周六从伤病名单中被激活。Schneider 表示他希望如此，但球队将在未来几天继续观察这位六届全明星球员的状态。Schneider 表示，在蓝鸟队与光芒队进行三场系列赛期间，Guerrero 有可能面对实战投球。由于球队比赛地点距离佛罗里达州达尼丁的春季训练基地不远，这存在可能性。",
-        "“一旦他准备好了，感觉良好并获得出场许可，而且觉得自己找回了比赛节奏，我们就会试着让他回归，”Schneider 说。",
-        "本赛季对 Guerrero 来说非常令人沮丧，他目前打击率为 .263，打出七支本垒打，OPS 为 .693。"
-      ],
-      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/czw8ntw3uh8ckjccyfi2",
-      "translationSourceHash": "78a8ab9cc145960b0f22636bcfcbf4317ab307ac446ca23118c9fd8b7b68baaa",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-18T22:53:34.525Z",
-      "author": "Brian Murphy",
-      "publishedAt": "2026-08-18T22:44:38.000Z",
-      "url": "https://www.mlb.com/bluejays/news/vladimir-guerrero-jr-hits-from-cage-during-concussion-recovery",
       "source": "MLB.com"
     },
     {
