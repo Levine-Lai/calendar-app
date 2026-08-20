@@ -1,7 +1,7 @@
 {
   "teamId": "toronto-blue-jays",
   "teamName": "多伦多蓝鸟",
-  "updatedAt": "2026-08-20T17:35:51.352Z",
+  "updatedAt": "2026-08-20T19:19:56.419Z",
   "items": [
     {
       "id": "7e9000313c47368fe2a76d65ae126941f1bfce63ec0dcd7280563bdd4d1caec1",
@@ -58,7 +58,7 @@
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-07-21T02:11:41.474Z",
       "author": "",
-      "publishedAt": "2026-08-20T17:04:00.000Z",
+      "publishedAt": "2026-08-20T18:59:00.000Z",
       "url": "https://www.mlb.com/bluejays/news/blue-jays-injuries-and-roster-moves",
       "source": "MLB.com"
     },
