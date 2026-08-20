@@ -1,8 +1,39 @@
 {
   "teamId": "toronto-blue-jays",
   "teamName": "多伦多蓝鸟",
-  "updatedAt": "2026-08-20T21:45:31.812Z",
+  "updatedAt": "2026-08-20T22:36:01.249Z",
   "items": [
+    {
+      "id": "bef13c54cb74832d121bfde52d86417de9049d630ae7aaa3e6efa5083e35e131",
+      "teamId": "toronto-blue-jays",
+      "teamName": "多伦多蓝鸟",
+      "titleEn": "Blue Jays bats keep persisting despite the rash of injury scares",
+      "summaryEn": "",
+      "bodyEn": [
+        "ST PETERSBURG -- The Blue Jays are making the best of what they have right now.",
+        "What they have on the field seems to change from game to game due to injuries -- and it did again on Thursday. But, undaunted, Toronto knocked off the first-place Rays at Tropicana Field by the score of 5-1 to notch its seventh consecutive series win. It was also the club’s first series win inside the Trop since Sept. 2023.",
+        "At 63-66, the Blue Jays are a half game behind the Twins for the third American League Wild Card spot. Toronto is tied in the standings with the Rangers, who play Thursday night.",
+        "That will make for a pretty happy flight to New York before Toronto opens a three-game weekend series at Yankee Stadium. But the Blue Jays will fly north wondering what exactly their lineup will look like when the series begins Friday night.",
+        "Shortstop Andrés Giménez left the game in the fourth inning after injuring his right leg while running out a ground ball. The team announced that the three-time Gold Glover is dealing with right hamstring tightness.",
+        "That forced the Blue Jays to make a full line change on their infield for the fifth inning. Because of injuries to Vladimir Guerrero Jr. (concussion) and Josh Smith (leg cramp), Toronto had Ernie Clement move from second base to shortstop to fill in for Giménez. Charles McAdoo went from third to second, Kazuma Okamoto moved from first to third, and backup catcher Brandon Valenzuela entered at first base.",
+        "This is what the Blue Jays are dealing with right now. Not to mention that they also saw outfielder Brett Bateman exit Tuesday’s loss with right hamstring tightness as well. Through it all, Toronto keeps finding ways to win.",
+        "Shane Bieber turned in arguably his best start of the season, dealing seven innings of one-run ball. He allowed four hits and struck out seven batters without issuing a walk. He threw a season-high 101 pitches, 70 for strikes.",
+        "The Blue Jays backed him with three more homers, giving them seven over the three-game series. Prior to arriving in St. Petersburg, the power-starved Blue Jays had hit just six homers in their previous 11 games.",
+        "Kazuma Okamoto got the scoring start with his second homer of the series, a projected 414-foot solo shot to left field. Outfielders Nathan Lukes and Daz Cameron added solo homers in the fifth inning. Cameron’s clout down the left-field line traveled 442 feet and never actually came down; it landed on one of Tropicana Field’s catwalks.",
+        "Lukes also made a phenomenal leaping catch at the wall to rob Cedric Mullins of extra bases and a possible RBI in the seventh inning."
+      ],
+      "titleZh": "",
+      "summaryZh": "",
+      "bodyZh": [],
+      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/bce2qegvu4klyaphbjpg",
+      "translationSourceHash": "",
+      "translationModel": "",
+      "translatedAt": "",
+      "author": "Brian Murphy",
+      "publishedAt": "2026-08-20T22:03:00.000Z",
+      "url": "https://www.mlb.com/bluejays/news/blue-jays-survive-injuries-to-secure-series-win-vs-tampa-bay",
+      "source": "MLB.com"
+    },
     {
       "id": "7e9000313c47368fe2a76d65ae126941f1bfce63ec0dcd7280563bdd4d1caec1",
       "teamId": "toronto-blue-jays",
@@ -60,37 +91,6 @@
       "author": "",
       "publishedAt": "2026-08-20T21:14:00.000Z",
       "url": "https://www.mlb.com/bluejays/news/blue-jays-injuries-and-roster-moves",
-      "source": "MLB.com"
-    },
-    {
-      "id": "bef13c54cb74832d121bfde52d86417de9049d630ae7aaa3e6efa5083e35e131",
-      "teamId": "toronto-blue-jays",
-      "teamName": "多伦多蓝鸟",
-      "titleEn": "Bieber, Blue Jays persist through rash of injuries to steal another series win",
-      "summaryEn": "",
-      "bodyEn": [
-        "ST PETERSBURG -- The Blue Jays are making the best of what they have right now.",
-        "What they have on the field seems to change from game to game due to injuries -- and it did again on Thursday. But, undaunted, Toronto knocked off the first-place Rays at Tropicana Field by the score of 5-1 to notch its seventh consecutive series win. It was also the club’s first series win inside the Trop since Sept. 2023.",
-        "At 63-66, the Blue Jays are a half game behind the Twins for the third American League Wild Card spot. Toronto is tied in the standings with the Rangers, who play Thursday night.",
-        "That will make for a pretty happy flight to New York before Toronto opens a three-game weekend series at Yankee Stadium. But the Blue Jays will fly north wondering what exactly their lineup will look like when the series begins Friday night.",
-        "Shortstop Andrés Giménez left the game in the fourth inning after injuring his right leg while running out a ground ball. The team announced that the three-time Gold Glover is dealing with right hamstring tightness.",
-        "That forced the Blue Jays to make a full line change on their infield for the fifth inning. Because of injuries to Vladimir Guerrero Jr. (concussion) and Josh Smith (leg cramp), Toronto had Ernie Clement move from second base to shortstop to fill in for Giménez. Charles McAdoo went from third to second, Kazuma Okamoto moved from first to third, and backup catcher Brandon Valenzuela entered at first base.",
-        "This is what the Blue Jays are dealing with right now. Not to mention that they also saw outfielder Brett Bateman exit Tuesday’s loss with right hamstring tightness as well. Through it all, Toronto keeps finding ways to win.",
-        "Shane Bieber turned in arguably his best start of the season, dealing seven innings of one-run ball. He allowed four hits and struck out seven batters without issuing a walk. He threw a season-high 101 pitches, 70 for strikes.",
-        "The Blue Jays backed him with three more homers, giving them seven over the three-game series. Prior to arriving in St. Petersburg, the power-starved Blue Jays had hit just six homers in their previous 11 games.",
-        "Kazuma Okamoto got the scoring start with his second homer of the series, a projected 414-foot solo shot to left field. Outfielders Nathan Lukes and Daz Cameron added solo homers in the fifth inning. Cameron’s clout down the left-field line traveled 442 feet and never actually came down; it landed on one of Tropicana Field’s catwalks.",
-        "Lukes also made a phenomenal leaping catch at the wall to rob Cedric Mullins of extra bases and a possible RBI in the seventh inning."
-      ],
-      "titleZh": "",
-      "summaryZh": "",
-      "bodyZh": [],
-      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/bce2qegvu4klyaphbjpg",
-      "translationSourceHash": "",
-      "translationModel": "",
-      "translatedAt": "",
-      "author": "Brian Murphy",
-      "publishedAt": "2026-08-20T20:01:32.000Z",
-      "url": "https://www.mlb.com/bluejays/news/blue-jays-survive-injuries-to-secure-series-win-vs-tampa-bay",
       "source": "MLB.com"
     },
     {
