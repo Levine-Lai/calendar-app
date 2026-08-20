@@ -1,7 +1,7 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-20T17:43:16.720Z",
+  "updatedAt": "2026-08-20T18:56:50.077Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
@@ -303,49 +303,6 @@
       "bodyZh": []
     },
     {
-      "id": "f5b3b83a030b4afaaea7250f162ff951d2b7643b480f0c5850fa98ec55e4f37b",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Fox ready to take the next step in 2026/27",
-      "summaryEn": "Our American defender feels pre-season preparations have set us up well for the new campaign",
-      "bodyEn": [
-        "Emily Fox is excited to get back to work in the new season after a productive pre-season followed up a restful summer break for the American full-back.",
-        "Having travelled home to watch the US Men's National Team in their home World Cup, Emily returned to the Sobha Realty Training Centre to prepare for her third full season as a Gunner, and our no.2 feels that preparations for 2026/27 are going well so far.",
-        "\"It's been really good,\" Emily said on her pre-season, \"this is my third pre-season here, and every one has been different.",
-        "\"With this one, we didn't have a big tournament in the summer, so we were all able to come back at the same time and really all be on the same page and have a progressive pre-season, which is really nice.",
-        "\"When you have people coming in at different times after [major] tournaments, it makes it a bit hard to get that familiarity and that cohesiveness, so that's been a big help this year, for the new players in particular.\"",
-        "With the whole squad returning at the same time, Emily and her teammates were able to travel to La Manga together for a summer training camp.",
-        "As well as enjoying the experience for herself, the USA international highlighted the value of such an opportunity for integrating the new members of our squad.",
-        "\"With a camp like La Manga, you're with each other all the time, 24/7, and so you really get the team bonding, and I think with meetings and team activities, you get to know your teammates.",
-        "\"I really appreciate going somewhere and splitting up pre-season, it makes you excited to go somewhere but also to come back.\"",
-        "Part of that excitement to return to north London is centred around two pre-season fixtures at Meadow Park, with Paris FC visiting on Sunday before we host London rivals Charlton on Wednesday night.",
-        "\"Those games at Boreham Wood will be really nice. It'll be fun to have a teaser going into the new season and show the new players can do.",
-        "\"Meadow Park is obviously a lot more intimate [than Emirates Stadium], but having said that, it's just as loud, which makes it special, especially for the players who have been here since the beginning.\"",
-        "We'll be starting the new season with fond memories of last campaign, which ended with our historic trophy parade on the streets of north London.",
-        "Emily joined the rest of our squad on the champions bus, parading their Champions Cup trophy for our fans to take in.",
-        "\"It was surreal,\" the full-back said with a smile, \"you want to be a sponge and soak it all up. It's a rare thing to have so many people there to celebrate one thing, and to celebrate Arsenal.",
-        "\"I haven't actually been back to Islington yet because it's hard to top that experience in that area! But especially coming from the US, my family wasn't a big football family growing up. Now, when I hear from them how amazed and shocked and stunned they were and how proud, it makes it extra special.\"",
-        "Asked where it ranks among her Arsenal highlights, Emily admitted our victory parade was up there with the best, but felt one memory just about pipped it.",
-        "\"Maybe it's obvious but, winning the Champions League.\" Our no.2 played the full 90 minutes in Lisbon as we beat Barcelona 1-0 to secure our second title.",
-        "\"But aside from the obvious, I would say it's really embracing Arsenal and being at this club.",
-        "\"I feel like when you give and you invest and you put yourself out there, Arsenal is there with open arms to encourage you and support you, whether it's day to day at the training ground or at the Emirates Stadium or Boreham Wood.",
-        "\"So I feel very grateful and I know that coming here as an international player you don't always know what's going to happen, but I feel very grateful and it's been a really great experience.\"",
-        "Having tasted the success of the Champions League title, and securing silverware in the form of the Champions Cup last season, we'll be looking to go for more titles in the new season.",
-        "With pre-season going well for Emily, she's looking forward to getting back to competitive action, with silverware the number one goal.",
-        "\"Already in pre-season, we've made an emphasis on the WSL. Last year we only lost one game, so that's something we can be proud of.",
-        "\"But also, if that one game is preventing us from winning the league, either let's lose none of them, or let's turn our draws into wins, that's a big emphasis for us.",
-        "\"We have a great opportunity with the first five games that we play, the games are tough, [some big games] are away, we're not at the Emirates as much of the time, so we just need a big push.\""
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/c140e5ca9d30-cartagena-spain-emily-fox-of-arsenal-during-the-arsenal-women-training-session-a.webp",
-      "author": "Connor Booth",
-      "publishedAt": "2026-08-20T08:37:21.706Z",
-      "url": "https://www.arsenal.com/news/fox-ready-to-take-the-next-step-in-202627-aNjTl8L85hIt",
-      "source": "Arsenal.com",
-      "titleZh": "",
-      "summaryZh": "",
-      "bodyZh": []
-    },
-    {
       "id": "3b4e5c47c1ddd5c4fbea63dd97929e10e0e65dfd820f3b4c88bafb0da6c9aed6",
       "teamId": "arsenal",
       "teamName": "阿森纳",
@@ -413,6 +370,26 @@
       "translationSourceHash": "1b3f0de65f1f87d35d2033fbdf1c9c8e4947ffabdfbbd12f4b0b67ba7a31dc70",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-20T07:05:54.409Z"
+    },
+    {
+      "id": "6cad0cc8315fe6a21ae47115e1c9d47ccd0f1cf485099a88f7edc241d114254e",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Find out how you can appear in our amazing content",
+      "summaryEn": "We're on the hunt for supporters to take part in a variety of videos to appear on our website, app and social channels",
+      "bodyEn": [
+        "We're back with Guess the Arsenal Player! Do you think you've got what it takes to trick the panel into thinking you're a former Gunner?",
+        "If so, send a short video explaining why you think you've got what it takes to casting@arsenal.co.uk, as well as your name and age.",
+        "We’re looking for UK-based males, available Thursday, August 27 to travel to the Sobha Realty Training Centre who are at least 30 years of age."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/d1674885593c-william-saliba-and-eberechi-eze-in-guess-the-gooner.webp",
+      "author": "Arsenal Media",
+      "publishedAt": "2026-08-19T19:00:00.000Z",
+      "url": "https://www.arsenal.com/news/find-out-how-you-can-appear-in-our-amazing-content-aExmI6Y54SKo",
+      "source": "Arsenal.com",
+      "titleZh": "",
+      "summaryZh": "",
+      "bodyZh": []
     },
     {
       "id": "6853877330ab8be50f729b9e325c11e5e3b6a226a43fd2044011ee97125d1296",
