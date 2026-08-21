@@ -1,12 +1,41 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-21T23:02:21.987Z",
+  "updatedAt": "2026-08-21T23:38:39.321Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "5c9b22243ff96cd7f88cb1fbd5443e646152f640be52a6e38f8a70766a2bb175",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Highlights: Arsenal 3-0 Coventry City",
+      "summaryEn": "Watch the best of the action from our first game as reigning Premier League champions as we get the 2026/27 season underway",
+      "bodyEn": [
+        "The Premier League season is off and running, and you can watch all the best of our 3-0 success over Coventry City with our highlights.",
+        "Goals from Kai Havertz and Bukayo Saka gave us a comfortable cushion just 23 minutes into the game, with Christos Tzolis making a major contribution during both.",
+        "Not long after the restart, Martin Odegaard added our third to seal the victory and ensure the defence of our trophy began with the best possible result.",
+        "You can watch the best of the action now by pressing play on the video above to see our bitesize highlights, with an extended cut below and a full match replay to come in due course."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/a05ea73cd14e-london-england-kai-havertz-of-arsenal-scores-his-teams-first-goal-under-pressure.webp",
+      "author": "Jonathon Rogers",
+      "publishedAt": "2026-08-21T23:00:00.000Z",
+      "url": "https://www.arsenal.com/news/highlights-arsenal-3-0-coventry-city-ayjw87w06gn1",
+      "source": "Arsenal.com",
+      "titleZh": "集锦：阿森纳 3-0 考文垂城",
+      "summaryZh": "观看我们作为英超卫冕冠军首场比赛的最佳时刻。",
+      "bodyZh": [
+        "英超赛季已拉开帷幕，您可以通过我们的集锦观看我们3-0战胜考文垂城的全部精彩瞬间。",
+        "凯·哈弗茨和布卡约·萨卡的进球在比赛进行到第23分钟时就为我们奠定了舒适的优势，克里斯托斯·佐利斯在这两个进球中都做出了重要贡献。",
+        "下半场开始不久，马丁·厄德高打入第三球锁定胜局，确保我们以最好的结果开启了卫冕之旅。",
+        "您现在可以点击上方视频播放键观看我们的短片集锦，下方还有加长版，完整比赛重播稍后奉上。"
+      ],
+      "translationSourceHash": "256afa727a225836cdddff2900a36f3c55e8bf4d8c2c6cfe01782399ca8dcf26",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-21T23:37:47.906Z"
+    },
     {
       "id": "b94d789ae908855214befe2b57936223f49ddf5cc43546f5b6f3b95cda5c3516",
       "teamId": "arsenal",
@@ -21,9 +50,9 @@
         "Reflecting on the Coventry win, he revealed: “I’m extremely happy. There was a lot to like in that performance right from the beginning. I think we were really dominant, so connected between each other - the ball flew from one side to the other really fast. The players were playing with such a purpose and decisiveness to hold the position.",
         "“It wasn't only the result but the performances that we put in that have been really impressive. There's still a lot to improve in many areas. We're going to now have some days to train with some of them that they haven't really had a chance to do so.",
         "“I can't wait to prepare for the next game. We have three different groups in pre-season with international players arriving and we're going to take the opportunity to go to another level.”",
-        "One more piece of the jigsaw to factor in is the arrival of Ezri Konsa from Villa, who completed his move a few hours before kick-off.",
+        "One more piece of the jigsaw to factor in is the arrival of Esri Konsa from Villa, who completed his move a few hours before kick-off.",
         "The England defender provides us with a couple more options in a backline that needs a bit more cover, and Mikel is delighted to have him at his disposal ahead of the trip to his former club on matchweek two.",
-        "On what Ezri brings, Mikel suggested: “Depth and quality. Obviously, we were extremely short in the defensive line with the injuries of Wilo and Jurrien. We only have four, sometimes five, players in the defensive line, so it was a huge risk to take so we were trying to recruit.",
+        "On what Esri brings, Mikel suggested: “Depth and quality. Obviously, we were extremely short in the defensive line with the injuries of Wilo and Jurrien. We only have four, sometimes five, players in the defensive line, so it was a huge risk to take so we were trying to recruit.",
         "“The club has done unbelievably well Andrea [Berta] the same. We have a player that we admire, that we wanted. The boys have done very well seem very, very happy to have him.\""
       ],
       "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/66a60c28d695-london-england-mikel-arteta-manager-of-arsenal-celebrates-after-kai-havertz-of-a.webp",
@@ -31,24 +60,24 @@
       "publishedAt": "2026-08-21T22:44:12.501Z",
       "url": "https://www.arsenal.com/news/arteta-looking-to-extract-even-more-from-his-squad-aWt090a6yMJb",
       "source": "Arsenal.com",
-      "titleZh": "阿尔特塔希望从球队中挖掘更多潜力",
-      "summaryZh": "阿森纳3-0击败考文垂后，阿尔特塔对表现满意，期待继续提升。",
+      "titleZh": "阿尔特塔寻求从球队中挖掘更多",
+      "summaryZh": "阿森纳3-0考文垂，阿尔特塔谈表现与孔萨加盟。",
       "bodyZh": [
-        "在2026/27赛季开局五天内取得第二场3-0胜利后，米克尔·阿尔特塔期待在训练场上继续打磨球队。",
-        "周日欧冠社区盾在加的夫战胜曼城后，我们在酋长球场几乎以同样方式击败考文垂，半场前已2-0领先，随后马丁·厄德高在下半场初段再入一球。",
-        "这些以精准终结和稳固防守为标志的完胜让我们迅速进入状态，考虑到众多球员从世界杯归来较晚以及需要融入新面孔，这更显得难能可贵。",
-        "在赛季揭幕战的兴奋之后，我们要等10天才能迎来下一场比赛——周一晚对阵阿斯顿维拉，但你会发现阿尔特塔并不抱怨有更多时间来从冠军球员身上挖掘更多。",
-        "回顾战胜考文垂的比赛，他透露：“我非常高兴。从一开始就有很多值得欣赏的地方。我认为我们完全占据主导，彼此之间联系紧密——球从一侧飞到另一侧速度极快。球员们带着明确的意图和果断来保持位置。”",
-        "“不仅仅是结果，我们的表现也令人印象深刻。很多方面还有提升空间。现在我们有几天时间与一些之前没有机会训练的球员一起训练。”",
-        "“我迫不及待地准备下一场比赛。季前赛我们有三组不同的球员，国际球员陆续抵达，我们将利用这个机会提升到另一个水平。”",
-        "拼图的另一块是埃兹里·孔萨从维拉加盟，他在开球前几个小时完成了转会。",
-        "这位英格兰后卫为需要一些补强的后防提供了更多选择，而在第二周前往老东家之前，阿尔特塔很高兴能指挥他。",
-        "关于埃兹里带来的东西，米克尔表示：“深度和质量。显然，由于威廉和尤里安的伤病，我们在防线位置上人手极度短缺。我们只有四名，有时五名防守球员，所以风险很大，我们尝试引援。”",
-        "“俱乐部做得非常好，安德烈亚（贝尔塔）也一样。我们得到了一位我们钦佩、想要的球员。小伙子们表现很好，看起来非常非常高兴拥有他。”"
+        "在球队五天内取得第二场3-0胜利、开启2026/27赛季之后，米克尔·阿尔特塔渴望利用训练场时间继续打磨球队。",
+        "周日，球队在卡迪夫轻松战胜曼城夺得社区盾，随后又在酋长球场以几乎相同的表现迎战考文垂城，我们迅速取得2-0领先，马丁·厄德高在下半场开始后不久再入一球，将比分锁定为3-0。",
+        "这些大胜凭借精准的终结和稳固的防守让我们一开场就进入状态，考虑到许多球员从世界杯归来较晚，还有新援需要融入，这一表现更加令人印象深刻。",
+        "在赛季揭幕战的兴奋之后，我们要等10天才能迎来下一场比赛，那将是周一晚对阵阿斯顿维拉的比赛。不过，你不会听到米克尔抱怨，因为他有更多时间来从冠军之师身上挖掘更多潜力。",
+        "回顾战胜考文垂的比赛，他透露：“我非常高兴。那场表现从一开始就有很多可取之处。我认为我们占据主导地位，彼此之间紧密相连——球快速地在两侧转移。球员们在持球和保持位置时打得很有目的性和决断力。”",
+        "“不仅仅是结果，我们展现出的表现也令人印象深刻。在许多方面仍有改进空间。接下来几天，我们将与其中一些此前没有真正机会训练的球员一起训练。”",
+        "“我迫不及待地想准备下一场比赛。我们在季前赛中有三组不同的球员，国际球员陆续抵达，我们将借此机会达到另一个水平。”",
+        "需要考虑的另一个拼图是来自维拉的埃斯里·孔萨的加盟，他在开球前几个小时完成了转会。",
+        "这位英格兰后卫为我们的防线提供了更多选择，而后防线需要更多覆盖。米克尔很高兴在第二轮对阵老东家的比赛前能指挥他。",
+        "谈到埃斯里的作用，米克尔表示：“深度和实力。显然，由于威洛和尤里安的伤病，我们在后防线上极度短缺。我们只有四名，有时五名防线球员，所以冒险很大，我们因此一直在寻求引援。”",
+        "“俱乐部做得非常出色，安德里亚（贝尔塔）也一样。我们得到了一位我们欣赏并渴望得到的球员。球员们做得很好，看起来非常非常高兴能拥有他。”"
       ],
-      "translationSourceHash": "9d9138e50edb738a6ebdda78b9a5d657e01a437f03bf4eb6a0d88d863a07b758",
+      "translationSourceHash": "a8cf1ba7498de7039950814fa1ccb3b790db351a51fbf4e9a2bdd7e3dfdd8df7",
       "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-21T23:01:35.698Z"
+      "translatedAt": "2026-08-21T23:38:39.321Z"
     },
     {
       "id": "665b531fb7acd768e679ee4f6d3394deee42bf561e3257783090e526a441e5fe",
@@ -75,7 +104,7 @@
         "It was 2-0 soon afterwards, as Coventry found themselves overwhelmed, up against something quicker, slicker and more smoothly geared than many of these players will have ever come up against. This was a good Rice moment, his forward run the catalyst. But it was also an Ødegaard moment, a quick little nudged pass making the space for the shift wide and the killer cross. This is what Ødegaard does best, the pass that makes the pass, the smoothing agent, footballing WD-40.",
         "Equally important, perhaps, Myles Lewis-Skelly was also excellent here, tigerish and always involved, barely misplacing a pass. And yes, he was excellent against the champions of the Championship, but he was also excellent in his last game, against the champions of Europe. Who knows, maybe he’s just a really good midfielder."
       ],
-      "imageUrl": "https://i.guim.co.uk/img/media/41caa358654cb50596a7c5b7117d6cba3adbd0d4/252_0_5570_4454/master/5570.jpg?width=140&quality=85&auto=format&fit=max&s=5da8cd0b7fe9149f4dc3faa5b2f7baf1",
+      "imageUrl": "https://i.guim.co.uk/img/media/7ccc9ea50a9d5b9213ca57f31b729838758dcaa5/173_0_3777_3023/master/3777.jpg?width=140&quality=85&auto=format&fit=max&s=0c47f2fddfd646bb8c6230ce54c389fd",
       "author": "Barney Ronay at the Emirates Stadium",
       "publishedAt": "2026-08-21T22:43:42.000Z",
       "url": "https://www.theguardian.com/football/2026/aug/21/martin-degaard-of-old-is-back-with-the-pass-that-makes-the-pass",
@@ -361,6 +390,51 @@
       "translatedAt": "2026-08-21T22:41:00.352Z"
     },
     {
+      "id": "20438ec5328b64e41a4e27ef15574082eda3c19d50b590274bdd4a273b051b53",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Team news: Rice and Saka start against Coventry",
+      "summaryEn": "Find out who Mikel Arteta has selected for this evening's Premier League opener against Coventry City",
+      "bodyEn": [
+        "Mikel Arteta has opted to include Declan Rice and Bukayo Saka in his starting line-up for tonight’s Premier League curtain-raiser against Coventry City.",
+        "The England pair return to our starting line-up for the first time this summer after their extended breaks after England’s run to the World Cup semi-finals, and starting Sunday’s Community Shield win over Manchester City on the bench before entering the fray as subs.",
+        "They replace Bruno Guimaraes and Noni Madueke, with the Brazilian missing out on his Premier League debut for bow after picking up an injury during the game in Cardiff on Sunday.",
+        "Christos Tzolis will though make his league bow in red and white, aiming to follow up his impressive showing five days ago when he registered two assists.",
+        "Madueke drops down to the bench, which includes two of Spain’s World Cup winners in Martin Zubimendi and Mikel Merino, with a third in David Raya lining up between our posts.",
+        "Frank Lampard meanwhile has named five of his nine summer signings in his starting XI for the Sky Blues’ first Premier League game in 25 years.",
+        "Swiss international centre-back Aurele Amenda, 20-year-old Ghana World Cup star Caleb Yirenkyi and former Burnley winger Loum Tchaouna have all been given the nod to begin the game, alongside two of last season’s promotion heroes in Carl Rushworth and Frank Onyeka, who have seen their loan deals made permanent.",
+        "Fellow new boys Gustavo Hamer and Taiwo Awoniyi are named on the bench, as Coventry seek their 100th win in the division.",
+        "LINE-UPS",
+        "Arsenal: Raya, White, Mosquera, Gabriel, Calafiori, Lewis-Skelly, Rice, Odegaard, Saka, Tzolis, Havertz.Subs: Arrizabalaga, Hincapie, Zubimendi, Merino, Eze, Nwaneri, Madueke, Dowman, Gyokeres.",
+        "Coventry: Rushworth, van Ewijk, Thomas, Amenda, Dasilva, Grimes, Onyeka, Yirenkyi, Tchaouna, Thomas-Asante, Simms.Subs: Wilson, Kitching, Latibeaudiere, Sakamoto, Eccles, Torp, Hamer, Rudoni, Awonyi.",
+        "Ahead of kick-off, get essential pre-match stats, a guide to Coventry's tactics and summer so far, a host of opening day coverage, press conference recaps, live worldwide TV coverage and more in our match preview."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/e1a7230eece9-arsenals-english-midfielder-declan-rice-celebrates-with-the-trophy-on-the-pitch.webp",
+      "author": "Jonathon Rogers",
+      "publishedAt": "2026-08-21T17:44:59.936Z",
+      "url": "https://www.arsenal.com/news/team-news-rice-and-saka-start-against-coventry-axwe52Y1x2gA",
+      "source": "Arsenal.com",
+      "titleZh": "球队新闻：赖斯和萨卡首发对阵考文垂",
+      "summaryZh": "阿尔特塔公布了今晚英超揭幕战的首发阵容。",
+      "bodyZh": [
+        "米克尔·阿尔特塔选择将德克兰·赖斯和布卡约·萨卡列入今晚对阵考文垂城的英超揭幕战首发阵容。",
+        "这对英格兰组合在英格兰队闯入世界杯半决赛后获得延长假期，今夏首次回到我们的首发阵容，周日的社区盾杯战胜曼城时他们坐在替补席上，随后替补登场。",
+        "他们替换了布鲁诺·吉马良斯和诺尼·马杜埃凯，这位巴西人在周日卡迪夫比赛中受伤，未能迎来自己的英超首秀。",
+        "不过克里斯托斯·佐利斯将身穿红白战袍上演联赛首秀，目标是延续五天前他贡献两次助攻的出色表现。",
+        "马杜埃凯退至替补席，替补席上还有两位西班牙世界杯冠军成员马丁·苏比门迪和米克尔·梅里诺，另一位冠军成员大卫·拉亚则镇守球门。",
+        "与此同时，弗兰克·兰帕德在考文垂25年来的首场英超比赛中，将今夏九名新援中的五人列入首发阵容。",
+        "瑞士国脚中卫奥雷勒·阿门达、20岁的加纳世界杯球星卡莱布·伊伦基和前伯恩利边锋卢姆·查乌纳均获首发，同时首发的还有上赛季升级功臣中的两位——卡尔·拉什沃思和弗兰克·奥涅卡，他们的租借合同已转为永久转会。",
+        "其他新援古斯塔沃·哈默和泰沃·阿沃尼伊则被列入替补席，考文垂正寻求他们在该级别联赛的第100场胜利。",
+        "首发阵容",
+        "阿森纳：拉亚、怀特、莫斯克拉、加布里埃尔、卡拉菲奥里、刘易斯-斯凯利、赖斯、厄德高、萨卡、佐利斯、哈弗茨。替补：阿里萨巴拉加、因卡皮耶、苏比门迪、梅里诺、埃泽、恩瓦内里、马杜埃凯、道曼、久凯雷斯。",
+        "考文垂：拉什沃思、范埃韦克、托马斯、阿门达、达席尔瓦、格莱姆斯、奥涅卡、伊伦基、查乌纳、托马斯-阿桑特、西姆斯。替补：威尔逊、基钦、拉蒂博迪埃、坂本、埃克尔斯、托普、哈默、鲁多尼、阿沃尼伊。",
+        "开球前，在我们的比赛预览中获取关键赛前数据、考文垂战术和夏季引援指南、大量揭幕战报道、新闻发布会回顾、全球电视直播信息等。"
+      ],
+      "translationSourceHash": "0258cf2946dfe9c43f3180c53221b66f45505d726eb7d81327ada3b110d74951",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-21T23:37:59.501Z"
+    },
+    {
       "id": "9399d7e3ce1c862e8ad78be68ae4b2a8bca576401c185034c3705842b38b63ee",
       "teamId": "arsenal",
       "teamName": "阿森纳",
@@ -469,6 +543,33 @@
       "translatedAt": "2026-08-21T16:49:30.127Z"
     },
     {
+      "id": "fa91310743dfe8d857b0628f8386ad79ca97a336616e5388be08a46f01817e5e",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Gallery: The best photos of Konsa's first day",
+      "summaryEn": "43 incredible shots from Ezri's first day as a Gunner!",
+      "bodyEn": [
+        "Ezri Konsa is a Gunner, and you can see what he got up to on his first day with our photo gallery!",
+        "From meeting up with Ebere Eze to signing his contract next to Mikel Arteta and Andrea Berta, Ezri has penned a long-term deal, swtiching Villa Park for Emirates Stadium.",
+        "Swipe through the best shots from his first day with our special signing gallery below!"
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/8457e6f079a7-dsc1016sxbzmlxq.webp",
+      "author": "Charlie Peat",
+      "publishedAt": "2026-08-21T15:00:45.702Z",
+      "url": "https://www.arsenal.com/news/gallery-the-best-photos-of-konsas-first-day-aMWFB5b20x1G",
+      "source": "Arsenal.com",
+      "titleZh": "画廊：孔萨第一天最佳照片",
+      "summaryZh": "43张埃兹里成为枪手第一天的精彩瞬间！",
+      "bodyZh": [
+        "埃兹里·孔萨是一名枪手，您可以通过我们的照片画廊看到他第一天都做了些什么！",
+        "从与埃贝雷·埃泽会面，到在米克尔·阿尔特塔和安德烈亚·贝尔塔身边签下合同，埃兹里签下了一份长期合同，从维拉公园转投酋长球场。",
+        "请在我们的特别签约画廊中滑动浏览他第一天的最佳照片！"
+      ],
+      "translationSourceHash": "3b560dcc1588a9cf1d38f88eaec85d128ca8bfc3bbd929ff7bf34346b5659d53",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-21T23:38:08.046Z"
+    },
+    {
       "id": "6dacd8bc9c10a0376887b7e011e147d40bf3e792ff4aab632fe4ad23c906ad97",
       "teamId": "arsenal",
       "teamName": "阿森纳",
@@ -575,35 +676,6 @@
       "translationSourceHash": "c43051ff622058032bde6d30df8d251154c2c18d92922f1cbb4dac4065144217",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-21T15:46:27.833Z"
-    },
-    {
-      "id": "bf5e703c8bc5fcaae1e35c9aeca2d2e89be9522c3573d7510d58293527d564bf",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Wellesley-Smith and Gale in England U20s squad",
-      "summaryEn": "Young Gunners Cecily Wellesley-Smith and Jessie Gale have both been called up for England’s FIFA U20 Women’s World Cup squad.",
-      "bodyEn": [
-        "Young Gunners Cecily Wellesley-Smith and Jessie Gale have both been called up for England’s FIFA U20 Women’s World Cup squad.",
-        "The tournament will take place in Poland in September, with the young Lionesses going into Group B alongside Brazil, Tanzania and Canada.",
-        "England’s group games will take place on Saturday, September 5, Tuesday, September 8, and Friday, September 11.",
-        "Wellesley-Smith is on loan at Swedish club FC Rosengard in the Swedish Damallsvenskan until December, while Gale recently completed a loan switch to Newcastle United."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/d2e0fef588aa-gettyimages-2227910505.webp",
-      "author": "Stephen Wright",
-      "publishedAt": "2026-08-21T13:00:00.000Z",
-      "url": "https://www.arsenal.com/news/wellesley-smith-and-gale-in-england-u20s-squad-arTra0f9ww5E",
-      "source": "Arsenal.com",
-      "titleZh": "韦尔斯利-史密斯和盖尔入选英格兰U20女足世界杯名单",
-      "summaryZh": "阿森纳小将韦尔斯利-史密斯和盖尔入选英格兰U20女足世界杯名单。",
-      "bodyZh": [
-        "阿森纳小将塞西莉·韦尔斯利-史密斯和杰西·盖尔双双入选英格兰U20女足世界杯阵容。",
-        "本届赛事将于9月在波兰举行，英格兰U20女足与巴西、坦桑尼亚和加拿大同分在B组。",
-        "英格兰队的小组赛将于9月5日（周六）、9月8日（周二）和9月11日（周五）进行。",
-        "韦尔斯利-史密斯目前租借至瑞典俱乐部FC罗森加德，效力于瑞典女子足球超级联赛，租期至12月；盖尔则近期租借加盟纽卡斯尔联。"
-      ],
-      "translationSourceHash": "e6e4f9ae0f39b8e607a1c27d14393294c693ed42832b4e290f8fdb1929552ea6",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-21T13:08:50.648Z"
     },
     {
       "id": "a6030b16643cf5c1820da317cbce66dfa2a9fe8a93460ce3d73f6b5b598af7bf",
@@ -934,94 +1006,6 @@
       "translationSourceHash": "1b3f0de65f1f87d35d2033fbdf1c9c8e4947ffabdfbbd12f4b0b67ba7a31dc70",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-20T07:05:54.409Z"
-    },
-    {
-      "id": "e57189de9becf730372b323a6145a4d9a6b1e4113ad27f6d9f0ec24fa21f4c10",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Your chance to win the ultimate Arsenal x Google Pixel bundle",
-      "summaryEn": "It’s here. Say hello to the Google Pixel 11 , Pixel 11. Packed full of game changing new AI and camera features, the Pixel 11 will ensure you never miss a matchday moment.",
-      "bodyEn": [
-        "Say Hello to the Google Pixel 11",
-        "Packed full of game changing new AI and camera features, the Pixel 11 will ensure you never miss a matchday moment.",
-        "To learn more, visit the Google Store.",
-        "To celebrate the launch, we're giving away the ultimate prize:",
-        "For your chance to win, enter your details below…",
-        "Competition closes at 23:59 on 20th September 2026. Terms and conditions apply."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/1a4b6b589d78-copy-of-h323056p855397arsenalgooglepixelbanner1800x1200px.webp",
-      "author": "Arsenal Media",
-      "publishedAt": "2026-08-16T16:01:00.000Z",
-      "url": "https://www.arsenal.com/news/your-chance-to-win-the-ultimate-arsenal-x-google-pixel-bundle-aAY012H8nyCE",
-      "source": "Arsenal.com",
-      "titleZh": "赢取阿森纳×谷歌 Pixel 终极套装的机会",
-      "summaryZh": "谷歌 Pixel 11 登场，搭载革命性 AI 与相机功能，确保你不错过任何比赛日瞬间。",
-      "bodyZh": [
-        "向谷歌 Pixel 11 问好",
-        "搭载变革性的全新 AI 和相机功能，Pixel 11 将确保你不错过任何比赛日瞬间。",
-        "了解更多，请访问谷歌商店。",
-        "为庆祝发布，我们送出终极大奖：",
-        "为赢取机会，请在下方填写您的信息……",
-        "活动将于2026年9月20日23:59结束。适用条款与条件。"
-      ],
-      "translationSourceHash": "dad972f7ef320cb7c2b938d08ab0828d9adcd84faf7b80d9145bafe8dc0cf856",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-21T23:02:10.734Z"
-    },
-    {
-      "id": "01c658077d0c034788c27cc8c3b6a91970c1bdff21cdad4a6dc5b61897f1915d",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Arsenal transfers: All the ins and outs in 2026/27",
-      "summaryEn": "All the details around who has come and gone in our summer transfer window so far",
-      "bodyEn": [
-        "The off-season is traditionally dominated by the summer transfer window, with players coming and going throughout the club.",
-        "We’ve grouped together a full list of every Arsenal deal during this window so far for our men’s, women’s and academy teams, so you can keep track until the windows close in September.",
-        "MEN'S TEAM",
-        "INS",
-        "Bruno Guimaraes - Newcastle United (undisclosed)Piero Hincapie - Bayer Leverkusen (undisclosed)Illan Meslier - Leeds United (free)Christos Tzolis - Club Brugge (undisclosed)Ezri Konsa - Aston Villa (undisclosed)",
-        "OUTS",
-        "Karl Hein - Werder Bremen (undisclosed)Jakub Kiwior - Porto (undisclosed)Christian Norgaard - Everton (undisclosed)Leandro Trossard - Besiktas (undisclosed)",
-        "WOMEN'S TEAM",
-        "INS",
-        "Ona Batlle - Barcelona (free)Lisa Baum - RB Leipzig (undisclosed)Selina Cerci - Hoffenheim (undisclosed)Isabelle Damm - Brondby (undisclosed)Geraldine Reuteler - Eintracht Frankfurt (free)Misa Rodriguez - Real Madrid (free)Georgia Stanway - Bayern Munich (free)",
-        "OUTS",
-        "Laia Codina - West Ham United (free)Jessie Gale - Newcastle United (loan)Laila Harbert - San Diego Wave (undisclosed)Rosa Kafaji - London City Lionesses (undisclosed)Katie McCabe - Chelsea (free)Beth Mead - Manchester City (free)Jenna Nighswonger - Bay FC (permanent)Victoria Pelova - Tottenham Hotspur (free)Naomi Williams - releasedManuela Zinsberger - Borussia Dortmund (free)",
-        "ACADEMY",
-        "INS",
-        "Elijah Upson",
-        "OUTS",
-        "Sam Chapman - Georgia Southern Eagles (free)Harrison Dudziak - releasedSeb Ferdinand - releasedCam’ron Ismail - releasedIsmael Kabia - St Mirren (season-long loan)Will Lannin-Sweet - releasedAlex Marciniak - releasedJosh Nichols - Kustosija (free)Samuel Onyekachukwu - releasedAlexei Rojas-Fedorushchenko - Penafiel (free)"
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/6a94ec6c490f-london-colney-england-bruno-guimaraes-signs-for-arsenal-at-sobha-realty-training.webp",
-      "author": "Arsenal Media",
-      "publishedAt": "2026-08-11T06:00:00.000Z",
-      "url": "https://www.arsenal.com/news/arsenal-transfers-all-the-ins-and-outs-in-202627-a8qx29v8B1fR",
-      "source": "Arsenal.com",
-      "titleZh": "阿森纳转会：2026/27赛季所有转入与转出",
-      "summaryZh": "这里汇总了夏季转会窗口至今所有人员变动详情。",
-      "bodyZh": [
-        "休赛期通常以夏季转会窗口为主，球员在整个俱乐部中进进出出。",
-        "我们汇总了迄今为止阿森纳男足、女足和青训队在此窗口的每一笔交易，以便您在九月份窗口关闭前随时掌握动态。",
-        "男足",
-        "转入",
-        "布鲁诺·吉马良斯——纽卡斯尔联（未透露）皮耶罗·因卡皮耶——勒沃库森（未透露）伊兰·梅利耶——利兹联（自由转会）克里斯托斯·佐利斯——布鲁日俱乐部（未透露）埃兹里·孔萨——阿斯顿维拉（未透露）",
-        "转出",
-        "卡尔·海因——云达不来梅（未透露）雅库布·基维奥尔——波尔图（未透露）克里斯蒂安·诺加德——埃弗顿（未透露）莱昂德罗·特罗萨德——贝西克塔斯（未透露）",
-        "女足",
-        "转入",
-        "奥纳·巴特莱——巴塞罗那（自由转会）丽莎·鲍姆——RB莱比锡（未透露）塞琳娜·塞尔奇——霍芬海姆（未透露）伊莎贝尔·达姆——布隆德比（未透露）杰拉尔丁·罗伊特勒——法兰克福（自由转会）米萨·罗德里格斯——皇家马德里（自由转会）乔治娅·斯坦韦——拜仁慕尼黑（自由转会）",
-        "转出",
-        "莱亚·科迪纳——西汉姆联（自由转会）杰西·盖尔——纽卡斯尔联（租借）莱拉·哈伯特——圣迭戈波浪（未透露）罗莎·卡法吉——伦敦城雌狮（未透露）凯蒂·麦凯布——切尔西（自由转会）贝丝·米德——曼城（自由转会）詹娜·奈斯旺格——湾FC（永久转会）维多利亚·佩洛娃——托特纳姆热刺（自由转会）娜奥米·威廉姆斯——解约曼努埃拉·金伯格——多特蒙德（自由转会）",
-        "青训",
-        "转入",
-        "伊莱贾·厄普森",
-        "转出",
-        "萨姆·查普曼——佐治亚南方鹰（自由转会）哈里森·杜齐亚克——解约塞布·费迪南德——解约卡姆龙·伊斯梅尔——解约伊斯梅尔·卡比亚——圣米伦（赛季租借）威尔·兰宁-斯威特——解约亚历克斯·马尔奇尼亚克——解约乔什·尼科尔斯——库斯托希亚（自由转会）塞缪尔·奥涅卡楚克乌——解约阿列克谢·罗哈斯-费多鲁申科——佩纳菲耶尔（自由转会）"
-      ],
-      "translationSourceHash": "db12ccb94e84215a0b8ed4ae87c63397cba65f989d48ff09515cc9ecfb706d26",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-21T23:02:18.622Z"
     }
   ]
 }
