@@ -1,12 +1,39 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-21T03:18:05.923Z",
+  "updatedAt": "2026-08-21T04:22:20.864Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "6ced5a16bd1207a02a89cd0b7c9f2672db12cae5dadcfeb02628709358bcd601",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Enjoy our best opening day goals",
+      "summaryEn": "Watch our greatest opening day goals before facing Coventry!",
+      "bodyEn": [
+        "Our 2026/27 campaign is upon us and to get in the mood for our Premier League title defence, we've taken a look back at some classic opening day strikes!",
+        "From Bukayo Saka's rocket v Nottingham Forest to Denilson's wonder goal at Everton, we've had a feast of incredible opening day goals to savour.",
+        "As we prepare to take on newly-promoted Coventry City at Emirates Stadium, relive these opening game belters by pressing play on the video above now!"
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/7e7bae901ad4-bukayo-saka-v-nottingham-forst-082023.webp",
+      "author": "Charlie Peat",
+      "publishedAt": "2026-08-21T04:00:00.070Z",
+      "url": "https://www.arsenal.com/news/enjoy-our-best-opening-day-goals-a2rLD6e22J8u",
+      "source": "Arsenal.com",
+      "titleZh": "欣赏我们最精彩的揭幕战进球",
+      "summaryZh": "迎战考文垂前，回顾我们最精彩的揭幕战进球！",
+      "bodyZh": [
+        "我们的2026/27赛季即将开始，为了营造英超卫冕的氛围，我们回顾了历年来一些经典的揭幕战进球！",
+        "从布卡约·萨卡对阵诺丁汉森林的世界波，到德尼尔森在埃弗顿的神奇进球，我们拥有众多令人难以置信的揭幕战进球可供品味。",
+        "当我们准备在酋长球场迎战新升入英超的考文垂城时，现在点击上面的视频播放，重温这些揭幕战中的精彩进球！"
+      ],
+      "translationSourceHash": "0afcaf7252f064193062a99f6caf7f5f2143b28d3b56e598b8527191bd3a4d84",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-21T04:22:20.864Z"
+    },
     {
       "id": "2353844c077554292de27a8241b67a121a4c4286ad7edfde8ecd2bbdfff044d1",
       "teamId": "arsenal",
@@ -931,61 +958,6 @@
       "translationSourceHash": "eff969c3327a6160a864a7741daf5bd705c870dcf7685b3b2628986ed49fb95c",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-21T03:17:26.198Z"
-    },
-    {
-      "id": "01c658077d0c034788c27cc8c3b6a91970c1bdff21cdad4a6dc5b61897f1915d",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Arsenal transfers: All the ins and outs in 2026/27",
-      "summaryEn": "All the details around who has come and gone in our summer transfer window so far",
-      "bodyEn": [
-        "The off-season is traditionally dominated by the summer transfer window, with players coming and going throughout the club.",
-        "We’ve grouped together a full list of every Arsenal deal during this window so far for our men’s, women’s and academy teams, so you can keep track until the windows close in September.",
-        "MEN'S TEAM",
-        "INS",
-        "Bruno Guimaraes - Newcastle United (undisclosed)Piero Hincapie - Bayer Leverkusen (undisclosed)Illan Meslier - Leeds United (free)Christos Tzolis - Club Brugge (undisclosed)",
-        "OUTS",
-        "Karl Hein - Werder Bremen (undisclosed)Jakub Kiwior - Porto (undisclosed)Christian Norgaard - Everton (undisclosed)Leandro Trossard - Besiktas (undisclosed)",
-        "WOMEN'S TEAM",
-        "INS",
-        "Ona Batlle - Barcelona (free)Lisa Baum - RB Leipzig (undisclosed)Selina Cerci - Hoffenheim (undisclosed)Isabelle Damm - Brondby (undisclosed)Geraldine Reuteler - Eintracht Frankfurt (free)Misa Rodriguez - Real Madrid (free)Georgia Stanway - Bayern Munich (free)",
-        "OUTS",
-        "Laia Codina - West Ham United (free)Jessie Gale - Newcastle United (loan)Laila Harbert - San Diego Wave (undisclosed)Rosa Kafaji - London City Lionesses (undisclosed)Katie McCabe - Chelsea (free)Beth Mead - Manchester City (free)Jenna Nighswonger - Bay FC (permanent)Victoria Pelova - Tottenham Hotspur (free)Naomi Williams - releasedManuela Zinsberger - Borussia Dortmund (free)",
-        "ACADEMY",
-        "INS",
-        "Elijah Upson",
-        "OUTS",
-        "Sam Chapman - Georgia Southern Eagles (free)Harrison Dudziak - releasedSeb Ferdinand - releasedCam’ron Ismail - releasedIsmael Kabia - St Mirren (season-long loan)Will Lannin-Sweet - releasedAlex Marciniak - releasedJosh Nichols - Kustosija (free)Samuel Onyekachukwu - releasedAlexei Rojas-Fedorushchenko - Penafiel (free)"
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/6a94ec6c490f-london-colney-england-bruno-guimaraes-signs-for-arsenal-at-sobha-realty-training.webp",
-      "author": "Arsenal Media",
-      "publishedAt": "2026-08-11T06:00:00.000Z",
-      "url": "https://www.arsenal.com/news/arsenal-transfers-all-the-ins-and-outs-in-202627-a8qx29v8B1fR",
-      "source": "Arsenal.com",
-      "titleZh": "阿森纳转会：2026/27赛季所有转入与转出",
-      "summaryZh": "夏季转会窗至今全部转入与转出的详细情况",
-      "bodyZh": [
-        "休赛期通常被夏季转会窗口主导，球员们在俱乐部中进进出出。",
-        "我们汇总了迄今为止夏季转会窗口期间阿森纳男足、女足和青训队的每一笔交易，以便您在九月份转会窗关闭前随时了解。",
-        "男足",
-        "转入",
-        "布鲁诺·吉马良斯 - 纽卡斯尔联（未透露） 皮耶罗·因卡皮耶 - 勒沃库森（未透露） 伊兰·梅利耶 - 利兹联（自由转会） 克里斯托斯·佐利斯 - 布鲁日（未透露）",
-        "转出",
-        "卡尔·海因 - 云达不莱梅（未透露） 雅库布·基维奥尔 - 波尔图（未透露） 克里斯蒂安·诺加德 - 埃弗顿（未透露） 莱安德罗·特罗萨德 - 贝西克塔斯（未透露）",
-        "女足",
-        "转入",
-        "奥娜·巴特勒 - 巴塞罗那（自由转会） 丽莎·鲍姆 - RB莱比锡（未透露） 塞琳娜·切尔奇 - 霍芬海姆（未透露） 伊莎贝尔·达姆 - 布隆德比（未透露） 杰拉尔丁·罗伊特勒 - 法兰克福（自由转会） 米萨·罗德里格斯 - 皇家马德里（自由转会） 乔治亚·斯坦威 - 拜仁慕尼黑（自由转会）",
-        "转出",
-        "莱娅·科迪纳 - 西汉姆联（自由转会） 杰西·盖尔 - 纽卡斯尔联（租借） 莱拉·哈伯特 - 圣迭戈波浪（未透露） 罗莎·卡法吉 - 伦敦城雌狮（未透露） 凯蒂·麦凯布 - 切尔西（自由转会） 贝丝·米德 - 曼城（自由转会） 珍娜·奈斯旺格 - 海湾FC（永久转会） 维多利亚·佩洛娃 - 托特纳姆热刺（自由转会） 娜奥米·威廉姆斯 - 解约 曼努埃拉·津斯伯格 - 多特蒙德（自由转会）",
-        "青训队",
-        "转入",
-        "伊莱贾·厄普森",
-        "转出",
-        "萨姆·查普曼 - 佐治亚南方老鹰（自由转会） 哈里森·杜齐亚克 - 解约 塞布·费迪南德 - 解约 卡姆隆·伊斯梅尔 - 解约 伊斯梅尔·卡比亚 - 圣米伦（赛季租借） 威尔·兰宁-斯威特 - 解约 亚历克斯·马尔奇尼亚克 - 解约 乔什·尼科尔斯 - 库斯托什亚（自由转会） 塞缪尔·奥涅卡楚克乌 - 佩纳菲耶尔（自由转会）"
-      ],
-      "translationSourceHash": "0c411fa6bbdad1aaedc97505ff0b487169bd59ebb5779c9622e4b2dfe8477a90",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-21T03:18:05.923Z"
     }
   ]
 }
