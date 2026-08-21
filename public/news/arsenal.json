@@ -1,12 +1,45 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-21T16:49:36.236Z",
+  "updatedAt": "2026-08-21T17:42:40.510Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "a03829487e47cd45821d7a17b8e3c3a371c1c7deaae76f2d114cb07c77fbe0ca",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Arsenal v Coventry City: Premier League – live",
+      "summaryEn": "First game of new Premier League season, 8pm kick-offArsenal’s opportunity | Football Daily | Mail ScottBREAKING NEWS: Sky Sports are still using that indefensible Kasabian racket for their Premier League theme tune. Bah. Had been very much hoping they’d replace it. Me, I’d pop the master tapes in the nearest brazier, and instead whack on Magic Trumpet by Herb Alpert and the Tijuana Brass, last used in this specific context by Granada Television for their gloriously Soviet-branded late-60s programme FOOTBALL. Tell me this wouldn’t improve your mood at least tenfold every time you heard it.… and now some Cov-infused build-up. That opening-weekend fever beginning to kick in now, right? Continue reading...",
+      "bodyEn": [
+        "BREAKING NEWS: Sky Sports are still using that indefensible Kasabian racket for their Premier League theme tune. Bah. Had been very much hoping they’d replace it. Me, I’d pop the master tapes in the nearest brazier, and instead whack on Magic Trumpet by Herb Alpert and the Tijuana Brass, last used in this specific context by Granada Television for their gloriously Soviet-branded late-60s programme FOOTBALL. Tell me this wouldn’t improve your mood at least tenfold every time you heard it.",
+        "… and now some Cov-infused build-up. That opening-weekend fever beginning to kick in now, right?",
+        "Some even-hotter-off-the-press preview action here. Firstly of an Arsenal bent …",
+        "… so let’s start at the very beginning. One step before the beginning, in fact. The Guardian presents, for your edification, the Premier League 2026-27 previews for Arsenal and Coventry City. Just in case you missed them.",
+        "The Premier League is back, and you won’t get too many people making a case for newly promoted Coventry City to get something in tonight’s opening game against champions Arsenal. But then on the first day of the 1993-94 season, Micky Quinn did this …",
+        "… and there weren’t too many at Highbury expecting that either. Throw in that Lee Dixon own goal, the centrepiece of another early-season away win for Cov, this time in 1991-92 with Arsenal reigning champions, and the Sky Blues have some disruptive form here. On the other hand, that was over 30 years ago, and Arsenal have won all five of the meetings between these clubs in the 21st century, albeit the last of those being in 2014. So take your pick as the champions of England meet the winners of the Championship. Kick-off is at 8pm BST. It’s back, and it’s on!"
+      ],
+      "imageUrl": "https://i.guim.co.uk/img/media/234a1e15459236916b2484b66f9542323a21659b/784_0_5000_4000/master/5000.jpg?width=140&quality=85&auto=format&fit=max&s=586768424779ca25a3b42bcd36071170",
+      "author": "Scott Murray",
+      "publishedAt": "2026-08-21T17:41:03.000Z",
+      "url": "https://www.theguardian.com/football/live/2026/aug/21/arsenal-v-coventry-city-premier-league-live",
+      "source": "The Guardian",
+      "titleZh": "阿森纳对阵考文垂城：英超联赛 – 直播",
+      "summaryZh": "新赛季英超首战，晚上8点开球。",
+      "bodyZh": [
+        "突发新闻：天空体育仍在用那首不可原谅的卡萨比安乐队歌曲作为英超主题曲。唉。我本来非常希望他们会换掉它。换作是我，会把母带扔进最近的火盆里，然后换上赫伯·阿尔珀特和蒂华纳铜管乐队的《魔法小号》，这首曲子最后一次用于这个特定场合，是格拉纳达电视台在他们那档带有辉煌苏维埃风格、60年代末的节目《足球》中。说真的，每次听到这个不会让你的心情至少好上十倍吗？",
+        "……现在来一些考文垂风格的赛前预热。首轮周末的热潮开始涌上来了，对吧？",
+        "这里还有一些更新鲜的预览内容。首先是关于阿森纳的……",
+        "……所以让我们从最开始说起。事实上，是开始之前的一步。《卫报》为您呈现，为了您的启迪，2026-27赛季英超联赛阿森纳和考文垂城的预览。以防您错过了它们。",
+        "英超回来了，你不会找到太多人认为新升级的考文垂城能在今晚对阵卫冕冠军阿森纳的揭幕战中拿到点什么。但话说回来，在1993-94赛季的第一天，米基·奎恩做到了这一点……",
+        "……而且当时海布里也没有多少人预料到那一点。再加上李·迪克森的乌龙球，那是考文垂另一个赛季初客场胜利的核心，这次是1991-92赛季，当时阿森纳是卫冕冠军。如此看来，天蓝军团在这里有一些搅局的历史。另一方面，那已经是30多年前的事了，阿森纳在21世纪两队的五次交锋中全部获胜，尽管最近一次是在2014年。所以，当英格兰冠军对阵英冠冠军时，你随意选择吧。开球时间是英国夏令时晚上8点。它回来了，比赛开始了！"
+      ],
+      "translationSourceHash": "1683d52e8e7a7a36243053fe6ec5b68b9e94f309ceb11b418fafbefec4e9e51d",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-21T17:42:40.510Z"
+    },
     {
       "id": "9399d7e3ce1c862e8ad78be68ae4b2a8bca576401c185034c3705842b38b63ee",
       "teamId": "arsenal",
@@ -969,43 +1002,6 @@
       "translationSourceHash": "79a69e738844e7a2d0f99ebe43ab0f4c1723b17781fab0f0c667a179df0a56b4",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-17T15:03:08.649Z"
-    },
-    {
-      "id": "935eb9fcba0941604f64a554df43fa32a7e95b51465142d47b151dad2b312f19",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "‘That’s the standard’: Mikel Arteta hails Arsenal’s desire on blue day for Maresca",
-      "summaryEn": "Champions delight manager by ‘winning the first trophy’Maresca wants Manchester City signings to arrive soonMikel Arteta said his Arsenal players demonstrated their hunger to defend the Premier League title in their Community Shield triumph over Manchester City. Arsenal, who ended their 22-year wait last season and are seeking to win back-to-back top-flight titles for the first time since 1934-35, beat City 3-0 at the Principality Stadium in Cardiff in Enzo Maresca’s first significant match in charge.Riccardo Calafiori opened the scoring after 24 seconds, the fastest goal in the competition since Bobby Owen’s strike for City in 1968, before Kai Havertz doubled Arsenal’s lead and their captain, Martin Ødegaard, completed the scoring on 48 minutes. The 3-0 defeat represented the joint-heaviest loss for a City manager in their first game in charge, with Harry Newbould the most recent to suf",
-      "bodyEn": [
-        "Mikel Arteta said his Arsenal players demonstrated their hunger to defend the Premier League title in their Community Shield triumph over Manchester City. Arsenal, who ended their 22-year wait last season and are seeking to win back-to-back top-flight titles for the first time since 1934-35, beat City 3-0 at the Principality Stadium in Cardiff in Enzo Maresca’s first significant match in charge.",
-        "Riccardo Calafiori opened the scoring after 24 seconds, the fastest goal in the competition since Bobby Owen’s strike for City in 1968, before Kai Havertz doubled Arsenal’s lead and their captain, Martin Ødegaard, completed the scoring on 48 minutes. The 3-0 defeat represented the joint-heaviest loss for a City manager in their first game in charge, with Harry Newbould the most recent to suffer a three-goal opening defeat – 4-1, also to Arsenal, in 1906. It is also Maresca’s joint-heaviest defeat as a manager in England.",
-        "Arteta was delighted with Arsenal’s convincing display. “I am obviously extremely happy with the performance, the result and winning the first trophy,” he said. “We talked about the desire we have to start the season and to show ourselves how much we want it and I saw a lot of positive things against a top opponent. I’m very impressed in the manner that we played, in the manner that we competed. That’s the standard for us. If we drive the standards at this level, I’m sure that we’re going to be really, really competitive.”",
-        "Asked about the desire displayed by his team, he said: “Because we want to go straight again. The desire comes [because] I want to live that moment again. I want to live other moments, even bigger than them … we know what it’s going to take. We know the difficulty of the task. We’ve never done it at this club, to win it again. We know that it’s going to demand something special and we are ready for it.”",
-        "Arteta praised the performance of Christos Tzolis, who was involved in all three goals. “He is a really intelligent boy and he has a massive quality, which is when he is in the last 20-30m [of the pitch] he is so composed to pick people out in and around the box,” said the Arsenal manager. “And also to finish actions and he has shown that again two or three times. He was decisive.”",
-        "Ødegaard said the team’s performance was evidence they are capable of winning back-to-back titles. “We played some brilliant football,” said Arsenal’s captain. “[It was a] great performance and a great way to start the season. I always want to help the team as much as possible with goals and assists. I want to score more goals. We showed our level today. We’ve shown we’re ready. We’re serious and we want to do it again. We want to attack it. We want to do it again. When you get a taste of how nice it is you want to do it again. We want to win everything.”",
-        "Maresca acknowledged City, who are closing on a deal to sign Lille’s Ayyoub Bouaddi as they prepare to sell Rodri to Barcelona, would welcome new arrivals before their league opener at home to Bournemouth on Sunday. Rodri did not travel to Cardiff, where Elliot Anderson started in midfield, and Jack Grealish arrived from the substitutes’ bench for his first City appearance since May 2025. “Any new signing, the sooner they arrive the better because we are starting the Premier League in one week and if they start to work with us as soon as possible it’s better that they can also understand the way we want to play,” he said.",
-        "Maresca said he was not alarmed by the manner of the defeat. “In general I’m always concerned, even when we win games so imagine how [concerned] that we didn’t win the game,” said the Italian, who succeeded Pep Guardiola this summer. “It’s just the beginning, we have many things that we need to do better, I think the reaction was good after conceding the first goal and now try to reset and analyse the game and think from Tuesday about the next game.”"
-      ],
-      "imageUrl": "https://i.guim.co.uk/img/media/d098d8f9d83787d54b1057a2d6a426cf0da01724/526_42_2888_2310/master/2888.jpg?width=140&quality=85&auto=format&fit=max&s=1308b81771a8eafdb20241a9f15ad446",
-      "author": "Ben Fisher at the Principality Stadium",
-      "publishedAt": "2026-08-16T19:37:19.000Z",
-      "url": "https://www.theguardian.com/football/2026/aug/16/mikel-arteta-arsenal-desire-enzo-maresca-community-shield",
-      "source": "The Guardian",
-      "titleZh": "“这就是标准”：阿尔特塔称赞阿森纳在马雷斯卡的蓝色日子里的渴望",
-      "summaryZh": "阿尔特塔：球员们展现了卫冕英超的渴望。马雷斯卡希望曼城新援尽快到位。",
-      "bodyZh": [
-        "米克尔·阿尔特塔表示，他的阿森纳球员在社区盾战胜曼城的比赛中展现了他们捍卫英超冠军的渴望。阿森纳上赛季结束了22年的等待，正寻求自1934-35赛季以来首次连续夺得顶级联赛冠军，他们在加的夫公国球场以3-0击败曼城，这也是恩佐·马雷斯卡执教的首场重要比赛。",
-        "里卡尔多·卡拉菲奥里在24秒时首开纪录，这是自1968年鲍比·欧文为曼城进球以来该赛事最快的进球，随后凯·哈弗茨扩大领先优势，队长马丁·厄德高在第48分钟锁定胜局。3-0的失利是曼城主帅执教首秀中并列最惨重的失利，最近一次遭遇三球开门黑的是哈里·纽博尔德——1906年同样以1-4输给阿森纳。这也是马雷斯卡在英格兰执教生涯中最惨重的失利之一。",
-        "阿尔特塔对阿森纳令人信服的表现感到欣喜。“我显然对表现、结果和赢得第一座奖杯感到非常高兴，”他说，“我们谈到了开始赛季的渴望，以及向自己展示我们有多想要它，我在面对顶级对手时看到了许多积极的东西。我对我们比赛的方式、竞争的方式印象深刻。这就是我们的标准。如果我们把标准提高到这个水平，我相信我们会非常有竞争力。”",
-        "在谈到球队展现的渴望时，他说：“因为我们想再次出发。渴望来自（因为）我想再次体验那个时刻。我想体验其他时刻，甚至更大的时刻……我们知道需要付出什么。我们知道任务的难度。我们在这家俱乐部从未做到过再次夺冠。我们知道这需要特别的东西，我们已经准备好了。”",
-        "阿尔特塔称赞了克里斯托斯·佐利斯的表现，他参与了全部三个进球。“他是一个非常聪明的男孩，他有一个巨大的优点，那就是当他在最后20-30米（球场）时，他能非常冷静地挑选禁区内外的人，”阿森纳主帅说，“而且也能完成进攻，他再次展示了两三次。他是决定性的。”",
-        "厄德高表示，球队的表现证明了他们有能力连续夺冠。“我们踢了一些精彩的足球，”阿森纳队长说，“（这是）伟大的表现和伟大的赛季开端。我总是想通过进球和助攻尽可能帮助球队。我想进更多球。我们今天展示了我们的水平。我们证明了我们已经准备好了。我们是认真的，我们想再来一次。我们想进攻它。我们想再次做到。当你尝到它的滋味时，你会想再来一次。我们想赢得一切。”",
-        "马雷斯卡承认，曼城在准备将罗德里卖给巴塞罗那的同时，正在敲定签下里尔的阿尤布·布阿迪的交易，他们欢迎新援在周日联赛主场对阵伯恩茅斯之前到位。罗德里没有前往加的夫，埃利奥特·安德森在中场首发，杰克·格拉利什替补登场，这是自2025年5月以来他首次代表曼城出场。“任何新签约，他们越早到来越好，因为我们一周后就要开始英超了，如果他们尽快开始和我们一起工作，他们也能更好地理解我们想要的比赛方式，”他说。",
-        "马雷斯卡表示，他并不对失利的方式感到惊慌。“总的来说我总是担心，即使我们赢了比赛，所以想象一下（担心）我们没有赢下比赛，”这位今年夏天接替佩普·瓜迪奥拉的意大利人说，“这只是开始，我们有很多事情需要做得更好，我认为在丢球后反应是好的，现在试着重新调整并分析比赛，从周二开始考虑下一场比赛。”"
-      ],
-      "translationSourceHash": "b823c87e64c5adeba4e86d679b43f0cce1bbb81a7a27c7aa3494508c4475eb94",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-16T20:36:47.000Z"
     }
   ]
 }
