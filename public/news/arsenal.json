@@ -1,12 +1,68 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-21T11:38:13.555Z",
+  "updatedAt": "2026-08-21T13:08:50.822Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "bf5e703c8bc5fcaae1e35c9aeca2d2e89be9522c3573d7510d58293527d564bf",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Wellesley-Smith and Gale in England U20s squad",
+      "summaryEn": "Young Gunners Cecily Wellesley-Smith and Jessie Gale have both been called up for England’s FIFA U20 Women’s World Cup squad.",
+      "bodyEn": [
+        "Young Gunners Cecily Wellesley-Smith and Jessie Gale have both been called up for England’s FIFA U20 Women’s World Cup squad.",
+        "The tournament will take place in Poland in September, with the young Lionesses going into Group B alongside Brazil, Tanzania and Canada.",
+        "England’s group games will take place on Saturday, September 5, Tuesday, September 8, and Friday, September 11.",
+        "Wellesley-Smith is on loan at Swedish club FC Rosengard in the Swedish Damallsvenskan until December, while Gale recently completed a loan switch to Newcastle United."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/d2e0fef588aa-gettyimages-2227910505.webp",
+      "author": "Stephen Wright",
+      "publishedAt": "2026-08-21T13:00:00.000Z",
+      "url": "https://www.arsenal.com/news/wellesley-smith-and-gale-in-england-u20s-squad-arTra0f9ww5E",
+      "source": "Arsenal.com",
+      "titleZh": "韦尔斯利-史密斯和盖尔入选英格兰U20女足世界杯名单",
+      "summaryZh": "阿森纳小将韦尔斯利-史密斯和盖尔入选英格兰U20女足世界杯名单。",
+      "bodyZh": [
+        "阿森纳小将塞西莉·韦尔斯利-史密斯和杰西·盖尔双双入选英格兰U20女足世界杯阵容。",
+        "本届赛事将于9月在波兰举行，英格兰U20女足与巴西、坦桑尼亚和加拿大同分在B组。",
+        "英格兰队的小组赛将于9月5日（周六）、9月8日（周二）和9月11日（周五）进行。",
+        "韦尔斯利-史密斯目前租借至瑞典俱乐部FC罗森加德，效力于瑞典女子足球超级联赛，租期至12月；盖尔则近期租借加盟纽卡斯尔联。"
+      ],
+      "translationSourceHash": "e6e4f9ae0f39b8e607a1c27d14393294c693ed42832b4e290f8fdb1929552ea6",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-21T13:08:50.648Z"
+    },
+    {
+      "id": "a6030b16643cf5c1820da317cbce66dfa2a9fe8a93460ce3d73f6b5b598af7bf",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Inside Training: Getting set for curtain raiser",
+      "summaryEn": "With the Premier League kicking off at Emirates Stadium tonight, watch how we prepared for our opening match against Coventry City.",
+      "bodyEn": [
+        "With the Premier League kicking off at Emirates Stadium tonight, watch how we prepared for our opening match against Coventry City.",
+        "Our cameras were at the Sobha Realty Training Centre yesterday to capture the latest session, which you can see in the video above.",
+        "The 2026/27 campaign begins at 8pm with the Premier League and Championship champions going head-to-head. Get the lowdown on the match with our preview!"
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/1175ea4f613d-gettyimages-2291292851.webp",
+      "author": "Stephen Wright",
+      "publishedAt": "2026-08-21T12:16:17.087Z",
+      "url": "https://www.arsenal.com/news/inside-training-getting-set-for-curtain-raiser-au2Xk4T2YFOD",
+      "source": "Arsenal.com",
+      "titleZh": "训练内幕：为揭幕战做准备",
+      "summaryZh": "英超今晚在酋长球场开赛，看看我们如何备战与考文垂城的首场比赛。",
+      "bodyZh": [
+        "英超今晚在酋长球场开赛，看看我们如何备战与考文垂城的首场比赛。",
+        "我们的摄像机昨天在苏巴房地产训练中心捕捉了最新训练，你可以在上方视频中观看。",
+        "2026/27赛季的比赛将于晚上8点开始，英超冠军与英冠冠军将正面交锋。查看我们的预览，了解比赛详情！"
+      ],
+      "translationSourceHash": "347ac9871059fd570729355f9361b3961f199b97cb0f8ecc477fee41183999d4",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-21T13:08:50.821Z"
+    },
     {
       "id": "caed48ffb04e87853e946b13f27629eafce0a3b89f16f5e8037877e07bf839e3",
       "teamId": "arsenal",
@@ -550,61 +606,6 @@
       "translatedAt": "2026-08-21T03:16:11.997Z"
     },
     {
-      "id": "ca5281c305f600a07c8dc594fa243d40bff31602f4d6c687522ff6e430fc5bf1",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Academy sides learn Premier League Cup opponents",
-      "summaryEn": "Our U18s, U17s and U16s have been drawn into their respective groups for 2026/27",
-      "bodyEn": [
-        "Our Academy sides have learned their opponents for the various editions of the 2026/27 Premier League Cup.",
-        "We'll feature in three editions of this year's competition, with our under-18s, under-17s and under-16s sides all competing for the trophy in their respective age categories.",
-        "Our last taste of silverware in the competition came in 2025, when our under-16s beat Chelsea 3-1 in the final at Kingsmeadow to lift the title.",
-        "Next week, our under-18s will travel to Blackburn Rovers for their opening game in this season's competition, before Birmingham City and Sunderland come to north London in October and November respectively.",
-        "The under-16s competition mirrors the under-18s fixtures, meaning their fixtures will be played on the same days against the same teams. Our under-18s will play their home matches at the Sobha Realty Training Centre, while the under-16s kick-off at the same time at Hale End.",
-        "In both the under-18s and under-16s competitions, the winners of each of the eight groups progress to the knockout stages, at which point the competition becomes a traditional knockout bracket down to the final.",
-        "Meanwhile, our under-17s start their cup campaign with a north London derby at home to Tottenham, before travelling to West Brom and Cardiff in their second and third group matches.",
-        "The under-17s competition features fewer sides, meaning there is an opportunity for the best second-place sides to join the group winners in the quarter-finals.",
-        "PREMIER LEAGUE CUP FIXTURES",
-        "U18s/U16s",
-        "Blackburn Rovers v ArsenalTuesday, August 25 (1pm)",
-        "Arsenal v Birmingham CitySaturday, October 10 (12pm)",
-        "Arsenal v SunderlandSaturday, November 7 (11am)",
-        "U17s",
-        "Arsenal v Tottenham HotspurTuesday, September 1 (7pm)",
-        "West Bromwich Albion v ArsenalTuesday, September 15 (2pm)",
-        "Cardiff City v ArsenalTuesday, October 20 (6pm)"
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/66f54bc0c28c-kingston-upon-thames-england-arsenal-u16-lift-the-trophy-after-the-u16-premier-l.webp",
-      "author": "Connor Booth",
-      "publishedAt": "2026-08-20T16:23:47.833Z",
-      "url": "https://www.arsenal.com/news/academy-sides-learn-premier-league-cup-opponents-aRi1C3F3L4Ij",
-      "source": "Arsenal.com",
-      "titleZh": "青训梯队知晓英超杯对手",
-      "summaryZh": "我们的U18、U17和U16梯队已抽签确定2026/27赛季各自组别的对手。",
-      "bodyZh": [
-        "我们的青训梯队已经知晓了他们在2026/27赛季英超杯各赛事中的对手。",
-        "我们将参加本赛季该项赛事的三个组别，U18、U17和U16梯队将分别在各自年龄组中争夺奖杯。",
-        "我们上一次在该项赛事中夺冠是在2025年，当时我们的U16队在金斯梅多举行的决赛中以3-1击败切尔西，捧起冠军奖杯。",
-        "下周，我们的U18队将客场挑战布莱克本流浪者，迎来本赛季该项赛事的首场比赛；随后伯明翰城和桑德兰将分别在今年10月和11月造访北伦敦。",
-        "U16组别的赛程与U18组别相同，这意味着他们将在同一天与相同的对手比赛。我们的U18队将在索巴房地产训练中心进行主场比赛，而U16队则同时在海尔恩德开球。",
-        "在U18和U16组别中，八个小组的头名将晋级淘汰赛阶段，届时比赛将变为传统的淘汰赛制，直至决赛。",
-        "与此同时，我们的U17队将在主场迎战托特纳姆热刺，以一场北伦敦德比开启杯赛征程，随后将在第二和第三场小组赛中客场对阵西布朗和卡迪夫城。",
-        "U17组别参赛球队较少，这意味着成绩最好的小组第二有机会与小组头名一同晋级四分之一决赛。",
-        "英超杯赛程",
-        "U18/U16",
-        "布莱克本流浪者 vs 阿森纳，8月25日星期二（下午1点）",
-        "阿森纳 vs 伯明翰城，10月10日星期六（中午12点）",
-        "阿森纳 vs 桑德兰，11月7日星期六（上午11点）",
-        "U17",
-        "阿森纳 vs 托特纳姆热刺，9月1日星期二（晚上7点）",
-        "西布罗姆维奇 vs 阿森纳，9月15日星期二（下午2点）",
-        "卡迪夫城 vs 阿森纳，10月20日星期二（下午6点）"
-      ],
-      "translationSourceHash": "10d673ad77bf3f6c9058684871cce80f030ec2e00a4fe9cc4e7c15fb97f8a4be",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-21T03:15:48.217Z"
-    },
-    {
       "id": "e8607645c75591842c1e1398692c51fe440efbd04658463cd2948c55a4854015",
       "teamId": "arsenal",
       "teamName": "阿森纳",
@@ -843,33 +844,6 @@
       "translationSourceHash": "1b3f0de65f1f87d35d2033fbdf1c9c8e4947ffabdfbbd12f4b0b67ba7a31dc70",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-20T07:05:54.409Z"
-    },
-    {
-      "id": "6cad0cc8315fe6a21ae47115e1c9d47ccd0f1cf485099a88f7edc241d114254e",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Find out how you can appear in our amazing content",
-      "summaryEn": "We're on the hunt for supporters to take part in a variety of videos to appear on our website, app and social channels",
-      "bodyEn": [
-        "We're back with Guess the Arsenal Player! Do you think you've got what it takes to trick the panel into thinking you're a former Gunner?",
-        "If so, send a short video explaining why you think you've got what it takes to casting@arsenal.co.uk, as well as your name and age.",
-        "We’re looking for UK-based males, available Thursday, August 27 to travel to the Sobha Realty Training Centre who are at least 30 years of age."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/d1674885593c-william-saliba-and-eberechi-eze-in-guess-the-gooner.webp",
-      "author": "Arsenal Media",
-      "publishedAt": "2026-08-19T19:00:00.000Z",
-      "url": "https://www.arsenal.com/news/find-out-how-you-can-appear-in-our-amazing-content-aExmI6Y54SKo",
-      "source": "Arsenal.com",
-      "titleZh": "了解如何出现在我们的精彩内容中",
-      "summaryZh": "我们在寻找球迷参与多种视频拍摄，内容将发布在官网、App和社交媒体。",
-      "bodyZh": [
-        "我们带着《猜猜阿森纳球员》回来了！你认为自己有本事让节目组相信你是一名前枪手吗？",
-        "如果是，请发送一段短视频，说明你为什么认为自己有资格，发送至 casting@arsenal.co.uk，并附上你的姓名和年龄。",
-        "我们寻找居住在英国、年满30岁且可在8月27日星期四前往索巴房地产训练中心的男性。"
-      ],
-      "translationSourceHash": "d12756df07ed7e207e225731b0b573d4486ca2481c0a509827ddb779682da15a",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-21T03:16:53.378Z"
     },
     {
       "id": "6853877330ab8be50f729b9e325c11e5e3b6a226a43fd2044011ee97125d1296",
