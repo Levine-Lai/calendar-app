@@ -1,12 +1,53 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-21T04:22:20.864Z",
+  "updatedAt": "2026-08-21T05:15:23.256Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "75f2eb3d9008fb165dae96480b12ca796de7bdf6297b784747aa3cdeca748cc3",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "U18s preview: Arsenal v Ipswich",
+      "summaryEn": "Our under-18s take on the Tractor Boys in their first home game of the 2026/27 season",
+      "bodyEn": [
+        "Our under-18s face Ipswich Town on Saturday afternoon (12pm, UK) in our first U18s Premier League home game of the season, looking to build on last weekend's draw at West Bromwich Albion.",
+        "We battled to a goalless draw with the Baggies in our opening game of the season, and will be looking to secure our first win of the new campaign when we take on the Tractor Boys at the Sobha Realty Training Centre.",
+        "Goalkeeper Jack Talbot produced a fantastic display, making a series of excellent saves in the second half to preserve the clean sheet and secure a point on the opening weekend.",
+        "THE OPPOSITION",
+        "Ipswich competed in the U18s Premier League for the first time last season, finishing bottom with six wins and 20 points from their 28 league games.",
+        "The Tractor Boys got off to a tough start in 2026/27 last weekend, losing 5-2 at home Fulham despite taking an early lead.",
+        "Last season's meetings between ourselves and Town were both won by the home side, with Ipswich holding on for a 1-0 win in March after we'd won the contest in north London 4-2 in September.",
+        "HOW TO FOLLOW",
+        "The action gets underway from 12pm (UK) on Saturday afternoon, with live updates available on our Academy X account from pre-match through to the full-time whistle.",
+        "Post-match, don't miss exclusive interviews with our young Gunners on The Arsenal app and on Arsenal.com."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/c749b1a5d1c6-london-colney-england-marley-frohock-of-arsenal-during-the-pre-season-friendly-m.webp",
+      "author": "Connor Booth",
+      "publishedAt": "2026-08-21T05:00:00.000Z",
+      "url": "https://www.arsenal.com/news/u18s-preview-arsenal-v-ipswich-aZShE4t4yBa9",
+      "source": "Arsenal.com",
+      "titleZh": "U18前瞻：阿森纳对阵伊普斯维奇",
+      "summaryZh": "阿森纳U18将在本赛季首个主场迎战伊普斯维奇。",
+      "bodyZh": [
+        "我们的U18青年队将于周六下午（英国时间12点）在索巴房地产培训中心迎战伊普斯维奇镇，这是本赛季U18英超联赛的首个主场比赛，球队希望在上一场战平西布朗维奇的基础上再接再厉。",
+        "我们在赛季首场比赛中与西布朗维奇战成0-0平，现在面对拖拉机男孩，我们将力争取得新赛季的首场胜利。",
+        "门将杰克·塔尔博特表现出色，在下半场做出了一系列精彩扑救，力保球门不失，帮助球队在首轮拿到一分。",
+        "对手分析",
+        "伊普斯维奇上赛季首次参加U18英超联赛，28场联赛取得6胜积20分，排名垫底。",
+        "拖拉机男孩在2026/27赛季首轮遭遇艰难开局，尽管早早领先，但主场2-5负于富勒姆。",
+        "上赛季两队两次交锋均为主队获胜，我们在九月的北伦敦之战中4-2取胜，而伊普斯维奇则在三月的比赛中1-0获胜。",
+        "如何关注",
+        "比赛将于周六下午（英国时间12点）开始，我们的学院X账号将从赛前到终场哨响提供实时更新。",
+        "赛后，别忘了在阿森纳官方应用和 Arsenal.com 上观看我们年轻枪手的独家采访。"
+      ],
+      "translationSourceHash": "08ca15cc0f7361073e7d97ad5067c1c3bc8590ebde2c3afb88f63ec99e07c0e8",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-21T05:15:23.256Z"
+    },
     {
       "id": "6ced5a16bd1207a02a89cd0b7c9f2672db12cae5dadcfeb02628709358bcd601",
       "teamId": "arsenal",
@@ -619,35 +660,6 @@
       "translationSourceHash": "12c67bc4249d692eb6aefa7ed1f0c3ab672f7a1d4b23cf9a6de70d8828f213b5",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-21T03:17:20.865Z"
-    },
-    {
-      "id": "188e83d5bb879d7d406928d9550352f2e720a4793d0852e746417611546e3d5a",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "The best snaps from Premier League media day",
-      "summaryEn": "Our Gunners were in front of the cameras for the annual Premier League shoot day",
-      "bodyEn": [
-        "Ahead of the new Premier League season, our Gunners took part in a series of photoshoots for the world's media at the annual league media day, and you can see the best of the shots with our media day gallery.",
-        "Our men's first-team squad gathered at the Sobha Realty Training Centre on Tuesday to get various shots for the new campaign ahead of the season-opener against Coventry City at Emirates Stadium on Friday night (8pm UK).",
-        "As well as representatives from the world's media, club photographer David Price was at the training ground to capture the best of the action as our Premier League Champions posed for the cameras.",
-        "Swipe through the gallery below to see the best of David's shots as we prepare to get our title defence underway:"
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/b31c6a1b25a0-z919825copyrjco2ktn.webp",
-      "author": "Connor Booth",
-      "publishedAt": "2026-08-20T11:05:16.019Z",
-      "url": "https://www.arsenal.com/news/the-best-snaps-from-premier-league-media-day-aWfIy0H3bi8n",
-      "source": "Arsenal.com",
-      "titleZh": "英超媒体日最佳照片",
-      "summaryZh": "枪手参加年度英超媒体日，镜头前留下精彩瞬间。",
-      "bodyZh": [
-        "新英超赛季即将来临，我们的枪手在年度联赛媒体日上为全球媒体拍摄了一系列照片，您可以在我们的媒体日图集中看到最佳照片。",
-        "我们的男足一线队周二聚集在苏哈房产训练中心，为新赛季拍摄各种照片，备战周五晚上（英国时间晚上8点）在酋长球场对阵考文垂城的赛季揭幕战。",
-        "除了全球媒体代表外，俱乐部摄影师大卫·普莱斯也在训练场，当我们的英超冠军们面对镜头时，他捕捉了最佳瞬间。",
-        "滑动下方图集，看看大卫的最佳照片，我们即将开始卫冕之路。"
-      ],
-      "translationSourceHash": "b60793899e4e8cf8be375158cb340a72b27cea21450fc71eb688896bce473e9f",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-21T03:16:47.763Z"
     },
     {
       "id": "3b4e5c47c1ddd5c4fbea63dd97929e10e0e65dfd820f3b4c88bafb0da6c9aed6",
