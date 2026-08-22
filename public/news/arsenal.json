@@ -1,7 +1,7 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-22T08:45:43.643Z",
+  "updatedAt": "2026-08-22T09:39:49.854Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
@@ -46,24 +46,24 @@
         "The Premier League season is off and running, and you can watch all the best of our 3-0 success over Coventry City with our highlights.",
         "Goals from Kai Havertz and Bukayo Saka gave us a comfortable cushion just 23 minutes into the game, with Christos Tzolis making a major contribution during both.",
         "Not long after the restart, Martin Odegaard added our third to seal the victory and ensure the defence of our trophy began with the best possible result.",
-        "You can watch the best of the action now by pressing play on the video above to see our bitesize highlights, with an extended cut and a full match replay to come in due course."
+        "You can watch the best of the action now by pressing play on the video above to see our bitesize highlights, with an extended cut below and a full match replay also available."
       ],
       "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/a05ea73cd14e-london-england-kai-havertz-of-arsenal-scores-his-teams-first-goal-under-pressure.webp",
       "author": "Jonathon Rogers",
       "publishedAt": "2026-08-21T23:00:00.000Z",
       "url": "https://www.arsenal.com/news/highlights-arsenal-3-0-coventry-city-ayjw87w06gn1",
       "source": "Arsenal.com",
-      "titleZh": "集锦：阿森纳 3-0 考文垂城",
-      "summaryZh": "观看我们作为英超卫冕冠军首战的最佳表现。",
+      "titleZh": "集锦：阿森纳3-0考文垂城",
+      "summaryZh": "观看阿森纳卫冕英超首战3-0击败考文垂的精彩集锦。",
       "bodyZh": [
-        "英超赛季已经打响，您可以通过我们的集锦观看我们3-0战胜考文垂城的全部精华。",
-        "凯·哈弗茨和布卡约·萨卡的进球在比赛仅进行到23分钟时就为我们建立了舒适的优势，而克里斯托斯·佐利斯在这两个进球中都做出了重要贡献。",
-        "下半场开始不久，马丁·厄德高再入一球，锁定胜局，确保我们的卫冕之旅以最佳结果开启。",
-        "您现在可以点击上方视频播放键观看我们的精华集锦，随后还将提供加长版和全场回放。"
+        "英超新赛季已经开启，您可以通过我们的集锦观看阿森纳3-0战胜考文垂城的全部精彩瞬间。",
+        "凯·哈弗茨和布卡约·萨卡的进球让球队在比赛第23分钟就取得舒适领先，克里斯托斯·佐利斯在这两次进攻中均做出重要贡献。",
+        "下半场开始后不久，马丁·厄德高再入一球锁定胜局，确保卫冕征程以最完美的结果开启。",
+        "现在点击上方视频播放键即可观看本场比赛的精华集锦，下方还有加长版以及全场回放供您欣赏。"
       ],
-      "translationSourceHash": "85d242e6fda30893b0d2e2f8839c681e150fa5f6b105678131233f6cffde85e6",
+      "translationSourceHash": "a066a66ce6c7b36f72643000eec8d8fe455395323d6422d34337ac54a7a99ddb",
       "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-22T06:00:48.123Z"
+      "translatedAt": "2026-08-22T09:39:49.854Z"
     },
     {
       "id": "b94d789ae908855214befe2b57936223f49ddf5cc43546f5b6f3b95cda5c3516",
