@@ -1,12 +1,53 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-22T19:32:36.606Z",
+  "updatedAt": "2026-08-22T21:33:51.564Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "99f48e6799fe5a0eb78c69216b82376639d7940388e141e146f6486108451571",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Tahou disappointed after Ipswich loss",
+      "summaryEn": "Josh reacts to a disappointing day at the Sobha Realty Training Centre",
+      "bodyEn": [
+        "Josh Tahou admits he was disappointed after our under-18s lost 3-1 to Ipswich Town in the Premier League South.",
+        "The youngster came off the bench to provide an assist for Emerson Nwaneri late on as we suffered our first league defeat of 2026/27.",
+        "Speaking after the game, the versatile defender said he was disappointed that we couldn't start our home campaign with a victory.",
+        "\"I feel like, really disappointing. It was the first game at home. Really wanted to make a statement to the league that we're Arsenal, we're a big team but it was really unfortunate.",
+        "\"I feel like it's one of those ones where you just forget it, go on to the next game, show what we can do.\"",
+        "Josh was a second half substitute, making return to action after being on the sidelines.",
+        "An assist on return is a strong start, but the youngster is hoping to give more throughout the season.",
+        "\"I feel like, first and foremost, I'm so happy to be back from injury, it’s been a long time,\" he said.",
+        "\"I feel like off the bench, good to get the assist but I still think there's levels to my game to improve always. I feel like it's obviously been hard but the coaches just helped me a lot, keeping me strong, giving me a plan so I know how to follow it.\"",
+        "Our under-18s are back in action in midweek, taking Blackburn Rovers away from home on Tuesday, August 25 at 1pm."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/416b0a8a6a40-gettyimages-2222944497.webp",
+      "author": "Arsenal Media",
+      "publishedAt": "2026-08-22T16:09:12.803Z",
+      "url": "https://www.arsenal.com/news/tahou-disappointed-after-ipswich-loss-ayNwe5f7YNUL",
+      "source": "Arsenal.com",
+      "titleZh": "塔霍对伊普斯维奇失利感到失望",
+      "summaryZh": "塔霍回应在训练中心失望的一天",
+      "bodyZh": [
+        "乔什·塔霍承认，在英超南部联赛中我们U18队1-3负于伊普斯维奇后，他感到失望。",
+        "这位年轻球员替补登场，在比赛末段为埃默森·恩瓦内里送出助攻，但我们遭遇了2026/27赛季的首场联赛失利。",
+        "赛后，这位多面手后卫表示，未能以一场胜利开启主场征程令他感到失望。",
+        "“我觉得这真的很令人失望。这是主场首战。我们真的很想向联赛发出一个信号，证明我们是阿森纳，是一支强队，但真的很不走运。”",
+        "“我觉得这是那种你需要忘掉的比赛，继续前进，展示我们能做什么。”",
+        "乔什在下半场替补登场，在缺阵一段时间后重返赛场。",
+        "回归即送出助攻是一个良好的开端，但这位小将希望整个赛季能贡献更多。",
+        "“我觉得，首先，我很高兴能从伤病中恢复，已经很久了，”他说。",
+        "“我觉得替补上场能送出助攻很好，但我仍然认为我的比赛水平还有提升空间。显然这很艰难，但教练们帮了我很多，让我保持坚强，给我制定了一个计划，让我知道如何遵循。”",
+        "我们的U18队将在本周中期回归赛场，于8月25日星期二下午1点客场挑战布莱克本流浪者。"
+      ],
+      "translationSourceHash": "16277bdaea26bbf1fd17c48bf50bf12b7b7fc54d844aeabd08234124981ca95a",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-22T16:38:08.737Z"
+    },
     {
       "id": "aa2dd5bc39baba9500e0eb12a96da2a635ce4be12051ea3c985da3c7f06386bd",
       "teamId": "arsenal",
@@ -184,47 +225,6 @@
       "translatedAt": "2026-08-22T15:55:54.112Z"
     },
     {
-      "id": "99f48e6799fe5a0eb78c69216b82376639d7940388e141e146f6486108451571",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Tahou disappointed after Ipswich loss",
-      "summaryEn": "Josh reacts to a disappointing day at the Sobha Realty Training Centre",
-      "bodyEn": [
-        "Josh Tahou admits he was disappointed after our under-18s lost 3-1 to Ipswich Town in the Premier League South.",
-        "The youngster came off the bench to provide an assist for Emerson Nwaneri late on as we suffered our first league defeat of 2026/27.",
-        "Speaking after the game, the versatile defender said he was disappointed that we couldn't start our home campaign with a victory.",
-        "\"I feel like, really disappointing. It was the first game at home. Really wanted to make a statement to the league that we're Arsenal, we're a big team but it was really unfortunate.",
-        "\"I feel like it's one of those ones where you just forget it, go on to the next game, show what we can do.\"",
-        "Josh was a second half substitute, making return to action after being on the sidelines.",
-        "An assist on return is a strong start, but the youngster is hoping to give more throughout the season.",
-        "\"I feel like, first and foremost, I'm so happy to be back from injury, it’s been a long time,\" he said.",
-        "\"I feel like off the bench, good to get the assist but I still think there's levels to my game to improve always. I feel like it's obviously been hard but the coaches just helped me a lot, keeping me strong, giving me a plan so I know how to follow it.\"",
-        "Our under-18s are back in action in midweek, taking Blackburn Rovers away from home on Tuesday, August 25 at 1pm."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/416b0a8a6a40-gettyimages-2222944497.webp",
-      "author": "Arsenal Media",
-      "publishedAt": "2026-08-22T13:00:00.000Z",
-      "url": "https://www.arsenal.com/news/tahou-disappointed-after-ipswich-loss-ayNwe5f7YNUL",
-      "source": "Arsenal.com",
-      "titleZh": "塔霍对伊普斯维奇失利感到失望",
-      "summaryZh": "塔霍回应在训练中心失望的一天",
-      "bodyZh": [
-        "乔什·塔霍承认，在英超南部联赛中我们U18队1-3负于伊普斯维奇后，他感到失望。",
-        "这位年轻球员替补登场，在比赛末段为埃默森·恩瓦内里送出助攻，但我们遭遇了2026/27赛季的首场联赛失利。",
-        "赛后，这位多面手后卫表示，未能以一场胜利开启主场征程令他感到失望。",
-        "“我觉得这真的很令人失望。这是主场首战。我们真的很想向联赛发出一个信号，证明我们是阿森纳，是一支强队，但真的很不走运。”",
-        "“我觉得这是那种你需要忘掉的比赛，继续前进，展示我们能做什么。”",
-        "乔什在下半场替补登场，在缺阵一段时间后重返赛场。",
-        "回归即送出助攻是一个良好的开端，但这位小将希望整个赛季能贡献更多。",
-        "“我觉得，首先，我很高兴能从伤病中恢复，已经很久了，”他说。",
-        "“我觉得替补上场能送出助攻很好，但我仍然认为我的比赛水平还有提升空间。显然这很艰难，但教练们帮了我很多，让我保持坚强，给我制定了一个计划，让我知道如何遵循。”",
-        "我们的U18队将在本周中期回归赛场，于8月25日星期二下午1点客场挑战布莱克本流浪者。"
-      ],
-      "translationSourceHash": "16277bdaea26bbf1fd17c48bf50bf12b7b7fc54d844aeabd08234124981ca95a",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-22T16:38:08.737Z"
-    },
-    {
       "id": "1d2c6c7f7b013a51b6d328955ea8fd01f6fc87d8f10f0b34d8190186d7769b49",
       "teamId": "arsenal",
       "teamName": "阿森纳",
@@ -340,24 +340,24 @@
         "The Premier League season is off and running, and you can watch all the best of our 3-0 success over Coventry City with our highlights.",
         "Goals from Kai Havertz and Bukayo Saka gave us a comfortable cushion just 23 minutes into the game, with Christos Tzolis making a major contribution during both.",
         "Not long after the restart, Martin Odegaard added our third to seal the victory and ensure the defence of our trophy began with the best possible result.",
-        "You can watch the best of the action now by pressing play on the video above to see our bitesize highlights, with an extended cut below and a full match replay also available."
+        "You can watch the best of the action now by pressing play on the video above to see our bitesize highlights, with an extended cut and a full match replay to come in due course."
       ],
       "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/a05ea73cd14e-london-england-kai-havertz-of-arsenal-scores-his-teams-first-goal-under-pressure.webp",
       "author": "Jonathon Rogers",
       "publishedAt": "2026-08-21T23:00:00.000Z",
       "url": "https://www.arsenal.com/news/highlights-arsenal-3-0-coventry-city-ayjw87w06gn1",
       "source": "Arsenal.com",
-      "titleZh": "集锦：阿森纳3-0考文垂城",
-      "summaryZh": "观看阿森纳卫冕英超首战3-0击败考文垂的精彩集锦。",
+      "titleZh": "集锦：阿森纳 3-0 考文垂城",
+      "summaryZh": "观看我们作为卫冕英超冠军的首场比赛最佳集锦，开启2026/27赛季。",
       "bodyZh": [
-        "英超新赛季已经开启，您可以通过我们的集锦观看阿森纳3-0战胜考文垂城的全部精彩瞬间。",
-        "凯·哈弗茨和布卡约·萨卡的进球让球队在比赛第23分钟就取得舒适领先，克里斯托斯·佐利斯在这两次进攻中均做出重要贡献。",
-        "下半场开始后不久，马丁·厄德高再入一球锁定胜局，确保卫冕征程以最完美的结果开启。",
-        "现在点击上方视频播放键即可观看本场比赛的精华集锦，下方还有加长版以及全场回放供您欣赏。"
+        "英超赛季已经开始，您可以通过我们的集锦观看我们3-0战胜考文垂城的全部最佳瞬间。",
+        "凯·哈弗茨和布卡约·萨卡的进球让我们在比赛第23分钟就取得了舒适的领先优势，克里斯托斯·措利斯在这两个进球中都发挥了重要作用。",
+        "下半场开始后不久，马丁·厄德高再入一球，锁定胜局，确保我们以最好的结果开启了卫冕之旅。",
+        "您现在可以点击上方视频播放键观看最佳集锦，稍后还将提供加长版和全场回放。"
       ],
-      "translationSourceHash": "a066a66ce6c7b36f72643000eec8d8fe455395323d6422d34337ac54a7a99ddb",
+      "translationSourceHash": "85d242e6fda30893b0d2e2f8839c681e150fa5f6b105678131233f6cffde85e6",
       "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-22T09:39:49.854Z"
+      "translatedAt": "2026-08-22T21:33:51.564Z"
     },
     {
       "id": "b94d789ae908855214befe2b57936223f49ddf5cc43546f5b6f3b95cda5c3516",
