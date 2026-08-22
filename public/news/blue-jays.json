@@ -1,7 +1,7 @@
 {
   "teamId": "toronto-blue-jays",
   "teamName": "多伦多蓝鸟",
-  "updatedAt": "2026-08-22T18:39:00.842Z",
+  "updatedAt": "2026-08-22T21:30:07.471Z",
   "items": [
     {
       "id": "f52165db2db0c17476bbf9430b94eb7b31c6e3beea602cfeecec65f4ff27d6d6",
@@ -38,8 +38,55 @@
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-22T18:00:39.273Z",
       "author": "Keegan Matheson",
-      "publishedAt": "2026-08-22T18:11:00.000Z",
+      "publishedAt": "2026-08-22T21:08:00.000Z",
       "url": "https://www.mlb.com/bluejays/news/vladimir-guerrero-jr-concussion-il-blue-jays-return",
+      "source": "MLB.com"
+    },
+    {
+      "id": "0c17453b3b89c9205422f0d80683eee2ec3e7f61dbe9d2dfb30c48b2fe30d60c",
+      "teamId": "toronto-blue-jays",
+      "teamName": "多伦多蓝鸟",
+      "titleEn": "Key takeaways: Blue Jays 4, Yankees 3",
+      "summaryEn": "",
+      "bodyEn": [
+        "NEW YORK -- This feels like the Blue Jays’ blueprint now, a clean-and-tidy game where the pitching stars and the offense chips away.",
+        "The 4-3 win over New York at Yankee Stadium pulls the Blue Jays (64-67) to within one game of the final American League Wild Card spot, a game of musical chairs that will continue later tonight when several other contenders are in action.",
+        "This is what mattered most:",
+        "1. Cease lands his Cy Young counterpunchThis start captured every possible version of Dylan Cease, didn’t it? There were five walks and far too many at-bats that went deep, which drove up Cease’s pitch count, but he was nearly unhittable.",
+        "Once again, Cease teased us with a run at a no-hitter, this one carrying through 6 2/3 innings against the Yankees. He would have needed the bullpen’s help either way, but these runs are becoming part of the routine with Cease, who lowered his ERA to 2.37 with the performance.",
+        "This comes just one day after Cam Schlittler beat the Blue Jays with six innings of one-run ball, the two AL Cy Young favorites going blow for blow once again. Schlittler still has the lower ERA (2.16) over more innings (158 to 144 1/3), but Cease’s strikeout total -- an AL-best 209 -- is overwhelming. This still feels like a race so tight that one blow-up outing … or one no-hitter … could completely decide the voting down the stretch.",
+        "2. Breaking up all those singlesOne big swing and a slow jog looked good on Nathan Lukes, didn’t it? His home run in the eighth was a breath of fresh air and some much-needed insurance after the Yankees finally showed some life.",
+        "Otherwise, the Blue Jays mostly stuck to their offensive identity of stacking up singles. It’s working, but how sustainable is this? In the postseason, when you’re facing the best pitchers in baseball, can Toronto still string together 10 singles to win a low-scoring game? That still sounds like a problem for another day, but Saturday afternoon, it worked again.",
+        "This style of baseball isn’t impossible to win with. Just look at the Rays, whom we tend to hold up as the model organization for small ball. Tampa Bay does it with speed on the bases, though, which isn’t something the Blue Jays have throughout their lineup.",
+        "Right now, this offensive style is working because the Blue Jays’ pitching has been sensational. When Cease pitches like this, you don’t need much offense at all, but this offense still needs to show more of what we saw down in St. Petersburg, when it was driving the baseball and leaving the yard. By October, that’s downright necessary. For the next month, it would just make things a whole lot easier.",
+        "3. Vladimir Guerrero Jr. returns to the lineupWhether you’re a believer in Guerrero or a pessimist, you saw what you were looking for Saturday in his return from the seven-day concussion IL.",
+        "There were some good swings, like a 110.2 mph single into left-center in the third, which looked more like the “real” Vladdy he has been searching for all season. Then, there were some pitches taken over the heart of the plate and a groundout with the bases loaded in the fourth, which Jazz Chisholm Jr. bobbled but still had plenty of time to make the play on Guerrero coming down the line.",
+        "The song remains the same with Guerrero. This team desperately needs him, and if Guerrero were performing to an .850 OPS, the Blue Jays would already be sitting comfortably in one of those Wild Card spots."
+      ],
+      "titleZh": "关键要点：蓝鸟4-3洋基",
+      "summaryZh": "蓝鸟客场4-3击败洋基，距美联外卡席位仅差一个胜场。",
+      "bodyZh": [
+        "纽约——这现在就像是蓝鸟的蓝图，一场干净利落的比赛，投手表现亮眼，进攻则不断蚕食分数。",
+        "在洋基体育场以4-3击败纽约洋基后，蓝鸟（64胜67负）距离美国联盟最后一个外卡席位仅差一个胜场，这场抢位战将在今晚晚些时候其他几名竞争者登场时继续。",
+        "以下是本场最重要的几点：",
+        "1. Cease打出他的赛扬奖反击战 这场比赛展现了Dylan Cease的所有可能版本，不是吗？有五次保送和太多耗球数较多的打席，这推高了Cease的用球数，但他几乎无法被击中。",
+        "Cease再次让我们看到了他挑战无安打比赛的表现，这一次对洋基延续了6又2/3局。无论怎样他都需要牛棚的帮助，但这些表现正在成为Cease的常态，这场他自责分率降至2.37。",
+        "这仅仅是在Cam Schlittler用六局失一分的表现击败蓝鸟一天之后，两位美联赛扬奖热门再次针锋相对。Schlittler仍然以更低的自责分率（2.16）和更多的局数（158局对144又1/3局）领先，但Cease的夺得三振数——美联最高的209次——令人印象深刻。这仍然是一场势均力敌的竞争，一次崩盘……或一场无安打比赛……都可能完全决定最终的投票结果。",
+        "2. 拆散那些一垒安打 一次大力挥棒和慢跑看起来很适合Nathan Lukes，不是吗？他在第八局的本垒打是一股新鲜空气，也是在洋基队终于展现出一些活力后的宝贵保险分。",
+        "除此之外，蓝鸟大多坚持了他们堆积一垒安打的进攻特点。这目前有效，但这种打法能持续多久？在季后赛中，当你面对棒球界最好的投手时，多伦多还能靠连续打出10支一垒安打来赢下低比分比赛吗？这似乎是以后要解决的问题，但周六下午，这种打法再次奏效。",
+        "这种风格并非不可能赢球。看看光芒队，我们往往将其视为小球打法的典范球队。但坦帕湾靠的是速度，而蓝鸟阵容中并非人人都有这种速度。",
+        "目前这种进攻风格之所以有效，是因为蓝鸟的投球表现出色。当Cease投出这样的表现时，你根本不需要太多进攻，但在圣彼得堡我们看到的进攻——打出强力击球并送出本垒打——还需要更多展现。到了十月份，这绝对必要。而在接下来的一个月里，这会让一切轻松得多。",
+        "3. Vladimir Guerrero Jr.回归首发阵容 无论你是Guerrero的相信者还是悲观者，周六他从七天脑震荡伤病名单中回归的表现，你都看到了你想看到的东西。",
+        "有一些不错的挥棒，比如第三局一支110.2英里/小时的左中外野一垒安打，看起来更像是他整个赛季都在寻找的“真正的”Vladdy。然后，也有一些好球带中央的球被放过，以及第四局满垒时打出一记地滚球出局，Jazz Chisholm Jr.虽然接球时失误了一下，但仍有足够时间在Guerrero跑向一垒时完成刺杀。",
+        "Guerrero的情况依旧如此。这支球队迫切地需要他，如果Guerrero能打出.850的OPS，蓝鸟本已在一个外卡席位中坐得舒舒服服。"
+      ],
+      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/iqfk0p3tiyhutrokzdsa",
+      "translationSourceHash": "fd3d1197240afa9ed2ae768093bcabb78a06a8ce4164f46259cef8cf1a0b41a1",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-22T21:30:07.471Z",
+      "author": "Keegan Matheson",
+      "publishedAt": "2026-08-22T21:04:12.000Z",
+      "url": "https://www.mlb.com/bluejays/news/dylan-cease-boosts-cy-young-case-against-yankees",
       "source": "MLB.com"
     },
     {
@@ -1023,54 +1070,9 @@
       "publishedAt": "2026-08-15T22:55:00.000Z",
       "url": "https://www.mlb.com/bluejays/news/ricky-tiedemann-call-up-blue-jays",
       "source": "MLB.com"
-    },
-    {
-      "id": "33a98aa2c0ef5aaaa9c12a7d955cb2fe21e54aadad2a4526bf20ed40132cd108",
-      "teamId": "toronto-blue-jays",
-      "teamName": "多伦多蓝鸟",
-      "titleEn": "McAdoo channels Vladdy Jr. as Blue Jays continue stunning climb",
-      "summaryEn": "",
-      "bodyEn": [
-        "TORONTO -- Can you believe it? With another win Saturday, the Blue Jays grabbed their share of a crowded, messy tie for the final American League Wild Card spot.",
-        "You have the coming weeks to familiarize yourself with MLB’s tiebreaker rules, and both the Twins and Rangers still play later Saturday night, but this captures just how spectacular this recent run has been for the Blue Jays.",
-        "Saturday’s 4-1 win over the Yankees is their seventh win in their past nine games, finally making the Blue Jays (61-64) the “hot” team in a Wild Card race that has sat stagnant, waiting for a good story.",
-        "This is what mattered most:",
-        "1. McAdoo finally delivers the big blowStop me if you’ve heard this one before, but the Blue Jays were stuck in a quiet, low-scoring game waiting for someone to get a big hit. Familiar, isn’t it?",
-        "Charles McAdoo changed everything with one swing in the seventh, a rocket double off the wall in center to score the go-ahead run. Just inches shy of clearing the wall for a home run, this looked like one of those classics from Vladimir Guerrero Jr., hit so hard (107.4 mph) that it was either going to go over the wall or through it. McAdoo came right back around in his next at-bat with an RBI single, too, breaking open the Blue Jays’ rally in the eighth.",
-        "McAdoo is essentially the “next man up” in Guerrero’s place after the face of the franchise hit the seven-day concussion IL early Saturday. He’ll be in the lineup every day, and with a swing like this in a moment that big, McAdoo looks like he can be more than just a short-term fill-in.",
-        "2. Cy Young watch: Schlittler states his caseThe Blue Jays couldn’t get much going against Cam Schlittler, who held them to one run over 5 1/3 innings with seven strikeouts. Chasing Schlittler that early was a small win, though, as they drove up his pitch count with three walks and some deep at-bats despite not making much hard contact.",
-        "This outing dropped Schlittler’s ERA a couple of points to 2.19, where he still holds the advantage over Blue Jays ace Dylan Cease (2.40). Cease does hold some advantages when you look at strikeout rates and the advanced metrics, though, so this profiles as a race that will go down to the wire.",
-        "Cease will pitch the series finale Sunday against the Yankees, and both pitchers are lined up to pitch again in next weekend’s series between these two teams in The Bronx.",
-        "3. Welcome to the show, Ricky TRicky Tiedemann made his big league debut Saturday, the Blue Jays’ former No. 1 prospect finally back after missing nearly two full calendar years rehabbing from Tommy John surgery. Still just 23 years old, Tiedemann is still dripping with talent and upside, so while it’s an awfully bold move by the Blue Jays, it’s still easy to see why they’re going to him after only a handful of appearances in Triple-A.",
-        "Tiedemann allowed one run over 1 2/3 innings of work, striking out two. His fastball averaged 96.2 mph and touched 97.2, but you’ll often see him go to his slider or excellent changeup with two strikes like he did Saturday afternoon.",
-        "Tiedemann is going to get some legitimate looks over the next week against the Rays and Yankees. He’d been pitching on a stricter schedule in the Minor Leagues, given his rehab, but it’s possible the Blue Jays try to shorten those windows a bit to allow Tiedemann to pitch with just one off-day in between."
-      ],
-      "titleZh": "McAdoo展现Vladdy Jr.风采，蓝鸟继续惊人攀升",
-      "summaryZh": "蓝鸟再胜，McAdoo关键安打，Tiedemann首秀，追平外卡席位。",
-      "bodyZh": [
-        "多伦多——你能相信吗？周六再次取胜后，蓝鸟在美联外卡最后一个席位的混乱并列中抢占了一席之地。",
-        "未来几周你有时间熟悉MLB的平分决胜规则，双城和游骑兵周六晚些时候还有比赛，但这已经足以说明蓝鸟近期表现有多么惊艳。",
-        "周六4-1战胜洋基，是他们在过去9场比赛中的第7场胜利，终于让蓝鸟（61胜64负）成为外卡争夺战中的“热门”球队，此前这场竞争一直停滞不前，等待一个精彩的故事。",
-        "以下是最重要的看点：",
-        "1. McAdoo终于打出关键一击——如果你听过这个故事，请打断我。蓝鸟又陷入一场沉闷的低比分比赛，等待有人打出关键安打。熟悉吗？",
-        "Charles McAdoo在第七局的一次挥棒改变了局面，他击出一记直击中外野墙的二垒安打，打回超前分。这球距离越过墙成为本垒打只差几英寸，看起来就像Vladimir Guerrero Jr.的经典之作，击球速度高达107.4英里/小时，要么飞过墙，要么撞墙而出。McAdoo在下一个打席又打出一支打点一垒安打，为蓝鸟在第八局的攻势打开了局面。",
-        "McAdoo基本上是在Guerrero于周六早些时候因脑震荡进入七天伤病名单后，顶替他的“下一个上阵者”。他将每天出现在先发阵容中，凭借这样关键时刻的表现，McAdoo看起来不仅仅是短期顶替者。",
-        "2. 赛扬奖观察：Schlittler证明自己——蓝鸟面对Cam Schlittler没有太多办法，他在5 1/3局中仅失1分并送出7次三振。不过，这么早将他打退也算小胜，因为他们用三次保送和一些消耗性的打席抬高了他的用球数，尽管没有太多强力击球。",
-        "这场比赛让Schlittler的自责分率下降了几个点，来到2.19，他仍然领先于蓝鸟王牌Dylan Cease（2.40）。不过，从三振率和进阶数据来看，Cease确实有优势，因此这像是一场会拼到最后的竞争。",
-        "Cease将在周日对阵洋基的系列赛收官战中先发，两位投手也预计在下周末两队于布朗克斯的系列赛中再次对决。",
-        "3. 欢迎来到大联盟，Ricky——Ricky Tiedemann在周六完成了大联盟首秀，这位蓝鸟昔日的头号新秀在因汤米·约翰手术康复缺席近两个完整日历年之后终于回归。年仅23岁的Tiedemann依然天赋十足、潜力巨大，因此尽管蓝鸟此举相当大胆，但依然不难理解他们为什么在他在3A仅出场几次后就启用他。",
-        "Tiedemann在1 2/3局中失1分，送出两次三振。他的速球平均时速96.2英里，最高97.2英里，但你常会看到他在两好球时使用滑球或出色的变速球，就像周六下午那样。",
-        "Tiedemann下周对阵光芒和洋基时会有一些正式机会。由于康复原因，他在小联盟期间一直按照更严格的时间表投球，但蓝鸟可能会缩短这些间隔，让Tiedemann在仅休一天的情况下出赛。"
-      ],
-      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/oo6yzddzms9ud8j2geuq",
-      "translationSourceHash": "41d7f2c20bce35275fac537523143c5f06fad2d5a0bd96b90b04f03c834d54c3",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-15T23:27:14.693Z",
-      "author": "Keegan Matheson",
-      "publishedAt": "2026-08-15T22:53:00.000Z",
-      "url": "https://www.mlb.com/bluejays/news/charles-mcadoo-drives-in-2-as-blue-jays-beat-yankees",
-      "source": "MLB.com"
     }
   ],
-  "pendingNotificationIds": []
+  "pendingNotificationIds": [
+    "0c17453b3b89c9205422f0d80683eee2ec3e7f61dbe9d2dfb30c48b2fe30d60c"
+  ]
 }
