@@ -1,7 +1,7 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-22T11:33:01.401Z",
+  "updatedAt": "2026-08-22T11:57:07.946Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
@@ -430,9 +430,13 @@
         "They replace Bruno Guimaraes and Noni Madueke, with the Brazilian missing out on his Premier League debut for bow after picking up an injury during the game in Cardiff on Sunday.",
         "Christos Tzolis will though make his league bow in red and white, aiming to follow up his impressive showing five days ago when he registered two assists.",
         "Madueke drops down to the bench, which includes two of Spain’s World Cup winners in Martin Zubimendi and Mikel Merino, with a third in David Raya lining up between our posts.",
-        "LINE-UP",
+        "Frank Lampard meanwhile has named five of his nine summer signings in his starting XI for the Sky Blues’ first Premier League game in 25 years.",
+        "Swiss international centre-back Aurele Amenda, 20-year-old Ghana World Cup star Caleb Yirenkyi and former Burnley winger Loum Tchaouna have all been given the nod to begin the game, alongside two of last season’s promotion heroes in Carl Rushworth and Frank Onyeka, who have seen their loan deals made permanent.",
+        "Fellow new boys Gustavo Hamer and Taiwo Awoniyi are named on the bench, as Coventry seek their 100th win in the division.",
+        "LINE-UPS",
         "Arsenal: Raya, White, Mosquera, Gabriel, Calafiori, Lewis-Skelly, Rice, Odegaard, Saka, Tzolis, Havertz.Subs: Arrizabalaga, Hincapie, Zubimendi, Merino, Eze, Nwaneri, Madueke, Dowman, Gyokeres.",
-        "Ahead of kick-off, get essential pre-match stats, a guide to Coventry's tactics and summer so far, a host of opening day coverage, press conference recaps, live worldwide TV coverage and more"
+        "Coventry: Rushworth, van Ewijk, Thomas, Amenda, Dasilva, Grimes, Onyeka, Yirenkyi, Tchaouna, Thomas-Asante, Simms.Subs: Wilson, Kitching, Latibeaudiere, Sakamoto, Eccles, Torp, Hamer, Rudoni, Awonyi.",
+        "Ahead of kick-off, get essential pre-match stats, a guide to Coventry's tactics and summer so far, a host of opening day coverage, press conference recaps, live worldwide TV coverage and more in our match preview."
       ],
       "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/e1a7230eece9-arsenals-english-midfielder-declan-rice-celebrates-with-the-trophy-on-the-pitch.webp",
       "author": "Jonathon Rogers",
@@ -440,20 +444,24 @@
       "url": "https://www.arsenal.com/news/team-news-rice-and-saka-start-against-coventry-axwe52Y1x2gA",
       "source": "Arsenal.com",
       "titleZh": "球队新闻：赖斯和萨卡首发对阵考文垂",
-      "summaryZh": "查看阿尔特塔为今晚对阵考文垂的英超揭幕战挑选的首发阵容。",
+      "summaryZh": "阿森纳公布今晚英超揭幕战对阵考文垂的首发，赖斯和萨卡首发。",
       "bodyZh": [
-        "米克尔·阿尔特塔决定将德克兰·赖斯和布卡约·萨卡列入今晚对阵考文垂城的英超揭幕战首发阵容。",
-        "这对英格兰组合在英格兰闯入世界杯半决赛后获得了额外假期，今夏首次回到首发阵容。在周日击败曼城的社区盾杯中，他们替补待命，随后作为替补登场。",
-        "他们替换了布鲁诺·吉马良斯和诺尼·马杜埃凯，这位巴西人因周日在卡迪夫的比赛中受伤而错过他的英超处子秀。",
-        "不过，克里斯托斯·佐利斯将身披红白战袍迎来他的联赛首秀，力求延续五天前贡献两次助攻的亮眼表现。",
-        "马杜埃凯退居替补席，替补席上包括两位西班牙世界杯冠军成员马丁·苏比门迪和米克尔·梅里诺，而第三位西班牙冠军成员大卫·拉亚则镇守球门。",
+        "米克尔·阿尔特塔选择将德克兰·赖斯和布卡约·萨卡纳入今晚英超揭幕战对阵考文垂城的首发阵容。",
+        "这对英格兰组合在英格兰队闯入世界杯半决赛后获得了延长假期，本赛季首次回归我们的首发阵容。他们在周日战胜曼城的社区盾杯中担任替补，随后作为替补登场。",
+        "他们取代了布鲁诺·吉马良斯和诺尼·马杜埃凯。这位巴西人在周日卡迪夫的比赛中受伤，错过了他的英超首秀。",
+        "不过，克里斯托斯·佐利斯将身穿红白战袍完成他的联赛首秀，他希望在五天前贡献两次助攻的出色表现基础上再接再厉。",
+        "马杜埃凯退居替补席，替补席上包括西班牙世界杯冠军成员马丁·苏比门迪和米克尔·梅里诺，而第三位冠军成员大卫·拉亚则镇守我们的球门。",
+        "与此同时，弗兰克·兰帕德为天蓝军团25年来的首场英超比赛排出了首发阵容，其中包括他夏季九名新援中的五人。",
+        "瑞士国脚中卫奥雷勒·阿门达、20岁的加纳世界杯球星卡莱布·伊伦基和前伯恩利边锋卢姆·查乌纳都获准首发出场，与他们一同首发的还有上赛季两位升级功臣卡尔·拉什沃思和弗兰克·奥涅卡，两人的租借合同已转为永久转会。",
+        "同为新援的古斯塔沃·哈默和泰沃·阿沃尼伊则被列入替补名单。考文垂正在寻求他们在该联赛中的第100场胜利。",
         "阵容",
-        "阿森纳：拉亚，怀特，莫斯科拉，加布里埃尔，卡拉菲奥里，刘易斯-斯凯利，赖斯，厄德高，萨卡，佐利斯，哈弗茨。替补：阿里萨巴拉加，因卡皮耶，苏比门迪，梅里诺，埃泽，恩瓦内里，马杜埃凯，道曼，久克雷斯。",
-        "开球前，获取关键赛前数据、考文垂的战术及今夏动态指南、大量揭幕战报道、新闻发布会回顾、全球电视直播信息等等。"
+        "阿森纳：拉亚，怀特，莫斯克拉，加布里埃尔，卡拉菲奥里，刘易斯-斯凯利，赖斯，厄德高，萨卡，佐利斯，哈弗茨。替补：阿里萨巴拉加，欣卡皮，苏比门迪，梅里诺，埃泽，恩瓦内里，马杜埃凯，道曼，久克雷斯。",
+        "考文垂：拉什沃思，范埃韦克，托马斯，阿门达，达席尔瓦，格莱姆斯，奥涅卡，伊伦基，查乌纳，托马斯-阿桑特，西姆斯。替补：威尔逊，基钦，拉蒂博迪埃，坂本，埃克尔斯，托普，哈默，鲁多尼，阿沃伊尼。",
+        "开球前，请在我们的比赛前瞻中获取关键的赛前数据、考文垂的战术指南以及夏季动态、开幕日报道、新闻发布会摘要、全球电视直播等信息。"
       ],
-      "translationSourceHash": "b64c77ad3c0bec6f894112f846b68c68d2dce2fb199062c0f457bc74f69264a7",
+      "translationSourceHash": "0258cf2946dfe9c43f3180c53221b66f45505d726eb7d81327ada3b110d74951",
       "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-22T10:38:03.753Z"
+      "translatedAt": "2026-08-22T11:57:07.946Z"
     },
     {
       "id": "9399d7e3ce1c862e8ad78be68ae4b2a8bca576401c185034c3705842b38b63ee",
