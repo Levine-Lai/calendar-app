@@ -1,7 +1,7 @@
 {
   "teamId": "toronto-blue-jays",
   "teamName": "多伦多蓝鸟",
-  "updatedAt": "2026-08-22T17:07:02.136Z",
+  "updatedAt": "2026-08-22T17:49:12.512Z",
   "items": [
     {
       "id": "f52165db2db0c17476bbf9430b94eb7b31c6e3beea602cfeecec65f4ff27d6d6",
@@ -38,7 +38,7 @@
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-22T16:32:21.335Z",
       "author": "Keegan Matheson",
-      "publishedAt": "2026-08-22T16:53:00.000Z",
+      "publishedAt": "2026-08-22T17:34:00.000Z",
       "url": "https://www.mlb.com/bluejays/news/vladimir-guerrero-jr-concussion-il-blue-jays-return",
       "source": "MLB.com"
     },
