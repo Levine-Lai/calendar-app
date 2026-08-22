@@ -1,53 +1,12 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-22T16:38:08.737Z",
+  "updatedAt": "2026-08-22T19:32:36.606Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
-    {
-      "id": "99f48e6799fe5a0eb78c69216b82376639d7940388e141e146f6486108451571",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Tahou disappointed after Ipswich loss",
-      "summaryEn": "Josh reacts to a disappointing day at the Sobha Realty Training Centre",
-      "bodyEn": [
-        "Josh Tahou admits he was disappointed after our under-18s lost 3-1 to Ipswich Town in the Premier League South.",
-        "The youngster came off the bench to provide an assist for Emerson Nwaneri late on as we suffered our first league defeat of 2026/27.",
-        "Speaking after the game, the versatile defender said he was disappointed that we couldn't start our home campaign with a victory.",
-        "\"I feel like, really disappointing. It was the first game at home. Really wanted to make a statement to the league that we're Arsenal, we're a big team but it was really unfortunate.",
-        "\"I feel like it's one of those ones where you just forget it, go on to the next game, show what we can do.\"",
-        "Josh was a second half substitute, making return to action after being on the sidelines.",
-        "An assist on return is a strong start, but the youngster is hoping to give more throughout the season.",
-        "\"I feel like, first and foremost, I'm so happy to be back from injury, it’s been a long time,\" he said.",
-        "\"I feel like off the bench, good to get the assist but I still think there's levels to my game to improve always. I feel like it's obviously been hard but the coaches just helped me a lot, keeping me strong, giving me a plan so I know how to follow it.\"",
-        "Our under-18s are back in action in midweek, taking Blackburn Rovers away from home on Tuesday, August 25 at 1pm."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/416b0a8a6a40-gettyimages-2222944497.webp",
-      "author": "Arsenal Media",
-      "publishedAt": "2026-08-22T16:09:12.803Z",
-      "url": "https://www.arsenal.com/news/tahou-disappointed-after-ipswich-loss-ayNwe5f7YNUL",
-      "source": "Arsenal.com",
-      "titleZh": "塔霍对伊普斯维奇失利感到失望",
-      "summaryZh": "塔霍回应在训练中心失望的一天",
-      "bodyZh": [
-        "乔什·塔霍承认，在英超南部联赛中我们U18队1-3负于伊普斯维奇后，他感到失望。",
-        "这位年轻球员替补登场，在比赛末段为埃默森·恩瓦内里送出助攻，但我们遭遇了2026/27赛季的首场联赛失利。",
-        "赛后，这位多面手后卫表示，未能以一场胜利开启主场征程令他感到失望。",
-        "“我觉得这真的很令人失望。这是主场首战。我们真的很想向联赛发出一个信号，证明我们是阿森纳，是一支强队，但真的很不走运。”",
-        "“我觉得这是那种你需要忘掉的比赛，继续前进，展示我们能做什么。”",
-        "乔什在下半场替补登场，在缺阵一段时间后重返赛场。",
-        "回归即送出助攻是一个良好的开端，但这位小将希望整个赛季能贡献更多。",
-        "“我觉得，首先，我很高兴能从伤病中恢复，已经很久了，”他说。",
-        "“我觉得替补上场能送出助攻很好，但我仍然认为我的比赛水平还有提升空间。显然这很艰难，但教练们帮了我很多，让我保持坚强，给我制定了一个计划，让我知道如何遵循。”",
-        "我们的U18队将在本周中期回归赛场，于8月25日星期二下午1点客场挑战布莱克本流浪者。"
-      ],
-      "translationSourceHash": "16277bdaea26bbf1fd17c48bf50bf12b7b7fc54d844aeabd08234124981ca95a",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-22T16:38:08.737Z"
-    },
     {
       "id": "aa2dd5bc39baba9500e0eb12a96da2a635ce4be12051ea3c985da3c7f06386bd",
       "teamId": "arsenal",
@@ -223,6 +182,47 @@
       "translationSourceHash": "c0638d81d93a597393081285443f1bfce1a51feea520460a505c020972f6ddf0",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-22T15:55:54.112Z"
+    },
+    {
+      "id": "99f48e6799fe5a0eb78c69216b82376639d7940388e141e146f6486108451571",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Tahou disappointed after Ipswich loss",
+      "summaryEn": "Josh reacts to a disappointing day at the Sobha Realty Training Centre",
+      "bodyEn": [
+        "Josh Tahou admits he was disappointed after our under-18s lost 3-1 to Ipswich Town in the Premier League South.",
+        "The youngster came off the bench to provide an assist for Emerson Nwaneri late on as we suffered our first league defeat of 2026/27.",
+        "Speaking after the game, the versatile defender said he was disappointed that we couldn't start our home campaign with a victory.",
+        "\"I feel like, really disappointing. It was the first game at home. Really wanted to make a statement to the league that we're Arsenal, we're a big team but it was really unfortunate.",
+        "\"I feel like it's one of those ones where you just forget it, go on to the next game, show what we can do.\"",
+        "Josh was a second half substitute, making return to action after being on the sidelines.",
+        "An assist on return is a strong start, but the youngster is hoping to give more throughout the season.",
+        "\"I feel like, first and foremost, I'm so happy to be back from injury, it’s been a long time,\" he said.",
+        "\"I feel like off the bench, good to get the assist but I still think there's levels to my game to improve always. I feel like it's obviously been hard but the coaches just helped me a lot, keeping me strong, giving me a plan so I know how to follow it.\"",
+        "Our under-18s are back in action in midweek, taking Blackburn Rovers away from home on Tuesday, August 25 at 1pm."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/416b0a8a6a40-gettyimages-2222944497.webp",
+      "author": "Arsenal Media",
+      "publishedAt": "2026-08-22T13:00:00.000Z",
+      "url": "https://www.arsenal.com/news/tahou-disappointed-after-ipswich-loss-ayNwe5f7YNUL",
+      "source": "Arsenal.com",
+      "titleZh": "塔霍对伊普斯维奇失利感到失望",
+      "summaryZh": "塔霍回应在训练中心失望的一天",
+      "bodyZh": [
+        "乔什·塔霍承认，在英超南部联赛中我们U18队1-3负于伊普斯维奇后，他感到失望。",
+        "这位年轻球员替补登场，在比赛末段为埃默森·恩瓦内里送出助攻，但我们遭遇了2026/27赛季的首场联赛失利。",
+        "赛后，这位多面手后卫表示，未能以一场胜利开启主场征程令他感到失望。",
+        "“我觉得这真的很令人失望。这是主场首战。我们真的很想向联赛发出一个信号，证明我们是阿森纳，是一支强队，但真的很不走运。”",
+        "“我觉得这是那种你需要忘掉的比赛，继续前进，展示我们能做什么。”",
+        "乔什在下半场替补登场，在缺阵一段时间后重返赛场。",
+        "回归即送出助攻是一个良好的开端，但这位小将希望整个赛季能贡献更多。",
+        "“我觉得，首先，我很高兴能从伤病中恢复，已经很久了，”他说。",
+        "“我觉得替补上场能送出助攻很好，但我仍然认为我的比赛水平还有提升空间。显然这很艰难，但教练们帮了我很多，让我保持坚强，给我制定了一个计划，让我知道如何遵循。”",
+        "我们的U18队将在本周中期回归赛场，于8月25日星期二下午1点客场挑战布莱克本流浪者。"
+      ],
+      "translationSourceHash": "16277bdaea26bbf1fd17c48bf50bf12b7b7fc54d844aeabd08234124981ca95a",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-22T16:38:08.737Z"
     },
     {
       "id": "1d2c6c7f7b013a51b6d328955ea8fd01f6fc87d8f10f0b34d8190186d7769b49",
