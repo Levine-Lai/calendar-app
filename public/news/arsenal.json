@@ -1,7 +1,7 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-22T03:54:11.660Z",
+  "updatedAt": "2026-08-22T04:47:12.109Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
@@ -46,24 +46,24 @@
         "The Premier League season is off and running, and you can watch all the best of our 3-0 success over Coventry City with our highlights.",
         "Goals from Kai Havertz and Bukayo Saka gave us a comfortable cushion just 23 minutes into the game, with Christos Tzolis making a major contribution during both.",
         "Not long after the restart, Martin Odegaard added our third to seal the victory and ensure the defence of our trophy began with the best possible result.",
-        "You can watch the best of the action now by pressing play on the video above to see our bitesize highlights, with an extended cut below and a full match replay to come in due course."
+        "You can watch the best of the action now by pressing play on the video above to see our bitesize highlights, with an extended cut and a full match replay to come in due course."
       ],
       "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/a05ea73cd14e-london-england-kai-havertz-of-arsenal-scores-his-teams-first-goal-under-pressure.webp",
       "author": "Jonathon Rogers",
       "publishedAt": "2026-08-21T23:00:00.000Z",
       "url": "https://www.arsenal.com/news/highlights-arsenal-3-0-coventry-city-ayjw87w06gn1",
       "source": "Arsenal.com",
-      "titleZh": "集锦：阿森纳3-0考文垂城",
-      "summaryZh": "观看我们作为英超卫冕冠军的首场比赛中最佳瞬间。",
+      "titleZh": "集锦：阿森纳 3-0 考文垂",
+      "summaryZh": "观看我们作为英超卫冕冠军首战的最佳集锦，2026/27赛季拉开帷幕。",
       "bodyZh": [
-        "英超赛季已经开启，您可以通过我们的集锦观看我们3-0战胜考文垂城的所有最佳时刻。",
-        "凯·哈弗茨和布卡约·萨卡的进球在比赛仅进行23分钟时就为我们带来了舒适的领先优势，克里斯托斯·佐利斯在这两个进球中都发挥了重要作用。",
-        "重新开球后不久，马丁·厄德高再入一球，锁定胜局，确保我们以最好的结果开启卫冕之旅。",
-        "您现在可以点击上方视频中的播放键观看我们的精华集锦，下方还有加长版，完整比赛重播将适时推出。"
+        "英超赛季已经开启，您可以通过我们的集锦观看我们3-0战胜考文垂的所有最佳时刻。",
+        "比赛开场仅23分钟，凯·哈弗茨和布卡约·萨卡的进球便让我们取得舒适领先，而克里斯托斯·措利斯在两次进攻中都做出了重大贡献。",
+        "中场休息后不久，马丁·厄德高再入一球，将比分改写为3-0，锁定胜局，确保我们以最好的结果开启卫冕之旅。",
+        "您现在可以点击上方视频的播放按钮，观看精简集锦，稍后我们将提供加长版和全场重播。"
       ],
-      "translationSourceHash": "256afa727a225836cdddff2900a36f3c55e8bf4d8c2c6cfe01782399ca8dcf26",
+      "translationSourceHash": "85d242e6fda30893b0d2e2f8839c681e150fa5f6b105678131233f6cffde85e6",
       "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-22T03:54:11.659Z"
+      "translatedAt": "2026-08-22T04:47:12.108Z"
     },
     {
       "id": "b94d789ae908855214befe2b57936223f49ddf5cc43546f5b6f3b95cda5c3516",
