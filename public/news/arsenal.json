@@ -1,12 +1,41 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-22T01:48:28.381Z",
+  "updatedAt": "2026-08-22T03:06:11.112Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "b8ce9d147c6b15cb69172a13ecb1f4acbb301a35850e800fc2b80b13915d6b46",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Watch a full match replay of our season opener",
+      "summaryEn": "Every kick from our return to Emirates Stadium against Coventry City",
+      "bodyEn": [
+        "We got our 2026/27 season in the Premier League off to the perfect start on Friday night, with a 3-0 win over Coventry City at Emirates Stadium.",
+        "Returning to N5 in the league for the first time as champions, we hosted the Championship title winners from 2025/26 and raced into a 2-0 half-time lead, courtesy of goals from Kai Havertz and Bukayo Saka.",
+        "Martin Odegaard added a third not long after the break, as we grabbed our first three points of the league campaign.",
+        "You can now watch back every kick of the action in the video above, with our bitesize highlights package below."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/e959a5730513-gettyimages-2291456308.webp",
+      "author": "Arsenal Media",
+      "publishedAt": "2026-08-21T23:03:00.000Z",
+      "url": "https://www.arsenal.com/news/watch-a-full-match-replay-of-our-season-opener-aG8Qh5D0dX52",
+      "source": "Arsenal.com",
+      "titleZh": "观看赛季揭幕战完整比赛回放",
+      "summaryZh": "重返酋长球场对阵考文垂的每一脚触球。",
+      "bodyZh": [
+        "周五晚，我们在英超2026/27赛季开局完美，在酋长球场3-0战胜考文垂城。",
+        "作为冠军首次重返N5联赛主场，我们迎战2025/26赛季英冠冠军，凭借凯·哈弗茨和布卡约·萨卡的进球，半场以2-0领先。",
+        "中场休息后不久，马丁·厄德高再入一球，我们收获了联赛赛季的首个三分。",
+        "您现在可以在上方视频中回看比赛的每一脚触球，下方还有我们的精华集锦。"
+      ],
+      "translationSourceHash": "873626f69c8208a196f00178483da4b2bdefd0b7a76b76cd5c73a2164cf28818",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-22T03:06:11.112Z"
+    },
     {
       "id": "5c9b22243ff96cd7f88cb1fbd5443e646152f640be52a6e38f8a70766a2bb175",
       "teamId": "arsenal",
@@ -17,24 +46,24 @@
         "The Premier League season is off and running, and you can watch all the best of our 3-0 success over Coventry City with our highlights.",
         "Goals from Kai Havertz and Bukayo Saka gave us a comfortable cushion just 23 minutes into the game, with Christos Tzolis making a major contribution during both.",
         "Not long after the restart, Martin Odegaard added our third to seal the victory and ensure the defence of our trophy began with the best possible result.",
-        "You can watch the best of the action now by pressing play on the video above to see our bitesize highlights, with an extended cut below and a full match replay to come in due course."
+        "You can watch the best of the action now by pressing play on the video above to see our bitesize highlights, with an extended cut and a full match replay to come in due course."
       ],
       "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/a05ea73cd14e-london-england-kai-havertz-of-arsenal-scores-his-teams-first-goal-under-pressure.webp",
       "author": "Jonathon Rogers",
       "publishedAt": "2026-08-21T23:00:00.000Z",
       "url": "https://www.arsenal.com/news/highlights-arsenal-3-0-coventry-city-ayjw87w06gn1",
       "source": "Arsenal.com",
-      "titleZh": "集锦：阿森纳 3-0 考文垂城",
-      "summaryZh": "观看我们作为英超卫冕冠军首场比赛的最佳时刻。",
+      "titleZh": "集锦：阿森纳3-0考文垂城",
+      "summaryZh": "观看我们作为英超冠军的首场比赛中最佳集锦，2026/27赛季开始。",
       "bodyZh": [
-        "英超赛季已拉开帷幕，您可以通过我们的集锦观看我们3-0战胜考文垂城的全部精彩瞬间。",
-        "凯·哈弗茨和布卡约·萨卡的进球在比赛进行到第23分钟时就为我们奠定了舒适的优势，克里斯托斯·佐利斯在这两个进球中都做出了重要贡献。",
-        "下半场开始不久，马丁·厄德高打入第三球锁定胜局，确保我们以最好的结果开启了卫冕之旅。",
-        "您现在可以点击上方视频播放键观看我们的短片集锦，下方还有加长版，完整比赛重播稍后奉上。"
+        "英超赛季已经打响，您可以通过我们的集锦观看我们3-0战胜考文垂城的所有精彩瞬间。",
+        "凯·哈弗茨和布卡约·萨卡的进球在比赛仅23分钟时就为我们奠定了舒适的优势，克里斯托斯·佐利斯在两粒进球中都做出了重大贡献。",
+        "易边再战后不久，马丁·厄德高再入一球锁定胜局，确保我们以最佳结果开启卫冕之旅。",
+        "您现在即可点击上方视频播放键观看我们的精华集锦，完整扩展版和全场回放将在稍后推出。"
       ],
-      "translationSourceHash": "256afa727a225836cdddff2900a36f3c55e8bf4d8c2c6cfe01782399ca8dcf26",
+      "translationSourceHash": "85d242e6fda30893b0d2e2f8839c681e150fa5f6b105678131233f6cffde85e6",
       "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-21T23:37:47.906Z"
+      "translatedAt": "2026-08-22T03:06:11.013Z"
     },
     {
       "id": "b94d789ae908855214befe2b57936223f49ddf5cc43546f5b6f3b95cda5c3516",
@@ -631,51 +660,6 @@
       "translationSourceHash": "5b0314520d4f70367b74ac9b74711fdaa874436219fe76c171a3e6743e05f3d1",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-21T15:46:22.019Z"
-    },
-    {
-      "id": "c7ba0c44c9d522c809370efe70bacda73e2c1b8f21c8a7df62f6136c7cac7653",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Ezri Konsa signs for Arsenal",
-      "summaryEn": "The England international has swapped Villa Park for Emirates Stadium on a long-term deal",
-      "bodyEn": [
-        "We are delighted to announce that England international Ezri Konsa has joined us from Aston Villa on a long-term contract.",
-        "The 28-year-old began his professional career with Charlton Athletic, making his senior debut in 2016 and quickly establishing himself as one of the club’s most promising young defenders. After two seasons in the first team at The Valley, Ezri joined Brentford in 2018, where his performances during the 2018/19 season further enhanced his reputation and earned him a move to the Premier League with Aston Villa in 2019.",
-        "Ezri has spent the past seven seasons at Aston Villa, making over 200 Premier League appearances for the club across all competitions. During his time at Villa Park, his consistent performances have established him as one of the Premier League’s leading defenders, capable of operating both centrally and at right-back.",
-        "At international level, Ezri represented England’s Under-20s and Under-21s, before making his full national team debut in 2023. He has since become an established member of the England squad, representing his country at the UEFA Euro 2024 and 2026 FIFA World Cup.",
-        "Sporting Director, Andrea Berta said: “We’re delighted to have completed the signing of Ezri Konsa.",
-        "“Ezri is a defender of high quality, whose athleticism, composure and tactical intelligence have established him as one of the Premier League’s most consistent performers. Being comfortable in both central defence and at right-back, Ezri will bring valuable versatility to our squad while maintaining the high defensive standards which are fundamental to our challenge of winning major trophies.",
-        "“We are welcoming a player with proven Premier League and international experience, and strong leadership qualities, who will adapt seamlessly to our style of play. Just as importantly, we are welcoming a player with the character and mentality to make an immediate impact within our club.",
-        "“We welcome Ezri and his family to Arsenal.”",
-        "Ezri will wear the number 15 shirt and will join up with his new teammates immediately.",
-        "Everyone at Arsenal warmly welcomes Ezri and his family to the club.",
-        "The transfer is subject to the completion of regulatory processes.",
-        "GET YOUR NEW EZRI KONSA JERSEY NOW!"
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/537231f625e8-welcome-ezri.webp",
-      "author": "Arsenal Media",
-      "publishedAt": "2026-08-21T14:59:59.976Z",
-      "url": "https://www.arsenal.com/news/ezri-konsa-signs-for-arsenal-anWPZ2q36a9e",
-      "source": "Arsenal.com",
-      "titleZh": "埃兹里·孔萨加盟阿森纳",
-      "summaryZh": "英格兰国脚埃兹里·孔萨从阿斯顿维拉转会至阿森纳，签下长期合同。",
-      "bodyZh": [
-        "我们很高兴地宣布，英格兰国脚埃兹里·孔萨已从阿斯顿维拉正式转会加盟，双方签下长期合同。",
-        "这位28岁的球员职业生涯始于查尔顿竞技，2016年上演一线队首秀，并迅速成为俱乐部最有潜力的年轻后卫之一。在山谷球场效力两个赛季后，埃兹里于2018年加盟布伦特福德，他在2018/19赛季的表现进一步提升了自己的声誉，并因此在2019年转会至英超阿斯顿维拉。",
-        "埃兹里在阿斯顿维拉度过了过去七个赛季，各项赛事为俱乐部在英超联赛出场超过200次。在维拉公园效力期间，他稳定的表现使他成为英超顶级后卫之一，既能胜任中卫，也能胜任右后卫。",
-        "在国际赛场上，埃兹里曾代表英格兰U20和U21国家队出战，并于2023年完成成年国家队首秀。此后，他成为英格兰队的常客，代表国家队参加了2024年欧洲杯和2026年世界杯。",
-        "体育总监安德烈亚·贝尔塔表示：“我们很高兴完成埃兹里·孔萨的签约。",
-        "“埃兹里是一名高质量的后卫，他的运动能力、沉着冷静和战术智慧使他成为英超最稳定的球员之一。他能胜任中卫和右后卫，将为我们的阵容带来宝贵的多面性，同时保持高水平的防守标准，这对我们挑战重要奖杯至关重要。”",
-        "“我们迎来了一位拥有丰富英超和国际比赛经验、具备强大领导力的球员，他将无缝适应我们的比赛风格。同样重要的是，我们迎来的是一位具备个性和心态、能在俱乐部立即产生影响的球员。”",
-        "“我们欢迎埃兹里及其家人来到阿森纳。”",
-        "埃兹里将身披15号球衣，并立即与新队友会合。",
-        "阿森纳全体成员热烈欢迎埃兹里及其家人来到俱乐部。",
-        "本次转会需完成相关监管程序。",
-        "立即购买你的新款埃兹里·孔萨球衣！"
-      ],
-      "translationSourceHash": "c43051ff622058032bde6d30df8d251154c2c18d92922f1cbb4dac4065144217",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-21T15:46:27.833Z"
     },
     {
       "id": "a6030b16643cf5c1820da317cbce66dfa2a9fe8a93460ce3d73f6b5b598af7bf",
