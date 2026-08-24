@@ -1,12 +1,66 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-24T09:05:00.694Z",
+  "updatedAt": "2026-08-24T10:01:52.418Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "a21bdaa6225d4b2e01a2a9dd008ecd2d222bd3f0051a1cf45894db0d087e415b",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Full match: Arsenal Women 1-0 Paris FC",
+      "summaryEn": "In case you missed Sunday's pre-season encounter with Paris FC and want to catch up on the full thing, this is the place for you.",
+      "bodyEn": [
+        "In case you missed Sunday's pre-season encounter with Paris FC and want to catch up on the full thing, this is the place for you.",
+        "Olivia Smith's 91st-minute stunner is worth the wait! Watch how we tried to break down our opposition before eventually finding a way through.",
+        "Press play on the video above to see the full match replay in full."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/149048bb95dc-gettyimages-2291686952.webp",
+      "author": "Stephen Wright",
+      "publishedAt": "2026-08-24T09:26:16.159Z",
+      "url": "https://www.arsenal.com/news/full-match-arsenal-women-1-0-paris-fc-aoT8d3F5wZYn",
+      "source": "Arsenal.com",
+      "titleZh": "全场回放：阿森纳女足1-0巴黎FC",
+      "summaryZh": "错过周日与巴黎FC的季前赛？这里可看全场回放。",
+      "bodyZh": [
+        "如果你错过了周日与巴黎FC的季前赛并想观看全场比赛，这里就是你的选择。",
+        "奥利维亚·史密斯第91分钟的精彩进球值得等待！观看我们如何努力攻破对手防线，最终找到突破口。",
+        "点击上方视频，观看全场比赛回放。"
+      ],
+      "translationSourceHash": "4d1e5e0ed1a3394c0cedf2a325495271c3740a1cfc506d201914ab31fa5f6c5e",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-24T10:01:52.368Z"
+    },
+    {
+      "id": "0ab91b29d16f8731b3f14be02639181911ee8b8947fa3de9feed5298c8fbffcf",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "How to watch Aston Villa v Arsenal live on TV",
+      "summaryEn": "Find out how to watch our second Premier League match of 2026/27",
+      "bodyEn": [
+        "We head to Aston Villa for our second Premier League match of the season on Monday, August 31, at Villa Park at 8pm (UK time).",
+        "Following on from our win over Coventry City, we head to the Midlands for the clash, which will be broadcast live on Sky Sports Main Event for UK subscribers.",
+        "Not in the UK but still looking to tune in? Check out the list below to see how you can watch the match, wherever you are in the world!"
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/4a48b4a108eb-gettyimages-2276437535.webp",
+      "author": "Charlie Peat",
+      "publishedAt": "2026-08-24T08:58:34.868Z",
+      "url": "https://www.arsenal.com/news/how-to-watch-aston-villa-v-arsenal-live-on-tv-aOJLR1I9BWUu",
+      "source": "Arsenal.com",
+      "titleZh": "如何观看阿斯顿维拉对阵阿森纳的直播",
+      "summaryZh": "了解如何观看我们2026/27赛季第二场英超比赛。",
+      "bodyZh": [
+        "我们将在8月31日周一晚上8点（英国时间）于维拉公园客场挑战阿斯顿维拉，这是本赛季英超第二场比赛。",
+        "继战胜考文垂之后，我们前往中部地区参加这场对决，英国订阅用户可通过天空体育主赛事频道观看直播。",
+        "不在英国但想收看比赛？请查看下方列表，了解无论身在何处都能观看本场比赛的方式！"
+      ],
+      "translationSourceHash": "8fe079c3e4970d52fcfd0269de5515039a2e60289f245d7a75697cec65175eec",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-24T10:01:52.417Z"
+    },
     {
       "id": "18222c13889edf2ed9a95b09362f0c32d1d7b6a7373054c61a9f434e20e5825e",
       "teamId": "arsenal",
@@ -370,6 +424,35 @@
       "translatedAt": "2026-08-23T14:38:19.548Z"
     },
     {
+      "id": "9d15a9d80e19fb3529d6a331d7b67a8fb5f56efc51e4e1ae4f02504d98cad4c5",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "U18s highlights: Arsenal 1-3 Ipswich Town",
+      "summaryEn": "Our under-18s were beaten in their first home game of the season",
+      "bodyEn": [
+        "Our under-18s suffered their first defeat of the U18 Premier League South season as a hat-trick from Chris Atherton secured a 3-1 victory for Ipswich Town.",
+        "We made the brighter start at the Sobha Realty Training Centre, but fell 2-0 down before the break thanks to Atherton's first two strikes of the game.",
+        "The Ipswich forward then completed his treble early in the second half, before Emerson Nwaneri pulled a goal back for our young Gunners.",
+        "Press play on the video at the top of the article to watch the best of the action from Saturday's contest."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/cc73fd70cd26-ft-u18.webp",
+      "author": "Connor Booth",
+      "publishedAt": "2026-08-23T12:18:13.372Z",
+      "url": "https://www.arsenal.com/news/u18s-highlights-arsenal-1-3-ipswich-town-aHoZH0T4LwkM",
+      "source": "Arsenal.com",
+      "titleZh": "U18集锦：阿森纳1-3伊普斯维奇",
+      "summaryZh": "U18小将赛季主场首战失利。",
+      "bodyZh": [
+        "我们的U18小将遭遇了本赛季U18英超南区首败，克里斯·阿瑟顿上演帽子戏法，帮助伊普斯维奇以3-1获胜。",
+        "我们在Sobha Realty训练中心开局表现更亮眼，但半场前阿瑟顿的两粒进球让我们以0-2落后。",
+        "这位伊普斯维奇前锋在下半场初段完成帽子戏法，随后埃默森·恩瓦内里为我们的小枪手扳回一城。",
+        "点击文章顶部的视频播放按钮，观看周六比赛的最佳集锦。"
+      ],
+      "translationSourceHash": "b2f8f7e133e259acc142741afca85ae7adf1b0c89abd37e24bcc5877e290eea4",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-23T12:59:51.331Z"
+    },
+    {
       "id": "3b03adb86b763661bad9b72913065d01c963ef5540804ffcf07fc9233c132a2d",
       "teamId": "arsenal",
       "teamName": "阿森纳",
@@ -405,35 +488,6 @@
       "translatedAt": "2026-08-23T11:33:50.463Z"
     },
     {
-      "id": "9d15a9d80e19fb3529d6a331d7b67a8fb5f56efc51e4e1ae4f02504d98cad4c5",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "U18s highlights: Arsenal 1-3 Ipswich Town",
-      "summaryEn": "Our under-18s were beaten in their first home game of the season",
-      "bodyEn": [
-        "Our under-18s suffered their first defeat of the U18 Premier League South season as a hat-trick from Chris Atherton secured a 3-1 victory for Ipswich Town.",
-        "We made the brighter start at the Sobha Realty Training Centre, but fell 2-0 down before the break thanks to Atherton's first two strikes of the game.",
-        "The Ipswich forward then completed his treble early in the second half, before Emerson Nwaneri pulled a goal back for our young Gunners.",
-        "Press play on the video at the top of the article to watch the best of the action from Saturday's contest."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/cc73fd70cd26-ft-u18.webp",
-      "author": "Connor Booth",
-      "publishedAt": "2026-08-23T08:00:00.000Z",
-      "url": "https://www.arsenal.com/news/u18s-highlights-arsenal-1-3-ipswich-town-aHoZH0T4LwkM",
-      "source": "Arsenal.com",
-      "titleZh": "U18集锦：阿森纳1-3伊普斯维奇",
-      "summaryZh": "U18小将赛季主场首战失利。",
-      "bodyZh": [
-        "我们的U18小将遭遇了本赛季U18英超南区首败，克里斯·阿瑟顿上演帽子戏法，帮助伊普斯维奇以3-1获胜。",
-        "我们在Sobha Realty训练中心开局表现更亮眼，但半场前阿瑟顿的两粒进球让我们以0-2落后。",
-        "这位伊普斯维奇前锋在下半场初段完成帽子戏法，随后埃默森·恩瓦内里为我们的小枪手扳回一城。",
-        "点击文章顶部的视频播放按钮，观看周六比赛的最佳集锦。"
-      ],
-      "translationSourceHash": "b2f8f7e133e259acc142741afca85ae7adf1b0c89abd37e24bcc5877e290eea4",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-23T12:59:51.331Z"
-    },
-    {
       "id": "aa2dd5bc39baba9500e0eb12a96da2a635ce4be12051ea3c985da3c7f06386bd",
       "teamId": "arsenal",
       "teamName": "阿森纳",
@@ -459,90 +513,6 @@
       "translationSourceHash": "83de79053dac1d104488722596a180828119909f456936fb9e2ee60d7b43efa4",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-22T15:55:45.372Z"
-    },
-    {
-      "id": "6d9aef4d4367cfe965114140f36b2587eaffd57926e2c35cd3cb22b1542944fc",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Horseman positive after opening day draw",
-      "summaryEn": "Our Under-21s head coach took the positive from our draw with Crystal Palace",
-      "bodyEn": [
-        "Under-21s head coach David Horseman has taken plenty of positives from our 1-1 draw with Crystal Palace on the opening day of our Premier League 2 season.",
-        "Just four days after we lost 5-1 to Barnet in the Vertu Trophy, we responded by picking up a point against the Eagles at Boreham Wood.",
-        "Zavier Gozo opened the scoring for the visitors before Max Dowman set up Andre Harriman-Annous for his first goal of the campaign and after the match, Horseman was happy with the way his side responded to disappointment in midweek.",
-        "\"There's always context to any result but I think the boys have done really well to bounce back from the defeat at Barnet.",
-        "\"I think the boys showed real mentality to stay in the game; it did get end-to-end. Either team probably could have won it, but I'm really pleased with the boys because that's been a physically tough week for them, and we'll be better for this week.",
-        "\"It was quite an even game, but yes, we could have won it. I think in a couple of games' time, when we get a little bit more rhythm, because these first four games are almost acting like a bit of a pre-season. If we learn a little bit more and improve, then I think in a few weeks we take one of those chances.",
-        "\"No complaints from me. I think a draw was just about right, although maybe we did shade some of the better opportunities. We were trying to manage and control the game, and we did do that very well.\"",
-        "The goal came just over a minute after Horseman moved Harriman-Annous into central striker from the left-hand side as he latched onto Dowman's through ball before producing a fine finish.",
-        "Speaking on Andre's performance, Horseman said: \"I thought first half we got Andre in behind with some chip passes from the middle third. Andre is quick, and he can play wide, he can play nine. We're still figuring out what his best long-term position will be.",
-        "\"It was an unbelievable touch, and through ball, and some superb composure to dink the goalkeeper himself.",
-        "\"I'm really pleased with Dre. I'm really pleased with all the boys, and that after a tough game, they came back and showed a bit of character in the group.\""
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/29386e9e69ee-gettyimages-2291098972.webp",
-      "author": "Charlie Peat",
-      "publishedAt": "2026-08-22T15:38:43.715Z",
-      "url": "https://www.arsenal.com/news/horseman-positive-after-opening-day-draw-aN7Zg3I7GFDs",
-      "source": "Arsenal.com",
-      "titleZh": "霍斯曼对首战平局持积极态度",
-      "summaryZh": "U21主帅对战平水晶宫感到满意。",
-      "bodyZh": [
-        "U21队主教练大卫·霍斯曼从我们新赛季英超2首战1-1战平水晶宫的比赛中收获了许多积极因素。",
-        "就在四天前，我们在维尔图杯中以1-5输给了巴尼特，但在博勒姆伍德对阵老鹰队的比赛中，我们拿到了一分，作出了回应。",
-        "扎维尔·戈佐为客队首开纪录，随后马克斯·道曼助攻安德烈·哈里曼-安努斯打入他本赛季的首粒进球。赛后，霍斯曼对球队在周中失利后作出回应感到满意。",
-        "“任何结果都有其背景，但我认为小伙子们在巴尼特的失利后反弹做得非常好。”",
-        "“我认为小伙子们展现了真正的意志力，坚持到了比赛结束；比赛确实变得你来我往。任何一方都有可能获胜，但我对小伙子们非常满意，因为这一周对他们来说体能消耗很大，而我们会因这周变得更好。”",
-        "“这是一场相当均衡的比赛，但没错，我们本可以获胜。我认为再过几场比赛，当我们找到更多节奏时，因为前四场比赛几乎就像是季前赛。如果我们学到更多并有所提高，那么我认为几周后我们会抓住那些机会中的一个。”",
-        "“我没有任何抱怨。我认为平局是公平的结果，尽管也许我们确实创造了一些更好的机会。我们试图管理和控制比赛，而且我们做得非常好。”",
-        "那个进球发生在霍斯曼将哈里曼-安努斯从左路移到中锋位置后仅仅一分多钟，他接住道曼的直塞球，完成了一次精彩的射门。”",
-        "谈到安德烈的表现，霍斯曼说：“我认为上半场我们通过中场的一些挑传让安德烈跑到了防线身后。安德烈速度很快，他能打边路，也能打九号位。我们仍在寻找他长期的最佳位置。”",
-        "“那是一次不可思议的触球，还有直塞球，以及他冷静地挑过门将的出色表现。”",
-        "“我对德雷非常满意。我对所有小伙子都很满意，而且在经历了一场艰苦的比赛后，他们回来展现出了球队的性格。”"
-      ],
-      "translationSourceHash": "4d0d5e2a2b04731872bd2abdc51b2250d8b27c072be9085020912433b8a8001e",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-22T15:55:40.508Z"
-    },
-    {
-      "id": "99f48e6799fe5a0eb78c69216b82376639d7940388e141e146f6486108451571",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Tahou disappointed after Ipswich loss",
-      "summaryEn": "Josh reacts to a disappointing day at the Sobha Realty Training Centre",
-      "bodyEn": [
-        "Josh Tahou admits he was disappointed after our under-18s lost 3-1 to Ipswich Town in the Premier League South.",
-        "The youngster came off the bench to provide an assist for Emerson Nwaneri late on as we suffered our first league defeat of 2026/27.",
-        "Speaking after the game, the versatile defender said he was disappointed that we couldn't start our home campaign with a victory.",
-        "\"I feel like, really disappointing. It was the first game at home. Really wanted to make a statement to the league that we're Arsenal, we're a big team but it was really unfortunate.",
-        "\"I feel like it's one of those ones where you just forget it, go on to the next game, show what we can do.\"",
-        "Josh was a second half substitute, making return to action after being on the sidelines.",
-        "An assist on return is a strong start, but the youngster is hoping to give more throughout the season.",
-        "\"I feel like, first and foremost, I'm so happy to be back from injury, it’s been a long time,\" he said.",
-        "\"I feel like off the bench, good to get the assist but I still think there's levels to my game to improve always. I feel like it's obviously been hard but the coaches just helped me a lot, keeping me strong, giving me a plan so I know how to follow it.\"",
-        "Our under-18s are back in action in midweek, taking Blackburn Rovers away from home on Tuesday, August 25 at 1pm."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/416b0a8a6a40-gettyimages-2222944497.webp",
-      "author": "Arsenal Media",
-      "publishedAt": "2026-08-22T13:00:00.000Z",
-      "url": "https://www.arsenal.com/news/tahou-disappointed-after-ipswich-loss-ayNwe5f7YNUL",
-      "source": "Arsenal.com",
-      "titleZh": "塔霍对伊普斯维奇失利感到失望",
-      "summaryZh": "塔霍回应在训练中心失望的一天",
-      "bodyZh": [
-        "乔什·塔霍承认，在英超南部联赛中我们U18队1-3负于伊普斯维奇后，他感到失望。",
-        "这位年轻球员替补登场，在比赛末段为埃默森·恩瓦内里送出助攻，但我们遭遇了2026/27赛季的首场联赛失利。",
-        "赛后，这位多面手后卫表示，未能以一场胜利开启主场征程令他感到失望。",
-        "“我觉得这真的很令人失望。这是主场首战。我们真的很想向联赛发出一个信号，证明我们是阿森纳，是一支强队，但真的很不走运。”",
-        "“我觉得这是那种你需要忘掉的比赛，继续前进，展示我们能做什么。”",
-        "乔什在下半场替补登场，在缺阵一段时间后重返赛场。",
-        "回归即送出助攻是一个良好的开端，但这位小将希望整个赛季能贡献更多。",
-        "“我觉得，首先，我很高兴能从伤病中恢复，已经很久了，”他说。",
-        "“我觉得替补上场能送出助攻很好，但我仍然认为我的比赛水平还有提升空间。显然这很艰难，但教练们帮了我很多，让我保持坚强，给我制定了一个计划，让我知道如何遵循。”",
-        "我们的U18队将在本周中期回归赛场，于8月25日星期二下午1点客场挑战布莱克本流浪者。"
-      ],
-      "translationSourceHash": "16277bdaea26bbf1fd17c48bf50bf12b7b7fc54d844aeabd08234124981ca95a",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-22T16:38:08.737Z"
     },
     {
       "id": "665b531fb7acd768e679ee4f6d3394deee42bf561e3257783090e526a441e5fe",
