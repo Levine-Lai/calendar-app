@@ -1,12 +1,79 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-24T14:03:50.016Z",
+  "updatedAt": "2026-08-24T14:59:08.041Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "8fe3670fdf061f35f3b2a8afadd5bd287f9d801f3e7b611848ee5f140650d383",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Disabled Supporters' Ticket Information | Everton",
+      "summaryEn": "",
+      "bodyEn": [
+        "Arsenal v EvertonSaturday 24th October Premier LeagueEmirates StadiumKick Off: 15.00",
+        "This will be a Category B fixture (pricing and information on match categorisation).",
+        "Ballot System for Disability Access MembersTo ensure fairness and equal opportunity, tickets for all home fixtures will be sold via a ballot system exclusively for Arsenal Members.",
+        "Members will have a designated window to enter the ballot. You can choose to register individually or as a group of up to four members, if all supporters meet the necessary requirements. You can enter at any stage during the registration window, and your odds of success will remain the same.",
+        "Timing doesn't matter when it comes to entering our ballots, whether you are an early bird or a last-minute entrant, your chances of winning remain the same. The only crucial factor is that you submit your entry whilst the window is open.",
+        "Ballot opens: Friday 4th September at 10am",
+        "Ballot closes: Monday 7th September at 12pm",
+        "Please click here to enter the ballot",
+        "Please do not enter via your online account as this will not work for DA members.",
+        "All applicants, whether successful or unsuccessful, will be notified by email only, by 2pm on Tuesday 8th September. Successful applicants will have the opportunity to purchase tickets during the designated priority booking window, as specified on the ticket information page.",
+        "This fixture will be on sale on Wednesday 9th September at 10am and successful applicants will be able to access their online account to purchase tickets, this will include a complimentary Personal Assistant ticket, subject to eligibility. Please note, you will have until 10am on Thursday 10th September to purchase your tickets.",
+        "Where the number of ballot registrations for a match does not exceed the number of available tickets, all Members who have entered will be successful.",
+        "Useful links",
+        "Ticket Exchange & Ticket Transfer",
+        "If a Member is unable to attend a match they were successful in the ballot for, and that match has sold out, they will have the option to post their ticket on our Ticket Exchange platform. This way, other fans can purchase the ticket and enjoy the match. This ticket information page will be updated once a fixture has sold out and Ticket Exchange is available.",
+        "Ticket Transfer is available for Season Ticket Holders to use once a game is available online (4-8 weeks before a game).",
+        "Disability Access members who wish to list their tickets on the Ticket Exchange should complete the online form here. Please note this form is for DA members only and tickets will be listed by the Disability Liaison Team. The Disability Liaison Team can be contacted by calling 0207 619 5000 (Option 2). Deaf supporters, who use British Sign Language (BSL), can contact the Disability Liaison Team by using SignVideo BSL Interpreter service.",
+        "The Arsenal App This latest update to the Arsenal app means access to the Ticket Hub has changed. To continue to manage your tickets via the Ticket Hub, you must ensure you have the latest version of The Arsenal app and log in to your account using your email/username and password.",
+        "Digital TicketsAny tickets purchased by members for the 2026/2027 season, will be loaded onto their digital membership pass via the official Arsenal app.",
+        "Once the digital pass has been added to an Apple or Android wallet, any purchased tickets will automatically show on the digital pass approximately one week before the relevant fixture. Click here for more information.",
+        "Stadium Access Please note that you MUST enter the Stadium with your Personal Assistant, if eligible.",
+        "Code of Conduct All fans must adhere to our updated Code of Conduct; please take your time to read this information carefully",
+        "Accessible ParkingThe Accessible Parking booking period will open on Wednesday 16th September and will close once we have no spaces remaining. You can view the parking information here."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/ee26871aecdc-tickets-2526-everton-h.webp",
+      "author": "Arsenal FC",
+      "publishedAt": "2026-08-24T14:41:41.973Z",
+      "url": "https://www.arsenal.com/news/disabled-supporters-ticket-information-everton-aVgBk1m3eW2f",
+      "source": "Arsenal.com",
+      "titleZh": "残障支持者门票信息 | 埃弗顿",
+      "summaryZh": "阿森纳对阵埃弗顿门票抽签信息公布，残障支持者购票须知。",
+      "bodyZh": [
+        "阿森纳对阵埃弗顿，10月24日星期六，英超联赛，酋长球场，开球时间：15:00。",
+        "这将是一场B类赛事（关于定价和赛事分类的信息）。",
+        "残障通道会员的抽签系统。为了确保公平和平等机会，所有主场比赛的门票将仅通过抽签系统向阿森纳会员发售。",
+        "会员将有一个指定的时间窗口参与抽签。您可以选择个人注册或最多四人的团体注册，前提是所有支持者都符合相关要求。您可以在注册窗口的任何阶段进入，成功几率保持不变。",
+        "参与抽签的时间无关紧要，无论您是早鸟还是最后一分钟加入，中奖机会都一样。唯一关键的因素是您在窗口开放期间提交报名。",
+        "抽签开放时间：9月4日（星期五）上午10点。",
+        "抽签截止时间：9月7日（星期一）中午12点。",
+        "请点击此处进入抽签。",
+        "请不要通过您的在线账户进入，这对DA会员无效。",
+        "所有申请人，无论成功与否，都将在9月8日（星期二）下午2点前仅通过电子邮件收到通知。成功的申请人将有机会在指定的优先预订窗口内购票，具体时间见门票信息页面。",
+        "本场比赛将于9月9日（星期三）上午10点开始售票，成功的申请人将能够登录其在线账户购票，并包括一张免费的随行个人助理门票，需符合资格。请注意，您必须在9月10日（星期四）上午10点前购买门票。",
+        "如果一场比赛的抽签注册人数不超过可用门票数量，所有参与的会员都将中签。",
+        "实用链接。",
+        "门票交换与门票转让。",
+        "如果会员在抽签中成功获得门票但无法观赛，且该场比赛已售罄，他们可以选择将门票发布在我们的门票交换平台上。这样，其他球迷就能购买这张门票并享受比赛。一旦比赛售罄且门票交换可用，此门票信息页面将更新。",
+        "门票转让功能可供季票持有者在比赛上线后使用（赛前4-8周）。",
+        "希望将门票列入门票交换的残障通道会员应在此处完成在线表格。请注意，此表格仅限DA会员使用，门票将由残障联络团队发布。可通过拨打0207 619 5000（选项2）联系残障联络团队。使用英国手语（BSL）的聋哑支持者可通过SignVideo英国手语翻译服务联系残障联络团队。",
+        "阿森纳应用。阿森纳应用的最新更新意味着票务中心的访问方式已改变。要继续通过票务中心管理您的门票，您必须确保拥有最新版本的阿森纳应用，并使用您的电子邮件/用户名和密码登录账户。",
+        "数字门票。会员为2026/2027赛季购买的任何门票，都将通过官方阿森纳应用加载到他们的数字会员通行证上。",
+        "一旦数字通行证添加到Apple或Android钱包，任何已购买的门票将在相关比赛前约一周自动显示在数字通行证上。点击此处了解更多信息。",
+        "球场入场。请注意，如果符合资格，您必须与您的个人助理一起进入球场。",
+        "行为准则。所有球迷必须遵守我们更新的行为准则；请花时间仔细阅读此信息。",
+        "无障碍停车。无障碍停车预订期将于9月16日（星期三）开放，并在车位满时关闭。您可以在此处查看停车信息。"
+      ],
+      "translationSourceHash": "c9759192429bf231d34afe650adc1c0b4adec16a0978e407e793b116ab696d47",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-24T14:59:08.041Z"
+    },
     {
       "id": "8f5e879c21195b7a7eb6bf39ceb2a35cff0df0444312c421eb8800eb0cef190b",
       "teamId": "arsenal",
@@ -320,33 +387,6 @@
       "translatedAt": "2026-08-23T16:41:13.525Z"
     },
     {
-      "id": "6a1206bc5b578d9b48c9156fc4534100fa481133fedbbf797c3c3f18cf27d83f",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Gallery: 26 great shots of late win over Paris FC",
-      "summaryEn": "We were back at Mangata Developments Stadium for Sunday’s 1-0 win over Paris FC in a pre-season match - see the best pics here",
-      "bodyEn": [
-        "We were back at Mangata Developments Stadium for Sunday’s 1-0 win over Paris FC in a pre-season match.",
-        "Supporters had to wait until the 91st minute to have a goal to celebrate, but it was worth the wait as Olivia Smith sent them home with memories of a long-range curler into the top right.",
-        "Photographer Alan Walter was there to capture plenty of great photos, which you can see in the gallery below."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/fd68c6d687a7-gettyimages-2291694141.webp",
-      "author": "Stephen Wright",
-      "publishedAt": "2026-08-23T15:00:26.321Z",
-      "url": "https://www.arsenal.com/news/gallery-26-great-shots-of-late-win-over-paris-fc-axw7w8g71Iv2",
-      "source": "Arsenal.com",
-      "titleZh": "图集：战胜巴黎FC的26张精彩瞬间",
-      "summaryZh": "阿森纳女足季前赛1-0战胜巴黎FC，精选照片出炉。",
-      "bodyZh": [
-        "周日的季前赛中，我们在曼加塔发展球场以1-0战胜巴黎FC。",
-        "球迷们直到第91分钟才等到进球，但值得等待——奥利维亚·史密斯以一记远射直挂右上角，让大家带着美好回忆回家。",
-        "摄影师艾伦·沃尔特捕捉了大量精彩照片，你可以在下方图集中查看。"
-      ],
-      "translationSourceHash": "e5ed645c05af8189df50768cb2e01ed64792fae7f7ecc4b103f0844d62a7bdf3",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-23T15:34:52.151Z"
-    },
-    {
       "id": "da8db7540ba39e275568234fed37f1de2b761147794dde02074911b8e30f82b5",
       "teamId": "arsenal",
       "teamName": "阿森纳",
@@ -492,33 +532,31 @@
       "translatedAt": "2026-08-24T14:03:50.016Z"
     },
     {
-      "id": "9d15a9d80e19fb3529d6a331d7b67a8fb5f56efc51e4e1ae4f02504d98cad4c5",
+      "id": "aa2dd5bc39baba9500e0eb12a96da2a635ce4be12051ea3c985da3c7f06386bd",
       "teamId": "arsenal",
       "teamName": "阿森纳",
-      "titleEn": "U18s highlights: Arsenal 1-3 Ipswich Town",
-      "summaryEn": "Our under-18s were beaten in their first home game of the season",
+      "titleEn": "U21s highlights: Arsenal 1-1 Crystal Palace",
+      "summaryEn": "Watch the best of the action from our opening day match with Crystal Palace",
       "bodyEn": [
-        "Our under-18s suffered their first defeat of the U18 Premier League South season as a hat-trick from Chris Atherton secured a 3-1 victory for Ipswich Town.",
-        "We made the brighter start at the Sobha Realty Training Centre, but fell 2-0 down before the break thanks to Atherton's first two strikes of the game.",
-        "The Ipswich forward then completed his treble early in the second half, before Emerson Nwaneri pulled a goal back for our young Gunners.",
-        "Press play on the video at the top of the article to watch the best of the action from Saturday's contest."
+        "We fought back to claim a point in our first Premier League 2 match of the season, and you can see all the best action with our highlights package.",
+        "After falling behind early in the second half, Andre Harriman-Annous equalised to enusre our under-21s started league lift with a point.",
+        "To watch all of the action, press play on the video above now!"
       ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/cc73fd70cd26-ft-u18.webp",
-      "author": "Connor Booth",
-      "publishedAt": "2026-08-23T08:00:00.000Z",
-      "url": "https://www.arsenal.com/news/u18s-highlights-arsenal-1-3-ipswich-town-aHoZH0T4LwkM",
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/a656e61bd0b1-whatsapp-image-2026-08-22-at-140534.webp",
+      "author": "Charlie Peat",
+      "publishedAt": "2026-08-22T15:48:46.909Z",
+      "url": "https://www.arsenal.com/news/u21s-highlights-arsenal-1-1-crystal-palace-aDK3C5C387Zd",
       "source": "Arsenal.com",
-      "titleZh": "U18集锦：阿森纳1-3伊普斯维奇",
-      "summaryZh": "U18小将赛季主场首战失利。",
+      "titleZh": "U21集锦：阿森纳1-1水晶宫",
+      "summaryZh": "观看我们赛季首场比赛的精彩片段。",
       "bodyZh": [
-        "我们的U18小将遭遇了本赛季U18英超南区首败，克里斯·阿瑟顿上演帽子戏法，帮助伊普斯维奇以3-1获胜。",
-        "我们在Sobha Realty训练中心开局表现更亮眼，但半场前阿瑟顿的两粒进球让我们以0-2落后。",
-        "这位伊普斯维奇前锋在下半场初段完成帽子戏法，随后埃默森·恩瓦内里为我们的小枪手扳回一城。",
-        "点击文章顶部的视频播放按钮，观看周六比赛的最佳集锦。"
+        "我们在本赛季首场英超2比赛中奋起反击，收获一分，您可以观看我们的集锦包中的全部精彩瞬间。",
+        "在下半场初段落后后，安德烈·哈里曼-安努斯扳平比分，确保我们的U21队以一分开启联赛征程。",
+        "要观看所有片段，请立即点击上方视频播放！"
       ],
-      "translationSourceHash": "b2f8f7e133e259acc142741afca85ae7adf1b0c89abd37e24bcc5877e290eea4",
+      "translationSourceHash": "02eaae575aefcf01f20661e9fc8294341e96ea17f3513e23f485813defa1bade",
       "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-23T12:59:51.331Z"
+      "translatedAt": "2026-08-24T14:58:24.733Z"
     },
     {
       "id": "665b531fb7acd768e679ee4f6d3394deee42bf561e3257783090e526a441e5fe",
