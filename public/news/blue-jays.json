@@ -1,8 +1,65 @@
 {
   "teamId": "toronto-blue-jays",
   "teamName": "多伦多蓝鸟",
-  "updatedAt": "2026-08-24T01:46:38.040Z",
+  "updatedAt": "2026-08-24T14:50:35.480Z",
   "items": [
+    {
+      "id": "27e7ef54db5db12b21e8c6da6709e9235834f8eb88fb6b56d3f1b5df6cf659ea",
+      "teamId": "toronto-blue-jays",
+      "teamName": "多伦多蓝鸟",
+      "titleEn": "Two crucial areas where Toronto could close the gap in Wild Card race",
+      "summaryEn": "",
+      "bodyEn": [
+        "This story was excerpted from Keegan Matheson's Blue Jays Beat newsletter. To read the full newsletter, click here. And subscribe to get it regularly in your inbox.",
+        "NEW YORK -- At this point in the season, there aren’t many secrets left.",
+        "The big stories are what they are, like Vladimir Guerrero Jr.’s year-long slump or the Blue Jays’ cruel run of pitching injuries dating back to Spring Training. As much as this organization would love to see a complete renaissance from Guerrero to play the role of savior, the next month is about small margins in an airtight race.",
+        "One play, one bounce or one bad habit could decide the AL Wild Card race. That’s why all of the Blue Jays seem to be talking the same way lately.",
+        "“We’re doing the little things right,” Dylan Cease said. “We’re playing fundamentally well. It feels like we’re in every game and we’ve got a shot at every game, which is where you want to be.”",
+        "Nathan Lukes, just a few minutes after Cease, had the same ideas.",
+        "“We’re doing more of the little things right,” Lukes said. “We’re going from first to third. The defense is looking way better. It’s just those little things like getting the bunt down, throwing to the right bases, eliminating the errors. It’s been fun.”",
+        "These are crucial. They aren’t flashy and none of these are as fun as Guerrero hitting a 465-foot home run, but they’re going to make all the difference, especially for a team with a certain affinity for playing one-run ballgames. There are two major areas where the Blue Jays could find those inches:",
+        "This team needs to hold runnersThis is a quiet weakness of the Blue Jays, and one they need to tighten up. Entering play Sunday, the Blue Jays had allowed 126 stolen bases, the most in Major League Baseball.",
+        "Brandon Valenzuela has a cannon attached to his right shoulder and Alejandro Kirk is no slouch, either, so it’s difficult to place much blame on the catchers. This means the Blue Jays’ pitching staff really, really needs to hold runners better than they have through the first five months of the season.",
+        "Cease has allowed 26 stolen bases. That’s the most in baseball, and while it’s softened by the fact that Cease escapes most jams, it’s still turning a walk into a free double at least once a start. Spencer Arrighetti is tied for fifth in the league with 20 allowed, too, even after missing some time.",
+        "This isn’t contagious, of course, and the Blue Jays do have some pitchers who do an excellent job controlling the running game, which will be a factor down the stretch. Trey Yesavage is unfortunately injured, but his quick, sudden delivery helped him hold opponents to just three stolen bases over 93 2/3 innings. Comparing his delivery to Cease’s, which is more deliberate as he glides powerfully down the mound, you can clearly see why opponents may target Cease more.",
+        "In the bullpen, Braydon Fisher is the ace when it comes to holding runners, and he’s got a knack for pickoff plays on top of it. Tyler Rogers has only allowed one steal in 61 appearances while Louis Varland has held opponents to five in 60 games, so the back end of this bullpen is solid enough.",
+        "The Rays and Yankees, could very well line up with the Blue Jays at some point in the postseason if they can sneak in, sit fourth and fifth in steals in MLB. That seems like an awfully dangerous weakness to be exploited on the big stage.",
+        "Lately? Some big defensive improvementsThe Blue Jays’ team-wide defensive metrics can be misleading. They rank second in team Fielding Run Value (+39), but so much of that value belongs to their catchers. When you sort it by just the defensive value Toronto’s infielders and outfielders provide, they slip to 10th.",
+        "August has felt so much sharper, though, and the numbers back it up. Since the start of the month, the Blue Jays are the No. 1 defense in baseball at +17 Fielding Runs Saved … and they stay No. 1 even when you remove the value of their catchers.",
+        "This is a credit to regulars like Ernie Clement sharpening up their defense along with the addition of Brett Bateman, who profiles as an excellent defensive center fielder. Andrés Giménez has been brilliant, too, having his best defensive month of the season. He’s tied for fourth among all MLB players in Fielding Run Value.",
+        "Once again, if the Blue Jays want to win 2-1 and 3-2 ballgames, they need to play elite defensive baseball."
+      ],
+      "titleZh": "蓝鸟缩小外卡差距的两大关键",
+      "summaryZh": "蓝鸟需控制对手盗垒并提升防守，以在外卡竞争中占据优势。",
+      "bodyZh": [
+        "本文摘自Keegan Matheson的《蓝鸟Beat》通讯。要阅读完整通讯，请点击此处。并订阅以便定期在收件箱中获取。",
+        "纽约——赛季进行到当前阶段，已经没有太多秘密了。",
+        "大新闻就是这样，比如Vladimir Guerrero Jr.持续一年的低迷，或者蓝鸟从春训开始就不断遭遇的严重投手伤病。尽管球队非常希望看到Guerrero全面复苏来扮演救世主，但接下来的一个月是在激烈竞争中争夺微小优势。",
+        "一次关键发挥、一次弹跳或一个坏习惯都可能决定美国联盟外卡争夺。这就是为什么最近所有蓝鸟球员似乎都在说同样的话。",
+        "“我们正在把小事做好，”Dylan Cease说道。“我们的基本功执行得很好。感觉我们每场比赛都能咬住，每一场都有机会，这是你想处的位置。”",
+        "Nathan Lukes在Cease之后几分钟也表达了同样的想法。",
+        "“我们做了更多正确的小事，”Lukes说。“我们能够从一垒跑到三垒。防守看起来好多了。就是那些小事，比如把触击做好、传对垒位、避免失误。这很有趣。”",
+        "这些至关重要。它们并不华丽，也不像Guerrero打出465英尺本垒打那样有趣，但它们将产生决定性的影响，尤其是对于一支特别爱打一分差比赛的球队。蓝鸟有两个主要领域可以找到那几英寸的优势：",
+        "这支球队需要控制对方跑者。这是蓝鸟一个隐蔽的弱点，也是他们需要加强的地方。进入周日的比赛，蓝鸟已经让对手偷垒126次，这是大联盟最多的。",
+        "Brandon Valenzuela的右肩就像一门大炮，Alejandro Kirk也不逊色，所以很难把太多责任归咎于捕手。这意味着蓝鸟的投手群真的、真的需要比本赛季前五个月更好地控制跑者。",
+        "Cease已经让对手偷垒26次，这是全联盟最多的。虽然这被Cease能化解大多数危机的事实所缓和，但这仍然让一次保送变成一次免费的垒包推进，至少每场先发一次。Spencer Arrighetti以20次让对手偷垒并列联盟第五，尽管他缺席了一段时间。",
+        "这当然不会传染，而且蓝鸟确实有一些投手在控制对方进攻方面做得非常出色，这将是冲刺阶段的一个因素。Trey Yesavage不幸受伤，但他快速、突然的出手让他在93 2/3局中只让对手偷垒三次。将他的出手与Cease相比，Cease在强力向本垒板滑行时出手更加从容，你可以清楚地看到为什么对手可能更针对Cease。",
+        "在牛棚中，Braydon Fisher是控制跑者的王牌，而且他还擅长牵制。Tyler Rogers在61次出场中只让对手偷垒一次，Louis Varland在60场比赛中让对手偷垒五次，所以牛棚后端足够稳固。",
+        "光芒和洋基，如果蓝鸟能挤进季后赛，他们很可能在某个时刻与蓝鸟相遇，这两支球队的偷垒数在MLB排名第四和第五。这似乎是一个非常危险的弱点，可能会在大舞台上被利用。",
+        "最近怎样？防守有了重大的进步。蓝鸟全队的防守指标可能具有误导性。他们在球队防守跑动值（+39）上排名第二，但其中很大一部分价值属于捕手。如果只看多伦多内野手和外野手提供的防守价值，他们会滑落到第十。",
+        "不过，8月份感觉要犀利得多，而且数据也证明了这一点。自本月初以来，蓝鸟的防守以+17的守备节省分排名全联盟第一……即使去掉捕手的价值，他们仍然保持第一。",
+        "这要归功于Ernie Clement等常规球员提升了防守，以及球队加入了Brett Bateman，他被视为一名出色的防守型中外野手。Andrés Giménez也很出色，打出了他本赛季个人最好的防守月份。他在防守跑动值上与MLB所有球员并列第四。",
+        "再说一次，如果蓝鸟想赢下2-1和3-2这样的一分差比赛，他们就需要打出精英级的防守棒球。"
+      ],
+      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/txyx2r61rsrzrvuzeymg",
+      "translationSourceHash": "f4a216641b2a8d75536de5b6284a4c35abadc056810ee573aa24254ba48ae358",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-24T14:50:35.480Z",
+      "author": "Keegan Matheson",
+      "publishedAt": "2026-08-24T14:12:08.000Z",
+      "url": "https://www.mlb.com/bluejays/news/holding-baserunners-defense-could-be-key-for-blue-jays",
+      "source": "MLB.com"
+    },
     {
       "id": "44f98423e55a3eb476aaf1528def15e0d017760f62b5682a39745e4a24de532b",
       "teamId": "toronto-blue-jays",
@@ -715,39 +772,6 @@
       "source": "MLB.com"
     },
     {
-      "id": "995923380cf95f51698e243abaca4ead07bfbfd8040bcd6825fa235f0adabd53",
-      "teamId": "toronto-blue-jays",
-      "teamName": "多伦多蓝鸟",
-      "titleEn": "Vladdy (concussion) continues to progress, on track to return this weekend",
-      "summaryEn": "",
-      "bodyEn": [
-        "ST. PETERSBURG -- Four days into his stint on the seven-day concussion injured list, Vladimir Guerrero Jr. is making significant strides in his recovery.",
-        "The Blue Jays’ star went through an on-field workout at Tropicana Field prior to the team’s series opener against the AL East-leading Rays on Tuesday. He went through drills, ran on the field and hit inside the batting cage. It was Guerrero’s greatest amount of baseball activity since he went on the IL on Saturday, one day after a collision at third base with the Yankees’ George Lombard Jr. left Guerrero concussed.",
-        "“Still kind of taking it day to day with him,” manager John Schneider said of Guerrero, “but good that he's doing stuff and feeling better.”",
-        "Guerrero could be activated from the injured list as early as Saturday. Schneider said he’s hoping for such an outcome, but the club will continue to monitor how the six-time All-Star is feeling over the next few days. Schneider said there’s a chance Guerrero could face live pitching while Toronto grinds through its three-game series against the Rays. That’s a possibility since the team is playing not too far from its Spring Training complex in Dunedin, Fla.",
-        "“As soon as he's ready, feeling good and cleared and he feels like he's got his timing, we're going to try to get him back in there,” Schneider said.",
-        "Guerrero is batting .263 with seven home runs and a .693 OPS in what has been a very frustrating year for him."
-      ],
-      "titleZh": "弗拉迪（脑震荡）持续恢复，有望本周末回归",
-      "summaryZh": "弗拉迪米尔·格雷罗脑震荡恢复进展顺利，最早周六复出。",
-      "bodyZh": [
-        "圣彼得堡——进入七天脑震荡伤病名单的第四天，小弗拉迪米尔·格雷罗的恢复取得了显著进展。",
-        "这位蓝鸟球星周二在球队对阵美联东区领头羊光芒的系列赛揭幕战前，于纯品康纳球场进行了场上训练。他完成了各项训练，在场上跑步并在打击笼内挥棒。这是格雷罗自周六进入伤病名单以来最大运动量的棒球活动。此前一天，他在三垒与洋基的George Lombard Jr.相撞导致脑震荡。",
-        "“对他还是只能一天天观察，”经理John Schneider谈到格雷罗时说，“但好在他现在能进行活动，感觉也好多了。”",
-        "格雷罗最早可能于周六从伤病名单中激活。Schneider表示他希望如此，但球队将在接下来几天持续监测这位六届全明星球员的感受。Schneider表示，在多伦多与光芒的三场系列赛期间，格雷罗有机会面对实战投球。这有可能实现，因为球队比赛的场地距离其位于佛罗里达州达尼丁的春训基地不远。",
-        "“一旦他准备好、感觉良好并获准参赛，而且觉得自己的打击时机找回来了，我们就会尝试让他回归，”Schneider说。",
-        "格雷罗本赛季到目前为止表现非常令人沮丧，他目前打击率为.263，有7支本垒打，OPS为.693。"
-      ],
-      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/czw8ntw3uh8ckjccyfi2",
-      "translationSourceHash": "d292e232a7517a94caafc4a8a800db49da8b54af1788d3a7f50a5f764c83754d",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-19T21:52:46.526Z",
-      "author": "Brian Murphy",
-      "publishedAt": "2026-08-19T21:36:00.000Z",
-      "url": "https://www.mlb.com/bluejays/news/vladimir-guerrero-jr-hits-from-cage-during-concussion-recovery",
-      "source": "MLB.com"
-    },
-    {
       "id": "addf37ea031d9ac0ce67881e72a3f98cd5f49609386e241e063eeb235175136a",
       "teamId": "toronto-blue-jays",
       "teamName": "多伦多蓝鸟",
@@ -1082,5 +1106,7 @@
       "source": "MLB.com"
     }
   ],
-  "pendingNotificationIds": []
+  "pendingNotificationIds": [
+    "27e7ef54db5db12b21e8c6da6709e9235834f8eb88fb6b56d3f1b5df6cf659ea"
+  ]
 }
