@@ -1,135 +1,12 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-24T10:01:52.418Z",
+  "updatedAt": "2026-08-24T10:51:20.481Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
-    {
-      "id": "a21bdaa6225d4b2e01a2a9dd008ecd2d222bd3f0051a1cf45894db0d087e415b",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Full match: Arsenal Women 1-0 Paris FC",
-      "summaryEn": "In case you missed Sunday's pre-season encounter with Paris FC and want to catch up on the full thing, this is the place for you.",
-      "bodyEn": [
-        "In case you missed Sunday's pre-season encounter with Paris FC and want to catch up on the full thing, this is the place for you.",
-        "Olivia Smith's 91st-minute stunner is worth the wait! Watch how we tried to break down our opposition before eventually finding a way through.",
-        "Press play on the video above to see the full match replay in full."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/149048bb95dc-gettyimages-2291686952.webp",
-      "author": "Stephen Wright",
-      "publishedAt": "2026-08-24T09:26:16.159Z",
-      "url": "https://www.arsenal.com/news/full-match-arsenal-women-1-0-paris-fc-aoT8d3F5wZYn",
-      "source": "Arsenal.com",
-      "titleZh": "全场回放：阿森纳女足1-0巴黎FC",
-      "summaryZh": "错过周日与巴黎FC的季前赛？这里可看全场回放。",
-      "bodyZh": [
-        "如果你错过了周日与巴黎FC的季前赛并想观看全场比赛，这里就是你的选择。",
-        "奥利维亚·史密斯第91分钟的精彩进球值得等待！观看我们如何努力攻破对手防线，最终找到突破口。",
-        "点击上方视频，观看全场比赛回放。"
-      ],
-      "translationSourceHash": "4d1e5e0ed1a3394c0cedf2a325495271c3740a1cfc506d201914ab31fa5f6c5e",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-24T10:01:52.368Z"
-    },
-    {
-      "id": "0ab91b29d16f8731b3f14be02639181911ee8b8947fa3de9feed5298c8fbffcf",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "How to watch Aston Villa v Arsenal live on TV",
-      "summaryEn": "Find out how to watch our second Premier League match of 2026/27",
-      "bodyEn": [
-        "We head to Aston Villa for our second Premier League match of the season on Monday, August 31, at Villa Park at 8pm (UK time).",
-        "Following on from our win over Coventry City, we head to the Midlands for the clash, which will be broadcast live on Sky Sports Main Event for UK subscribers.",
-        "Not in the UK but still looking to tune in? Check out the list below to see how you can watch the match, wherever you are in the world!"
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/4a48b4a108eb-gettyimages-2276437535.webp",
-      "author": "Charlie Peat",
-      "publishedAt": "2026-08-24T08:58:34.868Z",
-      "url": "https://www.arsenal.com/news/how-to-watch-aston-villa-v-arsenal-live-on-tv-aOJLR1I9BWUu",
-      "source": "Arsenal.com",
-      "titleZh": "如何观看阿斯顿维拉对阵阿森纳的直播",
-      "summaryZh": "了解如何观看我们2026/27赛季第二场英超比赛。",
-      "bodyZh": [
-        "我们将在8月31日周一晚上8点（英国时间）于维拉公园客场挑战阿斯顿维拉，这是本赛季英超第二场比赛。",
-        "继战胜考文垂之后，我们前往中部地区参加这场对决，英国订阅用户可通过天空体育主赛事频道观看直播。",
-        "不在英国但想收看比赛？请查看下方列表，了解无论身在何处都能观看本场比赛的方式！"
-      ],
-      "translationSourceHash": "8fe079c3e4970d52fcfd0269de5515039a2e60289f245d7a75697cec65175eec",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-24T10:01:52.417Z"
-    },
-    {
-      "id": "18222c13889edf2ed9a95b09362f0c32d1d7b6a7373054c61a9f434e20e5825e",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "When is the UEFA Champions League draw?",
-      "summaryEn": "Find out all the details about the UEFA Champions League draw this week!",
-      "bodyEn": [
-        "The UEFA Champions League draw takes place this week as we find out who we'll be taking on in the league phase of the competition.",
-        "Last season we became the first side to win all eight league phase matches, topping the group as we reached the final for the first time since 2006.",
-        "As the league phase comes together, here's some key information you need to know about the draw!",
-        "WHEN IS THE CHAMPIONS LEAGUE DRAW?",
-        "The UEFA Champions League draw takes place on Thursday, August 27, kicking off at 5pm UK time.",
-        "The draw will take place in Monaco as we discover which eight teams we'll be taking on in this year's league phase.",
-        "Last season, we took on Athletic Club, Olympiacos, Slavia Prague, Club Brugge, Atletico Madrid, Bayern Munich, Inter and Kairat Almaty.",
-        "HOW MANY TEAMS ARE IN THE CHAMPIONS LEAGUE DRAW?",
-        "In 2024/25, the Champions League expanded the competition from 32 teams to 36.",
-        "As a result, the competition was reformatted from eight groups of four teams to one big league of all 36 sides.",
-        "Since the change in the structure, we've lost just one league phase match in 16, drawing one and winning the remaining 14.",
-        "WHO COULD WE FACE IN THE LEAGUE PHASE?",
-        "The 36 teams will be split into four seeded pots, which are determined by the side's UEFA coefficient.",
-        "A total of 31 teams have already automatically qualified for the league phase, with seven more to come in the play-off round, which concludes on Wednesday, August 26.",
-        "We will face two sides from each pot, one home and one away. We cannot face a team from the Premier League due to UEFA's rule of not playing teams from the same country in the league phase.",
-        "Some pots have already been confirmed. We will be in pot 1 for this draw, alongside Paris Saint-Germain, Bayern Munich, Real Madrid, Liverpool, Inter Milan, Manchester City, Barcelona and Atletico Madrid.",
-        "Pot 2 consists of Borussia Dortmund, Roma, Sporting CP, Porto, Club Brugge, Real Betis, PSV Eindhoven and Premier League sides Aston Villa and Manchester United.",
-        "Feyenoord, Lille, Napoli, RB Leipzig, Villarreal, Shakhtar Donetsk and Galatasaray will all be in pot 3.",
-        "While Como, Stuttgart and Lens will be in pot 4, Slavia Prague and the remaining seven qualifiers are yet to be assigned to either pot 3 or pot 4.",
-        "Here's the state of play of the seven play-off matches following the first leg.",
-        "Levski Sofia 0-0 AEK AthensCeltic 3-0 LASK LinzDinamo Zagreb 2-2 VikingSlovan Bratislava 1-1 CeljeHapoel Be'er Sheva 2-1 SabahFenerbahce 1-1 LyonNEC Nijmegen 1-3 Bodo/Glimt",
-        "HOW TO WATCH THE CHAMPIONS LEAGUE DRAW",
-        "For those in the UK, you can tune into the draw on TNT Sports.",
-        "You can also watch the draw on the UEFA website and YouTube channel."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/fffa49ed7145-gettyimages-2274174227.webp",
-      "author": "Charlie Peat",
-      "publishedAt": "2026-08-24T08:28:11.630Z",
-      "url": "https://www.arsenal.com/news/when-is-the-uefa-champions-league-draw-av1Zh7K8AYAr",
-      "source": "Arsenal.com",
-      "titleZh": "欧冠抽签何时举行？",
-      "summaryZh": "了解本周欧冠抽签的所有详细信息！",
-      "bodyZh": [
-        "本周欧冠抽签将进行，我们将了解在联赛阶段将面对哪些对手。",
-        "上赛季，我们成为首支赢下全部八场联赛阶段比赛的球队，并排名榜首，自2006年以来首次闯入决赛。",
-        "随着联赛阶段临近，以下是您需要了解的关于抽签的关键信息！",
-        "欧冠抽签何时举行？",
-        "欧冠抽签将于英国时间8月27日星期四下午5点开始。",
-        "抽签将在摩纳哥进行，我们将揭晓今年联赛阶段要交手的八支球队。",
-        "上赛季，我们与毕尔巴鄂竞技、奥林匹亚科斯、布拉格斯拉维亚、布鲁日、马德里竞技、拜仁慕尼黑、国际米兰和阿拉木图凯拉特交手。",
-        "欧冠抽签有多少支球队参加？",
-        "在2024/25赛季，欧冠联赛将参赛球队从32支扩充到36支。",
-        "因此，赛事从八个小组（每组四队）改为一个由36支球队组成的大联赛。",
-        "自从赛制改革以来，我们在16场联赛阶段比赛中仅输一场，平一场，其余14场全部获胜。",
-        "我们在联赛阶段可能面对谁？",
-        "36支球队将被分为四个种子档，分组依据是球队的欧足联系数。",
-        "目前共有31支球队已自动晋级联赛阶段，另有7支球队将通过附加赛产生，附加赛将于8月26日星期三结束。",
-        "我们将从每个档位中抽取两支球队，一主一客。根据欧足联规定，联赛阶段不能与来自同一国家的球队交手，因此我们不会遇到英超球队。",
-        "一些档位已经确定。我们在本次抽签中处于第一档，同档的还有巴黎圣日耳曼、拜仁慕尼黑、皇家马德里、利物浦、国际米兰、曼城、巴塞罗那和马德里竞技。",
-        "第二档包括多特蒙德、罗马、葡萄牙体育、波尔图、布鲁日、皇家贝蒂斯、埃因霍温，以及英超球队阿斯顿维拉和曼联。",
-        "费耶诺德、里尔、那不勒斯、RB莱比锡、比利亚雷亚尔、顿涅茨克矿工和加拉塔萨雷都将处于第三档。",
-        "而科莫、斯图加特和朗斯将在第四档，布拉格斯拉维亚和剩余七支资格赛球队将分到第三档或第四档。",
-        "以下是七场附加赛首回合过后的战况。",
-        "索菲亚列夫斯基 0-0 雅典AEK；凯尔特人 3-0 LASK林茨；萨格勒布迪纳摩 2-2 维京；斯洛万布拉迪斯拉发 1-1 采列；贝尔谢巴工人 2-1 萨巴赫；费内巴切 1-1 里昂；奈梅亨NEC 1-3 博多格林特",
-        "如何观看欧冠抽签",
-        "英国的观众可以在TNT体育频道观看抽签。",
-        "您也可以在欧足联官网和YouTube频道观看抽签。"
-      ],
-      "translationSourceHash": "547f3fffa1a26ad9eeddb5da3f0253b9c83a7c55df1d58708c990f4bb4f3ba14",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-24T09:04:11.757Z"
-    },
     {
       "id": "d77d42135d8104789ed2e804685a61c636ac4c09b3ff43ae31340c229913cf57",
       "teamId": "arsenal",
@@ -486,33 +363,6 @@
       "translationSourceHash": "40c6a186542a66ec7050ca9d8d091315956019553c094498aaa801a40291aa23",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-23T11:33:50.463Z"
-    },
-    {
-      "id": "aa2dd5bc39baba9500e0eb12a96da2a635ce4be12051ea3c985da3c7f06386bd",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "U21s Highlights: Arsenal 1-1 Crystal Palace",
-      "summaryEn": "Watch the best of the action from our opening day match with Crystal Palace",
-      "bodyEn": [
-        "We fought back to claim a point in our first Premier League 2 match of the season, and you can see all the best action with our highlights package.",
-        "After falling behind early in the second half, Andre Harriman-Annous equalised to enusre our under-21s started league lift with a point.",
-        "To watch all of the action, press play on the video above now!"
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/a656e61bd0b1-whatsapp-image-2026-08-22-at-140534.webp",
-      "author": "Charlie Peat",
-      "publishedAt": "2026-08-22T15:48:46.909Z",
-      "url": "https://www.arsenal.com/news/u21s-highlights-arsenal-1-1-crystal-palace-aDK3C5C387Zd",
-      "source": "Arsenal.com",
-      "titleZh": "U21集锦：阿森纳1-1水晶宫",
-      "summaryZh": "观看我们对阵水晶宫的首场比赛中最佳表现。",
-      "bodyZh": [
-        "我们本赛季首场英超2级联赛中奋起反击，拿到一分，你可以通过我们的集锦包观看所有最佳瞬间。",
-        "在下半场初段落后之后，安德烈·哈里曼-安努斯（Andre Harriman-Annous）将比分扳平，确保我们的U21队以一分开始联赛征程。",
-        "要观看全部比赛，请点击上方视频播放！"
-      ],
-      "translationSourceHash": "83de79053dac1d104488722596a180828119909f456936fb9e2ee60d7b43efa4",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-22T15:55:45.372Z"
     },
     {
       "id": "665b531fb7acd768e679ee4f6d3394deee42bf561e3257783090e526a441e5fe",
@@ -942,6 +792,51 @@
       "translationSourceHash": "3a2e396213b4895e17a35e0a1aa3bdc4152356ac27da0e900dae9a83f372ec3a",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-21T03:16:22.816Z"
+    },
+    {
+      "id": "457ad3149938e986f3808e4810c13a1dfe05b36e3a86959c8fb991ca452688ae",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Georgia Stanway takes on Reddit AMA!",
+      "summaryEn": "Our new midfielder answered questions from supporters around the world",
+      "bodyEn": [
+        "Georgia Stanway is settling in to life as a Gunner after featuring heavily in our pre-season preparations, and now our new no.4 has taken on our latest Reddit AMA, fielding questions from supporters around the world.",
+        "We signed our no.4 from Bayern Munich this summer, bringing one of Europe's most decorated midfielders into our squad.",
+        "As well as her two European Championship successes with England, Georgia has won eight major titles with Bayern Munich and seven with Manchester City, including the 2016 Barclays Women's Super League.",
+        "Asked how she maintains her focus throughout the seasons, Georgia said: \" I think it's important that we take each game as it comes and we take each training session as it comes.",
+        "\"It's important that we do the work on the grass that's going to put us in the best possible position for the games at the weekend. It's about every single little one percent.",
+        "\"We want to just put ourselves in the best possible position, making sure that we're the most capable to be successful. We know then that we've left no stone unturned.\"",
+        "When Georgia joined us earlier in the Summer, she added to her vast collection of tattoos with a special tribute to our pre-match anthem, North London Forever.",
+        "Georgia was asked about the origins of the tattoo, which she said had a couple of influences.",
+        "\"It was a bit of a mix between me and the media department,\" Georgia said, \" every signing this summer was related to a piece of art and their way of being creative and it made sense that tattooing was my thing.",
+        "\"Obviously because people knew that I'd been doing it for a long time, I've got a lot of tattoos, I can also tattoo myself. If you know Arsenal, if you know the song, then you know what that line is and what it means.",
+        "\"I didn't want the badge, I didn't want the cannon, just because they're too obvious, but I wanted something with a bit of a deeper meaning.\"",
+        "To find out more about Georgia's time in Germany, her move to Arsenal and playing with our talented midfielders, head to the official Arsenal Reddit page."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/0343c55475bb-cartagena-spain-georgia-stanway-of-arsenal-during-the-womens-pre-season-friendly.webp",
+      "author": "Connor Booth",
+      "publishedAt": "2026-08-14T12:00:04.205Z",
+      "url": "https://www.arsenal.com/news/georgia-stanway-takes-on-reddit-ama-aeqYM9W1JYbH",
+      "source": "Arsenal.com",
+      "titleZh": "乔治娅·斯坦威参加Reddit AMA！",
+      "summaryZh": "新援中场乔治娅·斯坦威回答全球球迷提问。",
+      "bodyZh": [
+        "乔治娅·斯坦威在季前备战中表现出色，正在适应作为枪手的生活，如今我们的新4号球员参加了最新的Reddit AMA，回答了来自全球球迷的提问。",
+        "我们今夏从拜仁慕尼黑签下了4号球员，将欧洲最荣誉满身的中场之一带入阵中。",
+        "除了随英格兰队两次赢得欧洲杯冠军外，乔治娅还随拜仁慕尼黑赢得八项重大赛事冠军，随曼城赢得七项，其中包括2016年巴克莱女子超级联赛。",
+        "当被问及如何在整个赛季中保持专注时，乔治娅说：“我认为重要的是我们要一场一场地比赛，一次训练一次训练地对待。”",
+        "“重要的是我们在草坪上做好工作，这样能在周末比赛中处于最佳位置。关键在于每一个百分之一。”",
+        "“我们只想把自己置于最佳位置，确保我们最有能力取得成功。我们知道这样我们就已经竭尽全力。”",
+        "今夏早些时候加盟时，乔治娅在大量纹身中新增了一个特别的纹身，致敬我们的赛前圣歌《北伦敦永恒》。",
+        "乔治娅被问及这个纹身的由来，她说有几个灵感来源。",
+        "“这是我和媒体部门合作的成果，”乔治娅说，“今夏每笔签约都与一种艺术形式及其创意方式相关，纹身正好是我的风格。”",
+        "“显然，因为人们知道我纹身已久，我有很多纹身，我也能给自己纹。如果你了解阿森纳，如果你了解这首歌，你就会知道那句歌词是什么以及它的含义。”",
+        "“我不想要队徽，我也不想要大炮，因为那些太明显了，但我想要一些有更深含义的东西。”",
+        "想了解更多关于乔治娅在德国的时光、她转会阿森纳以及与才华横溢的中场球员们合作的细节，请访问阿森纳官方Reddit页面。"
+      ],
+      "translationSourceHash": "8bbf701911736a5f486d428a3564a5e389e6ab9cb2f2b61004c0a3530bf412d3",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-24T10:51:20.480Z"
     }
   ]
 }
