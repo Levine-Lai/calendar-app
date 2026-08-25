@@ -1,12 +1,47 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-25T08:58:20.911Z",
+  "updatedAt": "2026-08-25T10:47:41.049Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "81375656a9bbdb6f7526274ce189ac459fcba114fc293efc77dc2c13f3e9362a",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Phoenix Blayney joins Arsenal",
+      "summaryEn": "Goalkeeper Phoenix joins us from Northern Irish club Larne",
+      "bodyEn": [
+        "We have reached an agreement for Northern Ireland under-17 international Phoenix Blayney from Larne FC as part of our 2027/28 scholar intake.",
+        "The player has also signed a pre-contract agreement that will lead to him signing professional terms with us.",
+        "A towering goalkeeper from Belfast, Phoenix will leave his home country for the first time in his career to join us in north London after a successful trial period.",
+        "Despite being just 15 years old, the talented shot-stopper has already represented his country in their UEFA Euro Under-17 qualification campaign, making five appearances as Northern Ireland advanced to the elite qualifying round; Phoenix has also appeared in three under-17 friendlies for his country.",
+        "At club level, Phoenix has competed in several competitions with Larne's under-16s and under-18s sides, and was named on the bench for a UEFA Youth League game last season.",
+        "Everyone at Arsenal welcomes Phoenix to the club and looks forward to supporting him with his continued development.",
+        "The transfer is subject to the completion of regulatory processes."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/0d61e400599f-dsc4366p6bnosol-1-1.webp",
+      "author": "Arsenal Media",
+      "publishedAt": "2026-08-25T10:00:00.000Z",
+      "url": "https://www.arsenal.com/news/phoenix-blayney-joins-arsenal-a5JSX9e3OZKZ",
+      "source": "Arsenal.com",
+      "titleZh": "菲尼克斯·布莱尼加盟阿森纳",
+      "summaryZh": "门将菲尼克斯从北爱尔兰球队拉恩加盟。",
+      "bodyZh": [
+        "作为我们2027/28赛季青训学员招募的一部分，我们已与来自拉恩FC的北爱尔兰U17国脚菲尼克斯·布莱尼达成协议。",
+        "该球员还签署了一份预备合同，这将使他最终与我们签订职业合同。",
+        "菲尼克斯是一名来自贝尔法斯特的高大门将，在试训期表现出色后，他将职业生涯首次离开祖国，来到北伦敦加盟我们。",
+        "尽管年仅15岁，这位天赋异禀的门将已经代表国家队参加了U17欧锦赛预选赛，在北爱尔兰晋级精英资格赛的过程中出场5次；此外，菲尼克斯还为国家队出战了3场U17友谊赛。",
+        "在俱乐部层面，菲尼克斯曾代表拉恩U16和U18梯队参加多项赛事，并在上赛季的一场欧足联青年联赛比赛中进入替补名单。",
+        "阿森纳的每个人都欢迎菲尼克斯的加盟，并期待支持他持续成长。",
+        "这笔转会需完成相关监管程序。"
+      ],
+      "translationSourceHash": "f2ee3fcfb07af541da1d3083e5914cb2177ee8dcf9be86700ba6500e0e7969f0",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-25T10:47:41.049Z"
+    },
     {
       "id": "53114dae7cf992627b57b587a811da775196ad86407e2156fc9e586053c82205",
       "teamId": "arsenal",
@@ -496,33 +531,6 @@
       "translationSourceHash": "ba676df7e15b0def56ba2231c5a9bfe256fee2f7d83b9fe035d51f832df5a3fb",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-24T14:03:50.016Z"
-    },
-    {
-      "id": "aa2dd5bc39baba9500e0eb12a96da2a635ce4be12051ea3c985da3c7f06386bd",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "U21s highlights: Arsenal 1-1 Crystal Palace",
-      "summaryEn": "Watch the best of the action from our opening day match with Crystal Palace",
-      "bodyEn": [
-        "We fought back to claim a point in our first Premier League 2 match of the season, and you can see all the best action with our highlights package.",
-        "After falling behind early in the second half, Andre Harriman-Annous equalised to enusre our under-21s started league lift with a point.",
-        "To watch all of the action, press play on the video above now!"
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/a656e61bd0b1-whatsapp-image-2026-08-22-at-140534.webp",
-      "author": "Charlie Peat",
-      "publishedAt": "2026-08-22T15:48:46.909Z",
-      "url": "https://www.arsenal.com/news/u21s-highlights-arsenal-1-1-crystal-palace-aDK3C5C387Zd",
-      "source": "Arsenal.com",
-      "titleZh": "U21集锦：阿森纳1-1水晶宫",
-      "summaryZh": "观看我们赛季首场比赛的精彩片段。",
-      "bodyZh": [
-        "我们在本赛季首场英超2比赛中奋起反击，收获一分，您可以观看我们的集锦包中的全部精彩瞬间。",
-        "在下半场初段落后后，安德烈·哈里曼-安努斯扳平比分，确保我们的U21队以一分开启联赛征程。",
-        "要观看所有片段，请立即点击上方视频播放！"
-      ],
-      "translationSourceHash": "02eaae575aefcf01f20661e9fc8294341e96ea17f3513e23f485813defa1bade",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-24T14:58:24.733Z"
     },
     {
       "id": "665b531fb7acd768e679ee4f6d3394deee42bf561e3257783090e526a441e5fe",
