@@ -1,43 +1,8 @@
 {
   "teamId": "toronto-blue-jays",
   "teamName": "多伦多蓝鸟",
-  "updatedAt": "2026-08-25T21:45:27.207Z",
+  "updatedAt": "2026-08-25T22:01:38.714Z",
   "items": [
-    {
-      "id": "bcfc47a34456be4da61224f6b076cf59578a5c4a88ff18feb8628d51171de793",
-      "teamId": "toronto-blue-jays",
-      "teamName": "多伦多蓝鸟",
-      "titleEn": "Bieber (shoulder) goes on IL, dealing another blow to Blue Jays",
-      "summaryEn": "",
-      "bodyEn": [
-        "TORONTO -- The Blue Jays have placed starter Shane Bieber on the 15-day IL with right teres major inflammation, another significant blow to a rotation that’s spent all season weathering them.",
-        "There was no indication this news was coming Tuesday. Bieber missed around the first half of the season, dealing with some lingering elbow and forearm issues from the Blue Jays’ World Series run in 2025, but he’s appeared to be healthy ever since he returned in late June.",
-        "Bieber has looked so much sharper in recent weeks and is coming off his best outing of the season, seven innings of one-run ball against the Rays with seven strikeouts. He’s looked like his old self, which has been perfectly timed for a team making a postseason push and a pitcher nearing free agency. Now, he’s back on the IL, right alongside too many other Blue Jays starters.",
-        "The Blue Jays have already been without José Berríos, Cody Ponce and Bowden Francis for the season, and Trey Yesavage recently joined them after undergoing surgery to repair the meniscus in his left knee. Jameson Taillon, acquired to support this rotation at the Deadline, is on the IL with a forearm injury. Bieber already spent extensive time on the IL, and Max Scherzer has seen multiple stints this season as well. Add in the fact that the Blue Jays dealt Kevin Gausman at the Trade Deadline, and this feels so far away from Spring Training, when we wondered how the Blue Jays would manage such an impressive group of starters.",
-        "As it stands, the Blue Jays’ rotation is: Dylan Cease, José Soriano, Max Scherzer and Spencer Arrighetti. Even in Arrighetti’s spot, he’s still in the process of stretching back out after a recent IL stint of his own, but anyone capable of throwing more than four innings qualifies as a “starter” right now.",
-        "This puts the Blue Jays in scramble mode once again. Chad Dallas has been recalled and can be part of the solution alongside Simeon Woods Richardson, who straddled the line between starter and “bulk reliever” but could be asked to stretch deeper. In Triple-A, the Blue Jays also have CJ Van Eyk and John Klein, but regardless of how they patch this together, it’s going to be awfully difficult to replace Bieber.",
-        "The Blue Jays open a series against the Royals at home on Tuesday."
-      ],
-      "titleZh": "Bieber（肩伤）进入伤病名单，蓝鸟再遭打击",
-      "summaryZh": "蓝鸟先发Bieber因右大圆肌炎症进入伤病名单，球队轮值再遭打击。",
-      "bodyZh": [
-        "多伦多——蓝鸟将先发投手Shane Bieber放入15天伤病名单，原因是右大圆肌炎症，这对整个赛季都在承受打击的先发轮值来说是又一次重大打击。",
-        "周二之前，没有任何迹象表明这一消息会传出。Bieber因2025年世界大赛期间遗留的肘部和前臂问题，缺席了大约半个赛季，但自6月底回归以来，他一直显得很健康。",
-        "Bieber最近几周表现明显更加犀利，刚刚打出了他本赛季最出色的一场比赛——对阵光芒队投了7局，只失1分，送出7次三振。他看起来已恢复巅峰状态，这对于一支正在冲击季后赛的球队和一位即将成为自由球员的投手来说，时机恰到好处。现在，他又回到了伤病名单，和太多其他蓝鸟先发投手为伍。",
-        "蓝鸟本赛季已经失去了José Berríos、Cody Ponce和Bowden Francis，Trey Yesavage在接受了左膝半月板修复手术后，最近也加入到了这一行列。在交易截止日引进以支援轮值的Jameson Taillon，目前因前臂受伤进入伤病名单。Bieber已经在伤病名单上待了很长时间，Max Scherzer本赛季也多次进出。再加上蓝鸟在交易截止日交易走了Kevin Gausman，这让人感觉与春训时相距甚远。当时，我们还在好奇蓝鸟将如何安排这一群令人印象深刻的先发投手。",
-        "就目前而言，蓝鸟的先发轮值由Dylan Cease、José Soriano、Max Scherzer和Spencer Arrighetti组成。即使是Arrighetti，他也刚刚从一次伤病名单中恢复，还在重新拉长局数的过程中。但眼下，任何能投超过四局的人都有资格被视为“先发投手”。",
-        "这让蓝鸟再次进入紧急应对模式。Chad Dallas已被召回，他可能与Simeon Woods Richardson一同成为解决方案的一部分，后者一直在先发和“长中继”之间摇摆，但也可能被要求投得更深。在3A，蓝鸟还有CJ Van Eyk和John Klein，但无论他们如何拼凑，要取代Bieber都将极为困难。",
-        "蓝鸟将于周二在主场开始与皇家队的系列赛。"
-      ],
-      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/bce2qegvu4klyaphbjpg",
-      "translationSourceHash": "948e8c6732b8a3a22df3a7a0124a694dd6764c9d9c89dce36865af792096a13b",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-25T18:49:43.723Z",
-      "author": "Keegan Matheson",
-      "publishedAt": "2026-08-25T21:26:00.000Z",
-      "url": "https://www.mlb.com/bluejays/news/shane-bieber-injured-list-shoulder-injury",
-      "source": "MLB.com"
-    },
     {
       "id": "9c61c42f787962cd6c73ded6bc964e794a273044766f2b3c1a6323947bb88874",
       "teamId": "toronto-blue-jays",
@@ -95,8 +60,43 @@
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-25T01:44:22.295Z",
       "author": "Brendan Samson",
-      "publishedAt": "2026-08-25T20:35:00.000Z",
+      "publishedAt": "2026-08-25T22:00:00.000Z",
       "url": "https://www.mlb.com/bluejays/news/watch-minor-league-baseball-games-for-free-2026",
+      "source": "MLB.com"
+    },
+    {
+      "id": "bcfc47a34456be4da61224f6b076cf59578a5c4a88ff18feb8628d51171de793",
+      "teamId": "toronto-blue-jays",
+      "teamName": "多伦多蓝鸟",
+      "titleEn": "Bieber (shoulder) goes on IL, dealing another blow to Blue Jays",
+      "summaryEn": "",
+      "bodyEn": [
+        "TORONTO -- The Blue Jays have placed starter Shane Bieber on the 15-day IL with right teres major inflammation, another significant blow to a rotation that’s spent all season weathering them.",
+        "There was no indication this news was coming Tuesday. Bieber missed around the first half of the season, dealing with some lingering elbow and forearm issues from the Blue Jays’ World Series run in 2025, but he’s appeared to be healthy ever since he returned in late June.",
+        "Bieber has looked so much sharper in recent weeks and is coming off his best outing of the season, seven innings of one-run ball against the Rays with seven strikeouts. He’s looked like his old self, which has been perfectly timed for a team making a postseason push and a pitcher nearing free agency. Now, he’s back on the IL, right alongside too many other Blue Jays starters.",
+        "The Blue Jays have already been without José Berríos, Cody Ponce and Bowden Francis for the season, and Trey Yesavage recently joined them after undergoing surgery to repair the meniscus in his left knee. Jameson Taillon, acquired to support this rotation at the Deadline, is on the IL with a forearm injury. Bieber already spent extensive time on the IL, and Max Scherzer has seen multiple stints this season as well. Add in the fact that the Blue Jays dealt Kevin Gausman at the Trade Deadline, and this feels so far away from Spring Training, when we wondered how the Blue Jays would manage such an impressive group of starters.",
+        "As it stands, the Blue Jays’ rotation is: Dylan Cease, José Soriano, Max Scherzer and Spencer Arrighetti. Even in Arrighetti’s spot, he’s still in the process of stretching back out after a recent IL stint of his own, but anyone capable of throwing more than four innings qualifies as a “starter” right now.",
+        "This puts the Blue Jays in scramble mode once again. Chad Dallas has been recalled and can be part of the solution alongside Simeon Woods Richardson, who straddled the line between starter and “bulk reliever” but could be asked to stretch deeper. In Triple-A, the Blue Jays also have CJ Van Eyk and John Klein, but regardless of how they patch this together, it’s going to be awfully difficult to replace Bieber.",
+        "The Blue Jays open a series against the Royals at home on Tuesday."
+      ],
+      "titleZh": "Bieber（肩伤）进入伤病名单，蓝鸟再遭打击",
+      "summaryZh": "蓝鸟先发Bieber因右大圆肌炎症进入伤病名单，球队轮值再遭打击。",
+      "bodyZh": [
+        "多伦多——蓝鸟将先发投手Shane Bieber放入15天伤病名单，原因是右大圆肌炎症，这对整个赛季都在承受打击的先发轮值来说是又一次重大打击。",
+        "周二之前，没有任何迹象表明这一消息会传出。Bieber因2025年世界大赛期间遗留的肘部和前臂问题，缺席了大约半个赛季，但自6月底回归以来，他一直显得很健康。",
+        "Bieber最近几周表现明显更加犀利，刚刚打出了他本赛季最出色的一场比赛——对阵光芒队投了7局，只失1分，送出7次三振。他看起来已恢复巅峰状态，这对于一支正在冲击季后赛的球队和一位即将成为自由球员的投手来说，时机恰到好处。现在，他又回到了伤病名单，和太多其他蓝鸟先发投手为伍。",
+        "蓝鸟本赛季已经失去了José Berríos、Cody Ponce和Bowden Francis，Trey Yesavage在接受了左膝半月板修复手术后，最近也加入到了这一行列。在交易截止日引进以支援轮值的Jameson Taillon，目前因前臂受伤进入伤病名单。Bieber已经在伤病名单上待了很长时间，Max Scherzer本赛季也多次进出。再加上蓝鸟在交易截止日交易走了Kevin Gausman，这让人感觉与春训时相距甚远。当时，我们还在好奇蓝鸟将如何安排这一群令人印象深刻的先发投手。",
+        "就目前而言，蓝鸟的先发轮值由Dylan Cease、José Soriano、Max Scherzer和Spencer Arrighetti组成。即使是Arrighetti，他也刚刚从一次伤病名单中恢复，还在重新拉长局数的过程中。但眼下，任何能投超过四局的人都有资格被视为“先发投手”。",
+        "这让蓝鸟再次进入紧急应对模式。Chad Dallas已被召回，他可能与Simeon Woods Richardson一同成为解决方案的一部分，后者一直在先发和“长中继”之间摇摆，但也可能被要求投得更深。在3A，蓝鸟还有CJ Van Eyk和John Klein，但无论他们如何拼凑，要取代Bieber都将极为困难。",
+        "蓝鸟将于周二在主场开始与皇家队的系列赛。"
+      ],
+      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/bce2qegvu4klyaphbjpg",
+      "translationSourceHash": "948e8c6732b8a3a22df3a7a0124a694dd6764c9d9c89dce36865af792096a13b",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-25T18:49:43.723Z",
+      "author": "Keegan Matheson",
+      "publishedAt": "2026-08-25T21:26:00.000Z",
+      "url": "https://www.mlb.com/bluejays/news/shane-bieber-injured-list-shoulder-injury",
       "source": "MLB.com"
     },
     {
