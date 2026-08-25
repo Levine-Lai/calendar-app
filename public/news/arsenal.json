@@ -1,12 +1,90 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-25T07:57:08.392Z",
+  "updatedAt": "2026-08-25T08:58:20.911Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "53114dae7cf992627b57b587a811da775196ad86407e2156fc9e586053c82205",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Go Inside N5 for our opening day win",
+      "summaryEn": "Watch all the best alternate and behind the scenes angles from Friday's win",
+      "bodyEn": [
+        "We picked up where we left off in the Premier League with a comfortable 3-0 win over Coventry City at Emirates Stadium, and now you can go behind the scenes on the night with the first Inside N5 of the season.",
+        "Kai Havertz, Bukayo Saka and Martin Odegaard found the back of the net to ensure we got the 2026/27 season off to a flying start, sparking familiar scenes of joy and celebration at Emirates Stadium.",
+        "As well as our goalscorers, there were standout performances from Myles Lewis-Skelly and Christos Tzolis as we started the season as we mean to go on.",
+        "Press play on the video at the top of the article to catch the best alternate angles, behind the scenes clips and crowd celebrations from our first game of the Premier League season."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/62a1aeaeb91d-london-england-martin-odegaard-of-arsenal-celebrates-scoring-his-teams-third-goa.webp",
+      "author": "Connor Booth",
+      "publishedAt": "2026-08-25T07:55:00.000Z",
+      "url": "https://www.arsenal.com/news/go-inside-n5-for-our-opening-day-win-aLeB49J8mMr1",
+      "source": "Arsenal.com",
+      "titleZh": "深入N5，见证赛季开门红",
+      "summaryZh": "观看周五胜利的最佳另类角度和幕后花絮",
+      "bodyZh": [
+        "我们在英超联赛中延续了上赛季的表现，在酋长球场以3-0轻松战胜考文垂城，现在你可以通过本赛季首期Inside N5节目，深入了解当晚的幕后情况。",
+        "凯·哈弗茨、布卡约·萨卡和马丁·厄德高均取得进球，确保我们以强势开局开启2026/27赛季，酋长球场再次上演熟悉的欢乐庆祝场面。",
+        "除了进球功臣，迈尔斯·刘易斯-斯凯利和克里斯托斯·佐利斯也有出色表现，我们以这样的方式开启赛季，并打算继续前行。",
+        "点击文章顶部的视频播放，即可观看我们英超赛季首场比赛的最佳另类角度、幕后片段和球迷庆祝。"
+      ],
+      "translationSourceHash": "7fabdc597f124a703175bf1eef00c544c40a03cb01b3d29e2bb6db5ed5852129",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-25T08:58:09.362Z"
+    },
+    {
+      "id": "cf5fbc4a7416d9637745ebe9498f3759d0230dd2b06f332410bf5fe5ed54dec5",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "When is the Carabao Cup third round draw?",
+      "summaryEn": "Find out who we could face in the Carabao Cup third round draw!",
+      "bodyEn": [
+        "The Carabao Cup is back as we enter the third stage of the competition.",
+        "Last year we reached the final for the first time since 2018, losing out to Manchester City at Wembley.",
+        "As we prepare to go for the trophy once again, here's a look at the key details of Wednesday evening's draw!",
+        "WHEN IS THE CARABAO CUP THIRD ROUND DRAW?",
+        "The Carabao Cup third round draw will take place on Wednesday, August 26, following the conclusion of Preston North End v Everton, at approximately 10.30pm UK time.",
+        "The draw will be shown live on Sky Sports Main Event and Sky Sports Football for those who have a subscription in the UK.",
+        "Last season we were handed a trip to Port Vale, where we won 2-0, with Ebere Eze scoring his first goal in Arsenal colours.",
+        "WHAT BALL NUMBER ARE WE?",
+        "The ball numbers are yet to be confirmed for this year's Carabao Cup draw.",
+        "The EFL are expected to release the details on the draw on Tuesday.",
+        "WHEN WILL THE MATCH TAKE PLACE?",
+        "Matches will be split into two midweeks due to clubs participating in European football.",
+        "As such, some match will take place the week commencing September 7, with the remaining fixtures the week commencing September 14, 2026.",
+        "Due to our participation in the Champions League, the match will take place the week commencing September 14, with the final date to be confirmed in due course."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/49659e1bc7e0-gettyimages-2237209798.webp",
+      "author": "Charlie Peat",
+      "publishedAt": "2026-08-25T07:43:58.728Z",
+      "url": "https://www.arsenal.com/news/when-is-the-carabao-cup-third-round-draw-ac5fS9H7gT8i",
+      "source": "Arsenal.com",
+      "titleZh": "卡拉宝杯第三轮抽签何时举行？",
+      "summaryZh": "了解一下我们可能在卡拉宝杯第三轮抽签中遇到谁？",
+      "bodyZh": [
+        "卡拉宝杯回归，我们进入了该项赛事的第三阶段。",
+        "去年我们自2018年以来首次闯入决赛，但在温布利输给了曼城。",
+        "当我们再次向奖杯发起冲击之际，以下是周三晚上抽签的关键细节！",
+        "卡拉宝杯第三轮抽签何时举行？",
+        "卡拉宝杯第三轮抽签将于英国时间8月26日星期三晚上10点30分左右，在普雷斯顿对阵埃弗顿的比赛结束后进行。",
+        "英国订阅用户可在天空体育主赛事频道和天空体育足球频道观看抽签直播。",
+        "上赛季我们客场对阵维尔港，以2-0获胜，埃泽打进了他在阿森纳的处子球。",
+        "我们的球号是多少？",
+        "今年卡拉宝杯抽签的球号尚未确定。",
+        "英格兰足球联赛预计将于周二公布抽签细节。",
+        "比赛何时进行？",
+        "由于部分俱乐部参加欧战，比赛将分两个周中进行。",
+        "因此，一些比赛将在9月7日那一周进行，其余比赛将在2026年9月14日那一周进行。",
+        "由于我们要参加欧冠联赛，我们的比赛将在9月14日那一周进行，具体日期将在适当时候确认。"
+      ],
+      "translationSourceHash": "2584c27d9aee453621dfb9a9fcbd69df1bc0fcfa588ee3e35a8b9e3e68aba8bb",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-25T08:58:20.911Z"
+    },
     {
       "id": "4b0a3ef890cb7b2dded362db08586179bfbff40a2d144d353de518b769d4545b",
       "teamId": "arsenal",
@@ -286,70 +364,6 @@
       "translationSourceHash": "c06b9fa9e044bcd435b3eb4c1782769ff376d1b6df28b4e08aee99599951c6e0",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-24T11:42:30.694Z"
-    },
-    {
-      "id": "b82f674a12f24fdf58ab450fe11c91828032c4b0d1702762f7bd7e796aeb8e32",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Get your tickets for Charlton clash on Wednesday",
-      "summaryEn": "We face Charlton Athletic at Meadow Park in our final game of pre-season",
-      "bodyEn": [
-        "Tickets are still available for our final pre-season fixture against Charlton Athletic at Mangata Developments Stadium on Wednesday night (7pm).",
-        "We face the newly-promoted Women's Super League side in north London as we finalise our preparations for the new league season, and you can be there to watch Renee Slegers' side in action.",
-        "Our pre-season has so far seen us beat Crystal Palace and Manchester City either side of a defeat to AC Milan in behind-closed-doors friendlies, before Olivia Smith's late strike secured a 1-0 win over Paris FC at Meadow Park on Sunday afternoon.",
-        "Get your tickets for Arsenal Women v Charlton Athletic online now!",
-        "There is a transaction limit of 4 tickets per person. Unreserved ticketing is split into the North and South Stands. Reserved ticketing is split into East and West Stands. Please review the stadium map to decide which ticket is right for you.",
-        "Disability Access:",
-        "Supporters looking to purchase Disability Access tickets must contact our team. Disability Access tickets will all be sold directly by our team to ensure they are sold to eligible supporters. Please note, as these tickets are not on sale online they will be offered to supporters in the order they contact us.",
-        "The best method to contact us during on sale is via our enquiry form and selecting the correct match, please ensure you input the number of tickets needed, the price classes and the preferred location along with any specific requirements. We review all emails within the sales windows in the order they are submitted."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/f0824b4a4955-borehamwood-england-olivia-smith-and-misa-rodriguez-of-arsenal-pose-for-a-photo.webp",
-      "author": "Connor Booth",
-      "publishedAt": "2026-08-24T10:00:00.000Z",
-      "url": "https://www.arsenal.com/news/get-your-tickets-for-charlton-clash-on-wednesday-a0Omh2s58hEL",
-      "source": "Arsenal.com",
-      "titleZh": "预订周三对阵查尔顿比赛门票",
-      "summaryZh": "阿森纳女足季前赛最后一战对阵查尔顿，门票仍有售。",
-      "bodyZh": [
-        "周三晚上（7点）在曼加塔发展球场对阵查尔顿竞技的季前赛最后一场比赛门票仍有售。",
-        "我们将在北伦敦迎战新升入女子超级联赛的球队，为新的联赛赛季做最后准备，您可以到场观看雷妮·斯莱格斯（Renee Slegers）执教的球队比赛。",
-        "迄今为止的季前赛，我们先后在闭门友谊赛中击败了水晶宫和曼城，中间输给了AC米兰，随后奥利维亚·史密斯最后时刻的进球帮助球队在周日下午的草地公园球场1-0战胜巴黎FC。",
-        "现在就在线预订阿森纳女足对阵查尔顿竞技的门票！",
-        "每人限购4张。非选座票分为北看台和南看台，选座票分为东看台和西看台。请查看球场地图，选择适合您的门票。",
-        "无障碍通道：",
-        "希望购买无障碍通道门票的支持者必须联系我们的团队。无障碍通道门票将全部由团队直接销售，以确保售给符合资格的球迷。请注意，由于这些门票不在网上销售，将按联系我们先后顺序提供给球迷。",
-        "销售期间联系我们的最佳方式是通过我们的咨询表格并选择正确的比赛，请确保输入所需门票数量、价格等级、首选位置以及任何特定要求。我们会按提交顺序在销售窗口内审阅所有邮件。"
-      ],
-      "translationSourceHash": "466f5ee3a4b8939ada63bd34e8dae4117c6470e418c89e94cb3f3a8cd8f88d2e",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-24T11:42:38.378Z"
-    },
-    {
-      "id": "a21bdaa6225d4b2e01a2a9dd008ecd2d222bd3f0051a1cf45894db0d087e415b",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Full match: Arsenal Women 1-0 Paris FC",
-      "summaryEn": "In case you missed Sunday's pre-season encounter with Paris FC and want to catch up on the full thing, this is the place for you.",
-      "bodyEn": [
-        "In case you missed Sunday's pre-season encounter with Paris FC and want to catch up on the full thing, this is the place for you.",
-        "Olivia Smith's 91st-minute stunner is worth the wait! Watch how we tried to break down our opposition before eventually finding a way through.",
-        "Press play on the video above to see the full match replay in full."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/149048bb95dc-gettyimages-2291686952.webp",
-      "author": "Stephen Wright",
-      "publishedAt": "2026-08-24T09:26:16.159Z",
-      "url": "https://www.arsenal.com/news/full-match-arsenal-women-1-0-paris-fc-aoT8d3F5wZYn",
-      "source": "Arsenal.com",
-      "titleZh": "全场回放：阿森纳女足 1-0 巴黎FC",
-      "summaryZh": "错过了周日与巴黎FC的热身赛？这里有全场回放。",
-      "bodyZh": [
-        "如果你错过了周日与巴黎FC的热身赛，并想回顾全场，这里就是你的去处。",
-        "奥利维亚·史密斯第91分钟的绝杀值得等待！观看我们如何尝试攻破对手防线，最终找到突破口。",
-        "点击上方视频播放，观看全场回放。"
-      ],
-      "translationSourceHash": "4d1e5e0ed1a3394c0cedf2a325495271c3740a1cfc506d201914ab31fa5f6c5e",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-24T11:42:33.944Z"
     },
     {
       "id": "d77d42135d8104789ed2e804685a61c636ac4c09b3ff43ae31340c229913cf57",
