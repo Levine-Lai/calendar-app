@@ -1,12 +1,53 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-25T05:46:05.941Z",
+  "updatedAt": "2026-08-25T07:57:08.392Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "4b0a3ef890cb7b2dded362db08586179bfbff40a2d144d353de518b769d4545b",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Six Gunners hoping for success at tonight's PFA Awards",
+      "summaryEn": "David Raya, Gabriel and Declan Rice are on the Players' Player of the Year shortlist, while Alessia Russo is up for the women's award",
+      "bodyEn": [
+        "Tonight sees one of the most prestigious off-the-pitch nights in the football calendar when the great and good of the game get dressed up and head to the PFA Awards, hoping to walk away with some individual accolades.",
+        "The prizes will be dished out for the 53rd time in the awards' history in Manchester, with all winners chosen by votes from their fellow professionals, and a strong Arsenal influence across the biggest prizes up for grabs.",
+        "David Raya, Gabriel and Declan Rice have all made the six-man shortlist for the men's Players' Player of the Year award, alongside Manchester City pair Rayan Cherki and Erling Haaland, as well as Manchester United captain Bruno Fernandes.",
+        "All three Gunners made seismic contributions to our first league title since 2004, as we conceded a league-low 27 Premier League goals, eight fewer than any other side.",
+        "In the women's category, Alessia Russo is our sole nominee as she looks to follow in the footsteps of last season's recipient, Mariona Caldentey and add her name to the award's roll of honour.",
+        "2025/26 season was her best ever in front of goal, scoring 24 goals in 40 matches in all competitions, which included an unforgettable hat-trick in March’s north London derby, which saw us beat Tottenham Hotspur 5-2 at Emirates Stadium.",
+        "The other five players in the running for that award are Bunny Shaw (Manchester City), Jess Park (Manchester United), Kirsty Hanson (Aston Villa), Lauren James (Chelsea), and Yui Hasegawa (Manchester City).",
+        "At just 16, Max Dowman's record-smashing contributions have earned him a nomination for the men's Young Player of the Month award. Max is the youngest player to start a match, score a goal or win the title in the Premier League era, and joins five other standout young players in Manchester City duo Nico O'Reilly and Rayan Cherki, Kobbie Mainoo of Manchester United, Liverpool's Rio Ngumoha and Eli Junior Kroupi, who scored for Bournemouth against Manchester City in the 1-1 draw which ultimately secured us the league title.",
+        "Olivia Smith meanwhile is hoping to scoop the Women's Young Player of the Year award for the second season in a row, having done so in 2025 following her final season at Liverpool. In total, she scored 10 goals across 38 matches in all competitions for us in 2025/26, and is vying for the honour against Alyssa Thompson (Chelsea), Freya Godfrey (London City Lionesses), Laura Blindkilde Brown (Manchester City), Toko Koga (Tottenham Hotspur), and Veerle Buurman (Chelsea).",
+        "As well as those four prizes, we should also see good representation in the PFA Team of the Year categories when those are announced at the ceremony."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/1f9543102584-london-england-gabriel-and-declan-rice-of-arsenal-pose-for-a-photo-with-the-prem.webp",
+      "author": "Jonathon Rogers",
+      "publishedAt": "2026-08-25T07:10:00.000Z",
+      "url": "https://www.arsenal.com/news/six-gunners-hoping-for-success-at-tonights-pfa-awards-a10m44b2gN8e",
+      "source": "Arsenal.com",
+      "titleZh": "六名枪手力争今晚PFA颁奖礼创佳绩",
+      "summaryZh": "大卫·拉亚、加布里埃尔和德克兰·赖斯入选年度最佳球员候选，阿莱西娅·鲁索入围女足奖项。",
+      "bodyZh": [
+        "今晚是足球日历上最负盛名的场外夜晚之一，足球界的名流们盛装出席PFA颁奖典礼，希望带走一些个人荣誉。",
+        "颁奖典礼将在曼彻斯特举行，这是该奖项历史上第53次颁发，所有获奖者均由同行职业球员投票选出，阿森纳在各大奖项中影响力强劲。",
+        "大卫·拉亚、加布里埃尔和德克兰·赖斯均入选了男子年度最佳球员的六人候选名单，一同入选的还有曼城组合拉扬·谢尔基和埃尔林·哈兰德，以及曼联队长布鲁诺·费尔南德斯。",
+        "这三名枪手为我们自2004年以来首个联赛冠军作出了巨大贡献，我们全场仅失27球，为英超最少，比任何其他球队少8球。",
+        "女足方面，阿莱西娅·鲁索是我们唯一的提名者，她希望追随上届得主马里奥纳·卡尔登泰的脚步，将自己的名字写入该奖项的荣誉榜。",
+        "2025/26赛季是她职业生涯中进球表现最好的赛季，她在各项赛事的40场比赛中攻入24球，其中包括三月北伦敦德比中令人难忘的帽子戏法，那场比赛我们在酋长球场5-2击败托特纳姆热刺。",
+        "该奖项其余五名候选人是邦尼·肖（曼城）、杰斯·帕克（曼联）、柯斯蒂·汉森（阿斯顿维拉）、劳伦·詹姆斯（切尔西）和长谷川唯（曼城）。",
+        "年仅16岁的马克斯·道曼以破纪录的表现获得了男子月度最佳年轻球员提名。马克斯是英超时代最年轻的出场、进球或赢得冠军的球员，他与其他五名杰出年轻球员一同入选，包括曼城二人组尼科·奥赖利和拉扬·谢尔基、曼联的科比·梅努、利物浦的里奥·恩古莫哈，以及伊莱·朱尼尔·克鲁皮，后者在伯恩茅斯1-1战平曼城的比赛中进球，最终帮助我们锁定了联赛冠军。",
+        "与此同时，奥利维亚·史密斯希望连续第二个赛季捧起女足年度最佳年轻球员奖，她在利物浦度过最后一个赛季后于2025年曾获此殊荣。2025/26赛季，她为我们在各项赛事38场比赛中总共打入10球，她将与阿丽莎·汤普森（切尔西）、弗蕾亚·戈弗雷（伦敦城雌狮）、劳拉·布林基尔德·布朗（曼城）、托科·科加（托特纳姆热刺）和费尔勒·布尔曼（切尔西）争夺这一荣誉。",
+        "除了这四个奖项之外，在颁奖典礼上公布PFA年度最佳阵容时，我们也应该看到很好的代表。"
+      ],
+      "translationSourceHash": "e43e9c0b695a32c694d463d26257ee486c318e0a3a7219c728a2897cf744762a",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-25T07:57:08.392Z"
+    },
     {
       "id": "1b1339de32e466f343aba33744c2a223aba73d90d7936c4e56e605a5f22ca916",
       "teamId": "arsenal",
@@ -309,33 +350,6 @@
       "translationSourceHash": "4d1e5e0ed1a3394c0cedf2a325495271c3740a1cfc506d201914ab31fa5f6c5e",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-24T11:42:33.944Z"
-    },
-    {
-      "id": "0ab91b29d16f8731b3f14be02639181911ee8b8947fa3de9feed5298c8fbffcf",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "How to watch Aston Villa v Arsenal live on TV",
-      "summaryEn": "Find out how to watch our second Premier League match of 2026/27",
-      "bodyEn": [
-        "We head to Aston Villa for our second Premier League match of the season on Monday, August 31, at Villa Park at 8pm (UK time).",
-        "Following on from our win over Coventry City, we head to the Midlands for the clash, which will be broadcast live on Sky Sports Main Event for UK subscribers.",
-        "Not in the UK but still looking to tune in? Check out the list below to see how you can watch the match, wherever you are in the world!"
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/4a48b4a108eb-gettyimages-2276437535.webp",
-      "author": "Charlie Peat",
-      "publishedAt": "2026-08-24T08:58:34.868Z",
-      "url": "https://www.arsenal.com/news/how-to-watch-aston-villa-v-arsenal-live-on-tv-aOJLR1I9BWUu",
-      "source": "Arsenal.com",
-      "titleZh": "如何在电视上观看阿斯顿维拉对阵阿森纳的直播",
-      "summaryZh": "如何观看我们2026/27赛季第二场英超比赛。",
-      "bodyZh": [
-        "我们将在8月31日星期一晚上8点（英国时间）于维拉公园球场客场迎战阿斯顿维拉，这是本赛季我们第二场英超比赛。",
-        "在战胜考文垂城之后，我们将前往米德兰兹参加这场对决，英国订阅用户可通过天空体育主赛事频道观看直播。",
-        "不在英国但仍想观看？请查看下方列表，了解无论身处世界何处都能观看比赛的方式！"
-      ],
-      "translationSourceHash": "8fe079c3e4970d52fcfd0269de5515039a2e60289f245d7a75697cec65175eec",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-24T11:42:45.784Z"
     },
     {
       "id": "d77d42135d8104789ed2e804685a61c636ac4c09b3ff43ae31340c229913cf57",
