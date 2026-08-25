@@ -1,12 +1,55 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-25T15:58:09.893Z",
+  "updatedAt": "2026-08-25T16:53:38.255Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "24b4fb6303ad97f33db7a32e98e4c22e25839b4589fcffd39a2b0258d48c0c7f",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Sampang reflects on six-goal thriller",
+      "summaryEn": "Our young Gunner looks back on his goal and the spirited response at Blackburn",
+      "bodyEn": [
+        "Saurap Sampang reflected on our young Gunners' 3-3 draw with Blackburn Rovers, after his second-half goal helped spark a comeback in the U18 Premier League Cup opener.",
+        "Our under-18s found themselves 3-1 down at the break after taking an early lead through Jayden Oba. Sampang's strike after the interval ignited a fightback, before Charlie Purdy's stoppage-time equaliser secured a point.",
+        "The midfielder was pleased with the way we implemented our work from the training ground and maintained our approach throughout the contest.",
+        "\"I think it was good. We've worked on a few things in training and had a system throughout the game.",
+        "\"We showed courage and found rhythm to keep on attacking and attacking. We kept up the pressure and got our reward.\"",
+        "Sampang was pleased to get on the scoresheet after finishing off a slick move involving Hakeem Abubakar, while his versatility means he is happy to contribute wherever he is deployed.",
+        "\"It was good for me to get the goal from Hakeem's run, which we have worked on. I ended up getting my shot off and I was pleased with my finish.",
+        "\"I don't mind where I play, as long as I'm affecting the game and helping the team. I can definitely make an impact from centre-midfield and right-back.\"",
+        "Despite the late comeback, Sampang admitted there was some disappointment at not taking all three points, but was pleased to see the team rewarded for their efforts. He is now focused on continuing his development and pushing for opportunities within the academy system.",
+        "\"Yeah, it's a special feeling, we're all happy but also a bit disappointed as we could have won the game, but obviously pleased with the point.",
+        "\"I just want to keep trying to progress, grow and push for the under-21s this season.\""
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/8fda0e51a546-borehamwood-england-saurap-sampang-of-arsenal-during-the-pl2-match-between-arsen.webp",
+      "author": "Tom Keens",
+      "publishedAt": "2026-08-25T15:57:15.354Z",
+      "url": "https://www.arsenal.com/news/sampang-reflects-on-six-goal-thriller-atQvg7i5NbLm",
+      "source": "Arsenal.com",
+      "titleZh": "桑潘回顾六球大战",
+      "summaryZh": "我们的年轻枪手回顾了他的进球和客战布莱克本的顽强表现。",
+      "bodyZh": [
+        "桑潘回顾了我们年轻枪手在U18英超杯揭幕战中3-3战平布莱克本流浪者的比赛，他在下半场的进球帮助球队发起了逆转。",
+        "我们的U18队凭借杰登·奥巴的进球早早领先，但半场结束时以1-3落后。桑潘在中场休息后的进球点燃了反击，随后查理·珀迪在补时阶段的进球扳平了比分，拿到一分。",
+        "这位中场对我们在比赛中贯彻训练内容并始终保持战术打法感到满意。",
+        "“我认为这很好。我们在训练中研究了一些内容，并在整场比赛中保持了体系。”",
+        "“我们展现了勇气，找到了节奏，不断进攻。我们持续施压，并得到了回报。”",
+        "桑潘很高兴在完成一次由哈基姆·阿布巴卡尔参与的流畅配合后取得进球，他的多面手属性意味着无论被安排在哪里他都乐于做出贡献。",
+        "“能从哈基姆的跑动中取得进球对我来说很好，这是我们练习过的。我最终完成了射门，并对自己的终结感到满意。”",
+        "“我不介意踢什么位置，只要我能影响比赛并帮助球队。我肯定能在中场中路和右后卫位置上产生影响。”",
+        "尽管完成了最后的反击，桑潘承认对未能全取三分感到有些失望，但很高兴看到球队的努力得到回报。他现在专注于继续发展，并在青训体系中争取机会。",
+        "“是的，这是一种特别的感觉，我们都很高兴，但也有一些失望，因为我们本可以赢下比赛，但显然对拿到一分感到满意。”",
+        "“我只想继续努力进步、成长，并在本赛季争取进入U21队。”"
+      ],
+      "translationSourceHash": "4c5a7a1b1a528b98e149ef8836ae22186bf06cf7023af4dfe61dcd7b8453163c",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-25T16:53:38.255Z"
+    },
     {
       "id": "8df43408036a1c8bfbf325e8fb2ad4b58b32e67f438ec79aee2b3e3f8e1b8ae3",
       "teamId": "arsenal",
@@ -112,7 +155,7 @@
         "Arsenal XI: Talbot, Sampang, Mbala, McCarron (Owusu-Gyasi 45), van der Staaten, Murisa, Arteta (Abubakar 45), Hashi, Oba (Bonaventure Yetna 61), Nwaneri (Purdy 61), Phillips (Frohock 61).",
         "Subs: Lupinski, Stachow."
       ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/1d4f67c17dea-ss-web.webp",
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/722c7f23ac99-bromley-england-jayden-oba-of-arsenal-during-the-pre-season-friendly-between-bro.webp",
       "author": "Tom Keens",
       "publishedAt": "2026-08-25T14:05:21.523Z",
       "url": "https://www.arsenal.com/news/u18s-report-blackburn-rovers-3-3-arsenal-aqwU92o1Dy5V",
@@ -265,7 +308,7 @@
         "As such, some match will take place the week commencing September 7, with the remaining fixtures the week commencing September 14, 2026.",
         "Due to our participation in the Champions League, the match will take place the week commencing September 14, with the final date to be confirmed in due course."
       ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/49659e1bc7e0-gettyimages-2237209798.webp",
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/c6452fdb2fb1-london-england-a-general-view-of-the-carabao-cup-trophy-prior-to-the-carabao-cup.webp",
       "author": "Charlie Peat",
       "publishedAt": "2026-08-25T07:43:58.728Z",
       "url": "https://www.arsenal.com/news/when-is-the-carabao-cup-third-round-draw-ac5fS9H7gT8i",
@@ -477,35 +520,6 @@
       "translationSourceHash": "d75d0f136b7cc1fe407f9c48cf9bf3de0f8f966397120ecf95a8c5edcbfddf83",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-24T16:54:19.297Z"
-    },
-    {
-      "id": "8f5e879c21195b7a7eb6bf39ceb2a35cff0df0444312c421eb8800eb0cef190b",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Watch our latest episode of The Big Match!",
-      "summaryEn": "Will sparks fly in N5 in our latest episode? Find out more now!",
-      "bodyEn": [
-        "The Big Match is back for our latest episode as we see if an all-Arsenal date can lead to romance once again.",
-        "This week is the turn of Jack and Gigi to head to Emirates Stadium to see if sparks will fly.",
-        "The pair took in our thrilling 3-0 victory over Fulham last season, but was there also a win off the pitch?",
-        "Press play on the video above to get a glimpse of our latest episode before heading to The Arsenal to watch the full thing!"
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/9b83cf0fa26a-thearsenalheroartworktile16x9thebigmatchnotitle.webp",
-      "author": "Arsenal Media",
-      "publishedAt": "2026-08-24T11:00:00.000Z",
-      "url": "https://www.arsenal.com/news/watch-our-latest-episode-of-the-big-match-alLDN9W4gjOr",
-      "source": "Arsenal.com",
-      "titleZh": "观看我们最新一期的《经典对决》！",
-      "summaryZh": "N5球场能否擦出火花？立即了解最新一期内容！",
-      "bodyZh": [
-        "《经典对决》最新一期回归，看看阿森纳全员出动的约会能否再次擦出浪漫火花。",
-        "本周轮到杰克和吉吉前往酋长球场，看看火花是否会迸发。",
-        "两人上赛季见证了球队3-0战胜富勒姆的激动人心时刻，但场外是否也有收获？",
-        "点击上方视频预览最新一期内容，然后前往阿森纳官网观看完整版！"
-      ],
-      "translationSourceHash": "c06b9fa9e044bcd435b3eb4c1782769ff376d1b6df28b4e08aee99599951c6e0",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-24T11:42:30.694Z"
     },
     {
       "id": "d77d42135d8104789ed2e804685a61c636ac4c09b3ff43ae31340c229913cf57",
