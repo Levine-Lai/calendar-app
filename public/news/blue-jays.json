@@ -1,45 +1,8 @@
 {
   "teamId": "toronto-blue-jays",
   "teamName": "多伦多蓝鸟",
-  "updatedAt": "2026-08-26T13:05:19.935Z",
+  "updatedAt": "2026-08-26T19:09:45.793Z",
   "items": [
-    {
-      "id": "d23fd25df4ca89e557a3c7028bd80cfa332ddd628a7d109f8ea71fd8d5e37f86",
-      "teamId": "toronto-blue-jays",
-      "teamName": "多伦多蓝鸟",
-      "titleEn": "Cease's painting gets new home in gallery display, charity merchandise collection",
-      "summaryEn": "",
-      "bodyEn": [
-        "Dylan Cease, the Major League pitcher, is having a potential Cy Young-caliber season in his first year with the Blue Jays. Dylan Cease, the painter, also accomplished a milestone this week.",
-        "Cease saw his work put on display at the Art Gallery of Ontario in a partnership that included a photo opportunity with Cease on Tuesday, as well as a collection of merchandise featuring the original painting, named “Eve of Toronto.” Fans can get their hands on shirts, sweatshirts, postcards, prints or tote bags with Cease’s work on them. All proceeds additionally will be donated to the AGO.",
-        "“I was inspired by the fact that I was about to spend the next years of my life in Toronto,” Cease said in a statement for the event. “I love painting and it feels good to give back to the community.”",
-        "The painting might look familiar to fans who have taken a special interest in Cease’s artwork. “Eve of Toronto” is the masterpiece that hung in manager John Schneider’s office for the bulk of this season, featuring bright colors and the word “Toronto” written over and over.",
-        "It was noticeably absent from Schneider’s office on Tuesday, replaced by a meme from the movie “Wedding Crashers.”",
-        "Several of Cease’s Blue Jays teammates also wore T-shirts featuring the painting during warmups before Tuesday’s game.",
-        "“I think if anyone else did that painting, it would be a little bit different,”Schneider joked. “But I think it’s really cool how it’s gotten the amount of attention that it has. I kind of said it to him as a joke when we signed him, knowing that he painted. I didn’t know it was going to be this. I think it’s cool how the community has grabbed onto it and how he’s leaned into it. Add it to the wonderful world of Dylan Cease.\"",
-        "Cease’s off-field exploits this year have included plenty of painting, a hobby he took up in 2022 and has continued mastering ever since. Another of his original works sold at auction for $16,000 earlier this month to support Jays Care, the charitable arm of the Toronto Blue Jays."
-      ],
-      "titleZh": "希斯画作入驻美术馆展览及慈善商品系列",
-      "summaryZh": "蓝鸟投手希斯的画作在安大略美术馆展出并推出慈善商品。",
-      "bodyZh": [
-        "大联盟投手Dylan Cease在蓝鸟队的首个赛季正打出可能赢得赛扬奖级的表现。与此同时，画家Dylan Cease本周也达成了一项里程碑。",
-        "希斯的作品在安大略美术馆展出，周二还安排了与希斯的合影活动，并推出了一系列以原作《Eve of Toronto》为图案的商品。球迷可以购买印有希斯作品的T恤、卫衣、明信片、印刷品或手提袋。所有收益也将捐赠给安大略美术馆。",
-        "“我受到即将在多伦多度过未来几年生活的启发，”希斯在活动声明中表示。“我热爱绘画，回馈社区的感觉很好。”",
-        "这幅画可能让关注希斯艺术作品的球迷感到眼熟。《Eve of Toronto》是本赛季大部分时间挂在主教练John Schneider办公室的杰作，色彩明亮，反复写着“Toronto”一词。",
-        "周二，这幅画明显不在舒耐德的办公室，取而代之的是电影《婚礼傲客》的一个梗图。",
-        "周二比赛前热身时，希斯的几位蓝鸟队友也穿着印有这幅画的T恤。",
-        "“我认为如果其他人画那幅画，会有点不同，”舒耐德开玩笑说。“但我觉得它获得如此多的关注真的很酷。我们签下他时，我对他开玩笑说，我知道他会画画。我没想到会是这幅。我觉得社区对它追捧以及他欣然接受的样子很酷。加入Dylan Cease的精彩世界吧。”",
-        "希斯今年的场外活动包括大量绘画，这是他在2022年开始的爱好，此后一直在不断精进。本月早些时候，他的另一幅原作在拍卖会上以1.6万美元成交，用于支持多伦多蓝鸟慈善机构Jays Care。"
-      ],
-      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/p9dm2atmwct70s4fp7w6",
-      "translationSourceHash": "fa08a865016161675f60ae1a07176be7802913be33dc250fbe2b289fb8a4ab28",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-26T13:05:19.934Z",
-      "author": "Max Ralph",
-      "publishedAt": "2026-08-26T12:51:33.000Z",
-      "url": "https://www.mlb.com/bluejays/news/dylan-cease-painting-at-art-gallery-of-toronto-event",
-      "source": "MLB.com"
-    },
     {
       "id": "9c61c42f787962cd6c73ded6bc964e794a273044766f2b3c1a6323947bb88874",
       "teamId": "toronto-blue-jays",
@@ -97,8 +60,45 @@
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-26T05:55:49.902Z",
       "author": "Brendan Samson",
-      "publishedAt": "2026-08-26T05:27:00.000Z",
+      "publishedAt": "2026-08-26T17:30:00.000Z",
       "url": "https://www.mlb.com/bluejays/news/watch-minor-league-baseball-games-for-free-2026",
+      "source": "MLB.com"
+    },
+    {
+      "id": "d23fd25df4ca89e557a3c7028bd80cfa332ddd628a7d109f8ea71fd8d5e37f86",
+      "teamId": "toronto-blue-jays",
+      "teamName": "多伦多蓝鸟",
+      "titleEn": "Cease's painting gets new home in gallery display, charity merchandise collection",
+      "summaryEn": "",
+      "bodyEn": [
+        "Dylan Cease, the Major League pitcher, is having a potential Cy Young-caliber season in his first year with the Blue Jays. Dylan Cease, the painter, also accomplished a milestone this week.",
+        "Cease saw his work put on display at the Art Gallery of Ontario in a partnership that included a photo opportunity with Cease on Tuesday, as well as a collection of merchandise featuring the original painting, named “Eve of Toronto.” Fans can get their hands on shirts, sweatshirts, postcards, prints or tote bags with Cease’s work on them. All proceeds additionally will be donated to the AGO.",
+        "“I was inspired by the fact that I was about to spend the next years of my life in Toronto,” Cease said in a statement for the event. “I love painting and it feels good to give back to the community.”",
+        "The painting might look familiar to fans who have taken a special interest in Cease’s artwork. “Eve of Toronto” is the masterpiece that hung in manager John Schneider’s office for the bulk of this season, featuring bright colors and the word “Toronto” written over and over.",
+        "It was noticeably absent from Schneider’s office on Tuesday, replaced by a meme from the movie “Wedding Crashers.”",
+        "Several of Cease’s Blue Jays teammates also wore T-shirts featuring the painting during warmups before Tuesday’s game.",
+        "“I think if anyone else did that painting, it would be a little bit different,”Schneider joked. “But I think it’s really cool how it’s gotten the amount of attention that it has. I kind of said it to him as a joke when we signed him, knowing that he painted. I didn’t know it was going to be this. I think it’s cool how the community has grabbed onto it and how he’s leaned into it. Add it to the wonderful world of Dylan Cease.\"",
+        "Cease’s off-field exploits this year have included plenty of painting, a hobby he took up in 2022 and has continued mastering ever since. Another of his original works sold at auction for $16,000 earlier this month to support Jays Care, the charitable arm of the Toronto Blue Jays."
+      ],
+      "titleZh": "希斯画作入驻美术馆展览及慈善商品系列",
+      "summaryZh": "蓝鸟投手希斯的画作在安大略美术馆展出并推出慈善商品。",
+      "bodyZh": [
+        "大联盟投手Dylan Cease在蓝鸟队的首个赛季正打出可能赢得赛扬奖级的表现。与此同时，画家Dylan Cease本周也达成了一项里程碑。",
+        "希斯的作品在安大略美术馆展出，周二还安排了与希斯的合影活动，并推出了一系列以原作《Eve of Toronto》为图案的商品。球迷可以购买印有希斯作品的T恤、卫衣、明信片、印刷品或手提袋。所有收益也将捐赠给安大略美术馆。",
+        "“我受到即将在多伦多度过未来几年生活的启发，”希斯在活动声明中表示。“我热爱绘画，回馈社区的感觉很好。”",
+        "这幅画可能让关注希斯艺术作品的球迷感到眼熟。《Eve of Toronto》是本赛季大部分时间挂在主教练John Schneider办公室的杰作，色彩明亮，反复写着“Toronto”一词。",
+        "周二，这幅画明显不在舒耐德的办公室，取而代之的是电影《婚礼傲客》的一个梗图。",
+        "周二比赛前热身时，希斯的几位蓝鸟队友也穿着印有这幅画的T恤。",
+        "“我认为如果其他人画那幅画，会有点不同，”舒耐德开玩笑说。“但我觉得它获得如此多的关注真的很酷。我们签下他时，我对他开玩笑说，我知道他会画画。我没想到会是这幅。我觉得社区对它追捧以及他欣然接受的样子很酷。加入Dylan Cease的精彩世界吧。”",
+        "希斯今年的场外活动包括大量绘画，这是他在2022年开始的爱好，此后一直在不断精进。本月早些时候，他的另一幅原作在拍卖会上以1.6万美元成交，用于支持多伦多蓝鸟慈善机构Jays Care。"
+      ],
+      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/p9dm2atmwct70s4fp7w6",
+      "translationSourceHash": "fa08a865016161675f60ae1a07176be7802913be33dc250fbe2b289fb8a4ab28",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-26T13:05:19.934Z",
+      "author": "Max Ralph",
+      "publishedAt": "2026-08-26T12:51:33.000Z",
+      "url": "https://www.mlb.com/bluejays/news/dylan-cease-painting-at-art-gallery-of-toronto-event",
       "source": "MLB.com"
     },
     {
