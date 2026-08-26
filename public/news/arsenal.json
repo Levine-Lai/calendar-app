@@ -1,7 +1,7 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-26T13:15:07.705Z",
+  "updatedAt": "2026-08-26T14:24:40.524Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
@@ -129,53 +129,6 @@
       "translationSourceHash": "9a7374d3222c3bb26960799e9cf47868b0ddb170bf55e0d0e93e87945c556f6a",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-26T07:06:48.330Z"
-    },
-    {
-      "id": "342939578cdf454b4336a3be7305b470d9c940fdfaf387ee81e1cb3e2d382577",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Five Gunners named in PFA Team of the Year",
-      "summaryEn": "Raya, Gabriel, Saliba, Rice and Timber all feature in the PFA Men's Team of the Year",
-      "bodyEn": [
-        "David Raya, Declan Rice, William Saliba, Gabriel Magalhaes and Jurrien Timber have all been named in the PFA Team of the Year for 2025/26.",
-        "The five Gunners were all included in the annual line-up, selected by their peers’ votes based on their superb displays over the past 12 months, as we won the Premier League for the first time in 22 years.",
-        "Declan, who played all but two of our Premier League matches, is appearing in the XI for a third straight season.",
-        "Our England international midfielder was also named our Player of the Season for a second season in a row.",
-        "Wilo's contributions to our title success means he has now appeared in the PFA Team of the Year for four successive seasons. The Frenchman helped us keep 19 clean sheets in the league, four more than the second-highest side.",
-        "It’s the first time one of our players has appeared in four straight line-ups since Thierry Henry, who featured in six consecutive teams between 2000/01 and 2005/06.",
-        "Big Gabi joins Declan in having three inclusions in a row. Our Brazilian defender was part of a back line that conceded just 27 goals, the fewest in three seasons.",
-        "Goalkeeper David Raya makes his return to the PFA Team of the Year after previously featuring in his debut campaign of 2023/24.",
-        "David, who finished second in our Player of the Season vote, is rewarded for a sparkling season. He won his third Golden Glove in a row as well as winning the Premier League Save of the Month for denying Brighton's Yankuba Minteh what looked like a certain equaliser.",
-        "Jurrien Timber completes our five stars to feature in the XI, making an appearance for the first time. The Dutch right-back played 30 Premier League matches in 25/26, scoring twice against Leeds United and a winning goal against Chelsea in March 2026.",
-        "PFA TEAM OF THE YEAR",
-        "As for the rest of the team, PFA Young Player of the Year Nico O'Reilly completes the backline alongside our three Gunners. Declan is joined in midfield by Man City duo Rayan Cherki and Antoine Semenyo as well as Man United's Bruno Fernandes. Brentford's Igor Thiago and Man City's Erling Haaland complete the line-up.",
-        "Raya (Arsenal), O'Reilly (Man City), Saliba (Arsenal), Gabriel (Arsenal), Timber (Arsenal), Rice (Arsenal), Cherki (Man City), Bruno Fernandes (Man Utd), Semenyo (Man City), Haaland (Man City), Thiago (Brentford)"
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/fa24a7f8b2ae-gettyimages-2292034310.webp",
-      "author": "Charlie Peat",
-      "publishedAt": "2026-08-25T18:59:45.652Z",
-      "url": "https://www.arsenal.com/news/five-gunners-named-in-pfa-team-of-the-year-axXNQ7K6Jpdf",
-      "source": "Arsenal.com",
-      "titleZh": "五名枪手入选PFA年度最佳阵容",
-      "summaryZh": "拉亚、加布里埃尔、萨利巴、赖斯和廷贝尔均入选PFA年度最佳阵容。",
-      "bodyZh": [
-        "大卫·拉亚、德克兰·赖斯、威廉·萨利巴、加布里埃尔·马加良斯和尤里恩·廷贝尔均入选2025/26赛季PFA年度最佳阵容。",
-        "这五名枪手入选年度阵容，该阵容由同行投票选出，基于他们过去12个月的出色表现，我们时隔22年首次夺得英超冠军。",
-        "德克兰出战了除两场外的全部英超比赛，连续第三个赛季入选最佳阵容。",
-        "我们的英格兰国脚中场也连续第二个赛季被评为赛季最佳球员。",
-        "威廉对夺冠的贡献使他连续第四个赛季入选PFA年度最佳阵容。这位法国人帮助我们在联赛中保持19场零封，比第二多的球队多出4场。",
-        "这是自蒂埃里·亨利以来，首次有我们球员连续四次入选，亨利曾在2000/01至2005/06赛季连续六次入选。",
-        "大加布里埃尔与德克兰一样连续三次入选。我们的巴西后卫是仅失27球的后防线一员，这是三个赛季以来最少失球。",
-        "门将大卫·拉亚在2023/24赛季首次入选后，此次重返PFA年度最佳阵容。",
-        "大卫在赛季最佳球员投票中排名第二，他出色的赛季得到了回报。他连续第三次赢得金手套奖，并凭借扑出布莱顿队扬库巴·明特看似必进的扳平球，获得英超月度最佳扑救。",
-        "尤里恩·廷贝尔完成了我们五名球员入选最佳阵容的阵容，这是他的首次入选。这位荷兰右后卫在25/26赛季出战30场英超比赛，对阵利兹联打入两球，并在2026年3月对阵切尔西打入制胜球。",
-        "PFA年度最佳阵容",
-        "至于其他球员，PFA年度最佳年轻球员尼科·奥赖利与我们的三名枪手一起组成后防线。中场方面，德克兰与曼城双星拉扬·谢尔基和安托万·塞梅尼奥以及曼联的布鲁诺·费尔南德斯搭档。布伦特福德的伊戈尔·蒂亚戈和曼城的埃尔林·哈兰德完成了阵容。",
-        "拉亚（阿森纳）、奥赖利（曼城）、萨利巴（阿森纳）、加布里埃尔（阿森纳）、廷贝尔（阿森纳）、赖斯（阿森纳）、谢尔基（曼城）、布鲁诺·费尔南德斯（曼联）、塞梅尼奥（曼城）、哈兰德（曼城）、蒂亚戈（布伦特福德）"
-      ],
-      "translationSourceHash": "a955ab09c6557a576f086c052a7b7c9243556aaa7816bb82bbaa9f3cfe091217",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-26T09:55:24.052Z"
     },
     {
       "id": "22c4c6c21bf8c5ebcc08478676d8826abf93f59b2b2451942b1d748aaa849809",
@@ -366,6 +319,35 @@
       "translationSourceHash": "3a01d3d52be62725cd69cd299546b900eddc039a5f1a5a2c51cc4ef68809b60c",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-26T09:55:37.478Z"
+    },
+    {
+      "id": "fba5426a74f1e4bc03b5491bc44191036551e9d666ef142fe5a02f25ef7f584d",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "How to watch Arsenal Women v Charlton Athletic",
+      "summaryEn": "Can’t make it to Borehamwood for Wednesday's pre-season game against Charlton Athletic? We’ve got you covered!",
+      "bodyEn": [
+        "Can’t make it to Borehamwood for Wednesday's pre-season game against Charlton Athletic? We’ve got you covered!",
+        "The 7pm kick-off will be streamed live on our YouTube channel, with coverage starting from 6.30pm featuring pitchside pre-match build-up.",
+        "You’ll be able to tune into bespoke AWFC commentary from Max Jones and Louise Quinn and enjoy our two-camera match coverage, as well as half-time and full-time analysis of the game Nakeira West and Lianne Sanderson.",
+        "If you are wishing to attend Mangata Developments Stadium, tickets remain available."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/34af623f4b49-gettyimages-2291788021.webp",
+      "author": "Stephen Wright",
+      "publishedAt": "2026-08-25T12:00:00.000Z",
+      "url": "https://www.arsenal.com/news/how-to-watch-arsenal-women-v-charlton-athletic-aERfz1e2yXgJ",
+      "source": "Arsenal.com",
+      "titleZh": "如何观看阿森纳女足对阵查尔顿竞技",
+      "summaryZh": "无法到场观看周三季前赛？我们为您提供直播。",
+      "bodyZh": [
+        "无法到场观看周三在博勒姆伍德对阵查尔顿竞技的季前赛？我们为您提供直播。",
+        "比赛将于晚上7点开球，我们的YouTube频道将进行直播，报道从晚上6点30分开始，包括场边赛前预热。",
+        "您将能收听Max Jones和Louise Quinn带来的专属阿森纳女足评论，并享受双机位比赛直播，以及由Nakeira West和Lianne Sanderson提供的半场和全场分析。",
+        "如果您希望亲临Mangata Developments体育场，目前仍有门票可购。"
+      ],
+      "translationSourceHash": "85e225a246362341adbb93d1d0591494a94dfb93cce2ad3d6e7f4206084f82ba",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-26T14:24:40.524Z"
     },
     {
       "id": "3abe6d5c3a154ff024f764815f2b808dcbc5ccae40a46fbe5c9f4a3580486505",
