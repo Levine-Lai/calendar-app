@@ -1,12 +1,55 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-26T16:05:30.875Z",
+  "updatedAt": "2026-08-26T19:17:39.365Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "9d40361502d68bdbd334e7ab46cbaa45e99f76d9a8caa13c67b0ad3a7b154cc4",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Team news: Four changes to take on Charlton",
+      "summaryEn": "Renée Slegers has made four changes to her starting XI for tonight’s final pre-season match against Charlton Athletic.",
+      "bodyEn": [
+        "Renée Slegers has made four changes to her starting XI for tonight’s final pre-season match against Charlton Athletic.",
+        "Supporters will get to see summer signing Ona Batlle in action for the first time, as she replaces Emily Fox in the line-up following Sunday’s 1-0 win against Paris FC.",
+        "Elsewhere, Steph Catley, Alessia Russo and Stina Blackstenius come in for Lotte Wubben-Moy, Olivia Smith and Selina Cerci.",
+        "Frida Maanum is back in the squad, starting on the bench, after recovering from a minor muscle injury.",
+        "As was the case on the weekend, Daphne van Domselaar is not included in the squad but is progressing well after undergoing a procedure on her knee in the off season. Chloe Kelly is recovering from an illness.",
+        "Kick-off is at 7pm at Mangata Developments Stadium in Borehamwood, and you can watch the action live on our YouTube channel, with coverage starting from 6.30pm.",
+        "LINE-UPS",
+        "Arsenal XI: Misa, Holmberg, Williamson, Catley, Batlle, Stanway, Little (C), Russo, Baum, Mariona, Blackstenius",
+        "Substitutes: Borbe, Damm, Fox, Wubben-Moy, Hinds, Cooney-Cross, Reuteler, Maanum, Smith, Foord, Cerci, Conway, Teer-Hutchins",
+        "Charlton Athletic XI: Whitehouse, Mason, N’Dow, Partido, Fitzgerald, Hutton, Flannery, Skeels (C), Siber, Van Egmond, Neville",
+        "Substitutes: Koivunen, Pedersen, Johnston, Lobato, Nelson-Iye, Waldi, Azzaro, Davidson, Humphrey"
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/3b0f57cd5228-gettyimages-2289864371.webp",
+      "author": "Stephen Wright",
+      "publishedAt": "2026-08-26T17:00:00.000Z",
+      "url": "https://www.arsenal.com/news/team-news-four-changes-to-take-on-charlton-ao1bM1R7ISif",
+      "source": "Arsenal.com",
+      "titleZh": "球队新闻：对阵查尔顿做出四处调整",
+      "summaryZh": "雷内·斯莱格斯对今晚对阵查尔顿竞技的季前赛收官战首发做出四处调整。",
+      "bodyZh": [
+        "雷内·斯莱格斯对今晚对阵查尔顿竞技的季前赛收官战首发做出四处调整。",
+        "球迷将首次看到夏季新援奥纳·巴特莱出场，她在周日1-0战胜巴黎FC后顶替埃米莉·福克斯进入首发。",
+        "其他方面，斯蒂芬·卡特利、阿莱西娅·鲁索和斯蒂娜·布莱克斯特纽斯替换洛特·伍本-莫伊、奥利维娅·史密斯和塞琳娜·切尔奇。",
+        "弗里达·马努姆在轻微肌肉伤势恢复后回归球队，本场替补待命。",
+        "与周末一样，达夫妮·范多姆塞拉尔未进入比赛名单，但她在休赛期接受膝部手术后恢复良好。克洛伊·凯利正在从疾病中恢复。",
+        "比赛将于当地时间晚上7点在博勒姆伍德的曼加塔发展体育场开球，您可以在我们的YouTube频道观看直播，从6点30分开始播出。",
+        "首发阵容",
+        "阿森纳首发：米萨、霍姆伯格、威廉森、卡特利、巴特莱、斯坦韦、利特尔（队长）、鲁索、鲍姆、马里奥纳、布莱克斯特纽斯",
+        "替补：博尔贝、达姆、福克斯、伍本-莫伊、海因兹、库尼-克罗斯、罗伊特勒、马努姆、史密斯、富德、切尔奇、康威、蒂尔-哈钦斯",
+        "查尔顿竞技首发：怀特豪斯、梅森、恩多、帕蒂多、菲茨杰拉德、赫顿、弗兰纳里、斯基尔斯（队长）、西伯、范埃格蒙德、内维尔",
+        "替补：科伊武宁、佩德森、约翰斯顿、洛巴托、纳尔逊-艾伊、瓦尔迪、阿扎罗、戴维森、汉弗莱"
+      ],
+      "translationSourceHash": "0abcd3b3e74dfcfe4711ebe380402e9016ec508cbfac2bbe22dcc7105a3d93b6",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-26T19:17:39.364Z"
+    },
     {
       "id": "6dbfc8e9aecba3d76e7f7f760dd00f13780a1e4270ef0d7328c1efe20a74ee9f",
       "teamId": "arsenal",
@@ -98,37 +141,6 @@
       "translationSourceHash": "bfb3da6d53d2d9e36a1bae3664e3fea32ca87c74ea0a82db58a001800f7ad927",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-26T09:55:26.216Z"
-    },
-    {
-      "id": "22c998a4578f6a9455518677edf8f13666330d81d9f8b63606c2498769e6a405",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Gallery: 42 photos from the PFA Awards",
-      "summaryEn": "Check out the best snaps from a big night in Manchester",
-      "bodyEn": [
-        "Nine players were honoured on a busy evening at the PFA Awards in Manchester, and you can see our stars with their prizes with our special gallery!",
-        "Olivia Smith won the PFA Women's Young Player of the Year award for a second season running after a sensational debut campaign in N5.",
-        "Alessia Russo, Emily Fox and Mariona Caldentey were all selected once again for the PFA Women's Team of the Year.",
-        "David Raya, Declan Rice, William Saliba, Gabriel and Jurrien Timber were all included in an Arsenal-heavy PFA Men's Team of the Year after winning the Premier League title in 25/26.",
-        "Our stars were looking their best for the black-tie event at the Manchester Opera House. See them with their honours below in our awards night gallery!"
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/e4a1bd74ed46-gettyimages-2291499167.webp",
-      "author": "Arsenal FC",
-      "publishedAt": "2026-08-26T06:00:00.000Z",
-      "url": "https://www.arsenal.com/news/gallery-42-photos-from-the-pfa-awards-aeAUW5E6fua6",
-      "source": "Arsenal.com",
-      "titleZh": "图集：PFA颁奖典礼的42张照片",
-      "summaryZh": "曼彻斯特PFA颁奖之夜精彩照片一网打尽。",
-      "bodyZh": [
-        "在曼彻斯特举行的PFA颁奖典礼上，一个繁忙的夜晚有九名球员获奖，您可以通过我们的特别图集看到我们的球星与他们的奖杯！",
-        "奥利维亚·史密斯在N5球场度过了一个惊艳的首个赛季后，连续第二个赛季荣获PFA年度最佳年轻女球员奖。",
-        "阿莱西娅·鲁索、艾米丽·福克斯和马里奥纳·卡尔登泰再次入选PFA年度最佳女足阵容。",
-        "在赢得25/26赛季英超冠军后，大卫·拉亚、德克兰·赖斯、威廉·萨利巴、加布里埃尔和朱里恩·廷伯均入选了以阿森纳球员为主的PFA年度最佳男足阵容。",
-        "我们的球星在曼彻斯特歌剧院的正式晚宴上展现出最佳状态。在我们的颁奖之夜图集中看看他们携荣誉亮相吧！"
-      ],
-      "translationSourceHash": "9a7374d3222c3bb26960799e9cf47868b0ddb170bf55e0d0e93e87945c556f6a",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-26T07:06:48.330Z"
     },
     {
       "id": "22c4c6c21bf8c5ebcc08478676d8826abf93f59b2b2451942b1d748aaa849809",
