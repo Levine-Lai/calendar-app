@@ -1,7 +1,7 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-26T03:16:14.747Z",
+  "updatedAt": "2026-08-26T05:16:27.957Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
@@ -447,6 +447,51 @@
       "translationSourceHash": "82386f499a388f5433e7d4cff85589e6d6c564d7251353c1f295636c21662bd6",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-25T15:02:37.523Z"
+    },
+    {
+      "id": "1b1339de32e466f343aba33744c2a223aba73d90d7936c4e56e605a5f22ca916",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "U18s preview: Blackburn Rovers v Arsenal",
+      "summaryEn": "Our young Gunners travel north to begin their U18 Premier League Cup campaign",
+      "bodyEn": [
+        "Our young Gunners face Blackburn Rovers as they begin their U18 Premier League Cup campaign on Tuesday, August 25.",
+        "The match will take place at our opponents' academy ground, with kick-off scheduled for 1pm (UK time).",
+        "We have been placed in Group B alongside the Lancashire outfit, Birmingham City and Sunderland, with each team bidding to top the table to secure a place in the quarter-finals.",
+        "Last season, we finished second in our group behind Peterborough United, who advanced as table-toppers despite suffering a 4-0 defeat to us in north London",
+        "THE OPPOSITION",
+        "Rovers kicked off their domestic campaign ten days ago with a routine 2-0 away win over Wolverhampton Wanderers. However, they suffered an 8-0 home defeat to Nottingham Forest over the weekend, conceding seven times before half-time.",
+        "Last term, the blue-and-white outfit finished 9th in U18 Premier League North, with nine wins and 33 points from 26 games.",
+        "In the cup, Blackburn finished third in their group behind West Bromwich Albion and Fulham, missing out on progression.",
+        "We last met in the 2020/21 FA Youth Cup, when goals from Khayon Edwards, Kido Taylor-Hart, Miguel Azeez and Brooke Norton-Cuffy secured a 4-1 victory and booked our place in the last eight.",
+        "HOW TO FOLLOW",
+        "The action gets underway from 1pm (UK), with live updates available on our Academy X account and a full match report shortly after the final whistle.",
+        "Post-match, don't miss exclusive interviews with our young Gunners, alongside highlights of all the key action on The Arsenal app and on Arsenal.com."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/b326e2a044b8-u18s.webp",
+      "author": "Tom Keens",
+      "publishedAt": "2026-08-25T05:00:00.000Z",
+      "url": "https://www.arsenal.com/news/u18s-preview-blackburn-rovers-v-arsenal-aPylE1f0glfu",
+      "source": "Arsenal.com",
+      "titleZh": "U18前瞻：布莱克本流浪者对阵阿森纳",
+      "summaryZh": "我们的年轻枪手北上开启U18英超联赛杯征程。",
+      "bodyZh": [
+        "我们的年轻枪手将于8月25日星期二开启U18英超联赛杯征程，对手是布莱克本流浪者。",
+        "比赛将在对手的青训基地进行，开球时间为英国时间下午1点。",
+        "我们被分在B组，同组的还有兰开夏郡球队布莱克本、伯明翰城和桑德兰，每支球队都将力争小组第一，以锁定四分之一决赛的席位。",
+        "上赛季，我们在小组中排名第二，落后于彼得堡联。尽管彼得堡联在伦敦北部0-4输给我们，但他们仍以小组第一的身份晋级。",
+        "对手情况",
+        "布莱克本流浪者在十天前开始了他们的国内赛季征程，客场2-0轻松战胜狼队。然而，他们在上周末主场0-8惨败给诺丁汉森林，上半场就丢了7球。",
+        "上赛季，这支蓝白军团在U18英超联赛北部赛区排名第9，26场比赛取得9胜积33分。",
+        "在杯赛中，布莱克本在小组中排名第三，落后于西布罗姆维奇和富勒姆，无缘晋级。",
+        "我们上一次交手是在2020/21赛季的英格兰青年足总杯上，当时卡扬·爱德华兹、基多·泰勒-哈特、米格尔·阿齐兹和布鲁克·诺顿-卡菲的进球帮助我们4-1获胜，并锁定了八强席位。",
+        "如何关注",
+        "比赛将于英国时间下午1点开始，我们的青训X账户将提供实时更新，终场哨响后不久将发布完整比赛报告。",
+        "赛后，别忘了在阿森纳官方APP和Arsenal.com上观看我们年轻枪手的独家采访，以及所有关键动作的集锦。"
+      ],
+      "translationSourceHash": "aaa8d5f3e0e41c403523d595c0489da0784b1df338b591daed3751304a1956dc",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-26T05:16:27.957Z"
     },
     {
       "id": "d77d42135d8104789ed2e804685a61c636ac4c09b3ff43ae31340c229913cf57",
