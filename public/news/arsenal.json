@@ -1,12 +1,43 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-26T06:04:41.884Z",
+  "updatedAt": "2026-08-26T07:06:48.330Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "22c998a4578f6a9455518677edf8f13666330d81d9f8b63606c2498769e6a405",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Gallery: 42 photos from the PFA Awards",
+      "summaryEn": "Check out the best snaps from a big night in Manchester",
+      "bodyEn": [
+        "Nine players were honoured on a busy evening at the PFA Awards in Manchester, and you can see our stars with their prizes with our special gallery!",
+        "Olivia Smith won the PFA Women's Young Player of the Year award for a second season running after a sensational debut campaign in N5.",
+        "Alessia Russo, Emily Fox and Mariona Caldentey were all selected once again for the PFA Women's Team of the Year.",
+        "David Raya, Declan Rice, William Saliba, Gabriel and Jurrien Timber were all included in an Arsenal-heavy PFA Men's Team of the Year after winning the Premier League title in 25/26.",
+        "Our stars were looking their best for the black-tie event at the Manchester Opera House. See them with their honours below in our awards night gallery!"
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/e4a1bd74ed46-gettyimages-2291499167.webp",
+      "author": "Arsenal FC",
+      "publishedAt": "2026-08-26T06:00:00.000Z",
+      "url": "https://www.arsenal.com/news/gallery-42-photos-from-the-pfa-awards-aeAUW5E6fua6",
+      "source": "Arsenal.com",
+      "titleZh": "图集：PFA颁奖典礼的42张照片",
+      "summaryZh": "曼彻斯特PFA颁奖之夜精彩照片一网打尽。",
+      "bodyZh": [
+        "在曼彻斯特举行的PFA颁奖典礼上，一个繁忙的夜晚有九名球员获奖，您可以通过我们的特别图集看到我们的球星与他们的奖杯！",
+        "奥利维亚·史密斯在N5球场度过了一个惊艳的首个赛季后，连续第二个赛季荣获PFA年度最佳年轻女球员奖。",
+        "阿莱西娅·鲁索、艾米丽·福克斯和马里奥纳·卡尔登泰再次入选PFA年度最佳女足阵容。",
+        "在赢得25/26赛季英超冠军后，大卫·拉亚、德克兰·赖斯、威廉·萨利巴、加布里埃尔和朱里恩·廷伯均入选了以阿森纳球员为主的PFA年度最佳男足阵容。",
+        "我们的球星在曼彻斯特歌剧院的正式晚宴上展现出最佳状态。在我们的颁奖之夜图集中看看他们携荣誉亮相吧！"
+      ],
+      "translationSourceHash": "9a7374d3222c3bb26960799e9cf47868b0ddb170bf55e0d0e93e87945c556f6a",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-26T07:06:48.330Z"
+    },
     {
       "id": "342939578cdf454b4336a3be7305b470d9c940fdfaf387ee81e1cb3e2d382577",
       "teamId": "arsenal",
@@ -365,35 +396,6 @@
       "translationSourceHash": "2ab76eeaf1dce4ea78ac234f37374d7b0666c9ace557ad8a55a07d118499b002",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-25T13:09:56.617Z"
-    },
-    {
-      "id": "53114dae7cf992627b57b587a811da775196ad86407e2156fc9e586053c82205",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Go Inside N5 for our opening day win",
-      "summaryEn": "Watch all the best alternate and behind the scenes angles from Friday's win",
-      "bodyEn": [
-        "We picked up where we left off in the Premier League with a comfortable 3-0 win over Coventry City at Emirates Stadium, and now you can go behind the scenes on the night with the first Inside N5 of the season.",
-        "Kai Havertz, Bukayo Saka and Martin Odegaard found the back of the net to ensure we got the 2026/27 season off to a flying start, sparking familiar scenes of joy and celebration at Emirates Stadium.",
-        "As well as our goalscorers, there were standout performances from Myles Lewis-Skelly and Christos Tzolis as we started the season as we mean to go on.",
-        "Press play on the video at the top of the article to catch the best alternate angles, behind the scenes clips and crowd celebrations from our first game of the Premier League season."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/62a1aeaeb91d-london-england-martin-odegaard-of-arsenal-celebrates-scoring-his-teams-third-goa.webp",
-      "author": "Connor Booth",
-      "publishedAt": "2026-08-25T07:55:00.000Z",
-      "url": "https://www.arsenal.com/news/go-inside-n5-for-our-opening-day-win-aLeB49J8mMr1",
-      "source": "Arsenal.com",
-      "titleZh": "深入N5，见证赛季开门红",
-      "summaryZh": "观看周五胜利的最佳另类角度和幕后花絮",
-      "bodyZh": [
-        "我们在英超联赛中延续了上赛季的表现，在酋长球场以3-0轻松战胜考文垂城，现在你可以通过本赛季首期Inside N5节目，深入了解当晚的幕后情况。",
-        "凯·哈弗茨、布卡约·萨卡和马丁·厄德高均取得进球，确保我们以强势开局开启2026/27赛季，酋长球场再次上演熟悉的欢乐庆祝场面。",
-        "除了进球功臣，迈尔斯·刘易斯-斯凯利和克里斯托斯·佐利斯也有出色表现，我们以这样的方式开启赛季，并打算继续前行。",
-        "点击文章顶部的视频播放，即可观看我们英超赛季首场比赛的最佳另类角度、幕后片段和球迷庆祝。"
-      ],
-      "translationSourceHash": "7fabdc597f124a703175bf1eef00c544c40a03cb01b3d29e2bb6db5ed5852129",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-25T08:58:09.362Z"
     },
     {
       "id": "cf5fbc4a7416d9637745ebe9498f3759d0230dd2b06f332410bf5fe5ed54dec5",
