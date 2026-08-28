@@ -1,12 +1,12 @@
 {
-  "versionCode": 44,
-  "versionName": "2.3.2",
-  "apkUrl": "https://github.com/Levine-Lai/calendar-app/releases/tag/v2.3.2",
+  "versionCode": 45,
+  "versionName": "2.3.3",
+  "apkUrl": "https://github.com/Levine-Lai/calendar-app/releases/tag/v2.3.3",
   "notes": [
-    "组件1恢复默认显示北京时间今日赛程，比赛 API 增加重试并修复手动刷新无响应",
-    "组件2固定最新一条新闻，图片区约占七分之五并防止旧缓存覆盖新内容",
-    "新闻先发布再推送，通知进入 App 会自动重试同步对应正文",
-    "移除全屏开屏动画、补齐阿森纳完整正文并修复 GitHub Release 下载页"
+    "组件1刷新失败后不再永久停止，比赛临近或进行中时增加近实时比分检查",
+    "升级和手动刷新组件1时默认回到北京时间今天",
+    "桌面新闻组件与 App 统一优先读取 MLB 官方最新文章并补充静态图片",
+    "点击桌面新闻组件可在冷启动或暖启动时直接打开对应文章"
   ],
   "force": false
 }
