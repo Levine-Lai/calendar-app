@@ -1,13 +1,13 @@
 {
   "teamId": "toronto-blue-jays",
   "teamName": "多伦多蓝鸟",
-  "updatedAt": "2026-08-27T23:51:32.168Z",
+  "updatedAt": "2026-08-28T07:08:02.277Z",
   "items": [
     {
       "id": "afb214d1105422c7f25b32e21b1c748a829b1be46a38d8b1a39229dae45846c5",
       "teamId": "toronto-blue-jays",
       "teamName": "多伦多蓝鸟",
-      "titleEn": "Blue Jays adding Lorenzen -- and he's ready to 'throw 100 pitches today'",
+      "titleEn": "Blue Jays add Lorenzen -- and he's ready to 'throw 100 pitches today'",
       "summaryEn": "",
       "bodyEn": [
         "TORONTO -- The Blue Jays signed veteran right-hander Michael Lorenzen, who is active for Thursday’s game against the Royals to provide bullpen depth.",
@@ -29,8 +29,65 @@
       "translationModel": "",
       "translatedAt": "",
       "author": "Keegan Matheson",
-      "publishedAt": "2026-08-27T22:51:00.000Z",
+      "publishedAt": "2026-08-28T03:18:00.000Z",
       "url": "https://www.mlb.com/bluejays/news/blue-jays-sign-michael-lorenzen",
+      "source": "MLB.com"
+    },
+    {
+      "id": "a583772a0e06d8f6190e6d94028e8815a3eb76d78b4ff9c78b76e3d16779c7f1",
+      "teamId": "toronto-blue-jays",
+      "teamName": "多伦多蓝鸟",
+      "titleEn": "Blue Jays hear it from home fans during lopsided loss to Royals",
+      "summaryEn": "",
+      "bodyEn": [
+        "TORONTO -- Clinging to life in the AL Wild Card race, Thursday night couldn’t have been further from what the Blue Jays needed.",
+        "The 13-2 loss to the Royals dropped them to 3 1/2 games behind the Guardians, who had the night off, for the final spot.",
+        "This is what mattered most:",
+        "1. A low point in the seasonThe home crowd was already quiet heading into the sixth, then it completely fell apart.",
+        "Simeon Woods Richardson couldn’t find an out, with lasers shooting back the other way over and over again. Each time, the boos from the home crowd grew a bit louder. Toronto isn’t known as a baseball market that’s vocal in this way or hard on its own players, but in so many ways, Thursday’s loss felt different.",
+        "“For one, I understand. The fans are coming out every single night, which we love and appreciate,” manager John Schneider said. “There’s no better fans in the sport. That’s evident, the support we have from coast to coast. They’re entitled to their opinion. When you’re getting your ass kicked pretty good, they’re allowed to have their opinion. We love their support every night.”",
+        "That inning captured the dark side of this season so unfortunately well. With a gassed bullpen already needed after starter Spencer Arrighetti went four innings -- and an offense that hadn’t done a thing -- Woods Richardson had to wear it.",
+        "Every night, the Blue Jays pack over 40,000 fans into Rogers Centre. Every night, those fans hope to see the spark that launches a turnaround, but Thursday’s loss felt like a step backwards.",
+        "2. Nothing is going right for GuerreroMore batting practice and less of it, hitting off a tee and hitting outdoors, Vladimir Guerrero Jr. has tried all of it lately. Still, nothing has unlocked him. There’s been no grand revelation.",
+        "“He’s been looking for something for a while now,” Schneider said. “He’s been doing a lot of work. I think it’s always good, when you’re looking for something, to try new things. He’s hit outside early a couple of times, but he’s looking for something to click and looking for something to hold onto and carry forward.”",
+        "It’s Schneider’s job to manage Guerrero as a person, not just a player. He’s been with Guerrero for nearly a decade now, back to their early days in the Minor Leagues together. He knows what makes Guerrero tick, but also what challenges him most. Schneider joked that he and the players can be good at “lying” sometimes, telling you they’re having a great day when they’re truly not, and he’s been working on that with Guerrero. ​",
+        "“He’s good at saying, ‘No, I’m good,’” Schneider said. “You have to keep asking him and break down that wall a little bit. The more you can be open and honest -- meaning him -- it probably makes it a little bit easier to get out of.”",
+        "The Blue Jays have 27 games remaining, but just 12 at home. Guerrero still hasn’t hit a home run at Rogers Centre this season, and he’s running out of time.",
+        "3. Arrighetti’s return is still a work in progressArrighetti is trying to figure this out on the fly, which isn’t an enviable position. He was traded from the Astros, an organization he was extremely comfortable with, and rehabbed a nerve issue in his right foot before returning to the big leagues last week with his new team. He’s still ramping up his workload and doing it in big league games now, but the Blue Jays no longer have the luxury of patience.",
+        "“There’s a lot going on,” Arrighetti said. “I’m still trying to establish myself as a Blue Jay. We’re trying to make a push and I’m trying to make some tweaks. There’s a lot.",
+        "“It makes your head spin some days. Other days, you’re convinced that you’ve finally found it. I think that’s the beauty of baseball. There’s always little things going on in the background and I handle it just by taking this one day at a time.”",
+        "Arrighetti allowed a leadoff homer, which set the tone for four innings of four-run ball (three earned). He got up to 79 pitches, which should leave him close to a “normal” workload his next time out, but that’s the lone bright spot from the evening.",
+        "The Blue Jays’ offense continues to put a strain on this pitching staff, demanding that it be nearly perfect to stay in games. For a pitcher like Arrighetti, who’s battling more than just the opposing lineup, that makes this game more challenging than it should be."
+      ],
+      "titleZh": "蓝鸟主场惨败 球迷嘘声不断",
+      "summaryZh": "蓝鸟主场惨败皇家（13-2），球迷嘘声四起；Guerrero低迷，Arrighetti仍在适应。",
+      "bodyZh": [
+        "多伦多——蓝鸟仍在美联外卡争夺中艰难求生，但周四晚上的结果与他们的需求相去甚远。",
+        "这场13-2的失利让蓝鸟在最后一个外卡席位的争夺中落后当晚休战的守护者3.5个胜场。",
+        "以下是最重要的几点：",
+        "1. 赛季低谷 进入第六局时，主场球迷已经安静下来，随后局面彻底崩溃。",
+        "Simeon Woods Richardson 迟迟找不到出局方法，对方的击球一次又一次如激光般反向飞来。每一次，主场球迷的嘘声都变得更加响亮。多伦多并不是一个以这种方式喧闹或苛待自家球员的棒球市场，但从很多方面来看，周四的失利感觉有所不同。",
+        "“首先，我理解他们。球迷们每晚都会到场支持我们，我们喜爱并感激这一点，”主教练 John Schneider 说，“这项运动中没有比这更好的球迷了。我们得到的支持遍及全国，这显而易见。他们有权拥有自己的看法。当你被打得相当狼狈时，他们当然可以发表意见。我们每晚都热爱他们的支持。”",
+        "那一局不幸地完美展现了本赛季的阴暗面。先是先发投手 Spencer Arrighetti 只投了四局，牛棚已然精疲力竭，进攻端又毫无作为，Woods Richardson 只能默默承受。",
+        "每晚，蓝鸟都会在 Rogers Centre 吸引超过4万名球迷。每晚，这些球迷都希望看到点燃逆转的火花，但周四的失利感觉像是倒退了一步。",
+        "2. Guerrero 诸事不顺 近来，Vladimir Guerrero Jr. 尝试了增加或减少打击练习、用发球座打击以及在室外打击。尽管如此，他仍未找到打开局面的方法，也谈不上突破。",
+        "“他寻找状态已经有一段时间了，”Schneider 说，“他做了大量的工作。我觉得当你在寻找答案时，尝试新事物总是好的。他几次在早上进行户外打击，但他希望找到那个能激活自己的点，并紧紧抓住它带向前。”",
+        "Schneider 的职责在于管理 Guerrero 这个人，而不仅仅是球员。他与 Guerrero 相处了近十年，可以追溯到他们一起在小联盟的早期时光。他知道什么能让 Guerrero 保持活力，也知道什么最让他感到困扰。Schneider 开玩笑说，他和球员们有时很擅长“撒谎”，告诉你他们今天状态很好，但实际上并非如此，他一直在与 Guerrero 就这一点进行沟通。",
+        "“他擅长说‘不，我没事’，”Schneider 说，“你必须不断问他，打破那堵墙。你越是能开放和诚实——指他自己——也许就越容易走出来。”",
+        "蓝鸟本赛季还剩27场比赛，但只有12场在主场。Guerrero 本赛季还没有在 Rogers Centre 打出过本垒打，他的时间已经不多了。",
+        "3. Arrighetti 的回归仍在进行中 Arrighetti 还在边打边摸索解决办法，这并非令人羡慕的处境。他从太空人队被交易而来，那是一支他非常适应的球队，他右脚有神经问题，进行康复治疗后上周才随新东家重返大联盟。他仍在逐步增加投球量，而且是在大联盟比赛中进行，但蓝鸟队已经没有慢慢等待的资本了。",
+        "“有很多事情在发生，”Arrighetti 说，“我仍在努力确立自己作为蓝鸟球员的身份。我们正在冲刺，我也在尝试做一些调整。有很多。”",
+        "“有时这会让你头晕目眩。有时你又确信自己终于找到了答案。我认为这就是棒球的美妙之处。总有一些不起眼的事情在背后发生，而我只是一天一天地面对。”",
+        "Arrighetti 让对手首名打者轰出本垒打，这为四局丢四分（三分自责）的比赛定下了基调。他投了79球，这应该让他下一次先发接近“正常”的投球量，但这是当晚唯一的亮点。",
+        "蓝鸟的进攻继续给投手群施加压力，要求他们几乎完美才能让球队留在比赛中。对于像 Arrighetti 这样不仅要面对对方打线，还要应对自身状况的投手来说，这让比赛变得比原本更加艰难。"
+      ],
+      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/ziit8sgtdwti706vkn6u",
+      "translationSourceHash": "627f541fe979ff104d5c49923eaa2b19f3794e113c58cae2621ab49501ba576c",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-28T07:08:02.277Z",
+      "author": "Keegan Matheson",
+      "publishedAt": "2026-08-28T02:35:00.000Z",
+      "url": "https://www.mlb.com/bluejays/news/blue-jays-offense-struggles-series-finale-loss",
       "source": "MLB.com"
     },
     {
@@ -1050,54 +1107,9 @@
       "publishedAt": "2026-08-22T22:08:49.000Z",
       "url": "https://www.mlb.com/bluejays/news/dylan-cease-takes-no-hitter-into-seventh-against-yankees",
       "source": "MLB.com"
-    },
-    {
-      "id": "0c17453b3b89c9205422f0d80683eee2ec3e7f61dbe9d2dfb30c48b2fe30d60c",
-      "teamId": "toronto-blue-jays",
-      "teamName": "多伦多蓝鸟",
-      "titleEn": "Just how they drew it up: Cease shines, offense does just enough",
-      "summaryEn": "",
-      "bodyEn": [
-        "NEW YORK -- This feels like the Blue Jays’ blueprint now, a clean-and-tidy game where the pitching stars and the offense chips away.",
-        "The 4-3 win over New York at Yankee Stadium pulls the Blue Jays (64-67) to within one game of the final American League Wild Card spot, a game of musical chairs that will continue later tonight when several other contenders are in action.",
-        "This is what mattered most:",
-        "1. Cease lands his Cy Young counterpunchThis start captured every possible version of Dylan Cease, didn’t it? There were five walks and far too many at-bats that went deep, which drove up Cease’s pitch count, but he was nearly unhittable.",
-        "Once again, Cease teased us with a run at a no-hitter, this one carrying through 6 2/3 innings against the Yankees. He would have needed the bullpen’s help either way, but these runs are becoming part of the routine with Cease, who lowered his ERA to 2.37 with the performance.",
-        "This comes just one day after Cam Schlittler beat the Blue Jays with six innings of one-run ball, the two AL Cy Young favorites going blow for blow once again. Schlittler still has the lower ERA (2.16) over more innings (158 to 144 1/3), but Cease’s strikeout total -- an AL-best 209 -- is overwhelming. This still feels like a race so tight that one blow-up outing … or one no-hitter … could completely decide the voting down the stretch.",
-        "2. Breaking up all those singlesOne big swing and a slow jog looked good on Nathan Lukes, didn’t it? His home run in the eighth was a breath of fresh air and some much-needed insurance after the Yankees finally showed some life.",
-        "Otherwise, the Blue Jays mostly stuck to their offensive identity of stacking up singles. It’s working, but how sustainable is this? In the postseason, when you’re facing the best pitchers in baseball, can Toronto still string together 10 singles to win a low-scoring game? That still sounds like a problem for another day, but Saturday afternoon, it worked again.",
-        "This style of baseball isn’t impossible to win with. Just look at the Rays, whom we tend to hold up as the model organization for small ball. Tampa Bay does it with speed on the bases, though, which isn’t something the Blue Jays have throughout their lineup.",
-        "Right now, this offensive style is working because the Blue Jays’ pitching has been sensational. When Cease pitches like this, you don’t need much offense at all, but this offense still needs to show more of what we saw down in St. Petersburg, when it was driving the baseball and leaving the yard. By October, that’s downright necessary. For the next month, it would just make things a whole lot easier.",
-        "3. Vladimir Guerrero Jr. returns to the lineupWhether you’re a believer in Guerrero or a pessimist, you saw what you were looking for Saturday in his return from the seven-day concussion IL.",
-        "There were some good swings, like a 110.2 mph single into left-center in the third, which looked more like the “real” Vladdy he has been searching for all season. Then, there were some pitches taken over the heart of the plate and a groundout with the bases loaded in the fourth, which Jazz Chisholm Jr. bobbled but still had plenty of time to make the play on Guerrero coming down the line.",
-        "The song remains the same with Guerrero. This team desperately needs him, and if Guerrero were performing to an .850 OPS, the Blue Jays would already be sitting comfortably in one of those Wild Card spots."
-      ],
-      "titleZh": "蓝图成真：希斯闪耀，进攻恰到好处",
-      "summaryZh": "蓝鸟客场险胜洋基，距外卡仅差一场。",
-      "bodyZh": [
-        "纽约——这感觉就像是蓝鸟现在的蓝图，一场干净利落的比赛，投手唱主角，进攻慢慢磨。",
-        "在扬基球场以4比3战胜纽约后，蓝鸟（64胜67负）距离美国联盟最后一张外卡席位只差一场。这场抢椅子游戏将在今晚晚些时候继续，届时其他几支竞争者也将登场。",
-        "以下是最重要的几点：",
-        "1. 希斯打出赛扬奖反击战这场比赛展现了迪伦·希斯的每一种可能，不是吗？有五次保送，太多打席拖得很深，导致希斯的用球数上升，但他几乎无法被击出安打。",
-        "希斯再次让我们看到他冲击无安打比赛的跑动，这一次对洋基投了6又2/3局。无论怎样他都需要牛棚的帮助，但这些表现正成为希斯的常规操作，他凭借这场表现将自责分率降至2.37。",
-        "就在一天前，卡姆·施利特用六局失一分的表现击败了蓝鸟，这两位美国联盟赛扬奖热门人选再次针锋相对。施利特的自责分率仍然更低（2.16），投球局数也更多（158局对144又1/3局），但希斯的三振数——美联最佳的209次——令人印象深刻。这仍然像是一场竞争激烈的竞赛，一次崩盘……或一场无安打比赛……都可能完全决定接下来的投票方向。",
-        "2. 打破一堆一垒安打一次大挥棒和慢跑看起来对内森·卢克斯来说很好，不是吗？他在第八局的本垒打是一股新鲜空气，也是在洋基终于展现出一些活力之后急需的保险分。",
-        "除此之外，蓝鸟大多坚持了他们堆积一垒安打的进攻风格。这很有效，但可持续性如何？在季后赛面对最好的投手时，多伦多还能靠连续10支一垒安打赢下低比分比赛吗？这听起来仍是日后要解决的问题，但周六下午，这再次奏效了。",
-        "这种棒球风格不是不可能赢球。看看光芒队，我们常常把他们视为小球风格的组织典范。但坦帕湾依靠的是跑垒速度，这不是蓝鸟整个阵容都具备的。",
-        "目前，这种进攻风格之所以有效，是因为蓝鸟的投球表现出色。当希斯这样投球时，你根本不需要太多进攻，但这条进攻线仍然需要展现出更多我们在圣彼得堡看到的表现——把球打远，打出本垒打。到了十月，那是绝对必要的。在未来一个月里，那会让事情变得容易得多。",
-        "3. 小弗拉迪米尔·格雷罗回归阵容无论你是格雷罗的信徒还是悲观者，周六他在七天脑震荡伤病名单中复出的表现，让你看到了你想看的东西。",
-        "有一些好的挥棒，比如第三局一支110.2英里/时的中左外野一垒安打，看起来更像他整个赛季都在寻找的“真正的”弗拉迪。然后，也有几球在好球带中央被放掉，第四局满垒时打出滚地球出局，爵士·奇泽姆二世虽然接球失误，但在格雷罗沿一垒线跑动时仍有足够时间完成防守。",
-        "格雷罗的情况没有改变。这支球队迫切需要他，如果格雷罗能打出.850的上垒加长打率，蓝鸟应该已经舒适地坐在其中一个外卡席位上了。"
-      ],
-      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/iqfk0p3tiyhutrokzdsa",
-      "translationSourceHash": "b04af5ad785ab6e9a8d858fd118eb0d327f8272b5b17e014e64dd7f4936a813a",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-22T22:00:37.343Z",
-      "author": "Keegan Matheson",
-      "publishedAt": "2026-08-22T22:04:00.000Z",
-      "url": "https://www.mlb.com/bluejays/news/dylan-cease-boosts-cy-young-case-against-yankees",
-      "source": "MLB.com"
     }
   ],
-  "pendingNotificationIds": []
+  "pendingNotificationIds": [
+    "a583772a0e06d8f6190e6d94028e8815a3eb76d78b4ff9c78b76e3d16779c7f1"
+  ]
 }
