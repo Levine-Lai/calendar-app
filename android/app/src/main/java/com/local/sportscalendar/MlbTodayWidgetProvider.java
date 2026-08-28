@@ -17,6 +17,7 @@ import androidx.work.ExistingWorkPolicy;
 import androidx.work.ExistingPeriodicWorkPolicy;
 import androidx.work.NetworkType;
 import androidx.work.OneTimeWorkRequest;
+import androidx.work.OutOfQuotaPolicy;
 import androidx.work.PeriodicWorkRequest;
 import androidx.work.WorkManager;
 
@@ -51,7 +52,7 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
     private static final String PREFS_SELECTED_DAY_OFFSET = "selected_day_offset";
     private static final int DEFAULT_SELECTED_DAY_OFFSET = 0;
     private static final String PREFS_DAY_SELECTION_MIGRATION = "day_selection_migration";
-    private static final int DAY_SELECTION_MIGRATION_TODAY = 2;
+    private static final int DAY_SELECTION_MIGRATION_TODAY = 3;
     private static final String PREFS_LIVE_SNAPSHOT = "live_snapshot_json";
     static final String PREFS_LAST_REFRESH_AT = "last_refresh_at";
     static final String PREFS_LAST_REFRESH_ERROR = "last_refresh_error";
@@ -62,6 +63,8 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
     static final String ACTION_NEXT_DAY = "com.local.sportscalendar.action.NEXT_DAY_WIDGET";
     private static final String PERIODIC_WORK_NAME = "sports-widget-live-refresh";
     private static final String IMMEDIATE_WORK_NAME = "sports-widget-refresh-now";
+    private static final String LIVE_FOLLOW_UP_WORK_PREFIX = "sports-widget-live-follow-up-";
+    private static final long LIVE_FOLLOW_UP_INTERVAL_MS = TimeUnit.MINUTES.toMillis(2);
     private static final int SCORE_DEFAULT_COLOR = 0xFF16120F;
     private static final int SCORE_LIVE_COLOR = 0xFFD83A34;
     private static final TimeZone BEIJING_TIME = TimeZone.getTimeZone("Asia/Shanghai");
@@ -111,6 +114,7 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
             .build();
         OneTimeWorkRequest request = new OneTimeWorkRequest.Builder(WidgetRefreshWorker.class)
             .setConstraints(constraints)
+            .setExpedited(OutOfQuotaPolicy.RUN_AS_NON_EXPEDITED_WORK_REQUEST)
             .build();
         WorkManager.getInstance(context).enqueueUniqueWork(
             IMMEDIATE_WORK_NAME,
@@ -125,7 +129,7 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
         android.content.SharedPreferences.Editor editor = preferences.edit();
         for (int appWidgetId : appWidgetIds) {
             String key = selectedDayOffsetKey(appWidgetId);
-            if (!preferences.contains(key) || preferences.getInt(key, 1) == 1) editor.putInt(key, 0);
+            editor.putInt(key, 0);
         }
         editor.putInt(PREFS_DAY_SELECTION_MIGRATION, DAY_SELECTION_MIGRATION_TODAY).apply();
     }
@@ -210,6 +214,43 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
             ExistingPeriodicWorkPolicy.KEEP,
             request
         );
+    }
+
+    static void scheduleLiveFollowUpIfNeeded(Context context) {
+        if (!hasGameInLiveRefreshWindow(context)) return;
+        long now = System.currentTimeMillis();
+        long target = ((now / LIVE_FOLLOW_UP_INTERVAL_MS) + 1L) * LIVE_FOLLOW_UP_INTERVAL_MS;
+        OneTimeWorkRequest request = new OneTimeWorkRequest.Builder(WidgetRefreshWorker.class)
+            .setConstraints(new Constraints.Builder().setRequiredNetworkType(NetworkType.CONNECTED).build())
+            .setInitialDelay(Math.max(1_000L, target - now), TimeUnit.MILLISECONDS)
+            .build();
+        WorkManager.getInstance(context).enqueueUniqueWork(
+            LIVE_FOLLOW_UP_WORK_PREFIX + target,
+            ExistingWorkPolicy.KEEP,
+            request
+        );
+    }
+
+    private static boolean hasGameInLiveRefreshWindow(Context context) {
+        AppWidgetManager manager = AppWidgetManager.getInstance(context);
+        int[] ids = manager.getAppWidgetIds(new ComponentName(context, MlbTodayWidgetProvider.class));
+        long now = System.currentTimeMillis();
+        for (int appWidgetId : ids) {
+            for (Game game : readSelectedDayGames(context, appWidgetId)) {
+                if (needsFastRefresh(game, now)) return true;
+            }
+        }
+        return false;
+    }
+
+    static boolean needsFastRefresh(Game game, long now) {
+        if (game == null || game.start == null || isFinished(game)) return false;
+        GameStatus.Kind kind = GameStatus.classify(game.status, game.statusState, game.completed);
+        if (kind == GameStatus.Kind.POSTPONED || kind == GameStatus.Kind.CANCELED) return false;
+        if (isLive(game)) return true;
+        long untilStart = game.start.getTime() - now;
+        return untilStart <= TimeUnit.MINUTES.toMillis(30)
+            && untilStart >= -TimeUnit.HOURS.toMillis(6);
     }
 
     static void cancelPeriodicRefreshIfUnused(Context context) {

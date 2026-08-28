@@ -4,11 +4,22 @@
 
 ## 当前版本状态
 
-- 本机最新已生成 APK：`2.3.2 / versionCode 44`
-- 当前源码版本：`2.3.2 / versionCode 44`
-- APK 文件：`releases/sports-calendar-2.3.2-debug.apk`
-- GitHub Release：`https://github.com/Levine-Lai/calendar-app/releases/tag/v2.3.2`
-- App 内检查更新清单指向 `2.3.2` 的 GitHub Release 页面，兼容旧版本手机浏览器打开方式。
+- 本机最新已生成 APK：`2.3.3 / versionCode 45`
+- 当前源码版本：`2.3.3 / versionCode 45`
+- APK 文件：`releases/sports-calendar-2.3.3-debug.apk`
+- GitHub Release：`https://github.com/Levine-Lai/calendar-app/releases/tag/v2.3.3`
+- App 内检查更新清单指向 `2.3.3` 的 GitHub Release 页面，兼容旧版本手机浏览器打开方式。
+
+## 2.3.3（已发布）
+
+- 修复桌面组件1在比分接口连续失败后周期任务永久停止的问题；短暂故障重试结束后，下一轮周期刷新仍会继续运行。
+- 手动点击组件1刷新按钮时同时回到北京时间今天；旧组件升级后也会执行一次日期归零迁移。
+- 比赛开始前 30 分钟到开赛后 6 小时进入近实时刷新窗口，在 Android 允许后台运行时约每 2 分钟检查一次比分；其他时间继续使用 15 分钟周期刷新。
+- 桌面新闻组件改为与 App 相同，优先使用 MLB 官方 RSS 的最新文章，再从 GitHub 静态数据补充图片；图片尚未同步时显示占位图而不会继续展示上一篇新闻。
+- 从桌面新闻组件点击文章时同时传递文章 ID 和 URL；冷启动、暖启动都会等待页面监听器就绪，找到文章后直接打开该篇全文。
+- 移除阿森纳内置缓存中一条没有中英文正文的反馈页，保证所有随包文章都可直接阅读。
+- Web 测试 42 项、稳定性检查 37 项、新闻后台测试 32 项、39 路体育 API、Android JVM 测试与 Lint 全部通过；新闻后台生产依赖审计为 0。
+- 已使用历史固定证书生成并发布 `releases/sports-calendar-2.3.3-debug.apk`：`8,196,127` 字节，SHA-256 `B17304D64F445BDFCED1B3A02243CED5B7C5D1D904A2BE09FDF974F942438451`；包名、`versionCode 45`、`versionName 2.3.3`、APK Signature Scheme v2 和证书指纹均已验证。
 
 ## 2.3.2（已发布）
 

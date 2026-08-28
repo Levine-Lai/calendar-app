@@ -50,7 +50,12 @@ const currentVersionCode = Number(updateConfig.match(/currentVersionCode:\s*(\d+
 const tracked = (folder) => execFileSync("git", ["ls-files", folder], { cwd: root, encoding: "utf8" }).trim();
 const checks = [
   ["01 WorkManager即时刷新", provider.includes("enqueueImmediateRefresh") && !provider.includes("EXECUTOR.execute")],
-  ["02 Worker失败重试", worker.includes("Result.retry()") && worker.includes("Result.failure()")],
+  [
+    "02 Worker失败后保持周期刷新",
+    worker.includes("Result.retry()")
+      && !worker.includes("Result.failure()")
+      && worker.includes("scheduleLiveFollowUpIfNeeded")
+  ],
   ["03 中冠赛中状态", provider.includes("applyCfaStatus") && provider.includes("TimeUnit.HOURS.toMillis(4)")],
   ["04 数据备份恢复", fs.existsSync(path.join(root, "public/calendar-storage.js")) && !app.includes("localStorage.removeItem(storageKey")],
   ["05 动态赛季", app.includes("getWorldCupYear") && app.includes("`${year}0410`")],
@@ -161,9 +166,10 @@ const checks = [
       && newsWidgetWorker.includes("TeamNewsWidgetData.fetchRecent()")
       && newsWidgetData.includes("MAX_ITEMS = 1")
       && newsWidgetData.includes("widget_refresh=")
-      && newsWidgetWorker.includes("publishedAt <= existing.get(0).publishedAt")
+      && newsWidgetWorker.includes("TeamNewsWidgetData.sameContent")
       && newsWidgetData.includes("Executors.newFixedThreadPool")
-      && newsWidgetData.includes("executor.invokeAll(tasks, 12, TimeUnit.SECONDS)")
+      && newsWidgetData.includes("getMlbNewsFeedXml")
+      && newsWidgetData.includes("executor.invokeAll(tasks, 26, TimeUnit.SECONDS)")
       && newsWidgetData.includes("img.mlbstatic.com")
       && newsWidgetData.includes('open("public/public/news/blue-jays.json")')
       && widgetNetworkClient.includes("float scale = Math.min(")

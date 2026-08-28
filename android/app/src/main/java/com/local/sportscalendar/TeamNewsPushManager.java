@@ -62,6 +62,11 @@ final class TeamNewsPushManager {
     private TeamNewsPushManager() {
     }
 
+    static String safeNewsId(String value) {
+        String normalized = value == null ? "" : value.trim();
+        return normalized.matches("[A-Za-z0-9_-]{1,160}") ? normalized : "";
+    }
+
     static boolean isConfigured(Context context) {
         try {
             return FirebaseApp.initializeApp(context) != null || !FirebaseApp.getApps(context).isEmpty();

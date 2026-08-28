@@ -272,12 +272,15 @@ public class SportsWidgetPlugin extends Plugin {
     public void consumePendingNewsOpen(PluginCall call) {
         Intent intent = getActivity().getIntent();
         String rawUrl = intent == null ? "" : intent.getStringExtra(TeamNewsPushManager.EXTRA_NEWS_URL);
+        String rawNewsId = intent == null ? "" : intent.getStringExtra(TeamNewsPushManager.EXTRA_NEWS_ID);
         if (intent != null) {
             intent.removeExtra(TeamNewsPushManager.EXTRA_NEWS_URL);
             intent.removeExtra(TeamNewsPushManager.EXTRA_NEWS_ID);
+            if ("OPEN_TEAM_NEWS".equals(intent.getAction())) intent.setAction(null);
         }
         JSObject result = new JSObject();
         result.put("url", TeamNewsPushManager.safeMlbUrl(rawUrl));
+        result.put("id", TeamNewsPushManager.safeNewsId(rawNewsId));
         call.resolve(result);
     }
 

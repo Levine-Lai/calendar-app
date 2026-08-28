@@ -39,7 +39,8 @@ public class NewsWidgetRefreshWorker extends Worker {
     private static void refresh(Context context, List<TeamNewsWidgetData.Item> items) throws Exception {
         List<TeamNewsWidgetData.Item> existing = TeamNewsWidgetData.load(context);
         if (!existing.isEmpty() && !items.isEmpty()
-            && items.get(0).publishedAt <= existing.get(0).publishedAt) {
+            && TeamNewsWidgetData.sameContent(items.get(0), existing.get(0))
+            && TeamNewsWidgetData.hasCachedImage(context, existing.get(0))) {
             MatchDetailWidgetProvider.refreshAllViews(context);
             return;
         }
@@ -47,15 +48,18 @@ public class NewsWidgetRefreshWorker extends Worker {
         List<Bitmap> images = new ArrayList<>();
         try {
             for (TeamNewsWidgetData.Item item : items) {
-                Bitmap image = WidgetNetworkClient.downloadNewsImage(item.imageUrl);
-                if (image == null) continue;
+                Bitmap image = item.imageUrl.isEmpty()
+                    ? null
+                    : WidgetNetworkClient.downloadNewsImage(item.imageUrl);
                 cachedItems.add(item);
                 images.add(image);
             }
-            if (cachedItems.isEmpty()) throw new IllegalStateException("新闻图片下载失败");
+            if (cachedItems.isEmpty()) throw new IllegalStateException("新闻数据为空");
             TeamNewsWidgetData.save(context, cachedItems, images);
         } finally {
-            for (Bitmap image : images) image.recycle();
+            for (Bitmap image : images) {
+                if (image != null) image.recycle();
+            }
         }
         MatchDetailWidgetProvider.refreshAllViews(context);
     }

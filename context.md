@@ -2454,3 +2454,25 @@
 - 验证结果：Web 测试 42 项、新闻后台测试 32 项、稳定性检查 37 项全部通过；Android `assembleDebug`、JVM 测试与 Lint 成功。赛事 API 检查大部分端点为 2/2，NBA/NFL 个别 ESPN 请求为 1/2，已由客户端三次重试容错；上游若持续不可用仍只能保留本地旧数据，不能生成不存在的真实赛程或比分。
 - 发布结果：固定证书 APK `releases/sports-calendar-2.3.2-debug.apk` 大小 `8,099,451` 字节，SHA-256 `F479E41EE4EB0B0400F1C808708BF4054CD93606DBB78312A9B314960E44A15D`；包名 `com.local.sportscalendar`、`versionCode 44`、`versionName 2.3.2`、v2 签名和历史证书均验证通过。GitHub Release：`https://github.com/Levine-Lai/calendar-app/releases/tag/v2.3.2`，远端资产哈希与本机一致；远程更新清单已返回 2.3.2，并使用 Release 页面作为旧版兼容下载入口。
 - 协作约定：根目录 `AGENTS.md` 已记录，以后用户说“发布这个新版本到 GitHub”或同义表达，即执行完整的固定签名 APK、GitHub Release、上传和更新清单流程。
+
+## 2026-08-27
+
+### 开发批次：2.3.3 组件比分续跑与新闻直达一致性
+
+- 用户反馈组件1无法持续更新实时比分、日期没有回到今天，且 App 新闻与桌面组件显示不一致，点击桌面新闻后没有稳定直达对应文章。
+- 根因一：`WidgetRefreshWorker` 在连续网络失败后返回 `Result.failure()`；当执行者是 `PeriodicWorkRequest` 时，这会永久终止以后所有周期刷新。现在短时失败最多重试两轮，之后以成功结束本轮并保留下一次周期任务。
+- 根因二：2.3.2 的日期迁移只把旧默认偏移 `1` 改成 `0`，已经保存过其他偏移的组件仍会停留在旧日期。迁移版本提升后，现有组件统一执行一次归零；手动刷新按钮也会回到北京时间今天。
+- 比分刷新：手动刷新改为 expedited Worker；比赛开始前 30 分钟至开赛后 6 小时额外串联约 2 分钟一次的单次 WorkRequest。Android 省电策略仍可能延迟后台执行，常规兜底保持 15 分钟。
+- 根因三：App 优先读取 MLB 官方 RSS，组件2只读取 GitHub Raw/jsDelivr 静态 JSON。组件2现在并发读取官方 RSS 与静态数据，以 RSS 最新文章为主，并按 URL 从静态 JSON 补充官方图片；图片暂未发布或下载失败时使用占位图，下一轮继续补图。
+- 新闻直达：组件 Intent 同时传递受限文章 ID 与 MLB URL；`MainActivity` 只在 Web 页面声明新闻监听器已就绪后消费 Intent，并最多重试 8 次。Web 端按 ID 或 URL 查找文章，命中后直接打开全文页。
+- 版本状态：源码提升为 `2.3.3 / versionCode 45`，Web 缓存版本、Android User-Agent 与更新配置同步；`public/version.json` 继续发布 2.3.2，本轮未打包、未签名、未发布。
+- 验证：稳定性检查 37 项全部通过；Android Gradle 测试受当前 Windows 运行环境的 Java NIO 回环连接错误阻塞，错误发生在 Gradle Daemon 建立连接前，并非项目编译错误。根目录 Web 测试 42 项中 41 项通过，唯一失败为远端自动更新后的 Arsenal 缓存存在缺少中英文正文的条目，和本批组件修复无关。
+
+## 2026-08-28
+
+### 发布批次：2.3.3 组件比分续跑与新闻直达一致性
+
+- 发布前移除阿森纳内置缓存中没有中英文正文的反馈页，并把新闻后台包版本同步为 2.3.3；根目录 Web 测试 42 项、新闻后台测试 32 项、稳定性检查 37 项、39 路体育 API、Android JVM 测试与 Lint 全部通过，新闻后台生产依赖审计为 0。
+- 当前 Windows 的 AF_UNIX 回环连接异常会阻止 Gradle Daemon 启动；验证时仅在临时目录对本机 JDK 的 `UnixDomainSockets` 支持标志作运行时模块覆盖，使 Gradle 使用 TCP loopback。该临时兼容层没有进入源码、APK 或 Git。
+- 使用历史固定证书生成 `releases/sports-calendar-2.3.3-debug.apk`，大小 `8,196,127` 字节，SHA-256 `B17304D64F445BDFCED1B3A02243CED5B7C5D1D904A2BE09FDF974F942438451`。`aapt` 确认包名 `com.local.sportscalendar`、`versionCode 45`、`versionName 2.3.3`；`apksigner` 确认 APK Signature Scheme v2 与历史证书 SHA-256 `7EF83E3EC40B7BF1E9AAF551589EE73C378FC26F29202255F0466BCAB759BED0`。
+- GitHub Release：`https://github.com/Levine-Lai/calendar-app/releases/tag/v2.3.3`；远程更新清单发布 2.3.3，并继续使用 Release 页面作为旧版手机兼容下载入口。

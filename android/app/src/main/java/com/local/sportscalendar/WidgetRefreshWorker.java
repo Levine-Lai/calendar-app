@@ -24,6 +24,7 @@ public class WidgetRefreshWorker extends Worker {
                 .putBoolean(MlbTodayWidgetProvider.PREFS_REFRESHING, false)
                 .apply();
             MlbTodayWidgetProvider.refreshAllViewsOnly(getApplicationContext());
+            MlbTodayWidgetProvider.scheduleLiveFollowUpIfNeeded(getApplicationContext());
             return Result.success();
         }
         preferences.edit()
@@ -31,6 +32,10 @@ public class WidgetRefreshWorker extends Worker {
             .putBoolean(MlbTodayWidgetProvider.PREFS_REFRESHING, false)
             .apply();
         MlbTodayWidgetProvider.refreshAllViewsOnly(getApplicationContext());
-        return getRunAttemptCount() < 3 ? Result.retry() : Result.failure();
+        MlbTodayWidgetProvider.scheduleLiveFollowUpIfNeeded(getApplicationContext());
+        // Returning failure from a PeriodicWorkRequest permanently stops future score checks.
+        // Retry transient outages briefly, then finish this run successfully so the next
+        // periodic or near-live refresh remains scheduled.
+        return getRunAttemptCount() < 2 ? Result.retry() : Result.success();
     }
 }

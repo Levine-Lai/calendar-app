@@ -16,6 +16,9 @@ public class WidgetActionReceiver extends BroadcastReceiver {
         );
         String action = intent.getAction();
         if (MlbTodayWidgetProvider.ACTION_REFRESH.equals(action)) {
+            if (appWidgetId != AppWidgetManager.INVALID_APPWIDGET_ID) {
+                MlbTodayWidgetProvider.setSelectedDayOffset(appContext, appWidgetId, 0);
+            }
             MlbTodayWidgetProvider.refreshAll(appContext);
         } else if (appWidgetId != AppWidgetManager.INVALID_APPWIDGET_ID
             && MlbTodayWidgetProvider.ACTION_PREV_DAY.equals(action)) {

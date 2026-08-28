@@ -50,6 +50,7 @@ public class NewsWidgetService extends RemoteViewsService {
             RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.widget_news_item);
             Bitmap image = TeamNewsWidgetData.loadImage(context, item);
             if (image != null) views.setImageViewBitmap(R.id.news_widget_image, image);
+            else views.setImageViewResource(R.id.news_widget_image, R.drawable.widget_news_image_background);
             views.setTextViewText(R.id.news_widget_title, item.title);
 
             Intent fillInIntent = new Intent();
