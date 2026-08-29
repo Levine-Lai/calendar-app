@@ -1,6 +1,6 @@
 # 观赛日记 Agent 工程交接
 
-最后核对：2026-08-28
+最后核对：2026-08-29
 项目目录：`D:\l\78\calendar`
 仓库：`Levine-Lai/calendar-app`  
 包名：`com.local.sportscalendar`
@@ -8,15 +8,15 @@
 ## 当前可交付状态
 
 - 当前源码版本：`2.3.4 / versionCode 46`；Cloudflare Worker 已部署，客户端 endpoint 已指向 Worker 且已通过真实请求验证。
-- 本机最新 APK：`2.3.3 / versionCode 45`。
-- GitHub 最新已发布 APK：`2.3.3 / versionCode 45`。
-- APK：`releases/sports-calendar-2.3.3-debug.apk`。
-- APK 大小：`8,196,127` 字节。
-- APK SHA-256：`B17304D64F445BDFCED1B3A02243CED5B7C5D1D904A2BE09FDF974F942438451`。
+- 本机最新 APK：`2.3.4 / versionCode 46`。
+- GitHub 最新已发布 APK：`2.3.4 / versionCode 46`。
+- APK：`releases/sports-calendar-2.3.4-debug.apk`。
+- APK 大小：`8,182,375` 字节。
+- APK SHA-256：`C942749DAA943EB1E9B03A1F1B69B1D7DAD535218D3B72DB59C4908BE37996FC`。
 - 签名：APK Signature Scheme v2。
 - 签名证书 SHA-256：`7EF83E3EC40B7BF1E9AAF551589EE73C378FC26F29202255F0466BCAB759BED0`。
-- GitHub Release：`https://github.com/Levine-Lai/calendar-app/releases/tag/v2.3.3`。
-- App 内远程更新已启用：`public/version.json` 发布 `2.3.3 / versionCode 45`，下载地址为 GitHub Release 页面，兼容旧版 App 打开浏览器。
+- GitHub Release：`https://github.com/Levine-Lai/calendar-app/releases/tag/v2.3.4`。
+- App 内远程更新已启用：`public/version.json` 发布 `2.3.4 / versionCode 46`，下载地址为 GitHub Release 页面。
 - GitHub 远程资产与本机 APK 大小、SHA-256 完全一致。
 
 ## 必须遵守

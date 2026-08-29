@@ -4,19 +4,20 @@
 
 ## 当前版本状态
 
-- 本机最新已生成 APK：`2.3.3 / versionCode 45`
+- 本机最新已生成 APK：`2.3.4 / versionCode 46`
 - 当前源码版本：`2.3.4 / versionCode 46`
-- APK 文件：`releases/sports-calendar-2.3.3-debug.apk`
-- GitHub Release：`https://github.com/Levine-Lai/calendar-app/releases/tag/v2.3.3`
-- App 内检查更新清单指向 `2.3.3` 的 GitHub Release 页面，兼容旧版本手机浏览器打开方式。
+- APK 文件：`releases/sports-calendar-2.3.4-debug.apk`
+- GitHub Release：`https://github.com/Levine-Lai/calendar-app/releases/tag/v2.3.4`
+- App 内检查更新清单指向 `2.3.4` 的 GitHub Release 页面。
 
-## 2.3.4（待发布）
+## 2.3.4（已发布）
 
 - 合并 GitHub 上另一套 2.3.3 的组件比分续跑、约 2 分钟赛中跟进、新闻组件最新文章直达与新闻缓存更新，并保留本机已有的赛事 ID 变化兜底匹配、比分先重绘和今日日期强调。
 - 修复组件1手动刷新仍可能被 vivo 延迟的问题：刷新按钮通过广播异步直接执行比分更新，同时保留 WorkManager 失败兜底和 15 分钟周期任务。
 - 比分源由串行请求改为 ESPN、TheSportsDB、CFL China 与中国足协并行请求，单个慢接口不再拖住其他联赛；比分专用请求采用更短的超时和独立重试，并为整轮刷新设置 8 秒边界。
 - 系统下载页不再从普通网页链接解析“默认应用”；改为查询 Android 的浏览器类别，优先锁定系统默认浏览器的具体 Activity，未设置默认浏览器时显示系统选择器。
-- 源码版本提升为 `2.3.4 / versionCode 46`；远程更新清单在 APK 发布前继续停留在 2.3.3。
+- 源码版本提升为 `2.3.4 / versionCode 46`；固定证书 APK 大小 `8,182,375` 字节，SHA-256 `C942749DAA943EB1E9B03A1F1B69B1D7DAD535218D3B72DB59C4908BE37996FC`，APK Signature Scheme v2 与历史证书指纹均已验证。
+- Web 42 项测试、稳定性检查 37 项、Android JVM 测试与 Lint 全部通过；39 路比赛 API 两轮检查均成功。
 
 ## 2.3.3（已发布）
 

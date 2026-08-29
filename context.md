@@ -2510,4 +2510,4 @@
 - 真实联网检查覆盖 ESPN、CFL China 与中国足协 39 路接口，两轮全部成功，响应中位延迟约 0.2–2.0 秒；因此手机持续显示失败的主要原因不是接口整体下线，而是组件原生端串行等待多个比分源，并依赖 vivo 可能延迟的 WorkManager 执行。
 - 手动刷新改为 `BroadcastReceiver.goAsync()` 内直接执行有界比分刷新，失败时再交给加急 WorkManager；周期任务失败不再永久终止。ESPN、TheSportsDB、CFL China、中国足协五组刷新并行，整轮等待上限 8 秒，单次比分请求使用 3 秒连接、4 秒读取、两次尝试。
 - 下载页改用 `CATEGORY_APP_BROWSER` 找到默认浏览器，再在实际 HTTPS 候选中锁定具体 Activity；找不到默认浏览器时显示系统浏览器选择器，避免 WebView、GitHub 客户端或安装器继续接管。
-- 版本提升为 `2.3.4 / versionCode 46`。Web 42 项测试、稳定性 37 项、Android JVM 测试和 Lint 已通过；APK 与 GitHub Release 待本批发布步骤完成后补记。
+- 版本提升为 `2.3.4 / versionCode 46`。Web 42 项测试、稳定性 37 项、Android JVM 测试和 Lint 已通过；固定证书 APK `releases/sports-calendar-2.3.4-debug.apk` 大小 `8,182,375` 字节，SHA-256 `C942749DAA943EB1E9B03A1F1B69B1D7DAD535218D3B72DB59C4908BE37996FC`，v2 签名及历史证书 SHA-256 `7EF83E3EC40B7BF1E9AAF551589EE73C378FC26F29202255F0466BCAB759BED0` 验证通过。GitHub Release 与远程更新清单均发布 2.3.4。

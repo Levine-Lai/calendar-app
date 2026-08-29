@@ -1,12 +1,12 @@
 {
-  "versionCode": 45,
-  "versionName": "2.3.3",
-  "apkUrl": "https://github.com/Levine-Lai/calendar-app/releases/tag/v2.3.3",
+  "versionCode": 46,
+  "versionName": "2.3.4",
+  "apkUrl": "https://github.com/Levine-Lai/calendar-app/releases/tag/v2.3.4",
   "notes": [
-    "组件1刷新失败后不再永久停止，比赛临近或进行中时增加近实时比分检查",
-    "升级和手动刷新组件1时默认回到北京时间今天",
-    "桌面新闻组件与 App 统一优先读取 MLB 官方最新文章并补充静态图片",
-    "点击桌面新闻组件可在冷启动或暖启动时直接打开对应文章"
+    "组件1手动刷新直接执行，不再只依赖可能被手机延迟的后台任务",
+    "多个比分源并行刷新，单个接口超时不会拖住整轮比分更新",
+    "保留周期刷新、赛中近实时跟进和北京时间今日默认显示",
+    "打开下载页优先跳转系统默认浏览器，未设置时显示浏览器选择器"
   ],
   "force": false
 }
