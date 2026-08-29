@@ -1,12 +1,69 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-28T22:38:48.114Z",
+  "updatedAt": "2026-08-29T11:02:30.965Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "e93099b5d9a0e141aa807c00e99d94e28e8d0612e35a80fcf4f8505e4e3cae67",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Marli Salmon signs first professional contract",
+      "summaryEn": "Our young defender has put pen to paper on his first senior deal",
+      "bodyEn": [
+        "Marli Salmon reflected on the hard work and commitment he's put into his seven years at Arsenal after signing his first professional contract with us.",
+        "The young defender put pen to paper on the first senior deal of his career, turning professional on his 17th-birthday.",
+        "\"It means a lot to me,\" Marli said after signing his contract, \"A lot of hard work went into this, a lot of ups and downs, but I'm so proud.",
+        "\"I think it's a proud moment for my family as well, I think it's a reward for them as well, because they put so much time and effort into me. It's proof of their hard work as much as mine.\"",
+        "Marli joined us in 2019 at under-11s level as an attacker, but over the course of his seven years as a Gunner, the 17-year-old has grown into an imposing defender.",
+        "\"I was an attacker in those days, so it was a bit different, but it was good.\" Marli said, reflecting on the start of his Arsenal journey.",
+        "\"It sounds kind of cliched but it's a lot of ups and downs, a lot of tough times. Sometimes you really go through adversity, but it's built me to the person I am today, so I'm thankful for it.\"",
+        "After impressing throughout his time in our Academy sides, Marli earned a spot in our first-team squad on several occasions last season.",
+        "One of his highlights was being included in the squad for our trip to Belgium to face Club Brugge, where he came on for Ben White in the 83rd-minute to make his professional debut.",
+        "\"It's always a good experience to be around [the first team]. You learn so much, not even just on the pitch, but off the pitch, about how they prepare and how they carry themselves.",
+        "\"It's valuable, I'm so grateful for who I've got here. You get to learn and see them in person, you see so much detail, it's very good.\"",
+        "The end of last season offered Marli the opportunity to put part of our push for the Premier League title, and celebrate winning the title with us.",
+        "Our young defender felt there was plenty to learn from the experience, and got an insight into what it takes to be a champion.",
+        "\"Being around that was amazing. You see so many one-percents that go into it.",
+        "\"It's a long season, so there's so many things that change and happen, but really keeping that level over that period of time, it takes a lot. It's a lot of little things that push you to be a champion.\"",
+        "Off the back of our success last season, Marli is looking forward to continuing his development this season as he pushes for more first-team opportunities.",
+        "\"I'm looking forward to attacking the season. I gave myself a good start, so let's see what it holds.\"",
+        "Everyone at Arsenal congratulates Marli on signing his first professional contract and wishes him well for the upcoming season."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/634ef497c132-z917478ffbfmkev.webp",
+      "author": "Connor Booth",
+      "publishedAt": "2026-08-29T08:00:00.000Z",
+      "url": "https://www.arsenal.com/news/marli-salmon-signs-first-professional-contract-aB9ha2J7sCgI",
+      "source": "Arsenal.com",
+      "titleZh": "马尔利·萨蒙签下首份职业合同",
+      "summaryZh": "我们年轻后卫签下首份成年队合同。",
+      "bodyZh": [
+        "马尔利·萨蒙与我们签下首份职业合同后，回顾了他在阿森纳七年所付出的努力和奉献。",
+        "这位年轻后卫在他17岁生日当天正式成为职业球员，签下了职业生涯首份成年队合同。",
+        "马尔利在签约后表示：“这对我意义重大，为此付出了很多努力，经历了许多起起落落，但我非常自豪。”",
+        "“我认为这对我的家人来说也是一个自豪的时刻，也是对他们的一种回报，因为他们在我身上投入了如此多的时间和精力。这同样证明了他们的努力。”",
+        "马尔利于2019年以U11级别前锋身份加入我们，但在作为枪手的七年里，这位17岁小将已成长为一名出色的后卫。",
+        "回顾他的阿森纳之旅时，马尔利说：“那时候我是前锋，所以有些不同，但感觉很棒。”",
+        "“这听起来有点老套，但确实经历了很多起起落落和艰难时刻。有时你真的会遭遇逆境，但这塑造了今天的我，所以我对此心怀感激。”",
+        "在青训队期间表现出色后，马尔利上赛季多次入选一线队大名单。",
+        "其中亮点之一是入选我们客场对阵布鲁日的大名单，他在第83分钟替补本·怀特上场，完成职业首秀。",
+        "“在一线队身边总是一次很好的经历。你能学到很多，不仅仅在场上，还有场下，了解他们如何准备、如何行事。”",
+        "“这很宝贵，我非常感激在这里遇到的人。你能亲眼学习和观察他们，看到很多细节，非常好。”",
+        "上赛季末，马尔利有机会参与我们争夺英超冠军的征程，并与我们一起庆祝夺冠。",
+        "我们年轻的后卫认为从这段经历中学到了很多，并深入了解了成为冠军需要什么。",
+        "“身处其中真是太棒了。你会看到其中涉及许多细微之处。”",
+        "“这是一个漫长的赛季，很多事情会变化和发生，但要在那段时间内保持高水平，需要付出很多。正是许多小事推动你成为冠军。”",
+        "在上赛季成功的基础上，马尔利期待本赛季继续成长，争取更多一线队机会。",
+        "“我期待迎接新赛季。我已经有了一个好的开始，让我们看看接下来会怎样。”",
+        "阿森纳全体人员祝贺马尔利签下首份职业合同，并祝愿他在新赛季一切顺利。"
+      ],
+      "translationSourceHash": "76dffbb69f97105abdf4768fac10aa9f8ae5f7b624b6aeb013d4a434f9ab69a8",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-29T11:02:30.965Z"
+    },
     {
       "id": "fec2af11dc762d79a4e74cf7be76c60c6f2e12aa2a7b12eefb0292c1760844b5",
       "teamId": "arsenal",
@@ -52,7 +109,7 @@
         "We made a strong start to the 2026/27 season last Friday, beating newly-promoted Coventry City 3-0 at Emirates Stadium, and we'll be looking to take the momentum from that success into Monday's game.",
         "Press play on the video at the top of the article to see Mikel Arteta's squad hard at work at the Sobha Realty Training Centre ahead of our trip to Villa Park."
       ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/b1696a7e835e-z923716q9lxgvqs.webp",
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/2a5744aa2bf9-london-colney-england-martin-zubimendi-and-christos-tzolis-of-arsenal-during-a-t.webp",
       "author": "Connor Booth",
       "publishedAt": "2026-08-28T17:00:00.000Z",
       "url": "https://www.arsenal.com/news/go-inside-training-before-we-face-aston-villa-adE805W39hLi",
@@ -161,7 +218,7 @@
         "We'll head to the West Midlands looking to make it two wins from two and extend our run of winning our opening away game in each of the last four Premier League seasons.",
         "Swipe through the gallery below, captured by club photographer David Price, to see what we've been up to at the Sobha Realty Training Centre:"
       ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/bb8a2cd3ebee-z924139kbnz7unb.webp",
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/61d29e3db6bb-london-colney-england-kai-havertz-and-gabriel-magalhaes-of-arsenal-during-a-trai.webp",
       "author": "Arsenal Media",
       "publishedAt": "2026-08-28T14:23:23.073Z",
       "url": "https://www.arsenal.com/news/the-best-training-snaps-ahead-of-villa-park-aYnu92w968rG",
@@ -609,33 +666,6 @@
       "translationSourceHash": "f81b27095f251d6331de4ab8a2ea50004d466e760b06783c097c30a272077ec1",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-28T22:38:13.792Z"
-    },
-    {
-      "id": "2633fde427dc031310b8fe8c2d920f7e4c4b3b860641c1e5f837914562ae78d6",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Relive these incredible goals v Italian opponents",
-      "summaryEn": "Take in our fantastic goals against the likes of Milan, Inter and Juventus down the years",
-      "bodyEn": [
-        "We've netted some belters against opponents from Italy in our modern history.",
-        "From Thierry Henry's stunning hat-trick against Roma in 2002, all the way through to Viktor Gyokeres' curler at the San Siro in 2026.",
-        "Press play on the video above now to take in some of those special strikes from Champions League and Europa League clashes against Serie A sides!"
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/f012532a282a-rome-italy-thierry-henry-celebrates-scoring-a-goal-for-arsenal-during-the-uefa-c.webp",
-      "author": "Charlie Peat",
-      "publishedAt": "2026-08-27T16:01:00.000Z",
-      "url": "https://www.arsenal.com/news/relive-these-incredible-goals-v-italian-opponents-a3PcD9C8kWbU",
-      "source": "Arsenal.com",
-      "titleZh": "重温对阵意大利球队的精彩进球",
-      "summaryZh": "回顾多年来对阵米兰、国米和尤文的精彩进球。",
-      "bodyZh": [
-        "在我们的现代历史中，我们对意大利球队打进过一些精彩进球。",
-        "从2002年蒂埃里·亨利对阵罗马的惊艳帽子戏法，到2026年维克托·久凯雷斯在圣西罗的弧线球。",
-        "现在就点击上方视频，欣赏那些在欧冠和欧联杯对阵意甲球队时的特别进球吧！"
-      ],
-      "translationSourceHash": "cc9985398272e931c39c071cfab8a933e76d90f70c44a8ad2849ca6c4e1a594e",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-28T22:38:17.142Z"
     },
     {
       "id": "d3fca32dd1c521c048222556c30cda3de19148cb27c640bd95cd6616f32efd00",
