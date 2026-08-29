@@ -21,6 +21,7 @@ final class WidgetNetworkClient {
     private static final int MAX_NEWS_BYTES = 1024 * 1024;
     private static final int MAX_NEWS_FEED_BYTES = 512 * 1024;
     private static final int JSON_ATTEMPTS = 3;
+    private static final int SCORE_JSON_ATTEMPTS = 2;
 
     private WidgetNetworkClient() {}
 
@@ -37,8 +38,26 @@ final class WidgetNetworkClient {
         throw lastError == null ? new IllegalStateException("JSON request failed") : lastError;
     }
 
+    static String getScoreJson(String endpoint) throws Exception {
+        Exception lastError = null;
+        for (int attempt = 0; attempt < SCORE_JSON_ATTEMPTS; attempt += 1) {
+            try {
+                return getJsonOnce(endpoint, 3_000, 4_000);
+            } catch (Exception error) {
+                lastError = error;
+                if (Thread.currentThread().isInterrupted()) throw error;
+                if (attempt + 1 < SCORE_JSON_ATTEMPTS) Thread.sleep(250L);
+            }
+        }
+        throw lastError == null ? new IllegalStateException("Score request failed") : lastError;
+    }
+
     private static String getJsonOnce(String endpoint) throws Exception {
-        HttpURLConnection connection = open(endpoint, 10_000, 10_000);
+        return getJsonOnce(endpoint, 10_000, 10_000);
+    }
+
+    private static String getJsonOnce(String endpoint, int connectTimeoutMs, int readTimeoutMs) throws Exception {
+        HttpURLConnection connection = open(endpoint, connectTimeoutMs, readTimeoutMs);
         connection.setRequestProperty("Accept", "application/json");
         try {
             int code = connection.getResponseCode();
@@ -205,7 +224,7 @@ final class WidgetNetworkClient {
         connection.setConnectTimeout(connectTimeout);
         connection.setReadTimeout(readTimeout);
         connection.setInstanceFollowRedirects(true);
-        connection.setRequestProperty("User-Agent", "GuansaiRiji/2.3.3");
+        connection.setRequestProperty("User-Agent", "GuansaiRiji/2.3.4");
         return connection;
     }
 

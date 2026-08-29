@@ -69,6 +69,7 @@ public class MatchDetailWidgetProvider extends AppWidgetProvider {
                 views.setViewVisibility(R.id.news_widget_empty, View.GONE);
                 Bitmap image = TeamNewsWidgetData.loadImage(context, latest);
                 if (image != null) views.setImageViewBitmap(R.id.news_widget_image, image);
+                else views.setImageViewResource(R.id.news_widget_image, R.drawable.widget_news_image_background);
                 views.setTextViewText(R.id.news_widget_title, latest.title);
                 views.setOnClickPendingIntent(
                     R.id.news_widget_content,

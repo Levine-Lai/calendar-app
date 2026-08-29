@@ -43,6 +43,9 @@ import java.util.Map;
 import java.util.Set;
 import java.util.TimeZone;
 import java.util.concurrent.TimeUnit;
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -63,6 +66,8 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
     static final String ACTION_NEXT_DAY = "com.local.sportscalendar.action.NEXT_DAY_WIDGET";
     private static final String PERIODIC_WORK_NAME = "sports-widget-live-refresh";
     private static final String IMMEDIATE_WORK_NAME = "sports-widget-refresh-now";
+    private static final String LIVE_FOLLOW_UP_WORK_PREFIX = "sports-widget-live-follow-up-";
+    private static final long LIVE_FOLLOW_UP_INTERVAL_MS = TimeUnit.MINUTES.toMillis(2);
     private static final int SCORE_DEFAULT_COLOR = 0xFF16120F;
     private static final int SCORE_LIVE_COLOR = 0xFFD83A34;
     private static final TimeZone BEIJING_TIME = TimeZone.getTimeZone("Asia/Shanghai");
@@ -91,6 +96,11 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
     }
 
     public static void refreshAll(Context context) {
+        prepareRefresh(context);
+        enqueueImmediateRefresh(context.getApplicationContext(), ExistingWorkPolicy.REPLACE);
+    }
+
+    static void prepareRefresh(Context context) {
         AppWidgetManager manager = AppWidgetManager.getInstance(context);
         int[] ids = manager.getAppWidgetIds(new ComponentName(context, MlbTodayWidgetProvider.class));
         migrateDefaultDaySelection(context, ids);
@@ -99,7 +109,6 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
             .putBoolean(PREFS_REFRESHING, true)
             .apply();
         renderLocalWidgets(context.getApplicationContext(), manager, ids);
-        enqueueImmediateRefresh(context.getApplicationContext(), ExistingWorkPolicy.REPLACE);
     }
 
     static void enqueueImmediateRefresh(Context context) {
@@ -127,7 +136,7 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
         android.content.SharedPreferences.Editor editor = preferences.edit();
         for (int appWidgetId : appWidgetIds) {
             String key = selectedDayOffsetKey(appWidgetId);
-            if (!preferences.contains(key) || preferences.getInt(key, 1) == 1) editor.putInt(key, 0);
+            editor.putInt(key, 0);
         }
         editor.putInt(PREFS_DAY_SELECTION_MIGRATION, DAY_SELECTION_MIGRATION_TODAY).apply();
     }
@@ -218,6 +227,43 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
         );
     }
 
+    static void scheduleLiveFollowUpIfNeeded(Context context) {
+        if (!hasGameInLiveRefreshWindow(context)) return;
+        long now = System.currentTimeMillis();
+        long target = ((now / LIVE_FOLLOW_UP_INTERVAL_MS) + 1L) * LIVE_FOLLOW_UP_INTERVAL_MS;
+        OneTimeWorkRequest request = new OneTimeWorkRequest.Builder(WidgetRefreshWorker.class)
+            .setConstraints(new Constraints.Builder().setRequiredNetworkType(NetworkType.CONNECTED).build())
+            .setInitialDelay(Math.max(1_000L, target - now), TimeUnit.MILLISECONDS)
+            .build();
+        WorkManager.getInstance(context).enqueueUniqueWork(
+            LIVE_FOLLOW_UP_WORK_PREFIX + target,
+            ExistingWorkPolicy.KEEP,
+            request
+        );
+    }
+
+    private static boolean hasGameInLiveRefreshWindow(Context context) {
+        AppWidgetManager manager = AppWidgetManager.getInstance(context);
+        int[] ids = manager.getAppWidgetIds(new ComponentName(context, MlbTodayWidgetProvider.class));
+        long now = System.currentTimeMillis();
+        for (int appWidgetId : ids) {
+            for (Game game : readSelectedDayGames(context, appWidgetId)) {
+                if (needsFastRefresh(game, now)) return true;
+            }
+        }
+        return false;
+    }
+
+    static boolean needsFastRefresh(Game game, long now) {
+        if (game == null || game.start == null || isFinished(game)) return false;
+        GameStatus.Kind kind = GameStatus.classify(game.status, game.statusState, game.completed);
+        if (kind == GameStatus.Kind.POSTPONED || kind == GameStatus.Kind.CANCELED) return false;
+        if (isLive(game)) return true;
+        long untilStart = game.start.getTime() - now;
+        return untilStart <= TimeUnit.MINUTES.toMillis(30)
+            && untilStart >= -TimeUnit.HOURS.toMillis(6);
+    }
+
     static void cancelPeriodicRefreshIfUnused(Context context) {
         AppWidgetManager manager = AppWidgetManager.getInstance(context);
         int componentOneCount = manager
@@ -246,6 +292,10 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
     }
 
     static void setSelectedDayOffset(Context context, int appWidgetId, int nextOffset) {
+        setSelectedDayOffset(context, appWidgetId, nextOffset, true);
+    }
+
+    static void setSelectedDayOffset(Context context, int appWidgetId, int nextOffset, boolean enqueueRefresh) {
         context
             .getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
             .edit()
@@ -259,7 +309,7 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
         if (appWidgetId != AppWidgetManager.INVALID_APPWIDGET_ID) {
             updateWidgetViews(context, manager, new int[] { appWidgetId });
         }
-        enqueueImmediateRefresh(context);
+        if (enqueueRefresh) enqueueImmediateRefresh(context);
     }
 
     private static RemoteViews baseViews(Context context, int appWidgetId) {
@@ -589,10 +639,31 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
 
     static boolean hydrateLiveScores(List<Game> games) {
         RefreshTracker tracker = new RefreshTracker();
+        ExecutorService executor = Executors.newFixedThreadPool(5);
+        List<Callable<Void>> providers = new ArrayList<>();
+        providers.add(() -> { hydrateEspnScores(games, tracker); return null; });
+        providers.add(() -> { hydrateSportsDbScores(games, tracker); return null; });
+        providers.add(() -> { hydrateCslEspnScores(games, tracker); return null; });
+        providers.add(() -> { hydrateCflScores(games, tracker); return null; });
+        providers.add(() -> { hydrateCfaScores(games, tracker); return null; });
+        try {
+            executor.invokeAll(providers, 8, TimeUnit.SECONDS);
+        } catch (InterruptedException interrupted) {
+            Thread.currentThread().interrupt();
+        } finally {
+            executor.shutdownNow();
+        }
+        return tracker.isSuccessful();
+    }
+
+    private static void hydrateEspnScores(List<Game> games, RefreshTracker tracker) {
         Map<String, List<Game>> groups = new HashMap<>();
         for (Game game : games) {
             if (game.sport == null || game.sport.isEmpty()
-                || game.espnLeague == null || game.espnLeague.isEmpty()) {
+                || game.espnLeague == null || game.espnLeague.isEmpty()
+                || isCslGame(game)
+                || !(game.dataSource == null || game.dataSource.isEmpty()
+                    || "espn".equalsIgnoreCase(game.dataSource))) {
                 continue;
             }
             String key = game.sport + "|" + game.espnLeague + "|" + espnDate(game.start);
@@ -601,8 +672,8 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
             }
             groups.get(key).add(game);
         }
-
         for (Map.Entry<String, List<Game>> entry : groups.entrySet()) {
+            if (Thread.currentThread().isInterrupted()) return;
             tracker.attempt();
             try {
                 String[] parts = entry.getKey().split("\\|");
@@ -621,11 +692,6 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
                 // Keep the imported snapshot if live refresh fails.
             }
         }
-        hydrateSportsDbScores(games, tracker);
-        hydrateCslEspnScores(games, tracker);
-        hydrateCflScores(games, tracker);
-        hydrateCfaScores(games, tracker);
-        return tracker.isSuccessful();
     }
 
     private static void hydrateCslEspnScores(List<Game> games, RefreshTracker tracker) {
@@ -637,11 +703,12 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
             groups.get(date).add(game);
         }
         for (Map.Entry<String, List<Game>> entry : groups.entrySet()) {
+            if (Thread.currentThread().isInterrupted()) return;
             tracker.attempt();
             try {
                 String endpoint = "https://site.api.espn.com/apis/site/v2/sports/soccer/chn.1/scoreboard"
                     + "?dates=" + entry.getKey() + "&limit=100";
-                JSONObject root = new JSONObject(WidgetNetworkClient.getJson(endpoint));
+                JSONObject root = new JSONObject(WidgetNetworkClient.getScoreJson(endpoint));
                 tracker.succeed();
                 JSONArray events = root.optJSONArray("events");
                 if (events == null) continue;
@@ -725,12 +792,13 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
         }
 
         for (Map.Entry<String, List<Game>> entry : groups.entrySet()) {
+            if (Thread.currentThread().isInterrupted()) return;
             tracker.attempt();
             try {
                 String[] parts = entry.getKey().split("\\|");
                 String endpoint = "https://www.thesportsdb.com/api/v1/json/123/eventsday.php?d="
                     + parts[1] + "&l=" + parts[0];
-                JSONObject root = new JSONObject(WidgetNetworkClient.getJson(endpoint));
+                JSONObject root = new JSONObject(WidgetNetworkClient.getScoreJson(endpoint));
                 tracker.succeed();
                 JSONArray events = root.optJSONArray("events");
                 Map<String, JSONObject> byId = jsonArrayById(events, "idEvent");
@@ -780,6 +848,7 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
         }
 
         for (Map.Entry<String, List<Game>> entry : groups.entrySet()) {
+            if (Thread.currentThread().isInterrupted()) return;
             tracker.attempt();
             try {
                 String[] parts = entry.getKey().split("\\|");
@@ -787,7 +856,7 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
                     + "?tournament_calendar_id=" + parts[1]
                     + "&competition_code=" + parts[0]
                     + "&curPage=1&pageSize=999";
-                JSONObject root = new JSONObject(WidgetNetworkClient.getJson(endpoint));
+                JSONObject root = new JSONObject(WidgetNetworkClient.getScoreJson(endpoint));
                 tracker.succeed();
                 JSONObject data = root.optJSONObject("data");
                 JSONArray events = data == null ? null : data.optJSONArray("dataList");
@@ -848,12 +917,13 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
         }
 
         for (Map.Entry<String, List<Game>> entry : groups.entrySet()) {
+            if (Thread.currentThread().isInterrupted()) return;
             tracker.attempt();
             try {
                 String[] parts = entry.getKey().split("\\|");
                 String endpoint = "https://data.thecfa.cn/gameplans.do?lid="
                     + parts[0] + "&year=" + parts[1];
-                JSONArray events = new JSONArray(WidgetNetworkClient.getJson(endpoint));
+                JSONArray events = new JSONArray(WidgetNetworkClient.getScoreJson(endpoint));
                 tracker.succeed();
                 Map<String, JSONObject> byId = jsonArrayById(events, "gameid");
                 for (Game game : entry.getValue()) {
@@ -983,7 +1053,7 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
     }
 
     private static Map<String, JSONObject> fetchEventsById(String endpoint) throws Exception {
-        JSONObject root = new JSONObject(WidgetNetworkClient.getJson(endpoint));
+        JSONObject root = new JSONObject(WidgetNetworkClient.getScoreJson(endpoint));
         JSONArray events = root.optJSONArray("events");
         Map<String, JSONObject> byId = new HashMap<>();
         if (events == null) {
@@ -1298,15 +1368,15 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
         int attempted;
         int succeeded;
 
-        void attempt() {
+        synchronized void attempt() {
             attempted += 1;
         }
 
-        void succeed() {
+        synchronized void succeed() {
             succeeded += 1;
         }
 
-        boolean isSuccessful() {
+        synchronized boolean isSuccessful() {
             return attempted == 0 || succeeded > 0;
         }
     }

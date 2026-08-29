@@ -185,6 +185,28 @@ public class WidgetGameStatusTest {
     }
 
     @Test
+    public void liveAndSoonStartingGamesUseFastWidgetRefresh() {
+        long now = System.currentTimeMillis();
+        MlbTodayWidgetProvider.Game live = new MlbTodayWidgetProvider.Game();
+        live.start = new Date(now - TimeUnit.HOURS.toMillis(1));
+        live.status = "进行中";
+        live.statusState = "in";
+        assertTrue(MlbTodayWidgetProvider.needsFastRefresh(live, now));
+
+        MlbTodayWidgetProvider.Game soon = new MlbTodayWidgetProvider.Game();
+        soon.start = new Date(now + TimeUnit.MINUTES.toMillis(20));
+        soon.status = "Scheduled";
+        soon.statusState = "pre";
+        assertTrue(MlbTodayWidgetProvider.needsFastRefresh(soon, now));
+
+        MlbTodayWidgetProvider.Game later = new MlbTodayWidgetProvider.Game();
+        later.start = new Date(now + TimeUnit.HOURS.toMillis(2));
+        later.status = "Scheduled";
+        later.statusState = "pre";
+        assertFalse(MlbTodayWidgetProvider.needsFastRefresh(later, now));
+    }
+
+    @Test
     public void malformedScoresNeverRenderObjectText() {
         assertEquals("5", MlbTodayWidgetProvider.scoreJsonValue(5));
         assertEquals("", MlbTodayWidgetProvider.scoreJsonValue("[object Object]"));
@@ -239,6 +261,34 @@ public class WidgetGameStatusTest {
     }
 
     @Test
+    public void newsWidgetUsesDirectFeedArticleAndStaticImage() {
+        TeamNewsWidgetData.Item direct = new TeamNewsWidgetData.Item(
+            "direct-id",
+            "Direct title",
+            "https://www.mlb.com/bluejays/news/latest",
+            "",
+            2_000L
+        );
+        TeamNewsWidgetData.Item staticItem = new TeamNewsWidgetData.Item(
+            "static-id",
+            "Static title",
+            "https://www.mlb.com/bluejays/news/latest",
+            "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/mlb/latest",
+            2_000L
+        );
+
+        java.util.List<TeamNewsWidgetData.Item> merged = TeamNewsWidgetData.mergeDirectWithStatic(
+            java.util.Collections.singletonList(direct),
+            java.util.Collections.singletonList(staticItem)
+        );
+
+        assertEquals(1, merged.size());
+        assertEquals("direct-id", merged.get(0).id);
+        assertEquals("Direct title", merged.get(0).title);
+        assertEquals(staticItem.imageUrl, merged.get(0).imageUrl);
+    }
+
+    @Test
     public void teamNewsOnlyOpensOfficialMlbLinks() {
         assertEquals(
             "https://www.mlb.com/bluejays/news/example",
@@ -247,6 +297,8 @@ public class WidgetGameStatusTest {
         assertEquals("", TeamNewsPushManager.safeMlbUrl("http://www.mlb.com/bluejays/news/example"));
         assertEquals("", TeamNewsPushManager.safeMlbUrl("https://mlb.com.example.org/fake"));
         assertEquals("", TeamNewsPushManager.safeMlbUrl("javascript:alert(1)"));
+        assertEquals("article_123", TeamNewsPushManager.safeNewsId("article_123"));
+        assertEquals("", TeamNewsPushManager.safeNewsId("../../article"));
     }
 
     @Test

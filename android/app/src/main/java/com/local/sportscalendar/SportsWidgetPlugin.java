@@ -2,11 +2,11 @@ package com.local.sportscalendar;
 
 import android.Manifest;
 import android.content.Context;
+import android.content.ComponentName;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.net.Uri;
-import android.provider.Browser;
 import android.os.Build;
 import android.os.Bundle;
 import android.speech.RecognitionListener;
@@ -29,6 +29,9 @@ import com.google.firebase.messaging.FirebaseMessaging;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.ArrayList;
+import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 @CapacitorPlugin(
     name = "SportsWidget",
@@ -173,13 +176,8 @@ public class SportsWidgetPlugin extends Plugin {
         }
         getActivity().runOnUiThread(() -> {
             try {
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, uri);
-                browserIntent.addCategory(Intent.CATEGORY_BROWSABLE);
-                browserIntent.putExtra(Browser.EXTRA_APPLICATION_ID, getActivity().getPackageName());
-                browserIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                String browserPackage = resolveDefaultBrowserPackage();
-                if (!browserPackage.isEmpty()) browserIntent.setPackage(browserPackage);
-                if (browserIntent.resolveActivity(getActivity().getPackageManager()) == null) {
+                Intent browserIntent = explicitBrowserIntent(uri);
+                if (browserIntent == null) {
                     call.reject("手机中没有可打开 HTTPS 下载页的浏览器");
                     return;
                 }
@@ -191,14 +189,66 @@ public class SportsWidgetPlugin extends Plugin {
         });
     }
 
-    private String resolveDefaultBrowserPackage() {
+    private Intent explicitBrowserIntent(Uri uri) {
         PackageManager packageManager = getActivity().getPackageManager();
-        Intent browserQuery = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.example.com/"));
-        browserQuery.addCategory(Intent.CATEGORY_BROWSABLE);
-        ResolveInfo resolved = packageManager.resolveActivity(browserQuery, PackageManager.MATCH_DEFAULT_ONLY);
+        Intent base = new Intent(Intent.ACTION_VIEW, uri);
+        base.addCategory(Intent.CATEGORY_BROWSABLE);
+        base.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+
+        Intent browserSelector = Intent.makeMainSelectorActivity(
+            Intent.ACTION_MAIN,
+            Intent.CATEGORY_APP_BROWSER
+        );
+        ResolveInfo defaultBrowser = packageManager.resolveActivity(
+            browserSelector,
+            PackageManager.MATCH_DEFAULT_ONLY
+        );
+        String defaultPackage = safeExternalPackage(defaultBrowser);
+        List<ResolveInfo> candidates = packageManager.queryIntentActivities(
+            base,
+            PackageManager.MATCH_DEFAULT_ONLY
+        );
+        Set<String> browserPackages = new HashSet<>();
+        for (ResolveInfo browser : packageManager.queryIntentActivities(
+            browserSelector,
+            PackageManager.MATCH_DEFAULT_ONLY
+        )) {
+            String packageName = safeExternalPackage(browser);
+            if (!packageName.isEmpty()) browserPackages.add(packageName);
+        }
+        ResolveInfo chosen = null;
+        if (!defaultPackage.isEmpty()) {
+            for (ResolveInfo candidate : candidates) {
+                if (candidate.activityInfo != null
+                    && defaultPackage.equals(candidate.activityInfo.packageName)) {
+                    chosen = candidate;
+                    break;
+                }
+            }
+        }
+        if (chosen == null) {
+            for (ResolveInfo candidate : candidates) {
+                if (candidate.activityInfo != null
+                    && browserPackages.contains(candidate.activityInfo.packageName)) {
+                    chosen = candidate;
+                    break;
+                }
+            }
+        }
+        if (chosen != null) {
+            base.setComponent(new ComponentName(
+                chosen.activityInfo.packageName,
+                chosen.activityInfo.name
+            ));
+            return base;
+        }
+        if (candidates.isEmpty()) return null;
+        return Intent.createChooser(base, "选择浏览器打开下载页");
+    }
+
+    private String safeExternalPackage(ResolveInfo resolved) {
         String packageName = resolved == null || resolved.activityInfo == null
-            ? ""
-            : resolved.activityInfo.packageName;
+            ? "" : resolved.activityInfo.packageName;
         return packageName == null || packageName.equals("android")
             || packageName.equals(getActivity().getPackageName()) ? "" : packageName;
     }
@@ -287,12 +337,15 @@ public class SportsWidgetPlugin extends Plugin {
     public void consumePendingNewsOpen(PluginCall call) {
         Intent intent = getActivity().getIntent();
         String rawUrl = intent == null ? "" : intent.getStringExtra(TeamNewsPushManager.EXTRA_NEWS_URL);
+        String rawNewsId = intent == null ? "" : intent.getStringExtra(TeamNewsPushManager.EXTRA_NEWS_ID);
         if (intent != null) {
             intent.removeExtra(TeamNewsPushManager.EXTRA_NEWS_URL);
             intent.removeExtra(TeamNewsPushManager.EXTRA_NEWS_ID);
+            if ("OPEN_TEAM_NEWS".equals(intent.getAction())) intent.setAction(null);
         }
         JSObject result = new JSObject();
         result.put("url", TeamNewsPushManager.safeMlbUrl(rawUrl));
+        result.put("id", TeamNewsPushManager.safeNewsId(rawNewsId));
         call.resolve(result);
     }
 

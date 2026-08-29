@@ -65,7 +65,6 @@ final class TeamNewsWidgetData {
 
     static List<Item> load(Context context) {
         List<Item> items = parseStoredItems(preferences(context).getString(KEY_ITEMS_JSON, ""));
-        items.removeIf(item -> !imageFile(context, item).isFile());
         if (!items.isEmpty()) return items;
 
         Item legacy = legacyItem(context);
@@ -83,37 +82,73 @@ final class TeamNewsWidgetData {
     }
 
     static List<Item> fetchRecent() throws Exception {
-        List<Item> freshest = new ArrayList<>();
+        List<Item> direct = new ArrayList<>();
+        List<Item> freshestStatic = new ArrayList<>();
         Exception lastError = null;
-        ExecutorService executor = Executors.newFixedThreadPool(ENDPOINTS.length);
+        ExecutorService executor = Executors.newFixedThreadPool(ENDPOINTS.length + 1);
         List<Callable<List<Item>>> tasks = new ArrayList<>();
+        tasks.add(() -> parseDirectRecent(WidgetNetworkClient.getMlbNewsFeedXml()));
         for (String endpoint : ENDPOINTS) {
             tasks.add(() -> parseRecent(WidgetNetworkClient.getTeamNewsJson(cacheBusted(endpoint))));
         }
         List<Future<List<Item>>> results;
         try {
-            results = executor.invokeAll(tasks, 12, TimeUnit.SECONDS);
+            results = executor.invokeAll(tasks, 26, TimeUnit.SECONDS);
         } finally {
             executor.shutdownNow();
         }
-        for (Future<List<Item>> result : results) {
+        for (int index = 0; index < results.size(); index += 1) {
+            Future<List<Item>> result = results.get(index);
             try {
                 if (result.isCancelled()) {
                     lastError = new IllegalStateException("新闻缓存请求超时");
                     continue;
                 }
                 List<Item> candidates = result.get();
-                if (!candidates.isEmpty()
-                    && (freshest.isEmpty() || candidates.get(0).publishedAt > freshest.get(0).publishedAt)) {
-                    freshest = candidates;
+                if (index == 0) {
+                    direct = candidates;
+                } else if (!candidates.isEmpty()
+                    && (freshestStatic.isEmpty()
+                        || candidates.get(0).publishedAt > freshestStatic.get(0).publishedAt)) {
+                    freshestStatic = candidates;
                 }
             } catch (Exception error) {
                 lastError = error;
             }
         }
-        if (!freshest.isEmpty()) return freshest;
+        if (!direct.isEmpty()) return mergeDirectWithStatic(direct, freshestStatic);
+        if (!freshestStatic.isEmpty()) return freshestStatic;
         if (lastError != null) throw lastError;
         throw new IllegalStateException("新闻数据为空");
+    }
+
+    private static List<Item> parseDirectRecent(String xml) throws Exception {
+        List<Item> items = new ArrayList<>();
+        for (TeamNewsFeed.Item item : TeamNewsFeed.parse(xml)) {
+            items.add(new Item(item.id, item.title, item.url, "", item.publishedAt));
+        }
+        return limitToLatest(items);
+    }
+
+    static List<Item> mergeDirectWithStatic(List<Item> direct, List<Item> staticItems) {
+        List<Item> merged = new ArrayList<>();
+        for (Item liveItem : limitToLatest(direct)) {
+            String imageUrl = liveItem.imageUrl;
+            for (Item staticItem : staticItems == null ? new ArrayList<Item>() : staticItems) {
+                if (liveItem.url.equals(staticItem.url)) {
+                    imageUrl = staticItem.imageUrl;
+                    break;
+                }
+            }
+            merged.add(new Item(
+                liveItem.id,
+                liveItem.title,
+                liveItem.url,
+                imageUrl,
+                liveItem.publishedAt
+            ));
+        }
+        return limitToLatest(merged);
     }
 
     static List<Item> loadBundledRecent(Context context) throws Exception {
@@ -142,18 +177,19 @@ final class TeamNewsWidgetData {
         for (int index = 0; index < items.size() && index < MAX_ITEMS; index++) {
             Item item = items.get(index);
             Bitmap image = images.get(index);
-            if (image == null) continue;
-            File target = imageFile(context, item);
-            File temporary = new File(context.getFilesDir(), target.getName() + ".tmp");
-            try (FileOutputStream output = new FileOutputStream(temporary)) {
-                if (!image.compress(Bitmap.CompressFormat.JPEG, 88, output)) {
-                    throw new IllegalStateException("新闻图片缓存失败");
+            if (image != null) {
+                File target = imageFile(context, item);
+                File temporary = new File(context.getFilesDir(), target.getName() + ".tmp");
+                try (FileOutputStream output = new FileOutputStream(temporary)) {
+                    if (!image.compress(Bitmap.CompressFormat.JPEG, 88, output)) {
+                        throw new IllegalStateException("新闻图片缓存失败");
+                    }
+                    output.getFD().sync();
                 }
-                output.getFD().sync();
+                if (target.exists() && !target.delete()) throw new IllegalStateException("旧新闻图片无法替换");
+                if (!temporary.renameTo(target)) throw new IllegalStateException("新闻图片缓存无法提交");
+                activeFiles.add(target.getName());
             }
-            if (target.exists() && !target.delete()) throw new IllegalStateException("旧新闻图片无法替换");
-            if (!temporary.renameTo(target)) throw new IllegalStateException("新闻图片缓存无法提交");
-            activeFiles.add(target.getName());
 
             JSONObject value = new JSONObject();
             value.put(KEY_ID, item.id);
@@ -163,7 +199,7 @@ final class TeamNewsWidgetData {
             value.put(KEY_PUBLISHED_AT, item.publishedAt);
             stored.put(value);
         }
-        if (stored.length() == 0) throw new IllegalStateException("没有可缓存的新闻图片");
+        if (stored.length() == 0) throw new IllegalStateException("没有可缓存的新闻");
         preferences(context).edit().putString(KEY_ITEMS_JSON, stored.toString()).apply();
         cleanOldImages(context, activeFiles);
     }
@@ -234,8 +270,21 @@ final class TeamNewsWidgetData {
         String imageUrl = safeImageUrl(raw.optString(KEY_IMAGE_URL, raw.optString("imageUrl", "")));
         long publishedAt = raw.optLong(KEY_PUBLISHED_AT, 0L);
         if (publishedAt <= 0L) publishedAt = parsePublishedAt(raw.optString("publishedAt", ""));
-        if (title.isEmpty() || url.isEmpty() || imageUrl.isEmpty() || publishedAt <= 0L) return null;
+        if (title.isEmpty() || url.isEmpty() || publishedAt <= 0L) return null;
         return new Item(id, title, url, imageUrl, publishedAt);
+    }
+
+    static boolean sameContent(Item left, Item right) {
+        return left != null && right != null
+            && left.id.equals(right.id)
+            && left.title.equals(right.title)
+            && left.url.equals(right.url)
+            && left.imageUrl.equals(right.imageUrl)
+            && left.publishedAt == right.publishedAt;
+    }
+
+    static boolean hasCachedImage(Context context, Item item) {
+        return item != null && (item.imageUrl.isEmpty() || imageFile(context, item).isFile());
     }
 
     private static Item legacyItem(Context context) {

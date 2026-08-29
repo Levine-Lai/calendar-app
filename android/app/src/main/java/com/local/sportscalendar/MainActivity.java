@@ -44,6 +44,7 @@ public class MainActivity extends BridgeActivity {
         });
         TeamNewsPushManager.restoreSubscription(getApplicationContext());
         requestDefaultNewsNotificationPermission();
+        getBridge().getWebView().postDelayed(() -> handleNewsIntent(getIntent(), 0), 1200L);
     }
 
     private void requestDefaultNewsNotificationPermission() {
@@ -75,18 +76,36 @@ public class MainActivity extends BridgeActivity {
     }
 
     private void handleNewsIntent(Intent intent) {
+        handleNewsIntent(intent, 0);
+    }
+
+    private void handleNewsIntent(Intent intent, int attempt) {
         if (getBridge() == null || getBridge().getWebView() == null) return;
         boolean opensNews = intent != null && "OPEN_TEAM_NEWS".equals(intent.getAction());
         if (!opensNews) return;
-        String url = opensNews
-            ? TeamNewsPushManager.safeMlbUrl(intent.getStringExtra(TeamNewsPushManager.EXTRA_NEWS_URL))
-            : "";
-        if (opensNews) {
-            intent.removeExtra(TeamNewsPushManager.EXTRA_NEWS_URL);
-            intent.removeExtra(TeamNewsPushManager.EXTRA_NEWS_ID);
-        }
-        String script = "window.dispatchEvent(new CustomEvent('sports-news-open',{detail:{url:"
-            + JSONObject.quote(url) + "}}));";
-        getBridge().getWebView().post(() -> getBridge().getWebView().evaluateJavascript(script, null));
+        String url = TeamNewsPushManager.safeMlbUrl(
+            intent.getStringExtra(TeamNewsPushManager.EXTRA_NEWS_URL)
+        );
+        String newsId = TeamNewsPushManager.safeNewsId(
+            intent.getStringExtra(TeamNewsPushManager.EXTRA_NEWS_ID)
+        );
+        if (url.isEmpty() && newsId.isEmpty()) return;
+        String script = "Boolean(window.SportsCalendarNewsReady"
+            + " && (window.dispatchEvent(new CustomEvent('sports-news-open',{detail:{url:"
+            + JSONObject.quote(url)
+            + ",id:" + JSONObject.quote(newsId)
+            + "}})),true))";
+        getBridge().getWebView().post(() -> getBridge().getWebView().evaluateJavascript(script, handled -> {
+            if ("true".equals(handled)) {
+                intent.removeExtra(TeamNewsPushManager.EXTRA_NEWS_URL);
+                intent.removeExtra(TeamNewsPushManager.EXTRA_NEWS_ID);
+                intent.setAction(null);
+            } else if (attempt < 8) {
+                getBridge().getWebView().postDelayed(
+                    () -> handleNewsIntent(intent, attempt + 1),
+                    500L
+                );
+            }
+        }));
     }
 }

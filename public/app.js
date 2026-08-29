@@ -262,6 +262,7 @@ const teamNewsState = {
   activeTeamId: "toronto-blue-jays",
   feeds: new Map(),
   pendingUrl: "",
+  pendingId: "",
   pendingRetryCount: 0,
   pendingRetryTimer: 0,
   language: "en",
@@ -446,8 +447,9 @@ function bindEvents() {
   bindTeamNewsBackGestures();
   window.SportsCalendarHandleBack = handleAppBack;
   window.addEventListener("sports-news-open", (event) => {
-    handleTeamNewsOpen(event.detail?.url || "");
+    handleTeamNewsOpen(event.detail?.url || "", event.detail?.id || "");
   });
+  window.SportsCalendarNewsReady = true;
   elements.calendarView.addEventListener("click", (event) => {
     const dayCell = event.target.closest(".day-cell");
     if (dayCell?.dataset.date) {
@@ -910,6 +912,7 @@ function activateTeamNews(teamId) {
   teamNewsState.activeTeamId = config.teamId;
   teamNewsState.activeArticleId = "";
   teamNewsState.pendingUrl = "";
+  teamNewsState.pendingId = "";
   teamNewsState.language = "en";
   elements.teamNewsArticleModal.hidden = true;
   renderTeamNews();
@@ -933,6 +936,7 @@ function closeTeamNewsModal() {
   elements.teamNewsModal.hidden = true;
   document.body.classList.remove("modal-open");
   teamNewsState.pendingUrl = "";
+  teamNewsState.pendingId = "";
   teamNewsState.pendingRetryCount = 0;
   window.clearTimeout(teamNewsState.pendingRetryTimer);
   teamNewsState.pendingRetryTimer = 0;
@@ -948,19 +952,22 @@ async function consumePendingTeamNewsOpen() {
   if (!plugin?.consumePendingNewsOpen) return;
   try {
     const result = await plugin.consumePendingNewsOpen();
-    if (result?.url) handleTeamNewsOpen(result.url);
+    if (result?.url || result?.id) handleTeamNewsOpen(result.url || "", result.id || "");
   } catch {
     // A missing pending notification is not an app startup error.
   }
 }
 
-function handleTeamNewsOpen(url) {
+function handleTeamNewsOpen(url, newsId = "") {
   const teamId = TeamNews?.normalizeMlbUrl?.(url)
     ? "toronto-blue-jays"
     : (TeamNews?.normalizeNewsUrl?.(url, "arsenal") ? "arsenal" : teamNewsState.activeTeamId);
   const safeUrl = TeamNews?.normalizeNewsUrl?.(url, teamId);
+  const safeNewsId = /^[A-Za-z0-9_-]{1,160}$/.test(String(newsId || "")) ? String(newsId) : "";
+  if (!safeUrl && !safeNewsId) return;
   activateTeamNews(teamId);
   teamNewsState.pendingUrl = safeUrl || "";
+  teamNewsState.pendingId = safeNewsId;
   teamNewsState.pendingRetryCount = 0;
   window.clearTimeout(teamNewsState.pendingRetryTimer);
   teamNewsState.pendingRetryTimer = 0;
@@ -969,8 +976,11 @@ function handleTeamNewsOpen(url) {
 }
 
 function scrollToPendingTeamNews() {
-  if (!teamNewsState.pendingUrl || elements.teamNewsModal.hidden) return;
-  const target = getTeamNewsFeedState().items.find((item) => item.url === teamNewsState.pendingUrl);
+  if ((!teamNewsState.pendingUrl && !teamNewsState.pendingId) || elements.teamNewsModal.hidden) return;
+  const target = getTeamNewsFeedState().items.find((item) => (
+    (teamNewsState.pendingId && item.id === teamNewsState.pendingId)
+    || (teamNewsState.pendingUrl && item.url === teamNewsState.pendingUrl)
+  ));
   if (!target) {
     schedulePendingTeamNewsRetry();
     return;
@@ -979,11 +989,13 @@ function scrollToPendingTeamNews() {
   teamNewsState.pendingRetryTimer = 0;
   teamNewsState.pendingRetryCount = 0;
   teamNewsState.pendingUrl = "";
+  teamNewsState.pendingId = "";
   openTeamNewsArticle(target.id);
 }
 
 function schedulePendingTeamNewsRetry() {
-  if (!teamNewsState.pendingUrl || elements.teamNewsModal.hidden || teamNewsState.pendingRetryTimer) return;
+  if ((!teamNewsState.pendingUrl && !teamNewsState.pendingId)
+      || elements.teamNewsModal.hidden || teamNewsState.pendingRetryTimer) return;
   const delays = [1500, 3000, 5000, 8000, 12000];
   if (teamNewsState.pendingRetryCount >= delays.length) {
     setTeamNewsStatus("新闻已通知，正文仍在同步，请稍后点刷新。", true);
