@@ -1,8 +1,45 @@
 {
   "teamId": "toronto-blue-jays",
   "teamName": "多伦多蓝鸟",
-  "updatedAt": "2026-08-30T05:47:04.990Z",
+  "updatedAt": "2026-08-30T21:27:31.329Z",
   "items": [
+    {
+      "id": "e46bbb7c893910fb6839049f39987ceb0bbcac7d00cbcbb536d89532d0db1e89",
+      "teamId": "toronto-blue-jays",
+      "teamName": "多伦多蓝鸟",
+      "titleEn": "Mad Max makes more history, strikes out 10 to pass Perry for 9th all-time",
+      "summaryEn": "",
+      "bodyEn": [
+        "TORONTO -- Max Scherzer climbed another rung of the all-time Major League Baseball strikeouts ladder in the Blue Jays’ 7-0 win over the Mariners on Sunday.",
+        "With his seventh-inning punch out of Cal Raleigh, his 10th of the game, Scherzer surpassed Gaylord Perry for ninth all-time with 3,535 strikeouts.",
+        "When it was announced to the Rogers Centre crowd, fans erupted in appreciation for the history they were witnessing. In typical Scherzer fashion, he saluted the crowd before getting back to work.",
+        "It was the 115th time in Scherzer’s illustrious career that he had struck out at least 10 batters in a game. He is third in that category, behind only Nolan Ryan (215) and Randy Johnson (212) since the mound moved to its current distance in 1893.",
+        "Every member of the 3,000-strikeout club",
+        "At 42 years and 34 days old, Scherzer is also the oldest pitcher with 10+ strikeouts and one or no hits allowed in a game since Ryan on May 1, 1991, (44 years, 90 days) in a no-hitter against none other than the Blue Jays.",
+        "Scherzer and Ryan (six times) are the only pitchers with such an outing at age 42+ in MLB history.",
+        "After Josh Naylor grounded out to second base to end the seventh, Scherzer walked off the mound with a 4-0 lead and a standing ovation from the Jays faithful. Scherzer threw 67 of his 97 pitches for strikes, with one walk and Raleigh's fourth-inning double the only baserunners he allowed."
+      ],
+      "titleZh": "Mad Max再创历史，单场10K超越Perry升至历史第9位",
+      "summaryZh": "Scherzer单场10次三振，生涯3535K超越Perry，升至历史第9位。",
+      "bodyZh": [
+        "多伦多——Max Scherzer在周日蓝鸟7-0战胜水手的比赛中，在大联盟历史三振榜上又登上了一级台阶。",
+        "凭借第七局对Cal Raleigh投出的三振，也是本场比赛的第10次三振，Scherzer以3535次三振超越Gaylord Perry，升至历史第九位。",
+        "当这一消息在罗杰斯中心球场宣布时，现场球迷爆发出欢呼，感谢他们正在见证历史。Scherzer以他一贯的方式向人群致意，然后重新投入比赛。",
+        "这是Scherzer辉煌职业生涯中第115次在单场比赛中三振至少10名打者。自1893年投手丘移到目前距离以来，他在这项数据上排名第三，仅次于Nolan Ryan（215次）和Randy Johnson（212次）。",
+        "3000次三振俱乐部的每一位成员",
+        "在42岁零34天的时候，Scherzer也成为自1991年5月1日Ryan在对阵蓝鸟的比赛中投出无安打（44岁零90天）以来，单场三振10次以上且最多只被击出一支安打的年龄最大的投手。",
+        "在大联盟历史上，Scherzer和Ryan（6次）是仅有的在42岁及以上还曾做到单场10K且最多被打1安的投手。",
+        "当Josh Naylor在第七局击出二垒方向滚地球出局后，Scherzer带着4-0的领先优势走下投手丘，全场蓝鸟球迷起立鼓掌。Scherzer共投97球，其中67球为好球，仅投出一次保送，另有Raleigh在第四局击出的二垒安打，这是对手仅有的两次上垒。"
+      ],
+      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/z5oy3v8zovvxnmuswys0",
+      "translationSourceHash": "9442794c67e0bdfcd965d4064483c4bf8ca6a583bc30f6344d53710cfb7aa0d8",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-30T21:27:31.329Z",
+      "author": "Matt Betts",
+      "publishedAt": "2026-08-30T20:05:00.000Z",
+      "url": "https://www.mlb.com/bluejays/news/max-scherzer-passes-gaylord-perry-on-all-time-strikeout-list",
+      "source": "MLB.com"
+    },
     {
       "id": "4dfca91750350a884266d3cccc2dc490458a98cc5e42f1a5c368c325a14e89e1",
       "teamId": "toronto-blue-jays",
@@ -1131,60 +1168,9 @@
       "publishedAt": "2026-08-25T23:30:00.000Z",
       "url": "https://www.mlb.com/bluejays/news/top-10-organizations-based-on-pitching-prospects-2026",
       "source": "MLB.com"
-    },
-    {
-      "id": "187ada9172adec7544b13bca5f693a6bdaf118d2ef3939a81cbb08822face801",
-      "teamId": "toronto-blue-jays",
-      "teamName": "多伦多蓝鸟",
-      "titleEn": "With Bieber becoming latest starter on IL, who steps up in Toronto's rotation?",
-      "summaryEn": "",
-      "bodyEn": [
-        "TORONTO -- Remember Spring Training? It was only a decade ago.",
-        "The Blue Jays had eight healthy, legitimate big league starters. Those early days of camp, always so full of hope, were spent wondering just how they’d put that puzzle together.",
-        "Well, we’re still wondering the same thing, but for much different reasons. The Blue Jays are stuck in one of the worst runs of pitching injuries this organization has ever seen, which continued Tuesday when Shane Bieber hit the 15-day IL with right teres major inflammation. He’ll be shut down from throwing for the next couple of weeks, with the Blue Jays still holding out hope that he can return later in this stretch run.",
-        "Add that to this list of Blue Jays pitching injuries this season:",
-        "Cody Ponce: Torn right ACLJosé Berríos: Tommy John surgeryShane Bieber: Right elbow inflammation, missed first 78 gamesTrey Yesavage: Right meniscus injuryMax Scherzer: Right forearm, left ankle and back injuriesPatrick Corbin: Left teres major strainBowden Francis: Tommy John surgeryJameson Taillon: Forearm tendinitis",
-        "Along with Bieber, Yesavage seems to fall into that same bucket, where the Blue Jays hope he can ride in to save the day before the season ends. He’s playing catch and the range of motion in his knee is better than expected already, but he’s still a long way off.",
-        "So, once again we must ask, how are the Blue Jays going to put this puzzle together? Their current rotation is built on Dylan Cease, José Soriano and Max Scherzer, with Spencer Arrighetti sliding back in this Thursday, fresh off the IL himself. The No. 5 job is a bullpen day for now, and if we’ve learned anything this season, it’s that the Blue Jays need to brace themselves for the possibility that something else goes wrong between now and the end of September, too.",
-        "This is where their depth stands right now:",
-        "Short-term starting options",
-        "Jameson Taillon: The veteran righty is scheduled to pitch with Triple-A Buffalo on Friday. If that goes well, with a pitch count around 50, the Blue Jays sound comfortable with Taillon sliding right into the rotation the next time through. This was the lone piece of pleasant news to come out of Tuesday. Taillon was stuck in a difficult season before being designated for assignment with the Cubs, but sounded rejuvenated after coming over via trade, recommitted to attacking the zone after shying away from that earlier in the year.",
-        "John Klein: Klein came over from the Twins in the Jeff Hoffman trade after making his brief MLB debut earlier this season, so the 24-year-old is “ready” enough. Klein is right on that line between a starter and a “bulk” guy, but with pitch counts of 70 and 60 his last two times out in Buffalo, he could theoretically give the Blue Jays four-plus innings in a spot start.",
-        "CJ Van Eyk: Also benefitting from a 40-man roster spot, Van Eyk was up to 78 pitches in his last start for Triple-A Buffalo. There’s some versatility here, too, with Van Eyk also able to slide into the bullpen role he pitched in earlier this season with the Blue Jays, including one relief appearance with 69 pitches over 3 1/3 innings.",
-        "Josh Fleming: Fleming made one appearance with the Blue Jays earlier this season and has bounced around, but a lefty with a 3.39 ERA in Triple-A this season still gets a piece of the conversation, especially if there’s a lefty-heavy lineup waiting. Fleming isn’t on the 40-man roster, though, meaning someone like Klein may have the inside track.",
-        "Bulk options",
-        "Simeon Woods Richardson: Also close to that line between starter and bulk reliever, Woods Richardson has stuck around as a legitimate option for the Blue Jays. His 1.04 ERA with the Blue Jays isn’t sustainable when you look at the peripheral numbers, but at this point, innings are innings. In Wednesday’s bullpen game, Woods Richardson could give the Blue Jays 40-50 pitches.",
-        "Chad Dallas: Better than his big-league numbers this season, Dallas is a swingman with good breaking stuff who should show better when he’s allowed to settle into a role. Given the roster expansion coming on Sept. 1, when the Blue Jays will be able to keep one additional pitcher, it’s likely that Dallas is here to stay down the stretch. Whether it’s following an opener or pitching in tandem with Woods Richardson, he can be one piece of creating a “start”."
-      ],
-      "titleZh": "Shane Bieber进入伤病名单，蓝鸟轮值谁顶上？",
-      "summaryZh": "蓝鸟遭遇严重投手伤病潮，Shane Bieber进入15天伤病名单，球队轮值深度面临考验，谁将顶上？",
-      "bodyZh": [
-        "多伦多——还记得春训吗？那感觉就像在十年前。",
-        "蓝鸟曾拥有八名健康、货真价实的大联盟先发投手。春训初期总是充满希望，当时球队还在琢磨该如何拼凑这套轮值。",
-        "好吧，我们仍在思考同样的问题，但原因大不相同。蓝鸟正陷入队史最严重的投手伤病潮之一，周二又添新伤，Shane Bieber因右侧大圆肌发炎进入15天伤病名单。他将在未来几周停止投球，蓝鸟仍对他能在赛季最后冲刺阶段回归抱有希望。",
-        "加上这一项，以下是蓝鸟本赛季的投手伤病名单：",
-        "Cody Ponce：右膝前交叉韧带撕裂；José Berríos：Tommy John手术；Shane Bieber：右肘炎症，缺席前78场比赛；Trey Yesavage：右半月板损伤；Max Scherzer：右前臂、左脚踝和背部伤病；Patrick Corbin：左侧大圆肌拉伤；Bowden Francis：Tommy John手术；Jameson Taillon：前臂肌腱炎。",
-        "除了Bieber，Yesavage似乎也属于同一类情况，蓝鸟希望他能在赛季结束前复出救场。他已经在进行传接球，膝盖的活动范围也比预期要好，但距离复出还有很长的路。",
-        "因此，我们再次要问：蓝鸟将如何拼凑起这套轮值？目前轮值由Dylan Cease、José Soriano和Max Scherzer领衔，Spencer Arrighetti周四将从伤病名单中回归。第五号先发目前暂时由牛棚日顶替，而且如果我们从这个赛季学到了什么，那就是蓝鸟还需要为从现在到9月底可能再出现其他状况做好准备。",
-        "以下就是他们目前的深度状况：",
-        "短期先发选项",
-        "Jameson Taillon：这位老将右投计划周五随3A水牛城队出赛。如果一切顺利，投球数在50球左右，蓝鸟似乎放心让Taillon在下一轮先发中直接回到轮值。这是周二唯一的好消息。Taillon在被小熊指定让渡之前度过了一个艰难的赛季，但通过交易加盟后显得重新焕发活力，重新致力于攻击好球带，而本赛季早些时候他对此有所回避。",
-        "John Klein：Klein今年稍早完成短暂的大联盟首秀后，在Jeff Hoffman交易中从双城来到蓝鸟，因此这位24岁球员已经“足够准备好”。Klein恰好站在先发和“长中继”投手的界线，但鉴于他最近两次在水牛城出赛的投球数分别为70和60，理论上他能在临时先发中为蓝鸟投四局以上。",
-        "CJ Van Eyk：同样受益于40人名单名额，Van Eyk最近一次为3A水牛城先发投了78球。他也有多面手属性，还能回到本赛季早些时候在蓝鸟牛棚投过的角色，其中一次后援出场是3又1/3局投了69球。",
-        "Josh Fleming：Fleming本赛季早些时候为蓝鸟出场一次，此后辗转多队，但一位在3A自责分率3.39的左投仍然值得考虑，尤其是面对左打为主的打线时。不过Fleming不在40人名单上，这意味着像Klein这样的球员可能更有优势。",
-        "长中继选项",
-        "Simeon Woods Richardson：同样介于先发和长中继之间，Woods Richardson一直是蓝鸟可靠的选择。他在蓝鸟的自责分率1.04从外围数据看难以持续，但到了这个节骨眼，能吃局数才是硬道理。周三的牛棚日，Woods Richardson可以为蓝鸟投40到50球。",
-        "Chad Dallas：Dallas的实力比他本赛季的大联盟数据所显示的更好，他是一名拥有出色变化球的摆渡人，一旦获得固定角色，表现应该会更好。考虑到9月1日名单扩编，届时蓝鸟可以额外保留一名投手，Dallas很可能会在赛季末段留队。无论是担任开场投手之后的长中继，还是与Woods Richardson搭档，他都可以成为拼凑一场“先发”的一部分。"
-      ],
-      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/bce2qegvu4klyaphbjpg",
-      "translationSourceHash": "96fca83fdb8d9aaf2892b27857c5219b07749f0f0be993eb278a11bdbb376584",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-25T22:35:26.452Z",
-      "author": "Keegan Matheson",
-      "publishedAt": "2026-08-25T22:13:51.000Z",
-      "url": "https://www.mlb.com/bluejays/news/who-could-replace-shane-bieber-in-blue-jays-rotation",
-      "source": "MLB.com"
     }
   ],
-  "pendingNotificationIds": []
+  "pendingNotificationIds": [
+    "e46bbb7c893910fb6839049f39987ceb0bbcac7d00cbcbb536d89532d0db1e89"
+  ]
 }
