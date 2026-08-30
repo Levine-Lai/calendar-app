@@ -1,12 +1,47 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-30T19:28:43.858Z",
+  "updatedAt": "2026-08-30T22:05:07.254Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "990f5a7a3aa6665980b04588da33450e6106fab78cd17eebf040fe815f73205a",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Mikel Arteta ‘begging’ Premier League to expand 20-man matchday squads",
+      "summaryEn": "Arsenal manager says dropping players ‘affects wellbeing’Serie A allows 25-player matchday squads and La Liga 23Arsenal have asked the Premier League to increase the size of matchday squads, with Mikel Arteta saying the current system is detrimental to player welfare. Top‑flight clubs can name 20 players for games, including a minimum of three homegrown players. In Spain’s La Liga, clubs can name a matchday squad of 23, while Italy’s Serie A allows 25.Arsenal have competed on multiple fronts in recent seasons. Last year, as well as winning the Premier League, they reached the finals of the Champions League and Carabao Cup, as well as the quarter-finals of the FA Cup. With pressure increasing on the football calendar and players facing more matches, Arteta sees no reason why English teams should operate with smaller squads than those from other European leagues. Continue reading...",
+      "bodyEn": [
+        "Arsenal have asked the Premier League to increase the size of matchday squads, with Mikel Arteta saying the current system is detrimental to player welfare. Top‑flight clubs can name 20 players for games, including a minimum of three homegrown players. In Spain’s La Liga, clubs can name a matchday squad of 23, while Italy’s Serie A allows 25.",
+        "Arsenal have competed on multiple fronts in recent seasons. Last year, as well as winning the Premier League, they reached the finals of the Champions League and Carabao Cup, as well as the quarter-finals of the FA Cup. With pressure increasing on the football calendar and players facing more matches, Arteta sees no reason why English teams should operate with smaller squads than those from other European leagues.",
+        "“I’ve been begging the Premier League if we can extend those numbers just for the welfare of the players, which is the most important thing, because I think every squad needs more than 20 outfield players, ideally, to sustain the level of demand in international games that we have,” Arteta said, as he prepares for the champions’ trip to Aston Villa on Monday night. “But these are the rules, and within the rules we have to play. We need to be very close to the players to explain those situations in the right way, for everybody to feel important, because they will be.”",
+        "Clubs can register a squad of 25 senior players – those aged over 21 – for the season, with at least eight homegrown. As a result, five senior players registered for the season miss out each game. Arteta has said it can be difficult to tell players they are not involved and that the news can negatively affect their wellbeing.",
+        "“The question has to be to the players. What do they want? If they raise their hands and say: ‘No, I prefer to stay at home and not travel,’ I think we have an issue because then they don’t love what they do, which is the matchday,” he said. “But I’m sure that if you ask the players, everybody would like to be part of the squad on matchday, because that’s the way that they can fulfil themselves.",
+        "“Otherwise you have to tell somebody: ‘You are not even part of this matchday,’ and that’s really tough. And it doesn’t help anybody. It doesn’t help the club. It doesn’t help the valuation of the player. It doesn’t help the player feel part of something. It’s a real issue that has a really simple solution.”",
+        "Arteta added: “And all the clubs, because I’ve done the research with all the top clubs in Europe, we are not different to anybody. Most of them, 90% of them, they have more players than us. So we are going to have to deal with that.”"
+      ],
+      "imageUrl": "https://i.guim.co.uk/img/media/ba51ac6c1860ec8cb44650b68345da405eee922d/531_184_1733_1386/master/1733.jpg?width=140&quality=85&auto=format&fit=max&s=e574e13a5fd3c966bc9f5a89b8404072",
+      "author": "Sam Cunningham",
+      "publishedAt": "2026-08-30T21:30:06.000Z",
+      "url": "https://www.theguardian.com/football/2026/aug/30/mikel-arteta-premier-league-matchday-squad-player-welfare-arsenal",
+      "source": "The Guardian",
+      "titleZh": "阿尔特塔“恳求”英超扩大20人比赛日大名单",
+      "summaryZh": "阿森纳主帅称弃用球员影响健康，意甲和西甲可报名25人和23人。",
+      "bodyZh": [
+        "阿森纳已要求英超联赛扩大比赛日大名单规模，米克尔·阿尔特塔表示现行制度不利于球员福祉。英超俱乐部每场比赛可报名20名球员，其中至少包括3名本土培养球员。而西班牙的西甲允许报名23人，意大利的意甲则允许25人。",
+        "阿森纳近几个赛季多线作战。去年，他们不仅赢得了英超冠军，还闯入了欧冠和联赛杯决赛，以及足总杯四分之一决赛。随着足球赛程压力增大，球员面临更多比赛，阿尔特塔认为英格兰球队没有理由以比欧洲其他联赛更小的阵容规模运作。",
+        "“我一直在恳求英超联赛，为了球员的福祉——这是最重要的事情——能否扩大这些数字，因为我认为每支球队理想情况下需要的场上球员超过20人，才能应对我们所面临的国际比赛需求，”阿尔特塔在为冠军球队周一晚客场挑战阿斯顿维拉做准备时表示。“但规则就是这样，我们必须在规则范围内比赛。我们需要与球员保持密切沟通，以恰当的方式解释这些情况，让每个人都感到被重视，因为他们确实重要。”",
+        "俱乐部每个赛季可注册25名资深球员（年龄超过21岁）的大名单，其中至少8名为本土培养。因此，每场比赛会有5名注册的资深球员落选。阿尔特塔表示，告诉球员他们无法出战可能很困难，这一消息会对他们的心理健康产生负面影响。",
+        "“问题应该抛给球员。他们想要什么？如果他们举手说：‘不，我宁愿待在家里不随队旅行。’我想那就有问题了，因为那样他们就不热爱自己做的事，也就是比赛日，”他说。“但我敢肯定，如果你问球员们，每个人都希望成为比赛日大名单的一员，因为那是他们实现自我价值的方式。”",
+        "“否则你就得告诉某个人：‘你连这次比赛日大名单都没进。’那真的很残酷，对任何人都没有帮助。对俱乐部没帮助，对球员的估值没帮助，也无法让球员感受到归属感。这是一个真正的问题，但解决方案却很简单。”",
+        "阿尔特塔补充道：“而且所有俱乐部——因为我做过欧洲所有顶级俱乐部的研究——我们并不比别人特殊。他们大多数，90%的俱乐部，球员都比我们多。所以我们必须面对这一点。”"
+      ],
+      "translationSourceHash": "3675ac3e3c1efa41701a58f5e773dba8b0c3426bdb22ea4b37d8c2ce635042bc",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-30T22:05:07.254Z"
+    },
     {
       "id": "80e68d25183622e92038f6202a90c13bf8acc3a2b035feebe086c81b7fdaba28",
       "teamId": "arsenal",
@@ -1005,45 +1040,6 @@
       "translationSourceHash": "564c10c236409c207b5b23987cc7fc9f6a046acefc242cbf1f073562add19b19",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-21T23:02:21.986Z"
-    },
-    {
-      "id": "9962e6be672fc1812df9be8848c8b57e2d819240a68ec51b00e586708f85939e",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Arteta predicts ‘more to come’ from established players amid Alvarez talk",
-      "summaryEn": "Arteta: ‘I’m really happy with the squad we have’Lampard upbeat despite defeat on top-flight returnMikel Arteta has warned there is plenty more to come from Arsenal’s established stars this season after they began their Premier League title defence with a convincing victory over Coventry.A week after dispatching Manchester City by the same scoreline in last week’s Community Shield, goals from Kai Havertz, Bukayo Saka and Martin Ødegaard sealed a comfortable victory for the champions. Arsenal, who unveiled their new £55m signing Ezri Konsa before kick-off, have now won 18 of their past 19 games against newly promoted teams and never looked like stumbling against Frank Lampard’s side. Continue reading...",
-      "bodyEn": [
-        "Mikel Arteta has warned there is plenty more to come from Arsenal’s established stars this season after they began their Premier League title defence with a convincing victory over Coventry.",
-        "A week after dispatching Manchester City by the same scoreline in last week’s Community Shield, goals from Kai Havertz, Bukayo Saka and Martin Ødegaard sealed a comfortable victory for the champions. Arsenal, who unveiled their new £55m signing Ezri Konsa before kick-off, have now won 18 of their past 19 games against newly promoted teams and never looked like stumbling against Frank Lampard’s side.",
-        "But while there has been speculation in Spain that Arsenal could still make a move for Atlético Madrid’s Julián Alvarez before the end of the transfer window, Arteta singled out Saka and Ødegaard’s performances against Coventry and believes they are ready to contribute more after two injury-hit seasons.",
-        "“The main focus has to be to improve our players, improve the connection between them because they are already so good,” he said. “When we talk about attacking input, last season we missed some of those players for a lot of months, and the team still had the ability to perform and win a lot of matches and when we have them, then that’s a bonus.”",
-        "Asked whether Arsenal could be tempted to make a move for Alvarez in the next week, he said: “I’m really happy with the squad that we have and the main focus is to improve the players that we already have because we already have a lot of good things.”",
-        "Gabriel Martinelli and Gabriel Jesus were both absent from the match day squad as Arsenal attempt to offload the Brazil internationals, with any move for Alvarez likely to rest on them leaving. But Arteta was positive about the prospect of having Bruno Guimarães back from a groin injury soon after the £75m midfielder was ruled out of the opener.",
-        "“We don’t expect that to be weeks,” he said. “Let’s see how he evolves this week. He didn’t even want to stop. He wanted to carry on. Now we start to understand the character of the player, but I don’t expect that to be a big issue.”",
-        "Coventry struggled in their first Premier League game since 2001 after winning the Championship last year but Lampard said he was proud of his side’s reaction with many of them playing at this level for the first time.",
-        "“We lost the game and we will learn our lessons. Every game won’t look like that,” he said. “Leeds came here last year and lost 5-0 and stayed in the Premier League so I’m not making any early judgments. There are adjustments for us to make and we’ll make them.”"
-      ],
-      "imageUrl": "https://i.guim.co.uk/img/media/d1d2694fbddaddf6776796033b07c32d1e70ba2a/1107_60_3380_2705/master/3380.jpg?width=140&quality=85&auto=format&fit=max&s=cb9b4f9fec5b1733ed2b79a1c29433f1",
-      "author": "Ed Aarons at the Emirates Stadium",
-      "publishedAt": "2026-08-21T22:25:28.000Z",
-      "url": "https://www.theguardian.com/football/2026/aug/21/more-to-come-arteta-focuses-on-established-players-after-julian-alvarez-talk",
-      "source": "The Guardian",
-      "titleZh": "阿尔特塔预测主力球员“表现会更多”，谈及阿尔瓦雷斯传闻",
-      "summaryZh": "阿尔特塔表示对现有阵容满意，认为主力球员还有提升空间。",
-      "bodyZh": [
-        "米克尔·阿尔特塔警告称，阿森纳在本赛季以一场令人信服的胜利开始英超卫冕之旅后，队中的核心球员还有更多潜力可挖。",
-        "在上一周社区盾杯中以相同比分击败曼城后，凯·哈弗茨、布卡约·萨卡和马丁·厄德高的进球为卫冕冠军锁定了这场轻松的胜利。阿森纳在开球前展示了他们5500万英镑的新援埃兹里·孔萨，他们在过去19场对阵升班马的比赛中赢下了18场，面对弗兰克·兰帕德的球队时从未有过失手迹象。",
-        "尽管西班牙有传闻称阿森纳可能在转会窗口关闭前对马德里竞技的胡利安·阿尔瓦雷斯采取行动，但阿尔特塔特别提到了萨卡和厄德高对阵考文垂的表现，并相信他们在经历两个伤病困扰的赛季后能够贡献更多。",
-        "“主要焦点必须放在提升我们的球员水平，增强他们之间的联系，因为他们已经非常出色了，”他表示。“当我们谈论进攻端贡献时，上赛季我们有数月缺少一些球员，但球队仍然有能力表现出色并赢得许多比赛，当他们回归时，那就是一种额外的收获。”",
-        "在被问及阿森纳是否会在接下来一周内尝试引进阿尔瓦雷斯时，他说：“我对我们现有的阵容非常满意，主要焦点是提升我们已有的球员，因为我们已经拥有很多好东西。”",
-        "加布里埃尔·马丁内利和加布里埃尔·热苏斯都未进入比赛日大名单，阿森纳试图出售这两位巴西国脚，任何引进阿尔瓦雷斯的行动都可能取决于他们的离队。但阿尔特塔对布鲁诺·吉马良斯即将从腹股沟伤势中复出感到乐观，这位7500万英镑的中场球员缺席了揭幕战。",
-        "“我们预计那不会持续数周，”他说。“让我们看看他本周的恢复情况。他甚至不想停下来，他想继续比赛。现在我们开始了解这名球员的性格，但我预计这不是大问题。”",
-        "考文垂在去年赢得英冠冠军后，自2001年以来首次参加英超比赛，他们表现挣扎，但兰帕德表示他为球队的反应感到骄傲，其中许多人首次在这个级别比赛。",
-        "“我们输掉了比赛，我们会吸取教训。每场比赛不会都像这样，”他说。“去年利兹联来这里0-5输球，但仍然留在英超，所以我不会过早下结论。我们还有调整要做，我们会去做的。”"
-      ],
-      "translationSourceHash": "cc2fd6b9e357173917a72f2d3b2fc844a343d9d2afdd278bfda37229f6b0a453",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-21T22:39:16.392Z"
     }
   ]
 }
