@@ -1,7 +1,7 @@
 {
   "teamId": "toronto-blue-jays",
   "teamName": "多伦多蓝鸟",
-  "updatedAt": "2026-08-30T21:27:31.329Z",
+  "updatedAt": "2026-08-30T23:44:49.540Z",
   "items": [
     {
       "id": "e46bbb7c893910fb6839049f39987ceb0bbcac7d00cbcbb536d89532d0db1e89",
@@ -36,7 +36,7 @@
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-30T21:27:31.329Z",
       "author": "Matt Betts",
-      "publishedAt": "2026-08-30T20:05:00.000Z",
+      "publishedAt": "2026-08-30T22:05:00.000Z",
       "url": "https://www.mlb.com/bluejays/news/max-scherzer-passes-gaylord-perry-on-all-time-strikeout-list",
       "source": "MLB.com"
     },
