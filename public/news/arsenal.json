@@ -1,12 +1,57 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-08-30T22:05:07.254Z",
+  "updatedAt": "2026-08-31T06:09:33.682Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "c624780ba7b0b2f3e09921da59bd98e8097097acd60fd5adfc6f2bb7c44d7464",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Happy Mondays? How we fare when kicking off the week",
+      "summaryEn": "Monday night football has been a staple of the Premier League for decades, but do we have a good record on the first day of the week?",
+      "bodyEn": [
+        "We're heading to the claret side of Birmingham to face Aston Villa - but will it be a happy Monday for our supporters, or a blue one?",
+        "While they were a staple of the early years of the Premier League, Monday night matches have been a rarer occurrence for us recently, as more European games have impacted our midweek schedule. In fact, we've played on Monday night just four times since the start of the 2022/23 campaign - but happily for us, we have won all four. y an aggregate scoreline of 11-1.",
+        "We defeated West Ham United 3-1 on Boxing Day 2022, before recording a 1-0 win at Crystal Palace in August 2023. In March 2024, we walloped Sheffield United 6-0, and in May, Kai Havertz's crucial goal clinched the Premier League title when we beat Burnley at Emirates Stadium.",
+        "In total, we have played 80 times on a Monday, recording 45 victories. Only Manchester United with 50 can better that total, while Sheffield Wednesday showed a penchant for starting the week with a win during their top-flight tenure between 1992 and 2000:",
+        "Best Premier League records on a Monday",
+        "However, on Monday matches that have kicked off under the lights after 6pm, we boast a slightly higher win ratio, creeping up to nearly 60%, with 37 victories from 62 occasions.",
+        "The team we have beaten in the Premier League most often on a Monday is Newcastle United, while Manchester City, Charlton Athletic, Crystal Palace and West Bromwich Albion have all started their week in the worst fashion by losing to us three times.",
+        "Ian Wright loved Mondays, netting a club-high 14 of his Premier League goals for us on that day, including a hat-trick against Sheffield Wednesday in September 1996. That is six more than Pierre-Emerick Aubameyang, who scored eight on the opening day of the week, while Thierry Henry's record-breaking total includes six league strikes on a Monday.",
+        "Three other players have scored trebles for us on a Monday, but none for 14 years. Kevin Campbell bagged three against Swindon Town on December 27, 1993, while Emmanuel Adebayor helped himself to a hat-trick against Derby County in March 2008. The last Gunner to start his week with a three-goal haul was Santi Cazorla against Reading in December 2012.",
+        "While it has been relatively successful in the Premier League era, when considering our entire history, Monday is just the fourth-most successful day of the week, with Thursday leading the way ahead of Sunday:",
+        "The biggest league win in our history was also recorded on a Monday, when we demolished Loughborough Town on March 12, 1900, while the 6-0 win at Sheffield United is our joint-best away win in the Premier League.",
+        "While they have become less frequent in our calendar, Monday night matches continue to bring out the best in us - and we'll be hoping that we can mark Mikel Arteta's 250th Premier League game as our boss by continuing the tradition at Villa Park."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/6c1e3dd6a9db-london-england-kai-havertz-celebrates-scoring-arsenals-goal-during-the-premier-l.webp",
+      "author": "Jonathon Rogers",
+      "publishedAt": "2026-08-31T05:00:00.000Z",
+      "url": "https://www.arsenal.com/news/happy-mondays-how-we-fare-when-kicking-off-the-week-axzZ16G1oFow",
+      "source": "Arsenal.com",
+      "titleZh": "快乐的星期一？我们如何开启每周首战",
+      "summaryZh": "周一晚场比赛是英超传统，我们在这天的战绩如何？",
+      "bodyZh": [
+        "我们将前往伯明翰的红酒色一侧，对阵阿斯顿维拉——但这对于我们的支持者来说会是快乐的星期一，还是忧郁的星期一？",
+        "虽然周一的比赛在英超早期是常客，但最近我们很少在周一晚上出战，因为更多的欧洲赛事影响了我们的周中赛程。事实上，自2022/23赛季开始以来，我们仅在周一晚上踢过四场比赛——但令我们高兴的是，这四场全部获胜，总比分为11-1。",
+        "2022年节礼日我们3-1击败西汉姆联，随后在2023年8月客场1-0战胜水晶宫。2024年3月，我们6-0大胜谢菲尔德联，5月，凯·哈弗茨的关键进球帮助我们在酋长球场战胜伯恩利，锁定英超冠军。",
+        "总体而言，我们已在周一进行了80场比赛，取得45场胜利。只有曼联（50场）比我们更多，而谢菲尔德星期三在1992年至2000年征战顶级联赛期间，也表现出偏爱在周一赢球的倾向：",
+        "周一最佳英超战绩",
+        "然而，在下午6点后灯光下开球的周一比赛中，我们的胜率略高，接近60%，62场比赛中取得37场胜利。",
+        "在英超联赛中，我们周一最常击败的对手是纽卡斯尔联，而曼城、查尔顿、水晶宫和西布朗都曾三次输给我们，以最糟糕的方式开启新的一周。",
+        "伊恩·赖特热爱星期一，他为我们打入的英超进球中有14球是在这天攻入的，是队史最高，其中包括1996年9月对阵谢菲尔德星期三的帽子戏法。这比皮埃尔-埃默里克·奥巴梅扬多6球，他在周一打入8球，而蒂埃里·亨利的破纪录总进球中包括6个周一联赛进球。",
+        "还有其他三名球员曾在周一为我们上演帽子戏法，但最近一次也是14年前了。凯文·坎贝尔在1993年12月27日对阵斯温登镇时打入三球，而埃马纽埃尔·阿德巴约在2008年3月对阵德比郡时上演帽子戏法。最近一位在周一单场打入三球的枪手是2012年12月对阵雷丁时的桑蒂·卡索拉。",
+        "虽然在英超时代相对成功，但纵观我们整个历史，周一只是每周战绩第四好的日子，周四领先，周日紧随其后：",
+        "我们历史上最大的联赛胜利也是在周一取得的，1900年3月12日我们大胜拉夫堡镇，而6-0战胜谢菲尔德联则是我们在英超中并列最佳客场胜利。",
+        "尽管周一比赛在我们的赛程中变得不那么频繁，但它们依然能激发出我们最好的状态——我们希望能在维拉公园延续这一传统，为米克尔·阿尔特塔执教球队的第250场英超比赛献上纪念。"
+      ],
+      "translationSourceHash": "1207fe11e946002559a743325a86b867823a9e12a960033236fddcd1fa0a4445",
+      "translationModel": "deepseek-v4-flash",
+      "translatedAt": "2026-08-31T06:09:33.682Z"
+    },
     {
       "id": "990f5a7a3aa6665980b04588da33450e6106fab78cd17eebf040fe815f73205a",
       "teamId": "arsenal",
@@ -630,39 +675,6 @@
       "translationSourceHash": "76dffbb69f97105abdf4768fac10aa9f8ae5f7b624b6aeb013d4a434f9ab69a8",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-29T11:02:30.965Z"
-    },
-    {
-      "id": "fec2af11dc762d79a4e74cf7be76c60c6f2e12aa2a7b12eefb0292c1760844b5",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Date confirmed for Ipswich Carabao Cup tie",
-      "summaryEn": "We will face the Tractor Boys in the third round of the competition next month",
-      "bodyEn": [
-        "We have been drawn against Ipswich Town in the third round of the Carabao Cup, with the tie to take place at Portman Road.",
-        "The game will take place on Tuesday, September 15, kicking off at 8pm and will be broadcast live in the UK on Sky Sports.",
-        "We will kick off our quest to win the competition for the third time in our history when we face the Premier League new boys in our first game of this season's tournament.",
-        "The Tractor Boys reached this stage by defeating Leicester City 3-1 in the second round, and this will be the first encounter between the teams since April 2025, when we won 4-0 at Portman Road in the Premier League. Gary O'Neil's side started the 2026/27 season by beating Sunderland 2-1 on home soil.",
-        "We reached the final last season before being pipped to the silverware by Manchester City at Wembley, missing out on having our name engraved on the trophy for a third time, with our two successes coming in 1987 and 1993.",
-        "Ticket information will be announced in due course."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/35c1b1fca44c-ipswich-england-general-views-outside-the-stadium-showing-the-ipswich-town-name.webp",
-      "author": "Jonathon Rogers",
-      "publishedAt": "2026-08-28T18:01:39.560Z",
-      "url": "https://www.arsenal.com/news/date-confirmed-for-ipswich-carabao-cup-tie-aXLFc8h89DM0",
-      "source": "Arsenal.com",
-      "titleZh": "阿森纳确认卡拉宝杯对阵伊普斯维奇日期",
-      "summaryZh": "我们下月第三轮将迎战拖拉机男孩。",
-      "bodyZh": [
-        "我们已在卡拉宝杯第三轮抽签中抽到伊普斯维奇镇，比赛将在波特曼路球场进行。",
-        "比赛将于9月15日星期二晚上8点进行，英国天空体育将现场直播。",
-        "我们将在本赛季该项赛事首场比赛中迎战英超新军，开启我队历史上第三次夺冠的征程。",
-        "拖拉机男孩在第二轮以3-1击败莱斯特城晋级，这将是两队自2025年4月以来首次交锋，当时我们在英超客场以4-0击败对手。加里·奥尼尔的球队在2026/27赛季揭幕战中以2-1主场击败桑德兰。",
-        "上赛季我们闯入决赛，但在温布利不敌曼城，遗憾错失第三次捧杯机会，我们曾在1987年和1993年两度夺冠。",
-        "球票信息将适时公布。"
-      ],
-      "translationSourceHash": "ab2935e916235b756f46815ace500cecd2c2dfb250637e8177103cb28c11035d",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-28T22:38:10.768Z"
     },
     {
       "id": "649ecbc8030f0e1b90d102b69e569063f214f67e9988e7f3a2f5f0b1a954e8bd",
