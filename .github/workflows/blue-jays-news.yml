@@ -7,6 +7,7 @@ on:
       - main
     paths:
       - ".github/workflows/blue-jays-news.yml"
+      - ".github/scripts/commit-and-push-with-rebase.sh"
       - "firebase/functions/**"
   schedule:
     - cron: "7,22,37,52 * * * *"
@@ -47,16 +48,7 @@ jobs:
 
       - name: Commit changed news data
         shell: bash
-        run: |
-          if git diff --quiet -- public/news/blue-jays.json; then
-            echo "No news changes to commit."
-            exit 0
-          fi
-          git config user.name "sports-calendar-news-bot"
-          git config user.email "sports-calendar-news-bot@users.noreply.github.com"
-          git add public/news/blue-jays.json
-          git commit -m "chore: update Blue Jays news"
-          git push
+        run: bash .github/scripts/commit-and-push-with-rebase.sh public/news/blue-jays.json "chore: update Blue Jays news"
 
       - name: Wait until the new article is readable from GitHub Raw
         run: npm run wait:published-news --prefix firebase/functions
@@ -69,13 +61,4 @@ jobs:
 
       - name: Commit notification queue state
         shell: bash
-        run: |
-          if git diff --quiet -- public/news/blue-jays.json; then
-            echo "No notification queue changes to commit."
-            exit 0
-          fi
-          git config user.name "sports-calendar-news-bot"
-          git config user.email "sports-calendar-news-bot@users.noreply.github.com"
-          git add public/news/blue-jays.json
-          git commit -m "chore: confirm Blue Jays notifications"
-          git push
+        run: bash .github/scripts/commit-and-push-with-rebase.sh public/news/blue-jays.json "chore: confirm Blue Jays notifications"

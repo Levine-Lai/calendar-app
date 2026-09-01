@@ -7,6 +7,7 @@ on:
       - main
     paths:
       - ".github/workflows/arsenal-news.yml"
+      - ".github/scripts/commit-and-push-with-rebase.sh"
       - "firebase/functions/arsenal-news-core.js"
       - "firebase/functions/update-arsenal-news.js"
       - "firebase/functions/translation-core.js"
@@ -48,13 +49,4 @@ jobs:
 
       - name: Commit changed Arsenal news data
         shell: bash
-        run: |
-          if git diff --quiet -- public/news/arsenal.json; then
-            echo "No Arsenal news changes to commit."
-            exit 0
-          fi
-          git config user.name "sports-calendar-news-bot"
-          git config user.email "sports-calendar-news-bot@users.noreply.github.com"
-          git add public/news/arsenal.json
-          git commit -m "chore: update Arsenal news"
-          git push
+        run: bash .github/scripts/commit-and-push-with-rebase.sh public/news/arsenal.json "chore: update Arsenal news"
