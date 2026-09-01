@@ -48,7 +48,10 @@ jobs:
 
       - name: Commit changed news data
         shell: bash
-        run: bash .github/scripts/commit-and-push-with-rebase.sh public/news/blue-jays.json "chore: update Blue Jays news"
+        run: >-
+          bash .github/scripts/commit-and-push-with-rebase.sh
+          public/news/blue-jays.json
+          "chore: update Blue Jays news"
 
       - name: Wait until the new article is readable from GitHub Raw
         run: npm run wait:published-news --prefix firebase/functions
@@ -61,4 +64,7 @@ jobs:
 
       - name: Commit notification queue state
         shell: bash
-        run: bash .github/scripts/commit-and-push-with-rebase.sh public/news/blue-jays.json "chore: confirm Blue Jays notifications"
+        run: >-
+          bash .github/scripts/commit-and-push-with-rebase.sh
+          public/news/blue-jays.json
+          "chore: confirm Blue Jays notifications"

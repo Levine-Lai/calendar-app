@@ -49,4 +49,7 @@ jobs:
 
       - name: Commit changed Arsenal news data
         shell: bash
-        run: bash .github/scripts/commit-and-push-with-rebase.sh public/news/arsenal.json "chore: update Arsenal news"
+        run: >-
+          bash .github/scripts/commit-and-push-with-rebase.sh
+          public/news/arsenal.json
+          "chore: update Arsenal news"
