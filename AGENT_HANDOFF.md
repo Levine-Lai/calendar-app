@@ -7,16 +7,16 @@
 
 ## 当前可交付状态
 
-- 当前源码准备版本：`2.3.5 / versionCode 47`；尚未打包发布，Cloudflare Worker 已部署，客户端 endpoint 已指向 Worker 且已通过真实请求验证。
+- 当前源码版本：`2.3.5 / versionCode 47`；已打包发布，Cloudflare Worker 已部署，客户端 endpoint 已指向 Worker 且已通过真实请求验证。
 - 本机最新 APK：`2.3.5 / versionCode 47`。
-- GitHub 最新已发布 APK：`2.3.4 / versionCode 46`。
+- GitHub 最新已发布 APK：`2.3.5 / versionCode 47`。
 - APK：`releases/sports-calendar-2.3.5-debug.apk`。
 - APK 大小：`8,190,719` 字节。
 - APK SHA-256：`C974A9393570EF3A85EA75AEEFA0A694C9D8250FA0535C47DA0DAF2046BB306A`。
 - 签名：APK Signature Scheme v2。
 - 签名证书 SHA-256：`7EF83E3EC40B7BF1E9AAF551589EE73C378FC26F29202255F0466BCAB759BED0`。
-- GitHub Release：`https://github.com/Levine-Lai/calendar-app/releases/tag/v2.3.4`。
-- App 内远程更新已启用：`public/version.json` 发布 `2.3.4 / versionCode 46`，下载地址为 GitHub Release 页面。
+- GitHub Release：`https://github.com/Levine-Lai/calendar-app/releases/tag/v2.3.5`。
+- App 内远程更新已启用：`public/version.json` 发布 `2.3.5 / versionCode 47`；2.3.5 使用 `apkDirectUrl` 启动系统 APK 下载，2.3.4 使用 `apkUrl` 打开精简资产列表。
 - GitHub 远程资产与本机 APK 大小、SHA-256 完全一致。
 
 ## 必须遵守

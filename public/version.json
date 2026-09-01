@@ -1,12 +1,14 @@
 {
-  "versionCode": 46,
-  "versionName": "2.3.4",
-  "apkUrl": "https://github.com/Levine-Lai/calendar-app/releases/tag/v2.3.4",
+  "versionCode": 47,
+  "versionName": "2.3.5",
+  "apkUrl": "https://github.com/Levine-Lai/calendar-app/releases/expanded_assets/v2.3.5",
+  "apkDirectUrl": "https://github.com/Levine-Lai/calendar-app/releases/download/v2.3.5/sports-calendar-2.3.5-debug.apk",
   "notes": [
-    "组件1手动刷新直接执行，不再只依赖可能被手机延迟的后台任务",
-    "多个比分源并行刷新，单个接口超时不会拖住整轮比分更新",
-    "保留周期刷新、赛中近实时跟进和北京时间今日默认显示",
-    "打开下载页优先跳转系统默认浏览器，未设置时显示浏览器选择器"
+    "更新按钮可在 App 内直接启动新版 APK 下载，不再跳到 GitHub Release 查找文件",
+    "联赛导入支持折叠，顶部浅紫色冻结，月份标题在窄屏保持单行",
+    "新增女足 WSL 与 Premier League 2（U21）赛程导入",
+    "桌面组件在北京时间午夜自动切换到新一天",
+    "新闻自动过滤图集、集锦、比赛回放和直播观看指南"
   ],
   "force": false
 }

@@ -2524,3 +2524,4 @@
 - 验证：Web 43 项测试、新闻后台 34 项测试、稳定性 37 项、Android JVM 测试与 Lint 全部通过；43 路体育 API 单轮真实检查全部成功，其中 WSL 球队列表返回 14 支，PL2 官网首分页返回 100 场并确认后续游标可用。Android Gradle 使用仅位于系统临时目录的 AF_UNIX 兼容补丁完成验证，补丁未进入项目或构建产物。
 - 应用内更新问题定位为 2.3.4 主动把 GitHub APK 直链重写成 Release 页面，同时远程清单也只提供 Release 页面。2.3.5 改为 Android `DownloadManager` 直接下载受白名单约束的本项目 GitHub APK，失败时再用浏览器打开同一直链；新清单将同时提供旧版可打开的 `expanded_assets` 兼容页和新版使用的 `apkDirectUrl`。
 - 固定签名 APK 已生成到 `releases/sports-calendar-2.3.5-debug.apk`，大小 `8,190,719` 字节，SHA-256 `C974A9393570EF3A85EA75AEEFA0A694C9D8250FA0535C47DA0DAF2046BB306A`；`aapt` 确认 `com.local.sportscalendar / versionCode 47 / versionName 2.3.5`，APK Signature Scheme v2 和历史证书 SHA-256 `7EF83E3EC40B7BF1E9AAF551589EE73C378FC26F29202255F0466BCAB759BED0` 均验证通过。
+- GitHub Release `v2.3.5` 已创建并上传同名 APK；远程更新清单发布 47/2.3.5，`apkUrl` 指向兼容旧版的精简资产列表，`apkDirectUrl` 指向准确的 APK 资产。发布后将再次下载远端资产核对 SHA-256，并检查 Raw GitHub 与 jsDelivr 两个清单入口。
