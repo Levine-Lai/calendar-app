@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>体育迷日历</title>
     <style>html,body{margin:0;min-height:100%;background:#fbf4ea;color:#16120f}</style>
-    <link rel="stylesheet" href="public/styles.css?v=2.3.4">
+    <link rel="stylesheet" href="public/styles.css?v=2.3.5">
   </head>
   <body>
     <main class="app-shell">
@@ -45,30 +45,35 @@
           <p class="custom-schedule-status" id="customScheduleStatus" role="status" aria-live="polite"></p>
         </section>
 
-        <section class="panel import-panel">
-          <div class="section-title">
-            <span>联赛导入</span>
+        <section class="panel import-panel" id="importPanel">
+          <div class="section-title import-section-title">
+            <button class="import-panel-toggle" id="importPanelToggle" type="button" aria-expanded="true" aria-controls="importPanelBody">
+              <span>联赛导入</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
             <button class="icon-button" id="refreshBtn" title="刷新赛程" aria-label="刷新赛程">
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a9 9 0 0 1-15.3 6.4M3 12A9 9 0 0 1 18.3 5.6"/><path d="M21 4v6h-6M3 20v-6h6"/></svg>
             </button>
           </div>
-          <div class="league-grid" id="leagueGrid"></div>
-          <div class="team-picker">
-            <label class="field">
-              <span>选择球队</span>
-              <input id="teamSearchInput" type="text" placeholder="搜索球队，例如 Lakers / Arsenal">
-            </label>
-            <div class="team-status" id="teamStatus">请选择联赛</div>
-            <div class="team-grid" id="teamGrid"></div>
+          <div class="import-panel-body" id="importPanelBody">
+            <div class="league-grid" id="leagueGrid"></div>
+            <div class="team-picker">
+              <label class="field">
+                <span>选择球队</span>
+                <input id="teamSearchInput" type="text" placeholder="搜索球队，例如 Lakers / Arsenal">
+              </label>
+              <div class="team-status" id="teamStatus">请选择联赛</div>
+              <div class="team-grid" id="teamGrid"></div>
+            </div>
+            <button class="primary-button" id="importLeagueBtn">导入该球队全部赛程</button>
+            <div class="status-line" id="statusLine" role="status"></div>
           </div>
-          <button class="primary-button" id="importLeagueBtn">导入该球队全部赛程</button>
-          <div class="status-line" id="statusLine" role="status"></div>
         </section>
 
         <section class="panel app-update-panel" aria-labelledby="appUpdateTitle">
           <div class="section-title">
             <span id="appUpdateTitle">应用更新</span>
-            <strong class="app-version" id="currentAppVersion">v2.3.4</strong>
+            <strong class="app-version" id="currentAppVersion">v2.3.5</strong>
           </div>
           <p class="app-update-status" id="appUpdateStatus" role="status" aria-live="polite">点击按钮检查是否有新版本</p>
           <ul class="app-update-notes" id="appUpdateNotes" hidden></ul>
@@ -79,7 +84,7 @@
             </button>
             <button class="primary-button app-update-button" id="downloadAppUpdateBtn" type="button" hidden>
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 5-5m-5 5-5-5M5 21h14"/></svg>
-              <span>打开下载页</span>
+              <span>直接下载 APK</span>
             </button>
           </div>
         </section>
@@ -255,15 +260,15 @@
       </section>
     </div>
 
-    <script src="public/calendar-core.js?v=2.3.4"></script>
-    <script src="public/calendar-storage.js?v=2.3.4"></script>
-    <script src="public/calendar-image-cache.js?v=2.3.4"></script>
-    <script src="public/custom-schedule-core.js?v=2.3.4"></script>
-    <script src="public/custom-schedule-agent-config.js?v=2.3.4"></script>
-    <script src="public/update-config.js?v=2.3.4"></script>
-    <script src="public/app-update.js?v=2.3.4"></script>
-    <script src="public/team-news-config.js?v=2.3.4"></script>
-    <script src="public/team-news-core.js?v=2.3.4"></script>
-    <script src="public/app.js?v=2.3.4"></script>
+    <script src="public/calendar-core.js?v=2.3.5"></script>
+    <script src="public/calendar-storage.js?v=2.3.5"></script>
+    <script src="public/calendar-image-cache.js?v=2.3.5"></script>
+    <script src="public/custom-schedule-core.js?v=2.3.5"></script>
+    <script src="public/custom-schedule-agent-config.js?v=2.3.5"></script>
+    <script src="public/update-config.js?v=2.3.5"></script>
+    <script src="public/app-update.js?v=2.3.5"></script>
+    <script src="public/team-news-config.js?v=2.3.5"></script>
+    <script src="public/team-news-core.js?v=2.3.5"></script>
+    <script src="public/app.js?v=2.3.5"></script>
   </body>
 </html>

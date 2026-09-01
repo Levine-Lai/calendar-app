@@ -14,6 +14,13 @@ test("team news accepts only HTTPS MLB article links", () => {
   );
 });
 
+test("team news hides galleries, replay cards and live viewing guides", () => {
+  assert.equal(TeamNews.isArticleLikeNews({ titleEn: "Gallery: 38 shots", url: "https://www.arsenal.com/news/gallery" }), false);
+  assert.equal(TeamNews.isArticleLikeNews({ titleEn: "Watch a full match replay from Villa Park", url: "https://www.arsenal.com/news/replay" }), false);
+  assert.equal(TeamNews.isArticleLikeNews({ titleEn: "How to watch Arsenal v Villa live on TV", url: "https://www.arsenal.com/news/watch" }), false);
+  assert.equal(TeamNews.isArticleLikeNews({ titleEn: "Arteta proud of squad after win", url: "https://www.arsenal.com/news/report" }), true);
+});
+
 test("team news accepts only official MLB article images", () => {
   assert.equal(TeamNews.normalizeMlbImageUrl("https://example.com/image.jpg"), "");
   assert.equal(
@@ -49,10 +56,12 @@ test("bundled Arsenal framework contains readable official stories", () => {
   assert.ok(payload.items.length >= 3);
   assert.ok(payload.items.some((item) => item.source === "Arsenal.com"));
   assert.ok(payload.items.every((item) => ["Arsenal.com", "The Guardian"].includes(item.source)));
-  assert.ok(payload.items.every((item) => item.bodyEn.length && item.bodyZh.length));
+  assert.ok(payload.items.every((item) => item.bodyEn.length));
+  assert.ok(payload.items.every((item) => TeamNews.localizeNewsItem(item, "zh").body.length));
   assert.ok(payload.items.some((item) => item.source === "Arsenal.com" && item.bodyEn.length >= 8));
   assert.ok(payload.items
     .filter((item) => item.source === "Arsenal.com")
+    .filter((item) => item.bodyZh.length)
     .every((item) => item.bodyEn.length === item.bodyZh.length));
 });
 

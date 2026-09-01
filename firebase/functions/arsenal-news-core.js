@@ -1,6 +1,7 @@
 const { XMLParser } = require("fast-xml-parser");
 const { load } = require("cheerio");
 const {
+  isArticleLikeNews,
   normalizeArticleParagraphs,
   stableNewsId
 } = require("./news-core");
@@ -188,7 +189,7 @@ function parseOfficialArticle(html, sitemapEntry = {}) {
   const summaryEn = boundedText(schema.description || $("meta[name='description']").attr("content"), 900);
   const publishedAt = normalizeIsoDate(schema.datePublished || sitemapEntry.modifiedAt);
   const imageUrl = normalizeArsenalImageUrl(firstSchemaImage(schema) || $("meta[property='og:image']").attr("content"));
-  if (!url || !titleEn || !publishedAt || !imageUrl) return null;
+  if (!url || !titleEn || !publishedAt || !imageUrl || !isArticleLikeNews({ titleEn, url })) return null;
   const articleParagraphs = extractOfficialArticleParagraphs($);
   return {
     id: stableNewsId(url),
@@ -232,7 +233,7 @@ function parseGuardianFeed(xml) {
     const summaryEn = stripHtml(textValue(raw?.description) || textValue(raw?.["content:encoded"]));
     const publishedAt = normalizeIsoDate(textValue(raw?.pubDate) || textValue(raw?.["dc:date"]));
     const imageUrl = guardianMediaUrl(raw);
-    if (!url || !titleEn || !publishedAt || !imageUrl || seen.has(url)) return;
+    if (!url || !titleEn || !publishedAt || !imageUrl || !isArticleLikeNews({ titleEn, url }) || seen.has(url)) return;
     seen.add(url);
     items.push({
       id: stableNewsId(url),
@@ -298,7 +299,7 @@ function normalizeStoredItem(item) {
     : normalizeArsenalImageUrl(item.imageUrl);
   const publishedAt = normalizeIsoDate(item.publishedAt);
   const titleEn = boundedText(item.titleEn, 240);
-  if (!url || !imageUrl || !publishedAt || !titleEn) return null;
+  if (!url || !imageUrl || !publishedAt || !titleEn || !isArticleLikeNews({ titleEn, url })) return null;
   return {
     ...item,
     id: stableNewsId(url),

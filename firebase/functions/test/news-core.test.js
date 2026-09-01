@@ -5,6 +5,7 @@ const {
   NEWS_TOPIC,
   normalizeMlbUrl,
   normalizeMlbImageUrl,
+  isArticleLikeNews,
   toMlbAmpUrl,
   extractMlbArticleParagraphs,
   extractMlbArticleImage,
@@ -31,6 +32,12 @@ test("Blue Jays feed produces bounded MLB news", () => {
   assert.equal(items[0].titleEn, "Jays add a reliever");
   assert.equal(items[0].summaryEn, "Toronto strengthened its bullpen.");
   assert.match(items[0].id, /^[a-f0-9]{64}$/);
+});
+
+test("media-only and live viewing cards are not treated as articles", () => {
+  assert.equal(isArticleLikeNews({ titleEn: "Gallery: 38 shots from away day one", url: "https://www.mlb.com/news/story" }), false);
+  assert.equal(isArticleLikeNews({ titleEn: "Watch Blue Jays prospects play at Single-A in FREE Sunday matinee", url: "https://www.mlb.com/news/watch" }), false);
+  assert.equal(isArticleLikeNews({ titleEn: "Blue Jays deliver gritty comeback win", url: "https://www.mlb.com/news/report" }), true);
 });
 
 test("only HTTPS MLB article links are accepted", () => {

@@ -81,6 +81,20 @@ test("official Arsenal article parser requires free structured metadata", () => 
   assert.deepEqual(item.bodyEn, ["The complete first paragraph.", "The complete second paragraph."]);
 });
 
+test("official Arsenal media cards are filtered before publishing", () => {
+  const base = {
+    "@type": "NewsArticle",
+    description: "Media card.",
+    datePublished: "2026-08-10T08:00:00Z",
+    image: ["https://assets.arsenal.com/prod/images/xl_landscape/story.webp"],
+    isAccessibleForFree: true
+  };
+  for (const headline of ["Gallery: 38 shots from away day one", "Highlights: Arsenal 1-0 Villa", "How to watch Arsenal v Villa live on TV"]) {
+    const item = parseOfficialArticle(`<link rel="canonical" href="https://www.arsenal.com/news/media-a123"><script type="application/ld+json">${JSON.stringify({ ...base, headline })}</script>`);
+    assert.equal(item, null);
+  }
+});
+
 test("Guardian article parser replaces the RSS excerpt with complete body paragraphs", () => {
   const feedItem = {
     ...guardianItem,

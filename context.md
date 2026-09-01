@@ -2511,3 +2511,16 @@
 - 手动刷新改为 `BroadcastReceiver.goAsync()` 内直接执行有界比分刷新，失败时再交给加急 WorkManager；周期任务失败不再永久终止。ESPN、TheSportsDB、CFL China、中国足协五组刷新并行，整轮等待上限 8 秒，单次比分请求使用 3 秒连接、4 秒读取、两次尝试。
 - 下载页改用 `CATEGORY_APP_BROWSER` 找到默认浏览器，再在实际 HTTPS 候选中锁定具体 Activity；找不到默认浏览器时显示系统浏览器选择器，避免 WebView、GitHub 客户端或安装器继续接管。
 - 版本提升为 `2.3.4 / versionCode 46`。Web 42 项测试、稳定性 37 项、Android JVM 测试和 Lint 已通过；固定证书 APK `releases/sports-calendar-2.3.4-debug.apk` 大小 `8,182,375` 字节，SHA-256 `C942749DAA943EB1E9B03A1F1B69B1D7DAD535218D3B72DB59C4908BE37996FC`，v2 签名及历史证书 SHA-256 `7EF83E3EC40B7BF1E9AAF551589EE73C378FC26F29202255F0466BCAB759BED0` 验证通过。GitHub Release 与远程更新清单均发布 2.3.4。
+
+## 2026-09-01
+
+### 开发批次：2.3.5 冻结顶部、午夜切日、新增 WSL/PL2 与新闻过滤
+
+- 联赛导入标题可点击折叠并持久化状态；日历顶部改为浅紫色 sticky 区域，月份标题禁止换行并针对窄屏缩放，滚动后左上角菜单仍可操作。
+- 新增女足 WSL（ESPN `eng.w.1`）和 Premier League 2（U21）版块；PL2 使用 PremierLeague.com 当前接口 competition `898`，按 `_next` 游标读取完整赛季，并使用官方球队徽章。
+- 组件1新增北京时间次日 00:00:05 的 WorkManager 切日任务，统一把各组件日期归零到今天、先本地重绘，再触发联网刷新并续排下一次午夜任务。
+- MLB 与阿森纳新闻在后台采集、Web payload 读取和 Android 新闻组件三层过滤图集、纯集锦、完整回放和直播观看指南，旧的静态缓存也不会再显示这些非文章卡片。
+- 源码提升为 `2.3.5 / versionCode 47`，远程更新清单仍为已发布的 2.3.4。本轮未生成 APK。
+- 验证：Web 43 项测试、新闻后台 34 项测试、稳定性 37 项、Android JVM 测试与 Lint 全部通过；43 路体育 API 单轮真实检查全部成功，其中 WSL 球队列表返回 14 支，PL2 官网首分页返回 100 场并确认后续游标可用。Android Gradle 使用仅位于系统临时目录的 AF_UNIX 兼容补丁完成验证，补丁未进入项目或构建产物。
+- 应用内更新问题定位为 2.3.4 主动把 GitHub APK 直链重写成 Release 页面，同时远程清单也只提供 Release 页面。2.3.5 改为 Android `DownloadManager` 直接下载受白名单约束的本项目 GitHub APK，失败时再用浏览器打开同一直链；新清单将同时提供旧版可打开的 `expanded_assets` 兼容页和新版使用的 `apkDirectUrl`。
+- 固定签名 APK 已生成到 `releases/sports-calendar-2.3.5-debug.apk`，大小 `8,190,719` 字节，SHA-256 `C974A9393570EF3A85EA75AEEFA0A694C9D8250FA0535C47DA0DAF2046BB306A`；`aapt` 确认 `com.local.sportscalendar / versionCode 47 / versionName 2.3.5`，APK Signature Scheme v2 和历史证书 SHA-256 `7EF83E3EC40B7BF1E9AAF551589EE73C378FC26F29202255F0466BCAB759BED0` 均验证通过。

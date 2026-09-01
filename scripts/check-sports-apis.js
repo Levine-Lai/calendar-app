@@ -8,6 +8,7 @@ const espnLeagues = [
   ["NBA", "basketball", "nba"],
   ["NFL", "football", "nfl"],
   ["英超", "soccer", "eng.1"],
+  ["女足 WSL", "soccer", "eng.w.1"],
   ["西甲", "soccer", "esp.1"],
   ["意甲", "soccer", "ita.1"],
   ["德甲", "soccer", "ger.1"],
@@ -137,6 +138,21 @@ function buildProbes() {
       ));
     }
   });
+
+  const premierLeagueSeason = espnSeason("PL2（U21）", "soccer");
+  probes.push(jsonProbe(
+    "PL2（U21）",
+    "PremierLeague.com",
+    "official-schedule",
+    `https://sdp-prem-prod.premier-league-prod.pulselive.com/api/v2/matches?competition=898&season=${premierLeagueSeason}&_limit=1000&_sort=kickoff:asc`,
+    (payload) => {
+      if (!Array.isArray(payload.data)) throw new Error("missing data[]");
+      if (payload.data.some((item) => !item?.matchId || !item?.homeTeam?.id || !item?.awayTeam?.id)) {
+        throw new Error("invalid PL2 match");
+      }
+      return payload.data.length;
+    }
+  ));
 
   [
     ["NBA", "basketball", "nba", "13"],

@@ -1,6 +1,7 @@
 package com.local.sportscalendar;
 
 import android.Manifest;
+import android.app.DownloadManager;
 import android.content.Context;
 import android.content.ComponentName;
 import android.content.Intent;
@@ -28,6 +29,7 @@ import com.google.firebase.messaging.FirebaseMessaging;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.net.URI;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.HashSet;
@@ -164,6 +166,54 @@ public class SportsWidgetPlugin extends Plugin {
                 call.reject("组件数据保存失败", error);
             }
         });
+    }
+
+    @PluginMethod
+    public void downloadUpdate(PluginCall call) {
+        Uri uri = safeUpdateDownloadUri(call.getString("url", ""));
+        if (uri == null) {
+            call.reject("新版 APK 下载地址无效");
+            return;
+        }
+        try {
+            DownloadManager.Request request = new DownloadManager.Request(uri)
+                .setTitle("观赛日记新版安装包")
+                .setDescription("下载完成后点击通知进行安装")
+                .setMimeType("application/vnd.android.package-archive")
+                .setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
+                .setAllowedOverMetered(true)
+                .setAllowedOverRoaming(false);
+            DownloadManager manager = (DownloadManager) getContext().getSystemService(Context.DOWNLOAD_SERVICE);
+            if (manager == null) {
+                call.reject("系统下载服务不可用");
+                return;
+            }
+            long downloadId = manager.enqueue(request);
+            JSObject result = new JSObject();
+            result.put("downloadId", downloadId);
+            call.resolve(result);
+        } catch (RuntimeException error) {
+            call.reject("无法启动 APK 下载", error);
+        }
+    }
+
+    static Uri safeUpdateDownloadUri(String rawUrl) {
+        return isSafeUpdateDownloadUrl(rawUrl) ? Uri.parse(rawUrl) : null;
+    }
+
+    static boolean isSafeUpdateDownloadUrl(String rawUrl) {
+        try {
+            URI uri = URI.create(String.valueOf(rawUrl));
+            String host = uri.getHost();
+            String path = uri.getPath();
+            return "https".equalsIgnoreCase(uri.getScheme())
+                && host != null && "github.com".equalsIgnoreCase(host)
+                && path != null
+                && path.matches("(?i)^/Levine-Lai/calendar-app/releases/download/[^/]+/[^/]+\\.apk$")
+                && !path.contains("..");
+        } catch (RuntimeException error) {
+            return false;
+        }
     }
 
     @PluginMethod

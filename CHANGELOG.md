@@ -4,11 +4,20 @@
 
 ## 当前版本状态
 
-- 本机最新已生成 APK：`2.3.4 / versionCode 46`
-- 当前源码版本：`2.3.4 / versionCode 46`
-- APK 文件：`releases/sports-calendar-2.3.4-debug.apk`
+- 本机最新已生成 APK：`2.3.5 / versionCode 47`
+- 当前源码版本：`2.3.5 / versionCode 47`（待打包）
+- APK 文件：`releases/sports-calendar-2.3.5-debug.apk`
 - GitHub Release：`https://github.com/Levine-Lai/calendar-app/releases/tag/v2.3.4`
 - App 内检查更新清单指向 `2.3.4` 的 GitHub Release 页面。
+
+## 2.3.5（已生成 APK，待发布）
+
+- 联赛导入区域支持点击标题折叠并记住状态；主页顶部冻结为浅紫色，月份标题在窄屏保持单行，滚动时左上角菜单按钮始终可用。
+- 新增女足 WSL 与 Premier League 2（U21）导入；WSL 使用 ESPN 赛程，PL2 使用英超官网 competition 898 的当前赛季数据。
+- 桌面组件1在北京时间午夜后自动回到“今天”、立即重绘并刷新新一天赛程，同时保留 15 分钟与临场快速比分刷新。
+- 新闻采集、App 缓存读取和桌面新闻组件统一过滤图集、比赛回放、纯集锦及直播观看指南等非文章内容。
+- 修复应用内更新被主动改写到 GitHub Release 页的问题；新版直接交给 Android 系统下载服务下载 APK，系统下载不可用时才回退到浏览器直链。远程清单同时保留旧版可识别的精简资产列表页，2.3.4 用户无需在完整 Release 页面中寻找文件。
+- 源码版本提升为 `2.3.5 / versionCode 47`；固定签名 APK 大小 `8,190,719` 字节，SHA-256 `C974A9393570EF3A85EA75AEEFA0A694C9D8250FA0535C47DA0DAF2046BB306A`，包名、v2 签名及历史证书指纹均已验证。远程更新清单在 Release 上传完成前继续发布 `2.3.4`。
 
 ## 2.3.4（已发布）
 

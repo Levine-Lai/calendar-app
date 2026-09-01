@@ -141,6 +141,23 @@ const leagues = [
     logo: "public/assets/leagues/epl.png"
   },
   {
+    id: "wsl",
+    name: "女足 WSL",
+    sport: "soccer",
+    league: "eng.w.1",
+    color: "#ead1f4",
+    logo: "public/assets/leagues/epl.png"
+  },
+  {
+    id: "premier-league-2",
+    name: "PL2（U21）",
+    sport: "soccer",
+    source: "premierleague",
+    providerLeagueId: "898",
+    color: "#d7caf4",
+    logo: "public/assets/leagues/epl.png"
+  },
+  {
     id: "laliga",
     name: "西甲",
     sport: "soccer",
@@ -286,6 +303,9 @@ const dayEventDeleteState = {
 const dayEventDeleteDoubleTapWindowMs = 420;
 
 const elements = {
+  importPanel: document.querySelector("#importPanel"),
+  importPanelToggle: document.querySelector("#importPanelToggle"),
+  importPanelBody: document.querySelector("#importPanelBody"),
   leagueGrid: document.querySelector("#leagueGrid"),
   teamGrid: document.querySelector("#teamGrid"),
   teamStatus: document.querySelector("#teamStatus"),
@@ -361,6 +381,7 @@ init().catch((error) => setStatus(`启动失败：${error.message}`, true));
 async function init() {
   initializeAppUpdate();
   initializeTeamNews();
+  restoreImportPanelState();
   await load();
   bindImageFallbacks();
   bindEvents();
@@ -389,6 +410,7 @@ function bindImageFallbacks() {
 }
 
 function bindEvents() {
+  elements.importPanelToggle.addEventListener("click", toggleImportPanel);
   elements.menuToggle.addEventListener("click", openSidebar);
   elements.sidebarClose.addEventListener("click", closeSidebar);
   elements.sidebarOverlay.addEventListener("click", closeSidebar);
@@ -515,6 +537,28 @@ function bindEvents() {
   bindSidebarGestures();
 }
 
+function toggleImportPanel() {
+  const collapsed = !elements.importPanelBody.hidden;
+  elements.importPanelBody.hidden = collapsed;
+  elements.importPanelToggle.setAttribute("aria-expanded", String(!collapsed));
+  try {
+    localStorage.setItem("sports-calendar-import-panel-collapsed", collapsed ? "1" : "0");
+  } catch {
+    // The current session can still use the control when storage is unavailable.
+  }
+}
+
+function restoreImportPanelState() {
+  let collapsed = false;
+  try {
+    collapsed = localStorage.getItem("sports-calendar-import-panel-collapsed") === "1";
+  } catch {
+    // Use the expanded default when storage is unavailable.
+  }
+  elements.importPanelBody.hidden = collapsed;
+  elements.importPanelToggle.setAttribute("aria-expanded", String(!collapsed));
+}
+
 let appUpdateDownloadUrl = "";
 
 function initializeAppUpdate() {
@@ -545,7 +589,7 @@ async function checkForAppUpdate() {
 
     setAppUpdateStatus(`发现新版本 v${manifest.versionName}`);
     renderAppUpdateNotes(manifest.notes);
-    appUpdateDownloadUrl = manifest.apkUrl;
+    appUpdateDownloadUrl = manifest.apkDirectUrl || manifest.apkUrl;
     if (appUpdateDownloadUrl) {
       elements.downloadAppUpdateBtn.hidden = false;
     } else {
@@ -576,7 +620,7 @@ function setAppUpdateStatus(message, isError = false) {
 }
 
 async function openAppUpdateDownload() {
-  const url = AppUpdate?.toDownloadPageUrl(appUpdateDownloadUrl);
+  const url = AppUpdate?.toDownloadUrl(appUpdateDownloadUrl);
   if (!url) {
     setAppUpdateStatus("新版下载地址无效", true);
     return;
@@ -584,6 +628,15 @@ async function openAppUpdateDownload() {
 
   try {
     const plugin = window.Capacitor?.Plugins?.SportsWidget;
+    if (plugin?.downloadUpdate && /\.apk(?:$|[?#])/i.test(url)) {
+      try {
+        await plugin.downloadUpdate({ url });
+        setAppUpdateStatus("已开始下载新版 APK，请查看系统下载通知");
+        return;
+      } catch (error) {
+        console.warn(`系统下载服务启动失败，改用浏览器：${error.message || "未知错误"}`);
+      }
+    }
     if (plugin?.openExternalUrl) {
       await plugin.openExternalUrl({ url });
       return;
@@ -1537,7 +1590,136 @@ async function fetchLeagueSchedule(leagueConfig, start, end, options = {}) {
   if (leagueConfig.source === "cfa") {
     return fetchCfaSchedule(leagueConfig, start, end, options);
   }
+  if (leagueConfig.source === "premierleague") {
+    return fetchPremierLeagueSchedule(leagueConfig, start, end, options);
+  }
   return fetchEspnSchedule(leagueConfig, start, end, options);
+}
+
+async function fetchPremierLeagueSchedule(leagueConfig, start, end, options = {}) {
+  const season = getEspnSeasonYear(leagueConfig);
+  const cacheKey = `${leagueConfig.id}:official:${season}`;
+  const cached = cache.get(cacheKey);
+  let events = cached?.data || [];
+  if (options.force || !cached || Date.now() - cached.time >= 5 * 60 * 1000) {
+    const endpoint = new URL("https://sdp-prem-prod.premier-league-prod.pulselive.com/api/v2/matches");
+    endpoint.searchParams.set("competition", leagueConfig.providerLeagueId);
+    endpoint.searchParams.set("season", String(season));
+    endpoint.searchParams.set("_limit", "100");
+    endpoint.searchParams.set("_sort", "kickoff:asc");
+    const providerEvents = [];
+    let nextCursor = "";
+    for (let page = 0; page < 6; page += 1) {
+      if (nextCursor) endpoint.searchParams.set("_next", nextCursor);
+      const payload = await fetchJsonWithRetry(endpoint.toString(), `${leagueConfig.name} 官网赛程`, 2, 15000);
+      providerEvents.push(...requireArray(payload.data, `${leagueConfig.name} 官网赛程 data`));
+      nextCursor = String(payload.pagination?._next || "");
+      if (!nextCursor) break;
+    }
+    events = providerEvents
+      .map((event) => normalizePremierLeagueEvent(event, leagueConfig, season))
+      .filter(Boolean)
+      .sort(sortByStart);
+    cache.set(cacheKey, { time: Date.now(), data: events });
+  }
+  const first = startOfDay(start).getTime();
+  const afterLast = addDays(startOfDay(end), 1).getTime();
+  return {
+    events: events.filter((event) => {
+      const time = Date.parse(event.start);
+      return time >= first && time < afterLast;
+    }),
+    errors: []
+  };
+}
+
+function normalizePremierLeagueEvent(event, leagueConfig, season) {
+  const home = normalizePremierLeagueTeam(event?.homeTeam, leagueConfig);
+  const away = normalizePremierLeagueTeam(event?.awayTeam, leagueConfig);
+  if (!event?.matchId || !home || !away || !event.kickoff) return null;
+  const start = zonedDateTimeToIso(event.kickoff, event.kickoffTimezoneString || "Europe/London");
+  if (!start) return null;
+  const period = String(event.period || "PreMatch");
+  const completed = period === "FullTime";
+  const live = !completed && !["PreMatch", "Postponed", "Abandoned", "Cancelled"].includes(period);
+  const status = period === "PreMatch" ? "未开始"
+    : completed ? "已结束"
+      : period === "Postponed" ? "延期"
+        : period === "Cancelled" ? "取消"
+          : live ? (event.clock ? `${event.clock}'` : "进行中") : period;
+  return {
+    id: `${leagueConfig.id}-${event.matchId}`,
+    sourceId: String(event.matchId),
+    dataSource: "premierleague",
+    providerLeagueId: leagueConfig.providerLeagueId,
+    providerYear: String(season),
+    providerDate: String(event.kickoff).slice(0, 10),
+    league: leagueConfig.id,
+    leagueName: leagueConfig.name,
+    leagueColor: leagueConfig.color,
+    leagueTeamIds: [home.id, away.id],
+    teamMeta: [home, away],
+    title: `${away.name} @ ${home.name}`,
+    shortTitle: `${away.shortName} @ ${home.shortName}`,
+    start,
+    venue: String(event.ground || ""),
+    city: "",
+    status,
+    statusState: completed ? "post" : (live ? "in" : "pre"),
+    completed,
+    homeScore: cleanScoreValue(event.homeTeam?.score),
+    awayScore: cleanScoreValue(event.awayTeam?.score),
+    homeTeam: home.name,
+    awayTeam: away.name,
+    teams: [home.name, away.name, home.abbreviation, away.abbreviation].filter(Boolean),
+    homeLogo: home.logo,
+    awayLogo: away.logo,
+    homeColor: leagueConfig.color,
+    awayColor: leagueConfig.color,
+    broadcast: "",
+    url: `https://www.premierleague.com/en/match/${event.matchId}`,
+    scoreUpdatedAt: new Date().toISOString(),
+    importedAt: new Date().toISOString()
+  };
+}
+
+function normalizePremierLeagueTeam(team, leagueConfig) {
+  const id = String(team?.id || "");
+  const name = String(team?.name || team?.shortName || "").trim();
+  if (!id || !name) return null;
+  return normalizeProviderTeam({
+    id,
+    name,
+    abbreviation: String(team.abbr || ""),
+    logo: `https://resources.premierleague.com/premierleague/badges/100/t${id}.png`
+  }, leagueConfig);
+}
+
+function zonedDateTimeToIso(value, timeZone) {
+  const match = String(value || "").match(/^(\d{4})-(\d{2})-(\d{2})[ T](\d{2}):(\d{2}):(\d{2})$/);
+  if (!match) return "";
+  const parts = match.slice(1).map(Number);
+  const asUtc = Date.UTC(parts[0], parts[1] - 1, parts[2], parts[3], parts[4], parts[5]);
+  try {
+    const formatted = new Intl.DateTimeFormat("en-CA", {
+      timeZone,
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+      hour: "2-digit",
+      minute: "2-digit",
+      second: "2-digit",
+      hourCycle: "h23"
+    }).formatToParts(new Date(asUtc));
+    const byType = Object.fromEntries(formatted.map((part) => [part.type, part.value]));
+    const represented = Date.UTC(
+      Number(byType.year), Number(byType.month) - 1, Number(byType.day),
+      Number(byType.hour), Number(byType.minute), Number(byType.second)
+    );
+    return new Date(asUtc - (represented - asUtc)).toISOString();
+  } catch {
+    return "";
+  }
 }
 
 async function fetchFullTeamSchedule(leagueConfig, team, options = {}) {
@@ -2938,6 +3120,7 @@ function getLeagueSeasonKey(leagueConfig, now = new Date()) {
   if (leagueConfig.source === "cfl") return `${leagueConfig.cflCompetitionCode || leagueConfig.id}:${now.getFullYear()}`;
   if (leagueConfig.source === "thesportsdb") return getProviderSeason(leagueConfig, now);
   if (leagueConfig.source === "cfa") return String(now.getFullYear());
+  if (leagueConfig.source === "premierleague") return `${leagueConfig.providerLeagueId}:${getEspnSeasonYear(leagueConfig, now)}`;
   return String(getEspnSeasonYear(leagueConfig, now));
 }
 

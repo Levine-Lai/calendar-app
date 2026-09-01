@@ -66,6 +66,7 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
     static final String ACTION_NEXT_DAY = "com.local.sportscalendar.action.NEXT_DAY_WIDGET";
     private static final String PERIODIC_WORK_NAME = "sports-widget-live-refresh";
     private static final String IMMEDIATE_WORK_NAME = "sports-widget-refresh-now";
+    private static final String DAY_ROLLOVER_WORK_NAME = "sports-widget-day-rollover";
     private static final String LIVE_FOLLOW_UP_WORK_PREFIX = "sports-widget-live-follow-up-";
     private static final long LIVE_FOLLOW_UP_INTERVAL_MS = TimeUnit.MINUTES.toMillis(2);
     private static final int SCORE_DEFAULT_COLOR = 0xFF16120F;
@@ -80,14 +81,17 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
         Context appContext = context.getApplicationContext();
         migrateDefaultDaySelection(appContext, appWidgetIds);
         schedulePeriodicRefresh(appContext);
+        scheduleDayRollover(appContext);
         renderLocalWidgets(appContext, appWidgetManager, appWidgetIds);
         enqueueImmediateRefresh(appContext);
     }
 
     @Override
     public void onEnabled(Context context) {
-        schedulePeriodicRefresh(context.getApplicationContext());
-        refreshAll(context.getApplicationContext());
+        Context appContext = context.getApplicationContext();
+        schedulePeriodicRefresh(appContext);
+        scheduleDayRollover(appContext);
+        refreshAll(appContext);
     }
 
     @Override
@@ -227,6 +231,43 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
         );
     }
 
+    static void scheduleDayRollover(Context context) {
+        long delay = millisUntilNextBeijingDay(System.currentTimeMillis());
+        OneTimeWorkRequest request = new OneTimeWorkRequest.Builder(WidgetDayRolloverWorker.class)
+            .setInitialDelay(delay, TimeUnit.MILLISECONDS)
+            .build();
+        WorkManager.getInstance(context).enqueueUniqueWork(
+            DAY_ROLLOVER_WORK_NAME,
+            ExistingWorkPolicy.REPLACE,
+            request
+        );
+    }
+
+    static long millisUntilNextBeijingDay(long nowMillis) {
+        Calendar next = Calendar.getInstance(BEIJING_TIME, Locale.CHINA);
+        next.setTimeInMillis(nowMillis);
+        next.add(Calendar.DATE, 1);
+        next.set(Calendar.HOUR_OF_DAY, 0);
+        next.set(Calendar.MINUTE, 0);
+        next.set(Calendar.SECOND, 5);
+        next.set(Calendar.MILLISECOND, 0);
+        return Math.max(1_000L, next.getTimeInMillis() - nowMillis);
+    }
+
+    static void rollOverToToday(Context context) {
+        Context appContext = context.getApplicationContext();
+        AppWidgetManager manager = AppWidgetManager.getInstance(appContext);
+        int[] ids = manager.getAppWidgetIds(new ComponentName(appContext, MlbTodayWidgetProvider.class));
+        android.content.SharedPreferences.Editor editor = appContext
+            .getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
+            .edit();
+        for (int appWidgetId : ids) editor.putInt(selectedDayOffsetKey(appWidgetId), 0);
+        editor.apply();
+        renderLocalWidgets(appContext, manager, ids);
+        scheduleDayRollover(appContext);
+        enqueueImmediateRefresh(appContext, ExistingWorkPolicy.REPLACE);
+    }
+
     static void scheduleLiveFollowUpIfNeeded(Context context) {
         if (!hasGameInLiveRefreshWindow(context)) return;
         long now = System.currentTimeMillis();
@@ -270,8 +311,9 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
             .getAppWidgetIds(new ComponentName(context, MlbTodayWidgetProvider.class))
             .length;
         if (componentOneCount == 0) {
-            WorkManager.getInstance(context)
-                .cancelUniqueWork(PERIODIC_WORK_NAME);
+            WorkManager workManager = WorkManager.getInstance(context);
+            workManager.cancelUniqueWork(PERIODIC_WORK_NAME);
+            workManager.cancelUniqueWork(DAY_ROLLOVER_WORK_NAME);
         }
     }
 

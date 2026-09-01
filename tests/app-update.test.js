@@ -17,16 +17,28 @@ test("manifest accepts only HTTPS download links and bounded notes", () => {
     notes: ["修复一", "", "修复二"]
   });
   assert.equal(manifest.apkUrl, "");
+  assert.equal(manifest.apkDirectUrl, "");
   assert.deepEqual(manifest.notes, ["修复一", "修复二"]);
 });
 
-test("GitHub APK assets open their release page instead of invoking the package installer", () => {
+test("GitHub APK assets remain direct download links", () => {
   assert.equal(
-    update.toDownloadPageUrl("https://github.com/Levine-Lai/calendar-app/releases/download/v2.3.1/calendar.apk"),
-    "https://github.com/Levine-Lai/calendar-app/releases/tag/v2.3.1"
+    update.toDownloadUrl("https://github.com/Levine-Lai/calendar-app/releases/download/v2.3.5/calendar.apk"),
+    "https://github.com/Levine-Lai/calendar-app/releases/download/v2.3.5/calendar.apk"
   );
-  assert.equal(update.toDownloadPageUrl("https://downloads.example.com/calendar.apk"), "https://downloads.example.com/calendar.apk");
-  assert.equal(update.toDownloadPageUrl("http://example.com/calendar.apk"), "");
+  assert.equal(update.toDownloadUrl("https://downloads.example.com/calendar.apk"), "https://downloads.example.com/calendar.apk");
+  assert.equal(update.toDownloadUrl("http://example.com/calendar.apk"), "");
+});
+
+test("manifest prefers a separate direct APK while retaining an old-client fallback page", () => {
+  const manifest = update.normalizeManifest({
+    versionCode: 47,
+    versionName: "2.3.5",
+    apkUrl: "https://github.com/Levine-Lai/calendar-app/releases/expanded_assets/v2.3.5",
+    apkDirectUrl: "https://github.com/Levine-Lai/calendar-app/releases/download/v2.3.5/calendar.apk"
+  });
+  assert.match(manifest.apkUrl, /expanded_assets/);
+  assert.match(manifest.apkDirectUrl, /releases\/download/);
 });
 
 test("update service falls back when one endpoint fails", async () => {

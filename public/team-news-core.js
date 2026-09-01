@@ -93,6 +93,19 @@
     return paragraphs;
   }
 
+  function isArticleLikeNews(item) {
+    const title = boundedText(item?.titleEn || item?.title || "", 300).toLowerCase();
+    const url = String(item?.url || "").toLowerCase();
+    if (!title) return false;
+    if (/\/(?:gallery|galleries|photos?|photo-gallery|videos?|live-stream)(?:\/|$)/i.test(url)) return false;
+    return !(
+      /^(?:gallery|photo gallery|pictures|in pictures|highlights?|watch live|watch a full match replay|full match replay|match replay|quiz|poll)\s*[:\-]/i.test(title)
+      || /\b(?:how|where) to watch\b.*\b(?:live|tv|stream)/i.test(title)
+      || /\bwatch\b.*\b(?:live|stream|free|full match replay|match replay)\b/i.test(title)
+      || /\b(?:live stream|full match replay|match replay)\b/i.test(title)
+    );
+  }
+
   function normalizeNewsItem(item, options = {}) {
     if (!item || typeof item !== "object" || Array.isArray(item)) return null;
     const teamId = normalizeTeamId(item.teamId || options.teamId);
@@ -101,7 +114,7 @@
     const url = normalizeNewsUrl(item.url, teamId);
     const titleEn = boundedText(item.titleEn, 240);
     const publishedAt = normalizeDate(item.publishedAt);
-    if (!id || !url || !titleEn || !publishedAt) return null;
+    if (!id || !url || !titleEn || !publishedAt || !isArticleLikeNews({ titleEn, url })) return null;
     return {
       id,
       teamId,
@@ -306,6 +319,7 @@
     normalizeNewsImageUrl,
     normalizeTeamId,
     normalizeArticleParagraphs,
+    isArticleLikeNews,
     normalizeNewsItem,
     normalizeNewsPayload,
     localizeNewsItem,

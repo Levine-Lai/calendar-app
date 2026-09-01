@@ -5,7 +5,10 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import java.util.Date;
+import java.util.Calendar;
 import java.util.List;
+import java.util.Locale;
+import java.util.TimeZone;
 import java.util.concurrent.TimeUnit;
 
 import org.junit.Test;
@@ -166,6 +169,47 @@ public class WidgetGameStatusTest {
     @Test
     public void newScheduleWidgetsDefaultToBeijingToday() {
         assertEquals(0, MlbTodayWidgetProvider.defaultSelectedDayOffset());
+    }
+
+    @Test
+    public void newsWidgetRejectsMediaOnlyCards() {
+        assertFalse(TeamNewsFeed.isArticleLike(
+            "Watch Blue Jays prospects play at Single-A in FREE Sunday matinee",
+            "https://www.mlb.com/bluejays/news/watch-prospects"
+        ));
+        assertFalse(TeamNewsFeed.isArticleLike(
+            "Gallery: 38 shots from away day one",
+            "https://www.mlb.com/bluejays/news/gallery"
+        ));
+        assertTrue(TeamNewsFeed.isArticleLike(
+            "Blue Jays deliver gritty comeback win",
+            "https://www.mlb.com/bluejays/news/comeback-win"
+        ));
+    }
+
+    @Test
+    public void appUpdateDownloaderAcceptsOnlyThisProjectsGithubApk() {
+        assertTrue(SportsWidgetPlugin.isSafeUpdateDownloadUrl(
+            "https://github.com/Levine-Lai/calendar-app/releases/download/v2.3.5/sports-calendar-2.3.5-debug.apk"
+        ));
+        assertFalse(SportsWidgetPlugin.isSafeUpdateDownloadUrl(
+            "https://github.com/other/project/releases/download/v1/app.apk"
+        ));
+        assertFalse(SportsWidgetPlugin.isSafeUpdateDownloadUrl(
+            "https://github.com/Levine-Lai/calendar-app/releases/download/v2.3.5/readme.txt"
+        ));
+    }
+
+    @Test
+    public void dayRolloverTargetsFiveSecondsAfterBeijingMidnight() {
+        Calendar now = Calendar.getInstance(TimeZone.getTimeZone("Asia/Shanghai"), Locale.CHINA);
+        now.set(2026, Calendar.SEPTEMBER, 1, 23, 59, 50);
+        now.set(Calendar.MILLISECOND, 0);
+
+        assertEquals(
+            TimeUnit.SECONDS.toMillis(15),
+            MlbTodayWidgetProvider.millisUntilNextBeijingDay(now.getTimeInMillis())
+        );
     }
 
     @Test

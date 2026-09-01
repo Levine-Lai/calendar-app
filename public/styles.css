@@ -9,6 +9,7 @@
   --cyan: #c7e6eb;
   --pink: #efc0d4;
   --orange: #efc98f;
+  --lavender: #ded4f7;
   --danger: #e69a91;
   --shadow: none;
   --shadow-small: none;
@@ -152,6 +153,51 @@ body.sidebar-open {
 
 .import-panel {
   background: var(--acid);
+}
+
+.import-panel-body {
+  display: grid;
+  gap: 14px;
+}
+
+.import-panel-body[hidden] {
+  display: none;
+}
+
+.import-panel-toggle {
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  min-width: 0;
+  min-height: 42px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--ink);
+  font-weight: 950;
+  text-align: left;
+}
+
+.import-panel-toggle svg {
+  width: 20px;
+  height: 20px;
+  flex: 0 0 auto;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 3;
+  transition: transform 160ms ease;
+}
+
+.import-panel-toggle[aria-expanded="false"] svg {
+  transform: rotate(-90deg);
+}
+
+.import-panel-toggle:hover {
+  transform: none;
 }
 
 .manage-panel {
@@ -532,11 +578,25 @@ button:disabled {
 .topbar {
   display: grid;
   grid-template-columns: auto minmax(0, 1fr) auto;
+  position: sticky;
+  top: 6px;
+  z-index: 20;
   margin-bottom: 0;
   padding: 12px;
   border: 3px solid var(--line);
-  background: var(--orange);
+  background: var(--lavender);
   box-shadow: var(--shadow);
+}
+
+.topbar > div:first-of-type {
+  min-width: 0;
+}
+
+#rangeTitle {
+  overflow: hidden;
+  font-size: clamp(24px, 4vw, 52px);
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .eyebrow {
@@ -1493,6 +1553,10 @@ body.modal-open {
     align-items: center;
     gap: 8px;
     margin-bottom: 8px;
+  }
+
+  #rangeTitle {
+    font-size: clamp(18px, 5.7vw, 24px);
   }
 
   .actions {

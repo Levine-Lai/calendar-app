@@ -15,14 +15,8 @@
     }
   }
 
-  function toDownloadPageUrl(value) {
-    const safeUrl = normalizeHttpsUrl(value);
-    if (!safeUrl) return "";
-    const url = new URL(safeUrl);
-    if (url.hostname.toLowerCase() !== "github.com") return safeUrl;
-    const match = url.pathname.match(/^\/([^/]+)\/([^/]+)\/releases\/download\/([^/]+)\//i);
-    if (!match) return safeUrl;
-    return `https://github.com/${encodeURIComponent(match[1])}/${encodeURIComponent(match[2])}/releases/tag/${encodeURIComponent(match[3])}`;
+  function toDownloadUrl(value) {
+    return normalizeHttpsUrl(value);
   }
 
   function normalizeManifest(payload) {
@@ -47,6 +41,7 @@
       versionCode,
       versionName,
       apkUrl: normalizeHttpsUrl(payload.apkUrl),
+      apkDirectUrl: normalizeHttpsUrl(payload.apkDirectUrl),
       notes,
       force: payload.force === true
     };
@@ -106,7 +101,7 @@
 
   return {
     normalizeHttpsUrl,
-    toDownloadPageUrl,
+    toDownloadUrl,
     normalizeManifest,
     isNewerVersion,
     fetchLatestManifest

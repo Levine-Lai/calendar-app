@@ -26,6 +26,19 @@ function stripHtml(value) {
   return boundedText(String(value || "").replace(/<[^>]*>/g, " "), 900);
 }
 
+function isArticleLikeNews(item) {
+  const title = boundedText(item?.titleEn || item?.title || "", 300).toLowerCase();
+  const url = String(item?.url || "").toLowerCase();
+  if (!title) return false;
+  if (/\/(?:gallery|galleries|photos?|photo-gallery|videos?|live-stream)(?:\/|$)/i.test(url)) return false;
+  return !(
+    /^(?:gallery|photo gallery|pictures|in pictures|highlights?|watch live|watch a full match replay|full match replay|match replay|quiz|poll)\s*[:\-]/i.test(title)
+    || /\b(?:how|where) to watch\b.*\b(?:live|tv|stream)/i.test(title)
+    || /\bwatch\b.*\b(?:live|stream|free|full match replay|match replay)\b/i.test(title)
+    || /\b(?:live stream|full match replay|match replay)\b/i.test(title)
+  );
+}
+
 function normalizeMlbUrl(value) {
   try {
     const url = new URL(String(value || ""));
@@ -138,7 +151,7 @@ function parseBlueJaysFeed(xml) {
     const url = normalizeMlbUrl(textValue(raw?.link) || textValue(raw?.guid));
     const titleEn = boundedText(textValue(raw?.title), 240);
     const publishedTimestamp = Date.parse(textValue(raw?.pubDate));
-    if (!url || !titleEn || !Number.isFinite(publishedTimestamp) || seen.has(url)) return;
+    if (!url || !titleEn || !isArticleLikeNews({ titleEn, url }) || !Number.isFinite(publishedTimestamp) || seen.has(url)) return;
     seen.add(url);
     items.push({
       id: stableNewsId(url),
@@ -183,7 +196,7 @@ function buildStaticNewsUpdate(previousPayload, feedItems, updatedAt = new Date(
   const previousItems = Array.isArray(previousPayload?.items) ? previousPayload.items : [];
   const items = feedItems
     .map(publicNewsItem)
-    .filter((item) => item.id && item.url && item.titleEn && item.publishedAt)
+    .filter((item) => item.id && item.url && item.titleEn && item.publishedAt && isArticleLikeNews(item))
     .slice(0, 20);
   const changed = JSON.stringify(items) !== JSON.stringify(previousItems);
   const previousIds = new Set(previousItems.map((item) => item?.id).filter(Boolean));
@@ -211,6 +224,7 @@ module.exports = {
   RSS_URL,
   normalizeMlbUrl,
   normalizeMlbImageUrl,
+  isArticleLikeNews,
   toMlbAmpUrl,
   normalizeArticleParagraphs,
   extractMlbArticleParagraphs,

@@ -7,12 +7,12 @@
 
 ## 当前可交付状态
 
-- 当前源码版本：`2.3.4 / versionCode 46`；Cloudflare Worker 已部署，客户端 endpoint 已指向 Worker 且已通过真实请求验证。
-- 本机最新 APK：`2.3.4 / versionCode 46`。
+- 当前源码准备版本：`2.3.5 / versionCode 47`；尚未打包发布，Cloudflare Worker 已部署，客户端 endpoint 已指向 Worker 且已通过真实请求验证。
+- 本机最新 APK：`2.3.5 / versionCode 47`。
 - GitHub 最新已发布 APK：`2.3.4 / versionCode 46`。
-- APK：`releases/sports-calendar-2.3.4-debug.apk`。
-- APK 大小：`8,182,375` 字节。
-- APK SHA-256：`C942749DAA943EB1E9B03A1F1B69B1D7DAD535218D3B72DB59C4908BE37996FC`。
+- APK：`releases/sports-calendar-2.3.5-debug.apk`。
+- APK 大小：`8,190,719` 字节。
+- APK SHA-256：`C974A9393570EF3A85EA75AEEFA0A694C9D8250FA0535C47DA0DAF2046BB306A`。
 - 签名：APK Signature Scheme v2。
 - 签名证书 SHA-256：`7EF83E3EC40B7BF1E9AAF551589EE73C378FC26F29202255F0466BCAB759BED0`。
 - GitHub Release：`https://github.com/Levine-Lai/calendar-app/releases/tag/v2.3.4`。

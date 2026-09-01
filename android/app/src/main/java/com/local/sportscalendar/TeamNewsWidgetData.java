@@ -270,7 +270,7 @@ final class TeamNewsWidgetData {
         String imageUrl = safeImageUrl(raw.optString(KEY_IMAGE_URL, raw.optString("imageUrl", "")));
         long publishedAt = raw.optLong(KEY_PUBLISHED_AT, 0L);
         if (publishedAt <= 0L) publishedAt = parsePublishedAt(raw.optString("publishedAt", ""));
-        if (title.isEmpty() || url.isEmpty() || publishedAt <= 0L) return null;
+        if (title.isEmpty() || url.isEmpty() || publishedAt <= 0L || !TeamNewsFeed.isArticleLike(title, url)) return null;
         return new Item(id, title, url, imageUrl, publishedAt);
     }
 

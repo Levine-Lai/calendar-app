@@ -65,7 +65,8 @@ final class TeamNewsFeed {
             String url = TeamNewsPushManager.safeMlbUrl(firstText(element, "link", "guid"));
             String title = bounded(firstText(element, "title"), 240);
             long publishedAt = parsePublishedAt(firstText(element, "pubDate"));
-            if (url.isEmpty() || title.isEmpty() || publishedAt <= 0L || !seenUrls.add(url)) continue;
+            if (url.isEmpty() || title.isEmpty() || !isArticleLike(title, url)
+                || publishedAt <= 0L || !seenUrls.add(url)) continue;
             items.add(new Item(
                 sha256(url),
                 title,
@@ -107,6 +108,19 @@ final class TeamNewsFeed {
         List<String> ids = new ArrayList<>();
         for (Item item : items) ids.add(item.id);
         return ids;
+    }
+
+    static boolean isArticleLike(String title, String url) {
+        String normalizedTitle = bounded(title, 300).toLowerCase(Locale.US);
+        String normalizedUrl = String.valueOf(url == null ? "" : url).toLowerCase(Locale.US);
+        if (normalizedTitle.isEmpty()) return false;
+        if (normalizedUrl.matches(".*\\/(gallery|galleries|photos?|photo-gallery|videos?|live-stream)(\\/|$).*$")) {
+            return false;
+        }
+        return !normalizedTitle.matches("^(gallery|photo gallery|pictures|in pictures|highlights?|watch live|watch a full match replay|full match replay|match replay|quiz|poll)\\s*[:\\-].*$")
+            && !normalizedTitle.matches(".*\\b(how|where) to watch\\b.*\\b(live|tv|stream)\\b.*")
+            && !normalizedTitle.matches(".*\\bwatch\\b.*\\b(live|stream|free|full match replay|match replay)\\b.*")
+            && !normalizedTitle.matches(".*\\b(live stream|full match replay|match replay)\\b.*");
     }
 
     private static String firstText(Element parent, String... names) {
