@@ -1,8 +1,48 @@
 {
   "teamId": "toronto-blue-jays",
   "teamName": "多伦多蓝鸟",
-  "updatedAt": "2026-09-01T09:09:21.110Z",
+  "updatedAt": "2026-09-01T17:53:03.245Z",
   "items": [
+    {
+      "id": "15def7cf50874128eb978cbbc09a2e723340cd3ca6865508b4de1f17a8f49e22",
+      "teamId": "toronto-blue-jays",
+      "teamName": "多伦多蓝鸟",
+      "titleEn": "Blue Jays have golden opportunity to tighten Wild Card race with Guardians",
+      "summaryEn": "",
+      "bodyEn": [
+        "After a vintage Max Scherzer performance punctuated a three-game sweep of the Mariners this past weekend, the Blue Jays -- through all the adversity they’ve faced this season -- sit just 1 1/2 games back of the third American League Wild Card spot.",
+        "And they have a premium chance to close that gap this week.",
+        "The Blue Jays begin a three-game set against the Guardians -- the team currently holding that third Wild Card slot -- on Tuesday at Progressive Field.",
+        "It’s perhaps the biggest series of the season for Toronto to date, and the club has planned accordingly. Manager John Schneider used Monday’s off-day to make sure AL Cy Young contender Dylan Cease and José Soriano will pitch in the series on Wednesday and Thursday, respectively. Spencer Arrighetti is scheduled to throw on Tuesday, with Spencer Miles as an opener.",
+        "Across from that Toronto trio will be Cleveland’s Gavin Williams on Tuesday, Joey Cantillo on Wednesday and a to-be-announced starter on Thursday. Tuesday and Wednesday are night games with first pitch scheduled for 6:40 p.m. ET, while Thursday is a day game at 1:10 p.m. ET.",
+        "Here are three storylines to watch entering the series.",
+        "1. Tie it down",
+        "Beyond the straightforward importance of beating the team in front of you in the standings, the Blue Jays also enter with a 2-1 advantage over the Guardians in the season series. Clinching the season set would give Toronto the head-to-head tiebreaker over Cleveland, should it be necessary in determining playoff position.",
+        "Furthermore, the Blue Jays are in pole position entering September against four of the six teams which are primary threats to the final Wild Card spot. They are 2-1 against the Guardians with three games remaining; 4-3 against the Orioles with six games remaining; 4-2 against the Mariners with no games remaining; and 2-1 against the Tigers with three games remaining.",
+        "The Blue Jays only trail the Twins (3-4 with no remaining games) and the Rangers (0-4 with three games left).",
+        "If Toronto were to end the season tied with any of those teams for the final postseason berth, the head-to-head record would be the first tiebreaker, followed by intra-division record.",
+        "Swingin’ it",
+        "The Blue Jays’ 17-11 August -- their best month in 2026 -- was fueled not only by Cease’s continued excellence (2.03 ERA in five starts) but also by three key offensive performances.",
+        "Alejandro Kirk posted a 160 wRC+ -- a metric that measures overall offensive production on a 100-point scale -- that would make him the 14th-best hitter in MLB in August. George Springer finished the month at 25th with a 141 wRC+, while Trade Deadline addition Brett Bateman was 51st with a 127 wRC+.",
+        "After missing a large chunk of the season with a left thumb fracture, Kirk looked more like himself in August, hitting .341 with five home runs, 20 RBIs and more walks (12) than strikeouts (nine). The catcher was held hitless just three times in the 22 games he started, while he posted multiple hits seven times.",
+        "Springer shook off a slow start to the season and has been excellent in the second half. After going 7-for-11 with four extra-base hits in three games against the Mariners, the 36-year-old’s post-All-Star Game OPS is up to .892.",
+        "Meanwhile, Bateman -- after making his Major League debut on Aug. 7 -- has hit in 15 of his first 19 games. Acquired in the Kevin Gausman trade with the Cubs, the outfielder has taken over the Blue Jays’ leadoff spot and has reached base at a strong .384 mark.",
+        "Can he get going?",
+        "Vladimir Guerrero Jr.’s surprisingly down season has been well-documented, as he's still awaiting his first home run at Rogers Center since ... last season. He also hit one home run in August while slashing .221/.259/.312 -- good for just a 59 wRC+.",
+        "It’s clear that Guerrero has not been “right” all season, and he missed some time this past month with a concussion. But he has the support of his manager, and if Vladdy can put together even a mini hot streak in the season’s final month, it could do wonders for the Blue Jays’ final push toward October."
+      ],
+      "titleZh": "",
+      "summaryZh": "",
+      "bodyZh": [],
+      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/sb8mbkgvl5bfe4erjnyx",
+      "translationSourceHash": "",
+      "translationModel": "",
+      "translatedAt": "",
+      "author": "Max Ralph",
+      "publishedAt": "2026-09-01T14:19:10.000Z",
+      "url": "https://www.mlb.com/bluejays/news/blue-jays-continue-postseason-chase-against-guardians",
+      "source": "MLB.com"
+    },
     {
       "id": "cb6280e5bb55738096f327cd6c0cee134ba45e64cb41b092a18ddc73f6a1ed59",
       "teamId": "toronto-blue-jays",
@@ -1093,44 +1133,9 @@
       "publishedAt": "2026-08-26T23:00:00.000Z",
       "url": "https://www.mlb.com/bluejays/news/hottest-hitting-prospect-for-each-team-august-2026",
       "source": "MLB.com"
-    },
-    {
-      "id": "7cce5f8c2c49bba33c28d6e3664ddf12be3069b4322ee523928f636208641d93",
-      "teamId": "toronto-blue-jays",
-      "teamName": "多伦多蓝鸟",
-      "titleEn": "Here's why John Schneider won't drop Guerrero in the lineup",
-      "summaryEn": "",
-      "bodyEn": [
-        "TORONTO -- Millions of Canadians share the same remote job, interning as John Schneider’s co-manager.",
-        "It’s a thankless job and the schedule isn’t great, but everyone keeps landing on the same idea that would have sounded ridiculous just six months ago: It’s time to drop the struggling Vladimir Guerrero Jr. in the Blue Jays’ lineup.",
-        "Watching this team, you have every reason to believe it. Guerrero is stuck in one of the most stunning seasons we’ve ever seen from a Blue Jays star. Fresh off a transcendent performance in the 2025 postseason, he has flopped in ‘26, batting .262 with a .689 OPS and just seven homers, none of them coming at home.",
-        "Big moments keep finding Guerrero, but he can’t find that breakthrough, that one swing he’s spent all season searching for. With even a “good” version of Guerrero, the Blue Jays would likely be in a postseason spot today. Why, then, in a season that Schneider has tried just about everything else with this lineup, has Guerrero not been bumped down a couple of spots?",
-        "“There’s been thoughts of it, I just don’t know what the outcome would be,” Schneider said. “I don’t want to punish him. I think if there were guys tearing the cover off the ball, that would be a little easier to think about, too. We are built, as a team, for Vlad to be a focal point of our offense. I don’t think that, with where he hits, he will be pitched very differently. I don’t think there will be more or less pressure if he’s hitting down in the order. I want him up in important spots.”",
-        "Schneider’s point about how the Blue Jays are built around Guerrero is crucial here. This feels like an NFL offense built around a mobile quarterback, because without that one star doing what he's supposed to, the rest falls apart. The Blue Jays are spilling over with contact hitters, and all of those singles are supposed to flood the bases for Guerrero to drive in 100-plus runs.",
-        "Guerrero is supposed to be the sun. Everything else is supposed to orbit around him.",
-        "“He’s pretty fine with [hitting] anywhere,” Schneider said, “but I think that he deserves to be somewhere in the middle of the order, looking in relation to who else is on the roster.”",
-        "If the Blue Jays had a healthy Addison Barger, who could reasonably be sitting with 20-plus home runs and an .800 OPS by now, perhaps that would change the equation. If George Springer was giving this organization an encore of his incredible 2025 season, it’s easier. If Kazuma Okamoto was having more complete at-bats between his bursts of power, it’s easier. If Anthony Santander was here, being the hitter the Blue Jays signed him to be, it’s easier.",
-        "Instead, Schneider is committed to rolling out Guerrero in the second or third spot in the lineup. They’ve debated even those spots for nearly a decade now, Guerrero wanting to bat third and Schneider preferring him second, but it sounds like that will be the extent of it.",
-        "Schneider learned a lesson before, too, with Bo Bichette. Early in Schneider’s tenure, Bichette was scuffling and he decided to bat him seventh.",
-        "“Oh, I remember that one,” Schneider said, laughing. “That was a good conversation.”",
-        "Schneider texted Bichette the night prior, telling him he was shuffling the lineup, but didn’t mention exactly how. When Bichette saw the lineup soon after, Schneider heard from his young shortstop immediately. Those texts, as Schneider remembers them, were rather colorful. Bichette was pissed.",
-        "“That was reactionary and me being young in the job … and dumb,” Schneider said. “I think Bo is different than Vlad. You can strategically try to piss him off to get him going. I don’t think that strategically pissing off Vlad is going to change much.”",
-        "On this, he’s right. That always separated Bichette and Guerrero. Bichette always responded differently to failures and frustrations than Guerrero did. Neither way was better or worse, just … different.",
-        "If you told Bichette that he was probably going to go 0-for-4, he’d hit for the cycle and stare you down as he rounded third on the home run. It’s never felt like that type of external pressure or coaching has been the strategy with Guerrero, though.",
-        "Schneider knows Guerrero as well as anyone. They go back to the low levels of the Minor Leagues together, and this is clearly more of a “feel” decision than an analytical one. It’s becoming one of the defining decisions -- and most debated -- of the 2026 Blue Jays."
-      ],
-      "titleZh": "",
-      "summaryZh": "",
-      "bodyZh": [],
-      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/iryu04jcbbelvunnzp3a",
-      "translationSourceHash": "",
-      "translationModel": "",
-      "translatedAt": "",
-      "author": "Keegan Matheson",
-      "publishedAt": "2026-08-26T21:08:42.000Z",
-      "url": "https://www.mlb.com/bluejays/news/vladimir-guerrero-jr-spot-in-lineup-debate",
-      "source": "MLB.com"
     }
   ],
-  "pendingNotificationIds": []
+  "pendingNotificationIds": [
+    "15def7cf50874128eb978cbbc09a2e723340cd3ca6865508b4de1f17a8f49e22"
+  ]
 }
