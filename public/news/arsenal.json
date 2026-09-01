@@ -1,7 +1,7 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-09-01T14:17:58.763Z",
+  "updatedAt": "2026-09-01T17:57:05.413Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
@@ -12,11 +12,12 @@
       "teamId": "arsenal",
       "teamName": "阿森纳",
       "titleEn": "WSL tickets for Villa and London City on sale",
-      "summaryEn": "General sale tickets are on sale now for our upcoming Women’s Super League matches against Aston Villa and London City Lionesses.",
+      "summaryEn": "Early bird tickets are on sale now for our upcoming Women’s Super League matches against Aston Villa and London City Lionesses.",
       "bodyEn": [
-        "General sale tickets are on sale now for our upcoming Women’s Super League matches against Aston Villa and London City Lionesses.",
+        "Early bird tickets are on sale now for our upcoming Women’s Super League matches against Aston Villa and London City Lionesses.",
         "We host Villa at Emirates Stadium at 12.30pm on Sunday, November 1, before welcoming London City Lionesses to N5 at 5.30pm on Saturday, November 14.",
         "Get your tickets!",
+        "Tickets will go on general sale on Tuesday, September 8, but early bird tickets represent the best value!",
         "As always, fixture dates and times are subject to change."
       ],
       "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/8ce2ed8c73db-gettyimages-2273736394.webp",
@@ -66,7 +67,7 @@
         "Everyone at Arsenal would like to thank Fabio for his contribution to the club and wish him and his family every success for the future.",
         "The transfer is subject to the completion of regulatory processes."
       ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/7965911ad886-fv-169.webp",
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/880f22805757-fv-169.webp",
       "author": "Arsenal Media",
       "publishedAt": "2026-09-01T11:00:07.776Z",
       "url": "https://www.arsenal.com/news/fabio-vieira-joins-hamburger-sv-in-permanent-deal-a8WYl8s7ALgc",
@@ -746,30 +747,6 @@
       "translationSourceHash": "06794f7282b735b2f7e5eb542514d62b6d0bb495caf9cc794dee1987485b5a65",
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-08-28T12:15:41.782Z"
-    },
-    {
-      "id": "664e3f6e84f32887eab20effa8e01df13a913fa4fbf29191ff344e5f695c4d8c",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Transfer window 2026: Former Gunners on the move",
-      "summaryEn": "Here are all the former Arsenal players that are on the move in the 2026 transfer window",
-      "bodyEn": [
-        "The summer transfer window is now open, and there's already plenty of movement around the world involving some of our former Gunners.",
-        "Clubs have until September 1 to do deals, so we've pulled together this list of former first-team players who have already made moves, with more to come before the window shuts.",
-        "MEN'S",
-        "Players",
-        "Managers",
-        "WOMEN",
-        "Players"
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/71bd08f937ff-malaga-spain-pierre-emerick-aubameyang-of-deportivo-de-a-coruna-passes-the-ball.webp",
-      "author": "Arsenal Media",
-      "publishedAt": "2026-08-11T13:35:13.056Z",
-      "url": "https://www.arsenal.com/news/transfer-window-2026-former-gunners-on-the-move-aEgZ27o01Z52",
-      "source": "Arsenal.com",
-      "titleZh": "",
-      "summaryZh": "",
-      "bodyZh": []
     },
     {
       "id": "01c658077d0c034788c27cc8c3b6a91970c1bdff21cdad4a6dc5b61897f1915d",
