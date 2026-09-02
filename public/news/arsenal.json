@@ -1,7 +1,7 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-09-02T19:30:10.303Z",
+  "updatedAt": "2026-09-02T21:59:03.563Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
@@ -150,7 +150,7 @@
         "Key ins: Anan Khalaili (Union St-Gilloise, £21m), Quinten Timber (Marseille, £15m), Zavier Gozo (Real Salt Lake, £11m), Axel Disasi (Chelsea, loan), Evann Guessand (Aston Villa, loan), Honest Ahanor (Atalanta, loan), Darío Osorio (Midtjylland, loan), Dwight McNeil (Everton, swap), Takehiro Tomiyasu (Ajax, free), Óscar Mingueza (Celta Vigo, free), Ben Chilwell (Strasbourg, undisclosed fee)",
         "Key outs: Maxence Lacroix (Chelsea, £52m), Daniel Muñoz (Nottingham Forest, £22m), Brennan Johnson (Everton, swap), Borna Sosa (Cologne, loan)",
         "It was a window that revealed the extent of The Friedkin Group’s ambitions, the strength of the club’s finances after the move to a new stadium, the state of the relationship between the manager and chief executive and the expertise of the senior leadership team; and none of it was positive. The owners deserve some credit for listening to fans and halting the self-defeating sale of Harrison Armstrong to Nottingham Forest but otherwise it was a modest window that descended into a shambles. The club’s best player was sold for a below-market fee, a move for Folarin Balogun collapsed and although the equally desperate search for a right-back ended with Ainsley Maitland-Niles signing, David Moyes was left with one striker and a smaller squad than he started the day with, despite repeatedly urging his employers to strengthen. AH",
-        "Key ins: Tyrique George (Chelsea, £18m), Merlin Röhl (Freiburg, £17.3m), Hayden Hackney (Middlesbrough, £16.5m), Christian Nørgaard (Arsenal, £7m), Ainsley Maitland-Niles (Lyon, £4.2m), Brennan Johnson (Crystal Palace, swap), Jack Grealish (Manchester City, loan)",
+        "Key ins: Tyrique George (Chelsea, £18m), Merlin Röhl (Freiburg, £17.3m), Hayden Hackney (Middlesbrough, £16.5m), Christian Nørgaard (Arsenal, £7m), Ainsley Maitland-Niles (Lyon, £4.3m), Brennan Johnson (Crystal Palace, swap), Jack Grealish (Manchester City, loan)",
         "Key outs: Iliman Ndiaye (Manchester City, £60m), Beto (Fiorentina, £15.4m), Tim Iroegbunam (Hull, £13m), Dwight McNeil (Crystal Palace, swap), Idrissa Gueye (Al-Diriyah, free), Nathan Patterson (Torino, free), Séamus Coleman (released)",
         "It was a summer of change at Craven Cottage. Marco Silva departed after five successful years in charge and was replaced by the inexperienced Álvaro Arbeloa, who has focused on adding youth. Gonzalo García, César Palacios and Manuel Ángel followed Arbeloa from Real Madrid and Shea Charles is an exciting signing from Southampton. Some stalwarts have left. Raúl Jiménez joined Wolves and Harry Wilson went to Leeds. Fulham looked to strengthen. They secured the midfielder Hugo Larsson and centre-back David Affengruber on deadline day but missed out on another target, the right-back Andrei Ratiu. JS",
         "Key ins: Gonzalo García (Real Madrid, £34.3m), Shea Charles (Southampton, £30m), David Affengruber (Elche, £10.3m), César Palacios (Real Madrid, £8.6m), Jonah Kusi-Asare (Bayern Munich, £5.2m), Manuel Ángel (Real Madrid, £3.4m), Hugo Larsson (Eintracht Frankfurt, loan)",
@@ -357,6 +357,27 @@
       "publishedAt": "2026-09-01T17:58:47.000Z",
       "url": "https://www.theguardian.com/football/2026/sep/01/aston-villa-sign-mbaye-and-harwood-bellis-as-newcastle-get-fernandez-pardo",
       "source": "The Guardian",
+      "titleZh": "",
+      "summaryZh": "",
+      "bodyZh": []
+    },
+    {
+      "id": "9602e37272aa47245baa57edb8788a9e2dc755a3e025088acd0fdff99165a425",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "U21s highlights: Brighton 2-2 Arsenal",
+      "summaryEn": "James Scanlon and Evan Mooney goals ensured a share of the spoils in Brighton",
+      "bodyEn": [
+        "Our under-21s scored a late equaliser to draw 2-2 with Premier League 2 champions Brighton on Saturday night.",
+        "Having taken the lead through a brilliant finish from debutant James Scanlon, we trailed entering the final stages of the game to goals from Younes Ibrahim and Bailey Palmer.",
+        "But substitutes Louis Zecevic-John and Evan Mooney combined late on, with Zecevic-John setting up Mooney to equalise in the 88th-minute of the contest.",
+        "Press play on the video at the top of the article to watch the best of the action from an entertaining contest on the south coast."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/0cd4f8e9bad6-borehamwood-england-brayden-clarke-of-arsenal-during-the-pl2-match-between-arsen.webp",
+      "author": "Connor Booth",
+      "publishedAt": "2026-09-01T17:55:59.808Z",
+      "url": "https://www.arsenal.com/news/u21s-highlights-brighton-2-2-arsenal-a8kQr1p0j0g1",
+      "source": "Arsenal.com",
       "titleZh": "",
       "summaryZh": "",
       "bodyZh": []
