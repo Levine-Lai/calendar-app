@@ -1,12 +1,33 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-09-02T21:59:03.563Z",
+  "updatedAt": "2026-09-03T05:03:32.525Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "4f250c3e2018b6ad234fd4d4a3a0cdc1cd2af434f3bfb3a844fbf12341e4b4fd",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Every WSL goal from the 2025/26 season",
+      "summaryEn": "Look back on all 53 goals we scored in the WSL last season",
+      "bodyEn": [
+        "Last season saw us record some memorable victories in the Women's Super League, with London derby successes and resounding wins over fierce rivals, and now you can watch every goal we scored in our league campaign.",
+        "We started as we meant to go on with a 4-1 win over London City, a game that saw Olivia Smith score one of our best goals of the season right at the start as she opened her Arsenal account with a stunner from 25 yards.",
+        "London derbies brought more success later in the season as Alessia Russo scored a memorable hat-trick against Spurs and Mariona Caldentey scored a beautiful goal to wrap up a 2-0 win over Chelsea at Stamford Bridge.",
+        "Press play on the video at the top of the article to watch all 53 of our WSL goals from the 2025/26 season."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/1540b544481d-london-england-alessia-russo-of-arsenal-scores-her-teams-second-goal-during-the.webp",
+      "author": "Connor Booth",
+      "publishedAt": "2026-09-03T04:00:00.063Z",
+      "url": "https://www.arsenal.com/news/every-wsl-goal-from-the-202526-season-axr6I7v1hkjy",
+      "source": "Arsenal.com",
+      "titleZh": "",
+      "summaryZh": "",
+      "bodyZh": []
+    },
     {
       "id": "ad0f83de9e4251ead4e491851125419d1368cd31b152fa669421497327b1fc88",
       "teamId": "arsenal",
@@ -399,30 +420,6 @@
       "author": "Arsenal Media",
       "publishedAt": "2026-09-01T13:00:00.000Z",
       "url": "https://www.arsenal.com/news/wsl-tickets-for-villa-and-london-city-on-sale-aihLk5N0yIzO",
-      "source": "Arsenal.com",
-      "titleZh": "",
-      "summaryZh": "",
-      "bodyZh": []
-    },
-    {
-      "id": "e03b95e432973682b36a22561796beb9c6903aad2bc08060a017d3ae60d8c924",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Gabriel Jesus joins FC Barcelona",
-      "summaryEn": "Gabriel Jesus has joined FC Barcelona on a permanent transfer.",
-      "bodyEn": [
-        "Gabriel Jesus has joined FC Barcelona on a permanent transfer.",
-        "The 29-year-old joined us from Manchester City in July 2022 and made 123 appearances for the club across all competitions, scoring 32 goals.",
-        "The Brazil international forward made 27 appearances across all competitions during our Premier League-winning campaign, having missed the majority of the 2024/25 season after suffering an ACL injury in January 2025. Before that injury, Gabby had been in excellent form, scoring a hat-trick against Crystal Palace in the Carabao Cup before finding the net twice more against the same opponents in the Premier League just three days later.",
-        "Gabby leaves us with an outstanding wealth of Premier League experience and a proven record of success at the highest level of English football. Across spells with Arsenal and Manchester City, he made over 200 Premier League appearances, scoring more than 70 goals and contributing to five title-winning campaigns.",
-        "A teenage sensation at Palmeiras in Brazil, Gabby made his first-team debut aged 17 before quickly establishing himself as one of the country's brightest young talents. He burst onto the international scene by helping Brazil's under-23s win Olympic gold at the Rio 2016 Games, and later that year made his full international debut. He subsequently represented his country at the 2018 and 2022 FIFA World Cups.",
-        "We thank Gabby for his contribution to the club during his four years with us and wish him and his family every happiness and success for the future.",
-        "The transfer is subject to the completion of regulatory processes."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/0da22ea337d7-gj-169.webp",
-      "author": "Arsenal Media",
-      "publishedAt": "2026-09-01T12:47:47.064Z",
-      "url": "https://www.arsenal.com/news/gabriel-jesus-joins-fc-barcelona-aIweE9b0CIaV",
       "source": "Arsenal.com",
       "titleZh": "",
       "summaryZh": "",
