@@ -1,7 +1,7 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-09-03T05:03:32.525Z",
+  "updatedAt": "2026-09-03T09:45:55.218Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
@@ -812,24 +812,28 @@
       "translatedAt": "2026-08-29T15:37:20.059Z"
     },
     {
-      "id": "664e3f6e84f32887eab20effa8e01df13a913fa4fbf29191ff344e5f695c4d8c",
+      "id": "deb30621fa879410f52ba29baaa7da8c560672ff340fe77ff1f3da3956df0eaa",
       "teamId": "arsenal",
       "teamName": "阿森纳",
-      "titleEn": "Transfer window 2026: Former Gunners on the move",
-      "summaryEn": "Here are all the former Arsenal players that are on the move in the 2026 transfer window",
+      "titleEn": "Together Against Suicide",
+      "summaryEn": "Arsenal is offering a mental health drop-in service on Premier League matchdays to help prevent suicide",
       "bodyEn": [
-        "The summer transfer window is now open, and there's already plenty of movement around the world involving some of our former Gunners.",
-        "Clubs have until September 1 to do deals, so we've pulled together this list of former first-team players who have already made moves, with more to come before the window shuts.",
-        "MEN'S",
-        "Players",
-        "Managers",
-        "WOMEN",
-        "Players"
+        "Arsenal Football Club and the North London NHS Foundation Trust are teaming up this season to pilot a match day mental health drop-in service at The Arsenal Hub with a particular focus on suicide.",
+        "The Premier League have funded 11 clubs to pilot Together Against Suicide during the 2026/27 season with the aim of raising awareness about this important issue and providing a service that offers help to our supporters when they are most in need.",
+        "According to research conducted by Samaritans, there were 5,565 suicides registered in England in 2023, with men being three times more likely to die by suicide. Locally, Islington has the second highest rate of rate of diagnosed depression and severe mental illness in London.",
+        "How the programme works",
+        "A North London NHS Foundation Trust practitioner will be based at The Arsenal Hub every Premier League match day during the 2026/27 season. The practitioner will be on hand to have confidential conversations with supporters in need of help. No appointment is required; supporters can walk into The Arsenal Hub where they will be greeted by staff. The practitioner will also have information available on local services that can be accessed where needed.",
+        "The Arsenal Hub is directly next to Emirates Stadium at 56 Benwell Road, N7 7BA. The practitioner will be available two hours before kick-off, during the game and for one hour after the game finishes.",
+        "This match day drop-in service will be available from the Chelsea game on Sunday, September 6.",
+        "This programme allows us to build on a partnership with the North London NHS Foundation Trust that began more than 15 years ago and involves us providing two sessions per week to local adults with a mental health diagnosis.",
+        "We partner with the Brandon Centre to host a professional counsellor at The Arsenal Hub once per week who supports Arsenal in the Community participants aged 14 to 24 who are experiencing challenges. The Brandon Centre also provide a qualified sports psychologist on our Girls Only PL Kicks sessions who engages with participants and supports them through their teenage years.",
+        "We have delivered the Advantage programme in partnership with the NHS to provide mentoring to local young people facing mental health challenges. The programme first started as a response to the challenges facing young people during the Covid-19 pandemic but has continued since due to the level of need.",
+        "For more information on suicide prevention programme, please email togetheragainstsuicide@arsenal.co.uk."
       ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/71bd08f937ff-malaga-spain-pierre-emerick-aubameyang-of-deportivo-de-a-coruna-passes-the-ball.webp",
-      "author": "Arsenal Media",
-      "publishedAt": "2026-08-11T13:35:13.056Z",
-      "url": "https://www.arsenal.com/news/transfer-window-2026-former-gunners-on-the-move-aEgZ27o01Z52",
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/e653179601f2-mmh262716x9.webp",
+      "author": "Michael Donlevy",
+      "publishedAt": "2019-09-10T09:00:00.000Z",
+      "url": "https://www.arsenal.com/news/together-against-suicide-a7QQi1Y5NBeZ",
       "source": "Arsenal.com",
       "titleZh": "",
       "summaryZh": "",
