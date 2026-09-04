@@ -1,12 +1,41 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-09-03T23:15:51.747Z",
+  "updatedAt": "2026-09-04T06:35:28.400Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "ed723da0dedba2d0767aa7d721bea6e495247cd537c58aae2b3ca7d758ec0863",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "U18s preview: Arsenal v Southampton",
+      "summaryEn": "Our young Gunners look to find their first win of the season against the Saints",
+      "bodyEn": [
+        "Our young Gunners look to bounce back against Southampton when they continue their U18 Premier League South campaign on Saturday, September 5.",
+        "The match will take place at the Sobha Realty Training Centre, with kick-off scheduled for 12pm (UK time).",
+        "Yet to claim a win from their opening three games, our under-18s’ only point so far came in a goalless draw with West Bromwich Albion on the opening day.",
+        "Last weekend, despite taking the lead away at Brighton and Hove Albion through Abraham Owusu-Gyasi’s second-half finish, the Seagulls fought back to win 2-1.",
+        "THE OPPOSITION",
+        "After finishing seventh last term, the Saints have made a perfect start to the new season, winning all three games and averaging five goals scored per match.",
+        "In August, the south coast side hit four past both Brentford and Crystal Palace, before an eleven-goal thriller against Norwich City ended in a 7-4 victory a week ago.",
+        "The high-scoring outfit have also been placed in Group D of the U18 Premier League Cup, alongside Brentford, Manchester City and Burnley, with their opening tie against the Clarets set for next month.",
+        "We last faced the Hampshire side in January, narrowly losing 1-0 at the Staplewood Training Ground after Thierry Rohart-Brown found the net early in the second half.",
+        "HOW TO FOLLOW",
+        "The action gets underway from 12pm (UK), with live updates available on our Academy X account and a full match report shortly after the final whistle.",
+        "Post-match, don't miss exclusive interviews with one of our academy coaches and young Gunners, as well as highlights of all the key action on The Arsenal app and Arsenal.com."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/a267c48ed8e9-borehamwood-england-hakeem-abubakar-of-arsenal-during-the-premier-league-u18-bet.webp",
+      "author": "Tom Keens",
+      "publishedAt": "2026-09-04T05:00:00.000Z",
+      "url": "https://www.arsenal.com/news/u18s-preview-arsenal-v-southampton-aF7gp3E5Yvd2",
+      "source": "Arsenal.com",
+      "titleZh": "",
+      "summaryZh": "",
+      "bodyZh": []
+    },
     {
       "id": "3af5f127ee882e83d88fbd6877c43d472a0e69c9dc70f72e0786caba7eebf455",
       "teamId": "arsenal",
@@ -727,26 +756,6 @@
       "author": "Arsenal Media",
       "publishedAt": "2021-08-04T11:24:29.000Z",
       "url": "https://www.arsenal.com/news/video-watch-bukayos-emotional-return-to-colney-a8mQ07C9S1qY",
-      "source": "Arsenal.com",
-      "titleZh": "",
-      "summaryZh": "",
-      "bodyZh": []
-    },
-    {
-      "id": "66e2ef4773af28fbcc8cae38c78b79890b5ac7a1d59aa7c9fa3db7baafa3bc08",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Relive the chaotic 2019/20 FA Cup festivities",
-      "summaryEn": "See how the players celebrated as we lifted the trophy at Wembley - even after Auba dropped the trophy first time round!",
-      "bodyEn": [
-        "We lifted the Emirates FA Cup after beating Chelsea 2-1 at Wembley back in August 2020.",
-        "The tournament was delayed until the summer that year due to the outbreak of Covid-19, but we eventually got our hands on the trophy – though not without a false start from Pierre-Emerick Aubameyang!",
-        "Click the 'Play' button above to watch our special video of the trophy lift."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/842b16975f49-the-boys-lift-the-fa-cup.webp",
-      "author": "Arsenal Media",
-      "publishedAt": "2020-08-02T09:51:11.000Z",
-      "url": "https://www.arsenal.com/news/relive-the-chaotic-201920-fa-cup-festivities-aeMy58J4QE4q",
       "source": "Arsenal.com",
       "titleZh": "",
       "summaryZh": "",
