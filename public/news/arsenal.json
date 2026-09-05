@@ -1,12 +1,39 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-09-05T19:01:25.106Z",
+  "updatedAt": "2026-09-05T23:18:02.739Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "fd1d630b183f87a81ac38ca1da98bb9aba5b14823ab8e1279ceed64732bae982",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "White excited by Emirates atmosphere before Chelsea",
+      "summaryEn": "Ben White on our atmosphere, facing Chelsea and his targets",
+      "bodyEn": [
+        "Ben White has been with us for more than half a decade and believes the atmosphere at Emirates Stadium is getting better and better.",
+        "We're preparing to take on Chelsea in our second home game as reigning champions and White believes our atmosphere is now one of the very best around - something he puts down to the work of our manager, Mikel Arteta.",
+        "\"The boss has obviously done loads to try and create that, and he's obviously smashed it because now it's one of the best, I think.",
+        "\"It's a bit of everything. The passion, you can see it when you go in to get throw in. You can see the passion and the love that they show, so it's obviously amazing when you do hear that when you're on the pitch.",
+        "\"They definitely give us all energy, and hearing them in difficult moments definitely helps.\"",
+        "We go into the match with a 100% record this season, as do our west London opponents, who have started positively under new boss Xabi Alonso.",
+        "Reflecting on our opponents on Sunday, Ben said: \"[They're] exciting to watch. They have some amazing players, a lot of quality, very dangerous on their day. So, definitely a tough game for us and one we're all looking forward to.",
+        "\"We're all feeling really good, and you can see that how we started the Premier League. So, yes, it's just about maintaining and carrying on, and it's a long season.\"",
+        "Chelsea's front line has started this campaign strongly, with the likes of Cole Palmer, Joao Pedro and Morgan Rogers all finding the net in their opening two league matches - but Ben is focused on what we can bring to the matchup in N5.",
+        "\"I think you just have to look at what we have. You've mentioned their players, but you mentioned some of our players, which are obviously so fast, so strong, so good at defending. It fills you with confidence when you do see them.\""
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/211851ce1fb6-london-england-ben-white-of-arsenal-looks-on-before-the-premier-league-2026-27-m.webp",
+      "author": "Charlie Peat",
+      "publishedAt": "2026-09-05T22:23:46.241Z",
+      "url": "https://www.arsenal.com/news/white-excited-by-emirates-atmosphere-before-chelsea-ap22B9S2VteO",
+      "source": "Arsenal.com",
+      "titleZh": "",
+      "summaryZh": "",
+      "bodyZh": []
+    },
     {
       "id": "5e709c835bb5481b1e1b529d1c88e4c38bbd1fe11b5320d1014ac7a72958154f",
       "teamId": "arsenal",
@@ -382,26 +409,6 @@
       "publishedAt": "2026-09-04T19:00:14.000Z",
       "url": "https://www.theguardian.com/football/blog/2026/sep/04/chelsea-morgan-rogers-arsenal-xabi-alonso-mikel-arteta",
       "source": "The Guardian",
-      "titleZh": "",
-      "summaryZh": "",
-      "bodyZh": []
-    },
-    {
-      "id": "963ce0f43ae9abd554f742cc4818dea2ae236eb80fd718d3d92966247c1380c6",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Inside training: Charging up for Chelsea",
-      "summaryEn": "Watch our training session before we take on Chelsea at Emirates Stadium",
-      "bodyEn": [
-        "With Chelsea coming to Emirates Stadium this weekend, we've been putting in the hard work at Sobha Realty Training Centre as we look to make it three wins from three in the Premier League.",
-        "We've beaten Coventry and Aston Villa in our first two league fixtures, with Chelsea defeating Fulham and Brighton, meaning we both go into the match with six points each.",
-        "To get a flavour of how we're preparing for the Blues, press play on the video above now to watch our inside training special!"
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/abb3ac48fc8a-london-colney-england-kai-havertz-of-arsenal-during-a-training-session-at-sobha.webp",
-      "author": "Charlie Peat",
-      "publishedAt": "2026-09-04T17:00:00.000Z",
-      "url": "https://www.arsenal.com/news/inside-training-charging-up-for-chelsea-aBfQF8v6ISdD",
-      "source": "Arsenal.com",
       "titleZh": "",
       "summaryZh": "",
       "bodyZh": []
