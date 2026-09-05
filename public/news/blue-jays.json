@@ -1,7 +1,7 @@
 {
   "teamId": "toronto-blue-jays",
   "teamName": "多伦多蓝鸟",
-  "updatedAt": "2026-09-05T00:53:12.850Z",
+  "updatedAt": "2026-09-05T05:40:10.489Z",
   "items": [
     {
       "id": "7e9000313c47368fe2a76d65ae126941f1bfce63ec0dcd7280563bdd4d1caec1",
@@ -58,8 +58,80 @@
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-07-21T02:11:41.474Z",
       "author": "",
-      "publishedAt": "2026-09-04T23:19:00.000Z",
+      "publishedAt": "2026-09-05T03:50:00.000Z",
       "url": "https://www.mlb.com/bluejays/news/blue-jays-injuries-and-roster-moves",
+      "source": "MLB.com"
+    },
+    {
+      "id": "91b0ac93104f2a496cdeefc558741a5be53756b6540173a52375ff7659aa2328",
+      "teamId": "toronto-blue-jays",
+      "teamName": "多伦多蓝鸟",
+      "titleEn": "Blue Jays back to .500 and in thick of AL Wild Card race",
+      "summaryEn": "",
+      "bodyEn": [
+        "KANSAS CITY -- Finally back to .500, the Blue Jays have 20 games to determine how we’ll remember the 2026 season and they’re playing their best baseball at exactly the right time.​",
+        "This isn’t the race the Blue Jays dreamed of when they entered the 2026 season as World Series contenders, fresh off taking the Dodgers to extra innings in Game 7, but none of that matters now. The Blue Jays have given themselves another life, and with Friday’s 9-2 win over the Royals, are back to .500 (71-71). This leaves them just one game shy of the Guardians, who they hold a tiebreaker over.",
+        "“We’re gritty as hell,” said Ernie Clement. “If we go down early, we’re not afraid to come back. Right now, we’re punching first, which is something I don’t think we had done early in the season.”",
+        "This is what mattered most:",
+        "1. Another offensive outburst",
+        "This hasn’t been the Blue Jays’ “brand of baseball” by any means, but what a start Friday night.",
+        "With a flurry of blows right out of the gate, the Blue Jays hung four runs on the Royals in the first inning, capped by an Ernie Clement double into the left-field corner. This was a Clement classic, and much-needed after he’s been grinding through the past month offensively.",
+        "\"The boys have done a great job picking me up after my historic month of August,” Clement joked. “These guys are awesome. We're playing great baseball. It’s not about me, so I’ve got to put my frustrations aside and try to help the team win. It felt good to get a couple, score a run, a couple of RBIs, just be part of a win.”",
+        "No one is going to mistake the 2026 Blue Jays for an offensive powerhouse, but with performances like this and the growing belief that Vladimir Guerrero Jr. could finally be turning a corner, there’s at least some optimism. Slowly and steadily, John Schneider has seen this grow since the Trade Deadline.",
+        "“Our at-bats have definitely been better and we’ve gotten some timely hitting,” Schneider said. “We got a lot of hits in the month of August as a team. We’re doing the little things better. We’re playing better defense. We’re keeping games where they should be better than we did at the beginning of the year. Then, the offense has kind of picked up a little bit.”",
+        "2. Key conversations around the Trade Deadline",
+        "The Blue Jays were trying to “thread the needle”. It’s so rare that teams actually pull that off, but with additions like José Soriano and the immediate impact of prospect returns like Brett Bateman, it’s working.",
+        "Leading up to that Deadline, Schneider and general manager Ross Atkins sought out players they knew would be sticking around and had some very direct, daily conversations with them. They wanted to get out in front of it.",
+        "“We really wanted to say that every day to the guys. ‘Hey, we still believe that a lot of you guys can be better and we’re just going to sell our entire [freaking] roster. We’re going to continue to compete,’” Schneider said. “I think that saying that every single day was important. Then, it was the guys believing that and going out and playing with it. That’s what we were trying to do.”",
+        "It’s taken some patience, but this is the vision the Blue Jays had all along.",
+        "“We’re a really good baseball team,” Clement said. “It was only a matter of time before things started clicking and we started playing our game, figured out our team identity, figured out our lineup. There’s been so many moving pieces throughout the whole year. It’s nice to finally have a solid grasp on who we are.”",
+        "3. The path forward",
+        "This weekend won’t get any easier for the Blue Jays after Jameson Taillon left Friday’s game following the second inning with right elbow discomfort. This bullpen, already running on fumes, needed to cover seven innings. There’s essentially another “bullpen day” around Spencer Arrighetti as the bulk guy on Sunday, too.",
+        "There can be no complaining from the driver’s seat, though. With the Guardians playing a motivated Tigers team, the Rangers playing the Rays and the Orioles playing the Red Sox, this weekend is wide open for the Blue Jays to separate themselves in the AL Wild Card race before some more winnable games against the A’s."
+      ],
+      "titleZh": "",
+      "summaryZh": "",
+      "bodyZh": [],
+      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/k40vdzetruyucmb3dyco",
+      "translationSourceHash": "",
+      "translationModel": "",
+      "translatedAt": "",
+      "author": "Keegan Matheson",
+      "publishedAt": "2026-09-05T03:41:00.000Z",
+      "url": "https://www.mlb.com/bluejays/news/blue-jays-back-to-the-500-mark-with-win-over-royals",
+      "source": "MLB.com"
+    },
+    {
+      "id": "aa8d2aa8c2cf5139ac99f7b381e7ec39f39c77f7b5a0f536096684bc3d13cb47",
+      "teamId": "toronto-blue-jays",
+      "teamName": "多伦多蓝鸟",
+      "titleEn": "Taillon (right elbow discomfort) exits first start off IL, to have MRI",
+      "summaryEn": "",
+      "bodyEn": [
+        "KANSAS CITY -- Jameson Taillon left Friday night’s start with right elbow discomfort, another setback just two innings into his first start back from the 15-day IL.",
+        "Taillon had been down with right forearm tendinitis, but he and the Blue Jays felt they’d caught that early, and he felt comfortable through a Triple-A rehab start before coming back to the big leagues. After just 29 pitches Friday night, though, John Schneider came out of the dugout to speak to the umpiring crew between innings while the bullpen quickly began to stir.",
+        "Taillon is now headed for an MRI after the Blue Jays’ 9-2 win over the Royals, and the club should have more information on Taillon this weekend.",
+        "“He said it felt a bit more nerve-y, if that makes sense,” John Schneider said. “He’s been through this a little bit and he said this felt a little bit different than the previous injury, so we’ll just see what the MRI says.”",
+        "This is a troubling blow to Taillon, the well-liked right-hander who is now in his 10th MLB season. After Taillon was designated for assignment by the Cubs just over a month ago, he was traded to the Blue Jays and immediately profiled as a rotation fill-in following the trade of Kevin Gausman. That hasn’t happened, though, and with so many injuries elsewhere in this rotation, the Blue Jays are back to scrambling.",
+        "Where does the rotation stand?",
+        "Dylan Cease is going to pitch every fifth day down the stretch, and with off-days each of the next three Thursdays, the Blue Jays can pull that off to maximize their ace’s value. The same could go for José Soriano, too, and if Max Scherzer feels strong, keep the trio rolling.",
+        "Beyond that, it’s messy. The Blue Jays have long been without José Berríos (Tommy John) and Cody Ponce (ACL). Even Bowden Francis (Tommy John) would have seen plenty of starts by now, but he was lost for the season. Shane Bieber is on the IL with right teres major inflammation, and Trey Yesavage underwent surgery to repair the meniscus in his left knee, but is chasing a comeback by the end of the regular season.",
+        "The result? Sunday’s finale against the Royals is already lined up as a bullpen day with Spencer Arrighetti as the “bulk guy”, either starting or following an opener. That was a fine enough plan for one spot in the rotation, but if the Blue Jays have two up in the air, this bullpen -- which is already running on fumes -- will be asked to carry the team.",
+        "The latest on Trey Yesavage",
+        "The Taillon news makes Yesavage’s timeline even more important.",
+        "The 23-year-old threw 23 pitches in a bullpen session Friday at the club’s complex in Dunedin, Fla., and felt fine. He was up to 92 mph in that session and is scheduled to throw another on Monday.",
+        "If all goes well, the Blue Jays would then get Yesavage on the mound facing some hitters at the complex on Thursday, simulating roughly two innings. It’s possible he pitches in a Minor League rehab game after that or continues to face hitters in a more controlled environment at the complex, but either way, it’s beginning to feel like Yesavage has a real shot to come back and help, even if he’d be pitching in shorter bursts."
+      ],
+      "titleZh": "",
+      "summaryZh": "",
+      "bodyZh": [],
+      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/diggsnwkxmyluodo6xlp",
+      "translationSourceHash": "",
+      "translationModel": "",
+      "translatedAt": "",
+      "author": "Keegan Matheson",
+      "publishedAt": "2026-09-05T03:40:00.000Z",
+      "url": "https://www.mlb.com/bluejays/news/jameson-taillon-exits-game-with-elbow-discomfort",
       "source": "MLB.com"
     },
     {
@@ -688,25 +760,6 @@
       "source": "MLB.com"
     },
     {
-      "id": "ed43dba1ace93a09d5b96a24145462d44687faa50b756e253de7623ae27e2849",
-      "teamId": "toronto-blue-jays",
-      "teamName": "多伦多蓝鸟",
-      "titleEn": "Podcast: Scherzer turns back clock, climbs career K's list",
-      "summaryEn": "Max Scherzer moves into ninth place | Morning Lineup",
-      "bodyEn": [],
-      "titleZh": "播客： Scherzer 时光倒流，职业生涯三振榜攀升",
-      "summaryZh": "Max Scherzer 升至职业生涯三振榜第九位 | Morning Lineup",
-      "bodyZh": [],
-      "imageUrl": "",
-      "translationSourceHash": "12aab10befda6f2e51d8c5318b9a9205bd265873498488cbb87389519960deab",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-31T07:42:00.100Z",
-      "author": "",
-      "publishedAt": "2026-08-31T03:40:52.000Z",
-      "url": "https://mlb-cuts-diamond.mlb.com/FORGE/2026/2026-08/31/530fb6c1-597c28b9-61db5487-csvm-diamondgcp-asset_1280x720_59_4000K.mp4",
-      "source": "MLB.com"
-    },
-    {
       "id": "e46bbb7c893910fb6839049f39987ceb0bbcac7d00cbcbb536d89532d0db1e89",
       "teamId": "toronto-blue-jays",
       "teamName": "多伦多蓝鸟",
@@ -742,46 +795,10 @@
       "publishedAt": "2026-08-30T22:05:00.000Z",
       "url": "https://www.mlb.com/bluejays/news/max-scherzer-passes-gaylord-perry-on-all-time-strikeout-list",
       "source": "MLB.com"
-    },
-    {
-      "id": "4dfca91750350a884266d3cccc2dc490458a98cc5e42f1a5c368c325a14e89e1",
-      "teamId": "toronto-blue-jays",
-      "teamName": "多伦多蓝鸟",
-      "titleEn": "Jays' top pitching prospect helps Double-A squad to latest bit of delicious history",
-      "summaryEn": "",
-      "bodyEn": [
-        "Unique happenings are often afoot when the Double-A New Hampshire Fisher Cats dip into their alternate identity bag and step out as the Manchester Chicken Tenders.",
-        "On June 7, 2025, Rafael Sanchez spun a seven-inning no-hitter when the team took the field as the Buffalo Tenders, a spicy offshoot. Incredibly, they were back at it again April 28 when four Fisher Cats hurlers combined to toss yet another no-no while under the guise of the Chicken Tenders.",
-        "So when Nolan Perry, the Blue Jays’ No. 2 prospect, toed the slab Saturday night, it was a precursor that something special could happen. Add in that it was the second time ever the club was donning their latest offshoot -- the Coconut Tenders -- and it all came together for a perfectly delicious blend of history during the club’s 6-4 loss to Hartford at Delta Dental Stadium.",
-        "Get tickets to a Minor League game near you »",
-        "Perry lost the no-hit bid right out of the chute, so the Tenders would have to find an even sweeter way to make history. The 2026 All-Star Futures Game representative racked up a pair of strikeouts in both the first and second, then notched a fifth in the third, before adding two more in the fourth, marking his eighth start this season with at least seven punchouts to his credit.",
-        "But when the bullpen door swung open, batters kept on swinging and missing. Righty Alex Amalfi notched five strikeouts in two frames. Gage Stanifer (TOR No. 10) notched all six of his outs by way of the K before Yondrei Rojas added two punchouts of his own. All told, the Fisher Cats’ pitching staff finished with 20 strikeouts, the most in franchise history.",
-        "Perry topped out at 75 pitches as Toronto continues to keep a close eye on his workload in his first season back from Tommy John surgery. He’s already up to a career-high 73 2/3 innings this year and missed a chunk of time after taking a line drive off the head. But when healthy, he’s backed up being ranked No. 95 overall by MLB Pipeline with a 2.81 ERA, .196 average against and 12.6 K/9 across three levels.",
-        "Stanifer first pitched out of relief this season back on Aug. 6 and has since made seven appearances as a multi-inning reliever. He’s racked up 22 strikeouts over 14 innings in that span and held opposing batters to a .184 average. Equipped with one of the most wicked one-two punches of offerings in the Jays’ system with his fastball/slider combo, Stanifer has shown an ability to continue missing bats in his new role.",
-        "The addition of the Coconut Tenders to the alt identity family was meant to bring a bit of sweet summer vibes to the Granite State. But it’s also provided the Fisher Cats with a little extra flavor as they make history."
-      ],
-      "titleZh": "蓝鸟顶级投手新秀助2A球队再创美味历史",
-      "summaryZh": "蓝鸟潜力新秀助2A球队单场20次三振创队史纪录",
-      "bodyZh": [
-        "当2A新罕布什尔费舍猫队（New Hampshire Fisher Cats）从他们的替补身份包中拿出另一个身份，以曼彻斯特鸡柳队（Manchester Chicken Tenders）出场时，独特的事情往往会发生。",
-        "2025年6月7日，Rafael Sanchez 在球队以“布法罗鸡柳”这个香辣分支身份出战时就投出了一场七局无安打比赛。不可思议的是，4月28日他们又做到了——四位费舍猫投手在“鸡柳”身份下联手投出了另一场无安打比赛。",
-        "因此，当蓝鸟队2号潜力新秀Nolan Perry周六晚上踏上投手丘时，这预示着可能会发生一些特别的事情。再加上这是球队第二次穿上最新分支身份“椰子鸡柳”（Coconut Tenders），这一切汇聚成了一段完美而美味的历史，尽管球队在Delta Dental球场以6比4输给了Hartford。",
-        "购买附近小联盟比赛门票 »",
-        "Perry 一开始就失去了无安打比赛的希望，因此鸡柳队需要找到一种更甜蜜的方式来创造历史。这位2026年全明星未来之星赛代表在第一局和第二局各投出两次三振，第三局又添一次，第四局再添两次，这是他本赛季第八次先发至少投出七次三振。",
-        "但当牛棚门打开后，打者们继续挥棒落空。右投手Alex Amalfi在两局中投出五次三振。Gage Stanifer（蓝鸟第10号新秀）用三振解决了他所有六个出局数，随后Yondrei Rojas也贡献了两次三振。总的来说，费舍猫队投手群合计送出20次三振，创下队史纪录。",
-        "Perry 最多投了75球，多伦多方面在他从汤米·约翰手术复出的首个赛季中继续密切关注他的工作量。他的投球局数今年已经达到职业生涯最高的73又2/3局，并且曾因头部被平飞球击中而缺阵过一段时间。但健康时，他在三个级别中展现出了与MLB Pipeline将他排在第95位相符的实力——自责分率2.81，对手打击率.196，每九局三振12.6次。",
-        "Stanifer 本赛季首次以后援身份出场是在8月6日，此后他已七次作为多局后援投手上场。在这段时间里，他在14局中投出22次三振，并将对手打击率限制在.184。凭借他的速球/滑球组合，这被认为是蓝鸟系统中最犀利的组合拳之一，Stanifer在新角色中展现出了持续让打者挥空的能力。",
-        "将“椰子鸡柳”加入替补身份家族，是为了给花岗岩州带来一丝甜蜜的夏日气息。但这也为费舍猫队创造历史增添了一点别样的风味。"
-      ],
-      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/w1gebyu4jflz84f5gsvp",
-      "translationSourceHash": "87901100bcd3baf429dd0d487f3e8398eb9bbfeae81d679b0e0cd52cf9a5f49d",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-30T05:45:58.199Z",
-      "author": "Jesse Borek",
-      "publishedAt": "2026-08-30T03:54:00.000Z",
-      "url": "https://www.mlb.com/bluejays/news/blue-jays-prospect-nolan-perry-double-a-new-hampshire-strikeout-record",
-      "source": "MLB.com"
     }
   ],
-  "pendingNotificationIds": []
+  "pendingNotificationIds": [
+    "91b0ac93104f2a496cdeefc558741a5be53756b6540173a52375ff7659aa2328",
+    "aa8d2aa8c2cf5139ac99f7b381e7ec39f39c77f7b5a0f536096684bc3d13cb47"
+  ]
 }
