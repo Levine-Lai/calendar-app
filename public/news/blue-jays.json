@@ -1,8 +1,45 @@
 {
   "teamId": "toronto-blue-jays",
   "teamName": "多伦多蓝鸟",
-  "updatedAt": "2026-09-06T19:37:39.300Z",
+  "updatedAt": "2026-09-06T21:46:57.536Z",
   "items": [
+    {
+      "id": "e7bb65f657a104f52add012311076b10c81f70a3754b2ce3daea5bcaa45bfea8",
+      "teamId": "toronto-blue-jays",
+      "teamName": "多伦多蓝鸟",
+      "titleEn": "Key takeaways: Royals 6, Blue Jays 1",
+      "summaryEn": "",
+      "bodyEn": [
+        "KANSAS CITY -- If the Blue Jays can reel off six more series like this to end the season, they’re headed to the postseason, but they couldn’t stick the landing for a sweep. ​",
+        "Sunday’s 6-1 loss to the Royals nudged the Blue Jays back to .500 and one game out of the final AL Wild Card spot, which now belongs to the Guardians again. The Blue Jays just beat those same Guardians and hold the season tiebreaker (4-2), but Cleveland has three walk-offs in their past three days.",
+        "This is what mattered most from Sunday in Kansas City:",
+        "1. Blue Jays still need more from Spencer Arrighetti",
+        "We can consider Arrighetti to be stretched all the way back out to a “starter” at this point, after throwing 91 pitches over 4 2/3 innings. Now, the Blue Jays need some quality out of those innings.",
+        "Arrighetti got rocked in the first, allowing a bunt single and walk to snowball when he served up a three-run shot to Vinnie Pasquantino. Salvador Perez later took him deep, too, and while Arrighetti allowed six runs, that number could have been even higher with all of the warning-track shots he gave up.",
+        "Better outings from Arrighetti aren’t a “want” for the Blue Jays, they’re a need. With Jameson Taillon back on the Blue Jays’ crowded IL, they’re stuck using a bullpen day as their No. 5 starter, which makes Arrighetti the No. 4. There’s no skipping him, but next time through, the Blue Jays may consider using an opener in front of Arrighetti.",
+        "2. The Adventures of Jesús Sánchez",
+        "How much longer can the Blue Jays run the risk of Jesús Sánchez roaming the outfield?",
+        "Sunday brought another glaring error when Sánchez dropped a simple fly ball in the second inning, which extended the inning for Arrighetti and cost him five more pitches. The odd blunder is excusable over 162 games, but these have become too common for Sánchez.",
+        "Out of 146 qualified outfielders, Sánchez is near the bottom with a -8 Fielding Run Value, metrically the weakest defender on a team that’s otherwise been among baseball’s best. This is actually a bit surprising for Sánchez, who had typically been closer to a league-average defender before being traded to the Blue Jays. This season, with a combination of physical and mental errors, it’s just not working.",
+        "The alternative is to have Myles Straw in left field, trading some offensive upside for much stronger defense and better speed. Given that the Blue Jays still profile as a lower-scoring team needing to win some tight games down the stretch, Straw makes a lot of sense in these spots. It could also leave the Blue Jays more willing to roll the dice on Sean Keys, who played just a handful of games in left field in Triple-A, but offers greater power upside than Sánchez and should be able to at least meet his 2026 standard defensively.",
+        "3. One bright spot: Josh Smith",
+        "Quietly, Smith has been one of the Blue Jays’ hottest hitters lately. His home run Sunday was his fourth in 18 games with the organization, too, a welcome sign in a lineup looking for a spark each night.",
+        "The Smith deal wasn’t the flashiest move of the Trade Deadline, coming over from the Rangers for lefty Adam Macko, but it’s working.",
+        "“When we acquired him, it was under the radar,” manager John Schneider said. “We still think he’s a good player who was having a down year. There are some things, mechanically, for him to get back to. He was aware of that, too. … He made some pretty quick adjustments.”",
+        "Immediately, Smith identified a disconnect between his upper and lower half. With that wrinkle smoothed out again, he’s unlocking better bat speed, and if he keeps hitting like this, he could force his way into the lineup more often down the stretch."
+      ],
+      "titleZh": "",
+      "summaryZh": "",
+      "bodyZh": [],
+      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/i9cgpwtskd6j05va7l5i",
+      "translationSourceHash": "",
+      "translationModel": "",
+      "translatedAt": "",
+      "author": "Keegan Matheson",
+      "publishedAt": "2026-09-06T21:04:55.000Z",
+      "url": "https://www.mlb.com/bluejays/news/blue-jays-drop-series-finale-in-kansas-city",
+      "source": "MLB.com"
+    },
     {
       "id": "87be75ae53562e0d0b18a33480a284dc612e203cf27105ff7d53e7af5203dbb2",
       "teamId": "toronto-blue-jays",
@@ -756,26 +793,9 @@
       "publishedAt": "2026-08-31T17:10:23.000Z",
       "url": "https://www.mlb.com/bluejays/news/blue-jays-legends-who-could-join-hall-of-excellence",
       "source": "MLB.com"
-    },
-    {
-      "id": "ed43dba1ace93a09d5b96a24145462d44687faa50b756e253de7623ae27e2849",
-      "teamId": "toronto-blue-jays",
-      "teamName": "多伦多蓝鸟",
-      "titleEn": "Podcast: Scherzer turns back clock, climbs career K's list",
-      "summaryEn": "Max Scherzer moves into ninth place | Morning Lineup",
-      "bodyEn": [],
-      "titleZh": "",
-      "summaryZh": "",
-      "bodyZh": [],
-      "imageUrl": "",
-      "translationSourceHash": "",
-      "translationModel": "",
-      "translatedAt": "",
-      "author": "",
-      "publishedAt": "2026-08-31T03:40:52.000Z",
-      "url": "https://mlb-cuts-diamond.mlb.com/FORGE/2026/2026-08/31/530fb6c1-597c28b9-61db5487-csvm-diamondgcp-asset_1280x720_59_4000K.mp4",
-      "source": "MLB.com"
     }
   ],
-  "pendingNotificationIds": []
+  "pendingNotificationIds": [
+    "e7bb65f657a104f52add012311076b10c81f70a3754b2ce3daea5bcaa45bfea8"
+  ]
 }
