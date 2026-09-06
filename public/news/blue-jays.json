@@ -1,7 +1,7 @@
 {
   "teamId": "toronto-blue-jays",
   "teamName": "多伦多蓝鸟",
-  "updatedAt": "2026-09-06T04:29:42.799Z",
+  "updatedAt": "2026-09-06T08:52:08.342Z",
   "items": [
     {
       "id": "87be75ae53562e0d0b18a33480a284dc612e203cf27105ff7d53e7af5203dbb2",
@@ -200,50 +200,6 @@
       "author": "Brent Maguire",
       "publishedAt": "2026-09-04T18:04:39.000Z",
       "url": "https://www.mlb.com/bluejays/news/mlb-spring-training-2026-schedule-released",
-      "source": "MLB.com"
-    },
-    {
-      "id": "a9153c1137e7d91534b7c01a196cc9d6f22783de4263e03c044e58876db81d9d",
-      "teamId": "toronto-blue-jays",
-      "teamName": "多伦多蓝鸟",
-      "titleEn": "Another crucial series for Blue Jays' Wild Card chase on deck",
-      "summaryEn": "",
-      "bodyEn": [
-        "KANSAS CITY -- It’s the biggest series of the season, because they all are now.",
-        "Fresh off a series win in Cleveland over the Guardians that not only moved them to within a half-game of the final Wild Card spot, but gave the Blue Jays a crucial tiebreaker advantage over the Guardians, the Blue Jays land in Kansas City at 70-71. Yes, that’s dangerously close to a .500 record, something the Blue Jays haven’t touched since June 22.",
-        "Ahead of their three-game set against the Royals, this is what you need to know:",
-        "What’s at stake:",
-        "If you don’t already have one eye on the out-of-town scoreboard each night, now’s the time to start. The Blue Jays and Rangers are both just a half-game back of the Guardians, but the Blue Jays have the easiest draw among the top contenders this weekend:",
-        "• The Guardians play the Tigers (64-75), who have fallen 5 1/2 back of the final Wild Card spot and will be motivated to save their fading postseason chances.",
-        "• The Rangers have a tough test against the Rays (83-57), the top team in the American League.",
-        "• The Orioles play the Red Sox (76-65), who have the third-best record in the AL.",
-        "This can be a dangerous trap, of course, as the Royals have played some great baseball lately and recently took two of three from the Blue Jays at Rogers Centre, but this is still a clear opening for Toronto. Keep in mind that while the Blue Jays hold the tiebreaker over the Guardians, they’ve already lost their tiebreaker to the Rangers (0-4).",
-        "One big thing:",
-        "You’ll be forgiven if you still feel like you need to see more from Vladimir Guerrero Jr., but isn’t this the closest he’s felt in months? This isn’t just about his five-RBI game Wednesday in Cleveland and his towering home run to left field -- there seems to have been a shift in the focus and energy of Guerrero lately.",
-        "Manager John Schneider is the resident expert on the question “Is Vlad back?” given their decade of history together, and those swings in Cleveland looked awfully familiar.",
-        "“Yeah, I’ve seen it a couple thousand times,” Schneider said. “It seems like when Vlad has a performance like that or when he’s in the middle of something, it allows everyone to be at ease. That’s what a player like him can do. It impacts everyone up and down the lineup.”",
-        "One little thing:",
-        "The Blue Jays need to do more on the bases to help themselves win … or at least avoid shooting themselves in the foot.",
-        "Toronto has allowed the most stolen bases in Major League Baseball (131), which is a pitching issue as much as a catching issue. The Blue Jays are also tied for 24th in the league with just 71 steals of their own, but Schneider has seen some improvements in that area, led by Brett Bateman. It can’t only be measured by steals, either.",
-        "“We’ve gotten a little faster, a little more athletic,” Schneider said. “I think we can take an extra base or go from first to third and just create opportunities that are a little bit easier for the next guys coming up. We’ve seen it before, that once you do it, it becomes the norm and it becomes the expectation for the next guy.”",
-        "One sneaky speedster? Charles McAdoo. Maybe it’s his position as a corner infielder or maybe it’s his laid-back demeanor, but he doesn’t feel like a speedster, yet he’s one of the best athletes on this team. His sprint speed of 29.1 feet per second actually ranks him just above Bateman and behind Myles Straw for second on the team. The Blue Jays would love to see McAdoo use that gift more often.",
-        "On the mound:",
-        "Game 1:Blue Jays: Jameson Taillon (2-6, 5.68 ERA)Royals: Daniel Lynch (4-4, 3.06 ERA)",
-        "Game 2:Blue Jays: Max Scherzer (2-7, 6.16 ERA)Royals: Seth Lugo (6-8, 5.03 ERA)",
-        "Game 3:Blue Jays: TBDRoyals: Randy Dobnak (2-3, 2.65 ERA)",
-        "That finale lines up as the Blue Jays’ bullpen day, which recently featured Spencer Arrighetti in a bulk role in their loss to the Guardians, so let’s consider that “TBD” right up until the day of.",
-        "Scherzer looks like he’s 27 again, on a red-hot streak with the Blue Jays as he rides the adrenaline of another postseason race, but Taillon is the most interesting name on this slate for the Blue Jays. Back after throwing 48 pitches in his lone rehab start (forearm tendinitis), this is a major spot for the 10-year veteran looking to salvage his 2026 season."
-      ],
-      "titleZh": "",
-      "summaryZh": "",
-      "bodyZh": [],
-      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/pbnmgupwvrdoji5gczdc",
-      "translationSourceHash": "",
-      "translationModel": "",
-      "translatedAt": "",
-      "author": "",
-      "publishedAt": "2026-09-04T15:04:52.000Z",
-      "url": "https://www.mlb.com/bluejays/news/blue-jays-royals-series-has-al-wild-card-implications",
       "source": "MLB.com"
     },
     {
@@ -800,7 +756,53 @@
       "publishedAt": "2026-08-31T17:10:23.000Z",
       "url": "https://www.mlb.com/bluejays/news/blue-jays-legends-who-could-join-hall-of-excellence",
       "source": "MLB.com"
+    },
+    {
+      "id": "e46bbb7c893910fb6839049f39987ceb0bbcac7d00cbcbb536d89532d0db1e89",
+      "teamId": "toronto-blue-jays",
+      "teamName": "多伦多蓝鸟",
+      "titleEn": "Mad Max makes more history, strikes out 10 to pass Perry for 9th all-time",
+      "summaryEn": "",
+      "bodyEn": [
+        "TORONTO -- Max Scherzer climbed another rung of the all-time Major League Baseball strikeouts ladder in the Blue Jays’ 7-0 win over the Mariners on Sunday.",
+        "With his seventh-inning punch out of Cal Raleigh, his 10th of the game, Scherzer surpassed Gaylord Perry for ninth all-time with 3,535 strikeouts.",
+        "When it was announced to the Rogers Centre crowd, fans erupted in appreciation for the history they were witnessing. In typical Scherzer fashion, he saluted the crowd before getting back to work.",
+        "It was the 115th time in Scherzer’s illustrious career that he had struck out at least 10 batters in a game. He is third in that category, behind only Nolan Ryan (215) and Randy Johnson (212) since the mound moved to its current distance in 1893.",
+        "At 42 years and 34 days old, Scherzer is also the oldest pitcher with 10+ strikeouts and one or no hits allowed in a game since Ryan on May 1, 1991, (44 years, 90 days) in a no-hitter against none other than the Blue Jays.",
+        "Scherzer and Ryan (six times) are the only pitchers with such an outing at age 42+ in MLB history.",
+        "After Josh Naylor grounded out to second base to end the seventh, Scherzer walked off the mound with a 4-0 lead and a standing ovation from the Jays faithful. Scherzer threw 67 of his 97 pitches for strikes, with one walk and Raleigh's fourth-inning double the only baserunners he allowed over seven innings of work.",
+        "The moment wasn’t lost on Scherzer postgame.",
+        "Every member of the 3,000-strikeout club",
+        "“I respect who’s on this list,” Scherzer said. “To be moving up the top 10 all-time means something. It’s great to do it here at home and have the fans be able to get into it as well. It’s a special moment. I’m very thankful to my teammates, the fans and their support.”",
+        "Catcher Alejandro Kirk kick started Toronto’s offense in the bottom of the first with a two-run home run over the wall in left-center field after Scherzer struck out the side in the top half.",
+        "Vladimir Guerrero Jr.’s two-run double added to the Blue Jays’ lead in the fifth, and Kazuma Okamoto hit his team-leading 28th home run of the season in the sixth to make it 4-0. Toronto tacked on three more runs in the eighth to put the game away.",
+        "But this day was all about the man they call “Mad Max,” and the vintage performance he delivered.",
+        "As happy as Scherzer was with his start, he remained focused on what’s ahead for the Blue Jays.",
+        "“This is what you play for, this is what’s fun,” Scherzer said of Toronto’s playoff push. “When you’re in the hunt, you have to win. The pressure is on. You have to go out there and do something about it. I love these moments. We’re in a fight and we have to fight all the way until the end.”",
+        "It’s the kind of intensity and mindset Scherzer has become known for over his career. Just ask Kirk.",
+        "While his starter wouldn’t admit it, Kirk knew after the first inning that Scherzer’s confidence and stuff was there to have the type of outing he did.",
+        "“We execute the plan that we have,” Kirk said through team interpreter Tito Lebrón. “We all know the kind of player Max is and I make sure to bring my A-game. To try to be on the same page the whole game, it’s something me and him are working on every day.”",
+        "As they say, age is just a number, and Scherzer still believes he can compete when healthy. A day like today proves that that’s the case.",
+        "“I won’t be playing at 42,” Kirk said with a laugh. “What he’s doing, his career is very, very impressive.”",
+        "As he’s done so many times, Scherzer stepped up when his team needed him the most. On an afternoon when it would’ve been easy to be satisfied with a series win, he pushed for more.",
+        "The victory was the Blue Jays' first on a Sunday since June 7 in a win over the Orioles, snapping a 10-game losing streak in weekend finales. Toronto’s sweep was also its first of the month, despite having four previous opportunities to do so against the Cardinals, Phillies, Red Sox and Yankees.",
+        "Manager John Schneider said watching Scherzer was like “hopping in a time machine.”",
+        "“A pretty remarkable performance here in a vacuum with the 10 strikeouts, one hit and then getting into ninth place all-time in strikeouts is pretty cool to see,” Schneider said. “He was dialed [in] from the very beginning. It was vintage Max.”"
+      ],
+      "titleZh": "",
+      "summaryZh": "",
+      "bodyZh": [],
+      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/z5oy3v8zovvxnmuswys0",
+      "translationSourceHash": "",
+      "translationModel": "",
+      "translatedAt": "",
+      "author": "Matt Betts",
+      "publishedAt": "2026-08-30T22:05:00.000Z",
+      "url": "https://www.mlb.com/bluejays/news/max-scherzer-passes-gaylord-perry-on-all-time-strikeout-list",
+      "source": "MLB.com"
     }
   ],
-  "pendingNotificationIds": []
+  "pendingNotificationIds": [
+    "e46bbb7c893910fb6839049f39987ceb0bbcac7d00cbcbb536d89532d0db1e89"
+  ]
 }
