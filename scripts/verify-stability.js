@@ -224,7 +224,7 @@ const checks = [
   ],
   [
     "32 智能自定义赛程与安全语音入口",
-    index.includes('class="panel manage-panel" hidden')
+    index.includes('class="panel manage-panel">')
       && index.includes('class="panel custom-schedule-panel" aria-labelledby="customScheduleHeading" hidden')
       && index.includes('id="customScheduleInput"')
       && app.includes("function previewCustomSchedule()")

@@ -579,11 +579,12 @@ button:disabled {
   display: grid;
   grid-template-columns: auto minmax(0, 1fr) auto;
   position: sticky;
-  top: 6px;
+  top: 0;
   z-index: 20;
-  margin-bottom: 0;
+  margin: -14px -14px 0;
   padding: 12px;
-  border: 3px solid var(--line);
+  border: 0;
+  border-bottom: 3px solid var(--line);
   background: var(--lavender);
   box-shadow: var(--shadow);
 }
@@ -652,7 +653,16 @@ h2 {
 }
 
 .status-line.is-error {
-  color: var(--danger);
+  color: #a6312a;
+}
+
+.status-line:empty {
+  display: none;
+}
+
+button:focus-visible {
+  outline: 3px solid #5b35a0;
+  outline-offset: 3px;
 }
 
 .calendar-view {
@@ -1552,7 +1562,8 @@ body.modal-open {
     grid-template-columns: auto minmax(0, 1fr) auto;
     align-items: center;
     gap: 8px;
-    margin-bottom: 8px;
+    margin: -6px -6px 8px;
+    border-width: 0 0 2px;
   }
 
   #rangeTitle {

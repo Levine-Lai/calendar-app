@@ -415,7 +415,7 @@ function bindEvents() {
   elements.sidebarClose.addEventListener("click", closeSidebar);
   elements.sidebarOverlay.addEventListener("click", closeSidebar);
   elements.importLeagueBtn.addEventListener("click", importSelectedLeague);
-  elements.refreshBtn.addEventListener("click", importSelectedLeague);
+  elements.refreshBtn.addEventListener("click", updateImportedTeams);
   elements.teamSearchInput.addEventListener("input", () => {
     state.teamSearch = elements.teamSearchInput.value;
     renderTeamButtons();
@@ -541,6 +541,7 @@ function toggleImportPanel() {
   const collapsed = !elements.importPanelBody.hidden;
   elements.importPanelBody.hidden = collapsed;
   elements.importPanelToggle.setAttribute("aria-expanded", String(!collapsed));
+  if (!collapsed) loadTeamsForSelectedLeague();
   try {
     localStorage.setItem("sports-calendar-import-panel-collapsed", collapsed ? "1" : "0");
   } catch {
@@ -549,11 +550,11 @@ function toggleImportPanel() {
 }
 
 function restoreImportPanelState() {
-  let collapsed = false;
+  let collapsed = true;
   try {
-    collapsed = localStorage.getItem("sports-calendar-import-panel-collapsed") === "1";
+    collapsed = localStorage.getItem("sports-calendar-import-panel-collapsed") !== "0";
   } catch {
-    // Use the expanded default when storage is unavailable.
+    // Use the collapsed default when storage is unavailable.
   }
   elements.importPanelBody.hidden = collapsed;
   elements.importPanelToggle.setAttribute("aria-expanded", String(!collapsed));
@@ -1244,7 +1245,7 @@ function openSidebar() {
   elements.sidebarOverlay.hidden = false;
   elements.menuToggle.setAttribute("aria-expanded", "true");
   elements.sidebarClose.focus();
-  loadTeamsForSelectedLeague();
+  if (!elements.importPanelBody.hidden) loadTeamsForSelectedLeague();
 }
 
 function closeSidebar() {
@@ -2612,7 +2613,6 @@ async function updateImportedTeams() {
       isLikelySameMatch: (left, right) => eventsLikelySameMatch(left, right, 8 * dayMs)
     });
     state.events = reconciliation.events.sort(sortByStart);
-    state.cursor = new Date(new Date().getFullYear(), new Date().getMonth(), 1);
     persist({ syncWidget: true });
     render();
     const newCount = importedEvents.filter((event) => !beforeIds.has(event.id)).length;
@@ -2811,6 +2811,7 @@ function renderLeagueButtons() {
     button.addEventListener("click", () => {
       state.selectedLeague = league.id;
       state.teamSearch = "";
+      elements.teamSearchInput.value = "";
       persist();
       renderLeagueButtons();
       loadTeamsForSelectedLeague();

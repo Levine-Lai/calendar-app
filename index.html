@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>体育迷日历</title>
     <style>html,body{margin:0;min-height:100%;background:#fbf4ea;color:#16120f}</style>
-    <link rel="stylesheet" href="public/styles.css?v=2.3.5">
+    <link rel="stylesheet" href="public/styles.css?v=2.3.5.1">
   </head>
   <body>
     <main class="app-shell">
@@ -19,13 +19,13 @@
           </button>
         </section>
 
-        <section class="panel manage-panel" hidden aria-hidden="true">
+        <section class="panel manage-panel">
           <div class="section-title">
             <span>赛程管理</span>
           </div>
           <div class="drawer-actions">
-            <button class="secondary-button" id="updateImportedBtn">更新</button>
-            <button class="danger-button" id="deleteImportedBtn">删除</button>
+            <button class="secondary-button" id="updateImportedBtn">更新全部赛程</button>
+            <button class="danger-button" id="deleteImportedBtn">管理已导入球队</button>
           </div>
         </section>
 
@@ -47,7 +47,7 @@
 
         <section class="panel import-panel" id="importPanel">
           <div class="section-title import-section-title">
-            <button class="import-panel-toggle" id="importPanelToggle" type="button" aria-expanded="true" aria-controls="importPanelBody">
+            <button class="import-panel-toggle" id="importPanelToggle" type="button" aria-expanded="false" aria-controls="importPanelBody">
               <span>联赛导入</span>
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
             </button>
@@ -55,7 +55,7 @@
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a9 9 0 0 1-15.3 6.4M3 12A9 9 0 0 1 18.3 5.6"/><path d="M21 4v6h-6M3 20v-6h6"/></svg>
             </button>
           </div>
-          <div class="import-panel-body" id="importPanelBody">
+          <div class="import-panel-body" id="importPanelBody" hidden>
             <div class="league-grid" id="leagueGrid"></div>
             <div class="team-picker">
               <label class="field">
@@ -66,14 +66,14 @@
               <div class="team-grid" id="teamGrid"></div>
             </div>
             <button class="primary-button" id="importLeagueBtn">导入该球队全部赛程</button>
-            <div class="status-line" id="statusLine" role="status"></div>
           </div>
+          <div class="status-line" id="statusLine" role="status" aria-live="polite"></div>
         </section>
 
         <section class="panel app-update-panel" aria-labelledby="appUpdateTitle">
           <div class="section-title">
             <span id="appUpdateTitle">应用更新</span>
-            <strong class="app-version" id="currentAppVersion">v2.3.5</strong>
+            <strong class="app-version" id="currentAppVersion">v2.3.6</strong>
           </div>
           <p class="app-update-status" id="appUpdateStatus" role="status" aria-live="polite">点击按钮检查是否有新版本</p>
           <ul class="app-update-notes" id="appUpdateNotes" hidden></ul>
@@ -269,6 +269,6 @@
     <script src="public/app-update.js?v=2.3.5"></script>
     <script src="public/team-news-config.js?v=2.3.5"></script>
     <script src="public/team-news-core.js?v=2.3.5"></script>
-    <script src="public/app.js?v=2.3.5"></script>
+    <script src="public/app.js?v=2.3.5.1"></script>
   </body>
 </html>
