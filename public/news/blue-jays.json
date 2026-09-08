@@ -1,8 +1,45 @@
 {
   "teamId": "toronto-blue-jays",
   "teamName": "多伦多蓝鸟",
-  "updatedAt": "2026-09-08T06:31:10.335Z",
+  "updatedAt": "2026-09-08T11:43:11.212Z",
   "items": [
+    {
+      "id": "1b416d69bd08153ff1bf69ec9c0f4736c6b2faa031a0dce646f3f6c298d8946f",
+      "teamId": "toronto-blue-jays",
+      "teamName": "多伦多蓝鸟",
+      "titleEn": "Giménez, Blue Jays feel the whiplash of almost-comeback win",
+      "summaryEn": "",
+      "bodyEn": [
+        "WEST SACRAMENTO -- Andrés Giménez stood in the batter’s box as if frozen in place, keeping his bat extended and watching his game-tying ninth-inning home run in flight. He posed there for several seconds before jogging down the first-base line and flipping his bat end over end in front of a raucous Blue Jays dugout.",
+        "Just twenty minutes later, Giménez crouched to the left of the mound, stunned into silence. His all-out effort to field a bases-loaded chopper from Athletics first baseman Jeff McNeil hadn’t quite been enough: McNeil beat the rap at first base for a walk-off infield hit in the bottom of the ninth.",
+        "In a matter of moments, Giménez and the Blue Jays had experienced all the ups and downs of high-stakes, high-tension September baseball in Monday’s 6-5 loss at Sutter Health Park.",
+        "Giménez’s homer in the ninth to fully erase Toronto’s early 5-1 deficit looked like it might spark a dramatic comeback win. Instead, it just made things all the more painful -- especially since the Blue Jays had a chance to sneak back into an American League Wild Card spot thanks to the Guardians’ 6-4 loss to the Orioles earlier in the day.",
+        "“We’ve got to shake this one off and come back tomorrow,” Blue Jays manager John Schneider said.",
+        "It might not be easy for Toronto to bounce back from a game in which its ace and its lockdown closer both stumbled. Starter Dylan Cease was tagged for five runs (four earned) in five innings, while closer Louis Varland -- pitching in a tie game in the ninth -- failed to send the game to extra innings.",
+        "Varland’s struggles, at least, are more attributable to poor luck than to total ineffectiveness. Donovan Walton and Henry Bolte both drew walks to end plate appearances that featured a number of borderline pitches called balls. The Blue Jays, who lost both of their ABS challenges by the fourth inning, were powerless to change the outcome.",
+        "The Athletics’ hits against Varland in the ninth were hardly scorchers. Max Muncy led off the decisive frame by reaching on a 42.7 mph tapper to third base, while McNeil’s walk-off hit was all of 51.9 mph off the bat. Only one ball in the inning -- a line drive to center field for the second out -- even left the infield.",
+        "“It’s going to happen sometimes,” Schneider said. “No one else I’d rather have out there than Louis. Good placement by them.”",
+        "Cease, meanwhile, continued his struggles at Sutter Health Park. He allowed a career-high nine earned runs in his only previous start in West Sacramento, back in April 2025 with the Padres.",
+        "The right-hander’s average four-seam fastball velocity on Monday was just 94.9 mph, more than 2 mph below his season average of 97.1, but Cease expressed little concern for the sizable dip.",
+        "“I think it’s just late in the season,” Cease said. “I’ve got to kind of roll with what I’ve got and figure out how I can maybe maximize it a little better.”",
+        "Among the least effective pitchers in MLB when it comes to controlling the running game, Cease was repeatedly victimized on the basepaths during Monday’s start. The A’s swiped five bases in the first three innings, including two apiece for Henry Bolte and Zack Gelof, which led to two runs against Cease in the third. That brought Cease’s total to an MLB-high 31 stolen bases allowed this season.",
+        "“I wish I had a little more focus on that,” Cease said of the Athletics’ disruptive baserunning. “I feel like looking back, I kind of just let it happen. They definitely took advantage.”",
+        "Technically, the Blue Jays did manage to catch a runner stealing home in the first inning, but they didn’t get the out they needed. With men on the corners, Carlos Cortes broke for second, and Toronto catcher Alejandro Kirk caught Gelof off third, but a missed catch and then a poor throw from third baseman Kazuma Okamoto -- who was charged with two errors on the play -- ruined the rundown and brought in a second A’s run.",
+        "“We talked about it before the game: Against a pitcher like [Cease], they’re going to take chances,” Schneider said. “We’ve got to do a better job of limiting those extra bases. First inning, really, too, we’ve got to handle the baseball.”",
+        "Okamoto atoned for the mistake with a home run to lead off the Blue Jays’ three-run seventh inning, and Giménez made up for a baserunning gaffe of his own to bring Toronto level in the ninth, but ultimately, it wasn’t enough."
+      ],
+      "titleZh": "",
+      "summaryZh": "",
+      "bodyZh": [],
+      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/hxejduzs89rrtodxevxd",
+      "translationSourceHash": "",
+      "translationModel": "",
+      "translatedAt": "",
+      "author": "Theo DeRosa",
+      "publishedAt": "2026-09-08T06:59:00.000Z",
+      "url": "https://www.mlb.com/bluejays/news/andres-gimenez-hits-game-tying-ninth-inning-homer-in-blue-jays-loss",
+      "source": "MLB.com"
+    },
     {
       "id": "7e9000313c47368fe2a76d65ae126941f1bfce63ec0dcd7280563bdd4d1caec1",
       "teamId": "toronto-blue-jays",
@@ -724,47 +761,9 @@
       "publishedAt": "2026-09-01T22:25:00.000Z",
       "url": "https://www.mlb.com/bluejays/news/ricky-tiedemann-sean-keys-recalled-by-blue-jays",
       "source": "MLB.com"
-    },
-    {
-      "id": "15def7cf50874128eb978cbbc09a2e723340cd3ca6865508b4de1f17a8f49e22",
-      "teamId": "toronto-blue-jays",
-      "teamName": "多伦多蓝鸟",
-      "titleEn": "Blue Jays have golden opportunity to tighten Wild Card race with Guardians",
-      "summaryEn": "",
-      "bodyEn": [
-        "After a vintage Max Scherzer performance punctuated a three-game sweep of the Mariners this past weekend, the Blue Jays -- through all the adversity they’ve faced this season -- sit just 1 1/2 games back of the third American League Wild Card spot.",
-        "And they have a premium chance to close that gap this week.",
-        "The Blue Jays begin a three-game set against the Guardians -- the team currently holding that third Wild Card slot -- on Tuesday at Progressive Field.",
-        "It’s perhaps the biggest series of the season for Toronto to date, and the club has planned accordingly. Manager John Schneider used Monday’s off-day to make sure AL Cy Young contender Dylan Cease and José Soriano will pitch in the series on Wednesday and Thursday, respectively. Spencer Arrighetti is scheduled to throw on Tuesday, with Spencer Miles as an opener.",
-        "Across from that Toronto trio will be Cleveland’s Gavin Williams on Tuesday, Joey Cantillo on Wednesday and a to-be-announced starter on Thursday. Tuesday and Wednesday are night games with first pitch scheduled for 6:40 p.m. ET, while Thursday is a day game at 1:10 p.m. ET.",
-        "Here are three storylines to watch entering the series.",
-        "1. Tie it down",
-        "Beyond the straightforward importance of beating the team in front of you in the standings, the Blue Jays also enter with a 2-1 advantage over the Guardians in the season series. Clinching the season set would give Toronto the head-to-head tiebreaker over Cleveland, should it be necessary in determining playoff position.",
-        "Furthermore, the Blue Jays are in pole position entering September against four of the six teams which are primary threats to the final Wild Card spot. They are 2-1 against the Guardians with three games remaining; 4-3 against the Orioles with six games remaining; 4-2 against the Mariners with no games remaining; and 2-1 against the Tigers with three games remaining.",
-        "The Blue Jays only trail the Twins (3-4 with no remaining games) and the Rangers (0-4 with three games left).",
-        "If Toronto were to end the season tied with any of those teams for the final postseason berth, the head-to-head record would be the first tiebreaker, followed by intra-division record.",
-        "Swingin’ it",
-        "The Blue Jays’ 17-11 August -- their best month in 2026 -- was fueled not only by Cease’s continued excellence (2.03 ERA in five starts) but also by three key offensive performances.",
-        "Alejandro Kirk posted a 160 wRC+ -- a metric that measures overall offensive production on a 100-point scale -- that would make him the 14th-best hitter in MLB in August. George Springer finished the month at 25th with a 141 wRC+, while Trade Deadline addition Brett Bateman was 51st with a 127 wRC+.",
-        "After missing a large chunk of the season with a left thumb fracture, Kirk looked more like himself in August, hitting .341 with five home runs, 20 RBIs and more walks (12) than strikeouts (nine). The catcher was held hitless just three times in the 22 games he started, while he posted multiple hits seven times.",
-        "Springer shook off a slow start to the season and has been excellent in the second half. After going 7-for-11 with four extra-base hits in three games against the Mariners, the 36-year-old’s post-All-Star Game OPS is up to .892.",
-        "Meanwhile, Bateman -- after making his Major League debut on Aug. 7 -- has hit in 15 of his first 19 games. Acquired in the Kevin Gausman trade with the Cubs, the outfielder has taken over the Blue Jays’ leadoff spot and has reached base at a strong .384 mark.",
-        "Can he get going?",
-        "Vladimir Guerrero Jr.’s surprisingly down season has been well-documented, as he's still awaiting his first home run at Rogers Center since ... last season. He also hit one home run in August while slashing .221/.259/.312 -- good for just a 59 wRC+.",
-        "It’s clear that Guerrero has not been “right” all season, and he missed some time this past month with a concussion. But he has the support of his manager, and if Vladdy can put together even a mini hot streak in the season’s final month, it could do wonders for the Blue Jays’ final push toward October."
-      ],
-      "titleZh": "",
-      "summaryZh": "",
-      "bodyZh": [],
-      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/sb8mbkgvl5bfe4erjnyx",
-      "translationSourceHash": "",
-      "translationModel": "",
-      "translatedAt": "",
-      "author": "Max Ralph",
-      "publishedAt": "2026-09-01T14:19:10.000Z",
-      "url": "https://www.mlb.com/bluejays/news/blue-jays-continue-postseason-chase-against-guardians",
-      "source": "MLB.com"
     }
   ],
-  "pendingNotificationIds": []
+  "pendingNotificationIds": [
+    "1b416d69bd08153ff1bf69ec9c0f4736c6b2faa031a0dce646f3f6c298d8946f"
+  ]
 }
