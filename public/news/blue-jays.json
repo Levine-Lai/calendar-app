@@ -1,7 +1,7 @@
 {
   "teamId": "toronto-blue-jays",
   "teamName": "多伦多蓝鸟",
-  "updatedAt": "2026-09-08T01:29:55.443Z",
+  "updatedAt": "2026-09-08T06:31:10.335Z",
   "items": [
     {
       "id": "7e9000313c47368fe2a76d65ae126941f1bfce63ec0dcd7280563bdd4d1caec1",
@@ -58,8 +58,38 @@
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-07-21T02:11:41.474Z",
       "author": "",
-      "publishedAt": "2026-09-08T00:47:00.000Z",
+      "publishedAt": "2026-09-08T02:01:00.000Z",
       "url": "https://www.mlb.com/bluejays/news/blue-jays-injuries-and-roster-moves",
+      "source": "MLB.com"
+    },
+    {
+      "id": "c7cd8b7ee9a2b8ba3499ded4691f333282cd12341b4c3c0c7d28cd9fd71b6d76",
+      "teamId": "toronto-blue-jays",
+      "teamName": "多伦多蓝鸟",
+      "titleEn": "Santander (torn labrum) to begin Triple-A rehab assignment",
+      "summaryEn": "",
+      "bodyEn": [
+        "WEST SACRAMENTO -- A big bat is nearing a return to the Blue Jays. But will he be back by the end of the regular season?",
+        "Anthony Santander is set to begin a rehab assignment on Wednesday with Triple-A Buffalo, manager John Schneider announced before Monday’s series opener against the Athletics at Sutter Health Park. After undergoing surgery to repair a torn left shoulder labrum in February, Santander will begin working his way back to the Major Leagues.",
+        "The outfielder will need a lengthy, Spring Training-style ramp-up before rejoining Toronto, Schneider said. He will play his first rehab game as a designated hitter before getting reps in the outfield.",
+        "“It’ll be a handful of games, at least,” Schneider said of the assignment length. “We want to see how he’s feeling, how he’s hitting the ball. We’ll definitely be in touch with him once he gets rolling.”",
+        "When healthy, Santander could be a huge addition as a switch-hitting slugger with prodigious power: He crushed 44 homers for the Orioles during an All-Star 2024 campaign. But after signing a five-year, $92.5 million deal with the Blue Jays in January 2025, Santander was plagued by the shoulder injury throughout his first season in Toronto. He played just 54 regular-season games and batted just .175 with six home runs. Santander was a non-factor in the postseason, too, homering just once and posting a .564 OPS before being replaced on the roster midway through the ALCS.",
+        "After seeing no game action since mid-October, Santander might be a bit rusty in his initial appearances for the Bisons, but the Blue Jays won’t be pushing the panic button.",
+        "“He’s notoriously kind of a slow starter, too, so we want to make sure that he’s functioning at the normal level that he can,” Schneider said. “If he can help us, it’d be great.”",
+        "While Santander’s career platoon splits are practically even -- he has a .767 career OPS against left-handed pitchers, compared to a .761 mark against righties -- he struggled considerably against southpaws in limited action with the Blue Jays in 2025. Santander went 7-for-48 (.146) with no homers, 20 strikeouts and a .442 OPS against lefties in 2025.",
+        "Still, Schneider said, Toronto wants Santander to focus more on getting healthy than fine-tuning his approach against left-handers. The club’s message as Santander prepares to begin his rehab assignment? “Go be you.”",
+        "“I know last year was a little different based on the shoulder and how he was feeling,” Schneider said. “It’s kind of like, ‘Go get ’em.’”"
+      ],
+      "titleZh": "",
+      "summaryZh": "",
+      "bodyZh": [],
+      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/wrscclv2f7lr1zf8uczn",
+      "translationSourceHash": "",
+      "translationModel": "",
+      "translatedAt": "",
+      "author": "Theo DeRosa",
+      "publishedAt": "2026-09-08T01:58:28.000Z",
+      "url": "https://www.mlb.com/bluejays/news/anthony-santander-to-make-first-rehab-appearance",
       "source": "MLB.com"
     },
     {
@@ -734,44 +764,9 @@
       "publishedAt": "2026-09-01T14:19:10.000Z",
       "url": "https://www.mlb.com/bluejays/news/blue-jays-continue-postseason-chase-against-guardians",
       "source": "MLB.com"
-    },
-    {
-      "id": "cb6280e5bb55738096f327cd6c0cee134ba45e64cb41b092a18ddc73f6a1ed59",
-      "teamId": "toronto-blue-jays",
-      "teamName": "多伦多蓝鸟",
-      "titleEn": "Beloved 'Voice of the Expos' Doucet dies at 86",
-      "summaryEn": "",
-      "bodyEn": [
-        "Jacques Doucet, known as the “Voice of the Expos”, died at 86 last week, his daughter Martine confirmed on social media. Doucet spent 33 years as the beloved French language play-by-play broadcaster for the Expos and served as a pivotal figure in popularizing the French vocabulary used to describe baseball.",
-        "A cause of death was not disclosed, but Doucet revealed in 2024 that he was battling Alzheimer’s disease. The Blue Jays honored him with a moment of silence before last Friday’s game against the Mariners.",
-        "“We join the MLB community and our colleagues at TVA Sports in extending our sincere condolences to the family and friends of Jacques Doucet,” the Blue Jays wrote in a statement. “The ‘Voice of Baseball’ in Quebec and a Canadian Baseball Hall of Famer - his impact on the game and the Montreal Expos will be remembered forever.”",
-        "Born in Montreal in 1940, Doucet got his start as a sports journalist with The Canadian Press and later covered the Expos' first years for La Presse. He became the club’s full-time French-language radio voice in 1972 and stayed in the role until the franchise left to become the Washington Nationals following the 2004 season.",
-        "Doucet then called independent league games for the Quebec Capitales, a member of the Can-Am League, from 2006 until 2011. An opportunity to return to the Major Leagues arose, and Doucet continued his career as the French broadcaster of Blue Jays games from 2011 until his retirement in 2022.",
-        "Among more than 5,500 MLB broadcasts, Doucet was on hand for the Expos’ 1981 NLCS run and two perfect games: Dennis Martinez in 1991, for the Expos against the Dodgers, and David Cone in 1999, for the Yankees against the Expos. He also provided French-language broadcasts for World Series games from 1982 through 1999.",
-        "Doucet additionally wrote several books, including “Les Secrets du baseball” with former Major League pitcher Claude Raymond and “Il était une fois les Expos,” a history of the franchise co-written with Marc Robitaille.",
-        "Doucet’s illustrious career featured an induction to the Expos’ Hall of Fame in 2003, the Quebec Baseball Hall of Fame in 2002 and the Canadian Baseball Hall of Fame in 2020. He also received the Canadian Baseball Hall of Fame’s Jack Graney Award in 2004 and was a finalist for the National Baseball Hall of Fame’s Ford C. Frick Award on multiple occasions."
-      ],
-      "titleZh": "'博览会之声' Doucet 去世，享年86岁",
-      "summaryZh": "'博览会之声' Doucet 去世，享年86岁，曾为博览会队和蓝鸟队担任法语解说。",
-      "bodyZh": [
-        "被誉为“博览会之声”的 Jacques Doucet 上周去世，享年86岁，他的女儿 Martine 在社交媒体上证实了这一消息。Doucet 曾担任博览会队深受喜爱的法语实况解说员长达33年，并在推广描述棒球的法语词汇方面发挥了关键作用。",
-        "死因尚未公布，但 Doucet 在2024年透露自己正在与阿尔茨海默病作斗争。蓝鸟队在上周五对阵水手队的比赛前为他默哀片刻。",
-        "蓝鸟队在一份声明中写道：“我们与 MLB 大家庭以及 TVA Sports 的同事们一起，向 Jacques Doucet 的家人和朋友致以诚挚的哀悼。他是魁北克的‘棒球之声’，也是加拿大棒球名人堂成员——他对这项运动和蒙特利尔博览会队的影响将被永远铭记。”",
-        "Doucet 于1940年出生于蒙特利尔，最初在加拿大通讯社担任体育记者，后来为《La Presse》报道了博览会队最初的几个赛季。1972年，他成为该俱乐部法语电台的专职解说员，直到2004赛季结束后球队迁往华盛顿成为华盛顿国民队。",
-        "此后，Doucet 于2006年至2011年担任独立联盟球队魁北克首都队（Can-Am 联盟成员）的比赛解说。后来出现了重返大联盟的机会，Doucet 于2011年起担任蓝鸟队比赛的法语解说，直至2022年退休。",
-        "在超过5500场 MLB 转播中，Doucet 参与了博览会队1981年国联冠军赛的征程，以及两场完全比赛：1991年 Dennis Martinez 代表博览会队对阵道奇队，以及1999年 David Cone 代表洋基队对阵博览会队。他还于1982年至1999年期间为世界大赛提供法语转播。",
-        "此外，Doucet 还写了几本书，包括与前大联盟投手 Claude Raymond 合著的《Les Secrets du baseball》，以及与 Marc Robitaille 合著的队史《Il était une fois les Expos》。",
-        "Doucet 辉煌的职业生涯包括2003年入选博览会队名人堂、2002年入选魁北克棒球名人堂以及2020年入选加拿大棒球名人堂。他还于2004年获得加拿大棒球名人堂的 Jack Graney 奖，并多次入围国家棒球名人堂的 Ford C. Frick 奖最终名单。"
-      ],
-      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/v1788201397/mlb/jwmlvormrdevgjxoww8t",
-      "translationSourceHash": "f812ad4897f61759410ab2584ea491f96aa8cf48fcd1c0d6f558fc60e8f28057",
-      "translationModel": "deepseek-v4-flash",
-      "translatedAt": "2026-08-31T21:01:59.902Z",
-      "author": "Max Ralph",
-      "publishedAt": "2026-08-31T18:53:50.000Z",
-      "url": "https://www.mlb.com/bluejays/news/beloved-voice-of-the-expos-jacques-doucet-dies-at-86",
-      "source": "MLB.com"
     }
   ],
-  "pendingNotificationIds": []
+  "pendingNotificationIds": [
+    "c7cd8b7ee9a2b8ba3499ded4691f333282cd12341b4c3c0c7d28cd9fd71b6d76"
+  ]
 }
