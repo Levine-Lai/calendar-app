@@ -1,8 +1,35 @@
 {
   "teamId": "toronto-blue-jays",
   "teamName": "多伦多蓝鸟",
-  "updatedAt": "2026-09-09T19:28:26.139Z",
+  "updatedAt": "2026-09-09T21:56:19.138Z",
   "items": [
+    {
+      "id": "bb80c15363d7ca45ff6db295771f86d0eecee62c282906c26c47292d28d25f73",
+      "teamId": "toronto-blue-jays",
+      "teamName": "多伦多蓝鸟",
+      "titleEn": "Blue Jays blanked by A's in crucial opportunity to gain AL Wild Card ground",
+      "summaryEn": "",
+      "bodyEn": [
+        "WEST SACRAMENTO -- The Athletics team that the Blue Jays faced to begin their 2026 season on March 26 at Rogers Centre was hardly recognizable when the two clubs met up this week at Sutter Health Park.",
+        "The Athletics’ original Nos. 1-5 batters -- Nick Kurtz, Shea Langeliers, Tyler Soderstrom, Brent Rooker and Jacob Wilson -- are all on the injured list, as is Opening Day starting pitcher Luis Severino. And yet, Blue Jays manager John Schneider warned before Monday’s series opener, that the underperforming club could still be dangerous.",
+        "“They always play us tough,” Schneider said.",
+        "That was the case once again as the Blue Jays suffered a 2-0 shutout loss to the A’s on Wednesday, dropping two of three games in a crucial September series, and losing ground in the American League Wild Card race. At 73-74, Toronto fell to 1 1/2 games behind Cleveland for the final AL Wild Card spot, although the Blue Jays could pick up half a game if the Guardians fall to the Orioles on Wednesday evening.",
+        "After losing a three-game road set to the A’s in their first-ever series at Sutter Health Park last July, the Blue Jays were held to six hits by lefty Brady Basso and four relievers as their struggles in West Sacramento continued.",
+        "Their best chance came in the fifth inning when Vladimir Guerrero Jr. came up with men on first and third and one out, but he bounced into a 1-4-3 double play to end the threat. The A’s scored in the third and fourth innings of a bullpen game for Toronto, and that was enough.",
+        "The Blue Jays still finished their nine-game road trip that also featured road series against the Guardians and Royals with a 5-4 record, but they missed out on a golden opportunity to gain ground against an A’s team that came into Wednesday 30 games under .500."
+      ],
+      "titleZh": "",
+      "summaryZh": "",
+      "bodyZh": [],
+      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/w7swihtk6e2uaucgj9k2",
+      "translationSourceHash": "",
+      "translationModel": "",
+      "translatedAt": "",
+      "author": "Theo DeRosa",
+      "publishedAt": "2026-09-09T21:38:52.000Z",
+      "url": "https://www.mlb.com/bluejays/news/blue-jays-shut-out-by-depleted-athletics",
+      "source": "MLB.com"
+    },
     {
       "id": "7e9000313c47368fe2a76d65ae126941f1bfce63ec0dcd7280563bdd4d1caec1",
       "teamId": "toronto-blue-jays",
@@ -58,7 +85,7 @@
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-07-21T02:11:41.474Z",
       "author": "",
-      "publishedAt": "2026-09-09T18:44:00.000Z",
+      "publishedAt": "2026-09-09T21:02:00.000Z",
       "url": "https://www.mlb.com/bluejays/news/blue-jays-injuries-and-roster-moves",
       "source": "MLB.com"
     },
@@ -735,43 +762,9 @@
       "publishedAt": "2026-09-02T01:58:00.000Z",
       "url": "https://www.mlb.com/bluejays/news/blue-jays-lose-series-opener-against-gavin-williams-guardians",
       "source": "MLB.com"
-    },
-    {
-      "id": "ee3d9edda78622e914c324207de105c0ba240e57a5aa3ecc4841608c339fca65",
-      "teamId": "toronto-blue-jays",
-      "teamName": "多伦多蓝鸟",
-      "titleEn": "Perry makes 2026 All-Breakout Prospect Team",
-      "summaryEn": "",
-      "bodyEn": [
-        "This story was excerpted from MLB Pipeline's newsletter. Subscribe to get it regularly in your inbox.",
-        "There are prospects who are obviously geared up for great seasons. No one should be surprised that Kevin McGonigle and JJ Wetherholt are starring in the big leagues, or that Dodgers outfielder Josue De Paula and Mariners left-hander Kade Anderson have dominated in the Minors.",
-        "Then there are prospects who seem to come out of nowhere. We recognize them annually with our All-Breakout team, the first edition of which in 2023 included Junior Caminero and Jacob Misiorowski.",
-        "Selecting from a pool of players that includes anyone who didn't crack the top 10 on our organization Top 30 rankings to start the year, I could have assembled an entire All-Breakout squad of current and recent Top 100 prospects. But I also wanted to reward some players who made the largest leaps.",
-        "Both pitchers on the All-Breakout team, Caden Hunter (Orioles) and Nolan Perry (Blue Jays), have gone from being unranked on org Top 30s to the Top 100 this year. They're joined by fellow Top 100 prospects Cooper Flemming (Rays), Murf Gray (Pirates) and Eric Hartman (Braves), and three more players who didn't make Top 30s in the preseason: Émilien Pitre (Mets), Franklin Primera (Red Sox) and Josiah Ragsdale (Cardinals).",
-        "Franklin Primera, C, Red SoxA $10,000 steal out of Venezuela in 2024, Primera has emerged as one of the best young catching prospects in the game. After tearing up the Rookie-level Florida Complex League with a .427/.549/.718 batting line in his first month playing in the United States, he has continued to rake in Single-A at age 19. He features advanced framing skills and possesses solid arm strength as well.",
-        "Taitn Gray, 1B, RaysOne of the best prep power prospects in the 2025 Draft, Gray hasn't disappointed since the Rays grabbed the Iowa product in the third round. He's hitting .296/.389/.457 with eight homers in 71 games in Single-A while generating huge exit velocities from both side of the plate. He's more athletic than most first basemen and may be able to handle the outfield corners.",
-        "Émilien Pitre, 2B, MetsThe best of the three prospects the Mets acquired from the Rays in the Freddy Peralta trade last month, Pitre excels at making contact and is batting .315/.430/.867 with a 10 percent strikeout rate in 107 games from High-A to Triple-A. He's not a slugger or a speedster, but he has some gap power and basestealing savvy.",
-        "Murf Gray, 3B, PiratesThe 73rd overall pick in the 2025 Draft -- making him the earliest Fresno State hitter selected since 2015 first-rounder Taylor Ward -- Gray has smashed expectations in his pro debut by slashing .304/.403/.575 with 31 homers in 115 games while climbing from Single-A to Double-A. He can get chase-happy but nevertheless makes a lot of contact, and his combination of bat speed and strength creates well-above-average raw power.",
-        "Cooper Flemming, SS, RaysFlemming rode some late helium into the second round of the 2025 Draft, pairing a clean left-handed swing with projectable power. In his age-19 season, the California prep product ranks second in the Single-A Carolina League in hitting (.293), fifth in wRC+ (124) and eighth in slugging (.443). He may wind up at third base, where his offensive profile and strong arm would fit well.",
-        "Eric Hartman, OF, BravesThe highest-ranked Top 100 prospect on this list at No. 42, Hartman is the first Minor Leaguer to accumulate 25 homers and 50 steals in the same season since Hall of Famer Andruw Jones in 1995. An over-slot 20th-round signing out of an Alberta high school two years ago, he has electrifying speed and is hitting balls a lot harder in his second pro season than he did in his debut.",
-        "Braylon Payne, OF, BrewersA surprise first-round pick out of a Texas high school in 2024, Payne stood out with his plus-plus speed at the time and since has developed surprising power. He may have the best combination of exit velocities and quickness in the Minors, and that has translated into 25 homers and 24 steals in 91 games between High-A and Double-A during his age-19 season.",
-        "Josiah Ragsdale, OF, CardinalsPart of the Dustin May/JoJo Romero trade with the Brewers in August, Ragsdale went from making a lot of weak groundball contact during his brief pro debut last year to driving balls in the air with authority this season. The 2025 seventh-rounder from Boston College also has plus-plus speed and is batting .305/.427/.563 with 23 homers and 34 steals in 106 games between High-A and Double-A.",
-        "Enddy Azocar, DH, OriolesAnother Venezuelan bargain ($40,000) for the Red Sox in their 2024 international class, Azocar went to the Orioles as part of the Adley Rutschman trade in August. He's a potential 20-20 right fielder with the chance for solid tools across the board, and he's hitting .299/.352/.549 with 21 homers and 18 steals in 106 games between two Class A levels at age 19.",
-        "Caden Hunter, LHP, OriolesThe Orioles have two lefties drafted in 2025 who made rapid ascents to the Top 100 list, with Hunter getting the nod over Joseph Dzierwa because he made the bigger jump. Selected in the sixth round out of Southern California, Hunter has dominated to the tune of a 2.01 ERA, .173 opponent average and 37 percent strikeout rate while advancing from Single-A to Double-A. He has added fastball velocity this year, now operating at 93-96 mph and reaching 99 with plenty of carry and armside run, and his mid-80s slider and changeup also are solid offerings.",
-        "Nolan Perry, RHP, Blue JaysAfter the Blue Jays drafted him in the 12th round out of a New Mexico high school in 2022, Perry blew out his elbow two years later and missed last season while recovering from Tommy John surgery. Now he's back with a better fastball than ever, averaging 94 mph with nice shape, and spinning solid sliders and curveballs. He has pitched well at three levels from Single-A to Double-A, compiling a 2.81 ERA, .196 opponent average and 35 percent K rate."
-      ],
-      "titleZh": "",
-      "summaryZh": "",
-      "bodyZh": [],
-      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/cb1fko2aiy266dppnx0d",
-      "translationSourceHash": "",
-      "translationModel": "",
-      "translatedAt": "",
-      "author": "Jim Callis",
-      "publishedAt": "2026-09-01T23:15:00.000Z",
-      "url": "https://www.mlb.com/bluejays/news/breakout-prospects-in-mlb-2026",
-      "source": "MLB.com"
     }
   ],
-  "pendingNotificationIds": []
+  "pendingNotificationIds": [
+    "bb80c15363d7ca45ff6db295771f86d0eecee62c282906c26c47292d28d25f73"
+  ]
 }
