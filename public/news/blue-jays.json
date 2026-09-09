@@ -1,8 +1,45 @@
 {
   "teamId": "toronto-blue-jays",
   "teamName": "多伦多蓝鸟",
-  "updatedAt": "2026-09-08T11:43:11.212Z",
+  "updatedAt": "2026-09-09T06:46:27.469Z",
   "items": [
+    {
+      "id": "cf95c00e362372ce2b5ee0c9ec99f83279c41b9403ed09f6e09b100c18e82a2c",
+      "teamId": "toronto-blue-jays",
+      "teamName": "多伦多蓝鸟",
+      "titleEn": "Okamoto hits 30th HR to propel Blue Jays in hunt for Wild Card spot",
+      "summaryEn": "",
+      "bodyEn": [
+        "WEST SACRAMENTO -- In nearly every answer he gave after leading the Blue Jays to a 4-2 win over the Athletics on Tuesday at Sutter Health Park, Kazuma Okamoto’s message was clear: Toronto isn’t done yet.",
+        "While Okamoto acknowledged he met a personal goal by hitting his 30th home run of an impressive rookie season, he continued to point to what comes next: 16 crucial regular-season contests that will determine his club’s postseason fate. With Tuesday’s win, the Blue Jays (73-73) remain one game out of the final American League Wild Card spot.",
+        "“Definitely, it’s great to get to 30 in my first year, but we’ve still got a few games to go here,” Okamoto said through interpreter Yusuke Oshima. “I want to flip the switch and focus on the games moving forward.”",
+        "Okamoto is certainly flipping the switch in September, batting .333 (9-for-27) with a 1.009 OPS in seven games during the month. He followed up a 423-foot solo home run in Monday night’s 6-5 walk-off loss with another dinger on Tuesday, going back to back with Josh Smith to begin the second inning. He tied White Sox infielder Munetaka Murakami for the most home runs by AL rookies in 2026, just one behind Cincinnati’s Sal Stewart for the Major League lead.",
+        "With the solo blast to left off A’s starter Jack Perkins, Okamoto recorded the 10th season by a player born in Japan to reach the 30-homer plateau. Shohei Ohtani has done it six times, Murakami has done so in 2026, Seiya Suzuki hit 32 homers last season, and Hideki Matsui created the club with 31 dingers in 2004.",
+        "“It’s a pretty cool milestone, 30,” Blue Jays manager John Schneider said. “Pretty good list he just joined of Japanese players there.”",
+        "Maybe it’s unsurprising that Okamoto would slug 30 dingers in his first MLB season: He did so for six straight years, from 2018-23, with the Yomiuri Giants of Nippon Professional Baseball, racking up 248 career home runs in NPB.",
+        "Okamoto has struggled at times in the Majors -- including for much of the second half -- but his recent surge has been promising. Schneider pointed to the right-handed slugger’s final at-bat in the ninth inning, in which Okamoto wasn’t quite on a slider at the bottom of the zone but still drove it 310 feet to center at 94.3 mph.",
+        "“Kaz is swinging the bat well,” Schneider said. “Even the flyout to center on the breaking ball -- he’s kind of riding through some breaking balls, too, and really kind of squaring up the fastball.”",
+        "Okamoto’s hard work isn’t just in the batting cage, either. The infielder took the field early on Tuesday despite temperatures in the mid-90s in sunny West Sacramento, taking part in extra infield drills with third-base coach Carlos Febles.",
+        "On Tuesday, Okamoto’s glovework at the hot corner was considerably improved from a day earlier, when he committed two errors on the same rundown play in the first inning to bring in a run for the A’s.",
+        "“Mistakes happen, obviously,” Okamoto said. “I can’t change that, so all I can do is forget about it and focus on the next game and the next play.”",
+        "Okamoto couldn’t handle a pair of swinging bunts down the third-base line from A’s speedster Henry Bolte -- similar to the soft infield single from Max Muncy that kickstarted Monday’s A’s rally in the ninth -- but held his own at third. He made a nice backhanded stop on a grounder from Tommy White in the second inning, then ranged into foul ground to set his feet and throw out Alika Williams in the seventh.",
+        "“He works his tail off defensively,” Schneider said. “He’s turned into a pretty surehanded guy over there.”",
+        "It’s evident how much Okamoto wants to help the Blue Jays defend their 2025 AL pennant, and so far, he’s been perhaps their most productive hitter. Okamoto’s .762 OPS is tied with Alejandro Kirk for tops on the team among players with at least 100 plate appearances, and his 30 homers are far and away the most among Toronto hitters. George Springer is second with 14, and six-time All-Star Vladimir Guerrero Jr. has only eight.",
+        "That means it’s been Okamoto leading the charge, a role he seems to embrace even through the ups and downs he’s had throughout his standout rookie year.",
+        "“Right now, things are going well,” Okamoto said. “We only have a few more games here while we make a push for the postseason. Hopefully I can keep going.”"
+      ],
+      "titleZh": "",
+      "summaryZh": "",
+      "bodyZh": [],
+      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/mcy83ik504hvwydj4raw",
+      "translationSourceHash": "",
+      "translationModel": "",
+      "translatedAt": "",
+      "author": "Theo DeRosa",
+      "publishedAt": "2026-09-09T05:59:00.000Z",
+      "url": "https://www.mlb.com/bluejays/news/kazuma-okamoto-hits-30th-homer-of-mlb-rookie-season",
+      "source": "MLB.com"
+    },
     {
       "id": "1b416d69bd08153ff1bf69ec9c0f4736c6b2faa031a0dce646f3f6c298d8946f",
       "teamId": "toronto-blue-jays",
@@ -734,34 +771,9 @@
       "publishedAt": "2026-09-01T23:15:00.000Z",
       "url": "https://www.mlb.com/bluejays/news/breakout-prospects-in-mlb-2026",
       "source": "MLB.com"
-    },
-    {
-      "id": "e4bc04a53bc06f158b56bb3af7f7f04dcbaf7366c1ee8d2715fc6d9043ba6a53",
-      "teamId": "toronto-blue-jays",
-      "teamName": "多伦多蓝鸟",
-      "titleEn": "Blue Jays recall Tiedemann, Keys as September reinforcements",
-      "summaryEn": "Lefty reliever Mantiply, utility man Smith also activated",
-      "bodyEn": [
-        "The Blue Jays announced they are returning left-handed pitcher Ricky Tiedemann and infielder Sean Keys to their Major League roster among five moves on Tuesday -- the day active rosters expanded to 28 players.",
-        "In addition to Tiedemann and Keys’ recalls, Toronto also reinstated left-handed pitcher Joe Mantiply from the 60-day injured list (left knee inflammation) and infielder Josh Smith from the 10-day IL (left hamstring inflammation). Both will be active for Tuesday’s series opener against the Guardians.",
-        "In a corresponding move, the Blue Jays designated outfielder Daz Cameron for assignment. The club also announced that right-handed pitcher Simeon Woods Richardson cleared outright waivers and elected free agency.",
-        "Tiedemann, currently the club’s No. 11 prospect according to MLB Pipeline, will make his second Major League appearance whenever he toes the rubber. Formerly the organization’s top overall prospect before a lengthy injury recovery, Tiedemann debuted on Aug. 15 and threw 1 2/3 innings against the Yankees, allowing one run while striking out two. The 24-year-old has posted a 3.75 ERA in 11 Minor League appearances this season.",
-        "Keys will similarly make his second trip to the Majors after a 12-game cup of coffee in June and July. The club’s No. 6 prospect, he leads Blue Jays Minor Leaguers with 28 home runs in 100 games. Keys, 23, hit one dinger and went 5-for-36 (.167) to start his big league career.",
-        "Acquired from the Rangers at the Trade Deadline, Smith played just 14 games for Toronto before going down with a hamstring injury. He was slashing .250/.323/.464 post-trade in a utility role.",
-        "Finally, Mantiply appeared in 17 games to begin the season, pitching to a 2.04 ERA before injury."
-      ],
-      "titleZh": "",
-      "summaryZh": "",
-      "bodyZh": [],
-      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/l81jjkxrhxl0j7kdgpw7",
-      "translationSourceHash": "",
-      "translationModel": "",
-      "translatedAt": "",
-      "author": "Keegan Matheson",
-      "publishedAt": "2026-09-01T22:25:00.000Z",
-      "url": "https://www.mlb.com/bluejays/news/ricky-tiedemann-sean-keys-recalled-by-blue-jays",
-      "source": "MLB.com"
     }
   ],
-  "pendingNotificationIds": []
+  "pendingNotificationIds": [
+    "cf95c00e362372ce2b5ee0c9ec99f83279c41b9403ed09f6e09b100c18e82a2c"
+  ]
 }
