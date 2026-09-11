@@ -1,8 +1,35 @@
 {
   "teamId": "toronto-blue-jays",
   "teamName": "多伦多蓝鸟",
-  "updatedAt": "2026-09-10T17:39:52.837Z",
+  "updatedAt": "2026-09-11T17:43:35.053Z",
   "items": [
+    {
+      "id": "0f69dc0fde0e8f72500e58013a6995863f91d551cb9e3c79cee326573454a6aa",
+      "teamId": "toronto-blue-jays",
+      "teamName": "多伦多蓝鸟",
+      "titleEn": "After 12-year journey, Martin being called up by Blue Jays for MLB debut (report)",
+      "summaryEn": "",
+      "bodyEn": [
+        "More than a decade in the making, Rudy Martin Jr. is reportedly heading to the big leagues.",
+        "The 30-year-old Blue Jays farmhand will be called up on Friday as Toronto opens a pivotal series at home against the Orioles, according to ESPN’s Jeff Passan. The club has not yet confirmed the move. The Blue Jays enter Friday one game behind the Guardians for the third American League Wild Card.",
+        "Martin, an outfielder, was drafted out of high school by the Royals in 2014 in the 25th round, which no longer exists in today’s 20-round Draft. He served in Kansas City’s system until 2021, when he elected free agency.",
+        "Martin has taken a winding journey to reach his Major League debut since then. He signed with the Nationals in January 2022 but was released that August. After two seasons out of affiliated baseball, which featured time in MLB Partner Leagues with the Milwaukee Milkmen of the American Association and the York Revolution of the Atlantic League, as well as with the Toros de Tijuana of the Mexican League, he re-signed with the Royals on a Minor League deal in May 2025 and stayed with the club through this year.",
+        "Martin was then traded from the Royals to the Orioles on July 18 for cash, designated for assignment two days later and claimed by the Blue Jays on July 23. Since joining Triple-A Buffalo on July 25, Martin has posted a .730 OPS with three home runs and 12 stolen bases.",
+        "A career .252 hitter in the Minors with only 50 home runs, Martin is a threat on the bases, even at 30. He has 45 steals in 91 games this season and has swiped at least 20 bags in all but two of his Minor League seasons. Tying a career high with 11 homers this year, Martin has also played his most games since 2019, crossing the 90-game mark for only the second time.",
+        "While it’s unclear exactly what role Martin will play when he joins the Blue Jays, one thing is certain: A 12-year journey to the Major Leagues will be worth celebrating when he eventually takes the field."
+      ],
+      "titleZh": "",
+      "summaryZh": "",
+      "bodyZh": [],
+      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/uxbgqxkrgzj3xsoppmvm",
+      "translationSourceHash": "",
+      "translationModel": "",
+      "translatedAt": "",
+      "author": "",
+      "publishedAt": "2026-09-11T17:17:23.000Z",
+      "url": "https://www.mlb.com/bluejays/news/rudy-martin-jr-blue-jays-callup",
+      "source": "MLB.com"
+    },
     {
       "id": "814f426389c87c4a9317c8199296f56919346032353035fcff51865d404097f8",
       "teamId": "toronto-blue-jays",
@@ -714,51 +741,9 @@
       "publishedAt": "2026-09-03T16:21:44.000Z",
       "url": "https://www.mlb.com/bluejays/news/trey-yesavage-throw-off-mound-first-time-since-knee-surgery",
       "source": "MLB.com"
-    },
-    {
-      "id": "a8f0c1f434ec500a7fc91222e7f1057689db1049eaabd856275782c2b7423e2e",
-      "teamId": "toronto-blue-jays",
-      "teamName": "多伦多蓝鸟",
-      "titleEn": "Ranking the 10 most impactful Trade Deadline moves, one month later",
-      "summaryEn": "",
-      "bodyEn": [
-        "We all know who was the best player moved before this season's Trade Deadline. But now that we are one month clear of that date, has that player been the best midseason addition of the bunch?",
-        "Hint: No.",
-        "Tarik Skubal has been plenty good for the Dodgers, and you will find him in our ranking below of the top Deadline moves. But he's not No. 1. He's actually behind multiple other starting pitchers.",
-        "Here's a look at the top 10 most impactful Trade Deadline additions.",
-        "Notes: Limit one player per team. All stats updated through Tuesday unless noted otherwise.",
-        "1. Tyler Mahle, SP, BravesThe Braves were a Skubal suitor, but like every other club, they had to pivot after the jewel of the Deadline class was shipped to Los Angeles. Atlanta landed on the 31-year-old Mahle, who had a 5.13 ERA across 18 starts with the Giants and missed about a month of action earlier in the year due to a hamstring strain. Once the Deadline passed, he didn't even make it onto our list of the top 25 trades, but he has been everything the Braves could have wanted for their injury-ravaged rotation.",
-        "Mahle has allowed a total of five earned runs through his first five starts with the NL East leaders, spanning 30 1/3 innings. A greater reliance on his splitter has juiced Mahle's strikeout numbers and helped solve his issues against right-handed batters. His strikeout-minus-walk rate, which was a pedestrian 12.9% before the trade, is 23.1% since. And same-handed hitters have seen their OPS versus Mahle plummet from .848 to .583.",
-        "2. Clay Holmes, SP, CubsIn terms of total value, there is no doubt that the deal that brought Holmes to Chicago's North Side was the best one of Deadline season. Not only because he has been stellar for the Cubs, but because that swap with the Mets also included outfielder Tyrone Taylor, who owns a hefty .413/.462/.565 slash line through 52 plate appearances with Chicago.",
-        "Holmes hadn't pitched in about 10 weeks due to a fractured right leg when he was dealt to the Cubs. He stumbled a bit in his team debut, allowing four earned runs over four innings against the Royals on Aug. 8. But in four starts since then, he has given up one run in 25 innings.",
-        "3. Liam Hicks, C, RaysRays catchers finished 28th in wRC+ in 2024 and '25. They had been better this season ahead of the Deadline, but an offensive upgrade was still one of the club's top priorities. Enter Hicks, who perfectly fits the Rays' contact-heavy approach at the plate. But he's been doing a lot more than just putting the bat on the ball. He has been doing serious damage for the team with the best record in the American League.",
-        "Hicks, who has a .374 career slugging percentage through four Minor League seasons and had a .432 slug with the Marlins this year, is slugging .522 in 80 plate appearances with Tampa Bay. His .328 average, .425 on-base percentage and 163 wRC+ each rank inside the top 15 among the 195 hitters who have at least 80 PAs since Hicks first played for the Rays on Aug. 4.",
-        "4. Tarik Skubal, SP, DodgersHere's where Skubal slots in, and for just about any other pitcher, we'd be raving about his results with the Dodgers: a 3.00 ERA and an 11.1 K/9 rate over 30 innings (five starts). But for a reigning two-time Cy Young Award winner, Skubal's results draw more of a polite round of applause than a standing ovation. Still, he's looked really good his past few times out, including an 11-strikeout showing against the Pirates on Aug. 22. Skubal's FIP with the Dodgers is an impressive 2.29. That's third-best among qualified pitchers since August, trailing only the Rays' Drew Rasmussen (2.12) and the Reds' Chase Burns (2.17).",
-        "5. Luis García Jr., INF, YankeesIn no particular order, the Yankees' Trade Deadline priorities included bullpen help, a right-handed-hitting outfielder, another catcher and/or someone who could slot in at shortstop or third base.",
-        "And so, the Yanks' first headline add before the Deadline was ... a lefty-hitting infielder who plays on the right side of second base. However, García was still a huge get for a lineup that needed some pop. The 26-year-old has provided that, highlighted by a .511 slugging percentage, five home runs and 10 extra-base hits in his first 25 games with New York. He has multiple hits in four of his past eight games, including a four-hit night versus Houston on Aug. 25.",
-        "'Maybe the chain has power': Garcia's bat roaring with Yanks",
-        "6. Jo Adell, OF, GuardiansAcquiring left-hander Foster Griffin has been a plus for Cleveland, which can line him up behind the likes of ace Gavin Williams and standout rookie Parker Messick to form what could be a great rotation in a short playoff series. But what the Guardians really needed at the Deadline was more offensive firepower. Adell has brought that as he's posted 11 extra-base hits and an .815 OPS through 24 games.",
-        "Adell has been even better of late, slashing .327/.383/.527 over his previous 14 games. He enjoyed a six-RBI game in the middle of that stretch, something only one other Guardian (Angel Martínez) had achieved in the previous three calendar years. Prior to Adell's arrival, Cleveland ranked 27th in wRC+ (92). Since his first game on Aug. 4, they are tied for 11th in that stat (103).",
-        "7. Brett Bateman, OF, Blue JaysWhen the Blue Jays made the tough decision to trade away Kevin Gausman, they might have received their center fielder of the future in return. Bateman, Toronto's No. 16 prospect, made his MLB debut five days after the trade and has hit .317 with a .367 on-base percentage across 92 plate appearances since.",
-        "Speed and defense are considered his top tools, and those have definitely shown up in The Show. Bateman is 3-for-3 in steals through 20 games and has already racked up +3 outs above average during his short time in center.",
-        "8. Erik Miller, RP, Red SoxThe Red Sox made a huge splash on Deadline Day, grabbing catcher Adley Rutschman from the Orioles for five players, including three prospects. That deal hasn't yet worked out as Boston had hoped, but another move the club made on Aug. 3 has paid dividends. Miller, acquired from the Giants for former top prospect Marcelo Mayer, has absolutely dominated in a setup role in front of Aroldis Chapman, striking out 20 of the 46 batters he has faced. The lefty had thrown 10 1/3 scoreless innings before permitting a run during Monday's win over the Mariners. Most encouraging is the fact that Miller has walked only three batters in his 11 1/3 frames with Boston. He walked 22 batters in 32 2/3 innings with San Francisco before the trade.",
-        "9. Robbie Ray, SP, PadresSpeaking of walks, Ray has issued 16 in 26 1/3 innings with San Diego. But he has been able to work out of trouble often, as he has a 3.42 ERA through five starts. Ray indicated after his Aug. 18 start against the Mets that he has worked with Padres coaches to iron out some issues with his delivery, and when you include that evening's effort, the lefty has permitted only four earned runs through his past three outings (17 1/3 innings).",
-        "Ray has cut back on his four-seam fastball in favor of more changeups with the Padres. His usage on that pitch has increased 10 percentage points, up to 27%, and hitters have a .115 average (3-for-26) and a .448 OPS against it since he joined the NL Wild Card contenders.",
-        "10. Connor Norby, INF, RockiesNorby may be the only player in this top 10 who is not on a club with postseason hopes in 2026, but he is still worthy of inclusion after he reached base in each of his first 15 games with the Rockies after being acquired from the Marlins. The 26-year-old infielder has a .342 on-base percentage and seven extra-base hits through his first 21 games with Colorado. That includes Wednesday's walk-off victory over the Orioles, who drafted Norby in the second round in 2021.",
-        "He was once a high-ranking prospect in Baltimore's system but compiled an 89 wRC+ from 2024-26 with the Orioles and Marlins. Perhaps Norby will unlock his full potential while playing half of his games at the hitters haven that is Coors Field."
-      ],
-      "titleZh": "",
-      "summaryZh": "",
-      "bodyZh": [],
-      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/zkjrakoqpj3sbin1y36p",
-      "translationSourceHash": "",
-      "translationModel": "",
-      "translatedAt": "",
-      "author": "",
-      "publishedAt": "2026-09-03T03:36:04.000Z",
-      "url": "https://www.mlb.com/bluejays/news/best-mlb-trade-deadline-moves-2026",
-      "source": "MLB.com"
     }
   ],
-  "pendingNotificationIds": []
+  "pendingNotificationIds": [
+    "0f69dc0fde0e8f72500e58013a6995863f91d551cb9e3c79cee326573454a6aa"
+  ]
 }
