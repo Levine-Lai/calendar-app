@@ -1,13 +1,13 @@
 {
   "teamId": "toronto-blue-jays",
   "teamName": "多伦多蓝鸟",
-  "updatedAt": "2026-09-11T17:43:35.053Z",
+  "updatedAt": "2026-09-11T20:05:50.453Z",
   "items": [
     {
       "id": "0f69dc0fde0e8f72500e58013a6995863f91d551cb9e3c79cee326573454a6aa",
       "teamId": "toronto-blue-jays",
       "teamName": "多伦多蓝鸟",
-      "titleEn": "After 12-year journey, Martin being called up by Blue Jays for MLB debut (report)",
+      "titleEn": "After 12-year journey, OF Martin called up as Blue Jays designate Sánchez",
       "summaryEn": "",
       "bodyEn": [
         "More than a decade in the making, Rudy Martin Jr. is reportedly heading to the big leagues.",
@@ -25,8 +25,8 @@
       "translationSourceHash": "",
       "translationModel": "",
       "translatedAt": "",
-      "author": "",
-      "publishedAt": "2026-09-11T17:17:23.000Z",
+      "author": "Keegan Matheson",
+      "publishedAt": "2026-09-11T19:26:00.000Z",
       "url": "https://www.mlb.com/bluejays/news/rudy-martin-jr-blue-jays-callup",
       "source": "MLB.com"
     },
