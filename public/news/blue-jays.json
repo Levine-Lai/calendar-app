@@ -1,8 +1,43 @@
 {
   "teamId": "toronto-blue-jays",
   "teamName": "多伦多蓝鸟",
-  "updatedAt": "2026-09-12T05:01:26.206Z",
+  "updatedAt": "2026-09-12T09:14:37.926Z",
   "items": [
+    {
+      "id": "f241e26a3c805cf382bed544b0504043bf53b9a0b9b691e8b81e627d8b7f7d37",
+      "teamId": "toronto-blue-jays",
+      "teamName": "多伦多蓝鸟",
+      "titleEn": "High-A Blue Jays claim 2026 title -- these are the prospects who led them",
+      "summaryEn": "",
+      "bodyEn": [
+        "In a 12-inning game that stretched late into the night, the High-A Vancouver Canadians outlasted the Eugene Emeralds on Friday to complete a three-game sweep and secure the 2026 Northwest League title.",
+        "Much like the first two games of the series, the clincher was a back-and-forth affair. The Canadians led early before falling behind in the middle innings, ultimately entering the eighth down by four runs. David Calabrese, a Richmond Hill, Ontario native, flipped the script with two outs in the ninth inning, crushing a game-tying homer.",
+        "Both teams tallied a run in the 10th and went scoreless in the 11th, seemingly reaching a stalemate. But the first pitch in the 12th inning changed that as Ryan Sprock singled to center field, driving home the go-ahead run. The Canadians held onto the lead for a 9-8 win at PK Park, their third one-run victory in as many games.",
+        "Get tickets to a Minor League game near you »",
+        "It marks Vancouver’s first league title since 2023. It also marks the first time since 2022 that the league's Championship Series has been won via a sweep -- the roles were reversed that season with Eugene toppling Vancouver.",
+        "The Canadians have been somewhat of a fixture in the Northwest League playoffs, making an appearance in four of the last six seasons. This year got off to a rocky start as they dropped their first five games but a combination of old and new names helped turn the tide, while some midseason additions maintained the momentum throughout the playoff push and the Championship Series.",
+        "JoJo Parker, SS",
+        "The Blue Jays’ first-round pick in the 2025 Draft, Parker got his first taste of professional baseball this year. Currently the organization’s No. 1 prospect, he wasted no time in showing off his talent. He impressed in 87 games with Single-A Dunedin, earning a promotion to Vancouver on Aug. 10. The 20-year-old didn’t miss a beat -- he put together a seven-game hit streak to start his High-A tenure. He closed the regular season with a .316 average across 21 games for the Canadians.",
+        "Batting in the leadoff spot, Parker came to the plate in some crucial situations during the postseason series. In Game 1, he hit an RBI double, driving in the tying run in the sixth. In the bottom of the eighth of Game 2, he collected a single and a walk. Although he went hitless in Game 3, he scored the winning run, ending a 12-inning gridlock. All in all, he ended his first pro season with some extra quality at-bats and a championship title.",
+        "Dasan Hill, LHP ... and Nolan Perry, RHP and Johnny King, LHP",
+        "For the early part of the year, the Canadians’ bats were complemented by the arms of Perry and King, the Blue Jays’ No. 2 and No. 3 prospects, respectively. Perry was promoted to Double-A in June, while King remained at High-A until August, racking up a team-leading 112 strikeouts. But when both had moved onto New Hampshire, it was time to pass the proverbial torch. Enter Hill, the club's No. 8 prospect.",
+        "Hill joined the organization in the Jeff Hoffman Trade Deadline deal and made five crucial starts for Vancouver down the stretch, including what became the playoff spot clincher on Sept. 2. He allowed one run over three innings, while striking out four batters. The 6-foot-5 southpaw returned to the mound to start Game 1 and allowed one earned run in his two innings of work.",
+        "David Calabrese, OF",
+        "A graduate of Saint Elizabeth Catholic High School in Thornhill, Ontario, Calabrese returned to Canada when he was signed by the Blue Jays to a Minor League contract on Aug. 12. A third-round pick of the Angels in the 2020 Draft, he started the season with Double-A Rocket City before he was released. He immediately made an impact on the Vancouver lineup and caught fire in the final week of the regular season, earning Northwest League Player of the Week honors after going 14-for-28 with a 1.321 OPS and five stolen bases. Prior to the start of the playoffs, he posted a .348 average with three home runs and 10 RBIs during his 16-game stint with the Canadians.",
+        "The 23-year-old started Game 1 on the bench before coming in as a defensive substitution in the sixth inning. He led off the bottom of the inning and hit a triple, sparking a rally. In Game 2, he posted three hits. Those performances paled in comparison to his game-tying homer in the top of the ninth of Game 3 that completed a four-run comeback. Overall, he went 6-for-12 with three extra-base hits and a stolen base in the series."
+      ],
+      "titleZh": "",
+      "summaryZh": "",
+      "bodyZh": [],
+      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/g93ygrrqifhtsueu9wdh",
+      "translationSourceHash": "",
+      "translationModel": "",
+      "translatedAt": "",
+      "author": "Allison Mast",
+      "publishedAt": "2026-09-12T07:07:00.000Z",
+      "url": "https://www.mlb.com/bluejays/news/blue-jays-prospects-win-2026-high-a-northwest-league-title",
+      "source": "MLB.com"
+    },
     {
       "id": "e8bd0158cd739ccb74907258ece7343f61e536619b1f88486b8750072c9b8d5e",
       "teamId": "toronto-blue-jays",
@@ -38,7 +73,7 @@
       "translationModel": "",
       "translatedAt": "",
       "author": "Keegan Matheson",
-      "publishedAt": "2026-09-12T03:41:00.000Z",
+      "publishedAt": "2026-09-12T06:08:00.000Z",
       "url": "https://www.mlb.com/bluejays/news/blue-jays-lose-pivotal-series-opener-vs-orioles",
       "source": "MLB.com"
     },
@@ -713,40 +748,9 @@
       "publishedAt": "2026-09-04T12:10:00.000Z",
       "url": "https://www.mlb.com/bluejays/news/dylan-cease-continues-stay-in-cy-young-competition",
       "source": "MLB.com"
-    },
-    {
-      "id": "6f40516cdab66b5db41066dfc43240d458c84826b554c2415e91224c04b677fd",
-      "teamId": "toronto-blue-jays",
-      "teamName": "多伦多蓝鸟",
-      "titleEn": "King of the hill: Blue Jays' 20-year-old overpowering hitters as youngest pitcher on Double-A circuit",
-      "summaryEn": "",
-      "bodyEn": [
-        "At an age when most pitchers are trying to establish themselves in the lower levels of the Minors, Johnny King is making one of the most difficult jumps in pro baseball look surprisingly easy.",
-        "Toronto’s No. 3 prospect has emerged as one of the organization’s biggest breakout stars in 2026, and the prized left-hander's recent promotion to Double-A New Hampshire has added another chapter to his rapid climb. Making his ascension all the more impressive is his age.",
-        "Get tickets to a Minor League game near you »",
-        "At just 20 years old, King is the youngest pitcher competing in the Eastern League, yet through his first four starts, he hasn't looked intimidated against opponents who, on average, are roughly five years his senior.",
-        "King delivered his latest statement on Wednesday night, equaling a season high with eight strikeouts over five scoreless innings for the Fisher Cats. King yielded three hits and a walk while generating an impressive 14 whiffs, keeping the opposition off the scoreboard for a second consecutive start.",
-        "Through his first four Eastern League starts, King sports a sparkling 1.50 ERA with 22 punchouts in 18 innings while holding opposing batters to a .136 average. Although his control has occasionally been an issue, his ability to miss bats has remained constant, and considering his age, the former is something the club expects will improve with experience.",
-        "But as impressive as his brief tenure with New Hampshire has been, it’s only been a continuation of an All-Star-caliber campaign. In 21 starts for High-A Vancouver, King posted a 3.21 ERA with a Northwest League-best 112 K’s in 84 innings.",
-        "And King's speedy movement through the system isn't new either.",
-        "Toronto selected the hurler in the third round of the 2024 Draft out of Naples, Florida. Just 17 at the time, King signed an above-slot deal worth $1.247,500 and entered the pro game as a high-upside project with enormous physical potential.",
-        "Long before he became one of the Blue Jays’ top pitching prospects, the 6-foot-3, 210-pounder was an outstanding all-around athlete. King was considered the best hitter on his high school team and possessed enough athletic ability that he could have potentially developed as a position player. But it was his left arm with consistent mid-90’s heat and a nasty curveball that ultimately captured Toronto’s interest.",
-        "King justified the choice to remain on the mound during his pro debut in 2025. The Michigan-born hurler posted a 2.48 ERA and fanned 105 in 61 2/3 innings across 18 appearances (15 starts) between Toronto's Rookie-level Florida Complex League squad and Single-A Dunedin.",
-        "Subscribe to the MLB Pipeline Newsletter",
-        "Now, barely two years removed from high school, King is no longer viewed as just a talented pitcher with potential. He’s a prospect who has quickly become one of Toronto’s most promising arms of the future -- and his breakout 2026 season suggests that's only for starters."
-      ],
-      "titleZh": "",
-      "summaryZh": "",
-      "bodyZh": [],
-      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/ptl5cwqxsrcczhil6ctl",
-      "translationSourceHash": "",
-      "translationModel": "",
-      "translatedAt": "",
-      "author": "Michael Avallone",
-      "publishedAt": "2026-09-04T00:45:20.000Z",
-      "url": "https://www.mlb.com/bluejays/news/blue-jays-prospect-johnny-king-overpowering-double-a-hitters",
-      "source": "MLB.com"
     }
   ],
-  "pendingNotificationIds": []
+  "pendingNotificationIds": [
+    "f241e26a3c805cf382bed544b0504043bf53b9a0b9b691e8b81e627d8b7f7d37"
+  ]
 }
