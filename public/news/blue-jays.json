@@ -1,8 +1,47 @@
 {
   "teamId": "toronto-blue-jays",
   "teamName": "多伦多蓝鸟",
-  "updatedAt": "2026-09-12T00:35:59.833Z",
+  "updatedAt": "2026-09-12T05:01:26.206Z",
   "items": [
+    {
+      "id": "e8bd0158cd739ccb74907258ece7343f61e536619b1f88486b8750072c9b8d5e",
+      "teamId": "toronto-blue-jays",
+      "teamName": "多伦多蓝鸟",
+      "titleEn": "Vlad's baserunning slipup, Scherzer's 6-run start shape series-opening loss vs. O's",
+      "summaryEn": "",
+      "bodyEn": [
+        "TORONTO -- All of the Blue Jays’ momentum coming into this homestand came crashing down in a few early, ugly minutes on Friday night.",
+        "The 7-4 loss to the Orioles leaves the Blue Jays two games behind the Guardians for the final AL Wild Card spot, but at this point, they’ve got more than just the Guardians to worry about with 14 games remaining in their season.",
+        "This is what mattered most:",
+        "1. The AL Wild Card is getting messy … again",
+        "The past 10 days allowed us to focus on the Blue Jays and Guardians as they grew closer atop this race, but those days are over. Not only are the Rangers right in the mix, but the Orioles are hanging on.",
+        "This time? Objects in the mirror are closer than they appear.",
+        "The Blue Jays and Orioles have five games remaining between one another, over a third of Toronto’s remaining games. After this weekend, the Blue Jays travel to Baltimore from Sept. 21-23, their second-to-last series of the season. The Orioles haven’t been a powerhouse by any means, but which teams in this race have? The Blue Jays are currently tied 4-4 in this season's series, too, so they could end up on the wrong end of a tiebreaker.",
+        "One other factor to keep in mind: The Guardians were just 1 1/2 games back of the White Sox in the AL Central going into play on Friday night. The Blue Jays have the tiebreaker advantage over the Guardians, but not over the White Sox, so if that division lead flips down the stretch, it’s not necessarily good news for Toronto.",
+        "“Everything is a challenge right now, everything is high stakes and it’s not going to be easy,” manager John Schneider said. “But it’s about how you handle it, how you put your best foot forward and put guys in position to succeed. Everyone knows what’s ahead of us.”",
+        "2. The little things: Guerrero thrown out",
+        "September and October teach us each year that there’s no such thing as the little things. … They're all big.",
+        "In the first inning, Vladimir Guerrero Jr. was thrown out on a back-pick play by Orioles catcher Samuel Basallo. Guerrero bounced just too far off the bag on the high-and-inside ball to Alejandro Kirk, but there was no need for it. With George Springer on second base in front of him, playing at something less than 100%, they weren’t about to double steal or force the issue. It was, very simply, an out the Blue Jays can’t be giving away.",
+        "“[First-base coach] Mark Budzinski was on it, kind of yelling. He didn’t hear him,” Schneider said. “He just got out too far. Baserunning plays like that can shift momentum a little bit. It could have been a little bit different after Kirk walks. He got out too far and they made a play.”",
+        "Later that inning, the Blue Jays had two men on but got only one crack at it when Nathan Lukes struck out. If Guerrero hadn’t been thrown out, perhaps another opportunity could have changed the direction of this game early on.",
+        "3. The O’s stacked it up on Mad Max",
+        "Immediately after Guerrero’s blunder and the Blue Jays stranding two runners, the Orioles piled it on. You could feel the swing of momentum in the building so clearly as Baltimore strung together six consecutive hits to open the second inning, eventually scoring five in the frame.",
+        "After surrendering a leadoff homer to Dylan Beavers to open the game in the first, this was Max Scherzer being hit by a barrage of jabs. Scherzer soon buckled down and gave the Blue Jays five innings to save the bullpen, but there are no silver linings in postseason races.",
+        "“I’m accountable for my mistakes,” Scherzer said. “In that situation, the two-strike pitch to Gunnar [Henderson], I felt I could have made a better pitch. I got hit on that, but from then on, I felt like I executed. I wasn’t leaving pitches in the heart of the plate. That’s where I have to tip my cap to them. They got base hits on pitches I put in locations I’m comfortable with. It’s frustrating. That’s baseball, I’m not going to cry about it.”",
+        "Scherzer will make at least two more starts this regular season, potentially three. He’s essentially operating as the No. 3 starter behind Dylan Cease and José Soriano with all of these injuries piled up, so there’s no way around this. The Blue Jays need Scherzer, but on Friday night, the O’s were all over him."
+      ],
+      "titleZh": "",
+      "summaryZh": "",
+      "bodyZh": [],
+      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/solpwlsya2kn82b07izm",
+      "translationSourceHash": "",
+      "translationModel": "",
+      "translatedAt": "",
+      "author": "Keegan Matheson",
+      "publishedAt": "2026-09-12T03:41:00.000Z",
+      "url": "https://www.mlb.com/bluejays/news/blue-jays-lose-pivotal-series-opener-vs-orioles",
+      "source": "MLB.com"
+    },
     {
       "id": "40e9bd3a95ac9b49c1f598fc47a8979794685942f866018275f27476c0afb3af",
       "teamId": "toronto-blue-jays",
@@ -707,44 +746,9 @@
       "publishedAt": "2026-09-04T00:45:20.000Z",
       "url": "https://www.mlb.com/bluejays/news/blue-jays-prospect-johnny-king-overpowering-double-a-hitters",
       "source": "MLB.com"
-    },
-    {
-      "id": "a1a92e76c0d7445a814773a3343ac82edc7320866524c718268a08086cf1c155",
-      "teamId": "toronto-blue-jays",
-      "teamName": "多伦多蓝鸟",
-      "titleEn": "Blue Jays secure tiebreaker with Guardians in tight AL Wild Card chase",
-      "summaryEn": "",
-      "bodyEn": [
-        "CLEVELAND -- The Blue Jays just took care of business in Cleveland and are now just a half-game out of the final American League Wild Card spot.",
-        "Thursday afternoon’s 6-3 win not only closes the gap in the Wild Card race, it also gives the Blue Jays a crucial tiebreaker over the Guardians in their head-to-head matchup (4-2) this season.",
-        "This is what mattered most:",
-        "1. The big picture",
-        "Never underestimate the value of a tiebreaker. Remember, the Yankees and Blue Jays both finished at 94-68 last season, but Toronto took the division crown courtesy of a tiebreaker.",
-        "Now that the Blue Jays hold that advantage over the Guardians, this is where it stands:",
-        "Blue Jays tiebreakers (full rules here):",
-        "Guardians: 4-2Orioles: 4-3 with six games remainingRangers: 0-4 with three games remaining (lost)Twins: 3-4Mariners: 4-2Tigers: 2-1 with three games remaining",
-        "The Guardians could quickly come back to life after an unimpressive week of baseball against the Blue Jays, but it’s beginning to feel more like the Orioles could be the biggest threat in this race when you consider their remaining games. The Blue Jays will host the Orioles at Rogers Centre from Sept. 11-13, then travel to Camden Yards for a three-game set Sept. 21-23.",
-        "2. Vladimir Guerrero Jr.? He’s still feeling it.",
-        "This wasn’t nearly as flashy as Vladdy’s performance on Wednesday, when he launched a three-run homer and finished with five RBIs. Guerrero was still as locked in as we’ve seen him in ages, though, even flipping his bat on a walk to open Toronto’s fourth inning after battling back from an 0-2 count.",
-        "In the fifth, Guerrero shot a sac fly out to right field and was pumping his right fist the moment he made contact, knowing he’d hit it deep enough to bring in Brett Bateman from third.",
-        "The Blue Jays need Guerrero to be their leader right now, and two days in a row, he’s shown the two ways that can be done. Every at-bat and every little run matters at this point in the AL Wild Card race, and if Guerrero is playing like that, the rest of this roster will follow.",
-        "3. Keys answers Schneider’s call",
-        "Asked recently what Sean Keys had to do to make his second stint in the big leagues more successful than the last, manager John Schneider had a quick, simple answer: “Hit breaking balls.”",
-        "Keys’ RBI single in the fourth came off a Tanner Bibbee sweeper at the bottom of the zone, an important swing that gives his manager more reason to trust him. It wasn’t a rocket off the bat -- not even close -- but Keys did well to hang back on the pitch instead of flying open too early in his swing.",
-        "This is all the Blue Jays need from Keys against good breaking pitches. If he can survive those and hunt fastballs, then his power can truly shine. He’s hit 29 home runs this season between Double-A, Triple-A and the big leagues, more than any other player in this organization. Toronto needs to steal a game or two down the stretch, and with this team so obviously lacking power, it’s going to be tempting to get Keys in there as often as possible."
-      ],
-      "titleZh": "",
-      "summaryZh": "",
-      "bodyZh": [],
-      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/pbnmgupwvrdoji5gczdc",
-      "translationSourceHash": "",
-      "translationModel": "",
-      "translatedAt": "",
-      "author": "Keegan Matheson",
-      "publishedAt": "2026-09-03T21:38:00.000Z",
-      "url": "https://www.mlb.com/bluejays/news/blue-jays-gain-on-guardians-in-al-wild-card-race",
-      "source": "MLB.com"
     }
   ],
-  "pendingNotificationIds": []
+  "pendingNotificationIds": [
+    "e8bd0158cd739ccb74907258ece7343f61e536619b1f88486b8750072c9b8d5e"
+  ]
 }
