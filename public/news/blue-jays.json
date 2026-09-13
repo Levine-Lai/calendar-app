@@ -1,14 +1,14 @@
 {
   "teamId": "toronto-blue-jays",
   "teamName": "多伦多蓝鸟",
-  "updatedAt": "2026-09-13T20:57:32.878Z",
+  "updatedAt": "2026-09-13T23:06:14.079Z",
   "items": [
     {
       "id": "09b21b3f2f9ed5a2a0ae46708e6239c37e116db7234f69b2ad27e14df98c18dd",
       "teamId": "toronto-blue-jays",
       "teamName": "多伦多蓝鸟",
-      "titleEn": "Key takeaways: Blue Jays 8, Orioles 1",
-      "summaryEn": "",
+      "titleEn": "Blue Jays maintain standing in Wild Card behind back-to-back-to-back homers",
+      "summaryEn": "It’s been 14 years since the Blue Jays last hit three consecutive home runs",
       "bodyEn": [
         "TORONTO -- Doesn’t this team feel different than it did when you woke up this morning?",
         "There’s something about watching Vladimir Guerrero Jr. finally hit a home run out of Rogers Centre that can tempt you into believing again. The 8-1 victory to win the series over the Orioles doesn’t hurt, either.",
@@ -34,7 +34,7 @@
       "translationModel": "",
       "translatedAt": "",
       "author": "Keegan Matheson",
-      "publishedAt": "2026-09-13T20:43:34.000Z",
+      "publishedAt": "2026-09-13T22:33:00.000Z",
       "url": "https://www.mlb.com/bluejays/news/blue-jays-hit-back-to-back-to-back-homers-in-win",
       "source": "MLB.com"
     },
@@ -64,7 +64,7 @@
       "translationModel": "",
       "translatedAt": "",
       "author": "Keegan Matheson",
-      "publishedAt": "2026-09-13T19:45:23.000Z",
+      "publishedAt": "2026-09-13T22:06:00.000Z",
       "url": "https://www.mlb.com/bluejays/news/vladimir-guerrero-jr-hits-first-home-run-at-rogers-centre-in-2026",
       "source": "MLB.com"
     },
