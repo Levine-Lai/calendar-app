@@ -17,7 +17,7 @@ const article = {
 
 test("translation request includes stable MLB reference and JSON output", () => {
   const request = buildTranslationRequest(article);
-  assert.equal(DEFAULT_MODEL, "gemini-2.5-flash-lite");
+  assert.equal(DEFAULT_MODEL, "gemini-3.5-flash-lite");
   assert.equal(request.generationConfig.responseMimeType, "application/json");
   assert.deepEqual(request.generationConfig.responseSchema.required, ["titleZh", "summaryZh", "bodyZh"]);
   assert.match(request.systemInstruction.parts[0].text, /多伦多蓝鸟/);
@@ -30,7 +30,7 @@ test("Arsenal translation request uses football-specific context", () => {
     titleEn: "Arsenal update",
     summaryEn: "The club shared an update.",
     bodyEn: ["The full update is available."]
-  }, "gemini-2.5-flash-lite", { teamId: "arsenal" });
+  }, "gemini-3.5-flash-lite", { teamId: "arsenal" });
   assert.match(request.systemInstruction.parts[0].text, /阿森纳足球俱乐部/);
   assert.doesNotMatch(request.systemInstruction.parts[0].text, /MLB 中文体育编辑/);
   assert.match(request.contents[0].parts[0].text, /阿森纳足球/);

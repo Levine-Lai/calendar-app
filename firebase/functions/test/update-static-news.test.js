@@ -116,7 +116,7 @@ test("Gemini translation uses the server-side key header without writing it into
       };
     }
   });
-  assert.match(endpoint, /gemini-2\.5-flash-lite:generateContent$/);
+  assert.match(endpoint, /gemini-3\.5-flash-lite:generateContent$/);
   assert.equal(apiKeyHeader, "secret-test-key");
   assert.equal(translation.titleZh, "蓝鸟获胜");
 });
