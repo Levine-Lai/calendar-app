@@ -2,8 +2,8 @@ const crypto = require("node:crypto");
 const reference = require("./translation-reference.json");
 const { normalizeArticleParagraphs } = require("./news-core");
 
-const DEEPSEEK_ENDPOINT = "https://api.deepseek.com/chat/completions";
-const DEFAULT_MODEL = "deepseek-v4-flash";
+const GEMINI_ENDPOINT_BASE = "https://generativelanguage.googleapis.com/v1beta/models";
+const DEFAULT_MODEL = "gemini-2.5-flash-lite";
 
 function boundedText(value, maxLength) {
   return String(value || "").replace(/\s+/g, " ").trim().slice(0, maxLength);
@@ -26,7 +26,7 @@ function containsChinese(value) {
 
 function normalizeTranslation(raw, sourceItem, options = {}) {
   if (!raw || typeof raw !== "object" || Array.isArray(raw)) {
-    throw new Error("DeepSeek did not return a JSON object");
+    throw new Error("Gemini did not return a JSON object");
   }
   const titleZh = boundedText(raw.titleZh, 240);
   const summaryZh = boundedText(raw.summaryZh, 900);
@@ -77,39 +77,58 @@ function systemPrompt(options = {}) {
 
 function buildTranslationRequest(item, model = DEFAULT_MODEL, options = {}) {
   return {
-    model,
-    messages: [
-      { role: "system", content: systemPrompt(options) },
-      {
-        role: "user",
-        content: `请将以下${options.teamId === "arsenal" ? "阿森纳足球" : " MLB "}新闻翻译为简体中文并输出 JSON：\n${JSON.stringify({
+    systemInstruction: {
+      parts: [{ text: systemPrompt(options) }]
+    },
+    contents: [{
+      role: "user",
+      parts: [{
+        text: `请将以下${options.teamId === "arsenal" ? "阿森纳足球" : " MLB "}新闻翻译为简体中文并输出 JSON：\n${JSON.stringify({
           titleEn: boundedText(item?.titleEn, 240),
           summaryEn: boundedText(item?.summaryEn, 900),
           bodyEn: normalizeArticleParagraphs(item?.bodyEn)
         })}`
-      }
-    ],
-    response_format: { type: "json_object" },
-    temperature: 0.1,
-    max_tokens: 32768
+      }]
+    }],
+    generationConfig: {
+      responseMimeType: "application/json",
+      responseSchema: {
+        type: "OBJECT",
+        required: ["titleZh", "summaryZh", "bodyZh"],
+        properties: {
+          titleZh: { type: "STRING" },
+          summaryZh: { type: "STRING" },
+          bodyZh: { type: "ARRAY", items: { type: "STRING" } }
+        }
+      },
+      temperature: 0.1,
+      maxOutputTokens: 32768
+    }
   };
 }
 
+function geminiEndpoint(model = DEFAULT_MODEL) {
+  return `${GEMINI_ENDPOINT_BASE}/${encodeURIComponent(model)}:generateContent`;
+}
+
 function parseTranslationResponse(payload, sourceItem, options = {}) {
-  const content = payload?.choices?.[0]?.message?.content;
-  if (!content || typeof content !== "string") throw new Error("DeepSeek returned empty content");
+  const content = payload?.candidates?.[0]?.content?.parts
+    ?.map((part) => part?.text || "")
+    .join("");
+  if (!content || typeof content !== "string") throw new Error("Gemini returned empty content");
   let parsed;
   try {
     parsed = JSON.parse(content);
   } catch {
-    throw new Error("DeepSeek returned invalid JSON");
+    throw new Error("Gemini returned invalid JSON");
   }
   return normalizeTranslation(parsed, sourceItem, options);
 }
 
 module.exports = {
-  DEEPSEEK_ENDPOINT,
+  GEMINI_ENDPOINT_BASE,
   DEFAULT_MODEL,
+  geminiEndpoint,
   translationSourceHash,
   normalizeTranslation,
   reusableTranslation,

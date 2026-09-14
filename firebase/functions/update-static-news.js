@@ -16,8 +16,8 @@ const {
   extractMlbArticleImage
 } = require("./news-core");
 const {
-  DEEPSEEK_ENDPOINT,
   DEFAULT_MODEL,
+  geminiEndpoint,
   reusableTranslation,
   buildTranslationRequest,
   parseTranslationResponse
@@ -117,30 +117,30 @@ async function enrichArticleBodies(items, previousPayload) {
   });
 }
 
-function deepSeekModel() {
-  const configured = String(process.env.DEEPSEEK_MODEL || "").trim();
-  return /^deepseek-[a-z0-9-]{1,64}$/i.test(configured) ? configured : DEFAULT_MODEL;
+function geminiModel() {
+  const configured = String(process.env.GEMINI_MODEL || "").trim();
+  return /^gemini-[a-z0-9.-]{1,64}$/i.test(configured) ? configured : DEFAULT_MODEL;
 }
 
 async function translateArticle(item, options = {}) {
-  const apiKey = String(options.apiKey || process.env.DEEPSEEK_API_KEY || "").trim();
-  if (!apiKey) throw new Error("DEEPSEEK_API_KEY is not configured");
+  const apiKey = String(options.apiKey || process.env.GEMINI_API_KEY || "").trim();
+  if (!apiKey) throw new Error("GEMINI_API_KEY is not configured");
   const fetchImpl = options.fetchImpl || fetch;
-  const model = options.model || deepSeekModel();
+  const model = options.model || geminiModel();
   let lastError = null;
   for (let attempt = 0; attempt < 3; attempt += 1) {
     try {
-      const response = await fetchWithTimeout(DEEPSEEK_ENDPOINT, {
+      const response = await fetchWithTimeout(geminiEndpoint(model), {
         method: "POST",
         headers: {
-          authorization: `Bearer ${apiKey}`,
+          "x-goog-api-key": apiKey,
           "content-type": "application/json"
         },
         body: JSON.stringify(buildTranslationRequest(item, model, options.context))
       }, 120000, fetchImpl);
       if (!response.ok) {
         const details = (await response.text()).slice(0, 300);
-        const error = new Error(`DeepSeek returned ${response.status}: ${details}`);
+        const error = new Error(`Gemini returned ${response.status}: ${details}`);
         error.retryable = response.status === 429 || response.status >= 500;
         throw error;
       }
@@ -156,7 +156,7 @@ async function translateArticle(item, options = {}) {
       await new Promise((resolve) => setTimeout(resolve, 1000 * (2 ** attempt)));
     }
   }
-  throw lastError || new Error("DeepSeek translation failed");
+  throw lastError || new Error("Gemini translation failed");
 }
 
 async function enrichTranslations(items, previousPayload, options = {}) {
@@ -165,7 +165,7 @@ async function enrichTranslations(items, previousPayload, options = {}) {
       .map((item) => [item?.id, item])
       .filter(([id]) => id)
   );
-  const apiKey = String(options.apiKey ?? process.env.DEEPSEEK_API_KEY ?? "").trim();
+  const apiKey = String(options.apiKey ?? process.env.GEMINI_API_KEY ?? "").trim();
   const translator = options.translator || (apiKey
     ? (item) => translateArticle(item, {
         apiKey,
@@ -176,7 +176,11 @@ async function enrichTranslations(items, previousPayload, options = {}) {
     : null);
   let translatedCount = 0;
   let failedCount = 0;
-  const enriched = await mapWithConcurrency(items, 2, async (item) => {
+  let lastTranslationStartedAt = 0;
+  const translationDelayMs = Number.isFinite(options.translationDelayMs)
+    ? Math.max(0, options.translationDelayMs)
+    : 4100;
+  const enriched = await mapWithConcurrency(items, 1, async (item) => {
     const previous = previousItems.get(item.id);
     const reusable = reusableTranslation(previous, item, options.context);
     if (reusable) {
@@ -189,6 +193,9 @@ async function enrichTranslations(items, previousPayload, options = {}) {
     }
     if (!translator) return item;
     try {
+      const remainingDelay = translationDelayMs - (Date.now() - lastTranslationStartedAt);
+      if (lastTranslationStartedAt && remainingDelay > 0) await wait(remainingDelay);
+      lastTranslationStartedAt = Date.now();
       const translation = await translator(item);
       translatedCount += 1;
       process.stdout.write(`Translated article: ${item.titleEn}\n`);
@@ -199,8 +206,8 @@ async function enrichTranslations(items, previousPayload, options = {}) {
       return item;
     }
   });
-  if (!translator) process.stdout.write("DeepSeek key is not configured; keeping English news.\n");
-  if (translator) process.stdout.write(`DeepSeek translation result: ${translatedCount} translated, ${failedCount} failed.\n`);
+  if (!translator) process.stdout.write("Gemini key is not configured; keeping English news.\n");
+  if (translator) process.stdout.write(`Gemini translation result: ${translatedCount} translated, ${failedCount} failed.\n`);
   return enriched;
 }
 

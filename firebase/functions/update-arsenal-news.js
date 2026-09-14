@@ -156,7 +156,7 @@ async function main(options = {}) {
     { official: sources.officialAvailable, guardian: sources.guardianAvailable }
   );
   const translated = await enrichTranslations(merged, previousPayload, {
-    apiKey: options.apiKey ?? process.env.DEEPSEEK_API_KEY,
+    apiKey: options.apiKey ?? process.env.GEMINI_API_KEY,
     fetchImpl: options.fetchImpl,
     context: { teamId: "arsenal" }
   });

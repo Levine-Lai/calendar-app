@@ -44,7 +44,7 @@ jobs:
       - name: Fetch Arsenal.com sitemap and Guardian RSS
         env:
           # Optional: without this secret the English feed still updates normally.
-          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: npm run update:arsenal --prefix firebase/functions
 
       - name: Commit changed Arsenal news data

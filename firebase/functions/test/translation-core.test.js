@@ -17,11 +17,12 @@ const article = {
 
 test("translation request includes stable MLB reference and JSON output", () => {
   const request = buildTranslationRequest(article);
-  assert.equal(request.model, DEFAULT_MODEL);
-  assert.deepEqual(request.response_format, { type: "json_object" });
-  assert.match(request.messages[0].content, /多伦多蓝鸟/);
-  assert.match(request.messages[0].content, /牛棚/);
-  assert.match(request.messages[1].content, /Blue Jays add a reliever/);
+  assert.equal(DEFAULT_MODEL, "gemini-2.5-flash-lite");
+  assert.equal(request.generationConfig.responseMimeType, "application/json");
+  assert.deepEqual(request.generationConfig.responseSchema.required, ["titleZh", "summaryZh", "bodyZh"]);
+  assert.match(request.systemInstruction.parts[0].text, /多伦多蓝鸟/);
+  assert.match(request.systemInstruction.parts[0].text, /牛棚/);
+  assert.match(request.contents[0].parts[0].text, /Blue Jays add a reliever/);
 });
 
 test("Arsenal translation request uses football-specific context", () => {
@@ -29,10 +30,10 @@ test("Arsenal translation request uses football-specific context", () => {
     titleEn: "Arsenal update",
     summaryEn: "The club shared an update.",
     bodyEn: ["The full update is available."]
-  }, "deepseek-v4-flash", { teamId: "arsenal" });
-  assert.match(request.messages[0].content, /阿森纳足球俱乐部/);
-  assert.doesNotMatch(request.messages[0].content, /MLB 中文体育编辑/);
-  assert.match(request.messages[1].content, /阿森纳足球/);
+  }, "gemini-2.5-flash-lite", { teamId: "arsenal" });
+  assert.match(request.systemInstruction.parts[0].text, /阿森纳足球俱乐部/);
+  assert.doesNotMatch(request.systemInstruction.parts[0].text, /MLB 中文体育编辑/);
+  assert.match(request.contents[0].parts[0].text, /阿森纳足球/);
 });
 
 test("translation output requires Chinese title and matching paragraphs", () => {
@@ -52,14 +53,14 @@ test("translation output requires Chinese title and matching paragraphs", () => 
 
 test("translation response parses JSON and rejects empty model content", () => {
   const parsed = parseTranslationResponse({
-    choices: [{ message: { content: JSON.stringify({
+    candidates: [{ content: { parts: [{ text: JSON.stringify({
       titleZh: "蓝鸟补强牛棚",
       summaryZh: "多伦多新增一名后援投手。",
       bodyZh: ["第一段。", "第二段。"]
-    }) } }]
+    }) }] } }]
   }, article);
   assert.equal(parsed.titleZh, "蓝鸟补强牛棚");
-  assert.throws(() => parseTranslationResponse({ choices: [] }, article), /empty content/);
+  assert.throws(() => parseTranslationResponse({ candidates: [] }, article), /empty content/);
 });
 
 test("existing translation is reused only when the English source is unchanged", () => {

@@ -17,7 +17,7 @@
 
 不需要新增 GitHub Token：工作流使用仓库自带的 `GITHUB_TOKEN`，并且只申请 `contents: write`。
 
-`DEEPSEEK_API_KEY` 是可选 Secret。仓库中已经配置时会自动生成中文标题和摘要；没有配置时，英文新闻和原文链接仍会正常更新，App 中文页会回退显示英文。
+`GEMINI_API_KEY` 是可选 Secret。在 [Google AI Studio](https://aistudio.google.com/app/apikey) 免费创建 API Key 后，将它保存为同名 Repository Secret；工作流会使用稳定版 `gemini-2.5-flash-lite` 自动生成中文标题、摘要和正文。没有配置时，英文新闻和原文链接仍会正常更新，App 中文页会回退显示英文。
 
 ## 故障判断
 

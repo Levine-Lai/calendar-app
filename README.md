@@ -89,7 +89,7 @@ npm run build:android
 GitHub Actions 需要以下 Repository Secrets：
 
 - `FIREBASE_SERVICE_ACCOUNT_JSON`：Firebase Admin 服务账号，用于发送 FCM。
-- `DEEPSEEK_API_KEY`：用于生成 `titleZh`、`summaryZh` 和 `bodyZh`。
+- `GEMINI_API_KEY`：在 [Google AI Studio](https://aistudio.google.com/app/apikey) 免费创建，用于通过 Gemini 2.5 Flash-Lite 生成 `titleZh`、`summaryZh` 和 `bodyZh`；未配置时英文新闻仍会正常更新。
 
 Secrets 不得进入网页、APK、新闻 JSON、日志或 Git。`android/app/google-services.json` 仅用于 Android FCM 客户端注册，不是 Admin 私钥。
 

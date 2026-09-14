@@ -93,28 +93,31 @@ test("FCM body is never empty even when the feed contains only a title", () => {
   assert.equal(request.message.data.body, "多伦多蓝鸟发布了一篇新文章，点击查看详情。");
 });
 
-test("DeepSeek translation uses the server-side key without writing it into content", async () => {
-  let authorization = "";
+test("Gemini translation uses the server-side key header without writing it into content", async () => {
+  let apiKeyHeader = "";
+  let endpoint = "";
   const translation = await translateArticle({
     titleEn: "Blue Jays win",
     summaryEn: "Toronto won.",
     bodyEn: ["Toronto won the game."]
   }, {
     apiKey: "secret-test-key",
-    fetchImpl: async (_url, options) => {
-      authorization = options.headers.authorization;
+    fetchImpl: async (url, options) => {
+      endpoint = url;
+      apiKeyHeader = options.headers["x-goog-api-key"];
       assert.doesNotMatch(options.body, /secret-test-key/);
       return {
         ok: true,
-        json: async () => ({ choices: [{ message: { content: JSON.stringify({
+        json: async () => ({ candidates: [{ content: { parts: [{ text: JSON.stringify({
           titleZh: "蓝鸟获胜",
           summaryZh: "多伦多赢下比赛。",
           bodyZh: ["多伦多赢下了这场比赛。"]
-        }) } }] })
+        }) }] } }] })
       };
     }
   });
-  assert.equal(authorization, "Bearer secret-test-key");
+  assert.match(endpoint, /gemini-2\.5-flash-lite:generateContent$/);
+  assert.equal(apiKeyHeader, "secret-test-key");
   assert.equal(translation.titleZh, "蓝鸟获胜");
 });
 
@@ -126,6 +129,7 @@ test("translation failure keeps English news available", async () => {
     bodyEn: []
   }], null, {
     apiKey: "test-key",
+    translationDelayMs: 0,
     translator: async () => {
       throw new Error("simulated translation outage");
     }
