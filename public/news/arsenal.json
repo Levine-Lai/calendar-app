@@ -1,12 +1,55 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-09-14T22:44:31.504Z",
+  "updatedAt": "2026-09-15T06:41:51.496Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "93ddbf238314edaca731e9c979ff4e6b897e70f48765cf254b48db7f8bc8920e",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "U21s preview: Leyton Orient v Arsenal",
+      "summaryEn": "Our young Gunners take on the League One side in the EFL Trophy",
+      "bodyEn": [
+        "Our under-21s face League One side Leyton Orient in the second game of our EFL Trophy campaign on Tuesday night (7.45pm UK).",
+        "We've taken two points from our first four games in all competitions, drawing with Crystal Palace and Premier League 2 champions Brighton, between defeats to Barnet and Chelsea.",
+        "With two games left to put points on the board, we'll be looking to get our first victory of the season and put ourselves back in the mix for a spot in the knockout stages of the EFL Trophy.",
+        "THE OPPOSITION",
+        "The O's come into Tuesday's tie in need of a win; having thrashed Bromley 5-0 just two weeks ago, Leyton Orient are without a win in their last three games, conceding seven and crashing out of the Carabao Cup in the process.",
+        "Goals have come at both ends in games involving the League One side so far this season, with a combined 21 goals in their six matches this season; our first three league games have had a similar total with 11.",
+        "In their first EFL Trophy game of the season, Orient scored a stoppage-time equaliser to take AFC Wimbledon to penalties, before winning the shoot-out to go second in the group on two points.",
+        "Our last trip to Brisbane Road was a successful one, as Ismeal Kabia netted a second-half winner in the 2024 group stages to secure a 2-1 victory.",
+        "HOW TO FOLLOW",
+        "Every game in this season's EFL Trophy is available to watch on Sky Sports + in the UK. Alternatively, live updates will be available on The Arsenal app and on Arsenal.com.",
+        "Post-match, don't miss exclusive interviews with under-21s head coach David Horseman and one of his young Gunners, as well as highlights of all the key action."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/03d41679dfa5-arsenaleflvertutrophyfixture16x9away.webp",
+      "author": "Connor Booth",
+      "publishedAt": "2026-09-15T06:00:00.000Z",
+      "url": "https://www.arsenal.com/news/u21s-preview-leyton-orient-v-arsenal-axX0d9T8wxIc",
+      "source": "Arsenal.com",
+      "titleZh": "U21前瞻：莱顿东方对阵阿森纳",
+      "summaryZh": "我们的青年军将在英格兰联赛锦标赛中对阵英甲球队莱顿东方。",
+      "bodyZh": [
+        "周二晚（英国时间晚上7点45分），我们的U21将在英格兰联赛锦标赛的第二场比赛中对阵英甲球队莱顿东方。",
+        "在各项赛事的头四场比赛中我们取得了两个积分，在输给巴尼特和切尔西之间，分别战平了水晶宫和英超2联赛冠军布赖顿。",
+        "在还剩两场比赛来争取积分的情况下，我们将力争取得本赛季的首场胜利，并重新为争夺联赛锦标赛淘汰赛席位而努力。",
+        "对手情况",
+        "莱顿东方队带着对胜利的渴望迎来周二的比赛；在两周前以5-0大胜布罗姆利之后，莱顿东方在过去的3场比赛中未尝胜绩，丢了7球，并在过程中被淘汰出联赛杯。",
+        "本赛季至今，这支英甲球队的比赛在双方门前都有进球，其6场比赛共产生了21个进球；我们前三场联赛的总进球数也达到了11个，情况类似。",
+        "在本赛季的首场联赛锦标赛中，东方队在补时阶段扳平比分，将AFC温布尔登拖入点球大战，随后通过点球取胜，以2个积分升至小组第二。",
+        "我们上一次做客布里斯班路球场取得了成功，伊斯梅尔·卡比亚在2024年小组赛下半场攻入制胜球，确保了2-1的胜利。",
+        "如何关注比赛",
+        "本赛季英格兰联赛锦标赛的每场比赛都可以在英国的Sky Sports +上观看。此外，阿森纳官方应用和Arsenal.com也将提供实时动态更新。",
+        "赛后，不要错过对U21主教练大卫·霍斯曼及年轻枪手之一的独家采访，以及所有关键动作的精彩集锦。"
+      ],
+      "translationSourceHash": "80daf7588e7a6d5e01c8db1bae09b612ea5c5c4212f4198c878d383d69d9367a",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-09-15T06:41:51.491Z"
+    },
     {
       "id": "06bfe0817e1e3b9f5fd3f95773939af06ff16bd2ba56ca681f68c6b0485fba2b",
       "teamId": "arsenal",
@@ -309,35 +352,6 @@
       "translationSourceHash": "471fc8e261555dbf52aa1f1c7b262e8962fe8ae7d206d71656a81b9f1cf183f8",
       "translationModel": "gemini-3.5-flash-lite",
       "translatedAt": "2026-09-14T14:02:14.873Z"
-    },
-    {
-      "id": "4a124939f6bba55916c74fb9269a1b5f416077de564f95eab0dff3b85cfb1b9c",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Go behind the scenes from our Sunderland success",
-      "summaryEn": "All the best behind the scenes bits from our win at the Stadium of Light",
-      "bodyEn": [
-        "A Bruno Guimaraes wondergoal and a Bukayo Saka penalty gave us all three points, and you can see all the best action from a new angle with our behind the scenes special.",
-        "After David Raya's heroic penalty save, Bruno opened his scoring account in sublime fashion to give us the lead.",
-        "Bukayo then won and converted the penalty to ensure we remained perfect so far this season.",
-        "Press play on the video above to see our Stadium of Light success from a fresh perspective!"
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/8ecced5b7383-sunderland-england-gabriel-of-arsenal-celebrates-after-teammate-bukayo-saka-of-a.webp",
-      "author": "Arsenal Media",
-      "publishedAt": "2026-09-14T10:11:17.541Z",
-      "url": "https://www.arsenal.com/news/go-behind-the-scenes-from-our-sunderland-success-am9Ri5z3BVCE",
-      "source": "Arsenal.com",
-      "titleZh": "带你回顾战胜桑德兰的幕后花絮",
-      "summaryZh": "从全新视角带你回顾我们在光明球场的胜利幕后花絮。",
-      "bodyZh": [
-        "吉马良斯的世界波和萨卡的点球为我们全取三分，通过我们的幕后特别节目，你可以从全新角度观看所有精彩瞬间。",
-        "在拉亚神勇扑点后，吉马良斯以精妙的方式打入个人首球，为我们取得领先。",
-        "随后萨卡制造并罚入点球，确保我们在本赛季至今保持全胜。",
-        "点击播放上方视频，从全新视角感受我们在光明球场的胜利！"
-      ],
-      "translationSourceHash": "5dd0b7a3fefa6399eef9e668979733d81bdb1df1bbff8d389e85a301f14d06fb",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-09-14T14:02:36.622Z"
     },
     {
       "id": "822ea63c820d315842c65e18213ef9dc33f47b5ab0792c1cc74cc7047507b809",
