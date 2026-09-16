@@ -1,12 +1,43 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-09-16T17:17:06.559Z",
+  "updatedAt": "2026-09-16T23:15:10.876Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "60063c953041cf78fd027298cbe1108845ee8c4bbc8b333b8d4dfbf4ad98d00c",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Fleetwood Town drawn in Carabao Cup fourth round",
+      "summaryEn": "We will face the League Two side in the next round of the competition",
+      "bodyEn": [
+        "We have been drawn against Fleetwood Town in the fourth round of the Carabao Cup, with the tie to take place at the League Two side's Highbury Stadium.",
+        "Having beaten Ipswich Town 4-2 at Portman Road on Tuesday night to advance in the competition, the draw for the next round has pitted us against the Fishermen, with the game scheduled for the week commencing October 26. It will be the first-ever meeting between the sides in competitive action.",
+        "Fleetwood reached this stage by beating fellow fourth-tier opposition Chesterfield and Shrewsbury Town, before then knocking out Championship side Sheffield United in the third round. All of their ties have been held at their 5,300-capacity home in the north-west.",
+        "We reached the final last season before Manchester City pipped us to the silverware at Wembley, missing out on having our name engraved on the trophy for a third time, with our two successes coming in 1987 and 1993.",
+        "Exact dates and kick-off times, plus ticket information, will be announced in due course."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/7339e58faab9-doncaster-england-a-general-view-of-the-carabao-cup-trophy-prior-to-the-carabao.webp",
+      "author": "Jonathon Rogers",
+      "publishedAt": "2026-09-16T21:33:49.691Z",
+      "url": "https://www.arsenal.com/news/fleetwood-town-drawn-in-carabao-cup-fourth-round-aKHab3w54VHF",
+      "source": "Arsenal.com",
+      "titleZh": "阿森纳在联赛杯第四轮抽中弗利特伍德镇",
+      "summaryZh": "我们在联赛杯下一轮将对阵这支英乙球队。",
+      "bodyZh": [
+        "我们在联赛杯第四轮抽中了弗利特伍德镇，比赛将在该英乙球队的高地伯里球场进行。",
+        "周二晚上我们在波特曼路球场以4比2击败伊普斯维奇晋级后，下一轮抽签让我们对阵这支渔夫军团，比赛定于10月26日所在的那周进行。这将是双方在正式比赛中的首次交锋。",
+        "弗利特伍德在此之前击败了同级别对手切斯特菲尔德和什鲁斯伯里，随后在第三轮淘汰了英冠球队谢菲尔德联。他们所有的比赛都在其位于西北部、容量为5300人的主场举行。",
+        "我们上赛季杀入决赛，但在温布利被曼城击败错失冠军，未能第三次将队名刻在奖杯上，我们之前的两次成功分别是在1987年和1993年。",
+        "确切的比赛日期、开球时间以及票务信息将在随后公布。"
+      ],
+      "translationSourceHash": "140da808d11abb3684d14ea9ba547da49534230374a3f745c5da0db6503ab48b",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-09-16T23:15:10.870Z"
+    },
     {
       "id": "ec13b5792f9e6d0d3e0773972481efb79de7b9eeb3573b54bf4f295b00d55c34",
       "teamId": "arsenal",
