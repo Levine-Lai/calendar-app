@@ -1,7 +1,7 @@
 {
   "teamId": "toronto-blue-jays",
   "teamName": "多伦多蓝鸟",
-  "updatedAt": "2026-09-15T22:11:05.355Z",
+  "updatedAt": "2026-09-16T00:32:30.214Z",
   "items": [
     {
       "id": "7e9000313c47368fe2a76d65ae126941f1bfce63ec0dcd7280563bdd4d1caec1",
@@ -58,8 +58,59 @@
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-07-21T02:11:41.474Z",
       "author": "",
-      "publishedAt": "2026-09-15T21:47:00.000Z",
+      "publishedAt": "2026-09-15T23:29:00.000Z",
       "url": "https://www.mlb.com/bluejays/news/blue-jays-injuries-and-roster-moves",
+      "source": "MLB.com"
+    },
+    {
+      "id": "af6061c217212ca7b67beaf8d616d3448db9eb09e9c7598c5eb1fd55c78a8f39",
+      "teamId": "toronto-blue-jays",
+      "teamName": "多伦多蓝鸟",
+      "titleEn": "Yesavage struggles in Triple-A rehab start, but could still return next week",
+      "summaryEn": "",
+      "bodyEn": [
+        "TORONTO -- Trey Yesavage made a rehab start with the Triple-A Buffalo Bisons Tuesday night, setting up the star right-hander to return just in time for the final week of the season.",
+        "Yesavage has been rehabbing from surgery he underwent earlier in August to repair the meniscus in his left knee, but has been ramping up quickly to help a rotation that desperately needs it.",
+        "Anthony Santander was also scheduled to play in Tuesday’s game, but he’s now dealing with some lower back discomfort. Santander, who’s trying to come back from shoulder surgery undergone earlier this year, has played in just two rehab games and has been out of the Bisons’ lineup since Friday, so it continues to look extremely challenging for him to get back in time to make an impact.",
+        "Yesavage has a shot, though. This is what you need to know:",
+        "How did Yesavage perform?This didn’t go as planned.",
+        "Yesavage couldn’t get out of the first inning, allowing two runs (one earned) on a pair of hits and a walk, which ran his pitch count up to 34 before he could record the third out. The Blue Jays wisely chose to remove Yesavage instead of pushing him closer to 40 pitches in a single frame.",
+        "The Blue Jays had been hoping for 40-45 pitches, and while it’s still possible for Yesavage to throw a few more pitches off to the side, this isn’t what anyone had in mind. Yesavage’s four-seam fastball averaged 93.3 mph, which is just 1 mph south of his 2026 average in the big leagues and no cause for concern.",
+        "What’s next?Question one: Do the Blue Jays feel that Tuesday was just a blip for the rehabbing Yesavage, and continue to trust that he’s ready to return to the big leagues?",
+        "If that’s a “yes,” then the final hurdle comes Wednesday, when the Blue Jays get a better sense for how Yesavage’s knee (and arm) have bounced back from his first real game action since Aug. 4. As long as that all checks out, though, the Blue Jays could use Yesavage in a bulk role their next trip through the rotation.",
+        "Manager John Schneider has also said that it will be more tempting to give Yesavage a “start” in this situation, meaning he’d pitch the first three or four innings, instead of coming in after an opener.",
+        "What are they saying?When Schneider was looking ahead to Yesavage’s rehab start over the weekend, it was clear that he wouldn’t be picking apart the box score.",
+        "“Just feeling good physically,” Schneider said. “We want to see his stuff be normal. I don’t really care about results. We know what he can do here. Just make sure that he comes out of it feeling good physically. So far, so good with the bullpens and the lives, so that’s all I’m looking at.”",
+        "What else?This weekend in Texas, the Blue Jays tentatively plan to open the series with Spencer Arrighetti, who’s essentially been built up to a full starter’s workload at this point. Coming out of Thursday’s off-day, the Blue Jays could also be aggressive with their bullpen usage in that game if needed.",
+        "Dylan Cease is scheduled for Saturday, followed by José Soriano in the Sunday finale, which leads us to the obvious spot for Yesavage on Monday, when the Blue Jays open their series in Baltimore against the Orioles.",
+        "Taking this a step further, that rotation setup could leave Yesavage in line to pitch on the final day of the season against the Reds at home at Rogers Centre. Given how tight the AL Wild Card race is, that could be a deciding game for the Blue Jays."
+      ],
+      "titleZh": "Yesavage在小联盟3A复健赛表现挣扎，但仍有望于下周回归",
+      "summaryZh": "多伦多蓝鸟投手Yesavage在3A复健赛中表现挣扎，但球队仍可能安排他在下周重返大联盟。",
+      "bodyZh": [
+        "多伦多讯——Trey Yesavage于周二晚间代表小联盟3A水牛城野牛出战复健赛，这位星级右投有望在常规赛收官阶段及时复出。",
+        "Yesavage此前因左膝半月板修复手术一直在进行复健，该手术于8月初进行。为了支援急需人手的先发轮值，他的恢复进程一直在加速推进。",
+        "Anthony Santander原本也计划在周二的比赛中出场，但他目前正受到下背部不适的困扰。Santander正试图从今年早些时候接受的肩膀手术中恢复，他此前仅参加了两场复健赛，自周五以来就一直缺席野牛队的阵容，因此他想赶回并在球队中发挥作用看起来依然极具挑战。",
+        "不过，Yesavage仍有机会。以下是你需要了解的内容：",
+        "Yesavage表现如何？过程并不如计划中顺利。",
+        "Yesavage未能投完第一局，他在送出两支安打和一次保送后失掉2分（其中1分自责分），在取得第三个出局数之前，其投球数就已经达到了34球。蓝鸟明智地选择将Yesavage换下，而不是让他在单局内投球数接近40球。",
+        "蓝鸟此前希望他能投40到45球，尽管Yesavage仍然有可能在场边多投几球，但这并不是任何人所期望的。Yesavage的四缝线速球平均球速为93.3英里，仅比他2026赛季在大联盟的平均球速低1英里，这并不值得担忧。",
+        "下一步是什么？第一个问题：蓝鸟是否认为周二只是处于复健中的Yesavage的一次小波折，并继续相信他已经准备好重返大联盟？",
+        "如果答案是“肯定的”，那么最后一道关卡将在周三到来。届时，蓝鸟将进一步了解Yesavage的膝盖（以及手臂）在经历自8月4日以来的首场真实比赛后恢复得如何。只要这一切都没问题，蓝鸟在下一轮轮值时就可以让Yesavage担任长中继角色。",
+        "总教练John Schneider也表示，在这种情况下给Yesavage一次“先发”机会更有吸引力，这意味着他将投前三到四局，而不是在假先发之后登板。",
+        "他们是怎么说的？当Schneider在周末展望Yesavage的复健赛时，很明显他不会去纠结比赛的数据。",
+        "“身体感觉良好最重要，”Schneider说道。“我们希望看到他的球威恢复正常。我其实不在乎结果。我们知道他在这里能做到什么。只要确保他赛后身体感觉良好就行。到目前为止，牛棚和实战投球的表现都很好，所以我关注的就是这些。”",
+        "还有什么？本周末在得克萨斯，蓝鸟初步计划由Spencer Arrighetti开启系列赛，他目前基本上已经达到了完整先发投手的投球工作量。度过周四的休息日后，如果需要的话，蓝鸟在周四的比赛中也可能会积极调度牛棚。",
+        "Dylan Cease预计在周六先发，随后的周日收官战由José Soriano先发，这自然让人将Yesavage的复工时间指向了周一，届时蓝鸟将在客场对阵巴尔的摩金莺开启系列赛。",
+        "更进一步来看，这样的轮值安排意味着Yesavage有望在常规赛最后一天在罗杰斯中心主场对阵辛辛那提红人时登板投球。鉴于美联外卡竞争如此激烈，那可能会是蓝鸟的一场决定性比赛。"
+      ],
+      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/j5vnrff8o13c2e2ahiwj",
+      "translationSourceHash": "2f4ed05dc67b3704a2661f7ec8dfba380a12fe310595d39e6f3e97bfc3cfef75",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-09-16T00:31:09.175Z",
+      "author": "Keegan Matheson",
+      "publishedAt": "2026-09-15T23:22:33.000Z",
+      "url": "https://www.mlb.com/bluejays/news/trey-yesavage-struggles-in-triple-a-rehab-start",
       "source": "MLB.com"
     },
     {
@@ -1119,62 +1170,9 @@
       "publishedAt": "2026-09-09T23:00:00.000Z",
       "url": "https://www.mlb.com/bluejays/news/predicting-each-team-s-top-prospect-in-2028",
       "source": "MLB.com"
-    },
-    {
-      "id": "cf95c00e362372ce2b5ee0c9ec99f83279c41b9403ed09f6e09b100c18e82a2c",
-      "teamId": "toronto-blue-jays",
-      "teamName": "多伦多蓝鸟",
-      "titleEn": "Okamoto hits 30th HR to propel Blue Jays in hunt for Wild Card spot",
-      "summaryEn": "",
-      "bodyEn": [
-        "WEST SACRAMENTO -- In nearly every answer he gave after leading the Blue Jays to a 4-2 win over the Athletics on Tuesday at Sutter Health Park, Kazuma Okamoto’s message was clear: Toronto isn’t done yet.",
-        "While Okamoto acknowledged he met a personal goal by hitting his 30th home run of an impressive rookie season, he continued to point to what comes next: 16 crucial regular-season contests that will determine his club’s postseason fate. With Tuesday’s win, the Blue Jays (73-73) remain one game out of the final American League Wild Card spot.",
-        "“Definitely, it’s great to get to 30 in my first year, but we’ve still got a few games to go here,” Okamoto said through interpreter Yusuke Oshima. “I want to flip the switch and focus on the games moving forward.”",
-        "Okamoto is certainly flipping the switch in September, batting .333 (9-for-27) with a 1.009 OPS in seven games during the month. He followed up a 423-foot solo home run in Monday night’s 6-5 walk-off loss with another dinger on Tuesday, going back to back with Josh Smith to begin the second inning. He tied White Sox infielder Munetaka Murakami for the most home runs by AL rookies in 2026, just one behind Cincinnati’s Sal Stewart for the Major League lead.",
-        "With the solo blast to left off A’s starter Jack Perkins, Okamoto recorded the 10th season by a player born in Japan to reach the 30-homer plateau. Shohei Ohtani has done it six times, Murakami has done so in 2026, Seiya Suzuki hit 32 homers last season, and Hideki Matsui created the club with 31 dingers in 2004.",
-        "“It’s a pretty cool milestone, 30,” Blue Jays manager John Schneider said. “Pretty good list he just joined of Japanese players there.”",
-        "Maybe it’s unsurprising that Okamoto would slug 30 dingers in his first MLB season: He did so for six straight years, from 2018-23, with the Yomiuri Giants of Nippon Professional Baseball, racking up 248 career home runs in NPB.",
-        "Okamoto has struggled at times in the Majors -- including for much of the second half -- but his recent surge has been promising. Schneider pointed to the right-handed slugger’s final at-bat in the ninth inning, in which Okamoto wasn’t quite on a slider at the bottom of the zone but still drove it 310 feet to center at 94.3 mph.",
-        "“Kaz is swinging the bat well,” Schneider said. “Even the flyout to center on the breaking ball -- he’s kind of riding through some breaking balls, too, and really kind of squaring up the fastball.”",
-        "Okamoto’s hard work isn’t just in the batting cage, either. The infielder took the field early on Tuesday despite temperatures in the mid-90s in sunny West Sacramento, taking part in extra infield drills with third-base coach Carlos Febles.",
-        "On Tuesday, Okamoto’s glovework at the hot corner was considerably improved from a day earlier, when he committed two errors on the same rundown play in the first inning to bring in a run for the A’s.",
-        "“Mistakes happen, obviously,” Okamoto said. “I can’t change that, so all I can do is forget about it and focus on the next game and the next play.”",
-        "Okamoto couldn’t handle a pair of swinging bunts down the third-base line from A’s speedster Henry Bolte -- similar to the soft infield single from Max Muncy that kickstarted Monday’s A’s rally in the ninth -- but held his own at third. He made a nice backhanded stop on a grounder from Tommy White in the second inning, then ranged into foul ground to set his feet and throw out Alika Williams in the seventh.",
-        "“He works his tail off defensively,” Schneider said. “He’s turned into a pretty surehanded guy over there.”",
-        "It’s evident how much Okamoto wants to help the Blue Jays defend their 2025 AL pennant, and so far, he’s been perhaps their most productive hitter. Okamoto’s .762 OPS is tied with Alejandro Kirk for tops on the team among players with at least 100 plate appearances, and his 30 homers are far and away the most among Toronto hitters. George Springer is second with 14, and six-time All-Star Vladimir Guerrero Jr. has only eight.",
-        "That means it’s been Okamoto leading the charge, a role he seems to embrace even through the ups and downs he’s had throughout his standout rookie year.",
-        "“Right now, things are going well,” Okamoto said. “We only have a few more games here while we make a push for the postseason. Hopefully I can keep going.”"
-      ],
-      "titleZh": "Okamoto轰出第30轰，助蓝鸟保留季后赛希望",
-      "summaryZh": "Okamoto轰出本季第30号本垒打，助蓝鸟以4比2击败运动家，保留冲击季后赛的希望。",
-      "bodyZh": [
-        "韦斯特萨克拉门托——周二在萨特健康公园以4比2击败运动家之后，Kazuma Okamoto在赛后接受采访时表达的信息非常明确：多伦多还没有放弃。",
-        "虽然Okamoto承认自己在一个出色的新秀赛季中实现了单季30支本垒打的个人目标，但他随即将重点转向了接下来关乎球队季后赛命运的16场关键常规赛。凭借周二的胜利，战绩为73胜73负的蓝鸟距离美国联盟最后一张季后赛门票仍有1场胜场差。",
-        "“能在第一年就达到30轰绝对是很棒的成就，但我们还有几场比赛要打，”Okamoto通过翻译Yusuke Oshima表示。“我想转换状态，专注于接下来的比赛。”",
-        "Okamoto在9月份确实状态火热，本月出战7场比赛，打击率达到.333（27打数9安打），OPS为1.009。继周一晚间在球队以5比6遭遇再见安打失利的比赛中轰出423英尺的阳春本垒打后，他在周二再次开轰，在第二局与Josh Smith先后敲出背靠背本垒打。这使他在2026年美联新秀本垒打榜上追平了芝加哥白袜内野手Munetaka Murakami，仅落后辛辛那提的Sal Stewart大联盟榜首1支本垒打。",
-        "凭借从运动家先发投手Jack Perkins手中敲出飞向左外野的阳春本垒打，Okamoto成为第10位在单赛季达到30轰里程碑的日本出生球员。大谷翔平曾6次做到这一点，Murakami在2026年达成，Seiya Suzuki上赛季打出32支本垒打，而Hideki Matsui则在2004年以31支本垒打开启了这一纪录。",
-        "“30轰是一个相当酷的里程碑，”蓝鸟总教练John Schneider说。“他加入了一个相当出色的日本球员名单。”",
-        "Okamoto能在MLB的第一个赛季就轰出30支本垒打或许并不让人意外：他在日本职棒读卖巨人队效力期间，从2018到2023年连续6个赛季打出这一成绩，在NPB生涯共累积了248支本垒打。",
-        "Okamoto在大联盟也曾经历过低谷——包括下半赛季的大部分时间——但近期他的状态回升令人鼓舞。Schneider提到了这位右打重炮在第九局的最后一次打席，当时Okamoto虽然没有完全打中好球带底部的滑球，但依然将球击飞了310英尺，击球初速达到每小时94.3英里。",
-        "“Kaz的挥棒感觉很好，”Schneider说。“甚至包括对决变化球打到中外野的飞球——他现在也能很好地应对各种变化球，并且真正能把速球击结实。”",
-        "Okamoto的努力不仅局限于打击笼内。周二阳光明媚的韦斯特萨克拉门托气温高达90多华氏度，这位内野手依然提前来到球场，与三垒教练Carlos Febles一起参加了额外的内野守备训练。",
-        "在周二的比赛中，Okamoto在三垒位置上的防守表现较前一天有了显著提升，他在周一第一局的同一次夹杀守备中曾出现两次失误，导致运动家得分。",
-        "“失误在所难免，”Okamoto说。“我无法改变过去，我能做的就是忘掉它，专注于下一场比赛和下一个守备。”",
-        "Okamoto虽然没能处理好运动家快腿Henry Bolte沿着三垒边线滚出的两记触击球——这类似于周一第九局Max Muncy吹起运动家反击号角的那个内野安打——但他在三垒守位上依然表现稳健。他在第二局美妙地反手拦下了Tommy White的滚地球，随后在第七局移动到界外区站定脚步，将球传出刺杀Alika Williams。",
-        "“他在防守端付出了百分之百的努力，”Schneider说。“他现在已经成长为一名相当稳健的防守球员。”",
-        "显而易见，Okamoto非常渴望帮助蓝鸟捍卫他们2025年的美联冠军荣誉，到目前为止，他或许是球队中最具产出的打者。在至少获得100个打席的球员中，Okamoto .762的OPS与Alejandro Kirk并列全队最高，而他30支本垒打的数据在多伦多打者中更是遥遥领先。George Springer以14支排名第二，6次入选全明星的Vladimir Guerrero Jr.则只有8支。",
-        "这意味着一直是Okamoto在率队前进，而在他出色的新秀赛季中，无论经历高潮还是低谷，他似乎都欣然接受了这一角色。",
-        "“目前一切进展顺利，”Okamoto说。“我们在向季后赛发起冲击的阶段只剩下最后几场比赛了。希望我能继续保持下去。”"
-      ],
-      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/mcy83ik504hvwydj4raw",
-      "translationSourceHash": "514b0fae9eee4908c71ac213a7f20e1b3aba66bf7193154c425b324736ab845f",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-09-14T03:44:52.676Z",
-      "author": "Theo DeRosa",
-      "publishedAt": "2026-09-09T05:59:00.000Z",
-      "url": "https://www.mlb.com/bluejays/news/kazuma-okamoto-hits-30th-homer-of-mlb-rookie-season",
-      "source": "MLB.com"
     }
   ],
-  "pendingNotificationIds": []
+  "pendingNotificationIds": [
+    "af6061c217212ca7b67beaf8d616d3448db9eb09e9c7598c5eb1fd55c78a8f39"
+  ]
 }
