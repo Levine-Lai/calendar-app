@@ -1,12 +1,41 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-09-16T23:15:10.876Z",
+  "updatedAt": "2026-09-17T06:41:28.662Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "9e584bba810e11078a60b24dcef3a5b10db5e890d6ceae9df6485770fd1e1d36",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Stream U21s trip to Birmingham on Friday",
+      "summaryEn": "David Horseman's side continue their PL2 campaign on Friday afternoon",
+      "bodyEn": [
+        "Our under-21s head to Birmingham City on Friday afternoon looking for our first win of the Premier League 2 season, and you can stream the action live on The Arsenal app and Arsenal.com.",
+        "Three games into the league campaign, we've recorded two points from draws with Crystal Palace and Brighton, before losing out to Chelsea last weekend.",
+        "But between our league games, we've recorded wins in the EFL Trophy over Leyton Orient, and the UEFA Youth League against Napoli, where several of our under-21s were involved in our under-19s victory.",
+        "Make sure to tune in on Friday afternoon as we travel to Birmingham, with the action getting underway from 12.55pm (UK) on The Arsenal app and on Arsenal.com."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/5979643d5bd5-borehamwood-england-ife-ibrahim-of-arsenal-during-the-premier-league-2-match-bet.webp",
+      "author": "Connor Booth",
+      "publishedAt": "2026-09-17T05:00:00.000Z",
+      "url": "https://www.arsenal.com/news/stream-u21s-trip-to-birmingham-on-friday-a5Tya6B89yc3",
+      "source": "Arsenal.com",
+      "titleZh": "周五观看U21客场对阵伯明翰的比赛直播",
+      "summaryZh": "大卫·霍斯曼的球队将在周五下午继续他们的英超2联赛征程。",
+      "bodyZh": [
+        "本周五下午，我们的U21青年队将客场挑战伯明翰城，力争取得本赛季英超2联赛的首场胜利，您可以通过阿森纳官方App和Arsenal.com观看比赛的现场直播。",
+        "在联赛进行了三场比赛后，我们在与水晶宫和布莱顿的比赛中取得两场平局积2分，上周末则不敌切尔西。",
+        "但在联赛间隙，我们在EFL锦标赛中击败了莱顿东方，并在欧洲青年联赛中战胜了那不勒斯，多名U21球员参与了我们U19的胜利。",
+        "确保在周五下午收看我们的伯明翰客场之旅，英国时间下午12点55分起，比赛将在阿森纳官方App和Arsenal.com上准时打响。"
+      ],
+      "translationSourceHash": "fa50f8f40ebd8266617031eaa83c3896c5c834d63605e1cfb9c532ea186a79d6",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-09-17T06:41:28.657Z"
+    },
     {
       "id": "60063c953041cf78fd027298cbe1108845ee8c4bbc8b333b8d4dfbf4ad98d00c",
       "teamId": "arsenal",
