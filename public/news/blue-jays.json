@@ -1,8 +1,39 @@
 {
   "teamId": "toronto-blue-jays",
   "teamName": "多伦多蓝鸟",
-  "updatedAt": "2026-09-17T18:31:20.064Z",
+  "updatedAt": "2026-09-17T21:43:13.978Z",
   "items": [
+    {
+      "id": "de3b2ce9cbb09cc68c7012924c40d4f9539396f5bffe701dfaa6ed994af77b1a",
+      "teamId": "toronto-blue-jays",
+      "teamName": "多伦多蓝鸟",
+      "titleEn": "Giddy up! Blue Jays rookies dress the part for trip down south",
+      "summaryEn": "",
+      "bodyEn": [
+        "The Blue Jays are heading down south for a massive series this weekend against the Rangers, with postseason implications aplenty. Toronto rookies certainly dressed for the occasion.",
+        "The Blue Jays’ first-year players -- including Brett Bateman, Charles McAdoo, Sean Keys, Kazuma Okamoto and Trey Yesavage -- all donned cowboy hats, plaid sleeveless shirts, cutoff jeans and cowboy boots. One fan even received a signed ear of corn.",
+        "The idea for this particular theme for the traditional rookie road trip came from 42-year-old Max Scherzer, according to Toronto veteran Myles Straw.",
+        "“He was excited to show me a couple of days ago, and I thought it would be great, especially for a couple of the guys we’ve got in the rookie class,” Straw said. “Hopefully, there are some pictures. I’m sure there will be some pictures posted and [the media] will probably like it.”",
+        "The Blue Jays' series with the Rangers begins Friday at Globe Life Field."
+      ],
+      "titleZh": "蓝鸟菜鸟盛装打扮迎客",
+      "summaryZh": "多伦多蓝鸟新秀换上牛仔装扮开启客场之旅。",
+      "bodyZh": [
+        "多伦多蓝鸟本周末将前往南方与得克萨斯游骑兵进行一系列关键比赛，这场系列赛对季后赛形势影响重大。多伦多新秀们为此精心打扮了一番。",
+        "多伦多蓝鸟的年轻球员们——包括Brett Bateman、Charles McAdoo、Sean Keys、Kazuma Okamoto和Trey Yesavage——全都戴上了牛仔帽，穿上了格子无袖衬衫、剪边牛仔裤和牛仔靴。甚至还有一位球迷收到了一根签过名的玉米。",
+        "据多伦多老将Myles Straw透露，这次传统菜鸟客场之旅的主题创意来自于42岁的Max Scherzer。",
+        "Straw表示：“他几天前兴奋地把这个想法展示给我看，我觉得这太棒了，特别是对于我们这批新秀来说。希望会有一些照片留念。我确信会有照片发出来，而且大家大概也会喜欢。”",
+        "多伦多蓝鸟与得克萨斯游骑兵的系列赛将于周五在环球人寿球场开打。"
+      ],
+      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/bv1jjjyyxxnd904bfho9",
+      "translationSourceHash": "c0132fbc4c145f942c3c2250b0110a76c2824a0940451288bb99a1b833e7380c",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-09-17T21:43:13.971Z",
+      "author": "Max Ralph",
+      "publishedAt": "2026-09-17T18:39:52.000Z",
+      "url": "https://www.mlb.com/bluejays/news/blue-jays-rookies-wear-cowboy-attire-for-texas-road-trip",
+      "source": "MLB.com"
+    },
     {
       "id": "6d0f362930acfad57a5b97911f8e5cf57bb109ca6abb819e9c075638dc162f01",
       "teamId": "toronto-blue-jays",
@@ -1219,64 +1250,9 @@
       "publishedAt": "2026-09-11T21:31:00.000Z",
       "url": "https://www.mlb.com/bluejays/news/rudy-martin-jr-blue-jays-callup",
       "source": "MLB.com"
-    },
-    {
-      "id": "42ac9d782c9ef647d280ebe7c988c04b1ed762f8184e2c866de4ef7105d77075",
-      "teamId": "toronto-blue-jays",
-      "teamName": "多伦多蓝鸟",
-      "titleEn": "Miles was a Rule 5 long shot. Now, he's an indispensable Blue Jays arm",
-      "summaryEn": "",
-      "bodyEn": [
-        "This story was excerpted from the Blue Jays Beat newsletter. To read the full newsletter, click here. And subscribe to get it regularly in your inbox.",
-        "After a 2025 Arizona Fall League season that put him back on the baseball radar, the goal was simple for Spencer Miles: Make it to The Show.",
-        "“If I make the big leagues next year,” Miles told MLB.com’s Maria Guardado last October, “that’d be nice.”",
-        "During an outstanding rookie season for the Blue Jays, Miles has done a lot more than simply make his MLB debut. The Rule 5 Draft pick has filled practically every role on Toronto’s pitching staff and has done so admirably, lowering his ERA to 2.77 and picking up his second career save with a perfect two-inning outing on Tuesday against the Athletics.",
-        "“I’m kind of running out of words for Spence,” manager John Schneider said. “He’s been unbelievably important to us: starter, opener, reliever, low leverage, high leverage. It’s been 80-some-odd innings of really quality work.”",
-        "Miles is crucial to a Blue Jays club fighting for an American League Wild Card spot in the season’s final month. After a second-half surge, Toronto enters Wednesday at 73-73, just one game behind Cleveland for the third and final AL Wild Card berth.",
-        "“It’s kind of crazy, especially your first year, you know?” Miles told MLB.com. “We’re clawing back and trying to get back into things. It’s been a wild ride.”",
-        "Just how wild? Think of it this way: Twelve months ago, Miles was still recovering from Tommy John surgery. He hadn’t thrown a competitive pitch since June 2024, and he had never pitched above the Single-A level.",
-        "But the AFL changed everything. Then in the Giants organization, Miles tossed 8 2/3 innings for the Scottsdale Scorpions, striking out 12. He allowed four earned runs for a 4.15 ERA, but it was a successful showcase: Miles had put himself on team radars.",
-        "“Before the Fall League, no chance, because you have no sample size,” Miles said. “That would have been a freaking dark horse, long shot, but here we are.”",
-        "On Dec. 10, the Blue Jays took Miles with the 10th pick in the Rule 5 Draft. Needing to make the big league club or be offered back to San Francisco, Miles posted a 3.72 ERA in seven Grapefruit League games, striking out 11 in 9 2/3 innings, and made Toronto’s Opening Day roster.",
-        "“It was huge. It showed that they trusted me,” he said. “I don’t think I had a great Spring Training, but I showcased enough for them to trust me and give me a chance.”",
-        "Miles has run with that chance. Since earning the win in his Major League debut against the A’s at Rogers Centre, he’s been a reliable option either as a starter or out of the bullpen. His workload is building up late in the season, which could be a concern for a pitcher coming off a lost year due to injury, but Miles feels good, and the Blue Jays trust him.",
-        "“We’re trying to find the best way to utilize him down the stretch with some vacancies in the rotation and trying to get the most meaningful innings out of him in whatever role that may be,” Schneider said.",
-        "Miles’ sinker -- the most-used offering in his five-pitch repertoire -- has been one of the most effective pitches in the Majors, ranking seventh in MLB and second among sinkers with a +19 pitching run value.",
-        "The right-hander doesn’t get many swings and misses, but he’s adept at limiting hard contact: Miles’ 3.6% barrel rate ranks in the 95th percentile in the Majors. After all, it’s hard to barrel up a pitcher who keeps the ball on the ground: Miles has a 51.8% ground-ball rate in 2026 (89th percentile).",
-        "It’s been a rather seamless adjustment to the big leagues for a pitcher who not too long ago was a 140-pound “late bloomer” in high school. But Miles earned a walk-on roster spot at Missouri and pitched his way to a fourth-round selection by the Giants in the 2022 Draft. A back injury late that season cost him all of '23 before Tommy John surgery wiped out half of the following season and the entirety of ’25, but Miles is on the sunny side of what he acknowledged has been “a long journey.”",
-        "“It’s been amazing,” he said. “It’s been a great clubhouse, a great group of guys, great coaching staff. Instilled a lot of confidence in me and allowed me to trust my stuff and go out there and be myself.”"
-      ],
-      "titleZh": "Miles曾是规则五选秀的不确定因素，如今他已成为多伦多蓝鸟不可或缺的投手",
-      "summaryZh": "Spencer Miles从规则五选秀的未知数成长为多伦多蓝鸟牛棚与先发的重要战力，在球队冲击季后赛的关键阶段表现亮眼。",
-      "bodyZh": [
-        "本文摘选自蓝鸟动态通讯。若要阅读完整通讯，请点击此处，并订阅以将内容定期发送至您的收件箱。",
-        "在经历了2025年亚利桑那秋季联盟的历练并重新回到棒球视野后，Spencer Miles的目标很简单：登上大联盟。",
-        "“如果我明年能打上大联盟，”Spencer Miles去年10月告诉MLB.com的Maria Guardado，“那就太好了。”",
-        "在为蓝鸟效力的出色新秀赛季中，Spencer Miles做到了不仅仅是完成大联盟首秀。这位规则五选秀新秀几乎填补了多伦多投手阵容中的每一个角色，并且表现出色，他在周二对阵运动家的比赛中投出完美的两局，将自责分率降至2.77，并收获了职业生涯第二场救援成功。",
-        "“我对Spence已经快找不到赞美的词了，”总教练John Schneider说，“他对我们有着难以置信的重要意义：先发投手、假先发、后援投手、低压局面、高压局面。他已经完成了八十多局非常高质量的工作。”",
-        "在蓝鸟于赛季最后一个月争夺美国联盟外卡席位的过程中，Spencer Miles至关重要。经历下半季的冲刺后，多伦多在周三到来时战绩为73胜73负，距离美联第三也是最后一个外卡席位落后克利夫兰一场胜差。",
-        "“这有点疯狂，尤其是作为你的第一年，你知道的吗？”Spencer Miles告诉MLB.com，“我们正在奋起直追，试图重回正轨。这是一段疯狂的旅程。”",
-        "究竟有多疯狂？可以这样想：十二个月前，Spencer Miles还在从汤米·约翰手术中恢复。自2024年6月以来，他从未投过一场正式比赛，并且从未在单A级别以上投过球。",
-        "但秋季联盟改变了一切。当时还在旧金山巨人体系效力的Spencer Miles为斯科茨代尔蝎子队投了8又2/3局，三振12次。他失掉4分责责分率是4.15，但这是一次成功的展示：Spencer Miles把自己放到了球队的雷达上。",
-        "“在秋季联盟之前，根本没机会，因为你没有任何样本量，”Spencer Miles说，“那本来会是一个疯狂的黑马、极其渺茫的机会，但我们现在做到了。”",
-        "12月10日，蓝鸟在规则五选秀中以第10顺位选中了Spencer Miles。由于必须留在大联盟阵容中否则就要被退回给旧金山，Spencer Miles在7场葡萄柚联盟比赛中交出3.72的自责分率，在9又2/3局中三振11次，并成功入选多伦多开幕战大联盟名单。",
-        "“这意义重大。这表明他们信任我，”他说，“我不认为我的春训表现有多棒，但我展示了足够多的东西，让他们信任我并给我一个机会。”",
-        "Spencer Miles抓住了这个机会。自从在罗杰斯中心对阵运动家的大联盟首秀中赢得胜投以来，他无论作为先发投手还是从牛棚出发，都是一个可靠的选择。他的工作量在赛季后期不断增加因伤报销一年后复出的投手这可能会令人担忧，但Spencer Miles感觉很好，蓝鸟也信任他。",
-        "“我们正试图找到最佳方式在最后阶段利用他，因为轮换阵容中有些空缺，并且无论扮演什么角色，都要从他身上榨取最有价值的投球局数，”John Schneider说。",
-        "Spencer Miles的伸卡球——在他五种球路中最常使用的武器——是大联盟中最有效的球路之一，凭借+19的投球跑分价值，在MLB排名第七，在伸卡球中排名第二。",
-        "这位右投没有获得太多的挥空率，但他善于限制强劲击球：Spencer Miles的3.6%桶击率在大联盟中排在第95百分位。毕竟，很难对一个能把球压得很低的投手造成有效重击：Spencer Miles在2026年的滚地球率为51.8%（第95百分位）。",
-        "对于一位不久前在高中时还是个140磅的“大器晚成者”的投手来说，适应大联盟的过程相当无缝。但Spencer Miles在密苏里大学赢得了自荐入队的名额，并凭借出色表现入选，在2022年选秀中于第四轮被巨人选中。该赛季末的背伤让他缺席了整个2023年，随后汤米·约翰手术又剥夺了他接下来赛季的一半以及整个2025年，但Spencer Miles正处于他所承认的“漫长旅程”的光明一面。",
-        "“这太棒了，”他说，“这里有一个伟大的俱乐部会所，一群很棒的队友，伟大的教练组。这给我注入了很大的信心，让我能够信任自己的球路，走上球场做自己。”"
-      ],
-      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/pjsxeewp8x42eolc69d3",
-      "translationSourceHash": "f5c6220c4f280cd73dc60e2ac18ea0e6f8e91c73327cf745d4e9c852708e7d29",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-09-14T03:44:17.551Z",
-      "author": "Theo DeRosa",
-      "publishedAt": "2026-09-10T11:22:52.000Z",
-      "url": "https://www.mlb.com/bluejays/news/spencer-miles-blue-jays-rookie-season-rule-5-draft",
-      "source": "MLB.com"
     }
   ],
-  "pendingNotificationIds": []
+  "pendingNotificationIds": [
+    "de3b2ce9cbb09cc68c7012924c40d4f9539396f5bffe701dfaa6ed994af77b1a"
+  ]
 }
