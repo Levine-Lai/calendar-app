@@ -1,8 +1,45 @@
 {
   "teamId": "toronto-blue-jays",
   "teamName": "多伦多蓝鸟",
-  "updatedAt": "2026-09-19T06:43:12.903Z",
+  "updatedAt": "2026-09-19T23:39:50.507Z",
   "items": [
+    {
+      "id": "38a4f2dd9232c006ee21ddb7aca4eac51d0c48e832ed1ad78f6dcf3f3ed663d4",
+      "teamId": "toronto-blue-jays",
+      "teamName": "多伦多蓝鸟",
+      "titleEn": "Yesavage (meniscus) set to return on Monday after Friday side session",
+      "summaryEn": "",
+      "bodyEn": [
+        "ARLINGTON -- Trey Yesavage threw a side session of around 30 pitches Friday at Globe Life Field that manager John Schneider said went well, potentially putting the Blue Jays right-hander in position to return as soon as Sunday.",
+        "“That kind of hopefully lines him up for Sunday or Monday,” Schneider said pregame. “Definitely based on how the weekend goes … likely Monday in a multi-inning role.”",
+        "A Sunday return would put Yesavage in position to pitch in the finale of Toronto’s crucial three-game series against the Rangers, with both clubs fighting for ground in a tight AL Wild Card race. If the Blue Jays hold him back until Monday, Yesavage would instead return for the series opener against the Orioles in Baltimore.",
+        "Yesavage landed on the injured list on Aug. 5 with left knee inflammation before undergoing surgery on Aug. 11 to repair the meniscus in his left knee. He made a rehab start with Triple-A Buffalo on Tuesday, allowing two runs (one earned) while throwing 34 pitches without completing the first inning.",
+        "The results were secondary to how Yesavage responded physically. His four-seam fastball averaged 93.3 mph in the outing, roughly 1 mph below his Major League average.",
+        "Yesavage is 5-5 with a 3.65 ERA, a 1.14 WHIP and 91 strikeouts over 93 2/3 innings this season. His return would give Toronto another option for multiple innings as the Blue Jays navigate the final stretch of the regular season.",
+        "Shane Bieber, meanwhile, is scheduled to throw off the mound on Saturday in Texas as he continues working his way back from right teres major inflammation. A return during the regular season is most likely off the table at this point, but Bieber is continuing to build up in case the Blue Jays reach the postseason.",
+        "“With the calendar [being] where it is, it’s going to be tough,” Schneider said. “Hopefully we can win some games and get to the point where he can be an option for us. He is going to keep plugging along as if this were the middle part of the season.”"
+      ],
+      "titleZh": "Trey Yesavage膝盖半月板伤势恢复，有望于周一复出",
+      "summaryZh": "Trey Yesavage在周五完成牛棚投球训练，有望在接下来对阵得克萨斯游骑兵或巴尔的摩金莺的比赛中复出。",
+      "bodyZh": [
+        "阿灵顿——Trey Yesavage周五在全球人寿球场进行了大约30球的牛棚投球训练，总教练John Schneider表示情况良好，这位多伦多蓝鸟右投手最快有望在周日归队。",
+        "“希望这能让他为周日或周一做好准备，”Schneider在赛前表示。“这绝对取决于周末的情况……很可能在周一担任投多局的角色。”",
+        "如果周日在对阵得克萨斯游骑兵的关键三场系列赛收官战中复出，Trey Yesavage将登板投球，目前两支球队正在激烈的美联外卡争夺战中竞逐。如果多伦多蓝鸟将他保留到周一，Trey Yesavage则将在客场对阵巴尔的摩金莺的系列赛首战中复出。",
+        "Trey Yesavage因左膝发炎于8月5日进入伤病名单，随后于8月11日接受了左膝半月板修复手术。他在周二代表小联盟3A水牛城完成了复健赛先发，投了34球失2分（1分自责分），未能投满第一局。",
+        "比起投球结果，Trey Yesavage身体的反应更为关键。他在比赛中的四缝线速球平均时速为93.3英里，大约比他的大联盟平均时速低了1英里。",
+        "本赛季Trey Yesavage在93 2/3局的投球中取得了5胜5败、自责分率3.65、WHIP 1.14以及91次三振的成绩。随着多伦多蓝鸟度过常规赛的最后冲刺阶段，他的回归将为球队提供另一个能投多局的选择。",
+        "与此同时，Shane Bieber计划于周六在得克萨斯进行平地传球训练，继续从右侧大圆肌发炎的伤势中恢复。就目前而言，他在常规赛期间复出的可能性微乎其微，但Shane Bieber仍在持续增强体能，以防多伦多蓝鸟打入季后赛。",
+        "“考虑到目前的赛程安排，这将会很艰难，”Schneider说道。“希望我们能赢得一些比赛，让他能够成为我们的选择。他会继续努力，就像现在是赛季中期一样。”"
+      ],
+      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/j5vnrff8o13c2e2ahiwj",
+      "translationSourceHash": "b15b476f29a881409765fb3f9e5be36ce0efd74b269cc3923a44d634bc2e3a35",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-09-19T23:39:50.500Z",
+      "author": "Perla Paredes",
+      "publishedAt": "2026-09-19T23:16:00.000Z",
+      "url": "https://www.mlb.com/bluejays/news/trey-yesavage-throws-side-session-ahead-of-return-for-blue-jays",
+      "source": "MLB.com"
+    },
     {
       "id": "21d44dbf6b531185965a9e5433bf5b499c99f2ee2ddd67c6fe79dfc39a8ec94d",
       "teamId": "toronto-blue-jays",
@@ -115,43 +152,6 @@
       "author": "",
       "publishedAt": "2026-09-19T00:02:00.000Z",
       "url": "https://www.mlb.com/bluejays/news/blue-jays-injuries-and-roster-moves",
-      "source": "MLB.com"
-    },
-    {
-      "id": "38a4f2dd9232c006ee21ddb7aca4eac51d0c48e832ed1ad78f6dcf3f3ed663d4",
-      "teamId": "toronto-blue-jays",
-      "teamName": "多伦多蓝鸟",
-      "titleEn": "Yesavage (meniscus) throws side session before possible Sunday return",
-      "summaryEn": "",
-      "bodyEn": [
-        "ARLINGTON -- Trey Yesavage threw a side session of around 30 pitches Friday at Globe Life Field that manager John Schneider said went well, potentially putting the Blue Jays right-hander in position to return as soon as Sunday.",
-        "“That kind of hopefully lines him up for Sunday or Monday,” Schneider said pregame. “Definitely based on how the weekend goes … likely Monday in a multi-inning role.”",
-        "A Sunday return would put Yesavage in position to pitch in the finale of Toronto’s crucial three-game series against the Rangers, with both clubs fighting for ground in a tight AL Wild Card race. If the Blue Jays hold him back until Monday, Yesavage would instead return for the series opener against the Orioles in Baltimore.",
-        "Yesavage landed on the injured list on Aug. 5 with left knee inflammation before undergoing surgery on Aug. 11 to repair the meniscus in his left knee. He made a rehab start with Triple-A Buffalo on Tuesday, allowing two runs (one earned) while throwing 34 pitches without completing the first inning.",
-        "The results were secondary to how Yesavage responded physically. His four-seam fastball averaged 93.3 mph in the outing, roughly 1 mph below his Major League average.",
-        "Yesavage is 5-5 with a 3.65 ERA, a 1.14 WHIP and 91 strikeouts over 93 2/3 innings this season. His return would give Toronto another option for multiple innings as the Blue Jays navigate the final stretch of the regular season.",
-        "Shane Bieber, meanwhile, is scheduled to throw off the mound on Saturday in Texas as he continues working his way back from right teres major inflammation. A return during the regular season is most likely off the table at this point, but Bieber is continuing to build up in case the Blue Jays reach the postseason.",
-        "“With the calendar [being] where it is, it’s going to be tough,” Schneider said. “Hopefully we can win some games and get to the point where he can be an option for us. He is going to keep plugging along as if this were the middle part of the season.”"
-      ],
-      "titleZh": "Trey Yesavage（半月板）在可能于周日回归前进行牛棚投球训练",
-      "summaryZh": "Trey Yesavage周五在环球人寿球场进行牛棚投球，有望在周日或周一对阵得克萨斯游骑兵或巴尔的摩金莺时复出。",
-      "bodyZh": [
-        "阿灵顿——Trey Yesavage周五在环球人寿球场进行了大约30球的牛棚投球训练，总教练John Schneider表示训练情况良好，这可能让这位多伦多蓝鸟右投手最快在周日回归。",
-        "“希望这能让他为周日或周一做好准备，”Schneider在赛前表示。“这绝对取决于周末的情况……很可能在周一扮演多局投球的角色。”",
-        "如果周日在复出，Trey Yesavage将有机会在多伦多与得克萨斯游骑兵的三场关键系列赛收官战中登场，目前两支球队正在激烈的美国联盟外卡争夺战中力争上游。如果多伦多蓝鸟将他保留到周一，Trey Yesavage则将在巴尔的摩对阵巴尔的摩金莺的系列赛首战中复出。",
-        "Trey Yesavage因左膝发炎于8月5日进入伤病名单，随后在8月11日接受了手术，以修复左膝半月板。他于周二在3A水牛城进行了一场复健赛，投了34球，失2分（1分责分），未能投满第一局。",
-        "结果是其次的，关键在于Trey Yesavage身体上的反应。他在该场比赛中的四缝线速球平均时速为93.3英里，大约比他的大联盟平均水平低1英里。",
-        "本赛季至今，Trey Yesavage的战绩为5胜5负，自责分率3.65，WHIP为1.14，在93又2/3局中送出91次三振。随着多伦多蓝鸟度过常规赛的最后冲刺阶段，他的回归将为多伦多提供另一个多局投球的选项。",
-        "与此同时，Shane Bieber计划于周六在得克萨斯进行平地传接球训练，继续从右侧大圆肌发炎中恢复。目前来看，他在常规赛期间回归的可能性基本不大，但Shane Bieber仍在继续进行身体恢复，以防多伦多蓝鸟闯入季后赛。",
-        "“鉴于目前的赛程安排，这将会很艰难，”Schneider说。“希望我们能赢下一些比赛，并达到让他能成为我们选项的阶段。他将继续努力训练，就像现在是赛季中期一样。”"
-      ],
-      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/j5vnrff8o13c2e2ahiwj",
-      "translationSourceHash": "c4c02bb742e7c5a3975659d170d2db84119ca8c09d3c36bbb63f7920e8db68c5",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-09-19T01:42:00.863Z",
-      "author": "Perla Paredes",
-      "publishedAt": "2026-09-19T00:00:25.000Z",
-      "url": "https://www.mlb.com/bluejays/news/trey-yesavage-throws-side-session-ahead-of-return-for-blue-jays",
       "source": "MLB.com"
     },
     {
