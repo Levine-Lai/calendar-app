@@ -1,7 +1,7 @@
 {
   "teamId": "toronto-blue-jays",
   "teamName": "多伦多蓝鸟",
-  "updatedAt": "2026-09-18T23:39:26.647Z",
+  "updatedAt": "2026-09-19T01:42:00.875Z",
   "items": [
     {
       "id": "7e9000313c47368fe2a76d65ae126941f1bfce63ec0dcd7280563bdd4d1caec1",
@@ -58,8 +58,45 @@
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-07-21T02:11:41.474Z",
       "author": "",
-      "publishedAt": "2026-09-18T22:23:00.000Z",
+      "publishedAt": "2026-09-19T00:02:00.000Z",
       "url": "https://www.mlb.com/bluejays/news/blue-jays-injuries-and-roster-moves",
+      "source": "MLB.com"
+    },
+    {
+      "id": "38a4f2dd9232c006ee21ddb7aca4eac51d0c48e832ed1ad78f6dcf3f3ed663d4",
+      "teamId": "toronto-blue-jays",
+      "teamName": "多伦多蓝鸟",
+      "titleEn": "Yesavage (meniscus) throws side session before possible Sunday return",
+      "summaryEn": "",
+      "bodyEn": [
+        "ARLINGTON -- Trey Yesavage threw a side session of around 30 pitches Friday at Globe Life Field that manager John Schneider said went well, potentially putting the Blue Jays right-hander in position to return as soon as Sunday.",
+        "“That kind of hopefully lines him up for Sunday or Monday,” Schneider said pregame. “Definitely based on how the weekend goes … likely Monday in a multi-inning role.”",
+        "A Sunday return would put Yesavage in position to pitch in the finale of Toronto’s crucial three-game series against the Rangers, with both clubs fighting for ground in a tight AL Wild Card race. If the Blue Jays hold him back until Monday, Yesavage would instead return for the series opener against the Orioles in Baltimore.",
+        "Yesavage landed on the injured list on Aug. 5 with left knee inflammation before undergoing surgery on Aug. 11 to repair the meniscus in his left knee. He made a rehab start with Triple-A Buffalo on Tuesday, allowing two runs (one earned) while throwing 34 pitches without completing the first inning.",
+        "The results were secondary to how Yesavage responded physically. His four-seam fastball averaged 93.3 mph in the outing, roughly 1 mph below his Major League average.",
+        "Yesavage is 5-5 with a 3.65 ERA, a 1.14 WHIP and 91 strikeouts over 93 2/3 innings this season. His return would give Toronto another option for multiple innings as the Blue Jays navigate the final stretch of the regular season.",
+        "Shane Bieber, meanwhile, is scheduled to throw off the mound on Saturday in Texas as he continues working his way back from right teres major inflammation. A return during the regular season is most likely off the table at this point, but Bieber is continuing to build up in case the Blue Jays reach the postseason.",
+        "“With the calendar [being] where it is, it’s going to be tough,” Schneider said. “Hopefully we can win some games and get to the point where he can be an option for us. He is going to keep plugging along as if this were the middle part of the season.”"
+      ],
+      "titleZh": "Trey Yesavage（半月板）在可能于周日回归前进行牛棚投球训练",
+      "summaryZh": "Trey Yesavage周五在环球人寿球场进行牛棚投球，有望在周日或周一对阵得克萨斯游骑兵或巴尔的摩金莺时复出。",
+      "bodyZh": [
+        "阿灵顿——Trey Yesavage周五在环球人寿球场进行了大约30球的牛棚投球训练，总教练John Schneider表示训练情况良好，这可能让这位多伦多蓝鸟右投手最快在周日回归。",
+        "“希望这能让他为周日或周一做好准备，”Schneider在赛前表示。“这绝对取决于周末的情况……很可能在周一扮演多局投球的角色。”",
+        "如果周日在复出，Trey Yesavage将有机会在多伦多与得克萨斯游骑兵的三场关键系列赛收官战中登场，目前两支球队正在激烈的美国联盟外卡争夺战中力争上游。如果多伦多蓝鸟将他保留到周一，Trey Yesavage则将在巴尔的摩对阵巴尔的摩金莺的系列赛首战中复出。",
+        "Trey Yesavage因左膝发炎于8月5日进入伤病名单，随后在8月11日接受了手术，以修复左膝半月板。他于周二在3A水牛城进行了一场复健赛，投了34球，失2分（1分责分），未能投满第一局。",
+        "结果是其次的，关键在于Trey Yesavage身体上的反应。他在该场比赛中的四缝线速球平均时速为93.3英里，大约比他的大联盟平均水平低1英里。",
+        "本赛季至今，Trey Yesavage的战绩为5胜5负，自责分率3.65，WHIP为1.14，在93又2/3局中送出91次三振。随着多伦多蓝鸟度过常规赛的最后冲刺阶段，他的回归将为多伦多提供另一个多局投球的选项。",
+        "与此同时，Shane Bieber计划于周六在得克萨斯进行平地传接球训练，继续从右侧大圆肌发炎中恢复。目前来看，他在常规赛期间回归的可能性基本不大，但Shane Bieber仍在继续进行身体恢复，以防多伦多蓝鸟闯入季后赛。",
+        "“鉴于目前的赛程安排，这将会很艰难，”Schneider说。“希望我们能赢下一些比赛，并达到让他能成为我们选项的阶段。他将继续努力训练，就像现在是赛季中期一样。”"
+      ],
+      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/j5vnrff8o13c2e2ahiwj",
+      "translationSourceHash": "c4c02bb742e7c5a3975659d170d2db84119ca8c09d3c36bbb63f7920e8db68c5",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-09-19T01:42:00.863Z",
+      "author": "Perla Paredes",
+      "publishedAt": "2026-09-19T00:00:25.000Z",
+      "url": "https://www.mlb.com/bluejays/news/trey-yesavage-throws-side-session-ahead-of-return-for-blue-jays",
       "source": "MLB.com"
     },
     {
@@ -1221,60 +1258,9 @@
       "publishedAt": "2026-09-12T06:08:00.000Z",
       "url": "https://www.mlb.com/bluejays/news/blue-jays-lose-pivotal-series-opener-vs-orioles",
       "source": "MLB.com"
-    },
-    {
-      "id": "40e9bd3a95ac9b49c1f598fc47a8979794685942f866018275f27476c0afb3af",
-      "teamId": "toronto-blue-jays",
-      "teamName": "多伦多蓝鸟",
-      "titleEn": "Could Yesavage return to aid Blue Jays' playoff push?",
-      "summaryEn": "Santander, Bieber also progressing toward potential '26 returns",
-      "bodyEn": [
-        "TORONTO -- Racing against the clock to return in time to help the Blue Jays’ postseason run, Trey Yesavage officially has a shot.",
-        "Yesavage threw 30 pitches Thursday at the club’s complex in Dunedin, Fla., simulating two innings against hitters, and came out of the session feeling fine physically. Yesavage was up to 93 mph in that session as he works his way back from surgery in early August to repair the meniscus in his left knee.",
-        "“After 30, we’ll probably want to get him to 40 or 50 pitches,” manager John Schneider said. “Then, we’ll see how that looks and how he feels. We’ll see if he needs another one or not.”",
-        "Let’s map this out, then, as a best-case scenario. Besides, the Blue Jays are due for one of those this season.",
-        "Schneider believes that Yesavage could pitch in a rehab game “later next week,” and given that the Triple-A Buffalo Bisons end their season on Sunday, Sept. 20, the clock is ticking. If Yesavage could pitch over those final few days in Triple-A while the Blue Jays are in Arlington playing the Rangers (Sept. 18-20), that would line him up to pitch again -- and on plenty of rest -- during the final series of the season against the Reds at home.",
-        "If Yesavage throws 45 pitches in this rehab game, let’s presume he could have a maximum of 60 to work with in his first game back. He’d only be able to give the Blue Jays three innings, maybe four, but his upside is worth it, especially as the Blue Jays essentially roll out two bullpen days in their rotation, one of which features the struggling Spencer Arrighetti in a bulk role.",
-        "Any injury needs to be handled seriously, especially for a long-term cornerstone in the Blue Jays’ rotation, but it’s also important that we’re talking about a knee injury here, not an elbow or shoulder. If the Blue Jays’ medical team decides that Yesavage is not risking any further damage to his meniscus, then the 23-year-old can take a real run at this. Given Yesavage’s toughness, stubbornness and early track record of rising to the moment, this has a comeback story written all over it.",
-        "The latest on: Anthony Santander",
-        "Santander (torn labrum) plays the outfield for Triple-A Buffalo again Friday night, then he’ll play through “at least the middle of next week there,” according to Schneider.",
-        "Last year, when Santander ramped up from a shoulder issue, he also ran into some back troubles along the way. Keep in mind, too, that Santander hasn’t played much these past two seasons, and for someone with a reputation of being a slow starter, it feels like he’s coming off a terribly long offseason here. Santander’s role would be uncertain, too, but for now, the Blue Jays just want him to give this a shot.",
-        "“We’ll get him playing as much as we can and see how he responds physically, and what the at-bats look like,” Schneider said. “We’re trying to cram a lot into a week here.”",
-        "The latest on: Shane Bieber",
-        "Consider Bieber to be a couple of steps behind Yesavage in his rehab from right teres major inflammation.",
-        "“The goal is throwing off the mound some time during this homestand,” Schneider said.",
-        "If that’s the case, Bieber may need another bullpen session or two before facing live hitters, and at that point of the season, Triple-A play will be wrapped. Any Bieber return likely requires the Blue Jays to make the postseason, and potentially even advance a round, but he’s still going to build up and take a run at this.",
-        "If Bieber reaches the point where he’s ready to make a “rehab start” later in September, he could pitch against his own Blue Jays teammates or even Minor League players who are brought to Toronto by the club."
-      ],
-      "titleZh": "Yesavage能否回归助力多伦多蓝鸟冲击季后赛？",
-      "summaryZh": "Yesavage、Anthony Santander与Shane Bieber正朝着复出稳步推进。",
-      "bodyZh": [
-        "多伦多讯——为了赶在多伦多蓝鸟的季后赛征程中复出而争分夺秒，Trey Yesavage官方来看确实还有机会。",
-        "Yesavage周四在球队位于佛罗里达州达尼din的训练基地投了30球，进行了对阵打者的两局实战模拟投球，他在训练结束后身体感觉良好。在努力从8月初修复左膝半月板的手术中恢复时，Yesavage的球速达到了93英里/小时。",
-        "“在投了30球之后，我们可能会想让他把投球数提升到40或50球，”总教练John Schneider说，“然后，我们会看看情况如何以及他感觉怎样。我们再决定他是否还需要进行另一场模拟赛。”",
-        "那么，让我们以最佳情况来规划一下。此外，多伦多蓝鸟本赛季也确实需要一点好运。",
-        "Schneider认为，Yesavage可能会在“下周晚些时候”的一场复健赛中登板，鉴于三A水牛城野牛队的赛季将于9月20日星期日结束，时间已经不多了。如果Yesavage能在三A赛季的最后几天登板，而当时多伦多蓝鸟正前往阿灵顿对阵得克萨斯游骑兵（9月18日至20日），这将使他能够获得充足的休息，并在主场对阵辛辛那提红人的赛季最后系列赛中再次登板投球。",
-        "如果Yesavage在这场复健赛中投了45球，我们可以推测他在回归后的第一场比赛中最多可以投60球。他可能只能为多伦多蓝鸟投3局，也许4局，但他的上限绝对值得冒险，特别是多伦多蓝鸟的先发轮值中实际上有两场牛棚日，其中一场由表现挣扎的Spencer Arrighetti承担长中继角色。",
-        "任何伤病都需要认真处理，尤其是对于多伦多蓝鸟轮值中的长期建队基石而言，但同样重要的是，我们讨论的是膝盖受伤，而不是手肘或肩膀。如果多伦多蓝鸟的医疗团队认为Yesavage的半月板不会冒进一步受损的风险，那么这位23岁的球员就可以真正为此放手一搏。鉴于Yesavage的坚韧、顽强以及在关键时刻挺身而出的早期记录，这完全是一个充满传奇色彩的复出故事。",
-        "关于Anthony Santander的最新消息：",
-        "据Schneider透露，肩唇撕裂的Santander周五晚将再次代表三A水牛城野牛队守外野，然后他将在那里打球“至少到下周中期”。",
-        "去年，当Santander从肩部问题中恢复时，他在过程中也遇到了一些背部麻烦。另外请记住，Santander在过去两个赛季并没有打太多比赛，对于一个以慢热著称的球员来说，感觉他仿佛经历了一个漫长得可怕的休赛期。Santander的角色也将充满不确定性，但目前，多伦多蓝鸟只是希望他能尝试一下。",
-        "“我们会让他尽可能多地出场比赛，看看他的身体反应如何，以及打击表现怎样，”Schneider说，“我们正试图在这一周内塞进大量的内容。”",
-        "关于Shane Bieber的最新消息：",
-        "在从右大圆肌炎症中恢复的过程中，Biever的进度可以说是比Yesavage落后了几步。",
-        "“目标是在这次主场赛程期间的某个时候进行牛棚练投，”Schneider说。",
-        "如果是这样的话，Biever在面对实战打者之前可能还需要进行一两次牛棚练投，而到了那个赛季阶段，三A的比赛已经结束了。Biever的任何复出都可能需要多伦多蓝鸟闯入季后赛，甚至可能需要晋级一轮，但他仍将继续建立体能并为之努力。",
-        "如果Biever恢复到准备在9月晚些时候进行“复健先发”的阶段，他可以对阵多伦多蓝鸟的队友，甚至是俱乐部带到多伦多的其他小联盟球员。"
-      ],
-      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/j5vnrff8o13c2e2ahiwj",
-      "translationSourceHash": "671358f47a5525d656169c6edc438cf488e8a6395bdda13c4f73c0129611c1f1",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-09-14T03:44:00.523Z",
-      "author": "Keegan Matheson",
-      "publishedAt": "2026-09-11T23:11:18.000Z",
-      "url": "https://www.mlb.com/bluejays/news/trey-yesavage-progressing-in-injury-rehab",
-      "source": "MLB.com"
     }
   ],
-  "pendingNotificationIds": []
+  "pendingNotificationIds": [
+    "38a4f2dd9232c006ee21ddb7aca4eac51d0c48e832ed1ad78f6dcf3f3ed663d4"
+  ]
 }
