@@ -1,7 +1,7 @@
 {
   "teamId": "toronto-blue-jays",
   "teamName": "多伦多蓝鸟",
-  "updatedAt": "2026-09-20T03:32:27.437Z",
+  "updatedAt": "2026-09-20T07:07:01.172Z",
   "items": [
     {
       "id": "9f5b539983d67933c2cad8494f876a6b81e1a56067bea9374a5ca37065ed9ba9",
@@ -40,7 +40,7 @@
       "translationModel": "gemini-3.5-flash-lite",
       "translatedAt": "2026-09-20T03:32:27.424Z",
       "author": "Perla Paredes",
-      "publishedAt": "2026-09-20T01:56:54.000Z",
+      "publishedAt": "2026-09-20T04:19:00.000Z",
       "url": "https://www.mlb.com/bluejays/news/blue-jays-lose-to-rangers-fall-3-games-back-in-al-wild-card-race",
       "source": "MLB.com"
     },
