@@ -1,7 +1,7 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-09-20T00:08:27.983Z",
+  "updatedAt": "2026-09-20T03:32:08.784Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
@@ -209,7 +209,7 @@
         "On what was going through his mind when each goal went in…Ways to be able to change it. Okay, we started to get more control and dominance for another action, but that gave them more belief and more momentum again. When you get into those moments, it’s extremely difficult to be able to change it. We tried to change it at half-time, we started the second half and then we made two or three really difficult decisions that put us under more pressure. By the time we got some momentum, it was probably too late."
       ],
       "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/7f42eccd9964-brighton-england-mikel-arteta-manager-of-arsenal-applauds-the-fans-following-the.webp",
-      "author": "Josh James",
+      "author": "Josh James, Dan Godfrey",
       "publishedAt": "2026-09-19T17:39:53.955Z",
       "url": "https://www.arsenal.com/news/every-word-from-artetas-post-brighton-presser-auZJ86i5UOdG",
       "source": "Arsenal.com",
@@ -466,53 +466,6 @@
       "translationSourceHash": "5ac7078d34bc81eba548d86e96cb51662b7e74c9353949d63abe05bea5fc0414",
       "translationModel": "gemini-3.5-flash-lite",
       "translatedAt": "2026-09-19T16:48:06.305Z"
-    },
-    {
-      "id": "797cb063b6b28c6b2a8f32e7d0acf334ed3a427d5673737a0b87a80e38fe93d2",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Smith hails five-star young Gunners",
-      "summaryEn": "Our under-18s coach reflects on the 5-1 masterclass over Norwich City",
-      "bodyEn": [
-        "Under-18s coach Josh Smith was thrilled with his side’s high-scoring showing against Norwich City, making it three wins on the bounce.",
-        "The game finished 5-1, with four goals scored in the first half through Axel Donczew, Charlie Purdy and a brace from Jaden Maghoma, before Emerson Nwaneri capped off the rout in stoppage time, much to Josh's approval.",
-        "\"Very impressed with the first half, to score so early again.",
-        "\"We have been speaking recently in terms of: once we do score first, can we go again and get the second and the third? I think that performance has been coming. I was very impressed with the first half.",
-        "\"The lads and the staff feel a little bit disappointed in terms of the second half. They feel like we could have scored a little bit more. They're young and we're trying to aim for consistency, but overall I'm very pleased.\"",
-        "After a slow start to the campaign, September has brought a significant improvement in results, lifting our young Gunners into fifth place with 10 points from their opening six games.",
-        "Josh believes the work carried out in training is starting to show on matchday, with his players continuing to gel and combine.",
-        "\"We give the lads a base structure\", he said. \"A lot of the stuff that we're starting to see is just based around simple concepts.",
-        "\"Whether that's off the right unit, the left, sometimes down the centre. We try and keep it as fluid as possible for them. So, yes, it's been very pleasing seeing that.\"",
-        "The triumph in Norfolk extended our winning streak to three, a run of form that was scarcely seen last season, and Josh explains what he believes is key to maintaining that momentum.",
-        "\"For us as staff and players, it's about sticking to the process.",
-        "\"As I said, there's going to be ups and downs. Some weeks we're going to win and some we're going to lose.",
-        "\"But in terms of how we've been training and how we've been behaving, that's the most important thing for us there. Being consistent and sticking to the process.\""
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/5b50d91b0651-london-colney-england-arsenal-academy-coach-josh-smith-before-the-premier-league.webp",
-      "author": "Tom Keens",
-      "publishedAt": "2026-09-19T15:00:34.380Z",
-      "url": "https://www.arsenal.com/news/smith-hails-five-star-young-gunners-a2Blh9f9lMhC",
-      "source": "Arsenal.com",
-      "titleZh": "史密斯赞扬年轻枪手表现",
-      "summaryZh": "U18主帅总结了5比1大胜诺维奇城的比赛。",
-      "bodyZh": [
-        "U18主教练乔什·史密斯对球队对阵诺维奇城时的高进球表现感到兴奋，这让球队取得了三连胜。",
-        "比赛以5比1结束，上半场打进四球，进球分别来自阿克塞尔·东切夫、查理·帕迪以及杰登·马戈马的梅开二度，随后埃默森·恩瓦内里在补时阶段锁定胜局，这让乔什非常满意。",
-        "“对上半场的表现非常印象深刻，再次这么早就取得了进球。”",
-        "“我们最近一直在谈论：一旦我们率先破门，我们能否再接再厉攻入第二球和第三球？我认为这样的表现是水到渠成的。我对上半场印象深刻。”",
-        "“小伙子们和教练组对下半场感到有些许遗憾。他们觉得自己本可以再多进几个球。他们还年轻，我们正在努力追求稳定性，但总体而言我非常高兴。”",
-        "经过赛季初的慢热之后，九月份的战绩有了显著提升，这使得我们的年轻枪手在前六场比赛中取得10分，升至积分榜第五位。",
-        "乔什相信训练中付出的努力开始在比赛日展现出来，球员们也在不断地磨合与配合。",
-        "他说：“我们为小伙子们提供了基础架构。我们开始看到的很多内容都只是围绕简单的概念。”",
-        "“无论是通过右侧、左侧，有时是从中路。我们尽量为他们保持最大的灵活性。所以，是的，看到这一点非常令人欣慰。”",
-        "在诺福克的胜利将我们的连胜纪录扩大到了三场，这种状态在上赛季很难见到，乔什解释了他认为保持这种势头的关键所在。",
-        "“对于我们教练组和球员来说，关键在于坚持既定过程。”",
-        "“正如我所说，会有起伏。有些周我们会赢，有些周我们会输。”",
-        "“但在我们的训练方式和行为举止方面，这是对我们最重要的事。保持稳定并坚持既定过程。”"
-      ],
-      "translationSourceHash": "ff0d368d7eb5690334285c5cba85c4ef0a72381085239175c80564718a4828f0",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-09-19T16:48:10.336Z"
     },
     {
       "id": "9b61f39926f8c06a7408824dfc2e5ce474f86db1eeb9d38acc8e164385bde6ff",
@@ -997,5 +950,6 @@
       "translationModel": "gemini-3.5-flash-lite",
       "translatedAt": "2026-09-16T01:26:12.899Z"
     }
-  ]
+  ],
+  "pendingNotificationIds": []
 }
