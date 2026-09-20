@@ -1,7 +1,7 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-09-20T09:47:46.835Z",
+  "updatedAt": "2026-09-20T17:39:40.892Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
@@ -313,43 +313,6 @@
       "translatedAt": "2026-09-19T19:18:44.692Z"
     },
     {
-      "id": "bde9a7d42996ee676daf3a02b4ce85044d7b8efc520183c1483841fdf210c198",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Arteta reflects on disappointing afternoon in Brighton",
-      "summaryEn": "Hear the thoughts of our manager after Saturday's 3-0 defeat",
-      "bodyEn": [
-        "Mikel Arteta said the players need to ‘feel the pain’ after we suffered our first defeat of the season on the south coast on Saturday.",
-        "After winning all seven of our games to start the season, we were brought down to earth with a bump, falling to a 3-0 defeat at the Amex Stadium.",
-        "Brighton set the tone early on with some effective pressing, and took control after going ahead midway through the first half.",
-        "It all made for a forgettable day. “Very disappointed,” Mikel said after the game. “First of all with the performance and then with the result. I think we need to give credit to Brighton as well, the manner that they played today, the way they competed today, and overall I think they deserve to win the game.",
-        "“A lot was down to us, certain standards and basic things that we didn't do at all. That put us on the back foot right from the beginning of the match. Without the ball, when we had to win the first duel of the second ball.”",
-        "It’s our first league defeat since April, and the boss added that the players need use to use this unfamiliar feeling as fuel for the coming games.",
-        "“ We need to feel the pain. That's not going to take away our perspective and how much we value what the team has done in the first six or seven weeks of the season. Coming back after the World Cup with 18 players involved, with everybody coming at late stages, the way we have competed, the way we have played, the way we have dominated. It's been really good. But today we need to take this lesson very, very seriously because it's going to happen.",
-        "“I think we need to look at it in isolation first and get the learnings and then we can put it into the overall picture.”"
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/8dcf0a2a3e69-brighton-england-mikel-arteta-manager-of-arsenal-looks-on-before-the-premier-lea.webp",
-      "author": "Josh James",
-      "publishedAt": "2026-09-19T17:23:20.643Z",
-      "url": "https://www.arsenal.com/news/arteta-reflects-on-disappointing-afternoon-in-brighton-aSE9k6Y318Fz",
-      "source": "Arsenal.com",
-      "titleZh": "阿尔特塔谈客场失利：球队需感受痛苦并汲取教训",
-      "summaryZh": "阿尔特塔赛后坦言球队表现与结果令人失望，需吸取教训。",
-      "bodyZh": [
-        "米克尔·阿尔特塔表示，在周六于南部海岸遭遇本赛季首场失利后，球员们需要“感受到痛苦”。",
-        "在赢下赛季前七场比赛后，我们在美国运通球场以0比3失利，遭遇了沉重打击。",
-        "布莱顿凭借高效的高位逼抢早早占据主动，并在上半场中段取得领先后来控制了局势。",
-        "这一切让这是一个令人难忘的糟糕日子。“非常失望，”米克尔赛后表示。“首先是对表现失望，然后是对结果失望。我认为我们也必须称赞布莱顿，他们今天的比赛方式、竞争态度，总体来说他们配得上这场胜利。”",
-        "“这很大程度上归咎于我们自己，有些标准和基础的事情我们根本没有做到。这从比赛一开始就把我们逼入了被动局面。无论是在无球状态下，还是在争夺第一落点和第二落点时。”",
-        "这是我们自4月以来的首场英超失利，主教练补充说，球员们需要将这种不熟悉的感受转化为未来比赛的动力。",
-        "“我们需要感受到痛苦。但这不会改变我们的视角，也不会影响我们对球队在赛季前六七周所做努力的价值认可。在世界杯后有18名球员参与、大家都在较晚阶段归队的情况下，我们竞争的方式、踢球的方式以及掌控比赛的方式一直都非常好。但今天我们需要非常、非常认真地吸取这个教训，因为这种情况还会发生。”",
-        "“我认为我们首先需要孤立地看待这场比赛并从中吸取教训，然后再将其放到整体大局中去考量。”"
-      ],
-      "translationSourceHash": "bd7503779431d58e169e2b4550a6ea443378320df86f3f82e0705df0999cefd4",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-09-19T19:18:47.690Z"
-    },
-    {
       "id": "28d2fe6ec8857d29af172d2dc320a210b2a41fb979c9108cf8d4ba0768856e17",
       "teamId": "arsenal",
       "teamName": "阿森纳",
@@ -523,6 +486,39 @@
       "translationSourceHash": "e365f4de20d972455a76ca062746a5faa16aa8291880227c19fe0cedef77918a",
       "translationModel": "gemini-3.5-flash-lite",
       "translatedAt": "2026-09-19T13:24:26.574Z"
+    },
+    {
+      "id": "7f53a394ce1b25c29964bce76999dfc4030ff615f85f595dc52a305c40292dbc",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Date confirmed for Carabao Cup trip to Fleetwood",
+      "summaryEn": "We will face the League Two side in the next round of the competition",
+      "bodyEn": [
+        "We have been drawn against Fleetwood Town in the fourth round of the Carabao Cup, with the tie to take place at the League Two side's Highbury Stadium on Tuesday, October 27.",
+        "The game will kick off at 8pm and be broadcast in the UK on Sky Sports.",
+        "After beating Ipswich Town 4-2 at Portman Road on Tuesday to advance in the competition, we will now face the Fishermen in what will be the first-ever competitive meeting between the sides.",
+        "Fleetwood reached this stage by beating fellow fourth-tier opposition Chesterfield and Shrewsbury Town, before then knocking out Championship side Sheffield United in the third round. All of their ties have been held at their 5,300-capacity home in the north-west.",
+        "We reached the final last season before Manchester City pipped us to the silverware at Wembley, missing out on having our name engraved on the trophy for a third time, with our two successes coming in 1987 and 1993.",
+        "Ticket information will be announced in due course."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/7339e58faab9-doncaster-england-a-general-view-of-the-carabao-cup-trophy-prior-to-the-carabao.webp",
+      "author": "Jonathon Rogers",
+      "publishedAt": "2026-09-18T19:06:23.970Z",
+      "url": "https://www.arsenal.com/news/date-confirmed-for-carabao-cup-trip-to-fleetwood-azyR45T51D3Q",
+      "source": "Arsenal.com",
+      "titleZh": "联赛杯客场对阵弗利特伍德的比赛日期确定",
+      "summaryZh": "阿森纳将在下一轮联赛杯中客场对阵英乙球队弗利特伍德。",
+      "bodyZh": [
+        "我们在联赛杯第四轮抽到了弗利特伍德镇，比赛将于10月27日星期二在这支英乙球队的高地伯里球场进行。",
+        "比赛将于晚上8点开球，并在英国的天空体育台进行转播。",
+        "周二我们在波特曼路球场以4比2击败伊普斯维ッチ晋级后，接下来将对阵这支绰号为“渔夫”的球队，这也将是两队历史上的首次正式交锋。",
+        "弗利特伍德通过击败同属第四级别的切斯特菲尔德和什鲁斯伯里晋级到本阶段，随后在第三轮淘汰了英冠球队谢菲尔德联。他们所有的比赛都在西北部这座容量为5,300人的主场进行。",
+        "我们在上赛季打入决赛，但在温布利被曼城击败与冠军擦肩而过，未能第三次将队名刻在奖杯上。我们此前的两次夺冠分别是在1987年和1993年。",
+        "球票相关信息将择日公布。"
+      ],
+      "translationSourceHash": "bc4f69816e9a377849a1270d8c07b5d178b0fc49e942b67eddcb87b6c7ae17dd",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-09-20T17:39:40.889Z"
     },
     {
       "id": "e16ce7f5498fd4eca7f24961d9d543e1f623bc3732905beaedb3fefbb4f7992a",
@@ -955,5 +951,7 @@
       "translatedAt": "2026-09-20T09:47:46.835Z"
     }
   ],
-  "pendingNotificationIds": []
+  "pendingNotificationIds": [
+    "7f53a394ce1b25c29964bce76999dfc4030ff615f85f595dc52a305c40292dbc"
+  ]
 }
