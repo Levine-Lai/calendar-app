@@ -1,8 +1,27 @@
 {
   "teamId": "toronto-blue-jays",
   "teamName": "多伦多蓝鸟",
-  "updatedAt": "2026-09-20T21:29:44.621Z",
+  "updatedAt": "2026-09-20T23:29:08.307Z",
   "items": [
+    {
+      "id": "e631bffbd97fdba66d04bf5178356c7c86a9418a022445661a5b715f38701c6b",
+      "teamId": "toronto-blue-jays",
+      "teamName": "多伦多蓝鸟",
+      "titleEn": "Blue Jays' four-run 7th gets much-needed win over Rangers",
+      "summaryEn": "",
+      "bodyEn": [],
+      "titleZh": "蓝鸟第七局攻下四分击败游骑兵收获关键胜利",
+      "summaryZh": "多伦多蓝鸟在第七局斩获四分，击败得克萨斯游骑兵。",
+      "bodyZh": [],
+      "imageUrl": "",
+      "translationSourceHash": "591d04e56ccd7a9c61199d79c64ab64311a3e389558eacbd31aa288c6b29cfed",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-09-20T23:29:08.297Z",
+      "author": "John Henry",
+      "publishedAt": "2026-09-20T23:20:00.000Z",
+      "url": "https://www.mlb.com/bluejays/news/blue-jays-avoid-sweep-to-stay-in-the-wild-card-race",
+      "source": "MLB.com"
+    },
     {
       "id": "1154e004e6152674c3702aba1338711f72b248daf8b56cc14201787d7b907da0",
       "teamId": "toronto-blue-jays",
@@ -1161,58 +1180,9 @@
       "publishedAt": "2026-09-14T13:23:49.000Z",
       "url": "https://www.mlb.com/bluejays/news/brett-bateman-spencer-miles-sean-keys-important-rookies-blue-jays",
       "source": "MLB.com"
-    },
-    {
-      "id": "09b21b3f2f9ed5a2a0ae46708e6239c37e116db7234f69b2ad27e14df98c18dd",
-      "teamId": "toronto-blue-jays",
-      "teamName": "多伦多蓝鸟",
-      "titleEn": "Blue Jays maintain standing in Wild Card behind back-to-back-to-back homers",
-      "summaryEn": "It’s been 14 years since the Blue Jays last hit three consecutive home runs",
-      "bodyEn": [
-        "TORONTO -- Doesn’t this team feel different than it did when you woke up this morning?",
-        "There’s something about watching Vladimir Guerrero Jr. finally hit a home run out of Rogers Centre that can tempt you into believing again. The 8-1 victory to win the series over the Orioles doesn’t hurt, either.",
-        "This is what mattered most from a crucial day at the ballpark for the Blue Jays:",
-        "1. AL Wild Card picture",
-        "This win moves the Blue Jays within a half-game of the Guardians, who are currently playing the Twins in the finale of a three-game set. A Guardians win would keep the Blue Jays one game back of that final Wild Card spot, but since they hold the tiebreaker over Cleveland after winning the season series, it’s even closer than it looks.",
-        "The other key movement of the day is the Orioles sliding three games behind the Blue Jays in the AL Wild Card standings. A loss today would have drawn them within one game with another three-game series waiting next week in Baltimore (Sept. 21-23), leaving an awfully dangerous door cracked open. The Orioles are still a threat, along with the Rangers, but the Blue Jays have much more control over their own destiny after holding off the O’s.",
-        "One other wrinkle to track: The AL Central is getting tight at the top, with the Guardians 1 1/2 games behind the White Sox. If that flips, and the White Sox end up as the third Wild Card team, the Blue Jays do not hold that tiebreaker if they’re stuck trying to chase Chicago down.",
-        "2. Back to back to back",
-        "The first runs of the game from each team felt a bit cheap, a flared base hit into the shallow outfield on either side of the diamond. In the fifth inning, however, the Blue Jays decided to do away with that and set up a launching pad.",
-        "After George Springer gave them the lead with his 15th home run of the season to right field, Vladdy launched his game-changing home run, followed by Kazuma Okamoto, who sent a no-doubter to left. Okamoto already holds the growing record for most home runs by a rookie in franchise history, but with his home run on Sunday, he also set the new rookie RBI record with 85, passing Eric Hinske, who had 84 RBIs in 2002.",
-        "It’s been 14 years since the Blue Jays last hit three consecutive home runs. You’d have to go all the way back to June 9, 2012, against the Brewers, when Colby Rasmus, José Bautista and Edwin Encarnacion pulled it off.",
-        "3. Help is on the way?",
-        "Early Sunday, around 11 a.m. local time, Trey Yesavage bounced out of the Blue Jays’ dugout in full uniform and walked into left field. After warming up, he continued to the bullpen where he threw in front of the Blue Jays’ pitching coaches, perhaps the final step before he gets into a rehab game later this coming week.",
-        "After throwing, Yesavage went to the infield and ran through some fielding drills, which is crucial. Yesavage underwent surgery in early August to repair the meniscus in his left knee, and while throwing off a mound is one hurdle to clear, moving around on the field could be an even bigger one. How Yesavage recovers tomorrow will be key, but the eye test checked out. Yesavage looked like himself.",
-        "Let’s dream on the perfect outcome, then. If Yesavage pitches later this week, likely with Triple-A Buffalo, he could return as soon as next week’s series (Sept. 21-23) against the Orioles in Baltimore. Whether it’s late in that series or in the final set of the season against the Reds at home (Sept. 25-27), Yesavage could potentially give the Blue Jays 3-4 innings by then."
-      ],
-      "titleZh": "蓝鸟凭借连续三记本垒打巩固外卡席位",
-      "summaryZh": "蓝鸟轰出连续三支本垒打，击败金莺巩固美联外卡位置。",
-      "bodyZh": [
-        "多伦多——这支球队是不是让你觉得和今天早上醒来时有些不一样了？",
-        "看着 Vladimir Guerrero Jr. 终于在罗杰斯中心轰出一记本垒打，总能让你重新燃起希望。以 8-1 赢下比赛并取下巴尔的摩金莺的系列赛胜利，同样让人心情大好。",
-        "这是蓝鸟在球场度过关键一天中最重要的事情：",
-        "1. 美联外卡形势",
-        "这场胜利让多伦多蓝鸟与克利夫兰守护者的差距缩小至半场胜差，后者当时正在进行三连战的最后一场对阵明尼苏达双城。守护者的胜利将让蓝鸟距离最后一个外卡席位保持一场胜差，但由于蓝鸟在赛季交手中占优从而手握对赛优势，实际差距比看上去还要近。",
-        "当天另一个关键变动是，巴尔地摩金莺在美联外卡榜上落后蓝鸟三场胜差。如果今天输球，双方差距将被拉近到一场，而下周（9月21日至23日）双方还将在巴尔的摩进行另一场三连战，这会留下一道极其危险的缝隙。金莺和得克萨斯游骑兵依然具有威胁，但在顶住金莺的冲击后，蓝鸟对自己的命运有了更多掌控力。",
-        "另一个需要追踪的变动是：美联中区榜首竞争正变得白热化，守护者落后芝加哥白袜 1.5 场胜差。如果这种局面发生翻转，白袜最终成为第三支外卡球队，而蓝鸟如果陷入追赶芝加哥的境地，将不持有对赛优势。",
-        "2. 连续三记本垒打",
-        "两支球队本场比赛的第一分都显得有些侥幸，都是落在内野浅区的飘忽安打。然而在第五局，多伦多蓝鸟决定抛开这一点，彻底点燃了进攻火力。",
-        "在 George Springer 轰出个人本季第 15 号右外野本垒打帮助球队取得领先之后，Vladdy 轰出了改变比赛的本垒打，紧接着 Kazuma Okamoto 将球毫无悬念地轰向左外野。Okamoto 已经刷新了队史新秀本垒打纪录，而在周日的这记本垒打帮助他以 85 分打点创造了新的队史新秀打点纪录，超越了 Eric Hinske 在 2002 年创下的 84 分打点。",
-        "距离多伦多蓝鸟上一次轰出连续三记本垒打已经过去 14 年了。你必须回溯到 2012 年 6 月 9 日对阵密尔沃基酿酒人的比赛，当时 Colby Rasmus、José Bautista 和 Edwin Encarnacion 联手完成了这一壮举。",
-        "3. 强援正在路上？",
-        "周日早晨当地时间 11 点左右，Trey Yesavage 身穿全套球衣从蓝鸟的休息区跑出，走向左外野。热身过后，他前往牛棚在蓝鸟的投手教练面前进行投球，这或许是他接下来一周参加复健赛前的最后一步。",
-        "投球结束后，Yesavage 前往内野进行了一些守备训练，这至关重要。Yesavage 在 8 月初接受了手术以修复左膝半月板，虽然在投手丘上投球是一道坎，但在场上移动可能是更大的考验。Yesavage 明天的恢复情况将是关键，但从肉眼观察来看情况不错，Yesavage 看起来状态恢复了正常。",
-        "那么，让我们来设想一下最完美的结局。如果 Yesavage 本周晚些时候登板投球，很可能是在三藩市小联盟的 3A 布法罗，他最早可能在下周对阵巴尔的摩金莺的系列赛（9月21日至23日）中复出。无论是在该系列赛的后期，还是在主场对阵辛辛那提红人的赛季收官系列赛（9月25日至27日）中，届时 Yesavage 都有望为蓝鸟投出 3 到 4 局。"
-      ],
-      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/by5gzzmjcrfuzcrcofhv",
-      "translationSourceHash": "f878a70d6deefbfc5b482a3a2b5412dfdd4f2c16ae34310cc37b3fd1543aee22",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-09-14T03:43:31.153Z",
-      "author": "Keegan Matheson",
-      "publishedAt": "2026-09-13T22:33:00.000Z",
-      "url": "https://www.mlb.com/bluejays/news/blue-jays-hit-back-to-back-to-back-homers-in-win",
-      "source": "MLB.com"
     }
   ],
-  "pendingNotificationIds": []
+  "pendingNotificationIds": [
+    "e631bffbd97fdba66d04bf5178356c7c86a9418a022445661a5b715f38701c6b"
+  ]
 }
