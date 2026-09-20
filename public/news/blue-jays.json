@@ -1,8 +1,39 @@
 {
   "teamId": "toronto-blue-jays",
   "teamName": "多伦多蓝鸟",
-  "updatedAt": "2026-09-20T18:56:23.481Z",
+  "updatedAt": "2026-09-20T21:29:44.621Z",
   "items": [
+    {
+      "id": "1154e004e6152674c3702aba1338711f72b248daf8b56cc14201787d7b907da0",
+      "teamId": "toronto-blue-jays",
+      "teamName": "多伦多蓝鸟",
+      "titleEn": "Guerrero Jr. (lower back tightness) exits game vs. Rangers",
+      "summaryEn": "",
+      "bodyEn": [
+        "ARLINGTON -- Vladimir Guerrero Jr. left Sunday’s game against the Rangers in the fourth inning with what the team described as left lower back stiffness.",
+        "Guerrero, playing first base and hitting No. 2 in the lineup, had a base hit in two plate appearances for the Blue Jays, who are trying to keep alive their American League Wild Card hopes in the series finale at Globe Life Field. Toronto entered the game three games back of the White Sox for the final postseason berth and as losers in four of its past five games.",
+        "Myles Straw entered the game in his place in the lineup.",
+        "Guerrero had a stint on the seven-day concussion IL in August after a collision with Yankees shortstop George Lombard. He has also dealt with back and hamstring trouble during the season but has not needed time on the IL for either.",
+        "Guerrero has stepped up when the Blue Jays have needed him most, batting .292 with two home runs -- including his first of the season at Rogers Centre --, eight RBIs and a .796 OPS in 17 games in September. He also ranks second in the majors at first base with 10 defensive runs saved."
+      ],
+      "titleZh": "Guerrero Jr. 因下背部紧绷提前退场",
+      "summaryZh": "多伦多蓝鸟对阵得克萨斯游骑兵的比赛中，Vladimir Guerrero Jr. 因左下背部僵硬在第四局退场。",
+      "bodyZh": [
+        "阿灵顿——Vladimir Guerrero Jr. 在周日对阵得克萨斯游骑兵的比赛中于第四局退场，球队将其伤情描述为左下背部僵硬。",
+        "Guerrero 本场比赛担任一垒手并排在打线第二棒，在多伦多蓝鸟力求在环球人寿球场进行的系列赛收官战中保留美联外卡希望时，他取得了两个打席一支安打的成绩。多伦多在赛前落后芝加哥白袜三个胜场，暂居最后一个季后赛席位争夺者的位置，且在过去的五场比赛中输了四场。",
+        "Myles Straw 在打线中替补登场接替他的位置。",
+        "Guerrero 在八月份曾因与纽约洋基游击手 George Lombard 发生碰撞而进入七天脑震荡伤病名单。本赛季他还处理过背部和腿筋的问题，但这两项伤情都未让他进入伤病名单。",
+        "在多伦多蓝鸟最需要他的时候挺身而出，Guerrero 在九月份的 17 场比赛中打出 .292 的打击率，包含 2支本垒打——其中包含他在罗杰斯中心本赛季的第戎本垒打——贡献 8个打点以及 .796 的 OPS。他还以 10 次守备跑垒分贡献（DRS）在大联盟一垒手当中排名第二。"
+      ],
+      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/yh6eiqyjieleujbnrpx7",
+      "translationSourceHash": "6d57fb3fa96611da5074e723f7d4e2da6b3751507c2ed09833ed2eca3e19bbfb",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-09-20T21:29:44.609Z",
+      "author": "John Henry",
+      "publishedAt": "2026-09-20T20:56:59.000Z",
+      "url": "https://www.mlb.com/bluejays/news/vladimir-guerrero-jr-exits-with-lower-back-injury",
+      "source": "MLB.com"
+    },
     {
       "id": "feb1aaacfde2128dac70d7050824d420ef5e3081c1b72e9c29e7095ae0ca797f",
       "teamId": "toronto-blue-jays",
@@ -1181,48 +1212,9 @@
       "publishedAt": "2026-09-13T22:33:00.000Z",
       "url": "https://www.mlb.com/bluejays/news/blue-jays-hit-back-to-back-to-back-homers-in-win",
       "source": "MLB.com"
-    },
-    {
-      "id": "0adead14928a35925da8b8623ff6b5192454f977e16a69556ea7902b1f3a71fe",
-      "teamId": "toronto-blue-jays",
-      "teamName": "多伦多蓝鸟",
-      "titleEn": "Home(r) at last! Vladdy goes deep in Toronto for first time in 2026",
-      "summaryEn": "",
-      "bodyEn": [
-        "TORONTO -- Vladimir Guerrero Jr. didn’t move an inch. He wasn’t leaving the box until that ball left the yard.",
-        "Finally, he had done it.",
-        "In his 289th plate appearance of 2026 and the 150th game of the season, Guerrero hit one out at Rogers Centre, in the fifth inning off Orioles starter Trevor Rogers.",
-        "He stood like a statue over home plate, his bat pointed up towards the left-field corner of the stadium as his ball soared out. It didn’t clear the wall by much, but Guerrero knew it. Even though it’s been a while, he knew it.",
-        "This is the moment that Guerrero, the Blue Jays and their fans have been waiting for. He’s teased us so many times in 2026 – in Chicago, Los Angeles, Detroit and Boston. He’s teased us up and down both coasts, from San Diego and San Francisco, across to Philadelphia and even in Cleveland, but never at the place he calls home in Toronto. All season, Rogers Centre has been waiting to erupt around Guerrero.",
-        "We haven’t seen this since that breathtaking 2025 postseason run, when Guerrero homered eight times in 18 games and put the Blue Jays on his back. That’s what it’s supposed to look like: the $500 million man standing out in front leading the way, but it’s been a while. Guerrero hasn’t hit a regular-season home run here since Aug. 17, 2025, against the Rangers, and his last Rogers Centre homer overall came in Game 6 of the ALCS against the Mariners on Oct. 19, 2025.",
-        "What a time for it to happen, too, because for all of the close calls Guerrero has had throughout the season, his second at-bat on Sunday was the closest he’s been. Guerrero shot a rocket to right-center field, but it smacked high off the wall at 397 feet, just a foot or two shy of leaving the yard.",
-        "Here’s the kicker, though. According to Statcast, that double was blown in -11 feet by the wind swirling inside Rogers Centre. Guerrero had just been robbed of a home run by… the wind. He’s battled everything in 2026, from his swing, to his body, to the incredible pressure that’s come with this slump, and now he’d been robbed by an invisible force.",
-        "The moment that zero became a one at home, though, you could feel the Blue Jays become lighter. The sellout crowd, understanding exactly what that home run meant, roared until Guerrero popped out the other end of the dugout for a curtain call, still wearing the red home run jacket and beaming.",
-        "Finally, it’s over. Now, Guerrero can just focus on hitting his next one."
-      ],
-      "titleZh": "终于在主场开轰！Vladdy 在 2026 赛季首次于多伦多轰出本垒打",
-      "summaryZh": "Vladimir Guerrero Jr. 打出了 2026 赛季在罗杰斯中心的首支本垒打。",
-      "bodyZh": [
-        "多伦多讯 —— Vladimir Guerrero Jr. 一步也没有移动。在球飞出球场之前，他没有离开打击区。",
-        "终于，他做到了。",
-        "在 2026 赛季的第 289 次打击机会以及本赛季的第 150 场比赛中，Guerrero 在罗杰斯中心从巴尔的摩金莺先发投手 Trevor Rogers 手中敲出了一支本垒打，时间是在第五局。",
-        "他像一尊雕像一样站在本垒板上方，球棒指向球场左外野角落，看着自己的击球高高飞出。这记击球并未飞离围墙太远，但 Guerrero 心里清楚。尽管已经有一段时间没能在主场开轰，但他就是知道。",
-        "这是 Guerrero、多伦多蓝鸟以及球迷们一直在等待的时刻。他在 2026 赛季已经无数次吊起人们的胃口 —— 在芝加哥、洛杉矶、底特律和波士顿。他在东西海岸到处制造悬念，从圣迭戈和旧金山，到费城，甚至在克利夫兰，但唯独没能在他在多伦多称为家的这座球场做到。整个赛季，罗杰斯中心一直在等待为 Guerrero 的本垒打而沸腾。",
-        "自从 2025 年那段惊心动魄的季后赛之旅以来，我们就再也没见过这样的场景了。当时 Guerrero 在 18 场比赛中轰出 8 支本垒打，凭一己之力扛着多伦多蓝鸟前进。这才是它本该有的样子：身价 5 亿美元的球星挺身而出引领球队，但这已经过去一段时间了。Guerrero 自 2025 年 8 月 17 日对阵得克萨斯游骑兵以来，就再也没有在这里打过常规赛本垒打，而他上一次在罗杰斯中心轰出本垒打，还要追溯到 2025 年 10 月 19 日美联冠军赛对阵西雅图水手的第六场比赛。",
-        "这也是一个绝佳的时机，因为尽管 Guerrero 全赛季经历过多次擦肩而过，但他周日的第二个打席已经是离本垒打最近的一次。Guerrero 将球轰出一记飞向右中外野的强劲平飞球，但球重重地砸在 397 英尺处的全垒打墙高处，距离飞出球场仅差一两英尺。",
-        "然而，最令人叫绝的是。根据 Statcast 的数据，罗杰斯中心内部盘旋的风将那记二垒安打往回吹了 -11 英尺。Guerrero 的本垒打刚刚被……风给没收了。他在 2026 赛季与一切进行了抗争，从自己的挥棒、身体，到这次低迷期带来的巨大压力，而现在他又被一股看不见的力量掠夺了本垒打。",
-        "不过，当主场本垒打栏上的数字从零变成一时，你可以感觉到多伦多蓝鸟全队都轻松了。全场爆满的观众完全理解这记本垒打的意义，他们大声欢呼，直到 Guerrero 再次从休息区走出来谢幕，他身上依然穿着红色的本垒打夹克，脸上带着灿烂的笑容。",
-        "终于，这一切都结束了。现在，Guerrero 可以专注于打出他的下一支本垒打。"
-      ],
-      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/irfdrxkypqghlraj2crt",
-      "translationSourceHash": "497430b64bdbd7b312883ca71c7d862e92ddbd436270b0f51ce6e68e4e0e7f70",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-09-14T03:43:35.520Z",
-      "author": "Keegan Matheson",
-      "publishedAt": "2026-09-13T22:06:00.000Z",
-      "url": "https://www.mlb.com/bluejays/news/vladimir-guerrero-jr-hits-first-home-run-at-rogers-centre-in-2026",
-      "source": "MLB.com"
     }
   ],
-  "pendingNotificationIds": []
+  "pendingNotificationIds": [
+    "1154e004e6152674c3702aba1338711f72b248daf8b56cc14201787d7b907da0"
+  ]
 }
