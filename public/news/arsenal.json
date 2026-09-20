@@ -1,7 +1,7 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-09-19T21:45:08.589Z",
+  "updatedAt": "2026-09-20T00:08:27.983Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
@@ -816,35 +816,6 @@
       "translationSourceHash": "7622bf058ce717ab5180c3f24492563f1c1db6ee32b411054da995625ede31f4",
       "translationModel": "gemini-3.5-flash-lite",
       "translatedAt": "2026-09-16T17:16:56.334Z"
-    },
-    {
-      "id": "cd715607ec9389154bb6e31be80a83aa42f8f98357451071e868e44d76f5dc4f",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "How to watch Arsenal Women v Manchester United",
-      "summaryEn": "Find out which channel our next game is on as we host Manchester United in the Women's Super League",
-      "bodyEn": [
-        "Manchester United are the visitors for our second Women's Super League home game of the season on Saturday evening.",
-        "We kick-off at 5.30pm at Emirates Stadium, looking to get back to winning ways following last weekend's 0-0 draw with Crystal Palace.",
-        "Tickets remain available but, for supporters in the UK who aren't attending the match, the game will be shown live on Sky Sports Football.",
-        "Elsewhere in the world, check out which broadcasters have got rights to the game on the WSL website."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/c98b8713e421-gettyimages-2295102270.webp",
-      "author": "Arsenal Media",
-      "publishedAt": "2026-09-16T10:39:43.180Z",
-      "url": "https://www.arsenal.com/news/how-to-watch-arsenal-women-v-manchester-united-aLXcw0c5e2Wb",
-      "source": "Arsenal.com",
-      "titleZh": "如何观看阿森纳女足对阵曼联女足",
-      "summaryZh": "了解我们在女超联赛主场迎战曼联的转播频道。",
-      "bodyZh": [
-        "周六晚间，曼联女足将做客酋长球场，迎来我们本赛季的第二场女超联赛主场比赛。",
-        "比赛将于下午5点30分在酋长球场开球，我们希望在上周末与水晶宫0比0战平后重回胜利轨道。",
-        "球票仍在发售中，不过对于未能现场观战的英国球迷，本场比赛将在Sky Sports Football频道进行直播。",
-        "在世界其他地区，请在女超联赛官方网站上查询获得本场比赛转播权的转播商。"
-      ],
-      "translationSourceHash": "2874f1a832ae7cbd26ba404317cc418242ca6815d1b21697b6711bab1065f38a",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-09-19T21:45:08.588Z"
     },
     {
       "id": "59fa803bfdd9798ffca2a849a8ba6e6347a97e537746f6214cfa875b27879039",
