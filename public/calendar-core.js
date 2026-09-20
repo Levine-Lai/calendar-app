@@ -496,12 +496,35 @@
     return value;
   }
 
+  function getEspnDatePartitions(startValue, endValue, dayOnly = false) {
+    const start = new Date(startValue);
+    const end = new Date(endValue);
+    if (!Number.isFinite(start.getTime()) || !Number.isFinite(end.getTime()) || start > end) return [];
+    if (!dayOnly) {
+      return Array.from(
+        { length: end.getFullYear() - start.getFullYear() + 1 },
+        (_, index) => String(start.getFullYear() + index)
+      );
+    }
+    const result = [];
+    const cursor = new Date(start.getFullYear(), start.getMonth(), start.getDate());
+    const finalDay = new Date(end.getFullYear(), end.getMonth(), end.getDate());
+    while (cursor <= finalDay) {
+      result.push(
+        `${cursor.getFullYear()}${String(cursor.getMonth() + 1).padStart(2, "0")}${String(cursor.getDate()).padStart(2, "0")}`
+      );
+      cursor.setDate(cursor.getDate() + 1);
+    }
+    return result;
+  }
+
   return {
     attachTeamToEvent,
     classifyEventStatus,
     deriveFollowedTeams,
     detachTeamFromEvent,
     getEventImportedTeams,
+    getEspnDatePartitions,
     getMonthGridRange,
     isEventFinished,
     isEventFuture,

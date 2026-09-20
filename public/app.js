@@ -19,7 +19,6 @@ const imagePreloadPending = new Map();
 const dayScoreRefreshes = new Map();
 const dayScoreRefreshTimes = new Map();
 const scoreRefreshTtlMs = 60 * 1000;
-const maxEspnScheduleRangeDays = 45;
 const teamNewsCacheKeyPrefix = "sports-fan-calendar:team-news:v2:";
 const teamNewsAutoRefreshMs = 5 * 60 * 1000;
 const teamNewsResumeRefreshMs = 2 * 60 * 1000;
@@ -1802,12 +1801,12 @@ function getEspnSeasonTypes(leagueConfig) {
 
 async function fetchEspnSchedule(leagueConfig, start, end, options = {}) {
   const rangeDays = Math.floor((startOfDay(end).getTime() - startOfDay(start).getTime()) / dayMs) + 1;
-  if (!options.singleRange && rangeDays > maxEspnScheduleRangeDays) {
-    return fetchEspnScheduleChunks(leagueConfig, start, end, options);
+  if (!options.singleRange && rangeDays > 1) {
+    return fetchEspnSchedulePartitions(leagueConfig, start, end, options);
   }
   const firstDate = formatEspnDate(start);
   const lastDate = formatEspnDate(end);
-  const dateQuery = firstDate === lastDate ? firstDate : `${firstDate}-${lastDate}`;
+  const dateQuery = options.dateQuery || (firstDate === lastDate ? firstDate : `${firstDate}-${lastDate}`);
   const cacheKey = `${leagueConfig.id}:${dateQuery}`;
   const cached = cache.get(cacheKey);
   if (!options.force && cached && Date.now() - cached.time < 5 * 60 * 1000) {
@@ -1821,30 +1820,24 @@ async function fetchEspnSchedule(leagueConfig, start, end, options = {}) {
   const providerEvents = requireArray(payload.events, `${leagueConfig.name} 赛程 events`);
   let events = providerEvents
     .map((event) => normalizeEspnEvent(event, leagueConfig))
+    .filter((event) => {
+      const time = new Date(event.start).getTime();
+      return time >= startOfDay(start).getTime() && time < addDays(startOfDay(end), 1).getTime();
+    })
     .sort(sortByStart);
   if (leagueConfig.id === "csl") events = await enrichCslEventsWithOfficialLogos(events);
   cache.set(cacheKey, { time: Date.now(), data: events });
   return { events, errors: [] };
 }
 
-async function fetchEspnScheduleChunks(leagueConfig, start, end, options = {}) {
-  const chunks = [];
-  let cursor = startOfDay(start);
-  const finalDay = startOfDay(end);
-  while (cursor <= finalDay) {
-    const chunkEnd = new Date(Math.min(
-      addDays(cursor, maxEspnScheduleRangeDays - 1).getTime(),
-      finalDay.getTime()
-    ));
-    chunks.push({ start: cursor, end: chunkEnd });
-    cursor = addDays(chunkEnd, 1);
-  }
-
-  const settled = await mapLimit(chunks, 3, async (chunk) => {
+async function fetchEspnSchedulePartitions(leagueConfig, start, end, options = {}) {
+  const partitions = CalendarCore.getEspnDatePartitions(start, end, Boolean(options.dayOnly));
+  const settled = await mapLimit(partitions, 4, async (dateQuery) => {
     try {
-      const payload = await fetchEspnSchedule(leagueConfig, chunk.start, chunk.end, {
+      const payload = await fetchEspnSchedule(leagueConfig, start, end, {
         ...options,
-        singleRange: true
+        singleRange: true,
+        dateQuery
       });
       return { status: "fulfilled", value: payload.events };
     } catch (reason) {

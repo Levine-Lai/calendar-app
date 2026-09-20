@@ -54,6 +54,17 @@ test("month grid covers all 42 visible days", () => {
   assert.equal(range.end.getDate(), 12);
 });
 
+test("ESPN day refresh uses accepted single-day date queries", () => {
+  assert.deepEqual(
+    core.getEspnDatePartitions(new Date(2026, 8, 19), new Date(2026, 8, 20), true),
+    ["20260919", "20260920"]
+  );
+  assert.deepEqual(
+    core.getEspnDatePartitions(new Date(2026, 7, 1), new Date(2027, 4, 31), false),
+    ["2026", "2027"]
+  );
+});
+
 test("ICS TZID values convert to UTC", () => {
   assert.equal(
     core.parseIcsDate("20260621T200000", "America/New_York"),

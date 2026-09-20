@@ -188,9 +188,9 @@ const checks = [
     "29 无阴影与比赛 API 韧性",
     styles.includes("box-shadow: none !important")
       && styles.includes("text-shadow: none !important")
-      && app.includes("maxEspnScheduleRangeDays = 45")
-      && app.includes("fetchEspnScheduleChunks")
-      && app.includes("mapLimit(chunks, 3")
+      && core.includes("getEspnDatePartitions")
+      && app.includes("fetchEspnSchedulePartitions")
+      && app.includes("mapLimit(partitions, 4")
       && app.includes("deriveTeamsFromEvents")
       && app.includes("fetchJsonpOnce")
       && packageJson.scripts?.["check:apis"] === "node scripts/check-sports-apis.js"
