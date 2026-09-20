@@ -1,16 +1,18 @@
 {
-  "versionCode": 49,
-  "versionName": "2.3.7",
-  "apkUrl": "https://github.com/Levine-Lai/calendar-app/releases/expanded_assets/v2.3.7",
-  "apkDirectUrl": "https://github.com/Levine-Lai/calendar-app/releases/download/v2.3.7/sports-calendar-2.3.7-debug.apk",
+  "versionCode": 50,
+  "versionName": "2.3.8",
+  "apkUrl": "https://github.com/Levine-Lai/calendar-app/releases/expanded_assets/v2.3.8",
+  "apkDirectUrl": "https://github.com/Levine-Lai/calendar-app/releases/download/v2.3.8/sports-calendar-2.3.8-debug.apk",
   "notes": [
     "联赛导入默认收起，展开时才加载球队",
     "顶部浅紫背景贴合上沿和左右边缘，仅保留底部分隔线",
     "刷新按钮更新全部已导入球队，恢复赛程管理入口",
     "收起面板仍显示操作反馈，更新赛程保留当前月份",
     "切换联赛清空搜索框，增强错误提示与键盘焦点",
-    "新闻中文翻译迁移到 Gemini 3.5 Flash-Lite",
-    "免费额度下增加限速、重试和英文回退，提升自动更新稳定性"
+    "修复 ESPN 拒绝旧网络标识导致的 MLB、NBA、NFL、英超等比分不更新",
+    "多联赛比分改为受控并发刷新，并加入 PL2（U21）官方实时比分",
+    "阿森纳与多伦多蓝鸟新文章均支持推送",
+    "展开通知显示对应球队队徽，点击阿森纳推送可直达文章"
   ],
   "force": false
 }
