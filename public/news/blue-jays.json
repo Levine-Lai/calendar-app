@@ -1,8 +1,49 @@
 {
   "teamId": "toronto-blue-jays",
   "teamName": "多伦多蓝鸟",
-  "updatedAt": "2026-09-20T01:43:45.991Z",
+  "updatedAt": "2026-09-20T03:32:27.437Z",
   "items": [
+    {
+      "id": "9f5b539983d67933c2cad8494f876a6b81e1a56067bea9374a5ca37065ed9ba9",
+      "teamId": "toronto-blue-jays",
+      "teamName": "多伦多蓝鸟",
+      "titleEn": "Soriano's uneven night deals another blow to Blue Jays' WC hopes",
+      "summaryEn": "",
+      "bodyEn": [
+        "ARLINGTON -- José Soriano flashed brilliance but battled inconsistency in Saturday's 6-2 loss to the Rangers at Globe Life Field.",
+        "The 27-year-old threw five frames, giving up six runs on four hits while striking out eight and walking one batter. He appeared to fight the feel for his knuckle curveball, helping Texas build an early lead on a night when Toronto's offense took until the sixth inning to record its first hit.",
+        "The loss dealt another blow to the Blue Jays’ dwindling postseason hopes. The White Sox won earlier Saturday before the Guardians beat the Athletics, keeping Chicago in control of the third AL Wild Card spot. Toronto sits three games behind the White Sox and, because Chicago owns the head-to-head tiebreaker, the Blue Jays need to finish outright ahead of them to claim the final Wild Card spot.",
+        "Soriano began his outing by striking out Ezequiel Duran on an 84.9 mph knuckle curveball before Josh Jung connected on a first-pitch 96.7 mph sinker that leaked over the middle of the plate for a solo home run.",
+        "Texas extended its lead to 3-0 in the second without recording another hit. Soriano walked Wyatt Langford before striking out Jake Burger for the first out, then hit Nicky Lopez with a knuckle curveball.",
+        "Danny Jansen reached on a fielder's choice, with Langford crossing home plate when shortstop Andrés Giménez made a great stop to his right but yanked his throw across his body and past second baseman Josh Smith. The error allowed Lopez to advance to third, and he scored on a Soriano wild pitch with Evan Carter at the plate.",
+        "Soriano gave up an RBI double to Langford and was charged with two more runs after exiting in the sixth with no outs.",
+        "Toronto's offense didn’t provide much support, either. The Blue Jays entered Saturday with the second-fewest runs scored in the Majors, and Texas retired the first 10 Toronto batters despite starter Cal Quantrill exiting after recording just four outs.",
+        "Vladimir Guerrero Jr. became Toronto's first baserunner with a walk in the fourth, but the no-hit bid remained intact until Brett Bateman singled in the sixth.",
+        "Alejandro Kirk followed with an RBI single to center field to cut Toronto's deficit to 3-1. Davis Schneider, who pinch-hit for Nathan Lukes in the seventh, added a solo homer to left to cap the scoring."
+      ],
+      "titleZh": "Soriano表现起伏，多伦多蓝鸟季后赛希望再受打击",
+      "summaryZh": "多伦多蓝鸟以2比6不敌得克萨斯游骑兵，季后赛希望受挫。",
+      "bodyZh": [
+        "阿灵顿讯——在周六于环球人寿球场以2比6不敌得克萨斯游骑兵的比赛中，José Soriano展现了出色的球威，但也饱受表现不稳定之苦。",
+        "这位27岁的投手投了5局，被敲出4安打丢6分，送出8次三振与1次保送。他似乎难以掌控自己的指关节曲球，帮助得克萨斯游骑兵在比赛早期建立领先，而多伦多蓝鸟的进攻直到第6局才敲出全场首安。",
+        "这场失利对多伦多蓝鸟日渐渺茫的季后赛希望再次造成打击。芝加哥白袜在周六稍早赢球，随后克利夫兰守护者击败了运动家，使得芝加哥白落后美联外卡第三名3场胜差，且由于芝加哥拥有对战优势，多伦多蓝鸟必须在战绩上直接超越南方才能夺下最后一张外卡门票。",
+        "Soriano在开局时用一颗时速84.9英里的指关节曲球三振了Ezequiel Duran，随后Josh Jung抓住了第一球、一颗投到红中偏高的96.7英里伸卡球，轰出阳春本垒打。",
+        "得克萨斯游骑兵在第2局在没有击出安打的情况下将领先优势扩大到3比0。Soriano先是保送了Wyatt Langford，接着三振Jake Burger抓下第一个出局数，随后用指关节曲球击中Nicky Lopez。",
+        "Danny Jansen靠着野手选择上垒，当游击手Andrés Giménez向右侧美技拦截后，跨身传球传向二垒时偏出并飞过二垒手Josh Smith。这次失误让Lopez推进到三垒，并在Evan Carter打击时靠着Soriano的暴投跑回分数。",
+        "Soriano在第6局无出局退场时，失掉一支带打点的二垒安打给Langford，并记失额外两分。",
+        "多伦多蓝鸟的进攻也没有提供太多火力支援。多伦多蓝鸟在周六赛前是全大联盟得分倒数第二少的球队，尽管得克萨斯游骑兵先发投手Cal Quantrill只投了4个出局数就退场，主队仍连续解决前10名多伦多打者。",
+        "Vladimir Guerrero Jr.在第4局靠着保送成为多伦多首位上垒者，但无安打比赛直到第6局Brett Bateman击出一安打才告破。",
+        "Alejandro Kirk随後击出一支中外野方向带打点的安打，将多伦多落后差距缩小至3比1。在第7局替补Nathan Lukes上场的Davis Schneider随后击出一支左外野方向阳春本垒打，锁定了球队此役的得分。"
+      ],
+      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/zep5xjmn77x7okwkpqwv",
+      "translationSourceHash": "b28b20ee23ed9eb18a369d975c225e89d6a29ab1944069fbbd30b4ae55bf6c65",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-09-20T03:32:27.424Z",
+      "author": "Perla Paredes",
+      "publishedAt": "2026-09-20T01:56:54.000Z",
+      "url": "https://www.mlb.com/bluejays/news/blue-jays-lose-to-rangers-fall-3-games-back-in-al-wild-card-race",
+      "source": "MLB.com"
+    },
     {
       "id": "7e9000313c47368fe2a76d65ae126941f1bfce63ec0dcd7280563bdd4d1caec1",
       "teamId": "toronto-blue-jays",
@@ -1203,58 +1244,9 @@
       "publishedAt": "2026-09-12T23:12:00.000Z",
       "url": "https://www.mlb.com/bluejays/news/brett-bateman-spencer-miles-help-blue-jays-beat-orioles",
       "source": "MLB.com"
-    },
-    {
-      "id": "f241e26a3c805cf382bed544b0504043bf53b9a0b9b691e8b81e627d8b7f7d37",
-      "teamId": "toronto-blue-jays",
-      "teamName": "多伦多蓝鸟",
-      "titleEn": "High-A Blue Jays claim 2026 title -- these are the prospects who led them",
-      "summaryEn": "",
-      "bodyEn": [
-        "In a 12-inning game that stretched late into the night, the High-A Vancouver Canadians outlasted the Eugene Emeralds on Friday to complete a three-game sweep and secure the 2026 Northwest League title.",
-        "Much like the first two games of the series, the clincher was a back-and-forth affair. The Canadians led early before falling behind in the middle innings, ultimately entering the eighth down by four runs. David Calabrese, a Richmond Hill, Ontario native, flipped the script with two outs in the ninth inning, crushing a game-tying homer.",
-        "Both teams tallied a run in the 10th and went scoreless in the 11th, seemingly reaching a stalemate. But the first pitch in the 12th inning changed that as Ryan Sprock singled to center field, driving home the go-ahead run. The Canadians held onto the lead for a 9-8 win at PK Park, their third one-run victory in as many games.",
-        "Get tickets to a Minor League game near you »",
-        "It marks Vancouver’s first league title since 2023. It also marks the first time since 2022 that the league's Championship Series has been won via a sweep -- the roles were reversed that season with Eugene toppling Vancouver.",
-        "The Canadians have been somewhat of a fixture in the Northwest League playoffs, making an appearance in four of the last six seasons. This year got off to a rocky start as they dropped their first five games but a combination of old and new names helped turn the tide, while some midseason additions maintained the momentum throughout the playoff push and the Championship Series.",
-        "JoJo Parker, SS",
-        "The Blue Jays’ first-round pick in the 2025 Draft, Parker got his first taste of professional baseball this year. Currently the organization’s No. 1 prospect, he wasted no time in showing off his talent. He impressed in 87 games with Single-A Dunedin, earning a promotion to Vancouver on Aug. 10. The 20-year-old didn’t miss a beat -- he put together a seven-game hit streak to start his High-A tenure. He closed the regular season with a .316 average across 21 games for the Canadians.",
-        "Batting in the leadoff spot, Parker came to the plate in some crucial situations during the postseason series. In Game 1, he hit an RBI double, driving in the tying run in the sixth. In the bottom of the eighth of Game 2, he collected a single and a walk. Although he went hitless in Game 3, he scored the winning run, ending a 12-inning gridlock. All in all, he ended his first pro season with some extra quality at-bats and a championship title.",
-        "Dasan Hill, LHP ... and Nolan Perry, RHP and Johnny King, LHP",
-        "For the early part of the year, the Canadians’ bats were complemented by the arms of Perry and King, the Blue Jays’ No. 2 and No. 3 prospects, respectively. Perry was promoted to Double-A in June, while King remained at High-A until August, racking up a team-leading 112 strikeouts. But when both had moved onto New Hampshire, it was time to pass the proverbial torch. Enter Hill, the club's No. 8 prospect.",
-        "Hill joined the organization in the Jeff Hoffman Trade Deadline deal and made five crucial starts for Vancouver down the stretch, including what became the playoff spot clincher on Sept. 2. He allowed one run over three innings, while striking out four batters. The 6-foot-5 southpaw returned to the mound to start Game 1 and allowed one earned run in his two innings of work.",
-        "David Calabrese, OF",
-        "A graduate of Saint Elizabeth Catholic High School in Thornhill, Ontario, Calabrese returned to Canada when he was signed by the Blue Jays to a Minor League contract on Aug. 12. A third-round pick of the Angels in the 2020 Draft, he started the season with Double-A Rocket City before he was released. He immediately made an impact on the Vancouver lineup and caught fire in the final week of the regular season, earning Northwest League Player of the Week honors after going 14-for-28 with a 1.321 OPS and five stolen bases. Prior to the start of the playoffs, he posted a .348 average with three home runs and 10 RBIs during his 16-game stint with the Canadians.",
-        "The 23-year-old started Game 1 on the bench before coming in as a defensive substitution in the sixth inning. He led off the bottom of the inning and hit a triple, sparking a rally. In Game 2, he posted three hits. Those performances paled in comparison to his game-tying homer in the top of the ninth of Game 3 that completed a four-run comeback. Overall, he went 6-for-12 with three extra-base hits and a stolen base in the series."
-      ],
-      "titleZh": "高阶1A多伦多蓝鸟夺得2026赛季冠军：带队晋级的潜力新秀",
-      "summaryZh": "高阶1A温哥华加拿大人队在12局苦战后横扫对手，夺得2026年西北联盟冠军。",
-      "bodyZh": [
-        "在一场一直打到深夜的12局大战中，高阶1A温哥华加拿大人队于周五击败尤金翡翠队，完成三场横扫，夺得2026年西北联盟冠军。",
-        "就像系列赛的前两场一样，这场决定胜局的比赛也是交替领先的拉锯战。加拿大人队在早取得领先，但在中段局数落后，最终进入第八局时落后4分。来自安大略省里士满山的David Calabrese在第九局两出局时扭转了乾坤，轰出一记扳平比分的本垒打。",
-        "两队在第10局各得一分，并在第11局均未得分，似乎陷入了僵局。但第12局的第一球打破了这一局面，Ryan Sprock击出中外野安打，送回了超前分。加拿大人队守住领先优势，以9比8在PK球场取胜，这也是他们连续三场以1分险胜对手。",
-        "获取您附近的场次小联盟比赛门票 »",
-        "这是温哥华自2023年以来首个联盟冠军。这也是自2022年以来首次有球队在联盟冠军赛中通过横扫夺冠——当年双方的角色正好相反，尤金击败了温哥华。",
-        "加拿大人队堪称西北联盟季后赛的常客，在过去六个赛季中四次打入季后赛。今年开局步履维艰，输掉了前五场比赛，但新老面孔的结合扭转了局势，而一些赛季中期的引援则在整个季后赛冲刺和冠军赛中保持了势头。",
-        "JoJo Parker，游击手",
-        "作为蓝鸟队在2025年选秀大会的首轮新秀，Parker今年迎来了他的职业棒球初体验。目前他是球队的头号潜力新秀，他毫不浪费时间地展现了自己的天赋。他在单A达尼丁队出战87场表现出色，并于8月10日升上温哥华。这位20岁的球员状态火热，开启高阶1A生涯时打出了七场安打秀。他在加拿大人队的21场常规赛中以.316的打击率收官。",
-        "作为开路先锋，Parker在季后赛系列赛的关键时刻多次走上打击区。在第一场比赛中，他在第六局击出一支带打点的二垒安打，送回了扳平分。在第二场比赛的第八局下半，他收获了一支安打和一次保送。尽管他在第三场比赛中没有安打，但他得到了制胜分，结束了12局的僵局。总而言之，他在第一个职业赛季以几次高质量的打击和一个冠军头衔画上了句号。",
-        "Dasan Hill，左投……以及Nolan Perry，右投，和Johnny King，左投",
-        "在今年早些时候，加拿大人队的打线得到了Perry和King的投球支援，他们分别位列蓝鸟队第2和第3号潜力新秀。Perry于6月升上2A，而King则在高阶1A效力至8月，斩获全队最高的112次三振。但当两人都前往新罕布什尔后，就到了传递火炬的时候了。球队第8号潜力新秀Hill登场了。",
-        "Hill在Jeff Hoffman的交易截止日交易中加入球队，并在温哥华的冲刺阶段完成了五次关键先发，其中包括9月2.日锁定季后赛席位的比赛。他在三局投球中失1分，并三振了4名打者。这位身高6英尺5英寸的左投在第一场比赛中重返投手丘，在两局投球中失1分自责分。",
-        "David Calabrese，外野手",
-        "作为安大略省托恩希尔圣伊丽莎白天主教高中的毕业生，Calabrese于8月12日与蓝鸟队签下一份小联盟合同后重返加拿大。作为天使队在2020年选秀大会的三轮秀，他在2A火箭城开始本赛季，随后被释放。他迅速对温哥华的打线产生影响，并在常规赛的最后一周状态火热，在28打数14安打、攻击指数1.321并有5次盗垒后，荣获西北联盟周最佳球员。在季后赛开始前，他在加拿大人队的16场比赛中交出了.348的打击率、3支本垒打和10个打点。",
-        "这位23岁的球员在第一场比赛中从替补席开始，随后在第六局作为防守替补登场。他在该局下半作为首位打者击出一支三垒安打，掀起了一波反攻。在第二场比赛中，他贡献了三支安打。这些表现与他在第三场比赛第九局上半轰出的、完成4分大逆转的扳平本垒打相比都黯然失色。总的来说，他在这个系列赛中12打数6安打，包含3支长打和1次盗垒。"
-      ],
-      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/g93ygrrqifhtsueu9wdh",
-      "translationSourceHash": "564a45a1b0a307770c9333dc83c1b0b5d784834f968420d81be7808f65725587",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-09-14T03:43:50.824Z",
-      "author": "Allison Mast",
-      "publishedAt": "2026-09-12T07:07:00.000Z",
-      "url": "https://www.mlb.com/bluejays/news/blue-jays-prospects-win-2026-high-a-northwest-league-title",
-      "source": "MLB.com"
     }
   ],
-  "pendingNotificationIds": []
+  "pendingNotificationIds": [
+    "9f5b539983d67933c2cad8494f876a6b81e1a56067bea9374a5ca37065ed9ba9"
+  ]
 }
