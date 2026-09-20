@@ -681,15 +681,16 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
 
     static boolean hydrateLiveScores(List<Game> games) {
         RefreshTracker tracker = new RefreshTracker();
-        ExecutorService executor = Executors.newFixedThreadPool(5);
+        ExecutorService executor = Executors.newFixedThreadPool(6);
         List<Callable<Void>> providers = new ArrayList<>();
         providers.add(() -> { hydrateEspnScores(games, tracker); return null; });
         providers.add(() -> { hydrateSportsDbScores(games, tracker); return null; });
         providers.add(() -> { hydrateCslEspnScores(games, tracker); return null; });
         providers.add(() -> { hydrateCflScores(games, tracker); return null; });
         providers.add(() -> { hydrateCfaScores(games, tracker); return null; });
+        providers.add(() -> { hydratePremierLeagueScores(games, tracker); return null; });
         try {
-            executor.invokeAll(providers, 8, TimeUnit.SECONDS);
+            executor.invokeAll(providers, 12, TimeUnit.SECONDS);
         } catch (InterruptedException interrupted) {
             Thread.currentThread().interrupt();
         } finally {
@@ -714,25 +715,119 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
             }
             groups.get(key).add(game);
         }
+        ExecutorService executor = Executors.newFixedThreadPool(Math.min(4, Math.max(1, groups.size())));
+        List<Callable<Void>> requests = new ArrayList<>();
+        for (Map.Entry<String, List<Game>> entry : groups.entrySet()) {
+            requests.add(() -> {
+                if (Thread.currentThread().isInterrupted()) return null;
+                hydrateEspnScoreGroup(entry, tracker);
+                return null;
+            });
+        }
+        try {
+            executor.invokeAll(requests, 10, TimeUnit.SECONDS);
+        } catch (InterruptedException interrupted) {
+            Thread.currentThread().interrupt();
+        } finally {
+            executor.shutdownNow();
+        }
+    }
+
+    private static void hydrateEspnScoreGroup(Map.Entry<String, List<Game>> entry, RefreshTracker tracker) {
+        if (Thread.currentThread().isInterrupted()) return;
+        tracker.attempt();
+        try {
+            String[] parts = entry.getKey().split("\\|");
+            String endpoint = "https://site.api.espn.com/apis/site/v2/sports/"
+                + parts[0] + "/" + parts[1]
+                + "/scoreboard?dates=" + parts[2] + "&limit=300";
+            Map<String, JSONObject> liveEvents = fetchEventsById(endpoint);
+            tracker.succeed();
+            for (Game game : entry.getValue()) {
+                JSONObject liveEvent = findEspnEvent(game, liveEvents);
+                if (liveEvent != null) {
+                    applyLiveEvent(game, liveEvent);
+                }
+            }
+        } catch (Exception ignored) {
+            // Keep the imported snapshot if live refresh fails.
+        }
+    }
+
+    private static void hydratePremierLeagueScores(List<Game> games, RefreshTracker tracker) {
+        Map<String, List<Game>> groups = new HashMap<>();
+        for (Game game : games) {
+            if (!"premierleague".equals(game.dataSource)
+                || game.sourceId == null || game.sourceId.isEmpty()
+                || game.providerLeagueId == null || game.providerLeagueId.isEmpty()
+                || game.providerYear == null || game.providerYear.isEmpty()) {
+                continue;
+            }
+            String key = game.providerLeagueId + "|" + game.providerYear;
+            if (!groups.containsKey(key)) groups.put(key, new ArrayList<>());
+            groups.get(key).add(game);
+        }
         for (Map.Entry<String, List<Game>> entry : groups.entrySet()) {
             if (Thread.currentThread().isInterrupted()) return;
             tracker.attempt();
             try {
                 String[] parts = entry.getKey().split("\\|");
-                String endpoint = "https://site.api.espn.com/apis/site/v2/sports/"
-                    + parts[0] + "/" + parts[1]
-                    + "/scoreboard?dates=" + parts[2] + "&limit=300";
-                Map<String, JSONObject> liveEvents = fetchEventsById(endpoint);
+                String baseEndpoint = "https://sdp-prem-prod.premier-league-prod.pulselive.com/api/v2/matches"
+                    + "?competition=" + parts[0]
+                    + "&season=" + parts[1]
+                    + "&_limit=100&_sort=kickoff%3Aasc";
+                Map<String, JSONObject> byId = new HashMap<>();
+                String cursor = "";
+                for (int page = 0; page < 6; page += 1) {
+                    String endpoint = baseEndpoint;
+                    if (!cursor.isEmpty()) {
+                        endpoint += "&_next=" + java.net.URLEncoder.encode(cursor, StandardCharsets.UTF_8.name());
+                    }
+                    JSONObject root = new JSONObject(WidgetNetworkClient.getScoreJson(endpoint));
+                    JSONArray events = root.optJSONArray("data");
+                    byId.putAll(jsonArrayById(events, "matchId"));
+                    boolean allFound = true;
+                    for (Game game : entry.getValue()) allFound &= byId.containsKey(game.sourceId);
+                    if (allFound) break;
+                    JSONObject pagination = root.optJSONObject("pagination");
+                    cursor = pagination == null ? "" : pagination.optString("_next", "");
+                    if (cursor.isEmpty()) break;
+                }
                 tracker.succeed();
                 for (Game game : entry.getValue()) {
-                    JSONObject liveEvent = findEspnEvent(game, liveEvents);
-                    if (liveEvent != null) {
-                        applyLiveEvent(game, liveEvent);
-                    }
+                    JSONObject event = byId.get(game.sourceId);
+                    if (event != null) applyPremierLeagueEvent(game, event);
                 }
             } catch (Exception ignored) {
-                // Keep the imported snapshot if live refresh fails.
+                // Keep the imported snapshot if the Premier League feed is unavailable.
             }
+        }
+    }
+
+    static void applyPremierLeagueEvent(Game game, JSONObject event) {
+        JSONObject home = event.optJSONObject("homeTeam");
+        JSONObject away = event.optJSONObject("awayTeam");
+        if (home != null) game.homeScore = scoreJsonValue(home.opt("score"), game.homeScore);
+        if (away != null) game.awayScore = scoreJsonValue(away.opt("score"), game.awayScore);
+        String period = cleanJsonValue(event.optString("period", game.status));
+        String normalized = period.toLowerCase(Locale.US);
+        if (normalized.equals("fulltime")) {
+            game.status = "已结束";
+            game.statusState = "post";
+            game.completed = true;
+        } else if (normalized.equals("prematch")) {
+            game.status = "未开始";
+            game.statusState = "pre";
+            game.completed = false;
+        } else if (normalized.equals("postponed") || normalized.equals("abandoned") || normalized.equals("cancelled")) {
+            game.status = period;
+            game.statusState = "pre";
+            game.completed = false;
+        } else {
+            String clock = cleanJsonValue(event.optString("clock", ""));
+            game.status = clock.isEmpty() ? "进行中" : clock + "'";
+            game.statusState = "in";
+            game.completed = false;
         }
     }
 

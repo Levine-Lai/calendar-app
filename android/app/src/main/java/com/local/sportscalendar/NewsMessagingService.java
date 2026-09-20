@@ -5,6 +5,8 @@ import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Build;
 
 import androidx.core.app.NotificationCompat;
@@ -41,8 +43,9 @@ public class NewsMessagingService extends FirebaseMessagingService {
 
         String newsUrl = message.getData().get(TeamNewsPushManager.EXTRA_NEWS_URL);
         String newsId = message.getData().get(TeamNewsPushManager.EXTRA_NEWS_ID);
+        String teamId = message.getData().get("teamId");
         if (TeamNewsPushManager.wasNotificationRemembered(this, newsId)) return;
-        if (showNewsNotification(this, title, body, newsUrl, newsId)) {
+        if (showNewsNotification(this, title, body, newsUrl, newsId, teamId)) {
             TeamNewsPushManager.rememberNotification(this, newsId);
         }
     }
@@ -54,13 +57,26 @@ public class NewsMessagingService extends FirebaseMessagingService {
         String newsUrl,
         String newsId
     ) {
+        return showNewsNotification(context, title, body, newsUrl, newsId, "toronto-blue-jays");
+    }
+
+    static boolean showNewsNotification(
+        Context context,
+        String title,
+        String body,
+        String newsUrl,
+        String newsId,
+        String teamId
+    ) {
         createNotificationChannel(context);
         if (!canShowNotifications(context)) return false;
         NotificationManagerCompat notificationManager = NotificationManagerCompat.from(context);
+        boolean arsenal = "arsenal".equals(teamId);
+        String teamName = arsenal ? "阿森纳" : "多伦多蓝鸟";
         String safeTitle = String.valueOf(title == null ? "" : title).trim();
-        if (safeTitle.isEmpty()) safeTitle = "多伦多蓝鸟新闻";
+        if (safeTitle.isEmpty()) safeTitle = teamName + "新闻";
         String safeBody = String.valueOf(body == null ? "" : body).replaceAll("\\s+", " ").trim();
-        if (safeBody.isEmpty()) safeBody = "多伦多蓝鸟发布了一篇新文章，点击查看详情。";
+        if (safeBody.isEmpty()) safeBody = teamName + "发布了一篇新文章，点击查看详情。";
         safeBody = safeBody.substring(0, Math.min(safeBody.length(), 500));
 
         Intent intent = new Intent(context, MainActivity.class);
@@ -79,6 +95,7 @@ public class NewsMessagingService extends FirebaseMessagingService {
         NotificationCompat.Builder notification = new NotificationCompat.Builder(context, TeamNewsPushManager.CHANNEL_ID)
             .setSmallIcon(R.drawable.ic_notification_news)
             .setColor(ContextCompat.getColor(context, R.color.team_news_accent))
+            .setSubText(teamName)
             .setContentTitle(safeTitle)
             .setContentText(safeBody)
             .setStyle(new NotificationCompat.BigTextStyle()
@@ -90,6 +107,8 @@ public class NewsMessagingService extends FirebaseMessagingService {
             .setAutoCancel(true)
             .setPriority(NotificationCompat.PRIORITY_HIGH)
             .setCategory(NotificationCompat.CATEGORY_SOCIAL);
+        Bitmap teamLogo = loadTeamLogo(context, arsenal ? "arsenal" : "toronto-blue-jays");
+        if (teamLogo != null) notification.setLargeIcon(teamLogo);
 
         try {
             notificationManager.notify(requestCode, notification.build());
@@ -97,6 +116,15 @@ public class NewsMessagingService extends FirebaseMessagingService {
         } catch (SecurityException ignored) {
             // Android 13+ can revoke notification permission at any time.
             return false;
+        }
+    }
+
+    private static Bitmap loadTeamLogo(Context context, String teamId) {
+        String assetPath = "public/public/assets/teams/" + teamId + ".png";
+        try (java.io.InputStream input = context.getAssets().open(assetPath)) {
+            return BitmapFactory.decodeStream(input);
+        } catch (Exception ignored) {
+            return null;
         }
     }
 

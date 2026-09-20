@@ -224,7 +224,15 @@ final class WidgetNetworkClient {
         connection.setConnectTimeout(connectTimeout);
         connection.setReadTimeout(readTimeout);
         connection.setInstanceFollowRedirects(true);
-        connection.setRequestProperty("User-Agent", "GuansaiRiji/2.3.5");
+        // ESPN's CDN rejects non-browser app identifiers with HTTP 403. Keep the
+        // background client aligned with the Android WebView requests that the
+        // same score endpoints already accept.
+        connection.setRequestProperty(
+            "User-Agent",
+            "Mozilla/5.0 (Linux; Android 15) AppleWebKit/537.36 "
+                + "(KHTML, like Gecko) Chrome/140.0 Mobile Safari/537.36"
+        );
+        connection.setRequestProperty("Accept-Language", "zh-CN,zh;q=0.9,en;q=0.8");
         return connection;
     }
 

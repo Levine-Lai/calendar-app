@@ -10,11 +10,21 @@ const {
   mergeArsenalSources,
   buildArsenalStaticNewsUpdate
 } = require("./arsenal-news-core");
-const { enrichTranslations } = require("./update-static-news");
+const { NEWS_TOPIC } = require("./news-core");
+const {
+  enrichTranslations,
+  sendNotifications,
+  sendNotificationsBestEffort,
+  collectPendingNotificationItems,
+  withPendingNotificationIds,
+  validateFcmConfiguration,
+  validateFcmBestEffort
+} = require("./update-static-news");
 
 const root = path.resolve(__dirname, "..", "..");
 const outputFile = path.join(root, "public", "news", "arsenal.json");
 const MAX_RESPONSE_BYTES = 1024 * 1024;
+const notificationConfig = { teamId: "arsenal", teamName: "阿森纳", topic: NEWS_TOPIC };
 
 async function fetchText(url, accept, timeoutMs = 20000, fetchImpl = fetch, maxResponseBytes = MAX_RESPONSE_BYTES) {
   let lastError = null;
@@ -148,6 +158,23 @@ async function collectSourceResults(fetchImpl = fetch) {
 
 async function main(options = {}) {
   const previousPayload = readPreviousPayload();
+  const notificationSender = options.notificationSender
+    || ((items) => sendNotifications(items, notificationConfig));
+  if (process.env.NEWS_NOTIFY_ONLY === "true") {
+    const pendingItems = collectPendingNotificationItems(previousPayload, {
+      payload: previousPayload,
+      newItems: []
+    });
+    if (!pendingItems.length) {
+      process.stdout.write("No published Arsenal notifications are pending.\n");
+      return previousPayload;
+    }
+    const delivery = await sendNotificationsBestEffort(pendingItems, notificationSender);
+    const payload = withPendingNotificationIds(previousPayload, delivery.failedIds);
+    writePayload(payload);
+    process.stdout.write(`Published Arsenal notification result: ${delivery.sentIds.length} sent, ${delivery.failedIds.length} queued.\n`);
+    return payload;
+  }
   const sources = await collectSourceResults(options.fetchImpl || fetch);
   const merged = mergeArsenalSources(
     sources.official,
@@ -161,15 +188,23 @@ async function main(options = {}) {
     context: { teamId: "arsenal" }
   });
   const update = buildArsenalStaticNewsUpdate(previousPayload, translated);
-  if (!update.changed) {
+  if (process.env.VALIDATE_FCM === "true") {
+    await validateFcmBestEffort(() => validateFcmConfiguration(notificationConfig));
+  }
+  const pendingItems = collectPendingNotificationItems(previousPayload, update);
+  if (!update.changed && !pendingItems.length) {
     process.stdout.write("Arsenal news is already current.\n");
     return update.payload;
   }
-  writePayload(update.payload);
+  const delivery = process.env.DEFER_NEWS_NOTIFICATIONS === "true"
+    ? { sentIds: [], failedIds: pendingItems.map((item) => item.id) }
+    : await sendNotificationsBestEffort(pendingItems, notificationSender);
+  const payload = withPendingNotificationIds(update.payload, delivery.failedIds);
+  writePayload(payload);
   process.stdout.write(
-    `Updated ${path.relative(root, outputFile)} with ${update.payload.items.length} article(s) from Arsenal.com and The Guardian.\n`
+    `Updated ${path.relative(root, outputFile)} with ${payload.items.length} article(s) from Arsenal.com and The Guardian.\n`
   );
-  return update.payload;
+  return payload;
 }
 
 if (require.main === module) {

@@ -362,8 +362,13 @@ function buildArsenalStaticNewsUpdate(previousPayload, items, updatedAt = new Da
   const previousItems = asArray(previousPayload?.items).map(normalizeStoredItem).filter(Boolean);
   const nextItems = asArray(items).map(normalizeStoredItem).filter(Boolean).slice(0, MAX_ITEMS);
   const changed = JSON.stringify(nextItems) !== JSON.stringify(previousItems);
+  const previousIds = new Set(previousItems.map((item) => item.id));
+  const newItems = previousItems.length
+    ? nextItems.filter((item) => !previousIds.has(item.id))
+    : [];
   return {
     changed,
+    newItems,
     payload: changed
       ? {
           teamId: TEAM_ID,

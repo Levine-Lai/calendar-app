@@ -2,8 +2,9 @@ const fs = require("node:fs");
 const path = require("node:path");
 
 const root = path.resolve(__dirname, "..", "..");
-const localFile = path.join(root, "public", "news", "blue-jays.json");
-const endpoint = "https://raw.githubusercontent.com/Levine-Lai/calendar-app/main/public/news/blue-jays.json";
+const teamId = process.env.TEAM_NEWS_ID === "arsenal" ? "arsenal" : "blue-jays";
+const localFile = path.join(root, "public", "news", `${teamId}.json`);
+const endpoint = `https://raw.githubusercontent.com/Levine-Lai/calendar-app/main/public/news/${teamId}.json`;
 
 const wait = (milliseconds) => new Promise((resolve) => setTimeout(resolve, milliseconds));
 

@@ -261,6 +261,25 @@ final class TeamNewsPushManager {
         }
     }
 
+    static String safeArticleUrl(String rawUrl) {
+        String mlbUrl = safeMlbUrl(rawUrl);
+        if (!mlbUrl.isEmpty()) return mlbUrl;
+        if (rawUrl == null || rawUrl.isBlank()) return "";
+        try {
+            URI uri = new URI(rawUrl);
+            String host = uri.getHost();
+            String path = uri.getPath() == null ? "" : uri.getPath();
+            if (!"https".equalsIgnoreCase(uri.getScheme()) || host == null || path.contains("..")) return "";
+            String normalizedHost = host.toLowerCase(Locale.ROOT);
+            boolean arsenal = normalizedHost.equals("arsenal.com") || normalizedHost.endsWith(".arsenal.com");
+            boolean guardianFootball = (normalizedHost.equals("theguardian.com")
+                || normalizedHost.endsWith(".theguardian.com")) && path.startsWith("/football/");
+            return arsenal || guardianFootball ? uri.toASCIIString() : "";
+        } catch (URISyntaxException error) {
+            return "";
+        }
+    }
+
     static String toMlbAmpUrl(String rawUrl) {
         String safeUrl = safeMlbUrl(rawUrl);
         if (safeUrl.isEmpty()) return "";

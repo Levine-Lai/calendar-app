@@ -150,3 +150,10 @@ test("Arsenal static payload advertises both server-cache sources", () => {
   assert.deepEqual(update.payload.sources, ["Arsenal.com", "The Guardian"]);
   assert.equal(update.payload.items.length, 2);
 });
+
+test("Arsenal static update identifies new articles for notification", () => {
+  const previous = buildArsenalStaticNewsUpdate(null, [officialItem], new Date("2026-08-10T09:00:00Z")).payload;
+  const update = buildArsenalStaticNewsUpdate(previous, [guardianItem, officialItem], new Date("2026-08-10T10:00:00Z"));
+  assert.equal(update.newItems.length, 1);
+  assert.equal(update.newItems[0].source, "The Guardian");
+});

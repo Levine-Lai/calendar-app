@@ -43,8 +43,11 @@ jobs:
 
       - name: Fetch Arsenal.com sitemap and Guardian RSS
         env:
+          FIREBASE_SERVICE_ACCOUNT_JSON: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_JSON }}
           # Optional: without this secret the English feed still updates normally.
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          DEFER_NEWS_NOTIFICATIONS: "true"
+          VALIDATE_FCM: ${{ github.event_name == 'push' && 'true' || 'false' }}
         run: npm run update:arsenal --prefix firebase/functions
 
       - name: Commit changed Arsenal news data
@@ -53,3 +56,21 @@ jobs:
           bash .github/scripts/commit-and-push-with-rebase.sh
           public/news/arsenal.json
           "chore: update Arsenal news"
+
+      - name: Wait until the new Arsenal article is readable from GitHub Raw
+        env:
+          TEAM_NEWS_ID: arsenal
+        run: npm run wait:published-news --prefix firebase/functions
+
+      - name: Send Arsenal notifications for the published cache
+        env:
+          FIREBASE_SERVICE_ACCOUNT_JSON: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_JSON }}
+          NEWS_NOTIFY_ONLY: "true"
+        run: npm run update:arsenal --prefix firebase/functions
+
+      - name: Commit Arsenal notification queue state
+        shell: bash
+        run: >-
+          bash .github/scripts/commit-and-push-with-rebase.sh
+          public/news/arsenal.json
+          "chore: confirm Arsenal notifications"

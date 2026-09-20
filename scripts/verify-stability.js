@@ -92,6 +92,9 @@ const checks = [
     newsUpdater.includes("pendingNotificationIds")
       && newsUpdater.includes("collectPendingNotificationItems")
       && newsUpdater.includes("failedIds")
+      && arsenalNewsUpdater.includes("collectPendingNotificationItems")
+      && arsenalNewsWorkflow.includes('NEWS_NOTIFY_ONLY: "true"')
+      && newsMessagingService.includes("setLargeIcon")
   ],
   [
     "23 新闻三级阅读与官方图片",
@@ -303,6 +306,15 @@ const checks = [
       && blueJaysNewsWorkflow.includes('DEFER_NEWS_NOTIFICATIONS: "true"')
       && blueJaysNewsWorkflow.includes('NEWS_NOTIFY_ONLY: "true"')
       && blueJaysNewsWorkflow.includes("wait:published-news")
+  ],
+  [
+    "38 桌面组件多联赛实时比分",
+    provider.includes("hydratePremierLeagueScores")
+      && provider.includes("applyPremierLeagueEvent")
+      && provider.includes("Executors.newFixedThreadPool(Math.min(4")
+      && provider.includes("executor.invokeAll(requests, 10, TimeUnit.SECONDS)")
+      && widgetNetworkClient.includes("Mozilla/5.0 (Linux; Android 15)")
+      && !widgetNetworkClient.includes('"GuansaiRiji/2.3.5"')
   ]
 ];
 

@@ -227,7 +227,7 @@ function writePayload(payload) {
   fs.renameSync(temporaryFile, outputFile);
 }
 
-async function sendNotifications(items) {
+async function sendNotifications(items, options = {}) {
   if (!items.length) return { sentIds: [], failedIds: [] };
   const serviceAccount = readServiceAccount();
   if (!serviceAccount) {
@@ -251,7 +251,7 @@ async function sendNotifications(items) {
             authorization: `Bearer ${accessToken}`,
             "content-type": "application/json"
           },
-          body: JSON.stringify(buildFcmRequest(item))
+          body: JSON.stringify(buildFcmRequest(item, false, options))
         }, 15000);
         if (response.ok) {
           delivered = true;
@@ -271,7 +271,7 @@ async function sendNotifications(items) {
       reportWorkflowWarning("FCM notification queued for retry", `${item.id}: ${lastError}`);
     }
   }
-  process.stdout.write(`FCM delivery result for ${TEAM_NAME}: ${sentIds.length} sent, ${failedIds.length} queued.\n`);
+  process.stdout.write(`FCM delivery result for ${options.teamName || TEAM_NAME}: ${sentIds.length} sent, ${failedIds.length} queued.\n`);
   return { sentIds, failedIds };
 }
 
@@ -323,19 +323,22 @@ function fcmEndpoint(serviceAccount) {
   return `https://fcm.googleapis.com/v1/projects/${encodeURIComponent(serviceAccount.project_id)}/messages:send`;
 }
 
-function buildFcmRequest(item, validateOnly = false) {
+function buildFcmRequest(item, validateOnly = false, options = {}) {
+  const teamId = options.teamId || TEAM_ID;
+  const teamName = options.teamName || TEAM_NAME;
+  const topic = options.topic || NEWS_TOPIC;
   const notificationBody = item.summaryZh
     || item.bodyZh?.[0]
     || item.summaryEn
     || item.bodyEn?.[0]
-    || "多伦多蓝鸟发布了一篇新文章，点击查看详情。";
+    || `${teamName}发布了一篇新文章，点击查看详情。`;
   return {
     validate_only: validateOnly,
     message: {
-      topic: NEWS_TOPIC,
+      topic,
       data: {
         type: "team_news",
-        teamId: TEAM_ID,
+        teamId,
         newsId: item.id,
         newsUrl: item.url,
         title: item.titleZh || item.titleEn,
@@ -348,7 +351,7 @@ function buildFcmRequest(item, validateOnly = false) {
   };
 }
 
-async function validateFcmConfiguration() {
+async function validateFcmConfiguration(options = {}) {
   const serviceAccount = readServiceAccount();
   if (!serviceAccount) throw new Error("FCM secret is not configured");
   const accessToken = await createGoogleAccessToken(serviceAccount);
@@ -363,7 +366,7 @@ async function validateFcmConfiguration() {
       titleEn: "Sports Calendar FCM validation",
       summaryEn: "Validation only; this message is not delivered.",
       url: "https://www.mlb.com/bluejays/news/fcm-validation"
-    }, true))
+    }, true, options))
   }, 15000);
   if (!response.ok) {
     const details = (await response.text()).slice(0, 500);
@@ -514,10 +517,12 @@ module.exports = {
   enrichArticleBodies,
   translateArticle,
   enrichTranslations,
+  sendNotifications,
   sendNotificationsBestEffort,
   collectPendingNotificationItems,
   withPendingNotificationIds,
   buildFcmRequest,
+  validateFcmConfiguration,
   validateFcmBestEffort,
   parseServiceAccount
 };

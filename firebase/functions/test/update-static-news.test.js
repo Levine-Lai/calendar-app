@@ -73,6 +73,21 @@ test("FCM HTTP v1 request uses a high-priority data message and validate_only", 
   assert.equal(request.message.data.newsId, "article-1");
 });
 
+test("FCM request can target Arsenal while keeping the shared subscriber topic", () => {
+  const request = buildFcmRequest({
+    id: "arsenal-article-1",
+    titleEn: "Arsenal update",
+    url: "https://www.arsenal.com/news/arsenal-update"
+  }, false, {
+    teamId: "arsenal",
+    teamName: "阿森纳",
+    topic: "toronto_blue_jays_news_en"
+  });
+  assert.equal(request.message.topic, "toronto_blue_jays_news_en");
+  assert.equal(request.message.data.teamId, "arsenal");
+  assert.equal(request.message.data.body, "阿森纳发布了一篇新文章，点击查看详情。");
+});
+
 test("FCM body falls back to translated article text when the source has no summary", () => {
   const request = buildFcmRequest({
     id: "article-no-summary",

@@ -346,6 +346,20 @@ public class WidgetGameStatusTest {
     }
 
     @Test
+    public void teamNewsNotificationOpensApprovedArsenalSources() {
+        assertEquals(
+            "https://www.arsenal.com/news/example",
+            TeamNewsPushManager.safeArticleUrl("https://www.arsenal.com/news/example")
+        );
+        assertEquals(
+            "https://www.theguardian.com/football/2026/sep/20/arsenal-example",
+            TeamNewsPushManager.safeArticleUrl("https://www.theguardian.com/football/2026/sep/20/arsenal-example")
+        );
+        assertEquals("", TeamNewsPushManager.safeArticleUrl("https://www.theguardian.com/politics/example"));
+        assertEquals("", TeamNewsPushManager.safeArticleUrl("https://arsenal.com.example.org/news/fake"));
+    }
+
+    @Test
     public void teamNewsBuildsOnlyOfficialAmpArticleUrls() {
         assertEquals(
             "https://www.mlb.com/amp/news/jays-add-reliever.html",

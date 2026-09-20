@@ -83,7 +83,7 @@ public class MainActivity extends BridgeActivity {
         if (getBridge() == null || getBridge().getWebView() == null) return;
         boolean opensNews = intent != null && "OPEN_TEAM_NEWS".equals(intent.getAction());
         if (!opensNews) return;
-        String url = TeamNewsPushManager.safeMlbUrl(
+        String url = TeamNewsPushManager.safeArticleUrl(
             intent.getStringExtra(TeamNewsPushManager.EXTRA_NEWS_URL)
         );
         String newsId = TeamNewsPushManager.safeNewsId(

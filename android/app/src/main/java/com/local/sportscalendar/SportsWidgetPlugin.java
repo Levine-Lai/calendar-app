@@ -394,7 +394,7 @@ public class SportsWidgetPlugin extends Plugin {
             if ("OPEN_TEAM_NEWS".equals(intent.getAction())) intent.setAction(null);
         }
         JSObject result = new JSObject();
-        result.put("url", TeamNewsPushManager.safeMlbUrl(rawUrl));
+        result.put("url", TeamNewsPushManager.safeArticleUrl(rawUrl));
         result.put("id", TeamNewsPushManager.safeNewsId(rawNewsId));
         call.resolve(result);
     }
