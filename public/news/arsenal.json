@@ -1,12 +1,45 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-09-20T17:39:40.892Z",
+  "updatedAt": "2026-09-20T19:44:37.477Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "7f53a394ce1b25c29964bce76999dfc4030ff615f85f595dc52a305c40292dbc",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Date confirmed for Carabao Cup trip to Fleetwood",
+      "summaryEn": "We will face the League Two side in the next round of the competition",
+      "bodyEn": [
+        "We have been drawn against Fleetwood Town in the fourth round of the Carabao Cup, with the tie to take place at the League Two side's Highbury Stadium on Tuesday, October 27.",
+        "The game will kick off at 8pm and be broadcast in the UK on Sky Sports.",
+        "After beating Ipswich Town 4-2 at Portman Road on Tuesday to advance in the competition, we will now face the Fishermen in what will be the first-ever competitive meeting between the sides.",
+        "Fleetwood reached this stage by beating fellow fourth-tier opposition Chesterfield and Shrewsbury Town, before then knocking out Championship side Sheffield United in the third round. All of their ties have been held at their 5,300-capacity home in the north-west.",
+        "We reached the final last season before Manchester City pipped us to the silverware at Wembley, missing out on having our name engraved on the trophy for a third time, with our two successes coming in 1987 and 1993.",
+        "Ticket information will be announced in due course."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/7339e58faab9-doncaster-england-a-general-view-of-the-carabao-cup-trophy-prior-to-the-carabao.webp",
+      "author": "Jonathon Rogers",
+      "publishedAt": "2026-09-20T15:00:00.000Z",
+      "url": "https://www.arsenal.com/news/date-confirmed-for-carabao-cup-trip-to-fleetwood-azyR45T51D3Q",
+      "source": "Arsenal.com",
+      "titleZh": "联赛杯客场对阵弗利特伍德的比赛日期确定",
+      "summaryZh": "阿森纳将在下一轮联赛杯中客场对阵英乙球队弗利特伍德。",
+      "bodyZh": [
+        "我们在联赛杯第四轮抽到了弗利特伍德镇，比赛将于10月27日星期二在这支英乙球队的高地伯里球场进行。",
+        "比赛将于晚上8点开球，并在英国的天空体育台进行转播。",
+        "周二我们在波特曼路球场以4比2击败伊普斯维ッチ晋级后，接下来将对阵这支绰号为“渔夫”的球队，这也将是两队历史上的首次正式交锋。",
+        "弗利特伍德通过击败同属第四级别的切斯特菲尔德和什鲁斯伯里晋级到本阶段，随后在第三轮淘汰了英冠球队谢菲尔德联。他们所有的比赛都在西北部这座容量为5,300人的主场进行。",
+        "我们在上赛季打入决赛，但在温布利被曼城击败与冠军擦肩而过，未能第三次将队名刻在奖杯上。我们此前的两次夺冠分别是在1987年和1993年。",
+        "球票相关信息将择日公布。"
+      ],
+      "translationSourceHash": "bc4f69816e9a377849a1270d8c07b5d178b0fc49e942b67eddcb87b6c7ae17dd",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-09-20T17:39:40.889Z"
+    },
     {
       "id": "7eb84fed33dd33aa69f040bd862f0f8c54db1c6383d5fb8450dcb5952082c7fe",
       "teamId": "arsenal",
@@ -486,39 +519,6 @@
       "translationSourceHash": "e365f4de20d972455a76ca062746a5faa16aa8291880227c19fe0cedef77918a",
       "translationModel": "gemini-3.5-flash-lite",
       "translatedAt": "2026-09-19T13:24:26.574Z"
-    },
-    {
-      "id": "7f53a394ce1b25c29964bce76999dfc4030ff615f85f595dc52a305c40292dbc",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Date confirmed for Carabao Cup trip to Fleetwood",
-      "summaryEn": "We will face the League Two side in the next round of the competition",
-      "bodyEn": [
-        "We have been drawn against Fleetwood Town in the fourth round of the Carabao Cup, with the tie to take place at the League Two side's Highbury Stadium on Tuesday, October 27.",
-        "The game will kick off at 8pm and be broadcast in the UK on Sky Sports.",
-        "After beating Ipswich Town 4-2 at Portman Road on Tuesday to advance in the competition, we will now face the Fishermen in what will be the first-ever competitive meeting between the sides.",
-        "Fleetwood reached this stage by beating fellow fourth-tier opposition Chesterfield and Shrewsbury Town, before then knocking out Championship side Sheffield United in the third round. All of their ties have been held at their 5,300-capacity home in the north-west.",
-        "We reached the final last season before Manchester City pipped us to the silverware at Wembley, missing out on having our name engraved on the trophy for a third time, with our two successes coming in 1987 and 1993.",
-        "Ticket information will be announced in due course."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/7339e58faab9-doncaster-england-a-general-view-of-the-carabao-cup-trophy-prior-to-the-carabao.webp",
-      "author": "Jonathon Rogers",
-      "publishedAt": "2026-09-18T19:06:23.970Z",
-      "url": "https://www.arsenal.com/news/date-confirmed-for-carabao-cup-trip-to-fleetwood-azyR45T51D3Q",
-      "source": "Arsenal.com",
-      "titleZh": "联赛杯客场对阵弗利特伍德的比赛日期确定",
-      "summaryZh": "阿森纳将在下一轮联赛杯中客场对阵英乙球队弗利特伍德。",
-      "bodyZh": [
-        "我们在联赛杯第四轮抽到了弗利特伍德镇，比赛将于10月27日星期二在这支英乙球队的高地伯里球场进行。",
-        "比赛将于晚上8点开球，并在英国的天空体育台进行转播。",
-        "周二我们在波特曼路球场以4比2击败伊普斯维ッチ晋级后，接下来将对阵这支绰号为“渔夫”的球队，这也将是两队历史上的首次正式交锋。",
-        "弗利特伍德通过击败同属第四级别的切斯特菲尔德和什鲁斯伯里晋级到本阶段，随后在第三轮淘汰了英冠球队谢菲尔德联。他们所有的比赛都在西北部这座容量为5,300人的主场进行。",
-        "我们在上赛季打入决赛，但在温布利被曼城击败与冠军擦肩而过，未能第三次将队名刻在奖杯上。我们此前的两次夺冠分别是在1987年和1993年。",
-        "球票相关信息将择日公布。"
-      ],
-      "translationSourceHash": "bc4f69816e9a377849a1270d8c07b5d178b0fc49e942b67eddcb87b6c7ae17dd",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-09-20T17:39:40.889Z"
     },
     {
       "id": "e16ce7f5498fd4eca7f24961d9d543e1f623bc3732905beaedb3fefbb4f7992a",
