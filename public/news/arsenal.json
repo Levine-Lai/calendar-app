@@ -1,7 +1,7 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-09-21T17:04:41.909Z",
+  "updatedAt": "2026-09-21T21:02:38.204Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
@@ -490,39 +490,6 @@
       "translationSourceHash": "c7eec3c67f6f50b6465a080317e20a6b384486202ad8d065c8dc3b5d1395b5cc",
       "translationModel": "gemini-3.5-flash-lite",
       "translatedAt": "2026-09-21T11:06:16.019Z"
-    },
-    {
-      "id": "64860eebc4c2f24801ad4027c1abe7dca140c14205a7619db028c1d46b19bd84",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "The numbers behind Catley’s 100 WSL matches",
-      "summaryEn": "Steph Catley made her 100th Women’s Super League appearance for us in Saturday’s 1-1 draw at home to Manchester United.",
-      "bodyEn": [
-        "Steph Catley made her 100th Women’s Super League appearance for us in Saturday’s 1-1 draw at home to Manchester United.",
-        "Our Australian defender’s WSL debut came in a 6-1 win over Reading on September 6, 2020.",
-        "She has started 80 of those 100 matches, playing 7,302 minutes, winning 70 games, drawing 16 and losing 14. In the process, Catley has scored three goals, made 11 assists and kept 31 clean sheets, alongside a passing accuracy of 88% (out of 4,887 passes).",
-        "In fact, Catley has the second highest pass accuracy of all players to make 4,000 passes in the competition.",
-        "She’s played against Manchester United more than any other team (11 times), followed by Aston Villa (10) and West Ham United (10), with her goals coming against Leicester City, Manchester City and West Ham.",
-        "Catley is now 12th in our table for all-time WSL appearances at Arsenal, which Kim Little recently went to the top of."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/4b4220a54b66-gettyimages-2296106541.webp",
-      "author": "Stephen Wright",
-      "publishedAt": "2026-09-21T08:47:09.735Z",
-      "url": "https://www.arsenal.com/news/the-numbers-behind-catleys-100-wsl-matches-a86YM1k4Geo6",
-      "source": "Arsenal.com",
-      "titleZh": "斯特凡·卡特利迎来英超百场里程碑的数据盘点",
-      "summaryZh": "卡特利在对阵曼联的比赛中迎来了她的第100场女足英超联赛。",
-      "bodyZh": [
-        "在周六主场1-1战平曼联的比赛中，斯特凡·卡特利迎来了她代表阿森纳的第100场女足英超联赛出场。",
-        "这位来自澳大利亚的后卫在2020年9月6日对阵雷丁的比赛中完成了她的女足英超首秀，当时球队以6-1取胜。",
-        "在这100场比赛中，她首发了80场，总计出场7,302分钟，取得了70场胜利、16场平局和14场失利。在此期间，卡特利打进3球，送出11次助攻，完成31次零封，传球成功率达到88%（总共4,887次传球）。",
-        "事实上，在所有在该联赛中完成4,000次传球的球员里，卡特利的传球成功率排在第二位。",
-        "她对阵曼联的次数比对阵其他任何球队都多（11次），其次是对阵阿斯顿维拉（10次）和西汉姆联（10次），她的进球则分别是对阵莱斯特城、曼城和西汉姆联时打进的。",
-        "目前，卡特利在阿森纳队史女足英超总出场次数榜上排名第12位，金·莉莉近期刚刚登顶该榜单首位。"
-      ],
-      "translationSourceHash": "86099a43cf5b8e88f3ac9f99d4e96f14de846fdf9a982cf7e1d44283f7d7a03f",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-09-21T11:06:18.594Z"
     },
     {
       "id": "5acf0aaae0735cfd3abb1d18e900ccf45ac4995aa281561556b93187ce3f79ee",
@@ -1122,11 +1089,63 @@
       "translationSourceHash": "a9ea01f0682fa010ba84f58707fdb6637fdd8020e199d2e1cbebbf6b45a35269",
       "translationModel": "gemini-3.5-flash-lite",
       "translatedAt": "2026-09-15T23:11:05.490Z"
+    },
+    {
+      "id": "82ac439ba9ee3840280f41d1b08966de1ff444c89eac47bb4595fc1be1955a07",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Premier League festive fixture details confirmed",
+      "summaryEn": "Kick-off dates and times have been confirmed for Premier League matches throughout December and January",
+      "bodyEn": [
+        "Kick-off dates and times have been confirmed for Premier League matches across the festive period throughout December and January.",
+        "We travel to Selhurst Park for a 7pm kick-off on Sunday, December 27, before making our way to Craven Cottage in a 7.30pm kick-off on Wednesday, December 30.",
+        "We will then host Ipswich Town at Emirates Stadium at 3pm on Saturday, January 2, before welcoming Brentford to N5 at 7.30pm on Tuesday, January 5.",
+        "With the exception of the Saturday 3pm kick-off against Ipswich, all of these matches will be shown live on Sky Sports in the UK.",
+        "FIXTURE AMENDMENTS",
+        "Sunday December 27Crystal Palace (A) | 7pmSky Sports",
+        "Wednesday December 30Fulham (A) | 7.30pmSky Sports",
+        "Saturday January 2Ipswich Town (H) | 3pm",
+        "Tuesday January 5Brentford (H) | 7.30pmSky Sports",
+        "To accompany the fixture announcements, the Premier League have given the following guidance:",
+        "The Premier League is today announcing the broadcast selections for fixtures across the festive period, including the Boxing Day and New Year’s Day weekends.",
+        "This comes after the League and our broadcast partners agreed to bring forward the selection process for live UK matches across match rounds 17 to 20, which run from 26 December to 7 January.",
+        "The fixture amendment announcement gives supporters more than three months’ notice to plan and make travel arrangements for a particularly busy time of the year and follows consultation with the Football Supporters' Association and representatives from club Fan Advisory Boards. There are seven Premier League matches on Boxing Day this season.",
+        "Over the Christmas and New Year period, clubs have at least a 60-hour break between fixtures. This is in keeping with commitments made to clubs to address the congested festive schedule - in the context of an expanding European and international fixture calendar.",
+        "Broadcast selections for match rounds in November are due to be announced by week commencing September 21, 2026 and match rounds in December will be announced by week commencing October 19, 2026."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/95bb0028dcea-gettyimages-2242068719.webp",
+      "author": "Stephen Wright",
+      "publishedAt": "2026-09-10T14:00:00.000Z",
+      "url": "https://www.arsenal.com/news/premier-league-festive-fixture-details-confirmed-atjUt4t54LGl",
+      "source": "Arsenal.com",
+      "titleZh": "英超节日赛程具体时间确定",
+      "summaryZh": "阿森纳公布了12月和1月英超比赛的开球时间和转播安排。",
+      "bodyZh": [
+        "12月和1月节日期间的英超比赛开球日期和时间已经确定。",
+        "我们将于12月27日星期日晚上7点客场挑战水晶宫，随后于12月30日星期三晚上7点30分客场对阵富勒姆。",
+        "接着，我们将于1月2日星期下午3点在酋长球场迎战伊普斯维奇，随后于1月5日星期二晚上7点30分在主场迎战布伦特福德。",
+        "除了对阵伊普斯维奇的周六下午3点比赛外，所有这些比赛都将在英国天空体育进行现场直播。",
+        "赛程调整",
+        "12月27日星期日水晶宫（客场）| 晚上7点 天空体育",
+        "12月30日星期三富勒姆（客场）| 晚上7点30分 天空体育",
+        "1月2日星期六伊普斯维奇（主场）| 下午3点",
+        "1月5日星期二布伦特福德（主场）| 晚上7点30分 天空体育",
+        "配合赛程公布，英超联赛给出了以下指导意见：",
+        "英超联赛今天宣布了节日期间各项比赛的转播选择，包括节礼日和元旦周末。",
+        "此前，联赛与我们的转播合作伙伴同意提前进行12月26日至1月7日进行的第17至20轮英国直播比赛的选择程序。",
+        "赛程调整公告为球迷们提供了三个多月前的时间来规划和安排在这个一年中特别繁忙时期的出行，这是在与球迷协会和俱乐部球迷顾问委员会代表协商后做出的。本赛季节礼日有七场英超比赛。",
+        "在圣诞节和新年期间，各俱乐部比赛之间的休息时间至少为60小时。这符合为解决拥挤的节日赛程而对俱乐部做出的承诺——在扩大的欧洲和国际赛程日历的背景下。",
+        "11月份比赛轮次的转播选择预计将于2026年9月21日当周公布，12月份比赛轮次的转播选择预计将于2026年10月19日当周公布。"
+      ],
+      "translationSourceHash": "54c348fe004835e9b80c3835de8e58cf8b5c6701c88bf3817e5d730bc5fc32a4",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-09-21T21:02:38.203Z"
     }
   ],
   "pendingNotificationIds": [
     "36e60e6b83aa950b7278a5801c03adacc21652b7256c3c9d81a8ed9cdb61efe5",
     "06b58a51005001ad03687e1aeaa0f4a810d0050260ca1adb9f725a7ca8b916cf",
-    "271566030a12e5ff7a45ddf98304135cc705a5300af7cf7778f9903e1a278e96"
+    "271566030a12e5ff7a45ddf98304135cc705a5300af7cf7778f9903e1a278e96",
+    "82ac439ba9ee3840280f41d1b08966de1ff444c89eac47bb4595fc1be1955a07"
   ]
 }
