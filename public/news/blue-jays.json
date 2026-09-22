@@ -1,8 +1,37 @@
 {
   "teamId": "toronto-blue-jays",
   "teamName": "多伦多蓝鸟",
-  "updatedAt": "2026-09-22T06:45:42.670Z",
+  "updatedAt": "2026-09-22T20:09:28.255Z",
   "items": [
+    {
+      "id": "da6cd7db92c8a714874a50fe668a167f8cc163bce73fdb608addf3b6475ca67e",
+      "teamId": "toronto-blue-jays",
+      "teamName": "多伦多蓝鸟",
+      "titleEn": "Blue Jays-O's game postponed; split doubleheader Wednesday",
+      "summaryEn": "",
+      "bodyEn": [
+        "Tuesday night's scheduled game between the Orioles and Toronto Blue Jays in Baltimore has been postponed due to ongoing inclement weather. The game will be made up as part of a split-admission doubleheader Wednesday, September 23. Separate tickets will be required to attend each game at Oriole Park at Camden Yards. Game one will begin at 1:35 p.m. ET with game two scheduled for 6:35 p.m. Gates for game one will open at 12:30 p.m. and gates for game two will open at 5:30 p.m. There will be no early access to Eutaw Street to watch batting practice.",
+        "Tickets for tonight’s postponed game will automatically be valid for game one on Wednesday, September 23, at 1:35 p.m. Fans that prefer to exchange for tomorrow night’s 6:35 p.m. game are able to do so until 12:35 p.m. tomorrow. Additionally, fans can expect to receive communication regarding a complimentary field level ticket offer for an early season game next season. Details will be communicated directly with fans at the start of the season. For additional information, visit Orioles.com/Weather.",
+        "Tickets purchased for the originally scheduled 6:35 p.m. game on Wednesday, September 23, are still valid.",
+        "Fans can continue to access their tickets through the MLB Ballpark App and can transfer or resell these tickets at SeatGeek.com."
+      ],
+      "titleZh": "蓝鸟与金莺之战延期，周三将进行双重赛",
+      "summaryZh": "由于恶劣天气，多伦多蓝鸟与巴尔的摩金莺的比赛延期至周三进行双重赛。",
+      "bodyZh": [
+        "原定于周二晚间在巴尔的摩进行的巴尔的摩金莺与多伦多蓝鸟的比赛，由于持续的恶劣天气已经延期。这场比赛将作为9月23日星期三分割进场双重赛的一部分进行补赛。观看金莺球场（Oriole Park at Camden Yards）每场比赛均需单独的门票。第一场比赛将于美东时间下午1:35开始，第二场比赛定于下午6:35开始。第一场比赛的大门将于下午12:30开放，第二场比赛的大门将于下午5:30开放。球迷将无法提前进入尤托街（Eutaw Street）观看打击练习。",
+        "今晚延期比赛的门票将自动适用于9月23日星期三下午1:35的第一场比赛。希望更换为明天晚上6:35比赛的球迷可以在明天下午12:35之前进行更换。此外，球迷还将收到关于下赛季早些时候某场比赛免费内场看台门票优惠的通知。相关细节将在赛季初直接传达给球迷。如需了解更多信息，请访问 Orioles.com/Weather。",
+        "原定于9月23日星期三下午6:35进行的比赛所购买的门票仍然有效。",
+        "球迷可以继续通过 MLB Ballpark App 访问他们的门票，并可以在 SeatGeek.com 上转让或转售这些门票。"
+      ],
+      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/lljretfz7uhkpepvmfww",
+      "translationSourceHash": "e8cbe9c4dc8a6697dff6d7c945e7aa331c9a0e7511ec59dc9684f125b032119e",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-09-22T20:09:28.244Z",
+      "author": "MLB.com",
+      "publishedAt": "2026-09-22T17:55:09.000Z",
+      "url": "https://www.mlb.com/bluejays/news/blue-jays-orioles-september-22-game-postponed",
+      "source": "MLB.com"
+    },
     {
       "id": "7e9000313c47368fe2a76d65ae126941f1bfce63ec0dcd7280563bdd4d1caec1",
       "teamId": "toronto-blue-jays",
@@ -1133,70 +1162,9 @@
       "publishedAt": "2026-09-15T15:38:00.000Z",
       "url": "https://www.mlb.com/bluejays/news/2026-arizona-fall-league-rosters",
       "source": "MLB.com"
-    },
-    {
-      "id": "5e99973b21d42a5f8161f6b72509775266b2c84ef56e78f7b2e6b8242ac675b4",
-      "teamId": "toronto-blue-jays",
-      "teamName": "多伦多蓝鸟",
-      "titleEn": "Heartbreak piles up for Toronto after Soriano's brilliant beginning",
-      "summaryEn": "",
-      "bodyEn": [
-        "TORONTO -- A night that could have been so many spectacular things crashed and burned on the Blue Jays.",
-        "It could have been a no-hitter, which José Soriano carried into the seventh inning. It could have been Kazuma Okamoto's defining game with the Blue Jays after he launched a three-run shot to put his team ahead, the biggest swing of this team’s season in the moment.",
-        "Instead, it’s a 6-5 loss, and one of the toughest the Blue Jays have faced in 2026. Toronto (75-76) now is one game back of the third AL Wild Card spot with 11 games to go. That spot is still occupied by the Guardians (76-75), who are in the middle of a key series against the White Sox which could decide the AL Central.",
-        "This is what mattered most:",
-        "1. The AL Wild Card picture",
-        "This is where tiebreakers become absolutely crucial. Remember, both the Blue Jays and Yankees finished last year with 94 wins, tied atop the AL East, but the Blue Jays held the edge in their head-to-head series and that gave them the crown.",
-        "This time, the Blue Jays will be chasing either the Guardians or the White Sox for that final spot while those two teams jockey for the AL Central. The Blue Jays hold the tiebreaker over the Guardians this season, so they’d only need to tie them for the third Wild Card spot to advance to the postseason. The Blue Jays do not hold the tiebreaker over the White Sox after going just 1-5 against them this season, so a tie would go to Chicago.",
-        "Every single season, late September brings a lesson: We should pay attention to the “head to head” records between likely contenders much earlier than we do, especially in a series that could decide the ultimate tiebreaker.",
-        "2. How it all came undone",
-        "After Soriano carried that no-hitter into the seventh inning, the Tigers suddenly hit him with a barrage of jabs, five base hits in the time that Soriano could record just a single out. It felt like Soriano could take a run at history Monday night, but instead left the mound with four runs allowed over 6 1/3 innings, a line that doesn’t nearly tell the story of how dominant he looked at one point.",
-        "\"It was the third time I faced the same lineup, so that's tough facing them three times or four times,” Soriano said. “They made a different approach. Credit to their hitters. They were able to score a couple runs.\"",
-        "After Okamoto’s home run gave the Blue Jays the lead and the Tigers tied it once again in the eighth, the back-breaker came in the ninth, when Louis Varland was covering first base on a ground ball fielded by Vladimir Guerrero Jr.",
-        "Vladdy, ranging far to his right and towards the second baseman, made an accurate throw to Varland, but the Blue Jays’ closer missed it. The ball clipped Varland’s glove and rolled into foul territory beyond first base, allowing Zach McKinstry to race home for the game-winning run.",
-        "“That play -- a first baseman to a pitcher -- it’s always tough. I thought Vlad made a good throw,” manager John Schneider said. “We just didn’t execute it.”",
-        "This bullpen has been such a strength of the Blue Jays all season long, which makes this even tougher to swallow.",
-        "“When you bring in Louis, I think everyone expects it to be perfect,” Schneider said. “He got the big strikeout of [Dillon] Dingler, then a flare hit [in the eighth]. They’ve all been really good. We’ve relied on them all really heavily and we’ll do that again tomorrow.”",
-        "3. Okamoto’s big moment lost in the fire",
-        "For a few minutes, Okamoto owned the title of “biggest moment of the Blue Jays season” with his three-run shot in the seventh, which put them up 5-4.",
-        "This is Okamoto’s defining moment with the Blue Jays so far, a towering home run into the second deck in left field. Down in an 0-2 count with his team needing him more than ever before, Okamoto delivered.",
-        "“He’s had a hell of a year,” Schneider said. “That’s a big swing in a big spot. That definitely shifted the momentum. Man, he’s exceeded expectations offensively. He has been huge for us all year.”",
-        "This is what the Blue Jays need right now, game-changing power. Alejandro Kirk also had another fantastic night, reaching base three times with two hits and a walk. Now that he’s all the way back from that fractured thumb earlier this season -- his power included -- Kirk is as important to this team’s identity as anyone in a Blue Jays uniform."
-      ],
-      "titleZh": "索里亚诺好局难保，多伦多吞下苦涩失利",
-      "summaryZh": "多伦多蓝鸟以5比6惜败，在季后赛争夺战中遭遇沉重打击。",
-      "bodyZh": [
-        "多伦多——本可能迎来无数精彩时刻的一晚，最终对蓝鸟而言却化为泡影。",
-        "这本可能是一场无安打比赛，José Soriano 将其带到了第七局。这本可能是 Kazuma Okamoto 加盟多伦多蓝鸟后的决定性一战，他轰出一记三分本垒打帮助球队反超，这也是本队本赛季至今最关键的一次挥击。",
-        "然而，最终比分是5比6失利，这也是蓝鸟在2026赛季遭遇的最艰难失利之一。在还剩11场比赛的情况下，多伦多（75胜76负）目前距离美联第三张季后赛外卡席位还差1个胜场。这个位置目前仍由守护者（76胜75负）占据，他们正处于决定美联中区归属的关键系列赛中。",
-        "以下是目前最重要的事情：",
-        "1. 美联外卡形势",
-        "正是在这里，胜负平局决胜规则（tiebreaker）变得至关重要。记住，蓝鸟和洋基去年都以94胜结束常规赛，并列美联东区榜首，但蓝鸟在双方交手战绩中占优，从而赢得了分区冠军。",
-        "这一次，蓝鸟将在守护者或白袜争夺美联中区时，追逐其中一支球队以争夺最后一张外卡。本赛季蓝鸟在与守护者的交手战绩中占优，因此他们只需在战绩上追平守护者即可晋级季后赛。由于本赛季对阵白袜仅取得1胜5负，蓝鸟在与白袜的交手战绩中处于劣势，因此若出现战绩相同，排名将归属芝加哥。",
-        "每一个赛季的9月下旬都会带来一个教训：我们应该比以往更早地关注潜在竞争者之间的“直接交手”纪录，特别是在可能决定最终胜负平局的系列赛中。",
-        "2. 一切是如何崩塌的",
-        "在 José Soriano 将无安打比赛带入第七局后，老虎突然对他发起了一轮猛烈攻击，在 José Soriano 仅拿到一个出局数的时间里就敲出了5支安打。周一晚上的 José Soriano 本有望向历史发起冲击，但最终他在投完6又1/3局后带着失4分的成绩黯然退场，这一数据远不能体现他一度多么具有统治力。",
-        "“这是我第三次面对同一支打线，面对他们三四次确实很艰难，”José Soriano 说道。“他们采取了不同的进攻策略。称赞他们的打者，他们成功得到了几分。”",
-        "在 Okamoto 的本垒打帮助蓝鸟取得领先、而老虎在第八局再次扳平比分后，致命一击出现在第九局。当时 Louis Varland 正补位一垒，接应由 Vladimir Guerrero Jr. 传出的滚地球。",
-        "Vladdy 向右侧大幅移动并朝二垒方向跑动，向 Varland 传出了一记精准的球，但蓝鸟终结者没有接住。球擦过了 Varland 的手套，滚到了过了一垒的界外区，让 Zach McKinstry 跑回本垒攻下制胜分。",
-        "“那个传球——由一垒手传给投手——总是很困难。我认为 Vlad 传得很好，”主教练 John Schneider 说道。“我们只是没有执行好。”",
-        "整个赛季以来，这个牛棚一直是蓝鸟的一大优势，这也让这场失利更加难以接受。",
-        "“当你派上 Louis 时，我想每个人都期待他是完美的，”Schneider 说道。“他三振了 [Dillon] Dingler，随后被打出一支安打（在第八局）。他们一直都非常出色。我们整个赛季都非常依赖他们，明天我们依然会这样做。”",
-        "3. Okamoto 的高光时刻付诸东流",
-        "在短短几分钟里，Okamoto 凭借第七局的三分本垒打独占“蓝鸟赛季最关键时刻”的称号，当时这记本垒打帮助球队以5比4反超。",
-        "这是 Okamoto 迄今为止在蓝鸟最高光的时刻，他轰出了一记飞向左外野二层看台的超远本垒打。在球队比分落后且比以往任何时候都更需要他的时候，Okamoto 在0好2坏的劣势下做出了贡献。",
-        "“他度过了一个了不起的赛季，”Schneider 说道。“在关键时刻的一次关键挥击。那绝对改变了气势。天哪，他在进攻端超出了预期。整个赛季他对我门都至关重要。”",
-        "这正是蓝鸟目前所需要的，能够改变比赛局势的重炮火力。Alejandro Kirk 也度过了美妙的一晚，通过2支安打和1次保送3次上垒。随着他彻底从本赛季早些时候的拇指骨折中恢复——包括他的长打能力——Kirk 对这支球队精神面貌的重要性不亚于任何身穿蓝鸟球衣的球员。"
-      ],
-      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/bj48zmn31ys93s5btm8r",
-      "translationSourceHash": "402b3127a67021c8aef6b5e18c07abf231a1ee7fe189b0100f38452431c8bb4e",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-09-15T05:17:33.855Z",
-      "author": "Keegan Matheson",
-      "publishedAt": "2026-09-15T05:16:00.000Z",
-      "url": "https://www.mlb.com/bluejays/news/jose-soriano-flirts-with-no-hitter-but-blue-jays-lose-in-late-innings",
-      "source": "MLB.com"
     }
   ],
-  "pendingNotificationIds": []
+  "pendingNotificationIds": [
+    "da6cd7db92c8a714874a50fe668a167f8cc163bce73fdb608addf3b6475ca67e"
+  ]
 }
