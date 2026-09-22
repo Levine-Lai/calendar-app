@@ -1,8 +1,43 @@
 {
   "teamId": "toronto-blue-jays",
   "teamName": "多伦多蓝鸟",
-  "updatedAt": "2026-09-21T22:51:34.247Z",
+  "updatedAt": "2026-09-22T01:23:24.124Z",
   "items": [
+    {
+      "id": "b7dbdda829b4d537b84ba2c826eac693095f77b784cf9676056f75ae9f1b614a",
+      "teamId": "toronto-blue-jays",
+      "teamName": "多伦多蓝鸟",
+      "titleEn": "Bateman exits with right hip discomfort after outstanding sliding catch",
+      "summaryEn": "",
+      "bodyEn": [
+        "BALTIMORE -- Brett Bateman left Monday night’s game with right hip discomfort after making a sliding catch in center, one more cruel twist at the end of a frustrating season.",
+        "Bateman was racing in on a sinking liner off the bat of Rece Hinds when he slid to make the catch, but his right knee, which was tucking underneath his body for the slide, got caught in grass. Monday’s game was delayed 47 minutes by rain in Baltimore, leaving some of the turf softer after taking on that water, and Bateman’s knee took a divot out of the outfield.",
+        "Manager John Schneider and head athletic trainer Jose Ministral raced out to Bateman, who was in clear and immediate pain. Bateman eventually walked off slowly, but needed assistance from Schneider and Ministral to get down the dugout steps, an arm draped across each of their shoulders. Myles Straw entered the game in Bateman’s place.",
+        "Bateman underwent X-rays immediately after exiting the game, which were negative, and is expected to undergo further testing.",
+        "This Blue Jays season has been defined by injuries, which have decimated this rotation and turned their pitching plans into a clunky, daily puzzle. Among the hitters, the season-long absences of Addison Barger and Anthony Santander have been the headliners, but the loss of Bateman is particularly tough given how well he’s been playing. On a team lacking bright spots, he’s been among the brightest.",
+        "Acquired at the Trade Deadline from the Cubs in the Kevin Gausman deal, Bateman’s stock has immediately skyrocketed in Toronto. He spent just a few days in Triple-A Buffalo before being promoted to the Blue Jays, and has since hit .320 with an .807 OPS over 38 games. With excellent defense in center and great speed on the bases, Bateman has brought new life to the Blue Jays’ leadoff spot.",
+        "He’s already forced his way into this organization’s plans in 2027, too. The Blue Jays also dealt Daulton Varsho at the Trade Deadline, along with the decision to DFA Jesús Sánchez recently. This outfield is wide open in ‘27 and beyond, and for a club that has long prioritized elite defense in that spot, Bateman’s first impression has exceeded every possible expectation."
+      ],
+      "titleZh": "Brett Bateman完成精彩滑接后因右髋不适退场",
+      "summaryZh": "Brett Bateman完成精彩滑接后因右髋不适退场，X光检查结果为阴性。",
+      "bodyZh": [
+        "巴尔的摩——在周一晚上的比赛中，Brett Bateman在完成一次中外野的滑接后因右髋不适退场，这为这个令人沮丧的赛季画上又一个残酷的转折。",
+        "当时Bateman正全力冲刺去接Rece Hinds击出的下坠平飞球并完成滑接，但他为了滑行而收在身体下方的右膝卡在了草皮里。周一的比赛在巴尔的摩因雨延迟了47分钟，导致吸饱水分的部分草皮变得较为松软，Bateman的膝盖在外野草地上铲出了一块草皮缺口。",
+        "总教练John Schneider和首席运动防护员Jose Ministral迅速跑向表情痛苦的Bateman。Bateman最终在他们的搀扶下缓慢走下场，他的双臂搭在两人的肩膀上走下休息区台阶。Myles Straw替补上场接替Bateman。",
+        "Bateman在退场后立即接受了X光检查，结果呈阴性，预计还将接受进一步检查。",
+        "多伦多蓝鸟本赛季饱受伤病困扰，伤病不仅摧毁了先发轮值，也将他们的投手调度计划变成了一个每天都要拼凑的棘手难题。在打者方面，Addison Barger和Anthony Santander全季缺阵是最受关注的焦点，但考虑到Bateman近期的出色表现，他的受伤对球队而言尤其沉重。在缺乏亮点的球队中，他一直是最耀眼的球员之一。",
+        "在交易截止日前通过涉及Kevin Gausman的交易从芝加哥小熊加盟后，Bateman在多伦多的身价瞬间飙升。他在3A水牛城仅待了几天就被升上多伦多蓝鸟，随后在38场比赛中打出.320的打击率和.807的攻击指数。凭借在中外野的出色防守和在垒上的惊人速度，Bateman为多伦多蓝鸟的开局棒次注入了新的活力。",
+        "他也已经用表现为自己争取到了球队2027年的规划名额。多伦多蓝鸟在交易截止日前交易了Daulton Varsho，近期还做出了将Jesús Sánchez指定让渡的决定。27年及以后的外野位置竞争完全开放，对于长期将该位置的顶级防守视为首要任务的球团而言，Bateman留下的第一印象超越了所有可能的预期。"
+      ],
+      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/jkrdaw7ofpcvltnkwmr0",
+      "translationSourceHash": "8c1a445ba8ae6ee0dca857db7357a506524763ba63ea5115e1117589841c7616",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-09-22T01:23:24.111Z",
+      "author": "Keegan Matheson",
+      "publishedAt": "2026-09-22T01:10:00.000Z",
+      "url": "https://www.mlb.com/bluejays/news/brett-bateman-exits-with-injury-after-sliding-catch",
+      "source": "MLB.com"
+    },
     {
       "id": "29ff2a779fc146a5a2527e75c6724ad7b00dd53d312384e2e25c15b70f2dd510",
       "teamId": "toronto-blue-jays",
@@ -321,37 +356,6 @@
       "author": "John Henry",
       "publishedAt": "2026-09-20T23:20:00.000Z",
       "url": "https://www.mlb.com/bluejays/news/blue-jays-avoid-sweep-to-stay-in-the-wild-card-race",
-      "source": "MLB.com"
-    },
-    {
-      "id": "1154e004e6152674c3702aba1338711f72b248daf8b56cc14201787d7b907da0",
-      "teamId": "toronto-blue-jays",
-      "teamName": "多伦多蓝鸟",
-      "titleEn": "Guerrero Jr. (lower back tightness) exits game vs. Rangers",
-      "summaryEn": "",
-      "bodyEn": [
-        "ARLINGTON -- Vladimir Guerrero Jr. left Sunday’s game against the Rangers in the fourth inning with what the team described as left lower back stiffness.",
-        "Guerrero, playing first base and hitting No. 2 in the lineup, had a base hit in two plate appearances for the Blue Jays, who are trying to keep alive their American League Wild Card hopes in the series finale at Globe Life Field. Toronto entered the game three games back of the White Sox for the final postseason berth and as losers in four of its past five games.",
-        "Myles Straw entered the game in his place in the lineup.",
-        "Guerrero had a stint on the seven-day concussion IL in August after a collision with Yankees shortstop George Lombard. He has also dealt with back and hamstring trouble during the season but has not needed time on the IL for either.",
-        "Guerrero has stepped up when the Blue Jays have needed him most, batting .292 with two home runs -- including his first of the season at Rogers Centre --, eight RBIs and a .796 OPS in 17 games in September. He also ranks second in the majors at first base with 10 defensive runs saved."
-      ],
-      "titleZh": "Guerrero Jr. 因下背部紧绷提前退场",
-      "summaryZh": "多伦多蓝鸟对阵得克萨斯游骑兵的比赛中，Vladimir Guerrero Jr. 因左下背部僵硬在第四局退场。",
-      "bodyZh": [
-        "阿灵顿——Vladimir Guerrero Jr. 在周日对阵得克萨斯游骑兵的比赛中于第四局退场，球队将其伤情描述为左下背部僵硬。",
-        "Guerrero 本场比赛担任一垒手并排在打线第二棒，在多伦多蓝鸟力求在环球人寿球场进行的系列赛收官战中保留美联外卡希望时，他取得了两个打席一支安打的成绩。多伦多在赛前落后芝加哥白袜三个胜场，暂居最后一个季后赛席位争夺者的位置，且在过去的五场比赛中输了四场。",
-        "Myles Straw 在打线中替补登场接替他的位置。",
-        "Guerrero 在八月份曾因与纽约洋基游击手 George Lombard 发生碰撞而进入七天脑震荡伤病名单。本赛季他还处理过背部和腿筋的问题，但这两项伤情都未让他进入伤病名单。",
-        "在多伦多蓝鸟最需要他的时候挺身而出，Guerrero 在九月份的 17 场比赛中打出 .292 的打击率，包含 2支本垒打——其中包含他在罗杰斯中心本赛季的第戎本垒打——贡献 8个打点以及 .796 的 OPS。他还以 10 次守备跑垒分贡献（DRS）在大联盟一垒手当中排名第二。"
-      ],
-      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/yh6eiqyjieleujbnrpx7",
-      "translationSourceHash": "6d57fb3fa96611da5074e723f7d4e2da6b3751507c2ed09833ed2eca3e19bbfb",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-09-20T21:29:44.609Z",
-      "author": "John Henry",
-      "publishedAt": "2026-09-20T20:56:59.000Z",
-      "url": "https://www.mlb.com/bluejays/news/vladimir-guerrero-jr-exits-with-lower-back-injury",
       "source": "MLB.com"
     },
     {
@@ -1214,5 +1218,7 @@
       "source": "MLB.com"
     }
   ],
-  "pendingNotificationIds": []
+  "pendingNotificationIds": [
+    "b7dbdda829b4d537b84ba2c826eac693095f77b784cf9676056f75ae9f1b614a"
+  ]
 }
