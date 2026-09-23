@@ -1,7 +1,7 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-09-22T22:07:39.029Z",
+  "updatedAt": "2026-09-23T00:29:42.352Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
@@ -983,12 +983,78 @@
       "translationSourceHash": "a2ff37452f6c2d50117faae91dca37dbb3fae2ec8bf46f1045fb26f5e1410e96",
       "translationModel": "gemini-3.5-flash-lite",
       "translatedAt": "2026-09-22T22:07:39.029Z"
+    },
+    {
+      "id": "7e42c9d3a32d532dae38464c882a01e206216d4729f7c8034a83d6d88f8be921",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Strikes that stunned French opposition",
+      "summaryEn": "Ahead of Arsenal's Champions League match against Monaco, we look back at some of the club's best goals against Ligue 1 sides",
+      "bodyEn": [
+        "We’ve looked back through the archives and selected some of our favourite goals against Ligue 1 clubs.",
+        "The Gunners have netted some delightful finishes against sides across the channel over the years, and these are just some of our top picks.",
+        "Jack WilshereArsenal 2-0 MarseilleNovember 26, 2013What a start - and what a finish! It took Jack Wilshere precisely 28 seconds to give Arsenal the lead in this Champions League group stage match against Marseille during the 2013/14 season.",
+        "Starting on the right side of Arsenal’s midfield, Wilshere took advantage of the visitors’ high defensive line to latch onto Bacary Sagna’s pass down the wing. The England midfielder charged towards the byline, feinted one way and then cut inside before curling the ball sumptuously beyond Steve Mandanda and into the top corner.",
+        "Wilshere, enjoying one of his best displays of the season, made sure of three points in the second half, calmly slotting home from Mesut Ozil’s inviting low centre.",
+        "The Gunners went on to progress from Group F after a nerve-shredding defeat at Napoli on matchday six - the Italian team was incredibly eliminated from the tournament because of an inferior head-to-head record despite collecting 12 points, the same amount as Borussia Dortmund, who topped the group, and Arsenal.",
+        "Lukas PodolskiArsenal 2-0 MontpellierNovember 21, 2012Lukas Podolski could scarcely have ensured qualification to the last 16 of the 2012/13 Champions League in a more emphatic way.",
+        "With Arsenal leading 1-0 against Montpellier thanks to Jack Wilshere’s delicate dink, the German international secured three points with a stunning 63rd-minute volley. Playing a one-two with Olivier Giroud, Podolski ran on to the aerial return pass and powered a trademark volley into the roof of the net from just inside the area. Visiting goalkeeper Geoffrey Jourdren had no chance.",
+        "Arsenal finished second in the group, securing a last-16 meeting with Bayern Munich. Having lost the first leg 3-1 at Emirates Stadium - a game in which Podolski was again on target - Olivier Giroud and Laurent Koscielny scored at Allianz Arena to give the Gunners a highly impressive 2-0 victory in the second leg. It wasn’t quite enough though, with Arsenal going out on away goals.",
+        "Thierry HenryLens 1-2 ArsenalApril 20, 2000This was classic Thierry Henry - scoring a vital goal at a crucial time in this UEFA Cup semi-final to set up Arsenal’s passage to a meeting with Galatasaray in Copenhagen.",
+        "Dennis Bergkamp’s early strike had secured a 1-0 victory in the first leg at Highbury, but this would be a very different test for Arsène Wenger’s men.",
+        "Henry, who had already scored six goals in the competition that season, had initially been well marshalled in the return match, often surrounded by defenders keen to snap into challenges whenever he received the ball.",
+        "But just before half-time, Arsenal’s record goalscorer doubled the aggregate lead with a goal of top class. Receiving the ball with his back to goal on the left-hand side of the area, Henry held off his man, turned quickly and lashed a shot into the corner.",
+        "Pascal Nouma did equalise after the break but Kanu ensured Arsenal’s place in the final three minutes from time.",
+        "Dennis BergkampArsenal 1-1 LyonFebruary 21, 2001Dennis Bergkamp at his best - strong, composed, easy on the eye and making the difficult look oh so simple. Racing onto Robert Pires’ pass, the Iceman shrugged off a covering defender with ease, advanced into the box and calmly opened his body to send a shot right into the top corner.",
+        "Edmilson’s late equaliser initially prevented the goal from helping Arsenal to qualify from the second group stage of the Champions League - though they eventually did, the 1-0 victory in this reverse fixture ensuring Arsène Wenger’s men went through after both teams finished with eight points.",
+        "Arsenal were knocked out by Valencia on away goals in the quarter-finals.",
+        "Nigel WinterburnArsenal 3-0 NantesNovember 25, 1999Arsenal entered the Uefa Cup after finishing third in a tricky Champions League group, behind Barcelona and Fiorentina.",
+        "Their first opponents in the tournament were French side Nantes. who were comfortably beaten in the first leg of this third-round tie on a chilly November night at Highbury.",
+        "Marc Overmars’ penalty had put the hosts in command before Nigel Winterburn added a thunderous late second. Receiving the ball from Patrick Vieira just outside the left side of the penalty area, the full back took a touch to set himself before unleashing a powerful swerving effort that flew into the corner of the goal.",
+        "It was Winterburn’s first European goal - and one that commentator Martin Tyler described as “fabulous”.",
+        "Dennis Bergkamp added further gloss to the score and Arsenal drew the return match 3-3 before going on to reach the final of the competition, eventually losing to Galatasaray on penalties."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/fa78fa4b8a4c-arsenals-english-midfielder-jack-wilshere-scores-his-second-goal-during-the-uefa.webp",
+      "author": "Arsenal Media",
+      "publishedAt": "2015-02-25T08:00:00.000Z",
+      "url": "https://www.arsenal.com/news/strikes-that-stunned-french-opposition-aPEa49n0bRBm",
+      "source": "Arsenal.com",
+      "titleZh": "那些惊艳法国球队的精彩进球",
+      "summaryZh": "阿森纳对阵摩纳哥欧冠赛前，回顾队史对阵法甲球队的精彩进球。",
+      "bodyZh": [
+        "我们翻阅了历史资料，挑选了一些我们最喜欢的对阵法甲俱乐部的进球。",
+        "多年来，阿森纳在面对海峡对岸的球队时打入了一些精妙的进球，以下只是我们精选的一部分。",
+        "杰克·威尔希尔，阿森纳 2-0 马赛，2013年11月26日，多么完美的开局，多么精彩的进球！在2013/14赛季这场对阵马赛的欧冠小组赛中，杰克·威尔希尔仅用了28秒就为阿森纳首开纪录。",
+        "威尔希尔从阿森纳右侧中场启动，利用客队的高位防线，接住了萨尼亚沿边路的传球。这位英格兰中场带球冲向底线，先是假动作晃过对手随后内切，接着用一记美妙的弧线球将球送入斯特沃·曼丹达把守球门的死角。",
+        "威尔希尔奉献了本赛季最佳表现之一，他在下半场接厄齐尔精妙的低平球传中冷静推射破门，锁定胜局。",
+        "在第六轮客场负于那不勒斯经历惊心动魄的比赛后，枪手顺利从F组出线——尽管意大利球队与多特蒙德（小组第一）和阿森纳同积12分，但因相互交手战绩处于劣势而被淘汰出局。",
+        "卢卡斯·波多尔斯基，阿森纳 2-0 蒙彼利埃，2012年11月21日，卢卡斯·波多尔斯基以一种极具说服力的方式确保了阿森纳晋级2012/13赛季欧冠十六强。",
+        "凭借杰克·威尔希尔精巧的挑射，阿森纳当时以1-0领先蒙彼利埃，随后这位德国国脚在第63分钟以一记精彩的凌空抽射锁定胜局。波多尔斯基与吉鲁完成撞墙配合，迎着空中回传的皮球，在禁区边缘标志性地迎球怒射，皮球直飞网窝。客队门将戈弗雷·茹尔德伦毫无机会。",
+        "阿森纳在小组中排名第二，在十六强赛中遭遇拜仁慕尼黑。首回合在酋长球场以1-3失利（波多尔斯基在那场比赛中再次进球），随后吉鲁和科斯切尔尼在安联球场破门，帮助枪手在次回合取得令人印象深刻的2-0胜利。不过这还不够，阿森纳最终因客场进球劣势出局。",
+        "蒂埃里·亨利，朗斯 1-2 阿森纳，2000年4月20日，这是典型的蒂埃里·亨利——在这场联盟杯半决赛的关键时刻打入关键进球，为阿森纳进军哥本哈根对阵加拉塔萨雷铺平了道路。",
+        "丹尼斯·博格帕克的早期进球确保了海布里首回合1-0的胜利，但对温格的球队来说，这将是一场截然不同的考验。",
+        "亨利当赛季在该赛事中已经攻入六球，在次回合比赛中起初受到严密盯防，每当他拿球时总有防守球员蜂拥而至。",
+        "但在半场结束前，阿森纳的历史最佳射手用一个世界级进球将总比分优势扩大了一倍。亨利在禁区左侧背对球门接球，顶住防守球员，快速转身并起脚怒射破门得分。",
+        "帕斯卡尔·努马在下半场扳平比分，但卡努在比赛还剩三分钟时确保了阿森纳晋级决赛。",
+        "丹尼斯·博格坎普，阿森纳 1-1 里昂，2001年2月21日，巅峰时期的丹尼斯·博格坎普——强壮、沉稳、赏心悦目，将高难度动作做得如此简单。冰王子接罗伯特·皮雷的传球后轻松甩开补防的防守球员，突入禁区，冷静舒展身体将球直接送入死角。",
+        "埃德米尔森随后的扳平进球起初阻碍了该进球帮助阿森纳从欧冠第二阶段小组赛出线——尽管他们最终还是晋级了，双方均积8分，而这场次回合的1-0胜利确保了温格的球队顺利过关。",
+        "阿森纳在四分之一决赛中因客场进球劣势被瓦伦西亚淘汰。",
+        "奈杰尔·温特本，阿森纳 3-0 南特，1999年11月25日，阿森纳在艰难的欧冠小组赛中名列巴塞罗那和佛罗伦萨之后获得第三名，从而进入联盟杯。",
+        "他们在该赛事中的首个对手是法甲球队南特，在一个寒冷的11月夜晚的海布里球场，他们在第三轮首回合比赛中轻松取胜。",
+        "马克·奥弗马斯的点球让主队占据优势，随后奈杰尔·温特本在尾声阶段轰入一记精彩的世界波。这位边后卫接帕特里克·维埃拉在禁区左侧外沿的传球，调整了一步后起脚轰出一记势大力沉且带有弧线的远射，皮球飞入球门死角。",
+        "这是温特本的第一粒欧战进球——解说员马丁·泰勒将其形容为“美妙绝伦”。",
+        "丹尼斯·博格坎普锦上添花，阿森纳在次回合3-3战平对手，随后一路杀入赛事决赛，最终在点球大战中负于加拉塔萨雷。"
+      ],
+      "translationSourceHash": "b8c240dfb42fdac270e294fbd58ba145e6aa8c30bde2e3f488e0a1507e3c734a",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-09-23T00:29:42.352Z"
     }
   ],
   "pendingNotificationIds": [
     "5bbf3946f43db9966486fb309e11652906f65dd8add24b189c7a534058a4049e",
     "c1b96897876e21b9f49c3df08bb5b6fb3bdfd2033d8158abae2bf810b65c0197",
     "bbf4da3a2d353f43606f575139567010b603b3db30922f96a8b54e9df4a5a62d",
-    "2628217e24dabe27a20e4e75aed155aeaa3d5bbb1371328e1c04b03cdb6b912b"
+    "2628217e24dabe27a20e4e75aed155aeaa3d5bbb1371328e1c04b03cdb6b912b",
+    "7e42c9d3a32d532dae38464c882a01e206216d4729f7c8034a83d6d88f8be921"
   ]
 }
