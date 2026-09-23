@@ -1,12 +1,49 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-09-23T00:29:42.352Z",
+  "updatedAt": "2026-09-23T05:10:24.119Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "23bb4d84be37dc5674b9917e43b9e4cb56f0e2f455ed17788d46c4fc8608d70a",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "adidas launch Final Rush boots",
+      "summaryEn": "adidas has unveiled striking new colourways for the iconic F50 and Predator football boots",
+      "bodyEn": [
+        "adidas has unveiled the latest chapter of its ongoing ‘Chaos vs Control’ story, introducing striking new colourways for the iconic F50 and Predator football boots.",
+        "Designed for football's biggest moments, the latest pack continues the rivalry between speed and precision, inviting players everywhere - including those pulling on the Arsenal shirt - to choose their side: cause chaos with F50 or take control with Predator.",
+        "The Predator Elite FT arrives in a bold new colourway, pairing a predominantly black upper with crisp white Three Stripes and striking mint-green accents. Built for players who dictate the game through control and precision, the boot combines standout aesthetics with cutting-edge performance technology.",
+        "Alongside Predator, adidas introduced a refreshed F50 Elite, featuring a vibrant green colourway complemented by dark Three Stripes, subtle yellow detailing and an iridescent outsole finish. Engineered for players who thrive in chaos and create game-changing moments through explosive pace, the F50 continues to push the boundaries of speed-focused innovation.",
+        "The latest release continues adidas' invitation to footballers across the globe to ‘choose one'. Predator is built for those who control the rhythm of the game through composure, precision and accuracy, while F50 is designed for those who embrace unpredictability and create moments of brilliance through pace and instinct.",
+        "Arsenal fans can keep an eye out for familiar names in the latest adidas boots as the new season gathers pace, with the pack bringing the same balance of speed, control and composure seen across the Gunners' squad.",
+        "Completing the pack, adidas also introduces updated colourways for the F50 Sparkfusion and Copa franchises, extending the latest design expression across additional performance silos.",
+        "The new football boots are available now at selected retail stores and on the adidas website."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/28e986b3f5ac-h24781fw26mp4productelitepackshot01srgbhighres16x9.webp",
+      "author": "Arsenal Media",
+      "publishedAt": "2026-09-23T03:00:00.000Z",
+      "url": "https://www.arsenal.com/news/adidas-launch-final-rush-boots-azSkk0l6rRNt",
+      "source": "Arsenal.com",
+      "titleZh": "阿迪达斯发布最终冲刺系列足球鞋",
+      "summaryZh": "阿迪达斯为标志性的F50和Predator足球鞋推出全新惊艳配色。",
+      "bodyZh": [
+        "阿迪达斯发布了其“混乱与控制”故事的最新篇章，为标志性的F50和Predator足球鞋推出了惊艳的全新配色。",
+        "专为足球赛场上的重大时刻而设计，最新系列延续了速度与精准之间的对决，邀请包括身披阿森纳战袍在内的全球球员选择他们的阵营：用F50制造混乱，或是用Predator掌控全局。",
+        "Predator Elite FT采用大胆的全新配色，主体黑色鞋面搭配纯白三条纹以及醒目的薄荷绿色点缀。这款球鞋专为通过控制和精准度主导比赛的球员打造，将出色的外观与尖端的性能技术完美结合。",
+        "与Predator一同亮相的还有焕新登场的F50 Elite，采用充满活力的绿色鞋面，辅以深色三条纹、低调的黄色细节以及炫彩的大底finish。F50专为在混乱中脱颖而出、通过爆发性速度创造比赛转折点的球员设计，不断突破注重速度的创新界限。",
+        "最新发布的产品继续邀请全球足球运动员“二选一”。Predator专为那些通过镇定、精确和准确度来控制比赛节奏的球员打造，而F50则专为那些拥抱不确定性、通过速度和直觉创造灵光闪现时刻的球员设计。",
+        "随着新赛季的推进，阿森纳球迷可以留意身穿最新阿迪达斯球鞋的熟悉面孔，该系列带来了与枪手阵容中同样的速度、控制和镇定平衡。",
+        "作为该系列的补充，阿迪达斯还推出了F50 Sparkfusion和Copa系列的更新配色，将最新的设计语言延伸至更多的实战鞋款系列中。",
+        "新款足球鞋现已在指定零售店和阿迪达斯官网发售。"
+      ],
+      "translationSourceHash": "616f79df7ae37911025708c950b6808f27b8026aa4d354e4ec2a352055eab11d",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-09-23T05:10:24.110Z"
+    },
     {
       "id": "5bbf3946f43db9966486fb309e11652906f65dd8add24b189c7a534058a4049e",
       "teamId": "arsenal",
@@ -715,71 +752,6 @@
       "translatedAt": "2026-09-22T18:53:44.337Z"
     },
     {
-      "id": "8fe3670fdf061f35f3b2a8afadd5bd287f9d801f3e7b611848ee5f140650d383",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Disabled Supporters' Ticket Information | Everton",
-      "summaryEn": "",
-      "bodyEn": [
-        "Arsenal v EvertonSaturday 24th October Premier LeagueEmirates StadiumKick Off: 15.00",
-        "This will be a Category B fixture (pricing and information on match categorisation).",
-        "Ballot System for Disability Access MembersTo ensure fairness and equal opportunity, tickets for all home fixtures will be sold via a ballot system exclusively for Arsenal Members.",
-        "Members will have a designated window to enter the ballot. You can choose to register individually or as a group of up to four members, if all supporters meet the necessary requirements. You can enter at any stage during the registration window, and your odds of success will remain the same.",
-        "Timing doesn't matter when it comes to entering our ballots, whether you are an early bird or a last-minute entrant, your chances of winning remain the same. The only crucial factor is that you submit your entry whilst the window is open.",
-        "Ballot opens: Friday 4th September at 10am",
-        "Ballot closes: Monday 7th September at 12pm",
-        "Please do not enter via your online account as this will not work for DA members.",
-        "All applicants, whether successful or unsuccessful, will be notified by email only, by 2pm on Tuesday 8th September. Successful applicants will have the opportunity to purchase tickets during the designated priority booking window, as specified on the ticket information page.",
-        "This fixture will be on sale on Wednesday 9th September at 10am and successful applicants will be able to access their online account to purchase tickets, this will include a complimentary Personal Assistant ticket, subject to eligibility. Please note, you will have until 10am on Thursday 10th September to purchase your tickets.",
-        "Where the number of ballot registrations for a match does not exceed the number of available tickets, all Members who have entered will be successful.",
-        "Useful links",
-        "Ticket Exchange & Ticket Transfer",
-        "If a Member is unable to attend a match they were successful in the ballot for, and that match has sold out, they will have the option to post their ticket on our Ticket Exchange platform. This way, other fans can purchase the ticket and enjoy the match. This ticket information page will be updated once a fixture has sold out and Ticket Exchange is available.",
-        "Ticket Transfer is available for Season Ticket Holders to use once a game is available online (4-8 weeks before a game).",
-        "Disability Access members who wish to list their tickets on the Ticket Exchange should complete the online form here. Please note this form is for DA members only and tickets will be listed by the Disability Liaison Team. The Disability Liaison Team can be contacted by calling 0207 619 5000 (Option 2). Deaf supporters, who use British Sign Language (BSL), can contact the Disability Liaison Team by using SignVideo BSL Interpreter service.",
-        "The Arsenal App This latest update to the Arsenal app means access to the Ticket Hub has changed. To continue to manage your tickets via the Ticket Hub, you must ensure you have the latest version of The Arsenal app and log in to your account using your email/username and password.",
-        "Digital TicketsAny tickets purchased by members for the 2026/2027 season, will be loaded onto their digital membership pass via the official Arsenal app.",
-        "Once the digital pass has been added to an Apple or Android wallet, any purchased tickets will automatically show on the digital pass approximately one week before the relevant fixture. Click here for more information.",
-        "Stadium Access Please note that you MUST enter the Stadium with your Personal Assistant, if eligible.",
-        "Code of Conduct All fans must adhere to our updated Code of Conduct; please take your time to read this information carefully",
-        "Accessible ParkingThe Accessible Parking booking period will open on Wednesday 16th September and will close once we have no spaces remaining. You can view the parking information here."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/ee26871aecdc-tickets-2526-everton-h.webp",
-      "author": "Arsenal FC",
-      "publishedAt": "2026-08-24T14:41:41.973Z",
-      "url": "https://www.arsenal.com/news/disabled-supporters-ticket-information-everton-aVgBk1m3eW2f",
-      "source": "Arsenal.com",
-      "titleZh": "残疾球迷球票信息：对阵埃弗顿",
-      "summaryZh": "阿森纳对阵埃弗顿的残疾球迷球票及抽签信息公布。",
-      "bodyZh": [
-        "阿森纳对阵埃弗顿，10月24日星期六，英格兰足球超级联赛，酋长球场，开球时间：15:00",
-        "这将是一场B类比赛（关于比赛分类的定价和信息）。",
-        "残疾无障碍会员抽签系统：为确保公平和机会均等，所有主场比赛的门票将通过专为阿森纳会员设立的抽签系统进行销售。",
-        "会员将有一个指定的抽签报名窗口。如果您符合所有必要条件，您可以选择单独注册，也可以选择最多四名会员的团体注册。您可以在注册窗口的任何阶段进入，您的中签几率将保持不变。",
-        "参与我们的抽签时，时间并不重要，无论您是早起鸟还是最后关头进入，您的中签几率都保持不变。唯一的关键因素是您必须在窗口开放期间提交申请。",
-        "抽签开始时间：9月4日星期五上午10点",
-        "抽签截止时间：9月7日星期一中午12点",
-        "请不要通过您的在线账户进行申请，因为这不适用于残疾无障碍（DA）会员。",
-        "无论成功与否，所有申请者将在9月8日星期二下午2点前仅通过电子邮件收到通知。成功的申请者将有机会在票务信息页面上指定的优先预订窗口内购买门票。",
-        "这场比赛将于9月9日星期三上午10点开始发售，中签的申请者将能够访问他们的在线账户购买门票，在符合资格的前提下，这将包括一张免费的个人助理门票。请注意，您必须在9月10日星期四上午10点之前购买门票。",
-        "如果某场比赛的抽签报名人数未超过可用门票数量，所有报名的会员都将成功。",
-        "实用链接",
-        "门票交易与门票转让",
-        "如果会员无法出席他们抽签成功的比赛，且该比赛已售罄，他们可以选择将门票发布到我们的门票交易平台上。通过这种方式，其他球迷可以购买门票并观看比赛。一旦比赛售罄且门票交易可用，此票务信息页面将进行更新。",
-        "当比赛在线可用时（比赛前4-8周），赛季票持有者可以使用门票转让功能。",
-        "希望将门票挂在门票交易平台上的残疾无障碍会员应在此处填写在线表格。请注意，此表格仅适用于残疾无障碍会员，门票将由残疾联络小组挂牌。可以通过拨打 0207 619 5000（按 2 键）联系残疾联络小组。使用英国手语（BSL）的聋人球迷可以使用 SignVideo BSL 翻译服务联系残疾联络小组。",
-        "阿森纳官方应用程序：阿森纳应用程序的最新更新意味着票务中心的访问方式已发生变化。要继续通过票务中心管理您的门票，您必须确保拥有最新版本的阿森纳应用程序，并使用您的电子邮箱/用户名和密码登录您的账户。",
-        "数字门票：会员为2026/2027赛季购买的任何门票，都将通过阿森纳官方应用程序加载到他们的数字会员通行证上。",
-        "将数字通行证添加到Apple或Android钱包后，任何购买的门票将在相关比赛前约一周自动显示在数字通行证上。点击此处了解更多信息。",
-        "球场入场：请注意，如果符合资格，您必须与您的个人助理一起进入球场。",
-        "行为准则：所有球迷必须遵守我们更新的行为准则；请花时间仔细阅读此信息",
-        "无障碍停车：无障碍停车预订期将于9月16日星期三开始，并在车位售罄后关闭。您可以在此处查看停车信息。"
-      ],
-      "translationSourceHash": "b5b3fe54e413b6763a5f82662866b43c603e92efa894d0f4bbdfb7ae552ea83b",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-09-22T18:53:52.899Z"
-    },
-    {
       "id": "6ceb2e9c0c6792a94cd7a1a645ba6911b83c2c282571cdbc921d238d2262e3b3",
       "teamId": "arsenal",
       "teamName": "阿森纳",
@@ -825,45 +797,6 @@
       "translationSourceHash": "b230391c8c2fc73e85a19cf649bcb51b15a4a3b714972cd5cc02f1d4f6e0d42f",
       "translationModel": "gemini-3.5-flash-lite",
       "translatedAt": "2026-09-22T18:54:00.489Z"
-    },
-    {
-      "id": "e68fce65d92ff98fb79b0a25ce629241e0344a8538a8cff713e2c886295c57e9",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "No More Red, together with our community",
-      "summaryEn": "2025/26 marks five years since we began our long-term commitment to tackling the root causes of youth violence in London",
-      "bodyEn": [
-        "This season marks five years since we began our No More Red campaign alongside adidas - a long-term commitment to tackling the root causes of youth violence in London.",
-        "This year, the journey continues. Together, we are moving the campaign forward with an even stronger focus on putting our local community at the heart of everything we do.",
-        "We're proud of what we've achieved together – creating safe spaces, role models, and meaningful connections in the local community.",
-        "Since its launch in 2021, No More Red has transformed four football pitches across Islington and Hackney, creating safe spaces for young people to come together and play football.",
-        "Across our four pitches:",
-        "We also celebrate the role models who inspire positive change in their communities every day. Since 2021, 272 community champions have received a No More Red white shirt, recognising their achievements, resilience in overcoming adversity, and long-term commitment to making a positive impact in their community.",
-        "Through meaningful connections, we open doors to new opportunities for young people. Over the first four years of No More Red, a range of projects and experiences has created long term opportunities. Immersive workshops, partner projects, and clear career pathways have supported more than 50 young people into volunteering, education, and employment.",
-        "From the NMR Collective in 2022 and the Cambridge Social Action Project in 2023, to the Fashion Project in 2024 and the Music Project in 2025, our programmes continue to grow - helping young people build skills, confidence, and a strong sense of belonging.",
-        "Together, we still have work to do but our ambition is unwavering, and our connection with our community has never been stronger. Later this year, the journey will continue with an even greater focus on putting our local community, and the people and partners driving change every day, at the heart of No More Red."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/59c37a1a2600-nmr-pitch.webp",
-      "author": "Arsenal Media",
-      "publishedAt": "2026-01-10T05:00:00.000Z",
-      "url": "https://www.arsenal.com/news/no-more-red-together-with-our-community-ao1UO3X2KQm1",
-      "source": "Arsenal.com",
-      "titleZh": "“不再红”行动，与我们的社区同心同行",
-      "summaryZh": "2025/26赛季标志着我们致力于解决伦敦青少年暴力根源问题已迈入第五个年头。",
-      "bodyZh": [
-        "本赛季标志着我们与阿迪达斯携手开展“不再红”活动已满五年，这是一项旨在解决伦敦青少年暴力根源问题的长期承诺。",
-        "今年，这一征程将继续推进。我们将以更坚定的决心，将当地社区置于我们一切工作的核心，共同推动活动向前发展。",
-        "我们为共同取得的成就感到自豪——在当地社区中创造了安全的空间、榜样以及有意义的联系。",
-        "自2021年启动以来，“不再红”行动已改造了伊斯灵顿和哈克尼的四个足球场，为年轻人聚集和踢球创造了安全空间。",
-        "在我们这四个球场：",
-        "我们同样表彰那些每天都在激励社区积极改变的榜样。自2021年以来，已有272名社区杰出代表获赠“不再红”白色球衣，以表彰他们的成就、面对逆境的韧性以及为社区带来积极影响的长期承诺。",
-        "通过建立有意义的联系，我们为年轻人开启了通往新机遇的大门。“不再红”开展的前四年中，一系列项目和体验创造了长期的机会。沉浸式工作坊、合作伙伴项目以及清晰的职业发展路径，已支持50多名年轻人走上了志愿服务、教育和就业岗位。",
-        "从2022年的NMR Collective、2023年的剑桥社会行动项目，到2024年的时尚项目以及2025年的音乐项目，我们的计划不断发展，帮助年轻人培养技能、自信和强烈的归属感。",
-        "齐心协力之下，我们仍有工作要做，但我们的雄心坚定不移，我们与社区的联系也从未如此紧密。今年晚些时候，这一征程将继续推进，并将更加专注于把当地社区以及每天推动变革的人员和合作伙伴置于“不再红”行动的核心。"
-      ],
-      "translationSourceHash": "74a79ce32da7bfce06380bc1c185fa37f78753c3fb853cd1f6dd7c95286df087",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-09-22T18:54:03.247Z"
     },
     {
       "id": "082f7f1a637b0f2ab2140a37dc7428b25c2ed41ed01a15b78d0fb8ea609f3fce",
@@ -1050,5 +983,7 @@
       "translatedAt": "2026-09-23T00:29:42.352Z"
     }
   ],
-  "pendingNotificationIds": []
+  "pendingNotificationIds": [
+    "23bb4d84be37dc5674b9917e43b9e4cb56f0e2f455ed17788d46c4fc8608d70a"
+  ]
 }
