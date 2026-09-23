@@ -1,37 +1,8 @@
 {
   "teamId": "toronto-blue-jays",
   "teamName": "多伦多蓝鸟",
-  "updatedAt": "2026-09-22T20:09:28.255Z",
+  "updatedAt": "2026-09-23T17:20:06.255Z",
   "items": [
-    {
-      "id": "da6cd7db92c8a714874a50fe668a167f8cc163bce73fdb608addf3b6475ca67e",
-      "teamId": "toronto-blue-jays",
-      "teamName": "多伦多蓝鸟",
-      "titleEn": "Blue Jays-O's game postponed; split doubleheader Wednesday",
-      "summaryEn": "",
-      "bodyEn": [
-        "Tuesday night's scheduled game between the Orioles and Toronto Blue Jays in Baltimore has been postponed due to ongoing inclement weather. The game will be made up as part of a split-admission doubleheader Wednesday, September 23. Separate tickets will be required to attend each game at Oriole Park at Camden Yards. Game one will begin at 1:35 p.m. ET with game two scheduled for 6:35 p.m. Gates for game one will open at 12:30 p.m. and gates for game two will open at 5:30 p.m. There will be no early access to Eutaw Street to watch batting practice.",
-        "Tickets for tonight’s postponed game will automatically be valid for game one on Wednesday, September 23, at 1:35 p.m. Fans that prefer to exchange for tomorrow night’s 6:35 p.m. game are able to do so until 12:35 p.m. tomorrow. Additionally, fans can expect to receive communication regarding a complimentary field level ticket offer for an early season game next season. Details will be communicated directly with fans at the start of the season. For additional information, visit Orioles.com/Weather.",
-        "Tickets purchased for the originally scheduled 6:35 p.m. game on Wednesday, September 23, are still valid.",
-        "Fans can continue to access their tickets through the MLB Ballpark App and can transfer or resell these tickets at SeatGeek.com."
-      ],
-      "titleZh": "蓝鸟与金莺之战延期，周三将进行双重赛",
-      "summaryZh": "由于恶劣天气，多伦多蓝鸟与巴尔的摩金莺的比赛延期至周三进行双重赛。",
-      "bodyZh": [
-        "原定于周二晚间在巴尔的摩进行的巴尔的摩金莺与多伦多蓝鸟的比赛，由于持续的恶劣天气已经延期。这场比赛将作为9月23日星期三分割进场双重赛的一部分进行补赛。观看金莺球场（Oriole Park at Camden Yards）每场比赛均需单独的门票。第一场比赛将于美东时间下午1:35开始，第二场比赛定于下午6:35开始。第一场比赛的大门将于下午12:30开放，第二场比赛的大门将于下午5:30开放。球迷将无法提前进入尤托街（Eutaw Street）观看打击练习。",
-        "今晚延期比赛的门票将自动适用于9月23日星期三下午1:35的第一场比赛。希望更换为明天晚上6:35比赛的球迷可以在明天下午12:35之前进行更换。此外，球迷还将收到关于下赛季早些时候某场比赛免费内场看台门票优惠的通知。相关细节将在赛季初直接传达给球迷。如需了解更多信息，请访问 Orioles.com/Weather。",
-        "原定于9月23日星期三下午6:35进行的比赛所购买的门票仍然有效。",
-        "球迷可以继续通过 MLB Ballpark App 访问他们的门票，并可以在 SeatGeek.com 上转让或转售这些门票。"
-      ],
-      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/lljretfz7uhkpepvmfww",
-      "translationSourceHash": "e8cbe9c4dc8a6697dff6d7c945e7aa331c9a0e7511ec59dc9684f125b032119e",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-09-22T20:09:28.244Z",
-      "author": "MLB.com",
-      "publishedAt": "2026-09-22T17:55:09.000Z",
-      "url": "https://www.mlb.com/bluejays/news/blue-jays-orioles-september-22-game-postponed",
-      "source": "MLB.com"
-    },
     {
       "id": "7e9000313c47368fe2a76d65ae126941f1bfce63ec0dcd7280563bdd4d1caec1",
       "teamId": "toronto-blue-jays",
@@ -87,8 +58,72 @@
       "translationModel": "deepseek-v4-flash",
       "translatedAt": "2026-07-21T02:11:41.474Z",
       "author": "",
-      "publishedAt": "2026-09-22T02:52:00.000Z",
+      "publishedAt": "2026-09-23T16:15:00.000Z",
       "url": "https://www.mlb.com/bluejays/news/blue-jays-injuries-and-roster-moves",
+      "source": "MLB.com"
+    },
+    {
+      "id": "29ff2a779fc146a5a2527e75c6724ad7b00dd53d312384e2e25c15b70f2dd510",
+      "teamId": "toronto-blue-jays",
+      "teamName": "多伦多蓝鸟",
+      "titleEn": "Vladdy (back tightness) out of lineup again in Game 1 of Blue Jays-O's DH",
+      "summaryEn": "",
+      "bodyEn": [
+        "BALTIMORE -- Vladimir Guerrero Jr. was out of the lineup Monday night as the Blue Jays opened their series against the Orioles, clinging to their fading postseason chances.",
+        "Guerrero was removed from Sunday’s finale against the Rangers with left lower back tightness, something that flared up when he stretched to make a play at first base a couple of days prior. It hadn't improved much by the time the Blue Jays got to Baltimore.",
+        "The Blue Jays enter this week’s three-game set in Baltimore sitting a full three games back of the White Sox and do not hold that tiebreaker, making their path to the third Wild Card spot extremely challenging. Still, manager John Schneider expects Guerrero to be back in the lineup soon, regardless of the Wild Card context.",
+        "“As long as he feels better and isn’t really uncomfortable swinging,” Schneider said. “He’s really just day to day.”",
+        "Guerrero has dealt with some back issues throughout the season, one of several minor issues he’s played through. During Sunday’s game in Texas, though, it began affecting his swing enough for the Blue Jays to make a move.",
+        "“It’s more when he’s landing and rotating,” Schneider said. “You could see it in some of his swings yesterday. We knew going in that he was a little tight, but he was not really getting his normal swing off.”",
+        "Given the rain in the forecast this week in Baltimore, including what looks like a messy day on Tuesday, it’s possible Guerrero has some additional time to heal up. After this series, the Blue Jays return home to face the Reds beginning Friday for their final regular-season series."
+      ],
+      "titleZh": "Vladimir Guerrero Jr.因背部紧绷缺席蓝鸟与金莺双重赛首战",
+      "summaryZh": "Vladimir Guerrero Jr.因背部紧绷连续缺阵，错过了蓝鸟对阵金莺的比赛。",
+      "bodyZh": [
+        "巴尔的摩——随着多伦多蓝鸟开启对阵巴尔的摩金莺的系列赛，并紧紧咬住逐渐黯淡的季后赛希望，Vladimir Guerrero Jr.于周一晚上被移出了先发阵容。",
+        "Guerrero是在周日对阵得克萨斯游骑兵的系列赛收官战中因左侧下背部紧绷而被换下场的，几天前他在一垒防守伸展接球时就曾出现过这种情况。当蓝鸟抵达巴尔的摩时，这一情况并未得到明显改善。",
+        "蓝鸟在进入本周于巴尔的摩进行的三场系列赛时，落后芝加哥白袜整整3场胜差且不持有交手战绩优势，这使得他们冲击第三张外卡席位的道路极具挑战性。尽管如此，总教练John Schneider表示，无论外卡形势如何，他预计Guerrero很快就会重回先发阵容。",
+        "“只要他感觉好点并且挥棒时没有真的感到不适，”Schneider说道。“他目前只是每日观察名单状态。”",
+        "Guerrero在整个赛季中都断断续续地受到背部问题的困扰，这也是他带伤坚持出战的几处小伤之一。不过，在周日于得克萨斯的比赛中，这个问题开始对他的挥棒产生影响，促使蓝鸟做出调整。",
+        "“主要是在他落地和转体时，”Schneider说道。“你昨天从他的某些挥棒中就能看出来。我们赛前就知道他有点紧绷，但他确实没能打出正常的挥棒。”",
+        "鉴于本周巴尔的摩预报有雨，包括周二看起来天气会相当糟糕，Guerrero有可能获得更多时间来进行康复。在此次系列赛之后，蓝鸟将返回主场，从周五开始对阵辛辛那提红人，迎来他们本赛季的最后一个常规赛系列赛。"
+      ],
+      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/yh6eiqyjieleujbnrpx7",
+      "translationSourceHash": "176c4412d0c5f8a5b6a85b65ab5603b47ee5322cde6f9ffa3e99b18e72a71645",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-09-23T17:20:06.247Z",
+      "author": "Keegan Matheson",
+      "publishedAt": "2026-09-23T15:56:00.000Z",
+      "url": "https://www.mlb.com/bluejays/news/vladimir-guerrero-jr-out-of-lineup-against-orioles-lower-back-tightness",
+      "source": "MLB.com"
+    },
+    {
+      "id": "da6cd7db92c8a714874a50fe668a167f8cc163bce73fdb608addf3b6475ca67e",
+      "teamId": "toronto-blue-jays",
+      "teamName": "多伦多蓝鸟",
+      "titleEn": "Blue Jays-O's game postponed; split doubleheader Wednesday",
+      "summaryEn": "",
+      "bodyEn": [
+        "Tuesday night's scheduled game between the Orioles and Toronto Blue Jays in Baltimore has been postponed due to ongoing inclement weather. The game will be made up as part of a split-admission doubleheader Wednesday, September 23. Separate tickets will be required to attend each game at Oriole Park at Camden Yards. Game one will begin at 1:35 p.m. ET with game two scheduled for 6:35 p.m. Gates for game one will open at 12:30 p.m. and gates for game two will open at 5:30 p.m. There will be no early access to Eutaw Street to watch batting practice.",
+        "Tickets for tonight’s postponed game will automatically be valid for game one on Wednesday, September 23, at 1:35 p.m. Fans that prefer to exchange for tomorrow night’s 6:35 p.m. game are able to do so until 12:35 p.m. tomorrow. Additionally, fans can expect to receive communication regarding a complimentary field level ticket offer for an early season game next season. Details will be communicated directly with fans at the start of the season. For additional information, visit Orioles.com/Weather.",
+        "Tickets purchased for the originally scheduled 6:35 p.m. game on Wednesday, September 23, are still valid.",
+        "Fans can continue to access their tickets through the MLB Ballpark App and can transfer or resell these tickets at SeatGeek.com."
+      ],
+      "titleZh": "蓝鸟与金莺之战延期，周三将进行双重赛",
+      "summaryZh": "由于恶劣天气，多伦多蓝鸟与巴尔的摩金莺的比赛延期至周三进行双重赛。",
+      "bodyZh": [
+        "原定于周二晚间在巴尔的摩进行的巴尔的摩金莺与多伦多蓝鸟的比赛，由于持续的恶劣天气已经延期。这场比赛将作为9月23日星期三分割进场双重赛的一部分进行补赛。观看金莺球场（Oriole Park at Camden Yards）每场比赛均需单独的门票。第一场比赛将于美东时间下午1:35开始，第二场比赛定于下午6:35开始。第一场比赛的大门将于下午12:30开放，第二场比赛的大门将于下午5:30开放。球迷将无法提前进入尤托街（Eutaw Street）观看打击练习。",
+        "今晚延期比赛的门票将自动适用于9月23日星期三下午1:35的第一场比赛。希望更换为明天晚上6:35比赛的球迷可以在明天下午12:35之前进行更换。此外，球迷还将收到关于下赛季早些时候某场比赛免费内场看台门票优惠的通知。相关细节将在赛季初直接传达给球迷。如需了解更多信息，请访问 Orioles.com/Weather。",
+        "原定于9月23日星期三下午6:35进行的比赛所购买的门票仍然有效。",
+        "球迷可以继续通过 MLB Ballpark App 访问他们的门票，并可以在 SeatGeek.com 上转让或转售这些门票。"
+      ],
+      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/lljretfz7uhkpepvmfww",
+      "translationSourceHash": "e8cbe9c4dc8a6697dff6d7c945e7aa331c9a0e7511ec59dc9684f125b032119e",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-09-22T20:09:28.244Z",
+      "author": "MLB.com",
+      "publishedAt": "2026-09-22T17:55:09.000Z",
+      "url": "https://www.mlb.com/bluejays/news/blue-jays-orioles-september-22-game-postponed",
       "source": "MLB.com"
     },
     {
@@ -185,41 +220,6 @@
       "author": "Keegan Matheson",
       "publishedAt": "2026-09-22T02:34:00.000Z",
       "url": "https://www.mlb.com/bluejays/news/brett-bateman-exits-with-injury-after-sliding-catch",
-      "source": "MLB.com"
-    },
-    {
-      "id": "29ff2a779fc146a5a2527e75c6724ad7b00dd53d312384e2e25c15b70f2dd510",
-      "teamId": "toronto-blue-jays",
-      "teamName": "多伦多蓝鸟",
-      "titleEn": "Vladdy kept out of lineup vs. Baltimore with lower back tightness",
-      "summaryEn": "",
-      "bodyEn": [
-        "BALTIMORE -- Vladimir Guerrero Jr. was out of the lineup Monday night as the Blue Jays opened their series against the Orioles, clinging to their fading postseason chances.",
-        "Guerrero was removed from Sunday’s finale against the Rangers with left lower back tightness, something that flared up when he stretched to make a play at first base a couple of days prior. It hadn't improved much by the time the Blue Jays got to Baltimore.",
-        "The Blue Jays enter this week’s three-game set in Baltimore sitting a full three games back of the White Sox and do not hold that tiebreaker, making their path to the third Wild Card spot extremely challenging. Still, manager John Schneider expects Guerrero to be back in the lineup soon, regardless of the Wild Card context.",
-        "“As long as he feels better and isn’t really uncomfortable swinging,” Schneider said. “He’s really just day to day.”",
-        "Guerrero has dealt with some back issues throughout the season, one of several minor issues he’s played through. During Sunday’s game in Texas, though, it began affecting his swing enough for the Blue Jays to make a move.",
-        "“It’s more when he’s landing and rotating,” Schneider said. “You could see it in some of his swings yesterday. We knew going in that he was a little tight, but he was not really getting his normal swing off.”",
-        "Given the rain in the forecast this week in Baltimore, including what looks like a messy day on Tuesday, it’s possible Guerrero has some additional time to heal up. After this series, the Blue Jays return home to face the Reds beginning Friday for their final regular-season series."
-      ],
-      "titleZh": "下背部紧绷，Vladimir Guerrero Jr.对阵巴尔的摩缺阵",
-      "summaryZh": "Vladimir Guerrero Jr.因下背部紧绷缺席对阵巴尔的摩金莺的比赛。",
-      "bodyZh": [
-        "巴尔的摩——周一晚上多伦多蓝鸟客场开启与巴尔的摩金莺的系列赛，随着季后赛希望渐行渐远，Vladimir Guerrero Jr.并未进入先发阵容。",
-        "Guerrero在周日对阵得克萨斯游骑兵的常规赛收官战中因左侧下背部紧绷而被换下，几天前他在一垒防守伸展时这个老问题就曾复发。当多伦多蓝鸟抵达巴尔的摩时，情况并没有明显改善。",
-        "多伦多蓝鸟本周在巴尔的摩进行三场系列赛，目前落后芝加哥白袜整整三个胜场且没有对战优势，这使得他们冲击第三张外卡席位的道路极具挑战性。尽管如此，总教练John Schneider预计Guerrero很快就会回到先发阵容中，这与外卡形势无关。",
-        "“只要他感觉好点并且挥棒时没有不适感，”Schneider说道。“他目前的状态就是每日观察。”",
-        "Guerrero在整个赛季中都受到一些背部问题的困扰，这是他带伤坚持比赛的众多小伤病之一。不过在周日于得克萨斯进行的比赛中，这开始对他的挥棒产生影响，促使多伦多蓝鸟做出换人决定。",
-        "“主要是在他落地和旋转身体时，”Schneider说道。“你昨天从他的几次挥棒中就能看出来。我们在赛前就知道他有点紧绷，但他确实没能打出正常的挥棒。”",
-        "鉴于本周巴尔的摩预报有雨，包括周二看起来天气会非常糟糕，Guerrero可能会有一些额外的恢复时间。结束这个系列赛后，多伦多蓝鸟将返回主场，从周五开始迎战辛辛那提红人，进行他们本赛季的最后一个常规赛系列赛。"
-      ],
-      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/yh6eiqyjieleujbnrpx7",
-      "translationSourceHash": "c90f77ff777cfefa2ee4fca439f500a36d38c8c36f06e71acbf3120eea3a4f69",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-09-21T22:51:28.151Z",
-      "author": "Keegan Matheson",
-      "publishedAt": "2026-09-21T22:13:12.000Z",
-      "url": "https://www.mlb.com/bluejays/news/vladimir-guerrero-jr-out-of-lineup-against-orioles-lower-back-tightness",
       "source": "MLB.com"
     },
     {
