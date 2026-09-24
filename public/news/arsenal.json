@@ -1,12 +1,39 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-09-24T20:29:23.125Z",
+  "updatedAt": "2026-09-24T23:27:05.496Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "39d07540e7b246c4314973f7dd05b9ad086bac22c08feaed5cf255547fb78984",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Full match: Arsenal Women 1-0 HB Koge Women",
+      "summaryEn": "A full match replay of Tuesday's 1-0 win over HB Koge Women is available to watch now.",
+      "bodyEn": [
+        "A full match replay of Tuesday's 1-0 win over HB Koge Women is available to watch now.",
+        "We just about got three points on the board in our opening UEFA Women's Champions League fixture by way of Mariona Caldentey's 93rd-minute penalty.",
+        "Press play on the video above to see every kick of the game in Meadow Park."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/889f74666a8a-gettyimages-2296720355.webp",
+      "author": "Stephen Wright",
+      "publishedAt": "2026-09-24T22:00:00.000Z",
+      "url": "https://www.arsenal.com/news/full-match-arsenal-women-1-0-hb-koge-women-aLYQQ2l3Ranm",
+      "source": "Arsenal.com",
+      "titleZh": "全场比赛：阿森纳女足 1-0 克厄女足",
+      "summaryZh": "周二战胜克厄女足的全场比赛回放现已可以观看。",
+      "bodyZh": [
+        "周二以 1-0 战胜克厄女足的全场比赛回放现已可以观看。",
+        "凭借马里奥娜·卡尔德内伊在第 93 分钟的点球，我们在欧洲女足冠军联赛首场比赛中艰难全取三分。",
+        "点击上方视频，回顾在梅多公园球场进行的这场比赛的每一个精彩瞬间。"
+      ],
+      "translationSourceHash": "d92c5477e12e7bb6a3c2a86fb1e689d8b8db17a06ecc63bfcb2ef6b6eb3ed831",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-09-24T23:27:05.490Z"
+    },
     {
       "id": "6080d06cdac1dcbff8b8260fc1af3a258da567991d51fe6989f271fa0a19422f",
       "teamId": "arsenal",
@@ -857,47 +884,10 @@
       "translationSourceHash": "2cd8b0f2f9ebe13ded67073fde297a7b034e296eaaa5465c380441ee9fe8416c",
       "translationModel": "gemini-3.5-flash-lite",
       "translatedAt": "2026-09-24T20:29:23.125Z"
-    },
-    {
-      "id": "7c15a8d728db7da63c5f22ba126d093937eb128ddc20e592916e7d01ef0daa79",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "The true story behind Sagna's move to Arsenal",
-      "summaryEn": "The former Gunner explains how Henry and Vieira helped him make the move to north London",
-      "bodyEn": [
-        "It’s been many years since Bacary Sagna swapped Auxerre for Arsenal, leaving central France for a new life in our capital.",
-        "Bacary went on to make 284 appearances for the club, lifting the FA Cup in 2014 during a seven-year spell.",
-        "On the anniversary of his signing, the former France international lifted the lid on how he found his way to north London.",
-        "“I used to play in Auxerre for three years,” Sagna told Arsenal Player. “We won the French Cup and then I joined the national team’s under-21s. We had a good campaign because we qualified for the European Championship in Portugal in 2006.",
-        "“We lost in the semi-final and I think I remember seeing Gilles Grimandi in the stands. I knew him as a player but I didn’t know he was working for Arsenal.",
-        "“The following year I was playing all season, I was named best right-back in France and by March, my agent contacted me and said Arsenal were interested and they wanted me to join the team. So I was like ‘Oooh, Arsenal!’",
-        "“As a French boy, it was a dream to play for Arsenal because they were the ‘French English team’ because of Thierry, because of Patrick Vieira and even more recently because of Abou Diaby. I used to play with him in France and I was only glad to see him playing for the team. I had the opportunity myself to come and play for the team and so I was like ‘please!’.",
-        "“It was a bit of a battle because the team didn’t want to let me go and I spent my summer on the phone, even when I was on the beach. Maybe two days before the team came back for pre-season, I had the green light to come and join Arsenal. So I packed my stuff and I moved.”"
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/7b87856094d8-bacary-sagna.webp",
-      "author": "Arsenal FC",
-      "publishedAt": "2018-07-12T13:19:16.000Z",
-      "url": "https://www.arsenal.com/news/the-true-story-behind-sagnas-move-to-arsenal-aWg3G2c4KMQH",
-      "source": "Arsenal.com",
-      "titleZh": "萨尼亚转会阿森纳背后的真实故事",
-      "summaryZh": "前阿森纳球员萨尼亚谈到了亨利和维埃拉如何帮助他加盟球队。",
-      "bodyZh": [
-        "距离巴卡里·萨尼亚从欧塞尔转投阿森纳、离开法国中部来到我们的首都开启新生活已经过去了很多年。",
-        "在随后的七年里，萨尼亚为俱乐部出场 284 次，并在 2014 年举起了足总杯冠军。",
-        "在这位前法国国脚签约纪念日之际，他揭秘了自己当年是如何来到北伦敦的。",
-        "萨尼亚告诉阿森纳球员频道：“我曾在欧塞尔效力了三年。我们赢得了法国杯，随后我入选了法国U21国家队。我们的征程很顺利，因为我们获得了 2006 年葡萄牙欧洲锦标赛的参赛资格。”",
-        "“我们在半决赛中失利，我记得自己当时好像看到吉尔·格里曼迪在看台上。我认识作为球员的他，但并不知道他在阿森纳工作。”",
-        "“第二年我踢满了整个赛季，被评为法国最佳右后卫。到了三月，我的经纪人联系我说阿森纳对我很感兴趣，他们希望我加入球队。当时我的反应是：‘哦，阿森纳！’",
-        "“作为一个法国男孩，为阿森纳效力是一个梦想，因为由于蒂埃里、帕特里克·维埃拉，甚至更近一些的阿布·迪亚比的存在，他们被称为‘英格兰的法国队’。我以前在法国就和他一起踢球，看到他为这支球队效力我非常高兴。我自己也有机会来到这里为球队踢球，所以我当时想：‘求求了！’",
-        "“这经历了一点波折，因为球队不想放我走，我整个夏天都在打电话，甚至在海滩上也是如此。大约在球队归队参加季前训练前两天，我得到了加盟阿森纳的绿灯。所以我收拾好行李就出发了。”"
-      ],
-      "translationSourceHash": "c3f7c39baa89e5e126d0410b0467c62106ced5d45ad9e43054d4b875a55b6fd7",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-09-24T17:18:37.419Z"
     }
   ],
   "pendingNotificationIds": [
     "7bca52bc6e80f4fbdb528458238365c91a8bad79ab662a46e39753edbe6fa976",
-    "7c15a8d728db7da63c5f22ba126d093937eb128ddc20e592916e7d01ef0daa79"
+    "39d07540e7b246c4314973f7dd05b9ad086bac22c08feaed5cf255547fb78984"
   ]
 }
