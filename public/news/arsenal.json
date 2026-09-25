@@ -1,12 +1,39 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-09-24T23:27:05.496Z",
+  "updatedAt": "2026-09-25T07:45:05.540Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "b468585b470e7f59dc634d4b9b6628fb635043393b50f02514f234402de6a922",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Watch our best goals off the woodwork!",
+      "summaryEn": "From Bruno Guimaraes to Martin Zubimendi, check out these incredible goals that went in off the post or crossbar",
+      "bodyEn": [
+        "There's something extra special about a goal that goes in off either post or crossbar.",
+        "Over the years we've netted a load of goals that have found the net via the goal frame - from Declan Rice's curling effort at Old Trafford to Noni Madueke's thunderbolt at Club Brugge.",
+        "We've dived into the archive to find some of the very best, which you can enjoy now by pressing play on the video above!"
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/13c99d76cfa5-gettyimages-2204186241.webp",
+      "author": "Charlie Peat",
+      "publishedAt": "2026-09-25T07:30:00.000Z",
+      "url": "https://www.arsenal.com/news/watch-our-best-goals-off-the-woodwork-acNGf4s09bxb",
+      "source": "Arsenal.com",
+      "titleZh": "观看我们的门框反弹精彩进球！",
+      "summaryZh": "回顾这些击中门柱或横梁后弹入网窝的精彩进球。",
+      "bodyZh": [
+        "击中门柱或横梁后弹入网窝的进球总有一种特别的魅力。",
+        "多年来，我们打进过许多通过门框折射入网的进球——从德克兰·赖斯在老特拉福德的兜射，到诺尼·马杜埃凯在布鲁日俱乐部的重炮轰门。",
+        "我们翻阅了档案库找出了其中最精彩的一些进球，现在点击上方视频即可欣赏！"
+      ],
+      "translationSourceHash": "b3fc2e0e6dfa85ceef6914104f7a043d12815b98c024e46081260a5d9bac3484",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-09-25T07:45:03.160Z"
+    },
     {
       "id": "39d07540e7b246c4314973f7dd05b9ad086bac22c08feaed5cf255547fb78984",
       "teamId": "arsenal",
@@ -549,114 +576,6 @@
       "translatedAt": "2026-09-24T17:09:15.649Z"
     },
     {
-      "id": "75670730b29e1c8b3c2451da098592f4559a5607f40e9abc278c5f866aa1da8c",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "27 great stats from our 25/26 Premier League season",
-      "summaryEn": "There have been a host of landmarks, milestones and records we've broken on the way to our first title in 22 years",
-      "bodyEn": [
-        "The 2025/26 Premier League campaign has been one to remember, as we have clinched our first title in 22 years - but there are many other numbers that have led us to glory.",
-        "We’ve delved through the data to come up with 27 of the best facts from the 38 league games that led us to our name being engraved on the trophy for the fourth time, and the 14th time we’ve been crowned champions of England:",
-        "We scored 25 set-piece goals in the Premier League this season (excl. pens), the highest total in the division, and also set a new record for goals scored from corners in a single campaign - 19.",
-        "We are the first team to both avoid having a player sent off and not concede a penalty in a Premier League season.",
-        "We prevented our opponents from having a shot on target in six different Premier League games, the joint-most of any side in a campaign on record (since 2003/04) in the competition.",
-        "David Raya kept 19 clean sheets this season, the joint-most of any Arsenal goalkeeper in a single Premier League campaign, alongside David Seaman who also had 19 in 1993/94 & 1998/99.",
-        "Martin Zubimendi is just the third outfield player to appear in every game in a debut Premier League campaign for us, after Santi Cazorla (2012/13) and Declan Rice (2023/24).",
-        "He’s also just the second player to win the title and play every game in his first-ever season in the Premier League for any club, after Jens Lehmann in 2003/04.",
-        "Max Dowman became the youngest player to score a Premier League goal when he netted against Everton aged 16 years and 73 days, and the youngest scorer in our history.",
-        "On the final day of the season, he became the youngest player to start a Premier League game, aged 16 years and 144 days against Crystal Palace. He is also the youngest player to win a Premier League title, beating Phil Foden by a year and a half.",
-        "We had 23 combined goals and assists from substitutes in the Premier League this season, more than any other side and our joint-most in a Premier League campaign (also 23 in 2009/10).",
-        "Among managers to take charge of at least 20, Mikel Arteta has the best points-per-game rate (2.1) and the best win rate (63%) in Premier League London derbies (P73 W46 D17 L10).",
-        "Aged 44, Mikel is the second-youngest manager to lead a side to the Premier League title, after Jose Mourinho.",
-        "We kept the most clean sheets (19), conceded the lowest xG (28.5), fewest big chances (50), shots (310) and shots on target (90). Our 19 clean sheets this term are the most we’ve kept in a Premier League campaign since 1998/99 (23).",
-        "Our averages for game goals conceded (0.7), shots on target faced (2.4), shots faced per game (8.2) and expected goals against (0.7) were the lowest tallies across Europe’s top five leagues this season.",
-        "2025/26 was the fifth time we have led the way in the Premier League on Christmas Day, but the first time we’ve gone on to win the title in that season. In fact, it’s the first time we’ve been top on Christmas Day and gone on to win the top-flight since 1947/48.",
-        "In October, we registered our 700th Premier League victory, becoming just the second side to hit that milestone, along with Manchester United.",
-        "In May, we surpassed 500 clean sheets in the competition, again, only United have more.",
-        "We have won 25+ Premier League games in three of the last four seasons (26 in 2022/23, 28 in 2023/24, 26 in 2025/26), with Mikel Arteta achieving this feat as often as Arsene Wenger did (26 in 2001/02, 26 in 2003/04, 25 in 2004/05).",
-        "Bukayo Saka became the second youngest player (24 years, 255 days) to reach both 50+ goals and 50+ assists in Premier League history (60 goals, 50 assists), behind only Wayne Rooney who was 24 years and 84 days when he did so.",
-        "When Viktor Gyokeres scored his second goal in our 4-1 win over Tottenham in February, he also netted our 1,000th away goal in our Premier League history.",
-        "We completed a league double over Tottenham Hotspur in back-to-back seasons for the first time since 1987/88 and 1988/89.",
-        "The 4-1 win at Tottenham in February was our biggest away league derby day win since a 5-0 victory in December 1978. This is the second season in which we won both league meetings with Spurs by 3+ goals, after the 1934/35 campaign.",
-        "William Saliba is the first Arsenal player to win in each of his first four away league appearances at Tottenham.",
-        "Eberechi Eze is only the second player to score four or more league goals in north London derbies in a season, along with Ted Drake in 1934/35 (5). He became the fourth player to score a hat-trick in a competitive derby after Drake (1934), Terry Dyson (1961) and Alan Sunderland (1978).",
-        "We extended the longest unbeaten home record for any side against another in English football league history to 33 games when we beat Fulham 3-0 in May.",
-        "Against Leeds United in August, Jurrien Timber became only the second Arsenal defender to register 3+ goal involvements in a Premier League match (2 goals, 1 assists) with Nacho Monreal being the other.",
-        "At Bournemouth in January, Gabriel became just the second defender to score 20 Premier League goals for us after Laurent Koscielny (22).",
-        "We kept a 32nd clean sheet in 62 Premier League games against Newcastle, the most any side has kept against a single opponent in the division."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/4ed76b7bce59-london-england-l-r-arsenals-william-saliba-gabriel-magalhaes-piero-hincapie-and.webp",
-      "author": "Jonathon Rogers",
-      "publishedAt": "2026-05-26T13:31:51.548Z",
-      "url": "https://www.arsenal.com/news/27-great-stats-from-our-2526-premier-league-season-ageBS3l8XFZn",
-      "source": "Arsenal.com",
-      "titleZh": "25/26赛季英超联赛27项精彩数据统计",
-      "summaryZh": "盘点阿森纳夺得22年来首个英超冠军过程中的27个里程碑数据。",
-      "bodyZh": [
-        "2025/26赛季的英超征程令人难忘，我们时隔22年再次夺得联赛冠军——而成就我们荣耀的还有许多其他数字。",
-        "我们深入挖掘了数据，从38场联赛中总结出27个最佳事实。我们的名字第四次被刻在奖杯上，这也是我们第14次加冕英格兰顶级联赛冠军：",
-        "本赛季我们在英超中通过定位球打入25球（不含点球），是联赛中进球最多的球队，同时也创造了单赛季角球进球的新纪录——19球。",
-        "我们是英超历史上第一支在单赛季中既没有球员被罚下、也没有被判罚点球的球队。",
-        "我们在6场不同的英超比赛中零封对手的射正次数，追平了该赛事有记录以来（2003/04赛季以来）单赛季单支球队的最高纪录。",
-        "大卫·拉亚本赛季完成了19场零封，追平了阿森纳门将在单赛季英超联赛中的最多零封纪录，大卫·希曼曾在1993/94赛季和1998/99赛季也达成过这一成就。",
-        "马丁·苏比门迪成为队史第三位在英超处子赛季中场场不落的外场球员，此前两人是卡索拉（2012/13赛季）和德克兰·赖斯（2023/24赛季）。",
-        "他也是继2003/04赛季的延斯·莱曼之后，第二位在英格兰顶级联赛生涯首个赛季即夺冠且场场出战的球员。",
-        "马克斯·多曼在对阵埃弗顿时以16岁零73天的年龄破门，成为英超历史上最年轻的进球球员，也是队史最年轻的进球者。",
-        "在赛季收官战对阵水晶宫时，他以16岁零144天的年龄成为英超历史上最年轻的首发球员。他也是赢得英超冠军最年轻的球员，比菲尔·福登年轻了一年半。",
-        "本赛季我们在英超中由替补球员贡献了23个进球和助攻，多于其他任何球队，这也是我们队史在单赛季英超中的并列最高纪录（2009/10赛季也曾达到23个）。",
-        "在执教至少20场英格兰伦敦德比的主教练中，米克尔·阿尔特塔拥有最高的场均积分（2.1分）和最高的胜率（63%）（73场46胜17平10负）。",
-        "现年44岁的米克尔是带领球队夺得英超冠军的第二年轻的主教练，仅次于何塞·穆里尼奥。",
-        "我们保持了最多的零封场次（19场），丢球预期最低（28.5），绝佳机会丢失最少（50次）、被射门数最少（310次）以及被射正数最少（90次）。我们本赛季的19场零封是自1998/99赛季（23场）以来单赛季英超联赛中的最多纪录。",
-        "我们本赛季的场均丢球数（0.7球）、场均面对射正数（2.4次）、场均被射门数（8.2次）以及预期失球数（0.7）均是欧洲五大联赛中的最低数据。",
-        "2025/26赛季是我们第五次在圣诞节当天领跑英超积分榜，但这是我们首次在圣诞节榜首的情况下最终夺得当赛季的冠军。事实上，这也是我们自1947/48赛季以来首次在圣诞节排名第一并最终赢得顶级联赛冠军。",
-        "在10月，我们迎来了英超联赛的第700场胜利，成为继曼联之后第二支达成这一里程碑的球队。",
-        "在5月，我们在该赛事中的零封次数突破了500场大关，同样只有曼联的零封次数更多。",
-        "在过去的四个赛季中，我们有三个赛季的英超胜场达到25场以上（2022/23赛季26胜，2023/24赛季28胜，2025/26赛季26胜），米克尔·阿尔特塔达成这一成就的次数与阿尔塞纳·温格持平（2001/02赛季26胜，2003/04赛季26胜，2004/05赛季25胜）。",
-        "萨卡成为英超历史上第二年轻（24岁255天）达成50粒进球和50次助攻的球员（60球，50助攻），仅次于韦恩·鲁尼（达成时24岁84天）。",
-        "当约克雷斯在我们4-1击败托特纳姆热刺的比赛中攻入第二粒进球时，他也打入了我们在英超历史上的第1000个客场进球。",
-        "这是自1987/88赛季和1988/89赛季以来，我们首次在连续两个赛季中对托特纳姆热刺完成联赛双杀。",
-        "2月4-1击败热刺的比赛是我们自1978年12月以5-0取胜以来，在客场赢得的最大比分联赛德比胜利。这是我们第二次在单个赛季中以3球或以上的优势主客场双杀热刺，上一次是在1934/35赛季。",
-        "萨利巴成为第一位在热刺主场的前四场客场联赛中全部取胜的阿森纳球员。",
-        "埃贝雷奇·埃泽是继1934/35赛季的特德·德雷克（5球）之后，第二位在单赛季北伦敦德比中打入四粒或以上联赛进球的球员。他也成为了继德雷克（1934年）、特里·戴森（1961年）和阿兰·桑德兰（1978年）之后，第四位在正式德比战中上演帽子戏法的球员。",
-        "我们在5月以3-0击败富勒姆后，将英格兰足球联赛历史上单一球队对阵另一支球队的最长主场不败纪录延长到了33场。",
-        "在8月对阵利兹联的比赛中，于尔恩·廷贝尔成为阿森纳历史上仅有的第二位在单场英超比赛中直接参与3粒以上进球的后卫（2进球，1助攻），另一位是纳乔·蒙雷亚尔。",
-        "1月在对阵伯恩茅斯的比赛中，加布里埃尔成为继洛朗·科斯切尔尼（22球）之后，第二位为我们打入20粒英超进球的后卫。",
-        "我们在对阵纽卡斯尔联的62场英超比赛中完成了第32次零封，这是该联赛中单一球队对阵某个对手取得的最多零封纪录。"
-      ],
-      "translationSourceHash": "180b7eba8496f4bd8e31ca38c5253dd325933fe31e88b481098708fb676b5de2",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-09-24T17:09:29.567Z"
-    },
-    {
-      "id": "ed5acf8cc4d25bfb1d46bdaa4ab95dab6c67c928bdb8783c97316e2e8847c64f",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Ljungberg explains the \"We Won The League\" chant",
-      "summaryEn": "Freddie Ljungberg teaches you about the history of a song sung by our supporters home and away.",
-      "bodyEn": [
-        "“We won the league at Anfield, we won it at the Lane - twice! Stamford Bridge, Old Trafford, no-one can say the same…”",
-        "You’re probably familiar with the chant that our supporters sing at most home and away games, but do you know the history of the lyrics? They reflect on some of our greatest title-clinching matches away from home, stretching back almost a century ago to the 1930s.",
-        "Someone who played his part in a couple of those celebrated matches is Freddie Ljungberg, who lifted two titles with us in 2002 and 2004, and he has provided a refresher for those who want to know the backstory!",
-        "Press play on the video above for today’s history lesson."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/c9ce4dd25bd6-ljungberg-we-won-it-chant.webp",
-      "author": "Stephen Wright",
-      "publishedAt": "2026-05-23T08:00:00.000Z",
-      "url": "https://www.arsenal.com/news/ljungberg-explains-the-we-won-the-league-chant-awxyO5h8hLQw",
-      "source": "Arsenal.com",
-      "titleZh": "永贝里解释“我们赢得了联赛”助威歌的含义",
-      "summaryZh": "弗雷迪·永贝里带您了解阿森纳球迷常唱歌曲的历史渊源。",
-      "bodyZh": [
-        "“我们在安菲尔德赢得联赛，我们在白鹿巷赢得联赛——两次！斯坦福桥，老特拉福德，没有人能说出同样的话……”",
-        "你可能对我们的球迷在主客场比赛中经常唱的这首助威歌很熟悉，但你知道这些歌词背后的历史吗？它们回顾了我们在客场夺得的一些最伟大的冠军比赛，可以追溯到近一个世纪前的20世纪30年代。",
-        "弗雷迪·永贝里曾亲历其中几场著名的比赛，他在2002年和2004年随我们两夺联赛冠军，他为那些想要了解背景故事的人提供了一次复习！",
-        "点击播放上方的视频，收看今天的历史课。"
-      ],
-      "translationSourceHash": "92cdab55656d18dde921db59198151ecc5b5ec2b1d7f82b79bd175e38bf324c1",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-09-24T17:12:00.255Z"
-    },
-    {
       "id": "86066301f82792b5a5fcf500428d6ccd10cc8424f4e385485534d71880364895",
       "teamId": "arsenal",
       "teamName": "阿森纳",
@@ -884,7 +803,47 @@
       "translationSourceHash": "2cd8b0f2f9ebe13ded67073fde297a7b034e296eaaa5465c380441ee9fe8416c",
       "translationModel": "gemini-3.5-flash-lite",
       "translatedAt": "2026-09-24T20:29:23.125Z"
+    },
+    {
+      "id": "7c15a8d728db7da63c5f22ba126d093937eb128ddc20e592916e7d01ef0daa79",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "The true story behind Sagna's move to Arsenal",
+      "summaryEn": "The former Gunner explains how Henry and Vieira helped him make the move to north London",
+      "bodyEn": [
+        "It’s been many years since Bacary Sagna swapped Auxerre for Arsenal, leaving central France for a new life in our capital.",
+        "Bacary went on to make 284 appearances for the club, lifting the FA Cup in 2014 during a seven-year spell.",
+        "On the anniversary of his signing, the former France international lifted the lid on how he found his way to north London.",
+        "“I used to play in Auxerre for three years,” Sagna told Arsenal Player. “We won the French Cup and then I joined the national team’s under-21s. We had a good campaign because we qualified for the European Championship in Portugal in 2006.",
+        "“We lost in the semi-final and I think I remember seeing Gilles Grimandi in the stands. I knew him as a player but I didn’t know he was working for Arsenal.",
+        "“The following year I was playing all season, I was named best right-back in France and by March, my agent contacted me and said Arsenal were interested and they wanted me to join the team. So I was like ‘Oooh, Arsenal!’",
+        "“As a French boy, it was a dream to play for Arsenal because they were the ‘French English team’ because of Thierry, because of Patrick Vieira and even more recently because of Abou Diaby. I used to play with him in France and I was only glad to see him playing for the team. I had the opportunity myself to come and play for the team and so I was like ‘please!’.",
+        "“It was a bit of a battle because the team didn’t want to let me go and I spent my summer on the phone, even when I was on the beach. Maybe two days before the team came back for pre-season, I had the green light to come and join Arsenal. So I packed my stuff and I moved.”"
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/7b87856094d8-bacary-sagna.webp",
+      "author": "Arsenal FC",
+      "publishedAt": "2018-07-12T13:19:16.000Z",
+      "url": "https://www.arsenal.com/news/the-true-story-behind-sagnas-move-to-arsenal-aWg3G2c4KMQH",
+      "source": "Arsenal.com",
+      "titleZh": "萨尼亚加盟阿森纳背后的真实故事",
+      "summaryZh": "前阿森纳后卫萨尼亚透露了亨利和维埃拉如何帮助他转会北伦敦。",
+      "bodyZh": [
+        "距离萨尼亚从欧塞尔转会阿森纳、离开法国中部来到我们首都开启新生活已经过去很多年了。",
+        "在效力俱乐部的七年时间里，巴卡里总共为球队出场284次，并在2014年举起了足总杯冠军。",
+        "在该笔签约的纪念日之际，这位前法国国脚公开了他当年是如何加盟北伦敦的。",
+        "“我在欧塞尔踢了三年球，”萨尼亚告诉阿森纳频道。“我们赢得了法国杯，然后我进入了法国U21国家队。我们的征程很顺利，因为我们获得了2006年在葡萄牙举行的欧洲U21锦标赛的参赛资格。”",
+        "“我们在半决赛中失利，我记得我当时看到吉尔·格里马迪（Gilles Grimandi）在看台上。我认识他作为球员时的样子，但我不知道他在为阿森纳工作。”",
+        "“第二年我踢满了整个赛季，被评为法国最佳右后卫。到了三月，我的经纪人联系我说阿森纳对我很感兴趣，他们想让我加入球队。当时我的反应是：‘哦，阿森纳！’",
+        "“作为一个法国男孩，为阿森纳效力是梦想，因为他们是‘法国化英格兰球队’，因为蒂埃里（亨利），因为帕特里克·维埃拉，甚至更近一点因为阿布·迪亚比。我以前在法国和他一起踢过球，很高兴看到他为这支球队效力。我自己也有机会来到这支球队效力，所以我当时的想法是：‘求你了！’",
+        "“转会过程有点波折，因为球队不想放我走，整个夏天我都在打电话，甚至在沙滩上也是如此。大约在球队归队参加季前赛的两天前，我得到了前往阿森纳的绿灯。所以我收拾好行李，搬到了那里。”"
+      ],
+      "translationSourceHash": "c3f7c39baa89e5e126d0410b0467c62106ced5d45ad9e43054d4b875a55b6fd7",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-09-25T07:45:05.540Z"
     }
   ],
-  "pendingNotificationIds": []
+  "pendingNotificationIds": [
+    "b468585b470e7f59dc634d4b9b6628fb635043393b50f02514f234402de6a922",
+    "7c15a8d728db7da63c5f22ba126d093937eb128ddc20e592916e7d01ef0daa79"
+  ]
 }
