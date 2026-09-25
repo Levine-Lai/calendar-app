@@ -1,8 +1,43 @@
 {
   "teamId": "toronto-blue-jays",
   "teamName": "多伦多蓝鸟",
-  "updatedAt": "2026-09-25T17:57:07.187Z",
+  "updatedAt": "2026-09-25T21:30:33.589Z",
   "items": [
+    {
+      "id": "c3caf23fbb89e745b4f3d0621bf69de679bf60d9b72b17a5e904b20121e4682f",
+      "teamId": "toronto-blue-jays",
+      "teamName": "多伦多蓝鸟",
+      "titleEn": "Vlad Jr. apologizes to fans: 'I'm going to continue to keep working hard'",
+      "summaryEn": "",
+      "bodyEn": [
+        "Vladimir Guerrero Jr. apologized Friday for his recent controversial comments about his 14-year, $500 million contract.",
+        "“I feel that the comments I made the other day is not what I really wanted to say,” Guerrero said via team interpreter Hector Lebron. “Everyone deserves an apology from me. … I want to tell everyone that I’m going to continue to keep working hard to make my contract a great one.”",
+        "Guerrero also said his Hall of Fame father told him he had made a mistake and needed to apologize for what he said regarding his contract.",
+        "In a recent Spanish-language interview with Veronica Batista earlier this week, Guerrero Jr. said that the Blue Jays “didn’t pay me because I’m going to hit 40 [home runs] every year. They paid me for what I already accomplished.”",
+        "Guerrero was then asked about those comments on Wednesday, after the Blue Jays had been mathematically eliminated from the postseason, and he stood by what he said.",
+        "\"No, I don't regret myself. I'm not lying with what I say,” Guerrero said then via Lebron. “I understand some fans, they don't understand the way and what I was trying to say specifically, but what I said is the way I feel.\"",
+        "Guerrero is in the final weekend of what has been a frustrating season for him. Statistically, he has put up the worst numbers of his career, highlighted by a .263 average, a 92 OPS+ (100 is league average) and just nine home runs through 142 games. He has also been nagged by injuries for much of the season, including back trouble, and spent some time on the concussion injured list last month."
+      ],
+      "titleZh": "Vlad Jr.向球迷道歉：我将继续努力",
+      "summaryZh": "Vladimir Guerrero Jr.就之前的合约言论向球迷公开道歉。",
+      "bodyZh": [
+        "Vladimir Guerrero Jr.在周五为他最近关于自己14年5亿美元合约的争议言论进行了道歉。",
+        "Guerrero通过球队翻译Hector Lebron表示：“我觉得我那天说的话并不是我真正想表达的。每个人都值得我的一声道歉……我想告诉大家，我会继续努力工作，让我的这份合约物超所值。”",
+        "Guerrero还表示，他的名人堂父亲告诉他自己犯了错误，需要为关于合约的言论道歉。",
+        "本周早些时候，Guerrero Jr.在接受Veronica Batista的西班牙语采访时表示，多伦多蓝鸟“签下我不是因为我每年都能打出40支本垒打。他们付钱是为了我过去已经取得的成就”。",
+        "在多伦多蓝鸟在数学上确定无缘季后赛后，Guerrero于周三被问及这些言论，当时他坚持了自己的说法。",
+        "Guerrero当时通过Lebron表示：“不，我不后悔。我说话没有撒谎。我理解有些球迷不理解我的方式以及我具体想表达的意思，但我所说的话就是我的真实感受。”",
+        "Guerrero正经历对他而言令人沮丧的赛季的最后一个周末。从数据来看，他交出了职业生涯最差的成绩单，在142场比赛中打击率为.263，OPS+为92（联盟平均为100），仅敲出9支本垒打。此外，他本赛季大部分时间受到伤病困扰，包括背部问题，上个月还曾因脑震荡进入伤病名单。"
+      ],
+      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/mxvzqeifdp5ucxtcfniq",
+      "translationSourceHash": "2fa260aa14f9155cd1c240261289e24d3a9f7eef33b8145f4be601f79f087289",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-09-25T21:30:33.583Z",
+      "author": "Brian Murphy",
+      "publishedAt": "2026-09-25T21:08:28.000Z",
+      "url": "https://www.mlb.com/bluejays/news/vladimir-guerrero-jr-apologizes-to-fans-for-comments-on-contract",
+      "source": "MLB.com"
+    },
     {
       "id": "78d0feeee2b28c81bf7fdda19d8509bf7ce9457361ebaf3f9bece0eb8c7b9080",
       "teamId": "toronto-blue-jays",
@@ -1065,38 +1100,9 @@
       "publishedAt": "2026-09-18T03:29:58.000Z",
       "url": "https://www.mlb.com/bluejays/news/rangers-blue-jays-series-crucial-in-al-playoff-chase",
       "source": "MLB.com"
-    },
-    {
-      "id": "de3b2ce9cbb09cc68c7012924c40d4f9539396f5bffe701dfaa6ed994af77b1a",
-      "teamId": "toronto-blue-jays",
-      "teamName": "多伦多蓝鸟",
-      "titleEn": "Giddy up! Blue Jays rookies dress the part for trip down south",
-      "summaryEn": "",
-      "bodyEn": [
-        "The Blue Jays are heading down south for a massive series this weekend against the Rangers, with postseason implications aplenty. Toronto rookies certainly dressed for the occasion.",
-        "The Blue Jays’ first-year players -- including Brett Bateman, Charles McAdoo, Sean Keys, Kazuma Okamoto and Trey Yesavage -- all donned cowboy hats, plaid sleeveless shirts, cutoff jeans and cowboy boots. One fan even received a signed ear of corn.",
-        "The idea for this particular theme for the traditional rookie road trip came from 42-year-old Max Scherzer, according to Toronto veteran Myles Straw.",
-        "“He was excited to show me a couple of days ago, and I thought it would be great, especially for a couple of the guys we’ve got in the rookie class,” Straw said. “Hopefully, there are some pictures. I’m sure there will be some pictures posted and [the media] will probably like it.”",
-        "The Blue Jays' series with the Rangers begins Friday at Globe Life Field."
-      ],
-      "titleZh": "蓝鸟菜鸟盛装打扮迎客",
-      "summaryZh": "多伦多蓝鸟新秀换上牛仔装扮开启客场之旅。",
-      "bodyZh": [
-        "多伦多蓝鸟本周末将前往南方与得克萨斯游骑兵进行一系列关键比赛，这场系列赛对季后赛形势影响重大。多伦多新秀们为此精心打扮了一番。",
-        "多伦多蓝鸟的年轻球员们——包括Brett Bateman、Charles McAdoo、Sean Keys、Kazuma Okamoto和Trey Yesavage——全都戴上了牛仔帽，穿上了格子无袖衬衫、剪边牛仔裤和牛仔靴。甚至还有一位球迷收到了一根签过名的玉米。",
-        "据多伦多老将Myles Straw透露，这次传统菜鸟客场之旅的主题创意来自于42岁的Max Scherzer。",
-        "Straw表示：“他几天前兴奋地把这个想法展示给我看，我觉得这太棒了，特别是对于我们这批新秀来说。希望会有一些照片留念。我确信会有照片发出来，而且大家大概也会喜欢。”",
-        "多伦多蓝鸟与得克萨斯游骑兵的系列赛将于周五在环球人寿球场开打。"
-      ],
-      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/bv1jjjyyxxnd904bfho9",
-      "translationSourceHash": "c0132fbc4c145f942c3c2250b0110a76c2824a0940451288bb99a1b833e7380c",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-09-17T21:43:13.971Z",
-      "author": "Max Ralph",
-      "publishedAt": "2026-09-17T18:39:52.000Z",
-      "url": "https://www.mlb.com/bluejays/news/blue-jays-rookies-wear-cowboy-attire-for-texas-road-trip",
-      "source": "MLB.com"
     }
   ],
-  "pendingNotificationIds": []
+  "pendingNotificationIds": [
+    "c3caf23fbb89e745b4f3d0621bf69de679bf60d9b72b17a5e904b20121e4682f"
+  ]
 }
