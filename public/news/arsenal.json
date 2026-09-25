@@ -1,12 +1,151 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-09-25T13:44:22.853Z",
+  "updatedAt": "2026-09-25T18:35:16.240Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "9c30afd6aa104b5877ce40b50b7db81a11e22703c05fe54c6910036aab2dc206",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "The best training snaps before Chelsea showdown",
+      "summaryEn": "We head to Stamford Bridge on Saturday to take on London rivals Chelsea in the Women's Super League",
+      "bodyEn": [
+        "We'll be looking to continue our unbeaten start to the 2026/27 campaign when we take on Chelsea on Sunday afternoon, and you can see what we've been up to ahead of the derby with our latest training gallery.",
+        "Renee Slegers' side head to Stamford Bridge looking to repeat last season's heroics in West London, where we not only recorded our first league win at the Blues' main stadium, but also knocked our London rivals out of the Champions League.",
+        "Having got back to winning ways with a 1-0 win over HB Koge Women on Tuesday night, our Gunners will be aiming for back-to-back away wins over Chelsea.",
+        "Swipe through the gallery below, captured by club photographer David Price, to see what we've been up to at the Sobha Realty Training Centre:"
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/ee8a7de20313-gallery-cover.webp",
+      "author": "Arsenal Media",
+      "publishedAt": "2026-09-25T14:50:20.715Z",
+      "url": "https://www.arsenal.com/news/the-best-training-snaps-before-chelsea-showdown-aB7320m3zONw",
+      "source": "Arsenal.com",
+      "titleZh": "对阵切尔西焦点战前的最佳训练图集",
+      "summaryZh": "阿森纳将在女子英超联赛中客场挑战伦敦死敌切尔西。",
+      "bodyZh": [
+        "当我们周日下午对阵切尔西时，我们将延续2026/27赛季开局不败的势头，你可以通过最新的训练图集了解我们在德比战前的备战情况。",
+        "雷妮·斯勒格斯（Renee Slegers）的球队将前往斯坦福桥，力求复制上赛季在西伦敦的英雄般表现，当时我们不仅在老对手的主体育场取得了首场联赛胜利，还将这位伦敦死敌淘汰出欧冠。",
+        "周二晚以1-0战胜HB克厄女足重回胜轨后，我们的枪手将力争对切尔西取得客场两连胜。",
+        "浏览下方由俱乐部摄影师大卫·普莱斯（David Price）拍摄的图集，看看我们在索布哈雷蒂训练中心（Sobha Realty Training Centre）的备战情况。"
+      ],
+      "translationSourceHash": "18f7c74ec3b1e4c8e3624c415d092ba84c67faefff883fb3c4f39a608cbea0c3",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-09-25T18:34:09.056Z"
+    },
+    {
+      "id": "83b634ad5fe18ea4b14d1c750fd1ff53daa12c7ba426739385e6bcabbd800353",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Renée excited for entertaining Chelsea clash",
+      "summaryEn": "Renée Slegers is hopeful of an exciting, entertaining game when we travel to Stamford Bridge to take on Chelsea on Sunday.",
+      "bodyEn": [
+        "Renée Slegers is hopeful of an exciting, entertaining game when we travel to Stamford Bridge to take on Chelsea on Sunday.",
+        "It’s our first London derby of the season as we look for three points that would take us above the Blues in the Women’s Super League table.",
+        "Asked what we’re expecting from Sonia Bompastor’s side in ther pre-match press conference, our head coach said: “Of course we know what the games are like against Chelsea. Both home and away they’re fights and we want to bring ourselves to the game, that’s most important to us.",
+        "“We know the qualities that they possess, the intensity that they can bring to a game. We can do that too, so it’s going to be a big game. It’s going to be a game where two teams are really going to go after it, so it’s going to be an exciting game, an entertaining game.",
+        "“We want to control things in the right moments, so I want to be and need to be ready for the fight on the pitch.”",
+        "Of course, this weekend represents the first time we’ll be coming up against former Gunner Katie McCabe, who moved to Chelsea in the summer.",
+        "“She’s been part of Arsenal for a very long time and she now made the step to Chelsea, she plays for Chelsea now and of course that’s a moment both for Arsenal and for her, but at the same time we’re going to prep for this game, and we want to prep for her to be our opponent now because that’s reality,” Renée added.",
+        "“We prepare for this game, and we prepare for Katie as our opponent for this game and that’s our focus.”",
+        "So far this season we’ve faced a few teams that have decided to setup in a low block, but one reporter put forward the suggestion to Renée that Chelsea might opt to threaten us on fast breaks and counters.",
+        "“We always have to prepare for that, also for this game, of course,” she said. “But I also think that this game will play out differently. I think two teams that really want to go against each other rather than one team wanting to sit off and looking to break.",
+        "“But of course, there will be moments and spells where there is control and we have to have a really solid defence behind us. Because we know that they have certain qualities in the Chelsea team that we have to stop. But like I said, I think this game will look different.”"
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/b8c7414a3339-gettyimages-2269434375-1.webp",
+      "author": "Stephen Wright",
+      "publishedAt": "2026-09-25T14:39:39.331Z",
+      "url": "https://www.arsenal.com/news/renee-excited-for-entertaining-chelsea-clash-ahX8E5c5IAuN",
+      "source": "Arsenal.com",
+      "titleZh": "雷妮期待对阵切尔西的精彩较量",
+      "summaryZh": "雷妮·斯勒格斯希望周日客场对阵切尔西的比赛能充满激情与精彩。",
+      "bodyZh": [
+        "雷妮·斯勒格斯希望周日我们前往斯坦福桥对阵切尔西的比赛能充满激情与精彩。",
+        "这是我们本赛季的第一场伦敦德比，我们需要全取三分，从而在女超联赛积分榜上超越蓝军。",
+        "在赛前新闻发布会上被问及对索尼亚·邦帕斯托尔的球队有何期待时，我们的主教练表示：“当然，我们知道对阵切尔西的比赛会是什么样的。无论主场还是客场，这都是一场苦战，我们想要在比赛中展现自我，这才是对我们最重要的。”",
+        "“我们了解她们拥有的实力，以及她们能带给比赛的强度。我们也能做到这一点，所以这将是一场重磅对决。这将是一场两支球队都全力以赴的比赛，因此它会非常令人兴奋、极具观赏性。”",
+        "“我们希望在正确的时刻掌控局势，所以我想要并且必须为球场上的拼搏做好准备。”",
+        "当然，这个周末将是我们第一次面对曾在夏天转会切尔西的前阿森纳球员凯蒂·麦凯布。",
+        "雷妮补充道：“她效力阿森纳很长时间了，现在她迈出了前往切尔西的一步，她现在为切尔西效力。对阿森纳和她本人来说这都是一个时刻，但同时我们要为这场比赛做准备，我们要把她当成对手来准备，因为这就是现实。”",
+        "“我们为这场比赛做准备，我们把凯蒂作为本场比赛的对手来准备，这就是我们的重心。”",
+        "本赛季到目前为止，我们已经面对过几支选择采用低位防守阵型的球队，但有一位记者向雷妮提出建议，称切尔西可能会选择通过快攻和反击来威胁我们。",
+        "她说：“我们总是必须为此做好准备，本场比赛当然也是如此。但我也认为这场比赛的走势会不同。我认为这是两支真正想要正面交锋的球队，而不是一支想要退守并伺机反击的球队。”",
+        "“当然，比赛中会有需要掌控的时刻和时间段，我们需要身后有非常稳固的防守。因为我们知道切尔西阵中具备某些我们必须遏制的实力。但就像我说的，我认为这场比赛看上去会有所不同。”"
+      ],
+      "translationSourceHash": "cdfb30520b7025be82adeecd962306e17f51af3196dde3677b59be8746eb376c",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-09-25T18:34:25.012Z"
+    },
+    {
+      "id": "76624f0f013dcd53b6133d9739f1a5975e324eb0bb6a41bae91908c9c694cc09",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Every word of Renée’s pre-Chelsea press conference",
+      "summaryEn": "Renée Slegers was back in front of the media for her pre-Chelsea press conference at the Sobha Realty Training Centre",
+      "bodyEn": [
+        "Renée Slegers was back in front of the media for her pre-Chelsea press conference at the Sobha Realty Training Centre on Friday.",
+        "Our head coach looked ahead to Sunday's trip to Stamford Bridge, shared the latest team news and more.",
+        "Here's everything she had to say on the following subjects...",
+        "on what mark she’d give our side so far: I think it’s been clear that we wanted more points, so the two draws we’re not happy with, and I don’t think we need to over-dramatise the performances, but of course we want to and need to score and win games, and we’re of course very aware of it, and that’s where we are now and we’re looking ahead to Sunday.",
+        "on if that’s a 6 and a half out of 10:It’s up to you, you do the analysis.",
+        "on what’s been the most worrying part of our start:Worrying, I think that’s not a word that we use internally, but the focus areas are things that we need to get right, and that’s of course in front of goal, what kind of situations we set up.",
+        "on if our lack of goals is concerning:I think we do get shots off, but like I said, are they open and clear enough to be able to get a relatively easy finish? But we’re also looking at the final pass, how we set each other up, and that’s connected that, how do we set each other up in those moments? How calm are we? How do we see things clearly in front of goal?",
+        "on if it’s going to take time for new players to gel:Yeah, exactly. We know that takes time, but at the same time, we have a really strong foundation as well. So like I said, I think we’ve spoken a lot about it externally. I think for us it’s now about action and we want action towards and on.",
+        "on if the WSL is looking how we expected:I think it’s too early still to draw conclusions. We’re three games in and there’s 26 games, so I think too early still to draw the conclusions. So I think halfway into the season you’ll have a better understanding of where everyone’s at.",
+        "on what we’re expecting from Chelsea:Of course we know what the games are like against Chelsea. Both home and away they’re fights and we want to bring ourselves to the game, that’s most important to us. We know the qualities that they possess, the intensity that they can bring to a game. We can do that too, so it’s going to be a big game. It’s going to be a game where two teams are really going to go after it, so it’s going to be an exciting game, an entertaining game. We want to control things in the right moments, so I want to be and need to be ready for the fight on the pitch.",
+        "on coming up against Katie McCabe this weekend:Yeah, she’s been part of Arsenal for a very long time and she now made the step to Chelsea, she plays for Chelsea now and of course that’s a moment both for Arsenal and for her, but at the same time we’re going to prep for this game, and we want to prep for her to be our opponent now because that’s reality.",
+        "on if she’ll be fired up for this game:Could be, ask Katie. But like I said, we prepare for this game, and we prepare for Katie as our opponent for this game and that’s our focus.",
+        "on Fox signing a new contract:I’m so happy she’s staying. I think the club and me as well were very pleased to continue to work with her. She’s been here for a while now, she’s part of Arsenal and live her life and football life and the values that we think are important so it feels like she’s really become part of Arsenal and it’s really exciting to work with her and also to continue to work with her because she's only going to get better I think so we’re very happy, very pleased and she brings so much quality to our squad.",
+        "on team news:No, everyone's fit, healthy, everyone trained today. Of course, one more session to go.",
+        "on if she’s surprised by how quickly Cooney-Cross has got up to speed:I'm so happy for Kyra because of course what she's gone through, and then coming back to us, it's not been easy for her at all. But she's been training whilst in Australia, so she came back in a good place. But it was still, of course, a question of you haven't trained with us and you haven't had the same football load. But she came in physically really good, and mentally, also, strangely enough, really, really positive for the group. Mature, calm, just enjoying her football. She spreads that throughout the team as well, that enjoyment, happiness, lightness, and she's just come back really, really well. So I'm so pleased. I think you've seen it in pre-season, but also the game on Tuesday, how good she was. She's in a great place, so we're so pleased and happy to have her in the squad.",
+        "on how to negotiate the balance between being unpredictable and trying to find solutions that work:I don't think we're unpredictable internally. But I understand where you come from with changes in units. Don't forget that we spend six days a week together. So if you make one or two changes or three, these players, they spend every single day together on the training pitch. So it's not like 10, 15 years ago, where there was two sessions maybe, or maybe you have to go longer back. But I remember my time when I was at Arsenal, I don't think the first team trained that much. Then it's hard to build connections and relationships, but we spend so much time together, six days a week, meetings, moments to build connections, partnerships off the pitch, on the pitch. So these players understand each other. So I definitely think there is predictability within what we're doing. So I don't think that's the issue for us, and again, this is something we believe in, that what we need on the pitch is what we want to put on the pitch and trust in the squad. But then, of course, not taking away the partnerships and the collective and consistency are important as well.",
+        "on if we’ve spoken about the threat of Chelsea’s fast breaks and counters:Yes that's a constant. We always have to prepare for that, also for this game, of course. But I also think that this game will play out differently. I think two teams that really want to go against each other rather than one team wanting to sit off and looking to break. But of course, there will be moments and spells where there is control and we have to have a really solid defence behind us. Because we know that they have certain qualities in the Chelsea team that we have to stop. But like I said, I think this game will look different.",
+        "on our recent record against Chelsea:Of course, we look at those games. We look at last season, them, us. We look at this season, them, us, and then put the puzzle together and then focus on ourselves and what we want to bring to the game. I think there were some really good things we did in those games and it was a positive outcome overall across four games last season. I think everyone knows what I'm going to say now. This is a new game, a new season, and things are different.",
+        "on managing in pressurised circumstances:Of course, I have to be good at managing myself and everything that comes with the job. I have to stay healthy and good and positive and energetic. Sometimes, I know that certain habits I have to do really well to be able to maintain that. Also, I do get a lot of energy from the group and the club. For example, after United, that was really tough, of course. But the way everyone came together, the staff coming together to see what margins we can build on, the captains coming together, the squad, all working towards what we want to achieve. That's also given me a lot of energy, of course. Like I said, I need to have really good habits to be the best of myself. Then, whatever comes, I can deal with it. Like last year, I said already two years ago, being in the here and now, in the present, being task-focused, seeing the bigger picture, perspective, positives, and build on that. Create as much lightness as we can into the environment because we think that's going to be important for us, is important to us. But yeah, that's a lot of words. Action.",
+        "on what it’s like to manage a tense game against Chelsea:I love it. Yeah, I really enjoy it. I love it. I look forward to it. It's going to be such a fight, and it's going to be such a battle. Two really good teams, but yeah, I love those moments, so I look forward to it.",
+        "on how we regroup and build on what we’ve learned from our first few games:Similar to what I just said, people coming together, aligning on where we want to go, reflecting in honesty, making plans going forward, bringing people together, keep positivity, lightness in the environment, see the bigger picture, see the direction, and make sure that it's not too heavy, because I think these players, they're so good, and they want it so bad, and they want to take responsibility, and that's really good. They just have to sometimes also go out and play, and enjoy the game as you did when you were a kid, so trying to find that balance as well.",
+        "on if it’s easier or harder to prepare for a game when we know the other team well:I love it, whether it's easier or harder. There's just so much detail, and I just enjoy that process, getting ready for this game. I think players on the pitch know each other. Sonia [Bompastor] and me have played against each other several times now, so we've seen how it plays out against each other. I love it. Like I said, I look forward to Sunday, and the process towards it I'm enjoying. We know each other well, so let's see how both teams are going to come out on Sunday.",
+        "on the strength of our defence:Thanks for that question, because when I just spoke about positivity and lightness, that's one of the positives so far, and it's something we pride ourselves on as well. So absolutely, we've been focusing on that too, and that will be a focus going into Sunday, knowing that we're going to play against really good players. No, definitely been a focus area. I've been talking about it a lot, I feel like I'm talking a lot, but last season as well, how we pride ourselves on defending, how important that is for us, it's no different this year."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/3b801d0d3b1a-gettyimages-2294703074.webp",
+      "author": "Stephen Wright, Charlie Peat, Connor Booth",
+      "publishedAt": "2026-09-25T14:22:55.567Z",
+      "url": "https://www.arsenal.com/news/every-word-of-renees-pre-chelsea-press-conference-aCkKC0t8OMNf",
+      "source": "Arsenal.com",
+      "titleZh": "雷妮对阵切尔西前的赛前新闻发布会言论集锦",
+      "summaryZh": "雷妮出席对阵切尔西的赛前发布会，展望比赛并谈及球队现状。",
+      "bodyZh": [
+        "雷妮周五在索布哈地产训练基地出席了对阵切尔西的赛前新闻发布会。",
+        "我们的主教练展望了周日前往斯坦福桥的客场比赛，分享了最新的球队动态等等。",
+        "以下是她就以下话题所说的一切……",
+        "关于对我们目前表现的评分：我认为很明显我们想要更多积分，所以对两场平局我们并不满意，而且我认为我们不需要过度戏剧化这些表现，但当然我们想要并且需要进球并赢得比赛，我们当然非常清楚这一点，这就是我们目前的现状，我们正期待着周日的比赛。",
+        "关于这是否是10分中的6.5分：这取决于你，由你来做分析。",
+        "关于我们开局中最令人担忧的部分是什么：担忧，我认为这不是我们在内部使用的词汇，但重点领域是我们必须做对的事情，当然是在球门前，我们创造了什么样的局面。",
+        "关于我们缺乏进球是否令人担忧：我认为我们确实完成了射门，但就像我说的，它们是否足够开阔和清晰，能够让人相对轻松地完成破门？但我们也在关注最后一传，我们是如何为彼此创造机会的，这与之相关，我们在那些时刻是如何为彼此创造机会的？我们有多冷静？我们在球门前如何清晰地看到局势？",
+        "关于新球员是否需要时间来磨合：是的，完全如此。我们知道这需要时间，但与此同时，我们也拥有非常坚实的基础。所以就像我说的那样，我认为我们在外部已经讨论了很多。我认为对我们来说，现在是关于行动的时候，我们想要采取行动并向前推进。",
+        "关于女子英超联赛（WSL）是否符合我们的预期：我认为现在下结论还为时过早。我们才踢了三场比赛，总共有26场比赛，所以我认为现在下结论还为时过早。因此，我认为到赛季过半时，你才会对每个人的处境有更好的了解。",
+        "关于我们对切尔西的期望：当然，我们知道对阵切尔西的比赛是什么样的。无论主客场，这些都是硬仗，我们希望展现出自我，这才是对我们最重要的。我们知道他们所具备的质量，以及他们能给比赛带来的强度。我们也能做到，所以这将是一场大战。这将是一场两支球队都会全力以赴的比赛，所以这将是一场精彩、具有娱乐性的比赛。我们希望在正确的时刻控制局面，所以我希望并需要为球场上的恶战做好准备。",
+        "关于本周末对阵凯蒂·麦凯布（Katie McCabe）：是的，她曾效力阿森纳很长时间，现在她迈出了前往切尔西的一步，她现在为切尔西效力，对阿森纳和她自己来说这都是一个时刻，但与此同时，我们要为这场比赛做准备，我们要把她当作我们的对手来备战，因为这就是现实。",
+        "关于她是否会在这场比赛中斗志昂扬：可能会，去问凯蒂吧。但就像我说的，我们为这场比赛做准备，我们将凯蒂视为本场比赛的对手来备战，这就是我们的重点。",
+        "关于福克斯（Fox）签下新合同：我很高兴她能留下。我认为俱乐部和我本人都非常高兴能继续与她合作。她在这里有一段时间了，她是阿森纳的一部分，她的生活、足球生涯以及我们认为重要的价值观都融入其中，所以感觉她真的成为了阿森纳的一部分，能与她合作并且能继续与她合作真的让人非常兴奋，因为我认为她只会变得更好，所以我们感到非常高兴和开心，她为我们的阵容带来了如此多的质量。",
+        "关于球队伤病情况：没有，每个人都很健康，状态良好，每个人今天都参加了训练。当然，还有一个训练课要进行。",
+        "关于她是否对科尼-克罗斯（Cooney-Cross）恢复状态的速度感到惊讶：我为基拉（Kyra）感到非常高兴，考虑到她经历的一切，然后回到我们身边，对她来说一点也不容易。但她在澳大利亚期间一直在训练，所以她归队时状态很好。但当然，这仍然是一个问题，因为你没有和我们一起训练，也没有承担相同的足球负荷。不过她归队时身体状况非常好，而且不知为何，在心理上也给团队带来了非常积极的影响。成熟、冷静，只是在享受她的足球。她也将这种享受、快乐和轻松感传递给全队，她的回归表现得非常非常出色。所以我非常高兴。我想你在季前赛以及周二的比赛中都已经看到了她有多么优秀。她现在处在一个很棒的状态，所以我们非常高兴和开心能拥有她在阵容中。",
+        "关于如何在保持不可预测性与寻找有效解决方案之间找到平衡：我不认为我们在内部是不可预测的。但我理解你从阵容变动这一角度出发的看法。别忘了我们每周在一起度过六天。所以如果你做出了一处、两处或三处变动，这些球员，她们每天都在训练场上一起度过。所以这不像10年、15年前那样，当时可能只有两次训练，或者可能你需要追溯得更久远。但我记得我在阿森纳效力的时候，我认为一线队没有进行那么多训练。那样的话很难建立联系和关系，但我们花了很多时间在一起，一周六天，开会，在场外和场上建立联系和搭档关系。所以这些球员互相理解。所以我绝对认为我们的做法中存在可预测性。所以我不认为这是我们的问题，再次强调，这是我们所相信的，我们在球场上需要的就是我们想要呈现在球场上的，并且要信任阵容。但当然，这并不意味着抹杀搭档关系，集体和延续性同样重要。",
+        "关于我们是否讨论过切尔西快速反击的威胁：是的，这是个常态。我们总是必须为此做好准备，当然也包括这场比赛。但我同时也认为这场比赛的走势会有所不同。我认为两支球队都会真正渴望压制对方，而不是其中一支球队想要退守并伺机反击。但当然，会有一些时段我们需要掌控比赛，并且身后必须有非常稳固的防守。因为我们知道切尔西阵中具备某些我们必须遏制的能力。但就像我说的，这场比赛看起来会有所不同。",
+        "关于我们对阵切尔西的近期战绩：当然，我们会回顾那些比赛。我们回顾上赛季他们对阵我们，我们对阵他们。我们回顾本赛季他们对阵我们，我们对阵他们，然后把这些拼图拼在一起，专注于我们自己以及我们想要在比赛中展现的东西。我认为我们在那些比赛中做了一些非常棒的事情，上赛季四场比赛的总体结果是积极的。我想每个人都知道我现在要说什么了。这是一场新比赛，一个新赛季，情况有所不同。",
+        "关于在压力环境下执教：当然，我必须擅长管理自己以及伴随这份工作而来的所有事情。我必须保持健康、良好、积极和充满活力。有时候，我知道我必须做好某些习惯才能维持这一点。此外，我确实从团队和俱乐部获得了大量能量。例如，对阵曼联之后，那当然非常艰难。但每个人凝聚在一起的方式，教练组凝聚在一起看看我们可以从哪些边缘取得进步，队长们凝聚在一起，球队上下都朝着我们想要实现的目标努力。这当然也给了我很多能量。就像我说的，我需要有非常好的习惯来展现最好的自己。然后，无论发生什么，我都能应付。就像去年一样，我两年前就已经说过，活在当下，专注于任务，看到更大的格局、视角、积极面，并在其上添砖加瓦。在环境中营造尽可能多的轻松感，因为我们认为这非常重要，对我们很重要。但好吧，这些话很多。行动吧。",
+        "关于执教一场对阵切尔西的紧张比赛是怎样的体验：我喜欢。是的，我真的很享受。我喜欢。我很期待。这将是一场硬仗，这将是一场激烈的战斗。两支非常优秀的球队，但是的，我热爱这些时刻，所以我很期待。",
+        "关于我们如何重新凝聚并从前几场比赛中汲取经验教训：类似于我刚才所说的话，大家凝聚在一起，在我们要去的地方达成一致，真诚地进行反思，制定未来的计划，让人们聚在一起，在环境中保持积极性和轻松感，看清大局，看清方向，并确保压力不要太大，因为我认为这些球员太优秀了，她们太渴望成功了，她们想要承担责任，这真的很好。她们有时也必须走上球场，像儿时那样享受比赛，所以也要努力找到这种平衡。",
+        "关于当我们对另一支球队很了解时，备战比赛是更容易还是更难：我喜欢它，无论是更容易还是更难。这里面有太多的细节，我只是享受这个过程，为这场比赛做好准备。我认为球场上的球员互相了解。索尼娅（Sonia [Bompastor]）和我已经多次交手，所以我们已经看到了彼此交手时的走势。我喜欢它。就像我说的，我期待周日，并且我很享受通往比赛的过程。我们彼此非常了解，所以让我们看看周日两支球队会如何亮相。",
+        "关于我们防守的强度：谢谢你提出这个问题，因为当我刚才谈到积极性和轻松感时，这是迄今为止的积极因素之一，这也是我们引以为傲的事情。所以绝对的，我们一直在关注这一点，这将是周日备战的一个重点，因为我们知道我们要对阵非常优秀的球员。不，这绝对是一个重点领域。我一直在谈论它，我觉得我一直在说个不停，但就像上赛季一样，我们以防守为傲，这对我门来说有多么重要，今年也没有什么不同。"
+      ],
+      "translationSourceHash": "d49838d6d2f1e42a2ec949d60551b70662211168aa0c2460eb18e353d20f7c0f",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-09-25T18:34:43.530Z"
+    },
     {
       "id": "1421b982982e551b81cafbdb040bc66343a9b140ec7fc7ff8a29eeb8a10cff05",
       "teamId": "arsenal",
@@ -709,6 +848,64 @@
       "translatedAt": "2026-09-25T13:44:12.529Z"
     },
     {
+      "id": "f15019aaff0dadade3151fd8e5691306edd060e9f3bcc5adc857eb8b0fafbd3d",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Bukayo Saka stars in Colney Carpool!",
+      "summaryEn": "See Bukayo grab a lift to training, reveal his karaoke song and take on Frimmy's target challenge!",
+      "bodyEn": [
+        "All season long, Frimmy has been dishing out lifts to training in his infamous golf buggy, and this week saw Bukayo Saka require his services.",
+        "In return for a not-so-swift ride to the pitches at London Colney, Bukayo had to undergo some teasing questions from his driver, including revealing his karaoke classic , but would he sing it for the cameras?",
+        "Then he took part in a target challenge, aiming to beat Reiss Nelson's high score of 10, despite Frimmy's best attempts to put him off!",
+        "Find out if Bukayo could do it, as well as see all the other hilarious moments during the trip by pressing play on the video above.",
+        "You can also check out our other participants throughout the season in our playlist"
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/e543faec3b7a-saka-carpool.webp",
+      "author": "Arsenal Media",
+      "publishedAt": "2023-05-10T15:55:00.000Z",
+      "url": "https://www.arsenal.com/news/bukayo-saka-stars-in-colney-carpool-aRd1R0W6DnR0",
+      "source": "Arsenal.com",
+      "titleZh": "萨卡亮相科尔尼顺风车栏目！",
+      "summaryZh": "来看看布卡约搭车去训练，揭晓他的卡拉OK曲目并挑战弗里米的靶心任务！",
+      "bodyZh": [
+        "整个赛季以来，弗里米一直开着他那辆“臭名昭著”的高尔夫球车送球员去训练，本周轮到布卡约·萨卡需要这项服务了。",
+        "作为搭乘慢悠悠的车辆前往伦敦科尔尼训练场的交换，布卡约不得不接受司机的一系列调侃问题，包括透露他最拿手的卡拉OK经典曲目，但他会对着镜头唱出来吗？",
+        "随后他参加了一项靶心挑战，目标是打破赖斯·纳尔逊创下的10分最高纪录，尽管弗里米千方百计地想要干扰他！",
+        "点击上方视频，即可了解布卡约是否成功完成挑战，并观看旅途中的所有爆笑时刻。",
+        "你还可以在我们的播放列表中查看本赛季其他参与者的情况。"
+      ],
+      "translationSourceHash": "49d59b201834ab93fdb369359b822a454b58be8bb6d7d5feb21b31bb05e390bd",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-09-25T18:35:02.054Z"
+    },
+    {
+      "id": "cf44d24abaf50e24bdb0e7299df4eabcde36a7047c9cc2bfd06261da17e3cd3c",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Frida Maanum joins Frimmy for Colney Carpool!",
+      "summaryEn": "Our Norwegian midfielder is next up in the hot seat for the latest episode of Colney Carpool with Frimmy",
+      "bodyEn": [
+        "Everyone needs a lift to training every once in a while and this time it's Frida Maanum's turn in the latest episode of Colney Carpool!",
+        "Our Norwegian midfielder is next up in the hot seat, where she tells Frimmy her karaoke song, her favourite moment of the season so far and what job she might have chosen had she not been a baller.",
+        "Click play to ride along and check out all of our"
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/b95f8a54c6fc-colney-carpool-frida.webp",
+      "author": "Emma Holbrook",
+      "publishedAt": "2023-03-31T09:01:00.000Z",
+      "url": "https://www.arsenal.com/news/frida-maanum-joins-frimmy-for-colney-carpool-aKuk77U7GyqJ",
+      "source": "Arsenal.com",
+      "titleZh": "弗里达·马努姆参加弗里姆的科尔尼拼车节目！",
+      "summaryZh": "我们的挪威中场球员弗里达·马努姆做客最新一期科尔尼拼车节目。",
+      "bodyZh": [
+        "每个人偶尔都需要搭便车去训练，这一次轮到弗里达·马努姆参加最新一期的科尔尼拼车节目！",
+        "我们的挪威中场球员坐上了嘉宾席，她向弗里姆透露了她拿手的卡拉OK歌曲、本赛季至今最喜欢的时刻，以及如果她没有成为一名球星可能会选择什么工作。",
+        "点击播放一同观看并了解我们的全部内容"
+      ],
+      "translationSourceHash": "9eb29582bf18dd469b26035a470ace5b4065f5b08a1f20a19cfae862e1be2fd4",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-09-25T18:35:16.239Z"
+    },
+    {
       "id": "3f73253417693e85295437d9cecf9d529e65ff9715e750c4f07089adc8f5b5a1",
       "teamId": "arsenal",
       "teamName": "阿森纳",
@@ -795,162 +992,13 @@
       "translationSourceHash": "cf516b38dc0ade65ca9fbd119aa04f379af60706e4d9de0ae0b2ae7acf9968ad",
       "translationModel": "gemini-3.5-flash-lite",
       "translatedAt": "2026-09-25T13:44:22.852Z"
-    },
-    {
-      "id": "f00bd72a637a23fd05eab60c9b581c16e744116d9059cd3c83a25e49bce6d5de",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Wenger - I fulfilled the dream of my life",
-      "summaryEn": "Our legendary manager on the moment that he wrote his name into the history books forever",
-      "bodyEn": [
-        "When Arsene Wenger said in November 2002 that he believed his side could win the title and go unbeaten, he was ridiculed in some quarters.",
-        "Not for the first time though, our legendary former manager had the last laugh as the next season he achieved exactly that.",
-        "So how did it feel to achieve what many thought impossible in 2003/04 and win the title with an immaculate record?",
-        "\"It was the moment where I fulfilled the dream of my life,\" he says in Arsene Wenger: Invincible.",
-        "\"The fact that I could convince this group to achieve something that they would not think would be possible.",
-        "\"I've done my job in a perfect way. I am so proud for having done it.\"",
-        "Arsene Wenger: Invincible is out from today in select cinemas and on Blu-ray, DVD and Digital from November 22."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/9dddcb3136b9-ggm-03-invincibles-clinch-title-at-tottenham.webp",
-      "author": "Arsenal FC",
-      "publishedAt": "2021-11-11T08:00:00.000Z",
-      "url": "https://www.arsenal.com/news/wenger-i-fulfilled-the-dream-of-my-life-alxwh3I1SvOZ",
-      "source": "Arsenal.com",
-      "titleZh": "温格：我实现了人生的梦想",
-      "summaryZh": "传奇主帅温格谈论了将自己的名字永远载入史册的那个时刻。",
-      "bodyZh": [
-        "当温格在2002年11月表示他相信球队能够赢得冠军并保持不败时，他在某些领域受到了嘲笑。",
-        "不过，这位传奇前主帅并不是第一次笑到最后，因为在接下来的赛季里，他恰恰做到了这一点。",
-        "那么，在2003/04赛季实现许多人认为不可能的事情并以完美的战绩夺冠，是一种什么样的感觉？",
-        "他在纪录片《温格：不败》中说道：“那是实现我人生梦想的时刻。”",
-        "“事实上，我能够说服这群球员去完成他们认为不可能实现的事情。”",
-        "“我已经以完美的方式完成了我的工作。我为此感到无比自豪。”",
-        "《温格：不败》从今天开始在指定影院上映，并于11月22日起推出蓝光、DVD和数字版。"
-      ],
-      "translationSourceHash": "657d8fbdcc4d183132ddb55bdfd97db38b0fdb09e7f4dfd371c7e9eacf64ba0b",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-09-24T17:13:46.218Z"
-    },
-    {
-      "id": "791f9b99b851f3b71250cb47f7311755a4e79258e0577b46b134f8b940bccd11",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Wenger - The qualities needed to be 'Invincible'",
-      "summaryEn": "Our legendary former manager on the innate qualities needed to achieve something so special",
-      "bodyEn": [
-        "As the only manager in Premier League history ever to guide his side to an unbeaten season, Arsene Wenger is placed better than anyone to know exactly what it means to be 'Invincible'.",
-        "What qualities are required? Is there an innate sense that is needed if you are to achieve the impossible?",
-        "\"Invincible is linked with a mental resilience,\" he says in Arsene Wenger: Invincible.",
-        "\"It is something deeper, a refusal of defeat at any cost. Don't give in, ever.\"",
-        "Arsene Wenger: Invincible is out from today in select cinemas and on Blu-ray, DVD and Digital from November 22."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/51683fe45876-the-invincibles.webp",
-      "author": "Arsenal FC",
-      "publishedAt": "2021-11-11T08:00:00.000Z",
-      "url": "https://www.arsenal.com/news/wenger-the-qualities-needed-to-be-invincible-ayEgQ4R8saMc",
-      "source": "Arsenal.com",
-      "titleZh": "温格：成就“不败之师”所需的品质",
-      "summaryZh": "俱乐部传奇前帅温格谈论了取得这一非凡成就所必需的内在品质。",
-      "bodyZh": [
-        "作为英超历史唯一一位率队完成不败赛季的主教练，阿尔塞纳·温格比任何人都清楚“不败之师”的真正含义。",
-        "需要具备哪些品质？如果想要达成不可能完成的任务，是否需要一种与生俱来的意识？",
-        "他在《阿尔塞纳·温格：不败》中表示：“‘不败’与心理韧性息息相关。”",
-        "“这是一种更深层次的东西，是不惜一切代价拒绝失败。绝不屈服，永远不要。”",
-        "《阿尔塞纳·温格：不败》自今日起在部分影院上映，并将于11月22日推出蓝光、DVD及数字版。"
-      ],
-      "translationSourceHash": "1a9198b64b08ca6e949f7693cc7146087ad1b753658d46ac28933561cf4d8aa8",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-09-24T17:14:13.274Z"
-    },
-    {
-      "id": "2892694b7d0956c003012bbcc90ed42a45e1e7633f6788fcf3f99b26440f748f",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Wright - The story behind me wearing the No 8",
-      "summaryEn": "Our legendary former striker tells us why he took that number when he really wanted the No 10",
-      "bodyEn": [
-        "When you think of Ian Wright, you think of him scoring goals for Arsenal in the No 8 shirt - but why that number?",
-        "In conversation with Alex Lacazette and Pierre-Emerick Aubameyang filmed in February, our former record goalscorer revealed the story behind it.",
-        "\"With the No 8, when I was at Crystal Palace I was No 10, but when you came here to Arsenal, you couldn’t get a number,\" Wright told Arsenal Player. \"I think the only person who got a number, and it was when George Graham left, was Dennis Bergkamp and Paul Merson gave it to Dennis.",
-        "\"But when I came, Alan Smith was going to play in the game, that Leicester game when I didn’t know I was playing until the afternoon, and how it works is, Alan Smith pulled out of that game, so that was the only game I played for Arsenal in the No 9.",
-        "\"When Alan Smith came back to the game on Saturday against Southampton, he got the No 9 back and they left Paul Davis out, who was No 8 and that’s how I got the No 8. Because I got the No 8 in my second game for Arsenal and scored a hat-trick, I didn’t give it back to nobody!\""
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/72997c665eac-wrighty.webp",
-      "author": "Arsenal FC",
-      "publishedAt": "2020-04-17T09:54:07.000Z",
-      "url": "https://www.arsenal.com/news/wright-the-story-behind-me-wearing-the-no-8-aZWOj4w0m5L5",
-      "source": "Arsenal.com",
-      "titleZh": "伊恩·赖特：我身披8号球衣背后的故事",
-      "summaryZh": "阿森纳传奇前锋透露了他选择8号球衣的幕后故事。",
-      "bodyZh": [
-        "每当想起伊恩·赖特，人们就会想到他身穿8号球衣为阿森纳攻城拔寨的场景——但为什么是这个号码呢？",
-        "在2月份与亚历山大·拉卡泽特和皮埃尔-埃默里克·奥巴梅扬的交谈中，这位前俱乐部历史最佳射手揭示了背后的故事。",
-        "“关于8号，我在水晶宫时穿的是10号，但当你来到阿森纳时，你是没法自己挑号码的，”赖特告诉阿森纳官网。“我想唯一能拿到号码的人是丹尼斯·博格坎普，那是乔治·格拉汉姆离开的时候，保罗·默森把号码让给了丹尼斯。”",
-        "“但当我刚来时，阿兰·史密斯原本要踢那场对阵莱斯特城的比赛，而我直到下午才知道自己要出场。情况就是这样，阿兰·史密斯退出了那场比赛，所以那是我唯一一次身穿9号球衣代表阿森纳出场。”",
-        "“当阿兰·史密斯在周六对阵南安普顿的比赛中复出时，他拿回了9号球衣，而他们把原本穿8号的保罗·戴维斯排除在名单之外，这就是我如何得到8号的由来。因为我在代表阿森纳的第二场比赛中就穿着8号完成了帽子戏法，所以我谁都不给！”"
-      ],
-      "translationSourceHash": "025296aec4d257766eae8d9ae06719a073203cacf9d5f762162214bf88775914",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-09-24T17:14:38.049Z"
-    },
-    {
-      "id": "4064fba221f1f86b1e214dad471983e9fd45882c305691a373a43dc34ef40aae",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Wright - My favourite moment in an Arsenal shirt",
-      "summaryEn": "The legendary goalscorer reveals the moment that he will always treasure",
-      "bodyEn": [
-        "Ian Wright equals goals - and lots of them.",
-        "But which was his favourite - and what was his best moment in an Arsenal shirt?",
-        "\"My debut goal,\" Wright told Pierre-Emerick Aubameyang and Alex Lacazette in our exclusive interview filmed in February. \"Obviously the Premier League when I finally got to lift it, but I think the first goal [was my favourite] simply because of the pressure.",
-        "\"When I came from Crystal Palace, people were saying why are we buying him, we’re scoring goals? And it was a lot of money at the time.",
-        "\"I had to play against Leicester and they were booing me, the Leicester fans were booing, so what happened is I slipped, but then I got up and then… then I started going like this to the crowd! Then Michael Thomas stopped me because he said you can’t do that at Arsenal! If you do that at Arsenal, you get in trouble.",
-        "\"I didn’t know I was playing until that afternoon, then when he said I was playing, we were playing in this kit (the bruised banana), but I always wanted to play in the red kit, so when he said I was playing, I was so nervous man.\""
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/99857d8dfe85-wrighty.webp",
-      "author": "Arsenal FC",
-      "publishedAt": "2020-04-17T09:41:32.000Z",
-      "url": "https://www.arsenal.com/news/wright-my-favourite-moment-in-an-arsenal-shirt-aGjs74C4yW8p",
-      "source": "Arsenal.com",
-      "titleZh": "伊恩·赖特：我身披阿森纳战袍的最爱时刻",
-      "summaryZh": "传奇射手伊恩·赖特揭晓了他在阿森纳最珍视的时刻。",
-      "bodyZh": [
-        "伊恩·赖特打进了无数的进球。",
-        "但哪一个才是他的最爱——他在阿森纳身披战袍的最佳时刻又是什么呢？",
-        "“我的处子秀进球，”赖特在二月份拍摄的独家采访中对皮埃尔-埃默里克·奥巴梅扬和亚历克斯·拉卡泽特说道。“当然还有最终捧起英超奖杯的时刻，但我认为第一个进球之所以成为最爱，完全是因为当时的压力。”",
-        "“当我从水晶宫转会过来时，人们都在说为什么要买我？我们本来就能进球。而且在当时那是一大笔钱。”",
-        "“我必须对阵莱斯特城，他们的球迷在嘘我，莱斯特城的球迷在嘘，所以发生的情况是我滑倒了，但我站起来然后……然后我开始对人群做出手势！然后迈克尔·托马斯阻止了我，因为他说你在阿森纳不能这样做！如果你在阿森纳这样做，你会惹上麻烦的。”",
-        "“直到那天下午我才知道我要上场，然后当他说我要上场时，我们穿著这套球衣（碎香蕉球衣），但我一直想穿红色的球衣，所以当他说我要上场时，我真是太紧张了。”"
-      ],
-      "translationSourceHash": "4a83baed26a4e4017ad1a3b0c8861fdbd21fcaffcb4fe21879c24516d33747bf",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-09-24T17:15:31.451Z"
-    },
-    {
-      "id": "d782f010656902b5e1283e3b83295e2afe7e2f34eda07d67e7faf13bc58b6462",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Adams - The most pivotal moment in my career",
-      "summaryEn": "Our legendary former captain re-lives the game which shaped his glittering 22 years in north London",
-      "bodyEn": [
-        "Twenty two years, 669 appearances and 10 major trophies. Tony Adams is an undisputed Arsenal legend.",
-        "Our former captain’s glittering career stretched three decades in north London, but which was the moment that he remembers most? “It was [for my debut on] November 5, 1983,” he told Arsenal Player. “I was a bag of nerves and in the first minutes someone threw me the ball and I fell over. They put the ball in the back of the net and we were 1-0 down. “There are moments in my career looking back which are really critical in you becoming a player or not. I think you have choices along that road and what I did, I went around and started kicking people. The crowd liked that so I did it more and I did it more. They started cheering me and I thought, ‘Oh, I can do this, I can run around and make a few tackles, this is easy’. “Unfortunately we didn’t win the game but something went into my head that day and my reaction proved that, as long as you do your best, as long as you go out there and give your heart for Arsenal, then that crowd are going to be 100 per cent behind you. “I learned a valuable lesson there in my very first game. I didn’t know that I would still be there 20-odd years later, that was impossible to tell, but it was certainly a pivotal moment in my career.”"
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/f95cbf30b26b-tony-adams.webp",
-      "author": "Arsenal FC",
-      "publishedAt": "2018-10-10T16:49:11.000Z",
-      "url": "https://www.arsenal.com/news/adams-the-most-pivotal-moment-in-my-career-a2VDH3e8oTgC",
-      "source": "Arsenal.com",
-      "titleZh": "亚当斯：我职业生涯中最关键的时刻",
-      "summaryZh": "阿森纳传奇队长亚当斯回忆了塑造他辉煌北伦敦生涯的那场比赛。",
-      "bodyZh": [
-        "二十二年，669次出场，10座重要奖杯。托尼·亚当斯是无可争议的阿森纳传奇。",
-        "我们前队长的辉煌职业生涯在北伦敦跨越了三十个年头，但他印象最深刻的时刻是哪一个？他在接受阿森纳球员频道采访时表示：“那是1983年11月5日的首秀。当时我紧张得不行，开场几分钟有人把球传给我，结果我摔倒了。对方把球打进网窝，我们0-1落后。”，“回首我的职业生涯，有些时刻对你能否成为一名球员至关重要。我认为你在那条路上会有所选择，而我当时的选择是到处去踢人。球迷们喜欢那样，所以我踢得更多了。他们开始为我欢呼，我想，‘哦，我能做到这一点，我可以跑来跑去并完成几次铲断，这太简单了’。”，“遗憾的是我们没有赢得那场比赛，但那天有什么东西进入了我的脑海，我的反应证明了这一点：只要你尽了全力，只要你走上球场为阿森纳倾尽全力，那么球迷们就会百分之百地支持你。”，“我在第一场比赛中就学到了宝贵的一课。我当时并不知道二十多年后我还会留在这里，这简直无法预测，但这无疑是我职业生涯中的一个关键时刻。”"
-      ],
-      "translationSourceHash": "73c36a2b2f746d22cc86a41308665f99d14fa0073c0d18347d72abb1be46e4f7",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-09-24T20:29:18.014Z"
     }
   ],
-  "pendingNotificationIds": []
+  "pendingNotificationIds": [
+    "9c30afd6aa104b5877ce40b50b7db81a11e22703c05fe54c6910036aab2dc206",
+    "83b634ad5fe18ea4b14d1c750fd1ff53daa12c7ba426739385e6bcabbd800353",
+    "76624f0f013dcd53b6133d9739f1a5975e324eb0bb6a41bae91908c9c694cc09",
+    "f15019aaff0dadade3151fd8e5691306edd060e9f3bcc5adc857eb8b0fafbd3d",
+    "cf44d24abaf50e24bdb0e7299df4eabcde36a7047c9cc2bfd06261da17e3cd3c"
+  ]
 }
