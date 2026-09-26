@@ -1,8 +1,41 @@
 {
   "teamId": "toronto-blue-jays",
   "teamName": "多伦多蓝鸟",
-  "updatedAt": "2026-09-26T05:10:20.880Z",
+  "updatedAt": "2026-09-26T09:57:35.134Z",
   "items": [
+    {
+      "id": "4d63cefd00ba7ef3a7c355a24910cffa86e12d86022907ebaa4b2e64802507cb",
+      "teamId": "toronto-blue-jays",
+      "teamName": "多伦多蓝鸟",
+      "titleEn": "Have you ever seen a double-hit like this?",
+      "summaryEn": "",
+      "bodyEn": [
+        "Talk about getting the barrel on it.",
+        "Blue Jays first baseman Vladimir Guerrero Jr. technically squared up his RBI single in the seventh inning of Friday's 6-5 win over the Reds at Rogers Centre, but he did it in quite an unusual way.",
+        "On an 0-2 sinker from Cincinnati reliever Luis Mey, Guerrero chopped a ground ball toward the middle, breaking his bat in the process. Then, pure baseball magic took over.",
+        "Slow-motion replay showed exactly what happened: The severed barrel of Guerrero's bat connected with the baseball several feet in front of home plate, redirecting the ball toward the right side of the infield. It rolled through a hole in the Reds' defense and into right field for a single, scoring Andrés Giménez from second base.",
+        "Guerrero's hit, which brought in the first run of a pivotal four-run seventh to give Toronto the lead and eventually the win, was far from the first base hit on which a player hit the ball twice. In fact, it was at least the sixth this season -- including two on the same day.",
+        "While it surely wasn't the hard contact Guerrero envisioned, Friday's double-hit allowed him to \"hit 'em where they ain't\" in a truly ingenious way."
+      ],
+      "titleZh": "你见过这样的连续击球吗？",
+      "summaryZh": "Vladimir Guerrero Jr.在比赛中罕见地单局击出神奇的一安打。",
+      "bodyZh": [
+        "谈谈如何完美咬中球心。",
+        "在周五罗杰斯中心以6比5战胜辛辛那提红人的比赛中，多伦多蓝鸟一垒手Vladimir Guerrero Jr.在第七局技术性地敲出了一支带有一分打点的安打，但他的方式相当不同寻常。",
+        "面对来自辛辛那提后援投手Luis Mey的0坏球2好球伸卡球，Guerrero将球向中路砍击，并在过程中打断了自己的球棒。随后，纯粹的棒球魔术上演了。",
+        "慢动作回放准确展示了发生的一切：Guerrero断掉的球棒在本垒板前方几英尺处再次击中了棒球，将球的轨迹改变到了内场右侧。它穿过了红人防守的空当滚入右外野形成安打，送回了二垒上的Andrés Giménez。",
+        "Guerrero这支安打带来了决定性的第七局四分大局中的第一分，帮助多伦多取得领先并最终赢得胜利，这远不是球员两次击中棒球的第一支安打。事实上，这至少本赛季的第六次——包括同一天出现的两次。",
+        "虽然这绝对不是Guerrero所设想的扎实击球，但周五的这次双重击打让他以一种真正巧妙的方式“把球打到防守空当去”。"
+      ],
+      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/s8f92opuargac6syoqa6",
+      "translationSourceHash": "e3bbb02717b34c04794d39296116504ab23b388866787d14ad763c3efbc1dc82",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-09-26T09:57:35.125Z",
+      "author": "Theo DeRosa",
+      "publishedAt": "2026-09-26T05:28:38.000Z",
+      "url": "https://www.mlb.com/bluejays/news/vladimir-guerrero-jr-s-single-hits-piece-of-broken-bat",
+      "source": "MLB.com"
+    },
     {
       "id": "1bbe863097cfd28bca63f6bea01d2e4ccb97ddc50ab8e6aa9b65a84a2377cc56",
       "teamId": "toronto-blue-jays",
@@ -1049,64 +1082,10 @@
       "publishedAt": "2026-09-19T23:16:00.000Z",
       "url": "https://www.mlb.com/bluejays/news/trey-yesavage-throws-side-session-ahead-of-return-for-blue-jays",
       "source": "MLB.com"
-    },
-    {
-      "id": "21d44dbf6b531185965a9e5433bf5b499c99f2ee2ddd67c6fe79dfc39a8ec94d",
-      "teamId": "toronto-blue-jays",
-      "teamName": "多伦多蓝鸟",
-      "titleEn": "Cease's velocity, command an issue as Blue Jays slip in playoff race",
-      "summaryEn": "",
-      "bodyEn": [
-        "ARLINGTON -- This is the time of year when every out becomes a little more valuable. On Friday night, Dylan Cease could only give the Blue Jays eight of them.",
-        "Cease lasted just 2 2/3 innings in the Blue Jays’ 7-1 loss against the Rangers at Globe Life Field, allowing four runs (one earned) on three hits while issuing a season-high six walks and striking out a season-low three batters. He threw 74 pitches, but only 36 for strikes as his command deserted him and he suffered another dip in his fastball velocity.",
-        "And this was hardly the night the Blue Jays could afford that type of outing. Toronto (76-78) still sits two games out of the third AL Wild Card spot with just eight games remaining after Chicago (78-76) lost to Detroit, but the Rangers (77-77) are now ahead of the Blue Jays. Toronto owns the tiebreaker over Cleveland (79-75), but not Texas or Chicago, leaving little margin for error.",
-        "“[I’m disappointed] with the lack of command,” Cease said. “If you don't have velocity or sharp stuff [but] throw strikes and execute, you can still get outs. But walks and [no] command at all is not a good recipe.\"",
-        "Friday stood in stark contrast to what Cease has done for most of the season. Among qualifying AL pitchers, Cease entered Friday ranked first in strikeout rate (35.3%), strikeouts (239), FIP (2.47) and opponents’ batting average (.180), while ranking second with a 2.40 ERA.",
-        "His fastball velocity, however, has become something to watch. A dip that first emerged in June continued Friday, when his fastball averaged 93.6 mph, compared to his season average of 96.9 mph. It averaged 94.8 mph on Sunday and 94.9 mph on Sept. 7.",
-        "In fact, Cease’s velocity was down by at least 2 mph on all five of his pitches Friday.",
-        "Cease did top out at 95.5 mph on his second-to-last pitch of the night, but neither he nor catcher Alejandro Kirk believes the lower readings fundamentally change how they need to attack hitters.",
-        "“I'm just trying to get in the zone and execute,” Cease said. “You know, whether it's 92 or 98 [mph], the name of the game is executing pitches. So that's all I'm really trying to do.”",
-        "“We don’t pay a lot of attention to the velocity,” Kirk added in Spanish. “Sometimes you don’t have your best stuff but you can get a lot of outs. It was a difficult night for him in terms of command, but he is a tremendous pitcher.”",
-        "The obvious question, particularly this late in the season, is whether the declining velocity has anything to do with health and whether it could lead to the Blue Jays giving Cease extra rest or skipping a turn through the rotation. For now, manager John Schneider said there have been no indications that such a move is necessary as the team pushes for a spot in the postseason.",
-        "“For a guy that's pitched as long as he has, and when you're communicating with him, we've got a ton of confidence and trust in our medical team,” Schneider said. “If there were some real red flags to where the player was putting himself in harm's way, it'd be a different story. He's grinding, for sure, and he's frustrated with the way the stuff is coming out. But I think if there were huge, huge red flags in terms of anything, he wouldn't be out there.”",
-        "Instead, Schneider believes Cease’s search for his usual stuff may be contributing to the command problems that surfaced Friday.",
-        "“A pitcher like him … you're kind of accustomed to pitching a certain way,” Schneider said. “He's reaching back for a little bit more, and it's not really getting [the results] right now. Then you kind of fall out of your delivery a little bit. [He’s] not sequencing the way he usually does, and the walks are just really uncharacteristic.”",
-        "The Blue Jays can ill afford many short starts from Cease. Injuries have forced Toronto into bullpen games and bulk-relief outings throughout the season, and the club has used off-days to operate with a four-man rotation at times to get Cease and José Soriano on the mound as often as possible.",
-        "Toronto ended up needing six arms to cover eight innings Friday.",
-        "“To me, it is one of the best bullpens, but we also need to help with batting and defense,” Kirk said after Toronto managed five hits and committed three errors. “We can’t let it all fall on the pitchers. We need to do our jobs, and we understand that.”"
-      ],
-      "titleZh": "多伦多蓝鸟争季后赛失利，Dylan Cease球速与控球成隐患",
-      "summaryZh": "Dylan Cease此役控球失准且球速下降，多伦多蓝鸟以1比7不敌得克萨斯游骑兵。",
-      "bodyZh": [
-        "阿灵顿——每年的这个时候，每一个出局数都变得格外珍贵。周五晚上，Dylan Cease只为多伦多蓝鸟投出了八个出局数。",
-        "在多伦多蓝鸟以1比7不敌得克萨斯游骑兵的比赛中，Dylan Cease在Globe Life Field仅仅投了2又3/3局，丢掉4分（1分自责分），被敲3支安打，送出本季新高的6次保送，并仅送出本季新低的3次三振。他总共投了74球，其中好球只有36颗，他的控球完全失准，同时直球球速再次出现下滑。",
-        "而多伦多蓝鸟在这个时间节点根本承担不起这样的投球表现。在芝加哥小熊输给底特律老虎后，多伦多蓝鸟（76胜78负）在常规赛仅剩8场的情况下，距离美联第三张外卡席位仍有2场胜差，但得克萨斯游骑兵（77胜77负）目前已经反超了多伦多蓝鸟。多伦多蓝鸟在与克利夫兰守护者（79胜75负）的交手战绩中占优，但对得克萨斯游骑兵和芝加哥小熊处于劣势，这让球队几乎没有犯错的空间。",
-        "“（我对）缺乏控球感到失望，”Dylan Cease表示。“如果你没有球速或犀利的球路，但能投进好球区并执行到位，你依然能制造出局。但满场保送且完全没有控球绝对不是一个好配方。”",
-        "周五的表现与Dylan Cease本赛季大部分时间的表现形成了鲜明对比。在符合投球局数的美联投手之中，Dylan Cease在赛前以35.3%的三振率、239次三振、2.47的FIP以及.180的对手打击率排名第一，同时以2.40的自责分率排名第二。",
-        "然而，他的直球球速已经成为一个值得关注的问题。自6月份首次出现球速下滑的趋势在周五延续了下来，他的直球平均时速为93.6英里，而他本赛季的平均球速为96.9英里。他在周日的平均球速为94.8英里，9月7日则是94.9英里。",
-        "事实上，在周五的比赛中，Dylan Cease所有五种球路的球速都下降了至少2英里。",
-        "Dylan Cease在当晚倒数第二球时确实投出了95.5英里的最高球速，但他和捕手Alejandro Kirk都认为，球速读数的下降并没有从根本上改变他们应对打者的方式。",
-        "“我只是努力进入好球区并执行战术，”Dylan Cease说道。“你知道的，不管是92还是98英里，这项运动的核心就是投出执行到位的球。所以这正是我一直在努力做的事情。”",
-        "“我们并没有过分关注球速，”Alejandro Kirk用西班牙语补充道。“有时你虽然没有达到最佳状态，但依然可以制造很多出局数。对他的控球来说这是艰难的一晚，但他是一位极具统治力的投手。”",
-        "显而易见的问题是，特别是在赛季如此深入的阶段，球速下降是否与健康有关，以及这是否会导致多伦多蓝鸟给Dylan Cease安排额外的休息，或者跳过一次轮值。不过主教练John Schneider表示，目前没有任何迹象表明在球队全力冲刺季后赛席位时有必要做出这样的调整。",
-        "“对于一个投了这么长时间的球员，在与他进行沟通后，我们对医疗团队有着极大的信心和信任，”John Schneider说道。“如果出现真正的危险信号，让球员置身于受伤的风险中，那将是另一回事。他当然在苦苦支撑，而且对球路的效果感到沮丧。但我认为如果真的存在任何巨大、巨大的危险信号，他根本就不会站上投手丘。”",
-        "相反，John Schneider认为Dylan Cease寻找习惯球威的过程，可能导致了周五出现的控球问题。",
-        "“像他这样的投手……你已经习惯了用某种特定方式投球，”John Schneider说道。“他现在试图调动更多力量，但目前并没有取得（想要的结果）。然后你的投球动作就会稍微走样。他的球路配搭不如以往，而保送实在是太不符合他的一贯风格了。”",
-        "多伦多蓝鸟经不起Dylan Cease频繁的短局数投球。伤病迫使多伦多蓝鸟在整个赛季中多次采用牛棚车轮战和长中继投球，球队也利用轮空日采取四人轮值，以便让Dylan Cease和José Soriano尽可能多地登板投球。",
-        "多伦多蓝鸟最终在周五使用了六名投手才吃完八局。",
-        "“在我看来，这是最好的牛棚之一，但我们也需要在打击和防守上提供支援，”在多伦多蓝鸟仅敲出5支安打并出现3次失误后，Alejandro Kirk说道。“我们不能把一切都压在投手身上。我们需要做好自己的工作，我们对此心知肚明。”"
-      ],
-      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/p9e4lqbojzrhpgkq7feg",
-      "translationSourceHash": "a0b750e7e851b79be55b863f8e977294ea69728d6c55ab15dff4a4cbbe661ca0",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-09-19T06:43:12.893Z",
-      "author": "Perla Paredes",
-      "publishedAt": "2026-09-19T05:24:00.000Z",
-      "url": "https://www.mlb.com/bluejays/news/dylan-cease-struggles-in-blue-jays-loss-to-rangers",
-      "source": "MLB.com"
     }
   ],
   "pendingNotificationIds": [
-    "1bbe863097cfd28bca63f6bea01d2e4ccb97ddc50ab8e6aa9b65a84a2377cc56"
+    "1bbe863097cfd28bca63f6bea01d2e4ccb97ddc50ab8e6aa9b65a84a2377cc56",
+    "4d63cefd00ba7ef3a7c355a24910cffa86e12d86022907ebaa4b2e64802507cb"
   ]
 }
