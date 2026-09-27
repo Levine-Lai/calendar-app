@@ -1,7 +1,7 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-09-27T19:17:19.244Z",
+  "updatedAt": "2026-09-27T22:32:48.442Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
@@ -145,16 +145,16 @@
       "translatedAt": "2026-09-27T19:17:19.238Z"
     },
     {
-      "id": "5929512f77792074b43dedc2b678114a43e885570ff8039f492d6617a8fd81bb",
+      "id": "67e9bb2ede782abcf6a2edb6ee1f8bca0751959280792a6198852e68358bf879",
       "teamId": "arsenal",
       "teamName": "阿森纳",
-      "titleEn": "Team news: Six changes for WSL trip to Chelsea",
-      "summaryEn": "",
+      "titleEn": "Team news: Five changes for WSL trip to Chelsea",
+      "summaryEn": "Renée Slegers has made five changes to her starting line-up for this afternoon’s match",
       "bodyEn": [
-        "Renée Slegers has made six changes to her starting line-up for this afternoon’s Women’s Super League match against Chelsea at Stamford Bridge.",
+        "Renée Slegers has made five changes to her starting line-up for this afternoon’s Women’s Super League match against Chelsea at Stamford Bridge.",
         "Following Tuesday’s 1-0 win at home to HB Koge in the UEFA Women’s Champions League, Anneke Borbe keeps her place in goal, as do Leah Williamson and Steph Catley in defence.",
-        "Full-backs Emily Fox and Ona Batlle start ahead of Smilla Holmberg and Taylor Hinds, while Georgia Stanway replaces Frida Maanum in midfield. Mariona Caldentey is also given the nod, with Stina Blackstenius dropping to the bench, and Kyra Cooney-Cross starts again.",
-        "In attack, Lisa Baum and Olivia Smith start on the wings with Chloe Kelly and Caitlin Foord on the bench. Baum and Smith will be either side of Alessia Russo.",
+        "Full-backs Emily Fox and Ona Batlle start ahead of Smilla Holmberg and Taylor Hinds, while Georgia Stanway replaces Frida Maanum in midfield. Mariona Caldentey is also given the nod, with Stina Blackstenius dropping to the bench, and Kyra Cooney-Cross starts again while Olivia Smith doesn't.",
+        "In attack, Lisa Baum and Mariona start on the wings with Chloe Kelly and Caitlin Foord on the bench. Baum and Mariona will be either side of Alessia Russo.",
         "Kick-off is at 4.30pm.",
         "LINE-UPS",
         "Chelsea XI: Hampton, Carpenter, Malard, James, Thompson, McCabe, Kaptein, Walsh, Bronze (C), Buchanan, Potter",
@@ -165,25 +165,25 @@
       "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/362a47d3cccc-gettyimages-2297381460.webp",
       "author": "Stephen Wright",
       "publishedAt": "2026-09-27T14:30:00.000Z",
-      "url": "https://www.arsenal.com/news/team-news-six-changes-for-wsl-trip-to-chelsea-aKJG91C2Cimj",
+      "url": "https://www.arsenal.com/news/team-news-five-changes-for-wsl-trip-to-chelsea-aKJG91C2Cimj",
       "source": "Arsenal.com",
-      "titleZh": "球队消息：客场对阵切尔西的女子英超联赛做出六处人员调整",
-      "summaryZh": "阿森纳女足公布客战切尔西首发阵容，雷妮·斯勒格斯做出六处人员调整。",
+      "titleZh": "球队新闻：客场对阵切尔西的女子英超联赛进行五处人员调整",
+      "summaryZh": "雷妮·斯勒格斯对今天下午的首发阵容做出五处调整。",
       "bodyZh": [
-        "雷妮·斯勒格斯对今天下午在斯坦福桥进行的对阵切尔西的女子英超联赛首发阵容做出了六处调整。",
-        "在周二主场1-0战胜HB克厄的欧洲女子冠军联赛后，安妮克·博尔贝继续镇守球门，莉娅·威廉姆森和斯蒂芙·卡特利也继续在后防线上首发。",
-        "边后卫埃米莉·福克斯和奥娜·巴特利取代了斯米拉·霍姆伯格和泰勒·海因茨首发，乔治娅·斯坦韦在从中场替代弗里达·马努姆。玛丽奥娜·卡尔登特伊也获得首发机会，斯蒂娜·布莱克斯蒂尼乌斯则坐在替补席上，基拉·库尼-克罗斯再次首发。",
-        "在进攻端，丽莎·鲍姆和奥利维亚·史密斯出任边锋，克洛伊·凯利和凯特琳·福德坐在替补席上。鲍姆和史密斯将分居阿莱西亚·鲁索的两侧。",
-        "比赛将于下午4点30分开球。",
-        "首发名单",
-        "切尔西首发：汉普顿、卡彭特、马拉德、詹姆斯、汤普森、麦凯布、卡普泰恩、沃尔什、布隆斯（队长）、布坎南、波特",
-        "替补：彭、布尔曼、吉尔马、努斯肯、比约恩、德拉戈尼、比弗-琼斯、巴尔蒂莫雷、滨野",
-        "阿森纳首发：博尔贝、福克斯、威廉姆森、卡特利、巴特利、利特尔（队长）、斯坦韦、库尼-克罗斯、玛丽奥娜、鲍姆、鲁索",
-        "替补：米萨、韦本-莫伊、福德、史密斯、罗伊特勒、凯利、布莱克斯蒂尼乌斯、切尔奇、霍姆伯格"
+        "雷妮·斯勒格斯对今天下午在斯坦福桥球场对阵切尔西的女子英超联赛首发阵容进行了五处调整。",
+        "在周二主场1-0战胜HB克厄的欧洲女足冠军联赛之后，安妮克·博尔贝保留了门将位置，利亚·威廉姆斯和斯蒂芬·卡特利也继续在后防线上首发。",
+        "边后卫埃米莉·福克斯和奥娜·巴特利替代了斯米拉·霍尔姆贝格和泰勒·海恩斯首发，而乔治娅·斯坦威在中场取代了弗里达·马努姆。玛丽奥娜·卡尔登特伊也获得首发，斯蒂娜·布拉克stenius（Blackstenius）则坐在替补席上，同时基拉·库尼-克罗斯再次首发，而奥利维亚·史密斯没有。",
+        "在进攻端，丽莎·鲍姆和玛丽奥娜担任边锋，克洛伊·凯利和凯特琳·福德坐在替补席上。鲍姆和玛丽奥娜将分居阿莱西亚·鲁索两侧。",
+        "比赛将于下午4点30分开始。",
+        "首发阵容",
+        "切尔西首发：汉普顿、卡彭特、马拉德、詹姆斯、汤普森、麦凯布、卡普坦、沃尔什、布朗泽（队长）、布坎南、波特",
+        "替补：彭、布尔曼、吉尔马、内斯肯、比约恩、德拉戈尼、比弗-琼斯、巴尔蒂莫雷、滨野",
+        "阿森纳首发：博尔贝、福克斯、威廉姆斯、卡特利、巴特利、利特尔（队长）、斯坦威、库尼-克罗斯、玛丽奥娜、鲍姆、鲁索",
+        "替补：米萨、武本-莫伊、福德、史密斯、罗伊特勒、凯利、布拉克斯特尼乌斯、塞尔奇、霍尔姆贝格"
       ],
-      "translationSourceHash": "c87420d5269e1946fe66c363d34dcb5c740acb3ee7e689ff5175bd044dd80bb4",
+      "translationSourceHash": "b4a3883684bfbd5f22d34bd7372d1796cacacf81e3d2b816c16ab40539d63c95",
       "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-09-27T15:39:14.811Z"
+      "translatedAt": "2026-09-27T22:32:42.288Z"
     },
     {
       "id": "14331d8958b7d12ad48d3008ef37aa8ce4d72899e6a65d49a478de584be4c8ad",
@@ -962,33 +962,6 @@
       "translatedAt": "2026-09-27T15:39:32.687Z"
     },
     {
-      "id": "cf44d24abaf50e24bdb0e7299df4eabcde36a7047c9cc2bfd06261da17e3cd3c",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Frida Maanum joins Frimmy for Colney Carpool!",
-      "summaryEn": "Our Norwegian midfielder is next up in the hot seat for the latest episode of Colney Carpool with Frimmy",
-      "bodyEn": [
-        "Everyone needs a lift to training every once in a while and this time it's Frida Maanum's turn in the latest episode of Colney Carpool!",
-        "Our Norwegian midfielder is next up in the hot seat, where she tells Frimmy her karaoke song, her favourite moment of the season so far and what job she might have chosen had she not been a baller.",
-        "Click play to ride along and check out all of our"
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/b95f8a54c6fc-colney-carpool-frida.webp",
-      "author": "Emma Holbrook",
-      "publishedAt": "2023-03-31T09:01:00.000Z",
-      "url": "https://www.arsenal.com/news/frida-maanum-joins-frimmy-for-colney-carpool-aKuk77U7GyqJ",
-      "source": "Arsenal.com",
-      "titleZh": "弗里达·马努姆与弗里米一同参与科尔尼拼车秀！",
-      "summaryZh": "我们的挪威中场做客最新一期科尔尼拼车秀。",
-      "bodyZh": [
-        "每个人偶尔都需要搭车去训练，这一次轮到弗里达·马努姆参加最新一期的科尔尼拼车秀！",
-        "我们的挪威中场成为了下一个嘉宾，她向弗里米透露了她的卡拉OK拿手歌曲、本赛季至今最喜欢的时刻，以及如果不踢球她可能会选择什么工作。",
-        "点击播放按钮一起出发，观看我们的全部内容"
-      ],
-      "translationSourceHash": "9eb29582bf18dd469b26035a470ace5b4065f5b08a1f20a19cfae862e1be2fd4",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-09-27T15:39:35.150Z"
-    },
-    {
       "id": "91696c55199b23c004f243fd167cb407eac04d0133c8606090116af5501770ed",
       "teamId": "arsenal",
       "teamName": "阿森纳",
@@ -1014,7 +987,47 @@
       "translationSourceHash": "758311e63e7988cd9f5e10722e94d12f8156e76aea0042d38501da956d1820a3",
       "translationModel": "gemini-3.5-flash-lite",
       "translatedAt": "2026-09-26T14:44:03.309Z"
+    },
+    {
+      "id": "0838e22823d4772cb3182b43118140e6eb9e908fd0bd59b35893aba02d8e63db",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Wenger: Memories of my first game",
+      "summaryEn": "Find out what Arsene Wenger said about his first match in charge of Arsenal back in 1996 against Blackburn Rovers",
+      "bodyEn": [
+        "Arsene Wenger has revealed his abiding memories from his very first game in charge of Arsenal on October 12, 1996.",
+        "The Gunners eased to a comfortable 2-0 win at Blackburn Rovers at Ewood Park, with both goals coming from Ian Wright.",
+        "But Wenger, who had banned chocolate and sweets from the dressing room after taking over, will never forget one particular moment on the coach home.",
+        "“There were some amusing details,” he said. “I changed a few habits [of the players], which isn't easy in a team where the average age is 30 years.",
+        "“At the first match the players were chanting “we want our Mars bars!” so there were some fun things.",
+        "“At half time in the first game I asked my physio, Gary Lewin, “Nobody is talking, what's wrong with them?” and he replied: “They're hungry.” I hadn't given them their chocolate before the game. It was funny!”",
+        "Wenger had been greeted by headlines of ‘Arsene Who?’ upon his arrival in England, and he said it immediately brought the challenge home to him.",
+        "“People were asking who I was. I was a complete unknown,” he said. “And there was no history of a foreign manager succeeding in England. So I was in a situation where no one knew me and history was against me.”"
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/27e85450d313-arsene-wenger-the-new-arsenal-manager-watches-his-first-game-in-charge-of-his-ne.webp",
+      "author": "Arsenal FC",
+      "publishedAt": "2014-03-21T23:00:00.000Z",
+      "url": "https://www.arsenal.com/news/wenger-memories-of-my-first-game-aXhw27Q612xY",
+      "source": "Arsenal.com",
+      "titleZh": "温格：我执教首场比赛的回忆",
+      "summaryZh": "温格回忆了1996年执教阿森纳的首场比赛及趣事。",
+      "bodyZh": [
+        "阿尔塞纳·温格透露了他对1996年10月12日执教阿森纳的第一场比赛的持久记忆。",
+        "阿森纳在埃伍德公园球场以2比0轻松战胜布莱克本流浪者，两个进球均由伊恩·赖特打进。",
+        "但接手球队后禁止更年室出现巧克力和糖果的温格，永远不会忘记回程大巴上的一个特定时刻。",
+        "“有一些有趣的细节，”他说。“我改变了球员的一些习惯，这在一支平均年龄为30岁的球队里并不容易。”",
+        "“在第一场比赛时，球员们高喊‘我们要玛氏巧克力！’，所以有一些好玩的事情。”",
+        "“在第一场比赛的中场休息时，我问我的理疗师加里·卢因：‘怎么没人说话，他们怎么了？’他回答说：‘他们饿了。’赛前我没有给他们巧克力。太搞笑了！”",
+        "温格刚到英格兰时迎来了“阿森纳是谁？”的头条新闻，他说这立刻让他感受到了挑战。",
+        "“人们在问我是谁。我是一个完全未知的人，”他说。“而且没有外国教练在英格兰取得成功的历史。所以我处在一个没有人认识我、历史也对我不利的境地。”"
+      ],
+      "translationSourceHash": "a5afdd076e2d271ca9d11920f0d3f47e378d1f93cd39d6064d34ff8c2a107550",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-09-27T22:32:48.442Z"
     }
   ],
-  "pendingNotificationIds": []
+  "pendingNotificationIds": [
+    "67e9bb2ede782abcf6a2edb6ee1f8bca0751959280792a6198852e68358bf879",
+    "0838e22823d4772cb3182b43118140e6eb9e908fd0bd59b35893aba02d8e63db"
+  ]
 }
