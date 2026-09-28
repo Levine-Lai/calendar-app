@@ -1,12 +1,45 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-09-27T22:32:48.442Z",
+  "updatedAt": "2026-09-28T06:56:17.700Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "b54fbd78011951f4625b18674284a13bcbd3a89d966ab674eba21250abf4b9ff",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Loan Watch: Gale makes debut, Harwood victorious",
+      "summaryEn": "The latest on our 2026/27 loanees",
+      "bodyEn": [
+        "Ethan Nwaneri and Tommy Setford were both out of domestic action over the weekend, having each been named in the England Under-21 squad during the current internationals.",
+        "Lee Carsley’s side bolstered their Euro U21 qualifying campaign with a 4-2 win over Kazakhstan at Wolves’ Molineux on Friday, Ethan starting in the victory and playing 69 minutes. Tommy served as goalkeeping backup to James Beadle, and the two Gunners will return to club duty with Borussia Dortmund and Stevenage respectively after the break.",
+        "Ismeal Kabia was not in action for St Mirren over the weekend, with the Scottish Premiership also taking a backseat during the internationals which span the end of September and beginning of October. Ismeal is set to be back on the pitch when the Buddies visit Hearts in a fortnight’s time.",
+        "The same applies to Charles Sagoe Jr, who has been playing for the past few months in the summer season of the Allsvenskan, Sweden’s top flight, with survival-hunting Kalmar. In a bid to avoid relegation, Charles’ side will play a friendly contest next week against Varberg, enabling match fitness ahead of a tricky league trip to Malmo on October 12.",
+        "With England’s Under-20 Lionesses having recently bowed out of the World Cup in Poland, Jessie Gale and Cecily Wellesley-Smith have returned to their respective loan clubs. Jessie thus made her competitive WSL 2 debut for Newcastle United on Sunday, as the league leaders thrashed Leicester City 4-0 in Gateshead to maintain their 100% start to the season, seeing out the final eight minutes. Cecily has not yet returned to domestic action in Sweden, though her Rosengard side secured a potentially pivotal 1-0 win over Pitea on Sunday to move two points clear of the Allsvenskan relegation play-off place.",
+        "It was a bittersweet week for Sophie Harwood’s Sheffield United side, who endured two hugely contrasting results. Wednesday’s League Cup league phase opener ended in a 10-1 defeat at the hands of Manchester United, before the Blades responded in style in Sunday’s league match against Durham, winning 4-1 at Bramall Lane. Sophie played a combined 106 minutes across the two matches, gaining invaluable experience under her belt."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/183d63e763a9-sophie-harwood-in-training.webp",
+      "author": "Dan Godfrey",
+      "publishedAt": "2026-09-28T06:00:00.000Z",
+      "url": "https://www.arsenal.com/news/loan-watch-gale-makes-debut-harwood-victorious-aLi3P5x9he26",
+      "source": "Arsenal.com",
+      "titleZh": "外租球员动态：盖尔迎来首秀，哈伍德取胜",
+      "summaryZh": "了解我们2026/27赛季外租球员的最新表现。",
+      "bodyZh": [
+        "伊森·恩瓦内里和汤米·塞特福德在周末均没有参加国内联赛，因为他们都在本次国际比赛日入选了英格兰U21青年队。",
+        "周五，李·卡斯利率领的球队在狼队的莫利纽球场以4-2击败哈萨克斯坦，为欧青赛预选赛增添胜绩。伊森首发出场并踢了69分钟。汤米作为詹姆斯·比德尔的替补门将待命，国际比赛日结束后，这两位阿森纳球员将分别返回各自的俱乐部多特蒙德和斯蒂夫尼奇报到。",
+        "伊斯梅尔·卡比亚在周末没有代表圣米伦出场，由于国际比赛日（跨越9月底和10月初），苏格兰超级联赛也处于暂停状态。伊斯梅尔预计将在两周后球队客场对阵哈茨时重返赛场。",
+        "查尔斯·萨戈·儒尼奥尔的情况也是如此。过去几个月里，他一直在征战瑞典顶级联赛夏季赛季的保级球队卡尔马。为了避免降级，查尔斯所在的球队将在下周与瓦尔贝里进行一场友谊赛，以便为10月12日客场挑战马尔默的艰难联赛保持竞技状态。",
+        "随着英格兰U20女足此前在波兰世界杯上出局，杰西·盖尔和塞西莉·韦尔斯利-史密斯已经返回各自的外租俱乐部。周日，杰西迎来了她代表纽卡斯尔联的WSL 2正式比赛首秀，这支领头羊球队在盖茨黑德以4-0大胜莱斯特城，延续了赛季全胜的开局，她在比赛最后8分钟替补登场。塞西莉尚未在瑞典国内赛场复出，不过她的球队罗森加德在周日取得了一场关键的1-0胜利，积分榜上领先瑞典超级联赛降级附加赛区两分。",
+        "对于索菲·哈伍德所在的谢菲尔德联队来说，这是喜忧参半的一周，他们经历了截然不同的两场比赛。周三的联赛杯小组赛首战以1-01惨败给曼彻斯特联，随后刀锋军团在周日的联赛中强势回应，在布拉莫斯兰球场以4-1击败达勒姆。索菲在这两场比赛中总共出场106分钟，积累了宝贵的经验。"
+      ],
+      "translationSourceHash": "153e0be814f81b21829b7a0d4091a6c2ecce1cee695b22de5115da25400f3b3c",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-09-28T06:56:17.694Z"
+    },
     {
       "id": "6f879561a93dbac9165ed42d6441427b5175b2897a3daa6a687e5269fd05f059",
       "teamId": "arsenal",
@@ -931,37 +964,6 @@
       "translatedAt": "2026-09-26T14:43:59.464Z"
     },
     {
-      "id": "f15019aaff0dadade3151fd8e5691306edd060e9f3bcc5adc857eb8b0fafbd3d",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Bukayo Saka stars in Colney Carpool!",
-      "summaryEn": "See Bukayo grab a lift to training, reveal his karaoke song and take on Frimmy's target challenge!",
-      "bodyEn": [
-        "All season long, Frimmy has been dishing out lifts to training in his infamous golf buggy, and this week saw Bukayo Saka require his services.",
-        "In return for a not-so-swift ride to the pitches at London Colney, Bukayo had to undergo some teasing questions from his driver, including revealing his karaoke classic , but would he sing it for the cameras?",
-        "Then he took part in a target challenge, aiming to beat Reiss Nelson's high score of 10, despite Frimmy's best attempts to put him off!",
-        "Find out if Bukayo could do it, as well as see all the other hilarious moments during the trip by pressing play on the video above.",
-        "You can also check out our other participants throughout the season in our playlist"
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/e543faec3b7a-saka-carpool.webp",
-      "author": "Arsenal Media",
-      "publishedAt": "2023-05-10T15:55:00.000Z",
-      "url": "https://www.arsenal.com/news/bukayo-saka-stars-in-colney-carpool-aRd1R0W6DnR0",
-      "source": "Arsenal.com",
-      "titleZh": "萨卡亮相科尔尼顺风车栏目！",
-      "summaryZh": "萨卡搭顺风车去训练，透露拿手卡拉OK曲目并接受挑战！",
-      "bodyZh": [
-        "整个赛季以来，弗里米一直开着他那辆标志性的高尔夫球车送球员去训练，本周接受服务的是萨卡。",
-        "作为搭乘这辆车前往伦敦科尔尼训练场的交换，萨卡不得不接受司机的一些调侃问题，包括透露他的经典卡拉OK曲目，但他会对着镜头唱出来吗？",
-        "随后他参加了一项靶心挑战，目标是打破里斯·尼尔森创下的10分最高纪录，尽管弗里米竭尽全力干扰他！",
-        "点击上方视频，即可了解萨卡是否成功挑战，并观看旅途中的所有搞笑时刻。",
-        "你还可以在我们的播放列表中查看本赛季的其他参与者。"
-      ],
-      "translationSourceHash": "49d59b201834ab93fdb369359b822a454b58be8bb6d7d5feb21b31bb05e390bd",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-09-27T15:39:32.687Z"
-    },
-    {
       "id": "91696c55199b23c004f243fd167cb407eac04d0133c8606090116af5501770ed",
       "teamId": "arsenal",
       "teamName": "阿森纳",
@@ -1026,5 +1028,7 @@
       "translatedAt": "2026-09-27T22:32:48.442Z"
     }
   ],
-  "pendingNotificationIds": []
+  "pendingNotificationIds": [
+    "b54fbd78011951f4625b18674284a13bcbd3a89d966ab674eba21250abf4b9ff"
+  ]
 }
