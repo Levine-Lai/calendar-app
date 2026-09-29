@@ -1,12 +1,39 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-09-29T14:25:14.974Z",
+  "updatedAt": "2026-09-29T19:38:35.520Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "8be688c00518312b7adc31635b4bb7a8e1712c98c775c9c4ea968ce5588c92a8",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Full match: Chelsea 1-0 Arsenal Women",
+      "summaryEn": "We suffered our first defeat of the season with a 1-0 loss away to Chelsea in the Women's Super League on Sunday.",
+      "bodyEn": [
+        "We suffered our first defeat of the season with a 1-0 loss away to Chelsea in the Women's Super League on Sunday.",
+        "Alyssa Thompson opened the scoring for the Blues, and we were unable to find an equaliser.",
+        "Press play on the video above to see every kick of the game from Stamford Bridge."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/bd3f1f004725-gettyimages-2297414794.webp",
+      "author": "Stephen Wright",
+      "publishedAt": "2026-09-29T17:30:00.000Z",
+      "url": "https://www.arsenal.com/news/full-match-chelsea-1-0-arsenal-women-a4Q7G1U7B1Ed",
+      "source": "Arsenal.com",
+      "titleZh": "全场录像：切尔西女足 1-0 阿森纳女足",
+      "summaryZh": "周日女超联赛客场0-1不敌切尔西，遭遇赛季首败。",
+      "bodyZh": [
+        "周日，我们在女超联赛客场0-1不敌切尔西，遭遇了本赛季的各项赛事首场失利。",
+        "Alyssa Thompson为切尔西首开纪录，随后我们未能扳平比分。",
+        "点击上方视频，观看这场在斯坦福桥球场进行的比赛的全场精彩回放。"
+      ],
+      "translationSourceHash": "1590ca39ac149c645062c0f27f7d02da281059151265e7860477f6c67c88c022",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-09-29T19:38:35.512Z"
+    },
     {
       "id": "02f713c0bbaf24b62233e11476e6c455db94b6e0e446c4962f08f1179d275837",
       "teamId": "arsenal",
@@ -901,33 +928,6 @@
       "translationSourceHash": "6da43e26dd5680cf5dc983203def1864163e654b5e01fb0108b65906309dc33b",
       "translationModel": "gemini-3.5-flash-lite",
       "translatedAt": "2026-09-29T14:25:10.039Z"
-    },
-    {
-      "id": "4b86bd597c0872ce38e83cc17518fae87f702613dc1245d85facc1f0b9deaaff",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Watch the best men’s skills from 2024!",
-      "summaryEn": "2024 was full of silky skills from our men’s first team and you can watch the best of them here",
-      "bodyEn": [
-        "2024 was full of silky skills from our men’s first team and you can watch the best of the flicks and tricks with our compilation!",
-        "From Bukayo Saka’s clever finish in the north London derby at Tottenham Hotspur Stadium to Martin Odegaard’s intricate through ball for Leandro Trossard against Porto, there was no shortage of showboating on display for our Gooners to cheer.",
-        "Press play on the video above to enjoy the best skills."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/82aff1420d39-trossard-goal-brighton.webp",
-      "author": "Stephen Wright",
-      "publishedAt": "2024-12-28T12:45:00.000Z",
-      "url": "https://www.arsenal.com/news/watch-the-best-mens-skills-from-2024-aoJDU1Q8GoBC",
-      "source": "Arsenal.com",
-      "titleZh": "观看2024年度男足最佳技巧展示！",
-      "summaryZh": "2024年男足球员展现了精湛球技，快来观看精彩集锦。",
-      "bodyZh": [
-        "2024年充满了我们一线队球员精湛的球技，您可以通过我们的集锦观看最精彩的脚后跟磕球和花式动作！",
-        "从萨卡在托特纳姆热刺球场进行的北伦敦德比中的巧妙破门，到厄德高对阵波尔图时为特罗萨德送出的精妙直塞，枪迷们为之欢呼的精彩表演层出不穷。",
-        "点击播放上方视频，欣赏最佳技巧。"
-      ],
-      "translationSourceHash": "5d8a1c15bd073d33a7bca3937d17e6580230410f096eb8c8f3a84ed66f7826ca",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-09-29T14:25:14.974Z"
     }
   ],
   "pendingNotificationIds": [
@@ -938,6 +938,6 @@
     "012db94f99cd78741da8cd9600bb4ec6fdc3ae5a769542e1e81d1ec483fca9a4",
     "f7646efe8bc10da2d6fb1ddefe7d0439cb6161a63ff45aea0516b61218a5d4bf",
     "d68f9773ee63a0c3806580d4861816cfde81c6018570bb8592732b308fe17e7d",
-    "4b86bd597c0872ce38e83cc17518fae87f702613dc1245d85facc1f0b9deaaff"
+    "8be688c00518312b7adc31635b4bb7a8e1712c98c775c9c4ea968ce5588c92a8"
   ]
 }
