@@ -1,7 +1,7 @@
 {
   "teamId": "toronto-blue-jays",
   "teamName": "多伦多蓝鸟",
-  "updatedAt": "2026-09-28T22:31:02.912Z",
+  "updatedAt": "2026-09-29T20:02:40.859Z",
   "items": [
     {
       "id": "0bc5c82feacd6d70a25f11d164861935dcc9c2738ef6c8598c60112ff222d26a",
@@ -102,7 +102,7 @@
       "translationModel": "gemini-3.5-flash-lite",
       "translatedAt": "2026-09-24T01:23:42.883Z",
       "author": "Jim Callis, Sam Dykstra and Jonathan Mayo",
-      "publishedAt": "2026-09-28T20:19:00.000Z",
+      "publishedAt": "2026-09-29T16:06:00.000Z",
       "url": "https://www.mlb.com/bluejays/news/top-arizona-fall-league-prospect-for-each-club-2026",
       "source": "MLB.com"
     },
