@@ -1,7 +1,7 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-10-01T00:10:31.053Z",
+  "updatedAt": "2026-10-01T05:56:06.700Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
@@ -416,35 +416,6 @@
       "translationSourceHash": "1590ca39ac149c645062c0f27f7d02da281059151265e7860477f6c67c88c022",
       "translationModel": "gemini-3.5-flash-lite",
       "translatedAt": "2026-09-29T19:38:35.512Z"
-    },
-    {
-      "id": "02f713c0bbaf24b62233e11476e6c455db94b6e0e446c4962f08f1179d275837",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Training Gallery: Putting the work in for Paris",
-      "summaryEn": "We face Paris FC in our second league phase game in this season's UEFA Women's Champions League",
-      "bodyEn": [
-        "We face Paris FC in our first European UEFA Women's Champions League away game of the season, and you can see what we've been up to ahead of the tie with our latest training gallery.",
-        "Our Gunners got off to a winning start at Meadow Park in the opening round, beat Danish side HB Koge Women 1-0 thanks to a stoppage time penalty won by Selina Cerci and converted by Mariona Caldentey.",
-        "Having suffered our first defeat in all competitions at Stamford Bridge to Chelsea on Sunday, we'll be looking to get back to winning ways as we head to the French capital.",
-        "Swipe through the gallery below, captured by club photographer David Price, to see how we've been gearing up for the tie at the Sobha Realty Training Centre:"
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/6ad2da11b01e-gallery-cover.webp",
-      "author": "Arsenal Media",
-      "publishedAt": "2026-09-29T13:48:16.439Z",
-      "url": "https://www.arsenal.com/news/training-gallery-putting-the-work-in-for-paris-aZTMe1F6fCkq",
-      "source": "Arsenal.com",
-      "titleZh": "训练图集：为对阵巴黎做准备",
-      "summaryZh": "阿森纳女足将在欧冠联赛阶段客场对阵巴黎FC。",
-      "bodyZh": [
-        "我们将迎来本赛季欧冠联赛阶段的首个客场比赛，对手是巴黎FC，通过我们最新的训练图集来看看赛前的备战情况吧。",
-        "我们的枪手姑娘们在梅多公园球场取得了欧冠开门红，凭借塞利娜·切尔奇制造、马里奥娜·卡尔登泰罚进的伤停补时点球，以1比0击败了丹麦球队克厄女足。",
-        "周日在斯坦福桥球场遭遇了本赛季各项赛事的首场失利（对阵切尔西），在前往法国首都之际，我们将力争重回胜利轨道。",
-        "浏览下方由俱乐部摄影师大卫·普莱斯拍摄的图集，看看我们在索布哈·雷亚尔蒂训练中心是如何为这场比赛进行备战的："
-      ],
-      "translationSourceHash": "a0d79a98b17a11e4c59ae5d9032e17f64aaf3a8cb50703d5ce0b32c0e29142fc",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-09-29T14:22:25.206Z"
     },
     {
       "id": "8b3703669487e368e630a0ffeef7a48e4986ebf15fa6d9bf40eeffec3bf6f9f5",
@@ -1066,7 +1037,80 @@
       "translationSourceHash": "e365f4de20d972455a76ca062746a5faa16aa8291880227c19fe0cedef77918a",
       "translationModel": "gemini-3.5-flash-lite",
       "translatedAt": "2026-09-19T13:24:26.574Z"
+    },
+    {
+      "id": "355e8b8ab841fc790bea3628098a85adef1252bad34f397b67acc811b0c14919",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "22 stats for 22 years of Arsène Wenger at Arsenal",
+      "summaryEn": "We've delved into the numbers to bring you some interesting facts and stats surrounding the Frenchman's tenure",
+      "bodyEn": [
+        "Arsène Wenger's 22 years as our manager was filled with trophies, glory and memories, ensuring he created a plethora of extraordinary facts and stats as the seasons went on.",
+        "Three Premier League titles, seven FA Cups and 49 games unbeaten might be some of the most important figures from his time in our dugout, but digging through the record books there are plenty more impressive numbers to his name.",
+        "Here are some of the most incredible statistics from our legendary manager's time in north London:",
+        "Arsène took charge of 1,235 of our matches, far more than Bertie Mee in second place (540) and George Graham (460) in third. Combined, those two would still be 235 behind Arsène.",
+        "His reign lasted 21 years and seven months, nearly nine years longer than our next longest-serving manager George Allison.",
+        "He managed 828 Premier League matches, which is the most of any manager in the competition’s history, 18 ahead of Sir Alex Ferguson. His nearest rival still plying their trade in the division is David Moyes, who is third on the list with 758.",
+        "We won 716 times under Arsène, giving him a win ratio of 57.98%. We averaged 1.96 points per Premier League match in the Wenger era.",
+        "We scored 2,298 goals in those games, averaging 1.86 per match. Our goal difference during that time was +1,071.",
+        "Thirteen of the 24 seasons (54%) in which we have scored 100 goals or more came under Arsène’s management.",
+        "Arsène is the most successful manager in FA Cup history - he won the competition on seven occasions. His triumph in 2017 saw him surpass Aston Villa’s George Ramsey who won it six times spanning 33 years either side of the turn of the 20th century.",
+        "Wenger selected 222 different players in north London. The player he selected the most was Patrick Vieira, who made 402 appearances between 1996 and 2005, just ahead of Theo Walcott who made 397. Most games played under Wenger",
+        "The 200th - and final - player to make their debut under Arsène was Konstantinos Mavropanos, against Manchester United in April 2018.",
+        "During Arsène’s tenure, players from 53 nations represented our first team. Of those, England led the way with 80 - followed by France (30) and Germany (11).",
+        "Ian Wright scored the first of our 2,298 goals under Arsène in his first game back in September 1996 which saw us beat Blackburn Rovers 2-0. Pierre-Emerick Aubameyang netted the final one to beat Huddersfield Town 1-0 in May 2018.",
+        "No fewer than 117 players scored for us during Arsène’s tenure - Thierry Henry netted a club-record 228, with Robin van Persie (132) and Theo Walcott (108) completing the top three.",
+        "Always a trailblazer, Arsène became the first overseas manager to win the English league when leading us to the title in 1997/98.",
+        "We conceded just 17 league goals in 1998/99 - the best-ever defensive record in our history, just beating the 18 we let in during our title-winning season of 1990/91.",
+        "In 2001/02, we became the first team to score in every Premier League match throughout the entire season.",
+        "We played against 125 different opponents in the Arsène era, and the team we beat most often during that time was Everton (32). He recorded his joint-biggest win against the Toffees during his tenure when we won 7-0 in May 2005.",
+        "Our 7-5 win against Reading in October 2012 was the highest-scoring match of the Arsène era.",
+        "We finished in the top four in 20 consecutive seasons under Arsène. We had never previously recorded 20 consecutive top-half finishes.",
+        "Arsène gave first-team debuts to 83 players who came through our academy. The first was Paulo Vernazza in October 1997 against Birmingham City in the League Cup, and the last was Ben Sheaf in October 2017 in a Europa League game with Red Star Belgrade.",
+        "In January 2014, Gedion Zelalem became the first player born after Arsène took charge to make a first-team appearance. Eddie Nketiah was the first player born after September 1996 to score when netting the first of two goals in a 2-1 League Cup win over Norwich City in October 2017.",
+        "We went 588 days unbeaten away from home in the Premier League between March 2003 and October 2004 - losing none of the 27 matches we played on the road in the competition during that time.",
+        "Under Arsène, we managed to go 32 home league matches unbeaten - a run lasting between May 2003 and February 2005. In fact, we only lost three out of 72 home games matches between May 2003 and April 2007."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/ce3ad3d20372-london-england-arsene-wenger-the-arsenal-manager-celebrates-winning-the-league-a.webp",
+      "author": "Jonathon Rogers",
+      "publishedAt": "2023-07-28T12:48:49.000Z",
+      "url": "https://www.arsenal.com/news/22-stats-for-22-years-of-arsene-wenger-at-arsenal-a331T8T30DPw",
+      "source": "Arsenal.com",
+      "titleZh": "阿尔塞纳·温格执教阿森纳22年的22项数据",
+      "summaryZh": "带您回顾温格执教阿森纳时期的22项重要数据与纪录。",
+      "bodyZh": [
+        "阿尔塞纳·温格（Arsène Wenger）执教阿森纳的22年充满了奖杯、荣耀与回忆，随着赛季的推移，他创造了大量非凡的数据和纪录。",
+        "三次英超冠军、七次足总杯冠军以及49场不败可能是他在我们教练席任期内最重要的几个数字，但在纪录册中，还有更多令人印象深刻的数字归功于他。",
+        "以下是我们传奇主帅在北伦敦执教期间最不可思议的一些统计数据：",
+        "阿尔塞纳一共带队参加了1,235场比赛，远远超过排在第二位的伯蒂·米（540场）和第三位的乔治·格雷厄姆（460场）。即使将这两人的场次相加，仍比阿尔塞纳少235场。",
+        "他的执教生涯长达21年零7个月，比我们任期第二长的教练乔治·埃利森几乎长了九年。",
+        "他带队参加了828场英超比赛，是该赛事历史上场次最多的主帅，比亚历克斯·弗格森爵士多18场。在他之后仍在该联赛执教的最近 rival 是大卫·莫耶斯，他以758场排在榜单第三位。",
+        "在阿尔塞纳麾下我们赢得了716场比赛，胜率为57.98%。在温格时代，我们每场英超比赛平均积1.96分。",
+        "我们在这些比赛中打入2,298球，场均进球1.86个。在此期间我们的净胜球为+1,071球。",
+        "在我们单赛季进球达到或超过100球的24个赛季中，有13个赛季（54%）是在阿尔塞纳的执教下完成的。",
+        "阿尔塞纳是足总杯历史上最成功的主教练——他七次赢得该项赛事。他在2017年的夺冠超越了阿斯顿维拉的乔治·拉姆齐，后者在跨越20世纪之交的33年时间里六次夺冠。",
+        "温格在北伦敦共挑选了222名不同的球员。他选用最多的球员是帕特里克·维埃拉，他在1996年至2005年间出场402次，稍稍领先于出场397次的沃尔科特。在温格麾下出场最多的球员",
+        "在阿尔塞纳麾下完成首秀的第200位——也是最后一位——球员是马夫罗帕诺斯，对手是曼联，时间是2018年4月。",
+        "在阿尔塞纳执教期间，来自53个国家的球员代表过我们的一线队。其中，英格兰以80人居首，其次是法国（30人）和德国（11人）。",
+        "伊恩·赖特在1996年9月回归后的第一场比赛中攻入了我们在阿尔塞纳麾下2,298个进球中的第一个，当时我们2-0击败布莱克本。奥巴梅扬攻入了最后一个进球，在2018年5月以1-0击败哈德斯菲尔德。",
+        "在阿尔塞纳执教期间，共有不少于117名球员为我们进球——蒂埃里·亨利打入了俱乐部纪录的228球，范佩西（132球）和沃尔科特（108球）位列前三。",
+        "阿尔塞纳一直是一位开拓者，在带领我们夺得1997/98赛季英超冠军时，他成为了第一位赢得英格兰顶级联赛冠军的外籍主教练。",
+        "我们在1998/99赛季仅失17个联赛球——这是我们历史上最佳的防守纪录，刚刚好击败了我们在1990/91夺冠赛季丢掉的18球。",
+        "在2001/02赛季，我们成为英超联赛历史上第一支在整个赛季每场比赛都有进球的球队。",
+        "在阿尔塞纳时代，我们与125个不同的对手交锋过，在此期间我们击败次数最多的球队是埃弗顿（32次）。2005年5月我们7-0大胜埃弗顿，这也是他在任期间对阵这支太妃糖取得的最大比分胜利之一。",
+        "我们在2012年10月7-5战胜雷丁的比赛是阿尔塞纳时代进球最多的比赛。",
+        "在阿尔塞纳麾下，我们连续20个赛季跻身前四。此前我们从未连续20个赛季进入积分榜上半区。",
+        "阿尔塞纳为从我们青训营走出来的一线队球员完成了83次首秀。第一位是保罗·韦纳扎，于1997年10月在联赛杯对阵伯明翰城的比赛中登场；最后一位是本·谢夫，于2017年10月在欧联杯对阵贝尔格莱德红星的比赛中登场。",
+        "2014年1月，热迪昂·泽拉莱姆成为第一位在阿尔塞纳上任后出生的球员，并代表一线队出场。恩凯蒂亚则是第一位在1996年9月以后出生并取得进球的球员，他在2017年10月联赛杯2-1战胜诺维奇城的比赛中打入了个人两个进球中的第一个。",
+        "在2003年3月至2004年10月期间，我们在英超客场保持了588天不败——在此期间我们在该赛事的27个客场比赛中一场未输。",
+        "在阿尔塞纳麾下，我们取得了32场主场联赛不败的战绩——这一纪录保持在2003年5月至2005年2月之间。事实上，在2003年5月至2007年4月期间，我们在72场主场比赛中仅输了三场。"
+      ],
+      "translationSourceHash": "870b755b4ce95998c803bcfae2b74a46a4e7bb3b75258943e4199ecc968942ef",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-10-01T05:56:06.700Z"
     }
   ],
-  "pendingNotificationIds": []
+  "pendingNotificationIds": [
+    "355e8b8ab841fc790bea3628098a85adef1252bad34f397b67acc811b0c14919"
+  ]
 }
