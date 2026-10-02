@@ -1,12 +1,77 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-10-01T18:52:35.526Z",
+  "updatedAt": "2026-10-02T09:00:45.141Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "75209566cbcd313934b5e8a219d8f4887935f45d512187708d12120299f0cf54",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Scanlon scores and Odegaard assists in Nations League",
+      "summaryEn": "James Scanlon scored a superb goal and Martin Odegaard picked up another assist on international duty",
+      "bodyEn": [
+        "Martin Odegaard picked up another assist on international duty as 10-player Norway fell to a 2-1 defeat at Wales in the UEFA Nations League.",
+        "After providing two assists against Denmark, Odegaard was at it again, setting up Fulham's Oscar Bobb with a perfectly weighted pass to give Norway the lead in Cardiff.",
+        "But disaster struck for the visitors as Dan James equalised before Torbjorn Heggem was sent off seconds into the second half. Neco Williams scored from the resulting free-kick to give Wales the win.",
+        "The result puts Norway in third place, level on points with Denmark in second and Wales in fourth. Martin and his teammates head to Porto to face group leaders Portugal on Sunday.",
+        "Meanwhile, James Scanlon was shining for Gibraltar, scoring a superb solo goal in their 1-1 draw with Malta in the Nations League.",
+        "Picking up the ball near the halfway line, James dribbled past three players before getting his shot away, which deflected over goalkeeper Henry Bonello as Gibraltar rescued a point. The result puts Gibraltar on two points at the halfway mark of the group, with Malta two points ahead at the top.",
+        "Lastly, Jurrien Timber and Christos Tzolis both started as Greece and the Netherlands played out a 2-2 draw in Thessaloniki.",
+        "Christos was replaced after 18 minutes as the Greeks raced into a 2-0 lead thanks to Fotis Ioannidis and Giorgos Masouras. But the Netherlands came back in the second half through Virgil van Dijk and Tijjani Reijnders to ensure both sides remain unbeaten in Group 2 of League A. Jurrien played 78 minutes for Oranje before being replaced by Gjivai Zechiel.",
+        "Greece host Germany, who picked up their first win of the group last night against Serbia, on Sunday night. The Netherlands, meanwhile, will be at home to Serbia on the same evening.",
+        "Wednesday, September 23",
+        "Thursday, September 24",
+        "Friday, September 25",
+        "Saturday, September 26",
+        "Sunday, September 27",
+        "Monday, September 28",
+        "Tuesday, September 29",
+        "Thursday, October 1",
+        "Friday, October 2",
+        "Saturday, October 3",
+        "Sunday, October 4",
+        "Monday, October 5",
+        "Tuesday, October 6"
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/b801e4b0f74f-cardiff-wales-martin-odegaard-of-norway-applauds-the-fans-after-the-uefa-nations.webp",
+      "author": "Arsenal Media",
+      "publishedAt": "2026-10-02T08:01:59.896Z",
+      "url": "https://www.arsenal.com/news/scanlon-scores-and-odegaard-assists-in-nations-league-ahacA1C7i43l",
+      "source": "Arsenal.com",
+      "titleZh": "斯坎伦进球，厄德高在欧国联送出助攻",
+      "summaryZh": "厄德高在国家队比赛中再次送出助攻，斯坎伦打入精彩进球。",
+      "bodyZh": [
+        "在欧国联比赛中，仅剩10人的挪威队以1-2不敌威尔士，马丁·厄德高在国家队比赛中再次送出助攻。",
+        "在对阵丹麦送出两次助攻后，厄德高再次展现实力，他用一记精准的传球助攻效力于富勒姆的奥斯卡·鲍勃破门，帮助挪威在加的夫取得领先。",
+        "但客队随后遭遇打击，丹·詹姆斯扳平比分，随后托尔比约恩·黑格姆在下半场刚开始几秒钟被红牌罚下。内科·威廉姆斯利用随后的任意球破门，帮助威尔士取胜。",
+        "这一结果使得挪威排名小组第三，积分与排名第二的丹麦以及第四的威尔士相同。马丁和他的队友将于周日前往波尔图迎战小组领头羊葡萄牙。",
+        "与此同时，詹姆斯·斯坎伦在直布罗陀的表现十分亮眼，他在欧国联对阵马耳他的比赛中打入一记精彩的个人突破进球，最终双方1-1战平。",
+        "詹姆斯在中线附近接球，盘带过掉三名防守球员后起脚射门，皮球发生折射越过门将亨利·博内洛，帮助直布罗陀扳平比分。本场战平后，直布罗陀在小组赛半程积两分，马耳他以两分优势暂列榜首。",
+        "最后，在塞萨洛尼基进行的比赛中，尤里恩·廷贝尔和克里斯托斯·齐奥利斯均首发出场，最终希腊与荷兰2-2握手言和。",
+        "克里斯托斯在比赛进行到第18分钟时被换下，当时凭借弗蒂斯·约安尼季斯和乔治斯·马苏拉斯的进球，希腊队取得了2-0的领先。但荷兰队在下半场凭借维吉尔·范戴克和蒂贾尼·赖因德斯的进球扳平比分，两支球队在A级联赛第2组中均保持不败。尤里恩代表荷兰队出场78分钟，随后被吉瓦伊·泽基尔替换下场。",
+        "周日晚上，希腊将在主场迎战德国队，德国队在昨晚对阵塞尔维亚的比赛中取得了小组首胜。与此同时，荷兰队将在当晚主场迎战塞尔维亚队。",
+        "2023年9月23日，星期三",
+        "2023年9月24日，星期四",
+        "2023年9月25日，星期五",
+        "2023年9月26日，星期六",
+        "2023年9月27日，星期日",
+        "2023年9月28日，星期一",
+        "2023年9月29日，星期二",
+        "2023年10月1日，星期四",
+        "2023年10月2日，星期五",
+        "2023年10月3日，星期六",
+        "2023年10月4日，星期日",
+        "2023年10月5日，星期一",
+        "2023年10月6日，星期二"
+      ],
+      "translationSourceHash": "1fc1616560cc9b7f64d0d106dbf374b42d1be3c7e36d8897a6e10e06fcfdc489",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-10-02T09:00:45.132Z"
+    },
     {
       "id": "5139dfa086e296ffe9b42130e1154d083378057478a56913750b50cd33b2563a",
       "teamId": "arsenal",
@@ -235,47 +300,6 @@
       "translatedAt": "2026-10-01T13:08:04.758Z"
     },
     {
-      "id": "345e0168c6cf049fb8c7b806254246d472c29227df3408bfcb8e80e6b820d99b",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Match of the Week: Wenger's first Arsenal game",
-      "summaryEn": "Watch the full 90 minutes from Arsene Wenger's first match as Arsenal boss against Blackburn Rovers in 1996",
-      "bodyEn": [
-        "Each week, we'll be bringing you the full match of a classic game from our archive - kicking off with Arsene Wenger's first match as manager against Blackburn Rovers in 1996.",
-        "The date is October 12, 1996, and while Boyzone were about to take over as top dogs in the UK music charts, we were getting ready for our own number one to take his first steps into the dugout as Arsène Wenger's Arsenal prepared to take on Blackburn at Ewood Park.",
-        "Arsène had been officially in charge since October 1, taking over an Arsenal side that had lost just one league match all season and were second in the Premier League table.",
-        "As for Blackburn, just 18 months after reaching the summit of English football, found themselves rock bottom after selling forward Alan Shearer to Newcastle United that summer.",
-        "It was a case of more of the same from the Gunners as Arsène named an unchanged side from the one that demolished Sunderland on September 28.",
-        "As for our hosts, the big news was manager Ray Harford giving teenager James Beattie a full debut up front alongside Chris Sutton.",
-        "Would Arsene kick off his long and triumphant reign as our boss with a victory? Press play to enjoy the full match now!",
-        "STARTING LINE-UPS",
-        "Arsenal: David Seaman, Lee Dixon, Tony Adams, Steve Bould, Martin Keown, Nigel Winterburn, David Platt, Patrick Vieira, Paul Merson, Ian Wright, John Hartson.Subs: John Lukic, Steve Morrow, Andy Linighan, Ray Parlour, Paul Shaw.",
-        "Blackburn: Tim Flowers, Henning Berg, Gary Croft, Nicky Marker, Jeff Kenna, Georgios Donis, Lars Bohinen, Tim Sherwood, Jason Wilcox, James Beattie, Chris Sutton.Subs: Shay Given, Marlon Broomes, Gary Flitcroft, Stuart Ripley, Niklas Gudmundsson."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/f9fa1608eec2-cspblaars1210960011.webp",
-      "author": "Charlie Peat",
-      "publishedAt": "2026-10-01T08:46:18.316Z",
-      "url": "https://www.arsenal.com/news/match-of-the-week-wengers-first-arsenal-game-aIog43v1Sfo8",
-      "source": "Arsenal.com",
-      "titleZh": "每周比赛：温格执教阿森纳的第一场比赛",
-      "summaryZh": "观看1996年温格执教阿森纳对阵布莱克本的整场比赛。",
-      "bodyZh": [
-        "每周，我们都将为您带来阿森纳经典比赛的全场录像——首场比赛是1996年阿尔塞纳·温格作为主教练对阵布莱克本的处子秀。",
-        "比赛日期是1996年10月12日。正当Boyzone组合即将统治英国音乐排行榜之际，我们也迎来了自己的领军人物——阿尔塞纳·温格作为阿森纳主帅首次踏入教练席，球队即将在埃伍德公园球场迎战布莱克本。",
-        "自10月1日起，阿尔塞纳正式接手阿森纳，当时球队在整个赛季中仅输掉一场联赛，在英超积分榜上排名第二。",
-        "至于布莱克本，在登上英格兰足球之巅仅仅18个月后，由于在那个夏天将前锋阿兰·希勒出售给纽卡斯尔联，目前正积分垫底。",
-        "阿森纳延续了以往的配置，阿尔塞纳派出了与9月28日大胜桑德兰时完全相同的首发阵容。",
-        "对于主队而言，最大的新闻是主教练雷·哈福德让少年詹姆斯·贝蒂与克里斯·萨顿搭档首发出场。",
-        "温格能否用一场胜利开启他漫长而辉煌的执教生涯？点击播放，立即欣赏整场比赛！",
-        "首发阵容",
-        "阿森纳：大卫·希曼、李·迪克森、托尼·亚当斯、史蒂夫·博尔德、马丁·基翁、奈杰尔·温特本、大卫·普拉特、帕特里克·维埃拉、保罗·默森、伊恩·赖特、约翰·哈特森。替补：约翰·卢基奇、史蒂夫·莫罗、安迪·林尼汉、雷·帕洛尔、保罗·肖。",
-        "布莱克本：蒂姆·弗劳尔斯、亨宁·博格、加里·克罗夫特、尼基·马克尔、杰夫·肯纳、乔治奥斯·多尼斯、拉尔斯·博希宁、蒂姆·舍伍德、贾森·威尔考克斯、詹姆斯·贝蒂、克里斯·萨顿。替补：谢伊·吉文、马龙·布鲁姆斯、加里·弗利特克罗夫特、斯图尔特·里普利、尼克拉斯·古德蒙德森。"
-      ],
-      "translationSourceHash": "5c07325c1c5a1548d8f74d4aaf405beaf11e13ac738902f7a4a93828f6913b92",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-10-01T13:08:11.168Z"
-    },
-    {
       "id": "b5e2d678eb054d5f4637f452aee6d9bef40445e7ec7850ed31f6d7b6f7b2e3ee",
       "teamId": "arsenal",
       "teamName": "阿森纳",
@@ -457,45 +481,6 @@
       "translationSourceHash": "69825b8f7db96f68d12cf7fd4b75c2e74e9a947ed9eed176c8543b36aad91780",
       "translationModel": "gemini-3.5-flash-lite",
       "translatedAt": "2026-10-01T18:52:35.519Z"
-    },
-    {
-      "id": "690ad37a954c978af0ff2e0fd2817c6f8caa20a60498af6b6aad191b9743a31e",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Team news: Two changes against Paris FC",
-      "summaryEn": "Renée Slegers has made two changes to the starting line-up for this evening’s UEFA Women’s Champions League match",
-      "bodyEn": [
-        "Renée Slegers has made two changes to the starting line-up for this evening’s UEFA Women’s Champions League match away to Paris FC.",
-        "Following Sunday’s 1-0 defeat away to Chelsea in the WSL, Misa Rodriguez replaces Anneke Borbe in goal and Lotte Wubben-Moy starts ahead of Steph Catley, who misses out with back issues.",
-        "So the rest of the defence remains the same with Emily Fox, Leah Williamson and Ona Batlle all starting behind a midfield of Georgia Stanway, Kyra Cooney-Cross and Kim Little.",
-        "It’s as you were up top as well with Lisa Baum, Alessia Russo and Mariona Caldentey leading the line.",
-        "LINE-UPS",
-        "Paris FC XI: Chavas, N’Dongala, Ould Hocine, Greboval, Liaigre, Le Moguedec, Korosec, Reynders, Toloba, Mateo (C), Viens",
-        "Substitutes: Seweryn, Rafaele Mendonca, Baquerizo, Diaz, Corboz, K. Traore, Scott, Sangare, Picard, Ishizaka, Karla Torres, Ma. Mendy",
-        "Arsenal XI: Misa, Fox, Williamson, Wubben-Moy, Batlle, Stanway, Cooney-Cross, Little (C), Baum, Mariona, Russo",
-        "Substitutes: Borbe, Damm, Hinds, Holmberg, Reuteler, Maanum, Smith, Foord, Cerci, Blackstenius"
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/5e503296668a-gettyimages-2292300202.webp",
-      "author": "Stephen Wright",
-      "publishedAt": "2026-09-30T15:31:19.430Z",
-      "url": "https://www.arsenal.com/news/team-news-two-changes-against-paris-fc-aIrwm1y7sWSJ",
-      "source": "Arsenal.com",
-      "titleZh": "球队新闻：对阵巴黎FC做出两处调整",
-      "summaryZh": "勒妮·斯勒格ers为今晚对阵巴黎FC的女足欧冠比赛调整了首发阵容。",
-      "bodyZh": [
-        "勒妮·斯勒格尔斯（Renée Slegers）对今晚客场对阵巴黎FC的欧洲女子冠军联赛首发阵容作出了两处调整。",
-        "在周日女超联赛客场0-1不敌切尔西之后，米萨·罗德里格斯（Misa Rodriguez）取代安妮克·博尔贝（Anneke Borbe）镇守球门，洛特·乌本-莫伊（Lotte Wubben-Moy）首发顶替因背部问题缺阵的斯蒂芙·卡特利（Steph Catley）。",
-        "因此，后防线的其余人选保持不变，埃米莉·福克斯（Emily Fox）、莉亚·威廉姆斯（Leah Williamson）和奥娜·巴特尔（Ona Batlle）悉数首发，他们身前是乔治娅·斯坦韦（Georgia Stanway）、基拉·库尼-克罗斯（Kyra Cooney-Cross）和金·利特尔（Kim Little）组成的中场。",
-        "锋线同样保持原样，由丽莎·鲍姆（Lisa Baum）、阿莱西亚·鲁索（Alessia Russo）和马里奥娜·卡尔登特伊（Mariona Caldentey）领衔进攻。",
-        "首发名单",
-        "巴黎FC首发：查瓦斯、恩东加拉、乌尔德·奥辛、格雷博瓦尔、利亚格雷、勒·莫盖德克、科罗塞克、雷恩德斯、托洛巴、马特奥（队长）、维恩斯",
-        "替补：塞韦林、拉法埃莱·门多萨、巴克里索、迪亚斯、科尔博兹、K·特拉奥雷、斯科特、桑加雷、皮卡尔、石坂、卡拉·托雷斯、马·门迪",
-        "阿森纳首发：米萨、福克斯、威廉姆斯、乌本-莫伊、巴特尔、斯坦韦、库尼-克罗斯、利特尔（队长）、鲍姆、马里奥娜、鲁索",
-        "替补：博尔贝、达姆、海因兹、霍尔姆贝格、罗伊特勒、马努姆、史密斯、福德、切尔奇、布拉克斯特纽斯"
-      ],
-      "translationSourceHash": "5b6a6a1b8eaf08607298cce5521e21467a22004262d9fa44b6cf754736abd9a6",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-09-30T20:18:10.132Z"
     },
     {
       "id": "fe7fa75a9533f35774bd1d64a2fc9bb7cc177e20d3f6e2267944f13750edd066",
@@ -1044,5 +1029,7 @@
       "translatedAt": "2026-10-01T13:08:13.906Z"
     }
   ],
-  "pendingNotificationIds": []
+  "pendingNotificationIds": [
+    "75209566cbcd313934b5e8a219d8f4887935f45d512187708d12120299f0cf54"
+  ]
 }
