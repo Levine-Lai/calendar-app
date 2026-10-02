@@ -1314,8 +1314,5 @@
       "source": "MLB.com"
     }
   ],
-  "pendingNotificationIds": [
-    "a58547f94eb982dfb32a5ed2e3c2aeb7e781da3eb37fe319fa36179698a5da89",
-    "b06e8e6015fee32609dbbe529cef8ae2c4dbb371120a22c4924b53b17a94c450"
-  ]
+  "pendingNotificationIds": []
 }
