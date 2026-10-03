@@ -1,12 +1,39 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-10-02T20:42:08.616Z",
+  "updatedAt": "2026-10-03T00:02:44.809Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "2e832e6f8a7a0b07768e01d2a68efbf2e1dfd2ceab054cb39061b8d7df7d2be4",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Full match: Paris FC 2-2 Arsenal Women",
+      "summaryEn": "Our UEFA Women's Champions League campaign continued with a 2-2 draw away to Paris FC on Wednesday night.",
+      "bodyEn": [
+        "Our UEFA Women's Champions League campaign continued with a 2-2 draw away to Paris FC on Wednesday night.",
+        "We went 2-0 up by way of goals from Alessia Russo and Georgia Stanway, only to concede twice to share the points.",
+        "Press play on the video above to see every kick of the game."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/e820826fe15a-gettyimages-2297961503.webp",
+      "author": "Stephen Wright",
+      "publishedAt": "2026-10-02T22:00:00.000Z",
+      "url": "https://www.arsenal.com/news/full-match-paris-fc-2-2-arsenal-women-aLmhU0s9mGus",
+      "source": "Arsenal.com",
+      "titleZh": "全场比赛：巴黎FC女足 2-2 阿森纳女足",
+      "summaryZh": "周三晚，我们在欧冠客场2-2战平巴黎FC女足。",
+      "bodyZh": [
+        "周三晚，我们在欧洲女足冠军联赛中客场2-2战平巴黎FC女足，征程继续。",
+        "凭借阿莱西亚·鲁索和乔治娅·斯坦威的进球，我们一度取得2-0的领先，但随后连失两球，最终双方握手言和。",
+        "点击播放上方视频，回顾比赛的每一个精彩瞬间。"
+      ],
+      "translationSourceHash": "157fa3e6d4ac5a238d2d6784e8c1dffaa97e778d4a1bc17015871097ab1212fc",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-10-03T00:02:44.802Z"
+    },
     {
       "id": "9762ec89ebbcd25e8afa2b4e01f0552de1e5bdeb72c42cc70a7bb5454026944d",
       "teamId": "arsenal",
@@ -418,37 +445,6 @@
       "translationSourceHash": "3d4ff169d93c0367d5c0bd5579f6a7e09f03841201782e6bd8a4aa2b420bf395",
       "translationModel": "gemini-3.5-flash-lite",
       "translatedAt": "2026-10-02T15:48:54.287Z"
-    },
-    {
-      "id": "8d5062d2c0181e7ee47bd3f7187423fc90eef95b4a41f201c4280d65951d4fd1",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Misa nominated for WSL Save of the Month",
-      "summaryEn": "Misa Rodriguez has been nominated for September’s British Gas WSL Save of the Month award.",
-      "bodyEn": [
-        "Misa Rodriguez has been nominated for September’s British Gas WSL Save of the Month award.",
-        "Our new goalkeeper produced a stunning stop in our opening Women’s Super League game of the season away to Brighton & Hove Albion.",
-        "Press play on the video below to watch the save at the start of our match highlights! Misa gets down and stretches out her right hand to deny Kiko Seike, who got on the end of a long ball over the top.",
-        "Cast your vote! Voting closes at 10am on Monday, October 5.",
-        "For this award, Misa is going up against saves from Phallon Tullis-Joyce for Manchester United against us, Khiara Keating for Liverpool against Manchester City, and Akane Okuma for Aston Villa against Chelsea."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/f555097ca9c2-gettyimages-2293802464.webp",
-      "author": "Stephen Wright",
-      "publishedAt": "2026-10-02T09:00:04.543Z",
-      "url": "https://www.arsenal.com/news/misa-nominated-for-wsl-save-of-the-month-aswzx1d3rb8Q",
-      "source": "Arsenal.com",
-      "titleZh": "米萨入围女超联赛月度最佳扑救候选",
-      "summaryZh": "米萨-罗德里格斯入围英格兰女足超级联赛九月最佳扑救候选。",
-      "bodyZh": [
-        "米萨-罗德里格斯入围了九月份的英国天然气女超联赛月度最佳扑救奖候选名单。",
-        "我们的新门将在此前客场对阵布赖顿的女超联赛新赛季首场比赛中做出了一次精彩的扑救。",
-        "点击下方视频，在比赛集锦的开头即可观赏这次扑救！米萨倒地并伸出右手，化解了接应长传球的清家贵子（Kiko Seike）的射门。",
-        "快来投出你的一票！投票将于10月5日周一上午10点截止。",
-        "在此次评选中，米萨将与曼联的法隆-图利斯-乔伊斯（在对阵我们时）、曼城的基阿拉-基廷（在对阵利物浦时）以及阿斯顿维拉的大隈茜（在对阵切尔西时）的扑救进行竞争。"
-      ],
-      "translationSourceHash": "aa11d38ce7ef214eb594af237a1c7bf3978c4afb8bfebb7dfcf2e3410a1b8383",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-10-02T15:48:55.755Z"
     },
     {
       "id": "5139dfa086e296ffe9b42130e1154d083378057478a56913750b50cd33b2563a",
@@ -960,6 +956,7 @@
   ],
   "pendingNotificationIds": [
     "9762ec89ebbcd25e8afa2b4e01f0552de1e5bdeb72c42cc70a7bb5454026944d",
-    "654ebbaed3fa16f00a80e99ce70cd6b4d1f78fb111a406b6f8bb46be6a02dd42"
+    "654ebbaed3fa16f00a80e99ce70cd6b4d1f78fb111a406b6f8bb46be6a02dd42",
+    "2e832e6f8a7a0b07768e01d2a68efbf2e1dfd2ceab054cb39061b8d7df7d2be4"
   ]
 }
