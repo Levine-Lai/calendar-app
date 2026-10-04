@@ -1,12 +1,90 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-10-04T17:33:54.928Z",
+  "updatedAt": "2026-10-04T20:26:34.662Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "a8a7058f53576148a604ef5914c530e0a54d4981c44a131d8d12bfc9fc8f89d1",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Lotte: “It’s up to us to pull ourselves out of it”",
+      "summaryEn": "Lotte Wubben-Moy has shared her post-match reaction following Sunday’s disappointing 4-2 defeat",
+      "bodyEn": [
+        "Lotte Wubben-Moy has shared her post-match reaction following Sunday’s disappointing 4-2 defeat away to Manchester City in the Women’s Super League.",
+        "Our centre-back was naturally upset after we twice failed to protect a lead at Etihad Stadium.",
+        "“I think anything I say, the fans don’t want to hear, you know,” she said. “They were loud and proud for us today. We fought for ourselves, we fought for them, we fought for everyone.",
+        "“It’s extremely disappointing that I’m stood here now with the result that we’ve got.",
+        "“It’s a game of fine margins, as it always is against City. I think if you zoom out of this fixture, this result alone, it’s thrown up in the air.",
+        "“But where we are at the moment, the bigger picture, it’s an unprecedented position for us to be in, where we are in the table. And heck, it’s up to us to pull ourselves out of it, as I know we will.”",
+        "Following a difficult run of results, Lotte said what our focus will be across the upcoming international break.",
+        "“Reset and come in with new energy,” she said. “We fought for ourselves today. There was a lot put out there, and it takes a toll. But I know without a doubt that we’ll be back fighting and doing it for the fans and ourselves, as always.”"
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/b5bfd4c7a1c3-gettyimages-2298547465.webp",
+      "author": "Stephen Wright",
+      "publishedAt": "2026-10-04T19:43:02.731Z",
+      "url": "https://www.arsenal.com/news/lotte-its-up-to-us-to-pull-ourselves-out-of-it-axueG8C3VtiI",
+      "source": "Arsenal.com",
+      "titleZh": "露特：只有我们自己能把球队带出困境",
+      "summaryZh": "露特·武本-莫伊谈球队不敌曼城后的感受。",
+      "bodyZh": [
+        "在女足英超联赛客场2-4不敌曼城后，露特·武本-莫伊分享了她的赛后感受。",
+        "这位中后卫对我们在伊蒂哈德球场两次未能守住领先优势感到十分沮丧。",
+        "她表示：“我觉得我现在说什么，球迷们都不想听。今天他们为我们大声呐喊，充满了自豪。我们为自己而战，为他们而战，为每一个人而战。”",
+        "“带着这样的结果站在这里，真的让人极其失望。”",
+        "“就像对阵曼城时一样，比赛总是取决于微小的细节。如果你跳出这场比赛和这个结果来看，一切都还悬而未决。”",
+        "“但就我们目前的处境和更大的全局来看，我们在积分榜上的位置是前所未有的。天哪，只有我们自己能把球队带出困境，我知道我们一定能做到。”",
+        "在经历了一段艰难的战绩后，露特谈到了我们在即将到来的国际比赛日期间的重点工作。",
+        "她说道：“重新调整，带着新的能量回归。我们今天为自己拼尽了全力。场上消耗很大，付出了代价。但我毫无疑问，我们会重新振作起来战斗，一如既往地为了球迷和我们自己。”"
+      ],
+      "translationSourceHash": "3fd3ec5a43837b37fbde97e30d256d76025351c6140d80a1b5952338c573008b",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-10-04T20:26:30.155Z"
+    },
+    {
+      "id": "f486d357956ba0c5b4cedf6db8905af1cd9ad291efe4b41cae3276940d544d3f",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Renée reacts to City defeat",
+      "summaryEn": "Renée Slegers has shared her post-match reaction following our 4-2 defeat away to Manchester City",
+      "bodyEn": [
+        "Renée Slegers has shared her post-match reaction following our 4-2 defeat away to Manchester City in the Women’s Super League on Sunday.",
+        "The head coach saw us twice take the lead before suffering City equalisers, and the home side would go on to put the result beyond doubt.",
+        "“I think first half, an even game with momentum shifts,” she reflected. “We controlled parts, we're dangerous, they are threatening as well. Really happy with the goal, of course, we're taking the lead.",
+        "“And then second half, again we start well, we get a really good goal, Less scores a good goal. We're up again, which is not easy, City away. But then everything changes, I think, with the 2-2, they score, and the energy that they get with the changes that they make, and they get immediate effect.",
+        "“After that it's hard for us to control things and really threaten the way we want, but it's still open until we go and push for it, and then we concede, so the scoreline then becomes bigger than what it should be.”",
+        "Naturally that was one of Renée’s main frustrations from the game - that we were able to take the lead twice, only to fail to protect them.",
+        "“In all aspects of the game, in those vital moments against these top teams, vital moments and vital phases in the game, our own box and when we defend and what we let them do and not let them do, that's of course something we really need to do better,” she said.",
+        "After a difficult run of results, Renée spoke about what the focus will be across the international break.",
+        "“I think really important, it’s been a long time together,” she said. “It's been really intense. It's not been results that we've wanted. No one wanted this, the club, the fans. They were brilliant today again.",
+        "“But it's really good for the players to go away and go to another environment, go to the national teams, play their football somewhere else and then come back with new energy.”"
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/d9661488be28-gettyimages-2298564367.webp",
+      "author": "Stephen Wright",
+      "publishedAt": "2026-10-04T19:21:07.661Z",
+      "url": "https://www.arsenal.com/news/renee-reacts-to-city-defeat-avsLG7z9wpAQ",
+      "source": "Arsenal.com",
+      "titleZh": "雷娜谈客场不敌曼城",
+      "summaryZh": "雷娜·斯勒格尔斯分享了客场2-4不敌曼城后的赛后感想。",
+      "bodyZh": [
+        "周日，在女子英超联赛客场2-4不敌曼城后，雷娜·斯勒格尔斯分享了她的赛后感言。",
+        "这位主教练见证了球队两次取得领先，但随后都被曼城扳平，最终主队锁定胜局。",
+        "“我认为上半场是一场势均力敌、局势交替的比赛，”她回忆道，“我们掌控了部分时间，我们极具威胁，他们也同样具有威胁。当然，对进球感到非常高兴，我们取得了领先。”",
+        "“然后在下半场，我们再次开局良好，打进了一个非常漂亮的进球，斯特拉西尼奇（Less）打进了一球。我们再次领先，这在客场对阵曼城时并不容易。但随后一切都变了，我认为随着2-2的比分出现，他们扳平了比分，以及他们通过换人获得的能量，他们收到了立竿见影的效果。”",
+        "“在那之后，我们很难控制局面并以我们想要的方式真正制造威胁，但在我们全力压上之前比赛仍然是开放的，接着我们又丢球了，所以比分最终比它应有的要大。”",
+        "自然地，这也是雷娜对本场比赛的主要沮丧点之一——我们能够两次取得领先，却未能守住它们。",
+        "“在比赛的方方面面，在对阵这些顶级球队的关键时刻、比赛的关键阶段、我们自己的禁区内、当我们防守时以及我们允许或不允许他们做什么时，这当然是我们真正需要做得更好的地方，”她说。",
+        "在经历了一段艰难的战绩后，雷娜谈到了国际比赛日期间的重心所在。",
+        "“我认为非常重要的一点是，大家在一起的时间已经很久了，”她说，“这段时间非常高强度。结果并不是我们想要的。没有人想要这样，俱乐部、球迷们不希望这样。他们今天表现得依然非常出色。”",
+        "“但对于球员们来说，离开这里去到另一个环境、前往各自国家队、在其他地方踢球，然后带着新的能量回来，这真的是一件好事。”"
+      ],
+      "translationSourceHash": "ca71041b2ffafd9f03bbafba55bc4397b4c480296ccb69e39ba3bf12f5ef25aa",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-10-04T20:26:34.659Z"
+    },
     {
       "id": "884fa098b9285292ebc9d3bc983318f86b2db0f1bf33e41dee8f421e7e785d5f",
       "teamId": "arsenal",
@@ -526,84 +604,6 @@
       "translatedAt": "2026-10-02T20:42:08.606Z"
     },
     {
-      "id": "19fcbe2e101ac30f85944da5955714b71d4122f66ed54d7bf92b0e9b39a0ad61",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "How to watch Man City v Arsenal Women",
-      "summaryEn": "We’re back in Women’s Super League action against Manchester City at Etihad Stadium on Sunday afternoon.",
-      "bodyEn": [
-        "We’re back in Women’s Super League action against Manchester City at Etihad Stadium on Sunday afternoon.",
-        "Our Gunners are looking to get back to winning ways following Wednesday’s 2-2 draw away to Paris FC in the UEFA Women’s Champions League.",
-        "If you’re following this weekend’s action live on TV in the UK, the match is being shown on Sky Sports Main Event.",
-        "For supporters elsewhere in the world, check out the list of broadcasters on the WSL website."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/9c0118e753c9-gettyimages-2298057152.webp",
-      "author": "Arsenal Media",
-      "publishedAt": "2026-10-02T15:00:27.721Z",
-      "url": "https://www.arsenal.com/news/how-to-watch-man-city-v-arsenal-women-amnOl3x3bpS2",
-      "source": "Arsenal.com",
-      "titleZh": "如何观看曼城对阵阿森纳女足",
-      "summaryZh": "阿森纳女足将于周日下午在伊蒂哈德球场客场挑战曼城。",
-      "bodyZh": [
-        "周日下午，我们将重返女超联赛赛场，在伊蒂哈德球场客场对阵曼城。",
-        "此前在周三的欧洲女足冠军联赛客场比赛中，我们以2比2战平巴黎FC，枪手姑娘们正渴望重回胜利轨道。",
-        "如果您本周末在英国通过电视直播观看比赛，本场比赛将在Sky Sports Main Event频道播出。",
-        "对于世界其他地区的球迷，请查看女超联赛（WSL）官方网站上的转播商列表。"
-      ],
-      "translationSourceHash": "e5a10edc6b663e9fd9061bbcf5a35ac673cdcf57e0168d66f931945217387908",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-10-02T15:46:27.274Z"
-    },
-    {
-      "id": "c0188e21bd3a2249b4cb9a37868ea45b4c5fb04246fea63376c4798c731b9e11",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Renée: “What we need is laser focus”",
-      "summaryEn": "Renée Slegers discusses how we can go about inflicting Manchester City's first defeat of the season",
-      "bodyEn": [
-        "Manchester City Women have had an impressive start to the 2026/27 season, but Renée Slegers and her coaching staff are always on the lookout for weaknesses we can exploit.",
-        "That’s exactly what we’ll be looking to do in our first ever trip to Etihad Stadium this weekend for Sunday’s 4.30pm kick-off in the Women’s Super League.",
-        "In Friday’s pre-match press conference, our head coach spoke about our ambition to become the first team to beat City in the league this season.",
-        "“We always see opportunities, of course, but at the same time, I was really impressed with Real Madrid yesterday,” she said. “They made it very hard for Manchester City, especially in the first half.",
-        "“But of course, they’re a really strong team with a lot of individual quality, and what they’ve shown is that late in games, they always stay in it and come back. We have to be super-focused and see the opportunity on Sunday.”",
-        "Asked about the importance of the game in relation to the WSL title race, Renée continued: “It's an important one, of course. It's hugely important. We go for the three points. That's all we can do in our preparation now, and execution on the match day, and it's an important one.",
-        "“But then again, it’s October now, it's October. It's still early season, and we've had a long block with challenging games. This is one of them, we knew that beforehand, and if we want to achieve what we want to this season, then it's an important game. It was regardless.”",
-        "One reporter in Renée’s presser quizzed her on the balancing act between players being nice and nasty, and if we have enough of an edge to be winners.",
-        "“I think so, and nastiness or grittiness can express itself in different ways, which we can do,” she replied. “Of course, with our performances where we haven’t been at our best, you maybe don’t see those moments as much that we can bring.",
-        "“But we’re convinced we can bring that to games as well in the Arsenal way, because it’s definitely there, but it comes out and expresses itself in different ways, against different teams, with different personalities. It’s definitely there.”",
-        "Everyone is well aware that it’s been a big week for news surrounding Man City, with the announcement that the club has been found guilty of major breaches to Premier League financial regulations.",
-        "Renée was asked if that news could impact the atmosphere at Etihad Stadium this weekend, and if we have to be wary of City adopting a siege mentality.",
-        "“I think in general, of course this is our first day back after Paris, we had the day off yesterday, we’re going to talk about what we can expect - the game plan,” she said. “What we need from the team right now is laser focus, knowing the direction we want to go, and then everything outside of it is not important at the moment. We need to stay focused.",
-        "“How they have responded is outside of our control, and we have to focus purely on ourselves at the moment. We are very busy, like I said, laser focused, business, with a plan together, prep and then we want to go out there on Sunday.”"
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/c4241ab9618f-gettyimages-2297959933.webp",
-      "author": "Stephen Wright",
-      "publishedAt": "2026-10-02T14:22:16.380Z",
-      "url": "https://www.arsenal.com/news/renee-what-we-need-is-laser-focus-azQsa0N6XuSa",
-      "source": "Arsenal.com",
-      "titleZh": "雷娜：我们需要极其专注",
-      "summaryZh": "雷娜·斯勒格斯谈论了如何打破曼城本赛季的不败金身。",
-      "bodyZh": [
-        "曼城女足在2026/27赛季开局表现出色，但雷娜·斯勒格斯和她的教练团队一直在寻找我们可以利用的弱点。",
-        "这正是我们本周末首次作客阿提哈德球场时想要做的事情，比赛将于周日下午4点半开球，进行女子英超联赛。",
-        "在周五的赛前新闻发布会上，我们的主教练谈到了我们的雄心，即成为本赛季第一支在联赛中击败曼城的球队。",
-        "她表示：“当然，我们总是能看到机会，但与此同时，我对昨天皇家马德里的表现印象深刻。他们给曼城制造了很大的困难，尤其是在上半场。”",
-        "“但当然，他们是一支实力雄厚、拥有许多优秀个人能力的球队，他们展现出的一点是，在比赛尾声他们总能咬住并完成反击。我们必须保持超级专注，并看到周日的机遇。”",
-        "当被问及这场比赛对女子英超联赛争冠的重要性时，雷娜继续说道：“这当然很重要。这非常重要。我们为三分而去。这就是我们目前在备战和比赛日执行力方面所能做的一切，这是一场重要的比赛。”",
-        "“但话又说回来，现在是10月，现在是10月。赛季还处于早期，我们已经经历了一段赛程密集的艰难赛期。这场比赛就是其中之一，我们赛前就知道这一点，如果我们想在本赛季实现我们的目标，那么这是一场重要的比赛。无论如何它都很重要。”",
-        "雷娜新闻发布会上一名记者向她提问，关于球员在球风上保持温和与强硬之间的平衡，以及我们是否具备足够的赢球锐气。",
-        "她回答说：“我认为是的，强硬或坚韧可以通过不同的方式表现出来，我们可以做到这一点。当然，在我们表现未达最佳的比赛中，你可能不那么容易看到我们展现出这些时刻。”",
-        "“但我们坚信，我们也能以阿森纳的方式将这一点带到比赛中，因为它确实存在，只是它会在面对不同球队、拥有不同个性的球员时，以不同的方式展现和表达出来。它确实存在。”",
-        "大家都清楚，围绕曼城的新闻迎来了重大的一周，此前该俱乐部被宣布违反了英超联赛的大量财务规定。",
-        "雷娜被问及这一消息是否会影响本周末阿提哈德球场的氛围，以及我们是否需要警惕曼城采取围城心态。",
-        "她表示：“我认为总的来说，这当然是我们从巴黎回来后的第一天，我们昨天放假了，我们将讨论我们可以期待什么——比赛计划。我们现在需要球队做到的是极其专注，明确我们想要前进的方向，除此之外的一切目前都不重要。我们需要保持专注。”",
-        "“他们如何反应是我们无法控制的，我们目前必须纯粹专注于我们自己。正如我所说，我们非常忙碌，极其专注，处理好业务，制定共同的计划，做好准备，然后我们想要在周日走上球场。”"
-      ],
-      "translationSourceHash": "16b2c73f68fd30eb4c19fff818226049c23742e655371314977d3e14d3bfbfe0",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-10-02T15:46:30.552Z"
-    },
-    {
       "id": "5161df204d18a445ae370312b26cc8a91d1c949ea4cd099d2e5e32b274d23512",
       "teamId": "arsenal",
       "teamName": "阿森纳",
@@ -1042,5 +1042,8 @@
       "translatedAt": "2026-09-19T19:18:53.970Z"
     }
   ],
-  "pendingNotificationIds": []
+  "pendingNotificationIds": [
+    "a8a7058f53576148a604ef5914c530e0a54d4981c44a131d8d12bfc9fc8f89d1",
+    "f486d357956ba0c5b4cedf6db8905af1cd9ad291efe4b41cae3276940d544d3f"
+  ]
 }
