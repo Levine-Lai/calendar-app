@@ -1,12 +1,85 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-10-03T18:40:28.438Z",
+  "updatedAt": "2026-10-04T12:50:55.679Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "8d7e677ae6538b86f2327d127878f0eecbf5cf8d5f77340765e98a40aa3b1232",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Saka at the double and Merino scores for Spain",
+      "summaryEn": "Bukayo Saka got his first Nations League goals of the break and Mikel Merino rounded things off for Spain",
+      "bodyEn": [
+        "Bukayo Saka scored twice to help England run out 7-0 winners over Croatia in the UEFA Nations League.",
+        "Starting his third match in a row for Thomas Tuchel's side, Saka helped the Three Lions run riot in Rijeka, netting four times in the first half as Harry Kane, Anthony Gordon, Jude Bellingham and then Bukayo all found the net.",
+        "The goals continued to flow for England in the second half as Kane netted his second before our number 7 did the same, pouncing on a defensive mishap to net his 19th international goal. Morgan Rogers then rounded off the scoring on an impressive night for England.",
+        "At the back, Ezri Konsa started and played the full 90 minutes, having missed out against Czechia. Ebere Eze was introduced on 70 minutes for Gordon, with Myles Lewis-Skelly coming on for the final 11 minutes in Rijeka.",
+        "They move into second position on their League A group, three points behind Spain, who defeated Czechia 3-1 in Oviedo.",
+        "David Raya, fresh from winning Premier League save of the Month, was starting his first match of the international break, as Spain raced into a 2-0 lead through Lamine Yamal and Rodri.",
+        "Jiri Slama pulled a goal back for Czech's but Spain, who introduced Martin Zubimendi and Mikel Merino in the second half, would clinch the victory late on.",
+        "Merino, as he did on two occasions during the World Cup, clinched the victory with a late goal to help extend Spain's winning run to 10 matches and firmly on course to top Group 3.",
+        "They will travel to Croatia for the final match of the break, with England hosting Czechia in the same group.",
+        "Outside of Europe and history was being made in Kolkata as Brazil played India in a first meeting between the two nations.",
+        "Bruno Guimaraes and Gabriel Magalhaes were named on the bench as Brazil raced into a 2-0 half-time lead before the pair were introduced in the second half.",
+        "Brazil added two further goals through Samuel Lino to complete a comprehensive win for the South American side.",
+        "That concludes Brazil's international break, with our pair now returning to London as we start preparing for a return of Premier League football.",
+        "Wednesday, September 23",
+        "Thursday, September 24",
+        "Friday, September 25",
+        "Saturday, September 26",
+        "Sunday, September 27",
+        "Monday, September 28",
+        "Tuesday, September 29",
+        "Thursday, October 1",
+        "Friday, October 2",
+        "Saturday, October 3",
+        "Sunday, October 4",
+        "Monday, October 5",
+        "Tuesday, October 6"
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/b853494f6b21-rijeka-croatia-bukayo-saka-of-england-celebrates-scoring-his-teams-fourth-goal-d.webp",
+      "author": "Charlie Peat",
+      "publishedAt": "2026-10-04T08:54:25.211Z",
+      "url": "https://www.arsenal.com/news/saka-at-the-double-and-merino-scores-for-spain-aFd7S7j7ZxlV",
+      "source": "Arsenal.com",
+      "titleZh": "萨卡梅开二度，梅里诺为西班牙破门",
+      "summaryZh": "萨卡在欧国联比赛中打入两球，梅里诺为西班牙锁定胜局。",
+      "bodyZh": [
+        "萨卡独中两元，帮助英格兰在欧洲国家联赛中以7-0大胜克罗地亚。",
+        "迎来在托马斯·图赫尔麾下的连续第三场首发，萨卡帮助三狮军团在里耶卡大开杀戒，上半场就攻入四球，哈里·凯恩、安东尼·戈登、祖德·贝林厄姆和随后的萨卡先后破门。",
+        "下半场英格兰的进球势头不减，凯恩攻入个人第二球，随后我们的7号球员如法炮施，抓住对方防守失误打入个人第19粒国家队进球。摩根·罗杰斯随后为英格兰的精彩一夜锁定胜局。",
+        "后防线上，埃兹里·孔萨首发并踢满全场，此前他缺席了对阵捷克的比赛。埃贝雷·埃泽在第70分钟替补登场换下戈登，迈尔斯·刘易斯-斯凯利则在里耶卡登场踢了最后的11分钟。",
+        "他们升至A级小组第二位，落后西班牙三分，西班牙在奥维耶多3-1击败了捷克。",
+        "刚刚荣获英超月度最佳扑救的大卫·拉亚迎来了本期国际比赛日的第一场首发，西班牙凭借亚马尔和罗德里的进球取得2-0的领先。",
+        "吉里·斯拉马为捷克扳回一城，但下半场换上马丁·祖比门迪和米克尔·梅里诺的西班牙最终在尾声阶段锁定胜局。",
+        "梅里诺像他在世界杯期间两次做到过的那样，用一记尾声阶段的进球锁定胜局，帮助西班牙将连胜纪录延长至10场，并稳居C组榜首。",
+        "他们将前往克罗地亚进行本期比赛的最后一场比赛，而英格兰则将在同组主场迎战捷克。",
+        "在欧洲之外，加尔各答创造了历史，巴西队迎来了与印度的首次交锋。",
+        "吉马良斯和加布里埃尔·马加良斯坐在替补席上，巴西在上半场取得2-0领先，随后两人在下半场替补登场。",
+        "巴西通过萨mu埃尔·利诺再进两球，完成了这场对南美球队的完胜。",
+        "至此，巴西队的国际比赛日告一段落，随着我们开始备战英超联赛的回归，这两名球员现在将返回伦敦。",
+        "9月23日星期三",
+        "9月24日星期四",
+        "9月25日星期五",
+        "9月26日星期六",
+        "9月27日星期日",
+        "9月28日星期一",
+        "9月29日星期二",
+        "10月1日星期四",
+        "10月2日星期五",
+        "10月3日星期六",
+        "10月4日星期日",
+        "10月5日星期一",
+        "10月6日星期二"
+      ],
+      "translationSourceHash": "63d3bb80570d9cff7a4f76a9ebea52f20c034a3cf3c37753d333e37f65eb7ef3",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-10-04T12:50:55.675Z"
+    },
     {
       "id": "8628ed3fd7d7ddb8d651745f11f5e7652499508ab0202ee21a7990ed18267786",
       "teamId": "arsenal",
@@ -519,35 +592,6 @@
       "translatedAt": "2026-10-02T15:46:45.747Z"
     },
     {
-      "id": "2eb160656f5540dee10d4039af9497c28581956621db65f12eee685f0b505634",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Raya wins Premier League Save of the Month",
-      "summaryEn": "David's heroic save against Sunderland in September has been honoured by the Premier League",
-      "bodyEn": [
-        "David Raya has won Premier League Save of the Month for September for his stunning stop to deny Enzo Le Fee in our 2-0 victory over Sunderland.",
-        "The Sunderland midfielder stepped up to take the penalty at the Stadium of Light, but was thwarted superbly by David, who plunged to his left to tip the low strike onto the post.",
-        "The save had huge consequences as, under two minutes late, Bruno Guimaraes netted his first Arsenal goal to give us the lead on our way to the 2-0 triumph.",
-        "Want to watch the incredible stop again? Check it out below!"
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/298720b1f4be-sunderland-england-david-raya-of-arsenal-dives-to-save-a-penalty-by-enzo-le-fee.webp",
-      "author": "Arsenal Media",
-      "publishedAt": "2026-10-02T13:15:25.461Z",
-      "url": "https://www.arsenal.com/news/raya-wins-premier-league-save-of-the-month-a8bVg6s3sUTA",
-      "source": "Arsenal.com",
-      "titleZh": "拉亚当选英超月度最佳扑救",
-      "summaryZh": "大卫·拉亚在9月份对阵桑德兰时的神勇扑救荣膺英超月度最佳。",
-      "bodyZh": [
-        "在阿森纳2-0战胜桑德兰的比赛中，大卫·拉亚神勇扑出恩佐·勒费埃的射门，荣膺9月英超月度最佳扑救。",
-        "桑德兰中场在光明球场主罚点球，但被大卫神勇化解，他向左侧倒地扑救，将这记低射碰到了立柱上。",
-        "这次扑救产生了巨大的影响，不到两分钟后，布鲁诺·吉马良斯攻入了他在阿森纳的处子球，帮助球队取得领先，最终以2-0取胜。",
-        "想再次观看这记不可思议的扑救吗？请看下方！"
-      ],
-      "translationSourceHash": "95abb3945c72060938d59f4f4e0f53b49d4bd5618d2e8b3f04fd5ca86a2ee5ca",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-10-02T15:47:42.263Z"
-    },
-    {
       "id": "47a6b46d08d4e50d08e4f254edb31ffc82540a85539ab68d4dcc0f41dac434b4",
       "teamId": "arsenal",
       "teamName": "阿森纳",
@@ -942,5 +986,7 @@
       "translatedAt": "2026-09-19T19:18:53.970Z"
     }
   ],
-  "pendingNotificationIds": []
+  "pendingNotificationIds": [
+    "8d7e677ae6538b86f2327d127878f0eecbf5cf8d5f77340765e98a40aa3b1232"
+  ]
 }
