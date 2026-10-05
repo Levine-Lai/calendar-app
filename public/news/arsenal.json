@@ -1,7 +1,7 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-10-04T23:35:44.907Z",
+  "updatedAt": "2026-10-05T02:24:16.725Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
@@ -472,6 +472,60 @@
       "translatedAt": "2026-10-03T10:36:43.611Z"
     },
     {
+      "id": "e501d5a8855c3206734cc82877783615eab4161f7e0c0e2c45a0cbe20c9e85ab",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Watch our best WSL strikes against Man City",
+      "summaryEn": "Check out these superb efforts against Manchester City Women from down the years",
+      "bodyEn": [
+        "Our matches against Manchester City in the Women's Super League have produced a host of incredible goals and moments.",
+        "From Kim Little's thumping effort in 2021/22 to Olivia Smith's winner in 2025/26, we've put together a compilation of our best City strikes!",
+        "Press play on the video now and see our collection as we prepare to take on Manchester City!"
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/f81222e37435-london-england-olivia-smith-of-arsenal-celebrates-scoring-her-teams-first-goal-d.webp",
+      "author": "Arsenal Media",
+      "publishedAt": "2026-10-03T07:30:00.000Z",
+      "url": "https://www.arsenal.com/news/watch-our-best-wsl-strikes-against-man-city-ajbvT1w0tk3J",
+      "source": "Arsenal.com",
+      "titleZh": "回看女足对阵曼城的精彩进球",
+      "summaryZh": "回顾历年来对阵曼城女足的精彩破门瞬间。",
+      "bodyZh": [
+        "我们在英超女足联赛中对阵曼城的比赛产出了大量精彩进球和时刻。",
+        "从金·利特尔在2021/22赛季的重炮轰门，到奥利维亚·史密斯在2025/26赛季的绝杀，我们汇集了对阵曼城的最佳进球集锦！",
+        "现在就点击播放视频，在我们准备迎战曼城之际欣赏这些精彩收藏！"
+      ],
+      "translationSourceHash": "809ef59a34f4f7970325ffa15cf4469ffb5525fa0185613e0f0f12def96cd143",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-10-05T02:24:04.224Z"
+    },
+    {
+      "id": "2e832e6f8a7a0b07768e01d2a68efbf2e1dfd2ceab054cb39061b8d7df7d2be4",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Full match: Paris FC 2-2 Arsenal Women",
+      "summaryEn": "Our UEFA Women's Champions League campaign continued with a 2-2 draw away to Paris FC on Wednesday night.",
+      "bodyEn": [
+        "Our UEFA Women's Champions League campaign continued with a 2-2 draw away to Paris FC on Wednesday night.",
+        "We went 2-0 up by way of goals from Alessia Russo and Georgia Stanway, only to concede twice to share the points.",
+        "Press play on the video above to see every kick of the game."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/e820826fe15a-gettyimages-2297961503.webp",
+      "author": "Stephen Wright",
+      "publishedAt": "2026-10-02T22:00:00.000Z",
+      "url": "https://www.arsenal.com/news/full-match-paris-fc-2-2-arsenal-women-aLmhU0s9mGus",
+      "source": "Arsenal.com",
+      "titleZh": "全场比赛：巴黎FC 2-2 阿森纳女足",
+      "summaryZh": "周三晚的欧冠女足联赛客场比赛中，阿森纳2-2战平巴黎FC。",
+      "bodyZh": [
+        "周三晚的欧洲女足冠军联赛中，我们在客场与巴黎FC以2-2握手言和，延续了我们的欧冠征程。",
+        "凭借阿莱西亚·鲁索和乔治娅·斯坦韦的进球，我们曾取得2-0的领先，但随后连失两球，最终双方平分秋色。",
+        "点击上方视频播放按钮，回顾比赛的所有精彩瞬间。"
+      ],
+      "translationSourceHash": "157fa3e6d4ac5a238d2d6784e8c1dffaa97e778d4a1bc17015871097ab1212fc",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-10-05T02:24:08.297Z"
+    },
+    {
       "id": "9762ec89ebbcd25e8afa2b4e01f0552de1e5bdeb72c42cc70a7bb5454026944d",
       "teamId": "arsenal",
       "teamName": "阿森纳",
@@ -519,6 +573,64 @@
       "translationSourceHash": "1e16202b5d9b5fb9e0b21dcbc9d42ed2465f52c9ece91967852081ed18b9f112",
       "translationModel": "gemini-3.5-flash-lite",
       "translatedAt": "2026-10-04T17:33:54.922Z"
+    },
+    {
+      "id": "654ebbaed3fa16f00a80e99ce70cd6b4d1f78fb111a406b6f8bb46be6a02dd42",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Training Gallery: All set for City",
+      "summaryEn": "The best snaps as we prepare to face Manchester City in the Women's Super League on Sunday",
+      "bodyEn": [
+        "We travel to Manchester City on Sunday afternoon looking to round off the first block of the season on a high, and you can see how we've been preparing for the contest with our latest training gallery.",
+        "Despite letting a two-goal lead slip to Paris FC in the week, we maintained our unbeaten start in the UEFA Women's Champions League, two ahead of City who have drawn their opening two games.",
+        "But in the WSL it's City who have the early advantage, as the champions are the only side with four wins from their first four league games this campaign.",
+        "Swipe through the gallery below, captured by club photographer David Price, to see what we've been up to at the Sobha Realty Training Centre ahead of the game:"
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/77c8292e860b-z923261ngobtzru.webp",
+      "author": "Arsenal Media",
+      "publishedAt": "2026-10-02T16:00:00.000Z",
+      "url": "https://www.arsenal.com/news/training-gallery-all-set-for-city-azyuu2C89XAC",
+      "source": "Arsenal.com",
+      "titleZh": "训练图集：全力备战曼城",
+      "summaryZh": "阿森纳女足周日将客场挑战曼城，球队已完成赛前训练。",
+      "bodyZh": [
+        "我们在周日下午将客场挑战曼城，力求为本赛季的第一阶段画上圆满句号，通过最新的训练图集来看看我们的备战情况。",
+        "尽管周中对阵巴黎FC时被对手连追两球扳平，我们在欧足联女子冠军联赛中依然保持不败开局，领先前两场均战平的曼城两分。",
+        "但在英超赛场上，曼城目前占据优势，这支卫冕冠军是本赛季前四轮联赛中唯一取得四连胜的球队。",
+        "浏览下方由俱乐部摄影师大卫·普莱斯拍摄的图集，看看我们在 Sobha Realty 训练基地为这场比赛做了哪些准备。"
+      ],
+      "translationSourceHash": "50f3729fc27ff60b8417f89af830155238aaf13a5afebc56252cdddf4f065bcb",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-10-05T02:24:12.708Z"
+    },
+    {
+      "id": "47a6b46d08d4e50d08e4f254edb31ffc82540a85539ab68d4dcc0f41dac434b4",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Watch every Premier League goal scored under Arsene Wenger!",
+      "summaryEn": "Relive every Premier League strike from Arsene Wenger's time as Arsenal boss, from 1996 to 2018!",
+      "bodyEn": [
+        "Arsene Wenger's time in charge of Arsenal saw us net goal after goal after goal - helping us lift three Premier League titles in the process.",
+        "Across 828 league matches, we netted a whopping 1561 goals, with Ian Wright scoring the first at Blackburn in October 1996, and Pierre-Emerick Aubameyang netting the last at Huddersfield in May 2018.",
+        "We've put together every single goal from Wenger's reign for you to savour, from Highbury to the Emirates Stadium and everywhere else; every goal helped build Arsene's legendary legacy in N5.",
+        "So sit, back, relax, and press play on our six-hour special!"
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/6f4b1e2deadf-london-united-kingdom-arsenals-captain-frenchman-thierry-henry-celebrates-with-c.webp",
+      "author": "Charlie Peat",
+      "publishedAt": "2026-10-01T12:00:00.000Z",
+      "url": "https://www.arsenal.com/news/watch-every-premier-league-goal-scored-under-arsene-wenger-aF99N1b2JZcE",
+      "source": "Arsenal.com",
+      "titleZh": "观看温格执教时期的所有英超进球！",
+      "summaryZh": "重温1996年至2018年温格执教阿森纳期间的所有英超进球！",
+      "bodyZh": [
+        "在温格执教阿森纳期间，我们接连攻入一球又一球，这也帮助我们举起了三座英超冠军奖杯。",
+        "在828场联赛中，我们共攻入了1561粒进球，伊恩·赖特于1996年10月在布莱克本打入了第一球，而皮埃尔-埃梅里克·奥巴梅扬则于2018年5月在哈德斯菲尔德打入了最后一球。",
+        "我们收集了温格执教时期的每一粒进球供您回味，从海布里到酋长球场以及其他所有地方；每一粒进球都帮助阿森纳在N5区建立起了传奇般的历史。",
+        "所以，请坐下来，放松身心，点击播放我们六小时的特别节目吧！"
+      ],
+      "translationSourceHash": "c328049db9e8723bbde477b708c34d95d5c0b24e21f0ca9c7ab3dd6cd6e1f08a",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-10-05T02:24:16.721Z"
     },
     {
       "id": "fe7fa75a9533f35774bd1d64a2fc9bb7cc177e20d3f6e2267944f13750edd066",
@@ -886,5 +998,10 @@
       "translatedAt": "2026-09-19T19:18:53.970Z"
     }
   ],
-  "pendingNotificationIds": []
+  "pendingNotificationIds": [
+    "e501d5a8855c3206734cc82877783615eab4161f7e0c0e2c45a0cbe20c9e85ab",
+    "2e832e6f8a7a0b07768e01d2a68efbf2e1dfd2ceab054cb39061b8d7df7d2be4",
+    "654ebbaed3fa16f00a80e99ce70cd6b4d1f78fb111a406b6f8bb46be6a02dd42",
+    "47a6b46d08d4e50d08e4f254edb31ffc82540a85539ab68d4dcc0f41dac434b4"
+  ]
 }
