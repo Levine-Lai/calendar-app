@@ -1,12 +1,45 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-10-06T14:28:26.603Z",
+  "updatedAt": "2026-10-06T19:49:43.051Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "82998ed4ea44527c608065c822d3f709b9df4cb0c34d3153207ffdf758c4dee4",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Martin Odegaard named men's Player of the Month",
+      "summaryEn": "Martin Odegaard's produced a stellar September to claim the Player of the Month prize",
+      "bodyEn": [
+        "Martin Odegaard has been named our men's Player of the Month for September.",
+        "Our skipper was in fine form last month, netting two winning goals against Chelsea in the Premier League and Napoli in the Champions League.",
+        "His first goal of the month, his third of the season, capped off a flowing move to slam the ball past Emiliano Martinez to give us a 2-1 victory in N5.",
+        "A few days later, Martin was at it again. On a frustrating night in Naples where chances came and went, our captain led from the front, firing home a fine effort off the post to give us all three points in our opening Champions League match of the campaign.",
+        "Having finished second in the voting for the August Player of the Month, Martin made top spot for September, hoovering up a dominant 65% of the votes for his displays - finishing ahead of David Raya, Bruno Guimaraes and Ezri Konsa.",
+        "To celebrate his stellar September, press play on the video now to watch the best of Martin last month!"
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/15118d2c3f27-london-england-martin-odegaard-of-arsenal-celebrates-scoring-his-teams-second-go.webp",
+      "author": "Charlie Peat",
+      "publishedAt": "2026-10-06T16:00:00.000Z",
+      "url": "https://www.arsenal.com/news/martin-odegaard-named-mens-player-of-the-month-aBfAW0S6bTGF",
+      "source": "Arsenal.com",
+      "titleZh": "厄德高当选男子月度最佳球员",
+      "summaryZh": "厄德高在9月份表现出色，荣获月度最佳球员奖项。",
+      "bodyZh": [
+        "厄德高当选我们9月份的男子月度最佳球员。",
+        "我们的队长在上个月状态出色，在英超对阵切尔西以及欧冠对阵那不勒斯的比赛中分别攻入两粒制胜球。",
+        "他本月的首粒进球也是他本赛季的第三球，这次进球源于一次流畅的进攻配合，他将球轰入埃米利亚诺·马丁内斯的球门，帮助我们在主场取得2比1的胜利。",
+        "几天后，马丁再次闪耀。在那不勒斯那个机会频频流逝的沮丧之夜，我们的队长以身作则，一脚精彩的射门击中门柱后弹入网窝，为我们在这场欧冠赛季首战中全取三分。",
+        "在8月份月度最佳球员的投票中获得第二名之后，马丁在9月份成功登顶，凭借其出色的表现狂揽65%的压倒性选票，力压大卫·拉亚、布鲁诺·吉马良斯和埃兹里·孔萨。",
+        "为了庆祝他出色的9月份，现在就点击播放视频，回顾马丁上个月的精彩表现吧！"
+      ],
+      "translationSourceHash": "18b0ea72e88c6f82575a74ef57b541abbd705c52f2160ff35a073f70ec486ff7",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-10-06T19:49:29.490Z"
+    },
     {
       "id": "2a204b958c5f4fe864628f2c8db06ddc96c664656fbc05aedd9d929c6d32bcd7",
       "teamId": "arsenal",
@@ -297,55 +330,6 @@
       "bodyZh": []
     },
     {
-      "id": "d37ad218fa6c7bff45f7195c0241ad0213204ba4ce77f468dd5ce911f21436e4",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Kim Little breaks single-club WSL appearance record",
-      "summaryEn": "Our captain added another record to her name with her 185th WSL appearance as a Gunner",
-      "bodyEn": [
-        "Kim Little broke another Women's Super League record with her start against Manchester City, as she became the player with the most appearances for a single club in the competition with 185 in red and white.",
-        "After making 41 WSL appearances in her first spell as a Gunner, our club captain has played another 144 league games since re-joining us just under 10 years ago.",
-        "Across her 15 years at the club, Kim has 17 titles in three different decades, including five as captain. A three-time WSL champion, our no.10 is not only one of the competition's most experienced players, but also one of its most successful.",
-        "Kim's latest record sees her surpass Millie Bright's total at Chelsea after the former England defender retired at the end of last season, with five Gunners in the top ten for most appearances for a single club:",
-        "Most WSL appearances for a single club",
-        "Having recently become our record appearance holder in the Women's Super League, Kim continues to make her way up the competition's overall list.",
-        "Our Scottish midfielder is 14th in all-time WSL appearances, and with several players on the list no longer active in the Women's Super League, Kim has every chance of moving into the top ten before the end of the 2026/27 season:",
-        "Most WSL appearances",
-        "Kim has featured in all five of our WSL matches so far this season, and if she continues her 100% appearance rate through the end of the newly expanded league season, she will reach 206 appearances in May 2027.",
-        "But while Kim will have to wait for a place in the top 10 appearance holders list, she has already joined an exclusive club of players to feature for the same top-flight club for 10 consecutive seasons:",
-        "* split between the WSL and WSL 2.",
-        "Kim's incredible longevity is all the more impressive because of her consistent form. Since the start of her second spell as a Gunner, Kim has won trophies in six of the last 10 campaigns, including each of the last four as captain.",
-        "Our No.10 also earned one of her four PFA WSL Team of the Year spots in 2025 at 34, having also been named in the side in 2019, 2020 and 2022.",
-        "But perhaps the greatest show of Kim's incredible stint as a Gunner is that, of all the players in the WSL when Kim signed for us for the second time in 2016, only she and vice-captain Leah Williamson are still playing for the same club."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/8f52bf7a15a4-manchester-england-kim-little-of-arsenal-during-the-barclays-womens-super-league.webp",
-      "author": "Connor Booth",
-      "publishedAt": "2026-10-05T14:14:01.586Z",
-      "url": "https://www.arsenal.com/news/kim-little-breaks-single-club-wsl-appearance-record-aut6E9e13pjK",
-      "source": "Arsenal.com",
-      "titleZh": "金·利特尔打破女超联赛单一俱乐部出场纪录",
-      "summaryZh": "阿森纳队长金·利特尔迎来第185次女超联赛出场，创下新纪录。",
-      "bodyZh": [
-        "在对阵曼城的比赛中首发出场后，金·利特尔打破了另一项女超联赛纪录，她以身披红白战袍的185次出场，成为了该赛事中为单一俱乐部出场次数最多的球员。",
-        "在首次效力阿森纳期间完成了41次女超联赛出场后，我们的俱乐部队长自从近10年前回归以来，又出战了144场联赛。",
-        "在效力俱乐部的15年间，金赢得了跨越三个年代的17座冠军奖杯，其中包括5次以队长身份夺冠。作为三届女超联赛冠军得主，我们的10号不仅是该赛事经验最丰富的球员之一，也是最成功的球员之一。",
-        "金的这一最新纪录超越了米利·布赖特在切尔西创下的总数（这位前英格兰后卫已在上赛季末退役），目前在前十名单一俱乐部出场次数最多的榜单上有五名阿森纳球员：",
-        "单一俱乐部女超联赛最多出场次数",
-        "在最近成为我们在女超联赛中的历史出场王之后，金继续在赛事的总榜单上攀升。",
-        "这位苏格兰中场在女超联赛历史总出场榜上排名第14位，随着榜单上的几位球员不再活跃于女超联赛，金完全有机会在2026/27赛季结束前进入前十名：",
-        "女超联赛最多出场次数",
-        "本赛季至今，金参加了我们全部5场女超联赛。如果她能将100%的出场率保持到这个新扩军的联赛赛季结束，她将在2027年5月迎来第206次出场。",
-        "不过，金虽然还需要等待才能进入出场榜前十名，但她已经加入了一个由少数球员组成的精英行列——连续10个赛季为同一家顶级联赛俱乐部效力：",
-        "* 成绩分配在女超联赛和女超联赛2之间。",
-        "金令人难以置信的职业生涯长度因其稳定的竞技状态而更加令人瞩目。自从开启第二次效力阿森纳的历程以来，金在过去的10个赛季中有6个赛季赢得了奖杯，其中包括最近作为队长的连续4个赛季。",
-        "在34岁时，我们的10号还入选了2025年PFA女超联赛年度最佳阵容（这也是她四次入选之一，此前她曾在2019、2020和2022年入选）。",
-        "然而，最能体现金在阿森纳不可思议的效力历程的或许是：在2016年金第二次加盟时女超联赛的所有球员中，只有她和副队长莉亚·威廉姆森仍然在为同一家俱乐部效力。"
-      ],
-      "translationSourceHash": "b9700c124808c0a55f780ba14b9800d2176c3d1c9c87a31e901ab0ff9845f88b",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-10-05T18:50:30.887Z"
-    },
-    {
       "id": "539d7c278f91e73961e906b54148d8073cf91cd399bdcfc6fc4039e378c57c0d",
       "teamId": "arsenal",
       "teamName": "阿森纳",
@@ -583,33 +567,6 @@
       "translatedAt": "2026-09-23T19:04:46.240Z"
     },
     {
-      "id": "1aa794cb0e2089e9ae85db69162aeec766c5938d606bd908edf3d468504a7c52",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Wrighty's Arsenal career in pictures",
-      "summaryEn": "Check out our gallery of archive images of Wrighty from his time at the club",
-      "bodyEn": [
-        "Ian Wright is one of the most storied strikers in our history, and while our iconic No.8 was no stranger to scoring incredible goals, he also knew how to deliver in front of the camera.",
-        "Our club photographer, Stuart MacFarlane, believes Wrighty was one of the most photogenic players he's had the privilege of snapping over decades, saying: \"I’ve always loved taking pictures of Wrighty. From his signing in 1991 to the present day, there’s never been a dull moment.\"There are so many standout moments and pictures, from that signing in '91 to holding his league winners medal in the changing room at Highbury in 1998. But my favourite has to be Wrighty celebrating his goal with his great friend David Rocastle away at Southampton in September 1991.\"",
-        "See a collection of the best Wrighty images below:"
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/9a8ca4a24b10-london-united-kingdom-arsenal-striker-ian-wright-celebrates-a-goal-during-the-pr.webp",
-      "author": "Arsenal Media",
-      "publishedAt": "2026-09-23T05:00:00.058Z",
-      "url": "https://www.arsenal.com/news/wrightys-arsenal-career-in-pictures-aYuHB1c05Tt3",
-      "source": "Arsenal.com",
-      "titleZh": "伊恩·赖特阿森纳生涯精彩图片回顾",
-      "summaryZh": "通过档案馆藏照片，一同回顾伊恩·赖特在阿森纳的精彩时光。",
-      "bodyZh": [
-        "伊恩·赖特是俱乐部历史上最具传奇色彩的前锋之一，这位标志性的8号球员不仅擅长攻入精彩绝伦的进球，也十分懂得如何在镜头前展现自己。",
-        "我们的俱乐部摄影师斯图尔特·麦克法兰（Stuart MacFarlane）认为，赖特是他几十年来有幸拍摄过最具上镜感的球员之一。他表示：\"我一直很喜欢拍摄赖特。从他在1991年加盟到今天，从未有过乏味的时刻。有很多令人难忘的瞬间和照片，从91年的签约，到1998年在海布里更衣室里手拿联赛冠军奖牌。但我最喜欢的还是91年9月在客场对阵南安普顿的比赛中，赖特与好朋友大卫·罗卡斯尔一起庆祝进球。\"",
-        "请在下方查看精选的赖特图片集："
-      ],
-      "translationSourceHash": "e9b030b6cfbdf4e5cbf067d6a5bd490e2b8854ae5ef624775d6048403ef9730d",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-10-05T18:50:37.577Z"
-    },
-    {
       "id": "b6efb4fa95ba2382a9f15975de4feb155f177121129b33cb0acfc763c6f6fb5e",
       "teamId": "arsenal",
       "teamName": "阿森纳",
@@ -761,36 +718,9 @@
       "translationSourceHash": "0dd3f1c356499bcce009bbf25036ab7edf1b755ff2ea735c128c9b4e0d47c66e",
       "translationModel": "gemini-3.5-flash-lite",
       "translatedAt": "2026-09-19T19:18:44.692Z"
-    },
-    {
-      "id": "26d0ae51c8e9e72513438569b1f4adf4873e2883b29ae918822bcee89479f8ff",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "71 incredible photos from our win over Real Madrid",
-      "summaryEn": "Every snap from a memorable night in N5 from 2025",
-      "bodyEn": [
-        "We produced a stunning performance to defeat Real Madrid 3-0 in the Champions League quarter-final first leg, and you can enjoy all the best moments in our matchday gallery.",
-        "Two sensational free-kicks from Declan Rice and a superb finish from Mikel Merino capped off a perfect second-half performance to give us a three-goal advantage heading to Madrid next week.",
-        "It was a night to remember at Emirates Stadium and to savour the victory, we've compiled the very best photographs from a special performance in N5.",
-        "From memorable celebrations to every angle of those incredible Declan goals, flick through the gallery below to find your favourite!"
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/2070917593d5-merino-celeb-real-madrid.webp",
-      "author": "Arsenal Media",
-      "publishedAt": "2025-04-08T22:49:41.000Z",
-      "url": "https://www.arsenal.com/news/71-incredible-photos-from-our-win-over-real-madrid-a2iSm2m42m91",
-      "source": "Arsenal.com",
-      "titleZh": "71张击败皇家马德里的精彩照片",
-      "summaryZh": "回顾2025年主场难忘之夜的精彩瞬间。",
-      "bodyZh": [
-        "我们在欧冠四分之一决赛首回合比赛中表现出色，以3-0战胜皇家马德里，您可以通过我们的比赛日图集欣赏所有精彩时刻。",
-        "赖斯打进两记精彩绝伦的任意球，梅里诺精彩破门，完美的下半场表现为我们锁定胜局，带着三球优势前往下周的马德里客场。",
-        "这是一个值得在酋长球场铭记的夜晚，为了回味这场胜利，我们汇集了这场特殊比赛中的最佳照片。",
-        "从难忘的庆祝活动到赖斯精彩进球的各个角度，浏览下方的图集寻找你最喜欢的一张吧！"
-      ],
-      "translationSourceHash": "304c44841a7f183f7c8221d8ee2a6c9fdad139c37c840245b7b9970830888715",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-10-05T18:50:57.894Z"
     }
   ],
-  "pendingNotificationIds": []
+  "pendingNotificationIds": [
+    "82998ed4ea44527c608065c822d3f709b9df4cb0c34d3153207ffdf758c4dee4"
+  ]
 }
