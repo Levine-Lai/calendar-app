@@ -996,9 +996,5 @@
       "translatedAt": "2026-09-21T17:04:41.905Z"
     }
   ],
-  "pendingNotificationIds": [
-    "2640668424e40cdf9e1d732e7b9184b3b55ca7b602ba438c7eece10b3208482c",
-    "b5a39fc334dcfa70f21d430642f524132d0aa68efb334efe3643b77293b26bd0",
-    "c8fde01ac91753b2c329a7e359a624d4afe23621416cbbd9c34543c8272947fd"
-  ]
+  "pendingNotificationIds": []
 }
