@@ -1,12 +1,100 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-10-08T23:57:31.195Z",
+  "updatedAt": "2026-10-09T06:04:43.044Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "6d3f581b1ba911cc3df94ce7a31eb666324893c08b87313f3dab33b4e0168aa2",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "U21s preview: Arsenal v Sunderland",
+      "summaryEn": "Our young Gunners chase the Black Cats for a first PL2 win of the season",
+      "bodyEn": [
+        "Our young Gunners are still hunting for their first Premier League 2 win of the campaign, with Sunderland next up on Saturday, October 10.",
+        "The match will take place at the Mangata Developments Stadium, with kick-off scheduled for 1pm (UK time).",
+        "David Horseman's side have picked up three draws and a loss from their opening fixture quartet, with the recent goalless draw at Birmingham City leaving us with work to do to kick-start the season.",
+        "THE OPPOSITION",
+        "The Black Cats have enjoyed a strong start to 2026/27, finding three wins from four and scoring plenty along the way to sit fifth in the league standings.",
+        "The North East outfit netted 12 times to beat Nottingham Forest, Ipswich Town and Norwich City, but took a hit to their goal difference during a 5-1 loss to Brentford in late August.",
+        "In Premier League International Cup action, the Mackems began Group D with a point against Dutch side PSV Eindhoven, drawing 1-1 at the Stadium of Light.",
+        "We last faced Sunderland in March, losing 3-1 at Eppleton Colliery Football Ground where Andre Harriman-Annous' second-half finish proved only a consolation.",
+        "HOW TO WATCH",
+        "As with all Premier League 2 fixtures, entry to Saturday's game at Mangata Developments Stadium is free, so get down to the ground to cheer on our under-21s.",
+        "Live updates will also be available on our Academy's X account, with a full match report, highlights and interviews with head coach David Horseman and one of our young Gunners to follow after the game."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/a120935202c3-arsenalpl2fixture16x9homesunderland.webp",
+      "author": "Tom Keens",
+      "publishedAt": "2026-10-09T05:30:00.000Z",
+      "url": "https://www.arsenal.com/news/u21s-preview-arsenal-v-sunderland-aSF5Q4Z9HZW6",
+      "source": "Arsenal.com",
+      "titleZh": "U21前瞻：阿森纳对阵桑德兰",
+      "summaryZh": "年轻的枪手们将迎战黑猫，力争赛季首场英超2联赛胜利。",
+      "bodyZh": [
+        "我们的年轻枪手仍在寻找本赛季英超2联赛的首场胜利，10月10日星期六，他们将迎来下一个对手桑德兰。",
+        "比赛将在芒加塔发展体育场进行，开球时间定于英国时间下午1点。",
+        "戴维·霍斯曼的球队在前四场比赛中取得了三场平局和一场失利，最近客场对阵伯明翰城的互交白卷意味着我们需要努力开启本赛季的胜利步伐。",
+        "对手情况",
+        "黑猫在2026/27赛季迎来了强劲开局，在四场比赛中赢了三场并打入大量进球，目前在联赛积分榜上排名第五。",
+        "这支来自东北部的球队打进12球击败了诺丁汉森林、伊普斯维奇和诺维奇，但在8月下旬以1-5不敌布伦特福德，净胜球受到重创。",
+        "在英超国际杯的比赛中，桑德兰在光明球场以1-1战平荷兰球队埃因霍温，以一场平局开启了D组征程。",
+        "我们上一次对阵桑德兰是在3月，当时在埃普勒顿科利里足球场以1-3落败，安德烈·哈里曼-阿努斯的下半场进球仅是一记安慰球。",
+        "如何观赛",
+        "与所有英超2联赛一样，周六在芒加塔发展体育场的比赛免费入场，欢迎大家来到现场为我们的U21加油助威。",
+        "我们的青训官方X账号也将提供实时战报，赛后还将发布完整的比赛报告、精彩集锦以及对主教练戴维·霍斯曼和年轻枪手球员的采访。"
+      ],
+      "translationSourceHash": "910208537710fc9e8380d01368346e742528b4884bb3933d6268e9fdfcfd5b65",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-10-09T06:04:39.210Z"
+    },
+    {
+      "id": "369a9653b0666e49e9f1c4b5bedbb7aedadd022c504ad38526fc34f3bdf225c4",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "U18s preview: Arsenal v Birmingham City",
+      "summaryEn": "Our young Gunners look to make their mark in the cup against Blues",
+      "bodyEn": [
+        "Our young Gunners return to U18 Premier League Cup action when they host Birmingham City on Saturday, October 10.",
+        "The match will take place at the Sobha Realty Training Centre, with kick-off scheduled for 12pm (UK time).",
+        "Before the three-week break, our under-18s were in hot form, picking up three league wins on the bounce and will now look to continue that run in the cup.",
+        "In our Group B opener, we fought back to earn a 3-3 draw against Blackburn Rovers, with Jayden Oba and Saurap Sampang on target, before Mikael Bonaventure Yetna struck in stoppage time to steal a point.",
+        "THE OPPOSITION",
+        "Blues were defeated 2-0 by Sunderland in August, meaning they sit bottom of the group and will see this as a must-win game to keep qualification hopes alive.",
+        "The West Midlands outfit are also currently placed at the foot of the U18 Premier League South, with only one win from their opening six fixtures.",
+        "That victory came last time out, as they beat Reading 2-1 to breathe life into their campaign after previously going without a point.",
+        "We last faced City in February, when we came from behind to win 3-1 in north London, with goals from Ceadach O'Neill, Maalik Hashi and Alex Marcinak.",
+        "HOW TO FOLLOW",
+        "The action gets underway from 12pm (UK), with live updates available on our Academy X account and a full match report shortly after the final whistle.",
+        "Post-match, don't miss exclusive interviews with one of our academy coaches and young Gunners, as well as highlights of all the key action on The Arsenal app and Arsenal.com."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/7c6c2118e5d3-arsenalu18plsouthfixture16x9homebirminghamcity.webp",
+      "author": "Tom Keens",
+      "publishedAt": "2026-10-09T05:00:00.000Z",
+      "url": "https://www.arsenal.com/news/u18s-preview-arsenal-v-birmingham-city-atLMS3v5ifmA",
+      "source": "Arsenal.com",
+      "titleZh": "U18前瞻：阿森纳对阵伯明翰城",
+      "summaryZh": "我们的青年军将在杯赛中迎战伯明翰城。",
+      "bodyZh": [
+        "10月10日星期六，我们的青年枪手将重返U18英超杯赛场，主场迎战伯明翰城。",
+        "比赛将在索巴地产训练中心进行，开球时间定于英国时间中午12点。",
+        "在经历三周的间歇期之前，我们的U18梯队状态正热，取得联赛三连胜，现在他们希望将这种良好势头延续到杯赛中。",
+        "在B组的首场比赛中，我们顽强拼搏，以3-3逼平布莱克本流浪者，杰登·奥巴（Jayden Oba）和索拉普·萨姆庞（Saurap Sampang）取得进球，随后米凯尔·博纳文图尔·耶特纳（Mikael Bonaventure Yetna）在补时阶段破门，抢下一分。",
+        "对手情况",
+        "伯明翰城在8月以0-2不敌桑德兰，这意味着他们目前排名小组垫底，并将这场比赛视为保留晋级希望的必胜之战。",
+        "这支西米德兰兹球队目前也处在U18英超南部联赛的榜尾，在前六场比赛中仅取得一场胜利。",
+        "这场胜利发生在上一场比赛中，他们以2-1击败雷丁，在此前颗粒无收的情况下为他们的赛季注入了生机。",
+        "我们上一次对阵伯明翰城是在2月，当时我们在北伦敦落后的情况下以3-1逆转取胜，西达赫·奥尼尔（Ceadach O'Neill）、马利克·哈希（Maalik Hashi）和亚历克斯·马尔奇纳克（Alex Marcinak）分别建功。",
+        "如何关注比赛",
+        "比赛将于英国时间中午12点开始，我们的青训学院官方X账号将提供实时战报，终场哨响后不久将发布完整的比赛报告。",
+        "赛后，请不要错过与我们的一位青训教练和年轻枪手的独家专访，以及阿森纳官方App和Arsenal.com上所有精彩镜头的集锦。"
+      ],
+      "translationSourceHash": "504eb910d93d38bd155a08aba2a233aaacda25d978d2520a47805c6688221bce",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-10-09T06:04:43.037Z"
+    },
     {
       "id": "9c5993a3ae6ff8af2552273d180df891e5727aa315a2608281fa66bf94455dd1",
       "teamId": "arsenal",
@@ -574,49 +662,6 @@
       "translatedAt": "2026-10-07T13:18:04.212Z"
     },
     {
-      "id": "b5a39fc334dcfa70f21d430642f524132d0aa68efb334efe3643b77293b26bd0",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "WSL fixture details confirmed for November",
-      "summaryEn": "The fixture details for three of our Women’s Super League matches have been confirmed for November.",
-      "bodyEn": [
-        "The fixture details for three of our Women’s Super League matches have been confirmed for November.",
-        "Our Round 9 clash sees us take on Liverpool at Anfield on Sunday, November 8. The match will kick off at 12pm and the game will be broadcast live on Sky Sports.",
-        "The Round 10 fixture sees us back home in N5 at Emirates Stadium as we take on London City Lionesses on Sunday, November 15 at 4.30pm. The game will be broadcast live on Sky Sports.",
-        "Our London derby against West Ham United will take place in Round 11 on Sunday, November 22 at Emirates Stadium with a kick-off time of 2.30pm. The game will be broadcast live on BBC.",
-        "For all ticketing information, please check here.",
-        "Round 9",
-        "Sunday, November 8Liverpool v ArsenalAnfield | 12pm",
-        "Round 10",
-        "Sunday, November 15Arsenal v London City LionessesEmirates Stadium | 4.30pm",
-        "Round 11",
-        "Sunday, November 22Arsenal v West Ham UnitedEmirates Stadium | 2.30pm"
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/b71c08ae4af6-gettyimages-2295793908.webp",
-      "author": "Stephen Wright",
-      "publishedAt": "2026-10-07T10:46:00.000Z",
-      "url": "https://www.arsenal.com/news/wsl-fixture-details-confirmed-for-november-a6rNa5X2Ek23",
-      "source": "Arsenal.com",
-      "titleZh": "11月女子英超赛程详情确定",
-      "summaryZh": "阿森纳女足11月的三场女子英超联赛赛程安排已确定。",
-      "bodyZh": [
-        "我们有三场女子英超联赛的11月赛程详情已正式确定。",
-        "在第9轮比赛中，我们将于11月8日星期日作客安菲尔德球场对阵利物浦。比赛将于中午12点开球，天空体育将进行现场直播。",
-        "第10轮比赛我们将回到主场酋长球场，于11月15日星期日下午4点30分迎战伦敦城雌狮。比赛将由天空体育进行现场直播。",
-        "我们在第11轮将迎来对阵西汉姆联的伦敦德比，比赛将于11月22日星期日下午2点30分在酋长球场进行。比赛将由BBC进行现场直播。",
-        "有关所有票务信息的详情，请在此处查询。",
-        "第9轮",
-        "11月8日 星期日 利物浦对阵阿森纳 安菲尔德球场 | 中午12点",
-        "第10轮",
-        "11月15日 星期日 阿森纳对阵伦敦城雌狮 酋长球场 | 下午4点30分",
-        "第11轮",
-        "11月22日 星期日 阿森纳对阵西汉姆联 酋长球场 | 下午2点30分"
-      ],
-      "translationSourceHash": "4412ff823584cb629a92d1c681d30d696fae68e2b7e61829333edc28993b7186",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-10-07T19:32:09.124Z"
-    },
-    {
       "id": "2a204b958c5f4fe864628f2c8db06ddc96c664656fbc05aedd9d929c6d32bcd7",
       "teamId": "arsenal",
       "teamName": "阿森纳",
@@ -799,41 +844,6 @@
       "translatedAt": "2026-09-28T21:22:44.109Z"
     },
     {
-      "id": "c48ba40603dd8712c014cc3c3bcf95565e8255cca77ab9d77734bc806e4042c6",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Donate",
-      "summaryEn": "How to donate to The Arsenal Foundation",
-      "bodyEn": [
-        "You can support the work of The Arsenal Foundation in the following ways:",
-        "JustGivingVisit The Arsenal Foundation’s official JustGiving page here to donate now.",
-        "PayPal DonateMake a donation from anywhere in the world to The Arsenal Foundation through PayPal by simply clicking Donate below.",
-        "Donate",
-        "ChequeYou can send a cheque, made payable to ‘The Arsenal Foundation’ to:The Arsenal FoundationHighbury House75 Drayton ParkLondonN5 1BU",
-        "The Arsenal Foundation is a registered charity, no. 1145668.",
-        "Click here to find out more about The Arsenal Foundation and all the projects that your donation will support."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/04b1df9d32bb-the-arsenal-foundation.webp",
-      "author": "Michael Donlevy",
-      "publishedAt": "2019-12-02T00:00:00.000Z",
-      "url": "https://www.arsenal.com/news/donate-agNaX1F6ARQn",
-      "source": "Arsenal.com",
-      "titleZh": "捐赠",
-      "summaryZh": "了解如何向阿森纳基金会进行捐赠支持。",
-      "bodyZh": [
-        "你可以通过以下方式支持阿森纳基金会的工作：",
-        "JustGiving：访问阿森纳基金会在 JustGiving 上的官方页面进行在线捐赠。",
-        "PayPal 捐赠：通过下方的“捐赠”按钮，使用 PayPal 从世界任何地方向阿森纳基金会进行捐赠。",
-        "捐赠",
-        "支票：你可以邮寄支票，抬头写明“The Arsenal Foundation”，寄往：The Arsenal Foundation, Highbury House, 75 Drayton Park, London, N5 1BU。",
-        "阿森纳基金会是一个注册慈善机构，编号为 1145668。",
-        "点击此处了解更多关于阿森纳基金会的信息以及您的捐赠将支持的所有项目。"
-      ],
-      "translationSourceHash": "db8f667b7d5bb56d85553d1c3ca2163dde617b4dfeb1f576290084cdaaa93e44",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-10-08T13:24:22.412Z"
-    },
-    {
       "id": "0a3e5b5d337533bde5056b954687680d8e9f67ab27774f8920d999de5369ff9f",
       "teamId": "arsenal",
       "teamName": "阿森纳",
@@ -902,5 +912,8 @@
       "translatedAt": "2026-10-08T13:24:29.417Z"
     }
   ],
-  "pendingNotificationIds": []
+  "pendingNotificationIds": [
+    "6d3f581b1ba911cc3df94ce7a31eb666324893c08b87313f3dab33b4e0168aa2",
+    "369a9653b0666e49e9f1c4b5bedbb7aedadd022c504ad38526fc34f3bdf225c4"
+  ]
 }
