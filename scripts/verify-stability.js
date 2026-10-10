@@ -45,6 +45,10 @@ const arsenalNewsUpdater = read("firebase/functions/update-arsenal-news.js");
 const arsenalNewsCore = read("firebase/functions/arsenal-news-core.js");
 const arsenalNewsWorkflow = read(".github/workflows/arsenal-news.yml");
 const blueJaysNewsWorkflow = read(".github/workflows/blue-jays-news.yml");
+const scoreCacheCore = read("public/score-cache-core.js");
+const scoreCacheUpdater = read("firebase/functions/update-score-cache.js");
+const scoreCacheWorkflow = read(".github/workflows/score-cache.yml");
+const scoreCache = JSON.parse(read("public/scores/espn.json"));
 const currentVersionCode = Number(updateConfig.match(/currentVersionCode:\s*(\d+)/)?.[1]);
 
 const tracked = (folder) => execFileSync("git", ["ls-files", folder], { cwd: root, encoding: "utf8" }).trim();
@@ -315,6 +319,20 @@ const checks = [
       && provider.includes("executor.invokeAll(requests, 10, TimeUnit.SECONDS)")
       && widgetNetworkClient.includes("Mozilla/5.0 (Linux; Android 15)")
       && !widgetNetworkClient.includes('"GuansaiRiji/2.3.5"')
+  ],
+  [
+    "39 NBA赛程与比分三级刷新兜底",
+    app.includes('id: "nba"')
+      && app.includes("fetchEspnTeamSchedule")
+      && app.includes("fetchPublishedScoreFallback")
+      && app.includes("https://cdn.espn.com/core/")
+      && provider.includes("fetchEspnEventsById")
+      && provider.includes("applyPublishedScoreFallback")
+      && provider.includes("cdn.jsdelivr.net/gh/Levine-Lai/calendar-app@main/public/scores/espn.json")
+      && scoreCacheCore.includes('{ id: "nba", sport: "basketball", league: "nba" }')
+      && scoreCacheUpdater.includes("CACHE_HEARTBEAT_MS")
+      && scoreCacheWorkflow.includes('cron: "3,13,23,33,43,53 * * * *"')
+      && scoreCache.items.some((item) => item.league === "nba")
   ]
 ];
 

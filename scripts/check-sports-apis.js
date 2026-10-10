@@ -3,6 +3,7 @@ const timeoutArg = process.argv.find((value) => value.startsWith("--timeout="));
 const attempts = Math.max(1, Math.min(5, Number(attemptsArg?.split("=")[1]) || 3));
 const timeoutMs = Math.max(3000, Math.min(30000, Number(timeoutArg?.split("=")[1]) || 12000));
 const jsonOnly = process.argv.includes("--json");
+const browserUserAgent = "Mozilla/5.0 (Linux; Android 15) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0 Mobile Safari/537.36";
 
 const espnLeagues = [
   ["NBA", "basketball", "nba"],
@@ -38,25 +39,6 @@ function espnSeason(name, sport, now = new Date()) {
   return year;
 }
 
-function espnScheduleRange(name, now = new Date()) {
-  const month = Number(new Intl.DateTimeFormat("en", { timeZone: "Asia/Shanghai", month: "numeric" }).format(now)) - 1;
-  const year = Number(new Intl.DateTimeFormat("en", { timeZone: "Asia/Shanghai", year: "numeric" }).format(now));
-  if (name === "世界杯") return "20260601-20260815";
-  if (name === "中超") return `${year}0101-${year}1231`;
-  const startYear = month >= 5 ? year : year - 1;
-  return `${startYear}0701-${startYear + 1}0630`;
-}
-
-function firstEspnScheduleChunk(name) {
-  const [startKey, endKey] = espnScheduleRange(name).split("-");
-  const parse = (key) => new Date(Date.UTC(Number(key.slice(0, 4)), Number(key.slice(4, 6)) - 1, Number(key.slice(6, 8))));
-  const format = (date) => date.toISOString().slice(0, 10).replaceAll("-", "");
-  const start = parse(startKey);
-  const end = parse(endKey);
-  const chunkEnd = new Date(Math.min(start.getTime() + 44 * 24 * 60 * 60 * 1000, end.getTime()));
-  return `${startKey}-${format(chunkEnd)}`;
-}
-
 async function fetchText(url, accept = "application/json") {
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), timeoutMs);
@@ -66,7 +48,7 @@ async function fetchText(url, accept = "application/json") {
     endpoint.searchParams.set("_health", `${Date.now()}-${Math.random().toString(16).slice(2)}`);
     const response = await fetch(endpoint, {
       cache: "no-store",
-      headers: { accept, "user-agent": "GuansaiRiji-ApiHealth/1.0" },
+      headers: { accept, "user-agent": browserUserAgent },
       signal: controller.signal
     });
     const text = await response.text();
@@ -101,6 +83,8 @@ function buildProbes() {
   const today = dateKey();
   const probes = [];
   espnLeagues.forEach(([name, sport, league, staticTeams]) => {
+    const cdnPath = sport === "soccer" ? "soccer" : league;
+    const cdnLeagueQuery = sport === "soccer" ? `&league=${encodeURIComponent(league)}` : "";
     probes.push(jsonProbe(
       name,
       "ESPN",
@@ -111,12 +95,23 @@ function buildProbes() {
         return payload.events.length;
       }
     ));
+    probes.push(jsonProbe(
+      name,
+      "ESPN CDN",
+      "scoreboard-fallback",
+      `https://cdn.espn.com/core/${cdnPath}/scoreboard?xhr=1&dates=${today}&limit=300${cdnLeagueQuery}`,
+      (payload) => {
+        const events = payload?.content?.sbData?.events;
+        if (!Array.isArray(events)) throw new Error("missing content.sbData.events[]");
+        return events.length;
+      }
+    ));
     if (sport === "soccer") {
       probes.push(jsonProbe(
         name,
         "ESPN",
-        "schedule-chunk",
-        `https://site.api.espn.com/apis/site/v2/sports/${sport}/${league}/scoreboard?dates=${firstEspnScheduleChunk(name)}&limit=1000`,
+        "season-scoreboard",
+        `https://site.api.espn.com/apis/site/v2/sports/${sport}/${league}/scoreboard?dates=${espnSeason(name, sport)}&limit=1000`,
         (payload) => {
           if (!Array.isArray(payload.events)) throw new Error("missing events[]");
           return payload.events.length;

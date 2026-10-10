@@ -1,0 +1,49 @@
+name: Update score fallback cache
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/score-cache.yml"
+      - ".github/scripts/commit-and-push-with-rebase.sh"
+      - "firebase/functions/update-score-cache.js"
+      - "public/score-cache-core.js"
+  schedule:
+    - cron: "3,13,23,33,43,53 * * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: score-cache-updates
+  cancel-in-progress: false
+
+jobs:
+  update-scores:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v5
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: firebase/functions/package-lock.json
+
+      - name: Install worker dependencies
+        run: npm ci --prefix firebase/functions
+
+      - name: Refresh ESPN score fallback cache
+        run: npm run update:scores --prefix firebase/functions
+
+      - name: Commit changed score data
+        shell: bash
+        run: >-
+          bash .github/scripts/commit-and-push-with-rebase.sh
+          public/scores/espn.json
+          "chore: update score fallback cache"

@@ -69,6 +69,7 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
     private static final String DAY_ROLLOVER_WORK_NAME = "sports-widget-day-rollover";
     private static final String LIVE_FOLLOW_UP_WORK_PREFIX = "sports-widget-live-follow-up-";
     private static final long LIVE_FOLLOW_UP_INTERVAL_MS = TimeUnit.MINUTES.toMillis(2);
+    private static final long PUBLISHED_SCORE_CACHE_MAX_AGE_MS = TimeUnit.HOURS.toMillis(2);
     private static final int SCORE_DEFAULT_COLOR = 0xFF16120F;
     private static final int SCORE_LIVE_COLOR = 0xFFD83A34;
     private static final TimeZone BEIJING_TIME = TimeZone.getTimeZone("Asia/Shanghai");
@@ -738,19 +739,19 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
         tracker.attempt();
         try {
             String[] parts = entry.getKey().split("\\|");
-            String endpoint = "https://site.api.espn.com/apis/site/v2/sports/"
-                + parts[0] + "/" + parts[1]
-                + "/scoreboard?dates=" + parts[2] + "&limit=300";
-            Map<String, JSONObject> liveEvents = fetchEventsById(endpoint);
-            tracker.succeed();
+            Map<String, JSONObject> liveEvents = fetchEspnEventsById(parts[0], parts[1], parts[2]);
+            boolean matched = false;
             for (Game game : entry.getValue()) {
                 JSONObject liveEvent = findEspnEvent(game, liveEvents);
                 if (liveEvent != null) {
                     applyLiveEvent(game, liveEvent);
+                    matched = true;
                 }
             }
+            if (!matched) applyPublishedScoreFallback(entry);
+            tracker.succeed();
         } catch (Exception ignored) {
-            // Keep the imported snapshot if live refresh fails.
+            if (applyPublishedScoreFallback(entry)) tracker.succeed();
         }
     }
 
@@ -1203,6 +1204,102 @@ public class MlbTodayWidgetProvider extends AppWidgetProvider {
             }
         }
         return byId;
+    }
+
+    private static Map<String, JSONObject> fetchEspnEventsById(String sport, String league, String date) throws Exception {
+        if (!sport.matches("[a-z]+") || !league.matches("[a-z0-9.]+") || !date.matches("\\d{8}")) {
+            throw new IllegalArgumentException("Invalid ESPN scoreboard key");
+        }
+        String primary = "https://site.api.espn.com/apis/site/v2/sports/"
+            + sport + "/" + league + "/scoreboard?dates=" + date + "&limit=300";
+        try {
+            return fetchEventsById(primary);
+        } catch (Exception primaryError) {
+            String fallbackPath = "soccer".equals(sport) ? "soccer" : league;
+            String leagueQuery = "soccer".equals(sport) ? "&league=" + league : "";
+            String fallback = "https://cdn.espn.com/core/" + fallbackPath
+                + "/scoreboard?xhr=1&dates=" + date + "&limit=300" + leagueQuery;
+            JSONObject root = new JSONObject(WidgetNetworkClient.getScoreJson(fallback));
+            JSONObject content = root.optJSONObject("content");
+            JSONObject scoreboard = content == null ? null : content.optJSONObject("sbData");
+            JSONArray events = scoreboard == null ? null : scoreboard.optJSONArray("events");
+            Map<String, JSONObject> byId = new HashMap<>();
+            if (events == null) throw primaryError;
+            for (int index = 0; index < events.length(); index += 1) {
+                JSONObject event = events.optJSONObject(index);
+                if (event != null) byId.put(event.optString("id", ""), event);
+            }
+            return byId;
+        }
+    }
+
+    private static boolean applyPublishedScoreFallback(Map.Entry<String, List<Game>> entry) {
+        try {
+            String cacheBust = "?widget_score_fallback=" + (System.currentTimeMillis() / 60_000L);
+            String[] endpoints = {
+                "https://raw.githubusercontent.com/Levine-Lai/calendar-app/main/public/scores/espn.json" + cacheBust,
+                "https://cdn.jsdelivr.net/gh/Levine-Lai/calendar-app@main/public/scores/espn.json" + cacheBust
+            };
+            JSONObject payload = null;
+            for (String endpoint : endpoints) {
+                try {
+                    payload = new JSONObject(WidgetNetworkClient.getScoreJson(endpoint));
+                    break;
+                } catch (Exception ignored) {
+                    // Try the independent published-cache mirror.
+                }
+            }
+            if (payload == null) return false;
+            Date updatedAt = parseDate(payload.optString("updatedAt", ""));
+            if (updatedAt == null
+                || Math.abs(System.currentTimeMillis() - updatedAt.getTime()) > PUBLISHED_SCORE_CACHE_MAX_AGE_MS) {
+                return false;
+            }
+            JSONArray items = payload.optJSONArray("items");
+            if (items == null) return false;
+            Map<String, JSONObject> bySourceId = new HashMap<>();
+            List<JSONObject> candidates = new ArrayList<>();
+            String[] groupParts = entry.getKey().split("\\|");
+            if (groupParts.length < 2) return false;
+            String espnLeague = groupParts[1];
+            for (int index = 0; index < items.length(); index += 1) {
+                JSONObject item = items.optJSONObject(index);
+                if (item == null || !espnLeague.equals(item.optString("espnLeague", ""))) continue;
+                bySourceId.put(item.optString("sourceId", ""), item);
+                candidates.add(item);
+            }
+            boolean changed = false;
+            for (Game game : entry.getValue()) {
+                JSONObject item = bySourceId.get(game.sourceId);
+                if (item == null) {
+                    for (JSONObject candidate : candidates) {
+                        if (sameMatchupTeams(
+                            game.awayTeam,
+                            game.homeTeam,
+                            candidate.optString("awayTeam", ""),
+                            candidate.optString("homeTeam", "")
+                        )) {
+                            item = candidate;
+                            break;
+                        }
+                    }
+                }
+                if (item == null) continue;
+                game.awayScore = scoreJsonValue(item.opt("awayScore"), game.awayScore);
+                game.homeScore = scoreJsonValue(item.opt("homeScore"), game.homeScore);
+                game.status = item.optString("status", game.status);
+                game.statusState = item.optString("statusState", game.statusState);
+                game.completed = item.optBoolean("completed", game.completed);
+                String awayLogo = secureImageUrl(item.optString("awayLogo", ""));
+                String homeLogo = secureImageUrl(item.optString("homeLogo", ""));
+                if (!awayLogo.isEmpty()) game.awayLogo = awayLogo;
+                if (!homeLogo.isEmpty()) game.homeLogo = homeLogo;
+                changed = true;
+            }
+            return changed;
+        } catch (Exception ignored) {
+            return false;
+        }
     }
 
     static JSONObject findEspnEvent(Game game, Map<String, JSONObject> eventsById) {

@@ -1816,8 +1816,36 @@ async function fetchEspnSchedule(leagueConfig, start, end, options = {}) {
   const endpoint = new URL(`https://site.api.espn.com/apis/site/v2/sports/${leagueConfig.sport}/${leagueConfig.league}/scoreboard`);
   endpoint.searchParams.set("dates", dateQuery);
   endpoint.searchParams.set("limit", "1000");
-  const payload = await fetchJsonWithRetry(endpoint.toString(), `${leagueConfig.name} 赛程`);
-  const providerEvents = requireArray(payload.events, `${leagueConfig.name} 赛程 events`);
+  let providerEvents;
+  try {
+    const payload = await fetchJsonWithRetry(endpoint.toString(), `${leagueConfig.name} ESPN 主接口`);
+    providerEvents = requireArray(payload.events, `${leagueConfig.name} ESPN 主接口 events`);
+  } catch (primaryError) {
+    try {
+      const fallbackEndpoint = new URL(`https://cdn.espn.com/core/${leagueConfig.sport === "soccer" ? "soccer" : leagueConfig.league}/scoreboard`);
+      fallbackEndpoint.searchParams.set("xhr", "1");
+      if (leagueConfig.sport === "soccer") fallbackEndpoint.searchParams.set("league", leagueConfig.league);
+      fallbackEndpoint.searchParams.set("dates", dateQuery);
+      fallbackEndpoint.searchParams.set("limit", "1000");
+      const fallbackPayload = await fetchJsonWithRetry(
+        fallbackEndpoint.toString(),
+        `${leagueConfig.name} ESPN CDN`
+      );
+      providerEvents = requireArray(
+        fallbackPayload.content?.sbData?.events,
+        `${leagueConfig.name} ESPN CDN events`
+      );
+    } catch (cdnError) {
+      if (!options.dayOnly) throw new Error(`${primaryError.message}；备用 CDN：${cdnError.message}`);
+      const cachedEvents = await fetchPublishedScoreFallback(leagueConfig, start, end);
+      if (!cachedEvents.length) throw new Error(`${primaryError.message}；备用 CDN：${cdnError.message}；比分缓存不可用`);
+      return { events: cachedEvents, errors: [] };
+    }
+  }
+  if (options.dayOnly && providerEvents.length === 0) {
+    const cachedEvents = await fetchPublishedScoreFallback(leagueConfig, start, end);
+    if (cachedEvents.length) return { events: cachedEvents, errors: [] };
+  }
   let events = providerEvents
     .map((event) => normalizeEspnEvent(event, leagueConfig))
     .filter((event) => {
@@ -1828,6 +1856,40 @@ async function fetchEspnSchedule(leagueConfig, start, end, options = {}) {
   if (leagueConfig.id === "csl") events = await enrichCslEventsWithOfficialLogos(events);
   cache.set(cacheKey, { time: Date.now(), data: events });
   return { events, errors: [] };
+}
+
+async function fetchPublishedScoreFallback(leagueConfig, start, end) {
+  const endpoints = [
+    "https://raw.githubusercontent.com/Levine-Lai/calendar-app/main/public/scores/espn.json",
+    "https://cdn.jsdelivr.net/gh/Levine-Lai/calendar-app@main/public/scores/espn.json"
+  ];
+  let lastError = null;
+  for (const endpoint of endpoints) {
+    try {
+      const url = new URL(endpoint);
+      url.searchParams.set("score_fallback", String(Math.floor(Date.now() / 60000)));
+      const payload = await fetchJsonWithRetry(url.toString(), "比分兜底缓存", 1, 8000);
+      const items = ScoreCacheCore.selectItems(
+        payload,
+        leagueConfig.id,
+        startOfDay(start),
+        addDays(startOfDay(end), 1)
+      );
+      if (!items.length) continue;
+      return items.map((item) => ({
+        ...item,
+        leagueName: leagueConfig.name,
+        leagueColor: leagueConfig.color,
+        dataSource: "espn",
+        providerLeagueId: leagueConfig.league,
+        scoreUpdatedAt: payload.updatedAt
+      }));
+    } catch (error) {
+      lastError = error;
+    }
+  }
+  if (lastError) console.warn("Published score fallback unavailable", lastError);
+  return [];
 }
 
 async function fetchEspnSchedulePartitions(leagueConfig, start, end, options = {}) {
