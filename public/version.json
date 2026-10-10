@@ -1,18 +1,14 @@
 {
-  "versionCode": 50,
-  "versionName": "2.3.8",
-  "apkUrl": "https://github.com/Levine-Lai/calendar-app/releases/expanded_assets/v2.3.8",
-  "apkDirectUrl": "https://github.com/Levine-Lai/calendar-app/releases/download/v2.3.8/sports-calendar-2.3.8-debug.apk",
+  "versionCode": 51,
+  "versionName": "2.3.9",
+  "apkUrl": "https://github.com/Levine-Lai/calendar-app/releases/expanded_assets/v2.3.9",
+  "apkDirectUrl": "https://github.com/Levine-Lai/calendar-app/releases/download/v2.3.9/sports-calendar-2.3.9-debug.apk",
   "notes": [
-    "联赛导入默认收起，展开时才加载球队",
-    "顶部浅紫背景贴合上沿和左右边缘，仅保留底部分隔线",
-    "刷新按钮更新全部已导入球队，恢复赛程管理入口",
-    "收起面板仍显示操作反馈，更新赛程保留当前月份",
-    "切换联赛清空搜索框，增强错误提示与键盘焦点",
-    "修复 ESPN 拒绝旧网络标识导致的 MLB、NBA、NFL、英超等比分不更新",
-    "多联赛比分改为受控并发刷新，并加入 PL2（U21）官方实时比分",
-    "阿森纳与多伦多蓝鸟新文章均支持推送",
-    "展开通知显示对应球队队徽，点击阿森纳推送可直达文章"
+    "加入 NBA 完整赛程，覆盖季前赛、常规赛和季后赛",
+    "修复 ESPN 多日日期范围请求失效导致多联赛比分停止刷新",
+    "App 与桌面组件加入 ESPN 主接口、独立 CDN、GitHub 比分缓存三级兜底",
+    "比赛 ID 变化时按主客队继续匹配，避免保留旧比分",
+    "比分缓存每 10 分钟更新昨天、今天和明天的比赛"
   ],
   "force": false
 }

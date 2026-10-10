@@ -2537,4 +2537,4 @@
 - 涉及文件：`public/app.js`、`public/score-cache-core.js`、`public/scores/espn.json`、`MlbTodayWidgetProvider.java`、`firebase/functions/update-score-cache.js`、`.github/workflows/score-cache.yml`、API 检查与回归测试、版本配置。
 - 验证结果：Web 49 项测试、新闻/比分后台 38 项测试、稳定性检查 39 项、Android JVM 测试和 Lint 全部通过；56 路真实赛事接口单轮检查全部成功，NBA 球队完整赛程返回 80 场。
 - 打包结果：使用历史固定证书生成 `releases/sports-calendar-2.3.9-debug.apk`，大小 `8,231,568` 字节，SHA-256 `7A4733BC2A03DAFA5B47AD05F11B2F656FBACA4AD67A4A145C0D8C5625D3BF63`；包名 `com.local.sportscalendar`、`versionCode 51`、`versionName 2.3.9`、APK Signature Scheme v2 与证书 SHA-256 `7EF83E3EC40B7BF1E9AAF551589EE73C378FC26F29202255F0466BCAB759BED0` 已验证。
-- 发布顺序：先推送 2.3.9 源码并上传 GitHub Release APK，确认远端资产哈希后再把 `public/version.json` 切换到 2.3.9，避免 App 提前发现尚不存在的下载文件。
+- 发布结果：GitHub Release `https://github.com/Levine-Lai/calendar-app/releases/tag/v2.3.9` 已创建，APK 资产状态为 uploaded；GitHub 返回的文件大小 `8,231,568` 字节及 SHA-256 与本机完全一致。确认资产有效后，`public/version.json` 才切换为 `2.3.9 / versionCode 51`，旧版兼容资产页与新版 APK 直链均已配置。

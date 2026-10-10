@@ -7,10 +7,10 @@
 - 本机最新已生成 APK：`2.3.9 / versionCode 51`
 - 当前源码版本：`2.3.9 / versionCode 51`
 - APK 文件：`releases/sports-calendar-2.3.9-debug.apk`
-- GitHub Release：待上传 `v2.3.9`
-- App 内检查更新清单暂时仍发布 `2.3.8`，将在 Release 资产上传并校验后切换到 `2.3.9`。
+- GitHub Release：`https://github.com/Levine-Lai/calendar-app/releases/tag/v2.3.9`
+- App 内检查更新清单已发布 `2.3.9`：旧版打开精简资产列表，新版直接启动 APK 下载。
 
-## 2.3.9（已生成，待发布）
+## 2.3.9（已发布）
 
 - NBA 赛程纳入完整赛季导入与实时比分刷新，覆盖季前赛、常规赛和季后赛。
 - 修复 ESPN 已停止接受部分多日日期范围请求而导致足球、棒球、篮球等比赛保留旧比分的问题；日刷新统一使用有效的单日请求。
@@ -18,6 +18,7 @@
 - GitHub 比分缓存每 10 分钟更新昨天、今天、明天的赛事，并通过心跳避免内容未变化时被客户端误判为过期。
 - 固定签名 APK 大小 `8,231,568` 字节，SHA-256 `7A4733BC2A03DAFA5B47AD05F11B2F656FBACA4AD67A4A145C0D8C5625D3BF63`；包名、`versionCode 51`、`versionName 2.3.9`、v2 签名和历史证书均已验证。
 - Web 49 项测试、新闻/缓存后台 38 项测试、稳定性检查 39 项、Android JVM 测试与 Lint 全部通过；56 路赛事接口检查全部成功。
+- GitHub Release、APK 与远程更新清单均已发布；GitHub 计算的资产 SHA-256 与本机完全一致。
 
 ## 2.3.5（已发布）
 
