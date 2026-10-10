@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-10T01:21:54.985Z",
+  "updatedAt": "2026-10-10T07:31:32.152Z",
   "items": [
     {
       "id": "csl-401861475",
@@ -144,11 +144,11 @@
       "sport": "basketball",
       "espnLeague": "nba",
       "start": "2026-10-10T00:00Z",
-      "status": "Halftime",
-      "statusState": "in",
-      "completed": false,
-      "awayScore": "60",
-      "homeScore": "50",
+      "status": "Final",
+      "statusState": "post",
+      "completed": true,
+      "awayScore": "104",
+      "homeScore": "100",
       "awayTeam": "Memphis Grizzlies",
       "homeTeam": "Chicago Bulls",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
