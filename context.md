@@ -2525,3 +2525,16 @@
 - 应用内更新问题定位为 2.3.4 主动把 GitHub APK 直链重写成 Release 页面，同时远程清单也只提供 Release 页面。2.3.5 改为 Android `DownloadManager` 直接下载受白名单约束的本项目 GitHub APK，失败时再用浏览器打开同一直链；新清单将同时提供旧版可打开的 `expanded_assets` 兼容页和新版使用的 `apkDirectUrl`。
 - 固定签名 APK 已生成到 `releases/sports-calendar-2.3.5-debug.apk`，大小 `8,190,719` 字节，SHA-256 `C974A9393570EF3A85EA75AEEFA0A694C9D8250FA0535C47DA0DAF2046BB306A`；`aapt` 确认 `com.local.sportscalendar / versionCode 47 / versionName 2.3.5`，APK Signature Scheme v2 和历史证书 SHA-256 `7EF83E3EC40B7BF1E9AAF551589EE73C378FC26F29202255F0466BCAB759BED0` 均验证通过。
 - GitHub Release `v2.3.5` 已创建并上传同名 APK；远程更新清单发布 47/2.3.5，`apkUrl` 指向兼容旧版的精简资产列表，`apkDirectUrl` 指向准确的 APK 资产。发布后将再次下载远端资产核对 SHA-256，并检查 Raw GitHub 与 jsDelivr 两个清单入口。
+
+## 2026-10-10
+
+### 发布批次：2.3.9 NBA 赛程与比分三级兜底
+
+- 用户目标：加入 NBA 赛程，并彻底解决近期足球、棒球、篮球等比赛在 App 和桌面组件中不再刷新、持续显示旧比分的问题，完成 APK 与 GitHub 更新发布。
+- 原因定位：ESPN 过去可用的多日日期范围记分牌请求现会返回 HTTP 400；原逻辑把它用于赛程分段与刷新，导致多个联赛共享失败。单个 ESPN 域名受限或成功返回空列表时，原生组件也没有独立数据源继续更新。
+- 实现方案：完整赛季导入改为 ESPN 可接受的赛季年份或单日分区；NBA 使用动态赛季年份并读取季前赛、常规赛、季后赛。日刷新和桌面组件建立 ESPN Site API、ESPN CDN、GitHub 静态比分缓存三级链路；缓存覆盖北京时间昨天、今天、明天，每 10 分钟运行并在 30 分钟内写入心跳。
+- 匹配兼容：优先按 ESPN 赛事 ID 更新；ID 调整或旧记录缺失 ID 时继续按标准化主客队名称匹配。三级接口均不可用时保留本地最后一次成功比分，不用空响应覆盖已有数据。
+- 涉及文件：`public/app.js`、`public/score-cache-core.js`、`public/scores/espn.json`、`MlbTodayWidgetProvider.java`、`firebase/functions/update-score-cache.js`、`.github/workflows/score-cache.yml`、API 检查与回归测试、版本配置。
+- 验证结果：Web 49 项测试、新闻/比分后台 38 项测试、稳定性检查 39 项、Android JVM 测试和 Lint 全部通过；56 路真实赛事接口单轮检查全部成功，NBA 球队完整赛程返回 80 场。
+- 打包结果：使用历史固定证书生成 `releases/sports-calendar-2.3.9-debug.apk`，大小 `8,231,568` 字节，SHA-256 `7A4733BC2A03DAFA5B47AD05F11B2F656FBACA4AD67A4A145C0D8C5625D3BF63`；包名 `com.local.sportscalendar`、`versionCode 51`、`versionName 2.3.9`、APK Signature Scheme v2 与证书 SHA-256 `7EF83E3EC40B7BF1E9AAF551589EE73C378FC26F29202255F0466BCAB759BED0` 已验证。
+- 发布顺序：先推送 2.3.9 源码并上传 GitHub Release APK，确认远端资产哈希后再把 `public/version.json` 切换到 2.3.9，避免 App 提前发现尚不存在的下载文件。
