@@ -1,12 +1,94 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-10-11T08:54:52.988Z",
+  "updatedAt": "2026-10-11T15:37:46.360Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "12c69613465061f0701dea1288b42f2ee88d625b03e86cc9ac324c1e3a858177",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "U18s highlights: Arsenal 3-2 Birmingham City",
+      "summaryEn": "Our young Gunners fight back to boost Premier League Cup qualification hopes",
+      "bodyEn": [
+        "Our young Gunners overcame an early setback to beat Birmingham City 3-2 in the U18 Premier League Cup.",
+        "The West Midlands side went ahead through Noah Hoarau but goals from Jaden Maghoma and Abraham Owusu-Gyasi turned the tie around before the interval.",
+        "Maghoma extended our lead after the break with his second from the spot and we held on despite a late strike from Theodore Mason.",
+        "The three points boost our hopes of qualification from Group B, with leaders Sunderland up next in November.",
+        "Press play on the video at the top of the article to watch the best of the action from Saturday's win at the Sobha Realty Training Centre."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/1b5cb8eefc20-london-colney-england-abraham-owusu-gyasi-of-arsenal-during-the-premier-league-u.webp",
+      "author": "Tom Keens",
+      "publishedAt": "2026-10-11T13:34:01.362Z",
+      "url": "https://www.arsenal.com/news/u18s-highlights-arsenal-3-2-birmingham-city-aTGIa3b80sO7",
+      "source": "Arsenal.com",
+      "titleZh": "U18集锦：阿森纳 3-2 伯明翰城",
+      "summaryZh": "年轻的枪手们逆转取胜，提升了晋级英超杯的希望。",
+      "bodyZh": [
+        "我们的年轻枪手克服了开局不利的局面，在U18英超杯中以3-2击败伯明翰城。",
+        "西米德兰兹球队由诺亚·霍罗（Noah Hoarau）率先破门，但贾登·马霍马（Jaden Maghoma）和亚伯拉罕·奥苏-贾西（Abraham Owusu-Gyasi）的进球在中场休息前扭转了局势。",
+        "易边再战，马霍马通过点球梅开二度扩大了我们的领先优势，尽管西奥多·梅森（Theodore Mason）在尾声阶段扳回一球，我们还是守住了胜果。",
+        "这三分提升了我们从B组出线的希望，11月份我们将迎来小组领头羊桑德兰的挑战。",
+        "点击文章顶部的视频播放按钮，观看周六在索巴地产训练中心取胜的精彩集锦。"
+      ],
+      "translationSourceHash": "73705dcb0133119c847e7816b02d019c22d3d782e60d6cfa4aff1ed1c27e3e10",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-10-11T15:37:36.276Z"
+    },
+    {
+      "id": "c6e9684de65361dc72fde9108305d8e84ba5953685829dea748c24c6430481d9",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Smith reflects on hard-fought win over Birmingham",
+      "summaryEn": "Our under-18s coach saw his side come from behind to win in the cup",
+      "bodyEn": [
+        "Our under-18s coach Josh Smith was pleased to see the team over the line against Birmingham City, despite the West Midlands side posing a threat throughout.",
+        "The U18 Premier League Cup clash was closely contested, with our young Gunners winning 3-2 through an Abraham Owusu-Gyasi header and a brace from Jaden Maghoma.",
+        "\"With not having a game for three weeks, the lads started a little bit slow, but we were really pleased for 60 minutes.",
+        "\"I thought we lost our way in terms of sort of the last 20 to 25 minutes. It was a really difficult game, Birmingham were stubborn and there was not a lot of space for us to play through the spaces around the outside.",
+        "\"They were compact but had a high line. The challenge for us at half-time was, yes, we can use the spaces around the outside, but the variation for us to play behind as well.",
+        "\"It was pleasing to get the win, but I thought some of the execution in our final action today was probably inconsistent compared to where it's been in recent weeks.\"",
+        "Our academy side has been in strong form recently, with the win at the Sobha Realty Training Centre extending their unbeaten run to four games across all competitions.",
+        "Josh also highlighted several players who stepped up during the match to help their teammates navigate some challenging periods.",
+        "\"I thought in terms of the ball possession we had across the game, we had 75% of the ball.",
+        "\"I thought Charlie [Purdy] and Theo [Odaji-Ukueku] at the base of the midfield, their decision-making to help us play was top today.",
+        "\"Then Abraham [Owusu-Gyasi] as well at right-back; he hasn't played for a few weeks, but I thought his contribution to the game was very good today.\"",
+        "After returning from the international break with a win, Josh has turned his attention to a busy week ahead, with fixtures coming thick and fast.",
+        "Our young Gunners face a demanding schedule, starting with a UEFA Youth League test against Lille OSC midweek before taking on Tottenham Hotspur in the first north London derby of the season.",
+        "\"For the next fixture, there are quite a few lads who will play for the under-19s on Tuesday.",
+        "\"Then for the under-18s, the following fixture will be for us at home against Tottenham Hotspur next Saturday, which speaks for itself.\""
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/9d6e030f1bc8-london-colney-england-arsenal-academy-coach-josh-smith-during-an-arsenal-u18-tra.webp",
+      "author": "Tom Keens",
+      "publishedAt": "2026-10-10T20:05:00.000Z",
+      "url": "https://www.arsenal.com/news/smith-reflects-on-hard-fought-win-over-birmingham-a7Ikd0c1qs0N",
+      "source": "Arsenal.com",
+      "titleZh": "史密斯谈艰难战胜伯明翰",
+      "summaryZh": "阿森纳U18主帅谈球队在杯赛中逆转取胜",
+      "bodyZh": [
+        "我们的U18主教练乔什·史密斯（Josh Smith）很高兴看到球队战胜伯明翰城，尽管这支来自西米德兰兹的球队全场都构成了威胁。",
+        "这场U18英超杯赛竞争激烈，凭借亚伯拉罕·奥苏亚-贾西（Abraham Owusu-Gyasi）的头球破门以及贾登·马霍马（Jaden Maghoma）的梅开二度，我们的年轻枪手以3-2获胜。",
+        "“由于三周没有比赛，小伙子们开局有点慢热，但在60分钟的时间里我们真的很满意。”",
+        "“我认为在最后20到25分钟左右我们有点迷失了方向。这是一场非常困难的比赛，伯明翰非常顽强，我们在外围寻找空间进行传递的余地不大。”",
+        "“他们防守紧凑但防线提得很高。我们在中场休息时面临的挑战是，是的，我们可以利用外围的空间，但同时也要有打到身后的变化。”",
+        "“很高兴能取得胜利，但我认为今天我们最后一下处理球的执行力，与最近几周相比可能有些不稳定。”",
+        "我们的青训梯队近期状态神勇，在索布哈 realty 训练基地取得的这场胜利将他们在各项赛事中的不败纪录延长到了四场。",
+        "乔什还表扬了几名在比赛中挺身而出、帮助队友度过艰难时期的球员。",
+        "“我认为就我们在整场比赛中的控球率而言，我们占有了75%的球权。”",
+        "“我认为查理[普迪]和西奥[奥达吉-乌库库]在后腰位置上的决策力今天堪称顶级，帮助我们组织了进攻。”",
+        "“还有担任右后卫的亚伯拉罕[奥苏亚-贾西]；他已经几周没踢比赛了，但我认为他今天的表现非常出色。”",
+        "在经历国际比赛日后以一场胜利回归，乔什已经将注意力转向了接下来赛程密集的忙碌一周。",
+        "我们的年轻枪手将迎来严峻的赛程考验，首先是在周中进行欧足联青年联赛对阵里尔的比赛，随后将在本赛季首场北伦敦德比中对阵托特纳姆热刺。",
+        "“对于下一场比赛，会有不少小伙子在周二代表U19出场。”",
+        "“然后对于U18来说，我们的下一场比赛将是下周六在主场对阵托特纳姆热刺，这场比赛的意义不言而喻。”"
+      ],
+      "translationSourceHash": "63bde0def89f52ae394257f7cb0d428c203347faadb397d6a0ae4359d1e450be",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-10-11T15:37:45.091Z"
+    },
     {
       "id": "7cadcec8d3180e6e55c84ed92ae2847b1a8b092837528797064bd6d5e85d8203",
       "teamId": "arsenal",
@@ -461,73 +543,6 @@
       "translatedAt": "2026-10-10T15:52:07.801Z"
     },
     {
-      "id": "d6ca2fa87ba327d4e87a10f80ee4719aea168838da4ca8a9da1aeeec26e81c72",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "U21s report: Arsenal 2-2 Sunderland",
-      "summaryEn": "Our young Gunners are held to another draw in the Premier League 2",
-      "bodyEn": [
-        "Our under-21s’ frustrating start to the Premier League 2 campaign continued with a 2-2 draw against Sunderland.",
-        "Trey Ogunsuyi headed the visitors ahead inside the opening quarter, but we responded through a James Scanlon tap-in before the break.",
-        "Ogunsuyi put the wearside outfit back in front shortly after the restart but were reduced to 10 when Aji Alese was dismissed. We made our numerical advantage count when Andre Harriman-Annous poached a late equaliser to earn us another domestic draw.",
-        "FIRST HALF",
-        "Despite our heavy possession, the Black Cats worked early counter-attacks and took the lead through a forced corner kick. Tom Proctor sent in the cross for Ogunsuyi to nod home the opener.",
-        "We were back level through summer arrival Scanlon, who had had the entire Sunderland goal to aim at after Evan Mooney stole the ball high up and found his teammate in a vacant box.",
-        "SECOND HALF",
-        "Ogunsuyi restored the North East side’s lead shortly after the teams re-emerged, getting a touch on Ranson’s attempted clearance to divert the ball goalwards.",
-        "Ranson then produced a fine double save to keep us in the game, first denying Charlie Dinsdale’s powerful effort before keeping out Ogunsuyi’s follow-up from close range.",
-        "As we pushed for another equaliser, Ife Ibrahim collected the ball centrally and unleashed a long-range effort, forcing Joe Cowan into a fingertip save.",
-        "We had a player advantage going into the final 20 minutes after Alese was shown red for a second booking, and substitute Maalik Hashi almost made it count with a curling effort that forced the 'keeper into another reflexed denial.",
-        "We continued to pepper the target, with Teshaun Murisa next up to curl a dangerous effort towards the far corner, but the Sunderland no.1 parried again.",
-        "Our efforts were rewarded in stoppage time, when Murisa created a chance down the right flank and picked out Andre Harriman-Annous, who directed home the equaliser to snatch a point.",
-        "WHAT IS MEANS",
-        "The draw is our fourth of the season and puts us on as many points as the wait for a PL2 victory continues.",
-        "WHAT'S NEXT",
-        "Many of our young Gunners will be involved for the under-19s in UEFA Youth League action against Lille OSC on Tuesday, October 13.",
-        "The match at the Mangata Developments Stadium is scheduled for 1pm (UK time).",
-        "LINE-UPS",
-        "Arsenal XI: Ranson, Clarke, Washington, Salmon (Julienne 58), Dixon (Upson 58), Ibrahim (Murisa 70), Nwaneri, O'Neill (Hashi 58), Mooney (Bernard 58), Scanlon, Harriman-Annous.",
-        "Subs: Porter, Ogunnaike.",
-        "Sunderland XI: Cowan, Lienard, Jones, Whittaker, Alese, Kindon, Dinsdale (Scott 62), Munyakazi (Hunt 62), Ogunsuyi (Barker 85), Proctor, Neill (Lightfoot 76).",
-        "Subs: Metcalf, Bell."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/9859f44ea997-borehamwood-england-james-scanlon-of-arsenal-during-the-premier-league-2-match-b.webp",
-      "author": "Tom Keens",
-      "publishedAt": "2026-10-10T14:01:13.181Z",
-      "url": "https://www.arsenal.com/news/u21s-report-arsenal-2-2-sunderland-a0G1r4l5qGSp",
-      "source": "Arsenal.com",
-      "titleZh": "U21青年队报告：阿森纳 2-2 桑德兰",
-      "summaryZh": "我们的年轻枪手在英超2中再次收获一场平局。",
-      "bodyZh": [
-        "我们的U21青年队在英超2联赛中令人沮丧的开局仍在继续，他们以2-2战平了桑德兰。",
-        "开场不到十五分钟，特雷·奥贡苏伊头球破门帮助客队领先，但我们在半场结束前由詹姆斯·斯坎隆推射扳平比分。",
-        "下半场刚开始不久，奥贡苏伊再次为这支来自威尔法赛德的球队取得领先，随后阿吉·阿莱塞两黄变一红被罚下，桑德兰只剩10人应战。我们利用人数优势，由安德雷·哈里曼-安努斯在尾声阶段抢点扳平比分，在主场再次收获一场平局。",
-        "上半场",
-        "尽管我们占据了大量控球权，但黑猫通过早期的反击制造威胁，并通过一次角球机会取得领先。汤姆·普罗特尔传中，奥贡苏伊头球攻入首开纪录的进球。",
-        "我们通过夏窗新援斯坎隆扳平了比分，埃文·穆尼在前场高位断球后发现空门前的队友，斯坎隆轻松推射破门。",
-        "下半场",
-        "双方易边再战不久，奥贡苏伊再次为主队取得领先，他碰到了兰森试图解围的皮球，将其挡入球门。",
-        "随后兰森做出了一次精彩的两连扑将我们留在比赛中，他先是扑出了查理·丁斯dale的大力射门，随后又封堵了奥贡苏伊的近距离补射。",
-        "随着我们全力寻求再次扳平比分，伊费·易卜拉欣在中路接球后起远射，迫使乔·科万做出指尖扑救。",
-        "在比赛还剩最后20分钟时，阿莱塞因累计两张黄牌被罚下，我们获得了人数优势。替补上场的马利克·哈希几乎利用这一优势破门，他的兜射迫使门将再次做出本能扑救。",
-        "我们继续威胁对方球门，特肖恩·穆里萨随后的一脚危险兜射直奔远角，但桑德兰一门再次将球扑出。",
-        "我们的努力在补时阶段得到了回报，穆里萨在右路创造机会并找到了安德雷·哈里曼-安努斯，后者射门得分扳平比分，抢下一分。",
-        "这意味着什么",
-        "这场平局是我们本赛季的第四场平局，积分榜上也是四分，寻找英超2首胜的等待仍在继续。",
-        "接下来",
-        "我们的许多年轻枪手将参加10月13日星期二对阵里尔的欧洲青年联赛。",
-        "这场在曼加塔发展球场进行的比赛定于英国时间下午1点开球。",
-        "首发阵容",
-        "阿森纳首发：兰森、克拉克、华盛顿、萨尔蒙（58分钟，朱利安）、迪克森（58分钟，厄普森）、易卜拉欣（70分钟，穆里萨）、恩瓦内里、奥尼尔（58分钟，哈希）、穆尼（58分钟，伯纳德）、斯坎隆、哈里曼-安努斯。",
-        "替补：波特、奥贡奈克。",
-        "桑德兰首发：科万、利纳尔、琼斯、惠特克、阿莱塞、金顿、丁斯代尔（62分钟，斯科特）、穆尼亚卡齐（62分钟，亨特）、奥贡苏伊（85分钟，巴克）、普罗特尔、尼尔（76分钟，莱特富特）。",
-        "替补：梅特卡夫、贝尔。"
-      ],
-      "translationSourceHash": "deda4595cfd43862fefc65ea7fa0081e828bfbe0a59d2995d8d0271bbd33c77d",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-10-10T15:52:11.340Z"
-    },
-    {
       "id": "55a56e4b38e494948970529c4c0f2f71d7305d24741bfbb1459dcf9184bea782",
       "teamId": "arsenal",
       "teamName": "阿森纳",
@@ -689,47 +704,6 @@
       "translationSourceHash": "b262153c6788ec52b670530a25c3a0fd660531115ab03ab7741fa3c382011b34",
       "translationModel": "gemini-3.5-flash-lite",
       "translatedAt": "2026-10-10T15:52:38.177Z"
-    },
-    {
-      "id": "8acff6c5f2a315fec99a16849a3e70cd9876b43a34c7b20f7e59a3032f4b81e8",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Team news: Trio fit, three more come in for Leeds test",
-      "summaryEn": "Find out who Mikel Arteta has selected for this afternoon's Premier League game against Leeds United at Emirates Stadium",
-      "bodyEn": [
-        "Mikel Arteta has made three changes for this afternoon’s Premier League home clash with Leeds United, but Kai Havertz, Declan Rice and Ezri Konsa are all fit to start.",
-        "After a three-week wait following our 3-0 loss at Brighton & Hove Albion last time out, Mikel has opted to shuffle his pack, but the trio, all of whom had injury issues during the international break, remain in the starting XI.",
-        "Ben White returns at right-back after missing the trip to his former side with a groin issue, while Noni Madueke replaces Christos Tzolis, who will miss a few weeks after sustaining an injury during Greece’s Nations League campaign.",
-        "The other switch sees Myles Lewis-Skelly return to the middle of the park, with Bruno Guimaraes and Jurrien Timber dropping to the bench after starting at the Amex Stadium last month.",
-        "Daniel Farke meanwhile has stuck with the same side, which last drew 0-0 at home to Crystal Palace just before the pause for international action.",
-        "Summer signing Harry Wilson has recovered from injury and taken Daniel James' spot on the bench, who picked up a back problem while away with Wales. Dominic Calvert-Lewin starts up front as expected, having returned to the England fold after scoring seven goals in his last 11 league games.",
-        "TEAM NEWS",
-        "Arsenal: Raya, White, Gabriel, Konsa, Calafiori, Lewis-Skelly, Rice, Odegaard, Saka, Madueke, Havertz.Subs: Arrizabalaga, Timber, Hincapie, Zubimendi, Merino, Guimaraes, Eze, Dowman, Gyokeres.",
-        "Leeds: Trafford, Justin, Muharemovic, Elvedi, Bogle, Tanaka, Ampadu, Stach, Gudmundsson, Okafor, Calvert-Lewin.Subs: Zetterer, Bard, Bijol, Gruev, Longstaff, Aaronson, Bahoya, Wilson, Nmecha.",
-        "Ahead of kick-off, prepare for the game by reading our in-depth match preview, containing need-to-know stats, a guide to Leeds' season so far and tactics, live coverage and much more."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/f72901f997a6-london-england-ben-white-of-arsenal-looks-on-during-the-premier-league-2026-27-m.webp",
-      "author": "Jonathon Rogers",
-      "publishedAt": "2026-10-10T10:15:01.579Z",
-      "url": "https://www.arsenal.com/news/team-news-trio-fit-three-more-come-in-for-leeds-test-a0pJu5r4fi6X",
-      "source": "Arsenal.com",
-      "titleZh": "球队消息：三人伤愈，阿森纳对阵利兹联做出三处人员调整",
-      "summaryZh": "阿尔特塔公布了主场对阵利兹联的首发阵容，哈弗茨、赖斯和孔萨均伤愈首发。",
-      "bodyZh": [
-        "阿森纳主帅阿尔特塔在今天下午对阵利兹联的英超主场比赛中进行了三处阵容调整，不过凯·哈弗茨、德克兰·赖斯和埃兹里·孔萨均伤愈首发。",
-        "在经历了两周前客场0-3不敌布莱顿后三周的等待，阿尔特塔选择对阵容进行轮换，但这三名在国际比赛日期间遭遇伤病问题的球员依然留在了首发名单中。",
-        "本·怀特此前因腹股沟问题缺席了对阵老东家的比赛，此役回归担任右后卫；而诺尼·马杜埃凯取代了克里斯托斯·齐奥利，后者因在代表希腊参加欧国联比赛期间受伤将缺阵数周。",
-        "另一处调整是迈尔斯·刘易斯-斯凯利重返中场，上个月在美国运通球场首发的布鲁诺·吉马良斯和尤里恩·廷贝尔此役坐在替补席上。",
-        "与此同时，丹尼尔·法尔克排出了与国际比赛日前主场0-0战平水晶宫时相同的首发阵容。",
-        "夏窗新援哈里·威尔逊已伤愈复出，取代了在随威尔士队出征时背部受伤的丹尼尔·詹姆斯进入替补席。多米尼克·卡尔沃特-勒温一如预期首发出任中锋，他在过去11场联赛中攻入7球后重新入选英格兰代表队。",
-        "球队阵容",
-        "阿森纳：拉亚、怀特、加布里埃尔、孔萨、卡拉菲奥里、刘易斯-斯凯利、赖斯、厄德高、萨卡、马杜埃凯、哈弗茨。替补：阿里萨巴拉加、廷贝尔、因卡皮耶、祖比门迪、梅里诺、吉马良斯、埃泽、多曼、约克雷斯。",
-        "利兹联：特拉福德、贾斯汀、穆哈雷莫维奇、埃尔维迪、博格尔、田中碧、阿姆帕杜、斯塔赫、古德蒙德松、奥卡福尔、卡尔沃特-勒温。替补：泽特尔雷er、巴尔德、比约尔、格鲁埃夫、朗斯塔夫、阿伦森、巴霍亚、威尔逊、恩梅查。",
-        "在比赛开始前，您可以阅读我们的深度赛前前瞻，其中包含必备数据、利兹联本赛季表现指南、战术分析以及现场报道等丰富内容。"
-      ],
-      "translationSourceHash": "f8527db4b2534753c6376dac422d65ee87eb0d21a1edb63b0d2ce2f81a41d9d9",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-10-10T15:52:40.843Z"
     },
     {
       "id": "2e7bbc23f147da26cd32e487ba716edefe57459a75bb162f105f3553ac3e3154",
@@ -978,6 +952,35 @@
       "translatedAt": "2026-10-08T13:24:14.785Z"
     },
     {
+      "id": "2640668424e40cdf9e1d732e7b9184b3b55ca7b602ba438c7eece10b3208482c",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Ona Batlle joins Frimmy for Colney Carpool",
+      "summaryEn": "Episode 38 of Colney Carpool has arrived! This time, Frimmy shows summer signing Ona Batlle around Sobha",
+      "bodyEn": [
+        "Colney Carpool is back, and this time, Frimmy shows summer signing Ona Batlle around the Sobha Realty Training Centre.",
+        "The Spanish defender needed a ride to training, so our man at the training ground was more than happy to provide her with a ride around the facilities and take the opportunity to discuss her first few months at the club and how she's enjoying London life.",
+        "As usual, Frimmy was keen to share some bad jokes, with Ona having one of her own! She also revealed who in the squad she's quickly gotten close to, discussed Spanish cuisine and tried her hand at Frimmy's target game - could she get the top score?",
+        "Press play on the video above to see how she got on!"
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/28618db70552-carpool.webp",
+      "author": "Stephen Wright",
+      "publishedAt": "2026-10-07T14:58:15.409Z",
+      "url": "https://www.arsenal.com/news/ona-batlle-joins-frimmy-for-colney-carpool-aLWfH8A0IAB6",
+      "source": "Arsenal.com",
+      "titleZh": "奥娜·巴特列做客科尔尼拼车秀",
+      "summaryZh": "最新一期科尔尼拼车秀来啦！弗里米带夏窗新援奥娜·巴特列参观训练基地。",
+      "bodyZh": [
+        "科尔尼拼车秀又回来了，这一次，弗里米带着夏窗新援奥娜·巴特列参观索巴地产训练中心。",
+        "这位西班牙后卫需要顺风车去训练，因此我们在训练基地的搭档非常乐意载她参观各项设施，并借此机会聊了聊她加盟俱乐部最初几个月的感受以及她对伦敦生活的喜爱。",
+        "像往常一样，弗里米急于分享一些糟糕的笑话，而奥娜也讲了一个自己的笑话！她还透露了自己在球队里迅速走近的队友，讨论了西班牙美食，并尝试了弗里米的目标游戏——她能拿到最高分吗？",
+        "点击播放上面的视频，看看她的表现如何！"
+      ],
+      "translationSourceHash": "e1d46291159018219b73485362dcc7e8ffc719f78695155e76b850c9092a2dca",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-10-11T15:37:46.359Z"
+    },
+    {
       "id": "a3b932b433ea1064e1d6ae759a85ffbd6df21ca74e3548f4090118ec6dadc842",
       "teamId": "arsenal",
       "teamName": "阿森纳",
@@ -1056,5 +1059,9 @@
       "translatedAt": "2026-10-06T14:27:56.297Z"
     }
   ],
-  "pendingNotificationIds": []
+  "pendingNotificationIds": [
+    "12c69613465061f0701dea1288b42f2ee88d625b03e86cc9ac324c1e3a858177",
+    "c6e9684de65361dc72fde9108305d8e84ba5953685829dea748c24c6430481d9",
+    "2640668424e40cdf9e1d732e7b9184b3b55ca7b602ba438c7eece10b3208482c"
+  ]
 }
