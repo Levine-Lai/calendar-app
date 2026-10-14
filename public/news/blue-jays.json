@@ -1,7 +1,7 @@
 {
   "teamId": "toronto-blue-jays",
   "teamName": "多伦多蓝鸟",
-  "updatedAt": "2026-10-14T00:35:07.837Z",
+  "updatedAt": "2026-10-14T05:22:24.023Z",
   "items": [
     {
       "id": "91569b340fb87efdd613334f3938844c77dd506881de7b403cb366231e21a623",
@@ -66,7 +66,7 @@
       "translationModel": "gemini-3.5-flash-lite",
       "translatedAt": "2026-10-13T01:36:27.440Z",
       "author": "Rob Terranova, Brendan Samson and Michael Avallone",
-      "publishedAt": "2026-10-13T23:16:00.000Z",
+      "publishedAt": "2026-10-14T04:34:00.000Z",
       "url": "https://www.mlb.com/bluejays/news/watch-top-prospects-in-arizona-fall-league-winter-ball-2026",
       "source": "MLB.com"
     },
