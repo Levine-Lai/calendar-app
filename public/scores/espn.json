@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-15T19:05:14.909Z",
+  "updatedAt": "2026-10-15T22:18:47.809Z",
   "items": [
     {
       "id": "mlb-401908025",
@@ -8,9 +8,9 @@
       "sport": "baseball",
       "espnLeague": "mlb",
       "start": "2026-10-15T17:00Z",
-      "status": "Mid 7th",
-      "statusState": "in",
-      "completed": false,
+      "status": "Final",
+      "statusState": "post",
+      "completed": true,
       "awayScore": "2",
       "homeScore": "3",
       "awayTeam": "Tampa Bay Rays",
