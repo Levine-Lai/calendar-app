@@ -1,12 +1,51 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-10-15T23:51:57.084Z",
+  "updatedAt": "2026-10-16T04:26:54.058Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "d646e34bcfdd46c5678492952371b8f82b8ff4db3a86d54c7c392460867cc1aa",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "U18s preview: Arsenal v Tottenham Hotspur",
+      "summaryEn": "Our young Gunners are set for the first north London derby of the season",
+      "bodyEn": [
+        "Our young Gunners will face Tottenham Hotspur in the first north London derby of the season on Saturday, October 17.",
+        "Kick-off at the Sobha Realty Training Centre is scheduled for 10.30am (UK time).",
+        "With four consecutive wins across all competitions and sitting in the top five of the U18 Premier League South, our academy side will face Spurs in red-hot form.",
+        "We climbed the table after thrashing Norwich City 5-1 in Norfolk, with Axel Donczew, Charlie Purdy and Emerson Nwaneri all finding the net, while Jaden Maghoma struck twice.",
+        "THE OPPOSITION",
+        "Our rivals sit top of the division after winning five of their opening six domestic games, with their only dropped points coming in a 2-2 draw away to Fulham last month.",
+        "Whilst still unbeaten, Tottenham have also scored 33 times in the competition, with their most recent result a 7-1 hammering of West Bromwich Albion.",
+        "The N17 outfit got the better of the Cottagers in the U18 Premier League Cup last weekend and currently lead Group G, having also beaten Derby County.",
+        "We last faced our NLD opponents in February, when we suffered a 4-1 home defeat, with Nwaneri’s second-half goal proving little more than a consolation."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/7f06d2a101b6-arsenalu18plsouthfixture16x9hometottenham.webp",
+      "author": "Tom Keens",
+      "publishedAt": "2026-10-16T04:00:00.000Z",
+      "url": "https://www.arsenal.com/news/u18s-preview-arsenal-v-tottenham-hotspur-aPsTH4W38Ptc",
+      "source": "Arsenal.com",
+      "titleZh": "U18青年队前瞻：阿森纳对阵托特纳姆热刺",
+      "summaryZh": "年轻的枪手们即将迎来本赛季的首场北伦敦德比。",
+      "bodyZh": [
+        "10月17日星期六，我们的年轻枪手将在本赛季的首场北伦敦德比中对阵托特纳姆热刺。",
+        "比赛将于英国时间上午10点30分在索布哈·雷亚尔蒂训练中心开球。",
+        "凭借各项赛事取得的四连胜以及在U18英超南部联赛积分榜前五的排名，我们的青训梯队将以火热的状态迎战热刺。",
+        "此前我们在诺福克以5-1大胜诺维奇后积分榜排名上升，阿克塞尔·东切夫（Axel Donczew）、查理·珀迪（Charlie Purdy）和埃默森·恩瓦内里（Emerson Nwaneri）均有斩获，贾登·马霍马（Jaden Maghoma）则梅开二度。",
+        "对手情况",
+        "我们的死敌在开局前六场国内比赛中赢下五场，目前暂居积分榜首位，他们唯一丢分的比赛是上个月客场2-2战平富勒姆。",
+        "热刺目前保持不败，在该赛事中已经打入33球，他们最近一场比赛以7-1大胜西布朗维奇。",
+        "这支来自N17的球队上周末在U18英超杯中击败了富勒姆，目前在击败德比郡后领跑G组。",
+        "我们上一次与北伦敦死敌交手是在2月，当时我们在主场1-4失利，恩瓦内里下半场的进球仅挽回了一点面子。"
+      ],
+      "translationSourceHash": "861e399cd29dce1d0ab5b96f894438e1dd2b613bb186ae4a37ec65bee9425efe",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-10-16T04:26:54.054Z"
+    },
     {
       "id": "43c7d082e51a02a186504911989849df7f88ca016783af5d579c40e03eb5c43e",
       "teamId": "arsenal",
@@ -276,39 +315,6 @@
       "translationSourceHash": "5eba868e3f68d1ee3a36c47f0537de44006e62c566ca69b1f37990e6d8abaee4",
       "translationModel": "gemini-3.5-flash-lite",
       "translatedAt": "2026-10-15T12:51:54.492Z"
-    },
-    {
-      "id": "e572081d0fa9705c1bf5666c340217675163b89f9876ce39d2e6417e83a356e5",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "See our men's first team's 2026/27 squad photo",
-      "summaryEn": "Mikel Arteta and his squad got together at the Sobha Realty Training Centre today for their traditional group shot",
-      "bodyEn": [
-        "Mikel Arteta and his first-team squad gathered at the Sobha Realty Training Centre today for their 2026/27 squad photo.",
-        "Pride of place in the annual picture was the Premier League trophy for the first time in 22 years, alongside the Community Shield which we clinched back in August.",
-        "For the first time, summer recruits Ilian Meslier, Bruno Guimaraes, Ezri Konsa and Christos Tzolis took their places among their new teammates as well as Marli Salmon, one of four Hale End graduates in the shot alongside Max Dowman, Myles Lewis-Skelly and Bukayo Saka. William Saliba was missing from the shoot due to a medical appointment.",
-        "As usual, long-serving club photographer Stuart MacFarlane organised everything for all the all-important shot:",
-        "Back row: Piero Hincapie, Illan Meslier, David Raya, Kepa Arrizabalaga, Marli Salmon.Middle row: Christos Tzolis, Martin Zubimendi, Noni Madueke, Viktor Gyokeres, Cristhian Mosquera, Riccardo Calafiori, Ezri Konsa, Myles Lewis-Skelly, Max Dowman.Front row: Bruno Guimaraes, Kai Havertz, Jurrien Timber, Gabriel, Martin Odegaard, Mikel Arteta, Bukayo Saka, Declan Rice, Mikel Merino, Ben White, Eberechi Eze.",
-        "Meanwhile, David Price was on hand to capture how the traditional picture was organised, with some behind-the-scenes snaps:"
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/64b4e77eb2cf-z9328509wspt2nx.webp",
-      "author": "Jonathon Rogers",
-      "publishedAt": "2026-10-14T13:25:04.869Z",
-      "url": "https://www.arsenal.com/news/see-our-mens-first-teams-202627-squad-photo-ayEOI3q76tal",
-      "source": "Arsenal.com",
-      "titleZh": "查看阿森纳一线队2026/27赛季全家福",
-      "summaryZh": "米克尔·阿尔特塔携一线队成员在索巴地产训练中心拍摄了新赛季官方全家福。",
-      "bodyZh": [
-        "米克尔·阿尔特塔及其一线队成员今天齐聚索巴地产训练中心，拍摄2026/27赛季的全家福。",
-        "年度合照中最醒目的位置摆放着22年来首次夺得的英超奖杯，以及我们在8月捧得的社区盾杯。",
-        "今年夏窗新援伊利安·梅斯利尔、布鲁诺·吉马良斯、埃兹里·孔萨和赫里斯托斯·齐奥利斯首次与新队友们一同合影，马尔利·萨尔门作为青训营的四名代表之一也出现在镜头中，同行的还有马克斯·道曼、迈尔斯·刘易斯-斯凯利和布卡约·萨卡。威廉·萨利巴因医疗预约缺席了本次拍摄。",
-        "像往常一样，俱乐部资深摄影师斯图尔特·麦克法兰为这张至关重要的合照安排好了一切：",
-        "后排：皮耶罗·因卡皮耶、伊利安·梅斯利尔、大卫·拉亚、凯帕·阿里萨巴拉加、马尔利·萨尔门。中排：赫里斯托斯·齐奥利斯、马丁·祖比门迪、诺尼·马杜埃凯、维克托·哲凯赖什、克里斯蒂安·莫斯克拉、里卡多·卡拉菲奥里、埃兹里·孔萨、迈尔斯·刘易斯-斯凯利、马克斯·道曼。前排：布鲁诺·吉马良斯、凯·哈弗茨、尤里安·廷贝尔、加布里埃尔、马丁·厄德高、米克尔·阿尔特塔、布卡约·萨卡、德克兰·赖斯、米克尔·梅里诺、本·怀特、埃贝雷奇·埃泽。",
-        "与此同时，大卫·普莱斯通过一组幕后花絮照片，记录了这张传统合照的筹备过程："
-      ],
-      "translationSourceHash": "8bdda40e0bf1a8b140cc88aa007b2751382c586ebdef3e86f2b0506ae034993f",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-10-14T17:07:12.040Z"
     },
     {
       "id": "392ac0a06785d25403aa53fb106d875c656f039d5c248e68e6337b87c6148c4c",
@@ -1176,5 +1182,7 @@
       "translatedAt": "2026-10-15T12:52:37.045Z"
     }
   ],
-  "pendingNotificationIds": []
+  "pendingNotificationIds": [
+    "d646e34bcfdd46c5678492952371b8f82b8ff4db3a86d54c7c392460867cc1aa"
+  ]
 }
