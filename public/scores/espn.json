@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-16T09:40:08.243Z",
+  "updatedAt": "2026-10-16T14:19:16.890Z",
   "items": [
     {
       "id": "mlb-401908025",
@@ -93,10 +93,10 @@
       "sport": "soccer",
       "espnLeague": "chn.1",
       "start": "2026-10-16T11:35Z",
-      "status": "Scheduled",
-      "statusState": "pre",
-      "completed": false,
-      "awayScore": "0",
+      "status": "FT",
+      "statusState": "post",
+      "completed": true,
+      "awayScore": "1",
       "homeScore": "0",
       "awayTeam": "Tianjin Jinmen Tiger",
       "homeTeam": "Henan",
