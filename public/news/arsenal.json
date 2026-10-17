@@ -1,12 +1,71 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-10-17T16:27:30.426Z",
+  "updatedAt": "2026-10-17T18:50:31.449Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "0c173947e9d3c704d8c2c436cf6fc9e3436f48ad10ba268130158b80567d23cb",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Smith proud of NLD performance",
+      "summaryEn": "Our under-18s coach was delighted with the 2-1 comeback over Spurs",
+      "bodyEn": [
+        "Our under-18s coach Josh Smith spoke of pride after his side came from behind to win the north London derby.",
+        "The U18 Premier League South clash against Tottenham Hotspur was packed with drama, as Mylo Bernard scored a brace to snatch the points and bragging rights.",
+        "\"I thought the first half was a very good, high-level game.",
+        "\"They probably edged it in terms of chances. I thought we were a little bit wasteful with the entries that we did have in the first half.",
+        "\"But our strategy today, when we didn't have the ball, was a man-for-man approach. I thought we caused Tottenham a lot of problems with that, making them go long.",
+        "\"In the second half, the lads had faced a lot of adversity. Jack [Talbot] had a concussion, Max [Lo Presti] as well, and then Emi [Nwaneri] stepped in [as goalkeeper]. I'm so proud of the lads. It was a great game.\"",
+        "Nwaneri, who usually plays in an attacking role, put himself forward to go in net after Talbot and his substitute, Lo Presti, were both forced off injured late on.",
+        "Impressively, our makeshift stopper thwarted multiple Spurs attacks to keep the score level as we initially looked to take a point given the extreme circumstances.",
+        "\"I think that sums Emi up, really,\" Josh said. \"One word that I'd use with him is that he's fearless.",
+        "\"We did speak about it after Max got subbed off in terms of who wanted to do it and he was the first to put his hands up.",
+        "\"But we speak about 'champion' mentality here, and that's exactly what it is today. It's not just him, the whole group.",
+        "\"And we just said to the lads, the 'champion' mentality, that's that. But it comes from the days and the weeks of loading the training. We're really pleased today.\"",
+        "While holding onto the draw, an unexpected turnaround in stoppage time ensued, sparked by Nwaneri, who launched a late free-kick upfield.",
+        "Summer arrival Bernard latched onto the ball and hit an audacious strike from distance, smashing it off the bar and in, to spark jubilant scenes at the Sobha Realty Training Centre.",
+        "\"We're very pleased with Mylo. In the first half he played off the right and then we moved him to striker at half-time.",
+        "\"He's settled in really well, Mylo. He's had a variety of games, some under-18s, under-19s and under-21s. But today, I'm really, really pleased for him to step up and get his goals.\"",
+        "The derby victory extends our young Gunners' winning streak to five across all competitions, form we haven't seen since the strong start to last season.",
+        "Josh aims to keep the run going as we look ahead to Aston Villa next weekend. \"I think it's just trusting the process in terms of what we're doing every single day. Keep raising the standards of how we are in training, but also off the pitch.",
+        "\"To see them in there [changing rooms] after, that really felt good for them. So I hope that they can push on again.\""
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/2933cb40b698-london-colney-england-arsenal-u18-coach-josh-smith-before-the-u18-premier-league.webp",
+      "author": "Tom Keens",
+      "publishedAt": "2026-10-17T16:56:22.201Z",
+      "url": "https://www.arsenal.com/news/smith-proud-of-nld-performance-aS6tk0g8JS2M",
+      "source": "Arsenal.com",
+      "titleZh": "史密斯对北伦敦德比表现感到自豪",
+      "summaryZh": "阿森纳U18主帅对球队2-1逆转热刺感到高兴",
+      "bodyZh": [
+        "阿森纳U18主教练乔什·史密斯在球队逆转赢得北伦敦德比后表达了自豪之情。",
+        "这场对阵托特纳姆热刺的U18英超南部赛区比赛充满了戏剧性，米洛·伯纳德梅开二度，为球队抢下了三分和荣誉。",
+        "“我认为上半场是一场非常精彩、高水平的比赛。”",
+        "“在机会方面他们可能略占优势。我觉得我们在上半场进攻进入对方腹地时有些浪费机会。”",
+        "“但我们今天的无球策略是采取人盯人战术。我认为这给热刺制造了许多麻烦，迫使他们只能长传。”",
+        "“在下半场，小伙子们面对了许多逆境。杰克[塔尔博特]脑震荡，马克斯[洛普雷斯蒂]也是，随后埃米[恩瓦内里]临时客串门将。我为小伙子们感到无比自豪。这是一场伟大的比赛。”",
+        "恩瓦内里通常司职进攻位置，在塔尔博特和替补门将洛普雷斯蒂在比赛尾声阶段均因伤离场后，他主动请缨担任门将。",
+        "令人印象深刻的是，这位临时门将化解了热刺的多波攻势，在极端情况下力保比分不失，当时我们原本倾向于先带走一分。",
+        "“我想这真的很能代表埃米，”乔什说道。“我用来形容他的一个词就是无畏。”",
+        "“我们在马克斯被换下后确实讨论过谁愿意客串门将，他是第一个举手的人。”",
+        "“我们在这里经常谈论‘冠军’心态，这正是今天所展现的。不仅仅是他，整个团队都是如此。”",
+        "“我们只是对小伙子们说，这就是‘冠军’心态。但这来自于日复一日、周复一周的训练积累。我们对今天非常满意。”",
+        "在眼看要收获平局时，补时阶段出现了一次戏剧性的逆转，由恩瓦内里主罚的后场任意球拉开序幕。",
+        "今夏新援伯纳德接球后完成了一脚精彩的远射，皮球击中横梁弹入网窝，在索布哈·雷亚尔蒂训练基地引发了狂欢。",
+        "“我们对米洛非常满意。上半场他踢右边锋，中场休息时我们把他调整到了中锋位置。”",
+        "“米洛融入得非常好。他踢过各种不同级别的比赛，包括U18、U19和U21。但今天，我真的非常为他挺身而出并打进进球感到高兴。”",
+        "这场德比的胜利将年轻枪手们在各项赛事中的连胜纪录扩大到了五场，这样的状态自上赛季开局良好以来还未曾见过。",
+        "乔什希望延续这一连胜势头，展望周末对阵阿斯顿维拉的比赛。“我认为关键在于信任我们每天在做的事情。继续提高训练中以及场下各个方面的标准。”",
+        "“看到他们在赛后更衣室里的样子，这让他们感觉真的很棒。所以我希望他们能够再接再厉。”"
+      ],
+      "translationSourceHash": "b55aedfd9379c86a754e030de232af534b69a2aef7914b85d574669ccce7571b",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-10-17T18:50:31.438Z"
+    },
     {
       "id": "f2d0e6d1d7725a0bd5229a355021d079b2b72c4b30c10ccd5da58b8dcbba3123",
       "teamId": "arsenal",
@@ -626,39 +685,6 @@
       "translatedAt": "2026-10-16T18:22:26.217Z"
     },
     {
-      "id": "63a060699153e279bdf5f0c3dc41b79655f0dd5e95aa7429ab74a6e5ee1e1fcc",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Stream A Taste of Home on The Arsenal",
-      "summaryEn": "Our new exclusive series follows Justin Tsang as he explores our Gunners' food cultures",
-      "bodyEn": [
-        "To celebrate World Food Day, we're launching the first episode of A Taste of Home, a new series exclusively available on The Arsenal.",
-        "Our latest series explores the food cultures that remind our Gunners of their homes and heritage, as chef Justin Tsang sits down with members of our men's and women's first team squads before attempting to find their favourite dishes in London.",
-        "In the first episode, Justin meets Taylor Hinds, who grew up in an English-Jamaican household. Taylor explained the significance of her Jamaican dad's cooking in her life, which prompted Justin to go in search of traditional Jamaican food in the English capital.",
-        "Press play on the video at the top of the article to watch a trailer for the whole series, then head over to The Arsenal to watch the full first episode.",
-        "If you haven't downloaded The Arsenal yet, make sure you do so that you can watch:",
-        "Download The Arsenal now on iOS/Android"
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/e3c0278ea513-261002-a-taste-of-home-series-trailer-60-16x9-now-streaming001.webp",
-      "author": "Connor Booth",
-      "publishedAt": "2026-10-16T09:00:00.000Z",
-      "url": "https://www.arsenal.com/news/stream-a-taste-of-home-on-the-arsenal-aZKZv3O8htrx",
-      "source": "Arsenal.com",
-      "titleZh": "在 The Arsenal 观看全新节目《家乡的味道》",
-      "summaryZh": "全新独家系列节目带您探索阿森纳球员的美食文化。",
-      "bodyZh": [
-        "为庆祝世界粮食日，我们将推出全新独家系列节目《家乡的味道》的第一集，该节目仅在 The Arsenal 播出。",
-        "我们的最新系列节目探索了让阿森纳球员们想起家乡和传统的美食文化，主厨 Justin Tsang 与我们男女一线队的部分成员进行了交流，并尝试在伦敦寻找他们最喜欢的菜肴。",
-        "在第一集里，Justin 见到了在英格兰和牙买加文化背景家庭中长大的 Taylor Hinds。Taylor 解释了她牙买加父亲的烹饪在她生活中的重要意义，这促使 Justin 前往伦敦寻找传统的牙买加美食。",
-        "点击文章顶部的视频播放按钮观看整个系列的预告片，然后前往 The Arsenal 观看完整的第一集。",
-        "如果您还没下载 The Arsenal，请务必下载以便观看：",
-        "立即在 iOS/Android 上下载 The Arsenal"
-      ],
-      "translationSourceHash": "412fdeba9201cfbc517fd4cd46e8d42116bf4bdc590922fb3433fa184d4c6d18",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-10-16T09:18:05.790Z"
-    },
-    {
       "id": "43c7d082e51a02a186504911989849df7f88ca016783af5d579c40e03eb5c43e",
       "teamId": "arsenal",
       "teamName": "阿森纳",
@@ -1216,5 +1242,7 @@
       "translatedAt": "2026-10-10T20:03:14.021Z"
     }
   ],
-  "pendingNotificationIds": []
+  "pendingNotificationIds": [
+    "0c173947e9d3c704d8c2c436cf6fc9e3436f48ad10ba268130158b80567d23cb"
+  ]
 }
