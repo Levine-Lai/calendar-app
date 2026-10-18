@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-17T23:32:58.195Z",
+  "updatedAt": "2026-10-18T01:30:42.445Z",
   "items": [
     {
       "id": "csl-401861478",
@@ -637,11 +637,11 @@
       "sport": "baseball",
       "espnLeague": "mlb",
       "start": "2026-10-18T00:00Z",
-      "status": "10/17 - 8:00 PM EDT",
-      "statusState": "pre",
+      "status": "End 5th",
+      "statusState": "in",
       "completed": false,
-      "awayScore": "0",
-      "homeScore": "0",
+      "awayScore": "1",
+      "homeScore": "1",
       "awayTeam": "Tampa Bay Rays",
       "homeTeam": "Cleveland Guardians",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/tb.png",
@@ -1317,8 +1317,8 @@
       "sport": "baseball",
       "espnLeague": "mlb",
       "start": "2026-10-18T21:00Z",
-      "status": "Delayed, Top 1st",
-      "statusState": "in",
+      "status": "10/18 - 5:00 PM EDT",
+      "statusState": "pre",
       "completed": false,
       "awayScore": "0",
       "homeScore": "0",
