@@ -1,7 +1,7 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-10-18T21:02:34.606Z",
+  "updatedAt": "2026-10-18T23:08:52.076Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
@@ -616,6 +616,65 @@
       "translatedAt": "2026-10-17T09:19:10.837Z"
     },
     {
+      "id": "0c173947e9d3c704d8c2c436cf6fc9e3436f48ad10ba268130158b80567d23cb",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Smith proud of NLD performance",
+      "summaryEn": "Our under-18s coach was delighted with the 2-1 comeback over Spurs",
+      "bodyEn": [
+        "Our under-18s coach Josh Smith spoke of pride after his side came from behind to win the north London derby.",
+        "The U18 Premier League South clash against Tottenham Hotspur was packed with drama, as Mylo Bernard scored a brace to snatch the points and bragging rights.",
+        "\"I thought the first half was a very good, high-level game.",
+        "\"They probably edged it in terms of chances. I thought we were a little bit wasteful with the entries that we did have in the first half.",
+        "\"But our strategy today, when we didn't have the ball, was a man-for-man approach. I thought we caused Tottenham a lot of problems with that, making them go long.",
+        "\"In the second half, the lads had faced a lot of adversity. Jack [Talbot] had a concussion, Max [Lo Presti] as well, and then Emi [Nwaneri] stepped in [as goalkeeper]. I'm so proud of the lads. It was a great game.\"",
+        "Nwaneri, who usually plays in an attacking role, put himself forward to go in net after Talbot and his substitute, Lo Presti, were both forced off injured late on.",
+        "Impressively, our makeshift stopper thwarted multiple Spurs attacks to keep the score level as we initially looked to take a point given the extreme circumstances.",
+        "\"I think that sums Emi up, really,\" Josh said. \"One word that I'd use with him is that he's fearless.",
+        "\"We did speak about it after Max got subbed off in terms of who wanted to do it and he was the first to put his hands up.",
+        "\"But we speak about 'champion' mentality here, and that's exactly what it is today. It's not just him, the whole group.",
+        "\"And we just said to the lads, the 'champion' mentality, that's that. But it comes from the days and the weeks of loading the training. We're really pleased today.\"",
+        "While holding onto the draw, an unexpected turnaround in stoppage time ensued, sparked by Nwaneri, who launched a late free-kick upfield.",
+        "Summer arrival Bernard latched onto the ball and hit an audacious strike from distance, smashing it off the bar and in, to spark jubilant scenes at the Sobha Realty Training Centre.",
+        "\"We're very pleased with Mylo. In the first half he played off the right and then we moved him to striker at half-time.",
+        "\"He's settled in really well, Mylo. He's had a variety of games, some under-18s, under-19s and under-21s. But today, I'm really, really pleased for him to step up and get his goals.\"",
+        "The derby victory extends our young Gunners' winning streak to five across all competitions, form we haven't seen since the strong start to last season.",
+        "Josh aims to keep the run going as we look ahead to Aston Villa next weekend. \"I think it's just trusting the process in terms of what we're doing every single day. Keep raising the standards of how we are in training, but also off the pitch.",
+        "\"To see them in there [changing rooms] after, that really felt good for them. So I hope that they can push on again.\""
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/2933cb40b698-london-colney-england-arsenal-u18-coach-josh-smith-before-the-u18-premier-league.webp",
+      "author": "Tom Keens",
+      "publishedAt": "2026-10-17T16:56:22.201Z",
+      "url": "https://www.arsenal.com/news/smith-proud-of-nld-performance-aS6tk0g8JS2M",
+      "source": "Arsenal.com",
+      "titleZh": "史密斯对北伦敦德比表现感到自豪",
+      "summaryZh": "阿森纳U18主帅对球队2-1逆转热刺的表现感到非常满意。",
+      "bodyZh": [
+        "阿森纳U18主教练乔什·史密斯在球队逆转取胜北伦敦德比后表达了自豪之情。",
+        "这场对阵托特纳姆热刺的U18英超南部联赛充满戏剧性，迈洛·伯纳德独中两元，为主队抢下积分并赢得了同城荣誉。",
+        "“我认为上半场是一场非常精彩、高水平的比赛。”",
+        "“在创造机会方面，他们可能稍占优势。我认为我们在上半场进攻时有些浪费机会。”",
+        "“但我们今天的无球策略是人盯人防守。我认为这给热刺制造了很大麻烦，迫使他们只能起大脚。”",
+        "“到了下半场，小伙子们遭遇了诸多逆境。杰克[塔尔博特]遭遇脑震荡，马克斯[洛普雷斯蒂]也是如此，接着埃米[恩瓦内里]顶替上去担任门将。我为小伙子们感到无比自豪。这是一场伟大的比赛。”",
+        "恩瓦内里通常司职进攻位置，但在塔尔博特和替补上场的洛普雷斯蒂双双因伤被迫下场后，他主动请缨担任门将。",
+        "令人印象深刻的是，这位临时门将化解了热刺的多轮进攻，在极端情况下力保球门不失，起初让我们有望带走一分。",
+        "“我认为这正好体现了埃米的特质，”乔什说。“我对他评价的一个词就是无所畏惧。”",
+        "“在马克斯被换下后，我们确实讨论过谁愿意客串门将，他是第一个举手的人。”",
+        "“我们在这里经常谈论‘冠军’心态，这正是今天所展现的。不仅是他，整个团队都是如此。”",
+        "“我们只是对小伙子们说，这就是‘冠军’心态。但这也是源于日复一日、周复一周的训练积累。我们对今天非常满意。”",
+        "在眼看要收获平局时，补时阶段出现了戏剧性的逆转，由恩瓦内里发起，他将一记后场任意球开到前场。",
+        "今夏加盟的伯纳德接球后起远射轰门，皮球击中横梁弹入网窝，在索布哈·雷亚尔蒂训练基地引发了狂喜。",
+        "“我们对迈洛非常满意。上半场他踢右边锋，中场休息时我们把他调整到了中锋位置。”",
+        "“迈洛融入得非常好。他踢过各种不同的比赛，包括U18、U19和U21。但今天，我真的非常非常高兴他能挺身而出并打入进球。”",
+        "这场德比的胜利将年轻枪手们在各项赛事中的连胜纪录扩大到了五场，这样的状态自上赛季开局强势以来就未曾再现。",
+        "乔什希望延续这一连胜势头，展望下周末对阵阿斯顿维拉的比赛。“我认为关键在于信任我们每天在做的事情。不断提高训练中以及场下各方面的标准。”",
+        "“赛后看到他们在更衣室里的样子，这让他们感觉真的很棒。所以我希望他们能再次向前迈进。”"
+      ],
+      "translationSourceHash": "b55aedfd9379c86a754e030de232af534b69a2aef7914b85d574669ccce7571b",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-10-18T23:08:52.074Z"
+    },
+    {
       "id": "f2d0e6d1d7725a0bd5229a355021d079b2b72c4b30c10ccd5da58b8dcbba3123",
       "teamId": "arsenal",
       "teamName": "阿森纳",
@@ -1063,5 +1122,7 @@
       "translatedAt": "2026-10-13T02:00:03.460Z"
     }
   ],
-  "pendingNotificationIds": []
+  "pendingNotificationIds": [
+    "0c173947e9d3c704d8c2c436cf6fc9e3436f48ad10ba268130158b80567d23cb"
+  ]
 }
