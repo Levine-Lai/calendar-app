@@ -1,7 +1,7 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-10-18T23:08:52.076Z",
+  "updatedAt": "2026-10-19T01:15:32.110Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
@@ -673,35 +673,6 @@
       "translationSourceHash": "b55aedfd9379c86a754e030de232af534b69a2aef7914b85d574669ccce7571b",
       "translationModel": "gemini-3.5-flash-lite",
       "translatedAt": "2026-10-18T23:08:52.074Z"
-    },
-    {
-      "id": "f2d0e6d1d7725a0bd5229a355021d079b2b72c4b30c10ccd5da58b8dcbba3123",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "34 photos from training ahead of Forest trip",
-      "summaryEn": "Check out the best pictures from training ahead of our trip to the City Ground to face Nottingham Forest on Sunday afternoon",
-      "bodyEn": [
-        "We're back in Premier League action on Sunday afternoon with a trip to the City Ground to take on Nottingham Forest, and you can see what we've been up to in training before the game with our latest gallery.",
-        "We've hit the ground running after the international break with back-to-back wins at Emirates Stadium, coming from behind to beat Leeds United 2-1 last weekend before comfortably beating LOSC Lille 3-0 in the Champions League on Tuesday night.",
-        "Having continued our perfect home record this season, we'll hit the road for the first time in October with a trip to Nottingham, looking to continue our winning form.",
-        "Swipe through the gallery below, captured by club photographer Stuart MacFarlane, to see how we've been preparing for the trip:"
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/c39578ccd811-dsc0536nilqilmm.webp",
-      "author": "Arsenal Media",
-      "publishedAt": "2026-10-17T15:49:24.871Z",
-      "url": "https://www.arsenal.com/news/34-photos-from-training-ahead-of-forest-trip-a4N549p7yyQG",
-      "source": "Arsenal.com",
-      "titleZh": "备战诺丁汉森林：球队最新训练图集",
-      "summaryZh": "查看周日英超客场对阵诺丁汉森林前的最佳训练照片。",
-      "bodyZh": [
-        "我们将在周日下午重返英超赛场，客场挑战诺丁汉森林，您可以通过我们的最新图集了解赛前的训练情况。",
-        "国际比赛日过后，我们在酋长球场取得了连胜，上周末在落后情况下2-1逆转战胜利兹联，周二晚又在欧冠中3-0轻取里尔。",
-        "在延续了本赛季完美的主场战绩后，我们将在十月份迎来首次客场之旅前往诺丁汉，力求延续连胜势头。",
-        "浏览下方由俱乐部摄影师斯图尔特·麦克法兰（Stuart MacFarlane）拍摄的图集，看看我们是如何备战这场比赛的："
-      ],
-      "translationSourceHash": "7c6aebb99c22e88d89beb98f9548f430a3378b7675da9fb7129b4042030e0772",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-10-18T21:02:34.603Z"
     },
     {
       "id": "fcc3571edf1c413ffa11ae55ed9bcf24c6fc43073078fbb906705098509cb5e5",
