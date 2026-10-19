@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-19T00:31:13.605Z",
+  "updatedAt": "2026-10-19T05:15:42.697Z",
   "items": [
     {
       "id": "csl-401861480",
@@ -688,11 +688,11 @@
       "sport": "football",
       "espnLeague": "nfl",
       "start": "2026-10-19T00:20Z",
-      "status": "10:53 - 1st",
-      "statusState": "in",
-      "completed": false,
-      "awayScore": "0",
-      "homeScore": "0",
+      "status": "Final",
+      "statusState": "post",
+      "completed": true,
+      "awayScore": "13",
+      "homeScore": "23",
       "awayTeam": "Dallas Cowboys",
       "homeTeam": "Green Bay Packers",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/dal.png",
