@@ -1244,11 +1244,5 @@
       "translatedAt": "2026-10-21T17:08:54.944Z"
     }
   ],
-  "pendingNotificationIds": [
-    "71db731b074ae7f60b499531aa4abca3e52622107c0d489d8a9511b82fe1d405",
-    "90e11e3c2f33e78df1e2dd0c44155b89771dc55eb392f0eff65211de3338941e",
-    "c64828bfcd18039462b1d3f8f812f2687f0d3bccbbfe882ea0ebaee1297f311e",
-    "087c31a44d883cabecaa5ec312e9644de94571244ab46fe313f2dc6214d26d74",
-    "0fedcce2d23577da4a0aacc953c8fd697c25b09a42e3b9638d254562c821a01a"
-  ]
+  "pendingNotificationIds": []
 }
