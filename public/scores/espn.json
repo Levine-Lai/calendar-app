@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-20T22:35:25.475Z",
+  "updatedAt": "2026-10-21T00:59:19.741Z",
   "items": [
     {
       "id": "ucl-401915403",
@@ -195,11 +195,11 @@
       "sport": "basketball",
       "espnLeague": "nba",
       "start": "2026-10-20T23:00Z",
-      "status": "10/20 - 7:00 PM EDT",
-      "statusState": "pre",
+      "status": "7:55 - 3rd",
+      "statusState": "in",
       "completed": false,
-      "awayScore": "0",
-      "homeScore": "0",
+      "awayScore": "62",
+      "homeScore": "63",
       "awayTeam": "Philadelphia 76ers",
       "homeTeam": "New York Knicks",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
