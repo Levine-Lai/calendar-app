@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-22T20:49:54.922Z",
+  "updatedAt": "2026-10-22T23:47:35.406Z",
   "items": [
     {
       "id": "nba-401909093",
@@ -8,11 +8,11 @@
       "sport": "basketball",
       "espnLeague": "nba",
       "start": "2026-10-22T23:00Z",
-      "status": "10/22 - 7:00 PM EDT",
-      "statusState": "pre",
+      "status": "0.0 - 2nd",
+      "statusState": "in",
       "completed": false,
-      "awayScore": "0",
-      "homeScore": "0",
+      "awayScore": "35",
+      "homeScore": "18",
       "awayTeam": "Cleveland Cavaliers",
       "homeTeam": "Philadelphia 76ers",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
