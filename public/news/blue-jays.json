@@ -1,8 +1,41 @@
 {
   "teamId": "toronto-blue-jays",
   "teamName": "多伦多蓝鸟",
-  "updatedAt": "2026-10-22T11:44:00.945Z",
+  "updatedAt": "2026-10-22T20:05:36.593Z",
   "items": [
+    {
+      "id": "07058aad9d18d9bfd9d71a76c36b64f0cc809e5c194976b595e0fef7f73bf051",
+      "teamId": "toronto-blue-jays",
+      "teamName": "多伦多蓝鸟",
+      "titleEn": "Tolle, Rojas, Clement to serve as World Series correspondents",
+      "summaryEn": "",
+      "bodyEn": [
+        "Major League Baseball on Thursday announced that Boston Red Sox breakout star pitcher Payton Tolle, two-time World Series Champion Miguel Rojas and MLB All-Star Ernie Clement of the Toronto Blue Jays will serve as World Series Correspondents during the 2026 World Series presented by Capital One, featuring the Milwaukee Brewers and Tampa Bay Rays.",
+        "Tolle will be the correspondent for Media Day and Game One in Milwaukee. He will appear on MLB Network, produce content across @MLB social media channels and offer a player’s perspective on the matchup between the Brewers and Rays. During Players’ Weekend, Tolle drew attention for the “You’re So Pretty” inscription on his glove, a tribute to his late mother. This season he also set career highs in wins (9), ERA (3.03), innings pitched (148.2) and strikeouts (171), marketing the most strikeouts by a Red Sox pitcher aged 23 or younger since Roger Clemens in 1986.",
+        "Rojas will also attend Media Day and Game One working closely with MLB Español to provide Spanish-language coverage. The Venezuelan infielder will interview some of the top coaches and players from both Clubs. In 2026, Rojas wrapped up his 13-year Major League career with a .267 batting average and 4 home runs. He also became one of only two players in history to claim a prestigious team spirit award three times for his leadership, sportsmanship and dedication to his teammates.",
+        "Clement will serve as a correspondent for Games Three and Four when the series shifts to Tropicana Field in Tampa Bay, providing player-first coverage and creating content across @MLB’s social media channels. Riding the momentum of a historic 2025 postseason record (30 hits), Clement started 2026 hitting nearly .300 through July and earned his first career MLB All-Star selection as the starting American League second baseman for the 2026 All-Star Game.",
+        "Established in 2021, the World Series Correspondent Program provides players with the opportunity to be featured across MLB’s digital media platforms, showcase their personalities and give fans a behind-the-scenes look at the World Series through exclusive interviews with players, coaches and celebrities.",
+        "Past correspondents include Lawrence Butler, Junior Caminero and Vinnie Pasquantino (2025); Ozzie Albies, Luis Arráez and Brent Rooker (2024); Mookie Betts and Willy Adames (2023); Triston McKenzie (2022); and Brett Phillips (2021)."
+      ],
+      "titleZh": "Tolle、Rojas与Clement将担任世界大赛特约记者",
+      "summaryZh": "多伦多蓝鸟的Ernie Clement将与Payton Tolle和Miguel Rojas一同担任2026年世界大赛特约记者。",
+      "bodyZh": [
+        "美国职业棒球大联盟于周四宣布，波士顿红袜爆发力十足的先发投手Payton Tolle、两届世界大赛冠军Miguel Rojas以及多伦多蓝鸟的MLB全明星Ernie Clement将在由第一资本（Capital One）呈现的2026年世界大赛期间担任世界大赛特约记者，对阵双方为密尔沃基酿酒人和坦帕湾光芒。",
+        "Tolle将担任媒体日以及在密尔沃基进行的G1特约记者。他将在MLB Network亮相，在@MLB的社交媒体渠道制作内容，并从球员的视角解读酿酒人与光芒的对决。在球员周末期间，Tolle手套上印有的“You’re So Pretty”字样曾引发关注，这是为了致敬他已故的母亲。本赛季他还创下了生涯单季胜场数（9）、自责分率（3.03）、投球局数（148.2）以及三振数（171）的生涯新高，这也是自1986年Roger Clemens以来，红袜23岁或以下投手单季最多三振纪录。",
+        "Rojas也将出席媒体日和G1，并与MLB Español紧密合作，提供西班牙语报道。这位委内瑞拉内野手将采访两支球队的一些顶级教练和球员。在2026年，Rojas结束了他为期13年的大联盟生涯，打击率为.267，敲出4支本垒打。他还成为历史上仅有的两名因领导力、体育精神和对队友的奉献精神而三次荣获声誉卓著的球队精神奖的球员之一。",
+        "当系列赛移师坦帕湾的Tropicana Field时，Clement将担任G3和G4的特约记者，提供以球员为第一视角的报道，并在@MLB的社交媒体渠道上创作内容。借着2025年创纪录的季后赛表现（30支安打）的势头，Clement在2026赛季截至7月的打击率接近.300，并作为2026年全明星赛美国联盟先发二垒手，首次入选MLB全明星赛。",
+        "世界大赛特约记者项目于2021年创立，为球员提供了在MLB数字媒体平台上亮相、展现个性并通过对球员、教练和名人的独家采访让球迷一窥世界大赛幕后的机会。",
+        "过去的特约记者包括Lawrence Butler、Junior Caminero和Vinnie Pasquantino（2025年）；Ozzie Albies、Luis Arráez和Brent Rooker（2024年）；Mookie Betts和Willy Adames（2023年）；Triston McKenzie（2022年）；以及Brett Phillips（2021年）。"
+      ],
+      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/s4yi0sorptxs9yilg6yj",
+      "translationSourceHash": "b835df35dd853e730700d61b5539998598ea95a6abf574d7746ef225038aa214",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-10-22T20:05:36.581Z",
+      "author": "",
+      "publishedAt": "2026-10-22T19:01:00.000Z",
+      "url": "https://www.mlb.com/bluejays/news/world-series-2026-correspondents",
+      "source": "MLB.com"
+    },
     {
       "id": "9049f8fcd1e4a0e0cdca296b70bbd3d733152a43c7286148a606ff04d3c473f5",
       "teamId": "toronto-blue-jays",
@@ -1511,58 +1544,9 @@
       "publishedAt": "2026-09-28T00:03:00.000Z",
       "url": "https://www.mlb.com/bluejays/news/blue-jays-injuries-and-roster-moves",
       "source": "MLB.com"
-    },
-    {
-      "id": "0e223ffafb8c8e70c7015d27f31c2b4b50af82afa466345ca9ec0dec506da032",
-      "teamId": "toronto-blue-jays",
-      "teamName": "多伦多蓝鸟",
-      "titleEn": "Scherzer's brilliance, fire and stubbornness on display in 7-K Game 162 gem",
-      "summaryEn": "",
-      "bodyEn": [
-        "TORONTO -- Only one man can tell Max Scherzer when it’s over, and his name is Max Scherzer.",
-        "Every bit of Scherzer’s brilliance was on display on Sunday afternoon in what may have been his last start in the big leagues. After what we just saw, though, how could it be? How could Scherzer, one of greatest competitors this game has ever seen, put on a performance like that and not be tempted back? He’s still got it.",
-        "None of those pesky details seemed to matter as Scherzer, pitching on short rest at 42 years old, gave the Blue Jays seven-plus innings of one-run ball in Sunday's 5-1 win, striking out seven. He fell just three strikeouts shy of tying Justin Verlander for eighth on MLB’s all-time strikeout list, but perhaps that’s something to knock off in his first start of 2027. With 114 pitches, he’s the oldest Blue Jays pitcher to throw more than 100 since pitch counts began tracking in 1988.",
-        "“I felt like I was unlimited,” Scherzer said.",
-        "Scherzer has built a career on being not only remarkably talented, but supremely stubborn. Barking a manager off the mound is a lost art, but Scherzer is one of the game’s last great artists. He got to send John Schneider back to the dugout one last time, too.",
-        "When Schneider first came out of the dugout, brave and with a bounce in his step, Scherzer was at 104 pitches over 6 2/3 innings. This is a jog Schneider knows well. In Schneider’s office, there’s a photo of that famous scene in Game 4 of the 2025 ALCS in Seattle, when Scherzer convinced Schneider to keep him in the game. Scherzer has signed it for Schneider, inscribed with part of what he’d barked at his manager.",
-        "This time the home crowd booed Schneider the moment they saw him climb those dugout steps, growing angrier the closer he got to Scherzer. The veteran right-hander was a little calmer this time, but he sent Schneider right back where he came from. Walking off the field one batter later, Scherzer gave Schneider a shake of the head. Schneider couldn’t stop smiling. His face made the Reds’ caps look like a pale pink. It wasn’t time yet, and Schneider obliged.",
-        "“I’d told him before the game that I wanted to take him out in the middle of an inning so he could be recognized,” said Schneider. “The first one, I asked him how he felt and he said, ‘Great.’ I told him that if I gave him another batter and he gets him, he’d have to go back out. He said, ‘I know, and that’s what I’m doing.’ I thought, okey dokey, and I turned around.”",
-        "Schneider gave Scherzer one more batter to open the eighth, then made the long walk. This time Scherzer smiled, but he held onto the baseball just a little longer as he talked to his manager. Then, after slamming it into his glove one last time, Scherzer wrapped his arms around Schneider.",
-        "“I told Max on the mound when he was coming out, ‘Thank you for letting me be part of your unbelievable career,’” Schneider said, “’and I wouldn’t want any other 42-year-old psychopath on my team other than you.’”",
-        "Scherzer left to the loudest ovation of the night, then went down the dugout, hugging everyone he could find. Star players, rookies, interpreters, training staff, they all got a bear hug. At the other end of the dugout, Scherzer’s wife, Erica, was waiting with their kids. He climbed over the wall to get to them, the cameras still on him, the stadium still roaring around him.",
-        "“Being a Blue Jay here, it’s been great,” Scherzer said. “I had so much fun. I tell everybody across the league how much this is a hidden gem, playing for the Blue Jays. You don’t know until you experience it.”",
-        "This was a performance for baseball fans. It doesn’t matter which uniform you wear or which team you cheer for, moments like these from Scherzer are why we watch.",
-        "“I hope our young pitchers watched, because of a couple things,” said Reds manager Terry Francona. “One, I think he threw 21 first-pitch strikes, which is phenomenal. On a different note … He’s got a lot of innings under his belt. He’s coming back on short rest and did what he did. I think that shows the competitor he is. I wish we’d have won. But it’s hard not to tip your hat or clap, because he’s been so much of what’s good in baseball, and you’ve got to respect that.”",
-        "If this is it, we’ll always talk about Sunday, Sept. 27, at Rogers Centre. At the end of a season so many are eager to forget, Scherzer insisted that this day be worth remembering."
-      ],
-      "titleZh": "Scherzer投出7K好投，展现卓越与顽强",
-      "summaryZh": "42岁的Max Scherzer在常规赛收官战投出7局失1分的精彩表现，多伦多蓝鸟以5比1击败对手。",
-      "bodyZh": [
-        "多伦多——只有一个人能在Max Scherzer觉得结束的时候告诉他，而那个人就是Max Scherzer。",
-        "在周日下午这场可能是他大联盟生涯最后一次先发中，Scherzer的卓越天赋展现得淋漓尽致。但在我们刚看完这样的比赛之后，怎么可能就此结束呢？像Scherzer这样这项运动史上最伟大的竞争者之一，怎么能在交出这样的表现后忍住不回来呢？他依然宝刀未老。",
-        "这些恼人的细节似乎都不重要了。42岁的Scherzer在休息天数较少的情况下登板，在周日5比1的胜利中为多伦多蓝鸟投了7局多失1分的优质投球，送出7次三振。他距离追平Justin Verlander在MLB历史三振榜上位列第八的纪录仅差3次三振，但这或许可以留他在2027年的第一场先发中去打破。他此役投了114球，成为自1988年开始统计投球数以来，单场投球超过100球的最年长多伦多蓝鸟投手。",
-        "“我觉得自己像是没有极限，”Scherzer说。",
-        "Scherzer的职业生涯不仅建立在出色的天赋上，更建立在极度的顽强之上。把总教练从投手丘上吼回去已经是一门失传的艺术，但Scherzer是这项运动最后几位伟大的艺术家之一。他也最后一次把John Schneider赶回了休息区。",
-        "当Schneider第一次勇敢且带劲地步出休息区时，Scherzer在6又2/3局中已经投了104球。这是一段Schneider非常熟悉的慢跑。在Schneider的办公室里，挂着一张2025年在西雅图进行的美联冠军赛（ALCS）第四场比赛中那个著名场面的照片，当时Scherzer说服Schneider让他在比赛中继续投下去。Scherzer还在上面为Schneider签了名，写下了他当时对总教练怒吼的部分内容。",
-        "这一次，主场球迷一看到Schneider爬上休息区台阶就报以嘘声，他离Scherzer越近，球迷就越生气。这位经验丰富的右投手这次冷静了一些，但他直接把Schneider原路遣返。一个打者之后退场时，Scherzer向Schneider摇了摇头。Schneider笑得合不拢嘴。他的表情让辛辛那提红人的球帽看起来都成了浅粉红色。时候还没到，Schneider只好顺从。",
-        "“我在赛前告诉过他，我想在局间把他换下来，这样他就能得到大家的认可，”Schneider说。“第一次，我问他感觉如何，他说‘很好’。我告诉他，如果我让他多面对一个打者而且他解决了对方，他就得继续留在场上。他说‘我知道，这就是我要做的’。我想，好吧，然后我就转过身去了。”",
-        "Schneider让Scherzer在第八局开始时多面对了一个打者，然后才迈着长步走了上来。这一次Scherzer笑了，但在与总教练交谈时，他把棒球多拿了一会儿。接着，最后一次将球拍进手套后，Scherzer双臂抱住了Schneider。",
-        "“当Max下场时，我在投手丘上对他说，‘谢谢你让我成为你不可思议职业生涯的一部分’，”Schneider说，“‘除了你之外，我绝不想让任何其他42岁的疯子在我的球队里。’”",
-        "Scherzer在全场最热烈的欢呼声中离场，随后走过休息区，拥抱了他能找到的每个人。球星、菜鸟、翻译、训练团队，人人都得到了一个熊抱。在休息区另一端，Scherzer的妻子Erica带着孩子们在等待。他翻过围墙走向他们，镜头依然对准他，球场依然环绕着轰鸣声。",
-        "“作为多伦多蓝鸟的一员，这里的体验棒极了，”Scherzer说。“我玩得太开心了。我告诉联盟里的每个人，为多伦多蓝鸟效力是一块多么被埋没的瑰宝。不亲身体验，你是不会知道的。”",
-        "这是献给棒球迷的一场表演。无论你穿着哪件球衣，无论你为哪支球队加油，Scherzer这样的时刻就是我们观看比赛的原因。",
-        "“我希望我们的年轻投手们都看了这场比赛，原因有几个，”红人总教练Terry Francona说。“第一，我认为他投了21个好球数领先（first-pitch strikes），这太惊人了。另一方面……他身上有很多投球局数。他在休息天数较少的情况下回归并且做到了他所做的事。我认为这展现了他作为竞争者的风范。我希望我们能赢。但你很难不脱帽致敬或鼓掌，因为他代表了棒球运动中如此多美好的事物，你必须对此保持敬意。”",
-        "如果这就是结局，我们总会谈论9月27日星期日罗杰斯中心的这场比赛。在一个让许多人急于忘却的赛季之末，Scherzer坚持让这一天变得值得铭记。"
-      ],
-      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/ca0vyzdtc6mipvtm3ugf",
-      "translationSourceHash": "6e7917f7fded8ea7e5b94a9d012e578b9dc62d225b9b12edcbfb06f9b5130b79",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-09-28T01:57:33.944Z",
-      "author": "Keegan Matheson",
-      "publishedAt": "2026-09-28T00:00:00.000Z",
-      "url": "https://www.mlb.com/bluejays/news/max-scherzer-strikes-out-seven-reds-in-season-finale",
-      "source": "MLB.com"
     }
   ],
-  "pendingNotificationIds": []
+  "pendingNotificationIds": [
+    "07058aad9d18d9bfd9d71a76c36b64f0cc809e5c194976b595e0fef7f73bf051"
+  ]
 }
