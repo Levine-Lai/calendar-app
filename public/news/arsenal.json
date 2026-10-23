@@ -1,12 +1,55 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-10-23T00:10:07.391Z",
+  "updatedAt": "2026-10-23T04:49:52.032Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "b86d0cab0469577d2919fef1a5ceb6868a9c68bca47b9973bcc5f7ccc4810fac",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "U18s preview: Aston Villa v Arsenal",
+      "summaryEn": "Our young Gunners look to make it six wins on the bounce against the Villans",
+      "bodyEn": [
+        "Our young Gunners continue their U18 Premier League South campaign with a trip to Aston Villa on Saturday, October 24.",
+        "Kick-off at the Bodymoor Heath Training Ground is scheduled for 12pm (UK time).",
+        "Josh Smith's side are in lightning form with five consecutive wins across all competitions and sit fourth in the table with 13 points from seven games.",
+        "Last weekend’s dramatic north London derby victory saw Emerson Nwaneri take on the unlikely role of goalkeeper, while Mylo Bernard’s brace secured the bragging rights over Tottenham Hotspur.",
+        "THE OPPOSITION",
+        "The Villans have endured a mixed start to the league, picking up just two wins despite going unbeaten through August and early September. Those triumphs came against Crystal Palace and Brentford but form has since wavered, leaving Villa in 10th place on eight points.",
+        "The West Midlands side have improved results in the U18 Premier League Cup, with a 3-3 draw with Leeds United followed by an emphatic 6-0 rout of Nottingham Forest, putting them top of Group C.",
+        "The Birmingham-based outfit are also competing in the UEFA Youth League, where they claimed their first win last week by beating Turkish side Fenerbahce 2-1 at home. We last faced the Claret and Blues in February, when goals from Louis Zecevic John and Angelinou Pedro secured a 2-1 away victory.",
+        "HOW TO FOLLOW",
+        "The action gets underway from 12pm (UK), with live updates available on our Academy X account and a full match report shortly after the final whistle.",
+        "Post-match, don't miss exclusive interviews with one of our academy coaches and young Gunners, as well as highlights of all the key action on The Arsenal app and Arsenal.com."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/98a21e5ec79d-arsenalu18plsouthfixture16x9thirdastonvilla.webp",
+      "author": "Tom Keens",
+      "publishedAt": "2026-10-23T04:30:00.000Z",
+      "url": "https://www.arsenal.com/news/u18s-preview-aston-villa-v-arsenal-ah0339d4Bl8R",
+      "source": "Arsenal.com",
+      "titleZh": "U18前瞻：阿斯顿维拉对阵阿森纳",
+      "summaryZh": "年轻的枪手们力争在对阵维拉时取得六连胜。",
+      "bodyZh": [
+        "当地时间10月24日周六，我们的年轻枪手将前往客场对阵阿斯顿维拉，继续他们的U18英超南部联赛征程。",
+        "比赛将于英国时间中午12点在博迪莫尔希思训练基地开球。",
+        "乔什·史密斯（Josh Smith）的球队状态火热，各项赛事已经取得五连胜，目前在7场比赛中积13分，排名积分榜第四位。",
+        "在上周末扣人心弦的北伦敦德比胜利中，埃默森·恩瓦内里（Emerson Nwaneri）客串门将这一不同寻常的角色，而迈洛·伯纳德（Mylo Bernard）的梅开二度则为主队锁定胜局。",
+        "对手情况",
+        "维拉在联赛中的开局表现起伏不定，尽管在8月和9月初保持不败，但他们仅取得了两场胜利。这两场胜利分别是对阵水晶宫和布伦特福德，但此后状态有所下滑，目前维拉以8分排名第十。",
+        "这支西米德兰兹球队在U18英超杯中的战绩有所提升，他们以3比3战平利兹联，随后以6比0大胜诺丁汉森林，从而占据C组榜首。",
+        "这支总部位于伯明翰的球队还在参加欧洲青年联赛，他们上周在主场2比1击败土耳其球队费内巴切，取得了首场胜利。我们上一次与这支球队交手是在2月，当时路易斯·泽切维奇·约翰（Louis Zecevic John）和安热利努·佩德罗（Angelinou Pedro）的进球帮助球队在客场2比1取胜。",
+        "如何关注比赛",
+        "比赛将于英国时间中午12点开始，我们的青训官方X账号将提供实时赛况更新，终场哨响后不久将发布完整的比赛战报。",
+        "赛后，请不要错过在阿森纳官方App和Arsenal.com上观看的一位青训教练和年轻枪手的独家采访，以及所有精彩画面的集锦。"
+      ],
+      "translationSourceHash": "b0f9c7a660805090c536a18384eccbdc00029a3c7b51047f2dbbabc6d0a55858",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-10-23T04:49:52.028Z"
+    },
     {
       "id": "228ebe7921b0f406aee52e03cd930ca201cbe61778930d082d4cc7e03ddbc5d7",
       "teamId": "arsenal",
@@ -431,43 +474,6 @@
       "translationSourceHash": "0d7f7ace973d0e1f186066a07572f7923ca9ee6663cb991f21c4f7251e438d0a",
       "translationModel": "gemini-3.5-flash-lite",
       "translatedAt": "2026-10-22T07:37:38.003Z"
-    },
-    {
-      "id": "e78fffdcc2142f573c7c068bbe60b200dfde158f313a810dde0f2bb43880b63e",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Odegaard sees positives in Bayern draw",
-      "summaryEn": "The skipper reflects on our eventful draw in Germany",
-      "bodyEn": [
-        "Martin Odegaard said there were plenty of positives to draw upon from a high-quality Champions League clash away to Bayern Munich on Wednesday.",
-        "We went ahead, then came from behind to take a point from the German champions, who had lost only one of their last 32 home games in the Champions League.",
-        "Afterwards the skipper said he thought we deserved a draw from the encounter. “Yeah, probably a fair result to be honest, but I feel like we could have won the game as well.",
-        "“I think we did a lot of good things, started the game really strongly and I thought we played a good game. It was a really tough team to play against, lots of man-to-man, duels all over the pitch and so much quality. I thought we did really well and it's just a shame we couldn't get the win, but it was a strong performance.”",
-        "Odegaard was instrumental in our opening goal, playing an excellent lofted pass from inside his own half into the path of Eberechi Eze.",
-        "“Yeah, it was a good pass for sure,” he smiled. “I just saw he made the run and there was space in behind and I was able to find him - so happily he was onside as well.",
-        "“We started the game strong, scored the first goal, but then went under, so I thought we did really well to fight to get into the game again and at least get the draw. So, lots of positives and a few things to work on, but it was a good performance.”",
-        "It made it 15 league phase matches without defeat in the competition, but attention has immediately turned to our Premier League game at home to Everton on Saturday. “Yeah, that's the life!” Odegaard added. “That's what we want. Just looking forward to the next now and recover and get ready for it. It's going to be another big test, and it will be good to get back to the Emirates so looking forward to that.”"
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/0898dadc91e5-munich-germany-martin-odegaard-of-arsenal-looks-on-during-the-uefa-champions-lea.webp",
-      "author": "Josh James",
-      "publishedAt": "2026-10-21T22:30:52.704Z",
-      "url": "https://www.arsenal.com/news/odegaard-sees-positives-in-bayern-draw-atEqM8h4LJhs",
-      "source": "Arsenal.com",
-      "titleZh": "厄德高看到战平拜仁的积极一面",
-      "summaryZh": "阿森纳队长总结了客场战平拜仁慕尼黑的比赛。",
-      "bodyZh": [
-        "马丁·厄德高表示，周三客场对阵拜仁慕尼黑的高质量欧冠比赛中，有很多积极的因素可以汲取。",
-        "我们率先取得进球，随后在落后时扳平比分，从这家德国冠军球队身上带走了一分，拜仁此前在欧冠最近32个主场比赛中仅输过一场。",
-        "赛后，这位队长表示他认为我们配得上从这场比赛中拿到一场平局。“是的，老实说这可能是一个公正的结果，但我感觉我们本也可以赢得比赛。”",
-        "“我认为我们做了很多正确的事情，比赛开局非常强势，我觉得我们踢得不错。对手是一支非常难缠的球队，全场有大量的人盯人、对抗，而且实力非常强劲。我认为我们表现得很好，只可惜没能赢下比赛，但这是一场强势的表现。”",
-        "厄德高在我们的首粒进球中发挥了关键作用，他在自己半场内送出一记精妙的过顶长传，找到了前插的埃贝雷奇·埃泽。",
-        "“是的，这绝对是一记好传球，”他笑着说。“我看到他跑位了，身后有空间，我也找到了他——所以幸运的是他也越位。”",
-        "“我们比赛开局强势，打进了第一球，但随后陷入被动，所以我认为我们展现了很好的拼搏精神，重新回到了比赛中，至少拿到了平局。因此，有很多积极的方面，也有一些需要改进的地方，但这是一场不错的表现。”",
-        "这使得我们在该项赛事中的小组/联赛阶段保持了15场不败，但注意力已经迅速转向周六在主场对阵埃弗顿的英超比赛。“是的，这就是生活！”厄德高补充道。“这就是我们想要的。我们只期待下一场比赛，做好恢复并为此准备好。这将是又一次重大考验，回到酋长球场感觉会很好，所以我们非常期待。”"
-      ],
-      "translationSourceHash": "b3302d1eb5b09645413737529ee6ad1d00db1255f335c1c439080691f1e2440e",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-10-21T23:37:57.743Z"
     },
     {
       "id": "c635dd8b9704eacfcaf03255f29faf45ae044c422776f1bec77ce5ed7273baf2",
@@ -1006,5 +1012,7 @@
       "translatedAt": "2026-10-22T13:17:37.055Z"
     }
   ],
-  "pendingNotificationIds": []
+  "pendingNotificationIds": [
+    "b86d0cab0469577d2919fef1a5ceb6868a9c68bca47b9973bcc5f7ccc4810fac"
+  ]
 }
