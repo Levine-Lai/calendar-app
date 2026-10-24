@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-24T21:16:39.403Z",
+  "updatedAt": "2026-10-24T23:26:27.184Z",
   "items": [
     {
       "id": "csl-401861487",
@@ -688,11 +688,11 @@
       "sport": "basketball",
       "espnLeague": "nba",
       "start": "2026-10-24T22:00Z",
-      "status": "10/24 - 6:00 PM EDT",
-      "statusState": "pre",
+      "status": "Halftime",
+      "statusState": "in",
       "completed": false,
-      "awayScore": "0",
-      "homeScore": "0",
+      "awayScore": "58",
+      "homeScore": "66",
       "awayTeam": "Miami Heat",
       "homeTeam": "Charlotte Hornets",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
