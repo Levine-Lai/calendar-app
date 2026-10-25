@@ -1,12 +1,85 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-10-25T05:18:04.067Z",
+  "updatedAt": "2026-10-25T10:08:27.339Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "852691f722d760f3f684786f79d2928b5b98b1241711a5c9ce1f7b701b5e307c",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Excitement grows as u16s head to 'unique' Messi Cup",
+      "summaryEn": "Read all about our young team heading over to Miami to take part in the 2026 Messi Cup",
+      "bodyEn": [
+        "Excitement is growing in the academy as our under-16s prepare to take part in the 2026 Messi Cup in Miami.",
+        "The tournament, set up by Inter Miami star and football legend Lionel Messi, brings together some of the best and brightest from around the world for a 16-team competition in Florida.",
+        "We'll be taking on Messi's former sides Newell's Old Boys, FC Barcelona and Brazilian team Palmeiras in our group, and under-16s head coach Michael Donaldson cannot wait for his side to get stateside.",
+        "\"I cannot tell you how excited the boys are,\" Michael said. \"It's a real honour to be taking part, and the magnitude of this competition has got us even more excited to get out there and give it our best shot. All the best teams in the world are in it.",
+        "\"I’ve been doing this over the years and the biggest takeaway is opportunity. You've got the opportunity to test yourself up against the best, and to do that while on camera.",
+        "\"Even if you don't come out of this as a winner, you're going to walk away with the most unbelievable memories and they should stay with you for a long, long time.\"",
+        "We'll be taking a 20-player squad to Miami. Half the team are familiar with playing abroad, following our success at the Next Gen tournament in Shanghai last season.",
+        "The team will play at the Inter Miami Stadium for our final two group matches, as well as getting a chance to meet the organiser himself, Lionel Messi.",
+        "\"It is unique tournament,\" Michael said. \"I don't know when our players will get another opportunity to do anything like this again. I look at the Flamengo Cup that we did in Brazil in 2024, which was amazing, but we predominantly played South American teams.",
+        "\"To go to America, experience the stadium, the set up, it's going to be streamed live on ESPN. You're getting a first-team experience, a Champions League or World Cup experience, at this age, with all the trimmings, all the professional outputs that go with that.",
+        "\"It's amazing, and unique is exactly the best word to describe it, because I can't see anything different topping this, and the best player of all time is delivering it.",
+        "\"I've been to a lot of tournaments and the organiser is always there. Messi was at the tournament last year, so I know all the boys are incredibly excited at the prospect of meeting him.\"",
+        "River Plate won the 2025 edition of the Messi Cup, beating Atletico Madrid in the final.",
+        "Looking at the competition, Michael is looking forward to seeing what our youthful side can do.",
+        "\"Representing Arsenal on this stage is a true honour. We want to give the best version of ourselves. Tournament football is all about adapting to the situation, the climate, the environment and being the best team.",
+        "\"We will also have downtime on our trip and a chance for the boys to see the area and experience new things. We are ambassadors of Arsenal and we can't wait to represent the club in Miami.\"",
+        "OUR 2026 MESSI CUP SQUAD",
+        "Here are the 20 players heading across the Atlantic to take part in the tournament!",
+        "HOW DOES THE MESSI CUP WORK?",
+        "The tournament is made up of 16 teams, which have been split into four groups of four.",
+        "We will be going up against Newell's Old Boys, FC Barcelona and Palmeiras in our group. We kick off against the Argentine side on Sunday, October 26 at 4pm local time, approximately 8pm UK time. We will then face Barca the following day at 4.30pm eastern time, before finishing the group off against the Brazilians on Tuesday, October 28 at the same time.",
+        "Each match will last 60 minutes, with the top two from each group going through to the quarter-finals. The remaining sides will go into the plate tournament.",
+        "The final will take place on Sunday, November 1, at 5pm local time, with the plate final also take place on the same day at the slightly earlier kick-off of 1.30pm.",
+        "HOW TO FOLLOW THE 2026 MESSI CUP",
+        "The 2026 Messi Cup will be broadcast on Disney+, ESPN+, and ESPN television channels, depending on where you are in the world.",
+        "For more information, click here!"
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/8478df661abf-u15.webp",
+      "author": "Charlie Peat",
+      "publishedAt": "2026-10-25T08:00:00.000Z",
+      "url": "https://www.arsenal.com/news/excitement-grows-as-u16s-head-to-unique-messi-cup-a1CuD3j1RFop",
+      "source": "Arsenal.com",
+      "titleZh": "阿森纳U16梯队即将出征梅西杯",
+      "summaryZh": "阿森纳U16梯队将前往迈阿密参加2026年梅西杯。",
+      "bodyZh": [
+        "随着阿森纳U16梯队备战在迈阿密举行的2026年梅西杯，俱乐部青训营上下充满期待。",
+        "这项由国际迈阿密球星兼足球传奇莱昂内尔·梅西创办的赛事汇聚了来自世界各地的顶级青训精英，将在佛罗里达展开一项16支球队参与的比赛。",
+        "我们在小组赛中将对阵梅西的前东家纽维尔老男孩、巴塞罗那以及巴西球队帕尔梅拉斯，U16主教练迈克尔·唐纳德森（Michael Donaldson）迫不及待地希望球队能够前往美国。",
+        "迈克尔表示：“我无法形容小伙子们有多兴奋。能够参与其中是真正的荣幸，这项赛事的重要性让我们更加渴望去那里并全力以赴。世界上最好的球队都在这里。”",
+        "“这些年来我一直从事这项工作，最大的收获就是机遇。你有机会在镜头前与最优秀的对手一较高下。”",
+        "“即使你最终没有夺冠，你也会带走最不可思议的回忆，它们将伴随你很长、很长的时间。”",
+        "我们将派遣由20名球员组成的阵容前往迈阿密。由于上赛季我们在上海Next Gen赛事中取得成功，队中有一半球员已经有在海外比赛的经验。",
+        "球队将在国际迈阿密球场进行最后两场小组赛，并有机会与赛事组织者本人莱昂内尔·梅西见面。",
+        "迈克尔说：“这是一项独特的赛事。我不知道我们的球员什么时候能再次获得这样的机会。我回想起我们在2024年参加的巴西弗拉门戈杯，那非常棒，但我们主要对阵的是南美球队。”",
+        "“去美国体验球场、设施，比赛还将在ESPN上进行直播。在这个年龄就能获得一线队体验、欧冠或世界杯级别的体验，配备所有职业化的外围保障。”",
+        "“这太棒了，‘独特’正是描述它的最佳词汇，因为我想不到还有什么能超越这个，而且是由史上最佳球员带来的。”",
+        "“我去过很多比赛，组织者总会在现场。梅西去年就出席了这项赛事，所以我知道所有小伙子对见到他都感到无比兴奋。”",
+        "河床赢得了2025年梅西杯的冠军，他们在决赛中击败了马德里竞技。",
+        "展望这项赛事，迈克尔期待看到我们年轻的阵容能有怎样的表现。",
+        "“在这个舞台上代表阿森纳是真正的荣幸。我们希望展现出最好的自己。赛会制足球的关键在于适应局势、气候、环境，并成为最出色的球队。”",
+        "“我们在旅途中也会有休息时间，小伙子们有机会参观当地并体验新鲜事物。我们是阿森纳的大使，我们迫不及待地想在迈阿密代表俱乐部。”",
+        "我们的2026年梅西杯大名单",
+        "以下是飞越大西洋参加比赛的20名球员！",
+        "梅西杯是如何运作的？",
+        "该赛事由16支球队组成，分为四个小组，每组四支球队。",
+        "我们将在小组赛中对阵纽维尔老男孩、巴塞罗那和帕尔梅拉斯。我们将在当地时间10月26日周日下午4点（约英国时间晚上8点）对阵这支阿根廷球队。随后我们将在第二天东部时间下午4点30分迎战巴萨，并在10月28日周二同一时间与这支巴西球队完成小组赛收官战。",
+        "每场比赛时长60分钟，每个小组的前两名将晋级四分之一决赛。其余球队将进入排位赛。",
+        "决赛将于当地时间11月1日周日下午5点举行，排位赛决赛也将在同一天稍早的下午1点30分进行。",
+        "如何关注2026年梅西杯",
+        "2026年梅西杯将在Disney+、ESPN+以及ESPN电视频道进行转播，具体取决于您所在的国家或地区。",
+        "点击这里了解更多信息！"
+      ],
+      "translationSourceHash": "0b90037b8bc9036683adda21d99b3fbf18e93055d0069185c79598a82e6463b7",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-10-25T10:08:27.335Z"
+    },
     {
       "id": "2d83423685f18c55d0c13245857524c177d139db004e46c2dafbe52c99b2b2de",
       "teamId": "arsenal",
@@ -374,45 +447,6 @@
       "translationSourceHash": "58393a7ee721bbd9dc975555d609c2257f1c05bf6a973dd6eac8b4bb69e8acd7",
       "translationModel": "gemini-3.5-flash-lite",
       "translatedAt": "2026-10-24T19:48:29.223Z"
-    },
-    {
-      "id": "9f76bb94ffdab4e27d5c9a55da0ebdf8d605dc1c2cec1f42f5c285e7536dfb0c",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Caitlin buzzing after north London derby win",
-      "summaryEn": "Winning the derby means more to Caitlin Foord than any other fixture, so she was over the moon following Saturday’s success",
-      "bodyEn": [
-        "Winning the north London derby means more to Caitlin Foord than any other fixture, so she was over the moon following Saturday’s success at the Tottenham Hotspur Stadium.",
-        "Making her first start of the season for us in the Women’s Super League, she helped us to come from behind and protect a one-goal margin for a huge win that felt like it had been a long time coming.",
-        "Speaking to us after the game, she said: “It's the one game I always look to personally. So yes, I was excited to obviously get the start today. First one of the season, so yes, I was just excited to get out there and obviously do what I can do for the team.",
-        "“I knew everyone was going to go out there and give it everything and leave everything out there. I think that showed at the end, just getting in the tackles, winning balls, clearing and going wide. We had each other's back out there and yes, it felt good.”",
-        "One interesting element of the line-up was the decision to play Olivia Smith up top with Alessia Russo in behind, so how did Foord find linking up with those two in those roles?",
-        "“It was good,” she said. “I felt like it felt good. Obviously, I have a good connection with Less as it is and then yes, having Liv's speed for the support in behind as well was really nice.”",
-        "Of course, we couldn’t let Foord go without asking what it felt like to have such fantastic support from almost 4,000 Arseanl fans on the day.",
-        "“They were huge, obviously, to sell out the away section and to have so many of them show up, especially when we obviously haven't had the results we wanted to,” she said. “So yes, it was so nice and we just wanted to be able to do it for them today.",
-        "“We’ve had their support throughout it all and it's again today. So yes, I think out of everything, we wanted to be able to do it for them today.”"
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/ca351ca5abc2-gettyimages-2301770831.webp",
-      "author": "Stephen Wright",
-      "publishedAt": "2026-10-24T14:55:03.087Z",
-      "url": "https://www.arsenal.com/news/caitlin-buzzing-after-north-london-derby-win-aeRGh5M59SBP",
-      "source": "Arsenal.com",
-      "titleZh": "凯特琳对赢得北伦敦德比感到兴奋",
-      "summaryZh": "对凯特琳·福德而言，赢得德比意义重大，她在周六取胜后欣喜若狂。",
-      "bodyZh": [
-        "对凯特琳·福德（Caitlin Foord）来说，赢得北伦敦德比的意义超过任何其他比赛，因此在周六于托特纳姆热刺球场取得胜利后，她感到欣喜若狂。",
-        "这是她本赛季首次在女足超级联赛中为阿森纳先发登场，她帮助球队在落后情况下逆转，并守住了一球优势，这场意义重大的胜利让人感觉等了很久。",
-        "她在赛后接受采访时表示：“这是我个人最期待的一场比赛。所以是的，我很高兴今天能首发。这是本赛季第一次，所以是的，我很高兴能上场，并为球队尽我所能。”",
-        "“我知道每个人都会全力以赴，把一切留在球场上。我认为最后这一点得到了体现，无论是拼抢、赢得球权、解围还是拉开宽度。我们在场上互为后盾，感觉真好。”",
-        "首发阵容中一个有趣的安排是让奥利维亚·史密斯（Olivia Smith）担任箭头人物，阿莱西亚·鲁索（Alessia Russo）在其身后，那么福德如何看待与这两人在这些位置上的配合呢？",
-        "她说道：“感觉很好。我感觉配合得很默契。显然我和莱斯（Less）本来就很有默契，而且拥有利夫（Liv）的速度在身后支持，这也非常棒。”",
-        "当然，我们不能不问问福德，在比赛当天得到近4000名阿森纳球迷如此出色的支持是什么感觉。",
-        "她表示：“他们太棒了，客场看台座无虚席，有这么多人现身支持，尤其是在我们没有取得想要的结果的时候。所以是的，这太美好了，我们今天只想为他们赢下比赛。”",
-        "“一路走来，我们一直得到他们的支持，今天也是如此。所以是的，我觉得在所有事情中，我们今天最想做的就是为他们赢下这场比赛。”"
-      ],
-      "translationSourceHash": "0afa3ff13259a94f3fc8ed271e5a3a3358ad6a342e6af1cf80bc16f87e06ed6e",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-10-24T17:36:12.739Z"
     },
     {
       "id": "031952852d423cb4cfec5cf332e61dc20f83136d20e85dee423743ed293680a3",
@@ -983,5 +1017,7 @@
       "translatedAt": "2026-10-22T13:14:51.872Z"
     }
   ],
-  "pendingNotificationIds": []
+  "pendingNotificationIds": [
+    "852691f722d760f3f684786f79d2928b5b98b1241711a5c9ce1f7b701b5e307c"
+  ]
 }
