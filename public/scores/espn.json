@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-25T06:47:54.507Z",
+  "updatedAt": "2026-10-25T12:09:29.078Z",
   "items": [
     {
       "id": "csl-401861487",
@@ -841,8 +841,8 @@
       "sport": "soccer",
       "espnLeague": "ita.1",
       "start": "2026-10-25T11:30Z",
-      "status": "Scheduled",
-      "statusState": "pre",
+      "status": "37'",
+      "statusState": "in",
       "completed": false,
       "awayScore": "0",
       "homeScore": "0",
@@ -858,8 +858,8 @@
       "sport": "soccer",
       "espnLeague": "eng.w.1",
       "start": "2026-10-25T12:00Z",
-      "status": "Scheduled",
-      "statusState": "pre",
+      "status": "9'",
+      "statusState": "in",
       "completed": false,
       "awayScore": "0",
       "homeScore": "0",
