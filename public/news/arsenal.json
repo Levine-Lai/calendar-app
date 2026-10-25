@@ -1,12 +1,41 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-10-25T10:08:27.339Z",
+  "updatedAt": "2026-10-25T14:22:13.124Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "fd05f0de40b6832503664aaff5fad2d3650a1bbc34fff0d295f83e4564205ab7",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "U18s highlights: Aston Villa 1-3 Arsenal",
+      "summaryEn": "Our young Gunners strike three times to maintain the winning run",
+      "bodyEn": [
+        "Our young Gunners' fine form continued with a 3-1 U18 Premier League South victory on the road to Aston Villa.",
+        "Teshaun Murisa got us off to the perfect start in the West Midlands, before Axel Donczew and Mylo Bernard had us three-up inside 17 minutes.",
+        "Jake Doughty pulled one back for the Villans before half-time, but we controlled the game from then on to secure another victory and extend our winning run to six games across all competitions.",
+        "Press play on the video at the top of the article to watch the best of the action from Saturday's win at the Bodymoor Heath Training Ground."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/c69ce6c0d1a6-borehamwood-england-luis-munoz-of-arsenal-during-the-uefa-youth-league-match-bet.webp",
+      "author": "Tom Keens",
+      "publishedAt": "2026-10-25T13:49:43.001Z",
+      "url": "https://www.arsenal.com/news/u18s-highlights-aston-villa-1-3-arsenal-aq0M52l0N9WV",
+      "source": "Arsenal.com",
+      "titleZh": "U18集锦：阿斯顿维拉 1-3 阿森纳",
+      "summaryZh": "年轻的枪手打入三球，延续了连胜势头。",
+      "bodyZh": [
+        "在U18英超南部联赛客场对阵阿斯顿维拉的比赛中，我们年轻的枪手们延续了出色的状态，以3-1取得胜利。",
+        "特肖恩·穆里萨（Teshaun Murisa）在西米德兰兹郡为我们开了个好头，随后阿克塞尔·东切夫（Axel Donczew）和迈洛·伯纳德（Mylo Bernard）在17分钟内将比分改写为3-0。",
+        "杰克·多蒂（Jake Doughty）在半场结束前为维拉扳回一球，但此后我们控制了比赛，确保了又一场胜利，并将各项赛事的连胜纪录扩大到六场。",
+        "点击文章顶部的视频，观看周六在博迪穆尔·希思训练基地取胜的精彩集锦。"
+      ],
+      "translationSourceHash": "2982e12e5de69686856a747a44ec66d11d48f5dfc6faf814e4d42834f1536692",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-10-25T14:22:08.053Z"
+    },
     {
       "id": "852691f722d760f3f684786f79d2928b5b98b1241711a5c9ce1f7b701b5e307c",
       "teamId": "arsenal",
@@ -449,43 +478,53 @@
       "translatedAt": "2026-10-24T19:48:29.223Z"
     },
     {
-      "id": "031952852d423cb4cfec5cf332e61dc20f83136d20e85dee423743ed293680a3",
+      "id": "e5ff7f6bc8cc1b424bfd914edb99dcaaa8f3e5c8521e2003d4255fa0958e5721",
       "teamId": "arsenal",
       "teamName": "阿森纳",
-      "titleEn": "Renée: “We had some warrior performances”",
-      "summaryEn": "Renée Slegers reflects on our north London derby win, as we came from behind to beat Tottenham Hotspur",
+      "titleEn": "Smith hails \"best performance yet\"",
+      "summaryEn": "Our under-18s coach was thrilled with our young Gunners' quick start at Villa",
       "bodyEn": [
-        "​​​​Renée Slegers was all smiles in the tunnel following Saturday’s 2-1 win away to Tottenham Hotspur.",
-        "The head coach saw us come from behind to claim all three points and the bragging rights thanks to goals from Georgia Stanway and Alessia Russo.",
-        "Reflecting on the match, she said: “Three points in the north London derby, playing for the fans today. I'm so happy for everyone, but for the fans, that's why we were celebrating with them as well.",
-        "“To get the three points today, it was difficult, it was a fight. It asked a lot from us, also coming back from a goal down. But the way we do it, with the intensity, the fight and character in the team, I'm so pleased.”",
-        "Commenting on Stanway’s goal, after our midfielder linked up well with Olivia Smith and Russo, Renée continued: “Good, very good. It was amazing. I think that's what we've been talking about as well. See the opening in the box, make the right decision to see who's in the best position to finish for us. And they did that so well. I think it's Less pulling it back for Georgia. Great goal.”",
-        "Once Russo fired us in front from the penalty spot early in the second half, the head coach was delighted with how we protected the lead, not allowing Spurs to have any big chances to equalise.",
-        "“Because you know it's only one goal difference, Tottenham is still in the game, there were some fighting warrior performances out there today from the whole team,” she said. “There's a couple that just injected into the team. I thought Caitlin Foord was amazing. Georgia in the middle of the pitch, the back line. And then the decisions we make at the end. We slowed the game down when we needed to, go to the corners, continue to win our duels. Really happy.”",
-        "At the end of the game some of our players instinctively expressed their excitement, running over to almost 4,000 Arsenal supporters to celebrate before returning to the middle of the pitch to shake the hands of their opponents.",
-        "On that fantastic support, Renée said: “It's been difficult times for them as well. But they show up here with all of them and we're selling out the away section. And they're there for us and they're seeing us through the game. So we said there's no point in us going into a huddle and connecting as a group. We need to go and see the fans. So we want to spend that time and that moment with the fans.”"
+        "Our under-18s coach Josh Smith was thrilled with the performance against Aston Villa, as we struck three times in the opening 17 minutes to win the U18 Premier League South clash.",
+        "Quickfire goals from Teshaun Mursia, Axel Donczew and Mylo Bernard wrapped up the points early in the first half, despite the home side pulling one back.",
+        "\"I felt the first 17 minutes, when we scored the first three goals, were outstanding. What a start to the game.",
+        "\"I thought it was probably our best performance this season. Not just how we started, but how we finished the game as well.",
+        "\"The number of entries that we did have into the final third was very good today. There was a general disappointment around the players and the staff. There should have been a lot more than three goals today.\"",
+        "Murisa and Donczew both capitalised on winning the ball high up the field to go two up in quick succession on a stormy afternoon in the West Midlands.",
+        "The goals also showcased an alternative route to goal, which Josh revealed had been worked on in training.",
+        "\"We try and value that there's more than one way to score. A different way to score is when the opposition do have the ball, we do press high.",
+        "\"Sometimes we will shift man to man, and that's what we've done today. And it worked twice today, so we're very pleased.\"",
+        "The triumph in Birmingham extends our under-18s' winning run to six across all competitions, eclipsing the strong start made at the beginning of last season.",
+        "Josh says the results on the pitch reflect the mood within the squad, but stresses the importance of keeping the players grounded in the weeks ahead.",
+        "\"Extremely confident. This hasn't just happened over the last week or so. This has been building from week one andwe're in week 16 now.",
+        "\"I feel like everything is kind of coming together right now, but the general message to the lads would be, let's not get too high, let's not get too low.",
+        "\"Keep our standards as high as we can and have that relentless mindset in how we train and be consistent with both our standards on and off the pitch.\""
       ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/4acd77ea15be-gettyimages-2301772485.webp",
-      "author": "Stephen Wright",
-      "publishedAt": "2026-10-24T14:43:52.184Z",
-      "url": "https://www.arsenal.com/news/renee-we-had-some-warrior-performances-admX95q3Xjj4",
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/c62c57f2303c-london-colney-england-arsenal-academy-coach-josh-smith-during-an-arsenal-u18-tra.webp",
+      "author": "Tom Keens",
+      "publishedAt": "2026-10-24T13:35:00.000Z",
+      "url": "https://www.arsenal.com/news/smith-hails-best-performance-yet-a1sd23s7HYEW",
       "source": "Arsenal.com",
-      "titleZh": "雷妮：“我们展现了战士般的表现”",
-      "summaryZh": "雷妮·斯莱格斯谈北伦敦德比逆转击败托特纳姆热刺。",
+      "titleZh": "史密斯赞扬球队至今最佳表现",
+      "summaryZh": "我们的U18教练对年轻枪手在维拉的闪电开局感到欣喜。",
       "bodyZh": [
-        "在周六客场2-1击败托特纳姆热刺后，雷妮·斯莱格斯在球员通道里满脸笑容。",
-        "凭借乔治娅·斯坦威和阿莱西亚·鲁索的进球，这位主教练带领球队在落后情况下实现逆转，全取三分并赢得了德比荣耀。",
-        "在回顾这场比赛时，她说道：“在北伦敦德比中全取三分，今天是为球迷而战。我为所有人感到高兴，尤其是为球迷，这就是为什么我们也要和他们一起庆祝。”",
-        "“今天拿到三分很不容易，这是一场苦战。比赛对我们要求很高，而且我们还在落后一球的情况下追赶。但我们展现出的方式、强度、斗志和团队性格，让我感到非常高兴。”",
-        "在谈到斯坦威的进球时——此前这位中场球员与奥利维亚·史密斯和鲁索进行了出色配合，雷妮接着说道：“很好，非常好。这太精彩了。我想这也是我们一直在讨论的。看到禁区内的空当，做出正确的决定，找出谁处于最佳射门位置。她们做得太棒了。我想是莱斯回敲给乔治娅的。这是一粒精彩的进球。”",
-        "下半场伊始鲁索通过点球帮助球队反超后，主教练对球队保护领先优势的表现感到满意，没有给热刺留下任何扳平的绝佳机会。",
-        "她说：“因为你知道只有一球的差距，托特纳姆热刺依然留在比赛中，今天整个团队展现出了一些战士般的拼搏表现。有几名球员为球队注入了活力。我认为凯特琳·福德表现得非常惊艳。乔治娅在中场，还有后防线。以及我们在最后阶段做出的决定。我们在需要的时候放慢了比赛节奏，走向角旗区，继续赢得对抗。真的非常高兴。”",
-        "比赛结束时，我们的一些球员本能地表达了内心的兴奋，她们跑向近4000名阿森纳球迷庆祝，随后才回到球场中央与对手握手。",
-        "谈到这种美妙的支持，雷妮表示：“对她们（球迷）来说这也是一段艰难的时期。但她们全部都来到了这里，客场看台座无虚席。她们一直支持着我们，陪我们度过整场比赛。所以我们觉得聚在一起围成一圈毫无意义。我们需要去见见球迷。所以我们想把那个时间和时刻留给球迷。”"
+        "我们的U18主教练乔什·史密斯对球队对阵阿斯顿维拉的表现感到兴奋，我们在U18英超南部联赛的这场较量中，于开场17分钟内连入三球赢得胜利。",
+        "尽管主队扳回一城，但特肖恩·穆里萨、阿克塞尔·东切夫和迈洛·伯纳德的闪电进球在上半场早段就锁定胜局。",
+        "“我认为前17分钟打进前三球时，表现非常出色。比赛的开局太棒了。”",
+        "“我认为这可能是我们本赛季最好的表现。不仅是开局的方式，还有我们结束比赛的方式。”",
+        "“我们今天进入对方三十码区域的次数非常多。球员和教练组普遍感到有些遗憾，今天本该打进远不止三个球。”",
+        "在这个西米德兰兹郡风雨交加的下午，穆里萨和东切夫都抓住在前场断球的机会，在短时间内连下两城取得两球领先。",
+        "这些进球还展示了一种不同的进球途径，乔什透露他们在训练中一直在练习这一点。",
+        "“我们试图证明进球不止一种方式。另一种进球方式是当对手控球时，我们进行高位逼抢。”",
+        "“有时我们会进行人盯人转换，这就是我们今天所做的。今天它成功了两次，所以我们非常高兴。”",
+        "这场在伯明翰的胜利将我们的U18各项赛事连胜纪录扩大到六场，超过了上赛季初的强劲开局。",
+        "乔什表示场上的结果反映了球队内部的氛围，但强调了在未来几周保持球员脚踏实地的重要性。",
+        "“极其自信。这并不是最近一周左右才发生的。这是从第一周开始积聚的，我们现在已经是第16周了。”",
+        "“我觉得现在一切都在融合，但给小伙子们的信息是，不要得意忘形，也不要妄自菲薄。”",
+        "“尽可能保持高标准，在训练中保持不屈不挠的心态，并在场上和场下保持标准的一致性。”"
       ],
-      "translationSourceHash": "a3cee086baee221fc4e776cce67bb9bccfd21b5168c517c1335086ba3193e30d",
+      "translationSourceHash": "54e18b7fb3457ba31298a8da4078cb3a7715737a302da63369531a2c74559dae",
       "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-10-24T17:36:18.762Z"
+      "translatedAt": "2026-10-25T14:22:13.120Z"
     },
     {
       "id": "2633c28377bce9f43fd3861b4a9b1a23969f228d2ab06553058990c61c12983c",
@@ -1017,5 +1056,8 @@
       "translatedAt": "2026-10-22T13:14:51.872Z"
     }
   ],
-  "pendingNotificationIds": []
+  "pendingNotificationIds": [
+    "fd05f0de40b6832503664aaff5fad2d3650a1bbc34fff0d295f83e4564205ab7",
+    "e5ff7f6bc8cc1b424bfd914edb99dcaaa8f3e5c8521e2003d4255fa0958e5721"
+  ]
 }
