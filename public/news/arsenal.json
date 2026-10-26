@@ -1,12 +1,49 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-10-25T14:22:13.124Z",
+  "updatedAt": "2026-10-26T07:45:19.499Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "6d99e97f0d08d69dd7203e27453e4120df835732f13d07799ff96824fbfdb204",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Early limbs and foggy pitches: Fourth-tier League Cup trips",
+      "summaryEn": "We've had a few scares and also memorable moments when we've faced lower-league teams in the League Cup - here are three of the best",
+      "bodyEn": [
+        "Over almost 60 years in the League Cup, Arsenal have faced fourth-tier opposition on numerous occasions, finding different ways to prevail at some of the more obscure venues on the English football map.",
+        "In 1985, we drew Hereford United for the second season in succession, having faced the Bulls in the FA Cup the season before when we drew at Edgar Street in a bruising encounter before coasting through 7-2 in the Highbury replay.",
+        "However, the going was even tougher for the Gunners when the two clubs met again in the League Cup second round during Don Howe’s last season in charge. We were lucky to return home with a goalless draw in the first leg, and at a nervous Highbury, Ian Wells' header gave the fourth-tier side the lead after 24 minutes.",
+        "Although Viv Anderson equalised, some Hereford fans in the Clock End prematurely celebrated at the end of 90 minutes, believing their side had progressed on the away goals rule. But extra time was required, and with just seven minutes remaining, Charlie Nicholas popped up to secure a 2-1 aggregate win. In an era of regular cup shocks for the Gunners, there was widespread relief that the ‘Bonnie Prince’ had saved our blushes.",
+        "In January 1993, we were involved in a combative fourth-round encounter at Scarborough's McCain Stadium, affectionately dubbed the ‘Theatre of Chips’ by their supporters. Despite a thick fog obscuring much of the first-half action, we laboured on a glue-pot pitch, but the mists cleared after the break, and the one moment of quality came from the tenacious Nigel Winterburn.",
+        "Bursting forward, our left-back barged past his marker and rifled in an unstoppable shot from 25 yards. It was the game's only goal, and a memorable moment for our hardy away supporters who’d ventured up to East Yorkshire. We would lift the trophy at Wembley four months later, defeating Sheffield Wednesday in the final.",
+        "After dispatching Hartlepool United 7-0 on aggregate in the League Cup in 1994/95, we faced the fourth-tier outfit again the following season. Bruce Rioch took his side to a freshly spruced-up Victoria Park for the first leg, and our first goal came when new signing Dennis Bergkamp hooked the ball across the penalty area and skipper Tony Adams rifled the ball home. Ian Wright’s excellent diving header made it 2-0 and Adams poked home another to make it 3-0.",
+        "The tabloid media seemed obsessed with the fact that Bergkamp still hadn't broken his duck for the Gunners. But the Dutchman, who’d been signed from Inter Milan in the close season, was already off the mark by the time of the return leg, and at Highbury he netted two clinically taken goals, but Wright trumped him by nabbing another Gunners hat trick, with his first – a beautifully lobbed finish, the pick of the bunch as we cruised to an 8-0 aggregate win."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/c1468cea1336-bergkamp-hartlepool.webp",
+      "author": "Jon Spurling",
+      "publishedAt": "2026-10-26T06:10:00.000Z",
+      "url": "https://www.arsenal.com/news/early-limbs-and-foggy-pitches-fourth-tier-league-cup-trips-aPqJT7W2Htg0",
+      "source": "Arsenal.com",
+      "titleZh": "早期的险情与雾中球场：联赛杯对阵第四级别球队之旅",
+      "summaryZh": "回顾阿森纳在联赛杯历史上对阵低级别球队时的三场难忘较量。",
+      "bodyZh": [
+        "在近60年的联赛杯历史中，阿森纳曾多次面对第四级别联赛的对手，并在英格兰足坛一些较为偏僻的球场找到了各种取胜的方法。",
+        "1985年，我们在连续第二个赛季抽到了赫里福德联。此前一个赛季我们在足总杯中与这支公牛队交手，当时我们在埃德加街球场经历了一场激烈的平局，随后在海布里的重赛中以7-2轻松过关。",
+        "然而，当两支球队在唐·豪伊执教的最后一个赛季的联赛杯第二轮再次相遇时，枪手们的征程变得更加艰难。我们在首回合客场幸运地带走了一场0-0的平局，而在紧张的海布里球场，伊安·韦尔斯在第24分钟头球破门，帮助这支第四级别球队取得领先。",
+        "尽管维维·安德森扳平了比分，但钟楼看台的一些赫里福德球迷在90分钟结束时过早地庆祝，以为他们的球队凭借客场进球规则晋级了。然而比赛需要进行加时赛，在只剩最后七分钟时，查理·尼古拉斯挺身而出，确保了总比分2-1的胜利。在枪手频遭杯赛冷门的年代，“漂亮王子”化解了我们的尴尬，这让大家感到无比宽慰。",
+        "1993年1月，我们在士气高昂的第四轮比赛中做客斯卡堡的麦凯恩体育场，这里被球迷亲切地称为“薯条剧场”。尽管浓雾遮挡了大部分上半场的比赛画面，我们在黏稠的场地艰难作战，但中场休息后大雾散去，全场唯一的高光时刻来自顽强的奈杰尔·温特伯恩。",
+        "我们的左后卫高速前插，挤过防守球员，在25码外轰出一记不可阻挡的射门。这是全场唯一的进球，对于冒着严寒前往约克郡东部的忠实客场球迷来说，这是一个难忘的时刻。四个月后，我们在温布利举行的决赛中击败谢菲尔德星期三，捧起了这座奖杯。",
+        "在1994/95赛季的联赛杯中以总比分7-0淘汰哈特lepool联队后，我们在接下来的赛季再次遇到了这支第四级别球队。布鲁斯·里奇带队前往焕然一新的维多利亚公园球场进行首回合比赛，我们的第一个进球来自于新援丹尼斯·博格坎普将球吊入禁区，队长托尼·亚当斯抽射破门。伊安·赖特精彩的鱼跃头球将比分改写为2-0，随后亚当斯再捅一球，将比分扩大为3-0。",
+        "小报媒体似乎对博格坎普当时还没有为枪手打破进球荒这件事津津乐道。但这位在休赛期从国际米兰引进的荷兰人，在次回合比赛开始前就已经打破了进球荒。在海布里，他打入了两个冷静的进球，不过赖特再次上演帽子戏法抢尽了风头，其中他的第一个进球——一脚精妙的吊射——是全场最佳，最终我们以总比分8-0轻松晋级。"
+      ],
+      "translationSourceHash": "43ff639430a8acda1d76876d0ff74cc09fd584ea14a61be6f568fb5befb1fede",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-10-26T07:45:19.495Z"
+    },
     {
       "id": "fd05f0de40b6832503664aaff5fad2d3650a1bbc34fff0d295f83e4564205ab7",
       "teamId": "arsenal",
@@ -527,37 +564,6 @@
       "translatedAt": "2026-10-25T14:22:13.120Z"
     },
     {
-      "id": "2633c28377bce9f43fd3861b4a9b1a23969f228d2ab06553058990c61c12983c",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Ben White hits 200 Arsenal appearances",
-      "summaryEn": "Ben White will become the 119th player in our history to play 200 times when he features in our Premier League game against Everton",
-      "bodyEn": [
-        "After being starting our Premier League game against Everton, Ben White reached 200 Arsenal appearances.",
-        "The defender has hit the landmark a little over five years after signing from Brighton & Hove Albion, becoming the 119th player in our history to reach the milestone number.",
-        "His double-century includes 171 starts and 29 appearances from the bench, during which he has scored seven goals, and assisted 17 others, including Gabriel's header in our 2-0 win against the Toffees.",
-        "That was his 143rd Premier League appearance for us, including 12 in last season's title-winning campaign, and his 32nd Champions League outing. Six more games have come in the FA Cup, while another 10 have been collected in the League Cup. He has also played seven Europa League matches, and he has two Community Shield titles alongside his Premier League winner's medal.",
-        "His 100th game for us came back in November 2023, while only Bukayo Saka, Gabriel and Martin Odegaard have more appearances than Ben in the current squad."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/bfb9c7959c8f-london-england-ben-white-of-arsenal-celebrates-after-during-the-uefa-champions-l.webp",
-      "author": "Jonathon Rogers",
-      "publishedAt": "2026-10-24T12:45:00.000Z",
-      "url": "https://www.arsenal.com/news/ben-white-hits-200-arsenal-appearances-ab8Fe3V17LMr",
-      "source": "Arsenal.com",
-      "titleZh": "本·怀特达成阿森纳生涯200场里程碑",
-      "summaryZh": "本·怀特在对阵埃弗顿的英超比赛中迎来阿森纳生涯第200次出场。",
-      "bodyZh": [
-        "在对阵埃弗顿的英超比赛中首发登场后，本·怀特迎来了他的第200场阿森纳比赛。",
-        "这位后卫在从布莱顿加盟五年多后达成这一里程碑，成为了俱乐部历史上第119位达到这一里程碑的球员。",
-        "在他的200次出场中包括171次首发和29次替补登场，期间他攻入7球并送出17次助攻，其中包括在2-0战胜埃弗顿的比赛中助攻加布里埃尔头球破门。",
-        "这也是他为球队在英超联赛中的第143次出场（包括上赛季争冠征程中的12次），以及第32次欧冠出场。此外他还有6次足总杯出场、10次联赛杯出场、7次欧联杯出场，并且随队赢得了两个社区盾杯冠军和一个英超冠军。",
-        "他的第100场比赛是在2023年11月，在目前的球队阵容中，只有萨卡、加布里埃尔和厄德高的出场次数比本·怀特更多。"
-      ],
-      "translationSourceHash": "4c136cee7ff5b8489d2b55515ec7ecacb40f7abf348037fdbcdf6267625fa04c",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-10-24T19:48:34.505Z"
-    },
-    {
       "id": "5bc1a5ff93041bceecc122905637f3f50b97800c1204efe82a672468cc3ad1fb",
       "teamId": "arsenal",
       "teamName": "阿森纳",
@@ -1056,5 +1062,7 @@
       "translatedAt": "2026-10-22T13:14:51.872Z"
     }
   ],
-  "pendingNotificationIds": []
+  "pendingNotificationIds": [
+    "6d99e97f0d08d69dd7203e27453e4120df835732f13d07799ff96824fbfdb204"
+  ]
 }
