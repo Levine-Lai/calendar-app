@@ -1,7 +1,7 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-10-26T15:14:11.254Z",
+  "updatedAt": "2026-10-26T20:28:50.283Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
@@ -177,43 +177,6 @@
       "translationSourceHash": "6f8bf1656af25199480e33f3e79e2da7fdb6b7ef72c893090bd70fe647049c9c",
       "translationModel": "gemini-3.5-flash-lite",
       "translatedAt": "2026-10-26T15:11:09.245Z"
-    },
-    {
-      "id": "7547240e0fb7961d3b0f88a389863d196e3a19fb0dcc4d31b6fdca494acb0d43",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Loan Watch: Setford impresses as Harwood assists winner",
-      "summaryEn": "The latest on our 2026/27 loanees",
-      "bodyEn": [
-        "Ethan Nwaneri has twice been on the winning side in the past week, with Borussia Dortmund continuing their strong season so far.",
-        "BVB made the long midweek trip to face Azerbaijani league leaders Sabah in the Champions League, returning to Germany with a productive 2-1 win in which Ethan came on for the closing stages. He then played 22 minutes on Saturday as Dortmund overcame Frankfurt 1-0, keeping the side top of the Bundesliga after seven games.",
-        "Tommy Setford kept a clean sheet for Stevenage on Tuesday night, as the team enjoyed a dominant 3-0 victory over Plymouth Argyle at the Sporta Arena. Alex Revell’s side were then on the wrong side of Saturday’s match against MK Dons as they went down 1-0, though Tommy made three saves from four shots faced. With an even record in the league so far, Stevenage sit 12th in League One.",
-        "Following a run of five straight Scottish Premiership defeats, it was a successful return to winning ways for Ismeal Kabia and St Mirren on Saturday as the Buddies overcame Dundee 2-1. The win brings the Paisley outfit back into the top six, as Ismeal started and played 80 minutes of the victory.",
-        "The past week in the Swedish Allsvenskan has seen Kalmar pick up a win and a defeat apiece from two games, Charles Sagoe Jr starting both. The survival-hunting side picked up a pivotal 2-1 away win at Degerfors last Monday, which unfortunately preceded Saturday’s 3-0 defeat by Brommapojkarna. Monday’s win lifted Kalmar above Degerfors, which is where they remain - above the drop zone in 13th - with five league fixtures to go.",
-        "Jessie Gale added two more appearances under her belt for Newcastle United within the past seven days, with a 2-0 League Cup league phase defeat at Everton followed by Sunday’s 2-2 away draw at Nottingham Forest in the WSL 2. Jessie played half an hour in midweek and came on for the final nine minutes in the league draw, helping the Magpies battle back from two down to claim a point.",
-        "Cecily Wellesley-Smith was sidelined for Rosengard’s 2-0 defeat at AIK back in Sweden on Sunday, a result which leaves the team 11th in the Women’s Allsvenskan with three games to go, above the relegation play-off on goal difference.",
-        "It has been another triumphant week for teenage defender Sophie Harwood at Sheffield United, as the Blades recovered from a half-time deficit to win 4-3 at Burnley in the WSL 2. Sophie not only played the full match at Turf Moor, but assisted Abbie Jones for their side’s crucial fourth goal. United sit ninth in the table as they aim to turn a corner from their difficult start, now having claimed two wins from their last three."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/24ae715c6448-stevenage-england-tommy-setford-of-stevenage-looks-on-during-the-sky-bet-league.webp",
-      "author": "Dan Godfrey",
-      "publishedAt": "2026-10-26T09:30:00.000Z",
-      "url": "https://www.arsenal.com/news/loan-watch-setford-impresses-as-harwood-assists-winner-aBjt02N90hf5",
-      "source": "Arsenal.com",
-      "titleZh": "外租球员动态：斯特福德表现出色，哈伍德送出制胜助攻",
-      "summaryZh": "了解阿森纳外租球员在过去一周的最新比赛表现。",
-      "bodyZh": [
-        "在过去的一周里，伊森·恩瓦内里两次随队取得胜利，多特蒙德延续了他们本赛季至今的强势表现。",
-        "多特蒙德在周中远赴阿塞拜疆挑战联赛领头羊萨巴赫，最终以2-1的比分客场告捷，伊森在比赛尾声阶段替补登场。随后在周六对阵法兰克福的比赛中，他替补出场22分钟，帮助多特蒙德1-0取胜，并在德甲七轮过后继续稳居榜首。",
-        "周二晚，托米·斯特福德代表斯蒂夫尼奇力保城门不失，球队在体育竞技场以3-0的比分大胜普利茅斯。亚历克斯·雷维尔的球队在周六对阵米尔顿凯恩斯的比赛中以0-1落后失利，不过托米在面对四次射门时完成了三次扑救。凭借着目前均衡的联赛战绩，斯蒂夫尼奇在英甲联赛中排名第12位。",
-        "在经历了一波苏超联赛五连败后，伊斯梅尔·卡比亚与圣米伦在周六重回胜利轨道，以2-1击败邓迪。这场胜利将这支来自佩斯利的球队带回了前六名，伊斯梅尔首发出场并踢了80分钟。",
-        "在过去一周的瑞典超级联赛中，卡尔马在两场比赛中取得了一胜一负的战绩，查尔斯·萨戈二世两场均首发出战。这支为保级而战的球队在上周一客场2-1击败代格福什，取得关键胜利，可惜周六以0-3不敌布鲁马波卡纳。周一的胜利帮助卡尔马积分超越代格福什，在联赛还剩五轮的情况下，他们目前排名第13位，依然处于降级区之上。",
-        "在过去的七天里，杰西·盖尔为纽卡斯尔联完成了两次出场。她们先是在联赛杯小组赛中0-2不敌埃弗顿，随后在周日的WSL 2联赛中客场2-2战平诺丁汉森林。杰西在周中踢了半小时，并在联赛平局中于最后九分钟替补登场，帮助喜鹊军团从落后两球的劣势中奋起直追，顽强扳平比分。",
-        "塞西莉·韦尔斯利-史密斯因伤缺席了罗森加德客场0-2不敌AIK的瑞典女超联赛。此役过后，球队在联赛还剩三轮时排名第11位，凭借净胜球优势暂时逃离降级附加赛区。",
-        "对于谢菲尔德联队的年轻后卫索菲·哈伍德来说，这是又一个凯旋的一周。刀锋军团在上半场落后的情况下完成逆转，在特鲁姆 Moor 球场以4-3击败伯恩利。索菲不仅打满了全场，还助攻阿比·琼斯打入了球队至关重要的第四球。谢菲尔德联队目前在积分榜上排名第九，她们正力图扭转艰难的开局，最近三场比赛已经取得了两场胜利。"
-      ],
-      "translationSourceHash": "9ff26c393ae9b312073264bed0d91b4e72ac933801fc461b7e926980b9334c1b",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-10-26T15:11:32.531Z"
     },
     {
       "id": "f14e9dca2a7e2f1e880a364a5f56b6762649e9ffcff737842d1a039548f99f3d",
@@ -412,39 +375,6 @@
       "translationSourceHash": "c9602ab5968c8754aa13fe259c597f7aae7f268e1324dbe1c9e9d950af9eed23",
       "translationModel": "gemini-3.5-flash-lite",
       "translatedAt": "2026-10-24T19:48:20.628Z"
-    },
-    {
-      "id": "132f0f2565a399c05d9ed338c355132b69dd8a941b0535dc9ad5783cc4696978",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Danish fans support the Arsenal Forest through tree planting",
-      "summaryEn": "Arsenal Denmark has funded the planting of 265 trees to offset their journeys from their homeland to Emirates Stadium",
-      "bodyEn": [
-        "Today, on Climate Action Day, we’re proud to celebrate our Arsenal Denmark Supporters Club, who are taking climate action alongside the club.",
-        "Members regularly travel to Emirates Stadium to cheer us on, and they recognise this impacts the environment. Together we are growing the Arsenal Forest in Bore, Kenya, taking action to mitigate the impact of supporter travel. Arsenal Denmark has funded the planting of 265 trees for the 2025/26 season, which equates to 53 tonnes of CO2.",
-        "“Arsenal Denmark strives to be an integral part of the Arsenal family. We want to be involved and feel a sense of belonging, which is why we regularly travel to Emirates Stadium to watch The Arsenal,\" said Thomas Ballegaard, President and Chairman of Arsenal Denmark.",
-        "\"At the same time, we want to act responsibly and do our bit for the environment. Supporting the Arsenal Forest in Kenya is a meaningful way for us to take responsibility for the carbon footprint of our journeys from Denmark to London.”",
-        "The Arsenal Forest began in 2021 to address emissions from the production of the matchday programmes, and the total number of trees planted after five full seasons is now 70,015 across 70 acres of land. In addition, more than 100 local workers have been involved in the Arsenal Forest since the first tree was planted, and the project has provided them with valuable income and the means to set up their own businesses in Bore.",
-        "Climate action is a team effort, and we’re proud to work alongside our supporters, partners and colleagues to act for the environment. If you’d like to get involved, you can plant your own tree in the Arsenal Forest."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/08c46f86e9dc-dsc01948.webp",
-      "author": "Arsenal Media",
-      "publishedAt": "2026-10-24T02:00:00.000Z",
-      "url": "https://www.arsenal.com/news/danish-fans-support-the-arsenal-forest-through-tree-planting-abRbx7X53NJg",
-      "source": "Arsenal.com",
-      "titleZh": "丹麦球迷通过植树支持阿森纳森林项目",
-      "summaryZh": "丹麦阿森纳球迷会出资种植265棵树，以抵消他们往返酋长球场的碳排放。",
-      "bodyZh": [
-        "在今天的气候行动日，我们很自豪地庆祝我们的丹麦阿森纳球迷会与俱乐部携手采取气候行动。",
-        "会员们经常前往酋长球场为我们加油助威，他们意识到了这对环境的影响。我们共同在肯尼亚博雷发展阿森纳森林，采取行动减少球迷出行带来的影响。丹麦阿森纳球迷会为2025/26赛季资助种植了265棵树，相当于抵消了53吨二氧化碳排放。",
-        "“丹麦阿森纳努力成为阿森纳大家庭不可或缺的一部分。我们希望参与其中并感受到归属感，这也是我们经常前往酋长球场观看比赛的原因，”丹麦阿森纳主席兼会长Thomas Ballegaard表示。",
-        "“与此同时，我们也希望承担责任，为环保尽一份力。支持肯尼亚的阿森纳森林对我们来说是一个有意义的方式，让我们能够为从丹麦到伦敦旅行产生的碳足迹承担责任。”",
-        "阿森纳森林项目始于2021年，旨在解决比赛日场刊制作带来的碳排放。经过五个完整赛季后，在70英亩的土地上种植的树木总数现已达到70015棵。此外，自第一棵树种下以来，已有100多名当地工人参与了阿森纳森林项目，该项目为他们提供了宝贵的收入和在博雷创业的资金。",
-        "应对气候变化是一项团队合作，我们很自豪能与球迷、合作伙伴和同事并肩作战，为环保采取行动。如果您想参与其中，也可以在阿森纳森林中种植属于您的树木。"
-      ],
-      "translationSourceHash": "162694ead3b06bc5cd7dfbb3dd4b68de25bfb3db01633e459b2f3e87b324c7fa",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-10-26T15:12:37.834Z"
     },
     {
       "id": "192e93fa00f51c7bccc50838bc18b19ce597b999aba8a272255d0b811746f1cb",
@@ -866,73 +796,6 @@
       "translatedAt": "2026-10-26T15:12:55.218Z"
     },
     {
-      "id": "8e5b12f679672a4565f3ee5980c8ca578dfbb2878341063e46c38638a378e74c",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Disabled Supporters' Ticket Info | Manchester United (H)",
-      "summaryEn": "",
-      "bodyEn": [
-        "Arsenal v Manchester UnitedSunday 20th DecemberPremier LeagueEmirates StadiumKick Off: 16.30",
-        "This will be a Category A fixture (pricing and information on match categorisation).",
-        "Ballot System for Disability Access Members",
-        "To ensure fairness and equal opportunity, tickets for all home fixtures will be sold via a ballot system exclusively for Arsenal Members.",
-        "Members will have a designated window to enter the ballot. You can choose to register individually or as a group of up to four members, if all supporters meet the necessary requirements. You can enter at any stage during the registration window, and your odds of success will remain the same.",
-        "Timing doesn't matter when it comes to entering our ballots, whether you are an early bird or a last-minute entrant, your chances of winning remain the same. The only crucial factor is that you submit your entry whilst the window is open.",
-        "Ballot opens: Friday 23rd October at 10am",
-        "Ballot closes: Monday 26th October at 12pm",
-        "Please do not enter via your online account as this will not work for DA members.",
-        "All applicants, whether successful or unsuccessful, will be notified by email only, by 4pm on Tuesday 27th October. Successful applicants will have the opportunity to purchase tickets during the designated priority booking window, as specified on the ticket information page.",
-        "This fixture will be on sale on Wednesday 28th October at 10am and successful applicants will be able to access their online account to purchase tickets, this will include a complimentary Personal Assistant ticket, subject to eligibility. Please note, you will have until 10am on Thursday 29th October to purchase your tickets.",
-        "Where the number of ballot registrations for a match does not exceed the number of available tickets, all Members who have entered will be successful.",
-        "Useful links",
-        "Ticket Exchange & Ticket Transfer",
-        "If a Member is unable to attend a match they were successful in the ballot for, and that match has sold out, they will have the option to post their ticket on our Ticket Exchange platform. This way, other fans can purchase the ticket and enjoy the match. This ticket information page will be updated once a fixture has sold out and Ticket Exchange is available.",
-        "Ticket Transfer is available for Season Ticket Holders to use once a game is available online (4-8 weeks before a game).",
-        "Disability Access members who wish to list their tickets on the Ticket Exchange should complete the online form here. Please note this form is for DA members only and tickets will be listed by the Disability Liaison Team. The Disability Liaison Team can be contacted by calling 0207 619 5000 (Option 2). Deaf supporters, who use British Sign Language (BSL), can contact the Disability Liaison Team by using SignVideo BSL Interpreter service.",
-        "The Arsenal App This latest update to the Arsenal app means access to the Ticket Hub has changed. To continue to manage your tickets via the Ticket Hub, you must ensure you have the latest version of The Arsenal app and log in to your account using your email/username and password.",
-        "Digital TicketsAny tickets purchased by members for the 2026/2027 season, will be loaded onto their digital membership pass via the official Arsenal app.",
-        "Once the digital pass has been added to an Apple or Android wallet, any purchased tickets will automatically show on the digital pass approximately one week before the relevant fixture. Click here for more information.",
-        "Stadium Access Please note that you MUST enter the Stadium with your Personal Assistant, if eligible.",
-        "Code of Conduct All fans must adhere to our updated Code of Conduct; please take your time to read this information carefully",
-        "Accessible ParkingThe Accessible Parking booking period will open on Wednesday 4th November and will close once we have no spaces remaining. You can view the parking information here."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/3b4278277579-tickets-2526-manutd-hfedxjqeq.webp",
-      "author": "Arsenal FC",
-      "publishedAt": "2026-10-12T11:07:12.314Z",
-      "url": "https://www.arsenal.com/news/disabled-supporters-ticket-info-manchester-united-h-apz3R8b5VC6b",
-      "source": "Arsenal.com",
-      "titleZh": "残疾球迷球票信息：主场对阵曼联",
-      "summaryZh": "阿森纳主场对阵曼联的残疾球迷球票抽签系统将于10月23日开启。",
-      "bodyZh": [
-        "阿森纳对阵曼联12月20日星期日英格兰超级联赛酋长球场开球时间：16:30",
-        "这将是一场A类比赛（有关赛事分类的定价和信息）。",
-        "残疾无障碍会员抽签系统",
-        "为确保公平公正，所有主场比赛的球票将通过专门面向阿森纳会员的抽签系统进行销售。",
-        "会员将有一个指定的窗口期来参与抽签。如果所有支持者都符合必要的要求，您可以选择单独注册，或者组成最多四名会员的团体。您可以在注册窗口期间的任何阶段参与，您的中签几率将保持不变。",
-        "参与我们的抽签时时间并不重要，无论您是早起鸟还是最后时刻的参与者，您中奖的机会都是一样的。唯一的关键因素是您必须在窗口开放期间提交您的申请。",
-        "抽签开始时间：10月23日星期五上午10点",
-        "抽签截止时间：10月26日星期中午12点",
-        "请不要通过您的在线账户进行输入，因为这对残疾无障碍会员无效。",
-        "所有申请人，无论成功与否，都将在10月27日星期二下午4点之前仅通过电子邮件收到通知。成功的申请人将有机会在票务信息页面上指定的优先预订窗口内购买门票。",
-        "本场比赛将于10月28日星期三上午10点开售，中签申请人将能够访问其在线账户购买门票，在符合条件的情况下，这将包括一张免费的个人助理门票。请注意，您必须在10月29日星期四上午10点之前购买门票。",
-        "如果一场比赛的抽签报名人数不超过可用门票数量，所有参加的会员都将成功。",
-        "实用链接",
-        "票务交流与票务转让",
-        "如果会员无法参加他们抽签成功的比赛，并且该比赛已经售罄，他们可以选择将球票发布到我们的票务交流平台上。这样，其他球迷就可以购买球票并享受比赛。一旦比赛售罄且票务交流可用，此票务信息页面将更新。",
-        "票务转让可供季票持有者在比赛在线可用后（比赛前4-8周）使用。",
-        "希望在票务交流平台上挂牌门票的残疾无障碍会员应在此处填写在线表格。请注意，此表格仅适用于残疾无障碍会员，门票将由残疾联络团队挂牌。可以通过拨打0207 619 5000（选项2）联系残疾联络团队。使用英国手语（BSL）的聋哑支持者可以使用SignVideo BSL翻译服务联系残疾联络团队。",
-        "阿森纳应用程序阿森纳应用程序的最新更新意味着对票务中心的访问已经改变。要继续通过票务中心管理您的门票，您必须确保您拥有最新版本的阿森纳应用程序，并使用您的电子邮件/用户名和密码登录您的账户。",
-        "电子门票会员为2026/2027赛季购买的任何门票都将通过官方阿森纳应用程序加载到他们的电子会员通行证上。",
-        "将电子通行证添加到Apple或Android钱包后，任何购买的门票都会在相关比赛前大约一周自动显示在电子通行证上。点击此处了解更多信息。",
-        "球场出入请注意，如果符合条件，您必须与您的个人助理一起进入球场。",
-        "行为准则所有球迷必须遵守我们更新的行为准则；请花时间仔细阅读此信息",
-        "无障碍停车场无障碍停车场预订期将于11月4日星期三开始，并在我们没有剩余车位时关闭。您可以在此处查看停车信息。"
-      ],
-      "translationSourceHash": "56ad1407240ca5486bc79117c5d588338bd9eaee45f8c320eae763afd84136bb",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-10-26T15:13:45.946Z"
-    },
-    {
       "id": "626a9904a5a83b74dd84a96b523a62293ac6b2120ac919014b3fea062add1dc8",
       "teamId": "arsenal",
       "teamName": "阿森纳",
@@ -1023,12 +886,9 @@
     }
   ],
   "pendingNotificationIds": [
-    "7547240e0fb7961d3b0f88a389863d196e3a19fb0dcc4d31b6fdca494acb0d43",
     "f14e9dca2a7e2f1e880a364a5f56b6762649e9ffcff737842d1a039548f99f3d",
     "87a8023902220b6dce6a270e23e21bb8109839a0d062a3f84f455e26e25ed9ed",
-    "132f0f2565a399c05d9ed338c355132b69dd8a941b0535dc9ad5783cc4696978",
     "75e7bb4ed011fef48fdc33ce601bc69139fda55b9b63ca2fe45584e5c5144bc0",
-    "8e5b12f679672a4565f3ee5980c8ca578dfbb2878341063e46c38638a378e74c",
     "626a9904a5a83b74dd84a96b523a62293ac6b2120ac919014b3fea062add1dc8"
   ]
 }
