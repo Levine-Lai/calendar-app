@@ -1,7 +1,7 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-11-02T00:41:22.166Z",
+  "updatedAt": "2026-11-02T06:52:19.754Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
@@ -519,80 +519,6 @@
       "translatedAt": "2026-11-02T00:40:29.039Z"
     },
     {
-      "id": "87c4974cdc2ba91eb193542d822f2b7ea23e4994c2be0b366f0e16da35af44b5",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Watch how our women's squad photo came together",
-      "summaryEn": "See how our women's team got ready for the 2025/26 squad photo",
-      "bodyEn": [
-        "The UEFA Women's Champions League trophy was set in position ahead of our 2025/26 squad photo.",
-        "As the players arrived and got themselves ready, we mic'd them up and filmed some behind the scenes footage.",
-        "Press play on the video above to see what happened!"
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/dfcaddf9e80c-taylor-hinds-and-kyra-cooney-cross.webp",
-      "author": "Arsenal FC",
-      "publishedAt": "2025-09-09T11:31:10.000Z",
-      "url": "https://www.arsenal.com/news/watch-how-our-womens-squad-photo-came-together-aq9Z79H6hNVs",
-      "source": "Arsenal.com",
-      "titleZh": "观看我们的女足全家福拍摄花絮",
-      "summaryZh": "来看看我们的女足队伍如何为2025/26赛季全家福做准备",
-      "bodyZh": [
-        "在2025/26赛季全家福拍摄前，欧足联女足冠军联赛奖杯已被摆放到位。",
-        "随着球员们陆续到达并做好准备，我们为她们佩戴了麦克风并拍摄了一些幕后花絮。",
-        "点击播放上面的视频，看看发生了什么！"
-      ],
-      "translationSourceHash": "046bc7131c9bd675d8ee5148b867f4738e00170614f3f056adc6538cacef733c",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-11-02T00:40:31.148Z"
-    },
-    {
-      "id": "ed20d4394162fe29cb1b510ded7684545bfea139002538ccc0ca2273c5aa83db",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Arsenal reach 100 consecutive top-flight seasons",
-      "summaryEn": "The 2025/26 campaign will see us complete a century at the top of the English game, having played in the top tier since 1919",
-      "bodyEn": [
-        "The 2025/26 Premier League season be a historic one for the club as we enter our 100th consecutive top-flight season.",
-        "Since we were elected to the old First Division in 1919/20, we have been a fixture in the top tier for a century of campaigns, a feat that no other club in English football history comes close to.",
-        "Over our first 99 seasons, we contested 4,024 games; game number 4,025 saw us beat Manchester United 1-0 at Old Trafford to secure win number 1,900 in that time.",
-        "It was back in 1904/05 when the club - then known as Woolwich Arsenal - first sampled life in England’s top-flight, spending seven seasons at that level before suffering the only relegation in our history back in 1913 - the same year we moved to Highbury.",
-        "After two seasons in Division Two, football was suspended due to the outbreak of World War I. When play resumed in 1919, the Football League was expanded, and we benefited by being selected to join the First Division, where we have remained ever since.",
-        "We have held the record for the longest top-flight tenure since 1983/84, which was our 58th consecutive season at that level, surpassing Sunderland’s 57-season stint from 1891 to 1958.",
-        "Five of the six longest top-flight spells are ongoing, which sees all the Premier League ever-presents included except Chelsea, who will play a 37th-straight season in the top-flight this term. Aside from those six, Manchester City are the side with the next longest run - 24 since they were promoted in 2003/04.",
-        "Showing how staggering our achievement is, Leicester City have suffered 12 relegations to the second tier during our 100-season stint, while six other teams have endured that fate on nine occasions.",
-        "We boast a win percentage of 47% across our 100 seasons, winning the championship on 13 occasions, including at least one in seven different decades.",
-        "As for those who have contributed most during that time, no player has appeared in more of our 4,024 games than David O'Leary, who is approaching the 50th anniversary of his debut back in 1975, with four-time title-winning captain Tony Adams in second spot.",
-        "And it is no surprise to see Thierry Henry on top of the tree when it comes to most goals netted, with 175 of our talisman's record haul of 228 coming in the Premier League. Meanwhile, no manager took charge of more matches than Arsene Wenger's tally of 828 between 1996 and 2018.",
-        "Putting our three-figure achievement in further perspective, when looking further afield only Inter Milan are on a longer top-flight tenure in one of Europe’s top five major leagues, a run of 116 years. Notably, Celtic hold the world record for 129 straight seasons in Scotland’s highest tier, while Northern Ireland trio Cliftonville, Glentoran and Linfield have played in 125 straight top-tier seasons.",
-        "Uruguayan side Penarol have reached 122 campaigns, while Flamengo have hit 113 in Brazil, with Boca Juniors one behind in Argentina. Ajax have spent 107 seasons at the top level of Dutch football, while Barcelona, Real Madrid and Athletic Club are the only clubs never to be relegated from La Liga since its inception 96 years ago."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/aa1acc4cdb9b-emirates-stadium-sunset.webp",
-      "author": "Arsenal FC",
-      "publishedAt": "2025-08-13T05:00:00.000Z",
-      "url": "https://www.arsenal.com/news/arsenal-reach-100-consecutive-top-flight-seasons-a6oGC4K6ckLR",
-      "source": "Arsenal.com",
-      "titleZh": "阿森纳达成顶级联赛连续100个赛季里程碑",
-      "summaryZh": "2025/26赛季将见证阿森纳在英格兰顶级联赛的第100个赛季。",
-      "bodyZh": [
-        "2025/26赛季对阿森纳而言将是一个具有历史意义的赛季，我们将迎来在顶级联赛中的第100个连续赛季。",
-        "自从我们在1919/20赛季入选老英甲联赛以来，我们在顶级联赛中已经历了一个世纪的征程，这一壮举是英格兰足球历史上其他任何俱乐部都无法企及的。",
-        "在我们前99个赛季中，我们共踢了4024场比赛；第4025场比赛是在老特拉福德球场以1比0击败曼联，取得了那段时期的第1900场胜利。",
-        "早在1904/05赛季，当时名为伍尔维奇阿森纳的俱乐部首次体验了英格兰顶级联赛的生活，在那个级别踢了七个赛季后，于1913年遭遇了队史唯一一次降级——这也是我们搬迁到海布里的同年。",
-        "在乙级联赛踢了两个赛季后，由于第一次世界大战爆发，足球比赛暂停。1919年比赛恢复时，足球联盟进行了扩军，我们很幸运地被选中加入甲联赛并一直留到现在。",
-        "自1983/84赛季以来，我们一直保持着顶级联赛最长连续参赛时间的纪录，当时那是我们在这个级别的第58个连续赛季，超越了桑德兰从1891年到1958年保持的57个赛季纪录。",
-        "在六个最长的顶级联赛参赛纪录中，有五个仍在延续，其中包括除了切尔西之外所有的英超元老球队，切尔西本赛季将迎来他们的顶级联赛第37个连续赛季。除了这六支球队之外，曼城是参赛时间第二长的球队，自从2003/04赛季升级以来已有24个赛季。",
-        "为了展现我们这一成就的惊人之处，在我们的100个赛季期间，莱斯特城曾12次降入第二级别联赛，而其他六支球队也曾九次遭遇这种命运。",
-        "在我们100个赛季的历程中，我们的胜率达到了47%，赢得了13次顶级联赛冠军，且在七个不同的十年中都至少夺冠一次。",
-        "至于在那段时期贡献最大的人，大卫·奥利里的出场次数超过了我们的4024场比赛中的任何其他球员，他即将迎来20世纪70年代（1975年）上演首秀的50周年纪念，四次夺得冠军的队长托尼·亚当斯位居第二。",
-        "毫无疑问，当谈到进球最多时，蒂埃里·亨利高居榜首，这位核心球员创纪录的228粒进球中有175粒是在英超联赛中打进的。与此同时，在1996年至2018年期间，没有任何一位主教练的带队场次能超过阿尔塞纳·温格的828场。",
-        "为了进一步展现我们三位数的伟大成就，放眼欧洲五大联赛，只有国际米兰在顶级联赛中的连续参赛时间更长，达到了116年。值得一提的是，凯尔特人保持着苏格兰顶级联赛连续129个赛季的世界纪录，而北爱尔兰的三支球队克利夫顿维尔、格伦托兰和林field则连续参加了125个顶级联赛赛季。",
-        "乌拉圭的佩纳罗尔俱乐部达到了122个赛季，巴西的弗拉门戈达到了113个赛季，阿根廷的博卡青年落后一个赛季。阿贾克斯在荷兰顶级联赛度过了107个赛季，而巴塞罗那、皇家马德里和毕尔巴鄂竞技是自96年前西甲创立以来从未降级的仅有俱乐部。"
-      ],
-      "translationSourceHash": "c67eb0dcc4fc129c54b04c016067712704d868f4e817f35d7e3c2510dbd20f9e",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-11-02T00:40:37.712Z"
-    },
-    {
       "id": "3c4d447c52f6a10f76b7a732d02628d4ae0c9dbc78f37f1eae8af221e9d34d04",
       "teamId": "arsenal",
       "teamName": "阿森纳",
@@ -904,13 +830,52 @@
       "publishedAt": "2023-07-28T12:48:55.000Z",
       "url": "https://www.arsenal.com/news/arteta-on-the-wenger-values-he-now-uses-himself-aepVC3e5B2Oc",
       "source": "Arsenal.com",
-      "titleZh": "",
-      "summaryZh": "",
-      "bodyZh": []
+      "titleZh": "阿尔特塔谈自己如今也在使用的温格价值观",
+      "summaryZh": "在酋长球场为温格树立雕像后，阿尔特塔向这位传奇主帅致敬。",
+      "bodyZh": [
+        "米克尔·阿尔特塔向温格致敬，表示他试图将这位传奇主帅的许多特质融入到自己的工作方式中。",
+        "这位法国人因在1996年至2018年期间执掌球队22年并赢得三座英超冠军和七座足总杯冠军，在酋长球场外获得了新雕像的荣誉。",
+        "这位目前执掌阿森纳一线队的现任主帅认为这一荣誉实至名归。此前他在温格麾下效力了五个赛季，随后开启了自己的执教生涯，而他透露这一转型温格多年前就已经预料到了。",
+        "米克尔说：“俱乐部为温格做了这件特别的事，这是他完全应得的伟大致敬。现在球场有了雕像，温格就能获得这种认可，永远留在我们的俱乐部。”",
+        "“非常感谢能在职业生涯中为温格效力。他选择我成为他的球员，并让我担任俱乐部的队长，这是我永远不会忘记的。”",
+        "“在我的球员生涯末期，我开始与温格交流关于自己从事教练和管理工作的事情，他告诉我他已经预料到了这一点。甚至在我来到这里的第一年，他就对我说：‘总有一天你会成为一名主教练’，而当时我并没有真正考虑过这一点。”",
+        "这只是温格富有远见和独具慧眼的一个例子。米克尔承认，他从这位足坛最伟大的主帅身上学到了许多其他特质，并试图在场内外的日常工作中加以实践。",
+        "我们的现任主帅补充道：“我从他身上学到了很多，如果必须挑选他众多伟大价值观中的一个，那就是他的忠诚，以及他如何极力捍卫俱乐部、球员和整个足球运动。”",
+        "“他对比赛的热情简直无与伦比，这是显而易见的。他非常尊重比赛，并希望比赛能以某种特定的方式进行。此外，他总是将俱乐部置于任何个人利益之上的作风，也是我一直在努力向他学习的。”",
+        "“他捍卫俱乐部的方式、他的言行举止、他对球员和教练组的忠诚，都是我真正从他身上汲取的。他为我树立了榜样。”",
+        "欢迎在酋长杯的场刊中了解更多米克尔关于温格的采访，比赛当天可在酋长球场周边购买。"
+      ],
+      "translationSourceHash": "35600838544ce22667d61181ed25f4bc6ca323a28ce260a0e8b7c12a7e3813a5",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-11-02T06:52:18.670Z"
+    },
+    {
+      "id": "eaae19348b6c6319edad3fe01c96a4eb164287a4327e43bb7ed7d788bdd0f54f",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Rihanna's a Gooner | Behind the scenes at Emirates",
+      "summaryEn": "Watch special PUMA guest meet first-team squad after our 5-1 win over Everton",
+      "bodyEn": [
+        "We welcomed special PUMA guest Rihanna to Emirates Stadium for our 5-1 victory over Everton on Saturday.",
+        "After watching our win, the singer met our first-team squad - and you can go behind the scenes with her by clicking 'Play' on the video above."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/750aaa4f54d0-rihanna-meets-sead-kolasinac.webp",
+      "author": "Arsenal FC",
+      "publishedAt": "2018-02-03T22:16:56.000Z",
+      "url": "https://www.arsenal.com/news/rihannas-a-gooner-behind-the-scenes-at-emirates-awPmW0e8xi0H",
+      "source": "Arsenal.com",
+      "titleZh": "蕾哈娜是阿森纳球迷 | 酋长球场幕后花絮",
+      "summaryZh": "观看特别彪马嘉宾在5-1战胜埃弗顿后来到现场与一线队球员见面。",
+      "bodyZh": [
+        "周六阿森纳在酋长球场以5-1战胜埃弗顿的比赛中，我们迎来了彪马的特别嘉宾蕾哈娜。",
+        "在观看完我们的胜利后，这位歌手与一线队球员进行了会面——点击上方视频，即可了解她的幕后花絮。"
+      ],
+      "translationSourceHash": "34ac4fe374d0f3e80578b43ee6b4a76f5590b2fc7a89b706dde7aa14099d3f06",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-11-02T06:52:19.754Z"
     }
   ],
   "pendingNotificationIds": [
-    "ed20d4394162fe29cb1b510ded7684545bfea139002538ccc0ca2273c5aa83db",
     "3c4d447c52f6a10f76b7a732d02628d4ae0c9dbc78f37f1eae8af221e9d34d04",
     "c945d245b863a7c9855653ee2c0f1227439d9a1732fa15a08212964fc1409325",
     "608bec665c7eea6a7a2ca3afc49ee843bdbc6731ebe092e054737e11ddac5b3e",
@@ -919,6 +884,7 @@
     "e0a4c4bdcf7659bb7b2bdc21ad783fb48f187b8e20e1436d8122c71deefde97b",
     "96413ff3c81d90f0943fc852128299ef9e096ace02f9b0545d26f437d2ed1b5f",
     "515f14dcd5edb1e96b32873994b1d8f58cfed8b2fb903d073e8088f47bbacb05",
-    "edf8391cd71bf23a06f190a10c0ba0ebab554df0e0629988a05818e591c33a16"
+    "edf8391cd71bf23a06f190a10c0ba0ebab554df0e0629988a05818e591c33a16",
+    "eaae19348b6c6319edad3fe01c96a4eb164287a4327e43bb7ed7d788bdd0f54f"
   ]
 }
