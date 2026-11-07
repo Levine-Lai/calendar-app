@@ -1,12 +1,43 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-11-07T20:30:07.071Z",
+  "updatedAt": "2026-11-07T23:57:09.173Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "a7d92190e3471c0ac07d47e6a342799ce6fbf40852db5600d1c9b07a8fab2b9b",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "U18s highlights: Arsenal 3-0 Sunderland",
+      "summaryEn": "The best of the action as our young Gunners reach the U18 PL Cup quarter-finals",
+      "bodyEn": [
+        "Our young Gunners have made the U18 Premier League Cup quarter-finals for the first time since 2023/24, after scoring three second-half goals to see off Sunderland.",
+        "Despite peppering the Black Cats’ target in the first half, we finally got our reward after the break when Mylo Bernard found the top corner with a sweet strike.",
+        "After several penalty appeals were turned down throughout the match, we finally won a spot-kick, with Emerson Nwaneri converting to double our advantage.",
+        "Callan Hamill tapped home in stoppage time to cap another dominant display, securing our eighth consecutive win across all competitions and a place in the last eight.",
+        "Press play on the video at the top of the article to watch the best of the action from our cup clash."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/b145261d53b1-london-colney-england-callan-hamill-of-arsenal-during-the-u18-premier-league-mat.webp",
+      "author": "Tom Keens",
+      "publishedAt": "2026-11-07T21:40:07.788Z",
+      "url": "https://www.arsenal.com/news/u18s-highlights-arsenal-3-0-sunderland-aYPP24Z7uLJc",
+      "source": "Arsenal.com",
+      "titleZh": "U18集锦：阿森纳 3-0 桑德兰",
+      "summaryZh": "阿森纳青年队晋级U18英超杯八强。",
+      "bodyZh": [
+        "在下半场攻入三球击败桑德兰后，我们的年轻枪手自2023/24赛季以来首次闯入U18英超杯四分之一决赛。",
+        "尽管在上半场频频威胁黑猫的球门，但我们直到中场休息后才打破僵局，当时米洛·伯纳德（Mylo Bernard）一脚精彩的射门直挂死角。",
+        "在全场多次点球诉求被拒后，我们终于获得了一记点球，埃默森·恩瓦内里（Emerson Nwaneri）主罚命中，将领先优势扩大。",
+        "卡兰·哈米尔（Callan Hamill）在补时阶段推射破门，为又一场统治级的表现画上句号，同时也确保了各项赛事八连胜以及一个八强席位。",
+        "点击文章顶部的视频播放按钮，观看这场杯赛对决的精彩集锦。"
+      ],
+      "translationSourceHash": "80a0d62d5ff4f03d657817a0f4dad746126e11272d1086eed7551ebd516ab5fd",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-11-07T23:57:09.167Z"
+    },
     {
       "id": "1fc7404e42c6442529014d0526eadfd773edd78db50ae2aa368c6092693b6c78",
       "teamId": "arsenal",
@@ -655,51 +686,6 @@
       "translatedAt": "2026-11-07T10:18:04.837Z"
     },
     {
-      "id": "a77dae8c03dae6881314be7c11daa6abdc0fe39eebf21ece3a6fff8543ca3290",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "U21 preview: Arsenal v Aston Villa",
-      "summaryEn": "Our young Gunners aim to ignite their PL2 season against the Villans",
-      "bodyEn": [
-        "Our young Gunners host Aston Villa in Premier League 2 on Sunday, November 8, hoping to carry recent cup magic into the competition to kick-start the campaign.",
-        "Kick-off at the Mangata Developments Stadium is scheduled for 2pm (UK time).",
-        "While our academy side has struggled to find their feet in the PL2, they head into the tie on the back of a positive EFL Trophy result.",
-        "A 2-1 win over League One side AFC Wimbledon in south-west London secured our place in the knockout stages for the very first time, with goals from Evan Mooney and Emerson Nwaneri completing a late turnaround.",
-        "THE OPPOSITION",
-        "The Villans have recorded two league wins this season, beating Brighton 2-1 on the opening day before edging past Burnley 1-0 last time out. High-scoring draws with Fulham and Middlesbrough in between put them 16th with eight points from five games.",
-        "Like us, the West Midlands outfit are also competing in the UEFA Youth League at under-19s level, where they faced Spanish giants Barcelona in a thrilling 3-3 draw midweek. A previous victory over Fenerbahce means they currently sit 25th on four points, level with our tally.",
-        "The Claret and Blues did not progress in the EFL Trophy after losing all their Northern Group A matches against Wigan Athletic, Crewe Alexandra and Blackpool.",
-        "We last met Villa in early 2024/25, securing a 4-1 north London win to maintain a perfect start. Josh Robinson, Khayon Edwards, Nathan Butler-Oyedeji and Sebastian Ferdinand each found the target in the dominant display.",
-        "HOW TO FOLLOW",
-        "As with all Premier League 2 fixtures, entry to Sunday's game at the Mangata Developments Stadium is free, so get down to the ground to cheer on our under-21s.",
-        "Live updates will also be available on our Academy's X account, with a full match report, highlights and interviews with head coach David Horseman and one of our young Gunners to follow after the game."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/2310dd7fc9f3-whatsapp-image-2026-11-04-at-170720-1.webp",
-      "author": "Tom Keens",
-      "publishedAt": "2026-11-07T06:00:00.000Z",
-      "url": "https://www.arsenal.com/news/u21-preview-arsenal-v-aston-villa-axSIk4F6XU1R",
-      "source": "Arsenal.com",
-      "titleZh": "U21前瞻：阿森纳对阵阿斯顿维拉",
-      "summaryZh": "阿森纳U21将在英超2级联赛中迎战阿斯顿维拉。",
-      "bodyZh": [
-        "11月8日星期日，我们的年轻枪手将在英超2级联赛中主场迎战阿斯顿维拉，希望将近期杯赛的神奇表现带入联赛，以此开启球队的赛季征程。",
-        "比赛将于英国时间下午2点在曼加塔发展球场（Mangata Developments Stadium）开球。",
-        "尽管我们的青训队伍在英超2级联赛中一直在努力适应，但他们在取得了一场积极的EFL奖杯赛结果后迎来了这场比赛。",
-        "凭借埃文·穆尼（Evan Mooney）和埃默森·恩瓦内里（Emerson Nwaneri）在比赛尾声的进球完成逆转，球队在伦敦西南部以2-1战胜了英甲球队温布尔登，历史上首次晋级淘汰赛阶段。",
-        "对手情况",
-        "维拉本赛季取得了两场联赛胜利，他们在揭幕战中以2-1击败布莱顿，上一场比赛则以1-0小胜伯恩利。期间他们与富勒姆和米德尔斯堡踢出过高比分的平局，目前在5场比赛中积8分排名第16位。",
-        "与我们一样，这支西米德尔斯堡球队也在U19青年欧冠中征战，他们在周中与西甲豪门巴塞罗那激战成3-3平。此前战胜费内巴切意味着他们目前积4分排名第25位，与我们的积分相同。",
-        "在EFL奖杯赛中，这支红蓝军团在小组赛阶段输给维冈竞技、克鲁和布莱克浦后未能晋级。",
-        "我们上一次与维拉交手是在2024/25赛季初，当时我们在北伦敦以4-1取胜，保持了完美的开局。约什·罗宾逊（Josh Robinson）、卡扬·爱德华兹（Khayon Edwards）、南森·巴特勒-奥耶代吉（Nathan Butler-Oyedeji）和塞巴斯蒂安·费迪南德（Sebastian Ferdinand）在这场占据绝对优势的比赛中分别建功。",
-        "如何关注比赛",
-        "与所有英超2级联赛一样，周日曼加塔发展球场进行的比赛免费入场，欢迎大家前往球场为我们的U21小伙子们加油助威。",
-        "我们的青联官方X账号也将提供实时比分更新，赛后还会有完整的比赛报告、精彩集锦以及对主教练大卫·霍斯曼（David Horseman）和年轻枪手球员的采访。"
-      ],
-      "translationSourceHash": "3b97b4ce0aba1312f3ddee70928bb5cf063c3492e554ab79961653f594afe250",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-11-07T10:18:25.930Z"
-    },
-    {
       "id": "526d61ed1de93eddb079505482ade4da3c632b3476280e98bb6f58d2d3b5930e",
       "teamId": "arsenal",
       "teamName": "阿森纳",
@@ -1077,5 +1063,7 @@
       "translatedAt": "2026-11-02T23:52:22.515Z"
     }
   ],
-  "pendingNotificationIds": []
+  "pendingNotificationIds": [
+    "a7d92190e3471c0ac07d47e6a342799ce6fbf40852db5600d1c9b07a8fab2b9b"
+  ]
 }
