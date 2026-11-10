@@ -1,12 +1,106 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-11-10T18:40:12.442Z",
+  "updatedAt": "2026-11-10T23:43:55.116Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "9f37f827573776998784afc72cfbab82f3f0da4a98f7b8bd9507985ca9986ea8",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Renée: “It should be a really nice atmosphere”",
+      "summaryEn": "Renée Slegers is eagerly anticipating her second coaching visit to Camp Nou on Thursday’s UWCL clash away to Barcelona",
+      "bodyEn": [
+        "Renée Slegers is eagerly anticipating her second coaching visit to Camp Nou on Thursday’s UEFA Women’s Champions League clash away to Barcelona.",
+        "Our head coach revealed in Tuesday’s pre-match press conference that she’s managed at the stadium before and got a taste for what to expect.",
+        "“I know about the connection of Barcelona with the fans,” she said. “I know they're really intense and loud. I remember it from the final. I coached one game at the Camp Nou several years ago. It's a historic, fantastic stadium, so there will be a great atmosphere.",
+        "“We're very proud to have, I think, 1,000 travelling fans from London as well. We'll try to connect as much as possible with them as well. We’re always so privileged to play for our fans. They travel with us across the sea to be with us and to support us. It should be a really nice atmosphere.”",
+        "Those travelling supporters will be hoping for a similar outcome to our historic UWCL final win over Barcelona in Lisbon back in 2025, when we became European champions for the second time.",
+        "So what are Renée’s lasting memories from that magical moment?",
+        "“It's one of the proudest moments,” she reflected. “That performance was immense and it had so many facets to it. When I think back to that game and the whole atmosphere, everything in preparation, the detail, the moment itself, the drive with the bus to the stadium, seeing all the fans. The game itself was very entertaining, high level. It was a great moment of course, a very proud moment for us.",
+        "“We've studied Barcelona and we're in the here and now, so this is a new game, a new moment. We're looking forward to the game in two days. The performance and the result and everything that day seemed to go well.”",
+        "Of course, we’re under no illusions about the difficult of the challenge that faces us this week, with Barcelona having only lost once in their domestic league so far this season.",
+        "Asked about the challenge of preparing against a team full of players who are capable of playing in multiple positions, Renée said: “I think Barcelona has a really strong identity. Yes, they have different qualities and players. They can play in different positions, but they also have a very strong and clear way of playing. That's, I think, very impressive with the way Barcelona plays.",
+        "“Also, with new players coming in and then rotating, their style of play stands up. We'll see how they're going to play on Thursday night. We think we have quite a clear idea of what that could look like, but let's see what they do. I just look forward to kick-off and see what it looks like. Let's go against each other.”"
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/61db7431ad8d-gettyimages-2304472900.webp",
+      "author": "Stephen Wright",
+      "publishedAt": "2026-11-10T19:32:08.330Z",
+      "url": "https://www.arsenal.com/news/renee-it-should-be-a-really-nice-atmosphere-alpNW5R6pGOH",
+      "source": "Arsenal.com",
+      "titleZh": "雷妮：这将会是一个非常美妙的氛围",
+      "summaryZh": "雷妮·斯莱格斯期待周四客场对阵巴塞罗那的欧冠比赛。",
+      "bodyZh": [
+        "雷妮·斯莱格斯正热切期待她作为教练第二次做客诺坎普，参加周四客场对阵巴塞罗那的欧洲女子冠军联赛较量。",
+        "我们的主教练在周二的赛前新闻发布会上透露，她以前曾在这座球场执教过，并对将要面临的情况有所体会。",
+        "她表示：“我知道巴塞罗那与球迷之间的紧密联系。我知道他们非常热情且声音响亮。我从那场决赛中就记得这一点。几年前我在诺坎普执教过一场比赛。这是一座历史悠久、梦幻般的球场，所以氛围一定会非常好。”",
+        "“我们也非常自豪能有大约1000名来自伦敦的远征球迷。我们也会尽量与他们保持最多的联系。能为我们的球迷效力，我们始终感到非常荣幸。他们跨越大海与我们同行，支持我们。这应该会是一个非常美妙的氛围。”",
+        "那些随队出征的球迷们希望能重现我们在2025年里斯本举行的欧冠决赛中历史性战胜巴塞罗那一幕，当时我们第二次成为欧洲冠军。",
+        "那么，雷妮对那个神奇时刻有哪些持久的记忆呢？",
+        "她回忆道：“这是最令人骄傲的时刻之一。那场比赛的表现极其出色，包含了很多方面。当我回想起那场比赛和整个氛围、备战的一切、细节、那一刻本身、乘坐大巴前往球场、看到所有的球迷。比赛本身非常精彩，水平很高。这当然是一个伟大的时刻，对我们来说是一个非常骄傲的时刻。”",
+        "“我们已经研究了巴塞罗那，我们立足于当下，所以这是一场新比赛，一个新的时刻。我们期待两天后的比赛。那一天的表现、结果以及一切似乎都进展顺利。”",
+        "当然，我们对本周所面临挑战的艰难性有着清醒的认识，巴塞罗那本赛季在联赛中至今只输过一场。",
+        "当被问及如何应对一支拥有众多能胜任多个位置球员的球队时，雷妮说：“我认为巴塞罗那有着非常强大的身份认同。是的，他们拥有不同的特质和球员。他们可以踢不同的位置，但他们也有一种非常强大且清晰的比赛方式。我认为巴塞罗那的踢球方式令人印象深刻。”",
+        "“此外，随着新球员的加入和轮换，他们的比赛风格依然经得起考验。我们将拭目以待他们在周四晚上的表现。我们认为我们对那可能会是什么样子有一个相当清晰的想法，但让我们看看他们会怎么做。我非常期待开球，看看情况如何。让我们互相较量吧。”"
+      ],
+      "translationSourceHash": "b0d52bb8c87f413f84dd3f6ea0a6a4d01c2c2b4e12f1befe973be38a2ac8026d",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-11-10T23:43:50.695Z"
+    },
+    {
+      "id": "6b541027e1dcd71a59a4babb4b98bae07083a8f212505896b59bd0571bff5c57",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Every word of Renée’s pre-Barcelona press conference",
+      "summaryEn": "Renée Slegers sat down in front of the media at Estadi Johan Cruyff on Tuesday for her pre-Barcelona press conference.",
+      "bodyEn": [
+        "Renée Slegers sat down in front of the media at Estadi Johan Cruyff on Tuesday for her pre-Barcelona press conference.",
+        "Our head coach previewed Thursday’s trip to Camp Nou for the UEFA Women’s Champions League clash, shared the latest team news and more.",
+        "Here’s everything she had to say on the following subjects…",
+        "on if there are any team news updates:No, I don't believe so. Ona travelled with us, so that was positive, otherwise the same.",
+        "on memories of our UWCL final win over Barcelona:It's one of the proudest moments. That performance was immense and it had so many facets to it. When I think back to that game and the whole atmosphere, everything in preparation, the detail, the moment itself, the drive with the bus to the stadium, seeing all the fans. The game itself was very entertaining, high level. It was a great moment of course, a very proud moment for us. We've studied Barcelona and we're in the here and now, so this is a new game, a new moment. We're looking forward to the game in two days. The performance and the result and everything that day seemed to go well.",
+        "on if the result is more important than the performance now:I think both teams will be competing for the points and to be able to get points in a game like this against such a strong opponent, you'll need a good performance. So I think performance and result will go hand in hand.",
+        "on if we’re becoming too dependant on Russo:She's in great form. She's a fantastic footballer, a fantastic finisher. I think top teams need top players, top forwards, strikers are important. Like I said, Less is in great form. We're putting her in positions, we're assisting her as well. As a team, we're building up towards the goal. I think many times, it's been Less’s head or foot last on the ball, making the ball go into the net. I think we're very pleased, of course, that Alessia is an Arsenal player. She's a fantastic player. She's doing that for us right now, but we also know that other players can do that for us.",
+        "on what a result against Barcelona could do for us:We're going to compete for points. Barcelona are the same, so I think it will be a great game of football. For us, like I said, performance and results, I believe, will go hand-in-hand. But definitely here in two days' time to compete with Barcelona for the points.",
+        "on if we expect to suffer on Thursday:Yeah, we know how good they are on the ball. We know that we have to be comfortable without the ball as well. That's definitely part of the mindset. A lot of the players in the squad have done it before. I think in that sense, what we faced against Liverpool was a team that was in possession more than our opponents normally. We normally dominate possession. But yes, no, huge respect. We will have to suffer. We'll have to put bodies on the lines. We'll have to be really disciplined. But then, in the same breath, saying that we have a lot of quality in our team as well. So we want to boast our qualities and our threat onto Barcelona.",
+        "on the next three games coming up:It's top games with short turnarounds. It started with the game against Liverpool at Anfield. Now we're here and then we have two more games coming up. It's all against really strong opponents. This is what we live for. This is what we love. The players have worked really hard to put themselves in a position to play for Arsenal, represent Arsenal, play at the biggest stage and play in the biggest games. So we're looking forward to all games coming up and the first one being Barcelona.",
+        "on having a bigger squad and more options to rotate players:It's always a balance, but with the squad that we have and the qualities that we have, we have the luxury to make decisions for games. Who starts, who finishes, who is right, what do we need. We also know that the season is long. We play a lot of games. There will be injuries, there will be absences for different reasons. We need the squad and we believe that we're going to need everyone across the season.",
+        "on using this game as an opportunity to turn things around:Of course, in the games that we've played, we've had too many draws. It's games that should have been turned into wins. We, at the moment, are in a good position in the league phase for the Champions League. We want to continue to compete. We're very excited and proud about competing in the Champions League. We look forward to the game against Barcelona. It's going to be a big game with two really good teams. Every moment for us, for Arsenal, and the way the WSL looks, it's very competitive across the board, all games. The standard in Europe is really high. We're now playing against Barcelona in the Champions League last year, so it's a big game, of course. Every game is a big game for us and every game is important for us.",
+        "on what it’s like working with Russo and what she brings to the team:Alessia is one of the leaders of the team. She's a great character. She cares a lot about the people around her. She's a very respectful, humble, hard worker. She role models this into the team. She sets the standards in that way. She's a fantastic footballer. She's a total footballer. Like you've seen, she's been on the end of chances. She's scored a lot for us lately. She's not shying away from doing all the other things that we need to do on the pitch. Like I said, she's a total footballer for me. She's very important for us and we're so happy to have her.",
+        "on what atmosphere we’re expecting at Camp Nou:I know about the connection of Barcelona with the fans. I know they're really intense and loud. I remember it from the final. I coached one game at the Camp Nou several years ago. It's a historic, fantastic stadium, so there will be a great atmosphere. We're very proud to have, I think, 1,000 travelling fans from London as well. We'll try to connect as much as possible with them as well. We’re always so privileged to play for our fans. They travel with us across the sea to be with us and to support us. It should be a really nice atmosphere.",
+        "on if it’s hard to prepare against a team of players who can play in multiple positions:I think Barcelona has a really strong identity. Yes, they have different qualities and players. They can play in different positions, but they also have a very strong and clear way of playing. That's, I think, very impressive with the way Barcelona plays. Also, with new players coming in and then rotating, their style of play stands up. We'll see how they're going to play on Thursday night. We think we have quite a clear idea of what that could look like, but let's see what they do. I just look forward to kick-off and see what it looks like. Let's go against each other."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/3eb0affe192f-gettyimages-2304482151.webp",
+      "author": "Stephen Wright",
+      "publishedAt": "2026-11-10T19:22:00.970Z",
+      "url": "https://www.arsenal.com/news/every-word-of-renees-pre-barcelona-press-conference-a1Mi10x0QIT4",
+      "source": "Arsenal.com",
+      "titleZh": "雷妮赛前新闻发布会全记录",
+      "summaryZh": "阿森纳主帅雷妮出席了欧冠对阵巴塞罗那的赛前新闻发布会。",
+      "bodyZh": [
+        "雷妮周二在约翰·克鲁伊夫球场出席了巴塞罗那赛前新闻发布会。",
+        "我们的主教练展望了周四前往诺坎普的欧洲女子冠军联赛对决，并分享了最新的球队消息等内容。",
+        "以下是她就以下话题所说的一切……",
+        "关于是否有任何球队最新消息：没有，我不这么认为。奥娜随队出行了，这是积极的，除此之外没有变化。",
+        "关于我们对阵巴塞罗那的欧冠决赛胜利的记忆：这是最自豪的时刻之一。那场表现非常出色，包含了很多方面。当我回想起那场比赛和整个氛围、备战的一切、细节、那一刻本身、乘坐大巴去球场、看到所有的球迷。比赛本身非常引人注目，水平很高。这当然是一个伟大的时刻，对我们来说是一个非常自豪的时刻。我们已经研究了巴塞罗那，我们身处此时此地，所以这是一场新比赛，一个新的时刻。我们期待两天后的比赛。那天的表现、结果以及一切似乎都很顺利。",
+        "on if the result is more important than the performance now:I think both teams will be competing for the points and to be able to get points in a game like this against such a strong opponent, you'll need a good performance. So I think performance and result will go hand in hand.",
+        "on if we’re becoming too dependant on Russo:She's in great form. She's a fantastic footballer, a fantastic finisher. I think top teams need top players, top forwards, strikers are important. Like I said, Less is in great form. We're putting her in positions, we're assisting her as well. As a team, we're building up towards the goal. I think many times, it's been Less’s head or foot last on the ball, making the ball go into the net. I think we're very pleased, of course, that Alessia is an Arsenal player. She's a fantastic player. She's doing that for us right now, but we also know that other players can do that for us.",
+        "on what a result against Barcelona could do for us:We're going to compete for points. Barcelona are the same, so I think it will be a great game of football. For us, like I said, performance and results, I believe, will go hand-in-hand. But definitely here in two days' time to compete with Barcelona for the points.",
+        "on if we expect to suffer on Thursday:Yeah, we know how good they are on the ball. We know that we have to be comfortable without the ball as well. That's definitely part of the mindset. A lot of the players in the squad have done it before. I think in that sense, what we faced against Liverpool was a team that was in possession more than our opponents normally. We normally dominate possession. But yes, no, huge respect. We will have to suffer. We'll have to put bodies on the lines. We'll have to be really disciplined. But then, in the same breath, saying that we have a lot of quality in our team as well. So we want to boast our qualities and our threat onto Barcelona.",
+        "on the next three games coming up:It's top games with short turnarounds. It started with the game against Liverpool at Anfield. Now we're here and then we have two more games coming up. It's all against really strong opponents. This is what we live for. This is what we love. The players have worked really hard to put themselves in a position to play for Arsenal, represent Arsenal, play at the biggest stage and play in the biggest games. So we're looking forward to all games coming up and the first one being Barcelona.",
+        "on having a bigger squad and more options to rotate players:It's always a balance, but with the squad that we have and the qualities that we have, we have the luxury to make decisions for games. Who starts, who finishes, who is right, what do we need. We also know that the season is long. We play a lot of games. There will be injuries, there will be absences for different reasons. We need the squad and we believe that we're going to need everyone across the season.",
+        "on using this game as an opportunity to turn things around:Of course, in the games that we've played, we've had too many draws. It's games that should have been turned into wins. We, at the moment, are in a good position in the league phase for the Champions League. We want to continue to compete. We're very excited and proud about competing in the Champions League. We look forward to the game against Barcelona. It's going to be a big game with two really good teams. Every moment for us, for Arsenal, and the way the WSL looks, it's very competitive across the board, all games. The standard in Europe is really high. We're now playing against Barcelona in the Champions League last year, so it's a big game, of course. Every game is a big game for us and every game is important for us.",
+        "on what it’s like working with Russo and what she brings to the team:Alessia is one of the leaders of the team. She's a great character. She cares a lot about the people around her. She's a very respectful, humble, hard worker. She role models this into the team. She sets the standards in that way. She's a fantastic footballer. She's a total footballer. Like you've seen, she's been on the end of chances. She's scored a lot for us lately. She's not shying away from doing all the other things that we need to do on the pitch. Like I said, she's a total footballer for me. She's very important for us and we're so happy to have her.",
+        "on what atmosphere we’re expecting at Camp Nou:I know about the connection of Barcelona with the fans. I know they're really intense and loud. I remember it from the final. I coached one game at the Camp Nou several years ago. It's a historic, fantastic stadium, so there will be a great atmosphere. We're very proud to have, I think, 1,000 travelling fans from London as well. We'll try to connect as much as possible with them as well. We’re always so privileged to play for our fans. They travel with us across the sea to be with us and to support us. It should be a really nice atmosphere.",
+        "on if it’s hard to prepare against a team of players who can play in multiple positions:I think Barcelona has a really strong identity. Yes, they have different qualities and players. They can play in different positions, but they also have a very strong and clear way of playing. That's, I think, very impressive with the way Barcelona plays. Also, with new players coming in and then rotating, their style of play stands up. We'll see how they're going to play on Thursday night. We think we have quite a clear idea of what that could look like, but let's see what they do. I just look forward to kick-off and see what it looks like. Let's go against each other."
+      ],
+      "translationSourceHash": "d762437e247deeb138d67c3ba82602e24e5159fbd11fe68b01214a3324d4a6b9",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-11-10T23:43:55.112Z"
+    },
     {
       "id": "371e282f71605f241f1b860992c25afc974a3818b119646c245be3d822790d18",
       "teamId": "arsenal",
@@ -339,41 +433,6 @@
       "translatedAt": "2026-11-10T18:40:06.573Z"
     },
     {
-      "id": "d862efe789b487d112b5c7b62abbb815a3d898d8af00cdc9324b90df9a22a606",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Berta named Best Executive at Golden Awards",
-      "summaryEn": "Our Sporting director will pick up the prize in December at the awards ceremony in Turin",
-      "bodyEn": [
-        "Sporting director Andrea Berta has been named Best Executive at the 2026 Golden Boy awards.",
-        "Organised by Italian newspaper, Tuttosport, the award recognises the best work carried out by executives across European football.",
-        "After working with Diego Simeone at Atletico Madrid for more than a decade, Andrea joined us in 2025 and played a key role in our transfer business that summer.",
-        "In his first transfer window, Andrea oversaw the arrivals of Martin Zubimendi, Noni Madueke, Viktor Gyokeres, Eberechi Eze, Piero Hincapie, Cristhian Mosquera, Christian Norgaard and Kepa Arrizabalaga.",
-        "Those arrivals helped bring depth and quality to Mikel Arteta's side, helping us fight on all four fronts as we won the Premier League for the first time in 22 years and reached only our second Champions League final.",
-        "The summer of 2026 continued the trend set in 2025. Berta played a pivotal role in bringing in Ezri Konsa, Newcastle United captain Bruno Guimaraes, Christos Tzolis from Belgian side, Club Brugge and goalkeeper Illan Meslier.",
-        "Andrea will be honoured at the official gala in Turin, Italy, on December 14."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/c55bafdcacdc-london-england-arsenal-sporting-director-andrea-berta-celebrates-after-the-premi.webp",
-      "author": "Arsenal Media",
-      "publishedAt": "2026-11-10T11:11:53.744Z",
-      "url": "https://www.arsenal.com/news/berta-named-best-executive-at-golden-awards-a4aVj9c0egAr",
-      "source": "Arsenal.com",
-      "titleZh": "贝塔荣获金球奖最佳高层奖",
-      "summaryZh": "我们的体育总监将于12月在都灵举行的颁奖典礼上领奖。",
-      "bodyZh": [
-        "体育总监安德烈亚·贝塔在2026年金童奖评选中被评为最佳高层。",
-        "该奖项由意大利报纸《都灵体育报》主办，旨在表彰欧洲足坛高层所做出的最佳工作。",
-        "在与迭戈·西蒙尼在马德里竞技合作了十多年之后，安德烈亚于2025年加入我们，并在那年夏天的转会业务中发挥了关键作用。",
-        "在他的第一个转会窗口，安德烈亚负责引进了马丁·苏维门迪、农尼·马杜埃凯、维克托·哲凯赖什、埃贝雷奇·埃泽、皮耶罗·因卡皮耶、克里斯蒂安·莫斯克拉、克里斯蒂安·内尔高和凯帕·阿里萨巴加拉。",
-        "这些新援为米克尔·阿尔特塔的球队带来了厚度和实力，帮助我们在四条战线上竞争，时隔22年首次赢得英超冠军，并打入了我们历史上的第二次欧冠决赛。",
-        "2026年夏天延续了2025年设定的趋势。贝塔在引进埃兹里·孔萨、纽卡斯尔联队长布鲁诺·吉马良斯、来自比利时布鲁日俱乐部的赫里斯托斯·齐奥利斯以及门将伊兰·梅斯利耶的过程中发挥了关键作用。",
-        "安德烈亚将于12月14日在意大利都灵举行的官方盛会上接受表彰。"
-      ],
-      "translationSourceHash": "54e1155a03e42eba8688461647be25510fda79a77a11c373428ddaf3a127cfeb",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-11-10T18:40:08.283Z"
-    },
-    {
       "id": "b016558958c76945baaa908a8c8bd9fe652790ea8a93f70506b909aac781f032",
       "teamId": "arsenal",
       "teamName": "阿森纳",
@@ -401,35 +460,6 @@
       "translationSourceHash": "9e1d90cadef637742d85c704dd0bfa37294072896fb4e209fcf3a8bb9081168d",
       "translationModel": "gemini-3.5-flash-lite",
       "translatedAt": "2026-11-10T11:05:38.195Z"
-    },
-    {
-      "id": "7190be6e8e51da4b6ecd44c491d1ef589d8ab42b812d19ebd3ac5d4dde37993f",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Access All Areas from WSL win at Anfield",
-      "summaryEn": "Alessia Russo's first-half double secured a hard-earned win on Merseyside",
-      "bodyEn": [
-        "We made it three wins in four games with a hard-earned 2-1 victory over Liverpool on Sunday, and now you can Access All Areas from our successful trip to Anfield.",
-        "Our Gunners made the perfect start, taking the lead after nine minutes when Emily Fox picked out Alessia Russo, who made no mistake in converting from 12 yards.",
-        "Liverpool hit back quickly through Beata Olsson, but Russo was on target again at the end of the first half, heading home the winner after a perfect delivery from Lisa Baum.",
-        "Press play on the video at the top of the article to get an all new angle on the match, as well as exclusive behind the scenes clips from before and after the game."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/c8684570fc55-liverpool-england-kim-little-taylor-hinds-and-caitlin-foord-of-arsenal-look-on-p.webp",
-      "author": "Connor Booth",
-      "publishedAt": "2026-11-10T09:43:28.238Z",
-      "url": "https://www.arsenal.com/news/access-all-areas-from-wsl-win-at-anfield-aJEzW0j6INuM",
-      "source": "Arsenal.com",
-      "titleZh": "直击女足超级联赛客场力克利物浦全过程",
-      "summaryZh": "阿莱西亚·鲁索上半场梅开二度，助阿森纳客场2-1取胜。",
-      "bodyZh": [
-        "周日，我们以2-1艰难击败利物浦，在四场比赛中取得第三场胜利。现在，您可以直击我们此次安菲尔德之行的全过程。",
-        "我们的枪手迎来了完美开局，在比赛进行到第9分钟时取得领先，当时埃米莉·福克斯助攻阿莱西亚·鲁索，后者在12码处冷静破门。",
-        "利物浦通过贝塔·奥尔松迅速扳平比分，但鲁索在上半场结束前再次建功，接丽莎·鲍姆的精妙传中头球攻入制胜球。",
-        "点击文章顶部的视频即可从全新角度回顾这场比赛，并欣赏赛前赛后的独家幕后花絮。"
-      ],
-      "translationSourceHash": "3d35b6770dcee14efa41f3e49170b222ef5c29b5106d83bd9e5ee8a888dc6166",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-11-10T11:05:49.928Z"
     },
     {
       "id": "93d9447b59b332a664d14313b67dba6b8123fac8e5b4cbb210b6d3f2aa6d2168",
@@ -959,7 +989,8 @@
   "pendingNotificationIds": [
     "bc783ef2fa5e46c9efe4a72425e58d346d0ff5fd57390fe08ebf7b0f36dd26fb",
     "25ee9b53a2414b31a03748f8f6aa1dbcf969874293c5034deac6b4d74d05b333",
-    "d862efe789b487d112b5c7b62abbb815a3d898d8af00cdc9324b90df9a22a606",
-    "e5aa037405876b8c6f204407a6af34989f1c4358d407d3de256ea62f0a10d66e"
+    "e5aa037405876b8c6f204407a6af34989f1c4358d407d3de256ea62f0a10d66e",
+    "9f37f827573776998784afc72cfbab82f3f0da4a98f7b8bd9507985ca9986ea8",
+    "6b541027e1dcd71a59a4babb4b98bae07083a8f212505896b59bd0571bff5c57"
   ]
 }
