@@ -1,42 +1,110 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-11-09T20:42:36.647Z",
+  "updatedAt": "2026-11-10T11:06:00.614Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
     {
-      "id": "6d685a5cef86b4ee3f402c9d4248c3145381a6b75923079beb70f027729a3e69",
+      "id": "b016558958c76945baaa908a8c8bd9fe652790ea8a93f70506b909aac781f032",
       "teamId": "arsenal",
       "teamName": "阿森纳",
-      "titleEn": "In Focus: Ezri excels in win over Hull City",
-      "summaryEn": "Watch all of Ezri Konsa's best moments in our 1-0 win over Hull City in the Premier League",
+      "titleEn": "Watch the best of the boss against Hull with Bench Cam",
+      "summaryEn": "Watch Mikel Arteta's reactions to all the key moments from our win over the Tigers",
       "bodyEn": [
-        "Ezri Konsa was calmness personified as he helped us pick up another win and another clean sheet as we beat Hull City 1-0 at Emirates Stadium.",
-        "The defender, who joined us from Aston Villa this summer, has been a rock at the back since making his debut against his former club in August.",
-        "Our England international had to be at his best to ensure we made it five wins a row as Martin Odegaard netted to seal all three points.",
-        "To highlight just how good Ezri has been since arriving in N5, we took a closer look at his game and what he's been doing to help our defence maintain its high standards.",
-        "Press play on the video above now to see a special look on our centre back!"
+        "We made it nine wins from ten Premier League games this season with a 1-0 win over Hull City, and you can see how Mikel Arteta and his coaching staff reacted to the game with Bench Cam.",
+        "The Tigers were resilient in their defensive efforts, and kept us out for the opening 70 minutes of the game, but Martin Odegaard's second-half strike proved enough to secure three points.",
+        "Saturday's win, coupled with Manchester City's defeat at Nottingham Forest later the same day, means we go into the international break with a five-point lead at the top of the table over second-place Brighton.",
+        "Press play on the video at the top of the article to watch the boss react to all the key moments as we maintained our 100% record at Emirates Stadium this season."
       ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/6ced22aecd1d-london-england-ezri-konsa-talks-with-david-raya-of-arsenal-during-the-premier-le.webp",
-      "author": "Arsenal Media",
-      "publishedAt": "2026-11-09T17:00:00.000Z",
-      "url": "https://www.arsenal.com/news/in-focus-ezri-excels-in-win-over-hull-city-a3tQ96w7JjJw",
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/80114ed7ef63-arsenals-spanish-manager-mikel-arteta-watches-the-players-from-the-touchline-dur.webp",
+      "author": "Connor Booth",
+      "publishedAt": "2026-11-10T10:57:02.233Z",
+      "url": "https://www.arsenal.com/news/watch-the-best-of-the-boss-against-hull-with-bench-cam-aF7Ll9e5LCj4",
       "source": "Arsenal.com",
-      "titleZh": "焦点回顾：埃兹里在对阵赫尔城的比赛中表现出色",
-      "summaryZh": "观看埃兹里·孔萨在我们以1-0战胜赫尔城的英超比赛中的精彩表现。",
+      "titleZh": "通过替补席镜头观看主帅对阵赫尔城的精彩表现",
+      "summaryZh": "观看阿尔特塔对阵赫尔城比赛中所有关键时刻的反应",
       "bodyZh": [
-        "在酋长球场以1-0击败赫尔城时，埃兹里·孔萨表现得极其镇定，帮助我们再次取得胜利并零封对手。",
-        "这位今年夏天从阿斯顿维拉加盟的后卫，自从八月份对阵老东家的首秀以来，一直是后防线上的中流砥柱。",
-        "我们的英格兰国脚必须拿出最佳状态，确保我们取得五连胜，厄德高则破门锁定全取三分。",
-        "为了突出埃兹里自来到N5地区以来的出色表现，我们深入剖析了他的比赛方式以及他为帮助防线保持高标准所做的一切。",
-        "点击上方视频播放，欣赏我们中后卫的专题集锦！"
+        "凭借以1比0战胜赫尔城，我们在本赛季的10场英超联赛中取得了第9场胜利，您可以通过替补席镜头观看米克尔·阿尔特塔和他的教练组对这场比赛的反应。",
+        "赫尔城在防守端表现顽强，在比赛前70分钟里让我们无功而返，但厄德高在下半场的进球足以确保三分。",
+        "周六的胜利，加上曼城稍早在诺丁汉森林遭遇失利，意味着我们在进入国际比赛日时，在积分榜榜首对排名第二的布莱顿保持着五分的领先优势。",
+        "点击文章顶部的视频播放按钮，观看主帅对所有关键时刻的反应，我们在本赛季保持了酋长球场的全胜纪录。"
       ],
-      "translationSourceHash": "44925658b1cfdf4adc0c8d3f74488aeff22933473949c5582ccfce4b9d1ff786",
+      "translationSourceHash": "9e1d90cadef637742d85c704dd0bfa37294072896fb4e209fcf3a8bb9081168d",
       "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-11-09T20:42:00.160Z"
+      "translatedAt": "2026-11-10T11:05:38.195Z"
+    },
+    {
+      "id": "7190be6e8e51da4b6ecd44c491d1ef589d8ab42b812d19ebd3ac5d4dde37993f",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Access All Areas from WSL win at Anfield",
+      "summaryEn": "Alessia Russo's first-half double secured a hard-earned win on Merseyside",
+      "bodyEn": [
+        "We made it three wins in four games with a hard-earned 2-1 victory over Liverpool on Sunday, and now you can Access All Areas from our successful trip to Anfield.",
+        "Our Gunners made the perfect start, taking the lead after nine minutes when Emily Fox picked out Alessia Russo, who made no mistake in converting from 12 yards.",
+        "Liverpool hit back quickly through Beata Olsson, but Russo was on target again at the end of the first half, heading home the winner after a perfect delivery from Lisa Baum.",
+        "Press play on the video at the top of the article to get an all new angle on the match, as well as exclusive behind the scenes clips from before and after the game."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/c8684570fc55-liverpool-england-kim-little-taylor-hinds-and-caitlin-foord-of-arsenal-look-on-p.webp",
+      "author": "Connor Booth",
+      "publishedAt": "2026-11-10T09:43:28.238Z",
+      "url": "https://www.arsenal.com/news/access-all-areas-from-wsl-win-at-anfield-aJEzW0j6INuM",
+      "source": "Arsenal.com",
+      "titleZh": "直击女足超级联赛客场力克利物浦全过程",
+      "summaryZh": "阿莱西亚·鲁索上半场梅开二度，助阿森纳客场2-1取胜。",
+      "bodyZh": [
+        "周日，我们以2-1艰难击败利物浦，在四场比赛中取得第三场胜利。现在，您可以直击我们此次安菲尔德之行的全过程。",
+        "我们的枪手迎来了完美开局，在比赛进行到第9分钟时取得领先，当时埃米莉·福克斯助攻阿莱西亚·鲁索，后者在12码处冷静破门。",
+        "利物浦通过贝塔·奥尔松迅速扳平比分，但鲁索在上半场结束前再次建功，接丽莎·鲍姆的精妙传中头球攻入制胜球。",
+        "点击文章顶部的视频即可从全新角度回顾这场比赛，并欣赏赛前赛后的独家幕后花絮。"
+      ],
+      "translationSourceHash": "3d35b6770dcee14efa41f3e49170b222ef5c29b5106d83bd9e5ee8a888dc6166",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-11-10T11:05:49.928Z"
+    },
+    {
+      "id": "93d9447b59b332a664d14313b67dba6b8123fac8e5b4cbb210b6d3f2aa6d2168",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Russo nominated for BBC Women’s Footballer of the Year",
+      "summaryEn": "Alessia Russo has been nominated for the BBC Women’s Footballer of the Year 2026 award",
+      "bodyEn": [
+        "Alessia Russo has been nominated for the prestigious BBC Women’s Footballer of the Year 2026 award - and your votes can help her land the prize!",
+        "Alessia has been included on a five-player shortlist thanks to her goalscoring exploits for club and country during the 2025/26 campaign, which she hopes can land her the annual BBC World Service award, which is now in its 12th year recognising the world's leading female footballers",
+        "Players worldwide were nominated by a large panel of experts, including coaches, players, administrators and non-BBC journalists; however, the award is distinctive as it gives fans around the world the final say through their votes.",
+        "Alessia is up against Temwa Chawinga, Ewa Pajor, Alexia Putellas and Khadija 'Bunny' Shaw.",
+        "You can cast yours now, with voting closing at 9am on Wednesday, November 19, with the winner announced at the BBC Sports Personality of the Year awards on December 13.",
+        "Three Gunners players have previously been named BBC Women’s Footballer of the Year: Kim Little in 2016, Vivianne Miedema in 2021 and Beth Mead in 2022, while Alessia came second last year.",
+        "The 2025/26 season was her best ever in front of goal, scoring 24 goals in 40 matches in all competitions for us, which included an unforgettable hat-trick in March’s north London derby, which saw us beat Tottenham Hotspur 5-2 at Emirates Stadium.",
+        "Her efforts in Europe last term earned her a place in the Women’s Champions League Team of the Season, having scored nine goals in 12 matches as we reached the semi-finals. She was also part of the team that won the inaugural FIFA Women’s Champions Cup.",
+        "Individual accolades came in the form of Player of the Season awards for club and country, inclusions in the PFA WSL Team of the Season and FIFPRO World 11, and the Golden Player awarded by Tuttosport.",
+        "For England, she scored in a 1-0 win over Iceland in Women’s World Cup qualifying, entering the Lionesses' top 10 all-time goal-scorers, while her hat-trick against Benfica last month saw her become the highest-scoring English player in Women's Champions League history."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/05717d61966e-gettyimages-2304011931.webp",
+      "author": "Stephen Wright",
+      "publishedAt": "2026-11-10T09:30:00.000Z",
+      "url": "https://www.arsenal.com/news/russo-nominated-for-bbc-womens-footballer-of-the-year-aCrIZ6h7ZlRP",
+      "source": "Arsenal.com",
+      "titleZh": "鲁索入围BBC年度最佳女足运动员候选",
+      "summaryZh": "阿森纳前锋阿莱西亚·鲁索入围2026年BBC年度最佳女足运动员候选名单。",
+      "bodyZh": [
+        "阿莱西亚·鲁索（Alessia Russo）入围了久负盛名的2026年BBC年度最佳女足运动员候选名单，您的投票可以帮助她赢得这一殊荣！",
+        "凭借在2025/26赛季俱乐部和国家队比赛中的高光进球表现，阿莱西亚入围了五人短名单。她有望赢得这项由BBC世界服务部设立、旨在表彰全球顶尖女球员的年度奖项（目前已进入第12个年头）。",
+        "来自教练、球员、管理人员和非BBC记者等众多专家组成的评审团提名了全球各地的球员，但该奖项的独特之处在于它将最终决定权交给了全球球迷的投票。",
+        "阿莱西亚将与查温加（Temwa Chawinga）、帕约尔（Ewa Pajor）、普特利亚斯（Alexia Putellas）以及肖（Khadija 'Bunny' Shaw）展开竞争。",
+        "您现在就可以投出宝贵一票，投票将于11月19日周三上午9点截止，获奖者将于12月13日的BBC年度体坛风云人物颁奖典礼上公布。",
+        "此前曾有三名阿森纳球员荣获BBC年度最佳女足运动员：金·利特尔（2016年）、米德玛（2021年）和贝丝·米德（2022年），而阿莱西亚在去年获得了第二名。",
+        "2025/26赛季是她进球效率最高的一个赛季，她在各项赛事为我们出场40次打进24球，其中包括三月份在酋长球场举行的北伦敦德比中上演难忘的帽子戏法，帮助我们以5比2击败托特纳姆热刺。",
+        "她在上赛季欧洲赛场的表现让她入选了女足欧冠赛季最佳阵容，在打进欧冠半决赛的12场比赛中她攻入9球。她还是赢得首届国际足联女足冠军杯的球队成员之一。",
+        "在个人荣誉方面，她获得了俱乐部和国家队的赛季最佳球员奖，入选了PFA女超联赛赛季最佳阵容和国际职业球员联合会（FIFPRO）世界最佳阵容，并荣获全体育报金球员奖。",
+        "在英格兰国家队，她在女足世界杯预选赛对阵冰岛的比赛中打入制胜球，跻身雌狮队历史射手榜前十；而上个月对阵本菲卡的比赛中上演的帽子戏法，则让她成为了女足欧冠历史进球最多的英格兰球员。"
+      ],
+      "translationSourceHash": "a91e0c6e86c3d693c1753c722cbb9e31762b57103f1e7501f17e02064c3e56df",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-11-10T11:06:00.607Z"
     },
     {
       "id": "2afea709fc2f50fc5e768c7fd6225f2312f3e46cdea6d10a9288a1938cc88fce",
@@ -70,51 +138,6 @@
       "translationSourceHash": "31064db5de89cf411d8e577ebceb0774b6117cf7e4fe100f5ff18511bb0b8c4c",
       "translationModel": "gemini-3.5-flash-lite",
       "translatedAt": "2026-11-09T20:42:04.231Z"
-    },
-    {
-      "id": "10a6513b87148c9c8ff049226fae93757a61c00ea5253ad09554b7d34c4890ec",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Alessia Russo wins Golden Player award",
-      "summaryEn": "Our no.23 was voted the best women's player in Europe for 2026",
-      "bodyEn": [
-        "Alessia Russo has won the Golden Player Woman award for 2026 after being voted the best female player in Europe this year by a panel of experts and journalists.",
-        "The prize, which is awarded by Tuttosport, is part of the wider Golden Awards, including the Golden Boy and Golden Girl awards.",
-        "Alessia becomes the third Arsenal player to win such an award, inheriting the prize from 2025 winner Leah Williamson, who celebrated alongside Michelle Agyemang last year after the young striker won the Golden Girl award.",
-        "Alessia's year kicked off in style as we secured silverware just over a month into the new year by winning the inaugural FIFA Women's Champions Cup.",
-        "We entered the tournament at the semi-final stage and beat African champions AS FAR 6-0, with Alessia scoring two of the six. Our no.23 then played the full 120 minutes in the final against Corinthians, where an extra-time winner from Caitlin Foord saw us clinch the title.",
-        "On our return to WSL and Champions League action, Alessia remained as clinical as ever. In six knockout matches in the Champions League, our award winner netted five goals, taking us to within a goal of a place in back-to-back finals.",
-        "In domestic action, our striker's fine goalscoring form propelled us to a second-place finish. A season full of highlights included a brilliantly taken hat-trick in the north London derby against Spurs, as well as a crucial goal and assist on the final day of the season against Liverpool.",
-        "Her first goal of this campaign came in our 2-2 draw with Paris FC, and that strike sparked an incredible run of nine goals in just seven games; across the Champions League and WSL, those goals have been worth 10 points.",
-        "Tottenham were once again victims of Alessia's fine form, as our no.23 netted from the penalty spot to secure a 2-1 derby win away from home, before scoring all three goals in a 3-0 win over Benfica, which saw her become the top-scoring English player in Women's Champions League history.",
-        "The purple patch continued this weekend with a well-taken brace at Anfield, securing a 2-1 victory to move us up into the top half of the WSL table.",
-        "Alessia joins elite company in winning the award, which has been celebrated since 2021. Williamson broke a four-year streak of Barcelona winners last season, with previous awards going to Aitana Bonmati (2023, 2024), Alexia Putellas (2022) and Lieke Martens (2021).",
-        "This is the latest in a line of individual accolades for Alessia, who scooped the Player of the Season awards for club and country, and was included in the PFA WSL Team of the Season and FIFPRO World 11."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/e3ed60ade31c-london-england-alessia-russo-of-arsenal-celebrates-scoring-her-teams-second-goal.webp",
-      "author": "Connor Booth",
-      "publishedAt": "2026-11-09T15:35:39.929Z",
-      "url": "https://www.arsenal.com/news/alessia-russo-wins-golden-player-award-aVlit2K6J12v",
-      "source": "Arsenal.com",
-      "titleZh": "阿莱西亚·鲁索荣获欧洲金球员奖",
-      "summaryZh": "阿森纳球员阿莱西亚·鲁索当选2026年度欧洲最佳女球员。",
-      "bodyZh": [
-        "经专家和记者评委团投票，阿莱西亚·鲁索被评为今年欧洲最佳女球员，并赢得了2026年女子金球员奖。",
-        "该奖项由《都灵体育报》颁发，是更广泛的金奖评选的一部分，其中包括金童奖和欧洲金女孩奖。",
-        "阿莱西亚成为了第三位赢得此类奖项的阿森纳球员，她接过了2025年得主莉娅·威廉姆斯的衣钵，去年莉娅·威廉姆斯曾与年轻前锋米歇尔·阿吉曼一同庆祝，后者当时赢得了金女孩奖。",
-        "阿莱西亚的这一年开局完美，在新的一年开始一个多月后，我们便赢得了首届国际足联女足俱乐部世界杯冠军，从而收获了奖杯。",
-        "我们从半决赛开始参加该项赛事，并以6比0击败了非洲冠军皇家武装力量，阿莱西亚在这六粒进球中独中两元。随后，我们的23号在对阵科林蒂安的决赛中打满了120分钟，凯特琳·福特的加时赛绝杀帮助我们锁定胜局。",
-        "在我们重返英超联赛和欧冠赛场后，阿莱西亚一如既往地高效。在欧冠的六场淘汰赛中，这位我们的获奖球员攻入五球，带领我们距离连续晋级决赛仅一步之遥。",
-        "在国内赛场上，这位前锋出色的进球状态推动我们取得了联赛第二名的成绩。这个充满高光时刻的赛季包括在对阵热刺的北伦敦德比中上演精彩的帽子戏法，以及在赛季收官日对阵利物浦时贡献关键进球和助攻。",
-        "她本赛季的第一粒进球来自于我们2比2战平巴黎FC的比赛，这粒进球点燃了她随后在仅仅七场比赛中狂轰九球的神奇状态；在欧冠和英超联赛中，这些进球为球队赢得了10个积分。",
-        "热刺再次成为了阿莱西亚出色状态的受害者，我们的23号通过点球破门帮助球队在客场以2比1赢得德比战，随后在3比0战胜本菲卡的比赛中包办了全部三粒进球，这使她成为了女足欧冠历史上进球最多的英格兰球员。",
-        "这种火热状态在本周末延续，她在安菲尔德球场梅开二度，帮助球队2比1取胜，使我们的排名上升至英超积分榜上半区。",
-        "阿莱西亚加入了一份赢得该奖项的精英行列，该奖项自2021年开始设立。威廉姆斯上赛季打破了巴塞罗那球员对该奖项长达四年的垄断，此前的得主包括艾塔娜·邦马蒂（2023年、2024年）、阿莱克西亚·普特利亚斯（2022年）和莉克·马滕斯（2021年）。",
-        "这是阿莱西亚获得的又一项个人荣誉，此前她已经收获了俱乐部和国家队的赛季最佳球员奖，并入选了PFA英超最佳阵容和国际职业足球运动员联合会（FIFPRO）年度世界最佳阵容。"
-      ],
-      "translationSourceHash": "3e7e50baf1f980c91f1393b2737fb55f0520c54e437c0793fce55c8144bdf234",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-11-09T20:42:09.762Z"
     },
     {
       "id": "2f0dcfb716df3edeb65beaf4f51948370e29017216bce4a3d4b3a2db7afb669b",
@@ -361,33 +384,6 @@
       "translatedAt": "2026-11-09T09:44:15.496Z"
     },
     {
-      "id": "93146180758a1fa75c9f517398221615b5671359db06448636a1695cd4699218",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "How to watch Barcelona v Arsenal Women",
-      "summaryEn": "Find out which channel Thursday's UEFA Women's Champions League game will be on against Barcelona",
-      "bodyEn": [
-        "Our women's team will play at Camp Nou for the first time in Thursday's UEFA Women's Champions League clash against Barcelona, which kicks off at 5.45pm UK time.",
-        "The match will be shown live on Disney + in the UK. For the rest of the world, take a look at the table below for the full list of broadcasters, courtesy of livesoccertv.com.",
-        "(List correct as of Sunday, November 8)"
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/64603b13af8f-gettyimages-2303337475.webp",
-      "author": "Arsenal Media",
-      "publishedAt": "2026-11-09T09:00:00.000Z",
-      "url": "https://www.arsenal.com/news/how-to-watch-barcelona-v-arsenal-women-alhYD2g4Ixvr",
-      "source": "Arsenal.com",
-      "titleZh": "如何观看巴塞罗那对阵阿森纳女足",
-      "summaryZh": "了解周四欧冠女足对阵巴塞罗那比赛的转播频道",
-      "bodyZh": [
-        "在周四举行的欧洲女足冠军联赛中，我们的女足将首次作客诺坎普球场对阵巴塞罗那，比赛将于英国时间下午5点45分开始。",
-        "这场比赛将在英国的 Disney + 上进行直播。对于世界其他地区，请查看下方由 livesoccertv.com 提供的完整转播商列表。",
-        "（名单截至11月8日星期日准确无误）"
-      ],
-      "translationSourceHash": "dee8db8bd71b29307eb401556658ac0df23ffbd3e8f6657c93da07a01205e5c7",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-11-09T09:44:16.594Z"
-    },
-    {
       "id": "f23c12fe72482925c1d28ae2078e59c754129232f16fc723ec83cd0eb41d1fc3",
       "teamId": "arsenal",
       "teamName": "阿森纳",
@@ -453,79 +449,6 @@
       "translationSourceHash": "623c9c983e15ed1237af45f9aa7a0d9fb9a5875c7a12e8d2389b671f8c0612e8",
       "translationModel": "gemini-3.5-flash-lite",
       "translatedAt": "2026-11-09T20:42:36.643Z"
-    },
-    {
-      "id": "bb879a01c62560d1851f216157f84abadedddba12a5dcab758ceefd894f15bf5",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "U21s report: Arsenal 5-2 Aston Villa",
-      "summaryEn": "Our young Gunners pick up their first PL2 win as Saliba steps up his return",
-      "bodyEn": [
-        "Our young Gunners claimed their first Premier League 2 win of the season, with William Saliba also marking his on-field return from a lengthy injury absence.",
-        "Cole Brannigan opened the scoring for Aston Villa before quickfire goals from Maalik Hashi and Andre Harriman-Annous put us ahead before the break.",
-        "Harriman-Annous struck again after half-time, before Max Dowman and Evan Mooney also got on the scoresheet to seal a dominant 5-2 victory, despite Jack McGrath grabbing a late goal.",
-        "FIRST HALF",
-        "The visitors took an early advantage when Alfie Lynskey broke through the centre and played Brannigan in behind, who beat Jack Porter one-on-one.",
-        "William Saliba, building up minutes since his World Cup injury, almost sparked an instant response by putting backspin on a long ball for Harriman-Annous to chase, but the Villa goalkeeper was quick off his line.",
-        "Pushing for an equaliser, James Scanlon weaved down the right flank and sent a dangerous ball into the box for Hashi to shoot, but a last-ditch block diverted his effort.",
-        "Our pressure paid off through a fluid move into the area, allowing Theo Julienne to wriggle past defenders and find Hashi, who squeezed home from a tight angle.",
-        "We completed a first-half turnaround moments later, when Marcell Washington made space down the left to cross a neat pass for Harriman-Annous to flick on target.",
-        "We came close to extending our lead when Dowman hit the post with a fizzing strike from outside the box, and the ball bounced back into a good area, but the Villa defence were quick to clear up.",
-        "SECOND HALF",
-        "We made a fast start to the second half when Harriman-Annous picked up a loose ball, drove down the left wing, cut inside onto his right foot and curled a lovely solo effort into the far-right corner.",
-        "In full control, we pushed for more when the ball fell to Scanlon inside a crowded box, but our summer signing saw his close-range effort crash off the Villa upright.",
-        "Dowman sealed the win with some late magic, after a clever one-two with Theo Julienne created space on the edge of the box, allowing him to curl a left-footed effort into the far corner.",
-        "Our opponents grabbed a late consolation through McGrath, who picked up a loose ball and fired from long range, finding a way through a packed penalty area.",
-        "Substitute Evan Mooney rounded off the scoring deep into stoppage time, calmly slotting home on the counter to secure back-to-back wins in all competitions for the first time this season.",
-        "WHAT IT MEANS",
-        "Our first PL2 win of the campaign lifts us to 21st place, on 7 points.",
-        "WHAT'S NEXT",
-        "Many of our young Gunners will feature for the under-19s in the UEFA Youth League against Borussia Dortmund on Tuesday, November 24. Kick-off at the Mangata Developments Stadium is scheduled for 1pm (UK time).",
-        "Beyond that, our under-21s will continue their Premier League 2 campaign away to Blackburn Rovers on Monday, November 30. Kick-off at the Lancashire FA County Ground is scheduled for 7pm (UK time).",
-        "LINE-UPS",
-        "Arsenal XI: Porter, Saliba (Upson 45), Washington, Julienne, Salmon (Dixon 60), Ibrahim (Murisa 75), Scanlon, Hashi (Augustien 84), Harriman-Annous, Dowman, Tyjon (Mooney 60).",
-        "Subs: Nygaard, Ogunnaike.",
-        "Aston Villa XI: Lewis, Burgess, Bloomfield (Fortes 66), Carroll, Routh, Quinn, Mulley (Kweku 79), Jenner, Cotcher (Meade 63), Brannigan (Blake 79), Lynskey (McGrath 63).",
-        "Subs: Asemota, Boyd."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/7b2a44dc17b4-borehamwood-england-william-saliba-of-arsenal-during-the-pl2-match-between-arsen.webp",
-      "author": "Tom Keens",
-      "publishedAt": "2026-11-08T15:57:39.935Z",
-      "url": "https://www.arsenal.com/news/u21s-report-arsenal-5-2-aston-villa-ah9XZ8O5RAi5",
-      "source": "Arsenal.com",
-      "titleZh": "U21青年队战报：阿森纳 5-2 阿斯顿维拉",
-      "summaryZh": "阿森纳青年队取得本赛季首场英超2级联赛胜利，萨利巴迎来复出。",
-      "bodyZh": [
-        "我们的年轻枪手迎来了本赛季英超2级联赛的首场胜利，威廉·萨利巴也在长期伤缺后迎来了重返赛场的时刻。",
-        "科尔·布兰尼根为阿斯顿维拉首开纪录，随后马利克·哈希和安德烈·哈里曼-安努斯的闪电进球帮助我们在中场休息前反超比分。",
-        "下半场刚开始不久，哈里曼-安努斯再度破门，随后马克斯·多曼和埃文·穆尼也分别建功，锁定了一场5-2的大胜，杰克·麦格拉斯在比赛尾声阶段为客队扳回一球。",
-        "上半场",
-        "比赛刚开始不久客队便取得领先，阿尔菲·林斯基从中路突破并送出直塞，布兰尼根单刀击败杰克·波特。",
-        "威廉·萨利巴正在积累世界杯受伤后的出场时间，他几乎立刻制造威胁，送出一记带有强烈回旋的长传寻找哈里曼-安努斯，但维拉门将出击神速。",
-        "为了扳平比分，詹姆斯·斯坎伦在右路盘带突进，随后向禁区送出危险传中供哈里曼射门，但对方的极限封堵化解了险情。",
-        "我们的持续压迫收到了成效，通过一次流畅的禁区内配合，西奥·朱利安摆脱防守队员并将球传给哈里曼，后者在小角度将球挤进球门。",
-        "不久后我们完成了上半场的逆转，马塞尔·华盛顿在左路创造空间并送出精妙传中，哈里曼-安努斯门前垫射命中目标。",
-        "我们差一点扩大领先优势，多曼在禁区外轰出一记势大力沉的射门击中立柱弹出，皮球落入危险区域，但维拉防线迅速解围。",
-        "下半场",
-        "下半场我们开局神速，哈里曼-安努斯断下散落的皮球，沿左翼带球突破，内切晃出右脚并打出一脚精妙的弧线球直挂远角，完成了精彩的个人进球。",
-        "在完全掌控局面的情况下，我们在禁区混战中再次觅得良机，皮球落到斯坎伦脚下，这位夏窗新援近距离的射门击中了维拉的立柱。",
-        "多曼在比赛尾声用一脚精彩的配合锁定胜局，他与朱利安在禁区边缘巧妙撞墙配合创造出空间，随后用左脚兜出一记弧线球直挂远角。",
-        "我们的对手通过麦格拉斯扳回一城，他在人群密集的禁区内断下失球并远射破门。",
-        "替补登场的埃文·穆尼在伤停补时阶段冷静推射破门，锁定了本场胜局，这也是我们本赛季各项赛事首次取得连胜。",
-        "积分榜形势",
-        "这场英超2级联赛的首胜将我们的排名提升至第21位，积7分。",
-        "赛程预告",
-        "我们的许多年轻枪手将于11月24日星期二在欧洲青年联赛中代表U19队对阵多特蒙德。开球时间定于英国时间下午1点，比赛在曼加塔发展球场进行。",
-        "在此之后，我们的U21青年队将于11月30日星期一客场对阵布莱克本流浪者，继续他们的英超2级联赛征程。开球时间定于英国时间晚上7点，比赛在兰开夏郡足总郡际球场进行。",
-        "双方首发阵容",
-        "阿森纳首发：波特、萨利巴（乌普森 45分）、华盛顿、朱利安、萨尔蒙（迪克森 60分）、易卜拉欣（穆里萨 75分）、斯坎伦、哈希（奥古斯丁 84分）、哈里曼-安努斯、多曼、泰琼（穆尼 60分）。",
-        "替补：尼高尔、奥贡奈克。",
-        "阿斯顿维拉首发：刘易斯、伯吉斯、布卢姆菲尔德（福特斯 66分）、卡罗尔、鲁思、奎因、穆利（克韦库 79分）、詹纳、科彻（米德 63分）、布兰尼根（布莱克 79分）、林斯基（麦格拉斯 63分）。",
-        "替补：阿塞莫塔、博伊德。"
-      ],
-      "translationSourceHash": "9a879352d4978335472e6616bb1dc5bad829af0708f5da7841edaf2c46850587",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-11-08T22:28:50.325Z"
     },
     {
       "id": "cf13f55da7b6a357ac05d8e64fd603a71defb83be495a0677fe5adb9e6cfc900",
@@ -994,5 +917,9 @@
       "translatedAt": "2026-11-02T23:52:18.447Z"
     }
   ],
-  "pendingNotificationIds": []
+  "pendingNotificationIds": [
+    "b016558958c76945baaa908a8c8bd9fe652790ea8a93f70506b909aac781f032",
+    "7190be6e8e51da4b6ecd44c491d1ef589d8ab42b812d19ebd3ac5d4dde37993f",
+    "93d9447b59b332a664d14313b67dba6b8123fac8e5b4cbb210b6d3f2aa6d2168"
+  ]
 }
