@@ -1,7 +1,7 @@
 {
   "teamId": "toronto-blue-jays",
   "teamName": "多伦多蓝鸟",
-  "updatedAt": "2026-11-10T23:59:20.605Z",
+  "updatedAt": "2026-11-11T06:00:16.766Z",
   "items": [
     {
       "id": "91569b340fb87efdd613334f3938844c77dd506881de7b403cb366231e21a623",
@@ -62,8 +62,51 @@
       "translationModel": "gemini-3.5-flash-lite",
       "translatedAt": "2026-11-07T00:32:37.120Z",
       "author": "Rob Terranova and Brendan Samson",
-      "publishedAt": "2026-11-10T22:35:00.000Z",
+      "publishedAt": "2026-11-11T04:20:00.000Z",
       "url": "https://www.mlb.com/bluejays/news/watch-top-prospects-in-arizona-fall-league-winter-ball-2026",
+      "source": "MLB.com"
+    },
+    {
+      "id": "e8fedba477f11307623f348507fa239774f92bfecbdbb2a4c0b4ba7894c8f157",
+      "teamId": "toronto-blue-jays",
+      "teamName": "多伦多蓝鸟",
+      "titleEn": "Blue Jays GM Atkins says Santander's social media posts were 'extremely concerning, extremely disappointing'",
+      "summaryEn": "",
+      "bodyEn": [
+        "TORONTO -- Speaking for the first time this offseason, Blue Jays general manager Ross Atkins fielded questions on Anthony Santander, who made headlines last week after sharing posts discriminatory towards Muslims on his Instagram stories.",
+        "Atkins is in Las Vegas, where the annual GM Meetings are taking place at the Aria Resort and Casino, and while this typically represents the early days of excitement on the free-agent and trade markets for most clubs, Santander’s posts have been the biggest story around this organization for the past week.",
+        "“There really aren't words to express my level of disappointment with him making those comments,” Atkins said. “I've expressed that to him. I think anything exasperating some level of anti-Islamic hate is just extremely concerning, extremely disappointing. I also talked to Anthony about his lack of awareness.”",
+        "Multiple times, Atkins reiterated that he and the Blue Jays would work with Santander to learn from this, but he also continued to make his frustration clear.",
+        "This is the first public comment we’ve heard from a member of the Blue Jays’ organization since Santander shared those posts last week following the midterm elections in the United States.",
+        "\"Baseball is for everyone,” the club said in its initial statement, “and the Blue Jays have created an inclusive experience where all fans feel welcome at our ballpark. Individual comments do not reflect our organization's values and beliefs.”",
+        "Santander eventually deleted those posts, but Atkins has also spoken to the 32-year-old about making a public statement on the matter.",
+        "“I told him that I thought he needed to and that he should,” Atkins said.",
+        "Santander’s posts have received widespread attention in Canada, and particularly in Toronto. According to the most recent Canadian census, approximately 10% of Toronto’s population identifies as Muslim. The Blue Jays have worked to make the diversity of Toronto -- and more broadly, of Canada -- one of the organization’s core ideals. Inside the collar of the Blue Jays’ “Night Mode” City Connect uniforms, it reads “Diversity is Our Strength,” which comes from Toronto’s coat of arms.",
+        "While Atkins eventually addressed the Blue Jays’ other work at this week’s GM Meetings, he made a point of keeping Santander as its own, clear topic, not bleeding it over into the baseball side of this week just yet. Santander’s first two seasons with the Blue Jays since signing a five-year, $92.5 million deal have been a disappointment already, as he's appeared in just 54 games around shoulder injuries with a .565 OPS.",
+        "“It’s so disappointing that I don’t even think of it in that context,” Atkins said. “It’s disappointing enough that I don’t need to think of it in the context of trying to build a baseball team. It’s much bigger than that.”"
+      ],
+      "titleZh": "蓝鸟总经理Atkins表示Santander的社交媒体言论“极其令人担忧且极其令人失望”",
+      "summaryZh": "蓝鸟总经理Atkins谈到Anthony Santander的歧视性言论时表示极其失望。",
+      "bodyZh": [
+        "多伦多——在今年休赛期首次接受采访时，多伦多蓝鸟总经理Ross Atkins回答了关于Anthony Santander的问题。上周，Santander在Instagram快拍上分享了针对穆斯林的歧视性言论，引发了广泛关注。",
+        "Atkins目前身处拉斯维加斯，一年一度的总经理会议正在Aria度假村及赌场举行。虽然这通常对大多数俱乐部而言是自由球员和交易市场兴奋的初期，但Santander的言论过去一周一直是该组织最受关注的新闻。",
+        "Atkins表示：“对于他发表这些言论，我感到的失望简直无法用言语来表达。我已经向他表达了这一点。我认为任何加剧反伊斯兰仇恨的行为都极其令人担忧，极其令人失望。我还与Anthony谈到了他缺乏这种意识的问题。”",
+        "Atkins多次重申，他和多伦多蓝鸟将与Santander合作，从中汲取教训，但他也继续表达了自己毫不掩饰的沮丧。",
+        "这是自上周美国中期选举之后Santander分享那些动态以来，多伦多蓝鸟管理层成员首次公开表态。",
+        "俱乐部在最初的声明中表示：“棒球属于每一个人，多伦多蓝鸟营造了一种包容的体验，让所有球迷在我们的球场都感到宾至如归。个人的言论并不代表我们组织的价值观和信念。”",
+        "Santander最终删除了这些动态，但Atkins也已与这位32岁的球员就此事发表公开声明进行了交流。",
+        "Atkins说：“我告诉他，我认为他需要这样做，而且他也应该这样做。”",
+        "Santander的言论在加拿大引起了广泛关注，特别是在多伦多。根据最近的加拿大人口普查，多伦多约有10%的人口是穆斯林。多伦多蓝鸟一直致力于将多伦多以及更广泛的加拿大的多元化作为该组织的核心理念之一。在多伦多蓝鸟“夜间模式”城市版球衣的领口内侧，印有“多元化是我们的力量”，这句话源自多伦多的城徽。",
+        "尽管Atkins最终谈到了多伦多蓝鸟在本周总经理会议上的其他工作，但他明确将Santander的事件作为一个独立、清晰的话题，并未将其与本周的棒球业务混为一谈。自从与多伦多蓝鸟签下一份为期5年、价值9250万美元的合同以来，Santander在球队的前两个赛季已经令人失望，他受肩伤困扰仅出场54场，攻击率为.565。",
+        "Atkins说：“这太令人失望了，以至于我甚至不会从这个角度去考虑它。它带来的失望已经大到我不需要从组建一支棒球队的角度去思考它。这远比棒球更宏大。”"
+      ],
+      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/u7mcceh6imoezxes4tx5",
+      "translationSourceHash": "2d31f44452bce9deeadbfd2ed7e5a5a3437e6d5e52a8b70be64183617f9d4835",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-11-11T06:00:16.755Z",
+      "author": "Keegan Matheson",
+      "publishedAt": "2026-11-11T01:23:00.000Z",
+      "url": "https://www.mlb.com/bluejays/news/ross-atkins-disappointed-in-anthony-santander-for-social-media-posts",
       "source": "MLB.com"
     },
     {
@@ -1305,58 +1348,9 @@
       "publishedAt": "2026-10-29T11:03:55.000Z",
       "url": "https://www.mlb.com/bluejays/news/vladimir-guerrero-jr-and-other-blue-jays-could-win-2026-mlb-awards",
       "source": "MLB.com"
-    },
-    {
-      "id": "487885a2cb37e9a783907fef90a80bb93c8f657c618987eec7f60b2f0f72abc4",
-      "teamId": "toronto-blue-jays",
-      "teamName": "多伦多蓝鸟",
-      "titleEn": "What can the Blue Jays learn from the Brewers and Rays this World Series?",
-      "summaryEn": "",
-      "bodyEn": [
-        "TORONTO -- One year ago, the rest of baseball was looking up at the Blue Jays, wondering how they could steal their magic and make it their own.",
-        "It’s a copycat league, but aren’t they all copycat leagues? When something works, rivals rush to repeat it, and since the Dodgers seemed to exist in another realm entirely, the Blue Jays felt so much more achievable.",
-        "That’s a dangerous game, though. The Blue Jays didn’t land within a thousand miles of their own 2025 identity, and now they’re back on the ground with everyone else, looking up at the Rays and Brewers. There are some similarities between the ‘26 World Series teams and what Toronto nearly pulled off a year ago, and if the club is going to climb that mountain again, it’ll need to learn from it.",
-        "This is what the Blue Jays can take from the Rays and Brewers, which highlights just how wide a gap they’ll need to close between now and the 2027 season:",
-        "1. An ability to win in different waysThe 2025 Blue Jays nailed this. In ‘26, it felt like their best shot at winning was to hit 17 singles in a row. That’s not happening.",
-        "This is where a comparison to the Brewers is especially useful. The Blue Jays ranked dead last in MLB this season with just 152 home runs hit, but the Brewers were second to last with just 154. Milwaukee did more with its contact on balls in play, but that can have some luck baked into it year to year. How, then, could these two homer-avoidant teams walk such different paths?",
-        "Look at the walks.",
-        "The Brewers ranked second in the Majors with 668, the Blue Jays second to last at 459. That’s a difference of whopping 209 free baserunners over the course of a season. That leads to extended innings, higher pitch counts and more opportunities for the opposing pitcher to make a mistake. Over the course of a season, that adds up to a few wins. That’s all the Blue Jays needed in a depleted AL Wild Card race, too … a few wins!",
-        "That’s what got the Brewers to 103 wins. What’s gotten them to the World Series, though, including an incredible sweep of the two-time defending champion Dodgers, has been their ability to turn the power on when they need it. The postseason is full of dominant pitching, making it harder to string hits together. The Brewers have responded by launching 11 home runs in their first 10 postseason games, showing a rare ability to flip the switch and change their identity as an offense. The Blue Jays’ offense, at least in 2026, was extremely one-dimensional.",
-        "2. Danger on the basesToronto sounds like an organization now obsessed with improving its baserunning, a theme that should stretch throughout the offseason and impact its decisions.",
-        "You won’t be surprised, then, to see how well the Brewers and Rays run the bases. They’re each in the top five when it comes to stolen bases, with the Brewers (162) and Rays (164) both more than doubling the Blue Jays (75). Again, just like the walk totals, those add up a few better innings, a few extra runs and a few extra wins. This is all incremental, but it adds up over 162 games.",
-        "More advanced baserunning metrics show the same. By using Statcast’s baserunning runs, a metric designed to express the overall value of a baserunner, the Brewers (+9) and Rays (+4) both ranked in the top 10 while the Blue Jays (-3) tied for 19th and lacked true, game-changing runners.",
-        "3. Pitching developmentOne Trey Yesavage is great. Two or three of him? That’s when it starts to get fun.",
-        "The Blue Jays have taken some very encouraging strides on that front in recent years and you’re about to see those waves coming each year, but the Rays and Brewers set a high bar. This isn’t just about the headliners like Jacob Misiorowski, but also about the development that takes place in the big leagues. The Rays nail this part of the game with pitchers like Drew Rasmussen, who’s long been great for Tampa Bay since he was acquired, and Freddy Peralta, who rediscovered himself late this year after a Deadline deal from the Mets.",
-        "The Blue Jays need their next big pitching development story. Their top pick in 2026 and No. 4 prospect, Cole Carlon, is a fine place to start, along with Johnny King (No. 3) and Dasan Hill (No. 7), all three of them lefties. If Toronto can develop another front-end starter, that not only gives the team immediate wins, it frees up necessary payroll to improve this offense long term."
-      ],
-      "titleZh": "多伦多蓝鸟能从本届世界大赛的密尔沃基酿酒人和坦帕湾光芒身上学到什么？",
-      "summaryZh": "多伦多蓝鸟可以从密尔沃基酿酒人和坦帕湾光芒身上汲取经验，包括提升选球与垒间威胁以及强化投手养成。",
-      "bodyZh": [
-        "多伦多 —— 一年前，其余的棒球界还在仰望多伦多蓝鸟，想知道他们是如何偷走魔法并将其化为己有的。",
-        "这是一个相互效仿的联盟，但哪个联盟又不是呢？当某种方法奏效时，竞争对手便会争相效仿，既然洛杉矶道奇似乎完全存在于另一个维度，那么多伦多蓝鸟则显得要现实得多。",
-        "然而，这是一场危险的游戏。多伦多蓝鸟距离他们在2025年的自我定位差了十万八千里，现在他们回到了地面上，和所有人一样仰望坦帕湾光芒和密尔沃基酿酒人。26年的世界大赛球队与多伦多在一年前几乎打出的水平之间存在一些相似之处，如果该俱乐部想要再次攀登那座高峰，它就需要从中吸取教训。",
-        "这就是多伦多蓝鸟可以从坦帕湾光芒和密尔沃基酿酒人身上汲取的东西，它突显了他们从现在到2027赛季之间需要缩小的差距有多大：",
-        "1. 以不同方式取胜的能力2025年的多伦多蓝鸟完美做到了这一点。但在26年，感觉他们赢球的最佳方式是连续打出17支一垒安打。这是不可能发生的。",
-        "这就是与密尔沃基酿酒人进行对比特别有用的地方。多伦多蓝鸟本赛季仅轰出152支本垒打，在MLB排名垫底，但密尔沃基酿酒人以154支本垒打排名倒数第二。密尔沃基酿酒人利用场内击球做出了更多贡献，但这其中每年都会带有一些运气成分。那么，这两支极力避免本垒打的球队怎么会走上如此不同的道路呢？",
-        "看看保送次数。",
-        "密尔沃基酿酒人在大联盟中以668次保送排名第二，多伦多蓝鸟以459次排名倒数第二。在一个赛季的进程中，这意味着多达209次免费上垒跑者的巨大差距。这会导致局数延长、投球数增多，并为对方投手制造更多犯错的机会。在一个赛季的进程中，这会累积成几场胜利。这也是多伦多蓝鸟在一个本已消耗殆缺的美联外卡争夺战中所需要的一切……几场胜利！",
-        "这就是密尔沃基酿酒人取得103场胜利的原因。然而，让他们一路杀入世界大赛的——包括令人难以置信地横扫了卫冕两届冠军洛杉矶道奇——是他们在需要时开启长打能力的力量。季后赛充满了统治力的投手，这使得将安打串联起来变得更加困难。密尔沃基酿酒人在他们的前10场季后赛中轰出了11支本垒打，展现出了一种罕见的能力，能够瞬间切换开关并改变他们作为进攻端的身份。多伦多蓝鸟的进攻端，至少在2026年，是极其单一的。",
-        "2. 垒间的威胁多伦多现在听起来像是一个痴迷于提升跑垒能力的组织，这个主题应该贯穿整个休赛期并影响其决策。",
-        "那么，看到密尔沃基酿酒人和坦帕湾光芒的跑垒如此出色，你也就不会感到惊讶了。他们在盗垒方面均跻身前五，密尔沃基酿酒人（162次）和坦帕湾光芒（164次）的盗垒次数都超过了多伦多蓝鸟（75次）的两倍。再次强调，就像保送总数一样，这些累积起来就是更好的几个局数、多得的几分以及多赢下的几场比赛。这一切都是渐进的，但在162场比赛中它们会累积起来。",
-        "更先进的跑垒数据也显示了这一点。通过使用Statcast的跑垒跑分（一项旨在表达跑者总体价值的指标），密尔沃基酿酒人（+9）和坦帕湾光芒（+4）均排名前十，而多伦多蓝鸟（-3）并列排在第19位，缺乏真正能够改变比赛走势的跑者。",
-        "3. 投手养成有一个Trey Yesavage很棒。有两个或三个他呢？那事情才开始变得有趣。",
-        "多伦多蓝鸟近年来在该领域取得了非常令人鼓舞的进展，你将看到这些浪潮每年涌现，但坦帕湾光芒和密尔沃基酿酒人设定了很高的标准。这不仅关乎像Jacob Misiorowski这样的头条人物，还关乎在大联盟中进行的球员发展。坦帕湾光芒在比赛的这一环节上做得很出色，比如Drew Rasmussen这样的投手，自从被交易到坦帕湾以来一直表现出色，还有Freddy Peralta，他在今年交易截止日从纽约大都会转会后，在赛季末找回了自我。",
-        "多伦多蓝鸟需要他们的下一个重大投手养成故事。他们在2026年的首轮选秀权、排名第4的潜力新秀Cole Carlon是一个很好的起点，还有Johnny King（第3名）和Dasan Hill（第7名），这三名球员都是左投手。如果多伦多能够培养出另一名先发轮值前端的投手，这不仅会为球队带来即时的胜利，还会释放出必要的薪资空间，以长期改善进攻端。"
-      ],
-      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/tqaa1sfpevubxs28lvqo",
-      "translationSourceHash": "1f121bc7198cbdd31747d2dfab83a576bf80f532091907b72162bf2617867f55",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-10-26T17:18:30.377Z",
-      "author": "Keegan Matheson",
-      "publishedAt": "2026-10-26T13:22:34.000Z",
-      "url": "https://www.mlb.com/bluejays/news/blue-jays-rays-brewers-2026-world-series",
-      "source": "MLB.com"
     }
   ],
-  "pendingNotificationIds": []
+  "pendingNotificationIds": [
+    "e8fedba477f11307623f348507fa239774f92bfecbdbb2a4c0b4ba7894c8f157"
+  ]
 }
