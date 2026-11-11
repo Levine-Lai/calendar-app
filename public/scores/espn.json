@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-11T05:57:20.770Z",
+  "updatedAt": "2026-11-11T14:03:18.073Z",
   "items": [
     {
       "id": "nba-401909960",
@@ -93,11 +93,11 @@
       "sport": "basketball",
       "espnLeague": "nba",
       "start": "2026-11-11T04:00Z",
-      "status": "2:08 - 3rd",
-      "statusState": "in",
-      "completed": false,
-      "awayScore": "77",
-      "homeScore": "89",
+      "status": "Final",
+      "statusState": "post",
+      "completed": true,
+      "awayScore": "103",
+      "homeScore": "123",
       "awayTeam": "Oklahoma City Thunder",
       "homeTeam": "Portland Trail Blazers",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
