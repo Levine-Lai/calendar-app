@@ -873,11 +873,5 @@
       "translatedAt": "2026-11-12T18:37:52.572Z"
     }
   ],
-  "pendingNotificationIds": [
-    "e5508bdd11f3dfd5b2b5687f3b8efe81f50fe6ca567e2923ef2e46278b598ce0",
-    "121fd8e975ccc261fa6041c80601f0dab104aa60cb45c1cd45c4b6a2fc9a2b56",
-    "35c1b5036600b6517c1602e50ac2a8293228a6687890c4f87cc6901cfca1ea94",
-    "93d9447b59b332a664d14313b67dba6b8123fac8e5b4cbb210b6d3f2aa6d2168",
-    "53c9b690c3fdb818650c136c970c3d102e71a6c2943c8e019a10b2bbbcb0edb7"
-  ]
+  "pendingNotificationIds": []
 }
