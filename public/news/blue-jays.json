@@ -1,8 +1,76 @@
 {
   "teamId": "toronto-blue-jays",
   "teamName": "多伦多蓝鸟",
-  "updatedAt": "2026-11-13T04:30:47.355Z",
+  "updatedAt": "2026-11-14T00:51:54.027Z",
   "items": [
+    {
+      "id": "8b8ebb62658424ca304263f23ee964666af1cb45a385d264cf1ab55ae7c6fe62",
+      "teamId": "toronto-blue-jays",
+      "teamName": "多伦多蓝鸟",
+      "titleEn": "Santander issues apology for sharing hurtful social media posts",
+      "summaryEn": "",
+      "bodyEn": [
+        "TORONTO -- Anthony Santander has issued a statement on his Instagram page, apologizing for recently sharing posts that were discriminatory towards Muslims on that same platform.",
+        "Earlier this week at the GM Meetings in Las Vegas, Blue Jays GM Ross Atkins described these posts as “extremely concerning, extremely disappointing.” Atkins had spoken to Santander directly and told Santander that he needed to address the matter publicly. Now, Santander has.",
+        "“After taking time to reflect on my recent social media posts and speaking with people I trust and respect, I recognize that I should have been more thoughtful about what I shared on my platform,” Santander posted. “I realize that this content caused hurt and I sincerely apologize. I should have been more thoughtful about what I shared, recognizing the responsibility that comes with having a public voice.\"",
+        "“As a man of faith, it is my belief that every person deserves to be treated with dignity and respect, regardless of their religion, background or beliefs,” the post continued. “After hearing feedback from those I hurt, I realize that the content I shared fell short of my own convictions. I would like to affirm my respect for the Muslim community and for the dignity and freedom of people of every faith and background. From this experience, I have learned to ensure that none of my communications promote any hate or give the impression that I support hatred, discrimination, or violence against anyone.”",
+        "Santander’s posts have received widespread coverage across the Blue Jays’ Canadian market, and particularly in Toronto. According to the most recent Canadian census, approximately 10% of Toronto’s population identifies as Muslim.",
+        "Earlier this week, in the time between Atkins’ comments and Santander’s decision to release this statement, we also heard from Mark Shapiro, the CEO and president of the Blue Jays. Shapiro’s statement included an apology to the Muslim community and Blue Jays fans, along with a vow to “ensure our organization reflects the inclusive community we are proud to call home.",
+        "Santander, 32, is entering the third year of a five-year, $92.5 million deal with the Blue Jays. He missed the entirety of the 2026 season after undergoing shoulder surgery and has appeared in just 54 games in his first two years with the organization."
+      ],
+      "titleZh": "Santander就分享伤害性社群媒体贴文发表致歉声明",
+      "summaryZh": "Anthony Santander为近日在社群媒体上分享歧视穆斯林的贴文发表公开致歉声明。",
+      "bodyZh": [
+        "多伦多——Anthony Santander在他的Instagram页面上发表了一份声明，为最近在该平台上分享对穆斯林具歧视性的贴文致歉。",
+        "本周早些时候在拉斯维加斯的总经理会议上，多伦多蓝鸟总经理Ross Atkins将这些贴文形容为“极其令人担忧、极其令人失望”。Atkins曾与Santander直接对话，并告诉他需要公开处理此事。现在，Santander做到了。",
+        "Santander发文写道：“在花时间反思我最近的社群媒体贴文，并与我信任和尊重的人交谈后，我认识到自己应该对在我的平台上分享的内容更加深思熟虑。”“我意识到这些内容造成了伤害，我为此真诚道歉。我本该对所分享的内容更加深思熟虑，并认识到拥有公共发声权力所伴随的责任。”",
+        "贴文接着写道：“作为一名有信仰的人，我的信念是每个人都理应受到尊严和尊重的对待，无论其宗教、背景或信仰如何。”“在听到被我伤害之人的反馈后，我意识到我所分享的内容未能达到我自己的信念。我想表达我对穆斯林社群的尊重，以及对各种信仰和背景之人的尊严和自由的尊重。从这次经历中，我吸取了教训，确保我的任何交流都不会助长任何仇恨，或给人留下我支持针对任何人的仇恨、歧视或暴力的印象。”",
+        "Santander的贴文在多伦多蓝鸟的加拿大市场受到了广泛报道，尤其是在多伦多。根据最近的加拿大人口普查，多伦多大约有10%的人口是穆斯林。",
+        "本周早些时候，在Atkins发表评论与Santander决定发布此声明之间的这段时间里，我们也听取过多伦多蓝鸟首席执行官兼总裁Mark Shapiro的表态。Shapiro的声明包括向穆斯林社群和多伦多蓝鸟球迷致歉，并誓言要“确保我们的组织反映出我们引以为傲的包容性社群”。",
+        "现年32岁的Santander与多伦多蓝鸟签下的为期5年、价值9250万美元的合同目前进入第三年。他在接受肩部手术后缺席了整个2026赛季，在效力该组织的头两年里仅出场了54场比赛。"
+      ],
+      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/zdlbro1sywtyumfmmmod",
+      "translationSourceHash": "4bca18b5fef97f11a5d0e93302abd1b3cc104974e8d6a360fdfb2573f4ed7560",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-11-14T00:51:49.831Z",
+      "author": "",
+      "publishedAt": "2026-11-13T21:58:39.000Z",
+      "url": "https://www.mlb.com/bluejays/news/anthony-santander-issues-apology-for-social-media-post",
+      "source": "MLB.com"
+    },
+    {
+      "id": "ebbda60d2559d541c209c296b99a4676e3322d772400be4e257d514df4fa483d",
+      "teamId": "toronto-blue-jays",
+      "teamName": "多伦多蓝鸟",
+      "titleEn": "Can practice at Rogers Centre stave off slump? Maple Leafs hoping so",
+      "summaryEn": "",
+      "bodyEn": [
+        "TORONTO -- Things are going so poorly for the Toronto Maple Leafs that they’ve decided to try another sport entirely.",
+        "With the day off Friday, the Maple Leafs gathered at Rogers Centre for a team workout on the field, all decked out in Blue Jays gear. After going through some more familiar off-ice workouts, a group of Leafs dug in for some at-bats off the pitching machine, too.",
+        "That group included William Nylander, who took a turn feeding balls into the machine, Auston Matthews, John Tavares, Easton Cowan and No. 1 overall pick Gavin McKenna.",
+        "The Maple Leafs are stuck in an 0-5 homestand down the street at Scotiabank Arena, which wraps up Saturday night when Connor McDavid and the Edmonton Oilers come to town. Now owning an 8-11-2 record and sitting near the bottom of a stacked Atlantic Division, the Leafs haven’t offered much solace to Toronto sports fans who just watched the Blue Jays finish last in the American League East, a major letdown after their run to Game 7 of the World Series in 2025.",
+        "There’s always been plenty of crossover between the Leafs and Blue Jays in Toronto. Last Maple Leafs season, a group of Blue Jays attended together and watched from a box. That included Kazuma Okamoto, who got the full Canadian experience.",
+        "The Blue Jays had some hockey players on their own roster, too, in George Springer and Ernie Clement, who always keeps a hockey stick dangling out of the slots above his locker typically reserved for bats. If things keep going in this direction for the Maple Leafs, Clement might be centering the third line by Christmas."
+      ],
+      "titleZh": "在罗杰斯中心训练能否摆脱低迷？枫叶队对此寄予厚望",
+      "summaryZh": "多伦多枫叶队近期战绩不佳，全队前往罗杰斯中心进行了一场特殊的棒球场训练。",
+      "bodyZh": [
+        "多伦多讯——多伦多枫叶队近况不佳，以至于他们决定尝试完全不同的另一项运动。",
+        "利用周五的休息日，枫叶队全队前往罗杰斯中心并在球场上进行了训练，队员们都身穿多伦多蓝鸟的装备。在完成了一些熟悉的场外训练后，几名枫叶队球员还上场面对发球机进行了打击练习。",
+        "这群球员包括William Nylander（他还轮流负责往发球机里放球）、Auston Matthews、John Tavares、Easton Cowan以及2025年状元秀Gavin McKenna。",
+        "枫叶队目前在丰业银行球馆遭遇了主场0胜5负的尴尬战绩，这一主场赛程将于周六晚上落下帷幕，届时Connor McDavid和埃德蒙顿油人队将做客多伦多。目前枫叶队的战绩为8胜11胜2负，在竞争激烈的在大西洋分区垫底。对于刚刚目睹多伦多蓝鸟在美联东区垫底的多伦多体育迷来说，枫叶队并未带来太多慰藉，而蓝鸟此前在2025年一路杀入世界大赛第7场却遭遇了重大失利。",
+        "在多伦多，枫叶队和多伦多蓝鸟之间一直有着许多跨界互动。在上一个枫叶队赛季中，一群多伦多蓝鸟球员曾一同前往并在包厢里观看比赛，其中包括体验了地道加拿大文化的Kazuma Okamoto。",
+        "多伦多蓝鸟自己的阵容中也有一些曲棍球爱好者，比如George Springer和Ernie Clement，后者的更衣室储物柜上方通常只用来放球棒的槽里总是挂着一根曲棍球杆。如果枫叶队继续按这个趋势发展下去，Clement说不定到圣诞节就能去打第三组中锋了。"
+      ],
+      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/umakolecbuscfsg8l5bt",
+      "translationSourceHash": "b7c2a171398028c623aac3b2102a26cb063f0dee631413a23e3d7591c9a6ce9f",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-11-14T00:51:54.017Z",
+      "author": "Keegan Matheson",
+      "publishedAt": "2026-11-13T20:09:04.000Z",
+      "url": "https://www.mlb.com/bluejays/news/toronto-maple-leafs-practice-at-rogers-centre",
+      "source": "MLB.com"
+    },
     {
       "id": "73943b87522d312c2572f37e3c6b9d926ad9ed6d42b0f9a79c7d220b15525012",
       "teamId": "toronto-blue-jays",
@@ -1240,97 +1308,10 @@
       "publishedAt": "2026-11-04T21:08:59.000Z",
       "url": "https://www.mlb.com/bluejays/news/vladimir-guerrero-jr-keys-to-bounceback-season-in-2027",
       "source": "MLB.com"
-    },
-    {
-      "id": "e82dc8948d66114b9729c429f9a7f232890d3031dff282b03fb104570126c200",
-      "teamId": "toronto-blue-jays",
-      "teamName": "多伦多蓝鸟",
-      "titleEn": "Finally healthy, Barriera 'falling in love with' baseball all over again in AFL",
-      "summaryEn": "",
-      "bodyEn": [
-        "MESA, Ariz. -- On the night that Toronto made Brandon Barriera the 23rd pick of the 2022 Draft, he was on top of the world. Attending the event in person, he rushed to hug his dad and boasted the youthful exuberance of a pitcher who had his sights set on a fast track through the Minor Leagues coming out of the Florida high school ranks.",
-        "Four years later, he’s much calmer. Barriera has undergone a litany of ailments since the first time he donned a Blue Jays hat:",
-        "2023: Elbow, shoulder and biceps issues2024: Combination of Tommy John surgery and an internal brace produce2025: Fractured forearm",
-        "But he’s back to wearing the club’s gear in the Arizona Fall League, representing the organization as a member of the Mesa Solar Sox. The time on the sidelines prevented him from doing the thing he grew up loving to do: competing.",
-        "“Definitely just a lot of reflecting and really trying to figure out who I am as a player and as a person,” Barriera said. “Most importantly knowing that baseball comes and goes, knowing that my identity can't be in this game because it's a failing game, we all know that.",
-        "“But honestly, just falling in love with it all over again, it's been awesome.”",
-        "Barriera is quick to credit his strong support system for being integral to keeping him on a continual path back toward the mound. He’s compiled just 66 innings across four pro seasons, but the hesitation and bug of doubt that creeps in when he hurdles his 6-foot-2 frame down the hill toward the batter has finally subsided. He’s still laser-focused on being a big leaguer.",
-        "But before he can venture to the Rogers Centre, he first had to make it out of the complex in Dunedin, Fla. It took much longer than anyone could have expected back in July 2022, but on Aug. 23, Barriera earned his first promotion to High-A Vancouver, where he wrapped up his 2026 regular season.",
-        "The southpaw worked 38 2/3 innings in total across three levels, again incurring a stint on the injured list due to a non-arm-related issue. He walked batters at too high of a frequency (6.7 BB/9), but struck out better than a batter per inning and ran a 66.7 percent ground-ball rate, the second-highest among all Blue Jays Minor Leaguers (min. 30 IP).",
-        "“He's got some unique stuff to him,” Mesa pitching coach Bo Martino, a coordinator of pitching performance in the Angels organization, said of Barriera. “I think a lot of the time [the key] with those guys is not getting away from that uniqueness, building into that. Knowing who you are, building the confidence in yourself, having the mental aspect of just going after guys. I think what's good [in the Fall League] is we want to win games, but we get to develop these guys and set them up for success for the future.”",
-        "During his time in the AFL, Barriera has made five appearances, all out of relief. (He departed his most recent outing early on Monday night.) He has scrapped the changeup from his arsenal entirely and his pair of fastballs -- a four-seamer that operates like a cutter and a sinker that gets two-seam action -- have parked around 91-93 mph, maxing out at 94.6. But the star of the show is still the slider, a mid-80s offering that gets a ton of sweep and misses bats; of his six strikeouts for the Solar Sox, four have come on the breaker.",
-        "“Honestly, it's evolved a lot. It's definitely a confidence pitch and also just kind of gets a feel back for the heaters,” Barriera said. “I’m trying to rip it like a fastball, tunnel it like a fastball and trust the movement.”",
-        "Ultimately, Barriera will spend the entire 2027 season at just 23 years old, giving him ample runway to still impact the big league club one day. The Blue Jays transitioned Ricky Tiedemann (their No. 10 prospect) to a relief role after years of similar setbacks, which ultimately led to an expedited route to The Show.",
-        "“When I'm at my best, it's firing on all cylinders and it's competing, giving my team the best chance to win,” he said. “I think that's who I am as a pitcher, whether that's as a starter or as a reliever -- whatever they want to do, I'm going to get it done.”"
-      ],
-      "titleZh": "伤愈复出，Barriera在亚利桑那秋季联赛重新爱上棒球",
-      "summaryZh": "经历多次伤病后，多伦多蓝鸟潜力新秀Barriera在亚利桑那秋季联赛复出，重新找回对棒球的热爱并专注于重返大联盟。",
-      "bodyZh": [
-        "梅萨，亚利桑那州——在多伦多于2022年选秀大会上以第23顺位选中Brandon Barriera的那天晚上，他正处于人生巅峰。他亲自出席了选秀现场，跑去拥抱他的父亲，展现出了一名年轻投手初出茅庐时的朝气，他当时的目标是从佛罗里达州的高中阵营出发，在小联盟中实现极速晋升。",
-        "四年后，他变得冷静多了。自从第一次戴上多伦多蓝鸟的球帽以来，Barriera遭遇了一连串的伤病：",
-        "2023年：手肘、肩膀和二头肌问题；2024年：接受了汤米·约翰手术（Tommy John）与内部支架植入；2025年：前臂骨折。",
-        "但现在他回到了亚利桑那秋季联赛，重新穿上了俱乐部的装备，作为梅萨日落索斯队的一员代表球队出战。这段场边养伤的时光剥夺了他从小就热爱的做的事情：竞争。",
-        "“这绝对是一段很好的反思期，让我真正去琢磨作为一名球员和一个人，我究竟是谁，”Barriera说道。“最重要的是，我明白了棒球只是生活的一部分，我的身份不能完全寄托在这项运动上，因为这是一项充满失败的游戏，我们所有人都知道这一点。”",
-        "“但说实话，重新爱上这项运动的感觉真是太棒了。”",
-        "Barriera毫不吝啬地赞扬了他强大的后盾支持系统，认为这是帮助他不断重返投手丘的关键。在经历四个职业赛季后，他总共只投了66局，但当他迈着6尺2寸的身躯冲向打击区时，心中曾有过的迟疑和自我怀疑终于消散了。他依然全神贯注地想要成为一名大联盟球员。",
-        "但在他能够前往罗杰斯中心之前，他首先得离开位于佛罗里达州达尼丁的训练基地。这比2022年7月时的任何预期都要漫长得多，但在8月23日，Barriera迎来了他职业生涯的首次升级，晋升至高阶1A温哥华，并在那里结束了2026年的常规赛。",
-        "这位左投手在三个级别中总共投了38.2局，期间又因一次与手臂无关的问题短暂进入伤病名单。他的保送率偏高（每9局6.7次四坏球），但三振率超过了每局1次，地滚球率达到了66.7%，在所有多伦多蓝鸟小联盟球员中排名第二（投球局数不少于30局）。",
-        "“他拥有一些独特的球路，”梅萨投手教练Bo Martino（同时也是洛杉矶天使组织中的投手表现协调员）在谈到Barriera时说道。“我认为对于这些球员来说，关键往往在于不要抛弃这种独特性，而是要将之发扬光大。了解你是谁，建立对自己的信心，并具备勇于对决打者的心态。我认为（在秋季联赛中）好的一点是，我们虽然想要赢得比赛，但我们更能够去培养这些球员，为他们未来的成功打好基础。”",
-        "在亚利桑那秋季联赛期间，Barriera已经出场5次，全部是以中继身份登场。（他在周一晚上的最近一次出场中提前退场。）他已经完全放弃了变速球，而他的两款直球——一种类似卡特球的四缝线直球和带有二缝线轨迹的沉球——球速维持在时速91到93英里左右，最快达到94.6英里。但全场的明星依然是他的滑球，球速在80英里中段，具有极大的横向位移且能制造挥空；在为日落索斯队送出的6次三振中，有4次都是用这记变化球解决的。",
-        "“说实话，它演变了很多。这绝对是一颗能带来信心的球，同时也能找回投直球的感觉，”Barriera说道。“我试图像投直球一样猛烈挥臂，像直球一样走同一条进垒轨迹，然后信任它的位移。”",
-        "归根结底，Barriera在整个2027赛季时也只有23岁，这为他未来某天冲击大联盟球队留出了充足的发展空间。多伦多蓝鸟曾将Ricky Tiedemann（他们的第10号潜力新秀）在经历多年类似的挫折后转型为牛棚投手，这最终帮助他开辟了一条通往大联盟的捷径。",
-        "“当我处于最佳状态时，我就是火力全开、全力竞争，为我的球队争取最好的获胜机会，”他说。“我认为这就是我作为一名投手的本色，无论是作为先发投手还是后援投手——无论他们想让我怎么做，我都能完成任务。”"
-      ],
-      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/qcfpm5hldb3ps5vei6bg",
-      "translationSourceHash": "609ad536a3bda508cc6233cfa40593a847f646bb3e157f11f5d474ed6cc6d871",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-11-03T22:35:41.983Z",
-      "author": "Jesse Borek",
-      "publishedAt": "2026-11-03T21:01:33.000Z",
-      "url": "https://www.mlb.com/bluejays/news/brandon-barriera-eager-to-prove-himself-in-afl",
-      "source": "MLB.com"
-    },
-    {
-      "id": "3aa8e364ba13189db230cd144511d17a6a58ccf93d0a164033a0b5e5a07048de",
-      "teamId": "toronto-blue-jays",
-      "teamName": "多伦多蓝鸟",
-      "titleEn": "Blue Jays decline Straw's $8 million option amid roster moves",
-      "summaryEn": "",
-      "bodyEn": [
-        "TORONTO -- The Blue Jays have declined their $8 million club option on outfielder Myles Straw, the first necessary decision as the offseason officially begins and free agency opens.",
-        "Straw’s deal included a $1.75 million buyout, which will be covered by the cash considerations sent over from the Guardians in the deal prior to the 2025 season.",
-        "Straw’s news headlined a flurry of roster moves for the Blue Jays Monday, as they set their 40-man roster for the offseason by reinstating all players from the 60-day IL. That group includes: right-handers José Berríos, Jake Bloss, Bowden Francis and Cody Ponce; outfielders Jonatan Clase and OF Anthony Santander and right fielder Addison Barger. Additionally, right-hander CJ Van Eyk cleared waivers and was assigned to Triple-A, clearing a 40-man spot.",
-        "Of that group, Berríos and Francis, both recovering from Tommy John surgery, still have plenty of rehab in front of them and can be placed back on the 60-day IL in spring when camps officially begin. It’s also possible that Barger (right elbow surgery) could need additional time, but all others are expected to be healthy for 2027.",
-        "When the Blue Jays first acquired Straw, it felt like he represented more of a financial move than a baseball one. He was coming off a season in which he’d spent much of the year in Triple-A for the Guardians, and he was still owed $13.8 million across 2025-26. The Blue Jays' primary motivation in that deal was to add international pool money to bolster their pursuit of Japanese righty Roki Sasaki. That pursuit failed, but Toronto came away with someone important in Straw.",
-        "After entering that 2025 Spring Training, taking batting practice and fielding drills with the Triple-A groups -- not the big-league outfielders like George Springer and Dalton Varsho -- Straw forced his way onto the roster and earned a crucial role with this organization. Varsho appeared in 283 games across his two seasons, batting .251 with a .662 OPS while often impacting the game with his defense and speed on the bases.",
-        "Straw’s value was most evident in the clubhouse, where he was praised by coaches and fellow players for the value he brought as a teammate. He was often the first Blue Jays player to attach himself to a new teammate coming through the doors, too, whether that was a top prospect coming up from Triple-A or Kazuma Okamoto, with whom he became fast friends after the latter came over from Japan.",
-        "Free agency is only in its infancy, and there’s plenty of offseason ahead of us, but Toronto will certainly need to address its outfield in some manner. The emergence of Brett Bateman was one of the stories of 2026, and it surely had an impact on this decision regarding Straw, but the Blue Jays will be without Varsho and Springer, who were pieces of this roster’s core. If Barger needs more time and begins the season on the IL, too, that group thins out quickly, with Nathan Lukes, Yohendrick Piñango, Davis Schneider, Santander and Clase rounding out their 40-man options.",
-        "Seiya Suzuki is one of the top free agents available and is a clear, obvious fit for this organization, which would feel similar to the Springer addition from six years ago. This roster needs to add another offensive star -- ideally in the outfield -- but there’s still room for depth tinkering, as well.",
-        "While it didn’t come on the $8 million team option, there could still be a path back to the Blue Jays for Straw, who has strong feelings for the organization and left an excellent impression on all of the right people."
-      ],
-      "titleZh": "蓝鸟拒绝执行Straw的800万美元球队选项并调整阵容",
-      "summaryZh": "多伦多蓝鸟正式宣布拒绝执行外野手Myles Straw的800万美元球队选项，并同步进行了一系列40人名单调整。",
-      "bodyZh": [
-        "多伦多消息——随着休赛期正式拉开帷幕且自由球员市场开启，蓝鸟队做出了第一个必要决定：拒绝执行外野手Myles Straw价值800万美元的球队选项。",
-        "Straw的合同包含175万美元的买断费，这笔费用将由克利夫兰守护者在2025赛季之前的交易中所提供的现金补偿来支付。",
-        "Straw的消息成为了蓝鸟队周一一系列阵容调整的重头戏，他们通过将所有从60天伤病名单中恢复的球员重新激活，确定了休赛期的大联盟40人名单。这群球员包括：右投手José Berríos、Jake Bloss、Bowden Francis和Cody Ponce；外野手Jonatan Clase、Anthony Santander以及右外野手Addison Barger。此外，右投手CJ Van Eyk通过了 waivers 并被下放至小联盟三A，腾出了一个40人名单名额。",
-        "在这群球员中，正在从Tommy John手术中恢复的Berríos和Francis前方仍有大量康复工作要做，并可能在春训正式开始时重新被放回60天伤病名单。右肘手术后的Borgor也可能需要更多时间，但预计其他所有人都能在2027年保持健康。",
-        "当蓝鸟队最初通过交易得到Straw时，这笔运作给人的感觉更多是出于财务考量而非竞技层面。在此之前的一个赛季里，他在守护者队的大部分时间都在小联盟三A度过，并且在2025至2026年期间仍被欠薪1380万美元。蓝鸟队在这笔交易中的主要动机是获得国际签约金池额度，以加强对日本右投手佐佐木朗希（Roki Sasaki）的追逐。尽管那个追逐未能成功，但多伦多最终得到了Straw这样一位重要人物。",
-        "在进入2025年春训并与小联盟三A的球员们一起进行打击练习和守备训练——而不是像George Springer和Dalton Varsho这样的大联盟外野手——之后，Straw凭借实力打入了大联盟名单，并在球队中赢得了至关重要的角色。Varsho在其两个赛季中共出场283场，打击率为.251，OPS为.662，并且经常通过其防守和垒上速度对比赛产生影响。",
-        "Straw的价值在更衣室里表现得最为明显，教练和队友们对他在作为队友方面所带来的价值赞不绝口。他往往是第一个与新加入球队的队友打成一片的蓝鸟队球员，无论是从三A升上来的潜力新秀，还是在后者从日本来到球队后与其迅速结为好友的Kazuma Okamoto。",
-        "自由球员市场才刚刚起步，前方还有漫长的休赛期，但多伦多无疑需要以某种方式来补强他们的外野。Brett Bateman的崛起是2026年的故事之一，这显然对关于Straw的决定产生了影响，但蓝鸟队将失去作为阵容核心组成部分的Varsho和Springer。如果Borgor需要更多时间并在伤病名单上开始新赛季，那么外野阵容将迅速单薄，40人名单中仅剩下Nathan Lukes、Yohendrick Piñango、Davis Schneider、Santander和Clase等人。",
-        "Seiya Suzuki是市场上最顶级的自由球员之一，并且非常适合这支球队，这会让人感觉类似于六年前引进Springer的运作。这阵容需要增加另一位进攻球星——最好是在外野——但同时也有空间进行深度阵容的微调。",
-        "虽然未能执行800万美元的球队选项，但Straw对球队有着深厚的感情，并给所有关键人物留下了极佳的印象，因此他未来仍有可能找到一条重返蓝鸟队的道路。"
-      ],
-      "imageUrl": "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w640/mlb/o69kv2l8jfx3eigkhk3v",
-      "translationSourceHash": "f3479023778f3e0f871a33c095f08758774afa12bcafeea6cb5b09b927596048",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-11-03T02:27:51.297Z",
-      "author": "Keegan Matheson",
-      "publishedAt": "2026-11-03T00:11:17.000Z",
-      "url": "https://www.mlb.com/bluejays/news/blue-jays-decline-myles-straw-2027-club-option",
-      "source": "MLB.com"
     }
   ],
-  "pendingNotificationIds": []
+  "pendingNotificationIds": [
+    "8b8ebb62658424ca304263f23ee964666af1cb45a385d264cf1ab55ae7c6fe62",
+    "ebbda60d2559d541c209c296b99a4676e3322d772400be4e257d514df4fa483d"
+  ]
 }
