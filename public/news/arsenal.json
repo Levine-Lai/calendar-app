@@ -1,12 +1,116 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-11-15T00:21:08.940Z",
+  "updatedAt": "2026-11-15T14:47:15.260Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "a361c6537bbbf2eecbdbc1d6a5242b04e751bfea0708c708afc1b96b917ec253",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "How to watch Arsenal Women v London City Lionesses",
+      "summaryEn": "Find out which channel Sunday's Women's Super League game will be on against London City Lionesses",
+      "bodyEn": [
+        "Our women's team return to Emirates Stadium for the visit of London City Lionesses in the Women's Super League at 4.30pm on Sunday.",
+        "The match will be shown live on Sky Sports Main Event in the UK. For the rest of the world, take a look at the table below for the full list of broadcasters, courtesy of livesoccertv.com.",
+        "(List correct as of Thursday, November 12)"
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/aea0ad14ce1f-gettyimages-2302988619.webp",
+      "author": "Arsenal Media",
+      "publishedAt": "2026-11-15T14:00:00.046Z",
+      "url": "https://www.arsenal.com/news/how-to-watch-arsenal-women-v-london-city-lionesses-aLhdI2B0qvLA",
+      "source": "Arsenal.com",
+      "titleZh": "如何观看阿森纳女足对阵伦敦城狮女足",
+      "summaryZh": "了解周日女超联赛阿森纳对阵伦敦城狮的转播频道。",
+      "bodyZh": [
+        "我们的女足将于周日下午4点30分重返酋长球场，在女超联赛中迎战伦敦城狮女足。",
+        "这场比赛将在英国天空体育主赛事频道（Sky Sports Main Event）进行现场直播。对于世界其他地区，请参考livesoccertv.com提供的下方转播商完整列表。",
+        "（名单截至11月12日星期四准确无误）"
+      ],
+      "translationSourceHash": "43e0915338f141dd46741618f641946e86b2fc2422e115c7cdbf3f67800ce0c3",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-11-13T14:55:02.643Z"
+    },
+    {
+      "id": "695186a9925f1da578f481e415366c946f43ea9f618cf330d59b4691d8940200",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Read Renée's London City Lionesses programme notes",
+      "summaryEn": "Read our head coach's thoughts ahead of the Women's Super League game at home to London City Lionesses",
+      "bodyEn": [
+        "Before every home game, Renée Slegers gives her thoughts around the team and our upcoming game in her manager's notes published in the matchday programme.",
+        "Ahead of our Women's Super League match at home to London City Lionesses, the head coach assesses the opposition, reflects on our win over Liverpool last weekend, and talks finding more solutions to win matches.",
+        "Good afternoon everyone and welcome to Emirates Stadium, where we’re back in Women’s Super League action.",
+        "London City Lionesses were already a good team last year, but they've built quickly and strongly, so they're even better this year. It’s been a great start to the season for them and that position in the league changes the context. We’re all expecting a strong, competitive contest from quality players. They're lethal from fast transitions and counterattacks, so we know that our concentration and defensive discipline can’t drop for a second. Of course, we also see vulnerabilities in their system and the opportunities where we can go on the attack. We'll have to be at our best on Sunday.",
+        "Getting the win at Anfield last weekend was very important in terms of building momentum for this game. It was not an easy three points for us. Liverpool are a good side and I really don’t think their position in the table reflects the football they play. They posed us a lot of questions in possession, and we spent more time without the ball than we normally do, while still dominating it. We all agreed after the match that we could have scored more in the first half to get more settled but instead, we defended our lead really solidly until the final whistle. We showed a lot of personality and fight, which is something we want to keep building on. It was a really good win.",
+        "There’s no denying that we’ve been disappointed by our results at home this season. Every team that comes to the Emirates has one thing in mind and that's stopping us. So far, all five teams have been successful because we've been held to draws. We need to have better solutions to get the wins over the line but let's see how the game against London City plays out. They have a different identity, there will be different spaces on the pitch for us to exploit. I think today will be a different game.",
+        "I see a lot of strength in our group and there’s a lot of positive energy in the camp right now. We’re looking for solutions through difficult times. After the disappointment of the Aston Villa game, we headed to Anfield under a lot of pressure to get the win. The team showed a lot of character to make that happen. We know how to show up in those moments, which is where we take a lot of belief from, so it’s just been a case of working on that consistently.",
+        "We’re really looking forward to tonight and unleashing the power of the Emirates. Kick-off is at 4.30, so it will be getting dark under the lights in north London. It will be a special moment with you all this evening. Rudimental are playing before the game, so there will be a good energy in the stadium that we really want to use to our advantage. Then again, it's always our responsibility to deliver for the fans. We want to entertain you with our football and that football needs to lead to the three points. That's what we're going for. COYG!",
+        "Read more about the game, as well as a host of other fantastic content, by buying the Arsenal v London City Lionesses programme either around the stadium or online."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/093735b60a6f-gettyimages-2304626771.webp",
+      "author": "Arsenal Media",
+      "publishedAt": "2026-11-15T11:00:00.000Z",
+      "url": "https://www.arsenal.com/news/read-renees-london-city-lionesses-programme-notes-aiW1c1D3rdN9",
+      "source": "Arsenal.com",
+      "titleZh": "",
+      "summaryZh": "",
+      "bodyZh": []
+    },
+    {
+      "id": "5934d83204ac3a9c36afdf4d740e42c2729ab6b22221166ab17d3e67ca7b9772",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Gyokeres scores twice to secure promotion for Sweden",
+      "summaryEn": "Viktor Gyokeres extended his scoring record to help Sweden get promoted in the Nations League",
+      "bodyEn": [
+        "Viktor Gyokeres continued his remarkable UEFA Nations League scoring streak as he netted twice to secure promotion for Sweden against Bosnia & Herzegovina.",
+        "Needing a victory to wrap up a place in next season's top division, Sweden made the perfect start as Daniel Svensson netted after five minutes.",
+        "Our number 14 then converted two penalties before half-time, meaning he's now scored in eight straight Nations League matches - a record he has extended.",
+        "Bosnia fought back with two second-half goals from Armin Gigovic and former Gunner Saed Kolasinac, but it wasn't enough to deny Sweden the win and promotion to League A.",
+        "While Sweden are coming up, Martin Odegaard's Norway secured survival in League A with a 3-1 victory over Wales in Oslo.",
+        "Martin played 92 minutes as goals from Antonio Nusa, Andreas Schjelderup and Erling Haaland gave Norway victory, ensuring they will finish above Wales due to a better head-to-head record.",
+        "Odegaard's nation will need to beat Denmark in the final group game in Copenhagen to finish in the top two and qualify for the quarter-finals after the Danes impressively beat Portugal 4-1 in Lisbon.",
+        "Elsewhere, Bruno Guimaraes provided two assists for Brazil, but it wasn't enough to prevent his country from losing 3-2 to Japan in Singapore.",
+        "Continuing their tour of Asia from last month, both Bruno and Gabriel started as Japan raced into a 2-0 lead through Takefusa Kubo and Keito Nakamura.",
+        "Bruno then laid the ball into the path of Vinicius Jr who smashed in a long-range effort to reduce the deficit before half-time.",
+        "Our midfielder then set up Vinicius once again to level the score in the 75th minute, but Japan would have the final say as Tatsuhiro Sakamoto struck in injury time to give the Blue Samurai the win.",
+        "Both Bruno and Gabi played the full 90 minutes and will have a chance to bounce back when taking on Singapore on Tuesday, November 17.",
+        "Over in South America and Piero Hincapie marked his return to the Ecuador national team with a superb assist in a 2-0 victory over Costa Rica.",
+        "Our defender provided an inch-perfect through ball to Jordy Caicedo to open the scoring before Moises Caicedo rounded off the win with a penalty five minutes from time.",
+        "Piero and Ecuador will take on Bolivia next week to round off the break."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/36ae84c966fe-solna-sweden-viktor-gyoekeres-of-sweden-celebrates-scoring-his-teams-second-goal.webp",
+      "author": "Arsenal FC",
+      "publishedAt": "2026-11-15T09:30:26.589Z",
+      "url": "https://www.arsenal.com/news/gyokeres-scores-twice-to-secure-promotion-for-sweden-atTlV7M9tm99",
+      "source": "Arsenal.com",
+      "titleZh": "哲凯赖什梅开二度助瑞典升级",
+      "summaryZh": "哲凯赖什连场破门，帮助瑞典在欧国联中成功升入A级联赛。",
+      "bodyZh": [
+        "维克托·哲凯赖什延续了他在欧国联中出色的进球势头，他独中两元，帮助瑞典战胜波黑并成功升级。",
+        "瑞典需要一场胜利来锁定下赛季顶级联赛的席位，比赛开场仅5分钟，丹尼尔·斯文松就为球队取得完美开局。",
+        "随后，我们的14号在半场结束前罚入两记点球，这意味着他已经在连续八场欧国联比赛中取得进球，继续刷新着纪录。",
+        "波黑在下半场通过阿尔明·吉戈维奇和前阿森纳球员塞德·科拉西纳茨连扳两球，但这并不足以阻止瑞典取胜并升入A级联赛。",
+        "在瑞典升级的同时，厄德高率领的挪威在奥斯陆以3比1战胜威尔士，成功在A级联赛保级。",
+        "马丁出场了92分钟，安东尼奥·努萨、安德烈亚斯·舍尔德鲁普和埃尔林·哈兰德的进球为挪威带来胜利，凭借相互战绩优势，他们确保排名高于威尔士。",
+        "在丹麦于里斯本以4比1大胜葡萄牙后，厄德高的祖国需要在哥本哈根进行的最后一场小组赛中击败丹麦，才能进入前两名并晋级四分之一决赛。",
+        "在其他比赛中，布鲁诺·吉马良斯为巴西贡献两次助攻，但未能阻止球队在新加坡以3比2不敌日本。",
+        "延续上个月的亚洲之行，布鲁诺和加布里埃尔均首发出场，当时久保建英和中村敬斗的进球帮助日本取得2比0的领先。",
+        "随后，布鲁诺将球传给维尼修斯，后者远射破门，在半场结束前缩小了分差。",
+        "我们的中场球员在第75分钟再次助攻维尼修斯扳平比分，但日本队笑到了最后，坂元达裕在补时阶段绝杀，帮助“蓝武士”赢得胜利。",
+        "布鲁诺和加比都踢满了90分钟，他们将在11月17日周二对阵新加坡的比赛中迎来反弹的机会。",
+        "在南美洲，皮耶罗·因卡皮耶重返厄瓜多尔国家队，并在以2比0战胜哥斯达黎加的比赛中送出了一记精彩的助攻。",
+        "我们的后卫送出一记精准的直塞球，助攻约尔迪·凯塞多首开纪录，随后莫伊塞斯·凯塞多在比赛还剩五分钟时罚进点球锁定胜局。",
+        "皮耶罗和厄瓜多尔将在下周对阵玻利维亚，为本次国际比赛日画上句号。"
+      ],
+      "translationSourceHash": "74819e36ef4c51efcfc2e8179b975045966c9d68458977811c5be0dd01fb955f",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-11-15T14:47:15.253Z"
+    },
     {
       "id": "83bb54fe389ed57091c1222528616da756d68810ab204bc86b8dd71ea6ae1c5c",
       "teamId": "arsenal",
@@ -204,80 +308,6 @@
       "translationSourceHash": "7cc8b3b0041e8e65073bb7079c535404ec5be4e72b7b130f59f1b2eb574a197d",
       "translationModel": "gemini-3.5-flash-lite",
       "translatedAt": "2026-11-14T08:55:56.470Z"
-    },
-    {
-      "id": "a361c6537bbbf2eecbdbc1d6a5242b04e751bfea0708c708afc1b96b917ec253",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "How to watch Arsenal Women v London City Lionesses",
-      "summaryEn": "Find out which channel Sunday's Women's Super League game will be on against London City Lionesses",
-      "bodyEn": [
-        "Our women's team return to Emirates Stadium for the visit of London City Lionesses in the Women's Super League at 4.30pm on Sunday.",
-        "The match will be shown live on Sky Sports Main Event in the UK. For the rest of the world, take a look at the table below for the full list of broadcasters, courtesy of livesoccertv.com.",
-        "(List correct as of Thursday, November 12)"
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/aea0ad14ce1f-gettyimages-2302988619.webp",
-      "author": "Arsenal Media",
-      "publishedAt": "2026-11-13T09:00:00.000Z",
-      "url": "https://www.arsenal.com/news/how-to-watch-arsenal-women-v-london-city-lionesses-aLhdI2B0qvLA",
-      "source": "Arsenal.com",
-      "titleZh": "如何观看阿森纳女足对阵伦敦城狮女足",
-      "summaryZh": "了解周日女超联赛阿森纳对阵伦敦城狮的转播频道。",
-      "bodyZh": [
-        "我们的女足将于周日下午4点30分重返酋长球场，在女超联赛中迎战伦敦城狮女足。",
-        "这场比赛将在英国天空体育主赛事频道（Sky Sports Main Event）进行现场直播。对于世界其他地区，请参考livesoccertv.com提供的下方转播商完整列表。",
-        "（名单截至11月12日星期四准确无误）"
-      ],
-      "translationSourceHash": "43e0915338f141dd46741618f641946e86b2fc2422e115c7cdbf3f67800ce0c3",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-11-13T14:55:02.643Z"
-    },
-    {
-      "id": "68fa8aab95b82905a85e40bde3448f2736db6c8a7cc36e4edd9e8f044173f814",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Big Nations League wins for Zubimendi, Rice and Calafiori",
-      "summaryEn": "Find out how our stars got on in the opening night of the international break as Spain, Italy and England all won",
-      "bodyEn": [
-        "It was a successful opening night of the November international break as our stars from Spain, England and Italy all picked up crucial wins in the UEFA Nations League.",
-        "Starting at Wembley where England had the chance to secure a place in the quarter-finals of the Nations League for the first time with a victory over Croatia.",
-        "Declan Rice, who missed the previous international break, returned to Thomas Tuchel's starting line-up as England took a first-half lead through Chelsea's Morgan Rogers.",
-        "Despite beating Croatia 7-0 in last month's break, the visitors were more competitive in the return fixture, equalising through Petar Sucic following an error from Jarell Quansah.",
-        "But a Harry Kane penalty five minutes later restored the lead for the Three Lions. With 13 minutes to go, Rice was replaced by James Garner, and Ben White also got on the pitch, replacing Trent Alexander-Arnold upon his return to the England squad.",
-        "England will take on Spain in Madrid for a shootout for top spot in the group after the World Cup holders defeated Czechia 2-0 in Prague.",
-        "Martin Zubimendi started in midfield for Luis de la Fuente's side, which took the lead in the 39th minute through Alex Baena's penalty.",
-        "Mikel Merino was introduced on 66 minutes as Spain wrapped up the victory in stoppage time through fellow substitute, Marc Pubill.",
-        "Whoever takes victory in the final group match at the Wanda Metropolitano will finish top and be seeded for the Nations League quarter-finals.",
-        "Lastly, Riccardo Calafiori played the full 90 minutes to help Italy to a huge 3-1 victory over France.",
-        "Despite falling behind to a Michael Olise goal after just 10 minutes, Italy rallied through Pio Esposito's back-post finish.",
-        "The Italians completed the comeback in the second half through Davide Frattesi before Esposito added his second and Italy's third through a penalty.",
-        "The result means it's all to play for going into the final group matches. Calafiori's Italy travel to Belgium, knowing a point will secure a top-two finish."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/d66bacac1e34-italys-defender-riccardo-calafiori-celebrates-with-teammates-after-winning-the-u.webp",
-      "author": "Charlie Peat",
-      "publishedAt": "2026-11-13T08:26:04.637Z",
-      "url": "https://www.arsenal.com/news/big-nations-league-wins-for-zubimendi-rice-and-calafiori-aa3Ma2A1iG03",
-      "source": "Arsenal.com",
-      "titleZh": "祖比门迪、赖斯和卡拉菲奥里在欧国联中取得大胜",
-      "summaryZh": "西班牙、意大利和英格兰双双获胜，阿森纳国脚们在国际比赛日首日表现出色。",
-      "bodyZh": [
-        "对于十一月的国际比赛日来说，这是一个成功的开局，来自西班牙、英格兰和意大利的阿森纳球星们在欧洲国家联赛中都取得了关键胜利。",
-        "比赛从温布利开始，英格兰有机会通过战胜克罗地亚，首次锁定欧国联八强席位。",
-        "此前缺席上一次国际比赛日的德克兰·赖斯重返图赫尔的首发阵容，英格兰凭借切尔西球员摩根·罗杰斯的进球在上半场取得领先。",
-        "尽管上个月的比赛中以7-0大胜克罗地亚，但客队在次回合中更具竞争力，佩塔尔·苏契奇利用贾雷尔·夸安萨的失误扳平比分。",
-        "但五分钟后哈里·凯恩的点球帮助三狮军团再度领先。比赛还剩13分钟时，赖斯被詹姆斯·加纳替换下场，本·怀特也替补登场，在重返英格兰队时替换了特伦特·亚历山大-阿诺德。",
-        "在世界杯冠军得主在布拉格2-0击败捷克后，英格兰将在马德里与西班牙展开小组头名之争。",
-        "马丁·祖比门迪代表路易斯·德拉富恩特的球队首发出场，他们在第39分钟凭借亚历克斯·巴埃纳的点球取得领先。",
-        "米克尔·梅里诺在第66分钟替补登场，随后西班牙由另一位替补球员马尔克·普比利在补时阶段锁定胜局。",
-        "无论谁在万达大都会球场的最后一场小组赛中获胜，都将获得头名并在欧国联八强抽签中成为种子队。",
-        "最后，里卡多·卡拉菲奥里打满全场，帮助意大利3-1大胜法国。",
-        "尽管开场仅10分钟就被迈克尔·奥利斯破门落后，但意大利随后凭借皮奥·埃斯波西托后点的射门扳平比分。",
-        "意大利人在下半场通过达维德·弗拉泰西完成反击，随后埃斯波西托打入个人第二球、也是意大利的第三个点球。",
-        "这一结果意味着小组赛最后一轮悬念迭起。卡拉菲奥里所在的意大利将前往客场对阵比利时，只要拿到一分就能确保前两名晋级。"
-      ],
-      "translationSourceHash": "9f023bdf4059165bcecba733c390e3db4722a27485b57c81f6e8d93be0587b4f",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-11-13T14:55:25.903Z"
     },
     {
       "id": "121fd8e975ccc261fa6041c80601f0dab104aa60cb45c1cd45c4b6a2fc9a2b56",
@@ -880,5 +910,8 @@
       "translatedAt": "2026-11-13T14:56:00.676Z"
     }
   ],
-  "pendingNotificationIds": []
+  "pendingNotificationIds": [
+    "695186a9925f1da578f481e415366c946f43ea9f618cf330d59b4691d8940200",
+    "5934d83204ac3a9c36afdf4d740e42c2729ab6b22221166ab17d3e67ca7b9772"
+  ]
 }
