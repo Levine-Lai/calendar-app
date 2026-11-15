@@ -1,7 +1,7 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-11-14T15:47:26.295Z",
+  "updatedAt": "2026-11-15T00:21:08.940Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
@@ -278,49 +278,6 @@
       "translationSourceHash": "9f023bdf4059165bcecba733c390e3db4722a27485b57c81f6e8d93be0587b4f",
       "translationModel": "gemini-3.5-flash-lite",
       "translatedAt": "2026-11-13T14:55:25.903Z"
-    },
-    {
-      "id": "5f877b5d7e89dcac1a94fe4b6351d7864f154a653d4220c2d5aa8c6d903b70c3",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Renée on Barca draw, bodies in the box and backs to the wall",
-      "summaryEn": "See what Slegers had to say at Camp Nou after we drew 1-1 with Barcelona in the UEFA Women's Champions League",
-      "bodyEn": [
-        "We had to settle for a point in our first women’s visit to Camp Nou for Thursday’s 1-1 draw away to Barcelona in the UEFA Women’s Champions League.",
-        "Renée Slegers agreed that our players can leave Spain with their heads held high though after a performance in which we produced good chances and put bodies on the line to mostly keep Barca at bay.",
-        "“I think the way we go about it, it started with the preparation but then also the execution on the pitch,” our head coach said. “It's of course a very difficult game to play, also a very exciting game. To be at Camp Nou, playing Barcelona, they're so good on the ball. We knew that we had to be comfortable without the ball as well and be really detailed with what we wanted to achieve in those moments, stop in those moments. The team was exceptional on the pitch.",
-        "“Then I think we created some moments as well, some big open chances. Score one goal, Frida scores a goal. Frida was fantastic on the pitch today. I think they have a lot of possession, which is not the type of game we normally play. We had to play another way today and be comfortable with that and be good at it.",
-        "“That's for me a very big win that we can do at Camp Nou against Barcelona. Play another way and do it this way. It's one point. Of course, you always go for three points. If you look at how the game played out, 1-1. I think it's good for us to get one point today.”",
-        "Our goal came against the run of play in the first half as Maanum was on hand to capitalise on Caitlin Foord’s effort resulting in a rebound but, when you have plenty of bodies in the box, you’re always giving yourself a chance to score.",
-        "“I think we are so invested in those fast moments,” Renée added. “I think we have quite some players running and making the runs in behind. Frida follows in and finishes. She's been out with an injury, came back against Liverpool and now she's back fit for us. She did so well, not only in those moments, but also in her leadership on the pitch, out of possession. She was really, really important for us.",
-        "“She was huge and so was the rest of the team. I think it was a very important performance for us. Now we want to recover, travel back to London and then get ready for London City Lionesses.”",
-        "As Renée alluded to, it’s a rarity for us to have our backs against the wall and have to defend waves of attacks, as we’re often the team dominating possession ourselves.",
-        "“We knew that that was going to happen, that we had to defend our box,” she said. “I think they had 50 touches in our box. Of course, you want to prevent that from happening, but in the box we were really clear with how we wanted to do that, with all the details, the positional details, but also the mindset and bodies on the line. I love to see that we defend for our lives. Misa was really good in goal as well, with big saves.”",
-        "We're back in Champions League action against Lyon in an 8pm kick-off on Thursday. Join us at Meadow Park in Borehamwood!"
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/7a5d72c6808e-gettyimages-2304822841.webp",
-      "author": "Stephen Wright",
-      "publishedAt": "2026-11-12T20:56:41.251Z",
-      "url": "https://www.arsenal.com/news/renee-on-barca-draw-bodies-in-the-box-and-backs-to-the-wall-aOpkx5V8azxF",
-      "source": "Arsenal.com",
-      "titleZh": "雷妮谈战平巴萨：拼尽全力且昂首离开",
-      "summaryZh": "阿森纳女足在欧冠客场1比1战平巴萨，雷妮对球队表现给予高度评价。",
-      "bodyZh": [
-        "周四的欧洲女足冠军联赛中，我们首次做客诺坎普球场，最终以1比1客场战平巴萨，收获了一场平局。",
-        "雷妮·斯勒格斯认为，尽管未能全取三分，但在创造出良机并全力以赴限制巴萨之后，我们的球员们可以昂首离开西班牙。",
-        "“我认为我们对待比赛的方式，从备战开始，再到球场上的执行力都非常出色，”我们的主教练说道。“这当然是一场非常艰难的比赛，同时也是一场令人兴奋的比赛。来到诺坎普对阵巴萨，她们的脚下技术非常出色。我们深知自己必须在没有控球权的情况下也能应对自如，并在这些时刻明确我们的目标，力求遏制对手。全队在场上的表现无可挑剔。”",
-        "“随后我认为我们也创造了一些机会，一些非常明显的绝佳机会。我们打进了一球，弗里达攻入一球。弗里达今天在场上的表现棒极了。我认为她们拥有很高的控球率，这并非我们通常的踢法。今天我们必须换一种踢法，并且要适应并做好它。”",
-        "“对我而言，能在诺坎普对阵巴萨时做到这一点是一场巨大的胜利。采用另一种踢法并将其执行好。这是一个积分。当然，你总是渴望得到三分。但从比赛的进程来看，1比1的比分对我们来说是个不错的结果。”",
-        "上半场我们在处于劣势的情况下打破僵局，卡特琳·福德的射门造成门将扑救脱手，马努姆及时跟进补射破门。当你在禁区内投入足够多的兵力时，你总会创造出进球的机会。",
-        "“我认为我们在那些快速进攻的时刻投入了极大的精力，”雷妮补充道。“我认为我们有不少球员在前插跑位。弗里达跟进完成终结。她之前因伤缺阵，对阵利物浦时复出，如今她已完全康复。她表现得太棒了，不仅在那些进攻时刻，还在无球状态下的球场领导力上。她对我们真的非常重要。”",
-        "“她表现得极为出色，全队亦是如此。我认为这对我们来说是一场非常重要的表现。现在我们需要恢复体能，返回伦敦，然后为对阵伦敦城雌狮的比赛做准备。”",
-        "正如雷妮所提到的，我们很少处于被动防守、需要抵挡一波又一波进攻的境地，因为我们自己通常才是掌控球权的球队。",
-        "“我们早就知道这种情况会发生，我们必须防守好自己的禁区，”她说。“我认为她们在我们的禁区内有50次触球。当然，你希望避免这种情况发生，但在禁区内，我们非常清楚该如何应对，包括所有的细节、位置细节，以及拼死防守的心态。我很高兴看到我们为胜利拼尽全力。米莎在门前表现也非常出色，完成了多次关键扑救。”",
-        "下周四晚上8点，我们将回到欧冠赛场迎战里昂。欢迎来到博勒姆伍德的美度公园球场为我们加油！"
-      ],
-      "translationSourceHash": "86196f88d9a61db46b682d73ae8acda5aa5136aef16f91cb964d436741db2a37",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-11-14T15:47:22.977Z"
     },
     {
       "id": "121fd8e975ccc261fa6041c80601f0dab104aa60cb45c1cd45c4b6a2fc9a2b56",
