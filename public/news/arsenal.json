@@ -1,7 +1,7 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-11-15T20:23:19.905Z",
+  "updatedAt": "2026-11-16T00:22:11.801Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
@@ -383,53 +383,6 @@
       "translationSourceHash": "a5c079ccd184c12122882c2f64a57d8dfda244c844de25fba6f9b9378e3788ba",
       "translationModel": "gemini-3.5-flash-lite",
       "translatedAt": "2026-11-13T14:54:38.528Z"
-    },
-    {
-      "id": "2dcc8f23005ffd3791e7a4a02d4b0c2a051cc67ec7c86d1737c195efec61c07d",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Timber scores first Netherlands goals in 7-0 win",
-      "summaryEn": "Jurrien Timber scored his first international goals and Max Dowman broke another record on a busy night.",
-      "bodyEn": [
-        "Jurrien Timber scored his first Netherlands goals in a huge 7-0 victory over Greece in the UEFA Nations League.",
-        "Crysencio Summerville gave the Netherlands the lead before a Tijjani Reijnders hat-trick put the Dutch in command in Amsterdam.",
-        "Timber then netted his first international goal, tapping home former Gunner Donyell Malen's cross to make it 5-0 before half-time.",
-        "Our defender scored his second and the Netherlands' sixth of the night when he slotted it in at the back post after Denzel Dumfries' low cross.",
-        "Malen then got in on the act to make it 7-0 and put the Netherlands in command of the group.",
-        "Christos Tzolis started the match for Greece before being substituted in the 73rd minute.",
-        "Elsewhere in the group, Germany moved level on points with Greece in the group thanks to a 3-1 win over Serbia in Belgrade.",
-        "Kai Havertz started the match and played 73 minutes as strikes from Florian Wirtz, Brajan Gruda and a Srdjan Babic own goal gave Jurgen Klopp's Germany all three points.",
-        "It's all to play for going into the final day as the top two of the group qualify for the quarter-finals. Kai's Germany host Jurrien's Netherlands, with Christos' Greece facing Serbia.",
-        "Greece currently sit above Germany based on a better head-to-head record. Goal difference could eventually be the deciding factor if Greece defeat Serbia and Germany beat the Netherlands, meaning all sides would have 11 points. Whoever finishes third will go into a relegation playoff.",
-        "James Scanlon played the full 90 minutes as Gibraltar lost 2-0 to Andorra. James' nation will be promoted regardless from League D due to the restructuring of the Nations League for the next edition.",
-        "Lastly, Max Dowman became the youngest player ever to represent England under-21s as he came on in a 1-0 defeat against Portugal in Bristol.",
-        "At 16 years, 10 months and 13 days, Max eclipsed the record set by Jude Bellingham, who played Kosovo in 2020 at the age of 17 years, two months and six days."
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/d283bb26a1e1-amsterdam-netherlands-jurric3abn-timber-of-the-netherlands-celebrates-scoring.webp",
-      "author": "Charlie Peat",
-      "publishedAt": "2026-11-14T09:33:22.751Z",
-      "url": "https://www.arsenal.com/news/timber-scores-first-netherlands-goals-in-7-0-win-aknKk9M0jWK7",
-      "source": "Arsenal.com",
-      "titleZh": "廷贝尔在7-0大胜中斩获荷兰队处子球",
-      "summaryZh": "尤里安·廷贝尔收获国家队首球，小将道曼打破纪录。",
-      "bodyZh": [
-        "在欧国联一场7-0大胜希腊的比赛中，尤里安·廷贝尔攻入了他在荷兰队的首粒进球。",
-        "克里森西奥·萨默维尔为荷兰队首开纪录，随后赖因德斯上演帽子戏法，帮助荷兰队在阿姆斯特丹确立优势。",
-        "随后廷贝尔打入个人国家队处子球，他在上半场结束前接前阿森纳球员马伦的传中推射破门，将比分改写为5-0。",
-        "这位阿森纳后卫斩获了当晚的个人第二球也是荷兰队的第六球，他在后点接邓弗里斯的低平球传中推射建功。",
-        "马伦随后也取得进球将比分锁定为7-0，帮助荷兰队在小组中占据头名。",
-        "克里斯托斯·齐奥利斯代表希腊首发出场，并在第73分钟被换下。",
-        "同组的另一场比赛中，德国队在贝尔格莱德3-1战胜塞尔维亚，积分追平了希腊队。",
-        "哈弗茨首发出场并踢了73分钟，凭借维尔茨、格鲁达的进球以及巴比奇的乌龙球，尤尔根·克洛普率领的德国队全取三分。",
-        "小组前两名将晋级四分之一决赛，最后一轮悬念迭起。哈弗茨所在的德国队将主场迎战廷贝尔所在的荷兰队，齐奥利斯的希腊队则对阵塞尔维亚。",
-        "凭借相互战绩优势，希腊目前排在德国之前。如果希腊击败塞尔维亚且德国击败荷兰，所有球队将同积11分，净胜球最终可能成为决定性因素。排名第三的球队将进入降级附加赛。",
-        "詹姆斯·斯坎伦打满全场，吉布罗陀0-2不敌安道尔。由于下届欧国联赛制重组，詹姆斯的祖国无论如何都将从D联赛升级。",
-        "最后，马洛·道曼在布里斯托以0-1不敌葡萄牙的比赛中替补登场，成为代表英格兰U21出场的历史最年轻球员。",
-        "年仅16岁10个月13天的马克斯打破了贝林厄姆保持的纪录，后者在2020年对阵科索沃时出场年龄为17岁2个月6天。"
-      ],
-      "translationSourceHash": "a350ea99d5f107c54f4fab592ebd7ff3ec9a7cc1d062a3b08092934bc6d9ca19",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-11-14T15:47:17.969Z"
     },
     {
       "id": "6f9667973cd9fc152dcd781f6652791e5f0d2e4c59e71fcf585c9e434c161cea",
