@@ -1011,11 +1011,5 @@
       "translatedAt": "2026-11-17T01:08:40.376Z"
     }
   ],
-  "pendingNotificationIds": [
-    "c8d75ff82c36389eebcae8a5377277772df92d4e7dd28e584095f455cb7b6978",
-    "acf0bda636364713f175ddb0a11e8c8293092858495128ffca3af7b9d8ee8bc7",
-    "bca094dbc8ac6cb65bc6c1170363ca6c4b18b3604ff0ae5732e28861eb2efadd",
-    "49d50fec79333ded6ce9a1bd00ea7eb95067d0501acb69218d555e61fecccdaf",
-    "0ccc868cf9fdcc0a0d2f4885a8d045c57b515836bcac8029c247bc4a05edfe40"
-  ]
+  "pendingNotificationIds": []
 }
