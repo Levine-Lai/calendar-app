@@ -1,12 +1,39 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-11-17T18:37:13.297Z",
+  "updatedAt": "2026-11-18T01:19:43.944Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
   ],
   "items": [
+    {
+      "id": "62a259b8cf83c4319bf8367c2ffd149f153f786846f015c9cb7b9322ef373a62",
+      "teamId": "arsenal",
+      "teamName": "阿森纳",
+      "titleEn": "Full match: Arsenal Women 1-1 London City Lionesses",
+      "summaryEn": "Watch every kick of the game from Emirates Stadium after our 1-1 draw against London City Lionesses in the WSL",
+      "bodyEn": [
+        "We took an early lead against London City Lionesses in the Women's Super League on Sunday, but could not prevent the points being shared at Emirates Stadium.",
+        "Frida Maanum got on the end of a well-worked move from Emily Fox and Alessia Russo, only for Isobel Goodwin to pull one back a minute later.",
+        "A full match replay is now available above for supporters to watch every kick of the game in N5."
+      ],
+      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/6fb79da511b2-gettyimages-2305352856.webp",
+      "author": "Stephen Wright",
+      "publishedAt": "2026-11-17T18:30:00.431Z",
+      "url": "https://www.arsenal.com/news/full-match-arsenal-women-1-1-london-city-lionesses-aSPk04j9kjpQ",
+      "source": "Arsenal.com",
+      "titleZh": "全场比赛：阿森纳女足 1-1 伦敦城雌狮",
+      "summaryZh": "观看女超联赛阿森纳主场1比1战平伦敦城雌狮的全场比赛回放。",
+      "bodyZh": [
+        "周日的女超联赛中，我们在对阵伦敦城雌狮时早早取得领先，但最终未能阻止在酋长球场与对手握手言和。",
+        "弗里达·马努姆接到埃米莉·福克斯和阿莱西亚·鲁索的精妙配合破门得分，但仅仅一分钟后，伊索贝尔·古德温就为客队扳平了比分。",
+        "目前全场比赛回放已在上方上线，供球迷们观看这场在N5进行的比赛的每一个精彩瞬间。"
+      ],
+      "translationSourceHash": "851c1a06bf41bad89571d33396b6ba06336f772ed05a44a431d28eea7ef524a0",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-11-18T01:18:24.595Z"
+    },
     {
       "id": "e9f2ad947513ec97e04d1a2a9f837f74ba229858c6833201d1709ad486ab712f",
       "teamId": "arsenal",
@@ -49,18 +76,37 @@
       "titleEn": "Peter Storey: 1945-2026",
       "summaryEn": "We are saddened to hear of the loss of Peter Storey, a vital part of our 1970/71 double-winning side",
       "bodyEn": [
-        "Everyone at Arsenal is deeply saddened by the passing of 1970/71 double winner, Peter Storey.Peter joined the club as an apprentice in 1961 and made his first-team debut against Leicester City in October 1965. Initially starting his time with the club as a right-back, he would make 501 appearances across the next decade, placing him eighth in our all-time highest appearance makers.His reputation as a tough tackler was well deserved; Johnny Giles of Leeds United admitted that Peter was the hardest player he had ever faced. Nonetheless, he was also good on the ball. Bertie Mee and Don Howe recognised that, converting him into a central midfielder, where he helped us win the Fairs Cup in 1970 and that famous double a year later.",
-        "He was a vital member of the 1970/71 squad, with his crucial contribution coming in March 1971 as we stared defeat in the face during our FA Cup semi-final against Stoke City at Hillsborough.Peter had already halved a two-goal deficit with a rasping second-half drive but the Potters looked set to seal a 2-1 victory and book their place at Wembley, before we were awarded a stoppage-time penalty for a handball on the goalline.The yellow-shirted Gunners leapt with joy - but not Peter. He had the unenviable task of beating England legend Gordon Banks from 12 yards to keep our double dream alive. He saw Banks go right and slotted the ball low to the keeper's left, as cool as you like to force a replay, which we went on to win and ultimately lift the cup.",
-        "Peter, who scored 17 times for us in all competitions, earned an England call-up in 1971 and went on to win 19 caps, mainly in his favoured midfield role. He left Highbury in 1977 and saw out his career at Fulham before retiring in 1978.We will pay our respects to Peter at our forthcoming home match against Borussia Dortmund.All our thoughts are with his family and loved ones at this incredibly sad time."
+        "Everyone at Arsenal is deeply saddened by the passing of 1970/71 double winner, Peter Storey.",
+        "Peter joined the club as an apprentice in 1961 and made his first-team debut against Leicester City in October 1965. Initially starting his time with the club as a right-back, he would make 501 appearances across the next decade, placing him eighth in our all-time highest appearance makers.",
+        "His reputation as a tough tackler was well deserved; Johnny Giles of Leeds United admitted that Peter was the hardest player he had ever faced. Nonetheless, he was also good on the ball. Bertie Mee and Don Howe recognised that, converting him into a central midfielder, where he helped us win the Fairs Cup in 1970 and that famous double a year later.",
+        "He was a vital member of the 1970/71 squad, with his crucial contribution coming in March 1971 as we stared defeat in the face during our FA Cup semi-final against Stoke City at Hillsborough.",
+        "Peter had already halved a two-goal deficit with a rasping second-half drive but the Potters looked set to seal a 2-1 victory and book their place at Wembley, before we were awarded a stoppage-time penalty for a handball on the goalline.",
+        "The yellow-shirted Gunners leapt with joy - but not Peter. He had the unenviable task of beating England legend Gordon Banks from 12 yards to keep our double dream alive. He saw Banks go right and slotted the ball low to the keeper's left, as cool as you like to force a replay, which we went on to win and ultimately lift the cup.",
+        "Peter, who scored 17 times for us in all competitions, earned an England call-up in 1971 and went on to win 19 caps, mainly in his favoured midfield role. He left Highbury in 1977 and saw out his career at Fulham before retiring in 1978.",
+        "We will pay our respects to Peter at our forthcoming home match against Borussia Dortmund.",
+        "All our thoughts are with his family and loved ones at this incredibly sad time."
       ],
       "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/a05ce6be3410-english-footballer-peter-storey-of-league-division-1-team-arsenal-at-the-start-o.webp",
       "author": "Arsenal Media",
       "publishedAt": "2026-11-17T15:40:00.000Z",
       "url": "https://www.arsenal.com/news/peter-storey-1945-2026-a8tWW2W4IErn",
       "source": "Arsenal.com",
-      "titleZh": "",
-      "summaryZh": "",
-      "bodyZh": []
+      "titleZh": "皮特·斯托里：1945-2026",
+      "summaryZh": "我们沉痛悼念皮特·斯托里，他是我们1970/71赛季双冠王阵容的重要成员。",
+      "bodyZh": [
+        "阿森纳的每个人都对1970/71赛季双冠王成员皮特·斯托里的离去感到无比悲痛。",
+        "皮特于1961年作为学徒加入俱乐部，并于1965年10月对阵莱斯特城的比赛中完成一线队首秀。他最初是一名右后卫，在随后的十年里共出场501次，在我们的队史出场次数排行榜上位列第八。",
+        "他作为凶悍铲球手的声誉实至名归；利兹联的约翰尼·吉尔斯承认皮特是他面对过最难缠的球员。尽管如此，他的脚下技术同样出色。伯蒂·米和唐·豪意识到这一点，将他改造成了一名中场中路球员，这帮助我们在1970年赢得了国际城市博览会杯，并在一年后赢得了那次著名的双冠王。",
+        "他是1970/71赛季阵容的核心成员，他在1971年3月希尔斯堡球场对阵斯托克城的足总杯半决赛中做出了至关重要的贡献，当时我们正面临失利的绝境。",
+        "皮特此前已经通过一记下半场的劲射将两球的劣势缩小了一半，但陶工似乎即将锁定2-1的胜利并预订温布利席位，随后我们在伤停补时阶段因门线手球获得了一个点球。",
+        "身穿黄色球衣的枪手们欢欣雀跃——但皮特没有。他承担了在12码外击败英格兰传奇门将戈登·班克斯这一让人艳羡不来的任务，以延续我们的双冠王梦想。他看到班克斯扑向右侧，随后冷静地将球推射入门将的左侧低角，逼平了比分并将比赛拖入重赛，随后我们赢得了重赛并最终捧起奖杯。",
+        "皮特各项赛事共为我们攻入17球，他在1971年首次入选英格兰代表队并最终获得19次出场机会，主要司职他喜爱中场位置。他于1977年离开海布里，并在富勒姆结束了职业生涯，于1978年退役。",
+        "我们将在即将到来的对阵多特蒙德的主场比赛中向皮特致敬。",
+        "在这个无比悲伤的时刻，我们所有的思念都与他的家人和挚爱同在。"
+      ],
+      "translationSourceHash": "81d36a91df409572777fa50576c1334001c9d1d8e71d58f0925c381683937f68",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-11-18T01:18:29.964Z"
     },
     {
       "id": "3b1d80117a34af1e66f56698304b44ee67982defa744b15b0e80c2da32abb0f5",
@@ -301,9 +347,21 @@
       "publishedAt": "2026-11-17T09:16:11.078Z",
       "url": "https://www.arsenal.com/news/havertz-and-timber-reach-nations-league-quarter-finals-a7nAc2F8Zmhv",
       "source": "Arsenal.com",
-      "titleZh": "",
-      "summaryZh": "",
-      "bodyZh": []
+      "titleZh": "哈弗茨和廷贝尔晋级欧国联八强",
+      "summaryZh": "德国5-0大胜荷兰，哈弗茨与廷贝尔携手晋级欧国联八强。",
+      "bodyZh": [
+        "哈弗茨出场65分钟，帮助德国队以5-0大胜荷兰，顺利晋级欧国联四分之一决赛。",
+        "德国队必须取胜才能晋级八强，他们在下半场攻入四球，从而取得了一场酣畅淋漓的大胜。",
+        "在柏林这场大胜中，凯被尤尼斯·埃布努塔利卜替换下场。廷贝尔代表荷兰队首发出场，并在第72分钟被伊安·马特森换下。",
+        "这场胜利确保了两支球队双双晋级，而克里斯托斯·齐奥利斯的希腊队则遗憾出局。",
+        "我们的边锋在雅典的潘特萨利科体育场首并发场并踢了88分钟，最终以1-0取胜。尽管所有球队最终积同为11分，但希腊队因净胜球劣势无缘晋级。",
+        "德国队获得小组头名，这意味着他们将在西班牙、比利时或今晚进行的丹麦对阵挪威的胜者中选择一个对手。荷兰队将对阵法国、英格兰或葡萄牙。抽签仪式将于11月20日星期五举行。",
+        "最后，在D级联赛中，詹姆斯·斯坎伦送出助攻，帮助直布罗陀以1-1逼平马耳他。",
+        "斯坎伦在十月份的首回合比赛中曾打入一记精彩进球，此役他转型为助攻手，在第81分钟助攻卡洛斯·理查兹破门，在此前库尔特·肖为马耳他取得领先的情况下扳平比分，为球队抢下一分。"
+      ],
+      "translationSourceHash": "c7034a629042edf40d7ba4699b06296cbe03d0fcb5b540d0eb58a439af17092b",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-11-18T01:18:33.241Z"
     },
     {
       "id": "75ec5297351c4330d8f6cf31a79ac2979d3260204904b7df4bbcc93ffffae80b",
@@ -997,45 +1055,21 @@
       "publishedAt": "2026-11-01T17:01:00.000Z",
       "url": "https://www.arsenal.com/news/match-categories-akM0b6z9Drrk",
       "source": "Arsenal.com",
-      "titleZh": "",
-      "summaryZh": "",
-      "bodyZh": []
-    },
-    {
-      "id": "bc42d896789ce4e3998ed3b6a63175341e662b9941bcaaed29239d3cf2938cbe",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "Wenger - Even Thierry wouldn't have expected that",
-      "summaryEn": "Arsene Wenger talks about Thierry Henry's very first Arsenal goal - and the record number that followed",
-      "bodyEn": [
-        "Thierry Henry may have scored 228 goals in an Arsenal shirt, but Arsene Wenger is adamant that nobody saw it coming - not even Thierry himself.",
-        "The Arsenal legend arrived at the club from Monaco in 1999 and it took him nine games to get off the mark, before he eventually scored in the 79th minute of a 1-0 win at Southampton.",
-        "Some 227 goals later and Henry had etched his name in history, but Wenger says the way he exploded took everyone by surprise.",
-        "“Never, I could never have expected it,” the manager told Arsenal Player. “I believe that Thierry Henry would tell you today, honestly, that he never expected to have that impressive number after [that goal at Southampton]. “It was a good surprise but that’s why we love the game as well. Sometimes it surprises!",
-        "“He has shown that it was not an accident, he showed that later.”"
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/7071f4b71720-thierry-henry-southampton-away-1999.webp",
-      "author": "Arsenal FC",
-      "publishedAt": "2017-09-18T15:51:19.000Z",
-      "url": "https://www.arsenal.com/news/wenger-even-thierry-wouldnt-have-expected-that-ayRBy9y8CTpW",
-      "source": "Arsenal.com",
-      "titleZh": "温格：连蒂埃里自己也没想到会这样",
-      "summaryZh": "温格谈蒂埃里·亨利在阿森纳的首球及此后的纪录。",
+      "titleZh": "比赛类别",
+      "summaryZh": "阿森纳公布2026/27赛季比赛类别划分。",
       "bodyZh": [
-        "蒂埃里·亨利可能曾身披阿森纳战袍攻入228球，但温格坚信当时没有人能预料到这一点——甚至连蒂埃里本人也没有。",
-        "这位阿森纳传奇于1999年从摩纳哥加盟俱乐部，经历了9场比赛才打破进球荒，最终在对阵南安普顿的比赛中于第79分钟打入制胜球，帮助球队1-0取胜。",
-        "在此后的227个进球之后，亨利已经将自己的名字载入了历史，但温格表示他后来的爆发让所有人都感到意外。",
-        "“从来没有，我绝不可能预料到，”这位主帅告诉阿森纳官网播放器。“我相信蒂埃里·亨利今天也会诚实地告诉你，在（对阵南安普顿的那个进球）之后，他从没想过能取得如此惊人的进球数。这真是一个美好的惊喜，这也是我们热爱这项运动的原因。有时它总是能带来惊喜！”",
-        "“他后来证明了那并非偶然，他用表现证明了这一点。”"
+        "2026/27赛季比赛类别划分",
+        "请查阅下方我们2026/27赛季赛程的比赛类别列表。请注意，目前暂无类别的赛程将在赛季进行中陆续更新，这也将包括任何主场的足总杯和欧战赛程。普通门票季票包含19场英超联赛和4场欧洲冠军联赛小组赛，共计23场比赛。有关普通门票季票组成和价格信息的详细内容，请点击此处。"
       ],
-      "translationSourceHash": "9305b244d162d3d08847a43f8bfa942bd5f205874b13bb4a10937e62597c1595",
+      "translationSourceHash": "71922fb0fc2f8e107bae604c53065c0f8e30cda97810507397cbc8ad1ad624f9",
       "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-11-17T09:11:03.944Z"
+      "translatedAt": "2026-11-18T01:19:43.944Z"
     }
   ],
   "pendingNotificationIds": [
     "2625f0c2ddc9434ded2e043f49c3902ae61f8df90feadfac2bfdb72cb801213a",
     "2e14b39844481602f7f68b0d59dc2444245b39b0c2ec9e776d931cb1030e3e6e",
-    "587941701fefa0b6545a461491120918338b9fdee2e5a1e40fc7e785ab601735"
+    "587941701fefa0b6545a461491120918338b9fdee2e5a1e40fc7e785ab601735",
+    "62a259b8cf83c4319bf8367c2ffd149f153f786846f015c9cb7b9322ef373a62"
   ]
 }
