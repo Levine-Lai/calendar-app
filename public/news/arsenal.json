@@ -1,7 +1,7 @@
 {
   "teamId": "arsenal",
   "teamName": "阿森纳",
-  "updatedAt": "2026-11-21T23:49:15.977Z",
+  "updatedAt": "2026-11-22T06:41:12.591Z",
   "sources": [
     "Arsenal.com",
     "The Guardian"
@@ -77,9 +77,25 @@
       "publishedAt": "2026-11-21T21:05:04.321Z",
       "url": "https://www.arsenal.com/news/arteta-rues-two-dropped-points-after-newcastle-draw-at2Xq7Q9tURk",
       "source": "Arsenal.com",
-      "titleZh": "",
-      "summaryZh": "",
-      "bodyZh": []
+      "titleZh": "阿尔特塔对战平纽卡斯尔联丢掉两分感到惋惜",
+      "summaryZh": "阿森纳在英超客场2-2战平纽卡斯尔联，米克尔·阿尔特塔赛后分享了他的看法。",
+      "bodyZh": [
+        "在经历领先、落后最终战平的过程后，米克尔·阿尔特塔认为我们在客场2-2战平纽卡斯尔联的比赛中丢掉了两分。",
+        "凭借埃贝雷·埃泽的进球，我们在上半场表现出色，带着一球领先优势进入更衣室；但喜鹊军团在下半场借势反扑，通过哈维·巴恩斯和马利克·蒂奥的进球实现反超。",
+        "不过我们顶住了压力，随着诺尼·马杜埃凯在七场比赛中攻入第三球，我们最终收获了一场平局。然而在经历了典型的半场截然不同的比赛后，米克尔对于我们在有机会时未能杀死比赛感到沮丧，因为他深知主队会试图反扑。",
+        "“我的感觉是我们今天丢了两分，我说‘我们’是因为我们在上半场表现得非常出色，”米克尔赛后说道。“那种强度、侵略性、质量、镇定以及对我们如何应对纽卡斯尔战术的理解——尤其是每当他们进行盯人防守时——意味着我们每次进攻都极具威胁。”",
+        "“我们打进了一个精彩的进球，本应该至少再进两到三个，那样的话比赛就会完全不同，但事实并非如此。中场休息时我们说：‘他们现在会做出调整，我们也必须做出应对’，那就是提升强度，如果我们做到了，他们就无法跟上我们的节奏，但我们没有做到。他们确实做到了，并通过极具强度的动作、赢得拼抢、争抢第二落点以及我们一些不必要的失误开始建立信念。”",
+        "“最重要的是，我们送给他们一个进球，所以他们赢得了获得信念的权利——在一个动作、一次传球中，我们受到了惩罚。接着我们送给他们一个角球，你知道接下来会发生什么。当你漏掉一个防守人，让他们最擅长定位球的球员处于空位时，你就有麻烦了，我们受到了惩罚，难以置信的是我们在18-20分钟内连续遭到惩罚。”",
+        "“随后球队恢复了上半场那种出色的表现，我们再次变得不可思议，由诺尼打进了一粒漂亮的进球，并且确实有机会攻入第三球，这就是我们要迈出的下一步。”",
+        "我们将联赛不败纪录延长至六场，并将积分榜榜首的领先优势扩大到同等积分，但米克尔认为这个差距本该是八分，因为在他眼中，这是他在执教期间球队在圣詹姆斯公园球场踢得最好的一次。",
+        "他希望我们能从今日的结果中吸取教训，并将表现水平保持到终场哨响，尤其是接下来几周还有几场硬仗，包括下一场在英超主场迎战曼城。",
+        "“当你拥有杀死比赛的机会时，你必须去做到，否则你必须对待好每一次球权，”他补充道。“一个界外球都可能是比赛中最关键的动作，如果你不这样看待它，你就会受到惩罚。今天我们受到了惩罚。”",
+        "“我在球队六年或七年了，这绝对是我们在这里踢得最好的一次，虽然我们以前也赢过几次。但今天的比分差距本该大得多，事实却并非如此。这是我们所有人都在感受到的痛楚。不仅是我，球员们也感受到了这种痛楚，我立刻就能感觉到，这就是我们需要达到的标准。”",
+        "“我们在长达70分钟的时间里有一些出色的个人表现，但在这种水平的比赛中，特别是当分差只有一球时，这种表现必须维持96分钟。”"
+      ],
+      "translationSourceHash": "25474ea7657a2000b6d62170402f40ff527931a944a7ef9df13ec3e01e26f6a2",
+      "translationModel": "gemini-3.5-flash-lite",
+      "translatedAt": "2026-11-22T06:41:12.583Z"
     },
     {
       "id": "7ad04bd24edf044c1333fe9edea7ca0e4e7aeb6900326257d48fa3244425c35e",
@@ -770,35 +786,6 @@
       "translationSourceHash": "698adf5e9bbe77072e426624474b2c791cea9ae9af3c417967f7c138aca02083",
       "translationModel": "gemini-3.5-flash-lite",
       "translatedAt": "2026-11-20T22:39:49.610Z"
-    },
-    {
-      "id": "16fa18bd4a59dec93afdb00805683c0a4ca41c3074295eb60624680e67b04d05",
-      "teamId": "arsenal",
-      "teamName": "阿森纳",
-      "titleEn": "The best training snaps before Newcastle trip",
-      "summaryEn": "Find out how we've been preparing for our first game after the internationals",
-      "bodyEn": [
-        "We'll be back in Premier League action on Saturday, returning from the November international break with a trip to Newcastle, and you can see how we've been gearing up for the contest with our training gallery.",
-        "A 1-0 win over Hull City before the break saw us extend our lead at the top of the Premier League to five points, an advantage we'll be looking to maintain with victory at St. James' Park.",
-        "Saturday's trip marks our last trip outside of London until 2027, with at least 11 straight matches in London to come after our trip to the North East before the Third Round of the FA Cup in January.",
-        "Swipe through the gallery below, captured by club photographer Stuart MacFarlane, to see what we've been up to at the Sobha Realty Training Centre before we face Newcastle:"
-      ],
-      "imageUrl": "https://assets.arsenal.com/prod/images/xl_landscape/7913ab9e76b5-cover.webp",
-      "author": "Arsenal Media",
-      "publishedAt": "2026-11-20T16:07:07.881Z",
-      "url": "https://www.arsenal.com/news/the-best-training-snaps-before-newcastle-trip-avXEJ4D1hVam",
-      "source": "Arsenal.com",
-      "titleZh": "客场对阵纽卡斯尔前的最佳训练图集",
-      "summaryZh": "来看看我们在国际比赛日后的首场比赛前是如何备战的。",
-      "bodyZh": [
-        "我们将在周六重返英超赛场，在结束11月份的国际比赛日后客场挑战纽卡斯尔，你可以通过我们的训练图集了解球队的备战情况。",
-        "在国际比赛日之前以1-0战胜赫尔城后，我们在英超积分榜上的领先优势扩大到了五分，我们将力争在圣詹姆斯公园球场取胜以保持这一优势。",
-        "周六的客场比赛标志着我们在2027年之前最后一次离开伦敦的客场之旅（编者注：原文如此），在前往东北部并迎来1月份足总杯第三轮之前，我们将在伦敦连续进行至少11场比赛。",
-        "浏览下方由俱乐部摄影师斯图尔特·麦克法兰（Stuart MacFarlane）拍摄的图集，看看我们在索巴地产训练中心（Sobha Realty Training Centre）对阵纽卡斯尔前都在做些什么："
-      ],
-      "translationSourceHash": "25dc792292aabc24f2dc56f3ce2503ebf2db6e5d091c9edfe33dd471dcd026c4",
-      "translationModel": "gemini-3.5-flash-lite",
-      "translatedAt": "2026-11-20T22:39:51.957Z"
     },
     {
       "id": "bb673728e4ad834501c9a857426156f906c52c71885b95e016936db034611ccb",
