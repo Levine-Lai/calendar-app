@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-27T02:45:55.255Z",
+  "updatedAt": "2026-11-27T11:29:56.616Z",
   "items": [
     {
       "id": "nfl-401873081",
@@ -42,11 +42,11 @@
       "sport": "football",
       "espnLeague": "nfl",
       "start": "2026-11-27T01:20Z",
-      "status": "0:04 - 2nd",
-      "statusState": "in",
-      "completed": false,
-      "awayScore": "0",
-      "homeScore": "7",
+      "status": "Final",
+      "statusState": "post",
+      "completed": true,
+      "awayScore": "10",
+      "homeScore": "13",
       "awayTeam": "Kansas City Chiefs",
       "homeTeam": "Buffalo Bills",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/kc.png",
